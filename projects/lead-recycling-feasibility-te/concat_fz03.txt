@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-feasibility-te/assets/r03_div.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-feasibility-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-feasibility-te/assets/s03_informal.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-feasibility-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-feasibility-te/assets/s03_price.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-feasibility-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-feasibility-te/assets/s03_util.wav'

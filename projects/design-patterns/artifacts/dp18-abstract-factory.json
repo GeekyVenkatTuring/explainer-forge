@@ -1,0 +1,2015 @@
+{
+ "cuts": [
+  {
+   "id": "dp18-abstract-factory_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 31.066,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 18",
+    "line1": "A family",
+    "line2": "that must match",
+    "sub": "creating related objects that have to belong to the same set \u2014 never mixed",
+    "dur": 31.566
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 31.566,
+   "out_seconds": 64.739,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "One UI, two platforms",
+    "situation": "Your app runs on macOS and Windows. It builds buttons, checkboxes, and menus \u2014 and every widget on screen must match the platform. A mixed set looks broken.",
+    "actors": [
+     {
+      "emoji": "\ud83c\udf4e",
+      "label": "macOS widgets"
+     },
+     {
+      "emoji": "\ud83e\ude9f",
+      "label": "Windows widgets"
+     },
+     {
+      "emoji": "\ud83e\udde9",
+      "label": "\u2026must never mix"
+     }
+    ],
+    "ask": "How do you create a whole matching family of widgets without hard-coding the platform everywhere?",
+    "dur": 33.673
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_naive",
+   "type": "dp_code",
+   "in_seconds": 65.239,
+   "out_seconds": 99.799,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "Check the platform, everywhere.",
+    "file": "Dialog.java",
+    "lines": [
+     {
+      "t": "Button b = (os == MAC)",
+      "s": "hi"
+     },
+     {
+      "t": "  ? new MacButton() : new WinButton();",
+      "s": "hi"
+     },
+     {
+      "t": "Checkbox c = (os == MAC)",
+      "s": "hi"
+     },
+     {
+      "t": "  ? new MacCheckbox() : new WinCheckbox();",
+      "s": "hi"
+     },
+     {
+      "t": "// ...the same os check at every widget you build"
+     },
+     {
+      "t": "// forget one \u2192 a Mac button in a Windows window"
+     }
+    ],
+    "note": "The platform check is copied to every creation site. One slip = a mixed UI.",
+    "dur": 35.06
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_pain",
+   "type": "dp_pain",
+   "in_seconds": 100.299,
+   "out_seconds": 137.393,
+   "props": {
+    "title": "\"Now add a Linux theme. And a high-contrast one.\"",
+    "file": "everywhere.java",
+    "lines": [
+     {
+      "t": "if (os == MAC) ...      // in Dialog",
+      "s": "hi"
+     },
+     {
+      "t": "if (os == MAC) ...      // in Toolbar",
+      "s": "hi"
+     },
+     {
+      "t": "if (os == MAC) ...      // in Settings, Wizard, ...",
+      "s": "hi"
+     },
+     {
+      "t": "// add LINUX: touch EVERY one of these checks",
+      "s": "hi"
+     },
+     {
+      "t": "// each check must list every widget's variant"
+     }
+    ],
+    "smell": "Platform branching scattered across every creation site",
+    "touched": [
+     "os check at every widget site",
+     "add a platform \u2192 edit them all",
+     "add a widget \u2192 add it to each check",
+     "one missed branch \u2192 a mixed UI"
+    ],
+    "dur": 37.594
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_insight",
+   "type": "dp_insight",
+   "in_seconds": 137.893,
+   "out_seconds": 182.081,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "The app builds buttons, checkboxes, menus",
+     "Every widget must match its family",
+     "The client shouldn't name concrete classes"
+    ],
+    "varies": [
+     "Which family \u2014 macOS, Windows, Linux",
+     "And it must be chosen consistently"
+    ],
+    "principle": "Bundle the creation of a whole family behind one factory object; pick the factory once.",
+    "dur": 44.688
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 182.581,
+   "out_seconds": 227.183,
+   "props": {
+    "title": "An interior designer",
+    "emoji": "\ud83d\udecb\ufe0f",
+    "analogy": "You pick one designer; everything they bring \u2014 sofa, chair, lamp \u2014 matches, because it all comes from the same hand.",
+    "map": [
+     {
+      "from": "The designer you hire",
+      "to": "the concrete factory"
+     },
+     {
+      "from": "The matching furniture set",
+      "to": "a family of products"
+     },
+     {
+      "from": "\"Bring me a chair\"",
+      "to": "createButton() / createCheckbox()"
+     },
+     {
+      "from": "Choosing the designer once",
+      "to": "picking the factory at startup"
+     }
+    ],
+    "breaks": "a designer improvises; a factory only makes the exact product types its interface declares.",
+    "dur": 45.102
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 227.683,
+   "out_seconds": 261.59,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "One factory interface for the whole family",
+    "file": "GUIFactory.java",
+    "lines": [
+     {
+      "t": "interface GUIFactory {           // makes a family",
+      "s": "add"
+     },
+     {
+      "t": "  Button   createButton();",
+      "s": "add"
+     },
+     {
+      "t": "  Checkbox createCheckbox();",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "interface Button   { void render(); }"
+     },
+     {
+      "t": "interface Checkbox { void toggle(); }"
+     }
+    ],
+    "note": "The factory declares a whole family; the products are interfaces too.",
+    "dur": 34.407
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 262.09,
+   "out_seconds": 297.594,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "One concrete factory per family",
+    "file": "MacFactory.java",
+    "lines": [
+     {
+      "t": "class MacFactory implements GUIFactory {",
+      "s": "hi"
+     },
+     {
+      "t": "  public Button   createButton()   { return new MacButton(); }",
+      "s": "hi"
+     },
+     {
+      "t": "  public Checkbox createCheckbox() { return new MacCheckbox(); }",
+      "s": "hi"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "class WinFactory implements GUIFactory {"
+     },
+     {
+      "t": "  public Button createButton() { return new WinButton(); } ..."
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Each factory returns ONLY its own family \u2014 matching by construction.",
+    "dur": 36.004
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_try",
+   "type": "dp_try",
+   "in_seconds": 298.094,
+   "out_seconds": 329.397,
+   "props": {
+    "title": "Build a dialog from a factory",
+    "file": "Dialog.java",
+    "lines": [
+     {
+      "t": "class Dialog {"
+     },
+     {
+      "t": "  Dialog(GUIFactory f) {         // any family"
+     },
+     {
+      "t": "    // \u25af build a button and a checkbox \u2014 no 'new Mac...'",
+      "s": "ghost"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Create a button and a checkbox using only the factory. Which platform is this code tied to?",
+    "hint": "Button b = f.createButton();  Checkbox c = f.createCheckbox();",
+    "dur": 31.803
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 329.897,
+   "out_seconds": 365.816,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "Choose the family once, at the top",
+    "file": "App.java",
+    "lines": [
+     {
+      "t": "GUIFactory factory = switch (currentOS()) {",
+      "s": "add"
+     },
+     {
+      "t": "  case MAC -> new MacFactory();",
+      "s": "add"
+     },
+     {
+      "t": "  case WIN -> new WinFactory();",
+      "s": "add"
+     },
+     {
+      "t": "};   // the ONLY platform check in the app",
+      "s": "hi"
+     },
+     {
+      "t": "new Dialog(factory);   // everything below just matches",
+      "s": "add"
+     }
+    ],
+    "note": "One decision, at startup. Everything downstream is platform-blind.",
+    "dur": 36.419
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 366.316,
+   "out_seconds": 405.688,
+   "props": {
+    "requirement": "\"Add a Linux theme\"",
+    "naiveLabel": "Scattered",
+    "naiveCost": "A new branch in every platform check.",
+    "naiveSteps": [
+     "find every os check",
+     "add a Linux branch to each",
+     "miss one \u2192 wrong widget"
+    ],
+    "patLabel": "Factory",
+    "patCost": "One new factory + its widgets. App unchanged.",
+    "patFile": "LinuxFactory.java",
+    "patLines": [
+     {
+      "t": "class LinuxFactory implements GUIFactory {",
+      "s": "add"
+     },
+     {
+      "t": "  public Button   createButton()   { return new LinuxButton(); }",
+      "s": "add"
+     },
+     {
+      "t": "  public Checkbox createCheckbox() { return new LinuxCheckbox(); }",
+      "s": "add"
+     },
+     {
+      "t": "}   // add one case at startup \u2014 nothing else changes",
+      "s": "add"
+     }
+    ],
+    "dur": 39.872
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 406.188,
+   "out_seconds": 453.179,
+   "props": {
+    "name": "The Abstract Factory Pattern",
+    "plain": "One factory interface creates a whole family of related products; each concrete factory produces one matching family.",
+    "nodes": [
+     {
+      "id": "fac",
+      "title": "GUIFactory",
+      "stereo": "abstract factory",
+      "members": [
+       "+ createButton()",
+       "+ createCheckbox()"
+      ],
+      "x": 700,
+      "y": 190,
+      "w": 420,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "mac",
+      "title": "MacFactory",
+      "members": [
+       "\u2192 Mac family"
+      ],
+      "x": 300,
+      "y": 470,
+      "w": 340,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "win",
+      "title": "WinFactory",
+      "members": [
+       "\u2192 Win family"
+      ],
+      "x": 760,
+      "y": 470,
+      "w": 340,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "btn",
+      "title": "Button",
+      "stereo": "product",
+      "members": [
+       "+ render()"
+      ],
+      "x": 1420,
+      "y": 210,
+      "w": 360,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "chk",
+      "title": "Checkbox",
+      "stereo": "product",
+      "members": [
+       "+ toggle()"
+      ],
+      "x": 1420,
+      "y": 430,
+      "w": 360,
+      "color": "#22D3EE"
+     }
+    ],
+    "edges": [
+     {
+      "from": "mac",
+      "to": "fac",
+      "kind": "impl"
+     },
+     {
+      "from": "win",
+      "to": "fac",
+      "kind": "impl"
+     },
+     {
+      "from": "fac",
+      "to": "btn",
+      "kind": "has"
+     },
+     {
+      "from": "fac",
+      "to": "chk",
+      "kind": "has"
+     }
+    ],
+    "dur": 47.491
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_map",
+   "type": "dp_map",
+   "in_seconds": 453.679,
+   "out_seconds": 500.209,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "AbstractFactory",
+      "your": "interface GUIFactory"
+     },
+     {
+      "role": "ConcreteFactory",
+      "your": "MacFactory, WinFactory"
+     },
+     {
+      "role": "AbstractProduct",
+      "your": "Button, Checkbox (interfaces)"
+     },
+     {
+      "role": "ConcreteProduct",
+      "your": "MacButton, WinCheckbox, \u2026"
+     }
+    ],
+    "plain": "A concrete factory produces a full family of matching products; the client uses only the abstract factory and product types.",
+    "gof": "Provide an interface for creating families of related or dependent objects without specifying their concrete classes.",
+    "dur": 47.03
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 500.709,
+   "out_seconds": 549.306,
+   "props": {
+    "title": "Rigid on the product axis",
+    "costs": [
+     "A lot of classes: factories \u00d7 products",
+     "Adding a NEW product type is hard",
+     "Every factory must implement every product"
+    ],
+    "dont": [
+     "The products aren't a matched family",
+     "There's only ever one family",
+     "Products change more than families do"
+    ],
+    "signal": "you create families of products that must stay consistent, and the family varies as a whole.",
+    "dur": 49.097
+   }
+  },
+  {
+   "id": "dp18-abstract-factory_recap",
+   "type": "dp_recap",
+   "in_seconds": 549.806,
+   "out_seconds": 608.638,
+   "props": {
+    "title": "Abstract Factory, in one breath",
+    "items": [
+     "Platform checks scattered at every creation site let families leak \u2014 a Mac button beside a Windows checkbox.",
+     "The app builds the same widgets; only the family varies and must stay consistent \u2014 so bundle a family behind one factory.",
+     "Abstract Factory: one factory makes a whole matching family; pick it once. New family, new factory \u2014 client unchanged."
+    ],
+    "challenge": "A data layer must produce a Connection, a Command, and a DataReader \u2014 matched for either MySQL or Postgres, never mixed.",
+    "question": "Does Abstract Factory fit? What's the factory, the family of products, and where is the choice made?",
+    "dur": 59.332
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.059,
+   "Some objects only make sense together."
+  ],
+  [
+   2.691,
+   3.72,
+   "A macOS button,"
+  ],
+  [
+   3.72,
+   4.75,
+   "a macOS checkbox,"
+  ],
+  [
+   4.75,
+   7.495,
+   "a macOS menu \u2014 they share a look,"
+  ],
+  [
+   7.495,
+   9.555,
+   "and they belong as a set."
+  ],
+  [
+   9.555,
+   12.3,
+   "Put a macOS button next to a Windows"
+  ],
+  [
+   12.3,
+   12.643,
+   "checkbox,"
+  ],
+  [
+   12.643,
+   14.359,
+   "and the interface looks broken."
+  ],
+  [
+   14.991,
+   17.736,
+   "So when your code creates one of them,"
+  ],
+  [
+   17.736,
+   20.482,
+   "it quietly commits to a whole family \u2014"
+  ],
+  [
+   20.482,
+   23.227,
+   "and it is dangerously easy to reach into"
+  ],
+  [
+   23.227,
+   24.257,
+   "the wrong one."
+  ],
+  [
+   24.889,
+   27.634,
+   "There is a way to create an entire"
+  ],
+  [
+   27.634,
+   29.35,
+   "matching family through one door."
+  ],
+  [
+   29.35,
+   31.066,
+   "Let's build a cross-platform UI."
+  ],
+  [
+   31.566,
+   33.111,
+   "Here is the system:"
+  ],
+  [
+   33.111,
+   33.883,
+   "one application,"
+  ],
+  [
+   33.883,
+   36.972,
+   "running on two platforms \u2014 macOS and Windows."
+  ],
+  [
+   37.604,
+   40.307,
+   "It builds the usual widgets \u2014 buttons,"
+  ],
+  [
+   40.307,
+   40.693,
+   "checkboxes,"
+  ],
+  [
+   40.693,
+   41.079,
+   "menus."
+  ],
+  [
+   41.711,
+   44.8,
+   "But every widget on the screen has to"
+  ],
+  [
+   44.8,
+   47.117,
+   "match the platform it runs on."
+  ],
+  [
+   47.117,
+   47.889,
+   "All macOS,"
+  ],
+  [
+   47.889,
+   50.592,
+   "or all Windows \u2014 never a mix."
+  ],
+  [
+   50.592,
+   53.681,
+   "A single Windows-style checkbox in an otherwise\nmacOS"
+  ],
+  [
+   53.681,
+   55.226,
+   "window looks instantly wrong."
+  ],
+  [
+   55.858,
+   58.947,
+   "So how does the app create a whole"
+  ],
+  [
+   58.947,
+   60.491,
+   "matching family of widgets,"
+  ],
+  [
+   60.491,
+   63.581,
+   "without hard-coding which platform at every single\nplace"
+  ],
+  [
+   63.581,
+   64.739,
+   "it makes one?"
+  ],
+  [
+   65.239,
+   66.24,
+   "The direct approach:"
+  ],
+  [
+   66.24,
+   68.91,
+   "check the platform wherever you build a widget."
+  ],
+  [
+   69.541,
+   70.542,
+   "Making a button?"
+  ],
+  [
+   70.542,
+   72.211,
+   "If we are on macOS,"
+  ],
+  [
+   72.211,
+   73.545,
+   "new a Mac button,"
+  ],
+  [
+   73.545,
+   74.88,
+   "otherwise a Windows one."
+  ],
+  [
+   74.88,
+   75.881,
+   "Making a checkbox?"
+  ],
+  [
+   75.881,
+   77.216,
+   "The same check again."
+  ],
+  [
+   77.216,
+   77.883,
+   "A menu?"
+  ],
+  [
+   77.883,
+   78.217,
+   "Again."
+  ],
+  [
+   78.848,
+   79.516,
+   "It works."
+  ],
+  [
+   80.147,
+   82.817,
+   "But that platform check is now copied to"
+  ],
+  [
+   82.817,
+   85.486,
+   "every place that creates any widget \u2014 dozens"
+  ],
+  [
+   85.486,
+   87.155,
+   "of sites across the app."
+  ],
+  [
+   87.786,
+   88.787,
+   "Add a screen,"
+  ],
+  [
+   88.787,
+   90.79,
+   "and you write the check again."
+  ],
+  [
+   90.79,
+   92.792,
+   "And the day someone forgets it,"
+  ],
+  [
+   92.792,
+   94.46,
+   "or gets the ternary backwards,"
+  ],
+  [
+   94.46,
+   97.13,
+   "you get a Mac button sitting in a"
+  ],
+  [
+   97.13,
+   97.797,
+   "Windows window."
+  ],
+  [
+   97.797,
+   99.799,
+   "The families leak into each other."
+  ],
+  [
+   100.299,
+   101.71,
+   "Then the platforms multiply."
+  ],
+  [
+   101.71,
+   102.415,
+   "Add Linux."
+  ],
+  [
+   102.415,
+   104.179,
+   "Add a high-contrast accessibility theme."
+  ],
+  [
+   104.811,
+   107.632,
+   "Every one of those scattered platform checks now"
+  ],
+  [
+   107.632,
+   110.454,
+   "needs a new branch \u2014 in the dialog,"
+  ],
+  [
+   110.454,
+   111.513,
+   "in the toolbar,"
+  ],
+  [
+   111.513,
+   112.218,
+   "in settings,"
+  ],
+  [
+   112.218,
+   113.276,
+   "in the wizard,"
+  ],
+  [
+   113.276,
+   113.629,
+   "everywhere."
+  ],
+  [
+   114.26,
+   117.082,
+   "And each check has to know how to"
+  ],
+  [
+   117.082,
+   119.904,
+   "build every kind of widget for the new"
+  ],
+  [
+   119.904,
+   120.257,
+   "platform."
+  ],
+  [
+   120.889,
+   123.005,
+   "Miss one branch in one place,"
+  ],
+  [
+   123.005,
+   125.827,
+   "and that screen silently falls back to the"
+  ],
+  [
+   125.827,
+   126.532,
+   "wrong family."
+  ],
+  [
+   127.164,
+   129.986,
+   "The knowledge of which widgets go together \u2014"
+  ],
+  [
+   129.986,
+   132.807,
+   "which should live in exactly one place \u2014"
+  ],
+  [
+   132.807,
+   135.629,
+   "is instead smeared across every corner of the"
+  ],
+  [
+   135.629,
+   137.393,
+   "app that builds a UI."
+  ],
+  [
+   137.893,
+   138.943,
+   "What is fixed,"
+  ],
+  [
+   138.943,
+   139.994,
+   "and what varies?"
+  ],
+  [
+   140.625,
+   140.975,
+   "Fixed:"
+  ],
+  [
+   140.975,
+   143.776,
+   "the app always builds the same kinds of"
+  ],
+  [
+   143.776,
+   145.176,
+   "widget \u2014 a button,"
+  ],
+  [
+   145.176,
+   145.877,
+   "a checkbox,"
+  ],
+  [
+   145.877,
+   146.577,
+   "a menu."
+  ],
+  [
+   146.577,
+   149.378,
+   "Every widget it builds has to belong to"
+  ],
+  [
+   149.378,
+   150.428,
+   "one consistent family."
+  ],
+  [
+   150.428,
+   153.229,
+   "And the app itself should never have to"
+  ],
+  [
+   153.229,
+   155.329,
+   "name a concrete class like Mac-button."
+  ],
+  [
+   155.961,
+   158.762,
+   "What varies is only which family \u2014 macOS,"
+  ],
+  [
+   158.762,
+   159.112,
+   "Windows,"
+  ],
+  [
+   159.112,
+   161.913,
+   "Linux \u2014 and that choice has to be"
+  ],
+  [
+   161.913,
+   162.613,
+   "made consistently,"
+  ],
+  [
+   162.613,
+   163.663,
+   "everywhere at once."
+  ],
+  [
+   164.295,
+   165.695,
+   "Here is the move."
+  ],
+  [
+   166.327,
+   169.127,
+   "Bundle the creation of the entire family behind"
+  ],
+  [
+   169.127,
+   171.228,
+   "a single object \u2014 a factory."
+  ],
+  [
+   171.228,
+   173.679,
+   "One factory makes all the macOS widgets;"
+  ],
+  [
+   173.679,
+   175.779,
+   "another makes all the Windows ones."
+  ],
+  [
+   175.779,
+   177.88,
+   "The app picks a factory once,"
+  ],
+  [
+   177.88,
+   180.681,
+   "then asks it for widgets \u2014 never choosing"
+  ],
+  [
+   180.681,
+   182.081,
+   "a concrete class again."
+  ],
+  [
+   182.581,
+   184.667,
+   "Think of hiring an interior designer."
+  ],
+  [
+   185.299,
+   188.081,
+   "You do not buy a sofa from one"
+  ],
+  [
+   188.081,
+   188.429,
+   "place,"
+  ],
+  [
+   188.429,
+   189.82,
+   "a chair from another,"
+  ],
+  [
+   189.82,
+   191.558,
+   "a lamp from a third,"
+  ],
+  [
+   191.558,
+   192.949,
+   "and pray they match."
+  ],
+  [
+   193.581,
+   194.972,
+   "You pick one designer,"
+  ],
+  [
+   194.972,
+   197.753,
+   "and everything they bring you \u2014 the sofa,"
+  ],
+  [
+   197.753,
+   198.449,
+   "the chair,"
+  ],
+  [
+   198.449,
+   200.188,
+   "the lamp \u2014 belongs together,"
+  ],
+  [
+   200.188,
+   202.969,
+   "because it all comes from the same taste,"
+  ],
+  [
+   202.969,
+   204.013,
+   "the same hand."
+  ],
+  [
+   204.644,
+   207.426,
+   "The designer you hire is the concrete factory."
+  ],
+  [
+   207.426,
+   210.208,
+   "The matching furniture is a family of products."
+  ],
+  [
+   210.208,
+   212.642,
+   "Asking for a chair is calling create-button,"
+  ],
+  [
+   212.642,
+   213.338,
+   "or create-checkbox."
+  ],
+  [
+   213.338,
+   214.729,
+   "And choosing the designer,"
+  ],
+  [
+   214.729,
+   215.076,
+   "once,"
+  ],
+  [
+   215.076,
+   217.163,
+   "is picking your factory at startup."
+  ],
+  [
+   217.794,
+   218.837,
+   "Where it strains:"
+  ],
+  [
+   218.837,
+   220.924,
+   "a real designer can improvise anything."
+  ],
+  [
+   220.924,
+   223.706,
+   "A factory only makes the exact product types"
+  ],
+  [
+   223.706,
+   225.444,
+   "its interface declares \u2014 button,"
+  ],
+  [
+   225.444,
+   225.792,
+   "checkbox,"
+  ],
+  [
+   225.792,
+   226.14,
+   "menu,"
+  ],
+  [
+   226.14,
+   227.183,
+   "and no more."
+  ],
+  [
+   227.683,
+   228.445,
+   "The refactor,"
+  ],
+  [
+   228.445,
+   229.207,
+   "step one."
+  ],
+  [
+   229.839,
+   232.888,
+   "Define one factory interface \u2014 GUIFactory \u2014 that"
+  ],
+  [
+   232.888,
+   235.555,
+   "declares how to make the whole family."
+  ],
+  [
+   235.555,
+   236.699,
+   "Create a button."
+  ],
+  [
+   236.699,
+   237.842,
+   "Create a checkbox."
+  ],
+  [
+   237.842,
+   240.51,
+   "One method per product in the family."
+  ],
+  [
+   241.141,
+   244.19,
+   "And the products themselves are interfaces too \u2014"
+  ],
+  [
+   244.19,
+   246.096,
+   "a Button you can render,"
+  ],
+  [
+   246.096,
+   249.144,
+   "a Checkbox you can toggle \u2014 with no"
+  ],
+  [
+   249.144,
+   250.669,
+   "mention of any platform."
+  ],
+  [
+   251.3,
+   253.206,
+   "Notice what this interface promises:"
+  ],
+  [
+   253.206,
+   254.73,
+   "not a single widget,"
+  ],
+  [
+   254.73,
+   256.255,
+   "but a coordinated set."
+  ],
+  [
+   256.255,
+   259.303,
+   "Whoever implements it commits to producing a\nbutton"
+  ],
+  [
+   259.303,
+   261.59,
+   "and a checkbox that belong together."
+  ],
+  [
+   262.09,
+   262.863,
+   "Step two:"
+  ],
+  [
+   262.863,
+   264.794,
+   "one concrete factory per family."
+  ],
+  [
+   265.426,
+   268.516,
+   "The Mac factory implements the interface by\nreturning"
+  ],
+  [
+   268.516,
+   270.834,
+   "Mac widgets \u2014 a Mac button,"
+  ],
+  [
+   270.834,
+   271.993,
+   "a Mac checkbox."
+  ],
+  [
+   272.625,
+   274.943,
+   "The Windows factory returns Windows widgets."
+  ],
+  [
+   275.574,
+   278.665,
+   "And here is the guarantee that the scattered"
+  ],
+  [
+   278.665,
+   280.596,
+   "if-checks could never give you:"
+  ],
+  [
+   280.596,
+   283.687,
+   "because a single factory builds the whole family,"
+  ],
+  [
+   283.687,
+   285.618,
+   "everything it produces automatically matches."
+  ],
+  [
+   285.618,
+   288.709,
+   "It is structurally impossible for the Mac factory"
+  ],
+  [
+   288.709,
+   291.027,
+   "to hand you a Windows checkbox."
+  ],
+  [
+   291.027,
+   294.117,
+   "Consistency is no longer something you must\nremember"
+  ],
+  [
+   294.117,
+   297.208,
+   "\u2014 it is built into which object you"
+  ],
+  [
+   297.208,
+   297.594,
+   "asked."
+  ],
+  [
+   298.094,
+   299.915,
+   "Your turn \u2014 pause here."
+  ],
+  [
+   300.547,
+   302.004,
+   "Here is a dialog."
+  ],
+  [
+   302.004,
+   304.918,
+   "It is handed a GUIFactory \u2014 but it"
+  ],
+  [
+   304.918,
+   306.011,
+   "is not told,"
+  ],
+  [
+   306.011,
+   307.468,
+   "and does not know,"
+  ],
+  [
+   307.468,
+   308.196,
+   "which one."
+  ],
+  [
+   308.828,
+   311.742,
+   "Build a button and a checkbox for the"
+  ],
+  [
+   311.742,
+   312.106,
+   "dialog,"
+  ],
+  [
+   312.106,
+   313.563,
+   "using only that factory."
+  ],
+  [
+   314.195,
+   316.016,
+   "And as you write it,"
+  ],
+  [
+   316.016,
+   317.838,
+   "ask yourself the key question:"
+  ],
+  [
+   317.838,
+   320.752,
+   "which platform is this dialog code tied to?"
+  ],
+  [
+   321.383,
+   323.205,
+   "The answer should be none."
+  ],
+  [
+   323.205,
+   325.026,
+   "If you never write new-Mac-anything,"
+  ],
+  [
+   325.026,
+   327.94,
+   "this exact code renders correctly on every\nplatform"
+  ],
+  [
+   327.94,
+   329.397,
+   "you will ever add."
+  ],
+  [
+   329.897,
+   330.639,
+   "Step three,"
+  ],
+  [
+   330.639,
+   333.236,
+   "and the scattered checks collapse into one."
+  ],
+  [
+   333.868,
+   336.836,
+   "At startup \u2014 and only here \u2014 the"
+  ],
+  [
+   336.836,
+   339.804,
+   "app looks at the current platform and picks"
+  ],
+  [
+   339.804,
+   340.917,
+   "the matching factory."
+  ],
+  [
+   340.917,
+   341.288,
+   "Mac,"
+  ],
+  [
+   341.288,
+   341.659,
+   "Windows,"
+  ],
+  [
+   341.659,
+   342.773,
+   "whatever it is."
+  ],
+  [
+   343.404,
+   346.372,
+   "That is now the single platform check in"
+  ],
+  [
+   346.372,
+   347.485,
+   "the entire application."
+  ],
+  [
+   348.117,
+   351.085,
+   "It hands that one factory down to the"
+  ],
+  [
+   351.085,
+   351.456,
+   "dialog,"
+  ],
+  [
+   351.456,
+   352.198,
+   "the toolbar,"
+  ],
+  [
+   352.198,
+   352.94,
+   "every screen."
+  ],
+  [
+   353.572,
+   356.54,
+   "And all of that code below is completely"
+  ],
+  [
+   356.54,
+   356.911,
+   "platform-blind."
+  ],
+  [
+   356.911,
+   359.508,
+   "It just asks its factory for widgets,"
+  ],
+  [
+   359.508,
+   361.735,
+   "and gets a perfectly matched family,"
+  ],
+  [
+   361.735,
+   362.477,
+   "every time."
+  ],
+  [
+   362.477,
+   364.703,
+   "The one decision was made once,"
+  ],
+  [
+   364.703,
+   365.816,
+   "at the top."
+  ],
+  [
+   366.316,
+   369.118,
+   "Now the change that used to touch the"
+  ],
+  [
+   369.118,
+   369.819,
+   "whole codebase."
+  ],
+  [
+   369.819,
+   371.22,
+   "Add a Linux theme."
+  ],
+  [
+   371.851,
+   373.252,
+   "With the scattered checks,"
+  ],
+  [
+   373.252,
+   376.054,
+   "that meant finding every platform branch and\nadding"
+  ],
+  [
+   376.054,
+   378.856,
+   "a Linux case to each \u2014 and missing"
+  ],
+  [
+   378.856,
+   380.608,
+   "one meant a broken screen."
+  ],
+  [
+   381.239,
+   382.29,
+   "With abstract factory?"
+  ],
+  [
+   382.29,
+   385.092,
+   "You write one new factory \u2014 LinuxFactory \u2014"
+  ],
+  [
+   385.092,
+   386.493,
+   "and its Linux widgets."
+  ],
+  [
+   386.493,
+   389.295,
+   "Then you add a single case to that"
+  ],
+  [
+   389.295,
+   390.346,
+   "one startup switch."
+  ],
+  [
+   390.977,
+   391.678,
+   "Every dialog,"
+  ],
+  [
+   391.678,
+   392.378,
+   "every toolbar,"
+  ],
+  [
+   392.378,
+   395.18,
+   "every screen in the app now renders in"
+  ],
+  [
+   395.18,
+   397.982,
+   "Linux widgets \u2014 with not one line changed"
+  ],
+  [
+   397.982,
+   399.383,
+   "anywhere below the top."
+  ],
+  [
+   399.383,
+   402.185,
+   "And a Linux button can never accidentally appear"
+  ],
+  [
+   402.185,
+   403.586,
+   "beside a Mac checkbox,"
+  ],
+  [
+   403.586,
+   405.688,
+   "because no factory ever mixes families."
+  ],
+  [
+   406.188,
+   408.557,
+   "This is the Abstract Factory pattern."
+  ],
+  [
+   409.189,
+   410.374,
+   "In the center,"
+  ],
+  [
+   410.374,
+   413.533,
+   "the abstract factory \u2014 GUIFactory \u2014 declaring how"
+  ],
+  [
+   413.533,
+   415.507,
+   "to create a whole family:"
+  ],
+  [
+   415.507,
+   416.297,
+   "a button,"
+  ],
+  [
+   416.297,
+   417.087,
+   "a checkbox."
+  ],
+  [
+   417.718,
+   418.508,
+   "Below it,"
+  ],
+  [
+   418.508,
+   421.667,
+   "the concrete factories \u2014 Mac and Windows \u2014"
+  ],
+  [
+   421.667,
+   424.826,
+   "each implementing that interface to produce one\nmatching"
+  ],
+  [
+   424.826,
+   425.221,
+   "family."
+  ],
+  [
+   425.853,
+   427.038,
+   "On the right,"
+  ],
+  [
+   427.038,
+   430.197,
+   "the product interfaces the factory creates \u2014\nButton"
+  ],
+  [
+   430.197,
+   433.356,
+   "and Checkbox \u2014 each with its own concrete"
+  ],
+  [
+   433.356,
+   434.541,
+   "versions per family."
+  ],
+  [
+   435.172,
+   436.357,
+   "Follow it through."
+  ],
+  [
+   436.357,
+   438.331,
+   "The client holds a GUIFactory."
+  ],
+  [
+   438.331,
+   441.49,
+   "It asks for a button and a checkbox."
+  ],
+  [
+   441.49,
+   444.65,
+   "And whichever concrete factory is behind the\ninterface,"
+  ],
+  [
+   444.65,
+   447.809,
+   "the two products it returns always belong to"
+  ],
+  [
+   447.809,
+   448.993,
+   "the same family."
+  ],
+  [
+   449.625,
+   452.784,
+   "One choice of factory fixes the entire look,"
+  ],
+  [
+   452.784,
+   453.179,
+   "consistently."
+  ],
+  [
+   453.679,
+   454.579,
+   "The names,"
+  ],
+  [
+   454.579,
+   456.378,
+   "mapped to your code."
+  ],
+  [
+   457.01,
+   459.709,
+   "The AbstractFactory is the GUIFactory interface."
+  ],
+  [
+   460.341,
+   463.04,
+   "The ConcreteFactories are Mac-factory and\nWin-factory."
+  ],
+  [
+   463.672,
+   467.271,
+   "The AbstractProducts are the Button and Checkbox\ninterfaces."
+  ],
+  [
+   467.903,
+   471.502,
+   "And the ConcreteProducts are the specific widgets\n\u2014"
+  ],
+  [
+   471.502,
+   471.952,
+   "Mac-button,"
+  ],
+  [
+   471.952,
+   472.402,
+   "Win-checkbox,"
+  ],
+  [
+   472.402,
+   473.751,
+   "and the rest."
+  ],
+  [
+   474.383,
+   477.982,
+   "The client only ever touches the abstract factory"
+  ],
+  [
+   477.982,
+   479.782,
+   "and the abstract products;"
+  ],
+  [
+   479.782,
+   482.481,
+   "it never names a concrete class."
+  ],
+  [
+   483.113,
+   484.912,
+   "The Gang of Four:"
+  ],
+  [
+   484.912,
+   488.512,
+   "provide an interface for creating families of\nrelated"
+  ],
+  [
+   488.512,
+   489.861,
+   "or dependent objects,"
+  ],
+  [
+   489.861,
+   492.111,
+   "without specifying their concrete classes."
+  ],
+  [
+   492.111,
+   494.36,
+   "Compare it to Factory Method,"
+  ],
+  [
+   494.36,
+   497.51,
+   "from earlier \u2014 that made one product;"
+  ],
+  [
+   497.51,
+   500.209,
+   "this makes a whole matching family."
+  ],
+  [
+   500.709,
+   502.712,
+   "Abstract Factory has a specific weakness,"
+  ],
+  [
+   502.712,
+   505.049,
+   "and it is worth knowing exactly where."
+  ],
+  [
+   505.681,
+   508.351,
+   "It is comfortable adding a new family \u2014"
+  ],
+  [
+   508.351,
+   510.688,
+   "a new platform is one new factory."
+  ],
+  [
+   510.688,
+   513.025,
+   "But it is rigid the other way."
+  ],
+  [
+   513.025,
+   515.362,
+   "Add a new product type \u2014 say,"
+  ],
+  [
+   515.362,
+   518.033,
+   "a slider \u2014 and you must change the"
+  ],
+  [
+   518.033,
+   518.701,
+   "factory interface,"
+  ],
+  [
+   518.701,
+   520.704,
+   "and then every single concrete factory,"
+  ],
+  [
+   520.704,
+   521.705,
+   "to create it."
+  ],
+  [
+   521.705,
+   524.376,
+   "The pattern is easy to extend by family,"
+  ],
+  [
+   524.376,
+   526.045,
+   "hard to extend by product."
+  ],
+  [
+   526.677,
+   529.347,
+   "And it comes with a lot of classes"
+  ],
+  [
+   529.347,
+   531.351,
+   "\u2014 every factory times every product."
+  ],
+  [
+   531.982,
+   534.653,
+   "So skip it when the products are not"
+  ],
+  [
+   534.653,
+   535.988,
+   "really a matched family,"
+  ],
+  [
+   535.988,
+   538.325,
+   "when there is only ever one family,"
+  ],
+  [
+   538.325,
+   540.996,
+   "or when you add product types far more"
+  ],
+  [
+   540.996,
+   541.998,
+   "often than families."
+  ],
+  [
+   542.629,
+   545.3,
+   "Reach for it when you create families of"
+  ],
+  [
+   545.3,
+   547.303,
+   "related products that must stay consistent,"
+  ],
+  [
+   547.303,
+   549.306,
+   "and the whole family varies together."
+  ],
+  [
+   549.806,
+   550.551,
+   "Abstract Factory,"
+  ],
+  [
+   550.551,
+   551.669,
+   "in one breath."
+  ],
+  [
+   552.301,
+   555.282,
+   "Platform checks scattered at every creation site\nlet"
+  ],
+  [
+   555.282,
+   558.264,
+   "the families leak into each other \u2014 a"
+  ],
+  [
+   558.264,
+   561.245,
+   "Mac button ending up beside a Windows checkbox."
+  ],
+  [
+   561.877,
+   564.858,
+   "But the app always builds the same widgets;"
+  ],
+  [
+   564.858,
+   566.349,
+   "only the family varies,"
+  ],
+  [
+   566.349,
+   569.33,
+   "and it has to stay consistent \u2014 so"
+  ],
+  [
+   569.33,
+   572.312,
+   "you bundle the whole family behind one factory."
+  ],
+  [
+   572.943,
+   573.689,
+   "Abstract Factory:"
+  ],
+  [
+   573.689,
+   576.67,
+   "a single factory makes an entire matching family,"
+  ],
+  [
+   576.67,
+   578.534,
+   "and you pick it once."
+  ],
+  [
+   578.534,
+   581.142,
+   "A new family is one new factory,"
+  ],
+  [
+   581.142,
+   583.006,
+   "and the client never changes."
+  ],
+  [
+   583.637,
+   585.873,
+   "Here is one to carry out."
+  ],
+  [
+   586.505,
+   589.114,
+   "A data-access layer must produce a connection,"
+  ],
+  [
+   589.114,
+   589.859,
+   "a command,"
+  ],
+  [
+   589.859,
+   592.84,
+   "and a data reader \u2014 all matched for"
+  ],
+  [
+   592.84,
+   594.331,
+   "either MySQL or Postgres,"
+  ],
+  [
+   594.331,
+   596.195,
+   "and never mixed between them."
+  ],
+  [
+   596.826,
+   598.317,
+   "Does Abstract Factory fit?"
+  ],
+  [
+   598.317,
+   599.808,
+   "What is the factory,"
+  ],
+  [
+   599.808,
+   602.044,
+   "what is the family of products,"
+  ],
+  [
+   602.044,
+   605.025,
+   "and where is the choice of family made?"
+  ],
+  [
+   605.657,
+   606.029,
+   "Pause,"
+  ],
+  [
+   606.029,
+   608.638,
+   "and sketch it before the next episode."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp18-abstract-factory.wav",
+   "volume": 1.0
+  }
+ }
+}

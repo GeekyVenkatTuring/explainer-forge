@@ -1,0 +1,2010 @@
+{
+ "cuts": [
+  {
+   "id": "dp14-iterator_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 26.121,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 14",
+    "line1": "Walk it",
+    "line2": "without knowing its shape",
+    "sub": "one way to visit every element, whatever the collection is underneath",
+    "dur": 26.621
+   }
+  },
+  {
+   "id": "dp14-iterator_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 26.621,
+   "out_seconds": 59.555,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Play every song in a playlist",
+    "situation": "A playlist holds songs. Today it's backed by an array. Tomorrow it might be a shuffled linked structure, or a tree of nested playlists \u2014 but callers just want each song, in order.",
+    "actors": [
+     {
+      "emoji": "\ud83c\udfb5",
+      "label": "A playlist"
+     },
+     {
+      "emoji": "\ud83d\uddc2\ufe0f",
+      "label": "\u2026some internal store"
+     },
+     {
+      "emoji": "\u25b6\ufe0f",
+      "label": "visit each in order"
+     }
+    ],
+    "ask": "How do callers walk every song without knowing how it's stored inside?",
+    "dur": 33.434
+   }
+  },
+  {
+   "id": "dp14-iterator_naive",
+   "type": "dp_code",
+   "in_seconds": 60.055,
+   "out_seconds": 95.23,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "Loop over the index.",
+    "file": "Player.java",
+    "lines": [
+     {
+      "t": "Playlist pl = ...;"
+     },
+     {
+      "t": "for (int i = 0; i < pl.size(); i++) {",
+      "s": "hi"
+     },
+     {
+      "t": "  Song s = pl.get(i);        // assumes an index",
+      "s": "hi"
+     },
+     {
+      "t": "  play(s);"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "// or worse: for (Song s : pl.songsArray()) ..."
+     },
+     {
+      "t": "//          the internal array, handed right out"
+     }
+    ],
+    "note": "size() + get(i) leak that it's index-based. songsArray() leaks it entirely.",
+    "dur": 35.675
+   }
+  },
+  {
+   "id": "dp14-iterator_pain",
+   "type": "dp_pain",
+   "in_seconds": 95.73,
+   "out_seconds": 133.228,
+   "props": {
+    "title": "\"Make shuffle cheap. Also, nested playlists.\"",
+    "file": "breaks.java",
+    "lines": [
+     {
+      "t": "// switch backing to a linked list for O(1) shuffle",
+      "s": "hi"
+     },
+     {
+      "t": "pl.get(i);   // now O(n) \u2014 the loop is O(n\u00b2)!",
+      "s": "hi"
+     },
+     {
+      "t": "// and a TREE of playlists has no 'index' at all",
+      "s": "hi"
+     },
+     {
+      "t": "for (int i...) // ...cannot express a tree walk"
+     },
+     {
+      "t": "player, exporter, shuffler \u2014 every loop rewrites",
+      "s": "hi"
+     }
+    ],
+    "smell": "Every caller re-encodes how the collection is traversed",
+    "touched": [
+     "array \u2192 linked list: get(i) goes O(n)",
+     "index loop silently becomes O(n\u00b2)",
+     "a tree has no index to loop at all",
+     "player, export, shuffle \u2014 all rewritten"
+    ],
+    "dur": 37.998
+   }
+  },
+  {
+   "id": "dp14-iterator_insight",
+   "type": "dp_insight",
+   "in_seconds": 133.728,
+   "out_seconds": 172.231,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "Callers want each element, one at a time",
+     "\"Is there another?\" then \"give it to me\"",
+     "They stop when the collection is exhausted"
+    ],
+    "varies": [
+     "How the elements are stored",
+     "How you advance to the next one"
+    ],
+    "principle": "Extract a cursor object that knows how to walk THIS structure: hasNext(), then next().",
+    "dur": 39.003
+   }
+  },
+  {
+   "id": "dp14-iterator_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 172.731,
+   "out_seconds": 217.466,
+   "props": {
+    "title": "A museum audio guide",
+    "emoji": "\ud83c\udfa7",
+    "analogy": "You press 'next' and hear the next exhibit; the guide knows the route \u2014 you never read the floor plan.",
+    "map": [
+     {
+      "from": "Pressing 'next'",
+      "to": "the next() call"
+     },
+     {
+      "from": "\"Is the tour over?\"",
+      "to": "hasNext()"
+     },
+     {
+      "from": "The guide's hidden route",
+      "to": "the traversal logic"
+     },
+     {
+      "from": "The museum's layout",
+      "to": "the collection's internal store"
+     }
+    ],
+    "breaks": "an audio guide has one fixed route; a collection can hand out a fresh, independent cursor to each caller at once.",
+    "dur": 45.235
+   }
+  },
+  {
+   "id": "dp14-iterator_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 217.966,
+   "out_seconds": 250.548,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "Name the two questions: Iterator",
+    "file": "Iterator.java",
+    "lines": [
+     {
+      "t": "interface Iterator<T> {   // Java already has this",
+      "s": "add"
+     },
+     {
+      "t": "  boolean hasNext();",
+      "s": "add"
+     },
+     {
+      "t": "  T next();",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "class Playlist implements Iterable<Song> {"
+     },
+     {
+      "t": "  public Iterator<Song> iterator() { ... }",
+      "s": "hi"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Playlist promises only to HAND OUT a cursor \u2014 not to reveal its store.",
+    "dur": 33.082
+   }
+  },
+  {
+   "id": "dp14-iterator_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 251.048,
+   "out_seconds": 290.639,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "The cursor holds the traversal state",
+    "file": "PlaylistIterator.java",
+    "lines": [
+     {
+      "t": "class PlaylistIterator implements Iterator<Song> {",
+      "s": "hi"
+     },
+     {
+      "t": "  private Node cursor = head;   // walks a linked list"
+     },
+     {
+      "t": "  public boolean hasNext() { return cursor != null; }",
+      "s": "hi"
+     },
+     {
+      "t": "  public Song next() {"
+     },
+     {
+      "t": "    Song s = cursor.song; cursor = cursor.nextNode;"
+     },
+     {
+      "t": "    return s;"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "All the 'how to walk it' logic \u2014 the cursor \u2014 lives here, and only here.",
+    "dur": 40.091
+   }
+  },
+  {
+   "id": "dp14-iterator_try",
+   "type": "dp_try",
+   "in_seconds": 291.139,
+   "out_seconds": 317.262,
+   "props": {
+    "title": "Write hasNext() for an array store",
+    "file": "ArrayPlaylistIterator.java",
+    "lines": [
+     {
+      "t": "private final Song[] songs;"
+     },
+     {
+      "t": "private int pos = 0;      // cursor into the array"
+     },
+     {
+      "t": "public boolean hasNext() {"
+     },
+     {
+      "t": "  // \u25af is there still a song at pos?",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "This cursor walks an array by index. When is there another song to give?",
+    "hint": "return pos < songs.length;",
+    "dur": 26.623
+   }
+  },
+  {
+   "id": "dp14-iterator_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 317.762,
+   "out_seconds": 356.693,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "Every caller becomes one for-each",
+    "file": "callers.java",
+    "lines": [
+     {
+      "t": "for (Song s : playlist)   // Java calls iterator()",
+      "s": "add"
+     },
+     {
+      "t": "  play(s);                // for you, invisibly",
+      "s": "add"
+     },
+     {
+      "t": "// exporter, shuffler \u2014 the exact same loop"
+     },
+     {
+      "t": "// swap array \u2192 linked list \u2192 tree:"
+     },
+     {
+      "t": "//   the for-each above does not change",
+      "s": "hi"
+     }
+    ],
+    "note": "for-each just calls iterator(). Change the store; the loop is untouched.",
+    "dur": 39.431
+   }
+  },
+  {
+   "id": "dp14-iterator_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 357.193,
+   "out_seconds": 392.262,
+   "props": {
+    "requirement": "\"Play a TREE of nested playlists, in order\"",
+    "naiveLabel": "Before",
+    "naiveCost": "The index loop can't walk a tree at all.",
+    "naiveSteps": [
+     "for-i assumes a flat index",
+     "a tree has none \u2014 rewrite everything",
+     "traversal logic bleeds into callers"
+    ],
+    "patLabel": "Now",
+    "patCost": "One new cursor. Every for-each just works.",
+    "patFile": "TreeIterator.java",
+    "patLines": [
+     {
+      "t": "class TreeIterator implements Iterator<Song> {",
+      "s": "add"
+     },
+     {
+      "t": "  Deque<Node> stack = ...;   // depth-first",
+      "s": "add"
+     },
+     {
+      "t": "  public Song next() { /* pop, push kids */ }",
+      "s": "add"
+     },
+     {
+      "t": "}   // for (Song s : tree) \u2014 unchanged",
+      "s": "add"
+     }
+    ],
+    "dur": 35.569
+   }
+  },
+  {
+   "id": "dp14-iterator_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 392.762,
+   "out_seconds": 432.514,
+   "props": {
+    "name": "The Iterator Pattern",
+    "plain": "Give a collection a cursor object that walks its elements one at a time, so clients traverse it without ever seeing how it's stored.",
+    "nodes": [
+     {
+      "id": "iter",
+      "title": "Iterator<Song>",
+      "stereo": "interface",
+      "members": [
+       "+ hasNext(): bool",
+       "+ next(): Song"
+      ],
+      "x": 760,
+      "y": 200,
+      "w": 400,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "agg",
+      "title": "Playlist",
+      "stereo": "Iterable",
+      "members": [
+       "- songs (any store)",
+       "+ iterator()"
+      ],
+      "x": 150,
+      "y": 470,
+      "w": 380,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "conc",
+      "title": "PlaylistIterator",
+      "stereo": "iterator",
+      "members": [
+       "- cursor / stack",
+       "+ hasNext() / next()"
+      ],
+      "x": 1400,
+      "y": 470,
+      "w": 400,
+      "color": "#A78BFA"
+     }
+    ],
+    "edges": [
+     {
+      "from": "conc",
+      "to": "iter",
+      "kind": "impl"
+     },
+     {
+      "from": "agg",
+      "to": "conc",
+      "kind": "assoc"
+     }
+    ],
+    "dur": 40.252
+   }
+  },
+  {
+   "id": "dp14-iterator_map",
+   "type": "dp_map",
+   "in_seconds": 433.014,
+   "out_seconds": 472.807,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Iterator",
+      "your": "java.util.Iterator<T>"
+     },
+     {
+      "role": "ConcreteIterator",
+      "your": "PlaylistIterator (holds the cursor)"
+     },
+     {
+      "role": "Aggregate",
+      "your": "Playlist implements Iterable<Song>"
+     },
+     {
+      "role": "Client",
+      "your": "for (Song s : playlist) \u2014 hidden calls"
+     }
+    ],
+    "plain": "The aggregate creates a concrete iterator that holds the traversal state; the client drives hasNext()/next() \u2014 usually via for-each.",
+    "gof": "Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.",
+    "dur": 40.293
+   }
+  },
+  {
+   "id": "dp14-iterator_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 473.307,
+   "out_seconds": 520.899,
+   "props": {
+    "title": "A cursor is still an object",
+    "costs": [
+     "A separate iterator class per structure",
+     "The cursor holds mutable position state",
+     "Modify the collection mid-walk \u2192 it may throw"
+    ],
+    "dont": [
+     "It's already a List you can for-each",
+     "You need random access by index",
+     "The collection is tiny and fixed"
+    ],
+    "signal": "you expose, or keep rewriting, how a collection is traversed \u2014 especially if its internal structure might change.",
+    "dur": 48.092
+   }
+  },
+  {
+   "id": "dp14-iterator_recap",
+   "type": "dp_recap",
+   "in_seconds": 521.399,
+   "out_seconds": 578.57,
+   "props": {
+    "title": "Iterator, in one breath",
+    "items": [
+     "Index loops assumed how the collection was stored \u2014 so changing the store silently broke, or slowed, every caller.",
+     "Callers only ever ask 'another?' then 'give it' \u2014 so hand them a cursor that answers exactly that: hasNext(), next().",
+     "Iterator: the collection creates a cursor holding the traversal; clients walk any shape the same way. New structure, new cursor."
+    ],
+    "challenge": "A REST API returns results one page at a time. You want callers to treat it as one endless stream of items \u2014 each next() may quietly fetch the following page.",
+    "question": "Does Iterator fit? What's the aggregate, the cursor, and what state does next() hide?",
+    "dur": 57.671
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.242,
+   "You have a collection,"
+  ],
+  [
+   1.242,
+   3.727,
+   "and you want to visit every item in"
+  ],
+  [
+   3.727,
+   4.038,
+   "it."
+  ],
+  [
+   4.669,
+   7.154,
+   "Simple \u2014 until the collection is not a"
+  ],
+  [
+   7.154,
+   7.775,
+   "flat list."
+  ],
+  [
+   7.775,
+   9.018,
+   "It is a tree,"
+  ],
+  [
+   9.018,
+   10.26,
+   "or a ring buffer,"
+  ],
+  [
+   10.26,
+   12.745,
+   "or a stream of pages from a server."
+  ],
+  [
+   13.376,
+   15.861,
+   "If your loop knows how the items are"
+  ],
+  [
+   15.861,
+   16.172,
+   "stored,"
+  ],
+  [
+   16.172,
+   18.346,
+   "then the day you change the storage,"
+  ],
+  [
+   18.346,
+   20.209,
+   "every loop that touched it breaks."
+  ],
+  [
+   20.841,
+   23.326,
+   "There is a way to walk any collection"
+  ],
+  [
+   23.326,
+   24.879,
+   "without ever knowing its shape."
+  ],
+  [
+   24.879,
+   26.121,
+   "Let's build a playlist."
+  ],
+  [
+   26.621,
+   27.958,
+   "Here is the collection:"
+  ],
+  [
+   27.958,
+   29.294,
+   "a playlist of songs."
+  ],
+  [
+   29.926,
+   30.594,
+   "Right now,"
+  ],
+  [
+   30.594,
+   33.267,
+   "it happens to be backed by a plain"
+  ],
+  [
+   33.267,
+   33.601,
+   "array."
+  ],
+  [
+   34.233,
+   35.57,
+   "But that could change."
+  ],
+  [
+   35.57,
+   38.243,
+   "Tomorrow it might be a linked structure so"
+  ],
+  [
+   38.243,
+   39.245,
+   "shuffling is cheap,"
+  ],
+  [
+   39.245,
+   41.918,
+   "or even a tree of nested playlists \u2014"
+  ],
+  [
+   41.918,
+   44.592,
+   "an album inside a mix inside a mix."
+  ],
+  [
+   45.223,
+   46.56,
+   "Through all of that,"
+  ],
+  [
+   46.56,
+   48.899,
+   "every caller wants the same simple thing:"
+  ],
+  [
+   48.899,
+   50.236,
+   "give me each song,"
+  ],
+  [
+   50.236,
+   50.904,
+   "in order,"
+  ],
+  [
+   50.904,
+   52.575,
+   "until there are no more."
+  ],
+  [
+   53.206,
+   55.879,
+   "So how do they walk the whole playlist"
+  ],
+  [
+   55.879,
+   56.548,
+   "without knowing,"
+  ],
+  [
+   56.548,
+   57.216,
+   "or caring,"
+  ],
+  [
+   57.216,
+   59.555,
+   "how the songs are stored inside it?"
+  ],
+  [
+   60.055,
+   61.097,
+   "The obvious approach:"
+  ],
+  [
+   61.097,
+   62.139,
+   "loop by index."
+  ],
+  [
+   62.771,
+   64.507,
+   "Ask the playlist its size,"
+  ],
+  [
+   64.507,
+   65.896,
+   "then pull song zero,"
+  ],
+  [
+   65.896,
+   66.591,
+   "song one,"
+  ],
+  [
+   66.591,
+   67.286,
+   "song two,"
+  ],
+  [
+   67.286,
+   68.328,
+   "and play each."
+  ],
+  [
+   68.959,
+   71.738,
+   "It works \u2014 as long as the playlist"
+  ],
+  [
+   71.738,
+   73.127,
+   "is an array underneath."
+  ],
+  [
+   73.127,
+   74.517,
+   "Because get of i,"
+  ],
+  [
+   74.517,
+   75.211,
+   "and size,"
+  ],
+  [
+   75.211,
+   77.99,
+   "quietly assume there is an index to count"
+  ],
+  [
+   77.99,
+   78.337,
+   "through."
+  ],
+  [
+   78.969,
+   81.747,
+   "And the tempting shortcut is even worse \u2014"
+  ],
+  [
+   81.747,
+   84.526,
+   "expose the internal array directly and let callers"
+  ],
+  [
+   84.526,
+   85.568,
+   "loop over that."
+  ],
+  [
+   86.2,
+   88.978,
+   "Now the player is not just using the"
+  ],
+  [
+   88.978,
+   89.325,
+   "playlist."
+  ],
+  [
+   89.325,
+   92.104,
+   "It knows exactly how the playlist stores its"
+  ],
+  [
+   92.104,
+   94.883,
+   "songs \u2014 and it has welded itself to"
+  ],
+  [
+   94.883,
+   95.23,
+   "that."
+  ],
+  [
+   95.73,
+   97.115,
+   "Then the requirements shift."
+  ],
+  [
+   97.747,
+   98.785,
+   "Make shuffle cheap,"
+  ],
+  [
+   98.785,
+   101.555,
+   "so you switch the backing to a linked"
+  ],
+  [
+   101.555,
+   101.902,
+   "list."
+  ],
+  [
+   102.533,
+   105.303,
+   "Suddenly get of i is no longer instant"
+  ],
+  [
+   105.303,
+   108.073,
+   "\u2014 it has to walk from the front"
+  ],
+  [
+   108.073,
+   108.766,
+   "every time."
+  ],
+  [
+   108.766,
+   111.536,
+   "Your innocent index loop just became quietly\nquadratic."
+  ],
+  [
+   112.167,
+   114.937,
+   "And then someone wants nested playlists \u2014 a"
+  ],
+  [
+   114.937,
+   115.284,
+   "tree."
+  ],
+  [
+   115.284,
+   117.707,
+   "A tree has no index at all."
+  ],
+  [
+   117.707,
+   120.478,
+   "The for-i loop cannot even express how to"
+  ],
+  [
+   120.478,
+   121.17,
+   "walk it."
+  ],
+  [
+   121.802,
+   124.225,
+   "Every place that looped \u2014 the player,"
+  ],
+  [
+   124.225,
+   124.918,
+   "the exporter,"
+  ],
+  [
+   124.918,
+   127.342,
+   "the shuffler \u2014 has to be rewritten,"
+  ],
+  [
+   127.342,
+   129.073,
+   "because each of them encoded,"
+  ],
+  [
+   129.073,
+   129.765,
+   "by hand,"
+  ],
+  [
+   129.765,
+   132.535,
+   "how to traverse a structure that just changed"
+  ],
+  [
+   132.535,
+   133.228,
+   "underneath them."
+  ],
+  [
+   133.728,
+   135.073,
+   "So what is fixed,"
+  ],
+  [
+   135.073,
+   136.082,
+   "and what varies?"
+  ],
+  [
+   136.713,
+   137.049,
+   "Fixed:"
+  ],
+  [
+   137.049,
+   139.739,
+   "every caller wants the elements one at a"
+  ],
+  [
+   139.739,
+   140.076,
+   "time."
+  ],
+  [
+   140.076,
+   142.765,
+   "The pattern of use is always the same"
+  ],
+  [
+   142.765,
+   145.119,
+   "two questions \u2014 is there another one?"
+  ],
+  [
+   145.119,
+   146.128,
+   "and if so,"
+  ],
+  [
+   146.128,
+   148.817,
+   "give it to me \u2014 repeated until the"
+  ],
+  [
+   148.817,
+   149.826,
+   "collection runs out."
+  ],
+  [
+   150.458,
+   153.148,
+   "What varies is only how the elements are"
+  ],
+  [
+   153.148,
+   153.484,
+   "stored,"
+  ],
+  [
+   153.484,
+   156.174,
+   "and therefore how you step from one to"
+  ],
+  [
+   156.174,
+   156.846,
+   "the next."
+  ],
+  [
+   157.478,
+   158.823,
+   "Here is the move."
+  ],
+  [
+   159.454,
+   162.144,
+   "Pull that stepping logic out into its own"
+  ],
+  [
+   162.144,
+   164.834,
+   "little object \u2014 a cursor that knows how"
+  ],
+  [
+   164.834,
+   166.515,
+   "to walk this particular structure."
+  ],
+  [
+   166.515,
+   168.196,
+   "It answers just two methods:"
+  ],
+  [
+   168.196,
+   168.532,
+   "has-next,"
+  ],
+  [
+   168.532,
+   169.205,
+   "and next."
+  ],
+  [
+   169.205,
+   170.55,
+   "The caller asks those;"
+  ],
+  [
+   170.55,
+   172.231,
+   "the cursor keeps the place."
+  ],
+  [
+   172.731,
+   174.694,
+   "Think of a museum audio guide."
+  ],
+  [
+   175.326,
+   177.943,
+   "You put on the headphones and press next."
+  ],
+  [
+   177.943,
+   179.579,
+   "It plays the next exhibit."
+  ],
+  [
+   179.579,
+   182.197,
+   "Press next again \u2014 the one after that."
+  ],
+  [
+   182.829,
+   185.119,
+   "You never look at the floor plan."
+  ],
+  [
+   185.119,
+   187.737,
+   "You do not know if the route runs"
+  ],
+  [
+   187.737,
+   188.064,
+   "clockwise,"
+  ],
+  [
+   188.064,
+   189.045,
+   "or by theme,"
+  ],
+  [
+   189.045,
+   191.336,
+   "or up one wing and down another."
+  ],
+  [
+   191.336,
+   192.972,
+   "The guide holds the route;"
+  ],
+  [
+   192.972,
+   195.589,
+   "you just press next until it tells you"
+  ],
+  [
+   195.589,
+   196.898,
+   "the tour is over."
+  ],
+  [
+   197.53,
+   199.493,
+   "Pressing next is the next call."
+  ],
+  [
+   199.493,
+   202.11,
+   "Asking whether the tour is over is has-next."
+  ],
+  [
+   202.11,
+   204.728,
+   "The route the guide keeps to itself is"
+  ],
+  [
+   204.728,
+   205.71,
+   "the traversal logic,"
+  ],
+  [
+   205.71,
+   208.327,
+   "and the museum's actual layout is the collection's"
+  ],
+  [
+   208.327,
+   208.982,
+   "internal store."
+  ],
+  [
+   209.613,
+   210.595,
+   "Where it strains:"
+  ],
+  [
+   210.595,
+   212.885,
+   "one audio guide has one fixed route,"
+  ],
+  [
+   212.885,
+   215.176,
+   "but a collection can hand a fresh,"
+  ],
+  [
+   215.176,
+   217.466,
+   "independent cursor to every caller at once."
+  ],
+  [
+   217.966,
+   218.68,
+   "The refactor,"
+  ],
+  [
+   218.68,
+   219.393,
+   "step one."
+  ],
+  [
+   220.025,
+   222.88,
+   "Name the two questions as an interface \u2014"
+  ],
+  [
+   222.88,
+   225.377,
+   "and Java already has it for you."
+  ],
+  [
+   225.377,
+   225.734,
+   "Iterator,"
+  ],
+  [
+   225.734,
+   227.518,
+   "with just has-next and next."
+  ],
+  [
+   228.15,
+   229.934,
+   "Then the playlist implements Iterable,"
+  ],
+  [
+   229.934,
+   231.718,
+   "which promises exactly one thing:"
+  ],
+  [
+   231.718,
+   233.859,
+   "I can give you an iterator."
+  ],
+  [
+   234.491,
+   236.989,
+   "Notice what the playlist no longer promises."
+  ],
+  [
+   236.989,
+   239.129,
+   "It does not expose an array."
+  ],
+  [
+   239.129,
+   241.27,
+   "It does not expose an index."
+  ],
+  [
+   241.27,
+   243.768,
+   "Its entire public contract for looping is:"
+  ],
+  [
+   243.768,
+   245.552,
+   "ask me for a cursor,"
+  ],
+  [
+   245.552,
+   247.693,
+   "and I will hand you one."
+  ],
+  [
+   247.693,
+   250.548,
+   "How that cursor works is nobody else's business."
+  ],
+  [
+   251.048,
+   251.747,
+   "Step two:"
+  ],
+  [
+   251.747,
+   252.796,
+   "the cursor itself."
+  ],
+  [
+   253.428,
+   254.477,
+   "PlaylistIterator implements Iterator,"
+  ],
+  [
+   254.477,
+   257.274,
+   "and inside it lives all the knowledge of"
+  ],
+  [
+   257.274,
+   259.023,
+   "how to walk this structure."
+  ],
+  [
+   259.654,
+   262.451,
+   "Here it holds a node reference into a"
+  ],
+  [
+   262.451,
+   263.151,
+   "linked list."
+  ],
+  [
+   263.151,
+   265.948,
+   "Has-next just checks whether the cursor has run"
+  ],
+  [
+   265.948,
+   266.997,
+   "off the end."
+  ],
+  [
+   266.997,
+   269.095,
+   "And next grabs the current song,"
+  ],
+  [
+   269.095,
+   271.193,
+   "steps the cursor forward one node,"
+  ],
+  [
+   271.193,
+   272.942,
+   "and returns what it took."
+  ],
+  [
+   273.573,
+   276.37,
+   "Every messy detail of the traversal \u2014 where"
+  ],
+  [
+   276.37,
+   277.07,
+   "we are,"
+  ],
+  [
+   277.07,
+   279.867,
+   "how we advance \u2014 is sealed inside this"
+  ],
+  [
+   279.867,
+   280.566,
+   "one class."
+  ],
+  [
+   281.198,
+   283.646,
+   "If the store were an array instead,"
+  ],
+  [
+   283.646,
+   285.394,
+   "only this cursor would change."
+  ],
+  [
+   285.394,
+   286.093,
+   "A tree?"
+  ],
+  [
+   286.093,
+   288.191,
+   "A cursor with a stack inside."
+  ],
+  [
+   288.191,
+   290.639,
+   "The caller never sees any of it."
+  ],
+  [
+   291.139,
+   292.798,
+   "Your turn \u2014 pause here."
+  ],
+  [
+   293.43,
+   296.085,
+   "Say this playlist really is backed by an"
+  ],
+  [
+   296.085,
+   296.417,
+   "array,"
+  ],
+  [
+   296.417,
+   299.072,
+   "and the cursor is just an integer position"
+  ],
+  [
+   299.072,
+   299.736,
+   "into it."
+  ],
+  [
+   300.368,
+   301.031,
+   "Write has-next."
+  ],
+  [
+   301.031,
+   302.691,
+   "It should answer one question:"
+  ],
+  [
+   302.691,
+   305.014,
+   "from where the cursor sits right now,"
+  ],
+  [
+   305.014,
+   307.669,
+   "is there still a song left to hand"
+  ],
+  [
+   307.669,
+   308.001,
+   "out?"
+  ],
+  [
+   308.633,
+   311.288,
+   "Think about the boundary \u2014 what is the"
+  ],
+  [
+   311.288,
+   312.615,
+   "very last valid position,"
+  ],
+  [
+   312.615,
+   315.271,
+   "and where does the cursor have to be"
+  ],
+  [
+   315.271,
+   317.262,
+   "for the answer to become false?"
+  ],
+  [
+   317.762,
+   318.449,
+   "Step three,"
+  ],
+  [
+   318.449,
+   320.853,
+   "and every caller collapses into one line."
+  ],
+  [
+   321.485,
+   323.545,
+   "For each song in the playlist,"
+  ],
+  [
+   323.545,
+   324.232,
+   "play it."
+  ],
+  [
+   324.232,
+   325.949,
+   "That is the whole loop."
+  ],
+  [
+   326.581,
+   329.328,
+   "And here is the quiet magic \u2014 Java's"
+  ],
+  [
+   329.328,
+   331.389,
+   "for-each is not built into arrays."
+  ],
+  [
+   331.389,
+   333.106,
+   "It is built on Iterable."
+  ],
+  [
+   333.106,
+   334.48,
+   "Behind that clean syntax,"
+  ],
+  [
+   334.48,
+   337.228,
+   "Java calls your iterator method and drives\nhas-next"
+  ],
+  [
+   337.228,
+   338.601,
+   "and next for you."
+  ],
+  [
+   339.233,
+   340.607,
+   "The player uses it."
+  ],
+  [
+   340.607,
+   341.98,
+   "The exporter uses it."
+  ],
+  [
+   341.98,
+   344.728,
+   "The shuffler uses it \u2014 all the identical"
+  ],
+  [
+   344.728,
+   345.071,
+   "loop."
+  ],
+  [
+   345.703,
+   348.45,
+   "And when you swap the backing from an"
+  ],
+  [
+   348.45,
+   351.198,
+   "array to a linked list to a tree?"
+  ],
+  [
+   351.198,
+   353.602,
+   "Not one of those for-each loops changes."
+  ],
+  [
+   353.602,
+   355.663,
+   "The traversal moved into the cursor,"
+  ],
+  [
+   355.663,
+   356.693,
+   "where it belongs."
+  ],
+  [
+   357.193,
+   359.874,
+   "Now the requirement that used to be impossible."
+  ],
+  [
+   359.874,
+   362.219,
+   "Play a whole tree of nested playlists,"
+  ],
+  [
+   362.219,
+   362.89,
+   "in order."
+  ],
+  [
+   363.521,
+   363.856,
+   "Before,"
+  ],
+  [
+   363.856,
+   366.537,
+   "the index loop could not even begin \u2014"
+  ],
+  [
+   366.537,
+   369.218,
+   "a tree has no flat index to count"
+  ],
+  [
+   369.218,
+   369.553,
+   "through,"
+  ],
+  [
+   369.553,
+   371.563,
+   "so every caller would need rewriting."
+  ],
+  [
+   372.195,
+   372.53,
+   "Now?"
+  ],
+  [
+   372.53,
+   374.206,
+   "You write one new cursor."
+  ],
+  [
+   374.206,
+   376.886,
+   "A tree iterator that keeps a stack inside"
+  ],
+  [
+   376.886,
+   379.567,
+   "it and walks depth-first \u2014 pop a node,"
+  ],
+  [
+   379.567,
+   380.572,
+   "push its children,"
+  ],
+  [
+   380.572,
+   381.913,
+   "hand back its song."
+  ],
+  [
+   382.544,
+   383.55,
+   "And the callers?"
+  ],
+  [
+   383.55,
+   385.56,
+   "For each song in the tree,"
+  ],
+  [
+   385.56,
+   386.23,
+   "play it."
+  ],
+  [
+   386.23,
+   388.576,
+   "The very same for-each you already wrote."
+  ],
+  [
+   388.576,
+   390.922,
+   "The new structure needed a new cursor,"
+  ],
+  [
+   390.922,
+   392.262,
+   "and absolutely nothing else."
+  ],
+  [
+   392.762,
+   394.556,
+   "This is the Iterator pattern."
+  ],
+  [
+   395.187,
+   396.264,
+   "At the top,"
+  ],
+  [
+   396.264,
+   397.699,
+   "the interface \u2014 Iterator,"
+  ],
+  [
+   397.699,
+   399.493,
+   "with just has-next and next."
+  ],
+  [
+   400.124,
+   401.2,
+   "On the left,"
+  ],
+  [
+   401.2,
+   401.918,
+   "the aggregate:"
+  ],
+  [
+   401.918,
+   402.636,
+   "the Playlist,"
+  ],
+  [
+   402.636,
+   403.712,
+   "which is Iterable."
+  ],
+  [
+   403.712,
+   406.582,
+   "Its only looping duty is to hand out"
+  ],
+  [
+   406.582,
+   407.299,
+   "a cursor."
+  ],
+  [
+   407.931,
+   409.007,
+   "On the right,"
+  ],
+  [
+   409.007,
+   411.519,
+   "the concrete iterator \u2014 the cursor itself,"
+  ],
+  [
+   411.519,
+   412.595,
+   "holding an index,"
+  ],
+  [
+   412.595,
+   413.671,
+   "or a node,"
+  ],
+  [
+   413.671,
+   414.748,
+   "or a stack,"
+  ],
+  [
+   414.748,
+   416.541,
+   "and implementing has-next and next."
+  ],
+  [
+   417.173,
+   420.043,
+   "The arrow from the playlist to the cursor"
+  ],
+  [
+   420.043,
+   421.119,
+   "is the key:"
+  ],
+  [
+   421.119,
+   423.99,
+   "the collection creates a fresh iterator on demand."
+  ],
+  [
+   424.621,
+   427.491,
+   "The client holds only the interface at the"
+  ],
+  [
+   427.491,
+   427.85,
+   "top,"
+  ],
+  [
+   427.85,
+   429.644,
+   "and walks anything \u2014 array,"
+  ],
+  [
+   429.644,
+   430.003,
+   "list,"
+  ],
+  [
+   430.003,
+   432.514,
+   "or tree \u2014 the exact same way."
+  ],
+  [
+   433.014,
+   433.886,
+   "The names,"
+  ],
+  [
+   433.886,
+   435.631,
+   "mapped to your code."
+  ],
+  [
+   436.262,
+   439.315,
+   "The Iterator is Java's own Iterator interface."
+  ],
+  [
+   439.947,
+   443.436,
+   "The ConcreteIterator is PlaylistIterator \u2014 the\nobject that"
+  ],
+  [
+   443.436,
+   446.489,
+   "holds the cursor and knows the walk."
+  ],
+  [
+   447.12,
+   449.301,
+   "The Aggregate is the Playlist,"
+  ],
+  [
+   449.301,
+   450.609,
+   "which implements Iterable."
+  ],
+  [
+   451.241,
+   454.294,
+   "And the Client is any for-each loop,"
+  ],
+  [
+   454.294,
+   457.347,
+   "which calls has-next and next for you,"
+  ],
+  [
+   457.347,
+   457.783,
+   "invisibly."
+  ],
+  [
+   458.415,
+   460.159,
+   "The Gang of Four:"
+  ],
+  [
+   460.159,
+   463.648,
+   "provide a way to access the elements of"
+  ],
+  [
+   463.648,
+   465.393,
+   "an aggregate object sequentially,"
+  ],
+  [
+   465.393,
+   467.573,
+   "without exposing its underlying representation."
+  ],
+  [
+   467.573,
+   471.062,
+   "That last clause is the entire point \u2014"
+  ],
+  [
+   471.062,
+   471.935,
+   "sequential access,"
+  ],
+  [
+   471.935,
+   472.807,
+   "zero exposure."
+  ],
+  [
+   473.307,
+   475.095,
+   "Iterator has its costs too."
+  ],
+  [
+   475.727,
+   478.588,
+   "Each new kind of structure means another iterator"
+  ],
+  [
+   478.588,
+   478.946,
+   "class."
+  ],
+  [
+   478.946,
+   481.807,
+   "And a cursor is stateful \u2014 it remembers"
+  ],
+  [
+   481.807,
+   484.669,
+   "a position \u2014 so two walks need two"
+  ],
+  [
+   484.669,
+   485.026,
+   "iterators,"
+  ],
+  [
+   485.026,
+   487.172,
+   "and you cannot casually share one."
+  ],
+  [
+   487.804,
+   489.95,
+   "There is a famous trap here:"
+  ],
+  [
+   489.95,
+   492.811,
+   "if you modify the collection while an iterator"
+  ],
+  [
+   492.811,
+   493.884,
+   "is walking it,"
+  ],
+  [
+   493.884,
+   496.745,
+   "a well-built iterator will notice and fail fast,"
+  ],
+  [
+   496.745,
+   498.891,
+   "throwing rather than quietly returning garbage."
+  ],
+  [
+   499.523,
+   502.384,
+   "So do not reach for it when you"
+  ],
+  [
+   502.384,
+   505.246,
+   "already have a plain List you can for-each,"
+  ],
+  [
+   505.246,
+   508.107,
+   "when you genuinely need random access by index,"
+  ],
+  [
+   508.107,
+   510.968,
+   "or when the collection is tiny and never"
+  ],
+  [
+   510.968,
+   511.683,
+   "changes shape."
+  ],
+  [
+   512.315,
+   515.176,
+   "Reach for it when you find yourself exposing"
+  ],
+  [
+   515.176,
+   516.965,
+   "how a collection is stored,"
+  ],
+  [
+   516.965,
+   519.826,
+   "or rewriting its traversal every time the\nstructure"
+  ],
+  [
+   519.826,
+   520.899,
+   "changes underneath you."
+  ],
+  [
+   521.399,
+   521.746,
+   "Iterator,"
+  ],
+  [
+   521.746,
+   522.787,
+   "in one breath."
+  ],
+  [
+   523.419,
+   526.195,
+   "Index loops assumed how the collection was stored,"
+  ],
+  [
+   526.195,
+   528.624,
+   "so the day you changed the store,"
+  ],
+  [
+   528.624,
+   531.401,
+   "every caller silently broke or slowed to a"
+  ],
+  [
+   531.401,
+   531.748,
+   "crawl."
+  ],
+  [
+   532.379,
+   535.156,
+   "But callers only ever ask two things \u2014"
+  ],
+  [
+   535.156,
+   536.197,
+   "is there another,"
+  ],
+  [
+   536.197,
+   538.973,
+   "and give it to me \u2014 so you"
+  ],
+  [
+   538.973,
+   541.749,
+   "hand them a cursor that answers exactly that."
+  ],
+  [
+   542.381,
+   542.728,
+   "Iterator:"
+  ],
+  [
+   542.728,
+   545.504,
+   "the collection creates a cursor that holds the"
+  ],
+  [
+   545.504,
+   545.851,
+   "traversal,"
+  ],
+  [
+   545.851,
+   548.628,
+   "and clients walk any shape the same way."
+  ],
+  [
+   548.628,
+   551.404,
+   "A new structure needs only a new cursor."
+  ],
+  [
+   552.035,
+   554.118,
+   "Here is one to carry out."
+  ],
+  [
+   554.749,
+   557.526,
+   "A REST API returns results one page at"
+  ],
+  [
+   557.526,
+   558.22,
+   "a time,"
+  ],
+  [
+   558.22,
+   560.996,
+   "but you want your callers to treat it"
+  ],
+  [
+   560.996,
+   562.037,
+   "as a single,"
+  ],
+  [
+   562.037,
+   564.813,
+   "endless stream of items \u2014 where each call"
+  ],
+  [
+   564.813,
+   567.59,
+   "to next might quietly fetch the following page."
+  ],
+  [
+   568.221,
+   569.262,
+   "Does Iterator fit?"
+  ],
+  [
+   569.262,
+   570.651,
+   "What is the aggregate,"
+  ],
+  [
+   570.651,
+   572.039,
+   "what is the cursor,"
+  ],
+  [
+   572.039,
+   574.815,
+   "and what state does next hide from the"
+  ],
+  [
+   574.815,
+   575.162,
+   "caller?"
+  ],
+  [
+   575.794,
+   576.141,
+   "Pause,"
+  ],
+  [
+   576.141,
+   578.57,
+   "and sketch it before the next episode."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp14-iterator.wav",
+   "volume": 1.0
+  }
+ }
+}

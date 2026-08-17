@@ -1,0 +1,99 @@
+{
+ "ticker": "ULTRACEMCO",
+ "scraped_at": "2026-08-14T15:30:06",
+ "source": "screener.in",
+ "ok": true,
+ "error": "<HTTPError 429: 'Too Many Requests'>",
+ "variant": "standalone",
+ "market_cap_cr": 342858.0,
+ "current_price": 11635.0,
+ "pe": 44.9,
+ "book_value": 2534.0,
+ "dividend_yield_pct": 2.06,
+ "roce_pct": 12.6,
+ "roe_pct": 10.3,
+ "face_value": 10.0,
+ "high": 13110.0,
+ "sales_growth": {
+  "10 Years": 12.0,
+  "5 Years": 7.0,
+  "3 Years": 15.0,
+  "TTM": 11.0
+ },
+ "profit_growth": {
+  "10 Years": 12.0,
+  "5 Years": 9.0,
+  "3 Years": 13.0,
+  "1 Year": -5.0
+ },
+ "roe_hist": {
+  "OPM %": 17.0,
+  "Other Income&nbsp; +": 209.0,
+  "Interest": 192.0,
+  "Depreciation": 720.0,
+  "Tax %": 25.0,
+  "EPS in Rs": 59.39
+ },
+ "price_cagr": {
+  "10 Years": 11.0,
+  "5 Years": 11.0,
+  "3 Years": 11.0,
+  "Last Year": 10.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "17%",
+   "16%",
+   "20%",
+   "20%",
+   "16%",
+   "12%",
+   "16%",
+   "22%",
+   "21%",
+   "16%",
+   "17%",
+   "20%",
+   "19%"
+  ],
+  "eps": [
+   "59.39",
+   "42.28",
+   "59.51",
+   "78.01",
+   "52.18",
+   "23.54",
+   "45.87",
+   "91.02",
+   "75.74",
+   "36.10",
+   "51.28",
+   "88.19",
+   "81.35"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 53.9%"
+ ],
+ "cons": [
+  "Stock is trading at 4.56 times its book value",
+  "Company has a low return on equity of 10.5% over last 3 years."
+ ]
+}

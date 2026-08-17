@@ -1,0 +1,1860 @@
+{
+ "cuts": [
+  {
+   "id": "dp10-builder_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 30.829,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 10",
+    "line1": "Ten arguments,",
+    "line2": "half of them null",
+    "sub": "and nobody remembers which position the timeout goes in",
+    "dur": 31.329
+   }
+  },
+  {
+   "id": "dp10-builder_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 31.329,
+   "out_seconds": 65.108,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Build an HTTP request",
+    "situation": "An HTTP request needs a URL \u2014 and optionally a method, headers, a body, a timeout, a retry count, redirect handling. One field is required; the rest are all optional.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udd17",
+      "label": "The URL \u2014 required"
+     },
+     {
+      "emoji": "\u2699\ufe0f",
+      "label": "Method, timeout\u2026"
+     },
+     {
+      "emoji": "\ud83d\udcee",
+      "label": "\u2026a finished request"
+     }
+    ],
+    "ask": "How do you let a caller set any subset of these, and still end up with one valid, immutable request?",
+    "dur": 34.279
+   }
+  },
+  {
+   "id": "dp10-builder_naive",
+   "type": "dp_code",
+   "in_seconds": 65.608,
+   "out_seconds": 101.574,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "One constructor for everything.",
+    "file": "HttpRequest.java",
+    "lines": [
+     {
+      "t": "new HttpRequest("
+     },
+     {
+      "t": "    url,                 // required"
+     },
+     {
+      "t": "    \"GET\",               // method"
+     },
+     {
+      "t": "    headers,             // or null",
+      "s": "hi"
+     },
+     {
+      "t": "    null,                // no body",
+      "s": "hi"
+     },
+     {
+      "t": "    30,                  // timeout"
+     },
+     {
+      "t": "    3,                   // retries",
+      "s": "hi"
+     },
+     {
+      "t": "    true, false);        // redirects? http2?",
+      "s": "hi"
+     }
+    ],
+    "note": "Positional, null-padded. Which boolean is which?",
+    "dur": 36.466
+   }
+  },
+  {
+   "id": "dp10-builder_pain",
+   "type": "dp_pain",
+   "in_seconds": 102.074,
+   "out_seconds": 138.614,
+   "props": {
+    "title": "\"Now make some of them optional.\"",
+    "file": "constructors.java",
+    "lines": [
+     {
+      "t": "HttpRequest(String url) { ... }",
+      "s": "hi"
+     },
+     {
+      "t": "HttpRequest(String url, String method) { ... }",
+      "s": "hi"
+     },
+     {
+      "t": "HttpRequest(String url, String m, Map h) { ... }",
+      "s": "hi"
+     },
+     {
+      "t": "// a new overload for every combination you allow"
+     },
+     {
+      "t": "HttpRequest(String url, ..., boolean http2) { ... }",
+      "s": "hi"
+     }
+    ],
+    "smell": "Telescoping constructors \u2014 one per field combination",
+    "touched": [
+     "2 optional fields \u2192 4 overloads",
+     "add a field \u2192 double them all again",
+     "callers still count argument positions",
+     "every skipped field is a null trap"
+    ],
+    "dur": 37.04
+   }
+  },
+  {
+   "id": "dp10-builder_insight",
+   "type": "dp_insight",
+   "in_seconds": 139.114,
+   "out_seconds": 174.887,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "You always end with ONE HttpRequest",
+     "It should be immutable once built",
+     "The URL is always required"
+    ],
+    "varies": [
+     "Which optional fields get set",
+     "The order the caller sets them",
+     "How many callers set what"
+    ],
+    "principle": "Separate building from the built: collect fields on a helper, then construct once at the end.",
+    "dur": 36.273
+   }
+  },
+  {
+   "id": "dp10-builder_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 175.387,
+   "out_seconds": 208.296,
+   "props": {
+    "title": "Ordering at the sandwich counter",
+    "emoji": "\ud83e\udd6a",
+    "analogy": "You call out fillings one at a time; only at the end do they wrap the finished sandwich.",
+    "map": [
+     {
+      "from": "The empty order",
+      "to": "a fresh builder"
+     },
+     {
+      "from": "Each thing you add",
+      "to": "one fluent setter, e.g. .header()"
+     },
+     {
+      "from": "\"That's everything\"",
+      "to": "the build() call"
+     },
+     {
+      "from": "The wrapped sandwich",
+      "to": "the immutable HttpRequest"
+     }
+    ],
+    "breaks": "a real sandwich keeps changing as you build it; the finished request is frozen \u2014 all the mutation stays behind on the builder.",
+    "dur": 33.409
+   }
+  },
+  {
+   "id": "dp10-builder_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 208.796,
+   "out_seconds": 243.715,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "A builder that collects the fields",
+    "file": "HttpRequest.java",
+    "lines": [
+     {
+      "t": "public final class HttpRequest {"
+     },
+     {
+      "t": "  private final String url, method;   // immutable"
+     },
+     {
+      "t": "  public static class Builder {",
+      "s": "add"
+     },
+     {
+      "t": "    private final String url;         // required",
+      "s": "add"
+     },
+     {
+      "t": "    private String method = \"GET\";    // default",
+      "s": "add"
+     },
+     {
+      "t": "    Builder(String url) { this.url = url; }",
+      "s": "add"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "The Builder mirrors the fields \u2014 but it's mutable while you configure.",
+    "dur": 35.419
+   }
+  },
+  {
+   "id": "dp10-builder_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 244.215,
+   "out_seconds": 271.967,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "Fluent setters that return this",
+    "file": "HttpRequest.Builder.java",
+    "lines": [
+     {
+      "t": "public Builder method(String m) {",
+      "s": "hi"
+     },
+     {
+      "t": "  this.method = m;"
+     },
+     {
+      "t": "  return this;              // \u2190 enables chaining",
+      "s": "hi"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "public Builder timeout(int s) {"
+     },
+     {
+      "t": "  this.timeout = s; return this;"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Each setter mutates one field and returns the builder \u2014 so calls chain.",
+    "dur": 28.252
+   }
+  },
+  {
+   "id": "dp10-builder_try",
+   "type": "dp_try",
+   "in_seconds": 272.467,
+   "out_seconds": 297.007,
+   "props": {
+    "title": "Add header(key, value)",
+    "file": "HttpRequest.Builder.java",
+    "lines": [
+     {
+      "t": "private final Map<String,String> headers = new HashMap<>();"
+     },
+     {
+      "t": "// headers accumulate \u2014 a caller may add several"
+     },
+     {
+      "t": "public Builder header(String k, String v) {"
+     },
+     {
+      "t": "  // \u25af store it, and keep the chain going",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Write header() so it accumulates into the map \u2014 and still allows chaining.",
+    "hint": "headers.put(k, v); return this;",
+    "dur": 25.04
+   }
+  },
+  {
+   "id": "dp10-builder_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 297.507,
+   "out_seconds": 330.706,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "build() constructs the finished request",
+    "file": "HttpRequest.java  +  the call site",
+    "lines": [
+     {
+      "t": "public HttpRequest build() {",
+      "s": "hi"
+     },
+     {
+      "t": "  if (url == null) throw new IllegalStateException();"
+     },
+     {
+      "t": "  return new HttpRequest(this);   // private ctor",
+      "s": "hi"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "// the call site now reads like a sentence:"
+     },
+     {
+      "t": "HttpRequest r = new HttpRequest.Builder(url)",
+      "s": "add"
+     },
+     {
+      "t": "    .method(\"POST\").timeout(30)",
+      "s": "add"
+     },
+     {
+      "t": "    .header(\"Accept\", \"json\").build();",
+      "s": "add"
+     }
+    ],
+    "note": "Validate once, then copy the builder into an immutable request.",
+    "dur": 33.699
+   }
+  },
+  {
+   "id": "dp10-builder_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 331.206,
+   "out_seconds": 362.79,
+   "props": {
+    "requirement": "\"Support HTTP/2\" \u2014 one more optional flag",
+    "naiveLabel": "Before",
+    "naiveCost": "Another param, or another row of overloads.",
+    "naiveSteps": [
+     "widen the giant constructor",
+     "or add more overloads",
+     "every existing caller must change"
+    ],
+    "patLabel": "Now",
+    "patCost": "One setter. Old call sites don't change.",
+    "patFile": "HttpRequest.Builder.java",
+    "patLines": [
+     {
+      "t": "public Builder http2(boolean on) {",
+      "s": "add"
+     },
+     {
+      "t": "  this.http2 = on;",
+      "s": "add"
+     },
+     {
+      "t": "  return this;",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "// existing chains keep working, untouched",
+      "s": "add"
+     }
+    ],
+    "dur": 32.084
+   }
+  },
+  {
+   "id": "dp10-builder_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 363.29,
+   "out_seconds": 397.993,
+   "props": {
+    "name": "The Builder Pattern",
+    "plain": "Move an object's construction onto a separate builder that collects the parts, then hands back one finished, immutable product.",
+    "nodes": [
+     {
+      "id": "client",
+      "title": "Client",
+      "stereo": "client",
+      "members": [
+       "configures the builder,",
+       "then calls build()"
+      ],
+      "x": 130,
+      "y": 410,
+      "w": 360,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "builder",
+      "title": "HttpRequest.Builder",
+      "stereo": "builder",
+      "members": [
+       "+ method() / header()",
+       "+ timeout() / build()"
+      ],
+      "x": 690,
+      "y": 410,
+      "w": 540,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "product",
+      "title": "HttpRequest",
+      "stereo": "product",
+      "members": [
+       "- url, headers, body",
+       "(final, immutable)"
+      ],
+      "x": 1430,
+      "y": 410,
+      "w": 400,
+      "color": "#22D3EE"
+     }
+    ],
+    "edges": [
+     {
+      "from": "client",
+      "to": "builder",
+      "kind": "assoc"
+     },
+     {
+      "from": "builder",
+      "to": "product",
+      "kind": "assoc"
+     }
+    ],
+    "dur": 35.203
+   }
+  },
+  {
+   "id": "dp10-builder_map",
+   "type": "dp_map",
+   "in_seconds": 398.493,
+   "out_seconds": 433.384,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Product",
+      "your": "HttpRequest (immutable)"
+     },
+     {
+      "role": "Builder",
+      "your": "HttpRequest.Builder"
+     },
+     {
+      "role": "Fluent setters",
+      "your": "method(), header(), timeout()"
+     },
+     {
+      "role": "Client",
+      "your": "chains setters, calls build()"
+     }
+    ],
+    "plain": "The builder accumulates state through chained setters; build() validates it and returns one finished product.",
+    "gof": "Separate the construction of a complex object from its representation so that the same construction process can create different representations.",
+    "dur": 35.391
+   }
+  },
+  {
+   "id": "dp10-builder_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 433.884,
+   "out_seconds": 470.167,
+   "props": {
+    "title": "Fluency isn't free",
+    "costs": [
+     "A whole second class to write and maintain",
+     "Two objects made where one used to be",
+     "Overkill when there are only two or three fields"
+    ],
+    "dont": [
+     "The object has one or two simple fields",
+     "Everything is required \u2014 no optional soup",
+     "The object is already tiny and immutable"
+    ],
+    "signal": "a constructor with four-plus parameters, several optional, and callers passing nulls just to skip them.",
+    "dur": 36.783
+   }
+  },
+  {
+   "id": "dp10-builder_recap",
+   "type": "dp_recap",
+   "in_seconds": 470.667,
+   "out_seconds": 524.865,
+   "props": {
+    "title": "Builder, in one breath",
+    "items": [
+     "One giant constructor \u2014 or a telescoping stack of overloads \u2014 buried the caller in positional arguments and nulls.",
+     "You always end with one immutable object; only which fields get set varies \u2014 so collect them on a mutable builder first.",
+     "Builder: fluent setters each return this, and build() validates once and produces the product. New field, one new setter."
+    ],
+    "challenge": "You're building a database Query: a required table, plus optional where-clauses, ordering, a limit, and joins \u2014 set in any combination.",
+    "question": "Does Builder fit? What's the product, the builder, and where does build() validate?",
+    "dur": 54.698
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.255,
+   "Some objects are trivial to build."
+  ],
+  [
+   2.886,
+   5.892,
+   "Others carry a dozen settings \u2014 a few"
+  ],
+  [
+   5.892,
+   6.268,
+   "required,"
+  ],
+  [
+   6.268,
+   9.274,
+   "most optional \u2014 and every one has to"
+  ],
+  [
+   9.274,
+   12.28,
+   "be decided before the object can even exist."
+  ],
+  [
+   12.912,
+   15.167,
+   "So you reach for a constructor."
+  ],
+  [
+   15.167,
+   16.67,
+   "And the constructor grows."
+  ],
+  [
+   16.67,
+   17.797,
+   "Ten parameters long,"
+  ],
+  [
+   17.797,
+   20.427,
+   "half of them null at every call,"
+  ],
+  [
+   20.427,
+   23.434,
+   "and no one can remember which position the"
+  ],
+  [
+   23.434,
+   24.561,
+   "timeout goes in."
+  ],
+  [
+   25.192,
+   28.199,
+   "There is a cleaner way to assemble a"
+  ],
+  [
+   28.199,
+   28.95,
+   "complicated object."
+  ],
+  [
+   28.95,
+   30.829,
+   "Let's build an HTTP request."
+  ],
+  [
+   31.329,
+   34.236,
+   "Here is the object we want to build:"
+  ],
+  [
+   34.236,
+   35.326,
+   "an HTTP request."
+  ],
+  [
+   35.958,
+   38.865,
+   "It has exactly one thing it cannot do"
+  ],
+  [
+   38.865,
+   40.319,
+   "without \u2014 a URL."
+  ],
+  [
+   40.95,
+   42.404,
+   "Everything else is optional."
+  ],
+  [
+   42.404,
+   43.131,
+   "The method,"
+  ],
+  [
+   43.131,
+   44.584,
+   "a set of headers,"
+  ],
+  [
+   44.584,
+   45.311,
+   "a body,"
+  ],
+  [
+   45.311,
+   46.038,
+   "a timeout,"
+  ],
+  [
+   46.038,
+   47.855,
+   "how many times to retry,"
+  ],
+  [
+   47.855,
+   49.309,
+   "whether to follow redirects."
+  ],
+  [
+   49.94,
+   52.484,
+   "One caller might set two of those;"
+  ],
+  [
+   52.484,
+   53.938,
+   "another might set ten."
+  ],
+  [
+   54.569,
+   57.477,
+   "So the question is this \u2014 how do"
+  ],
+  [
+   57.477,
+   60.384,
+   "you let each caller configure any subset they"
+  ],
+  [
+   60.384,
+   60.747,
+   "like,"
+  ],
+  [
+   60.747,
+   62.928,
+   "and still hand back a single,"
+  ],
+  [
+   62.928,
+   63.291,
+   "valid,"
+  ],
+  [
+   63.291,
+   65.108,
+   "immutable request at the end?"
+  ],
+  [
+   65.608,
+   66.621,
+   "The direct approach:"
+  ],
+  [
+   66.621,
+   68.648,
+   "one big constructor that takes everything."
+  ],
+  [
+   69.28,
+   71.306,
+   "So a call looks like this."
+  ],
+  [
+   71.306,
+   71.982,
+   "A URL,"
+  ],
+  [
+   71.982,
+   72.657,
+   "a method,"
+  ],
+  [
+   72.657,
+   75.359,
+   "a headers map \u2014 then null for the"
+  ],
+  [
+   75.359,
+   77.048,
+   "body just to skip it,"
+  ],
+  [
+   77.048,
+   77.724,
+   "a timeout,"
+  ],
+  [
+   77.724,
+   78.737,
+   "a retry count,"
+  ],
+  [
+   78.737,
+   81.439,
+   "and a pair of booleans on the end."
+  ],
+  [
+   82.071,
+   82.747,
+   "It compiles."
+  ],
+  [
+   82.747,
+   83.76,
+   "It even works."
+  ],
+  [
+   84.391,
+   85.743,
+   "But read it back."
+  ],
+  [
+   85.743,
+   88.445,
+   "Half the arguments are null only to be"
+  ],
+  [
+   88.445,
+   88.783,
+   "skipped."
+  ],
+  [
+   88.783,
+   91.485,
+   "And those two booleans \u2014 which one is"
+  ],
+  [
+   91.485,
+   91.823,
+   "redirects,"
+  ],
+  [
+   91.823,
+   93.511,
+   "which one is HTTP two?"
+  ],
+  [
+   93.511,
+   95.876,
+   "You cannot tell without opening the class."
+  ],
+  [
+   96.507,
+   99.21,
+   "Every caller has to pass all of it,"
+  ],
+  [
+   99.21,
+   100.898,
+   "in exactly the right order,"
+  ],
+  [
+   100.898,
+   101.574,
+   "every time."
+  ],
+  [
+   102.074,
+   105.064,
+   "The moment you try to make fields optional,"
+  ],
+  [
+   105.064,
+   106.186,
+   "it gets worse."
+  ],
+  [
+   106.817,
+   109.807,
+   "You add a constructor for just the URL."
+  ],
+  [
+   109.807,
+   112.05,
+   "Then one for URL and method."
+  ],
+  [
+   112.05,
+   112.798,
+   "Then URL,"
+  ],
+  [
+   112.798,
+   113.171,
+   "method,"
+  ],
+  [
+   113.171,
+   113.919,
+   "and headers."
+  ],
+  [
+   114.55,
+   117.541,
+   "This is the telescoping constructor \u2014 a new"
+  ],
+  [
+   117.541,
+   120.531,
+   "overload for every combination of fields you're\nwilling"
+  ],
+  [
+   120.531,
+   121.278,
+   "to support."
+  ],
+  [
+   121.91,
+   124.9,
+   "Two optional fields already means four of them."
+  ],
+  [
+   124.9,
+   126.395,
+   "Add one more field,"
+  ],
+  [
+   126.395,
+   129.012,
+   "and you double the whole set again."
+  ],
+  [
+   129.643,
+   132.26,
+   "And the caller is still counting positions,"
+  ],
+  [
+   132.26,
+   133.381,
+   "still passing nulls,"
+  ],
+  [
+   133.381,
+   136.371,
+   "still one slip away from putting the timeout"
+  ],
+  [
+   136.371,
+   138.614,
+   "where the retry count should go."
+  ],
+  [
+   139.114,
+   140.56,
+   "So what is fixed,"
+  ],
+  [
+   140.56,
+   141.644,
+   "and what varies?"
+  ],
+  [
+   142.275,
+   142.637,
+   "Fixed:"
+  ],
+  [
+   142.637,
+   145.528,
+   "you always end up with exactly one HttpRequest,"
+  ],
+  [
+   145.528,
+   148.419,
+   "it should be immutable the instant it exists,"
+  ],
+  [
+   148.419,
+   150.587,
+   "and it always needs a URL."
+  ],
+  [
+   151.218,
+   154.109,
+   "What varies is only which optional fields a"
+  ],
+  [
+   154.109,
+   155.194,
+   "given caller sets,"
+  ],
+  [
+   155.194,
+   156.278,
+   "in what order,"
+  ],
+  [
+   156.278,
+   158.085,
+   "and how many of them."
+  ],
+  [
+   158.716,
+   160.162,
+   "Here is the move."
+  ],
+  [
+   160.793,
+   163.684,
+   "Separate the act of building from the finished"
+  ],
+  [
+   163.684,
+   164.046,
+   "thing."
+  ],
+  [
+   164.046,
+   166.937,
+   "Let the caller set fields one at a"
+  ],
+  [
+   166.937,
+   168.382,
+   "time on a small,"
+  ],
+  [
+   168.382,
+   170.189,
+   "mutable helper \u2014 and then,"
+  ],
+  [
+   170.189,
+   172.719,
+   "in a single step at the end,"
+  ],
+  [
+   172.719,
+   174.164,
+   "hand back one finished,"
+  ],
+  [
+   174.164,
+   174.887,
+   "immutable request."
+  ],
+  [
+   175.387,
+   177.648,
+   "Think about ordering at a sandwich counter."
+  ],
+  [
+   178.28,
+   180.865,
+   "You don't hand over every choice in one"
+  ],
+  [
+   180.865,
+   181.188,
+   "breath,"
+  ],
+  [
+   181.188,
+   182.48,
+   "in a fixed order."
+  ],
+  [
+   182.48,
+   185.064,
+   "You call them out one at a time"
+  ],
+  [
+   185.064,
+   185.711,
+   "\u2014 bread,"
+  ],
+  [
+   185.711,
+   186.68,
+   "then a filling,"
+  ],
+  [
+   186.68,
+   189.264,
+   "then a sauce \u2014 in whatever order you"
+  ],
+  [
+   189.264,
+   189.587,
+   "like."
+  ],
+  [
+   190.219,
+   192.48,
+   "The empty order is a fresh builder."
+  ],
+  [
+   192.48,
+   195.065,
+   "Each thing you add is one fluent setter"
+  ],
+  [
+   195.065,
+   195.388,
+   "call."
+  ],
+  [
+   195.388,
+   197.649,
+   "Saying that's everything is the build step."
+  ],
+  [
+   197.649,
+   200.234,
+   "And the wrapped sandwich they hand back is"
+  ],
+  [
+   200.234,
+   201.203,
+   "your immutable request."
+  ],
+  [
+   201.835,
+   202.804,
+   "The only difference:"
+  ],
+  [
+   202.804,
+   204.419,
+   "the finished request is frozen."
+  ],
+  [
+   204.419,
+   206.681,
+   "All the changing happened on the builder,"
+  ],
+  [
+   206.681,
+   208.296,
+   "and it stays behind there."
+  ],
+  [
+   208.796,
+   209.53,
+   "The refactor,"
+  ],
+  [
+   209.53,
+   210.264,
+   "step one."
+  ],
+  [
+   210.895,
+   211.629,
+   "Inside HttpRequest,"
+  ],
+  [
+   211.629,
+   214.565,
+   "we add a static nested class \u2014 the"
+  ],
+  [
+   214.565,
+   214.932,
+   "Builder."
+  ],
+  [
+   215.563,
+   218.499,
+   "It holds the same fields the request will"
+  ],
+  [
+   218.499,
+   218.866,
+   "have."
+  ],
+  [
+   218.866,
+   221.801,
+   "The required URL comes in through its constructor,"
+  ],
+  [
+   221.801,
+   224.37,
+   "so you cannot even start without one."
+  ],
+  [
+   224.37,
+   227.305,
+   "The optional fields get sensible defaults \u2014 method"
+  ],
+  [
+   227.305,
+   228.406,
+   "starts as GET."
+  ],
+  [
+   229.038,
+   231.239,
+   "And here is the key difference."
+  ],
+  [
+   231.239,
+   233.808,
+   "The request itself is final and immutable,"
+  ],
+  [
+   233.808,
+   236.743,
+   "but the builder is mutable while you are"
+  ],
+  [
+   236.743,
+   237.844,
+   "still configuring it."
+  ],
+  [
+   237.844,
+   240.78,
+   "That is the whole trick \u2014 the mutation"
+  ],
+  [
+   240.78,
+   242.247,
+   "lives on the builder,"
+  ],
+  [
+   242.247,
+   243.715,
+   "never on the product."
+  ],
+  [
+   244.215,
+   244.954,
+   "Step two:"
+  ],
+  [
+   244.954,
+   245.693,
+   "the setters."
+  ],
+  [
+   246.324,
+   248.171,
+   "Each one does two things."
+  ],
+  [
+   248.171,
+   251.126,
+   "It sets its single field \u2014 and then"
+  ],
+  [
+   251.126,
+   252.973,
+   "it returns the builder itself."
+  ],
+  [
+   253.605,
+   254.713,
+   "That one line,"
+  ],
+  [
+   254.713,
+   255.452,
+   "return this,"
+  ],
+  [
+   255.452,
+   258.037,
+   "is what lets the calls chain together,"
+  ],
+  [
+   258.037,
+   259.146,
+   "one after another,"
+  ],
+  [
+   259.146,
+   261.362,
+   "in any order the caller likes."
+  ],
+  [
+   261.993,
+   264.21,
+   "One method for the HTTP method,"
+  ],
+  [
+   264.21,
+   265.687,
+   "one for the timeout,"
+  ],
+  [
+   265.687,
+   267.534,
+   "one for every optional field."
+  ],
+  [
+   267.534,
+   267.904,
+   "Small,"
+  ],
+  [
+   267.904,
+   268.273,
+   "boring,"
+  ],
+  [
+   268.273,
+   271.228,
+   "and every single one of them ends with"
+  ],
+  [
+   271.228,
+   271.967,
+   "return this."
+  ],
+  [
+   272.467,
+   273.164,
+   "Your turn."
+  ],
+  [
+   273.164,
+   273.861,
+   "Pause here."
+  ],
+  [
+   274.492,
+   276.582,
+   "Most setters replace a single value."
+  ],
+  [
+   276.582,
+   279.37,
+   "But headers are different \u2014 a caller might"
+  ],
+  [
+   279.37,
+   280.066,
+   "add several,"
+  ],
+  [
+   280.066,
+   282.853,
+   "so this one should accumulate into a map"
+  ],
+  [
+   282.853,
+   283.899,
+   "rather than overwrite."
+  ],
+  [
+   284.53,
+   287.317,
+   "Write a header method that takes a key"
+  ],
+  [
+   287.317,
+   288.362,
+   "and a value,"
+  ],
+  [
+   288.362,
+   289.059,
+   "stores it,"
+  ],
+  [
+   289.059,
+   291.846,
+   "and \u2014 like every other setter \u2014 keeps"
+  ],
+  [
+   291.846,
+   292.892,
+   "the chain alive."
+  ],
+  [
+   293.523,
+   296.31,
+   "Think about what its very last line has"
+  ],
+  [
+   296.31,
+   297.007,
+   "to be."
+  ],
+  [
+   297.507,
+   298.188,
+   "Step three,"
+  ],
+  [
+   298.188,
+   299.889,
+   "and it all comes together."
+  ],
+  [
+   300.52,
+   302.562,
+   "The builder gets a build method."
+  ],
+  [
+   302.562,
+   304.604,
+   "It validates once \u2014 no URL,"
+  ],
+  [
+   304.604,
+   307.326,
+   "no request \u2014 and then constructs the real"
+  ],
+  [
+   307.326,
+   310.048,
+   "HttpRequest through a private constructor that\njust copies"
+  ],
+  [
+   310.048,
+   311.409,
+   "the builder's fields in."
+  ],
+  [
+   312.04,
+   314.082,
+   "Now look at the call site."
+  ],
+  [
+   314.082,
+   316.804,
+   "You start a builder with the required URL,"
+  ],
+  [
+   316.804,
+   319.526,
+   "then chain only the options you actually want"
+  ],
+  [
+   319.526,
+   320.547,
+   "\u2014 a method,"
+  ],
+  [
+   320.547,
+   321.228,
+   "a timeout,"
+  ],
+  [
+   321.228,
+   323.609,
+   "a header \u2014 and finish with build."
+  ],
+  [
+   324.241,
+   324.922,
+   "No nulls."
+  ],
+  [
+   324.922,
+   326.283,
+   "No positions to count."
+  ],
+  [
+   326.283,
+   327.984,
+   "It reads like a sentence,"
+  ],
+  [
+   327.984,
+   330.706,
+   "and what you get back is fully immutable."
+  ],
+  [
+   331.206,
+   333.87,
+   "Now the requirement that used to hurt."
+  ],
+  [
+   333.87,
+   336.915,
+   "Support HTTP two \u2014 one more optional flag."
+  ],
+  [
+   337.547,
+   337.928,
+   "Before,"
+  ],
+  [
+   337.928,
+   340.592,
+   "that meant widening the giant constructor again,"
+  ],
+  [
+   340.592,
+   343.637,
+   "or adding yet another row of overloads \u2014"
+  ],
+  [
+   343.637,
+   346.682,
+   "and every existing caller would have to change"
+  ],
+  [
+   346.682,
+   347.824,
+   "just to match."
+  ],
+  [
+   348.456,
+   349.598,
+   "With the builder,"
+  ],
+  [
+   349.598,
+   351.12,
+   "you add one setter."
+  ],
+  [
+   351.12,
+   352.262,
+   "That is all."
+  ],
+  [
+   352.894,
+   355.939,
+   "Callers who want HTTP two chain one more"
+  ],
+  [
+   355.939,
+   356.319,
+   "call."
+  ],
+  [
+   356.319,
+   359.364,
+   "And every caller who doesn't \u2014 every line"
+  ],
+  [
+   359.364,
+   362.029,
+   "of code already written \u2014 keeps working,"
+  ],
+  [
+   362.029,
+   362.79,
+   "completely untouched."
+  ],
+  [
+   363.29,
+   365.213,
+   "This is the Builder pattern."
+  ],
+  [
+   365.845,
+   366.614,
+   "Three roles,"
+  ],
+  [
+   366.614,
+   368.153,
+   "reading left to right."
+  ],
+  [
+   368.785,
+   371.862,
+   "The Client \u2014 that is your calling code"
+  ],
+  [
+   371.862,
+   373.401,
+   "\u2014 configures a builder,"
+  ],
+  [
+   373.401,
+   375.709,
+   "and then asks it to build."
+  ],
+  [
+   376.341,
+   379.034,
+   "The Builder holds one setter per field,"
+  ],
+  [
+   379.034,
+   382.111,
+   "plus the build method that produces the result."
+  ],
+  [
+   382.743,
+   385.821,
+   "And the Product \u2014 HttpRequest \u2014 is the"
+  ],
+  [
+   385.821,
+   386.205,
+   "finished,"
+  ],
+  [
+   386.205,
+   388.898,
+   "immutable object that falls out the end."
+  ],
+  [
+   389.53,
+   392.607,
+   "Construction moved out of the product and onto"
+  ],
+  [
+   392.607,
+   395.685,
+   "a builder whose only job is to collect"
+  ],
+  [
+   395.685,
+   397.993,
+   "the parts and assemble them once."
+  ],
+  [
+   398.493,
+   399.368,
+   "The names,"
+  ],
+  [
+   399.368,
+   401.992,
+   "against the code you just wrote."
+  ],
+  [
+   402.623,
+   406.122,
+   "The Product is HttpRequest \u2014 the immutable thing"
+  ],
+  [
+   406.122,
+   407.434,
+   "you actually wanted."
+  ],
+  [
+   408.066,
+   409.815,
+   "The Builder is HttpRequest.Builder,"
+  ],
+  [
+   409.815,
+   412.44,
+   "and its fluent setters \u2014 method,"
+  ],
+  [
+   412.44,
+   412.877,
+   "header,"
+  ],
+  [
+   412.877,
+   415.938,
+   "timeout \u2014 are how you feed it."
+  ],
+  [
+   416.57,
+   420.069,
+   "The Client is whatever chains those calls and"
+  ],
+  [
+   420.069,
+   421.381,
+   "finishes with build."
+  ],
+  [
+   422.013,
+   424.637,
+   "And the Gang of Four definition:"
+  ],
+  [
+   424.637,
+   428.136,
+   "separate the construction of a complex object from"
+  ],
+  [
+   428.136,
+   429.01,
+   "its representation,"
+  ],
+  [
+   429.01,
+   432.509,
+   "so that the same construction process can create"
+  ],
+  [
+   432.509,
+   433.384,
+   "different representations."
+  ],
+  [
+   433.884,
+   435.537,
+   "Builder is not free either."
+  ],
+  [
+   436.169,
+   438.814,
+   "You are writing and maintaining an entire second"
+  ],
+  [
+   438.814,
+   440.467,
+   "class alongside the real one."
+  ],
+  [
+   440.467,
+   443.113,
+   "You create two objects where a constructor made"
+  ],
+  [
+   443.113,
+   443.443,
+   "one."
+  ],
+  [
+   443.443,
+   446.089,
+   "And for an object with two or three"
+  ],
+  [
+   446.089,
+   446.419,
+   "fields,"
+  ],
+  [
+   446.419,
+   449.064,
+   "it is plainly overkill \u2014 a plain constructor"
+  ],
+  [
+   449.064,
+   449.726,
+   "is clearer."
+  ],
+  [
+   450.357,
+   453.003,
+   "So do not reach for it when the"
+  ],
+  [
+   453.003,
+   453.995,
+   "object is small,"
+  ],
+  [
+   453.995,
+   456.64,
+   "or when every field is required and there"
+  ],
+  [
+   456.64,
+   458.624,
+   "is no optional soup to tame."
+  ],
+  [
+   459.255,
+   461.901,
+   "The signal to reach for it is specific"
+  ],
+  [
+   461.901,
+   464.546,
+   "\u2014 a constructor with four or more parameters,"
+  ],
+  [
+   464.546,
+   465.868,
+   "several of them optional,"
+  ],
+  [
+   465.868,
+   468.514,
+   "and callers passing null just to skip the"
+  ],
+  [
+   468.514,
+   470.167,
+   "ones they don't care about."
+  ],
+  [
+   470.667,
+   471.056,
+   "Builder,"
+  ],
+  [
+   471.056,
+   472.223,
+   "in one breath."
+  ],
+  [
+   472.854,
+   474.41,
+   "A single giant constructor,"
+  ],
+  [
+   474.41,
+   476.743,
+   "or a telescoping stack of overloads,"
+  ],
+  [
+   476.743,
+   479.854,
+   "buried every caller in positional arguments and\nnulls."
+  ],
+  [
+   480.486,
+   483.597,
+   "But you always end with one immutable object"
+  ],
+  [
+   483.597,
+   486.708,
+   "\u2014 only the set of chosen fields varies"
+  ],
+  [
+   486.708,
+   489.819,
+   "\u2014 so you collect them on a mutable"
+  ],
+  [
+   489.819,
+   490.597,
+   "builder first."
+  ],
+  [
+   491.228,
+   491.617,
+   "Builder:"
+  ],
+  [
+   491.617,
+   493.95,
+   "fluent setters that each return this,"
+  ],
+  [
+   493.95,
+   497.061,
+   "and a build method that validates once and"
+  ],
+  [
+   497.061,
+   499.006,
+   "hands back the finished product."
+  ],
+  [
+   499.006,
+   501.728,
+   "A new field costs one new setter,"
+  ],
+  [
+   501.728,
+   502.506,
+   "nothing more."
+  ],
+  [
+   503.137,
+   503.526,
+   "Now,"
+  ],
+  [
+   503.526,
+   505.082,
+   "one to carry out."
+  ],
+  [
+   505.713,
+   508.824,
+   "You're building a database query \u2014 a required"
+  ],
+  [
+   508.824,
+   509.213,
+   "table,"
+  ],
+  [
+   509.213,
+   510.38,
+   "plus optional where-clauses,"
+  ],
+  [
+   510.38,
+   510.769,
+   "ordering,"
+  ],
+  [
+   510.769,
+   511.546,
+   "a limit,"
+  ],
+  [
+   511.546,
+   512.324,
+   "and joins,"
+  ],
+  [
+   512.324,
+   513.491,
+   "in any combination."
+  ],
+  [
+   514.122,
+   515.289,
+   "Does Builder fit?"
+  ],
+  [
+   515.289,
+   516.845,
+   "What is the product,"
+  ],
+  [
+   516.845,
+   518.4,
+   "what is the builder,"
+  ],
+  [
+   518.4,
+   521.122,
+   "and where should build do its validating?"
+  ],
+  [
+   521.754,
+   522.143,
+   "Pause,"
+  ],
+  [
+   522.143,
+   524.865,
+   "and sketch it before you press play."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp10-builder.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,5 @@
+file '/Users/appuram/Developer/explainer-forge/projects/nifty-beaters-en/renders/ch01.mp4'
+file '/Users/appuram/Developer/explainer-forge/projects/nifty-beaters-en/renders/ch02.mp4'
+file '/Users/appuram/Developer/explainer-forge/projects/nifty-beaters-en/renders/ch03.mp4'
+file '/Users/appuram/Developer/explainer-forge/projects/nifty-beaters-en/renders/ch04.mp4'
+file '/Users/appuram/Developer/explainer-forge/projects/nifty-beaters-en/renders/ch05.mp4'

@@ -1,0 +1,277 @@
+{
+  "cuts": [
+    {
+      "id": "s01_title",
+      "type": "ia_title",
+      "in_seconds": 0.0,
+      "out_seconds": 34.168,
+      "props": {
+        "dur": 34.668
+      }
+    },
+    {
+      "id": "s02_div1",
+      "type": "ia_div",
+      "in_seconds": 34.668,
+      "out_seconds": 44.436,
+      "props": {
+        "n": 1,
+        "title": "What Intraday Really Is",
+        "sub": "Mechanics \u00b7 Costs \u00b7 Leverage \u00b7 The honest odds",
+        "color": "#F6A723",
+        "dur": 10.268
+      }
+    },
+    {
+      "id": "s03_hook",
+      "type": "ia_hook",
+      "in_seconds": 44.936,
+      "out_seconds": 100.39,
+      "props": {
+        "dur": 55.954
+      }
+    },
+    {
+      "id": "s04_whatis",
+      "type": "ia_whatis",
+      "in_seconds": 100.89,
+      "out_seconds": 155.792,
+      "props": {
+        "dur": 55.402
+      }
+    },
+    {
+      "id": "s05_vsdelivery",
+      "type": "ia_vsdelivery",
+      "in_seconds": 156.292,
+      "out_seconds": 207.714,
+      "props": {
+        "dur": 51.922
+      }
+    },
+    {
+      "id": "s06_session",
+      "type": "ia_session",
+      "in_seconds": 208.214,
+      "out_seconds": 258.702,
+      "props": {
+        "dur": 50.988
+      }
+    },
+    {
+      "id": "s07_leverage",
+      "type": "ia_leverage",
+      "in_seconds": 259.202,
+      "out_seconds": 315.256,
+      "props": {
+        "dur": 56.554
+      }
+    },
+    {
+      "id": "s08_costs",
+      "type": "ia_costs",
+      "in_seconds": 315.756,
+      "out_seconds": 375.05,
+      "props": {
+        "dur": 59.794
+      }
+    },
+    {
+      "id": "s09_edge",
+      "type": "ia_edge",
+      "in_seconds": 375.55,
+      "out_seconds": 429.398,
+      "props": {
+        "dur": 54.348
+      }
+    },
+    {
+      "id": "s10_div2",
+      "type": "ia_div",
+      "in_seconds": 429.898,
+      "out_seconds": 439.594,
+      "props": {
+        "n": 2,
+        "title": "The Framework",
+        "sub": "Bias \u00b7 Levels \u00b7 VWAP \u00b7 Setups \u00b7 Stops \u00b7 Sizing \u00b7 Psychology",
+        "color": "#38BDF8",
+        "dur": 10.196
+      }
+    },
+    {
+      "id": "s11_bias",
+      "type": "ia_bias",
+      "in_seconds": 440.094,
+      "out_seconds": 493.076,
+      "props": {
+        "dur": 53.482
+      }
+    },
+    {
+      "id": "s12_levels",
+      "type": "ia_levels",
+      "in_seconds": 493.576,
+      "out_seconds": 542.838,
+      "props": {
+        "dur": 49.762
+      }
+    },
+    {
+      "id": "s13_vwap",
+      "type": "ia_vwap",
+      "in_seconds": 543.338,
+      "out_seconds": 596.056,
+      "props": {
+        "dur": 53.218
+      }
+    },
+    {
+      "id": "s14_orb",
+      "type": "ia_orb",
+      "in_seconds": 596.556,
+      "out_seconds": 648.098,
+      "props": {
+        "dur": 52.042
+      }
+    },
+    {
+      "id": "s15_pullback",
+      "type": "ia_pullback",
+      "in_seconds": 648.598,
+      "out_seconds": 701.676,
+      "props": {
+        "dur": 53.578
+      }
+    },
+    {
+      "id": "s16_volume",
+      "type": "ia_volume",
+      "in_seconds": 702.176,
+      "out_seconds": 753.502,
+      "props": {
+        "dur": 51.826
+      }
+    },
+    {
+      "id": "s17_stop",
+      "type": "ia_stop",
+      "in_seconds": 754.002,
+      "out_seconds": 811.592,
+      "props": {
+        "dur": 58.09
+      }
+    },
+    {
+      "id": "s18_rr",
+      "type": "ia_rr",
+      "in_seconds": 812.092,
+      "out_seconds": 868.29,
+      "props": {
+        "dur": 56.698
+      }
+    },
+    {
+      "id": "s19_sizing",
+      "type": "ia_sizing",
+      "in_seconds": 868.79,
+      "out_seconds": 931.49,
+      "props": {
+        "dur": 63.2
+      }
+    },
+    {
+      "id": "s20_timeofday",
+      "type": "ia_timeofday",
+      "in_seconds": 931.99,
+      "out_seconds": 979.524,
+      "props": {
+        "dur": 48.034
+      }
+    },
+    {
+      "id": "s21_psych",
+      "type": "ia_psych",
+      "in_seconds": 980.024,
+      "out_seconds": 1036.628,
+      "props": {
+        "dur": 57.104
+      }
+    },
+    {
+      "id": "s22_mistakes",
+      "type": "ia_mistakes",
+      "in_seconds": 1037.128,
+      "out_seconds": 1078.232,
+      "props": {
+        "dur": 41.604
+      }
+    },
+    {
+      "id": "s23_div3",
+      "type": "ia_div",
+      "in_seconds": 1078.732,
+      "out_seconds": 1088.284,
+      "props": {
+        "n": 3,
+        "title": "Putting It Together",
+        "sub": "One clean trade \u00b7 The pre-trade checklist",
+        "color": "#43D9A3",
+        "dur": 10.052
+      }
+    },
+    {
+      "id": "s24_walkthrough",
+      "type": "ia_walkthrough",
+      "in_seconds": 1088.784,
+      "out_seconds": 1144.598,
+      "props": {
+        "dur": 56.314
+      }
+    },
+    {
+      "id": "s25_checklist",
+      "type": "ia_checklist",
+      "in_seconds": 1145.098,
+      "out_seconds": 1190.186,
+      "props": {
+        "items": [
+          "Bias: am I swimming WITH the trend, and on the right side of VWAP?",
+          "Level: what floor or ceiling is this trade based on \u2014 breakout, retest, or S/R?",
+          "Volume: is the crowd roaring, or is it suspiciously quiet?",
+          "Seatbelt: is my stop at a level that proves me wrong \u2014 not a random number?",
+          "Payoff: is my target at least twice my risk (2R minimum)?",
+          "Size: does a stop-out cost at most 1% of my bankroll?",
+          "Timing: are the fish biting \u2014 a prime hour, not the dead mid-day?",
+          "Mindset: am I calm and on plan \u2014 not on tilt, chasing or bored?"
+        ],
+        "dur": 45.588
+      }
+    },
+    {
+      "id": "s26_recap",
+      "type": "ia_recap",
+      "in_seconds": 1190.686,
+      "out_seconds": 1264.688,
+      "props": {
+        "items": [
+          "Intraday = a rented bike: open AND close the same day; flat by 3:30, no overnight risk",
+          "Leverage is a magnifying glass; costs are tolls \u2014 both cut BOTH ways. Respect them",
+          "Swim WITH the higher-timeframe trend; use VWAP as your water line",
+          "Mark floors & ceilings before the open: previous-day high/low and the opening range",
+          "Wait for the gate to break \u2014 breakout or retest \u2014 confirmed by the crowd (volume). Don't chase",
+          "Every trade: seatbelt (stop) first, target at 2R minimum, size by the 1% bankroll rule",
+          "Fish when the fish bite \u2014 prime hours; avoid the dead mid-day and the first 5 minutes",
+          "Discipline beats prediction \u2014 71% lose by breaking rules they already know"
+        ],
+        "closer": "You can't control the market \u2014 only your risk, your rules, and your patience. Master those, and you're ahead of most.",
+        "dur": 74.502
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "ia/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

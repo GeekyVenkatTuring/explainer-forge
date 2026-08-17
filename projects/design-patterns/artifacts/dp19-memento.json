@@ -1,0 +1,2031 @@
+{
+ "cuts": [
+  {
+   "id": "dp19-memento_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 31.355,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 19",
+    "line1": "Ctrl + Z",
+    "line2": "needs a memory",
+    "sub": "snapshot an object's state so you can put it back \u2014 without exposing its guts",
+    "dur": 31.855
+   }
+  },
+  {
+   "id": "dp19-memento_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 31.855,
+   "out_seconds": 63.919,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Undo in a text editor",
+    "situation": "A text editor holds a document \u2014 content, cursor, selection. Every edit should be undoable: restore the full previous state on Ctrl-Z, any number of steps back.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udcdd",
+      "label": "The editor's state"
+     },
+     {
+      "emoji": "\ud83d\udcbe",
+      "label": "\u2026snapshotted"
+     },
+     {
+      "emoji": "\u21a9\ufe0f",
+      "label": "\u2026restored on undo"
+     }
+    ],
+    "ask": "How do you save and restore full state without exposing the editor's internals?",
+    "dur": 32.564
+   }
+  },
+  {
+   "id": "dp19-memento_naive",
+   "type": "dp_code",
+   "in_seconds": 64.419,
+   "out_seconds": 104.224,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "The history reaches inside.",
+    "file": "History.java",
+    "lines": [
+     {
+      "t": "class History {"
+     },
+     {
+      "t": "  void save(Editor e) {",
+      "s": "hi"
+     },
+     {
+      "t": "    this.content = e.content;    // grab privates",
+      "s": "hi"
+     },
+     {
+      "t": "    this.cursor  = e.cursor;     // one by one",
+      "s": "hi"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "  void restore(Editor e) {"
+     },
+     {
+      "t": "    e.content = this.content; e.cursor = this.cursor;",
+      "s": "hi"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "History knows every private field of Editor. Encapsulation is gone.",
+    "dur": 40.305
+   }
+  },
+  {
+   "id": "dp19-memento_pain",
+   "type": "dp_pain",
+   "in_seconds": 104.724,
+   "out_seconds": 147.275,
+   "props": {
+    "title": "\"Also remember the selection. And the scroll position.\"",
+    "file": "coupled.java",
+    "lines": [
+     {
+      "t": "void save(Editor e) {"
+     },
+     {
+      "t": "  this.content   = e.content;"
+     },
+     {
+      "t": "  this.cursor    = e.cursor;"
+     },
+     {
+      "t": "  this.selection = e.selection;   // new field...",
+      "s": "hi"
+     },
+     {
+      "t": "  this.scrollTop = e.scrollTop;   // ...and another",
+      "s": "hi"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "// every new bit of state \u2192 edit save() AND restore()"
+     }
+    ],
+    "smell": "The caretaker duplicates the originator's field list",
+    "touched": [
+     "History mirrors every Editor field",
+     "add a field \u2192 edit save + restore",
+     "Editor internals are fully public",
+     "two classes locked together"
+    ],
+    "dur": 43.051
+   }
+  },
+  {
+   "id": "dp19-memento_insight",
+   "type": "dp_insight",
+   "in_seconds": 147.775,
+   "out_seconds": 188.805,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "You must snapshot and restore full state",
+     "The state should stay the object's secret",
+     "The history just stores snapshots in order"
+    ],
+    "varies": [
+     "What exactly is in that state",
+     "How many snapshots you keep"
+    ],
+    "principle": "Let the object snapshot ITSELF into an opaque token; a caretaker just holds tokens.",
+    "dur": 41.53
+   }
+  },
+  {
+   "id": "dp19-memento_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 189.305,
+   "out_seconds": 236.046,
+   "props": {
+    "title": "A video-game save point",
+    "emoji": "\ud83c\udfae",
+    "analogy": "You save the game and later reload \u2014 but you never open the save file and edit it by hand.",
+    "map": [
+     {
+      "from": "Hitting 'save'",
+      "to": "editor.save() \u2192 a memento"
+     },
+     {
+      "from": "The save file",
+      "to": "the opaque memento"
+     },
+     {
+      "from": "The list of save slots",
+      "to": "the caretaker / history"
+     },
+     {
+      "from": "Reloading a save",
+      "to": "editor.restore(memento)"
+     }
+    ],
+    "breaks": "a save file can be inspected with the right tools; a true memento stays opaque to everyone but its creator.",
+    "dur": 47.241
+   }
+  },
+  {
+   "id": "dp19-memento_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 236.546,
+   "out_seconds": 269.088,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "An opaque snapshot only the editor can read",
+    "file": "Editor.java",
+    "lines": [
+     {
+      "t": "class Editor {"
+     },
+     {
+      "t": "  private String content; private int cursor;"
+     },
+     {
+      "t": "  Memento save() {                    // snapshot self",
+      "s": "add"
+     },
+     {
+      "t": "    return new Memento(content, cursor);",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "  void restore(Memento m) {           // reload self",
+      "s": "add"
+     },
+     {
+      "t": "    this.content = m.content(); this.cursor = m.cursor();",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "The Editor makes and reads its own Memento \u2014 no one else touches its state.",
+    "dur": 33.042
+   }
+  },
+  {
+   "id": "dp19-memento_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 269.588,
+   "out_seconds": 301.5,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "A caretaker that holds sealed snapshots",
+    "file": "History.java",
+    "lines": [
+     {
+      "t": "class History {",
+      "s": "hi"
+     },
+     {
+      "t": "  private final Deque<Memento> stack = new ArrayDeque<>();",
+      "s": "hi"
+     },
+     {
+      "t": "  void push(Memento m) { stack.push(m); }   // just store",
+      "s": "hi"
+     },
+     {
+      "t": "  Memento pop() { return stack.pop(); }     // just return"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "// History NEVER reads a memento's contents"
+     }
+    ],
+    "note": "The caretaker keeps an ordered pile of opaque tokens. That's all it does.",
+    "dur": 32.412
+   }
+  },
+  {
+   "id": "dp19-memento_try",
+   "type": "dp_try",
+   "in_seconds": 302.0,
+   "out_seconds": 329.987,
+   "props": {
+    "title": "Write undo()",
+    "file": "App.java",
+    "lines": [
+     {
+      "t": "History history = ...;  Editor editor = ...;"
+     },
+     {
+      "t": "void undo() {"
+     },
+     {
+      "t": "  // \u25af restore the editor to its last snapshot",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Undo pops the most recent memento and restores it. Two objects, one line each.",
+    "hint": "editor.restore(history.pop());",
+    "dur": 28.487
+   }
+  },
+  {
+   "id": "dp19-memento_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 330.487,
+   "out_seconds": 365.45,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "Save before each edit; undo pops",
+    "file": "Editor.java  +  App.java",
+    "lines": [
+     {
+      "t": "void type(String s) {"
+     },
+     {
+      "t": "  history.push(save());   // snapshot BEFORE editing",
+      "s": "add"
+     },
+     {
+      "t": "  content += s;           // then mutate",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "void undo() { restore(history.pop()); }   // roll back",
+      "s": "add"
+     }
+    ],
+    "note": "Snapshot before every change; undo just restores the top of the stack.",
+    "dur": 35.463
+   }
+  },
+  {
+   "id": "dp19-memento_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 365.95,
+   "out_seconds": 405.673,
+   "props": {
+    "requirement": "\"Undo must also restore selection + scroll\"",
+    "naiveLabel": "Exposed",
+    "naiveCost": "Edit the caretaker's save AND restore.",
+    "naiveSteps": [
+     "add fields to History too",
+     "mirror them in save + restore",
+     "keep two classes in sync"
+    ],
+    "patLabel": "Memento",
+    "patCost": "Only Editor.save/restore change. History untouched.",
+    "patFile": "Editor.java",
+    "patLines": [
+     {
+      "t": "Memento save() {",
+      "s": "add"
+     },
+     {
+      "t": "  return new Memento(content, cursor,",
+      "s": "add"
+     },
+     {
+      "t": "                     selection, scrollTop);  // just here",
+      "s": "add"
+     },
+     {
+      "t": "}   // History never knew, never cared",
+      "s": "add"
+     }
+    ],
+    "dur": 40.223
+   }
+  },
+  {
+   "id": "dp19-memento_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 406.173,
+   "out_seconds": 447.724,
+   "props": {
+    "name": "The Memento Pattern",
+    "plain": "An object snapshots its own state into an opaque memento; a caretaker stores mementos without ever reading them.",
+    "nodes": [
+     {
+      "id": "orig",
+      "title": "Editor",
+      "stereo": "originator",
+      "members": [
+       "+ save(): Memento",
+       "+ restore(m)"
+      ],
+      "x": 180,
+      "y": 400,
+      "w": 420,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "mem",
+      "title": "Memento",
+      "stereo": "memento",
+      "members": [
+       "- content, cursor",
+       "(opaque)"
+      ],
+      "x": 800,
+      "y": 400,
+      "w": 360,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "care",
+      "title": "History",
+      "stereo": "caretaker",
+      "members": [
+       "- Deque<Memento>",
+       "+ push() / undo()"
+      ],
+      "x": 1360,
+      "y": 400,
+      "w": 400,
+      "color": "#8B93B0"
+     }
+    ],
+    "edges": [
+     {
+      "from": "orig",
+      "to": "mem",
+      "kind": "assoc"
+     },
+     {
+      "from": "care",
+      "to": "mem",
+      "kind": "has"
+     }
+    ],
+    "dur": 42.051
+   }
+  },
+  {
+   "id": "dp19-memento_map",
+   "type": "dp_map",
+   "in_seconds": 448.224,
+   "out_seconds": 490.306,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Originator",
+      "your": "Editor (save + restore)"
+     },
+     {
+      "role": "Memento",
+      "your": "the opaque snapshot object"
+     },
+     {
+      "role": "Caretaker",
+      "your": "History (a stack of mementos)"
+     },
+     {
+      "role": "The rule",
+      "your": "only the Originator reads a Memento"
+     }
+    ],
+    "plain": "The originator creates and reads mementos; the caretaker only holds them, preserving encapsulation.",
+    "gof": "Without violating encapsulation, capture and externalize an object's internal state so that it can be restored later.",
+    "dur": 42.582
+   }
+  },
+  {
+   "id": "dp19-memento_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 490.806,
+   "out_seconds": 533.003,
+   "props": {
+    "title": "Snapshots cost memory",
+    "costs": [
+     "Each memento copies real state \u2014 memory adds up",
+     "Frequent snapshots can be expensive",
+     "A deep history holds a lot of data"
+    ],
+    "dont": [
+     "The state is trivial to reconstruct",
+     "One field a public getter would expose fine",
+     "Undo isn't actually needed"
+    ],
+    "signal": "you need to save and restore an object's full state repeatedly, without exposing its internals.",
+    "dur": 42.697
+   }
+  },
+  {
+   "id": "dp19-memento_recap",
+   "type": "dp_recap",
+   "in_seconds": 533.503,
+   "out_seconds": 590.336,
+   "props": {
+    "title": "Memento, in one breath",
+    "items": [
+     "Letting the history reach into the object's private fields destroyed encapsulation \u2014 and locked the two classes together.",
+     "The state must be snapshotted and restored, but stay the object's secret \u2014 so let the object snapshot ITSELF, opaquely.",
+     "Memento: originator makes and reads snapshots; caretaker only stores them. New state, one class changes."
+    ],
+    "challenge": "A drawing app needs undo across shapes, layers, and colors \u2014 many steps back \u2014 while keeping each object's internals private.",
+    "question": "Does Memento fit? Who's the originator, what's in the memento, and who must never read it?",
+    "dur": 57.333
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.806,
+   "Undo is one of the most reassuring features"
+  ],
+  [
+   2.806,
+   3.507,
+   "software has."
+  ],
+  [
+   4.139,
+   5.191,
+   "Make a mistake,"
+  ],
+  [
+   5.191,
+   5.892,
+   "press Ctrl-Z,"
+  ],
+  [
+   5.892,
+   7.646,
+   "and the world rolls back."
+  ],
+  [
+   8.278,
+   9.68,
+   "But to roll back,"
+  ],
+  [
+   9.68,
+   12.486,
+   "something has to have remembered the previous\nstate"
+  ],
+  [
+   12.486,
+   15.292,
+   "\u2014 the whole state \u2014 and be able"
+  ],
+  [
+   15.292,
+   16.695,
+   "to restore it exactly."
+  ],
+  [
+   16.695,
+   19.5,
+   "The naive way to do that pries open"
+  ],
+  [
+   19.5,
+   22.306,
+   "the object and copies out its private fields,"
+  ],
+  [
+   22.306,
+   25.112,
+   "and that quietly destroys everything encapsulation\ngave you."
+  ],
+  [
+   25.744,
+   28.549,
+   "There is a way to capture state without"
+  ],
+  [
+   28.549,
+   29.251,
+   "exposing it."
+  ],
+  [
+   29.251,
+   31.355,
+   "Let's build undo for an editor."
+  ],
+  [
+   31.855,
+   33.242,
+   "Here is the feature:"
+  ],
+  [
+   33.242,
+   33.589,
+   "undo,"
+  ],
+  [
+   33.589,
+   34.976,
+   "in a text editor."
+  ],
+  [
+   35.608,
+   38.382,
+   "The editor holds a document \u2014 the text"
+  ],
+  [
+   38.382,
+   38.728,
+   "content,"
+  ],
+  [
+   38.728,
+   40.116,
+   "where the cursor is,"
+  ],
+  [
+   40.116,
+   41.156,
+   "what is selected."
+  ],
+  [
+   41.787,
+   44.562,
+   "Every edit the user makes should be undoable."
+  ],
+  [
+   44.562,
+   45.255,
+   "Press Ctrl-Z,"
+  ],
+  [
+   45.255,
+   48.029,
+   "and the entire previous state comes back \u2014"
+  ],
+  [
+   48.029,
+   48.723,
+   "the text,"
+  ],
+  [
+   48.723,
+   49.416,
+   "the cursor,"
+  ],
+  [
+   49.416,
+   50.11,
+   "the selection,"
+  ],
+  [
+   50.11,
+   51.15,
+   "all of it."
+  ],
+  [
+   51.15,
+   52.537,
+   "And not just once;"
+  ],
+  [
+   52.537,
+   53.578,
+   "many steps back."
+  ],
+  [
+   54.209,
+   55.596,
+   "So the question is:"
+  ],
+  [
+   55.596,
+   58.371,
+   "how do you capture and restore the editor's"
+  ],
+  [
+   58.371,
+   59.064,
+   "full state,"
+  ],
+  [
+   59.064,
+   61.838,
+   "over and over \u2014 without prying open the"
+  ],
+  [
+   61.838,
+   63.919,
+   "editor and exposing everything inside it?"
+  ],
+  [
+   64.419,
+   65.526,
+   "The direct approach:"
+  ],
+  [
+   65.526,
+   68.479,
+   "let the history object reach into the editor"
+  ],
+  [
+   68.479,
+   70.325,
+   "and copy its state out."
+  ],
+  [
+   70.956,
+   71.694,
+   "To save,"
+  ],
+  [
+   71.694,
+   73.171,
+   "it grabs the content,"
+  ],
+  [
+   73.171,
+   73.909,
+   "the cursor,"
+  ],
+  [
+   73.909,
+   75.016,
+   "each private field,"
+  ],
+  [
+   75.016,
+   76.123,
+   "one by one."
+  ],
+  [
+   76.123,
+   76.862,
+   "To restore,"
+  ],
+  [
+   76.862,
+   78.707,
+   "it writes them all back."
+  ],
+  [
+   79.339,
+   80.077,
+   "It works."
+  ],
+  [
+   80.708,
+   82.923,
+   "But look at what just happened."
+  ],
+  [
+   82.923,
+   85.876,
+   "The editor had to expose all of its"
+  ],
+  [
+   85.876,
+   88.829,
+   "internals \u2014 every private field is now readable"
+  ],
+  [
+   88.829,
+   90.305,
+   "and writable from outside."
+  ],
+  [
+   90.305,
+   93.258,
+   "And the history is intimately coupled to the"
+  ],
+  [
+   93.258,
+   94.365,
+   "editor's exact shape."
+  ],
+  [
+   94.997,
+   97.949,
+   "The editor can no longer change how it"
+  ],
+  [
+   97.949,
+   100.164,
+   "stores anything without breaking the history."
+  ],
+  [
+   100.164,
+   100.533,
+   "Encapsulation,"
+  ],
+  [
+   100.533,
+   103.486,
+   "the thing that let the editor evolve safely,"
+  ],
+  [
+   103.486,
+   104.224,
+   "is gone."
+  ],
+  [
+   104.724,
+   106.179,
+   "Then the state grows,"
+  ],
+  [
+   106.179,
+   107.635,
+   "as it always does."
+  ],
+  [
+   107.635,
+   109.09,
+   "Remember the selection too."
+  ],
+  [
+   109.09,
+   110.546,
+   "And the scroll position."
+  ],
+  [
+   110.546,
+   113.093,
+   "And undo needs those back as well."
+  ],
+  [
+   113.724,
+   116.635,
+   "So the history's save method grows a line"
+  ],
+  [
+   116.635,
+   119.546,
+   "for each \u2014 and its restore method grows"
+  ],
+  [
+   119.546,
+   120.638,
+   "a matching line."
+  ],
+  [
+   121.269,
+   124.18,
+   "Every single piece of state the editor gains"
+  ],
+  [
+   124.18,
+   125.999,
+   "has to be manually mirrored,"
+  ],
+  [
+   125.999,
+   127.091,
+   "in two places,"
+  ],
+  [
+   127.091,
+   128.91,
+   "inside a completely different class."
+  ],
+  [
+   129.542,
+   132.453,
+   "The history has become a fragile duplicate of"
+  ],
+  [
+   132.453,
+   133.908,
+   "the editor's field list."
+  ],
+  [
+   134.54,
+   137.451,
+   "And because all those fields must stay public"
+  ],
+  [
+   137.451,
+   139.634,
+   "for the history to touch them,"
+  ],
+  [
+   139.634,
+   142.545,
+   "the editor's internals are exposed to the entire"
+  ],
+  [
+   142.545,
+   142.909,
+   "program."
+  ],
+  [
+   142.909,
+   143.636,
+   "Two classes,"
+  ],
+  [
+   143.636,
+   144.364,
+   "welded together,"
+  ],
+  [
+   144.364,
+   147.275,
+   "and an object that can keep no secrets."
+  ],
+  [
+   147.775,
+   148.845,
+   "What is fixed,"
+  ],
+  [
+   148.845,
+   149.914,
+   "and what varies?"
+  ],
+  [
+   150.546,
+   150.902,
+   "Fixed:"
+  ],
+  [
+   150.902,
+   153.754,
+   "you need to snapshot the full state and"
+  ],
+  [
+   153.754,
+   154.824,
+   "later restore it."
+  ],
+  [
+   154.824,
+   157.676,
+   "That state should remain the object's own secret."
+  ],
+  [
+   157.676,
+   160.528,
+   "And the history's job is only to store"
+  ],
+  [
+   160.528,
+   160.885,
+   "snapshots,"
+  ],
+  [
+   160.885,
+   161.598,
+   "in order."
+  ],
+  [
+   162.229,
+   165.081,
+   "What varies is what exactly is inside the"
+  ],
+  [
+   165.081,
+   165.438,
+   "state,"
+  ],
+  [
+   165.438,
+   167.933,
+   "and how many snapshots you keep around."
+  ],
+  [
+   168.565,
+   169.991,
+   "Here is the move."
+  ],
+  [
+   170.623,
+   173.475,
+   "Stop letting anyone else read the object's fields."
+  ],
+  [
+   173.475,
+   173.831,
+   "Instead,"
+  ],
+  [
+   173.831,
+   176.683,
+   "let the object snapshot itself \u2014 packaging its"
+  ],
+  [
+   176.683,
+   179.536,
+   "own state into an opaque token that only"
+  ],
+  [
+   179.536,
+   180.605,
+   "it can open."
+  ],
+  [
+   180.605,
+   183.101,
+   "The history then just holds those tokens,"
+  ],
+  [
+   183.101,
+   184.17,
+   "in a stack,"
+  ],
+  [
+   184.17,
+   185.596,
+   "without ever looking inside."
+  ],
+  [
+   185.596,
+   187.379,
+   "The object keeps its secrets,"
+  ],
+  [
+   187.379,
+   188.805,
+   "and still gets undo."
+  ],
+  [
+   189.305,
+   191.945,
+   "Think of a save point in a video"
+  ],
+  [
+   191.945,
+   192.275,
+   "game."
+  ],
+  [
+   192.906,
+   194.226,
+   "Before a hard section,"
+  ],
+  [
+   194.226,
+   194.886,
+   "you save."
+  ],
+  [
+   194.886,
+   196.206,
+   "If it goes badly,"
+  ],
+  [
+   196.206,
+   196.866,
+   "you reload,"
+  ],
+  [
+   196.866,
+   199.505,
+   "and you are exactly where you were \u2014"
+  ],
+  [
+   199.505,
+   199.835,
+   "health,"
+  ],
+  [
+   199.835,
+   200.165,
+   "inventory,"
+  ],
+  [
+   200.165,
+   200.495,
+   "position,"
+  ],
+  [
+   200.495,
+   201.155,
+   "all restored."
+  ],
+  [
+   201.787,
+   204.426,
+   "But you never open the save file in"
+  ],
+  [
+   204.426,
+   207.066,
+   "a text editor and tweak the numbers by"
+  ],
+  [
+   207.066,
+   207.396,
+   "hand."
+  ],
+  [
+   207.396,
+   208.716,
+   "The game wrote it;"
+  ],
+  [
+   208.716,
+   210.036,
+   "the game reads it;"
+  ],
+  [
+   210.036,
+   210.696,
+   "to you,"
+  ],
+  [
+   210.696,
+   213.335,
+   "it is an opaque blob you simply keep"
+  ],
+  [
+   213.335,
+   214.325,
+   "and hand back."
+  ],
+  [
+   214.957,
+   217.267,
+   "Hitting save is the editor snapshotting itself."
+  ],
+  [
+   217.267,
+   219.246,
+   "The save file is the memento."
+  ],
+  [
+   219.246,
+   221.886,
+   "Your list of save slots is the caretaker"
+  ],
+  [
+   221.886,
+   222.876,
+   "\u2014 the history."
+  ],
+  [
+   222.876,
+   225.516,
+   "And reloading is the editor restoring from a"
+  ],
+  [
+   225.516,
+   225.846,
+   "memento."
+  ],
+  [
+   226.477,
+   227.467,
+   "Where it strains:"
+  ],
+  [
+   227.467,
+   230.107,
+   "a real save file can be pried open"
+  ],
+  [
+   230.107,
+   231.427,
+   "with the right tools."
+  ],
+  [
+   231.427,
+   234.066,
+   "A true memento stays genuinely opaque to everyone"
+  ],
+  [
+   234.066,
+   236.046,
+   "except the object that made it."
+  ],
+  [
+   236.546,
+   237.259,
+   "The refactor,"
+  ],
+  [
+   237.259,
+   237.971,
+   "step one."
+  ],
+  [
+   238.603,
+   241.454,
+   "The editor gains two methods of its own."
+  ],
+  [
+   241.454,
+   241.81,
+   "Save,"
+  ],
+  [
+   241.81,
+   244.661,
+   "which packages its current state into a Memento"
+  ],
+  [
+   244.661,
+   246.087,
+   "and hands it out."
+  ],
+  [
+   246.087,
+   246.799,
+   "And restore,"
+  ],
+  [
+   246.799,
+   249.65,
+   "which takes a Memento and loads its state"
+  ],
+  [
+   249.65,
+   250.363,
+   "back in."
+  ],
+  [
+   250.995,
+   251.351,
+   "Crucially,"
+  ],
+  [
+   251.351,
+   253.133,
+   "the editor's fields stay private."
+  ],
+  [
+   253.133,
+   255.984,
+   "The only code that ever reads or writes"
+  ],
+  [
+   255.984,
+   257.766,
+   "them is the editor itself,"
+  ],
+  [
+   257.766,
+   259.191,
+   "inside these two methods."
+  ],
+  [
+   259.823,
+   262.673,
+   "The Memento is a snapshot the object makes"
+  ],
+  [
+   262.673,
+   263.386,
+   "of itself,"
+  ],
+  [
+   263.386,
+   265.881,
+   "and only it knows how to read."
+  ],
+  [
+   265.881,
+   266.95,
+   "From the outside,"
+  ],
+  [
+   266.95,
+   269.088,
+   "that memento is a sealed box."
+  ],
+  [
+   269.588,
+   270.248,
+   "Step two:"
+  ],
+  [
+   270.248,
+   271.897,
+   "the caretaker \u2014 the history."
+  ],
+  [
+   272.529,
+   274.508,
+   "It holds a stack of mementos."
+  ],
+  [
+   274.508,
+   276.817,
+   "But look at how little it knows."
+  ],
+  [
+   276.817,
+   278.796,
+   "It can push a memento on,"
+  ],
+  [
+   278.796,
+   280.115,
+   "and pop one off."
+  ],
+  [
+   280.115,
+   281.765,
+   "That is the whole class."
+  ],
+  [
+   282.396,
+   285.035,
+   "It never reads what is inside a memento."
+  ],
+  [
+   285.035,
+   287.674,
+   "It cannot \u2014 the memento is opaque to"
+  ],
+  [
+   287.674,
+   288.004,
+   "it."
+  ],
+  [
+   288.004,
+   288.993,
+   "To the history,"
+  ],
+  [
+   288.993,
+   291.632,
+   "a memento is just a token to keep"
+  ],
+  [
+   291.632,
+   292.292,
+   "in order."
+  ],
+  [
+   292.924,
+   294.573,
+   "This is the key separation."
+  ],
+  [
+   294.573,
+   296.552,
+   "The editor knows what state means;"
+  ],
+  [
+   296.552,
+   299.191,
+   "the history knows only when it was captured."
+  ],
+  [
+   299.191,
+   301.5,
+   "Neither one depends on the other's internals."
+  ],
+  [
+   302.0,
+   303.872,
+   "Your turn \u2014 pause here."
+  ],
+  [
+   304.504,
+   306.001,
+   "You have an editor,"
+  ],
+  [
+   306.001,
+   308.622,
+   "and a history holding its past snapshots."
+  ],
+  [
+   309.254,
+   310.003,
+   "Write undo."
+  ],
+  [
+   310.634,
+   312.881,
+   "It has to do two things,"
+  ],
+  [
+   312.881,
+   315.127,
+   "but they compose into almost nothing:"
+  ],
+  [
+   315.127,
+   318.123,
+   "get the most recent snapshot from the history,"
+  ],
+  [
+   318.123,
+   320.744,
+   "and tell the editor to restore it."
+  ],
+  [
+   321.375,
+   323.996,
+   "Think about which object pops the memento,"
+  ],
+  [
+   323.996,
+   326.992,
+   "and which object opens it \u2014 because that"
+  ],
+  [
+   326.992,
+   329.987,
+   "division is the entire point of the pattern."
+  ],
+  [
+   330.487,
+   331.269,
+   "Step three,"
+  ],
+  [
+   331.269,
+   333.223,
+   "and undo comes to life."
+  ],
+  [
+   333.854,
+   335.027,
+   "Before every edit,"
+  ],
+  [
+   335.027,
+   338.153,
+   "the editor snapshots itself and pushes that\nmemento"
+  ],
+  [
+   338.153,
+   339.325,
+   "onto the history."
+  ],
+  [
+   339.325,
+   341.279,
+   "Then it makes the change."
+  ],
+  [
+   341.911,
+   345.037,
+   "So the history steadily accumulates a trail of"
+  ],
+  [
+   345.037,
+   345.819,
+   "past states."
+  ],
+  [
+   346.451,
+   349.577,
+   "And undo is now trivial \u2014 pop the"
+  ],
+  [
+   349.577,
+   351.922,
+   "most recent snapshot and restore it."
+  ],
+  [
+   351.922,
+   353.094,
+   "Press it again,"
+  ],
+  [
+   353.094,
+   355.83,
+   "and the one before that comes back."
+  ],
+  [
+   356.462,
+   357.243,
+   "A full,"
+  ],
+  [
+   357.243,
+   358.025,
+   "multi-step undo,"
+  ],
+  [
+   358.025,
+   361.151,
+   "built from an object that snapshots itself and"
+  ],
+  [
+   361.151,
+   363.496,
+   "a stack that holds the snapshots."
+  ],
+  [
+   363.496,
+   365.45,
+   "Neither knows the other's secrets."
+  ],
+  [
+   365.95,
+   368.383,
+   "Now the change that used to ripple."
+  ],
+  [
+   368.383,
+   371.164,
+   "Undo must restore the selection and the scroll"
+  ],
+  [
+   371.164,
+   371.86,
+   "position too."
+  ],
+  [
+   372.491,
+   373.882,
+   "In the exposed design,"
+  ],
+  [
+   373.882,
+   376.663,
+   "that meant adding those fields to the history"
+  ],
+  [
+   376.663,
+   377.011,
+   "class,"
+  ],
+  [
+   377.011,
+   379.792,
+   "and mirroring them in both its save and"
+  ],
+  [
+   379.792,
+   380.487,
+   "its restore."
+  ],
+  [
+   381.118,
+   381.814,
+   "With mementos,"
+  ],
+  [
+   381.814,
+   383.552,
+   "you change exactly one place:"
+  ],
+  [
+   383.552,
+   385.638,
+   "the editor's own save and restore,"
+  ],
+  [
+   385.638,
+   388.071,
+   "where the memento is built and read."
+  ],
+  [
+   388.703,
+   389.398,
+   "The history?"
+  ],
+  [
+   389.398,
+   392.179,
+   "It never knew what was in a memento,"
+  ],
+  [
+   392.179,
+   394.612,
+   "so it does not change at all."
+  ],
+  [
+   394.612,
+   397.394,
+   "It is still just pushing and popping opaque"
+  ],
+  [
+   397.394,
+   397.741,
+   "tokens."
+  ],
+  [
+   398.373,
+   401.154,
+   "New state costs a change in one class"
+  ],
+  [
+   401.154,
+   403.587,
+   "\u2014 the one that owns that state."
+  ],
+  [
+   403.587,
+   404.63,
+   "That is encapsulation,"
+  ],
+  [
+   404.63,
+   405.673,
+   "doing its job."
+  ],
+  [
+   406.173,
+   407.967,
+   "This is the Memento pattern."
+  ],
+  [
+   408.599,
+   409.316,
+   "Three roles."
+  ],
+  [
+   409.948,
+   411.024,
+   "On the left,"
+  ],
+  [
+   411.024,
+   412.818,
+   "the originator \u2014 the Editor."
+  ],
+  [
+   412.818,
+   415.689,
+   "It is the only one that can create"
+  ],
+  [
+   415.689,
+   417.483,
+   "a memento from its state,"
+  ],
+  [
+   417.483,
+   420.353,
+   "and the only one that can restore itself"
+  ],
+  [
+   420.353,
+   421.071,
+   "from one."
+  ],
+  [
+   421.703,
+   422.779,
+   "In the middle,"
+  ],
+  [
+   422.779,
+   425.65,
+   "the memento \u2014 a snapshot of the editor's"
+  ],
+  [
+   425.65,
+   426.008,
+   "state,"
+  ],
+  [
+   426.008,
+   428.161,
+   "opaque to everyone but the editor."
+  ],
+  [
+   428.793,
+   429.869,
+   "On the right,"
+  ],
+  [
+   429.869,
+   431.663,
+   "the caretaker \u2014 the History."
+  ],
+  [
+   431.663,
+   434.175,
+   "It holds mementos and hands them back,"
+  ],
+  [
+   434.175,
+   436.328,
+   "but can never see inside them."
+  ],
+  [
+   436.96,
+   439.471,
+   "Notice both arrows point at the memento."
+  ],
+  [
+   439.471,
+   441.983,
+   "The editor produces it and reads it;"
+  ],
+  [
+   441.983,
+   443.777,
+   "the history merely stores it."
+  ],
+  [
+   443.777,
+   446.648,
+   "The state travels between save and restore without"
+  ],
+  [
+   446.648,
+   447.724,
+   "ever leaking out."
+  ],
+  [
+   448.224,
+   449.035,
+   "The names,"
+  ],
+  [
+   449.035,
+   450.657,
+   "mapped to your code."
+  ],
+  [
+   451.288,
+   454.532,
+   "The Originator is the Editor \u2014 the object"
+  ],
+  [
+   454.532,
+   456.965,
+   "whose state we capture and restore."
+  ],
+  [
+   457.596,
+   460.435,
+   "The Memento is the opaque snapshot itself."
+  ],
+  [
+   461.066,
+   463.093,
+   "The Caretaker is the History,"
+  ],
+  [
+   463.093,
+   465.121,
+   "the stack that holds mementos."
+  ],
+  [
+   465.752,
+   468.996,
+   "And the rule that makes it all work:"
+  ],
+  [
+   468.996,
+   472.24,
+   "only the originator ever reads a memento's\ncontents."
+  ],
+  [
+   472.24,
+   474.672,
+   "The caretaker treats it as sealed."
+  ],
+  [
+   475.304,
+   476.926,
+   "The Gang of Four,"
+  ],
+  [
+   476.926,
+   479.359,
+   "and notice the first three words:"
+  ],
+  [
+   479.359,
+   480.575,
+   "without violating encapsulation,"
+  ],
+  [
+   480.575,
+   483.413,
+   "capture and externalize an object's internal\nstate,"
+  ],
+  [
+   483.413,
+   486.251,
+   "so that it can be restored later."
+  ],
+  [
+   486.251,
+   489.495,
+   "The whole pattern exists to get undo without"
+  ],
+  [
+   489.495,
+   490.306,
+   "breaking encapsulation."
+  ],
+  [
+   490.806,
+   492.186,
+   "Memento is not free,"
+  ],
+  [
+   492.186,
+   493.911,
+   "and the cost is memory."
+  ],
+  [
+   494.542,
+   497.302,
+   "Every snapshot is a real copy of the"
+  ],
+  [
+   497.302,
+   497.992,
+   "object's state."
+  ],
+  [
+   497.992,
+   499.717,
+   "Take one before every keystroke,"
+  ],
+  [
+   499.717,
+   501.441,
+   "keep a thousand of them,"
+  ],
+  [
+   501.441,
+   504.201,
+   "and that adds up fast \u2014 especially if"
+  ],
+  [
+   504.201,
+   505.581,
+   "the state is large."
+  ],
+  [
+   506.213,
+   507.592,
+   "So real editors optimize:"
+  ],
+  [
+   507.592,
+   508.972,
+   "they snapshot less often,"
+  ],
+  [
+   508.972,
+   511.732,
+   "or store only the difference between states rather"
+  ],
+  [
+   511.732,
+   513.112,
+   "than the whole thing."
+  ],
+  [
+   513.743,
+   516.503,
+   "Skip the pattern when the state is trivial"
+  ],
+  [
+   516.503,
+   518.228,
+   "to reconstruct on the fly,"
+  ],
+  [
+   518.228,
+   520.988,
+   "or when a single field behind a getter"
+  ],
+  [
+   520.988,
+   521.678,
+   "would do,"
+  ],
+  [
+   521.678,
+   524.437,
+   "or when you simply do not need undo."
+  ],
+  [
+   525.069,
+   527.829,
+   "Reach for it when you need to save"
+  ],
+  [
+   527.829,
+   529.898,
+   "and restore an object's full state,"
+  ],
+  [
+   529.898,
+   530.243,
+   "repeatedly,"
+  ],
+  [
+   530.243,
+   533.003,
+   "without tearing open its encapsulation to do it."
+  ],
+  [
+   533.503,
+   533.897,
+   "Memento,"
+  ],
+  [
+   533.897,
+   535.079,
+   "in one breath."
+  ],
+  [
+   535.711,
+   538.863,
+   "Letting the history reach into an object's private"
+  ],
+  [
+   538.863,
+   540.046,
+   "fields destroyed encapsulation,"
+  ],
+  [
+   540.046,
+   542.41,
+   "and locked the two classes together,"
+  ],
+  [
+   542.41,
+   543.592,
+   "fragile and exposed."
+  ],
+  [
+   544.224,
+   547.377,
+   "But the state only needs to be snapshotted"
+  ],
+  [
+   547.377,
+   550.529,
+   "and restored while staying the object's own secret"
+  ],
+  [
+   550.529,
+   553.682,
+   "\u2014 so you let the object snapshot itself,"
+  ],
+  [
+   553.682,
+   555.258,
+   "into an opaque token."
+  ],
+  [
+   555.89,
+   556.284,
+   "Memento:"
+  ],
+  [
+   556.284,
+   559.042,
+   "the originator makes and reads the snapshots;"
+  ],
+  [
+   559.042,
+   561.013,
+   "the caretaker only stores them,"
+  ],
+  [
+   561.013,
+   562.195,
+   "never opening them."
+  ],
+  [
+   562.195,
+   565.347,
+   "New state costs a change in exactly one"
+  ],
+  [
+   565.347,
+   565.741,
+   "class."
+  ],
+  [
+   566.373,
+   568.738,
+   "Here is one to carry out."
+  ],
+  [
+   569.369,
+   572.128,
+   "A drawing app needs undo across shapes,"
+  ],
+  [
+   572.128,
+   572.522,
+   "layers,"
+  ],
+  [
+   572.522,
+   575.674,
+   "and colors \u2014 many steps back \u2014 while"
+  ],
+  [
+   575.674,
+   577.645,
+   "keeping each object's internals private."
+  ],
+  [
+   578.276,
+   579.458,
+   "Does Memento fit?"
+  ],
+  [
+   579.458,
+   581.035,
+   "Who is the originator,"
+  ],
+  [
+   581.035,
+   583.005,
+   "what goes inside the memento,"
+  ],
+  [
+   583.005,
+   586.158,
+   "and who must never be allowed to read"
+  ],
+  [
+   586.158,
+   586.552,
+   "it?"
+  ],
+  [
+   587.183,
+   587.577,
+   "Pause,"
+  ],
+  [
+   587.577,
+   590.336,
+   "and sketch it before the next episode."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp19-memento.wav",
+   "volume": 1.0
+  }
+ }
+}

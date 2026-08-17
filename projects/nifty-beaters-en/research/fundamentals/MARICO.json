@@ -1,0 +1,102 @@
+{
+ "ticker": "MARICO",
+ "scraped_at": "2026-08-14T15:29:22",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 112168.0,
+ "current_price": 864.0,
+ "pe": 59.5,
+ "book_value": 32.4,
+ "dividend_yield_pct": 0.46,
+ "roce_pct": 47.0,
+ "roe_pct": 42.8,
+ "face_value": 1.0,
+ "high": 890.0,
+ "sales_growth": {
+  "10 Years": 10.0,
+  "5 Years": 9.0,
+  "3 Years": 11.0,
+  "TTM": 13.0
+ },
+ "profit_growth": {
+  "10 Years": 11.0,
+  "5 Years": 11.0,
+  "3 Years": 15.0,
+  "1 Year": 22.0
+ },
+ "roe_hist": {
+  "Operating Profit": 574.0,
+  "OPM %": 23.0,
+  "Other Income&nbsp; +": 46.0,
+  "Interest": 17.0,
+  "Depreciation": 36.0,
+  "Profit before tax": 567.0,
+  "Tax %": 23.0,
+  "Net Profit&nbsp; +": 436.0,
+  "EPS in Rs": 3.3
+ },
+ "price_cagr": {
+  "10 Years": 38.0,
+  "5 Years": 39.0,
+  "3 Years": 41.0,
+  "Last Year": 43.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "23%",
+   "20%",
+   "21%",
+   "19%",
+   "24%",
+   "20%",
+   "19%",
+   "17%",
+   "20%",
+   "16%",
+   "17%",
+   "16%",
+   "21%"
+  ],
+  "eps": [
+   "3.30",
+   "2.73",
+   "2.96",
+   "2.46",
+   "3.58",
+   "3.27",
+   "3.08",
+   "2.65",
+   "3.89",
+   "3.24",
+   "3.44",
+   "3.01",
+   "4.85"
+  ]
+ },
+ "pros": [
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 40.9%",
+  "Company has been maintaining a healthy dividend payout of 65.1%"
+ ],
+ "cons": [
+  "Stock is trading at 26.5 times its book value",
+  "The company has delivered a poor sales growth of 11.1% over past five years."
+ ]
+}

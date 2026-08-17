@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/c13_div.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/c13_recap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/c13_90day.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/c13_close.wav'

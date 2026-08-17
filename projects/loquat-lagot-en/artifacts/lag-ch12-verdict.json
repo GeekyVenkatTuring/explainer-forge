@@ -1,0 +1,999 @@
+{
+ "cuts": [
+  {
+   "id": "lag-ch12-verdict_div",
+   "type": "lag_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 14.444,
+   "props": {
+    "n": 12,
+    "title": "Market and verdict",
+    "sub": "who buys \u2014 and should you",
+    "color": "#F4A261",
+    "dur": 14.944
+   }
+  },
+  {
+   "id": "lag-ch12-verdict_who",
+   "type": "lag_orbit",
+   "in_seconds": 14.944,
+   "out_seconds": 53.836,
+   "props": {
+    "kicker": "BUYERS",
+    "title": "Local mandi first. Export last, if ever.",
+    "hub": "SELL",
+    "foot": "A named buyer in February is worth more than a May hope.",
+    "items": [
+     {
+      "label": "Fruit mandi",
+      "c": "fruit"
+     },
+     {
+      "label": "Vendors",
+      "c": "leaf"
+     },
+     {
+      "label": "Hotels",
+      "c": "cool"
+     },
+     {
+      "label": "Jam unit",
+      "c": "leaf"
+     },
+     {
+      "label": "Direct boxes",
+      "c": "fruit"
+     },
+     {
+      "label": "Not export-first",
+      "c": "risk"
+     }
+    ],
+    "dur": 39.392
+   }
+  },
+  {
+   "id": "lag-ch12-verdict_model",
+   "type": "lag_cards",
+   "in_seconds": 54.336,
+   "out_seconds": 96.902,
+   "props": {
+    "kicker": "MODELS",
+    "title": "Diversify. Do not bet the farm.",
+    "cols": 2,
+    "foot": "Loquat is a side orchard until you have years of data.",
+    "items": [
+     {
+      "label": "Diversify",
+      "sub": "Best use. Other crops pay the quiet years.",
+      "c": "leaf"
+     },
+     {
+      "label": "Homestead",
+      "sub": "Honest. Do not borrow against it.",
+      "c": "cool"
+     },
+     {
+      "label": "Fresh + jam",
+      "sub": "Needs a kitchen that is a real micro-enterprise.",
+      "c": "fruit"
+     },
+     {
+      "label": "Contract pulp",
+      "sub": "Paper first. Fruit second.",
+      "c": "risk"
+     }
+    ],
+    "dur": 43.066
+   }
+  },
+  {
+   "id": "lag-ch12-verdict_decide",
+   "type": "lag_decide",
+   "in_seconds": 97.402,
+   "out_seconds": 142.752,
+   "props": {
+    "kicker": "GO OR NO",
+    "title": "Worth it only on the right land",
+    "foot": "Not financial advice. Confirm with K V K and last March's mandi.",
+    "go": [
+     "Cool winters, drained soil, irrigation",
+     "Grafted, named plants and a cultivar mix",
+     "A nearby fruit mandi or a signed processor",
+     "Cash to survive years one and two",
+     "Willingness to clip bunches in April"
+    ],
+    "no": [
+     "Warm-winter plains expecting a crop",
+     "Seedlings and unknown roadside plants",
+     "Need for year-one loan repayment from loquat",
+     "No labour in the harvest weeks",
+     "Medicine or export as the main story"
+    ],
+    "dur": 45.85
+   }
+  },
+  {
+   "id": "lag-ch12-verdict_check",
+   "type": "lag_cards",
+   "in_seconds": 143.252,
+   "out_seconds": 184.762,
+   "props": {
+    "kicker": "BEFORE YOU DIG",
+    "title": "Five checks that beat a video",
+    "cols": 2,
+    "foot": "The orchard is decided in January and in a nursery yard.",
+    "items": [
+     {
+      "label": "Taste April fruit",
+      "sub": "If nobody nearby has it, your market may be thin too.",
+      "c": "fruit"
+     },
+     {
+      "label": "January night",
+      "sub": "Cool enough to flower, not a frost bowl.",
+      "c": "cool"
+     },
+     {
+      "label": "Rain drainage",
+      "sub": "Puddles are a veto.",
+      "c": "risk"
+     },
+     {
+      "label": "Named grafts",
+      "sub": "No Latin name, no sale.",
+      "c": "leaf"
+     }
+    ],
+    "dur": 42.01
+   }
+  },
+  {
+   "id": "lag-ch12-verdict_fpo",
+   "type": "lag_cards",
+   "in_seconds": 185.262,
+   "out_seconds": 222.572,
+   "props": {
+    "kicker": "COLLECTIVES",
+    "title": "Share the tempo, not the climate requirement",
+    "cols": 2,
+    "foot": "An F P O cannot make a tropical plot fruit.",
+    "items": [
+     {
+      "label": "Shared truck",
+      "sub": "The unglamorous win.",
+      "c": "fruit"
+     },
+     {
+      "label": "Shared agent",
+      "sub": "Someone who already sells lukat weeks.",
+      "c": "leaf"
+     },
+     {
+      "label": "Shared kettle",
+      "sub": "Only with hygiene rules.",
+      "c": "cool"
+     },
+     {
+      "label": "Not climate",
+      "sub": "No group can vote a winter into existence.",
+      "c": "risk"
+     }
+    ],
+    "dur": 37.81
+   }
+  },
+  {
+   "id": "lag-ch12-verdict_mistakes",
+   "type": "lag_cards",
+   "in_seconds": 223.072,
+   "out_seconds": 253.014,
+   "props": {
+    "kicker": "FAILURE MODES",
+    "title": "The five ways people waste years",
+    "cols": 2,
+    "foot": "Avoiding failure is the first profit.",
+    "items": [
+     {
+      "label": "Wrong tree",
+      "sub": "Kaitha, bael, unnamed 'lagot'.",
+      "c": "risk"
+     },
+     {
+      "label": "Warm winter",
+      "sub": "Leaves without a crop.",
+      "c": "cool"
+     },
+     {
+      "label": "Seed / crowd",
+      "sub": "Late fruit, dark fruit, fights.",
+      "c": "leaf"
+     },
+     {
+      "label": "No April people",
+      "sub": "Ripe fruit with no hands.",
+      "c": "fruit"
+     }
+    ],
+    "dur": 30.442
+   }
+  },
+  {
+   "id": "lag-ch12-verdict_next",
+   "type": "lag_pipe",
+   "in_seconds": 253.514,
+   "out_seconds": 287.824,
+   "props": {
+    "kicker": "NEXT THIRTY DAYS",
+    "title": "Test line first. Whole farm later.",
+    "foot": "A test row is agronomy. A ten-acre leap is a speech.",
+    "nodes": [
+     {
+      "label": "K V K",
+      "sub": "Ask",
+      "c": "leaf"
+     },
+     {
+      "label": "Taste",
+      "sub": "April tree",
+      "c": "fruit"
+     },
+     {
+      "label": "Quotes",
+      "sub": "Named grafts",
+      "c": "cool"
+     },
+     {
+      "label": "Mandi",
+      "sub": "Talk",
+      "c": "fruit"
+     },
+     {
+      "label": "Test row",
+      "sub": "Then wait",
+      "c": "risk"
+     }
+    ],
+    "dur": 34.81
+   }
+  },
+  {
+   "id": "lag-ch12-verdict_recap",
+   "type": "lag_recap",
+   "in_seconds": 288.324,
+   "out_seconds": 340.776,
+   "props": {
+    "items": [
+     "Lagot = loquat (Eriobotrya japonica), not kaitha",
+     "Eat fresh; process as backup; skip medicine-as-business",
+     "Cool winters required; South often ornamental only",
+     "Grafted plants; mix varieties; ~96 trees per acre",
+     "First fruit ~year 3; peak ~year 15; harvest Mar\u2013Apr",
+     "Clip clusters; perishable in days; grade or lose price",
+     "Costs run before fruit; intercrop years 1\u20132",
+     "Worth it as a niche on the right land \u2014 not a miracle"
+    ],
+    "closer": "Cool winters. Grafted plants. Year three. A short, perishable crop.",
+    "dur": 52.952
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.026,
+   "Part twelve."
+  ],
+  [
+   1.026,
+   2.053,
+   "Who buys,"
+  ],
+  [
+   2.053,
+   4.619,
+   "and whether you should plant."
+  ],
+  [
+   5.169,
+   7.735,
+   "This is the decision chapter."
+  ],
+  [
+   8.285,
+   11.878,
+   "If your land fails the climate test,"
+  ],
+  [
+   11.878,
+   14.444,
+   "you already have the answer."
+  ],
+  [
+   14.944,
+   16.868,
+   "Where can you sell."
+  ],
+  [
+   17.418,
+   21.266,
+   "The fruit mandi in a city that already"
+  ],
+  [
+   21.266,
+   22.228,
+   "knows lukat:"
+  ],
+  [
+   22.228,
+   22.709,
+   "Chandigarh,"
+  ],
+  [
+   22.709,
+   23.19,
+   "Delhi,"
+  ],
+  [
+   23.19,
+   23.671,
+   "Lucknow,"
+  ],
+  [
+   23.671,
+   25.113,
+   "parts of Punjab."
+  ],
+  [
+   25.663,
+   28.068,
+   "Street vendors in those weeks."
+  ],
+  [
+   28.618,
+   32.466,
+   "Hotels and juice counters if you can grade."
+  ],
+  [
+   33.016,
+   36.864,
+   "A jam maker if you signed them before"
+  ],
+  [
+   36.864,
+   37.345,
+   "harvest."
+  ],
+  [
+   37.895,
+   41.743,
+   "Direct boxes to consumers in a four week"
+  ],
+  [
+   41.743,
+   45.109,
+   "window if you already have a list."
+  ],
+  [
+   45.659,
+   49.507,
+   "Export is not plan A for a new"
+  ],
+  [
+   49.507,
+   50.469,
+   "Indian orchard."
+  ],
+  [
+   50.469,
+   53.836,
+   "You have no volume and no protocol."
+  ],
+  [
+   54.336,
+   57.36,
+   "Business models that are not fantasy."
+  ],
+  [
+   57.91,
+   58.414,
+   "One:"
+  ],
+  [
+   58.414,
+   62.446,
+   "a few acres as diversification on a cool-winter"
+  ],
+  [
+   62.446,
+   66.478,
+   "farm that already has water and a city"
+  ],
+  [
+   66.478,
+   66.982,
+   "road."
+  ],
+  [
+   67.532,
+   68.036,
+   "Two:"
+  ],
+  [
+   68.036,
+   72.068,
+   "a homestead block for home use plus a"
+  ],
+  [
+   72.068,
+   73.58,
+   "crate to neighbours."
+  ],
+  [
+   73.58,
+   74.084,
+   "Fine."
+  ],
+  [
+   74.084,
+   76.1,
+   "Not a loan crop."
+  ],
+  [
+   76.65,
+   77.154,
+   "Three:"
+  ],
+  [
+   77.154,
+   80.178,
+   "fresh plus a small kettle brand,"
+  ],
+  [
+   80.178,
+   83.706,
+   "if you can do FSSAI and sales."
+  ],
+  [
+   84.256,
+   84.76,
+   "Four:"
+  ],
+  [
+   84.76,
+   88.288,
+   "contract pulp \u2014 only with a signature."
+  ],
+  [
+   88.838,
+   91.358,
+   "What is not a model:"
+  ],
+  [
+   91.358,
+   93.374,
+   "ten acres of seedlings,"
+  ],
+  [
+   93.374,
+   94.382,
+   "no buyer,"
+  ],
+  [
+   94.382,
+   95.39,
+   "tropical plains,"
+  ],
+  [
+   95.39,
+   96.902,
+   "year-one income slides."
+  ],
+  [
+   97.402,
+   99.49,
+   "So is it worth it?"
+  ],
+  [
+   100.04,
+   102.546,
+   "Plant if your winters are cool,"
+  ],
+  [
+   102.546,
+   103.799,
+   "your soil drains,"
+  ],
+  [
+   103.799,
+   106.305,
+   "you can buy grafted named plants,"
+  ],
+  [
+   106.305,
+   108.811,
+   "you can water at fruit set,"
+  ],
+  [
+   108.811,
+   112.152,
+   "and a city mandi is close enough that"
+  ],
+  [
+   112.152,
+   113.405,
+   "fruit arrives alive."
+  ],
+  [
+   113.955,
+   116.878,
+   "Plant if you can wait three years,"
+  ],
+  [
+   116.878,
+   118.549,
+   "and fifteen for peak."
+  ],
+  [
+   119.099,
+   122.44,
+   "Skip if you need income next season from"
+  ],
+  [
+   122.44,
+   123.276,
+   "this tree."
+  ],
+  [
+   123.826,
+   126.331,
+   "Skip if your winter is warm."
+  ],
+  [
+   126.331,
+   129.673,
+   "Skip if the nursery cannot name the scion."
+  ],
+  [
+   129.673,
+   133.014,
+   "Skip if April labour will not show up."
+  ],
+  [
+   133.564,
+   136.905,
+   "Worth it as a niche on the right"
+  ],
+  [
+   136.905,
+   137.323,
+   "land."
+  ],
+  [
+   137.323,
+   139.828,
+   "Not worth it as a miracle,"
+  ],
+  [
+   139.828,
+   141.081,
+   "a medicine farm,"
+  ],
+  [
+   141.081,
+   142.752,
+   "or a tropical gamble."
+  ],
+  [
+   143.252,
+   145.24,
+   "A last field checklist."
+  ],
+  [
+   145.79,
+   149.765,
+   "Walk a neighbour's tree in April if one"
+  ],
+  [
+   149.765,
+   150.262,
+   "exists."
+  ],
+  [
+   150.262,
+   150.759,
+   "Taste."
+  ],
+  [
+   150.759,
+   152.25,
+   "Time the harvest."
+  ],
+  [
+   152.8,
+   155.781,
+   "Stand in your field in January."
+  ],
+  [
+   155.781,
+   158.763,
+   "Is it actually cold at night?"
+  ],
+  [
+   159.313,
+   162.294,
+   "Stand there after a heavy rain."
+  ],
+  [
+   162.294,
+   163.785,
+   "Does water leave?"
+  ],
+  [
+   164.335,
+   168.31,
+   "Get a plant quote with a variety name."
+  ],
+  [
+   168.31,
+   170.795,
+   "Get a mandi commission number."
+  ],
+  [
+   171.345,
+   172.339,
+   "Then decide."
+  ],
+  [
+   172.339,
+   174.824,
+   "Lagot is a real fruit,"
+  ],
+  [
+   174.824,
+   176.314,
+   "a real food,"
+  ],
+  [
+   176.314,
+   180.29,
+   "a real niche business \u2014 and a real"
+  ],
+  [
+   180.29,
+   184.265,
+   "way to waste five years on the wrong"
+  ],
+  [
+   184.265,
+   184.762,
+   "climate."
+  ],
+  [
+   185.262,
+   185.756,
+   "Collectives."
+  ],
+  [
+   186.306,
+   190.255,
+   "An F P O that already sells fruit"
+  ],
+  [
+   190.255,
+   194.205,
+   "can add a four-week loquat crate if several"
+  ],
+  [
+   194.205,
+   195.193,
+   "members plant."
+  ],
+  [
+   195.743,
+   199.692,
+   "A lone farmer with two acres inventing a"
+  ],
+  [
+   199.692,
+   203.148,
+   "brand in Delhi is swimming in glue."
+  ],
+  [
+   203.698,
+   205.179,
+   "Share a tempo."
+  ],
+  [
+   205.179,
+   207.648,
+   "Share a mandi agent relationship."
+  ],
+  [
+   207.648,
+   210.117,
+   "Share a jam kettle maybe."
+  ],
+  [
+   210.667,
+   214.616,
+   "Do not share a spray pump that just"
+  ],
+  [
+   214.616,
+   216.591,
+   "did a restricted chemical."
+  ],
+  [
+   217.141,
+   218.622,
+   "Cooperation is logistics."
+  ],
+  [
+   218.622,
+   222.572,
+   "It is not a substitute for cool winters."
+  ],
+  [
+   223.072,
+   226.309,
+   "The usual ways this fails."
+  ],
+  [
+   226.859,
+   230.744,
+   "Wrong species from a roadside plant."
+  ],
+  [
+   231.294,
+   232.589,
+   "Warm winter."
+  ],
+  [
+   233.139,
+   233.786,
+   "Seedlings."
+  ],
+  [
+   233.786,
+   235.081,
+   "Tight spacing."
+  ],
+  [
+   235.081,
+   237.023,
+   "No April crew."
+  ],
+  [
+   237.573,
+   240.163,
+   "Believing a lakh-a-month thumbnail."
+  ],
+  [
+   240.713,
+   243.303,
+   "If you avoid those,"
+  ],
+  [
+   243.303,
+   247.187,
+   "you still might not get rich."
+  ],
+  [
+   247.187,
+   249.777,
+   "You might get fruit."
+  ],
+  [
+   249.777,
+   253.014,
+   "That is the honest prize."
+  ],
+  [
+   253.514,
+   256.181,
+   "If you still want to plant,"
+  ],
+  [
+   256.181,
+   257.959,
+   "the next thirty days."
+  ],
+  [
+   258.509,
+   260.287,
+   "Call K V K."
+  ],
+  [
+   260.287,
+   263.843,
+   "Visit a bearing tree in season \u2014 wait"
+  ],
+  [
+   263.843,
+   266.066,
+   "until April if you must."
+  ],
+  [
+   266.616,
+   269.283,
+   "Get three nursery quotes with names."
+  ],
+  [
+   269.283,
+   271.505,
+   "Walk the field at dawn."
+  ],
+  [
+   272.055,
+   274.278,
+   "Price a fence and drip."
+  ],
+  [
+   274.278,
+   277.834,
+   "Talk to a mandi commission agent about lukat"
+  ],
+  [
+   277.834,
+   278.278,
+   "weeks."
+  ],
+  [
+   278.828,
+   281.051,
+   "Then plant a test line,"
+  ],
+  [
+   281.051,
+   282.829,
+   "not the whole farm."
+  ],
+  [
+   283.379,
+   286.935,
+   "Expand only after you have sold a crate"
+  ],
+  [
+   286.935,
+   287.824,
+   "you grew."
+  ],
+  [
+   288.324,
+   290.101,
+   "In one breath."
+  ],
+  [
+   290.651,
+   292.427,
+   "Lagot is loquat,"
+  ],
+  [
+   292.427,
+   294.204,
+   "not wood apple."
+  ],
+  [
+   294.204,
+   295.98,
+   "You eat it."
+  ],
+  [
+   295.98,
+   298.349,
+   "You can jam it."
+  ],
+  [
+   298.349,
+   303.087,
+   "You do not farm it as a drug."
+  ],
+  [
+   303.637,
+   304.821,
+   "Cool-winter India:"
+  ],
+  [
+   304.821,
+   305.413,
+   "Punjab,"
+  ],
+  [
+   305.413,
+   306.005,
+   "Himachal,"
+  ],
+  [
+   306.005,
+   306.598,
+   "Delhi,"
+  ],
+  [
+   306.598,
+   307.782,
+   "U P,"
+  ],
+  [
+   307.782,
+   308.374,
+   "Assam,"
+  ],
+  [
+   308.374,
+   309.559,
+   "some Maharashtra."
+  ],
+  [
+   310.109,
+   311.293,
+   "Plant monsoon."
+  ],
+  [
+   311.293,
+   313.662,
+   "Harvest March and April."
+  ],
+  [
+   313.662,
+   317.215,
+   "Grafted trees fruit around year three."
+  ],
+  [
+   317.215,
+   318.991,
+   "Peak near fifteen."
+  ],
+  [
+   319.541,
+   321.91,
+   "Ninety-six trees an acre."
+  ],
+  [
+   321.91,
+   323.095,
+   "Clip bunches."
+  ],
+  [
+   323.095,
+   325.463,
+   "Yield is a band,"
+  ],
+  [
+   325.463,
+   327.24,
+   "not a boast."
+  ],
+  [
+   327.79,
+   330.159,
+   "Sell near a city."
+  ],
+  [
+   330.159,
+   331.935,
+   "Price is local."
+  ],
+  [
+   331.935,
+   336.673,
+   "Worth it only if the land and the"
+  ],
+  [
+   336.673,
+   338.449,
+   "wait both fit."
+  ],
+  [
+   338.999,
+   340.776,
+   "Thanks for watching."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "lag/lag-ch12-verdict.wav",
+   "volume": 1.0
+  }
+ }
+}

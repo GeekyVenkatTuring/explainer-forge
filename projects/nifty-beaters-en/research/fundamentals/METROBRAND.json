@@ -1,0 +1,101 @@
+{
+ "ticker": "METROBRAND",
+ "scraped_at": "2026-08-14T15:29:32",
+ "source": "screener.in",
+ "ok": true,
+ "error": "<HTTPError 429: 'Too Many Requests'>",
+ "variant": "standalone",
+ "market_cap_cr": 25781.0,
+ "current_price": 946.0,
+ "pe": 65.2,
+ "book_value": 71.6,
+ "dividend_yield_pct": 0.63,
+ "roce_pct": 20.0,
+ "roe_pct": 22.0,
+ "face_value": 5.0,
+ "high": 1340.0,
+ "sales_growth": {
+  "10 Years": 17.0,
+  "5 Years": 41.0,
+  "3 Years": 5.0,
+  "TTM": 12.0
+ },
+ "profit_growth": {
+  "3 Years": -5.0,
+  "1 Year": -14.0
+ },
+ "roe_hist": {
+  "Equity Capital": 15.0,
+  "Reserves": 314.0,
+  "Borrowings&nbsp; +": 0.0,
+  "Other Liabilities&nbsp; +": 103.0,
+  "Total Liabilities": 431.0,
+  "Fixed Assets&nbsp; +": 122.0,
+  "CWIP": 0.0,
+  "Investments": 37.0,
+  "Other Assets&nbsp; +": 272.0,
+  "Total Assets": 431.0
+ },
+ "price_cagr": {
+  "10 Years": 22.0,
+  "5 Years": 22.0,
+  "3 Years": 22.0,
+  "Last Year": 22.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "35%",
+   "30%",
+   "32%",
+   "29%",
+   "32%",
+   "26%",
+   "33%",
+   "31%",
+   "31%",
+   "26%",
+   "33%",
+   "31%",
+   "30%"
+  ],
+  "eps": [
+   "3.91",
+   "2.92",
+   "3.52",
+   "6.05",
+   "3.40",
+   "2.41",
+   "3.46",
+   "3.58",
+   "3.55",
+   "2.35",
+   "4.60",
+   "4.20",
+   "3.35"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 76.4%"
+ ],
+ "cons": [
+  "Stock is trading at 13.1 times its book value",
+  "Working capital days have increased from 80.1 days to 142 days"
+ ]
+}

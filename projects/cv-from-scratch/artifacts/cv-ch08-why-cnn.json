@@ -1,0 +1,329 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch08-why-cnn_div",
+   "type": "cv_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 19.855,
+   "props": {
+    "n": 3,
+    "title": "Deep Learning",
+    "sub": "networks that learn their own filters",
+    "color": "#A78BFA",
+    "dur": 20.355
+   }
+  },
+  {
+   "id": "cv-ch08-why-cnn_whycnn",
+   "type": "cv_whycnn",
+   "in_seconds": 20.355,
+   "out_seconds": 131.425,
+   "props": {
+    "dur": 111.57
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.791,
+   "Part three."
+  ],
+  [
+   0.791,
+   1.582,
+   "Deep learning."
+  ],
+  [
+   2.214,
+   4.192,
+   "This is the turning point."
+  ],
+  [
+   4.192,
+   7.356,
+   "Here the machine stops using the filters\nwe"
+  ],
+  [
+   7.356,
+   8.147,
+   "hand it,"
+  ],
+  [
+   8.147,
+   11.312,
+   "and starts inventing its own \u2014 learned\nfrom"
+  ],
+  [
+   11.312,
+   11.708,
+   "data,"
+  ],
+  [
+   11.708,
+   13.29,
+   "not designed by us."
+  ],
+  [
+   13.921,
+   17.086,
+   "This single shift is what changed computer\nvision"
+  ],
+  [
+   17.086,
+   17.482,
+   "forever."
+  ],
+  [
+   17.482,
+   19.855,
+   "Let's understand exactly why it works."
+  ],
+  [
+   20.355,
+   23.369,
+   "You might reasonably ask \u2014 why invent a"
+  ],
+  [
+   23.369,
+   25.629,
+   "special kind of network for images?"
+  ],
+  [
+   26.261,
+   29.275,
+   "Why not just take that grid of pixels,"
+  ],
+  [
+   29.275,
+   31.535,
+   "flatten it into one long list,"
+  ],
+  [
+   31.535,
+   34.549,
+   "and feed it into an ordinary neural\nnetwork?"
+  ],
+  [
+   34.549,
+   36.809,
+   "Connect every pixel to every neuron,"
+  ],
+  [
+   36.809,
+   39.07,
+   "and let it figure everything out."
+  ],
+  [
+   39.701,
+   41.208,
+   "There are two problems,"
+  ],
+  [
+   41.208,
+   43.092,
+   "and they are both serious."
+  ],
+  [
+   43.724,
+   45.607,
+   "The first problem is size."
+  ],
+  [
+   46.239,
+   49.253,
+   "A modest image has hundreds of thousands\nof"
+  ],
+  [
+   49.253,
+   49.629,
+   "pixels."
+  ],
+  [
+   49.629,
+   52.643,
+   "If you connect every one of them to"
+  ],
+  [
+   52.643,
+   54.904,
+   "every neuron in the next layer,"
+  ],
+  [
+   54.904,
+   57.918,
+   "you get billions of connections in a\nsingle"
+  ],
+  [
+   57.918,
+   58.294,
+   "layer."
+  ],
+  [
+   58.926,
+   61.94,
+   "That is far too many numbers to store"
+  ],
+  [
+   61.94,
+   62.693,
+   "or train."
+  ],
+  [
+   62.693,
+   64.2,
+   "It would be hopeless."
+  ],
+  [
+   64.832,
+   67.846,
+   "The second problem is that this approach\nthrows"
+  ],
+  [
+   67.846,
+   70.106,
+   "away two obvious truths about images."
+  ],
+  [
+   70.738,
+   73.375,
+   "Truth number one \u2014 meaning is local."
+  ],
+  [
+   74.006,
+   75.513,
+   "To find an eye,"
+  ],
+  [
+   75.513,
+   78.527,
+   "you only need to look at a small"
+  ],
+  [
+   78.527,
+   80.034,
+   "patch of the picture."
+  ],
+  [
+   80.034,
+   82.671,
+   "You do not need the opposite corner."
+  ],
+  [
+   83.303,
+   86.317,
+   "Truth number two \u2014 a pattern means the"
+  ],
+  [
+   86.317,
+   88.2,
+   "same thing wherever it appears."
+  ],
+  [
+   88.832,
+   91.846,
+   "An edge in the top-left corner looks\nexactly"
+  ],
+  [
+   91.846,
+   94.483,
+   "like an edge in the bottom-right corner."
+  ],
+  [
+   95.115,
+   98.128,
+   "So why on earth would we learn to"
+  ],
+  [
+   98.128,
+   99.259,
+   "detect it twice,"
+  ],
+  [
+   99.259,
+   100.766,
+   "in two separate places?"
+  ],
+  [
+   101.397,
+   104.411,
+   "The convolutional neural network is\ndesigned to respect"
+  ],
+  [
+   104.411,
+   105.164,
+   "both truths."
+  ],
+  [
+   105.796,
+   108.81,
+   "It uses small filters that only look at"
+  ],
+  [
+   108.81,
+   109.94,
+   "little local patches."
+  ],
+  [
+   109.94,
+   111.07,
+   "That handles locality."
+  ],
+  [
+   111.702,
+   114.716,
+   "And it slides the very same filter across"
+  ],
+  [
+   114.716,
+   115.846,
+   "the entire image,"
+  ],
+  [
+   115.846,
+   116.976,
+   "reusing it everywhere."
+  ],
+  [
+   116.976,
+   118.106,
+   "That handles repetition."
+  ],
+  [
+   118.738,
+   120.245,
+   "The payoff is huge."
+  ],
+  [
+   120.245,
+   122.129,
+   "Far fewer numbers to learn,"
+  ],
+  [
+   122.129,
+   125.142,
+   "and every detector automatically works no\nmatter where"
+  ],
+  [
+   125.142,
+   126.649,
+   "the pattern shows up."
+  ],
+  [
+   127.281,
+   130.295,
+   "That is the trick that finally made vision"
+  ],
+  [
+   130.295,
+   131.425,
+   "learnable at scale."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch08-why-cnn.wav",
+   "volume": 1.0
+  }
+ }
+}

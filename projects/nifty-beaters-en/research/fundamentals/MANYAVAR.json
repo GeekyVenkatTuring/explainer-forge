@@ -1,0 +1,100 @@
+{
+ "ticker": "MANYAVAR",
+ "scraped_at": "2026-08-14T15:29:29",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 12792.0,
+ "current_price": 526.0,
+ "pe": 31.8,
+ "book_value": 62.9,
+ "dividend_yield_pct": 1.57,
+ "roce_pct": 30.7,
+ "roe_pct": 26.7,
+ "face_value": 1.0,
+ "high": 797.0,
+ "sales_growth": {
+  "5 Years": 18.0,
+  "3 Years": 46.0,
+  "TTM": 1.0
+ },
+ "profit_growth": {
+  "3 Years": -25.0,
+  "1 Year": -30.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 200.0,
+  "Expenses&nbsp; +": 109.0,
+  "Operating Profit": 91.0,
+  "OPM %": 46.0,
+  "Other Income&nbsp; +": 9.0,
+  "Interest": 7.0,
+  "Depreciation": 22.0,
+  "Profit before tax": 71.0,
+  "Tax %": 25.0,
+  "Net Profit&nbsp; +": 53.0,
+  "EPS in Rs": 2.2
+ },
+ "price_cagr": {
+  "5 Years": 25.0,
+  "3 Years": 30.0,
+  "Last Year": 27.0
+ },
+ "quarters": {
+  "periods": [
+   "Sep 2021",
+   "Dec 2021",
+   "Mar 2022",
+   "Jun 2022",
+   "Sep 2022",
+   "Dec 2022",
+   "Mar 2023",
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "46%",
+   "50%",
+   "49%",
+   "50%",
+   "47%",
+   "51%",
+   "49%",
+   "48%",
+   "43%",
+   "51%",
+   "48%",
+   "47%",
+   "46%"
+  ],
+  "eps": [
+   "2.20",
+   "5.27",
+   "3.65",
+   "4.16",
+   "2.84",
+   "6.19",
+   "4.48",
+   "3.79",
+   "2.01",
+   "6.49",
+   "4.77",
+   "2.57",
+   "2.75"
+  ]
+ },
+ "pros": [
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 29.6%",
+  "Company has been maintaining a healthy dividend payout of 46.4%"
+ ],
+ "cons": [
+  "Stock is trading at 8.38 times its book value",
+  "Company has high debtors of 151 days."
+ ]
+}

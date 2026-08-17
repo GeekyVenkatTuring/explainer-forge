@@ -1,0 +1,750 @@
+{
+  "cuts": [
+    {
+      "id": "h8_div",
+      "type": "sm_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 17.396,
+      "props": {
+        "n": 8,
+        "title": "Options Mastery",
+        "sub": "The Greeks · strategies · the hard truth",
+        "color": "#A78BFA",
+        "dur": 17.896
+      }
+    },
+    {
+      "id": "h8_greeks",
+      "type": "sm_iconcards",
+      "in_seconds": 17.896,
+      "out_seconds": 89.54,
+      "props": {
+        "kicker": "THE GREEKS",
+        "title": "Four letters that measure risk",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "Δ",
+            "k": "Delta",
+            "v": "How much the option moves per 1-point move in the stock (call 0→1, put 0→−1)",
+            "chip": "Direction"
+          },
+          {
+            "emoji": "Γ",
+            "k": "Gamma",
+            "v": "How fast delta itself changes — the acceleration",
+            "chip": "Speed"
+          },
+          {
+            "emoji": "Θ",
+            "k": "Theta",
+            "v": "Daily time decay — how much value the option loses each day (negative for buyers)",
+            "chip": "Decay"
+          },
+          {
+            "emoji": "ν",
+            "k": "Vega",
+            "v": "Sensitivity to a 1% change in volatility — big swings pump premiums up",
+            "chip": "Volatility"
+          }
+        ],
+        "dur": 72.144
+      }
+    },
+    {
+      "id": "h8_theta",
+      "type": "eq_theta",
+      "in_seconds": 90.04,
+      "out_seconds": 164.856,
+      "props": {
+        "kicker": "OPTIONS · TIME DECAY",
+        "title": "Theta — the melting ice cube",
+        "note": "The buyer must be right on direction AND speed. The seller just needs time to pass.",
+        "dur": 75.316
+      }
+    },
+    {
+      "id": "h8_income",
+      "type": "sm_iconcards",
+      "in_seconds": 165.356,
+      "out_seconds": 240.052,
+      "props": {
+        "kicker": "STRATEGIES · INCOME & HEDGE",
+        "title": "The first real strategies",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏠",
+            "k": "Covered Call",
+            "v": "Own the stock + sell a call. Earn premium income; caps your upside",
+            "chip": "Income"
+          },
+          {
+            "emoji": "🛡️",
+            "k": "Protective Put",
+            "v": "Own the stock + buy a put. Insurance against a crash",
+            "chip": "Insurance"
+          },
+          {
+            "emoji": "💰",
+            "k": "Cash-Secured Put",
+            "v": "Sell a put to get paid while waiting to buy a stock lower",
+            "chip": "Entry"
+          },
+          {
+            "emoji": "⚠️",
+            "k": "Naked selling",
+            "v": "Selling options without cover = large/unlimited risk. Not for beginners",
+            "chip": "Danger"
+          }
+        ],
+        "dur": 75.196
+      }
+    },
+    {
+      "id": "h8_spreads",
+      "type": "sm_iconcards",
+      "in_seconds": 240.552,
+      "out_seconds": 318.032,
+      "props": {
+        "kicker": "STRATEGIES · SPREADS & VOLATILITY",
+        "title": "Defined-risk & volatility plays",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🐂",
+            "k": "Bull Call / Bear Put Spread",
+            "v": "Buy one option, sell another — cheaper, with capped risk AND reward",
+            "chip": "Directional"
+          },
+          {
+            "emoji": "🎗️",
+            "k": "Long Straddle",
+            "v": "Buy a call AND a put at the same strike — profit from a big move either way",
+            "chip": "Big move"
+          },
+          {
+            "emoji": "🎯",
+            "k": "Strangle",
+            "v": "Like a straddle but cheaper, wider strikes — needs an even bigger move",
+            "chip": "Cheaper"
+          },
+          {
+            "emoji": "🦅",
+            "k": "Iron Condor",
+            "v": "Sell an OTM call spread + put spread — profit if the market stays in a range",
+            "chip": "Range"
+          }
+        ],
+        "dur": 77.98
+      }
+    },
+    {
+      "id": "h8_truth",
+      "type": "sm_lossgrid",
+      "in_seconds": 318.532,
+      "out_seconds": 388.976,
+      "props": {
+        "kicker": "SEBI STUDY · FY25",
+        "title": "The hard truth about F&O",
+        "lossPct": 91,
+        "mainLabel": "Individuals who lost",
+        "statLabel": "Total net loss (FY25)",
+        "statTo": 1.06,
+        "statDecimals": 2,
+        "statPrefix": "₹",
+        "statSuffix": "L cr",
+        "sourcePrefix": "Source: ",
+        "source": "SEBI study, Jul 2025",
+        "note": "9 in 10 lose money. Options are for the educated, well-capitalized and disciplined — not beginners.",
+        "dur": 70.944
+      }
+    },
+    {
+      "id": "h8_recap",
+      "type": "sm_recap",
+      "in_seconds": 389.476,
+      "out_seconds": 439.784,
+      "props": {
+        "title": "Chapter 8 — options mastery",
+        "items": [
+          "Greeks: delta (direction), gamma (speed), theta (decay), vega (volatility)",
+          "Time decay favours the seller — buyers need direction AND speed",
+          "Income/hedge: covered call, protective put, cash-secured put",
+          "Combinations: spreads, straddle/strangle, iron condor",
+          "SEBI: 91% of F&O traders lose — respect the risk"
+        ],
+        "closer": "Options reward the disciplined and punish the reckless.",
+        "dur": 50.808
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      2.826,
+      "Chapter eight — options mastery."
+    ],
+    [
+      2.826,
+      7.506,
+      "Now we go professional: the Greeks that measure risk,"
+    ],
+    [
+      7.506,
+      11.391,
+      "the real multi-leg strategies, and the hard,"
+    ],
+    [
+      11.391,
+      16.248,
+      "honest truth about who actually makes money in options."
+    ],
+    [
+      16.248,
+      17.396,
+      "Stay with me."
+    ],
+    [
+      17.896,
+      24.122,
+      "Professionals don't just guess; they measure their risk with the Greeks —"
+    ],
+    [
+      24.122,
+      27.449,
+      "four letters, each capturing one force."
+    ],
+    [
+      27.449,
+      35.466,
+      "Delta measures direction: how much the option's price moves for a one-point move in the stock."
+    ],
+    [
+      35.466,
+      41.351,
+      "A call's delta runs from zero to one; a put's from zero to minus one."
+    ],
+    [
+      41.351,
+      45.274,
+      "Gamma measures how fast delta itself changes —"
+    ],
+    [
+      45.274,
+      46.724,
+      "the acceleration."
+    ],
+    [
+      46.724,
+      50.306,
+      "High gamma means your risk shifts quickly."
+    ],
+    [
+      50.306,
+      52.609,
+      "Theta measures time decay —"
+    ],
+    [
+      52.609,
+      59.262,
+      "how much value the option bleeds every single day just from the clock ticking."
+    ],
+    [
+      59.262,
+      63.526,
+      "For the buyer, theta is negative; it is the enemy."
+    ],
+    [
+      63.526,
+      67.023,
+      "Vega measures sensitivity to volatility —"
+    ],
+    [
+      67.023,
+      74.785,
+      "how much the premium changes when the market's expected swings rise or fall by one percent."
+    ],
+    [
+      74.785,
+      78.282,
+      "When fear spikes, vega pumps premiums up."
+    ],
+    [
+      78.282,
+      84.081,
+      "Delta and gamma track the price; theta and vega track time and fear."
+    ],
+    [
+      84.081,
+      84.849,
+      "Together,"
+    ],
+    [
+      84.849,
+      89.54,
+      "they are the dashboard of every serious options trader."
+    ],
+    [
+      90.04,
+      94.32,
+      "Let's dwell on theta, because it decides who wins."
+    ],
+    [
+      94.32,
+      98.943,
+      "Picture the time value in an option as a block of ice,"
+    ],
+    [
+      98.943,
+      100.569,
+      "sitting in the sun."
+    ],
+    [
+      100.569,
+      104.764,
+      "Every day, a little melts away — and near expiry,"
+    ],
+    [
+      104.764,
+      105.962,
+      "it melts fast."
+    ],
+    [
+      105.962,
+      112.81,
+      "This is why so many option buyers lose even when they guess the direction right."
+    ],
+    [
+      112.81,
+      117.946,
+      "Suppose you buy a call and the stock does rise — but slowly."
+    ],
+    [
+      117.946,
+      122.397,
+      "The time value can melt faster than the stock rises,"
+    ],
+    [
+      122.397,
+      124.024,
+      "and you still lose."
+    ],
+    [
+      124.024,
+      128.304,
+      "The buyer must be right on direction and on speed."
+    ],
+    [
+      128.304,
+      129.845,
+      "Now flip the coin."
+    ],
+    [
+      129.845,
+      133.783,
+      "The option seller, who collected that premium,"
+    ],
+    [
+      133.783,
+      136.95,
+      "watches the ice melt in their favour."
+    ],
+    [
+      136.95,
+      138.576,
+      "Time is their ally."
+    ],
+    [
+      138.576,
+      141.572,
+      "They just need the passage of days."
+    ],
+    [
+      141.572,
+      147.051,
+      "This is the deep truth of options: time is on the seller's side."
+    ],
+    [
+      147.051,
+      150.389,
+      "It's why most options expire worthless,"
+    ],
+    [
+      150.389,
+      152.872,
+      "and why disciplined sellers —"
+    ],
+    [
+      152.872,
+      156.553,
+      "with deep pockets and strict risk control —"
+    ],
+    [
+      156.553,
+      158.864,
+      "win more often than buyers."
+    ],
+    [
+      158.864,
+      161.774,
+      "But the seller's loss can be huge,"
+    ],
+    [
+      161.774,
+      164.856,
+      "so they must manage risk ruthlessly."
+    ],
+    [
+      165.356,
+      169.76,
+      "Now the real strategies — starting with the sensible,"
+    ],
+    [
+      169.76,
+      174.745,
+      "income-and-hedge trio that pairs options with stock you own."
+    ],
+    [
+      174.745,
+      177.57,
+      "The covered call: you own a stock,"
+    ],
+    [
+      177.57,
+      180.146,
+      "and you sell a call against it."
+    ],
+    [
+      180.146,
+      182.888,
+      "You pocket the premium as income."
+    ],
+    [
+      182.888,
+      187.291,
+      "The trade-off — if the stock rockets past the strike,"
+    ],
+    [
+      187.291,
+      189.119,
+      "your gains are capped."
+    ],
+    [
+      189.119,
+      192.443,
+      "Great in a flat or mildly rising market."
+    ],
+    [
+      192.443,
+      197.428,
+      "The protective put: you own a stock and you buy a put on it."
+    ],
+    [
+      197.428,
+      201.25,
+      "This is pure insurance — if the stock crashes,"
+    ],
+    [
+      201.25,
+      204.407,
+      "the put pays off and limits your loss."
+    ],
+    [
+      204.407,
+      207.398,
+      "You pay a premium for peace of mind."
+    ],
+    [
+      207.398,
+      213.464,
+      "The cash-secured put: you sell a put on a stock you'd happily buy anyway,"
+    ],
+    [
+      213.464,
+      214.876,
+      "at a lower price."
+    ],
+    [
+      214.876,
+      220.526,
+      "You get paid the premium while you wait; if it falls to your strike,"
+    ],
+    [
+      220.526,
+      223.767,
+      "you buy it — effectively at a discount."
+    ],
+    [
+      223.767,
+      226.841,
+      "And a warning: selling options naked,"
+    ],
+    [
+      226.841,
+      229.832,
+      "without owning the stock or a hedge,"
+    ],
+    [
+      229.832,
+      233.654,
+      "exposes you to large or even unlimited losses."
+    ],
+    [
+      233.654,
+      238.058,
+      "That is strictly for well-capitalized professionals —"
+    ],
+    [
+      238.058,
+      240.052,
+      "never a beginner's game."
+    ],
+    [
+      240.552,
+      244.663,
+      "Beyond single legs come the combination strategies —"
+    ],
+    [
+      244.663,
+      246.719,
+      "where options truly shine."
+    ],
+    [
+      246.719,
+      247.905,
+      "First, spreads."
+    ],
+    [
+      247.905,
+      254.704,
+      "In a bull call spread you buy one call and sell a higher one; the sale cuts your cost,"
+    ],
+    [
+      254.704,
+      257.629,
+      "in exchange for a cap on your reward."
+    ],
+    [
+      257.629,
+      261.978,
+      "Both your risk and your reward are defined and limited."
+    ],
+    [
+      261.978,
+      265.535,
+      "The bear put spread is its mirror for a fall."
+    ],
+    [
+      265.535,
+      269.647,
+      "These are the disciplined trader's bread and butter."
+    ],
+    [
+      269.647,
+      271.86,
+      "Next, volatility strategies,"
+    ],
+    [
+      271.86,
+      276.367,
+      "for when you expect a big move but aren't sure which way."
+    ],
+    [
+      276.367,
+      281.348,
+      "A long straddle buys both a call and a put at the same strike —"
+    ],
+    [
+      281.348,
+      285.933,
+      "you profit if the stock moves sharply in either direction,"
+    ],
+    [
+      285.933,
+      287.831,
+      "say around a big result."
+    ],
+    [
+      287.831,
+      292.179,
+      "A strangle is the cheaper version, using wider strikes,"
+    ],
+    [
+      292.179,
+      295.658,
+      "but it needs an even bigger move to pay off."
+    ],
+    [
+      295.658,
+      297.792,
+      "And for the opposite view —"
+    ],
+    [
+      297.792,
+      301.587,
+      "that the market will stay calm and range-bound —"
+    ],
+    [
+      301.587,
+      307.042,
+      "the iron condor sells an out-of-the-money call spread and put spread,"
+    ],
+    [
+      307.042,
+      311.786,
+      "collecting premium that you keep if the market goes nowhere."
+    ],
+    [
+      311.786,
+      315.739,
+      "Each has a precise payoff shape and a precise use."
+    ],
+    [
+      315.739,
+      318.032,
+      "This is the craft of options."
+    ],
+    [
+      318.532,
+      322.335,
+      "Before you touch any of this, the hard truth —"
+    ],
+    [
+      322.335,
+      327.048,
+      "the number every options course should be forced to show."
+    ],
+    [
+      327.048,
+      331.265,
+      "SEBI, the regulator, studied real trading accounts."
+    ],
+    [
+      331.265,
+      334.655,
+      "In the financial year twenty twenty-five,"
+    ],
+    [
+      334.655,
+      340.608,
+      "ninety-one percent of individual futures and options traders lost money."
+    ],
+    [
+      340.608,
+      343.254,
+      "Ninety-one out of every hundred."
+    ],
+    [
+      343.254,
+      349.289,
+      "Their combined net loss in a single year was over one lakh crore rupees —"
+    ],
+    [
+      349.289,
+      353.671,
+      "around one lakh ten thousand rupees each, on average."
+    ],
+    [
+      353.671,
+      360.617,
+      "And an earlier study found seventy-one percent of intraday equity traders also lost."
+    ],
+    [
+      360.617,
+      367.479,
+      "This is not to scare you; it is to arm you with reality before the excitement does."
+    ],
+    [
+      367.479,
+      372.192,
+      "Options are a professional instrument — for the educated,"
+    ],
+    [
+      372.192,
+      376.574,
+      "the well-capitalized, and the ruthlessly disciplined."
+    ],
+    [
+      376.574,
+      380.129,
+      "My honest guidance: master investing first."
+    ],
+    [
+      380.129,
+      385.09,
+      "Come to options later, in tiny size, only after real study —"
+    ],
+    [
+      385.09,
+      388.976,
+      "and never with money you cannot afford to lose."
+    ],
+    [
+      389.476,
+      393.013,
+      "Chapter eight, the big one, gathered up."
+    ],
+    [
+      393.013,
+      397.433,
+      "The Greeks measure your risk: delta for direction,"
+    ],
+    [
+      397.433,
+      402.65,
+      "gamma for speed, theta for time decay, vega for volatility."
+    ],
+    [
+      402.65,
+      405.391,
+      "Time decay favours the seller —"
+    ],
+    [
+      405.391,
+      409.988,
+      "the buyer must be right on both direction and speed."
+    ],
+    [
+      409.988,
+      415.558,
+      "The sensible strategies pair options with stock: covered calls,"
+    ],
+    [
+      415.558,
+      420.686,
+      "protective puts, cash-secured puts; and the combinations —"
+    ],
+    [
+      420.686,
+      425.019,
+      "spreads, straddles, strangles, and iron condors —"
+    ],
+    [
+      425.019,
+      427.141,
+      "each fit a precise view."
+    ],
+    [
+      427.141,
+      430.677,
+      "But never forget the ninety-one percent."
+    ],
+    [
+      430.677,
+      435.54,
+      "Options reward the disciplined and punish the reckless."
+    ],
+    [
+      435.54,
+      439.784,
+      "Next, a different market entirely — commodities."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "eq/eq08.wav",
+      "volume": 1.0
+    }
+  }
+}

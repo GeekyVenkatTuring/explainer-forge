@@ -1,0 +1,1878 @@
+{
+ "cuts": [
+  {
+   "id": "dp11-singleton_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 27.282,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 11",
+    "line1": "Everyone wants",
+    "line2": "the same one",
+    "sub": "and every stray 'new' quietly hands them a different one",
+    "dur": 27.782
+   }
+  },
+  {
+   "id": "dp11-singleton_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 27.782,
+   "out_seconds": 66.431,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "One database connection pool",
+    "situation": "A connection pool holds a fixed set of live database connections \u2014 expensive to open, strictly limited by the database. Every part of the app must share the very same pool.",
+    "actors": [
+     {
+      "emoji": "\ud83d\uddc4\ufe0f",
+      "label": "The database"
+     },
+     {
+      "emoji": "\ud83d\udd0c",
+      "label": "A pool of connections"
+     },
+     {
+      "emoji": "\ud83e\udde9",
+      "label": "\u2026every module needs it"
+     }
+    ],
+    "ask": "How do you make sure the whole program shares one pool \u2014 never accidentally two?",
+    "dur": 39.149
+   }
+  },
+  {
+   "id": "dp11-singleton_naive",
+   "type": "dp_code",
+   "in_seconds": 66.931,
+   "out_seconds": 99.207,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "Everyone just news one up.",
+    "file": "across the app.java",
+    "lines": [
+     {
+      "t": "class WebHandler {"
+     },
+     {
+      "t": "  ConnectionPool pool = new ConnectionPool();  // #1",
+      "s": "hi"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "class JobRunner {"
+     },
+     {
+      "t": "  ConnectionPool pool = new ConnectionPool();  // #2",
+      "s": "hi"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "// the health check makes a third. and a fourth\u2026"
+     }
+    ],
+    "note": "Each 'new' opens its own connections. The DB cap is now fiction.",
+    "dur": 32.776
+   }
+  },
+  {
+   "id": "dp11-singleton_pain",
+   "type": "dp_pain",
+   "in_seconds": 99.707,
+   "out_seconds": 143.433,
+   "props": {
+    "title": "\"Just pass the one pool everywhere.\"",
+    "file": "threading.java",
+    "lines": [
+     {
+      "t": "new WebHandler(pool);",
+      "s": "hi"
+     },
+     {
+      "t": "new JobRunner(pool, cache);",
+      "s": "hi"
+     },
+     {
+      "t": "new Health(pool, cache, clock);   // and on\u2026",
+      "s": "hi"
+     },
+     {
+      "t": "// every constructor grows another parameter"
+     },
+     {
+      "t": "static ConnectionPool POOL = new ConnectionPool();",
+      "s": "hi"
+     }
+    ],
+    "smell": "Thread the instance by hand, or expose a mutable global",
+    "touched": [
+     "pool passed through every constructor",
+     "new module \u2192 thread it again",
+     "or a public static, created eagerly",
+     "tests can't stop it opening real connections"
+    ],
+    "dur": 44.226
+   }
+  },
+  {
+   "id": "dp11-singleton_insight",
+   "type": "dp_insight",
+   "in_seconds": 143.933,
+   "out_seconds": 180.556,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "There must be exactly one pool",
+     "It has to be reachable everywhere",
+     "Opening it is expensive"
+    ],
+    "varies": [
+     "When it's first actually needed",
+     "Which module happens to ask first"
+    ],
+    "principle": "Let the class own its single instance: hide the constructor, expose one access point.",
+    "dur": 37.123
+   }
+  },
+  {
+   "id": "dp11-singleton_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 181.056,
+   "out_seconds": 222.947,
+   "props": {
+    "title": "A country's official clock",
+    "emoji": "\ud83d\udd70\ufe0f",
+    "analogy": "You don't run your own national time \u2014 you ask the one authority, and so does everyone else.",
+    "map": [
+     {
+      "from": "The single official time",
+      "to": "the one instance"
+     },
+     {
+      "from": "You can't mint your own",
+      "to": "the private constructor"
+     },
+     {
+      "from": "\"What time is it?\"",
+      "to": "getInstance()"
+     },
+     {
+      "from": "Every clock in sync",
+      "to": "one shared pool, everywhere"
+     }
+    ],
+    "breaks": "a country enforces its single clock by law; in code, nothing enforces it until you remove the public constructor.",
+    "dur": 42.391
+   }
+  },
+  {
+   "id": "dp11-singleton_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 223.447,
+   "out_seconds": 253.118,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "Hide the constructor, own the instance",
+    "file": "ConnectionPool.java",
+    "lines": [
+     {
+      "t": "public final class ConnectionPool {"
+     },
+     {
+      "t": "  private static ConnectionPool instance;   // the one",
+      "s": "add"
+     },
+     {
+      "t": "  private ConnectionPool() { /* open pool */ }  // \u2190 private!",
+      "s": "add"
+     },
+     {
+      "t": "  // no one outside can call new ConnectionPool()"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "A private constructor makes 'new ConnectionPool()' a compile error elsewhere.",
+    "dur": 30.171
+   }
+  },
+  {
+   "id": "dp11-singleton_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 253.618,
+   "out_seconds": 290.943,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "One access point \u2014 but mind the race",
+    "file": "ConnectionPool.java",
+    "lines": [
+     {
+      "t": "public static ConnectionPool getInstance() {"
+     },
+     {
+      "t": "  if (instance == null)          // two threads can BOTH",
+      "s": "hi"
+     },
+     {
+      "t": "    instance = new ConnectionPool();  // see null here",
+      "s": "hi"
+     },
+     {
+      "t": "  return instance;"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Lazy: built on first call. But unsynchronized, two threads can make two.",
+    "dur": 37.825
+   }
+  },
+  {
+   "id": "dp11-singleton_try",
+   "type": "dp_try",
+   "in_seconds": 291.443,
+   "out_seconds": 324.274,
+   "props": {
+    "title": "Make getInstance() thread-safe",
+    "file": "ConnectionPool.java",
+    "lines": [
+     {
+      "t": "private static volatile ConnectionPool instance;"
+     },
+     {
+      "t": "public static ConnectionPool getInstance() {"
+     },
+     {
+      "t": "  // \u25af ensure only ONE is ever created, even under threads",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Two threads must never both build a pool. How do you close the race?",
+    "hint": "double-checked lock: if(null){ synchronized(...){ if(null) create } }",
+    "dur": 33.331
+   }
+  },
+  {
+   "id": "dp11-singleton_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 324.774,
+   "out_seconds": 366.351,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "The holder idiom \u2014 lazy, thread-safe, no locks",
+    "file": "ConnectionPool.java",
+    "lines": [
+     {
+      "t": "private static class Holder {",
+      "s": "add"
+     },
+     {
+      "t": "  static final ConnectionPool INSTANCE = new ConnectionPool();",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "public static ConnectionPool getInstance() {",
+      "s": "add"
+     },
+     {
+      "t": "  return Holder.INSTANCE;   // JVM inits it exactly once",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "note": "The class loader initializes Holder once, lazily, thread-safe \u2014 for free.",
+    "dur": 42.077
+   }
+  },
+  {
+   "id": "dp11-singleton_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 366.851,
+   "out_seconds": 403.684,
+   "props": {
+    "requirement": "\"Never exceed the DB's 20-connection cap\"",
+    "naiveLabel": "Before",
+    "naiveCost": "Every stray pool opened its own 20.",
+    "naiveSteps": [
+     "4 pools \u2192 up to 80 connections",
+     "DB starts rejecting at peak",
+     "fails only under load \u2014 the worst kind"
+    ],
+    "patLabel": "Now",
+    "patCost": "One pool exists. The cap holds by construction.",
+    "patFile": "anywhere.java",
+    "patLines": [
+     {
+      "t": "ConnectionPool.getInstance().borrow();",
+      "s": "add"
+     },
+     {
+      "t": "// same pool, same 20 connections, everywhere",
+      "s": "add"
+     },
+     {
+      "t": "// a second pool is now a COMPILE error",
+      "s": "add"
+     }
+    ],
+    "dur": 37.333
+   }
+  },
+  {
+   "id": "dp11-singleton_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 404.184,
+   "out_seconds": 437.762,
+   "props": {
+    "name": "The Singleton Pattern",
+    "plain": "A class that permits only one instance of itself and gives the whole program a single point of access to it.",
+    "nodes": [
+     {
+      "id": "client",
+      "title": "Client",
+      "members": [
+       "ConnectionPool",
+       ".getInstance()"
+      ],
+      "x": 210,
+      "y": 440,
+      "w": 380,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "single",
+      "title": "ConnectionPool",
+      "stereo": "singleton",
+      "members": [
+       "- static instance",
+       "- ConnectionPool() \u00abprivate\u00bb",
+       "+ static getInstance()"
+      ],
+      "x": 900,
+      "y": 420,
+      "w": 640,
+      "color": "#A78BFA"
+     }
+    ],
+    "edges": [
+     {
+      "from": "client",
+      "to": "single",
+      "kind": "assoc"
+     }
+    ],
+    "dur": 34.078
+   }
+  },
+  {
+   "id": "dp11-singleton_map",
+   "type": "dp_map",
+   "in_seconds": 438.262,
+   "out_seconds": 478.275,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Singleton",
+      "your": "final class ConnectionPool"
+     },
+     {
+      "role": "The instance",
+      "your": "private static Holder.INSTANCE"
+     },
+     {
+      "role": "Access point",
+      "your": "static getInstance()"
+     },
+     {
+      "role": "Client",
+      "your": "calls getInstance(), never new"
+     }
+    ],
+    "plain": "The class hides its constructor and exposes one static accessor that always returns the same instance.",
+    "gof": "Ensure a class has only one instance, and provide a global point of access to it.",
+    "dur": 40.513
+   }
+  },
+  {
+   "id": "dp11-singleton_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 478.775,
+   "out_seconds": 536.869,
+   "props": {
+    "title": "The pattern with the most caveats",
+    "costs": [
+     "It's global state, dressed as an object",
+     "Dependencies get hidden inside methods",
+     "Hard to swap or reset \u2014 tests bleed state"
+    ],
+    "dont": [
+     "You want 'usually one' \u2014 inject it instead",
+     "You need to substitute it in tests",
+     "'One' is really a scope or lifetime concern"
+    ],
+    "signal": "a resource that is genuinely unique AND expensive AND must be shared process-wide \u2014 like a real connection pool.",
+    "dur": 58.594
+   }
+  },
+  {
+   "id": "dp11-singleton_recap",
+   "type": "dp_recap",
+   "in_seconds": 537.369,
+   "out_seconds": 593.729,
+   "props": {
+    "title": "Singleton, in one breath",
+    "items": [
+     "Every 'new' made another copy of a resource meant to be shared \u2014 so the database's limit became a fiction.",
+     "There must be exactly one, reachable everywhere \u2014 so let the class own its instance: private constructor, one accessor.",
+     "Use the holder idiom for lazy, thread-safe creation with no locks \u2014 and reach for Singleton sparingly; it's global state."
+    ],
+    "challenge": "An app needs one in-memory metrics registry \u2014 counters and timers every module updates, and a reporter reads once a minute.",
+    "question": "Does Singleton truly fit \u2014 or would injecting one shared instance serve you better?",
+    "dur": 56.86
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.004,
+   "Some objects you want many of."
+  ],
+  [
+   2.636,
+   4.974,
+   "But a few \u2014 a connection pool,"
+  ],
+  [
+   4.974,
+   5.642,
+   "a configuration,"
+  ],
+  [
+   5.642,
+   7.312,
+   "a cache \u2014 are different."
+  ],
+  [
+   7.312,
+   8.983,
+   "There should be exactly one,"
+  ],
+  [
+   8.983,
+   10.653,
+   "shared by the whole program,"
+  ],
+  [
+   10.653,
+   13.325,
+   "and a second copy is not a convenience."
+  ],
+  [
+   13.325,
+   14.661,
+   "It is a bug."
+  ],
+  [
+   15.293,
+   17.631,
+   "Yet the default tool we reach for,"
+  ],
+  [
+   17.631,
+   18.633,
+   "the new keyword,"
+  ],
+  [
+   18.633,
+   19.97,
+   "is a copy machine."
+  ],
+  [
+   19.97,
+   20.972,
+   "Call it twice,"
+  ],
+  [
+   20.972,
+   21.64,
+   "get two."
+  ],
+  [
+   22.271,
+   24.944,
+   "So how do you guarantee there is only"
+  ],
+  [
+   24.944,
+   25.612,
+   "ever one?"
+  ],
+  [
+   25.612,
+   27.282,
+   "Let's build a connection pool."
+  ],
+  [
+   27.782,
+   29.171,
+   "Here is the object:"
+  ],
+  [
+   29.171,
+   30.561,
+   "a database connection pool."
+  ],
+  [
+   31.192,
+   32.234,
+   "It is expensive."
+  ],
+  [
+   32.234,
+   34.318,
+   "Opening a connection takes real time,"
+  ],
+  [
+   34.318,
+   37.097,
+   "and the database itself allows only so many"
+  ],
+  [
+   37.097,
+   37.792,
+   "at once."
+  ],
+  [
+   37.792,
+   40.57,
+   "So the pool opens a fixed set of"
+  ],
+  [
+   40.57,
+   43.002,
+   "them up front and lends them out."
+  ],
+  [
+   43.633,
+   46.412,
+   "And every part of your app \u2014 the"
+  ],
+  [
+   46.412,
+   47.106,
+   "web layer,"
+  ],
+  [
+   47.106,
+   48.149,
+   "the background jobs,"
+  ],
+  [
+   48.149,
+   50.927,
+   "the health check \u2014 has to draw from"
+  ],
+  [
+   50.927,
+   52.317,
+   "the exact same pool."
+  ],
+  [
+   52.948,
+   54.685,
+   "Because if two pools exist,"
+  ],
+  [
+   54.685,
+   56.421,
+   "each opens its own connections,"
+  ],
+  [
+   56.421,
+   59.2,
+   "and together they can blow straight past the"
+  ],
+  [
+   59.2,
+   59.895,
+   "database's limit."
+  ],
+  [
+   60.526,
+   63.305,
+   "So how do you guarantee the whole program"
+  ],
+  [
+   63.305,
+   64.347,
+   "shares one pool,"
+  ],
+  [
+   64.347,
+   65.042,
+   "and never,"
+  ],
+  [
+   65.042,
+   66.431,
+   "ever creates a second?"
+  ],
+  [
+   66.931,
+   67.981,
+   "The obvious thing:"
+  ],
+  [
+   67.981,
+   69.731,
+   "wherever you need the pool,"
+  ],
+  [
+   69.731,
+   70.781,
+   "you make one."
+  ],
+  [
+   71.413,
+   73.863,
+   "The web handler news up a pool."
+  ],
+  [
+   73.863,
+   76.312,
+   "The job runner news up its own."
+  ],
+  [
+   76.312,
+   78.412,
+   "The health check makes a third."
+  ],
+  [
+   79.044,
+   80.794,
+   "And each of those pools,"
+  ],
+  [
+   80.794,
+   81.144,
+   "dutifully,"
+  ],
+  [
+   81.144,
+   83.594,
+   "opens its own full set of connections."
+  ],
+  [
+   84.226,
+   84.926,
+   "Four pools,"
+  ],
+  [
+   84.926,
+   87.726,
+   "four times the connections \u2014 and the database's"
+  ],
+  [
+   87.726,
+   88.076,
+   "limit,"
+  ],
+  [
+   88.076,
+   90.876,
+   "the one hard number this was all supposed"
+  ],
+  [
+   90.876,
+   91.575,
+   "to respect,"
+  ],
+  [
+   91.575,
+   92.975,
+   "is now pure fiction."
+  ],
+  [
+   93.607,
+   96.057,
+   "Nothing is wrong with any single line."
+  ],
+  [
+   96.057,
+   98.857,
+   "The bug is that there are four of"
+  ],
+  [
+   98.857,
+   99.207,
+   "them."
+  ],
+  [
+   99.707,
+   102.548,
+   "So you try to fix it by discipline."
+  ],
+  [
+   102.548,
+   104.679,
+   "Create exactly one pool at startup,"
+  ],
+  [
+   104.679,
+   106.455,
+   "and pass it in everywhere."
+  ],
+  [
+   107.087,
+   109.928,
+   "But now that pool has to be threaded"
+  ],
+  [
+   109.928,
+   112.059,
+   "through every constructor \u2014 web handler,"
+  ],
+  [
+   112.059,
+   112.77,
+   "job runner,"
+  ],
+  [
+   112.77,
+   115.611,
+   "health check \u2014 and each new class means"
+  ],
+  [
+   115.611,
+   117.742,
+   "passing it one more level down."
+  ],
+  [
+   118.373,
+   121.215,
+   "The tempting shortcut is a public static field:"
+  ],
+  [
+   121.215,
+   123.346,
+   "one global pool everyone can reach."
+  ],
+  [
+   123.977,
+   126.464,
+   "But nothing stops someone newing up another."
+  ],
+  [
+   126.464,
+   129.305,
+   "It is created eagerly whether you use it"
+  ],
+  [
+   129.305,
+   130.015,
+   "or not."
+  ],
+  [
+   130.015,
+   131.436,
+   "And in a test,"
+  ],
+  [
+   131.436,
+   134.277,
+   "you cannot stop it from opening real database"
+  ],
+  [
+   134.277,
+   134.633,
+   "connections."
+  ],
+  [
+   135.264,
+   138.105,
+   "The guarantee you wanted \u2014 exactly one \u2014"
+  ],
+  [
+   138.105,
+   139.881,
+   "still is not enforced anywhere."
+  ],
+  [
+   139.881,
+   142.723,
+   "It is just a convention you are hoping"
+  ],
+  [
+   142.723,
+   143.433,
+   "everyone follows."
+  ],
+  [
+   143.933,
+   145.432,
+   "What is fixed here,"
+  ],
+  [
+   145.432,
+   146.556,
+   "and what varies?"
+  ],
+  [
+   147.187,
+   147.562,
+   "Fixed:"
+  ],
+  [
+   147.562,
+   149.81,
+   "there must be exactly one pool,"
+  ],
+  [
+   149.81,
+   152.808,
+   "it has to be reachable from anywhere in"
+  ],
+  [
+   152.808,
+   153.557,
+   "the program,"
+  ],
+  [
+   153.557,
+   155.431,
+   "and creating it is expensive."
+  ],
+  [
+   156.062,
+   159.06,
+   "What varies is only when it is first"
+  ],
+  [
+   159.06,
+   159.809,
+   "genuinely needed,"
+  ],
+  [
+   159.809,
+   162.807,
+   "and which module happens to ask for it"
+  ],
+  [
+   162.807,
+   163.181,
+   "first."
+  ],
+  [
+   163.813,
+   165.686,
+   "So here is the move."
+  ],
+  [
+   166.318,
+   168.566,
+   "Stop trusting every caller to cooperate."
+  ],
+  [
+   168.566,
+   171.563,
+   "Make the class itself responsible for its own"
+  ],
+  [
+   171.563,
+   171.938,
+   "uniqueness."
+  ],
+  [
+   171.938,
+   173.062,
+   "Hide the constructor,"
+  ],
+  [
+   173.062,
+   176.06,
+   "so no one outside can call new \u2014"
+  ],
+  [
+   176.06,
+   179.057,
+   "and expose a single access point that always"
+  ],
+  [
+   179.057,
+   180.556,
+   "returns the same instance."
+  ],
+  [
+   181.056,
+   183.223,
+   "Think of a country's official time."
+  ],
+  [
+   183.854,
+   186.021,
+   "There is exactly one authoritative source,"
+  ],
+  [
+   186.021,
+   187.105,
+   "and every clock,"
+  ],
+  [
+   187.105,
+   188.188,
+   "every train schedule,"
+  ],
+  [
+   188.188,
+   189.994,
+   "every phone syncs to it."
+  ],
+  [
+   190.625,
+   193.515,
+   "You do not get to declare your own"
+  ],
+  [
+   193.515,
+   196.404,
+   "national time \u2014 that authority is not yours"
+  ],
+  [
+   196.404,
+   197.126,
+   "to create."
+  ],
+  [
+   197.126,
+   199.654,
+   "You simply ask what time it is,"
+  ],
+  [
+   199.654,
+   201.46,
+   "and so does everyone else,"
+  ],
+  [
+   201.46,
+   203.266,
+   "and everyone stays in agreement."
+  ],
+  [
+   203.897,
+   206.786,
+   "The single official time is the one instance."
+  ],
+  [
+   206.786,
+   209.675,
+   "The fact that you cannot mint your own"
+  ],
+  [
+   209.675,
+   211.12,
+   "is the private constructor."
+  ],
+  [
+   211.12,
+   212.926,
+   "Asking the time is getInstance."
+  ],
+  [
+   213.557,
+   215.002,
+   "Where the analogy strains:"
+  ],
+  [
+   215.002,
+   217.891,
+   "a country enforces its one clock by law"
+  ],
+  [
+   217.891,
+   218.974,
+   "\u2014 in code,"
+  ],
+  [
+   218.974,
+   221.864,
+   "nothing enforces it until you actually take the"
+  ],
+  [
+   221.864,
+   222.947,
+   "public constructor away."
+  ],
+  [
+   223.447,
+   224.223,
+   "The refactor,"
+  ],
+  [
+   224.223,
+   224.998,
+   "step one."
+  ],
+  [
+   225.63,
+   228.732,
+   "The class keeps a single static field to"
+  ],
+  [
+   228.732,
+   230.283,
+   "hold the one instance."
+  ],
+  [
+   230.915,
+   234.017,
+   "And then the crucial line \u2014 the constructor"
+  ],
+  [
+   234.017,
+   235.18,
+   "is made private."
+  ],
+  [
+   235.812,
+   237.751,
+   "That one word changes everything."
+  ],
+  [
+   237.751,
+   240.853,
+   "Now no code anywhere else in the program"
+  ],
+  [
+   240.853,
+   242.404,
+   "can call new ConnectionPool."
+  ],
+  [
+   242.404,
+   243.955,
+   "The compiler forbids it."
+  ],
+  [
+   244.587,
+   247.689,
+   "The class has taken ownership of its own"
+  ],
+  [
+   247.689,
+   248.077,
+   "creation."
+  ],
+  [
+   248.077,
+   251.179,
+   "The only code allowed to make a pool"
+  ],
+  [
+   251.179,
+   253.118,
+   "is the pool class itself."
+  ],
+  [
+   253.618,
+   254.358,
+   "Step two:"
+  ],
+  [
+   254.358,
+   255.839,
+   "the single access point."
+  ],
+  [
+   256.471,
+   257.952,
+   "A static getInstance method."
+  ],
+  [
+   257.952,
+   259.803,
+   "The first time anyone asks,"
+  ],
+  [
+   259.803,
+   261.283,
+   "the instance is null,"
+  ],
+  [
+   261.283,
+   263.134,
+   "so it builds the pool."
+  ],
+  [
+   263.134,
+   266.096,
+   "Every call after that returns the same one."
+  ],
+  [
+   266.728,
+   269.689,
+   "This is lazy \u2014 the expensive pool is"
+  ],
+  [
+   269.689,
+   272.281,
+   "not created until something actually needs it."
+  ],
+  [
+   272.912,
+   274.023,
+   "But look closely,"
+  ],
+  [
+   274.023,
+   276.614,
+   "because there is a bug hiding here."
+  ],
+  [
+   277.246,
+   280.207,
+   "If two threads call getInstance at the very"
+  ],
+  [
+   280.207,
+   280.948,
+   "same moment,"
+  ],
+  [
+   280.948,
+   283.169,
+   "both can see instance as null,"
+  ],
+  [
+   283.169,
+   285.39,
+   "and both can create a pool."
+  ],
+  [
+   285.39,
+   288.352,
+   "The one guarantee we built this whole class"
+  ],
+  [
+   288.352,
+   290.943,
+   "to provide \u2014 quietly broken by concurrency."
+  ],
+  [
+   291.443,
+   293.269,
+   "Your turn \u2014 pause here."
+  ],
+  [
+   293.9,
+   295.726,
+   "The field is marked volatile,"
+  ],
+  [
+   295.726,
+   298.282,
+   "which will matter for what comes next."
+  ],
+  [
+   298.913,
+   299.643,
+   "Your job:"
+  ],
+  [
+   299.643,
+   302.564,
+   "rewrite getInstance so that even if a hundred"
+  ],
+  [
+   302.564,
+   305.12,
+   "threads call it at the same instant,"
+  ],
+  [
+   305.12,
+   307.311,
+   "exactly one pool is ever created."
+  ],
+  [
+   307.942,
+   310.863,
+   "The classic answer is double-checked locking \u2014\ncheck"
+  ],
+  [
+   310.863,
+   311.594,
+   "for null,"
+  ],
+  [
+   311.594,
+   314.515,
+   "and only if it is null enter a"
+  ],
+  [
+   314.515,
+   315.245,
+   "synchronized block,"
+  ],
+  [
+   315.245,
+   317.801,
+   "then check once more inside before creating."
+  ],
+  [
+   318.432,
+   319.893,
+   "Try to write it."
+  ],
+  [
+   319.893,
+   322.814,
+   "Then let me show you an idiom that"
+  ],
+  [
+   322.814,
+   324.274,
+   "sidesteps the whole problem."
+  ],
+  [
+   324.774,
+   327.898,
+   "Step three \u2014 the idiom most Java code"
+  ],
+  [
+   327.898,
+   328.679,
+   "actually uses."
+  ],
+  [
+   329.311,
+   332.435,
+   "Put the instance inside a private static nested"
+  ],
+  [
+   332.435,
+   332.825,
+   "class,"
+  ],
+  [
+   332.825,
+   333.606,
+   "a holder."
+  ],
+  [
+   334.238,
+   337.362,
+   "The trick is in how the Java class"
+  ],
+  [
+   337.362,
+   338.143,
+   "loader works."
+  ],
+  [
+   338.143,
+   341.267,
+   "That holder class is not loaded until the"
+  ],
+  [
+   341.267,
+   344.391,
+   "first time getInstance touches it \u2014 so it"
+  ],
+  [
+   344.391,
+   345.172,
+   "stays lazy."
+  ],
+  [
+   345.172,
+   348.296,
+   "And the language already guarantees a class is"
+  ],
+  [
+   348.296,
+   349.468,
+   "initialized exactly once,"
+  ],
+  [
+   349.468,
+   349.858,
+   "safely,"
+  ],
+  [
+   349.858,
+   351.03,
+   "even across threads."
+  ],
+  [
+   351.661,
+   354.785,
+   "So you get lazy creation and rock-solid thread"
+  ],
+  [
+   354.785,
+   355.176,
+   "safety,"
+  ],
+  [
+   355.176,
+   356.738,
+   "with no synchronized block,"
+  ],
+  [
+   356.738,
+   357.519,
+   "no volatile,"
+  ],
+  [
+   357.519,
+   358.69,
+   "no double-checked anything."
+  ],
+  [
+   359.322,
+   362.055,
+   "The concurrency problem does not get solved."
+  ],
+  [
+   362.055,
+   364.398,
+   "It gets handed to the JVM,"
+  ],
+  [
+   364.398,
+   366.351,
+   "which solved it long ago."
+  ],
+  [
+   366.851,
+   369.703,
+   "Now the requirement this all existed for \u2014"
+  ],
+  [
+   369.703,
+   372.555,
+   "never exceed the database's cap of twenty\nconnections."
+  ],
+  [
+   373.187,
+   373.543,
+   "Before,"
+  ],
+  [
+   373.543,
+   374.969,
+   "with pools breeding freely,"
+  ],
+  [
+   374.969,
+   377.821,
+   "four of them meant up to eighty open"
+  ],
+  [
+   377.821,
+   378.178,
+   "connections."
+  ],
+  [
+   378.178,
+   381.03,
+   "The database starts rejecting them at peak traffic"
+  ],
+  [
+   381.03,
+   383.882,
+   "\u2014 a failure that only shows up under"
+  ],
+  [
+   383.882,
+   384.239,
+   "load,"
+  ],
+  [
+   384.239,
+   386.734,
+   "which is the worst kind to debug."
+  ],
+  [
+   387.366,
+   389.505,
+   "Now there is exactly one pool,"
+  ],
+  [
+   389.505,
+   391.287,
+   "holding exactly its twenty connections,"
+  ],
+  [
+   391.287,
+   394.14,
+   "and every borrow across the whole app draws"
+  ],
+  [
+   394.14,
+   395.566,
+   "from that same set."
+  ],
+  [
+   396.197,
+   398.693,
+   "The cap is not a hope anymore."
+  ],
+  [
+   398.693,
+   401.545,
+   "It holds by construction \u2014 because a second"
+  ],
+  [
+   401.545,
+   403.684,
+   "pool is now a compile error."
+  ],
+  [
+   404.184,
+   406.239,
+   "This is the Singleton pattern."
+  ],
+  [
+   406.871,
+   410.16,
+   "It is really a single class carrying three"
+  ],
+  [
+   410.16,
+   410.982,
+   "moving parts."
+  ],
+  [
+   411.613,
+   414.902,
+   "A private static field that holds the one"
+  ],
+  [
+   414.902,
+   416.135,
+   "and only instance."
+  ],
+  [
+   416.767,
+   418.0,
+   "A private constructor,"
+  ],
+  [
+   418.0,
+   420.878,
+   "so nothing outside can ever create another."
+  ],
+  [
+   421.509,
+   424.798,
+   "And a public static getInstance \u2014 the one"
+  ],
+  [
+   424.798,
+   428.087,
+   "door everyone in the program walks through to"
+  ],
+  [
+   428.087,
+   428.909,
+   "reach it."
+  ],
+  [
+   429.54,
+   432.829,
+   "The client on the left never says new."
+  ],
+  [
+   432.829,
+   434.473,
+   "It only ever asks,"
+  ],
+  [
+   434.473,
+   434.884,
+   "getInstance,"
+  ],
+  [
+   434.884,
+   437.762,
+   "and always receives the very same object."
+  ],
+  [
+   438.262,
+   439.058,
+   "The names,"
+  ],
+  [
+   439.058,
+   440.252,
+   "against your code."
+  ],
+  [
+   440.884,
+   443.67,
+   "The Singleton is the ConnectionPool class itself."
+  ],
+  [
+   444.302,
+   447.486,
+   "The single instance lives in that static holder"
+  ],
+  [
+   447.486,
+   447.884,
+   "field."
+  ],
+  [
+   448.516,
+   451.7,
+   "The access point is the static getInstance method"
+  ],
+  [
+   451.7,
+   453.691,
+   "\u2014 the one global door."
+  ],
+  [
+   454.322,
+   457.507,
+   "And the Client is any code that calls"
+  ],
+  [
+   457.507,
+   458.701,
+   "getInstance and never,"
+  ],
+  [
+   458.701,
+   459.895,
+   "ever calls new."
+  ],
+  [
+   460.527,
+   462.119,
+   "The Gang of Four,"
+  ],
+  [
+   462.119,
+   463.313,
+   "in one sentence:"
+  ],
+  [
+   463.313,
+   466.1,
+   "ensure a class has only one instance,"
+  ],
+  [
+   466.1,
+   469.284,
+   "and provide a global point of access to"
+  ],
+  [
+   469.284,
+   469.682,
+   "it."
+  ],
+  [
+   470.314,
+   473.498,
+   "Read that second half carefully \u2014 a global"
+  ],
+  [
+   473.498,
+   476.683,
+   "point of access \u2014 because that is also"
+  ],
+  [
+   476.683,
+   478.275,
+   "where the trouble starts."
+  ],
+  [
+   478.775,
+   480.176,
+   "And now the honesty,"
+  ],
+  [
+   480.176,
+   482.979,
+   "because Singleton has more caveats than any\npattern"
+  ],
+  [
+   482.979,
+   484.03,
+   "we have covered."
+  ],
+  [
+   484.662,
+   487.114,
+   "What you have built is global state,"
+  ],
+  [
+   487.114,
+   489.216,
+   "wearing the costume of an object."
+  ],
+  [
+   489.848,
+   492.651,
+   "Any class that calls getInstance carries a\ndependency"
+  ],
+  [
+   492.651,
+   495.454,
+   "that is invisible from its constructor \u2014 you"
+  ],
+  [
+   495.454,
+   498.256,
+   "cannot tell what it needs just by looking"
+  ],
+  [
+   498.256,
+   498.957,
+   "at it."
+  ],
+  [
+   499.589,
+   502.392,
+   "And because one instance lives for the whole"
+  ],
+  [
+   502.392,
+   503.793,
+   "life of the program,"
+  ],
+  [
+   503.793,
+   505.895,
+   "tests bleed state into each other,"
+  ],
+  [
+   505.895,
+   508.698,
+   "and you cannot easily swap in a fake."
+  ],
+  [
+   509.329,
+   511.432,
+   "So here is the real guidance."
+  ],
+  [
+   511.432,
+   514.234,
+   "If you only want usually one of something,"
+  ],
+  [
+   514.234,
+   517.037,
+   "do not use this \u2014 create one instance"
+  ],
+  [
+   517.037,
+   519.49,
+   "and inject it where it is needed."
+  ],
+  [
+   519.49,
+   522.292,
+   "That gives you the sharing without the global."
+  ],
+  [
+   522.924,
+   525.727,
+   "Reach for Singleton only when a resource is"
+  ],
+  [
+   525.727,
+   526.428,
+   "genuinely unique,"
+  ],
+  [
+   526.428,
+   527.128,
+   "genuinely expensive,"
+  ],
+  [
+   527.128,
+   529.931,
+   "and genuinely must be shared across the whole"
+  ],
+  [
+   529.931,
+   532.384,
+   "process \u2014 like a real connection pool."
+  ],
+  [
+   533.015,
+   535.468,
+   "It is the pattern most worth knowing,"
+  ],
+  [
+   535.468,
+   536.869,
+   "and most worth resisting."
+  ],
+  [
+   537.369,
+   537.754,
+   "Singleton,"
+  ],
+  [
+   537.754,
+   538.908,
+   "in one breath."
+  ],
+  [
+   539.54,
+   542.617,
+   "Every new made another copy of something meant"
+  ],
+  [
+   542.617,
+   543.772,
+   "to be shared,"
+  ],
+  [
+   543.772,
+   546.08,
+   "and the database's limit became fiction."
+  ],
+  [
+   546.712,
+   548.635,
+   "There must be exactly one,"
+  ],
+  [
+   548.635,
+   551.713,
+   "reachable everywhere \u2014 so the class owns its"
+  ],
+  [
+   551.713,
+   554.791,
+   "single instance behind a private constructor and\none"
+  ],
+  [
+   554.791,
+   555.56,
+   "access point."
+  ],
+  [
+   556.192,
+   558.5,
+   "Use the holder idiom for lazy,"
+  ],
+  [
+   558.5,
+   561.578,
+   "thread-safe creation with no locks \u2014 and reach"
+  ],
+  [
+   561.578,
+   563.117,
+   "for the pattern sparingly,"
+  ],
+  [
+   563.117,
+   566.195,
+   "because what you are really creating is global"
+  ],
+  [
+   566.195,
+   566.58,
+   "state."
+  ],
+  [
+   567.211,
+   569.52,
+   "Here is one to sit with."
+  ],
+  [
+   570.151,
+   573.229,
+   "An app needs a single in-memory metrics registry"
+  ],
+  [
+   573.229,
+   576.307,
+   "\u2014 counters and timers that every module updates,"
+  ],
+  [
+   576.307,
+   579.385,
+   "and a reporter that reads it once a"
+  ],
+  [
+   579.385,
+   579.77,
+   "minute."
+  ],
+  [
+   580.401,
+   582.325,
+   "Does Singleton truly fit here?"
+  ],
+  [
+   582.325,
+   582.71,
+   "Or,"
+  ],
+  [
+   582.71,
+   584.249,
+   "having heard the caveats,"
+  ],
+  [
+   584.249,
+   587.326,
+   "would simply creating one registry and injecting\nit"
+  ],
+  [
+   587.326,
+   588.481,
+   "serve you better?"
+  ],
+  [
+   589.112,
+   589.882,
+   "That question,"
+  ],
+  [
+   589.882,
+   591.036,
+   "not the mechanics,"
+  ],
+  [
+   591.036,
+   593.729,
+   "is the real lesson of this pattern."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp11-singleton.wav",
+   "volume": 1.0
+  }
+ }
+}

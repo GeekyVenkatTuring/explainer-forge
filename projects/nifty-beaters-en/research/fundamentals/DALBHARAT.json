@@ -1,0 +1,107 @@
+{
+ "ticker": "DALBHARAT",
+ "scraped_at": "2026-08-14T15:30:08",
+ "source": "screener.in",
+ "ok": true,
+ "error": "<HTTPError 429: 'Too Many Requests'>",
+ "variant": "standalone",
+ "market_cap_cr": 34555.0,
+ "current_price": 1842.0,
+ "pe": 258.0,
+ "book_value": 420.0,
+ "dividend_yield_pct": 0.49,
+ "roce_pct": 2.07,
+ "roe_pct": 1.75,
+ "face_value": 2.0,
+ "high": 2496.0,
+ "sales_growth": {
+  "5 Years": 42.0,
+  "3 Years": -11.0,
+  "TTM": 5.0
+ },
+ "profit_growth": {
+  "5 Years": -1.0,
+  "3 Years": -1.0,
+  "1 Year": -19.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 35.0,
+  "Expenses&nbsp; +": 32.0,
+  "Operating Profit": 3.0,
+  "OPM %": 9.0,
+  "Other Income&nbsp; +": 9.0,
+  "Interest": 1.0,
+  "Depreciation": 1.0,
+  "Profit before tax": 10.0,
+  "Tax %": 10.0,
+  "Net Profit&nbsp; +": 9.0,
+  "EPS in Rs": 0.48
+ },
+ "price_cagr": {
+  "10 Years": 2.0,
+  "5 Years": 2.0,
+  "3 Years": 2.0,
+  "Last Year": 2.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "9%",
+   "15%",
+   "7%",
+   "22%",
+   "12%",
+   "17%",
+   "15%",
+   "6%",
+   "13%",
+   "15%",
+   "29%",
+   "23%",
+   "25%"
+  ],
+  "eps": [
+   "0.48",
+   "4.43",
+   "0.48",
+   "0.59",
+   "5.12",
+   "0.53",
+   "0.37",
+   "4.11",
+   "1.76",
+   "0.75",
+   "1.07",
+   "3.89",
+   "1.23"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company is expected to give good quarter",
+  "Company has been maintaining a healthy dividend payout of 121%"
+ ],
+ "cons": [
+  "Stock is trading at 4.39 times its book value",
+  "Tax rate seems low",
+  "Company has a low return on equity of 1.84% over last 3 years.",
+  "Earnings include an other income of Rs.105 Cr.",
+  "Debtor days have increased from 42.5 to 58.6 days."
+ ]
+}

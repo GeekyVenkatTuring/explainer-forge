@@ -1,0 +1,481 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch21-everywhere_apps",
+   "type": "it_apps",
+   "in_seconds": 0.0,
+   "out_seconds": 93.99,
+   "props": {
+    "dur": 94.49
+   }
+  },
+  {
+   "id": "it-ch21-everywhere_recap",
+   "type": "it_recap",
+   "in_seconds": 94.49,
+   "out_seconds": 173.215,
+   "props": {
+    "items": [
+     "Information is surprise: rare events carry more bits \u2014 I(x) = log\u2082(1/p)",
+     "A bit is one perfect yes/no question; log\u2082 counts how many you need",
+     "Entropy H = \u2212\u03a3 p\u00b7log p is a source's average surprise",
+     "Source coding theorem: entropy is the hard floor on compression",
+     "Huffman & arithmetic codes reach that floor; lossy codes trade fidelity for size",
+     "Cross-entropy & KL divergence price a wrong model in bits \u2014 the loss that trains AI",
+     "Mutual information is the uncertainty two variables share",
+     "Channel capacity C = 1 \u2212 H(p) is the speed limit; codes beat the noise"
+    ],
+    "closer": "Information is surprise you can count \u2014 and Shannon taught us how.",
+    "dur": 79.225
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.167,
+   "Step back now,"
+  ],
+  [
+   1.167,
+   4.279,
+   "and look at how far a single idea"
+  ],
+  [
+   4.279,
+   5.057,
+   "has traveled."
+  ],
+  [
+   5.057,
+   7.391,
+   "It is genuinely hard to overstate."
+  ],
+  [
+   8.023,
+   11.135,
+   "At the center of it all sits the"
+  ],
+  [
+   11.135,
+   12.302,
+   "bit \u2014 surprise,"
+  ],
+  [
+   12.302,
+   13.08,
+   "made countable."
+  ],
+  [
+   13.08,
+   15.414,
+   "And from that one small atom,"
+  ],
+  [
+   15.414,
+   17.359,
+   "look at everything that grows."
+  ],
+  [
+   17.991,
+   18.38,
+   "Compression."
+  ],
+  [
+   18.38,
+   19.547,
+   "Every ZIP archive,"
+  ],
+  [
+   19.547,
+   20.714,
+   "every JPEG photo,"
+  ],
+  [
+   20.714,
+   23.826,
+   "every MP3 song lives right up against the"
+  ],
+  [
+   23.826,
+   26.938,
+   "entropy limit we drew \u2014 squeezing out redundancy,"
+  ],
+  [
+   26.938,
+   28.105,
+   "and no further."
+  ],
+  [
+   28.737,
+   29.515,
+   "Machine learning."
+  ],
+  [
+   29.515,
+   32.627,
+   "The cross-entropy loss that trains almost every\nneural"
+  ],
+  [
+   32.627,
+   33.405,
+   "network is,"
+  ],
+  [
+   33.405,
+   33.794,
+   "precisely,"
+  ],
+  [
+   33.794,
+   36.128,
+   "our bit-cost of a wrong model."
+  ],
+  [
+   36.128,
+   37.684,
+   "Perplexity is its scoreboard."
+  ],
+  [
+   38.315,
+   38.704,
+   "Communication."
+  ],
+  [
+   38.704,
+   39.093,
+   "Five-G,"
+  ],
+  [
+   39.093,
+   39.482,
+   "wi-fi,"
+  ],
+  [
+   39.482,
+   40.261,
+   "satellite links,"
+  ],
+  [
+   40.261,
+   43.373,
+   "and the faint signals from deep-space probes all"
+  ],
+  [
+   43.373,
+   46.096,
+   "ride on channel capacity and error-correcting\ncodes."
+  ],
+  [
+   46.727,
+   47.116,
+   "Biology."
+  ],
+  [
+   47.116,
+   50.228,
+   "The genome is a code written in four"
+  ],
+  [
+   50.228,
+   50.617,
+   "letters,"
+  ],
+  [
+   50.617,
+   53.729,
+   "and we measure the information in DNA with"
+  ],
+  [
+   53.729,
+   55.286,
+   "these very same tools."
+  ],
+  [
+   55.917,
+   56.306,
+   "Cryptography."
+  ],
+  [
+   56.306,
+   59.418,
+   "A perfect cipher is defined as one whose"
+  ],
+  [
+   59.418,
+   61.752,
+   "output has maximum entropy \u2014 pure,"
+  ],
+  [
+   61.752,
+   62.53,
+   "patternless surprise,"
+  ],
+  [
+   62.53,
+   64.864,
+   "giving an eavesdropper nothing to grip."
+  ],
+  [
+   65.496,
+   66.274,
+   "And physics,"
+  ],
+  [
+   66.274,
+   67.83,
+   "most astonishing of all."
+  ],
+  [
+   67.83,
+   70.164,
+   "Shannon's entropy turned out to be,"
+  ],
+  [
+   70.164,
+   70.553,
+   "mathematically,"
+  ],
+  [
+   70.553,
+   73.276,
+   "the very same entropy that governs heat,"
+  ],
+  [
+   73.276,
+   73.665,
+   "disorder,"
+  ],
+  [
+   73.665,
+   76.388,
+   "and the arrow of time in thermodynamics."
+  ],
+  [
+   76.388,
+   79.5,
+   "The universe and your hard drive keep the"
+  ],
+  [
+   79.5,
+   80.278,
+   "same books."
+  ],
+  [
+   80.91,
+   84.022,
+   "One definition of a single bit \u2014 and"
+  ],
+  [
+   84.022,
+   85.967,
+   "it reappears in your pocket,"
+  ],
+  [
+   85.967,
+   87.134,
+   "inside your cells,"
+  ],
+  [
+   87.134,
+   90.246,
+   "and at the trembling edge of the solar"
+  ],
+  [
+   90.246,
+   90.635,
+   "system."
+  ],
+  [
+   91.267,
+   93.99,
+   "That is the reach of information theory."
+  ],
+  [
+   94.49,
+   97.386,
+   "Let's gather the whole journey into one breath."
+  ],
+  [
+   98.018,
+   99.104,
+   "Information is surprise."
+  ],
+  [
+   99.104,
+   102.0,
+   "Rare events carry more bits \u2014 given by"
+  ],
+  [
+   102.0,
+   104.173,
+   "the log of one over p."
+  ],
+  [
+   104.804,
+   107.339,
+   "A bit is one perfect yes-or-no question,"
+  ],
+  [
+   107.339,
+   110.235,
+   "and the logarithm counts how many of them"
+  ],
+  [
+   110.235,
+   110.959,
+   "you need."
+  ],
+  [
+   111.591,
+   114.487,
+   "Entropy is a source's average surprise \u2014 minus"
+  ],
+  [
+   114.487,
+   117.383,
+   "the sum of p times log p \u2014"
+  ],
+  [
+   117.383,
+   120.28,
+   "and it is the beating heart of the"
+  ],
+  [
+   120.28,
+   120.642,
+   "theory."
+  ],
+  [
+   121.273,
+   124.17,
+   "The source coding theorem makes that entropy a"
+  ],
+  [
+   124.17,
+   125.618,
+   "hard floor on compression."
+  ],
+  [
+   125.618,
+   128.514,
+   "Huffman and arithmetic codes press right up\nagainst"
+  ],
+  [
+   128.514,
+   128.876,
+   "it,"
+  ],
+  [
+   128.876,
+   131.773,
+   "while lossy codes trade a little fidelity for"
+  ],
+  [
+   131.773,
+   133.221,
+   "a lot of size."
+  ],
+  [
+   133.852,
+   136.749,
+   "Cross-entropy and K-L divergence measure the cost\nof"
+  ],
+  [
+   136.749,
+   137.835,
+   "a wrong model,"
+  ],
+  [
+   137.835,
+   140.731,
+   "in bits \u2014 the very loss that trains"
+  ],
+  [
+   140.731,
+   141.818,
+   "modern artificial intelligence."
+  ],
+  [
+   142.449,
+   145.345,
+   "Mutual information is the uncertainty that two\nvariables"
+  ],
+  [
+   145.345,
+   145.708,
+   "share."
+  ],
+  [
+   146.339,
+   147.425,
+   "And channel capacity,"
+  ],
+  [
+   147.425,
+   149.96,
+   "one minus the entropy of the noise,"
+  ],
+  [
+   149.96,
+   152.856,
+   "is the speed limit of every wire \u2014"
+  ],
+  [
+   152.856,
+   155.752,
+   "a limit that clever error-correcting codes let us"
+  ],
+  [
+   155.752,
+   156.838,
+   "approach without fear."
+  ],
+  [
+   157.47,
+   159.28,
+   "From a single flipped coin,"
+  ],
+  [
+   159.28,
+   162.177,
+   "to the foundations of the entire digital age,"
+  ],
+  [
+   162.177,
+   163.263,
+   "it is all,"
+  ],
+  [
+   163.263,
+   164.349,
+   "in the end,"
+  ],
+  [
+   164.349,
+   165.073,
+   "one idea."
+  ],
+  [
+   165.705,
+   168.601,
+   "Information is surprise you can count \u2014 and"
+  ],
+  [
+   168.601,
+   171.497,
+   "Claude Shannon taught us how to count it."
+  ],
+  [
+   172.129,
+   173.215,
+   "Thanks for watching."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch21-everywhere.wav",
+   "volume": 1.0
+  }
+ }
+}

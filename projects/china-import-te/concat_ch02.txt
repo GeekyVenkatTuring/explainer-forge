@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/f_channels.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/f_process.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/f_landed.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/f_gate.wav'

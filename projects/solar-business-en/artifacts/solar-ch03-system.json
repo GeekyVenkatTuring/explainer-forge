@@ -1,0 +1,556 @@
+{
+ "cuts": [
+  {
+   "id": "solar-ch03-system_divider",
+   "type": "sol_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 9.989,
+   "props": {
+    "n": 3,
+    "title": "The System",
+    "sub": "inverters and the grid",
+    "color": "#34D399",
+    "dur": 10.489
+   }
+  },
+  {
+   "id": "solar-ch03-system_dcac",
+   "type": "sol_dcac",
+   "in_seconds": 10.489,
+   "out_seconds": 59.641,
+   "props": {
+    "dur": 49.652
+   }
+  },
+  {
+   "id": "solar-ch03-system_ongrid",
+   "type": "sol_ongrid",
+   "in_seconds": 60.141,
+   "out_seconds": 107.314,
+   "props": {
+    "dur": 47.673
+   }
+  },
+  {
+   "id": "solar-ch03-system_offgrid",
+   "type": "sol_offgrid",
+   "in_seconds": 107.814,
+   "out_seconds": 151.355,
+   "props": {
+    "dur": 44.041
+   }
+  },
+  {
+   "id": "solar-ch03-system_components",
+   "type": "sol_components",
+   "in_seconds": 151.855,
+   "out_seconds": 195.695,
+   "props": {
+    "dur": 44.34
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.814,
+   "Part three."
+  ],
+  [
+   0.814,
+   1.627,
+   "The system."
+  ],
+  [
+   2.259,
+   3.886,
+   "Panels alone are useless."
+  ],
+  [
+   3.886,
+   5.514,
+   "To power a home,"
+  ],
+  [
+   5.514,
+   8.768,
+   "you need a few more pieces working together."
+  ],
+  [
+   8.768,
+   9.989,
+   "Let's meet them."
+  ],
+  [
+   10.489,
+   12.194,
+   "Here's a catch nobody expects."
+  ],
+  [
+   12.826,
+   15.555,
+   "Your panels make direct current \u2014 D C"
+  ],
+  [
+   15.555,
+   16.578,
+   "\u2014 a steady,"
+  ],
+  [
+   16.578,
+   17.26,
+   "one-way flow."
+  ],
+  [
+   17.891,
+   20.279,
+   "But your home doesn't run on that."
+  ],
+  [
+   20.279,
+   20.961,
+   "Your lights,"
+  ],
+  [
+   20.961,
+   21.302,
+   "fans,"
+  ],
+  [
+   21.302,
+   24.031,
+   "and fridge all need alternating current \u2014 A"
+  ],
+  [
+   24.031,
+   26.759,
+   "C \u2014 a wave that flips back and"
+  ],
+  [
+   26.759,
+   28.465,
+   "forth fifty times a second."
+  ],
+  [
+   29.096,
+   30.802,
+   "So we need a translator."
+  ],
+  [
+   30.802,
+   32.507,
+   "That translator is the inverter."
+  ],
+  [
+   33.139,
+   35.867,
+   "The inverter takes the panels' D C and"
+  ],
+  [
+   35.867,
+   38.596,
+   "turns it into clean A C the grid"
+  ],
+  [
+   38.596,
+   39.278,
+   "can use."
+  ],
+  [
+   39.909,
+   41.274,
+   "But it does more."
+  ],
+  [
+   41.274,
+   44.002,
+   "It constantly hunts for the maximum power the"
+  ],
+  [
+   44.002,
+   45.025,
+   "panels can give,"
+  ],
+  [
+   45.025,
+   46.049,
+   "it handles safety,"
+  ],
+  [
+   46.049,
+   48.436,
+   "and it reports how much you're generating."
+  ],
+  [
+   49.068,
+   51.796,
+   "It is the brain of the whole system."
+  ],
+  [
+   51.796,
+   53.502,
+   "And because it works hardest,"
+  ],
+  [
+   53.502,
+   56.23,
+   "it's usually the first part to fail \u2014"
+  ],
+  [
+   56.23,
+   58.959,
+   "so its quality matters more than anything else"
+  ],
+  [
+   58.959,
+   59.641,
+   "you buy."
+  ],
+  [
+   60.141,
+   60.483,
+   "Now,"
+  ],
+  [
+   60.483,
+   63.215,
+   "the clever part \u2014 how a home connects"
+  ],
+  [
+   63.215,
+   64.24,
+   "to the grid."
+  ],
+  [
+   64.24,
+   65.607,
+   "This is called on-grid,"
+  ],
+  [
+   65.607,
+   66.631,
+   "or net metering,"
+  ],
+  [
+   66.631,
+   68.681,
+   "and it's the most common setup."
+  ],
+  [
+   69.313,
+   70.337,
+   "During the day,"
+  ],
+  [
+   70.337,
+   73.07,
+   "your panels often make more power than you're"
+  ],
+  [
+   73.07,
+   73.412,
+   "using."
+  ],
+  [
+   74.043,
+   76.776,
+   "That surplus doesn't go to waste \u2014 it"
+  ],
+  [
+   76.776,
+   78.484,
+   "flows out to the grid,"
+  ],
+  [
+   78.484,
+   80.534,
+   "and your meter literally runs backward,"
+  ],
+  [
+   80.534,
+   81.217,
+   "banking credit."
+  ],
+  [
+   81.849,
+   82.532,
+   "At night,"
+  ],
+  [
+   82.532,
+   84.24,
+   "when the panels are asleep,"
+  ],
+  [
+   84.24,
+   86.973,
+   "you simply draw that credit back from the"
+  ],
+  [
+   86.973,
+   87.314,
+   "grid."
+  ],
+  [
+   87.946,
+   90.337,
+   "So the grid acts like a giant,"
+  ],
+  [
+   90.337,
+   93.07,
+   "free battery \u2014 you deposit power by day"
+  ],
+  [
+   93.07,
+   94.778,
+   "and withdraw it by night."
+  ],
+  [
+   95.41,
+   97.459,
+   "At the end of the month,"
+  ],
+  [
+   97.459,
+   99.509,
+   "you're billed only on the net:"
+  ],
+  [
+   99.509,
+   100.192,
+   "units taken,"
+  ],
+  [
+   100.192,
+   101.217,
+   "minus units sent."
+  ],
+  [
+   101.848,
+   103.215,
+   "No expensive batteries needed."
+  ],
+  [
+   103.215,
+   105.948,
+   "This is exactly why a home solar bill"
+  ],
+  [
+   105.948,
+   107.314,
+   "can land near zero."
+  ],
+  [
+   107.814,
+   110.699,
+   "But sometimes you do want to store the"
+  ],
+  [
+   110.699,
+   111.059,
+   "sun,"
+  ],
+  [
+   111.059,
+   112.501,
+   "and that means batteries."
+  ],
+  [
+   113.133,
+   114.575,
+   "There are two situations."
+  ],
+  [
+   115.207,
+   118.091,
+   "Off-grid means there's no grid at all \u2014"
+  ],
+  [
+   118.091,
+   120.615,
+   "so batteries carry you through the night."
+  ],
+  [
+   120.615,
+   122.418,
+   "Think of a remote farm,"
+  ],
+  [
+   122.418,
+   123.5,
+   "a mobile tower,"
+  ],
+  [
+   123.5,
+   126.384,
+   "or a village home far from the lines."
+  ],
+  [
+   127.016,
+   129.179,
+   "Hybrid means you keep the grid,"
+  ],
+  [
+   129.179,
+   132.064,
+   "but add a battery for backup \u2014 so"
+  ],
+  [
+   132.064,
+   133.866,
+   "when the power cuts out,"
+  ],
+  [
+   133.866,
+   135.309,
+   "your lights stay on."
+  ],
+  [
+   135.309,
+   137.833,
+   "Very popular where the supply is unreliable."
+  ],
+  [
+   138.464,
+   140.267,
+   "But here's the honest trade-off."
+  ],
+  [
+   140.267,
+   142.43,
+   "Batteries add real cost and complexity."
+  ],
+  [
+   143.062,
+   145.947,
+   "Every battery you add stretches the payback\nperiod."
+  ],
+  [
+   145.947,
+   148.831,
+   "So most homes with a stable grid skip"
+  ],
+  [
+   148.831,
+   149.552,
+   "them entirely,"
+  ],
+  [
+   149.552,
+   151.355,
+   "and choose net metering instead."
+  ],
+  [
+   151.855,
+   154.404,
+   "So what actually goes into a system,"
+  ],
+  [
+   154.404,
+   156.588,
+   "and where does the money go?"
+  ],
+  [
+   157.22,
+   160.133,
+   "The panels themselves are the biggest slice \u2014"
+  ],
+  [
+   160.133,
+   162.317,
+   "a little over half the cost."
+  ],
+  [
+   162.949,
+   164.405,
+   "The inverter is next,"
+  ],
+  [
+   164.405,
+   165.497,
+   "around fourteen percent."
+  ],
+  [
+   166.129,
+   169.042,
+   "Then the mounting structure that holds the panels"
+  ],
+  [
+   169.042,
+   170.134,
+   "to the roof,"
+  ],
+  [
+   170.134,
+   171.226,
+   "about twelve percent."
+  ],
+  [
+   171.858,
+   174.771,
+   "Then the balance of system \u2014 the cables,"
+  ],
+  [
+   174.771,
+   175.499,
+   "the meter,"
+  ],
+  [
+   175.499,
+   177.683,
+   "the safety gear \u2014 another twelve."
+  ],
+  [
+   178.315,
+   180.5,
+   "And finally the installation and labour,"
+  ],
+  [
+   180.5,
+   181.592,
+   "about ten percent."
+  ],
+  [
+   182.223,
+   182.952,
+   "Notice this:"
+  ],
+  [
+   182.952,
+   185.5,
+   "panels are half the bill of materials."
+  ],
+  [
+   185.5,
+   188.413,
+   "That is why your profit comes down to"
+  ],
+  [
+   188.413,
+   191.326,
+   "two things \u2014 how well you source the"
+  ],
+  [
+   191.326,
+   191.69,
+   "hardware,"
+  ],
+  [
+   191.69,
+   193.875,
+   "and how cleanly you install it."
+  ],
+  [
+   193.875,
+   195.695,
+   "Not any single magic gadget."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "sol/solar-ch03-system.wav",
+   "volume": 1.0
+  }
+ }
+}

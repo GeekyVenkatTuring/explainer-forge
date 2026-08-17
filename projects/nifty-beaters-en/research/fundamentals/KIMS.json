@@ -1,0 +1,104 @@
+{
+ "ticker": "KIMS",
+ "scraped_at": "2026-08-14T15:29:13",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 33987.0,
+ "current_price": 809.0,
+ "pe": 163.0,
+ "book_value": 56.2,
+ "dividend_yield_pct": 0.0,
+ "roce_pct": 9.5,
+ "roe_pct": 11.3,
+ "face_value": 2.0,
+ "high": 858.0,
+ "sales_growth": {
+  "10 Years": 25.0,
+  "5 Years": 4.0,
+  "3 Years": -9.0,
+  "TTM": -43.0
+ },
+ "profit_growth": {
+  "5 Years": 26.0,
+  "3 Years": 29.0,
+  "1 Year": 8.0
+ },
+ "roe_hist": {
+  "Equity Capital": 70.0,
+  "Reserves": 193.0,
+  "Borrowings&nbsp; +": 256.0,
+  "Other Liabilities&nbsp; +": 146.0,
+  "Total Liabilities": 665.0,
+  "Fixed Assets&nbsp; +": 515.0,
+  "CWIP": 2.0,
+  "Investments": 11.0,
+  "Other Assets&nbsp; +": 137.0,
+  "Total Assets": 665.0
+ },
+ "price_cagr": {
+  "10 Years": 18.0,
+  "5 Years": 18.0,
+  "3 Years": 15.0,
+  "Last Year": 11.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "26%",
+   "27%",
+   "24%",
+   "25%",
+   "26%",
+   "28%",
+   "24%",
+   "25%",
+   "22%",
+   "21%",
+   "20%",
+   "19%",
+   "19%"
+  ],
+  "eps": [
+   "2.02",
+   "2.30",
+   "1.80",
+   "1.64",
+   "2.16",
+   "2.68",
+   "2.22",
+   "2.54",
+   "1.96",
+   "1.67",
+   "1.33",
+   "1.06",
+   "0.99"
+  ]
+ },
+ "pros": [
+  "Company is expected to give good quarter",
+  "Company&#x27;s median sales growth is 21.9% of last 10 years"
+ ],
+ "cons": [
+  "Stock is trading at 14.3 times its book value",
+  "Though the company is reporting repeated profits, it is not paying out dividend",
+  "Promoter holding has decreased over last quarter: -1.62%",
+  "Company might be capitalizing the interest cost"
+ ]
+}

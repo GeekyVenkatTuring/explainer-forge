@@ -1,0 +1,5 @@
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/cv-ch15-detection_detect.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/cv-ch15-detection_track.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/cv-ch15-detection_metrics.wav'

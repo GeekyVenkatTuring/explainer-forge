@@ -1,0 +1,100 @@
+{
+ "ticker": "SRF",
+ "scraped_at": "2026-08-14T15:29:46",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 77159.0,
+ "current_price": 2603.0,
+ "pe": 34.5,
+ "book_value": 474.0,
+ "dividend_yield_pct": 0.34,
+ "roce_pct": 14.6,
+ "roe_pct": 14.3,
+ "face_value": 10.0,
+ "high": 3239.0,
+ "sales_growth": {
+  "10 Years": 16.0,
+  "5 Years": 10.0,
+  "3 Years": -4.0,
+  "TTM": 57.0
+ },
+ "profit_growth": {
+  "10 Years": 23.0,
+  "5 Years": 8.0,
+  "3 Years": 4.0,
+  "1 Year": -8.0
+ },
+ "roe_hist": {
+  "Operating Profit": 696.0,
+  "OPM %": 21.0,
+  "Other Income&nbsp; +": 12.0,
+  "Interest": 66.0,
+  "Depreciation": 157.0,
+  "Profit before tax": 486.0,
+  "Tax %": 26.0,
+  "Net Profit&nbsp; +": 359.0,
+  "EPS in Rs": 12.12
+ },
+ "price_cagr": {
+  "10 Years": 17.0,
+  "5 Years": 16.0,
+  "3 Years": 12.0,
+  "Last Year": 14.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "21%",
+   "20%",
+   "19%",
+   "19%",
+   "17%",
+   "16%",
+   "18%",
+   "22%",
+   "22%",
+   "21%",
+   "21%",
+   "22%",
+   "25%"
+  ],
+  "eps": [
+   "12.12",
+   "10.15",
+   "8.55",
+   "14.24",
+   "8.51",
+   "6.79",
+   "9.14",
+   "17.75",
+   "14.58",
+   "13.10",
+   "14.60",
+   "19.63",
+   "25.60"
+  ]
+ },
+ "pros": [],
+ "cons": [
+  "Stock is trading at 5.53 times its book value",
+  "Company has a low return on equity of 12.4% over last 3 years.",
+  "Company might be capitalizing the interest cost"
+ ]
+}

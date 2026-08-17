@@ -1,0 +1,1054 @@
+{
+ "cuts": [
+  {
+   "id": "ch03_div",
+   "type": "nb_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 20.878,
+   "props": {
+    "dur": 21.378,
+    "n": 3,
+    "title": "Growth Accelerators",
+    "sub": "Tier 2 \u00b7 structural themes, compounding faster",
+    "tier": "2",
+    "total": 5
+   }
+  },
+  {
+   "id": "ch03_board",
+   "type": "nb_tierboard",
+   "in_seconds": 21.378,
+   "out_seconds": 40.048,
+   "props": {
+    "tier": "2",
+    "title": "Tier 2 \u00b7 Growth Accelerators",
+    "sub": "Eighteen names levered to India's structural themes",
+    "names": [
+     "Dixon Technologies",
+     "Kalyan Jewellers",
+     "Trent (Westside \u00b7 Zudio)",
+     "Varun Beverages",
+     "Apar Industries",
+     "Blue Star",
+     "KPIT Technologies",
+     "Coforge",
+     "Shriram Finance",
+     "Cholamandalam Finance",
+     "Max Healthcare",
+     "Apollo Hospitals",
+     "Phoenix Mills",
+     "Brigade Enterprises",
+     "CAMS",
+     "CDSL",
+     "BSE Ltd",
+     "Lupin"
+    ],
+    "dur": 19.17
+   }
+  },
+  {
+   "id": "ch03_s17_dixon",
+   "type": "nb_stock",
+   "in_seconds": 40.548,
+   "out_seconds": 90.456,
+   "props": {
+    "idx": 17,
+    "total": 50,
+    "tier": "2",
+    "name": "Dixon Technologies",
+    "ticker": "DIXON",
+    "sector": "EMS / China+1",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "46.0",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "37.4%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "42.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "55.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "27.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b986,449 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "India's electronics-manufacturing champion under the PLI + China+1 wave.",
+     "Mobiles, then components and displays \u2014 climbing the value chain.",
+     "Backward integration is the next margin and moat expansion."
+    ],
+    "growth": 41.0,
+    "take": "The China+1 manufacturing bet",
+    "dur": 50.408
+   }
+  },
+  {
+   "id": "ch03_s18_kalyankjil",
+   "type": "nb_stock",
+   "in_seconds": 90.956,
+   "out_seconds": 137.456,
+   "props": {
+    "idx": 18,
+    "total": 50,
+    "tier": "2",
+    "name": "Kalyan Jewellers",
+    "ticker": "KALYANKJIL",
+    "sector": "Jewellery",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "42.9",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "24.8%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "20.5%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "195.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "56.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b962,657 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Asset-light franchise model powering rapid, funded store expansion.",
+     "Formalisation shifts share from unorganised players to brands.",
+     "Candere + South-to-North expansion widen the runway."
+    ],
+    "growth": 45,
+    "take": "Formalisation on fast-forward",
+    "dur": 47.0
+   }
+  },
+  {
+   "id": "ch03_s19_trent",
+   "type": "nb_stock",
+   "in_seconds": 137.956,
+   "out_seconds": 185.152,
+   "props": {
+    "idx": 19,
+    "total": 50,
+    "tier": "2",
+    "name": "Trent (Westside \u00b7 Zudio)",
+    "ticker": "TRENT",
+    "sector": "Retail",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "87.1",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "27.7%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "28.3%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "69.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "38.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b91.59L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Zudio is one of India's fastest-scaling value-fashion formats.",
+     "Tata-backed retail with best-in-class store economics.",
+     "Adding grocery and beauty to extend the growth runway."
+    ],
+    "growth": 45,
+    "take": "Hyper-growth retail execution",
+    "dur": 47.696
+   }
+  },
+  {
+   "id": "ch03_s20_vbl",
+   "type": "nb_stock",
+   "in_seconds": 185.652,
+   "out_seconds": 232.128,
+   "props": {
+    "idx": 20,
+    "total": 50,
+    "tier": "2",
+    "name": "Varun Beverages",
+    "ticker": "VBL",
+    "sector": "Beverages",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "43.4",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "16.2%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "19.7%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "50.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "34.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b91.47L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "PepsiCo's key bottler, expanding into Africa and new categories.",
+     "Distribution + cold-chain build-out drives volume compounding.",
+     "Energy drinks and snacks add fresh growth vectors."
+    ],
+    "growth": 42.0,
+    "take": "Compounding one bottle at a time",
+    "dur": 46.976
+   }
+  },
+  {
+   "id": "ch03_s21_aparinds",
+   "type": "nb_stock",
+   "in_seconds": 232.628,
+   "out_seconds": 281.072,
+   "props": {
+    "idx": 21,
+    "total": 50,
+    "tier": "2",
+    "name": "Apar Industries",
+    "ticker": "APARINDS",
+    "sector": "T&D / Cables",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "55.6",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "20.2%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "31.1%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "44.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "94.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b967,010 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Conductors + cables leader riding global grid and renewables capex.",
+     "Exports to the US/Europe grid upgrade cycle are surging.",
+     "Specialty oils round out a diversified, order-rich book."
+    ],
+    "growth": 45,
+    "take": "Wired into the global energy grid",
+    "dur": 48.944
+   }
+  },
+  {
+   "id": "ch03_s22_bluestarco",
+   "type": "nb_stock",
+   "in_seconds": 281.572,
+   "out_seconds": 327.28,
+   "props": {
+    "idx": 22,
+    "total": 50,
+    "tier": "2",
+    "name": "Blue Star",
+    "ticker": "BLUESTARCO",
+    "sector": "Cooling",
+    "cap": "Mid-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "58.7",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "17.2%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "21.2%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "50.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "30.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b931,009 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Room-AC share gains as Indian cooling penetration is still tiny.",
+     "Strong commercial refrigeration + MEP projects business.",
+     "Rising incomes + heat make air-conditioning a secular story."
+    ],
+    "growth": 40.0,
+    "take": "Structural cooling demand",
+    "dur": 46.208
+   }
+  },
+  {
+   "id": "ch03_s23_kpittech",
+   "type": "nb_stock",
+   "in_seconds": 327.78,
+   "out_seconds": 376.392,
+   "props": {
+    "idx": 23,
+    "total": 50,
+    "tier": "2",
+    "name": "KPIT Technologies",
+    "ticker": "KPITTECH",
+    "sector": "Auto Tech / ER&D",
+    "cap": "Mid-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "26.9",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "20.9%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "26.3%",
+      "hero": true
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "37.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "13.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b916,812 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Pure-play software partner to global automakers going electric.",
+     "Software-defined vehicles = a multi-year outsourcing tailwind.",
+     "High return on capital with sticky, deep OEM relationships."
+    ],
+    "growth": 25.0,
+    "take": "Selling picks in the EV gold-rush",
+    "dur": 49.112
+   }
+  },
+  {
+   "id": "ch03_s24_coforge",
+   "type": "nb_stock",
+   "in_seconds": 376.892,
+   "out_seconds": 421.904,
+   "props": {
+    "idx": 24,
+    "total": 50,
+    "tier": "2",
+    "name": "Coforge",
+    "ticker": "COFORGE",
+    "sector": "IT Services",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "41.9",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "21.4%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "23.5%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "29.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "14.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b980,235 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Mid-cap IT growing well above the large-cap pack.",
+     "Large deal wins give multi-year revenue visibility.",
+     "Focused verticals (BFSI, travel) deepen domain moats."
+    ],
+    "growth": 21.5,
+    "take": "Where IT growth actually is",
+    "dur": 45.512
+   }
+  },
+  {
+   "id": "ch03_s25_shriramfin",
+   "type": "nb_stock",
+   "in_seconds": 422.404,
+   "out_seconds": 467.776,
+   "props": {
+    "idx": 25,
+    "total": 50,
+    "tier": "2",
+    "name": "Shriram Finance",
+    "ticker": "SHRIRAMFIN",
+    "sector": "NBFC",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "23.4",
+      "hero": true
+     },
+     {
+      "k": "ROE",
+      "v": "16.4%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "32.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "34.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b92.64L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Vehicle-finance leader to India's used-truck and MSME economy.",
+     "Merged entity cross-sells across a huge, underbanked base.",
+     "Cheap valuation for a 30%+ profit-growth lender."
+    ],
+    "growth": 33.0,
+    "take": "Deep-value lending growth",
+    "dur": 45.872
+   }
+  },
+  {
+   "id": "ch03_s26_cholafin",
+   "type": "nb_stock",
+   "in_seconds": 468.276,
+   "out_seconds": 517.344,
+   "props": {
+    "idx": 26,
+    "total": 50,
+    "tier": "2",
+    "name": "Cholamandalam Finance",
+    "ticker": "CHOLAFIN",
+    "sector": "NBFC",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "28.0",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "19.4%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "28.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "31.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b91.61L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Murugappa-group NBFC compounding AUM across vehicle + home + SME.",
+     "Consistent underwriting through cycles builds trust and scale.",
+     "New businesses (CSEL, SBPL) extend the growth runway."
+    ],
+    "growth": 29.5,
+    "take": "A serial NBFC compounder",
+    "dur": 49.568
+   }
+  },
+  {
+   "id": "ch03_s27_maxhealth",
+   "type": "nb_stock",
+   "in_seconds": 517.844,
+   "out_seconds": 564.32,
+   "props": {
+    "idx": 27,
+    "total": 50,
+    "tier": "2",
+    "name": "Max Healthcare",
+    "ticker": "MAXHEALTH",
+    "sector": "Hospitals",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "65.7",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "14.7%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "14.7%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "60.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "26.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b998,298 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Premium hospital network doubling bed capacity by decade-end.",
+     "Best-in-class occupancy and revenue-per-bed economics.",
+     "Health-insurance penetration expands the paying pool."
+    ],
+    "growth": 43.0,
+    "take": "Beds = a multi-year growth pipeline",
+    "dur": 46.976
+   }
+  },
+  {
+   "id": "ch03_s28_apollohosp",
+   "type": "nb_stock",
+   "in_seconds": 564.82,
+   "out_seconds": 615.088,
+   "props": {
+    "idx": 28,
+    "total": 50,
+    "tier": "2",
+    "name": "Apollo Hospitals",
+    "ticker": "APOLLOHOSP",
+    "sector": "Hospitals + Digital",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "60.9",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "21.2%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "17.4%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "76.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "16.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b91.28L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "India's hospital brand plus a fast-growing pharmacy + digital arm.",
+     "24|7 digital platform is a scaling, separately-valued option.",
+     "Aging demographics + insurance = durable demand."
+    ],
+    "growth": 45,
+    "take": "Healthcare, offline and online",
+    "dur": 50.768
+   }
+  },
+  {
+   "id": "ch03_s29_phoenixltd",
+   "type": "nb_stock",
+   "in_seconds": 615.588,
+   "out_seconds": 662.856,
+   "props": {
+    "idx": 29,
+    "total": 50,
+    "tier": "2",
+    "name": "Phoenix Mills",
+    "ticker": "PHOENIXLTD",
+    "sector": "Retail Realty",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "52.0",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "11.6%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "12.8%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "83.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "34.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b967,452 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "India's premier mall developer riding consumption + premiumisation.",
+     "New malls across cities add rental income year after year.",
+     "Annuity rental model + retail recovery = compounding cash."
+    ],
+    "growth": 45,
+    "take": "Owning the premium high-street",
+    "dur": 47.768
+   }
+  },
+  {
+   "id": "ch03_s30_brigade",
+   "type": "nb_stock",
+   "in_seconds": 663.356,
+   "out_seconds": 708.176,
+   "props": {
+    "idx": 30,
+    "total": 50,
+    "tier": "2",
+    "name": "Brigade Enterprises",
+    "ticker": "BRIGADE",
+    "sector": "Realty",
+    "cap": "Mid-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "28.5",
+      "hero": true
+     },
+     {
+      "k": "ROE",
+      "v": "10.5%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "10.5%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "89.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "19.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b919,391 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "South-India developer with strong pre-sales momentum.",
+     "Residential upcycle + annuity offices/hotels diversify income.",
+     "Reasonable valuation for the pre-sales growth on offer."
+    ],
+    "growth": 45,
+    "take": "The real-estate upcycle, cheaply",
+    "dur": 45.32
+   }
+  },
+  {
+   "id": "ch03_s31_cams",
+   "type": "nb_stock",
+   "in_seconds": 708.676,
+   "out_seconds": 756.136,
+   "props": {
+    "idx": 31,
+    "total": 50,
+    "tier": "2",
+    "name": "CAMS",
+    "ticker": "CAMS",
+    "sector": "Capital-Market Infra",
+    "cap": "Mid-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "38.3",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "36.3%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "47.0%",
+      "hero": true
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "21.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "4.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b918,956 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Duopoly registrar to India's booming mutual-fund industry.",
+     "SIP + financialisation of savings drive recurring, asset-linked fees.",
+     "Elite ROCE, asset-light \u2014 a toll-booth on rising AUM."
+    ],
+    "growth": 12.5,
+    "take": "A toll-booth on India's SIP boom",
+    "dur": 47.96
+   }
+  },
+  {
+   "id": "ch03_s32_cdsl",
+   "type": "nb_stock",
+   "in_seconds": 756.636,
+   "out_seconds": 802.992,
+   "props": {
+    "idx": 32,
+    "total": 50,
+    "tier": "2",
+    "name": "CDSL",
+    "ticker": "CDSL",
+    "sector": "Depository",
+    "cap": "Mid-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "59.5",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "24.5%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "32.0%",
+      "hero": true
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "18.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "17.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b928,042 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Duopoly depository earning fees on every demat account + trade.",
+     "Retail-investor explosion keeps adding accounts structurally.",
+     "Asset-light, high-margin, near-monopoly economics."
+    ],
+    "growth": 17.5,
+    "take": "The demat monopoly of a rising market",
+    "dur": 46.856
+   }
+  },
+  {
+   "id": "ch03_s33_bse",
+   "type": "nb_stock",
+   "in_seconds": 803.492,
+   "out_seconds": 849.824,
+   "props": {
+    "idx": 33,
+    "total": 50,
+    "tier": "2",
+    "name": "BSE Ltd",
+    "ticker": "BSE",
+    "sector": "Exchange",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "49.6",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "46.0%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "60.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "69.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "94.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b91.40L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Derivatives revival + Star MF + colocation drive a profit surge.",
+     "Operating leverage: volumes grow far faster than costs.",
+     "A structural play on India's financialisation."
+    ],
+    "growth": 45,
+    "take": "The exchange in the right cycle",
+    "dur": 46.832
+   }
+  },
+  {
+   "id": "ch03_s34_lupin",
+   "type": "nb_stock",
+   "in_seconds": 850.324,
+   "out_seconds": 894.592,
+   "props": {
+    "idx": 34,
+    "total": 50,
+    "tier": "2",
+    "name": "Lupin",
+    "ticker": "LUPIN",
+    "sector": "Pharma",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "17.2",
+      "hero": true
+     },
+     {
+      "k": "ROE",
+      "v": "28.7%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "29.9%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "37.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "18.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b91.02L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "A genuine turnaround: US complex generics + inhalation pipeline.",
+     "India branded business + margin recovery drive the re-rating.",
+     "Cheap on growth (low PEG) if the recovery holds."
+    ],
+    "growth": 27.5,
+    "take": "Turnaround at a turnaround price",
+    "dur": 44.768
+   }
+  },
+  {
+   "id": "ch03_wrap",
+   "type": "nb_statement",
+   "in_seconds": 895.092,
+   "out_seconds": 924.054,
+   "props": {
+    "dur": 29.462,
+    "kicker": "TIER 2 \u00b7 IN ONE LINE",
+    "color": "#FBBF24",
+    "lines": [
+     "Ride the theme,",
+     "pay for growth carefully,",
+     "let the runway work."
+    ],
+    "sub": "The accelerators drive returns. Now the high-torque bets."
+   }
+  }
+ ],
+ "captions": [],
+ "audio": {
+  "narration": {
+   "src": "nb/ch03.wav",
+   "volume": 1.0
+  }
+ }
+}

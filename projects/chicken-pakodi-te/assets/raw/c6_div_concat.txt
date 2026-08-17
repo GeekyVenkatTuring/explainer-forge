@@ -1,0 +1,3 @@
+file '/Users/appuram/Developer/explainer-forge/projects/chicken-pakodi-te/assets/raw/c6_div_c0.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/chicken-pakodi-te/assets/raw/_pause.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/chicken-pakodi-te/assets/raw/c6_div_c1.wav'

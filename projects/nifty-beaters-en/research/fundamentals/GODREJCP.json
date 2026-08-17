@@ -1,0 +1,101 @@
+{
+ "ticker": "GODREJCP",
+ "scraped_at": "2026-08-14T15:29:20",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 95781.0,
+ "current_price": 936.0,
+ "pe": 46.2,
+ "book_value": 124.0,
+ "dividend_yield_pct": 2.11,
+ "roce_pct": 18.8,
+ "roe_pct": 16.1,
+ "face_value": 1.0,
+ "high": 1309.0,
+ "sales_growth": {
+  "10 Years": 6.0,
+  "5 Years": 3.0,
+  "3 Years": 5.0,
+  "TTM": 9.0
+ },
+ "profit_growth": {
+  "10 Years": 6.0,
+  "5 Years": -1.0,
+  "3 Years": -3.0,
+  "1 Year": -21.0
+ },
+ "roe_hist": {
+  "Operating Profit": 643.0,
+  "OPM %": 19.0,
+  "Other Income&nbsp; +": -13.0,
+  "Interest": 74.0,
+  "Depreciation": 76.0,
+  "Profit before tax": 480.0,
+  "Tax %": 34.0,
+  "Net Profit&nbsp; +": 319.0,
+  "EPS in Rs": 3.12
+ },
+ "price_cagr": {
+  "10 Years": 18.0,
+  "5 Years": 14.0,
+  "3 Years": 14.0,
+  "Last Year": 16.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "19%",
+   "20%",
+   "23%",
+   "22%",
+   "22%",
+   "21%",
+   "20%",
+   "22%",
+   "19%",
+   "19%",
+   "22%",
+   "22%",
+   "19%"
+  ],
+  "eps": [
+   "3.12",
+   "4.23",
+   "5.68",
+   "-18.51",
+   "4.41",
+   "4.80",
+   "4.87",
+   "4.03",
+   "4.42",
+   "4.49",
+   "4.87",
+   "4.42",
+   "4.93"
+  ]
+ },
+ "pros": [],
+ "cons": [
+  "Stock is trading at 7.60 times its book value",
+  "The company has delivered a poor sales growth of 6.60% over past five years.",
+  "Company has a low return on equity of 13.8% over last 3 years.",
+  "Promoter holding has decreased over last 3 years: -10.2%"
+ ]
+}

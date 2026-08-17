@@ -1,0 +1,93 @@
+{
+ "ticker": "DRREDDY",
+ "scraped_at": "2026-08-14T15:28:59",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 100186.0,
+ "current_price": 1200.0,
+ "pe": 31.1,
+ "book_value": 454.0,
+ "dividend_yield_pct": 0.66,
+ "roce_pct": 13.0,
+ "roe_pct": 11.2,
+ "face_value": 1.0,
+ "high": 1415.0,
+ "sales_growth": {
+  "10 Years": 7.0,
+  "5 Years": 15.0,
+  "3 Years": -4.0,
+  "TTM": -43.0
+ },
+ "profit_growth": {
+  "10 Years": 7.0,
+  "5 Years": 5.0,
+  "3 Years": 1.0,
+  "1 Year": -4.0
+ },
+ "roe_hist": {
+  "Equity Capital": 85.0,
+  "CWIP": 529.0
+ },
+ "price_cagr": {
+  "10 Years": 15.0,
+  "5 Years": 16.0,
+  "3 Years": 16.0,
+  "Last Year": 11.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "31%",
+   "29%",
+   "28%",
+   "26%",
+   "28%",
+   "26%",
+   "27%",
+   "23%",
+   "25%",
+   "23%",
+   "22%",
+   "5%",
+   "11%"
+  ],
+  "eps": [
+   "16.87",
+   "17.77",
+   "16.56",
+   "15.70",
+   "16.69",
+   "15.05",
+   "16.94",
+   "19.09",
+   "16.99",
+   "16.14",
+   "14.50",
+   "2.65",
+   "5.32"
+  ]
+ },
+ "pros": [
+  "Company&#x27;s working capital requirements have reduced from 85.1 days to 67.8 days"
+ ],
+ "cons": [
+  "Dividend payout has been low at 13.2% of profits over last 3 years"
+ ]
+}

@@ -1,0 +1,2010 @@
+{
+ "cuts": [
+  {
+   "id": "dp17-mediator_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 28.858,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 17",
+    "line1": "Everyone talking",
+    "line2": "to everyone",
+    "sub": "when every object references every other, the wiring becomes a mesh",
+    "dur": 29.358
+   }
+  },
+  {
+   "id": "dp17-mediator_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 29.358,
+   "out_seconds": 61.244,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "A chat room of users",
+    "situation": "Users in a chat room send messages to each other. New users join and leave. And rules appear: mute someone, filter profanity, log every message.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udcac",
+      "label": "Users who chat"
+     },
+     {
+      "emoji": "\ud83d\udd78\ufe0f",
+      "label": "\u2026all talking directly"
+     },
+     {
+      "emoji": "\ud83d\udccb",
+      "label": "\u2026and evolving rules"
+     }
+    ],
+    "ask": "How do users communicate without each one wiring itself to every other?",
+    "dur": 32.386
+   }
+  },
+  {
+   "id": "dp17-mediator_naive",
+   "type": "dp_code",
+   "in_seconds": 61.744,
+   "out_seconds": 97.285,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "Everyone holds everyone.",
+    "file": "User.java",
+    "lines": [
+     {
+      "t": "class User {"
+     },
+     {
+      "t": "  List<User> others;          // every other user!",
+      "s": "hi"
+     },
+     {
+      "t": "  void send(String msg) {"
+     },
+     {
+      "t": "    for (User u : others)",
+      "s": "hi"
+     },
+     {
+      "t": "      u.receive(msg, this);   // call each directly",
+      "s": "hi"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Each user references every other. N users \u2192 N\u00d7N wiring.",
+    "dur": 36.041
+   }
+  },
+  {
+   "id": "dp17-mediator_pain",
+   "type": "dp_pain",
+   "in_seconds": 97.785,
+   "out_seconds": 134.325,
+   "props": {
+    "title": "\"Mute a user. Filter profanity. Log everything.\"",
+    "file": "smeared.java",
+    "lines": [
+     {
+      "t": "void send(String msg) {"
+     },
+     {
+      "t": "  for (User u : others) {"
+     },
+     {
+      "t": "    if (mutedBy(u)) continue;      // mute logic...",
+      "s": "hi"
+     },
+     {
+      "t": "    if (hasProfanity(msg)) ...     // ...in EVERY user",
+      "s": "hi"
+     },
+     {
+      "t": "    log(msg); u.receive(msg, this);",
+      "s": "hi"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "smell": "Routing + rules duplicated inside every colleague",
+    "touched": [
+     "every User re-implements the rules",
+     "new rule \u2192 edit every User",
+     "a joiner must be added everywhere",
+     "N\u00d7N references to keep in sync"
+    ],
+    "dur": 37.04
+   }
+  },
+  {
+   "id": "dp17-mediator_insight",
+   "type": "dp_insight",
+   "in_seconds": 134.825,
+   "out_seconds": 172.381,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "Users send and receive messages",
+     "Messages must be routed to recipients",
+     "Rules apply to that routing"
+    ],
+    "varies": [
+     "Who is in the room right now",
+     "The routing rules \u2014 mute, filter, log"
+    ],
+    "principle": "Route every message through ONE mediator; each user knows only the mediator, never the others.",
+    "dur": 38.056
+   }
+  },
+  {
+   "id": "dp17-mediator_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 172.881,
+   "out_seconds": 219.044,
+   "props": {
+    "title": "Air-traffic control",
+    "emoji": "\ud83d\udeeb",
+    "analogy": "Pilots don't negotiate plane-to-plane; they all talk to the tower, and the tower coordinates.",
+    "map": [
+     {
+      "from": "The pilots",
+      "to": "the colleagues (users)"
+     },
+     {
+      "from": "The control tower",
+      "to": "the mediator (chat room)"
+     },
+     {
+      "from": "Radioing the tower",
+      "to": "user.send() \u2192 room"
+     },
+     {
+      "from": "The tower's rules",
+      "to": "routing, muting, logging"
+     }
+    ],
+    "breaks": "a tower issues commands back; a mediator can be lighter \u2014 sometimes it only relays.",
+    "dur": 46.663
+   }
+  },
+  {
+   "id": "dp17-mediator_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 219.544,
+   "out_seconds": 252.741,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "One mediator; users point only to it",
+    "file": "ChatRoom.java",
+    "lines": [
+     {
+      "t": "interface ChatRoom {                 // the mediator",
+      "s": "add"
+     },
+     {
+      "t": "  void send(String msg, User from);",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "class User {"
+     },
+     {
+      "t": "  private final ChatRoom room;       // NOT other users",
+      "s": "hi"
+     },
+     {
+      "t": "  void send(String msg) { room.send(msg, this); }",
+      "s": "hi"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "A user holds ONE reference \u2014 the room. It no longer knows any peer.",
+    "dur": 33.697
+   }
+  },
+  {
+   "id": "dp17-mediator_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 253.241,
+   "out_seconds": 286.385,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "The mediator owns routing and rules",
+    "file": "GroupChat.java",
+    "lines": [
+     {
+      "t": "class GroupChat implements ChatRoom {",
+      "s": "hi"
+     },
+     {
+      "t": "  private final List<User> users = ...;"
+     },
+     {
+      "t": "  public void send(String msg, User from) {",
+      "s": "hi"
+     },
+     {
+      "t": "    log(msg);                         // rules, ONCE",
+      "s": "hi"
+     },
+     {
+      "t": "    for (User u : users)"
+     },
+     {
+      "t": "      if (u != from && !muted(u, from))",
+      "s": "hi"
+     },
+     {
+      "t": "        u.receive(msg);               // route it"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Every rule \u2014 log, mute, route \u2014 lives here, in the one mediator.",
+    "dur": 33.644
+   }
+  },
+  {
+   "id": "dp17-mediator_try",
+   "type": "dp_try",
+   "in_seconds": 286.885,
+   "out_seconds": 313.48,
+   "props": {
+    "title": "Write GroupChat.send()",
+    "file": "GroupChat.java",
+    "lines": [
+     {
+      "t": "public void send(String msg, User from) {"
+     },
+     {
+      "t": "  for (User u : users) {"
+     },
+     {
+      "t": "    // \u25af deliver to everyone EXCEPT the sender",
+      "s": "ghost"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Broadcast the message to all users in the room \u2014 but not back to the one who sent it.",
+    "hint": "if (u != from) u.receive(msg);",
+    "dur": 27.095
+   }
+  },
+  {
+   "id": "dp17-mediator_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 313.98,
+   "out_seconds": 349.13,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "Add a user \u2014 nobody else changes",
+    "file": "app.java",
+    "lines": [
+     {
+      "t": "GroupChat room = new GroupChat();",
+      "s": "add"
+     },
+     {
+      "t": "User alice = new User(room);   // knows only the room",
+      "s": "add"
+     },
+     {
+      "t": "User bob   = new User(room);",
+      "s": "add"
+     },
+     {
+      "t": "room.join(alice); room.join(bob);   // room tracks them",
+      "s": "add"
+     },
+     {
+      "t": "alice.send(\"hi\");   // \u2192 room \u2192 everyone but alice",
+      "s": "hi"
+     }
+    ],
+    "note": "A new user tells the room it exists. No other user is touched.",
+    "dur": 35.65
+   }
+  },
+  {
+   "id": "dp17-mediator_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 349.63,
+   "out_seconds": 384.407,
+   "props": {
+    "requirement": "\"Add a profanity filter and an audit log\"",
+    "naiveLabel": "Mesh",
+    "naiveCost": "Edit every User's send loop.",
+    "naiveSteps": [
+     "the filter goes in every User",
+     "so does the audit log",
+     "miss one \u2192 an unfiltered leak"
+    ],
+    "patLabel": "Mediated",
+    "patCost": "One method in the mediator. Done.",
+    "patFile": "GroupChat.java",
+    "patLines": [
+     {
+      "t": "public void send(String msg, User from) {",
+      "s": "add"
+     },
+     {
+      "t": "  if (hasProfanity(msg)) msg = clean(msg);   // once",
+      "s": "add"
+     },
+     {
+      "t": "  audit.record(from, msg);                    // once",
+      "s": "add"
+     },
+     {
+      "t": "  route(msg, from);   // users unchanged",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "dur": 35.277
+   }
+  },
+  {
+   "id": "dp17-mediator_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 384.907,
+   "out_seconds": 424.348,
+   "props": {
+    "name": "The Mediator Pattern",
+    "plain": "Route all communication through one mediator, so a mesh of objects that each knew each other becomes a star that knows only the hub.",
+    "nodes": [
+     {
+      "id": "room",
+      "title": "ChatRoom",
+      "stereo": "mediator",
+      "members": [
+       "- users: List<User>",
+       "+ send(msg, from)"
+      ],
+      "x": 760,
+      "y": 190,
+      "w": 400,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "u1",
+      "title": "Alice",
+      "members": [
+       "send / receive"
+      ],
+      "x": 80,
+      "y": 480,
+      "w": 320,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "u2",
+      "title": "Bob",
+      "members": [
+       "send / receive"
+      ],
+      "x": 540,
+      "y": 480,
+      "w": 320,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "u3",
+      "title": "Carol",
+      "members": [
+       "send / receive"
+      ],
+      "x": 1000,
+      "y": 480,
+      "w": 320,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "u4",
+      "title": "Dave",
+      "members": [
+       "send / receive"
+      ],
+      "x": 1460,
+      "y": 480,
+      "w": 320,
+      "color": "#8B93B0"
+     }
+    ],
+    "edges": [
+     {
+      "from": "u1",
+      "to": "room",
+      "kind": "assoc"
+     },
+     {
+      "from": "u2",
+      "to": "room",
+      "kind": "assoc"
+     },
+     {
+      "from": "u3",
+      "to": "room",
+      "kind": "assoc"
+     },
+     {
+      "from": "u4",
+      "to": "room",
+      "kind": "assoc"
+     }
+    ],
+    "dur": 39.941
+   }
+  },
+  {
+   "id": "dp17-mediator_map",
+   "type": "dp_map",
+   "in_seconds": 424.848,
+   "out_seconds": 465.719,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Mediator",
+      "your": "interface ChatRoom"
+     },
+     {
+      "role": "ConcreteMediator",
+      "your": "GroupChat (holds users + rules)"
+     },
+     {
+      "role": "Colleagues",
+      "your": "User (each knows only the room)"
+     },
+     {
+      "role": "Communication",
+      "your": "room.send() \u2192 routes to users"
+     }
+    ],
+    "plain": "Colleagues send to the mediator; the mediator holds them and coordinates who receives what.",
+    "gof": "Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly.",
+    "dur": 41.371
+   }
+  },
+  {
+   "id": "dp17-mediator_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 466.219,
+   "out_seconds": 512.918,
+   "props": {
+    "title": "The hub can become a monster",
+    "costs": [
+     "The mediator can grow into a god object",
+     "Complexity moves \u2014 it doesn't vanish",
+     "One central point everything depends on"
+    ],
+    "dont": [
+     "The objects barely interact anyway",
+     "There are only two of them",
+     "Direct calls are clear and stable"
+    ],
+    "signal": "a set of objects all reference each other, and the interaction rules keep changing and spreading.",
+    "dur": 47.199
+   }
+  },
+  {
+   "id": "dp17-mediator_recap",
+   "type": "dp_recap",
+   "in_seconds": 513.418,
+   "out_seconds": 567.352,
+   "props": {
+    "title": "Mediator, in one breath",
+    "items": [
+     "Every object referencing every other made an N\u00d7N mesh, with routing and rules duplicated across all of them.",
+     "Communication and its rules are one concern \u2014 so route everything through one mediator each object knows.",
+     "Mediator: colleagues talk to the hub, never each other; the mesh becomes a star. New colleague or rule \u2014 one place changes."
+    ],
+    "challenge": "A complex form: toggling a checkbox enables a field, a dropdown updates a button, a date bounds another date \u2014 controls reacting to each other.",
+    "question": "Does Mediator fit? What's the mediator, who are the colleagues, and what moves into the hub?",
+    "dur": 54.434
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.451,
+   "When a group of objects all need to"
+  ],
+  [
+   2.451,
+   3.677,
+   "talk to each other,"
+  ],
+  [
+   3.677,
+   6.128,
+   "the obvious thing is to let them \u2014"
+  ],
+  [
+   6.128,
+   6.434,
+   "directly."
+  ],
+  [
+   7.066,
+   9.517,
+   "Each one holds a reference to the others,"
+  ],
+  [
+   9.517,
+   11.662,
+   "and calls them when it needs to."
+  ],
+  [
+   12.294,
+   13.519,
+   "But with five objects,"
+  ],
+  [
+   13.519,
+   14.745,
+   "that is twenty connections."
+  ],
+  [
+   14.745,
+   15.358,
+   "With ten,"
+  ],
+  [
+   15.358,
+   15.664,
+   "ninety."
+  ],
+  [
+   15.664,
+   18.115,
+   "Every new object has to be introduced to"
+  ],
+  [
+   18.115,
+   19.034,
+   "all the others,"
+  ],
+  [
+   19.034,
+   21.486,
+   "and every rule about who talks to whom"
+  ],
+  [
+   21.486,
+   23.324,
+   "is smeared across all of them."
+  ],
+  [
+   23.956,
+   26.407,
+   "There is a way to turn that mesh"
+  ],
+  [
+   26.407,
+   27.326,
+   "into a star."
+  ],
+  [
+   27.326,
+   28.858,
+   "Let's build a chat room."
+  ],
+  [
+   29.358,
+   30.903,
+   "Here is the system:"
+  ],
+  [
+   30.903,
+   32.062,
+   "a chat room."
+  ],
+  [
+   32.694,
+   33.853,
+   "Users send messages,"
+  ],
+  [
+   33.853,
+   36.943,
+   "and every message needs to reach the other"
+  ],
+  [
+   36.943,
+   38.488,
+   "users in the room."
+  ],
+  [
+   39.12,
+   41.052,
+   "People join and leave constantly,"
+  ],
+  [
+   41.052,
+   44.142,
+   "so the set of participants is always shifting."
+  ],
+  [
+   44.774,
+   47.864,
+   "And rules keep arriving \u2014 mute this user,"
+  ],
+  [
+   47.864,
+   49.023,
+   "filter out profanity,"
+  ],
+  [
+   49.023,
+   50.955,
+   "log every message for compliance."
+  ],
+  [
+   51.586,
+   54.677,
+   "So how do the users communicate with each"
+  ],
+  [
+   54.677,
+   55.063,
+   "other,"
+  ],
+  [
+   55.063,
+   58.154,
+   "without every single user having to hold a"
+  ],
+  [
+   58.154,
+   61.244,
+   "wire to every other user in the room?"
+  ],
+  [
+   61.744,
+   62.809,
+   "The direct approach:"
+  ],
+  [
+   62.809,
+   65.649,
+   "each user holds a list of all the"
+  ],
+  [
+   65.649,
+   66.359,
+   "other users."
+  ],
+  [
+   66.991,
+   68.411,
+   "To send a message,"
+  ],
+  [
+   68.411,
+   71.25,
+   "a user loops over that list and calls"
+  ],
+  [
+   71.25,
+   72.67,
+   "receive on each one,"
+  ],
+  [
+   72.67,
+   73.025,
+   "directly."
+  ],
+  [
+   73.657,
+   76.142,
+   "It works for three or four people."
+  ],
+  [
+   76.774,
+   78.549,
+   "But look at the wiring."
+  ],
+  [
+   78.549,
+   81.389,
+   "Every user must hold a reference to every"
+  ],
+  [
+   81.389,
+   82.099,
+   "other user."
+  ],
+  [
+   82.099,
+   84.939,
+   "Five users is twenty references to keep in"
+  ],
+  [
+   84.939,
+   85.294,
+   "sync;"
+  ],
+  [
+   85.294,
+   86.714,
+   "ten users is ninety."
+  ],
+  [
+   87.345,
+   89.12,
+   "And every time someone joins,"
+  ],
+  [
+   89.12,
+   91.96,
+   "every existing user's list has to be updated"
+  ],
+  [
+   91.96,
+   93.025,
+   "to include them."
+  ],
+  [
+   93.025,
+   95.155,
+   "The room is a tangled mesh,"
+  ],
+  [
+   95.155,
+   97.285,
+   "and it grows by the square."
+  ],
+  [
+   97.785,
+   99.248,
+   "Then the rules arrive,"
+  ],
+  [
+   99.248,
+   102.174,
+   "and they land in the worst possible place."
+  ],
+  [
+   102.805,
+   105.731,
+   "Mute logic \u2014 skip users who muted the"
+  ],
+  [
+   105.731,
+   108.657,
+   "sender \u2014 now lives inside every user's send"
+  ],
+  [
+   108.657,
+   109.023,
+   "method."
+  ],
+  [
+   109.023,
+   109.754,
+   "Profanity filtering,"
+  ],
+  [
+   109.754,
+   110.486,
+   "the same."
+  ],
+  [
+   110.486,
+   110.852,
+   "Logging,"
+  ],
+  [
+   110.852,
+   111.583,
+   "the same."
+  ],
+  [
+   112.215,
+   114.775,
+   "Each rule is copied into every colleague,"
+  ],
+  [
+   114.775,
+   117.335,
+   "because every colleague does its own routing."
+  ],
+  [
+   117.967,
+   119.43,
+   "Change how muting works,"
+  ],
+  [
+   119.43,
+   121.624,
+   "and you edit every user class."
+  ],
+  [
+   121.624,
+   122.721,
+   "Add a rule,"
+  ],
+  [
+   122.721,
+   124.916,
+   "and you edit every user class."
+  ],
+  [
+   125.547,
+   128.473,
+   "The objects are drowning in each other's business"
+  ],
+  [
+   128.473,
+   131.399,
+   "\u2014 the communication logic has no home of"
+  ],
+  [
+   131.399,
+   132.131,
+   "its own,"
+  ],
+  [
+   132.131,
+   134.325,
+   "so it lives everywhere at once."
+  ],
+  [
+   134.825,
+   135.845,
+   "What is fixed,"
+  ],
+  [
+   135.845,
+   136.866,
+   "and what varies?"
+  ],
+  [
+   137.497,
+   137.837,
+   "Fixed:"
+  ],
+  [
+   137.837,
+   139.878,
+   "users send messages and receive them."
+  ],
+  [
+   139.878,
+   142.599,
+   "Messages have to be routed to the right"
+  ],
+  [
+   142.599,
+   142.939,
+   "recipients."
+  ],
+  [
+   142.939,
+   144.299,
+   "And rules \u2014 muting,"
+  ],
+  [
+   144.299,
+   144.639,
+   "filtering,"
+  ],
+  [
+   144.639,
+   146.68,
+   "logging \u2014 apply to that routing."
+  ],
+  [
+   147.311,
+   150.032,
+   "What varies is who happens to be in"
+  ],
+  [
+   150.032,
+   150.712,
+   "the room,"
+  ],
+  [
+   150.712,
+   152.753,
+   "and what the routing rules are."
+  ],
+  [
+   153.384,
+   154.745,
+   "Here is the move."
+  ],
+  [
+   155.376,
+   158.097,
+   "Stop letting the users talk to each other"
+  ],
+  [
+   158.097,
+   158.437,
+   "directly."
+  ],
+  [
+   158.437,
+   161.158,
+   "Put one object in the middle \u2014 a"
+  ],
+  [
+   161.158,
+   163.879,
+   "mediator \u2014 and route every message through it."
+  ],
+  [
+   163.879,
+   165.919,
+   "Each user knows only the mediator."
+  ],
+  [
+   165.919,
+   167.62,
+   "The mediator knows the users,"
+  ],
+  [
+   167.62,
+   170.34,
+   "and owns all the routing and the rules."
+  ],
+  [
+   170.34,
+   172.381,
+   "The mesh collapses into a star."
+  ],
+  [
+   172.881,
+   174.277,
+   "Think about air-traffic control."
+  ],
+  [
+   174.909,
+   177.702,
+   "Dozens of planes share the sky around an"
+  ],
+  [
+   177.702,
+   178.051,
+   "airport."
+  ],
+  [
+   178.682,
+   181.126,
+   "They do not negotiate with each other,"
+  ],
+  [
+   181.126,
+   183.919,
+   "plane to plane \u2014 that would be chaos,"
+  ],
+  [
+   183.919,
+   186.712,
+   "and it would grow impossibly as more planes"
+  ],
+  [
+   186.712,
+   187.061,
+   "arrive."
+  ],
+  [
+   187.061,
+   187.41,
+   "Instead,"
+  ],
+  [
+   187.41,
+   190.202,
+   "every pilot talks only to the control tower."
+  ],
+  [
+   190.202,
+   192.297,
+   "The tower has the full picture,"
+  ],
+  [
+   192.297,
+   193.693,
+   "and it coordinates everyone."
+  ],
+  [
+   194.325,
+   197.118,
+   "The pilots are the colleagues \u2014 our users."
+  ],
+  [
+   197.118,
+   199.91,
+   "The tower is the mediator \u2014 the chat"
+  ],
+  [
+   199.91,
+   200.26,
+   "room."
+  ],
+  [
+   200.26,
+   203.052,
+   "Radioing the tower is a user sending to"
+  ],
+  [
+   203.052,
+   203.75,
+   "the room."
+  ],
+  [
+   203.75,
+   206.194,
+   "And the tower's rules are the routing,"
+  ],
+  [
+   206.194,
+   206.892,
+   "the muting,"
+  ],
+  [
+   206.892,
+   207.591,
+   "the logging."
+  ],
+  [
+   208.222,
+   209.269,
+   "Where it strains:"
+  ],
+  [
+   209.269,
+   211.713,
+   "a control tower actively issues commands back."
+  ],
+  [
+   211.713,
+   214.506,
+   "A mediator can be lighter \u2014 sometimes it"
+  ],
+  [
+   214.506,
+   217.299,
+   "just relays messages between colleagues that would\notherwise"
+  ],
+  [
+   217.299,
+   219.044,
+   "have to know each other."
+  ],
+  [
+   219.544,
+   220.226,
+   "The refactor,"
+  ],
+  [
+   220.226,
+   220.907,
+   "step one."
+  ],
+  [
+   221.539,
+   223.583,
+   "Define the mediator \u2014 a ChatRoom,"
+  ],
+  [
+   223.583,
+   226.31,
+   "with a single send method that takes a"
+  ],
+  [
+   226.31,
+   228.354,
+   "message and who it came from."
+  ],
+  [
+   228.986,
+   230.349,
+   "Now change the user."
+  ],
+  [
+   230.349,
+   233.075,
+   "Instead of a list of every other user,"
+  ],
+  [
+   233.075,
+   235.12,
+   "a user holds exactly one reference:"
+  ],
+  [
+   235.12,
+   235.802,
+   "the room."
+  ],
+  [
+   236.433,
+   239.16,
+   "And its send method shrinks to a single"
+  ],
+  [
+   239.16,
+   241.886,
+   "line \u2014 hand the message to the room,"
+  ],
+  [
+   241.886,
+   243.931,
+   "and say it came from me."
+  ],
+  [
+   244.562,
+   246.266,
+   "That is the pivotal change."
+  ],
+  [
+   246.266,
+   248.992,
+   "A user no longer knows a single one"
+  ],
+  [
+   248.992,
+   250.015,
+   "of its peers."
+  ],
+  [
+   250.015,
+   252.741,
+   "It knows only the mediator in the middle."
+  ],
+  [
+   253.241,
+   253.97,
+   "Step two:"
+  ],
+  [
+   253.97,
+   256.157,
+   "the mediator does the real work."
+  ],
+  [
+   256.789,
+   259.705,
+   "GroupChat holds the list of users \u2014 it"
+  ],
+  [
+   259.705,
+   262.62,
+   "is the one object that knows who is"
+  ],
+  [
+   262.62,
+   263.714,
+   "in the room."
+  ],
+  [
+   264.346,
+   267.262,
+   "And its send method is where everything now"
+  ],
+  [
+   267.262,
+   267.626,
+   "lives."
+  ],
+  [
+   267.626,
+   268.72,
+   "Log the message,"
+  ],
+  [
+   268.72,
+   269.084,
+   "once."
+  ],
+  [
+   269.084,
+   272.0,
+   "Then route it to every user except the"
+  ],
+  [
+   272.0,
+   272.364,
+   "sender,"
+  ],
+  [
+   272.364,
+   274.551,
+   "skipping anyone who has muted them."
+  ],
+  [
+   275.183,
+   275.548,
+   "Muting,"
+  ],
+  [
+   275.548,
+   275.912,
+   "logging,"
+  ],
+  [
+   275.912,
+   277.735,
+   "filtering \u2014 all of it,"
+  ],
+  [
+   277.735,
+   279.192,
+   "in this one place."
+  ],
+  [
+   279.824,
+   282.74,
+   "The users got simpler because the mediator\nabsorbed"
+  ],
+  [
+   282.74,
+   283.834,
+   "their shared complexity."
+  ],
+  [
+   283.834,
+   286.385,
+   "The routing logic finally has a home."
+  ],
+  [
+   286.885,
+   288.554,
+   "Your turn \u2014 pause here."
+  ],
+  [
+   289.186,
+   291.856,
+   "The mediator holds every user in the room."
+  ],
+  [
+   291.856,
+   293.525,
+   "A message has come in,"
+  ],
+  [
+   293.525,
+   295.861,
+   "along with the user it came from."
+  ],
+  [
+   296.493,
+   297.494,
+   "Write the routing."
+  ],
+  [
+   297.494,
+   300.165,
+   "Deliver the message to everyone in the room"
+  ],
+  [
+   300.165,
+   301.5,
+   "\u2014 except the sender,"
+  ],
+  [
+   301.5,
+   304.17,
+   "who obviously should not receive their own message"
+  ],
+  [
+   304.17,
+   304.504,
+   "back."
+  ],
+  [
+   305.135,
+   307.806,
+   "It is just a loop with one guard."
+  ],
+  [
+   307.806,
+   310.142,
+   "But notice where you are writing it:"
+  ],
+  [
+   310.142,
+   310.476,
+   "once,"
+  ],
+  [
+   310.476,
+   313.146,
+   "in the mediator \u2014 not smeared across every"
+  ],
+  [
+   313.146,
+   313.48,
+   "user."
+  ],
+  [
+   313.98,
+   314.667,
+   "Step three,"
+  ],
+  [
+   314.667,
+   316.384,
+   "and adding people becomes trivial."
+  ],
+  [
+   317.015,
+   318.389,
+   "You create the room,"
+  ],
+  [
+   318.389,
+   321.136,
+   "then create users \u2014 each one handed only"
+  ],
+  [
+   321.136,
+   321.823,
+   "the room."
+  ],
+  [
+   321.823,
+   323.884,
+   "They know nothing about each other."
+  ],
+  [
+   324.515,
+   327.262,
+   "Each user joins by telling the room it"
+  ],
+  [
+   327.262,
+   327.606,
+   "exists,"
+  ],
+  [
+   327.606,
+   330.353,
+   "and the room adds it to its list."
+  ],
+  [
+   330.985,
+   332.358,
+   "When Alice sends hi,"
+  ],
+  [
+   332.358,
+   334.075,
+   "it goes to the room,"
+  ],
+  [
+   334.075,
+   336.823,
+   "and the room fans it out to everyone"
+  ],
+  [
+   336.823,
+   337.509,
+   "but Alice."
+  ],
+  [
+   338.141,
+   339.515,
+   "Add a tenth user,"
+  ],
+  [
+   339.515,
+   342.262,
+   "a hundredth user \u2014 and not one existing"
+  ],
+  [
+   342.262,
+   343.292,
+   "user class changes."
+  ],
+  [
+   343.292,
+   346.039,
+   "The only thing that learns about a new"
+  ],
+  [
+   346.039,
+   347.413,
+   "participant is the mediator."
+  ],
+  [
+   347.413,
+   349.13,
+   "The square-law mesh is gone."
+  ],
+  [
+   349.63,
+   352.375,
+   "Now the change that used to touch everyone."
+  ],
+  [
+   352.375,
+   353.747,
+   "Add a profanity filter,"
+  ],
+  [
+   353.747,
+   355.806,
+   "and an audit log for compliance."
+  ],
+  [
+   356.437,
+   357.81,
+   "In the mesh design,"
+  ],
+  [
+   357.81,
+   360.554,
+   "both would go inside every user's send loop"
+  ],
+  [
+   360.554,
+   363.299,
+   "\u2014 and if you missed even one user,"
+  ],
+  [
+   363.299,
+   365.358,
+   "an unfiltered message would slip through."
+  ],
+  [
+   365.989,
+   367.019,
+   "With a mediator,"
+  ],
+  [
+   367.019,
+   369.077,
+   "you add both to one method,"
+  ],
+  [
+   369.077,
+   370.106,
+   "in one class."
+  ],
+  [
+   370.738,
+   372.11,
+   "Clean the message once,"
+  ],
+  [
+   372.11,
+   373.14,
+   "record it once,"
+  ],
+  [
+   373.14,
+   374.169,
+   "then route it."
+  ],
+  [
+   374.8,
+   377.545,
+   "Every user in the room is now filtered"
+  ],
+  [
+   377.545,
+   380.29,
+   "and audited \u2014 and not a single user"
+  ],
+  [
+   380.29,
+   380.976,
+   "class changed."
+  ],
+  [
+   380.976,
+   383.378,
+   "The rules live where the routing lives:"
+  ],
+  [
+   383.378,
+   384.407,
+   "in the middle."
+  ],
+  [
+   384.907,
+   386.739,
+   "This is the Mediator pattern."
+  ],
+  [
+   387.371,
+   388.471,
+   "In the center,"
+  ],
+  [
+   388.471,
+   391.403,
+   "the mediator \u2014 the ChatRoom \u2014 holding the"
+  ],
+  [
+   391.403,
+   394.334,
+   "list of users and the one send method"
+  ],
+  [
+   394.334,
+   395.434,
+   "that routes everything."
+  ],
+  [
+   396.066,
+   396.799,
+   "Around it,"
+  ],
+  [
+   396.799,
+   397.532,
+   "the colleagues:"
+  ],
+  [
+   397.532,
+   397.898,
+   "Alice,"
+  ],
+  [
+   397.898,
+   398.265,
+   "Bob,"
+  ],
+  [
+   398.265,
+   398.631,
+   "Carol,"
+  ],
+  [
+   398.631,
+   398.998,
+   "Dave."
+  ],
+  [
+   399.629,
+   401.095,
+   "Look at the arrows."
+  ],
+  [
+   401.095,
+   404.027,
+   "Every user points only to the room in"
+  ],
+  [
+   404.027,
+   404.76,
+   "the middle."
+  ],
+  [
+   404.76,
+   407.692,
+   "Not one of them points to another user."
+  ],
+  [
+   408.324,
+   410.156,
+   "That is the whole idea."
+  ],
+  [
+   410.156,
+   410.889,
+   "The mesh,"
+  ],
+  [
+   410.889,
+   412.722,
+   "where everyone connected to everyone,"
+  ],
+  [
+   412.722,
+   414.188,
+   "has become a star,"
+  ],
+  [
+   414.188,
+   416.753,
+   "where everyone connects only to the hub."
+  ],
+  [
+   417.385,
+   420.317,
+   "Communication still happens between the users \u2014\nbut"
+  ],
+  [
+   420.317,
+   423.249,
+   "it always travels through the one object that"
+  ],
+  [
+   423.249,
+   424.348,
+   "owns the rules."
+  ],
+  [
+   424.848,
+   425.626,
+   "The names,"
+  ],
+  [
+   425.626,
+   427.181,
+   "mapped to your code."
+  ],
+  [
+   427.812,
+   430.145,
+   "The Mediator is the ChatRoom interface."
+  ],
+  [
+   430.777,
+   433.887,
+   "The ConcreteMediator is GroupChat \u2014 it holds the"
+  ],
+  [
+   433.887,
+   435.831,
+   "users and owns the rules."
+  ],
+  [
+   436.463,
+   438.407,
+   "The Colleagues are the users,"
+  ],
+  [
+   438.407,
+   441.128,
+   "each of which knows only the room."
+  ],
+  [
+   441.76,
+   444.87,
+   "And the communication flows through the mediator's\nsend"
+  ],
+  [
+   444.87,
+   445.259,
+   "method,"
+  ],
+  [
+   445.259,
+   447.98,
+   "which routes messages to the right recipients."
+  ],
+  [
+   448.612,
+   450.167,
+   "The Gang of Four:"
+  ],
+  [
+   450.167,
+   453.278,
+   "define an object that encapsulates how a set"
+  ],
+  [
+   453.278,
+   456.388,
+   "of objects interact \u2014 Mediator promotes loose\ncoupling"
+  ],
+  [
+   456.388,
+   459.498,
+   "by keeping objects from referring to each other"
+  ],
+  [
+   459.498,
+   459.887,
+   "explicitly."
+  ],
+  [
+   459.887,
+   462.997,
+   "That phrase \u2014 keeping them from referring to"
+  ],
+  [
+   462.997,
+   465.719,
+   "each other \u2014 is the entire point."
+  ],
+  [
+   466.219,
+   467.892,
+   "Mediator has a real danger,"
+  ],
+  [
+   467.892,
+   470.235,
+   "and it is the mirror of Facade's."
+  ],
+  [
+   470.866,
+   473.543,
+   "All the interaction logic you pulled out of"
+  ],
+  [
+   473.543,
+   476.221,
+   "the colleagues has to go somewhere \u2014 and"
+  ],
+  [
+   476.221,
+   478.228,
+   "it all goes into the mediator."
+  ],
+  [
+   478.228,
+   478.898,
+   "Left unchecked,"
+  ],
+  [
+   478.898,
+   481.575,
+   "that hub swells into a god object that"
+  ],
+  [
+   481.575,
+   482.913,
+   "knows and does everything."
+  ],
+  [
+   483.545,
+   485.218,
+   "The complexity did not vanish;"
+  ],
+  [
+   485.218,
+   486.891,
+   "it moved to the center."
+  ],
+  [
+   486.891,
+   489.569,
+   "You have traded a tangled mesh for a"
+  ],
+  [
+   489.568,
+   489.903,
+   "single,"
+  ],
+  [
+   489.903,
+   490.238,
+   "powerful,"
+  ],
+  [
+   490.238,
+   492.915,
+   "and now critical hub that everything depends on."
+  ],
+  [
+   493.546,
+   496.224,
+   "So skip it when the objects barely interact,"
+  ],
+  [
+   496.224,
+   498.566,
+   "when there are only two of them,"
+  ],
+  [
+   498.566,
+   501.243,
+   "or when direct calls are perfectly clear and"
+  ],
+  [
+   501.243,
+   501.578,
+   "stable."
+  ],
+  [
+   502.209,
+   504.887,
+   "Reach for it when a set of objects"
+  ],
+  [
+   504.887,
+   506.225,
+   "all reference each other,"
+  ],
+  [
+   506.225,
+   508.902,
+   "and the rules about how they interact keep"
+  ],
+  [
+   508.902,
+   511.245,
+   "changing and spreading across all of them."
+  ],
+  [
+   511.245,
+   512.918,
+   "Give those rules one home."
+  ],
+  [
+   513.418,
+   513.793,
+   "Mediator,"
+  ],
+  [
+   513.793,
+   514.918,
+   "in one breath."
+  ],
+  [
+   515.55,
+   518.551,
+   "Every object referencing every other made an\nN-by-N"
+  ],
+  [
+   518.551,
+   518.926,
+   "mesh,"
+  ],
+  [
+   518.926,
+   521.927,
+   "with routing and rules duplicated across all of"
+  ],
+  [
+   521.927,
+   522.302,
+   "them."
+  ],
+  [
+   522.933,
+   523.684,
+   "But communication,"
+  ],
+  [
+   523.684,
+   525.559,
+   "and the rules around it,"
+  ],
+  [
+   525.559,
+   528.56,
+   "are really one concern \u2014 so you route"
+  ],
+  [
+   528.56,
+   531.561,
+   "everything through a single mediator that each\nobject"
+  ],
+  [
+   531.561,
+   531.936,
+   "knows."
+  ],
+  [
+   532.567,
+   532.942,
+   "Mediator:"
+  ],
+  [
+   532.942,
+   535.193,
+   "the colleagues talk to the hub,"
+  ],
+  [
+   535.193,
+   536.693,
+   "never to each other,"
+  ],
+  [
+   536.693,
+   538.944,
+   "and the mesh becomes a star."
+  ],
+  [
+   538.944,
+   540.069,
+   "A new colleague,"
+  ],
+  [
+   540.069,
+   541.57,
+   "or a new rule,"
+  ],
+  [
+   541.57,
+   543.07,
+   "changes just one place."
+  ],
+  [
+   543.702,
+   545.952,
+   "Here is one to carry out."
+  ],
+  [
+   546.584,
+   549.585,
+   "A complex form \u2014 toggling a checkbox enables"
+  ],
+  [
+   549.585,
+   550.335,
+   "a field,"
+  ],
+  [
+   550.335,
+   552.21,
+   "a dropdown updates a button,"
+  ],
+  [
+   552.21,
+   555.211,
+   "one date bounds another \u2014 controls all reacting"
+  ],
+  [
+   555.211,
+   556.336,
+   "to each other."
+  ],
+  [
+   556.968,
+   558.093,
+   "Does Mediator fit?"
+  ],
+  [
+   558.093,
+   559.594,
+   "What is the mediator,"
+  ],
+  [
+   559.594,
+   561.094,
+   "who are the colleagues,"
+  ],
+  [
+   561.094,
+   563.72,
+   "and what logic moves into the hub?"
+  ],
+  [
+   564.351,
+   564.726,
+   "Pause,"
+  ],
+  [
+   564.726,
+   567.352,
+   "and sketch it before the next episode."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp17-mediator.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Renders and generated stills
+*.mp4
+renders/
+qa-stills/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Audio (TTS output and Remotion public copies)
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.ogg
+composer/public/
+
+# OS / local
+.DS_Store
+.claude/
+composer/~

@@ -1,0 +1,101 @@
+{
+ "ticker": "GLAND",
+ "scraped_at": "2026-08-14T15:29:07",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 48979.0,
+ "current_price": 2969.0,
+ "pe": 42.8,
+ "book_value": 629.0,
+ "dividend_yield_pct": 0.67,
+ "roce_pct": 15.1,
+ "roe_pct": 10.7,
+ "face_value": 1.0,
+ "high": 3030.0,
+ "sales_growth": {
+  "5 Years": 1.0,
+  "3 Years": 8.0,
+  "TTM": 49.0
+ },
+ "profit_growth": {
+  "5 Years": -7.0,
+  "3 Years": 23.0,
+  "1 Year": 50.0
+ },
+ "roe_hist": {
+  "Expenses&nbsp; +": 915.0,
+  "Operating Profit": 294.0,
+  "OPM %": 24.0,
+  "Other Income&nbsp; +": 38.0,
+  "Interest": 5.0,
+  "Depreciation": 65.0,
+  "Profit before tax": 261.0,
+  "Tax %": 26.0,
+  "Net Profit&nbsp; +": 194.0,
+  "EPS in Rs": 11.79
+ },
+ "price_cagr": {
+  "5 Years": 11.0,
+  "3 Years": 9.0,
+  "Last Year": 11.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "24%",
+   "24%",
+   "23%",
+   "23%",
+   "19%",
+   "21%",
+   "26%",
+   "24%",
+   "24%",
+   "21%",
+   "26%",
+   "29%",
+   "27%"
+  ],
+  "eps": [
+   "11.79",
+   "11.78",
+   "11.65",
+   "11.68",
+   "8.73",
+   "9.93",
+   "12.42",
+   "11.32",
+   "13.08",
+   "11.15",
+   "15.87",
+   "22.26",
+   "19.21"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has been maintaining a healthy dividend payout of 39.1%"
+ ],
+ "cons": [
+  "Stock is trading at 4.72 times its book value",
+  "Company has a low return on equity of 9.29% over last 3 years.",
+  "Promoter holding has decreased over last 3 years: -6.09%"
+ ]
+}

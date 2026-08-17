@@ -1,0 +1,101 @@
+{
+ "ticker": "PAYTM",
+ "scraped_at": "2026-08-14T15:28:02",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 103036.0,
+ "current_price": 1607.0,
+ "pe": 127.0,
+ "book_value": 250.0,
+ "dividend_yield_pct": 0.0,
+ "roce_pct": 5.01,
+ "roe_pct": 4.7,
+ "face_value": 1.0,
+ "high": 1654.0,
+ "sales_growth": {
+  "10 Years": 9.0,
+  "5 Years": 20.0,
+  "3 Years": 34.0,
+  "TTM": 263.0
+ },
+ "profit_growth": {
+  "3 Years": 24.0,
+  "1 Year": 43.0
+ },
+ "roe_hist": {
+  "Operating Profit": -311.0,
+  "OPM %": -13.0,
+  "Other Income&nbsp; +": 123.0,
+  "Interest": 7.0,
+  "Depreciation": 159.0,
+  "Profit before tax": -354.0,
+  "Tax %": 1.0,
+  "Net Profit&nbsp; +": -358.0,
+  "EPS in Rs": -5.63
+ },
+ "price_cagr": {
+  "5 Years": -9.0,
+  "3 Years": -4.0,
+  "Last Year": 5.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "-13%",
+   "-9%",
+   "-6%",
+   "-21%",
+   "-53%",
+   "-24%",
+   "-12%",
+   "-4.6%",
+   "3.8%",
+   "7%",
+   "7%",
+   "6%",
+   "8%"
+  ],
+  "eps": [
+   "-5.63",
+   "-4.58",
+   "-3.46",
+   "-8.65",
+   "-13.19",
+   "14.58",
+   "-3.26",
+   "-8.47",
+   "1.93",
+   "0.33",
+   "3.52",
+   "2.87",
+   "3.44"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has delivered good profit growth of 19.5% CAGR over last 5 years",
+  "Company&#x27;s median sales growth is 22.3% of last 10 years"
+ ],
+ "cons": [
+  "Stock is trading at 6.47 times its book value",
+  "Company has a low return on equity of -4.48% over last 3 years.",
+  "Earnings include an other income of Rs.625 Cr."
+ ]
+}

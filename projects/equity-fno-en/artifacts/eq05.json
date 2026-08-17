@@ -1,0 +1,722 @@
+{
+  "cuts": [
+    {
+      "id": "e5_div",
+      "type": "sm_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 19.484,
+      "props": {
+        "n": 5,
+        "title": "Equity Strategies",
+        "sub": "Value · growth · momentum · SIP · more",
+        "color": "#34D399",
+        "dur": 19.984
+      }
+    },
+    {
+      "id": "e5_longterm",
+      "type": "sm_iconcards",
+      "in_seconds": 19.984,
+      "out_seconds": 100.584,
+      "props": {
+        "kicker": "THE FOUNDATION",
+        "title": "Long-term wealth strategies",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🌳",
+            "k": "Buy & Hold",
+            "v": "Own quality for years; let compounding work. Time in market beats timing",
+            "chip": "Beginner"
+          },
+          {
+            "emoji": "🔄",
+            "k": "SIP / Averaging",
+            "v": "Invest a fixed sum monthly; rupee-cost averaging removes timing stress",
+            "chip": "Discipline"
+          },
+          {
+            "emoji": "🧱",
+            "k": "Core-Satellite",
+            "v": "70–80% low-cost index core + 20–30% satellite bets",
+            "chip": "Framework"
+          },
+          {
+            "emoji": "📉",
+            "k": "Index / Passive",
+            "v": "Own the whole market cheaply; most active funds don't beat it",
+            "chip": "Simple"
+          }
+        ],
+        "dur": 81.1
+      }
+    },
+    {
+      "id": "e5_styles",
+      "type": "sm_compare3",
+      "in_seconds": 101.084,
+      "out_seconds": 183.412,
+      "props": {
+        "kicker": "STOCK-PICKING STYLES",
+        "title": "Value · Growth · Quality",
+        "cols": [
+          {
+            "name": "Value",
+            "color": "#34D399",
+            "emoji": "🏷️",
+            "hi": true,
+            "rows": [
+              {
+                "k": "Idea",
+                "v": "buy below intrinsic value"
+              },
+              {
+                "k": "Look for",
+                "v": "low P/E, P/B, margin of safety"
+              },
+              {
+                "k": "Icons",
+                "v": "Graham, Buffett"
+              },
+              {
+                "k": "Risk",
+                "v": "value traps"
+              }
+            ]
+          },
+          {
+            "name": "Growth",
+            "color": "#22D3EE",
+            "emoji": "🚀",
+            "rows": [
+              {
+                "k": "Idea",
+                "v": "buy fast-growing earnings"
+              },
+              {
+                "k": "Look for",
+                "v": "high growth, big runway"
+              },
+              {
+                "k": "Pay",
+                "v": "higher P/E accepted"
+              },
+              {
+                "k": "Risk",
+                "v": "overpaying, de-rating"
+              }
+            ]
+          },
+          {
+            "name": "Quality / GARP",
+            "color": "#A78BFA",
+            "emoji": "💎",
+            "rows": [
+              {
+                "k": "Idea",
+                "v": "great business, fair price"
+              },
+              {
+                "k": "Look for",
+                "v": "high ROE, moat; PEG < 1"
+              },
+              {
+                "k": "Icons",
+                "v": "Marcellus style"
+              },
+              {
+                "k": "Risk",
+                "v": "crowded, pricey"
+              }
+            ]
+          }
+        ],
+        "dur": 82.828
+      }
+    },
+    {
+      "id": "e5_active",
+      "type": "sm_iconcards",
+      "in_seconds": 183.912,
+      "out_seconds": 268.756,
+      "props": {
+        "kicker": "MORE APPROACHES",
+        "title": "Momentum, dividend, contrarian, rotation",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🚀",
+            "k": "Momentum / Factor",
+            "v": "Buy recent strength (Nifty 200 Momentum 30); rebalances; prone to sharp 'crashes'",
+            "chip": "Aggressive"
+          },
+          {
+            "emoji": "💵",
+            "k": "Dividend / Income",
+            "v": "Own steady payers for regular income; suits retirees",
+            "chip": "Income"
+          },
+          {
+            "emoji": "🎣",
+            "k": "Contrarian",
+            "v": "Buy fear, sell greed — go against the crowd at extremes",
+            "chip": "Bold"
+          },
+          {
+            "emoji": "🔃",
+            "k": "Sector Rotation",
+            "v": "Rotate into the sector the macro cycle favours",
+            "chip": "Cyclical"
+          }
+        ],
+        "dur": 85.344
+      }
+    },
+    {
+      "id": "e5_which",
+      "type": "sm_checklist",
+      "in_seconds": 269.256,
+      "out_seconds": 332.4,
+      "props": {
+        "kicker": "CHOOSING YOURS",
+        "title": "Which strategy is for you?",
+        "color": "#34D399",
+        "icon": "🧭",
+        "items": [
+          "Beginner / busy: index SIP + buy & hold quality",
+          "Patient bargain-hunter: value investing",
+          "Believe in a growth story: growth or GARP",
+          "Want income: dividend investing",
+          "Whatever you pick — position size, diversify, stay the course"
+        ],
+        "dur": 63.644
+      }
+    },
+    {
+      "id": "e5_recap",
+      "type": "sm_recap",
+      "in_seconds": 332.9,
+      "out_seconds": 377.088,
+      "props": {
+        "title": "Chapter 5 — equity strategies",
+        "items": [
+          "Foundation: buy & hold, SIP, core-satellite, index",
+          "Styles: value, growth, quality/GARP (PEG<1)",
+          "Also: momentum, dividend, contrarian, sector rotation",
+          "No single best — fit it to your temperament & goals",
+          "Discipline beats the choice of strategy"
+        ],
+        "closer": "The best strategy is the one you can stick to.",
+        "dur": 44.688
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.12,
+      "Chapter five — the equity investment strategies."
+    ],
+    [
+      4.12,
+      7.038,
+      "There is no single best strategy —"
+    ],
+    [
+      7.038,
+      11.502,
+      "only the one that fits your temperament, your goals,"
+    ],
+    [
+      11.502,
+      12.703,
+      "and your time."
+    ],
+    [
+      12.703,
+      18.025,
+      "Let's walk through every major approach: what it is, its risk,"
+    ],
+    [
+      18.025,
+      19.484,
+      "and who it suits."
+    ],
+    [
+      19.984,
+      22.663,
+      "Let's begin with the foundation —"
+    ],
+    [
+      22.663,
+      26.964,
+      "the long-term strategies that build most real wealth."
+    ],
+    [
+      26.964,
+      29.075,
+      "The first is buy and hold."
+    ],
+    [
+      29.075,
+      32.89,
+      "Own quality businesses for years, even decades,"
+    ],
+    [
+      32.89,
+      36.218,
+      "and let compounding do the heavy lifting."
+    ],
+    [
+      36.218,
+      41.331,
+      "As the saying goes, time in the market beats timing the market."
+    ],
+    [
+      41.331,
+      46.12,
+      "This is the beginner's — and often the master's — strategy."
+    ],
+    [
+      46.12,
+      50.503,
+      "The second is the systematic investment plan, the SIP."
+    ],
+    [
+      50.503,
+      54.237,
+      "Invest a fixed sum every month, automatically."
+    ],
+    [
+      54.237,
+      59.675,
+      "Because you buy more units when prices are low and fewer when high,"
+    ],
+    [
+      59.675,
+      62.597,
+      "your average cost stays reasonable —"
+    ],
+    [
+      62.597,
+      64.87,
+      "that's rupee-cost averaging,"
+    ],
+    [
+      64.87,
+      67.792,
+      "and it removes the stress of timing."
+    ],
+    [
+      67.792,
+      71.12,
+      "The third is core-satellite, a framework."
+    ],
+    [
+      71.12,
+      77.938,
+      "Keep seventy to eighty percent of your money in a low-cost index core for stability,"
+    ],
+    [
+      77.938,
+      83.376,
+      "and use the remaining twenty to thirty percent for satellite bets —"
+    ],
+    [
+      83.376,
+      86.542,
+      "a sector, a factor, a conviction stock."
+    ],
+    [
+      86.542,
+      89.626,
+      "The fourth is pure passive investing —"
+    ],
+    [
+      89.626,
+      94.578,
+      "simply owning the whole market cheaply through an index fund."
+    ],
+    [
+      94.578,
+      98.879,
+      "Over the long run, most active funds fail to beat it."
+    ],
+    [
+      98.879,
+      100.584,
+      "Simple, and powerful."
+    ],
+    [
+      101.084,
+      105.304,
+      "Now the stock-picking styles — three great schools."
+    ],
+    [
+      105.304,
+      107.703,
+      "The first is value investing."
+    ],
+    [
+      107.703,
+      111.84,
+      "The idea, from Benjamin Graham and Warren Buffett,"
+    ],
+    [
+      111.84,
+      115.481,
+      "is to buy a rupee of value for fifty paise —"
+    ],
+    [
+      115.481,
+      119.949,
+      "to find companies trading below their intrinsic worth."
+    ],
+    [
+      119.949,
+      124.334,
+      "You look for low price-to-earnings and price-to-book,"
+    ],
+    [
+      124.334,
+      127.148,
+      "and you demand a margin of safety."
+    ],
+    [
+      127.148,
+      131.533,
+      "The risk is the value trap — cheap for a good reason."
+    ],
+    [
+      131.533,
+      134.098,
+      "The second is growth investing."
+    ],
+    [
+      134.098,
+      138.649,
+      "Here you buy companies whose earnings are growing fast,"
+    ],
+    [
+      138.649,
+      140.717,
+      "with a long runway ahead,"
+    ],
+    [
+      140.717,
+      145.516,
+      "and you accept a higher price-to-earnings for that growth."
+    ],
+    [
+      145.516,
+      148.909,
+      "The risk is overpaying — if growth slows,"
+    ],
+    [
+      148.909,
+      151.391,
+      "the stock can de-rate sharply."
+    ],
+    [
+      151.391,
+      154.287,
+      "The third blends the two — quality,"
+    ],
+    [
+      154.287,
+      156.935,
+      "or growth at a reasonable price."
+    ],
+    [
+      156.935,
+      162.147,
+      "Buy a wonderful business — high return on equity, a real moat —"
+    ],
+    [
+      162.147,
+      164.216,
+      "but only at a fair price."
+    ],
+    [
+      164.216,
+      170.587,
+      "A useful gauge is the PEG ratio: growth-adjusted P E below one is attractive."
+    ],
+    [
+      170.587,
+      174.559,
+      "This is the Marcellus, Saurabh Mukherjea school."
+    ],
+    [
+      174.559,
+      178.861,
+      "The risk is that quality gets crowded and expensive."
+    ],
+    [
+      178.861,
+      180.764,
+      "None is right or wrong."
+    ],
+    [
+      180.764,
+      183.412,
+      "They fit different temperaments."
+    ],
+    [
+      183.912,
+      188.805,
+      "Beyond the core styles, four more approaches worth knowing."
+    ],
+    [
+      188.805,
+      191.874,
+      "First, momentum, or factor investing."
+    ],
+    [
+      191.874,
+      194.694,
+      "Buy what has recently been strong,"
+    ],
+    [
+      194.694,
+      199.255,
+      "on the evidence that strength tends to persist a while."
+    ],
+    [
+      199.255,
+      204.729,
+      "You can do this simply through a Nifty 200 Momentum 30 index fund,"
+    ],
+    [
+      204.729,
+      207.549,
+      "which rebalances every six months."
+    ],
+    [
+      207.549,
+      212.193,
+      "The warning: momentum is aggressive and prone to sudden,"
+    ],
+    [
+      212.193,
+      215.511,
+      "sharp reversals called momentum crashes."
+    ],
+    [
+      215.511,
+      217.916,
+      "Keep it as a small satellite."
+    ],
+    [
+      217.916,
+      220.985,
+      "Second, dividend or income investing."
+    ],
+    [
+      220.985,
+      221.897,
+      "Own steady,"
+    ],
+    [
+      221.897,
+      226.956,
+      "cash-generating companies for the regular dividends they pay."
+    ],
+    [
+      226.956,
+      233.425,
+      "This suits retirees and anyone wanting income rather than only capital growth."
+    ],
+    [
+      233.425,
+      236.908,
+      "Third, contrarian investing — the boldest."
+    ],
+    [
+      236.908,
+      241.47,
+      "Buy when others are fearful, sell when they are greedy."
+    ],
+    [
+      241.47,
+      246.363,
+      "It means going against the crowd precisely at the extremes,"
+    ],
+    [
+      246.363,
+      249.266,
+      "which is psychologically very hard,"
+    ],
+    [
+      249.266,
+      251.754,
+      "and very rewarding when right."
+    ],
+    [
+      251.754,
+      253.827,
+      "Fourth, sector rotation —"
+    ],
+    [
+      253.827,
+      262.868,
+      "the strategy from chapter two: keep rotating your weight toward the sector the macro cycle currently favours."
+    ],
+    [
+      262.868,
+      266.268,
+      "Different tools for different investors —"
+    ],
+    [
+      266.268,
+      268.756,
+      "and different market weathers."
+    ],
+    [
+      269.256,
+      271.681,
+      "So which strategy is for you?"
+    ],
+    [
+      271.681,
+      272.936,
+      "A simple guide."
+    ],
+    [
+      272.936,
+      276.95,
+      "If you are a beginner, or simply busy with life,"
+    ],
+    [
+      276.95,
+      284.227,
+      "the honest best answer is an index SIP plus buying and holding a few quality companies."
+    ],
+    [
+      284.227,
+      289.328,
+      "It wins more often than clever trading, with far less effort."
+    ],
+    [
+      289.328,
+      293.51,
+      "If you are patient and enjoy hunting for bargains,"
+    ],
+    [
+      293.51,
+      296.019,
+      "value investing will suit you."
+    ],
+    [
+      296.019,
+      300.368,
+      "If you can identify and stomach a long growth story,"
+    ],
+    [
+      300.368,
+      304.717,
+      "growth or growth-at-a-reasonable-price is your path."
+    ],
+    [
+      304.717,
+      309.651,
+      "If you need regular income, tilt toward dividend investors."
+    ],
+    [
+      309.651,
+      311.659,
+      "But whatever you choose,"
+    ],
+    [
+      311.659,
+      317.095,
+      "the same discipline applies to all: size your positions sensibly,"
+    ],
+    [
+      317.095,
+      319.186,
+      "diversify across sectors,"
+    ],
+    [
+      319.186,
+      323.033,
+      "and stay the course through the ups and downs."
+    ],
+    [
+      323.033,
+      327.967,
+      "The strategy matters less than the discipline to follow it."
+    ],
+    [
+      327.967,
+      332.4,
+      "Now we cross into the world of derivatives — futures."
+    ],
+    [
+      332.9,
+      335.14,
+      "Chapter five, gathered up."
+    ],
+    [
+      335.14,
+      340.394,
+      "The foundation strategies build wealth quietly: buy and hold,"
+    ],
+    [
+      340.394,
+      344.787,
+      "the SIP, core-satellite, and plain index investing."
+    ],
+    [
+      344.787,
+      347.974,
+      "The picking styles are value, growth,"
+    ],
+    [
+      347.974,
+      351.764,
+      "and quality or growth-at-a-reasonable-price."
+    ],
+    [
+      351.764,
+      356.846,
+      "And the active approaches — momentum, dividend, contrarian,"
+    ],
+    [
+      356.846,
+      358.655,
+      "and sector rotation —"
+    ],
+    [
+      358.655,
+      362.531,
+      "each suit a different temperament and market."
+    ],
+    [
+      362.531,
+      368.56,
+      "There is no single best strategy; there is only the one that fits you,"
+    ],
+    [
+      368.56,
+      370.714,
+      "executed with discipline."
+    ],
+    [
+      370.714,
+      375.193,
+      "Next, we enter the high-octane world of derivatives,"
+    ],
+    [
+      375.193,
+      377.088,
+      "starting with futures."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "eq/eq05.wav",
+      "volume": 1.0
+    }
+  }
+}

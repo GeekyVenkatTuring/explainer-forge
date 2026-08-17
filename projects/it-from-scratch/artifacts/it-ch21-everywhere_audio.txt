@@ -1,0 +1,3 @@
+file '/Users/appuram/Developer/explainer-forge/projects/it-from-scratch/assets/it-ch21-everywhere_apps.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/it-from-scratch/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/it-from-scratch/assets/it-ch21-everywhere_recap.wav'

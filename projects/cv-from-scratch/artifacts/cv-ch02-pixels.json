@@ -1,0 +1,316 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch02-pixels_pixels",
+   "type": "cv_pixels",
+   "in_seconds": 0.0,
+   "out_seconds": 118.096,
+   "props": {
+    "dur": 118.596
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.477,
+   "So let's start at the very bottom,"
+  ],
+  [
+   2.477,
+   3.892,
+   "with the raw material."
+  ],
+  [
+   3.892,
+   6.015,
+   "What actually is a digital image?"
+  ],
+  [
+   6.646,
+   9.477,
+   "It is a grid of tiny squares called"
+  ],
+  [
+   9.477,
+   9.831,
+   "pixels,"
+  ],
+  [
+   9.831,
+   12.308,
+   "and every pixel is just a number."
+  ],
+  [
+   12.939,
+   14.354,
+   "For a black-and-white image,"
+  ],
+  [
+   14.354,
+   16.124,
+   "that number is a brightness."
+  ],
+  [
+   16.124,
+   17.539,
+   "It runs from zero,"
+  ],
+  [
+   17.539,
+   18.954,
+   "which is pure black,"
+  ],
+  [
+   18.954,
+   20.369,
+   "to two fifty five,"
+  ],
+  [
+   20.369,
+   21.785,
+   "which is pure white."
+  ],
+  [
+   22.416,
+   25.247,
+   "Everything in between is a shade of gray."
+  ],
+  [
+   25.247,
+   28.077,
+   "Look at the values on the grid \u2014"
+  ],
+  [
+   28.077,
+   30.908,
+   "that is the actual data the computer\nstores."
+  ],
+  [
+   30.908,
+   31.616,
+   "Nothing more."
+  ],
+  [
+   32.247,
+   32.601,
+   "Now,"
+  ],
+  [
+   32.601,
+   35.431,
+   "why does it stop at two fifty five?"
+  ],
+  [
+   36.063,
+   38.894,
+   "Because each pixel is stored in eight bits"
+  ],
+  [
+   38.894,
+   39.601,
+   "of memory,"
+  ],
+  [
+   39.601,
+   42.432,
+   "and eight bits can count exactly two\nhundred"
+  ],
+  [
+   42.432,
+   44.201,
+   "and fifty six different levels,"
+  ],
+  [
+   44.201,
+   46.678,
+   "from zero up to two fifty five."
+  ],
+  [
+   47.309,
+   50.14,
+   "A color image is just three of these"
+  ],
+  [
+   50.14,
+   52.616,
+   "grids stacked on top of each other."
+  ],
+  [
+   53.248,
+   54.663,
+   "One grid for red,"
+  ],
+  [
+   54.663,
+   55.725,
+   "one for green,"
+  ],
+  [
+   55.725,
+   56.786,
+   "one for blue."
+  ],
+  [
+   56.786,
+   58.201,
+   "We call them channels."
+  ],
+  [
+   58.833,
+   61.664,
+   "Mix those three brightness values in\ndifferent amounts,"
+  ],
+  [
+   61.664,
+   64.494,
+   "and you can make any color on your"
+  ],
+  [
+   64.494,
+   64.848,
+   "screen."
+  ],
+  [
+   65.48,
+   68.31,
+   "So a color image is really a block"
+  ],
+  [
+   68.31,
+   69.725,
+   "of numbers \u2014 height,"
+  ],
+  [
+   69.725,
+   70.433,
+   "times width,"
+  ],
+  [
+   70.433,
+   71.141,
+   "times three."
+  ],
+  [
+   71.772,
+   74.249,
+   "The number of pixels is the resolution."
+  ],
+  [
+   74.249,
+   76.018,
+   "More pixels means more detail,"
+  ],
+  [
+   76.018,
+   78.141,
+   "but also more numbers to process."
+  ],
+  [
+   78.141,
+   80.972,
+   "That trade-off will follow us the whole\ncourse."
+  ],
+  [
+   81.603,
+   82.665,
+   "And a video?"
+  ],
+  [
+   82.665,
+   85.495,
+   "A video is nothing more than a stack"
+  ],
+  [
+   85.495,
+   86.557,
+   "of these images,"
+  ],
+  [
+   86.557,
+   89.033,
+   "flipping past at maybe thirty per second."
+  ],
+  [
+   89.033,
+   91.864,
+   "So everything we learn about one frame\napplies"
+  ],
+  [
+   91.864,
+   94.694,
+   "to video too \u2014 just many times a"
+  ],
+  [
+   94.694,
+   95.048,
+   "second."
+  ],
+  [
+   95.68,
+   97.803,
+   "Let's feel the scale of that."
+  ],
+  [
+   97.803,
+   100.633,
+   "A single twelve-megapixel phone photo\nholds over thirty-six"
+  ],
+  [
+   100.633,
+   101.341,
+   "million numbers."
+  ],
+  [
+   101.972,
+   102.68,
+   "And there,"
+  ],
+  [
+   102.68,
+   103.742,
+   "in one sentence,"
+  ],
+  [
+   103.742,
+   106.218,
+   "is the whole challenge of this course."
+  ],
+  [
+   106.85,
+   109.68,
+   "Somewhere inside that wall of thirty-six\nmillion numbers"
+  ],
+  [
+   109.68,
+   110.742,
+   "is a cat."
+  ],
+  [
+   111.373,
+   112.789,
+   "Every technique we learn,"
+  ],
+  [
+   112.789,
+   114.558,
+   "from here to the end,"
+  ],
+  [
+   114.558,
+   117.388,
+   "is a smarter and smarter way to read"
+  ],
+  [
+   117.388,
+   118.096,
+   "this grid."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch02-pixels.wav",
+   "volume": 1.0
+  }
+ }
+}

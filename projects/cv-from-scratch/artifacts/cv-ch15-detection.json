@@ -1,0 +1,744 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch15-detection_detect",
+   "type": "cv_detect",
+   "in_seconds": 0.0,
+   "out_seconds": 104.122,
+   "props": {
+    "dur": 104.622
+   }
+  },
+  {
+   "id": "cv-ch15-detection_track",
+   "type": "cv_track",
+   "in_seconds": 104.622,
+   "out_seconds": 189.505,
+   "props": {
+    "dur": 85.383
+   }
+  },
+  {
+   "id": "cv-ch15-detection_metrics",
+   "type": "cv_metrics",
+   "in_seconds": 190.005,
+   "out_seconds": 278.756,
+   "props": {
+    "dur": 89.251
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.932,
+   "Classification tells you what is in a\npicture."
+  ],
+  [
+   2.932,
+   4.398,
+   "Detection tells you what,"
+  ],
+  [
+   4.398,
+   5.497,
+   "and exactly where."
+  ],
+  [
+   6.128,
+   9.06,
+   "Now we want a tight box around every"
+  ],
+  [
+   9.06,
+   9.427,
+   "object,"
+  ],
+  [
+   9.427,
+   12.358,
+   "each one with a label and a confidence"
+  ],
+  [
+   12.358,
+   12.725,
+   "score."
+  ],
+  [
+   13.356,
+   16.288,
+   "The most famous approach has a great name"
+  ],
+  [
+   16.288,
+   17.021,
+   "\u2014 YOLO."
+  ],
+  [
+   17.021,
+   19.586,
+   "It stands for you only look once."
+  ],
+  [
+   20.218,
+   21.684,
+   "Here is the idea."
+  ],
+  [
+   21.684,
+   24.615,
+   "YOLO lays a grid over the whole image."
+  ],
+  [
+   25.247,
+   28.179,
+   "And every single cell in that grid\npredicts"
+  ],
+  [
+   28.179,
+   31.11,
+   "a few things at once \u2014 candidate boxes,"
+  ],
+  [
+   31.11,
+   31.843,
+   "a class,"
+  ],
+  [
+   31.843,
+   34.775,
+   "and how confident it is \u2014 all in"
+  ],
+  [
+   34.775,
+   36.974,
+   "one single pass through the network."
+  ],
+  [
+   37.605,
+   39.438,
+   "But that produces a flood."
+  ],
+  [
+   39.438,
+   40.903,
+   "Thousands of overlapping boxes,"
+  ],
+  [
+   40.903,
+   43.835,
+   "many of them guessing at the same object."
+  ],
+  [
+   43.835,
+   45.667,
+   "Look at all that clutter."
+  ],
+  [
+   46.299,
+   49.231,
+   "So we clean it up with a step"
+  ],
+  [
+   49.231,
+   50.33,
+   "called non-max suppression."
+  ],
+  [
+   50.962,
+   53.893,
+   "For each cluster of boxes piled on the"
+  ],
+  [
+   53.893,
+   54.626,
+   "same object,"
+  ],
+  [
+   54.626,
+   57.191,
+   "we keep only the most confident one,"
+  ],
+  [
+   57.191,
+   59.024,
+   "and delete all the rest."
+  ],
+  [
+   59.655,
+   61.121,
+   "Watch the duplicates vanish,"
+  ],
+  [
+   61.121,
+   62.587,
+   "leaving just the clean,"
+  ],
+  [
+   62.587,
+   64.053,
+   "final boxes \u2014 person,"
+  ],
+  [
+   64.053,
+   64.419,
+   "dog,"
+  ],
+  [
+   64.419,
+   65.152,
+   "traffic light,"
+  ],
+  [
+   65.152,
+   65.519,
+   "car."
+  ],
+  [
+   66.15,
+   69.082,
+   "And here is the headline that makes YOLO"
+  ],
+  [
+   69.082,
+   69.448,
+   "special."
+  ],
+  [
+   70.08,
+   73.012,
+   "All of this happens in a single forward"
+  ],
+  [
+   73.012,
+   73.378,
+   "pass,"
+  ],
+  [
+   73.378,
+   76.31,
+   "at well over a hundred frames per second."
+  ],
+  [
+   76.941,
+   79.507,
+   "That is fast enough to run live,"
+  ],
+  [
+   79.507,
+   80.606,
+   "on streaming video,"
+  ],
+  [
+   80.606,
+   81.705,
+   "in real time."
+  ],
+  [
+   82.337,
+   85.269,
+   "And that speed is exactly why detection is"
+  ],
+  [
+   85.269,
+   87.101,
+   "the workhorse behind self-driving cars,"
+  ],
+  [
+   87.101,
+   87.834,
+   "security cameras,"
+  ],
+  [
+   87.834,
+   89.3,
+   "and automated sports analysis."
+  ],
+  [
+   89.931,
+   92.13,
+   "When you need to know where,"
+  ],
+  [
+   92.13,
+   92.497,
+   "instantly,"
+  ],
+  [
+   92.497,
+   95.062,
+   "this is the tool you reach for."
+  ],
+  [
+   95.693,
+   97.526,
+   "There is also a slower,"
+  ],
+  [
+   97.526,
+   99.358,
+   "more careful family of detectors,"
+  ],
+  [
+   99.358,
+   100.091,
+   "called R-CNN,"
+  ],
+  [
+   100.091,
+   103.023,
+   "for when you can trade speed for a"
+  ],
+  [
+   103.023,
+   104.122,
+   "little extra accuracy."
+  ],
+  [
+   104.622,
+   106.817,
+   "Detection works on a single frame."
+  ],
+  [
+   106.817,
+   108.281,
+   "But the world moves,"
+  ],
+  [
+   108.281,
+   111.208,
+   "and video is just a stream of frames."
+  ],
+  [
+   111.84,
+   114.767,
+   "So how do we follow a specific object"
+  ],
+  [
+   114.767,
+   115.499,
+   "through time?"
+  ],
+  [
+   115.499,
+   117.328,
+   "That task is called tracking."
+  ],
+  [
+   117.96,
+   120.887,
+   "The naive approach is to run detection on"
+  ],
+  [
+   120.887,
+   121.619,
+   "every frame,"
+  ],
+  [
+   121.619,
+   123.082,
+   "one at a time."
+  ],
+  [
+   123.714,
+   125.543,
+   "But that gives you fresh,"
+  ],
+  [
+   125.543,
+   127.007,
+   "anonymous boxes each frame."
+  ],
+  [
+   127.007,
+   128.47,
+   "It has no memory."
+  ],
+  [
+   128.47,
+   131.398,
+   "It cannot tell you that the car in"
+  ],
+  [
+   131.398,
+   134.325,
+   "this frame is the same car as the"
+  ],
+  [
+   134.325,
+   135.057,
+   "last one."
+  ],
+  [
+   135.688,
+   137.152,
+   "Tracking adds that memory."
+  ],
+  [
+   137.783,
+   138.515,
+   "Step one,"
+  ],
+  [
+   138.515,
+   139.979,
+   "still detect every frame."
+  ],
+  [
+   140.61,
+   141.342,
+   "Step two,"
+  ],
+  [
+   141.342,
+   144.269,
+   "match this frame's boxes to the previous\nframe's"
+  ],
+  [
+   144.269,
+   144.635,
+   "objects,"
+  ],
+  [
+   144.635,
+   147.562,
+   "usually by which ones are closest and look"
+  ],
+  [
+   147.562,
+   148.66,
+   "the most alike."
+  ],
+  [
+   149.292,
+   151.121,
+   "And with a good match,"
+  ],
+  [
+   151.121,
+   154.048,
+   "each object keeps a stable identity \u2014 an"
+  ],
+  [
+   154.048,
+   156.244,
+   "I D \u2014 as it moves."
+  ],
+  [
+   156.875,
+   157.973,
+   "Watch the walker,"
+  ],
+  [
+   157.973,
+   158.705,
+   "the cyclist,"
+  ],
+  [
+   158.705,
+   159.802,
+   "and the car."
+  ],
+  [
+   159.802,
+   162.729,
+   "Each keeps its own numbered box and leaves"
+  ],
+  [
+   162.729,
+   165.657,
+   "a little trail as it crosses the scene."
+  ],
+  [
+   166.288,
+   168.118,
+   "There is a third piece,"
+  ],
+  [
+   168.118,
+   168.849,
+   "called re-identification,"
+  ],
+  [
+   168.849,
+   169.947,
+   "or re-I D."
+  ],
+  [
+   170.579,
+   173.506,
+   "When an object is briefly hidden behind\nsomething"
+  ],
+  [
+   173.506,
+   174.238,
+   "and reappears,"
+  ],
+  [
+   174.238,
+   177.165,
+   "re-I D recognizes it and restores the same"
+  ],
+  [
+   177.165,
+   177.531,
+   "identity,"
+  ],
+  [
+   177.531,
+   179.726,
+   "instead of inventing a new one."
+  ],
+  [
+   180.358,
+   182.919,
+   "This is the engine behind traffic\nmonitoring,"
+  ],
+  [
+   182.919,
+   185.114,
+   "sports analytics that follow every player,"
+  ],
+  [
+   185.114,
+   188.041,
+   "and any system that needs to count or"
+  ],
+  [
+   188.041,
+   189.505,
+   "follow things over time."
+  ],
+  [
+   190.005,
+   191.4,
+   "Before we move on,"
+  ],
+  [
+   191.4,
+   192.446,
+   "one honest question."
+  ],
+  [
+   192.446,
+   195.235,
+   "How do we even know if a detector"
+  ],
+  [
+   195.235,
+   196.281,
+   "is any good?"
+  ],
+  [
+   196.912,
+   199.353,
+   "Saying it works is not a number."
+  ],
+  [
+   199.353,
+   202.142,
+   "So the field built precise ways to keep"
+  ],
+  [
+   202.142,
+   202.491,
+   "score."
+  ],
+  [
+   203.123,
+   204.866,
+   "Start with a single box."
+  ],
+  [
+   204.866,
+   207.655,
+   "How do we grade a predicted box against"
+  ],
+  [
+   207.655,
+   208.701,
+   "the true one?"
+  ],
+  [
+   209.333,
+   212.122,
+   "We use a measure called I O U"
+  ],
+  [
+   212.122,
+   213.517,
+   "\u2014 intersection over union."
+  ],
+  [
+   214.148,
+   216.938,
+   "Take the area where the two boxes overlap,"
+  ],
+  [
+   216.938,
+   219.727,
+   "and divide it by the total area they"
+  ],
+  [
+   219.727,
+   220.424,
+   "cover together."
+  ],
+  [
+   221.056,
+   222.102,
+   "Watch the number."
+  ],
+  [
+   222.102,
+   223.845,
+   "A perfect overlap gives one."
+  ],
+  [
+   223.845,
+   225.24,
+   "No overlap gives zero."
+  ],
+  [
+   225.871,
+   228.66,
+   "We usually count it as a correct hit"
+  ],
+  [
+   228.66,
+   231.45,
+   "if the I O U is above one"
+  ],
+  [
+   231.45,
+   231.798,
+   "half."
+  ],
+  [
+   232.43,
+   232.779,
+   "Next,"
+  ],
+  [
+   232.779,
+   235.568,
+   "two words you must not confuse \u2014 precision"
+  ],
+  [
+   235.568,
+   236.265,
+   "and recall."
+  ],
+  [
+   236.897,
+   239.686,
+   "Precision asks \u2014 of everything the model\nflagged,"
+  ],
+  [
+   239.686,
+   241.429,
+   "how much was actually right?"
+  ],
+  [
+   242.061,
+   244.85,
+   "Recall asks \u2014 of everything that was\nreally"
+  ],
+  [
+   244.85,
+   245.199,
+   "there,"
+  ],
+  [
+   245.199,
+   247.291,
+   "how much did the model find?"
+  ],
+  [
+   247.922,
+   250.363,
+   "There is always a trade-off between them,"
+  ],
+  [
+   250.363,
+   253.152,
+   "set by how cautious you make the model."
+  ],
+  [
+   253.784,
+   254.133,
+   "Finally,"
+  ],
+  [
+   254.133,
+   256.922,
+   "we roll it all into one headline number"
+  ],
+  [
+   256.922,
+   258.317,
+   "\u2014 mean average precision,"
+  ],
+  [
+   258.317,
+   259.711,
+   "or m A P."
+  ],
+  [
+   260.343,
+   262.783,
+   "It scores the model on every class,"
+  ],
+  [
+   262.783,
+   263.481,
+   "then averages."
+  ],
+  [
+   263.481,
+   266.27,
+   "Look at the bars \u2014 a strong score"
+  ],
+  [
+   266.27,
+   267.665,
+   "on cats and dogs,"
+  ],
+  [
+   267.665,
+   269.059,
+   "weaker on rare signs,"
+  ],
+  [
+   269.059,
+   271.151,
+   "and the mean at the bottom."
+  ],
+  [
+   271.783,
+   274.223,
+   "When you read that a detector scores,"
+  ],
+  [
+   274.223,
+   274.572,
+   "say,"
+  ],
+  [
+   274.572,
+   276.664,
+   "zero point five m A P,"
+  ],
+  [
+   276.664,
+   278.756,
+   "this is exactly what that means."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch15-detection.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "cuts": [
+  {
+   "id": "ch4-sizing-compute_s01_title",
+   "type": "gpu_title",
+   "in_seconds": 0.0,
+   "out_seconds": 24.013,
+   "props": {
+    "kicker": "A DEEP-DIVE COURSE \u00b7 CHAPTER 4",
+    "line1": "Sizing the",
+    "line2": "Compute",
+    "sub": "tokens/sec \u00b7 throughput \u00b7 latency \u00b7 users \u00b7 racks",
+    "color": "#34D399",
+    "dur": 24.513
+   }
+  },
+  {
+   "id": "ch4-sizing-compute_s02_batching",
+   "type": "gpu_batching",
+   "in_seconds": 24.513,
+   "out_seconds": 69.871,
+   "props": {
+    "dur": 45.858
+   }
+  },
+  {
+   "id": "ch4-sizing-compute_s03_tradeoff",
+   "type": "gpu_tradeoff",
+   "in_seconds": 70.371,
+   "out_seconds": 117.464,
+   "props": {
+    "dur": 47.593
+   }
+  },
+  {
+   "id": "ch4-sizing-compute_s04_users",
+   "type": "gpu_users",
+   "in_seconds": 117.964,
+   "out_seconds": 160.476,
+   "props": {
+    "dur": 43.012
+   }
+  },
+  {
+   "id": "ch4-sizing-compute_s05_cluster",
+   "type": "gpu_cluster",
+   "in_seconds": 160.976,
+   "out_seconds": 205.705,
+   "props": {
+    "dur": 45.229
+   }
+  },
+  {
+   "id": "ch4-sizing-compute_s06_recap",
+   "type": "gpu_recap",
+   "in_seconds": 206.205,
+   "out_seconds": 237.798,
+   "props": {
+    "kicker": "CHAPTER 4 \u00b7 RECAP",
+    "title": "Sizing the compute, in one breath",
+    "color": "#34D399",
+    "items": [
+     "One stream is memory-bound: about 48 tok/s for a 70B model on an H100",
+     "Batching amortizes weight reads \u2014 one GPU reaches ~2,600 tok/s",
+     "Throughput versus latency is a dial you tune, not a free win",
+     "At ~20 tok/s per active user, that is ~130 live users per GPU",
+     "A million concurrent users is roughly 7,700 GPUs \u2014 about 107 racks"
+    ],
+    "closer": "AI runs on arithmetic you can now do yourself: bandwidth, batching, and a lot of racks.",
+    "dur": 32.093
+   }
+  }
+ ],
+ "audio": {
+  "narration": {
+   "src": "gpu/ch4-sizing-compute.wav",
+   "volume": 1.0
+  }
+ }
+}

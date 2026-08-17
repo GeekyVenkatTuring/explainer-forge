@@ -1,0 +1,886 @@
+{
+  "cuts": [
+    {
+      "id": "shiprocket_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 31.46,
+      "props": {
+        "title": "Shiprocket IPO",
+        "sub": "E-commerce logistics platform · ₹1,617 Cr · 12–14 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 31.96
+      }
+    },
+    {
+      "id": "shiprocket_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 31.96,
+      "out_seconds": 76.666,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Shiprocket",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "📦",
+            "k": "E-commerce shipping platform",
+            "v": "A software layer that lets online sellers ship through 17+ courier partners from one dashboard — it owns no trucks itself",
+            "chip": "ASSET-LIGHT"
+          },
+          {
+            "emoji": "🛒",
+            "k": "Full seller toolkit",
+            "v": "Shipping, checkout, returns, packaging and financing for D2C brands and small online sellers",
+            "chip": "SELLER SUITE"
+          },
+          {
+            "emoji": "📈",
+            "k": "Rides D2C growth",
+            "v": "Grows with India's small online sellers — a picks-and-shovels play on e-commerce, not a single store",
+            "chip": "E-COM TAILWIND"
+          }
+        ],
+        "dur": 45.206
+      }
+    },
+    {
+      "id": "shiprocket_clients",
+      "type": "sm_iconcards",
+      "in_seconds": 77.166,
+      "out_seconds": 124.152,
+      "props": {
+        "kicker": "BUSINESS DEEP-DIVE · MERCHANTS & VOLUME",
+        "title": "Who's On the Shiprocket Platform",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🧑‍💼",
+            "k": "~2.15 lakh active merchants",
+            "v": "In FY26 it served about 2.15 lakh active merchants — mostly small and D2C sellers — reaching 155 million-plus end consumers across 19,000+ pin codes",
+            "chip": "2.15 LAKH SELLERS"
+          },
+          {
+            "emoji": "📦",
+            "k": "Volume, not an order book",
+            "v": "As a platform there's no order book — instead it processes 25 million-plus shipments a month and around 200 million transactions a year",
+            "chip": "25M+ /MONTH"
+          },
+          {
+            "emoji": "🚀",
+            "k": "D2C is the growth engine",
+            "v": "Small and solo sellers are ~60% of the base; venture-backed D2C brands in beauty, fashion and electronics are the fastest-growing revenue",
+            "chip": "D2C FASTEST"
+          }
+        ],
+        "dur": 47.486
+      }
+    },
+    {
+      "id": "shiprocket_fin",
+      "type": "sm_stats",
+      "in_seconds": 124.652,
+      "out_seconds": 163.622,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 2024,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+24% YoY (≈ ₹2,024.1 Cr)"
+          },
+          {
+            "label": "Net loss FY26",
+            "to": 79,
+            "prefix": "−₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "was −₹595 Cr in FY24"
+          },
+          {
+            "label": "Grey-mkt premium",
+            "to": 14,
+            "prefix": "~",
+            "suffix": "%",
+            "color": "#FBBF24",
+            "sub": "unofficial · ~₹14 over ₹97"
+          }
+        ],
+        "note": "Revenue up 24% and losses cut dramatically — from ₹595 Cr in FY24 to ₹79 Cr. But it is still NOT profitable.",
+        "dur": 39.47
+      }
+    },
+    {
+      "id": "shiprocket_issue",
+      "type": "sm_stats",
+      "in_seconds": 164.122,
+      "out_seconds": 197.836,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 1617,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#A78BFA",
+            "sub": "₹1,617.5 Cr · band ₹92–97"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 886,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "~55% funds the business"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 732,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "~45% — early investors exit"
+          }
+        ],
+        "note": "A fairly balanced split — a little over half is fresh money; the rest lets early backers sell down.",
+        "dur": 34.214
+      }
+    },
+    {
+      "id": "shiprocket_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 198.336,
+      "out_seconds": 231.45,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the Fresh Money Funds",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "📣",
+            "k": "Marketing & technology",
+            "v": "Fresh money funds marketing and technology across its core and emerging businesses to keep growing",
+            "chip": "GROWTH"
+          },
+          {
+            "emoji": "🤝",
+            "k": "Acquisitions & debt",
+            "v": "Part is kept for potential acquisitions and to repay some borrowings",
+            "chip": "M&A / DEBT"
+          },
+          {
+            "emoji": "🧰",
+            "k": "General corporate",
+            "v": "The remainder is for general corporate purposes",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 33.614
+      }
+    },
+    {
+      "id": "shiprocket_peers",
+      "type": "sm_iconcards",
+      "in_seconds": 231.95,
+      "out_seconds": 287.456,
+      "props": {
+        "kicker": "COMPETITORS · VALUATION",
+        "title": "Loss-Making — Judged on Sales, Not P/E",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🚚",
+            "k": "Delhivery — the listed benchmark",
+            "v": "India's largest logistics firm (~₹25,000 Cr+). But it OWNS trucks, hubs and warehouses; Shiprocket is asset-light, aggregating 17 couriers",
+            "chip": "ASSET-HEAVY"
+          },
+          {
+            "emoji": "🧩",
+            "k": "A crowded field",
+            "v": "Unicommerce (listed e-commerce enablement) plus unlisted Xpressbees, Shadowfax and others chase the same sellers",
+            "chip": "CROWDED"
+          },
+          {
+            "emoji": "📉",
+            "k": "No P/E — it loses money",
+            "v": "With a net loss, there's no P/E. It's valued on price-to-SALES — about ₹7,000 Cr ÷ ₹2,024 Cr, near 3.5× — and on its shrinking losses",
+            "chip": "~3.5× SALES"
+          }
+        ],
+        "dur": 56.006
+      }
+    },
+    {
+      "id": "shiprocket_verdict",
+      "type": "sm_myths",
+      "in_seconds": 287.956,
+      "out_seconds": 329.854,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "Still loss-making (−₹79 Cr) — no P/E",
+            "f": "Revenue +24%; losses cut ~88% since FY24"
+          },
+          {
+            "m": "Crowded, competitive market",
+            "f": "Asset-light, scalable software model"
+          },
+          {
+            "m": "~45% is OFS; valued on sales, not profit",
+            "f": "Picks-and-shovels play on D2C; ~55% fresh"
+          }
+        ],
+        "dur": 42.398
+      }
+    },
+    {
+      "id": "shiprocket_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 330.354,
+      "out_seconds": 368.098,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,938 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 38.244
+      }
+    },
+    {
+      "id": "shiprocket_recap",
+      "type": "sm_recap",
+      "in_seconds": 368.598,
+      "out_seconds": 434.326,
+      "props": {
+        "title": "Shiprocket IPO — at a Glance",
+        "items": [
+          "Business: asset-light e-commerce shipping platform",
+          "FY26: revenue ₹2,024.1 Cr (+24%), net loss −₹79.2 Cr",
+          "₹1,617.5 Cr issue — ~55% fresh, ~45% OFS",
+          "Loss-making → valued on ~3.5× sales, not P/E",
+          "Retail min ~₹14,938 · GMP ~14% (unofficial)"
+        ],
+        "closer": "A fast-scaling, asset-light platform with narrowing losses — but not yet profitable, priced on sales. Read the RHP; decide for yourself.",
+        "dur": 66.228
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.075,
+      "Let's break down the Shiprocket I-P-O —"
+    ],
+    [
+      3.075,
+      11.039,
+      "a one thousand six hundred and seventeen crore issue from a well-known e-commerce logistics platform."
+    ],
+    [
+      11.039,
+      17.898,
+      "There's one thing that makes valuing this company different from the others this week —"
+    ],
+    [
+      17.898,
+      20.185,
+      "it doesn't yet make a profit."
+    ],
+    [
+      20.185,
+      24.758,
+      "We'll cover the business, the financials, the money trail,"
+    ],
+    [
+      24.758,
+      28.227,
+      "how it compares to rivals, and how to apply."
+    ],
+    [
+      28.227,
+      31.46,
+      "This is education, not investment advice."
+    ],
+    [
+      31.96,
+      34.268,
+      "So what does Shiprocket do?"
+    ],
+    [
+      34.268,
+      40.166,
+      "It's a software platform that helps online sellers ship their orders."
+    ],
+    [
+      40.166,
+      41.79,
+      "From one dashboard,"
+    ],
+    [
+      41.79,
+      47.004,
+      "a seller can pick from more than seventeen courier partners —"
+    ],
+    [
+      47.004,
+      51.364,
+      "but Shiprocket itself owns no trucks or warehouses."
+    ],
+    [
+      51.364,
+      52.817,
+      "It's asset-light."
+    ],
+    [
+      52.817,
+      57.775,
+      "Around that, it offers a full toolkit — checkout, returns,"
+    ],
+    [
+      57.775,
+      60.083,
+      "packaging, even financing —"
+    ],
+    [
+      60.083,
+      63.502,
+      "for small online sellers and D2C brands."
+    ],
+    [
+      63.502,
+      73.247,
+      "So it's a picks-and-shovels play on India's e-commerce boom: it grows as the number of small online sellers grows,"
+    ],
+    [
+      73.247,
+      76.666,
+      "rather than betting on any single store."
+    ],
+    [
+      77.166,
+      78.407,
+      "Let's go deeper."
+    ],
+    [
+      78.407,
+      80.81,
+      "Who's actually on the platform?"
+    ],
+    [
+      80.81,
+      82.671,
+      "In FY twenty twenty-six,"
+    ],
+    [
+      82.671,
+      87.788,
+      "Shiprocket served about two point one five lakh active merchants —"
+    ],
+    [
+      87.788,
+      90.269,
+      "mostly small and D-2-C sellers —"
+    ],
+    [
+      90.269,
+      98.1,
+      "reaching over a hundred and fifty-five million end consumers across nineteen thousand-plus pin codes."
+    ],
+    [
+      98.1,
+      103.14,
+      "As a platform there's no order book; the scale metric is volume —"
+    ],
+    [
+      103.14,
+      111.824,
+      "it processes more than twenty-five million shipments a month and around two hundred million transactions a year."
+    ],
+    [
+      111.824,
+      116.399,
+      "Small and solo sellers are about sixty percent of the base,"
+    ],
+    [
+      116.399,
+      119.81,
+      "while venture-backed D-2-C brands in beauty,"
+    ],
+    [
+      119.81,
+      124.152,
+      "fashion and electronics are its fastest-growing revenue."
+    ],
+    [
+      124.652,
+      128.253,
+      "Now the financials, and this is the key part."
+    ],
+    [
+      128.253,
+      134.495,
+      "Revenue for FY twenty twenty-six was about two thousand and twenty-four crore,"
+    ],
+    [
+      134.495,
+      136.335,
+      "up twenty-four percent."
+    ],
+    [
+      136.335,
+      139.376,
+      "But the company is still loss-making —"
+    ],
+    [
+      139.376,
+      142.016,
+      "it lost about seventy-nine crore."
+    ],
+    [
+      142.016,
+      151.379,
+      "The good news is how sharply that loss has shrunk: from a huge five hundred and ninety-five crore loss two years ago,"
+    ],
+    [
+      151.379,
+      153.459,
+      "to seventy-nine crore now."
+    ],
+    [
+      153.459,
+      157.38,
+      "So the trend is strongly in the right direction —"
+    ],
+    [
+      157.38,
+      160.901,
+      "but remember, it does not yet make a profit,"
+    ],
+    [
+      160.901,
+      163.622,
+      "and that changes how you value it."
+    ],
+    [
+      164.122,
+      165.966,
+      "Where does your money go?"
+    ],
+    [
+      165.966,
+      170.245,
+      "Of the one thousand six hundred and seventeen crore issue,"
+    ],
+    [
+      170.245,
+      173.344,
+      "about eight hundred and eighty-six crore —"
+    ],
+    [
+      173.344,
+      175.188,
+      "some fifty-five percent —"
+    ],
+    [
+      175.188,
+      178.434,
+      "is a fresh issue that goes into the company."
+    ],
+    [
+      178.434,
+      183.598,
+      "The remaining seven hundred and thirty-two crore is an Offer for Sale,"
+    ],
+    [
+      183.598,
+      187.065,
+      "where early investors sell part of their stake."
+    ],
+    [
+      187.065,
+      189.5,
+      "So it's a fairly balanced split —"
+    ],
+    [
+      189.5,
+      193.262,
+      "a little over half is fresh money for the business,"
+    ],
+    [
+      193.262,
+      197.836,
+      "and the rest lets early backers take some money off the table."
+    ],
+    [
+      198.336,
+      200.858,
+      "What does the fresh money fund?"
+    ],
+    [
+      200.858,
+      204.194,
+      "The main use is marketing and technology,"
+    ],
+    [
+      204.194,
+      208.75,
+      "across both its core shipping business and newer lines —"
+    ],
+    [
+      208.75,
+      212.737,
+      "the fuel it needs to keep growing and, hopefully,"
+    ],
+    [
+      212.737,
+      213.795,
+      "reach profit."
+    ],
+    [
+      213.795,
+      219.815,
+      "Part is set aside for potential acquisitions and to repay some borrowings."
+    ],
+    [
+      219.815,
+      223.314,
+      "And the rest is general corporate purposes."
+    ],
+    [
+      223.314,
+      226.731,
+      "So the money is aimed squarely at growth —"
+    ],
+    [
+      226.731,
+      231.45,
+      "which is what a company still chasing profitability needs."
+    ],
+    [
+      231.95,
+      236.125,
+      "Now the competitors — and here the maths is different,"
+    ],
+    [
+      236.125,
+      240.686,
+      "because Shiprocket loses money, so there's no P-E to quote."
+    ],
+    [
+      240.686,
+      243.701,
+      "Its main listed benchmark is Delhivery,"
+    ],
+    [
+      243.701,
+      246.329,
+      "India's largest logistics company,"
+    ],
+    [
+      246.329,
+      249.267,
+      "worth over twenty-five thousand crore."
+    ],
+    [
+      249.267,
+      251.586,
+      "But Delhivery OWNS the trucks,"
+    ],
+    [
+      251.586,
+      255.297,
+      "hubs and warehouses; Shiprocket is asset-light —"
+    ],
+    [
+      255.297,
+      260.399,
+      "it just aggregates seventeen courier partners under one dashboard."
+    ],
+    [
+      260.399,
+      264.496,
+      "It also competes with the listed enabler Unicommerce,"
+    ],
+    [
+      264.496,
+      268.361,
+      "and unlisted names like Xpressbees and Shadowfax —"
+    ],
+    [
+      268.361,
+      269.598,
+      "a crowded field."
+    ],
+    [
+      269.598,
+      271.531,
+      "Because it's loss-making,"
+    ],
+    [
+      271.531,
+      274.469,
+      "investors value it on price-to-SALES —"
+    ],
+    [
+      274.469,
+      280.189,
+      "roughly three and a half times revenue at its seven-thousand-crore price —"
+    ],
+    [
+      280.189,
+      283.513,
+      "and on how fast those losses are shrinking,"
+    ],
+    [
+      283.513,
+      287.456,
+      "from nearly six hundred crore down to under eighty."
+    ],
+    [
+      287.956,
+      289.664,
+      "Should you subscribe?"
+    ],
+    [
+      289.664,
+      293.488,
+      "The strengths — revenue up twenty-four percent,"
+    ],
+    [
+      293.488,
+      297.475,
+      "losses cut by nearly ninety percent in two years,"
+    ],
+    [
+      297.475,
+      299.02,
+      "and an asset-light,"
+    ],
+    [
+      299.02,
+      302.681,
+      "scalable model that rides the whole D2C wave."
+    ],
+    [
+      302.681,
+      305.936,
+      "The watch-outs — it's still loss-making,"
+    ],
+    [
+      305.936,
+      314.234,
+      "so there's no P-E; the market is crowded and competitive; and about forty-five percent is a sell-down,"
+    ],
+    [
+      314.234,
+      318.464,
+      "with the company valued on sales rather than profit."
+    ],
+    [
+      318.464,
+      321.068,
+      "The takeaway — a fast-improving,"
+    ],
+    [
+      321.068,
+      324.973,
+      "asset-light platform with a real path to profit,"
+    ],
+    [
+      324.973,
+      326.437,
+      "but not there yet."
+    ],
+    [
+      326.437,
+      329.854,
+      "Judge it as a growth bet, not a value one."
+    ],
+    [
+      330.354,
+      333.945,
+      "How do you apply, and how much do you need?"
+    ],
+    [
+      333.945,
+      339.623,
+      "Retail investors bid up to two lakh for a thirty-five percent quota,"
+    ],
+    [
+      339.623,
+      343.297,
+      "with allotment by lottery if oversubscribed."
+    ],
+    [
+      343.297,
+      347.723,
+      "H-N-Is go above two lakh for a fifteen percent quota."
+    ],
+    [
+      347.723,
+      352.733,
+      "For Shiprocket, one lot is a hundred and fifty-four shares —"
+    ],
+    [
+      352.733,
+      357.91,
+      "about fourteen thousand nine hundred and thirty-eight rupees —"
+    ],
+    [
+      357.91,
+      358.996,
+      "your minimum."
+    ],
+    [
+      358.996,
+      364.257,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      364.257,
+      368.098,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      368.598,
+      370.462,
+      "Let's recap Shiprocket."
+    ],
+    [
+      370.462,
+      374.109,
+      "An asset-light e-commerce shipping platform —"
+    ],
+    [
+      374.109,
+      376.703,
+      "a picks-and-shovels play on D2C,"
+    ],
+    [
+      376.703,
+      381.484,
+      "with revenue up twenty-four percent and losses cut sharply."
+    ],
+    [
+      381.484,
+      385.05,
+      "The issue is about fifty-five percent fresh,"
+    ],
+    [
+      385.05,
+      386.752,
+      "the rest a sell-down."
+    ],
+    [
+      386.752,
+      389.913,
+      "The key point — it's still loss-making,"
+    ],
+    [
+      389.913,
+      393.155,
+      "so there's no P-E; it's valued on sales,"
+    ],
+    [
+      393.155,
+      396.072,
+      "near three and a half times revenue,"
+    ],
+    [
+      396.072,
+      398.423,
+      "and against listed Delhivery."
+    ],
+    [
+      398.423,
+      405.15,
+      "The retail minimum is about fourteen thousand nine hundred and thirty-eight rupees,"
+    ],
+    [
+      405.15,
+      409.445,
+      "and the grey-market premium is near fourteen percent,"
+    ],
+    [
+      409.445,
+      410.904,
+      "though unofficial."
+    ],
+    [
+      410.904,
+      414.794,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      414.794,
+      417.063,
+      "it is not investment advice,"
+    ],
+    [
+      417.063,
+      419.738,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      419.738,
+      422.818,
+      "and not a prediction of listing gains."
+    ],
+    [
+      422.818,
+      427.113,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      427.113,
+      432.705,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      432.705,
+      434.326,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/shiprocket.wav",
+      "volume": 1.0
+    }
+  }
+}

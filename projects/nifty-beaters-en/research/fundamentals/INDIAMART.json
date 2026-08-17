@@ -1,0 +1,101 @@
+{
+ "ticker": "INDIAMART",
+ "scraped_at": "2026-08-14T15:28:54",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 10742.0,
+ "current_price": 1786.0,
+ "pe": 21.8,
+ "book_value": 399.0,
+ "dividend_yield_pct": 1.68,
+ "roce_pct": 28.0,
+ "roe_pct": 20.7,
+ "face_value": 10.0,
+ "high": 2687.0,
+ "sales_growth": {
+  "10 Years": 20.0,
+  "5 Years": 11.0,
+  "3 Years": 19.0,
+  "TTM": -16.0
+ },
+ "profit_growth": {
+  "5 Years": -13.0,
+  "3 Years": -17.0,
+  "1 Year": -29.0
+ },
+ "roe_hist": {
+  "Equity Capital": 9.0,
+  "Reserves": -152.0,
+  "Borrowings&nbsp; +": 49.0,
+  "Other Liabilities&nbsp; +": 196.0,
+  "Total Liabilities": 102.0,
+  "Fixed Assets&nbsp; +": 6.0,
+  "CWIP": 0.0,
+  "Investments": 60.0,
+  "Other Assets&nbsp; +": 36.0,
+  "Total Assets": 102.0
+ },
+ "price_cagr": {
+  "5 Years": 19.0,
+  "3 Years": 22.0,
+  "Last Year": 21.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "24%",
+   "23%",
+   "26%",
+   "24%",
+   "33%",
+   "35%",
+   "35%",
+   "34%",
+   "32%",
+   "30%",
+   "30%",
+   "30%",
+   "32%"
+  ],
+  "eps": [
+   "13.57",
+   "11.57",
+   "13.65",
+   "16.61",
+   "19.01",
+   "22.52",
+   "20.16",
+   "30.08",
+   "25.57",
+   "13.78",
+   "31.34",
+   "8.35",
+   "28.63"
+  ]
+ },
+ "pros": [
+  "Company has reduced debt.",
+  "Company is almost debt free.",
+  "Company has been maintaining a healthy dividend payout of 55.4%"
+ ],
+ "cons": [
+  "Earnings include an other income of Rs.218 Cr."
+ ]
+}

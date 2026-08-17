@@ -1,0 +1,103 @@
+{
+ "ticker": "NH",
+ "scraped_at": "2026-08-14T15:29:11",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 37543.0,
+ "current_price": 1837.0,
+ "pe": 43.6,
+ "book_value": 222.0,
+ "dividend_yield_pct": 0.25,
+ "roce_pct": 15.5,
+ "roe_pct": 20.5,
+ "face_value": 10.0,
+ "high": 2094.0,
+ "sales_growth": {
+  "10 Years": 42.0,
+  "5 Years": 155.0,
+  "3 Years": 12.0,
+  "TTM": 9.0
+ },
+ "profit_growth": {
+  "10 Years": 20.0,
+  "5 Years": 30.0,
+  "3 Years": 23.0,
+  "1 Year": 1.0
+ },
+ "roe_hist": {
+  "Expenses&nbsp; +": 963.0,
+  "Operating Profit": 271.0,
+  "OPM %": 22.0,
+  "Other Income&nbsp; +": 15.0,
+  "Interest": 21.0,
+  "Depreciation": 59.0,
+  "Profit before tax": 206.0,
+  "Tax %": 11.0,
+  "Net Profit&nbsp; +": 184.0,
+  "EPS in Rs": 9.0
+ },
+ "price_cagr": {
+  "10 Years": 20.0,
+  "5 Years": 26.0,
+  "3 Years": 25.0,
+  "Last Year": 21.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "22%",
+   "24%",
+   "23%",
+   "23%",
+   "23%",
+   "23%",
+   "23%",
+   "24%",
+   "22%",
+   "24%",
+   "17%",
+   "20%",
+   "17%"
+  ],
+  "eps": [
+   "9.00",
+   "11.09",
+   "9.20",
+   "9.33",
+   "9.85",
+   "9.72",
+   "9.44",
+   "9.65",
+   "9.62",
+   "12.64",
+   "6.20",
+   "10.96",
+   "10.14"
+  ]
+ },
+ "pros": [
+  "Company is expected to give good quarter",
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 24.5%"
+ ],
+ "cons": [
+  "Stock is trading at 8.21 times its book value",
+  "Company might be capitalizing the interest cost"
+ ]
+}

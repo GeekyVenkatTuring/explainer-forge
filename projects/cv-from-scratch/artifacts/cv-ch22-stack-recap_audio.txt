@@ -1,0 +1,5 @@
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/cv-ch22-stack-recap_stack.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/cv-ch22-stack-recap_hard.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/cv-ch22-stack-recap_recap.wav'

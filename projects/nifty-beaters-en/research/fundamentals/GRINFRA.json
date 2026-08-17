@@ -1,0 +1,102 @@
+{
+ "ticker": "GRINFRA",
+ "scraped_at": "2026-08-14T15:30:15",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 8432.0,
+ "current_price": 871.0,
+ "pe": 9.0,
+ "book_value": 969.0,
+ "dividend_yield_pct": 0.28,
+ "roce_pct": 11.9,
+ "roe_pct": 9.2,
+ "face_value": 5.0,
+ "high": 1362.0,
+ "sales_growth": {
+  "10 Years": 24.0,
+  "5 Years": -3.0,
+  "3 Years": -17.0,
+  "TTM": -13.0
+ },
+ "profit_growth": {
+  "5 Years": -12.0,
+  "3 Years": -11.0,
+  "1 Year": -31.0
+ },
+ "roe_hist": {
+  "Operating Profit": 607.0,
+  "OPM %": 25.0,
+  "Other Income&nbsp; +": 21.0,
+  "Interest": 137.0,
+  "Depreciation": 60.0,
+  "Profit before tax": 432.0,
+  "Tax %": 28.0,
+  "Net Profit&nbsp; +": 310.0,
+  "EPS in Rs": 32.05
+ },
+ "price_cagr": {
+  "10 Years": 20.0,
+  "5 Years": 15.0,
+  "3 Years": 12.0,
+  "Last Year": 9.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "25%",
+   "25%",
+   "24%",
+   "22%",
+   "18%",
+   "25%",
+   "22%",
+   "24%",
+   "20%",
+   "24%",
+   "20%",
+   "15%",
+   "17%"
+  ],
+  "eps": [
+   "32.05",
+   "22.46",
+   "25.10",
+   "57.29",
+   "16.08",
+   "19.98",
+   "27.05",
+   "41.75",
+   "25.23",
+   "19.91",
+   "26.79",
+   "21.39",
+   "36.93"
+  ]
+ },
+ "pros": [
+  "Stock is trading at 0.90 times its book value"
+ ],
+ "cons": [
+  "The company has delivered a poor sales growth of 1.38% over past five years.",
+  "Company has a low return on equity of 12.0% over last 3 years.",
+  "Contingent liabilities of Rs.2,558 Cr.",
+  "Dividend payout has been low at 4.87% of profits over last 3 years"
+ ]
+}

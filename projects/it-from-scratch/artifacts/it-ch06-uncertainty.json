@@ -1,0 +1,525 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch06-uncertainty_maxent",
+   "type": "it_maxent",
+   "in_seconds": 0.0,
+   "out_seconds": 99.487,
+   "props": {
+    "dur": 99.987
+   }
+  },
+  {
+   "id": "it-ch06-uncertainty_letters",
+   "type": "it_letters",
+   "in_seconds": 99.987,
+   "out_seconds": 191.659,
+   "props": {
+    "dur": 92.172
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.873,
+   "Entropy has a definite personality,"
+  ],
+  [
+   1.873,
+   4.496,
+   "and it is worth getting to know."
+  ],
+  [
+   5.127,
+   8.125,
+   "Let's put three sources side by side and"
+  ],
+  [
+   8.125,
+   9.623,
+   "compare their entropies directly."
+  ],
+  [
+   10.255,
+   10.63,
+   "First,"
+  ],
+  [
+   10.63,
+   13.252,
+   "a loaded coin \u2014 ninety percent heads,"
+  ],
+  [
+   13.252,
+   14.376,
+   "ten percent tails."
+  ],
+  [
+   14.376,
+   16.999,
+   "Because it is so easy to predict,"
+  ],
+  [
+   16.999,
+   18.497,
+   "its entropy is low:"
+  ],
+  [
+   18.497,
+   19.996,
+   "under half a bit."
+  ],
+  [
+   19.996,
+   22.244,
+   "You are rarely surprised by it."
+  ],
+  [
+   22.875,
+   23.25,
+   "Second,"
+  ],
+  [
+   23.25,
+   24.374,
+   "a fair coin."
+  ],
+  [
+   24.374,
+   25.123,
+   "Perfectly balanced,"
+  ],
+  [
+   25.123,
+   28.121,
+   "maximally unpredictable for two outcomes \u2014 a full"
+  ],
+  [
+   28.121,
+   28.87,
+   "one bit."
+  ],
+  [
+   29.501,
+   29.876,
+   "Third,"
+  ],
+  [
+   29.876,
+   31.375,
+   "a fair six-sided die."
+  ],
+  [
+   31.375,
+   33.997,
+   "Now there are six equally likely faces,"
+  ],
+  [
+   33.997,
+   36.995,
+   "and the entropy jumps to the logarithm of"
+  ],
+  [
+   36.995,
+   37.369,
+   "six,"
+  ],
+  [
+   37.369,
+   39.617,
+   "about two point five eight bits."
+  ],
+  [
+   40.249,
+   43.246,
+   "Two big lessons fall out of this picture."
+  ],
+  [
+   43.877,
+   44.627,
+   "Lesson one."
+  ],
+  [
+   44.627,
+   46.125,
+   "Bias always lowers entropy."
+  ],
+  [
+   46.125,
+   47.999,
+   "The more lopsided a source,"
+  ],
+  [
+   47.999,
+   49.872,
+   "the more predictable it is,"
+  ],
+  [
+   49.872,
+   52.495,
+   "and the less information each outcome carries."
+  ],
+  [
+   52.495,
+   53.993,
+   "In the information sense,"
+  ],
+  [
+   53.993,
+   56.616,
+   "a predictable source is a poorer source."
+  ],
+  [
+   57.247,
+   57.997,
+   "Lesson two."
+  ],
+  [
+   57.997,
+   60.619,
+   "For a fixed number of possible outcomes,"
+  ],
+  [
+   60.619,
+   63.616,
+   "entropy is largest exactly when every outcome is"
+  ],
+  [
+   63.616,
+   64.366,
+   "equally likely."
+  ],
+  [
+   64.997,
+   65.747,
+   "In fact,"
+  ],
+  [
+   65.747,
+   67.62,
+   "for n equally likely options,"
+  ],
+  [
+   67.62,
+   70.617,
+   "the entropy is precisely the logarithm of n."
+  ],
+  [
+   70.617,
+   72.49,
+   "Maximum uncertainty is perfect balance."
+  ],
+  [
+   73.122,
+   76.119,
+   "This second lesson has a name and a"
+  ],
+  [
+   76.119,
+   79.116,
+   "life of its own \u2014 the principle of"
+  ],
+  [
+   79.116,
+   79.866,
+   "maximum entropy."
+  ],
+  [
+   80.497,
+   81.247,
+   "It says:"
+  ],
+  [
+   81.247,
+   84.244,
+   "when you genuinely know nothing else about a"
+  ],
+  [
+   84.244,
+   84.619,
+   "situation,"
+  ],
+  [
+   84.619,
+   85.368,
+   "the flattest,"
+  ],
+  [
+   85.368,
+   88.365,
+   "most balanced distribution is the most honest one"
+  ],
+  [
+   88.365,
+   89.489,
+   "you can assume,"
+  ],
+  [
+   89.489,
+   91.737,
+   "because it commits to the least."
+  ],
+  [
+   92.369,
+   95.366,
+   "It is the mathematics of not fooling yourself"
+  ],
+  [
+   95.366,
+   98.363,
+   "\u2014 of refusing to pretend you know more"
+  ],
+  [
+   98.363,
+   99.487,
+   "than you do."
+  ],
+  [
+   99.987,
+   102.918,
+   "Let's leave the toy coins behind and measure"
+  ],
+  [
+   102.918,
+   105.848,
+   "something real \u2014 the letters of written English."
+  ],
+  [
+   106.48,
+   106.846,
+   "Imagine,"
+  ],
+  [
+   106.846,
+   107.213,
+   "first,"
+  ],
+  [
+   107.213,
+   109.777,
+   "that all twenty-six letters were equally likely."
+  ],
+  [
+   109.777,
+   112.708,
+   "Then each one would carry the logarithm of"
+  ],
+  [
+   112.708,
+   113.074,
+   "twenty-six,"
+  ],
+  [
+   113.074,
+   115.638,
+   "which is about four point seven bits."
+  ],
+  [
+   115.638,
+   118.569,
+   "That is the ceiling \u2014 the entropy of"
+  ],
+  [
+   118.569,
+   118.935,
+   "pure,"
+  ],
+  [
+   118.935,
+   119.668,
+   "random letters."
+  ],
+  [
+   120.3,
+   122.498,
+   "But English is nowhere near equal."
+  ],
+  [
+   122.498,
+   124.329,
+   "Look at the real frequencies."
+  ],
+  [
+   124.329,
+   126.527,
+   "The letter E is absolutely everywhere."
+  ],
+  [
+   126.527,
+   126.894,
+   "T,"
+  ],
+  [
+   126.894,
+   127.26,
+   "A,"
+  ],
+  [
+   127.26,
+   127.626,
+   "O,"
+  ],
+  [
+   127.626,
+   129.824,
+   "and I are common visitors too."
+  ],
+  [
+   130.456,
+   131.189,
+   "Meanwhile J,"
+  ],
+  [
+   131.189,
+   131.555,
+   "Q,"
+  ],
+  [
+   131.555,
+   131.921,
+   "X,"
+  ],
+  [
+   131.921,
+   134.852,
+   "and Z are rare \u2014 you can go"
+  ],
+  [
+   134.852,
+   136.684,
+   "whole sentences without seeing one."
+  ],
+  [
+   137.315,
+   139.513,
+   "Because the distribution is so uneven,"
+  ],
+  [
+   139.513,
+   142.444,
+   "real text is far more predictable than random"
+  ],
+  [
+   142.444,
+   143.543,
+   "letters would be."
+  ],
+  [
+   143.543,
+   145.741,
+   "And more predictable means lower entropy."
+  ],
+  [
+   146.373,
+   149.303,
+   "So let's feed these true frequencies into\nShannon's"
+  ],
+  [
+   149.303,
+   151.135,
+   "formula and actually compute it."
+  ],
+  [
+   151.135,
+   154.066,
+   "The answer comes out around four point two"
+  ],
+  [
+   154.066,
+   155.165,
+   "bits per letter."
+  ],
+  [
+   155.796,
+   158.727,
+   "Noticeably below the four point seven of pure"
+  ],
+  [
+   158.727,
+   159.093,
+   "randomness."
+  ],
+  [
+   159.725,
+   160.091,
+   "Now,"
+  ],
+  [
+   160.091,
+   163.022,
+   "that gap \u2014 between the real entropy and"
+  ],
+  [
+   163.022,
+   165.586,
+   "the maximum possible \u2014 might look small."
+  ],
+  [
+   165.586,
+   167.784,
+   "But it is not a curiosity."
+  ],
+  [
+   167.784,
+   168.883,
+   "It is real,"
+  ],
+  [
+   168.883,
+   169.616,
+   "unused space."
+  ],
+  [
+   170.247,
+   173.178,
+   "It is precisely the room that a compression"
+  ],
+  [
+   173.178,
+   175.01,
+   "algorithm moves into and reclaims."
+  ],
+  [
+   175.641,
+   178.206,
+   "Here is the principle to carry forward."
+  ],
+  [
+   178.206,
+   181.136,
+   "Every predictable pattern in your data is entropy"
+  ],
+  [
+   181.136,
+   184.067,
+   "you are not using \u2014 bits left sitting"
+  ],
+  [
+   184.067,
+   185.166,
+   "on the table."
+  ],
+  [
+   185.798,
+   188.362,
+   "And as we are about to see,"
+  ],
+  [
+   188.362,
+   191.293,
+   "someone can always come along and squeeze them"
+  ],
+  [
+   191.293,
+   191.659,
+   "out."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch06-uncertainty.wav",
+   "volume": 1.0
+  }
+ }
+}

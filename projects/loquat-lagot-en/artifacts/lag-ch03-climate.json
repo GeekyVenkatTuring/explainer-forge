@@ -1,0 +1,807 @@
+{
+ "cuts": [
+  {
+   "id": "lag-ch03-climate_div",
+   "type": "lag_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 14.468,
+   "props": {
+    "n": 3,
+    "title": "Climate and India",
+    "sub": "pretty tree versus paying crop",
+    "color": "#4ECDC4",
+    "dur": 14.968
+   }
+  },
+  {
+   "id": "lag-ch03-climate_climate",
+   "type": "lag_cards",
+   "in_seconds": 14.968,
+   "out_seconds": 53.958,
+   "props": {
+    "kicker": "CLIMATE GATE",
+    "title": "Cool winters make fruit. Heat makes leaves.",
+    "cols": 2,
+    "foot": "If your winter is warm, plant something else.",
+    "items": [
+     {
+      "label": "Cool winter",
+      "sub": "Needed for a real crop. Warm winters \u2192 ornamental tree.",
+      "c": "cool"
+     },
+     {
+      "label": "Frost window",
+      "sub": "It handles some frost, but bloom and young fruit do not.",
+      "c": "risk"
+     },
+     {
+      "label": "Heat at harvest",
+      "sub": "Over 35\u00b0C in April\u2013June cooks quality on the tree.",
+      "c": "fruit"
+     },
+     {
+      "label": "Drainage",
+      "sub": "Sandy loam, organic matter, never a wet foot for weeks.",
+      "c": "leaf"
+     }
+    ],
+    "dur": 39.49
+   }
+  },
+  {
+   "id": "lag-ch03-climate_map",
+   "type": "lag_map",
+   "in_seconds": 54.458,
+   "out_seconds": 99.664,
+   "props": {
+    "kicker": "INDIAN GEOGRAPHY",
+    "title": "Fruiting states are few, and northern",
+    "foot": "A neighbour with fruit in April is better proof than a YouTube map.",
+    "dur": 45.706
+   }
+  },
+  {
+   "id": "lag-ch03-climate_punjab",
+   "type": "lag_cards",
+   "in_seconds": 100.164,
+   "out_seconds": 138.698,
+   "props": {
+    "kicker": "PUNJAB AS THE REFERENCE",
+    "title": "P A U names you can actually ask for",
+    "cols": 2,
+    "foot": "Local trial beats a catalogue photo.",
+    "items": [
+     {
+      "label": "Golden Yellow",
+      "sub": "1967. Medium fruit, yellow flesh, about third week of March.",
+      "c": "fruit"
+     },
+     {
+      "label": "Pale Yellow",
+      "sub": "1967. Larger fruit, white flesh, about second week of April.",
+      "c": "leaf"
+     },
+     {
+      "label": "California Advance",
+      "sub": "1970. Later. Cream flesh. Fourth week of April.",
+      "c": "cool"
+     },
+     {
+      "label": "Tanaka",
+      "sub": "Promising under Punjab trials: size, cluster, taste scores.",
+      "c": "fruit"
+     }
+    ],
+    "dur": 39.034
+   }
+  },
+  {
+   "id": "lag-ch03-climate_world",
+   "type": "lag_bars",
+   "in_seconds": 139.198,
+   "out_seconds": 180.924,
+   "props": {
+    "kicker": "WORLD SCALE",
+    "title": "India is a footnote, not the crop",
+    "unit": "",
+    "foot": "Niche can mean premium. It can also mean no buyer.",
+    "bars": [
+     {
+      "label": "China",
+      "v": 100,
+      "c": "fruit"
+     },
+     {
+      "label": "Spain",
+      "v": 18,
+      "c": "cool"
+     },
+     {
+      "label": "Others",
+      "v": 12,
+      "c": "leaf"
+     },
+     {
+      "label": "India niche",
+      "v": 4,
+      "c": "risk"
+     }
+    ],
+    "dur": 42.226
+   }
+  },
+  {
+   "id": "lag-ch03-climate_micro",
+   "type": "lag_cards",
+   "in_seconds": 181.424,
+   "out_seconds": 211.846,
+   "props": {
+    "kicker": "MICROCLIMATE",
+    "title": "The field is not the district map",
+    "cols": 2,
+    "foot": "Ridge versus hollow is a yield decision.",
+    "items": [
+     {
+      "label": "Dawn January",
+      "sub": "Where does cold air pool? Flowers die there.",
+      "c": "cool"
+     },
+     {
+      "label": "April 2 p.m.",
+      "sub": "Where does heat sit? Fruit quality dies there.",
+      "c": "fruit"
+     },
+     {
+      "label": "Wind line",
+      "sub": "Stake and maybe a break. Unions snap.",
+      "c": "risk"
+     },
+     {
+      "label": "Shade of forest",
+      "sub": "Loquat wants light on the cluster. Deep shade is ornamental.",
+      "c": "leaf"
+     }
+    ],
+    "dur": 30.922
+   }
+  },
+  {
+   "id": "lag-ch03-climate_elev",
+   "type": "lag_cards",
+   "in_seconds": 212.346,
+   "out_seconds": 246.272,
+   "props": {
+    "kicker": "ALTITUDE",
+    "title": "Foothills yes. High Himalaya, poor fruit.",
+    "cols": 3,
+    "foot": "Two thousand metres is survival, not a quality slogan.",
+    "items": [
+     {
+      "label": "Foothill",
+      "sub": "Himachal-Punjab story. Drainage plus winter.",
+      "c": "leaf"
+     },
+     {
+      "label": "North plain",
+      "sub": "If winter is real and water leaves.",
+      "c": "cool"
+     },
+     {
+      "label": "High / coastal",
+      "sub": "Pretty tree. Weak business.",
+      "c": "risk"
+     }
+    ],
+    "dur": 34.426
+   }
+  },
+  {
+   "id": "lag-ch03-climate_china",
+   "type": "lag_cards",
+   "in_seconds": 246.772,
+   "out_seconds": 289.506,
+   "props": {
+    "kicker": "WHY CHINA WINS",
+    "title": "Culture plus climate plus cultivars",
+    "cols": 2,
+    "foot": "You cannot import a market by importing a YouTube clip.",
+    "items": [
+     {
+      "label": "Cultivars",
+      "sub": "They have many. We have a short list in real nurseries.",
+      "c": "fruit"
+     },
+     {
+      "label": "Eaters",
+      "sub": "They know the fruit. Many Indians do not.",
+      "c": "cool"
+     },
+     {
+      "label": "Hills",
+      "sub": "Matched sites. Not wishful tropical acres.",
+      "c": "leaf"
+     },
+     {
+      "label": "Your move",
+      "sub": "Start small. Prove April sales. Then expand.",
+      "c": "risk"
+     }
+    ],
+    "dur": 43.234
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.955,
+   "Part three."
+  ],
+  [
+   0.955,
+   1.432,
+   "Climate,"
+  ],
+  [
+   1.432,
+   2.865,
+   "and the map."
+  ],
+  [
+   3.415,
+   7.234,
+   "Loquat will grow as a pretty tree in"
+  ],
+  [
+   7.234,
+   8.189,
+   "many places."
+  ],
+  [
+   8.739,
+   12.558,
+   "It will fruit as a crop only where"
+  ],
+  [
+   12.558,
+   14.468,
+   "winters are cool enough."
+  ],
+  [
+   14.968,
+   17.45,
+   "This is a subtropical fruit."
+  ],
+  [
+   18.0,
+   21.972,
+   "It wants an average year above about fifteen"
+  ],
+  [
+   21.972,
+   22.468,
+   "degrees,"
+  ],
+  [
+   22.468,
+   24.95,
+   "and a long frost-free stretch."
+  ],
+  [
+   25.5,
+   27.983,
+   "It also wants a cool,"
+  ],
+  [
+   27.983,
+   31.954,
+   "relatively wet winter so flower and fruit can"
+  ],
+  [
+   31.954,
+   32.45,
+   "develop."
+  ],
+  [
+   33.0,
+   36.972,
+   "April to June heat above thirty-five degrees on"
+  ],
+  [
+   36.972,
+   39.951,
+   "ripening fruit is a quality killer."
+  ],
+  [
+   40.501,
+   44.472,
+   "Warm winters mean flowers drop or never come."
+  ],
+  [
+   44.472,
+   48.444,
+   "That is why Chennai is not Punjab for"
+  ],
+  [
+   48.444,
+   49.436,
+   "this crop."
+  ],
+  [
+   49.986,
+   51.972,
+   "Match the climate first."
+  ],
+  [
+   51.972,
+   53.958,
+   "Variety shopping comes second."
+  ],
+  [
+   54.458,
+   58.377,
+   "Where does India actually grow it?"
+  ],
+  [
+   58.927,
+   59.58,
+   "Punjab:"
+  ],
+  [
+   59.58,
+   60.233,
+   "Rupnagar,"
+  ],
+  [
+   60.233,
+   60.887,
+   "Hoshiarpur,"
+  ],
+  [
+   60.887,
+   61.54,
+   "Gurdaspur,"
+  ],
+  [
+   61.54,
+   62.193,
+   "Patiala."
+  ],
+  [
+   62.193,
+   62.846,
+   "Semi-hilly,"
+  ],
+  [
+   62.846,
+   64.152,
+   "drained land."
+  ],
+  [
+   64.702,
+   65.356,
+   "Himachal,"
+  ],
+  [
+   65.356,
+   67.968,
+   "especially the Kangra belt."
+  ],
+  [
+   67.968,
+   71.234,
+   "Delhi orchards and home gardens."
+  ],
+  [
+   71.784,
+   73.09,
+   "Uttar Pradesh."
+  ],
+  [
+   73.09,
+   75.703,
+   "Assam in small pockets."
+  ],
+  [
+   75.703,
+   80.275,
+   "Maharashtra in places with a cooler winter."
+  ],
+  [
+   80.825,
+   84.091,
+   "Tamil Nadu hills and Mysore:"
+  ],
+  [
+   84.091,
+   85.397,
+   "often ornamental,"
+  ],
+  [
+   85.397,
+   87.357,
+   "fruit quality poor."
+  ],
+  [
+   87.907,
+   91.173,
+   "China grows the world's crop."
+  ],
+  [
+   91.173,
+   93.785,
+   "Spain and others follow."
+  ],
+  [
+   93.785,
+   96.398,
+   "India is a niche,"
+  ],
+  [
+   96.398,
+   99.664,
+   "not a sea of orchards."
+  ],
+  [
+   100.164,
+   103.882,
+   "Punjab is the Indian reference because P A"
+  ],
+  [
+   103.882,
+   106.205,
+   "U actually tested cultivars there."
+  ],
+  [
+   106.755,
+   110.473,
+   "Tanaka showed heavier fruit and better acceptance\nthan"
+  ],
+  [
+   110.473,
+   112.332,
+   "some older local types."
+  ],
+  [
+   112.882,
+   116.6,
+   "Golden Yellow and Pale Yellow are older releases"
+  ],
+  [
+   116.6,
+   118.924,
+   "from the late nineteen sixties."
+  ],
+  [
+   119.474,
+   122.262,
+   "California Advance is a late type,"
+  ],
+  [
+   122.262,
+   125.05,
+   "into the fourth week of April."
+  ],
+  [
+   125.6,
+   128.853,
+   "Use that research as a starting list,"
+  ],
+  [
+   128.853,
+   132.571,
+   "then ask your K V K what survives"
+  ],
+  [
+   132.571,
+   133.036,
+   "locally."
+  ],
+  [
+   133.586,
+   137.304,
+   "A variety that wins in Ludhiana can sulk"
+  ],
+  [
+   137.304,
+   138.698,
+   "one valley over."
+  ],
+  [
+   139.198,
+   140.149,
+   "Scale check,"
+  ],
+  [
+   140.149,
+   143.951,
+   "so you do not dream of export on"
+  ],
+  [
+   143.951,
+   144.902,
+   "day one."
+  ],
+  [
+   145.452,
+   149.254,
+   "China produces far more loquat than anyone else."
+  ],
+  [
+   149.804,
+   153.607,
+   "Spain is a distant second in the trade"
+  ],
+  [
+   153.607,
+   154.082,
+   "conversation."
+  ],
+  [
+   154.082,
+   156.934,
+   "Pakistan and Turkey also crop it."
+  ],
+  [
+   157.484,
+   161.287,
+   "India does not publish this as a major"
+  ],
+  [
+   161.287,
+   164.614,
+   "horticulture statistic the way it does mango."
+  ],
+  [
+   165.164,
+   167.065,
+   "That means two things."
+  ],
+  [
+   167.065,
+   167.54,
+   "One:"
+  ],
+  [
+   167.54,
+   170.868,
+   "you will not fight a national glut."
+  ],
+  [
+   171.418,
+   171.893,
+   "Two:"
+  ],
+  [
+   171.893,
+   175.696,
+   "you also will not find a ready cold-chain"
+  ],
+  [
+   175.696,
+   177.597,
+   "and a futures price."
+  ],
+  [
+   177.597,
+   180.924,
+   "You are making a market by hand."
+  ],
+  [
+   181.424,
+   184.102,
+   "Microclimate will humble a district average."
+  ],
+  [
+   184.652,
+   188.223,
+   "A frost hollow fifty metres below the road"
+  ],
+  [
+   188.223,
+   191.347,
+   "can strip flowers while the ridge crops."
+  ],
+  [
+   191.897,
+   195.467,
+   "A west wall that bakes in April can"
+  ],
+  [
+   195.467,
+   196.36,
+   "sunburn fruit."
+  ],
+  [
+   196.91,
+   199.588,
+   "Wind on a ridge snaps unions."
+  ],
+  [
+   200.138,
+   203.709,
+   "Walk your field at dawn in January and"
+  ],
+  [
+   203.709,
+   206.833,
+   "at two in the afternoon in April."
+  ],
+  [
+   207.383,
+   210.953,
+   "Those two walks are cheaper than a wrong"
+  ],
+  [
+   210.953,
+   211.846,
+   "ten-acre plant."
+  ],
+  [
+   212.346,
+   212.857,
+   "Elevation."
+  ],
+  [
+   213.407,
+   217.496,
+   "Guides say it can grow toward two thousand"
+  ],
+  [
+   217.496,
+   218.007,
+   "metres,"
+  ],
+  [
+   218.007,
+   220.562,
+   "but fruit quality often falls."
+  ],
+  [
+   221.112,
+   222.134,
+   "Too high:"
+  ],
+  [
+   222.134,
+   224.179,
+   "cold and short seasons."
+  ],
+  [
+   224.179,
+   226.223,
+   "Too low and tropical:"
+  ],
+  [
+   226.223,
+   227.245,
+   "no crop."
+  ],
+  [
+   227.795,
+   231.884,
+   "The sweet belt in India is foothill and"
+  ],
+  [
+   231.884,
+   235.461,
+   "north subtropical plain with a real winter."
+  ],
+  [
+   236.011,
+   240.1,
+   "If you are in coastal Konkan humidity without"
+  ],
+  [
+   240.1,
+   241.633,
+   "a cool winter,"
+  ],
+  [
+   241.633,
+   243.678,
+   "look at sapota instead."
+  ],
+  [
+   244.228,
+   245.25,
+   "Right fruit,"
+  ],
+  [
+   245.25,
+   246.272,
+   "right altitude."
+  ],
+  [
+   246.772,
+   248.876,
+   "Why China dwarfs everyone."
+  ],
+  [
+   249.426,
+   251.005,
+   "Centuries of cultivars."
+  ],
+  [
+   251.005,
+   253.635,
+   "Hills that match the crop."
+  ],
+  [
+   253.635,
+   257.318,
+   "A public that already wants biwa-class fruit."
+  ],
+  [
+   257.868,
+   259.972,
+   "India has the opposite:"
+  ],
+  [
+   259.972,
+   262.077,
+   "few cultivars in trade,"
+  ],
+  [
+   262.077,
+   264.707,
+   "few eaters outside a belt,"
+  ],
+  [
+   264.707,
+   265.76,
+   "few nurseries."
+  ],
+  [
+   266.31,
+   269.992,
+   "That is not a reason to quit."
+  ],
+  [
+   269.992,
+   274.201,
+   "It is a reason to stay small until"
+  ],
+  [
+   274.201,
+   275.779,
+   "demand is proven."
+  ],
+  [
+   276.329,
+   280.538,
+   "Copying a Chinese mountain documentary onto a\nTamil"
+  ],
+  [
+   280.538,
+   283.695,
+   "Nadu plot is how money dies."
+  ],
+  [
+   284.245,
+   285.823,
+   "Copy the discipline:"
+  ],
+  [
+   285.823,
+   286.875,
+   "right hill,"
+  ],
+  [
+   286.875,
+   287.928,
+   "right variety,"
+  ],
+  [
+   287.928,
+   289.506,
+   "right harvest week."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "lag/lag-ch03-climate.wav",
+   "volume": 1.0
+  }
+ }
+}

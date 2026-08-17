@@ -1,0 +1,106 @@
+{
+ "ticker": "PRINCEPIPE",
+ "scraped_at": "2026-08-14T15:29:44",
+ "source": "screener.in",
+ "ok": true,
+ "error": "<HTTPError 429: 'Too Many Requests'>",
+ "variant": "standalone",
+ "market_cap_cr": 3147.0,
+ "current_price": 285.0,
+ "pe": 30.2,
+ "book_value": 149.0,
+ "dividend_yield_pct": 0.18,
+ "roce_pct": 6.12,
+ "roe_pct": 4.67,
+ "face_value": 10.0,
+ "high": 358.0,
+ "sales_growth": {
+  "10 Years": 10.0,
+  "5 Years": -20.0,
+  "3 Years": -15.0,
+  "TTM": 347.0
+ },
+ "profit_growth": {
+  "5 Years": -15.0,
+  "3 Years": -25.0,
+  "1 Year": -3.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 554.0,
+  "Expenses&nbsp; +": 508.0,
+  "Operating Profit": 45.0,
+  "OPM %": 8.0,
+  "Other Income&nbsp; +": 4.0,
+  "Interest": 2.0,
+  "Depreciation": 22.0,
+  "Profit before tax": 26.0,
+  "Tax %": 23.0,
+  "Net Profit&nbsp; +": 20.0,
+  "EPS in Rs": 1.77
+ },
+ "price_cagr": {
+  "10 Years": 13.0,
+  "5 Years": 9.0,
+  "3 Years": 6.0,
+  "Last Year": 5.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "8%",
+   "14%",
+   "12%",
+   "12%",
+   "10%",
+   "7%",
+   "0.8%",
+   "8%",
+   "7%",
+   "9%",
+   "4.9%",
+   "13%",
+   "13%"
+  ],
+  "eps": [
+   "1.77",
+   "6.39",
+   "3.40",
+   "4.94",
+   "2.23",
+   "1.33",
+   "-1.85",
+   "2.19",
+   "0.44",
+   "1.32",
+   "-0.22",
+   "5.08",
+   "3.05"
+  ]
+ },
+ "pros": [
+  "Company has reduced debt.",
+  "Company is almost debt free.",
+  "Debtor days have improved from 65.1 to 51.0 days."
+ ],
+ "cons": [
+  "The company has delivered a poor sales growth of 4.64% over past five years.",
+  "Company has a low return on equity of 6.14% over last 3 years.",
+  "Dividend payout has been low at 11.3% of profits over last 3 years"
+ ]
+}

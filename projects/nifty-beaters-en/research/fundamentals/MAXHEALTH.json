@@ -1,0 +1,101 @@
+{
+ "ticker": "MAXHEALTH",
+ "scraped_at": "2026-08-14T15:29:10",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 98298.0,
+ "current_price": 1010.0,
+ "pe": 65.7,
+ "book_value": 110.0,
+ "dividend_yield_pct": 0.2,
+ "roce_pct": 14.7,
+ "roe_pct": 14.7,
+ "face_value": 10.0,
+ "high": 1259.0,
+ "sales_growth": {
+  "5 Years": 60.0,
+  "3 Years": 10.0,
+  "TTM": 25.0
+ },
+ "profit_growth": {
+  "5 Years": 26.0,
+  "3 Years": 25.0,
+  "1 Year": -17.0
+ },
+ "roe_hist": {
+  "Expenses&nbsp; +": 948.0,
+  "Operating Profit": 337.0,
+  "OPM %": 26.0,
+  "Other Income&nbsp; +": 41.0,
+  "Interest": 19.0,
+  "Depreciation": 56.0,
+  "Profit before tax": 303.0,
+  "Tax %": 21.0,
+  "Net Profit&nbsp; +": 240.0,
+  "EPS in Rs": 2.47
+ },
+ "price_cagr": {
+  "10 Years": 11.0,
+  "5 Years": 14.0,
+  "3 Years": 14.0,
+  "Last Year": 15.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "26%",
+   "28%",
+   "29%",
+   "27%",
+   "25%",
+   "26%",
+   "27%",
+   "27%",
+   "26%",
+   "27%",
+   "26%",
+   "28%",
+   "25%"
+  ],
+  "eps": [
+   "2.47",
+   "2.85",
+   "2.98",
+   "2.59",
+   "2.43",
+   "2.90",
+   "2.46",
+   "3.28",
+   "3.17",
+   "5.05",
+   "3.09",
+   "3.52",
+   "3.32"
+  ]
+ },
+ "pros": [],
+ "cons": [
+  "Stock is trading at 9.07 times its book value",
+  "Tax rate seems low",
+  "Company has a low return on equity of 13.7% over last 3 years.",
+  "Company might be capitalizing the interest cost",
+  "Dividend payout has been low at 13.6% of profits over last 3 years"
+ ]
+}

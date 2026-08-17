@@ -1,0 +1,351 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch14b-data-processing_dpi",
+   "type": "it_dpi",
+   "in_seconds": 0.0,
+   "out_seconds": 122.123,
+   "props": {
+    "dur": 122.623
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.811,
+   "Here is a rule that sounds almost obvious"
+  ],
+  [
+   2.811,
+   5.622,
+   "once you hear it \u2014 but it has"
+  ],
+  [
+   5.622,
+   6.325,
+   "real teeth."
+  ],
+  [
+   6.956,
+   8.713,
+   "Information can only be lost,"
+  ],
+  [
+   8.713,
+   9.416,
+   "never created,"
+  ],
+  [
+   9.416,
+   10.118,
+   "by processing."
+  ],
+  [
+   10.75,
+   11.804,
+   "Picture a chain."
+  ],
+  [
+   11.804,
+   12.507,
+   "A source,"
+  ],
+  [
+   12.507,
+   12.858,
+   "X,"
+  ],
+  [
+   12.858,
+   14.966,
+   "is sent through a noisy channel,"
+  ],
+  [
+   14.966,
+   16.372,
+   "producing a corrupted copy,"
+  ],
+  [
+   16.372,
+   16.723,
+   "Y."
+  ],
+  [
+   16.723,
+   19.534,
+   "Then you take Y and run it through"
+  ],
+  [
+   19.534,
+   21.994,
+   "any processing you like \u2014 a filter,"
+  ],
+  [
+   21.994,
+   22.696,
+   "a formula,"
+  ],
+  [
+   22.696,
+   25.507,
+   "a fancy algorithm \u2014 to produce a new"
+  ],
+  [
+   25.507,
+   25.859,
+   "result,"
+  ],
+  [
+   25.859,
+   26.21,
+   "Z."
+  ],
+  [
+   26.841,
+   28.247,
+   "Now compare two quantities."
+  ],
+  [
+   28.247,
+   31.058,
+   "The mutual information between X and Y \u2014"
+  ],
+  [
+   31.058,
+   33.869,
+   "how much the noisy copy tells you about"
+  ],
+  [
+   33.869,
+   34.571,
+   "the original."
+  ],
+  [
+   34.571,
+   37.382,
+   "And the mutual information between X and Z"
+  ],
+  [
+   37.382,
+   40.193,
+   "\u2014 how much your processed version tells you."
+  ],
+  [
+   40.825,
+   42.582,
+   "The data processing inequality states,"
+  ],
+  [
+   42.582,
+   42.933,
+   "flatly,"
+  ],
+  [
+   42.933,
+   45.744,
+   "that the information between X and Z can"
+  ],
+  [
+   45.744,
+   48.555,
+   "never exceed the information between X and Y."
+  ],
+  [
+   49.186,
+   50.24,
+   "Watch the bars."
+  ],
+  [
+   50.24,
+   52.7,
+   "Whatever information about X survived into Y,"
+  ],
+  [
+   52.7,
+   54.457,
+   "your processing can preserve it,"
+  ],
+  [
+   54.457,
+   57.268,
+   "or lose some of it \u2014 but it"
+  ],
+  [
+   57.268,
+   58.673,
+   "can never increase it."
+  ],
+  [
+   59.305,
+   62.116,
+   "Once information about the source is gone from"
+  ],
+  [
+   62.116,
+   62.467,
+   "Y,"
+  ],
+  [
+   62.467,
+   65.278,
+   "no amount of clever computation can conjure it"
+  ],
+  [
+   65.278,
+   65.629,
+   "back."
+  ],
+  [
+   66.261,
+   69.072,
+   "This is deeply counterintuitive in the age of"
+  ],
+  [
+   69.072,
+   69.774,
+   "artificial intelligence."
+  ],
+  [
+   69.774,
+   71.18,
+   "It means no algorithm,"
+  ],
+  [
+   71.18,
+   71.883,
+   "however powerful,"
+  ],
+  [
+   71.883,
+   74.693,
+   "can pull out more information about the original"
+  ],
+  [
+   74.693,
+   77.504,
+   "than the data it was handed actually contains."
+  ],
+  [
+   78.136,
+   80.947,
+   "You cannot truly enhance a blurry photo into"
+  ],
+  [
+   80.947,
+   83.758,
+   "detail that was never captured \u2014 no matter"
+  ],
+  [
+   83.758,
+   85.515,
+   "what the movies show you."
+  ],
+  [
+   85.515,
+   88.325,
+   "The information simply is not there to recover."
+  ],
+  [
+   88.957,
+   90.362,
+   "Processing can reorganize information."
+  ],
+  [
+   90.362,
+   92.822,
+   "It can make it easier to use."
+  ],
+  [
+   92.822,
+   94.579,
+   "It can throw it away."
+  ],
+  [
+   95.21,
+   98.021,
+   "But it can never manufacture information out of"
+  ],
+  [
+   98.021,
+   98.373,
+   "nothing."
+  ],
+  [
+   99.004,
+   101.112,
+   "There is a hopeful flip side,"
+  ],
+  [
+   101.112,
+   101.464,
+   "though."
+  ],
+  [
+   101.464,
+   104.275,
+   "If the information you need did survive into"
+  ],
+  [
+   104.275,
+   104.977,
+   "the data,"
+  ],
+  [
+   104.977,
+   107.788,
+   "then good processing can bring it to the"
+  ],
+  [
+   107.788,
+   110.599,
+   "surface \u2014 which is exactly what a well-trained"
+  ],
+  [
+   110.599,
+   111.302,
+   "model does."
+  ],
+  [
+   111.302,
+   112.707,
+   "It cannot invent signal,"
+  ],
+  [
+   112.707,
+   115.518,
+   "but it can rescue the signal that is"
+  ],
+  [
+   115.518,
+   116.221,
+   "truly there,"
+  ],
+  [
+   116.221,
+   117.275,
+   "buried under noise."
+  ],
+  [
+   117.907,
+   118.609,
+   "Garbage in,"
+  ],
+  [
+   118.609,
+   121.42,
+   "garbage out \u2014 it turns out \u2014 is"
+  ],
+  [
+   121.42,
+   122.123,
+   "a theorem."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch14b-data-processing.wav",
+   "volume": 1.0
+  }
+ }
+}

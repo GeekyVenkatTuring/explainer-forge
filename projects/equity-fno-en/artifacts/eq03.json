@@ -1,0 +1,749 @@
+{
+  "cuts": [
+    {
+      "id": "c3_div",
+      "type": "sm_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 25.388,
+      "props": {
+        "n": 3,
+        "title": "Researching a Stock",
+        "sub": "Fundamentals · the numbers · valuation",
+        "color": "#34D399",
+        "dur": 25.888
+      }
+    },
+    {
+      "id": "c3_three",
+      "type": "sm_compare3",
+      "in_seconds": 25.888,
+      "out_seconds": 113.496,
+      "props": {
+        "kicker": "THE 3 STATEMENTS",
+        "title": "Read a company like a shopkeeper",
+        "cols": [
+          {
+            "name": "Profit & Loss",
+            "color": "#34D399",
+            "emoji": "🧾",
+            "hi": true,
+            "rows": [
+              {
+                "k": "Shows",
+                "v": "sales, costs, profit for the year"
+              },
+              {
+                "k": "Shopkeeper",
+                "v": "how much I sold & kept"
+              },
+              {
+                "k": "Watch",
+                "v": "sales & profit rising YoY"
+              },
+              {
+                "k": "Key line",
+                "v": "revenue, net profit, margin"
+              }
+            ]
+          },
+          {
+            "name": "Balance Sheet",
+            "color": "#22D3EE",
+            "emoji": "⚖️",
+            "rows": [
+              {
+                "k": "Shows",
+                "v": "assets vs debts — a snapshot"
+              },
+              {
+                "k": "Shopkeeper",
+                "v": "what the shop owns & owes"
+              },
+              {
+                "k": "Watch",
+                "v": "debt under control"
+              },
+              {
+                "k": "Key line",
+                "v": "assets, borrowings, equity"
+              }
+            ]
+          },
+          {
+            "name": "Cash Flow",
+            "color": "#FBBF24",
+            "emoji": "💧",
+            "rows": [
+              {
+                "k": "Shows",
+                "v": "real cash in and out"
+              },
+              {
+                "k": "Shopkeeper",
+                "v": "actual money in the till"
+              },
+              {
+                "k": "Watch",
+                "v": "positive operating cash"
+              },
+              {
+                "k": "Key line",
+                "v": "cash from operations"
+              }
+            ]
+          }
+        ],
+        "dur": 88.108
+      }
+    },
+    {
+      "id": "c3_ratios",
+      "type": "sm_iconcards",
+      "in_seconds": 113.996,
+      "out_seconds": 196.68,
+      "props": {
+        "kicker": "KEY RATIOS",
+        "title": "Four numbers that reveal quality",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "💹",
+            "k": "ROE / ROCE",
+            "v": "Return on the owners' money. Above ~15% and steady is a strong sign",
+            "chip": "Efficiency"
+          },
+          {
+            "emoji": "🏋️",
+            "k": "Debt-to-Equity",
+            "v": "Borrowings vs own funds. Below 1 is generally safer; watch high debt",
+            "chip": "Safety"
+          },
+          {
+            "emoji": "🏷️",
+            "k": "P/E ratio",
+            "v": "Price you pay per ₹1 of earnings. Compare to the sector, never alone",
+            "chip": "Valuation"
+          },
+          {
+            "emoji": "📊",
+            "k": "Promoter holding",
+            "v": "Owners' stake — high & unpledged = conviction; pledged shares = red flag",
+            "chip": "Trust"
+          }
+        ],
+        "dur": 83.184
+      }
+    },
+    {
+      "id": "c3_moat",
+      "type": "sm_iconcards",
+      "in_seconds": 197.18,
+      "out_seconds": 275.304,
+      "props": {
+        "kicker": "THE QUALITATIVE SIDE",
+        "title": "Numbers aren't enough — find the moat",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏰",
+            "k": "Moat",
+            "v": "A durable edge rivals can't cross — brand, network, low cost, switching cost",
+            "chip": "Durable"
+          },
+          {
+            "emoji": "💰",
+            "k": "Pricing power",
+            "v": "Can it raise prices without losing customers? That's a great business",
+            "chip": "Power"
+          },
+          {
+            "emoji": "🧑‍💼",
+            "k": "Management",
+            "v": "Honest, capable, sensible with capital — read the annual report & concalls",
+            "chip": "Integrity"
+          },
+          {
+            "emoji": "🌱",
+            "k": "Runway",
+            "v": "A big, growing market ahead — room to compound for years",
+            "chip": "Growth"
+          }
+        ],
+        "dur": 78.624
+      }
+    },
+    {
+      "id": "c3_valuation",
+      "type": "sm_myths",
+      "in_seconds": 275.804,
+      "out_seconds": 351.724,
+      "props": {
+        "kicker": "VALUATION",
+        "title": "Great company ≠ great stock",
+        "mythLabel": "✗ MYTH",
+        "factLabel": "✓ REALITY",
+        "pairs": [
+          {
+            "m": "A great company is always a great buy",
+            "f": "Even the best business is a bad stock if you overpay"
+          },
+          {
+            "m": "A low P/E always means cheap",
+            "f": "It can be a trap — a dying business or hidden problem"
+          },
+          {
+            "m": "Valuation is exact science",
+            "f": "It's a range with a margin of safety — buy below your estimate"
+          }
+        ],
+        "dur": 76.42
+      }
+    },
+    {
+      "id": "c3_recap",
+      "type": "sm_recap",
+      "in_seconds": 352.224,
+      "out_seconds": 403.18,
+      "props": {
+        "title": "Chapter 3 — fundamentals",
+        "items": [
+          "Read all 3 statements — P&L, balance sheet, cash flow",
+          "Cash is fact; paper profit is opinion",
+          "ROE >15%, low debt, P/E vs sector, promoter holding",
+          "Find the moat, pricing power, honest management, runway",
+          "Great company ≠ great stock — price + margin of safety"
+        ],
+        "closer": "Buy a wonderful business at a fair price.",
+        "dur": 51.456
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.286,
+      "Chapter three — how to research a stock."
+    ],
+    [
+      3.286,
+      5.833,
+      "This is the heart of investing."
+    ],
+    [
+      5.833,
+      12.571,
+      "A share is not a lottery ticket with a symbol; it is a piece of a living business."
+    ],
+    [
+      12.571,
+      17.5,
+      "Fundamental research is the craft of reading that business —"
+    ],
+    [
+      17.5,
+      20.951,
+      "what it earns, what it owns, what it owes,"
+    ],
+    [
+      20.951,
+      23.416,
+      "and whether its price is fair."
+    ],
+    [
+      23.416,
+      25.388,
+      "Let's learn it properly."
+    ],
+    [
+      25.888,
+      30.889,
+      "Every listed company publishes three statements each year."
+    ],
+    [
+      30.889,
+      35.632,
+      "Let's read them in the language of a simple shopkeeper."
+    ],
+    [
+      35.632,
+      39.34,
+      "The first is the profit and loss statement."
+    ],
+    [
+      39.34,
+      44.6,
+      "It shows sales, costs, and the profit left over for the year."
+    ],
+    [
+      44.6,
+      49.17,
+      "In shop terms — how much I sold, and how much I kept."
+    ],
+    [
+      49.17,
+      54.43,
+      "What you watch for is sales and profit rising year over year,"
+    ],
+    [
+      54.43,
+      56.154,
+      "and healthy margins."
+    ],
+    [
+      56.154,
+      58.913,
+      "The second is the balance sheet."
+    ],
+    [
+      58.913,
+      64.26,
+      "It is a snapshot, on one day, of everything the company owns —"
+    ],
+    [
+      64.26,
+      68.743,
+      "its assets — against everything it owes — its debts."
+    ],
+    [
+      68.743,
+      73.141,
+      "In shop terms, what the shop owns and what it owes."
+    ],
+    [
+      73.141,
+      76.763,
+      "Here you watch that debt is under control."
+    ],
+    [
+      76.763,
+      81.505,
+      "The third, and most honest, is the cash flow statement."
+    ],
+    [
+      81.505,
+      85.472,
+      "Profit on paper is an opinion; cash is a fact."
+    ],
+    [
+      85.472,
+      90.732,
+      "This shows the real money that actually came in and went out."
+    ],
+    [
+      90.732,
+      94.526,
+      "In shop terms, the actual money in the till."
+    ],
+    [
+      94.526,
+      98.578,
+      "You want strong, positive cash from operations."
+    ],
+    [
+      98.578,
+      106.598,
+      "A company with rising paper profit but weak cash flow is a shop selling everything on credit."
+    ],
+    [
+      106.598,
+      108.581,
+      "That is a warning sign."
+    ],
+    [
+      108.581,
+      113.496,
+      "Read all three together, and the business reveals itself."
+    ],
+    [
+      113.996,
+      119.955,
+      "From those statements come a handful of ratios that reveal quality fast."
+    ],
+    [
+      119.955,
+      121.031,
+      "Four to know."
+    ],
+    [
+      121.031,
+      123.514,
+      "The first is return on equity,"
+    ],
+    [
+      123.514,
+      126.99,
+      "and its cousin return on capital employed."
+    ],
+    [
+      126.99,
+      133.115,
+      "This measures how much profit the company squeezes from the owners' money."
+    ],
+    [
+      133.115,
+      137.667,
+      "Above roughly fifteen percent, held steadily for years,"
+    ],
+    [
+      137.667,
+      140.233,
+      "is the mark of a good business."
+    ],
+    [
+      140.233,
+      142.716,
+      "The second is debt-to-equity —"
+    ],
+    [
+      142.716,
+      146.275,
+      "borrowings against the company's own funds."
+    ],
+    [
+      146.275,
+      148.675,
+      "Below one is generally safer."
+    ],
+    [
+      148.675,
+      153.227,
+      "A mountain of debt turns a small problem into a crisis."
+    ],
+    [
+      153.227,
+      156.704,
+      "The third is the price-to-earnings ratio —"
+    ],
+    [
+      156.704,
+      162.083,
+      "the price you pay for one rupee of the company's annual earnings."
+    ],
+    [
+      162.083,
+      165.394,
+      "A high P E means the stock is expensive."
+    ],
+    [
+      165.394,
+      167.546,
+      "But never judge it alone —"
+    ],
+    [
+      167.546,
+      173.588,
+      "always compare it to the sector average and to the company's own history."
+    ],
+    [
+      173.588,
+      176.237,
+      "The fourth is promoter holding —"
+    ],
+    [
+      176.237,
+      179.299,
+      "how much the founders themselves own."
+    ],
+    [
+      179.299,
+      183.023,
+      "A high stake means their skin is in the game."
+    ],
+    [
+      183.023,
+      188.072,
+      "But if those promoter shares are pledged — borrowed against —"
+    ],
+    [
+      188.072,
+      189.976,
+      "treat it as a red flag."
+    ],
+    [
+      189.976,
+      194.114,
+      "These four, checked in a free screener in minutes,"
+    ],
+    [
+      194.114,
+      196.68,
+      "filter out most weak companies."
+    ],
+    [
+      197.18,
+      200.014,
+      "But numbers only tell you the past."
+    ],
+    [
+      200.014,
+      203.576,
+      "Great investing needs the qualitative side —"
+    ],
+    [
+      203.576,
+      205.923,
+      "the story behind the numbers."
+    ],
+    [
+      205.923,
+      207.624,
+      "Four things to judge."
+    ],
+    [
+      207.624,
+      209.405,
+      "The first is the moat."
+    ],
+    [
+      209.405,
+      216.367,
+      "Warren Buffett's word for a durable competitive edge that rivals cannot easily cross —"
+    ],
+    [
+      216.367,
+      220.658,
+      "a beloved brand, a powerful network, the lowest cost,"
+    ],
+    [
+      220.658,
+      224.463,
+      "or high switching costs that lock customers in."
+    ],
+    [
+      224.463,
+      227.944,
+      "The second follows from it — pricing power."
+    ],
+    [
+      227.944,
+      233.368,
+      "Can the company raise its prices a little without losing customers?"
+    ],
+    [
+      233.368,
+      238.468,
+      "If yes, that is a wonderful business, protected from inflation."
+    ],
+    [
+      238.468,
+      240.411,
+      "The third is management."
+    ],
+    [
+      240.411,
+      243.812,
+      "Are the people running it honest, capable,"
+    ],
+    [
+      243.812,
+      246.888,
+      "and sensible with the company's money?"
+    ],
+    [
+      246.888,
+      254.336,
+      "You judge this by reading the annual report and listening to the quarterly conference calls,"
+    ],
+    [
+      254.336,
+      257.089,
+      "where management answers analysts."
+    ],
+    [
+      257.089,
+      258.87,
+      "The fourth is runway —"
+    ],
+    [
+      258.87,
+      263.484,
+      "is there a large and growing market ahead of the company,"
+    ],
+    [
+      263.484,
+      266.561,
+      "room to keep compounding for a decade?"
+    ],
+    [
+      266.561,
+      271.418,
+      "A wonderful business with a wide moat, run by honest people,"
+    ],
+    [
+      271.418,
+      275.304,
+      "in a growing market — that is what you hunt for."
+    ],
+    [
+      275.804,
+      280.05,
+      "Which brings us to the hardest lesson — valuation."
+    ],
+    [
+      280.05,
+      283.277,
+      "The price you pay decides your return."
+    ],
+    [
+      283.277,
+      288.457,
+      "The first myth is that a great company is always a great buy."
+    ],
+    [
+      288.457,
+      289.307,
+      "It is not."
+    ],
+    [
+      289.307,
+      297.714,
+      "Even the finest business in the world becomes a poor investment if you pay too high a price for it."
+    ],
+    [
+      297.714,
+      302.979,
+      "The company can thrive while the stock goes nowhere for years,"
+    ],
+    [
+      302.979,
+      306.376,
+      "simply because it started too expensive."
+    ],
+    [
+      306.376,
+      312.575,
+      "The second myth is that a low price-to-earnings ratio always means cheap."
+    ],
+    [
+      312.575,
+      315.123,
+      "Sometimes it is a value trap —"
+    ],
+    [
+      315.123,
+      322.256,
+      "the market is pricing in a dying business or a hidden problem you haven't found yet."
+    ],
+    [
+      322.256,
+      324.124,
+      "Cheap can get cheaper."
+    ],
+    [
+      324.124,
+      328.625,
+      "The third myth is that valuation is an exact science."
+    ],
+    [
+      328.625,
+      329.39,
+      "It isn't."
+    ],
+    [
+      329.39,
+      331.343,
+      "It is a reasoned range."
+    ],
+    [
+      331.343,
+      334.825,
+      "The wise investor estimates a fair value,"
+    ],
+    [
+      334.825,
+      338.561,
+      "then insists on buying comfortably below it."
+    ],
+    [
+      338.561,
+      341.448,
+      "That gap is the margin of safety —"
+    ],
+    [
+      341.448,
+      344.506,
+      "your protection against being wrong."
+    ],
+    [
+      344.506,
+      348.327,
+      "Great business, fair price, margin of safety."
+    ],
+    [
+      348.327,
+      351.724,
+      "Get those three, and time does the rest."
+    ],
+    [
+      352.224,
+      354.361,
+      "Chapter three, distilled."
+    ],
+    [
+      354.361,
+      359.406,
+      "Read all three statements — profit and loss, balance sheet,"
+    ],
+    [
+      359.406,
+      360.688,
+      "and cash flow —"
+    ],
+    [
+      360.688,
+      366.758,
+      "and remember that cash is a fact while paper profit is only an opinion."
+    ],
+    [
+      366.758,
+      371.375,
+      "Check the four ratios: return on equity above fifteen,"
+    ],
+    [
+      371.375,
+      375.394,
+      "low debt, price-to-earnings against the sector,"
+    ],
+    [
+      375.394,
+      377.787,
+      "and honest promoter holding."
+    ],
+    [
+      377.787,
+      382.661,
+      "Then find the qualitative edge — the moat, pricing power,"
+    ],
+    [
+      382.661,
+      386.252,
+      "trustworthy management, and a long runway."
+    ],
+    [
+      386.252,
+      393.091,
+      "And never forget: a great company is not a great stock unless the price is fair,"
+    ],
+    [
+      393.091,
+      395.143,
+      "with a margin of safety."
+    ],
+    [
+      395.143,
+      400.444,
+      "Next, the other half of research — the price chart, the tools,"
+    ],
+    [
+      400.444,
+      403.18,
+      "and where to find real research."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "eq/eq03.wav",
+      "volume": 1.0
+    }
+  }
+}

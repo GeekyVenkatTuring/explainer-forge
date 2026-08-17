@@ -1,0 +1,3 @@
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/cv-ch18-vit_div.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/cv-ch18-vit_vit.wav'

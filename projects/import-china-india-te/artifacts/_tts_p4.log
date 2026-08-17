@@ -1,0 +1,30 @@
+  a13_div         15.60s
+  a13_airsea      40.00s
+  a13_incoterms   46.29s
+  a13_recap       30.64s
+ch13: total 134.02s (2.23 min), 4 scenes, 36 cues
+  a14_ptitle      11.28s
+  a14_flow        40.67s
+  a14_delay       42.33s
+  a14_recap       33.47s
+ch14: total 129.24s (2.15 min), 4 scenes, 39 cues
+  a15_ptitle      12.60s
+  a15_steps       55.33s
+  a15_example     41.94s
+  a15_recap       34.24s
+ch15: total 145.61s (2.43 min), 4 scenes, 38 cues
+  a16_ptitle      15.79s
+  a16_econ        49.60s
+  a16_lessons     42.47s
+  a16_recap       41.73s
+ch16: total 151.08s (2.52 min), 4 scenes, 40 cues
+  a17_ptitle      11.16s
+  a17_hidden      40.89s
+  a17_buffer      30.95s
+  a17_recap       26.58s
+ch17: total 111.07s (1.85 min), 4 scenes, 29 cues
+  a18_ptitle      12.24s
+  a18_formula     38.73s
+  a18_channels    42.07s
+  a18_recap       26.90s
+ch18: total 121.43s (2.02 min), 4 scenes, 35 cues

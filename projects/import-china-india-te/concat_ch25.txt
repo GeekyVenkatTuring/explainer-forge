@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/import-china-india-te/assets/a25_ptitle.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/import-china-india-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/import-china-india-te/assets/a25_forces.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/import-china-india-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/import-china-india-te/assets/a25_china1.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/import-china-india-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/import-china-india-te/assets/a25_recap.wav'

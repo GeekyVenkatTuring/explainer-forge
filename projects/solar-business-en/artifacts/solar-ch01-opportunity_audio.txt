@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/solar-ch01-opportunity_title.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/solar-ch01-opportunity_roadmap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/solar-ch01-opportunity_hook.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/solar-ch01-opportunity_why.wav'

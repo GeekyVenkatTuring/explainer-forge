@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/i7_title.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/i7_num.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/i7_setup.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-import-te/assets/i7_risk.wav'

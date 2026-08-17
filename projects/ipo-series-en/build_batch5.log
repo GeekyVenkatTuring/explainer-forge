@@ -1,0 +1,80 @@
+  dhoot_title       28.82s
+  dhoot_biz         41.80s
+  dhoot_fin         36.31s
+  dhoot_issue       35.73s
+  dhoot_proceeds    30.81s
+  dhoot_peers       42.16s
+  dhoot_verdict     39.43s
+  dhoot_retail      42.50s
+  dhoot_recap       67.12s
+dhoot: total 368.68s (6.14 min), 9 scenes, 98 cues
+  molbio_title      27.31s
+  molbio_biz        42.45s
+  molbio_fin        35.68s
+  molbio_issue      34.46s
+  molbio_proceeds   37.43s
+  molbio_peers      49.70s
+  molbio_verdict    39.71s
+  molbio_retail     37.14s
+  molbio_recap      60.28s
+molbio: total 368.17s (6.14 min), 9 scenes, 96 cues
+  milkymist_title   30.28s
+  milkymist_biz     38.27s
+  milkymist_fin     35.88s
+  milkymist_issue   36.26s
+  milkymist_proceeds  34.27s
+  milkymist_peers   46.60s
+  milkymist_verdict  40.77s
+  milkymist_retail  37.89s
+  milkymist_recap   63.02s
+milkymist: total 367.23s (6.12 min), 9 scenes, 99 cues
+  shiprocket_title  31.46s
+  shiprocket_biz    44.71s
+  shiprocket_fin    38.97s
+  shiprocket_issue  33.71s
+  shiprocket_proceeds  33.11s
+  shiprocket_peers  55.51s
+  shiprocket_verdict  41.90s
+  shiprocket_retail  37.74s
+  shiprocket_recap  65.73s
+shiprocket: total 386.84s (6.45 min), 9 scenes, 104 cues
+  beharilal_title   31.17s
+  beharilal_biz     40.03s
+  beharilal_fin     34.41s
+  beharilal_issue   32.32s
+  beharilal_proceeds  33.09s
+  beharilal_peers   49.79s
+  beharilal_verdict  39.07s
+  beharilal_retail  37.17s
+  beharilal_recap   62.32s
+beharilal: total 363.37s (6.06 min), 9 scenes, 99 cues
+  fascinate_title   27.55s
+  fascinate_biz     43.87s
+  fascinate_fin     31.79s
+  fascinate_issue   29.68s
+  fascinate_proceeds  32.97s
+  fascinate_peers   45.16s
+  fascinate_verdict  36.67s
+  fascinate_apply   49.36s
+  fascinate_recap   59.42s
+fascinate: total 360.46s (6.01 min), 9 scenes, 99 cues
+  shamfoam_title    25.22s
+  shamfoam_biz      37.79s
+  shamfoam_fin      30.45s
+  shamfoam_issue    27.71s
+  shamfoam_proceeds  26.68s
+  shamfoam_peers    45.88s
+  shamfoam_verdict  38.42s
+  shamfoam_apply    50.63s
+  shamfoam_recap    53.90s
+shamfoam: total 340.69s (5.68 min), 9 scenes, 92 cues
+  pramodini_title   29.20s
+  pramodini_biz     36.88s
+  pramodini_fin     34.39s
+  pramodini_issue   30.76s
+  pramodini_proceeds  29.11s
+  pramodini_peers   48.69s
+  pramodini_verdict  39.26s
+  pramodini_apply   45.38s
+  pramodini_recap   61.96s
+pramodini: total 359.62s (5.99 min), 9 scenes, 97 cues

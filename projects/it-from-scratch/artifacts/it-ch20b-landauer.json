@@ -1,0 +1,366 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch20b-landauer_landauer",
+   "type": "it_landauer",
+   "in_seconds": 0.0,
+   "out_seconds": 131.492,
+   "props": {
+    "dur": 131.992
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.811,
+   "We are going to end this part somewhere"
+  ],
+  [
+   2.811,
+   5.623,
+   "you would never expect information theory to reach"
+  ],
+  [
+   5.623,
+   7.029,
+   "\u2014 inside physics itself."
+  ],
+  [
+   7.66,
+   8.363,
+   "All along,"
+  ],
+  [
+   8.363,
+   11.175,
+   "we have treated a bit as something abstract."
+  ],
+  [
+   11.175,
+   12.932,
+   "A yes or a no."
+  ],
+  [
+   12.932,
+   13.986,
+   "A pure idea,"
+  ],
+  [
+   13.986,
+   15.743,
+   "floating free of the world."
+  ],
+  [
+   15.743,
+   16.797,
+   "But is it,"
+  ],
+  [
+   16.797,
+   17.149,
+   "really?"
+  ],
+  [
+   17.78,
+   18.835,
+   "In nineteen sixty-one,"
+  ],
+  [
+   18.835,
+   21.646,
+   "a physicist named Rolf Landauer asked a startling"
+  ],
+  [
+   21.646,
+   21.998,
+   "question."
+  ],
+  [
+   21.998,
+   23.403,
+   "What does it cost,"
+  ],
+  [
+   23.403,
+   24.809,
+   "in the physical world,"
+  ],
+  [
+   24.809,
+   27.269,
+   "to erase a single bit of information?"
+  ],
+  [
+   27.901,
+   30.361,
+   "And he found there is a hard,"
+  ],
+  [
+   30.361,
+   31.064,
+   "unavoidable answer."
+  ],
+  [
+   31.695,
+   33.101,
+   "To erase one bit,"
+  ],
+  [
+   33.101,
+   35.561,
+   "you must dissipate at least a tiny,"
+  ],
+  [
+   35.561,
+   36.967,
+   "specific amount of energy,"
+  ],
+  [
+   36.967,
+   37.67,
+   "as heat."
+  ],
+  [
+   37.67,
+   39.075,
+   "The amount is k,"
+  ],
+  [
+   39.075,
+   40.481,
+   "times the temperature T,"
+  ],
+  [
+   40.481,
+   42.59,
+   "times the natural logarithm of two."
+  ],
+  [
+   43.221,
+   46.033,
+   "It is a minuscule number at room temperature"
+  ],
+  [
+   46.033,
+   48.141,
+   "\u2014 but it is not zero,"
+  ],
+  [
+   48.141,
+   50.25,
+   "and it can never be zero."
+  ],
+  [
+   50.25,
+   52.007,
+   "Erasing information warms the world,"
+  ],
+  [
+   52.007,
+   52.71,
+   "by law."
+  ],
+  [
+   53.341,
+   54.747,
+   "Watch the bit vanish,"
+  ],
+  [
+   54.747,
+   56.504,
+   "and the heat pour out."
+  ],
+  [
+   57.136,
+   58.542,
+   "Why does this happen?"
+  ],
+  [
+   58.542,
+   59.947,
+   "Because erasing is irreversible."
+  ],
+  [
+   59.947,
+   62.759,
+   "Two possibilities \u2014 a one or a zero"
+  ],
+  [
+   62.759,
+   64.867,
+   "\u2014 collapse into one certain outcome."
+  ],
+  [
+   64.867,
+   65.922,
+   "And in thermodynamics,"
+  ],
+  [
+   65.922,
+   68.382,
+   "destroying possibilities like that always releases\nheat."
+  ],
+  [
+   69.013,
+   71.825,
+   "And now the punchline that should give you"
+  ],
+  [
+   71.825,
+   72.176,
+   "chills."
+  ],
+  [
+   72.808,
+   75.619,
+   "The entropy in Shannon's formula \u2014 the one"
+  ],
+  [
+   75.619,
+   78.431,
+   "we built from surprise and coin flips \u2014"
+  ],
+  [
+   78.431,
+   81.242,
+   "is not merely similar to the entropy of"
+  ],
+  [
+   81.242,
+   81.594,
+   "thermodynamics,"
+  ],
+  [
+   81.594,
+   84.405,
+   "the entropy of heat and disorder and the"
+  ],
+  [
+   84.405,
+   85.459,
+   "arrow of time."
+  ],
+  [
+   86.091,
+   86.794,
+   "They are,"
+  ],
+  [
+   86.794,
+   87.145,
+   "mathematically,"
+  ],
+  [
+   87.145,
+   88.551,
+   "the very same quantity."
+  ],
+  [
+   88.551,
+   91.362,
+   "Shannon even borrowed the name entropy from\nphysics,"
+  ],
+  [
+   91.362,
+   92.768,
+   "on von Neumann's advice."
+  ],
+  [
+   93.4,
+   96.211,
+   "Your hard drive and a steam engine are"
+  ],
+  [
+   96.211,
+   97.968,
+   "governed by the same equation."
+  ],
+  [
+   98.6,
+   101.411,
+   "Information is not floating in some abstract\nrealm."
+  ],
+  [
+   101.411,
+   102.466,
+   "It is physical."
+  ],
+  [
+   102.466,
+   104.926,
+   "It is written in energy and heat,"
+  ],
+  [
+   104.926,
+   107.737,
+   "and it obeys the deepest laws we know."
+  ],
+  [
+   108.369,
+   111.18,
+   "It even reaches into one of physics' great"
+  ],
+  [
+   111.18,
+   111.532,
+   "puzzles."
+  ],
+  [
+   111.532,
+   113.992,
+   "When something falls into a black hole,"
+  ],
+  [
+   113.992,
+   116.803,
+   "its information seems to vanish \u2014 and whether"
+  ],
+  [
+   116.803,
+   119.615,
+   "the universe truly allows that is still fiercely"
+  ],
+  [
+   119.615,
+   119.966,
+   "debated,"
+  ],
+  [
+   119.966,
+   122.777,
+   "in the language of entropy Shannon gave us."
+  ],
+  [
+   123.409,
+   124.815,
+   "From a coin flip,"
+  ],
+  [
+   124.815,
+   126.221,
+   "to your hard drive,"
+  ],
+  [
+   126.221,
+   129.032,
+   "to the edge of a black hole \u2014"
+  ],
+  [
+   129.032,
+   130.086,
+   "the same idea,"
+  ],
+  [
+   130.086,
+   131.492,
+   "all the way down."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch20b-landauer.wav",
+   "volume": 1.0
+  }
+ }
+}

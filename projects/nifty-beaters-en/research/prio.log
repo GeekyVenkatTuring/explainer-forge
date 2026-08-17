@@ -1,0 +1,26 @@
+24 tickers
+[  1/24] BHARTIARTL   FAIL  PE=None ROE=None ROCE=None MCap=None
+[  2/24] BHARTIHEXA   FAIL  PE=None ROE=None ROCE=None MCap=None
+[  3/24] INDUSTOWER   FAIL  PE=None ROE=None ROCE=None MCap=None
+[  4/24] TATACOMM     FAIL  PE=None ROE=None ROCE=None MCap=None
+[  5/24] RELIANCE     FAIL  PE=None ROE=None ROCE=None MCap=None
+[  6/24] COALINDIA    FAIL  PE=None ROE=None ROCE=None MCap=None
+[  7/24] ADANIPORTS   FAIL  PE=None ROE=None ROCE=None MCap=None
+[  8/24] ADANIENT     FAIL  PE=None ROE=None ROCE=None MCap=None
+[  9/24] IOC          FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 10/24] GAIL         FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 11/24] PETRONET     FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 12/24] IGL          FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 13/24] HINDALCO     FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 14/24] ASIANPAINT   FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 15/24] PIDILITIND   FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 16/24] JSWENERGY    FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 17/24] WAAREEENER   FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 18/24] PREMIERENE   FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 19/24] SUZLON       FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 20/24] INDIGO       FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 21/24] CONCOR       FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 22/24] NMDC         FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 23/24] AMBUJACEM    FAIL  PE=None ROE=None ROCE=None MCap=None
+[ 24/24] HFCL         FAIL  PE=None ROE=None ROCE=None MCap=None
+wrote fundamentals.csv

@@ -1,0 +1,753 @@
+{
+ "cuts": [
+  {
+   "id": "lag-ch09-harvest_div",
+   "type": "lag_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 9.622,
+   "props": {
+    "n": 9,
+    "title": "Harvest and yield",
+    "sub": "clip bunches \u2014 believe two curves",
+    "color": "#F4A261",
+    "dur": 10.122
+   }
+  },
+  {
+   "id": "lag-ch09-harvest_pick",
+   "type": "lag_pipe",
+   "in_seconds": 10.122,
+   "out_seconds": 43.76,
+   "props": {
+    "kicker": "HARVEST PIPE",
+    "title": "Ripe on the tree. Clip. Shade. Grade. Move.",
+    "foot": "Hand-pulling is how a good orchard looks like a bad one.",
+    "nodes": [
+     {
+      "label": "Ripe",
+      "sub": "On-tree colour",
+      "c": "fruit"
+     },
+     {
+      "label": "Clip",
+      "sub": "Whole bunch",
+      "c": "leaf"
+     },
+     {
+      "label": "Shade",
+      "sub": "Field heat off",
+      "c": "cool"
+     },
+     {
+      "label": "Grade",
+      "sub": "Size, scars",
+      "c": "fruit"
+     },
+     {
+      "label": "Ship",
+      "sub": "Days, not weeks",
+      "c": "risk"
+     }
+    ],
+    "dur": 34.138
+   }
+  },
+  {
+   "id": "lag-ch09-harvest_yield",
+   "type": "lag_yield",
+   "in_seconds": 44.26,
+   "out_seconds": 87.378,
+   "props": {
+    "dur": 43.618
+   }
+  },
+  {
+   "id": "lag-ch09-harvest_kg",
+   "type": "lag_bars",
+   "in_seconds": 87.878,
+   "out_seconds": 126.676,
+   "props": {
+    "kicker": "TRIAL YIELD PER TREE",
+    "title": "Kilos on research trees, not promises",
+    "unit": " kg",
+    "foot": "Your acre will undershoot until water, mix, and age catch up.",
+    "bars": [
+     {
+      "label": "Imp. G.Y.",
+      "v": 24,
+      "c": "risk"
+     },
+     {
+      "label": "Golden Y.",
+      "v": 29,
+      "c": "fruit"
+     },
+     {
+      "label": "Pathankot",
+      "v": 31,
+      "c": "cool"
+     },
+     {
+      "label": "Pale Y.",
+      "v": 31,
+      "c": "leaf"
+     },
+     {
+      "label": "Tanaka",
+      "v": 34,
+      "c": "fruit"
+     }
+    ],
+    "dur": 39.298
+   }
+  },
+  {
+   "id": "lag-ch09-harvest_grade",
+   "type": "lag_cards",
+   "in_seconds": 127.176,
+   "out_seconds": 162.614,
+   "props": {
+    "kicker": "GRADE OR GIVE AWAY MARGIN",
+    "title": "Top fruit and pulp fruit are different products",
+    "cols": 2,
+    "foot": "One rotten fruit in a bunch teaches the rest to rot.",
+    "items": [
+     {
+      "label": "A grade",
+      "sub": "Size, colour, no scars. City retail and hotels.",
+      "c": "fruit"
+     },
+     {
+      "label": "B grade",
+      "sub": "Smaller, still sound. Local mandi.",
+      "c": "leaf"
+     },
+     {
+      "label": "Process",
+      "sub": "Soft, split, surplus. Jam the same week.",
+      "c": "cool"
+     },
+     {
+      "label": "Dump",
+      "sub": "Rot and bird wrecks. Do not hide them.",
+      "c": "risk"
+     }
+    ],
+    "dur": 35.938
+   }
+  },
+  {
+   "id": "lag-ch09-harvest_ripe",
+   "type": "lag_cards",
+   "in_seconds": 163.114,
+   "out_seconds": 202.032,
+   "props": {
+    "kicker": "RIPENESS",
+    "title": "Colour, smell, give \u2014 then clip",
+    "cols": 2,
+    "foot": "A mixed-ripe bunch is a packing problem.",
+    "items": [
+     {
+      "label": "Colour shift",
+      "sub": "Green ground colour gone.",
+      "c": "fruit"
+     },
+     {
+      "label": "Smell",
+      "sub": "Floral-sweet. Not grassy.",
+      "c": "leaf"
+     },
+     {
+      "label": "Give",
+      "sub": "Gentle press. Not mush.",
+      "c": "cool"
+     },
+     {
+      "label": "Two waves",
+      "sub": "Possible. Costs a second crew day.",
+      "c": "risk"
+     }
+    ],
+    "dur": 39.418
+   }
+  },
+  {
+   "id": "lag-ch09-harvest_tools",
+   "type": "lag_cards",
+   "in_seconds": 202.532,
+   "out_seconds": 233.962,
+   "props": {
+    "kicker": "KIT",
+    "title": "Clippers, shallow crates, shade",
+    "cols": 3,
+    "foot": "The tool list is short. Skipping it is expensive.",
+    "items": [
+     {
+      "label": "Clippers",
+      "sub": "Sharp. Disinfect if disease is in the block.",
+      "c": "leaf"
+     },
+     {
+      "label": "Shallow crate",
+      "sub": "Clusters hate depth.",
+      "c": "fruit"
+     },
+     {
+      "label": "Shade",
+      "sub": "Trolley or net. Field heat is the enemy.",
+      "c": "cool"
+     }
+    ],
+    "dur": 31.93
+   }
+  },
+  {
+   "id": "lag-ch09-harvest_waste",
+   "type": "lag_bars",
+   "in_seconds": 234.462,
+   "out_seconds": 264.86,
+   "props": {
+    "kicker": "WASTAGE",
+    "title": "Tree kilos are not sold kilos",
+    "unit": "%",
+    "foot": "Design against birds and crush before you brag yield.",
+    "bars": [
+     {
+      "label": "Sold",
+      "v": 80,
+      "c": "leaf"
+     },
+     {
+      "label": "Birds",
+      "v": 10,
+      "c": "risk"
+     },
+     {
+      "label": "Crush",
+      "v": 5,
+      "c": "fruit"
+     },
+     {
+      "label": "Rot",
+      "v": 5,
+      "c": "cool"
+     }
+    ],
+    "dur": 30.898
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.134,
+   "Part nine."
+  ],
+  [
+   1.134,
+   1.701,
+   "Picking,"
+  ],
+  [
+   1.701,
+   3.402,
+   "and the numbers."
+  ],
+  [
+   3.952,
+   7.354,
+   "We will run two yield curves,"
+  ],
+  [
+   7.354,
+   9.622,
+   "not one fantasy number."
+  ],
+  [
+   10.122,
+   11.807,
+   "How to pick."
+  ],
+  [
+   12.357,
+   16.85,
+   "Wait until the bunch is uniformly ripe enough."
+  ],
+  [
+   16.85,
+   21.342,
+   "Colour and flavour do not improve in the"
+  ],
+  [
+   21.342,
+   21.904,
+   "crate."
+  ],
+  [
+   22.454,
+   24.7,
+   "Do not pull fruit."
+  ],
+  [
+   24.7,
+   28.07,
+   "You tear skin and start rot."
+  ],
+  [
+   28.62,
+   30.305,
+   "Use a clipper."
+  ],
+  [
+   30.305,
+   32.551,
+   "Take the whole cluster."
+  ],
+  [
+   33.101,
+   34.224,
+   "Shade immediately."
+  ],
+  [
+   34.224,
+   35.909,
+   "Grade by size."
+  ],
+  [
+   36.459,
+   37.582,
+   "Then move."
+  ],
+  [
+   37.582,
+   42.075,
+   "This pipeline is the difference between a premium"
+  ],
+  [
+   42.075,
+   43.76,
+   "crate and vinegar."
+  ],
+  [
+   44.26,
+   47.624,
+   "Now the computed curves on one acre of"
+  ],
+  [
+   47.624,
+   48.465,
+   "ninety-six trees."
+  ],
+  [
+   49.015,
+   52.379,
+   "The red line is a conservative leaflet world:"
+  ],
+  [
+   52.379,
+   54.902,
+   "about eight kilos per mature tree,"
+  ],
+  [
+   54.902,
+   57.425,
+   "ramping from year three to fifteen."
+  ],
+  [
+   57.975,
+   61.339,
+   "That lands near six to eight quintals an"
+  ],
+  [
+   61.339,
+   64.703,
+   "acre at peak \u2014 the number many Punjab"
+  ],
+  [
+   64.703,
+   65.544,
+   "notes print."
+  ],
+  [
+   66.094,
+   69.458,
+   "The green line is a managed trial world:"
+  ],
+  [
+   69.458,
+   71.561,
+   "about twenty-eight kilos a tree,"
+  ],
+  [
+   71.561,
+   74.925,
+   "in the P A U ballpark for good"
+  ],
+  [
+   74.924,
+   75.345,
+   "cultivars."
+  ],
+  [
+   75.895,
+   78.839,
+   "That is twenty-plus quintals if everything works."
+  ],
+  [
+   79.388,
+   82.752,
+   "Do not put the green line in a"
+  ],
+  [
+   82.752,
+   86.117,
+   "bank file unless you have seen your own"
+  ],
+  [
+   86.117,
+   87.378,
+   "trees do it."
+  ],
+  [
+   87.878,
+   92.057,
+   "P A U compared cultivars under Punjab conditions."
+  ],
+  [
+   92.607,
+   96.787,
+   "Tanaka sat near thirty-four kilos per plant in"
+  ],
+  [
+   96.787,
+   98.354,
+   "that study window."
+  ],
+  [
+   98.904,
+   103.084,
+   "Pale Yellow and Pathankot were in the low"
+  ],
+  [
+   103.084,
+   103.606,
+   "thirties."
+  ],
+  [
+   103.606,
+   106.741,
+   "Golden Yellow a little under thirty."
+  ],
+  [
+   107.291,
+   109.381,
+   "Those are research trees,"
+  ],
+  [
+   109.381,
+   111.47,
+   "not a neglected backyard."
+  ],
+  [
+   112.02,
+   116.2,
+   "Fruit weight sat around eighteen to twenty-four\ngrams."
+  ],
+  [
+   116.2,
+   117.767,
+   "Not a mango."
+  ],
+  [
+   117.767,
+   119.857,
+   "A premium small fruit."
+  ],
+  [
+   120.407,
+   121.974,
+   "Cluster counts matter:"
+  ],
+  [
+   121.974,
+   126.154,
+   "Tanaka held more fruit per cluster in that"
+  ],
+  [
+   126.154,
+   126.676,
+   "trial."
+  ],
+  [
+   127.176,
+   131.022,
+   "Grading is how you capture the upper price."
+  ],
+  [
+   131.572,
+   132.052,
+   "Large,"
+  ],
+  [
+   132.052,
+   132.533,
+   "unblemished,"
+  ],
+  [
+   132.533,
+   135.417,
+   "uniform colour in a ventilated crate."
+  ],
+  [
+   135.967,
+   139.813,
+   "Seconds go to pulp the same day if"
+  ],
+  [
+   139.813,
+   143.178,
+   "you have a kettle or a buyer."
+  ],
+  [
+   143.728,
+   147.574,
+   "Do not mix bird-pecked fruit into the top"
+  ],
+  [
+   147.574,
+   148.054,
+   "layer."
+  ],
+  [
+   148.054,
+   149.016,
+   "Buyers remember."
+  ],
+  [
+   149.566,
+   153.411,
+   "Count seeds and acid only if you are"
+  ],
+  [
+   153.411,
+   153.892,
+   "breeding."
+  ],
+  [
+   153.892,
+   157.257,
+   "The stall cares about look and taste."
+  ],
+  [
+   157.807,
+   161.653,
+   "A cheap crate that crushes clusters destroys the"
+  ],
+  [
+   161.653,
+   162.614,
+   "week's work."
+  ],
+  [
+   163.114,
+   164.119,
+   "Ripe signs,"
+  ],
+  [
+   164.119,
+   167.635,
+   "in words you can use at dawn."
+  ],
+  [
+   168.185,
+   170.194,
+   "Background colour leaves green."
+  ],
+  [
+   170.194,
+   171.701,
+   "Yellow-orange takes over."
+  ],
+  [
+   172.251,
+   174.261,
+   "A light floral smell."
+  ],
+  [
+   174.261,
+   175.768,
+   "A slight give."
+  ],
+  [
+   175.768,
+   177.777,
+   "The cluster looks even."
+  ],
+  [
+   178.327,
+   182.346,
+   "If three fruits are green and four are"
+  ],
+  [
+   182.346,
+   182.848,
+   "collapsing,"
+  ],
+  [
+   182.848,
+   185.862,
+   "you waited on the wrong story."
+  ],
+  [
+   185.862,
+   189.881,
+   "Pick the ready ones as a bunch only"
+  ],
+  [
+   189.881,
+   192.392,
+   "when the bunch is ready."
+  ],
+  [
+   192.942,
+   196.961,
+   "Some orchards pick in two waves a week"
+  ],
+  [
+   196.961,
+   197.463,
+   "apart."
+  ],
+  [
+   198.013,
+   201.027,
+   "Two waves need two labour days."
+  ],
+  [
+   201.027,
+   202.032,
+   "Budget them."
+  ],
+  [
+   202.532,
+   203.13,
+   "Tools."
+  ],
+  [
+   203.68,
+   204.875,
+   "Sharp clippers."
+  ],
+  [
+   204.875,
+   207.862,
+   "Harvest bags or shallow crates."
+  ],
+  [
+   207.862,
+   209.655,
+   "A shaded trolley."
+  ],
+  [
+   210.205,
+   213.192,
+   "Gloves if sap bothers skin."
+  ],
+  [
+   213.192,
+   217.375,
+   "A stone for the clipper at lunch."
+  ],
+  [
+   217.925,
+   221.51,
+   "No fertilizer sack as a crate."
+  ],
+  [
+   221.51,
+   223.899,
+   "It sweats and crushes."
+  ],
+  [
+   224.45,
+   229.23,
+   "No throwing clusters into a trailer from six"
+  ],
+  [
+   229.23,
+   229.827,
+   "feet."
+  ],
+  [
+   230.377,
+   233.962,
+   "Treat them like eggs that stain."
+  ],
+  [
+   234.462,
+   237.181,
+   "Wastage is a yield number too."
+  ],
+  [
+   237.731,
+   238.638,
+   "A model:"
+  ],
+  [
+   238.638,
+   240.904,
+   "ten percent lost to birds,"
+  ],
+  [
+   240.904,
+   242.264,
+   "five to crush,"
+  ],
+  [
+   242.264,
+   245.437,
+   "five to rot if you are sloppy."
+  ],
+  [
+   245.987,
+   248.706,
+   "That is not a lab result."
+  ],
+  [
+   248.706,
+   250.519,
+   "It is a warning."
+  ],
+  [
+   251.069,
+   254.695,
+   "Netting and shallow crates and morning picks cut"
+  ],
+  [
+   254.695,
+   255.602,
+   "that curve."
+  ],
+  [
+   256.152,
+   258.871,
+   "If you count only tree kilos,"
+  ],
+  [
+   258.871,
+   261.137,
+   "you will hate the mandi."
+  ],
+  [
+   261.687,
+   264.86,
+   "Count kilos that a buyer paid for."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "lag/lag-ch09-harvest.wav",
+   "volume": 1.0
+  }
+ }
+}

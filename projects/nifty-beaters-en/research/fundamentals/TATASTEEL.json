@@ -1,0 +1,96 @@
+{
+ "ticker": "TATASTEEL",
+ "scraped_at": "2026-08-14T15:29:58",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 228948.0,
+ "current_price": 183.0,
+ "pe": 19.3,
+ "book_value": 81.8,
+ "dividend_yield_pct": 2.18,
+ "roce_pct": 12.5,
+ "roe_pct": 11.7,
+ "face_value": 1.0,
+ "high": 224.0,
+ "sales_growth": {
+  "10 Years": 24.0,
+  "5 Years": 8.0,
+  "3 Years": 10.0,
+  "TTM": 147.0
+ },
+ "profit_growth": {
+  "10 Years": 18.0,
+  "5 Years": 5.0,
+  "3 Years": 16.0,
+  "1 Year": 19.0
+ },
+ "roe_hist": {
+  "OPM %": 8.0,
+  "Tax %": 72.0,
+  "Net Profit&nbsp; +": 525.0,
+  "EPS in Rs": 0.52
+ },
+ "price_cagr": {
+  "10 Years": 12.0,
+  "5 Years": 14.0,
+  "3 Years": 7.0,
+  "Last Year": 12.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "8%",
+   "8%",
+   "11%",
+   "11%",
+   "12%",
+   "11%",
+   "11%",
+   "12%",
+   "14%",
+   "15%",
+   "14%",
+   "16%",
+   "15%"
+  ],
+  "eps": [
+   "0.52",
+   "-5.07",
+   "0.42",
+   "0.49",
+   "0.77",
+   "0.67",
+   "0.26",
+   "1.04",
+   "1.66",
+   "2.48",
+   "2.15",
+   "2.34",
+   "1.86"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 25.4%"
+ ],
+ "cons": [
+  "The company has delivered a poor sales growth of 8.21% over past five years.",
+  "Company has a low return on equity of 7.44% over last 3 years."
+ ]
+}

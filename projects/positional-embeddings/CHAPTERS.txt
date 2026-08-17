@@ -1,0 +1,14 @@
+0:00 Intro — the promise (ADEPT method)
+0:29 The puzzle: dog bites man vs man bites dog
+1:27 PART 1 · Why Order Matters
+1:36 Why attention is order-blind
+2:37 The fix — stamp each word with its position
+3:36 Why the naive tags fail
+4:43 Sinusoids — clock hands at different speeds
+5:50 The famous positional-encoding heatmap
+6:40 Add it in — order finally appears
+7:33 PART 2 · Modern Upgrades
+7:43 Learned positional embeddings
+8:43 Relative position — distance, not address
+9:32 RoPE — spin, dont add (the modern default)
+10:37 Recap — the whole story

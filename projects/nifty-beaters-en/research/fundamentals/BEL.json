@@ -1,0 +1,105 @@
+{
+ "ticker": "BEL",
+ "scraped_at": "2026-08-14T15:28:10",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 300213.0,
+ "current_price": 411.0,
+ "pe": 48.9,
+ "book_value": 32.8,
+ "dividend_yield_pct": 0.61,
+ "roce_pct": 36.4,
+ "roe_pct": 27.4,
+ "face_value": 1.0,
+ "high": 473.0,
+ "sales_growth": {
+  "10 Years": 16.0,
+  "5 Years": 24.0,
+  "3 Years": 27.0,
+  "TTM": 12.0
+ },
+ "profit_growth": {
+  "10 Years": 27.0,
+  "5 Years": 48.0,
+  "3 Years": 47.0,
+  "1 Year": 7.0
+ },
+ "roe_hist": {
+  "Operating Profit": 673.0,
+  "OPM %": 19.0,
+  "Other Income&nbsp; +": 140.0,
+  "Interest": 1.0,
+  "Depreciation": 109.0,
+  "Profit before tax": 703.0,
+  "Tax %": 25.0,
+  "Net Profit&nbsp; +": 539.0,
+  "EPS in Rs": 0.74
+ },
+ "price_cagr": {
+  "10 Years": 24.0,
+  "5 Years": 26.0,
+  "3 Years": 28.0,
+  "Last Year": 27.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "19%",
+   "25%",
+   "26%",
+   "27%",
+   "22%",
+   "30%",
+   "29%",
+   "31%",
+   "28%",
+   "29%",
+   "30%",
+   "29%",
+   "25%"
+  ],
+  "eps": [
+   "0.74",
+   "1.08",
+   "1.18",
+   "2.46",
+   "1.08",
+   "1.49",
+   "1.79",
+   "2.91",
+   "1.33",
+   "1.76",
+   "2.16",
+   "3.04",
+   "1.44"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has delivered good profit growth of 23.5% CAGR over last 5 years",
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 27.7%",
+  "Company has been maintaining a healthy dividend payout of 34.5%"
+ ],
+ "cons": [
+  "Stock is trading at 12.5 times its book value",
+  "Company has high debtors of 170 days.",
+  "Working capital days have increased from 79.4 days to 135 days"
+ ]
+}

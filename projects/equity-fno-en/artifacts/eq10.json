@@ -1,0 +1,493 @@
+{
+  "cuts": [
+    {
+      "id": "j10_div",
+      "type": "sm_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 19.772,
+      "props": {
+        "n": 10,
+        "title": "Risk & The Whole Picture",
+        "sub": "Survival · fit · the master recap",
+        "color": "#34D399",
+        "dur": 20.272
+      }
+    },
+    {
+      "id": "j10_rules",
+      "type": "sm_checklist",
+      "in_seconds": 20.272,
+      "out_seconds": 101.056,
+      "props": {
+        "kicker": "THE SURVIVAL RULES",
+        "title": "Risk management — the rules that keep you in the game",
+        "color": "#34D399",
+        "icon": "🛡️",
+        "items": [
+          "Risk only 1–2% of capital on any single trade",
+          "Always use a stop-loss on leveraged or active positions",
+          "Diversify across sectors AND asset classes",
+          "Never mix investing capital with trading capital",
+          "Never borrow / use MTF leverage to chase returns"
+        ],
+        "dur": 81.284
+      }
+    },
+    {
+      "id": "j10_fit",
+      "type": "sm_compare3",
+      "in_seconds": 101.556,
+      "out_seconds": 170.084,
+      "props": {
+        "kicker": "WHICH IS FOR YOU?",
+        "title": "Match the instrument to yourself",
+        "cols": [
+          {
+            "name": "Beginner / Investor",
+            "color": "#34D399",
+            "emoji": "🌱",
+            "hi": true,
+            "rows": [
+              {
+                "k": "Use",
+                "v": "index SIP + quality equity"
+              },
+              {
+                "k": "Goal",
+                "v": "long-term wealth"
+              },
+              {
+                "k": "Time",
+                "v": "a few hours a month"
+              },
+              {
+                "k": "F&O?",
+                "v": "not yet"
+              }
+            ]
+          },
+          {
+            "name": "Experienced",
+            "color": "#22D3EE",
+            "emoji": "📈",
+            "rows": [
+              {
+                "k": "Use",
+                "v": "equity + hedging with futures"
+              },
+              {
+                "k": "Goal",
+                "v": "growth + protection"
+              },
+              {
+                "k": "Time",
+                "v": "weekly research"
+              },
+              {
+                "k": "F&O?",
+                "v": "hedging, small size"
+              }
+            ]
+          },
+          {
+            "name": "Professional",
+            "color": "#A78BFA",
+            "emoji": "⚡",
+            "rows": [
+              {
+                "k": "Use",
+                "v": "options strategies, commodities"
+              },
+              {
+                "k": "Goal",
+                "v": "active returns"
+              },
+              {
+                "k": "Time",
+                "v": "full-time focus"
+              },
+              {
+                "k": "F&O?",
+                "v": "with strict risk rules"
+              }
+            ]
+          }
+        ],
+        "dur": 69.028
+      }
+    },
+    {
+      "id": "j10_master",
+      "type": "sm_recap",
+      "in_seconds": 170.584,
+      "out_seconds": 260.6,
+      "props": {
+        "title": "The whole course — in one breath",
+        "items": [
+          "Sector first: top-down macro → sector → leaders",
+          "Research: 3 statements, ratios, moat, fair price",
+          "Learn from methods & trusted channels — never tips",
+          "Equity strategies: SIP & quality for most; know them all",
+          "F&O = powerful tools: hedge first; 91% of speculators lose",
+          "Commodities: gold ~5–10% as a hedge; respect leverage",
+          "Risk rules keep you in the game — survival first"
+        ],
+        "closer": "Learn deeply, risk little, compound patiently.",
+        "dur": 90.516
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.268,
+      "Chapter ten, the final chapter — risk management,"
+    ],
+    [
+      4.268,
+      7.578,
+      "and putting the whole course together."
+    ],
+    [
+      7.578,
+      12.107,
+      "Everything we've learned means nothing without this."
+    ],
+    [
+      12.107,
+      16.549,
+      "The first job of an investor is not to make money —"
+    ],
+    [
+      16.549,
+      18.465,
+      "it is to not go broke."
+    ],
+    [
+      18.465,
+      19.772,
+      "Survival first."
+    ],
+    [
+      20.272,
+      22.818,
+      "Here are the survival rules —"
+    ],
+    [
+      22.818,
+      26.858,
+      "the discipline the ninety-one percent ignored."
+    ],
+    [
+      26.858,
+      27.297,
+      "One —"
+    ],
+    [
+      27.297,
+      33.531,
+      "risk only one to two percent of your total capital on any single trade."
+    ],
+    [
+      33.531,
+      37.57,
+      "Then even ten losses in a row cannot ruin you."
+    ],
+    [
+      37.57,
+      41.961,
+      "This one rule separates survivors from casualties."
+    ],
+    [
+      41.961,
+      42.4,
+      "Two —"
+    ],
+    [
+      42.4,
+      47.581,
+      "always use a stop-loss on any leveraged or active position."
+    ],
+    [
+      47.581,
+      52.849,
+      "Decide, before you enter, where you are wrong and will exit."
+    ],
+    [
+      52.849,
+      57.152,
+      "No exceptions, especially in futures and options."
+    ],
+    [
+      57.152,
+      62.245,
+      "Three — diversify across sectors and across asset classes."
+    ],
+    [
+      62.245,
+      65.318,
+      "Equities, some debt, a little gold."
+    ],
+    [
+      65.318,
+      67.777,
+      "When one zigs, another zags."
+    ],
+    [
+      67.777,
+      68.303,
+      "Four —"
+    ],
+    [
+      68.303,
+      73.484,
+      "never mix your investing capital with your trading capital."
+    ],
+    [
+      73.484,
+      80.86,
+      "Keep the long-term wealth pot completely separate from the money you actively trade."
+    ],
+    [
+      80.86,
+      85.953,
+      "Five — never borrow money, or use margin-trading leverage,"
+    ],
+    [
+      85.953,
+      87.446,
+      "to chase returns."
+    ],
+    [
+      87.446,
+      90.343,
+      "Remember the ninety-one percent —"
+    ],
+    [
+      90.343,
+      94.734,
+      "leverage is what turned their losses catastrophic."
+    ],
+    [
+      94.734,
+      96.314,
+      "Follow these five,"
+    ],
+    [
+      96.314,
+      101.056,
+      "and you will still be standing when opportunity comes."
+    ],
+    [
+      101.556,
+      104.803,
+      "So which of all these tools is for you?"
+    ],
+    [
+      104.803,
+      108.467,
+      "Match the instrument to yourself — honestly."
+    ],
+    [
+      108.467,
+      112.297,
+      "If you are a beginner or a long-term investor,"
+    ],
+    [
+      112.297,
+      118.626,
+      "your toolkit is simple and powerful: an index SIP plus a few quality stocks,"
+    ],
+    [
+      118.626,
+      123.622,
+      "aimed at long-term wealth, needing just a few hours a month."
+    ],
+    [
+      123.622,
+      125.287,
+      "Futures and options?"
+    ],
+    [
+      125.287,
+      127.785,
+      "Not yet — you don't need them."
+    ],
+    [
+      127.785,
+      131.532,
+      "If you are experienced, you can add hedging —"
+    ],
+    [
+      131.532,
+      134.946,
+      "using futures to protect your portfolio —"
+    ],
+    [
+      134.946,
+      138.443,
+      "while your core stays invested for growth,"
+    ],
+    [
+      138.443,
+      140.191,
+      "with weekly research."
+    ],
+    [
+      140.191,
+      145.437,
+      "Here F&O earns its place, in small size, mainly for protection."
+    ],
+    [
+      145.437,
+      149.018,
+      "Only the dedicated, near full-time trader —"
+    ],
+    [
+      149.018,
+      152.515,
+      "with a tested method and iron discipline —"
+    ],
+    [
+      152.515,
+      157.428,
+      "should run active options strategies and trade commodities."
+    ],
+    [
+      157.428,
+      161.008,
+      "And even then, only with strict risk rules."
+    ],
+    [
+      161.008,
+      164.172,
+      "There is no shame in the first column."
+    ],
+    [
+      164.172,
+      170.084,
+      "It quietly builds more wealth for more people than the third ever will."
+    ],
+    [
+      170.584,
+      175.258,
+      "Let's bring the entire course together, in one breath."
+    ],
+    [
+      175.258,
+      178.114,
+      "Start with the sector — top-down,"
+    ],
+    [
+      178.114,
+      182.096,
+      "from macro to sector to the leaders within it."
+    ],
+    [
+      182.096,
+      186.943,
+      "Research properly: the three statements, the key ratios,"
+    ],
+    [
+      186.943,
+      191.963,
+      "the moat, and always a fair price with a margin of safety."
+    ],
+    [
+      191.963,
+      196.637,
+      "Learn from methods and trustworthy channels — Varsity,"
+    ],
+    [
+      196.637,
+      202.09,
+      "honest educators, seasoned fund managers — and never from tips."
+    ],
+    [
+      202.09,
+      203.821,
+      "For equity strategy,"
+    ],
+    [
+      203.821,
+      209.62,
+      "an index SIP and a few quality names serve most people beautifully,"
+    ],
+    [
+      209.62,
+      212.563,
+      "even though you now know them all."
+    ],
+    [
+      212.563,
+      216.025,
+      "Futures and options are powerful tools —"
+    ],
+    [
+      216.025,
+      218.102,
+      "use them to hedge first,"
+    ],
+    [
+      218.102,
+      223.382,
+      "and never forget that ninety-one percent of speculators lose."
+    ],
+    [
+      223.382,
+      228.229,
+      "In commodities, let gold be a five-to-ten-percent hedge,"
+    ],
+    [
+      228.229,
+      230.999,
+      "and always respect the leverage."
+    ],
+    [
+      230.999,
+      236.365,
+      "And binding it all — the risk rules that keep you in the game."
+    ],
+    [
+      236.365,
+      239.048,
+      "Survival first, returns second."
+    ],
+    [
+      239.048,
+      241.645,
+      "You now have the complete map."
+    ],
+    [
+      241.645,
+      245.972,
+      "Learn deeply, risk little, and compound patiently."
+    ],
+    [
+      245.972,
+      248.915,
+      "That is how wealth is truly built."
+    ],
+    [
+      248.915,
+      253.416,
+      "This is educational content, not investment advice —"
+    ],
+    [
+      253.416,
+      258.609,
+      "do your own research, and consult a SEBI-registered adviser."
+    ],
+    [
+      258.609,
+      260.6,
+      "Thank you for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "eq/eq10.wav",
+      "volume": 1.0
+    }
+  }
+}

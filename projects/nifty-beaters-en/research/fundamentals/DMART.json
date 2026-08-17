@@ -1,0 +1,100 @@
+{
+ "ticker": "DMART",
+ "scraped_at": "2026-08-14T15:29:28",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 264473.0,
+ "current_price": 4055.0,
+ "pe": 86.4,
+ "book_value": 375.0,
+ "dividend_yield_pct": 0.0,
+ "roce_pct": 17.2,
+ "roe_pct": 12.9,
+ "face_value": 10.0,
+ "high": 4950.0,
+ "sales_growth": {
+  "10 Years": 25.0,
+  "5 Years": 22.0,
+  "3 Years": 8.0,
+  "TTM": 13.0
+ },
+ "profit_growth": {
+  "5 Years": 3.0,
+  "3 Years": 5.0,
+  "1 Year": -7.0
+ },
+ "roe_hist": {
+  "OPM %": 9.0,
+  "Other Income&nbsp; +": 39.0,
+  "Interest": 15.0,
+  "Depreciation": 162.0,
+  "Profit before tax": 897.0,
+  "Tax %": 27.0,
+  "Net Profit&nbsp; +": 659.0,
+  "EPS in Rs": 10.12
+ },
+ "price_cagr": {
+  "10 Years": 14.0,
+  "5 Years": 14.0,
+  "3 Years": 14.0,
+  "Last Year": 13.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "9%",
+   "8%",
+   "8%",
+   "7%",
+   "9%",
+   "8%",
+   "8%",
+   "6%",
+   "8%",
+   "7%",
+   "8%",
+   "7%",
+   "8%"
+  ],
+  "eps": [
+   "10.12",
+   "9.58",
+   "10.61",
+   "8.66",
+   "11.89",
+   "10.14",
+   "11.12",
+   "8.47",
+   "11.88",
+   "10.53",
+   "13.15",
+   "10.07",
+   "13.19"
+  ]
+ },
+ "pros": [
+  "Company&#x27;s median sales growth is 25.3% of last 10 years"
+ ],
+ "cons": [
+  "Stock is trading at 10.8 times its book value",
+  "Though the company is reporting repeated profits, it is not paying out dividend",
+  "Company has a low return on equity of 13.5% over last 3 years."
+ ]
+}

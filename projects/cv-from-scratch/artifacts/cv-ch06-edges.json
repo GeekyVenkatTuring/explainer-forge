@@ -1,0 +1,346 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch06-edges_edges",
+   "type": "cv_edges",
+   "in_seconds": 0.0,
+   "out_seconds": 132.043,
+   "props": {
+    "dur": 132.543
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.893,
+   "Let's make convolution concrete with its\nmost famous"
+  ],
+  [
+   2.893,
+   4.339,
+   "job \u2014 finding edges."
+  ],
+  [
+   4.97,
+   5.332,
+   "First,"
+  ],
+  [
+   5.332,
+   6.778,
+   "what is an edge?"
+  ],
+  [
+   7.41,
+   10.303,
+   "An edge is simply a place where brightness"
+  ],
+  [
+   10.303,
+   11.026,
+   "changes sharply."
+  ],
+  [
+   11.026,
+   13.918,
+   "It is the border where an object stops"
+  ],
+  [
+   13.918,
+   15.365,
+   "and the background begins."
+  ],
+  [
+   15.996,
+   18.527,
+   "The fur of the cat is bright."
+  ],
+  [
+   18.527,
+   20.697,
+   "The background behind it is dark."
+  ],
+  [
+   20.697,
+   21.781,
+   "Where they meet,"
+  ],
+  [
+   21.781,
+   22.866,
+   "the numbers jump."
+  ],
+  [
+   22.866,
+   24.674,
+   "That jump is the edge."
+  ],
+  [
+   25.306,
+   28.198,
+   "There is a classic pair of kernels built"
+  ],
+  [
+   28.198,
+   29.644,
+   "to catch exactly this,"
+  ],
+  [
+   29.644,
+   31.091,
+   "called the Sobel filters."
+  ],
+  [
+   31.722,
+   34.615,
+   "One of them responds to horizontal changes\nin"
+  ],
+  [
+   34.615,
+   34.977,
+   "brightness."
+  ],
+  [
+   34.977,
+   37.146,
+   "The other responds to vertical changes."
+  ],
+  [
+   37.778,
+   40.67,
+   "Now watch what happens as we slide them"
+  ],
+  [
+   40.67,
+   41.755,
+   "across the cat."
+  ],
+  [
+   42.386,
+   44.556,
+   "In a flat region \u2014 say,"
+  ],
+  [
+   44.556,
+   47.449,
+   "the middle of a patch of fur \u2014"
+  ],
+  [
+   47.449,
+   49.98,
+   "neighboring pixels are all about the same."
+  ],
+  [
+   49.98,
+   51.787,
+   "The filter multiplies and sums,"
+  ],
+  [
+   51.787,
+   54.318,
+   "and the result comes out near zero."
+  ],
+  [
+   54.318,
+   54.68,
+   "Dark."
+  ],
+  [
+   54.68,
+   55.403,
+   "Nothing here."
+  ],
+  [
+   56.035,
+   57.843,
+   "But right at the outline,"
+  ],
+  [
+   57.843,
+   59.289,
+   "where dark meets bright,"
+  ],
+  [
+   59.289,
+   60.735,
+   "the filter fires hard,"
+  ],
+  [
+   60.735,
+   62.543,
+   "and the output glows bright."
+  ],
+  [
+   63.175,
+   66.067,
+   "The final picture is an outline drawing of"
+  ],
+  [
+   66.067,
+   68.96,
+   "the cat \u2014 its whole silhouette pulled out"
+  ],
+  [
+   68.96,
+   71.852,
+   "of the image by nothing but multiply and"
+  ],
+  [
+   71.852,
+   72.214,
+   "add."
+  ],
+  [
+   72.846,
+   75.377,
+   "And there is more hiding in here."
+  ],
+  [
+   76.008,
+   78.178,
+   "Combine the horizontal and vertical\nfilters,"
+  ],
+  [
+   78.178,
+   80.709,
+   "and you get two things at once."
+  ],
+  [
+   80.709,
+   83.601,
+   "The strength of the edge \u2014 how sharp"
+  ],
+  [
+   83.601,
+   84.686,
+   "the change is."
+  ],
+  [
+   85.318,
+   88.21,
+   "And its direction \u2014 which way the edge"
+  ],
+  [
+   88.21,
+   88.572,
+   "points."
+  ],
+  [
+   89.203,
+   92.096,
+   "Classic detectors like Canny use exactly\nthis to"
+  ],
+  [
+   92.096,
+   92.819,
+   "trace thin,"
+  ],
+  [
+   92.819,
+   93.542,
+   "clean contours."
+  ],
+  [
+   94.174,
+   97.066,
+   "Here is a deeper reason edges matter so"
+  ],
+  [
+   97.066,
+   97.428,
+   "much."
+  ],
+  [
+   97.428,
+   99.959,
+   "The flat regions of an image are,"
+  ],
+  [
+   99.959,
+   101.044,
+   "in a sense,"
+  ],
+  [
+   101.044,
+   102.129,
+   "boring and predictable."
+  ],
+  [
+   102.76,
+   105.653,
+   "The information \u2014 the structure \u2014 lives at"
+  ],
+  [
+   105.653,
+   106.376,
+   "the edges."
+  ],
+  [
+   106.376,
+   109.268,
+   "That is why so many vision methods start"
+  ],
+  [
+   109.268,
+   110.353,
+   "by finding them."
+  ],
+  [
+   110.985,
+   113.154,
+   "Stop and appreciate what just happened."
+  ],
+  [
+   113.786,
+   114.871,
+   "We took raw,"
+  ],
+  [
+   114.871,
+   115.594,
+   "meaningless brightness,"
+  ],
+  [
+   115.594,
+   117.402,
+   "and produced something with structure."
+  ],
+  [
+   117.402,
+   117.763,
+   "Edges."
+  ],
+  [
+   118.395,
+   121.287,
+   "Edges are the very first rung on the"
+  ],
+  [
+   121.287,
+   124.18,
+   "ladder that climbs from pixels up to\nperception."
+  ],
+  [
+   124.811,
+   127.704,
+   "And the way we climb the rest of"
+  ],
+  [
+   127.704,
+   130.235,
+   "that ladder is by stacking these\noperations,"
+  ],
+  [
+   130.235,
+   132.043,
+   "one on top of another."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch06-edges.wav",
+   "volume": 1.0
+  }
+ }
+}

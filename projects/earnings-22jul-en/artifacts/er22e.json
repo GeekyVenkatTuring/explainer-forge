@@ -1,0 +1,738 @@
+{
+  "cuts": [
+    {
+      "id": "er_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 39.284,
+      "props": {
+        "title": "Today's Q1 Results",
+        "sub": "July 22, 2026 · a day of extremes — record highs AND big losses",
+        "kicker": "EARNINGS DAY · 22 JUL 2026",
+        "dur": 39.784
+      }
+    },
+    {
+      "id": "er_score",
+      "type": "sm_stats",
+      "in_seconds": 39.784,
+      "out_seconds": 81.008,
+      "props": {
+        "kicker": "THE EXTREMES · NET PROFIT (YoY)",
+        "title": "Today's Story in 3 Numbers",
+        "stats": [
+          {
+            "label": "IndusInd Bank",
+            "to": 1037,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+72% YoY · beat"
+          },
+          {
+            "label": "Nestle India",
+            "to": 959,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+48% · 52-week high"
+          },
+          {
+            "label": "BPCL",
+            "to": 3962,
+            "prefix": "−₹",
+            "suffix": " Cr",
+            "color": "#FB7185",
+            "sub": "Q1 LOSS · crude hit"
+          }
+        ],
+        "note": "Two big beats and a shock loss — on the same day. The dividing line? Crude oil. Let's see who was on which side.",
+        "dur": 41.724
+      }
+    },
+    {
+      "id": "er_winners",
+      "type": "sm_iconcards",
+      "in_seconds": 81.508,
+      "out_seconds": 146.612,
+      "props": {
+        "kicker": "THE WINNERS",
+        "title": "Who Beat Today",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "IndusInd Bank",
+            "v": "PAT ₹1,037 Cr (+72%); NII ₹4,685 Cr; GNPA improved to 3.25% — reassuring for private banks",
+            "chip": "+72%"
+          },
+          {
+            "emoji": "🍫",
+            "k": "Nestle India",
+            "v": "PAT ₹959 Cr (+48%); revenue ₹6,378 Cr (+25%); stock hit a 52-week high, up 4%",
+            "chip": "RECORD HIGH"
+          },
+          {
+            "emoji": "🍔",
+            "k": "Eternal (Zomato)",
+            "v": "Revenue ₹20,211 Cr (+182%!), PAT ₹92 Cr (+268%) — but it MISSED estimates; stock fell",
+            "chip": "MISSED*"
+          },
+          {
+            "emoji": "🛡️",
+            "k": "The read-through",
+            "v": "FMCG and private banks shrugged off crude; but the day belonged to oil — see the losers next",
+            "chip": "CONTRAST"
+          }
+        ],
+        "dur": 65.604
+      }
+    },
+    {
+      "id": "er_losers",
+      "type": "sm_iconcards",
+      "in_seconds": 147.112,
+      "out_seconds": 205.376,
+      "props": {
+        "kicker": "THE CRUDE CASUALTIES",
+        "title": "Who Lost — and Why",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "🛢️",
+            "k": "BPCL",
+            "v": "Net LOSS ₹3,962 Cr — vs a ₹6,124 Cr profit a year ago; the crude spike crushed refining margins",
+            "chip": "LOSS"
+          },
+          {
+            "emoji": "⛽",
+            "k": "HPCL",
+            "v": "Also swung to a loss on the same crude and inventory hit — OMCs pay the price when crude jumps",
+            "chip": "LOSS"
+          },
+          {
+            "emoji": "💊",
+            "k": "Dr Reddy's",
+            "v": "PAT −69% to ₹444 Cr — US price erosion hit pharma; a separate pressure, not crude",
+            "chip": "−69%"
+          },
+          {
+            "emoji": "🔗",
+            "k": "The crude connection",
+            "v": "The same crude spike that crashed the market today is what pushed the oil marketers into the red",
+            "chip": "TIE-IN"
+          }
+        ],
+        "dur": 58.764
+      }
+    },
+    {
+      "id": "er_lesson",
+      "type": "sm_myths",
+      "in_seconds": 205.876,
+      "out_seconds": 265.318,
+      "props": {
+        "kicker": "READ BEYOND THE HEADLINE",
+        "title": "Three Lessons from Today",
+        "mythLabel": "🔮 THE HEADLINE SAYS",
+        "factLabel": "✅ THE REALITY IS",
+        "pairs": [
+          {
+            "m": "Eternal's profit jumped 268% — brilliant!",
+            "f": "It MISSED estimates (₹92 Cr vs ~₹258 Cr expected) — so the stock fell. Beating expectations matters, not just growth"
+          },
+          {
+            "m": "OMC losses mean broken businesses",
+            "f": "It's a crude-inventory hit from the price spike — often one-off, not a structural problem"
+          },
+          {
+            "m": "All results move the same way",
+            "f": "Same day: Nestle at a record high, BPCL in a ₹3,962 Cr loss — sector and expectations decide"
+          }
+        ],
+        "dur": 59.942
+      }
+    },
+    {
+      "id": "er_take",
+      "type": "sm_checklist",
+      "in_seconds": 265.818,
+      "out_seconds": 324.32,
+      "props": {
+        "kicker": "HOW TO READ AN EARNINGS DAY",
+        "title": "5 Things to Remember",
+        "color": "#34D399",
+        "icon": "💡",
+        "items": [
+          "Compare vs expectations, not just last year (Eternal +268% yet fell)",
+          "Sector context decides the reaction — crude helped no OMC today",
+          "OMC losses are often crude-inventory driven — check if one-off",
+          "A record profit (Nestle) can send a stock to a 52-week high",
+          "One quarter isn't the trend — watch consistency over time"
+        ],
+        "dur": 59.002
+      }
+    },
+    {
+      "id": "er_recap",
+      "type": "sm_recap",
+      "in_seconds": 324.82,
+      "out_seconds": 380.392,
+      "props": {
+        "title": "22 July Earnings — At a Glance",
+        "items": [
+          "Beats: IndusInd Bank +72%, Nestle +48% (record high)",
+          "Losses: BPCL −₹3,962 Cr, HPCL loss — crude crushed OMCs",
+          "Dr Reddy's PAT −69% (US price erosion)",
+          "Eternal profit +268% but MISSED estimates → stock fell",
+          "Lesson: expectations & sector decide, not the headline"
+        ],
+        "closer": "It's not the number — it's the number versus what was expected.",
+        "dur": 56.072
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.937,
+      "July twenty-second — another huge earnings day,"
+    ],
+    [
+      3.937,
+      7.371,
+      "with more than sixty companies reporting."
+    ],
+    [
+      7.371,
+      10.051,
+      "But today was a day of extremes."
+    ],
+    [
+      10.051,
+      11.392,
+      "On the same day,"
+    ],
+    [
+      11.392,
+      15.412,
+      "one stock hit a record high on a stellar result,"
+    ],
+    [
+      15.412,
+      20.438,
+      "while an oil giant posted a nearly four-thousand-crore loss."
+    ],
+    [
+      20.438,
+      23.369,
+      "And it all ties back to one thing —"
+    ],
+    [
+      23.369,
+      27.222,
+      "the crude spike that crashed the market today."
+    ],
+    [
+      27.222,
+      30.908,
+      "Let's break down who won, who lost, and why."
+    ],
+    [
+      30.908,
+      34.593,
+      "Remember — all comparisons are year-on-year,"
+    ],
+    [
+      34.593,
+      39.284,
+      "and this is information analysis, not investment advice."
+    ],
+    [
+      39.784,
+      44.03,
+      "Let's start with today's story in three numbers."
+    ],
+    [
+      44.03,
+      49.25,
+      "IndusInd Bank — net profit one thousand thirty-seven crore,"
+    ],
+    [
+      49.25,
+      51.284,
+      "up seventy-two percent."
+    ],
+    [
+      51.284,
+      52.257,
+      "A big beat."
+    ],
+    [
+      52.257,
+      56.857,
+      "Nestle India — profit nine hundred fifty-nine crore,"
+    ],
+    [
+      56.857,
+      58.892,
+      "up forty-eight percent,"
+    ],
+    [
+      58.892,
+      62.696,
+      "sending the stock to a fifty-two-week high."
+    ],
+    [
+      62.696,
+      65.261,
+      "But B-P-C-L — the oil giant —"
+    ],
+    [
+      65.261,
+      69.331,
+      "swung to a loss of nearly four thousand crore."
+    ],
+    [
+      69.331,
+      73.931,
+      "Two big beats and a shock loss, all on the same day."
+    ],
+    [
+      73.931,
+      78.177,
+      "And the dividing line between them is crude oil."
+    ],
+    [
+      78.177,
+      81.008,
+      "Let's see who was on which side."
+    ],
+    [
+      81.508,
+      83.106,
+      "First, the winners."
+    ],
+    [
+      83.106,
+      88.91,
+      "IndusInd Bank posted a net profit of one thousand thirty-seven crore,"
+    ],
+    [
+      88.91,
+      90.845,
+      "up seventy-two percent."
+    ],
+    [
+      90.845,
+      93.789,
+      "Its net interest income was strong,"
+    ],
+    [
+      93.789,
+      96.06,
+      "and asset quality improved,"
+    ],
+    [
+      96.06,
+      100.686,
+      "with bad loans falling to three point two five percent."
+    ],
+    [
+      100.686,
+      104.976,
+      "That's reassuring for the whole private-bank space,"
+    ],
+    [
+      104.976,
+      107.415,
+      "which had been under a cloud."
+    ],
+    [
+      107.415,
+      112.294,
+      "Nestle India was the star — profit up forty-eight percent,"
+    ],
+    [
+      112.294,
+      114.901,
+      "revenue up twenty-five percent,"
+    ],
+    [
+      114.901,
+      118.518,
+      "sending the stock to a fifty-two-week high."
+    ],
+    [
+      118.518,
+      123.144,
+      "Then a fascinating one — Eternal, the parent of Zomato."
+    ],
+    [
+      123.144,
+      131.976,
+      "Its revenue jumped a huge one hundred eighty-two percent and profit rose two hundred sixty-eight percent."
+    ],
+    [
+      131.976,
+      133.911,
+      "And yet the stock fell."
+    ],
+    [
+      133.911,
+      134.247,
+      "Why?"
+    ],
+    [
+      134.247,
+      136.855,
+      "We'll explain that in a moment."
+    ],
+    [
+      136.855,
+      138.369,
+      "The read-through —"
+    ],
+    [
+      138.369,
+      142.154,
+      "F-M-C-G and private banks shrugged off crude."
+    ],
+    [
+      142.154,
+      146.612,
+      "But the day truly belonged to oil, as we'll see next."
+    ],
+    [
+      147.112,
+      150.381,
+      "Now the losers — and the theme is crude."
+    ],
+    [
+      150.381,
+      153.077,
+      "B-P-C-L, the oil marketing giant,"
+    ],
+    [
+      153.077,
+      156.836,
+      "swung to a loss of nearly four thousand crore,"
+    ],
+    [
+      156.836,
+      160.595,
+      "versus a six-thousand-crore profit a year ago."
+    ],
+    [
+      160.595,
+      162.802,
+      "When crude spikes suddenly,"
+    ],
+    [
+      162.802,
+      166.724,
+      "oil marketers take inventory and margin losses —"
+    ],
+    [
+      166.724,
+      169.421,
+      "and that's exactly what happened."
+    ],
+    [
+      169.421,
+      171.709,
+      "H-P-C-L told the same story,"
+    ],
+    [
+      171.709,
+      176.367,
+      "also slipping into a loss on the crude and inventory hit."
+    ],
+    [
+      176.367,
+      180.126,
+      "Doctor Reddy's was a different kind of loser —"
+    ],
+    [
+      180.126,
+      182.986,
+      "its profit fell sixty-nine percent,"
+    ],
+    [
+      182.986,
+      186.826,
+      "but that was due to US price erosion in pharma,"
+    ],
+    [
+      186.826,
+      189.36,
+      "a separate pressure, not crude."
+    ],
+    [
+      189.36,
+      191.893,
+      "And here's the big connection —"
+    ],
+    [
+      191.893,
+      200.391,
+      "the very same crude spike that crashed the market today is what pushed these oil marketers into the red."
+    ],
+    [
+      200.391,
+      205.376,
+      "The market's fear and these losses are two sides of one coin."
+    ],
+    [
+      205.876,
+      207.92,
+      "So what are the lessons?"
+    ],
+    [
+      207.92,
+      209.112,
+      "Three of them."
+    ],
+    [
+      209.112,
+      211.752,
+      "First, and the most important —"
+    ],
+    [
+      211.752,
+      216.521,
+      "Eternal grew its profit two hundred sixty-eight percent,"
+    ],
+    [
+      216.521,
+      218.139,
+      "yet the stock fell."
+    ],
+    [
+      218.139,
+      218.48,
+      "Why?"
+    ],
+    [
+      218.48,
+      222.056,
+      "Because it missed what analysts expected —"
+    ],
+    [
+      222.056,
+      227.251,
+      "ninety-two crore versus around two hundred fifty-eight crore."
+    ],
+    [
+      227.251,
+      230.743,
+      "The market pays for beating expectations,"
+    ],
+    [
+      230.743,
+      232.446,
+      "not just for growth."
+    ],
+    [
+      232.446,
+      233.127,
+      "Second —"
+    ],
+    [
+      233.127,
+      238.407,
+      "the oil marketers posting losses does not mean they're broken."
+    ],
+    [
+      238.407,
+      247.349,
+      "A sudden crude spike causes one-off inventory and margin losses that often reverse when prices stabilise."
+    ],
+    [
+      247.349,
+      251.352,
+      "Third — never assume all results move together."
+    ],
+    [
+      251.352,
+      252.714,
+      "On this one day,"
+    ],
+    [
+      252.714,
+      258.931,
+      "Nestle hit a record high while B-P-C-L posted a four-thousand-crore loss."
+    ],
+    [
+      258.931,
+      262.763,
+      "Sector and expectations decide the reaction —"
+    ],
+    [
+      262.763,
+      265.318,
+      "not the headline number alone."
+    ],
+    [
+      265.818,
+      266.531,
+      "Finally,"
+    ],
+    [
+      266.531,
+      271.347,
+      "five things to remember when reading any earnings day."
+    ],
+    [
+      271.347,
+      275.093,
+      "One — always compare against expectations,"
+    ],
+    [
+      275.093,
+      276.787,
+      "not just last year."
+    ],
+    [
+      276.787,
+      282.762,
+      "Eternal grew profit two hundred sixty-eight percent and still fell,"
+    ],
+    [
+      282.762,
+      285.259,
+      "because it missed estimates."
+    ],
+    [
+      285.259,
+      289.005,
+      "Two — sector context decides the reaction."
+    ],
+    [
+      289.005,
+      292.215,
+      "Today, crude helped no oil marketer,"
+    ],
+    [
+      292.215,
+      294.891,
+      "but F-M-C-G and banks thrived."
+    ],
+    [
+      294.891,
+      300.331,
+      "Three — oil marketer losses are often crude-inventory driven."
+    ],
+    [
+      300.331,
+      305.592,
+      "Check whether it's a one-off before you judge the business."
+    ],
+    [
+      305.592,
+      309.694,
+      "Four — a genuine record profit, like Nestle's,"
+    ],
+    [
+      309.694,
+      314.243,
+      "can send a stock straight to a fifty-two-week high."
+    ],
+    [
+      314.243,
+      318.167,
+      "Five — one quarter is never the whole story."
+    ],
+    [
+      318.167,
+      324.32,
+      "Watch consistency over several quarters before you conclude anything."
+    ],
+    [
+      324.82,
+      328.347,
+      "July twenty-second earnings, at a glance."
+    ],
+    [
+      328.347,
+      332.562,
+      "The beats — IndusInd Bank up seventy-two percent,"
+    ],
+    [
+      332.562,
+      336.949,
+      "and Nestle up forty-eight percent to a record high."
+    ],
+    [
+      336.949,
+      337.982,
+      "The losses —"
+    ],
+    [
+      337.982,
+      343.401,
+      "B-P-C-L down nearly four thousand crore and H-P-C-L in the red,"
+    ],
+    [
+      343.401,
+      347.272,
+      "as the crude spike crushed the oil marketers."
+    ],
+    [
+      347.272,
+      353.208,
+      "Doctor Reddy's profit fell sixty-nine percent on US pricing pressure."
+    ],
+    [
+      353.208,
+      355.531,
+      "And the lesson of the day —"
+    ],
+    [
+      355.531,
+      361.811,
+      "Eternal grew profit two hundred sixty-eight percent but missed estimates,"
+    ],
+    [
+      361.811,
+      363.359,
+      "so its stock fell."
+    ],
+    [
+      363.359,
+      365.166,
+      "It's not the number —"
+    ],
+    [
+      365.166,
+      368.693,
+      "it's the number versus what was expected,"
+    ],
+    [
+      368.693,
+      370.671,
+      "and the sector it's in."
+    ],
+    [
+      370.671,
+      375.144,
+      "This information is aggregated from public sources —"
+    ],
+    [
+      375.144,
+      378.672,
+      "for analysis only, not investment advice."
+    ],
+    [
+      378.672,
+      380.392,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/er22e.wav",
+      "volume": 1.0
+    }
+  }
+}

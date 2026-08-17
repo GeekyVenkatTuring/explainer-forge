@@ -1,0 +1,1124 @@
+{
+ "cuts": [
+  {
+   "id": "solar-ch06-selling_divider",
+   "type": "sol_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 11.174,
+   "props": {
+    "n": 6,
+    "title": "The Business",
+    "sub": "channels, margins, getting started",
+    "color": "#A78BFA",
+    "dur": 11.674
+   }
+  },
+  {
+   "id": "solar-ch06-selling_valuechain",
+   "type": "sol_valuechain",
+   "in_seconds": 11.674,
+   "out_seconds": 66.255,
+   "props": {
+    "dur": 55.081
+   }
+  },
+  {
+   "id": "solar-ch06-selling_channels",
+   "type": "sol_channels",
+   "in_seconds": 66.755,
+   "out_seconds": 117.4,
+   "props": {
+    "dur": 51.145
+   }
+  },
+  {
+   "id": "solar-ch06-selling_margins",
+   "type": "sol_margins",
+   "in_seconds": 117.9,
+   "out_seconds": 172.283,
+   "props": {
+    "dur": 54.883
+   }
+  },
+  {
+   "id": "solar-ch06-selling_economics",
+   "type": "sol_economics",
+   "in_seconds": 172.783,
+   "out_seconds": 220.928,
+   "props": {
+    "dur": 48.645
+   }
+  },
+  {
+   "id": "solar-ch06-selling_getstarted",
+   "type": "sol_getstarted",
+   "in_seconds": 221.428,
+   "out_seconds": 270.18,
+   "props": {
+    "dur": 49.252
+   }
+  },
+  {
+   "id": "solar-ch06-selling_risks",
+   "type": "sol_risks",
+   "in_seconds": 270.68,
+   "out_seconds": 317.747,
+   "props": {
+    "dur": 47.567
+   }
+  },
+  {
+   "id": "solar-ch06-selling_recap",
+   "type": "sol_recap",
+   "in_seconds": 318.247,
+   "out_seconds": 387.814,
+   "props": {
+    "items": [
+     "Sunlight arrives as photons; a silicon cell frees electrons \u2014 that flow is electricity",
+     "Cells make a panel, panels make an array, sized to the customer's bill",
+     "The inverter turns DC into AC; net metering makes the grid your free battery",
+     "Size a system by dividing monthly units by 120; ~100 sq ft of clear roof per kW",
+     "PM Surya Ghar pays up to \u20b978,000; home payback is about 3.5 to 5 years",
+     "Businesses have the big bills \u2014 CAPEX or the zero-upfront OPEX / RESCO model",
+     "Enter near the customer: refer, sell, or install \u2014 service earns the best margin",
+     "Win on trust and clean execution, not on being the cheapest quote"
+    ],
+    "closer": "Sunlight is free \u2014 the business is turning it into savings people gladly pay for.",
+    "dur": 70.067
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.753,
+   "Part six."
+  ],
+  [
+   0.753,
+   1.883,
+   "The business itself."
+  ],
+  [
+   2.514,
+   4.773,
+   "You now understand the product deeply."
+  ],
+  [
+   4.773,
+   7.785,
+   "So let's answer the question you came for"
+  ],
+  [
+   7.785,
+   10.797,
+   "\u2014 how do you actually make money selling"
+  ],
+  [
+   10.797,
+   11.174,
+   "solar?"
+  ],
+  [
+   11.674,
+   13.528,
+   "Solar has a value chain,"
+  ],
+  [
+   13.528,
+   16.494,
+   "and you get to choose your spot on"
+  ],
+  [
+   16.494,
+   16.864,
+   "it."
+  ],
+  [
+   17.496,
+   20.462,
+   "At one end sits manufacturing \u2014 building the"
+  ],
+  [
+   20.462,
+   20.833,
+   "panels."
+  ],
+  [
+   20.833,
+   22.316,
+   "That takes enormous capital,"
+  ],
+  [
+   22.316,
+   23.057,
+   "a factory,"
+  ],
+  [
+   23.057,
+   24.169,
+   "and deep expertise."
+  ],
+  [
+   24.169,
+   25.652,
+   "Very hard to enter."
+  ],
+  [
+   26.284,
+   29.25,
+   "Next comes distribution \u2014 holding large stock and"
+  ],
+  [
+   29.25,
+   29.991,
+   "supplying dealers."
+  ],
+  [
+   29.991,
+   31.103,
+   "Still high capital."
+  ],
+  [
+   31.735,
+   33.959,
+   "Then E P C \u2014 engineering,"
+  ],
+  [
+   33.959,
+   34.33,
+   "procurement,"
+  ],
+  [
+   34.33,
+   37.296,
+   "and construction \u2014 the companies that design and"
+  ],
+  [
+   37.296,
+   37.667,
+   "install."
+  ],
+  [
+   37.667,
+   38.408,
+   "Medium capital."
+  ],
+  [
+   39.04,
+   42.006,
+   "Then selling and dealing \u2014 closing customers and"
+  ],
+  [
+   42.006,
+   43.118,
+   "arranging the install."
+  ],
+  [
+   43.118,
+   43.86,
+   "Low capital."
+  ],
+  [
+   44.491,
+   46.345,
+   "And at the far end,"
+  ],
+  [
+   46.345,
+   48.569,
+   "referring and maintenance \u2014 tiny capital."
+  ],
+  [
+   49.201,
+   50.684,
+   "Here's the key insight."
+  ],
+  [
+   50.684,
+   52.908,
+   "You do not need a factory."
+  ],
+  [
+   52.908,
+   55.874,
+   "Most people start on the right-hand side \u2014"
+  ],
+  [
+   55.874,
+   56.245,
+   "referring,"
+  ],
+  [
+   56.245,
+   56.616,
+   "selling,"
+  ],
+  [
+   56.616,
+   59.582,
+   "installing \u2014 where the capital is small and"
+  ],
+  [
+   59.582,
+   61.065,
+   "the demand is huge."
+  ],
+  [
+   61.065,
+   63.66,
+   "The closer you are to the customer,"
+  ],
+  [
+   63.66,
+   66.255,
+   "the less money you need to begin."
+  ],
+  [
+   66.755,
+   67.469,
+   "So concretely,"
+  ],
+  [
+   67.469,
+   69.968,
+   "here are four doors into the business."
+  ],
+  [
+   70.6,
+   71.671,
+   "One \u2014 referral,"
+  ],
+  [
+   71.671,
+   72.385,
+   "or affiliate."
+  ],
+  [
+   72.385,
+   73.099,
+   "Zero capital."
+  ],
+  [
+   73.099,
+   75.956,
+   "You simply send interested buyers to an installer,"
+  ],
+  [
+   75.956,
+   78.812,
+   "and earn maybe two to five thousand rupees"
+  ],
+  [
+   78.812,
+   80.24,
+   "for every closed job."
+  ],
+  [
+   80.24,
+   81.668,
+   "The easiest possible start."
+  ],
+  [
+   82.3,
+   83.371,
+   "Two \u2014 dealer,"
+  ],
+  [
+   83.371,
+   84.085,
+   "or reseller."
+  ],
+  [
+   84.085,
+   85.513,
+   "You hold some stock,"
+  ],
+  [
+   85.513,
+   86.227,
+   "sell it,"
+  ],
+  [
+   86.227,
+   87.656,
+   "and arrange the install,"
+  ],
+  [
+   87.656,
+   90.512,
+   "for a margin of ten to eighteen percent."
+  ],
+  [
+   91.144,
+   92.929,
+   "Three \u2014 E P C,"
+  ],
+  [
+   92.929,
+   93.643,
+   "or turnkey."
+  ],
+  [
+   93.643,
+   94.357,
+   "You design,"
+  ],
+  [
+   94.357,
+   94.714,
+   "supply,"
+  ],
+  [
+   94.714,
+   97.57,
+   "and install the whole thing end to end,"
+  ],
+  [
+   97.57,
+   99.356,
+   "for fifteen to twenty-five percent."
+  ],
+  [
+   99.987,
+   101.415,
+   "Four \u2014 a franchise."
+  ],
+  [
+   101.415,
+   104.272,
+   "You ride a known brand \u2014 a Tata,"
+  ],
+  [
+   104.272,
+   104.986,
+   "a Luminous,"
+  ],
+  [
+   104.986,
+   107.842,
+   "a Waaree \u2014 and they hand you leads"
+  ],
+  [
+   107.842,
+   108.556,
+   "and trust."
+  ],
+  [
+   109.188,
+   112.044,
+   "The smart path is to start light with"
+  ],
+  [
+   112.044,
+   112.401,
+   "referrals,"
+  ],
+  [
+   112.401,
+   114.544,
+   "build a reputation and real reviews,"
+  ],
+  [
+   114.544,
+   117.4,
+   "and then grow into stocking and installing\nyourself."
+  ],
+  [
+   117.9,
+   121.047,
+   "Now the number you really want \u2014 the"
+  ],
+  [
+   121.047,
+   121.441,
+   "margins."
+  ],
+  [
+   122.072,
+   123.646,
+   "Selling just the panels,"
+  ],
+  [
+   123.646,
+   124.433,
+   "the hardware,"
+  ],
+  [
+   124.433,
+   127.186,
+   "earns a thin eight to twelve percent."
+  ],
+  [
+   127.818,
+   130.572,
+   "Inverters and batteries do a little better,"
+  ],
+  [
+   130.572,
+   131.752,
+   "twelve to twenty."
+  ],
+  [
+   132.384,
+   135.531,
+   "But the real money is in the service."
+  ],
+  [
+   135.531,
+   138.678,
+   "Doing the full E P C \u2014 the"
+  ],
+  [
+   138.678,
+   141.825,
+   "design and installation \u2014 earns fifteen to\ntwenty-five"
+  ],
+  [
+   141.825,
+   142.219,
+   "percent."
+  ],
+  [
+   142.85,
+   144.424,
+   "And a good dealer,"
+  ],
+  [
+   144.424,
+   145.997,
+   "blending hardware and service,"
+  ],
+  [
+   145.997,
+   148.358,
+   "can see twenty to thirty-five percent."
+  ],
+  [
+   148.989,
+   152.137,
+   "But let me be completely honest with you,"
+  ],
+  [
+   152.137,
+   154.104,
+   "because most videos won't be."
+  ],
+  [
+   154.735,
+   156.702,
+   "Those headline margins look wonderful,"
+  ],
+  [
+   156.702,
+   159.849,
+   "but soft costs quietly eat into them \u2014"
+  ],
+  [
+   159.849,
+   161.03,
+   "failed site visits,"
+  ],
+  [
+   161.03,
+   161.423,
+   "redesigns,"
+  ],
+  [
+   161.423,
+   161.816,
+   "delays,"
+  ],
+  [
+   161.816,
+   164.57,
+   "marketing \u2014 often five to ten percent."
+  ],
+  [
+   164.57,
+   166.144,
+   "And competition keeps squeezing."
+  ],
+  [
+   166.775,
+   168.349,
+   "The lesson is clear:"
+  ],
+  [
+   168.349,
+   170.316,
+   "earn from service and design,"
+  ],
+  [
+   170.316,
+   172.283,
+   "not from just reselling boxes."
+  ],
+  [
+   172.783,
+   174.706,
+   "Let's make it painfully concrete,"
+  ],
+  [
+   174.706,
+   177.782,
+   "with the profit and loss on one real"
+  ],
+  [
+   177.782,
+   180.473,
+   "job \u2014 a five kilowatt home system."
+  ],
+  [
+   181.105,
+   183.796,
+   "You charge the customer around three lakh,"
+  ],
+  [
+   183.796,
+   184.95,
+   "twenty-five thousand rupees."
+  ],
+  [
+   185.581,
+   186.735,
+   "Now your costs."
+  ],
+  [
+   186.735,
+   189.426,
+   "The panels run about one lakh sixty."
+  ],
+  [
+   189.426,
+   190.195,
+   "The inverter,"
+  ],
+  [
+   190.195,
+   190.964,
+   "forty-five thousand."
+  ],
+  [
+   190.964,
+   193.271,
+   "The structure and balance of system,"
+  ],
+  [
+   193.271,
+   194.04,
+   "forty thousand."
+  ],
+  [
+   194.04,
+   195.963,
+   "And labour plus soft costs,"
+  ],
+  [
+   195.963,
+   197.116,
+   "roughly forty-two thousand."
+  ],
+  [
+   197.748,
+   198.902,
+   "Add those up,"
+  ],
+  [
+   198.902,
+   201.978,
+   "and your gross profit is around thirty-eight\nthousand"
+  ],
+  [
+   201.978,
+   204.669,
+   "rupees \u2014 a little under twelve percent."
+  ],
+  [
+   205.301,
+   206.839,
+   "That may sound modest."
+  ],
+  [
+   206.839,
+   209.915,
+   "But do a few of these every month,"
+  ],
+  [
+   209.915,
+   211.837,
+   "and add ongoing maintenance contracts,"
+  ],
+  [
+   211.837,
+   214.913,
+   "and the recurring income becomes the real prize."
+  ],
+  [
+   215.545,
+   217.467,
+   "The whole game is this:"
+  ],
+  [
+   217.467,
+   218.236,
+   "buy well,"
+  ],
+  [
+   218.236,
+   219.005,
+   "install cleanly,"
+  ],
+  [
+   219.005,
+   220.928,
+   "and kill the soft costs."
+  ],
+  [
+   221.428,
+   223.689,
+   "So how do you actually begin?"
+  ],
+  [
+   223.689,
+   225.95,
+   "Here is a simple ninety-day path."
+  ],
+  [
+   226.581,
+   226.958,
+   "First,"
+  ],
+  [
+   226.958,
+   228.842,
+   "learn the basics \u2014 sizing,"
+  ],
+  [
+   228.842,
+   229.219,
+   "wiring,"
+  ],
+  [
+   229.219,
+   230.726,
+   "and the DISCOM rules."
+  ],
+  [
+   230.726,
+   232.61,
+   "The government's own MNRE site,"
+  ],
+  [
+   232.61,
+   233.741,
+   "and honest videos,"
+  ],
+  [
+   233.741,
+   235.248,
+   "cover it for free."
+  ],
+  [
+   235.88,
+   236.256,
+   "Second,"
+  ],
+  [
+   236.256,
+   239.271,
+   "tie up supply \u2014 find a distributor for"
+  ],
+  [
+   239.271,
+   241.909,
+   "panels and inverters that are properly approved,"
+  ],
+  [
+   241.909,
+   244.923,
+   "on the A L M M and B"
+  ],
+  [
+   244.923,
+   246.053,
+   "I S lists."
+  ],
+  [
+   246.685,
+   247.062,
+   "Third,"
+  ],
+  [
+   247.062,
+   248.569,
+   "register as a vendor,"
+  ],
+  [
+   248.569,
+   251.584,
+   "on the national P M Surya Ghar portal,"
+  ],
+  [
+   251.584,
+   253.468,
+   "and with your state DISCOM."
+  ],
+  [
+   254.099,
+   254.476,
+   "Fourth,"
+  ],
+  [
+   254.476,
+   257.49,
+   "start with referrals \u2014 close a few jobs,"
+  ],
+  [
+   257.49,
+   259.375,
+   "and collect reviews and photos,"
+  ],
+  [
+   259.375,
+   261.635,
+   "because trust is your real product."
+  ],
+  [
+   262.267,
+   263.021,
+   "And fifth,"
+  ],
+  [
+   263.021,
+   266.035,
+   "grow into full E P C \u2014 carry"
+  ],
+  [
+   266.035,
+   266.412,
+   "stock,"
+  ],
+  [
+   266.412,
+   267.542,
+   "hire an installer,"
+  ],
+  [
+   267.542,
+   269.05,
+   "and sign maintenance contracts."
+  ],
+  [
+   269.05,
+   269.426,
+   "Small,"
+  ],
+  [
+   269.426,
+   270.18,
+   "steady steps."
+  ],
+  [
+   270.68,
+   271.978,
+   "Before we finish,"
+  ],
+  [
+   271.978,
+   275.441,
+   "let me show you the risks \u2014 the"
+  ],
+  [
+   275.441,
+   276.739,
+   "ones nobody advertises."
+  ],
+  [
+   277.37,
+   277.803,
+   "First,"
+  ],
+  [
+   277.803,
+   278.669,
+   "price wars."
+  ],
+  [
+   278.669,
+   279.102,
+   "Aggressive,"
+  ],
+  [
+   279.102,
+   282.131,
+   "cut-throat bidding can compress your margins fast."
+  ],
+  [
+   282.763,
+   283.195,
+   "Second,"
+  ],
+  [
+   283.195,
+   285.792,
+   "soft-cost leakage \u2014 those failed visits,"
+  ],
+  [
+   285.792,
+   286.225,
+   "redesigns,"
+  ],
+  [
+   286.225,
+   289.254,
+   "and delays that silently eat your profit."
+  ],
+  [
+   289.886,
+   290.319,
+   "Third,"
+  ],
+  [
+   290.319,
+   291.617,
+   "quality and warranty."
+  ],
+  [
+   291.617,
+   295.079,
+   "A bad inverter or a leaking roof becomes"
+  ],
+  [
+   295.079,
+   295.945,
+   "your liability,"
+  ],
+  [
+   295.945,
+   296.81,
+   "for years."
+  ],
+  [
+   297.442,
+   298.307,
+   "And fourth,"
+  ],
+  [
+   298.307,
+   299.173,
+   "policy dependence."
+  ],
+  [
+   299.173,
+   302.635,
+   "Subsidies and net-metering rules can change with a"
+  ],
+  [
+   302.635,
+   303.501,
+   "government notification."
+  ],
+  [
+   304.132,
+   307.162,
+   "None of these should scare you off."
+  ],
+  [
+   307.162,
+   309.325,
+   "But they explain who wins."
+  ],
+  [
+   309.957,
+   313.419,
+   "The winners don't compete on being the cheapest"
+  ],
+  [
+   313.419,
+   313.852,
+   "quote."
+  ],
+  [
+   313.852,
+   315.583,
+   "They compete on trust,"
+  ],
+  [
+   315.583,
+   316.881,
+   "and on clean,"
+  ],
+  [
+   316.881,
+   317.747,
+   "reliable execution."
+  ],
+  [
+   318.247,
+   321.259,
+   "So let's bring the whole map together in"
+  ],
+  [
+   321.259,
+   322.012,
+   "one breath."
+  ],
+  [
+   322.644,
+   324.15,
+   "Sunlight arrives as photons,"
+  ],
+  [
+   324.15,
+   327.161,
+   "and a silicon cell frees electrons \u2014 and"
+  ],
+  [
+   327.161,
+   329.044,
+   "that flow is your electricity."
+  ],
+  [
+   329.676,
+   331.182,
+   "Cells make a panel,"
+  ],
+  [
+   331.182,
+   332.687,
+   "panels make an array,"
+  ],
+  [
+   332.687,
+   334.57,
+   "sized to the customer's bill."
+  ],
+  [
+   335.202,
+   338.214,
+   "The inverter turns D C into A C,"
+  ],
+  [
+   338.214,
+   341.225,
+   "and net metering turns the grid into a"
+  ],
+  [
+   341.225,
+   341.978,
+   "free battery."
+  ],
+  [
+   342.61,
+   345.622,
+   "You size a system by dividing monthly units"
+  ],
+  [
+   345.622,
+   347.504,
+   "by a hundred and twenty,"
+  ],
+  [
+   347.504,
+   350.516,
+   "and you need about a hundred square feet"
+  ],
+  [
+   350.516,
+   352.399,
+   "of clear roof per kilowatt."
+  ],
+  [
+   353.031,
+   355.666,
+   "The subsidy pays up to seventy-eight thousand,"
+  ],
+  [
+   355.666,
+   358.678,
+   "and a home pays back in three and"
+  ],
+  [
+   358.678,
+   360.56,
+   "a half to five years."
+  ],
+  [
+   361.192,
+   363.074,
+   "Businesses hold the big bills,"
+  ],
+  [
+   363.074,
+   364.204,
+   "funded by CAPEX,"
+  ],
+  [
+   364.204,
+   366.086,
+   "or the zero-upfront OPEX model."
+  ],
+  [
+   366.718,
+   367.847,
+   "And to earn,"
+  ],
+  [
+   367.847,
+   370.859,
+   "you enter close to the customer \u2014 refer,"
+  ],
+  [
+   370.859,
+   371.236,
+   "sell,"
+  ],
+  [
+   371.236,
+   374.248,
+   "or install \u2014 because service earns the best"
+  ],
+  [
+   374.248,
+   374.624,
+   "margin."
+  ],
+  [
+   375.256,
+   377.891,
+   "You win on trust and clean execution,"
+  ],
+  [
+   377.891,
+   380.15,
+   "never on being the cheapest quote."
+  ],
+  [
+   380.782,
+   381.911,
+   "Sunlight is free."
+  ],
+  [
+   381.911,
+   384.923,
+   "The business is turning it into savings people"
+  ],
+  [
+   384.923,
+   386.053,
+   "gladly pay for."
+  ],
+  [
+   386.685,
+   387.814,
+   "Thanks for watching."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "sol/solar-ch06-selling.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "ticker": "UNITDSPR",
+ "scraped_at": "2026-08-14T15:29:24",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 111485.0,
+ "current_price": 1533.0,
+ "pe": 60.2,
+ "book_value": 123.0,
+ "dividend_yield_pct": 1.12,
+ "roce_pct": 26.4,
+ "roe_pct": 21.4,
+ "face_value": 2.0,
+ "high": 1549.0,
+ "sales_growth": {
+  "10 Years": 29.0,
+  "5 Years": 35.0,
+  "3 Years": 23.0,
+  "TTM": 15.0
+ },
+ "profit_growth": {
+  "10 Years": 13.0,
+  "5 Years": 18.0,
+  "3 Years": 15.0,
+  "1 Year": 15.0
+ },
+ "roe_hist": {
+  "Equity Capital": 145.0,
+  "Reserves": 514.0,
+  "CWIP": 114.0,
+  "Investments": 216.0
+ },
+ "price_cagr": {
+  "10 Years": 20.0,
+  "5 Years": 20.0,
+  "3 Years": 21.0,
+  "Last Year": 21.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "27%",
+   "16%",
+   "16%",
+   "12%",
+   "26%",
+   "18%",
+   "16%",
+   "17%",
+   "21%",
+   "21%",
+   "17%",
+   "19%",
+   "16%"
+  ],
+  "eps": [
+   "6.56",
+   "4.66",
+   "4.81",
+   "3.31",
+   "6.67",
+   "4.69",
+   "4.61",
+   "5.79",
+   "5.73",
+   "6.38",
+   "5.75",
+   "7.41",
+   "6.37"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has delivered good profit growth of 34.5% CAGR over last 5 years",
+  "Company has been maintaining a healthy dividend payout of 56.1%"
+ ],
+ "cons": [
+  "Stock is trading at 12.4 times its book value",
+  "The company has delivered a poor sales growth of 8.92% over past five years."
+ ]
+}

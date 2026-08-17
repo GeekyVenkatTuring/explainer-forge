@@ -1,0 +1,377 @@
+{
+  "cuts": [
+    {
+      "id": "s01_title",
+      "type": "em_titlex",
+      "in_seconds": 0.0,
+      "out_seconds": 18.909,
+      "props": {
+        "kicker": "ENGINEERING LEADERSHIP \u00b7 PART THREE",
+        "line1": "Leading Through",
+        "line2": "Change & Hard Calls",
+        "sub": "four more behavioral questions \u00b7 with full worked answers \u00b7 Senior EM",
+        "dur": 19.409
+      }
+    },
+    {
+      "id": "s02_star",
+      "type": "em_star",
+      "in_seconds": 19.409,
+      "out_seconds": 35.531,
+      "props": {
+        "dur": 16.622
+      }
+    },
+    {
+      "id": "s03_execs",
+      "type": "em_q",
+      "in_seconds": 36.031,
+      "out_seconds": 71.388,
+      "props": {
+        "cat": "INFLUENCE \u00b7 MANAGING UP",
+        "title": "Managing a difficult executive",
+        "q": "How do you handle a demanding or skeptical executive?",
+        "color": "#38BDF8",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Understand their world",
+            "desc": "What are they measured on, what are they afraid of? Map their incentives first."
+          },
+          {
+            "node": "A",
+            "title": "Lead with the headline",
+            "desc": "Bottom line up front, then the detail. Execs buy the conclusion, then the data."
+          },
+          {
+            "node": "A",
+            "title": "Bring bad news early, with options",
+            "desc": "Never surprise them. A risk plus two options beats a polished excuse."
+          },
+          {
+            "node": "L",
+            "title": "Build trust between fires",
+            "desc": "Credibility is banked in the calm times and spent in the hard ones."
+          }
+        ],
+        "trap": "You either avoided them, or you caved on every push without pushing back.",
+        "signal": "You manage upward with candor and structure \u2014 a trusted partner, not an order-taker.",
+        "foot": "Execs don't want a yes-man or a wall. They want a clear-eyed partner who tells the truth.",
+        "dur": 35.857
+      }
+    },
+    {
+      "id": "s03s_execs",
+      "type": "em_story",
+      "in_seconds": 71.888,
+      "out_seconds": 177.507,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 MANAGING UP",
+        "title": "Winning over the VP who didn't trust my team",
+        "color": "#38BDF8",
+        "situation": "A new VP joined over my org and, frankly, didn't trust my platform team. He'd heard we were slow, and in our very first meeting he pushed to outsource half our roadmap to a vendor. It was existential.",
+        "task": "My mandate: change his mind \u2014 with evidence, not defensiveness.",
+        "actions": [
+          {
+            "d": "Didn't get defensive \u2014 instead I asked what HE was measured on. It was cost, and delivery speed to the board."
+          },
+          {
+            "d": "Led with his language \u2014 I came back with a one-page plan framed entirely in cost and speed, not in technology."
+          },
+          {
+            "d": "Gave him early wins and honest bad news both \u2014 a fortnightly update he could take straight to the board."
+          },
+          {
+            "d": "Proved it with a 90-day bet \u2014 I committed to a visible delivery milestone, and we hit it."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "outsourcing",
+            "l": "shelved"
+          },
+          {
+            "v": "90 days",
+            "l": "to earn his trust"
+          },
+          {
+            "v": "+ headcount",
+            "l": "he later funded us"
+          }
+        ],
+        "learning": "Managing up is translation \u2014 put your work in the language of what your exec is measured on.",
+        "foot": "You turned a skeptic into a sponsor by speaking his metrics, not defending your turf.",
+        "dur": 106.119
+      }
+    },
+    {
+      "id": "s04_change",
+      "type": "em_q",
+      "in_seconds": 178.007,
+      "out_seconds": 213.863,
+      "props": {
+        "cat": "CHANGE \u00b7 DRIVING ADOPTION",
+        "title": "Driving a change nobody asked for",
+        "q": "Tell me about a time you drove a change against resistance.",
+        "color": "#34D399",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Start with the why and the pain",
+            "desc": "People resist change, not improvement. Anchor on a pain they already feel."
+          },
+          {
+            "node": "A",
+            "title": "Pilot, don't mandate",
+            "desc": "Prove it with one willing team and real data before you roll it wide."
+          },
+          {
+            "node": "A",
+            "title": "Recruit champions",
+            "desc": "Change spreads through respected peers, not top-down email decrees."
+          },
+          {
+            "node": "L",
+            "title": "Make the new way the easy way",
+            "desc": "Bake it into tooling and defaults so it sticks after you look away."
+          }
+        ],
+        "trap": "You mandated it top-down, and it died the moment you stopped pushing.",
+        "signal": "You drive durable change through influence and evidence, not authority.",
+        "foot": "Lasting change is pulled by the org, not pushed by a mandate. Make the right way the easy way.",
+        "dur": 36.356
+      }
+    },
+    {
+      "id": "s04s_change",
+      "type": "em_story",
+      "in_seconds": 214.363,
+      "out_seconds": 319.588,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 DRIVING CHANGE",
+        "title": "Getting 200 engineers to actually write tests",
+        "color": "#34D399",
+        "situation": "Our org of about two hundred engineers had a testing-culture problem. Coverage was low, incidents were high, and two previous top-down \u201cyou must write tests\u201d mandates had quietly failed.",
+        "task": "My mandate: actually change the testing culture, where two mandates had already died.",
+        "actions": [
+          {
+            "d": "Started with the shared pain \u2014 I showed the data linking our worst outages to untested code. Nobody could argue with that."
+          },
+          {
+            "d": "Piloted with one willing, respected team instead of mandating everyone \u2014 and made testing genuinely easy for them."
+          },
+          {
+            "d": "Recruited that team's staff engineer as a visible champion \u2014 peers listen to peers, not to my slide deck."
+          },
+          {
+            "d": "Made it the default \u2014 CI gates, test scaffolding, and templates, so the easy path was now the tested path."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "22% \u2192 78%",
+            "l": "coverage in 2 quarters"
+          },
+          {
+            "v": "\u2193 60%",
+            "l": "test-escaped incidents"
+          },
+          {
+            "v": "bottom-up",
+            "l": "adopted, not forced"
+          }
+        ],
+        "learning": "You don't mandate culture change. You make the right way the easy way, and let peers spread it.",
+        "foot": "Two mandates failed; a pilot plus champions plus good defaults worked. That's how change sticks.",
+        "dur": 105.725
+      }
+    },
+    {
+      "id": "s05_wrongcall",
+      "type": "em_q",
+      "in_seconds": 320.088,
+      "out_seconds": 357.522,
+      "props": {
+        "cat": "JUDGMENT \u00b7 A WRONG CALL",
+        "title": "A technical decision you got wrong",
+        "q": "Tell me about a technical decision you made that was wrong.",
+        "color": "#A78BFA",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Pick a real, owned call",
+            "desc": "A decision that was clearly yours, with real consequences \u2014 not a team mistake."
+          },
+          {
+            "node": "A",
+            "title": "Own the blast radius",
+            "desc": "State honestly what it cost \u2014 time, money, reliability. No minimizing."
+          },
+          {
+            "node": "A",
+            "title": "Course-correct decisively",
+            "desc": "How you caught it, admitted it, and changed direction without ego."
+          },
+          {
+            "node": "L",
+            "title": "Extract the principle",
+            "desc": "The engineering judgment you now apply because of it."
+          }
+        ],
+        "trap": "You blamed the requirements, the vendor, or \u201cunknowable\u201d circumstances.",
+        "signal": "You have technical judgment AND the humility to reverse your own bad call fast.",
+        "foot": "Senior engineers are judged by how fast they kill their own bad ideas, not by never having them.",
+        "dur": 37.934
+      }
+    },
+    {
+      "id": "s05s_wrongcall",
+      "type": "em_story",
+      "in_seconds": 358.022,
+      "out_seconds": 470.433,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 A WRONG CALL",
+        "title": "The microservices migration I pushed too early",
+        "color": "#A78BFA",
+        "situation": "As a newly-promoted senior EM, I pushed hard to break our monolith into microservices. It was the fashionable move, and I championed it. But we were a 15-person team with none of the platform maturity to run twenty services.",
+        "task": "The honest version: I owned this call, and it started actively hurting the team.",
+        "actions": [
+          {
+            "d": "Owned the blast radius honestly \u2014 velocity dropped, on-call exploded, and a one-line feature now touched five services."
+          },
+          {
+            "d": "Caught it fast and said it out loud \u2014 in a team meeting, I admitted the call was premature. That reset trust."
+          },
+          {
+            "d": "Course-corrected without ego \u2014 we consolidated back to a few well-bounded services, keeping only the splits that earned their keep."
+          },
+          {
+            "d": "Changed how I decide \u2014 I now require the operational maturity to exist BEFORE adopting a pattern, not after."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "20 \u2192 5",
+            "l": "services, consolidated"
+          },
+          {
+            "v": "velocity",
+            "l": "recovered in a quarter"
+          },
+          {
+            "v": "a rule",
+            "l": "maturity before pattern"
+          }
+        ],
+        "learning": "Adopt architecture for your real scale and maturity, not for the blog posts \u2014 and kill bad calls fast.",
+        "foot": "You owned it, reversed it fast, and turned it into judgment. That's exactly the answer they want.",
+        "dur": 112.911
+      }
+    },
+    {
+      "id": "s06_layoff",
+      "type": "em_q",
+      "in_seconds": 470.933,
+      "out_seconds": 508.393,
+      "props": {
+        "cat": "LEADERSHIP \u00b7 HARD TIMES",
+        "title": "Leading through a re-org or layoff",
+        "q": "How did you lead your team through a layoff or re-org?",
+        "color": "#F5A524",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Absorb, then lead",
+            "desc": "Process your own reaction privately first. The team needs you steady, not raw."
+          },
+          {
+            "node": "A",
+            "title": "Be honest and human",
+            "desc": "Say what you know, admit what you don't, never spin. Trust is the only currency left."
+          },
+          {
+            "node": "A",
+            "title": "Protect and re-anchor the team",
+            "desc": "Fight for your people behind closed doors; give the survivors clarity fast."
+          },
+          {
+            "node": "L",
+            "title": "Rebuild momentum deliberately",
+            "desc": "Survivor guilt and fear are real. Re-establish direction and small wins quickly."
+          }
+        ],
+        "trap": "You went silent, hid behind an HR script, or pretended everything was fine.",
+        "signal": "You lead with honesty and humanity under pressure, and hold the team together after.",
+        "foot": "In a layoff, your team remembers exactly how you treated people. That memory outlives the re-org.",
+        "dur": 37.96
+      }
+    },
+    {
+      "id": "s06s_layoff",
+      "type": "em_story",
+      "in_seconds": 508.893,
+      "out_seconds": 616.62,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 HARD TIMES",
+        "title": "Holding the team together through a 20% cut",
+        "color": "#F5A524",
+        "situation": "During a downturn, I was told the company was cutting twenty percent. I had to lose two people from my team of ten, deliver that news myself, and then keep the shaken survivors together.",
+        "task": "My mandate: handle the cut with humanity, and rebuild the team that remained.",
+        "actions": [
+          {
+            "d": "Absorbed it privately first \u2014 I was angry and sad, but the team needed me steady, so I processed it before facing them."
+          },
+          {
+            "d": "Fought for my people behind closed doors \u2014 I couldn't change the number, but I influenced the who, and secured strong severance and references."
+          },
+          {
+            "d": "Told the truth, humanely \u2014 I delivered the news directly and in person, took the hard questions, and never hid behind a script."
+          },
+          {
+            "d": "Re-anchored the survivors fast \u2014 within a week: honest one-on-ones, a reset on priorities, and a clear, lighter mission."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "2 exits",
+            "l": "handled with dignity"
+          },
+          {
+            "v": "0",
+            "l": "further attrition"
+          },
+          {
+            "v": "re-focused",
+            "l": "in one week"
+          }
+        ],
+        "learning": "In hard times, people don't remember the strategy. They remember whether you were honest and humane.",
+        "foot": "You carried the hard news like a leader, and rebuilt trust after. That's the truest test of one.",
+        "dur": 108.227
+      }
+    },
+    {
+      "id": "s07_recap",
+      "type": "em_recap",
+      "in_seconds": 617.12,
+      "out_seconds": 653.371,
+      "props": {
+        "items": [
+          "Manage up by speaking your exec's metrics, not your tech.",
+          "Drive change with pilots and champions, never mandates.",
+          "Own a wrong call fast, and turn it into judgment.",
+          "In a layoff, lead with honesty and humanity above all.",
+          "Same spine every time: STAR, plus what you learned."
+        ],
+        "closer": "The hardest moments are where they find out who you really are as a leader.",
+        "dur": 36.751
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "em3/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+ "ticker": "JSWSTEEL",
+ "scraped_at": "2026-08-14T15:29:59",
+ "source": "screener.in",
+ "ok": true,
+ "error": "<HTTPError 429: 'Too Many Requests'>",
+ "variant": "standalone",
+ "market_cap_cr": 309643.0,
+ "current_price": 1266.0,
+ "pe": 41.1,
+ "book_value": 350.0,
+ "dividend_yield_pct": 0.56,
+ "roce_pct": 10.5,
+ "roe_pct": 8.38,
+ "face_value": 1.0,
+ "high": 1335.0,
+ "sales_growth": {
+  "10 Years": 12.0,
+  "5 Years": -4.0,
+  "3 Years": 12.0,
+  "TTM": -2.0
+ },
+ "profit_growth": {
+  "10 Years": 22.0,
+  "5 Years": 11.0,
+  "3 Years": 17.0,
+  "1 Year": 22.0
+ },
+ "roe_hist": {
+  "OPM %": 15.0,
+  "Other Income&nbsp; +": 438.0,
+  "Tax %": 34.0,
+  "EPS in Rs": 7.05
+ },
+ "price_cagr": {
+  "10 Years": 15.0,
+  "5 Years": 13.0,
+  "3 Years": 10.0,
+  "Last Year": 8.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "15%",
+   "20%",
+   "17%",
+   "13%",
+   "13%",
+   "15%",
+   "14%",
+   "16%",
+   "18%",
+   "15%",
+   "13%",
+   "16%",
+   "19%"
+  ],
+  "eps": [
+   "7.05",
+   "11.91",
+   "9.88",
+   "4.12",
+   "4.93",
+   "5.31",
+   "5.26",
+   "8.37",
+   "9.07",
+   "6.11",
+   "3.10",
+   "8.82",
+   "11.56"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 25.2%"
+ ],
+ "cons": [
+  "Stock is trading at 3.61 times its book value",
+  "Promoter holding has decreased over last quarter: -1.02%",
+  "Company has a low return on equity of 9.56% over last 3 years."
+ ]
+}

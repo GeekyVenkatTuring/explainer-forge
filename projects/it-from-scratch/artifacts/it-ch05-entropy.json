@@ -1,0 +1,598 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch05-entropy_div",
+   "type": "it_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 21.437,
+   "props": {
+    "n": 2,
+    "title": "Entropy",
+    "sub": "the average surprise of a source",
+    "color": "#A78BFA",
+    "dur": 21.937
+   }
+  },
+  {
+   "id": "it-ch05-entropy_entropy",
+   "type": "it_entropy",
+   "in_seconds": 21.937,
+   "out_seconds": 107.349,
+   "props": {
+    "dur": 85.912
+   }
+  },
+  {
+   "id": "it-ch05-entropy_formula",
+   "type": "it_entropyformula",
+   "in_seconds": 107.849,
+   "out_seconds": 200.786,
+   "props": {
+    "dur": 93.437
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.672,
+   "Part two."
+  ],
+  [
+   0.672,
+   1.009,
+   "Entropy."
+  ],
+  [
+   1.64,
+   4.33,
+   "We now know how to measure the surprise"
+  ],
+  [
+   4.33,
+   5.675,
+   "of one single event."
+  ],
+  [
+   5.675,
+   7.692,
+   "But real sources \u2014 a language,"
+  ],
+  [
+   7.692,
+   8.365,
+   "a sensor,"
+  ],
+  [
+   8.365,
+   11.055,
+   "a coin flipped forever \u2014 produce event after"
+  ],
+  [
+   11.055,
+   11.391,
+   "event."
+  ],
+  [
+   11.391,
+   13.408,
+   "So we ask the deeper question:"
+  ],
+  [
+   13.408,
+   15.426,
+   "how uncertain is a whole source,"
+  ],
+  [
+   15.426,
+   16.098,
+   "on average?"
+  ],
+  [
+   16.73,
+   18.411,
+   "That average has a name,"
+  ],
+  [
+   18.411,
+   21.101,
+   "and it will run the rest of this"
+  ],
+  [
+   21.101,
+   21.437,
+   "course."
+  ],
+  [
+   21.937,
+   24.732,
+   "Meet entropy \u2014 the single most important quantity"
+  ],
+  [
+   24.732,
+   26.479,
+   "in all of information theory."
+  ],
+  [
+   27.111,
+   29.906,
+   "The definition is simpler than its fearsome\nreputation."
+  ],
+  [
+   29.906,
+   32.701,
+   "Entropy is just the average surprise of a"
+  ],
+  [
+   32.701,
+   33.05,
+   "source."
+  ],
+  [
+   33.05,
+   35.496,
+   "If you watched it produce outcomes forever,"
+  ],
+  [
+   35.496,
+   38.291,
+   "how many bits would each one cost you,"
+  ],
+  [
+   38.291,
+   38.99,
+   "on average?"
+  ],
+  [
+   39.621,
+   42.417,
+   "Let's build the intuition with a coin whose"
+  ],
+  [
+   42.417,
+   43.814,
+   "bias we can dial."
+  ],
+  [
+   43.814,
+   44.862,
+   "On this curve,"
+  ],
+  [
+   44.862,
+   47.657,
+   "the horizontal axis is the probability of heads,"
+  ],
+  [
+   47.657,
+   50.452,
+   "and the height of the curve is the"
+  ],
+  [
+   50.452,
+   50.802,
+   "entropy,"
+  ],
+  [
+   50.802,
+   51.501,
+   "in bits."
+  ],
+  [
+   52.132,
+   53.879,
+   "Start at the far left."
+  ],
+  [
+   53.879,
+   55.975,
+   "A coin that always lands tails."
+  ],
+  [
+   55.975,
+   58.771,
+   "There is no surprise here at all \u2014"
+  ],
+  [
+   58.771,
+   61.216,
+   "you knew the result before you flipped."
+  ],
+  [
+   61.216,
+   61.566,
+   "Entropy:"
+  ],
+  [
+   61.566,
+   62.264,
+   "zero bits."
+  ],
+  [
+   62.896,
+   64.992,
+   "Same story at the far right."
+  ],
+  [
+   64.992,
+   67.089,
+   "A coin that always lands heads."
+  ],
+  [
+   67.089,
+   67.787,
+   "Utterly predictable."
+  ],
+  [
+   67.787,
+   68.486,
+   "Also zero."
+  ],
+  [
+   69.118,
+   70.865,
+   "Now slide toward the middle,"
+  ],
+  [
+   70.865,
+   72.262,
+   "watch the dot climb,"
+  ],
+  [
+   72.262,
+   74.009,
+   "and reach a perfectly fair,"
+  ],
+  [
+   74.009,
+   74.708,
+   "fifty-fifty coin."
+  ],
+  [
+   74.708,
+   77.503,
+   "Here the entropy peaks \u2014 at exactly one"
+  ],
+  [
+   77.503,
+   78.202,
+   "full bit."
+  ],
+  [
+   78.834,
+   81.629,
+   "And there is the core intuition of the"
+  ],
+  [
+   81.629,
+   82.327,
+   "whole idea."
+  ],
+  [
+   82.327,
+   85.123,
+   "Uncertainty is highest when the outcomes are\nbalanced,"
+  ],
+  [
+   85.123,
+   87.918,
+   "and it falls away the moment the source"
+  ],
+  [
+   87.918,
+   89.315,
+   "becomes lopsided and predictable."
+  ],
+  [
+   89.947,
+   92.043,
+   "Notice what entropy is really about."
+  ],
+  [
+   92.043,
+   94.489,
+   "It is not about any single flip."
+  ],
+  [
+   94.489,
+   96.236,
+   "It is the expected surprise,"
+  ],
+  [
+   96.236,
+   98.681,
+   "a property baked into the source itself,"
+  ],
+  [
+   98.681,
+   101.127,
+   "before you ever look at an outcome."
+  ],
+  [
+   101.759,
+   104.554,
+   "Entropy measures your ignorance about what the\nsource"
+  ],
+  [
+   104.554,
+   106.301,
+   "will do next \u2014 measured,"
+  ],
+  [
+   106.301,
+   106.65,
+   "precisely,"
+  ],
+  [
+   106.65,
+   107.349,
+   "in bits."
+  ],
+  [
+   107.849,
+   109.547,
+   "Let's make that average precise,"
+  ],
+  [
+   109.547,
+   112.265,
+   "because the famous formula is much friendlier than"
+  ],
+  [
+   112.265,
+   112.944,
+   "it looks."
+  ],
+  [
+   113.576,
+   115.274,
+   "To get an average surprise,"
+  ],
+  [
+   115.274,
+   116.973,
+   "we do the natural thing."
+  ],
+  [
+   116.973,
+   119.011,
+   "We take each possible outcome's surprise,"
+  ],
+  [
+   119.011,
+   121.729,
+   "and weight it by how often that outcome"
+  ],
+  [
+   121.729,
+   122.408,
+   "actually happens."
+  ],
+  [
+   122.408,
+   125.125,
+   "Then we add all those weighted pieces together."
+  ],
+  [
+   125.757,
+   128.475,
+   "Let's try it on a tiny weather source."
+  ],
+  [
+   128.475,
+   129.494,
+   "In some town,"
+  ],
+  [
+   129.494,
+   131.532,
+   "it is sunny half the days,"
+  ],
+  [
+   131.532,
+   133.23,
+   "cloudy a quarter of them,"
+  ],
+  [
+   133.23,
+   134.929,
+   "and rainy the other quarter."
+  ],
+  [
+   135.56,
+   137.259,
+   "Sunny has probability one half,"
+  ],
+  [
+   137.259,
+   139.297,
+   "so its surprise is one bit."
+  ],
+  [
+   139.297,
+   141.675,
+   "Cloudy and rainy are one quarter each,"
+  ],
+  [
+   141.675,
+   143.033,
+   "so two bits apiece."
+  ],
+  [
+   143.665,
+   145.024,
+   "Now weight and sum."
+  ],
+  [
+   145.024,
+   145.363,
+   "Half,"
+  ],
+  [
+   145.363,
+   146.383,
+   "times one bit."
+  ],
+  [
+   146.383,
+   147.402,
+   "Plus a quarter,"
+  ],
+  [
+   147.402,
+   148.421,
+   "times two bits."
+  ],
+  [
+   148.421,
+   149.44,
+   "Plus another quarter,"
+  ],
+  [
+   149.44,
+   150.459,
+   "times two bits."
+  ],
+  [
+   151.09,
+   152.11,
+   "Work it through,"
+  ],
+  [
+   152.11,
+   154.827,
+   "and the total comes to one point five"
+  ],
+  [
+   154.827,
+   155.846,
+   "bits per day."
+  ],
+  [
+   156.478,
+   159.195,
+   "That number is the entropy of the weather"
+  ],
+  [
+   159.195,
+   160.214,
+   "in that town."
+  ],
+  [
+   160.846,
+   162.205,
+   "And written in full,"
+  ],
+  [
+   162.205,
+   163.903,
+   "this is Shannon's celebrated formula."
+  ],
+  [
+   163.903,
+   165.602,
+   "H equals minus the sum,"
+  ],
+  [
+   165.602,
+   166.621,
+   "over all outcomes,"
+  ],
+  [
+   166.621,
+   168.998,
+   "of p times the log of p."
+  ],
+  [
+   169.63,
+   172.348,
+   "Do not let that minus sign intimidate you."
+  ],
+  [
+   172.348,
+   175.065,
+   "It is only there for bookkeeping \u2014 the"
+  ],
+  [
+   175.065,
+   177.783,
+   "log of a probability is a negative number,"
+  ],
+  [
+   177.783,
+   180.5,
+   "and we want surprise to come out positive."
+  ],
+  [
+   180.5,
+   182.538,
+   "The minus just flips the sign."
+  ],
+  [
+   183.17,
+   185.887,
+   "So what does one point five bits actually"
+  ],
+  [
+   185.887,
+   186.227,
+   "mean,"
+  ],
+  [
+   186.227,
+   187.246,
+   "on the ground?"
+  ],
+  [
+   187.246,
+   188.265,
+   "It means that,"
+  ],
+  [
+   188.265,
+   189.624,
+   "on an average day,"
+  ],
+  [
+   189.624,
+   192.342,
+   "one and a half well-chosen yes-or-no questions are"
+  ],
+  [
+   192.342,
+   194.38,
+   "enough to nail down the weather."
+  ],
+  [
+   195.011,
+   195.351,
+   "That,"
+  ],
+  [
+   195.351,
+   196.03,
+   "right there,"
+  ],
+  [
+   196.03,
+   198.748,
+   "is the true information content of the source"
+  ],
+  [
+   198.748,
+   199.767,
+   "\u2014 no more,"
+  ],
+  [
+   199.767,
+   200.786,
+   "and no less."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch05-entropy.wav",
+   "volume": 1.0
+  }
+ }
+}

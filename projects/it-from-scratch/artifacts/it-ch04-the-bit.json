@@ -1,0 +1,605 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch04-the-bit_bit",
+   "type": "it_bit",
+   "in_seconds": 0.0,
+   "out_seconds": 98.408,
+   "props": {
+    "dur": 98.908
+   }
+  },
+  {
+   "id": "it-ch04-the-bit_encode",
+   "type": "it_encode",
+   "in_seconds": 98.908,
+   "out_seconds": 196.504,
+   "props": {
+    "dur": 98.096
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.079,
+   "We keep saying the word bit."
+  ],
+  [
+   2.079,
+   4.85,
+   "Let's pin down what a bit actually is."
+  ],
+  [
+   5.482,
+   7.907,
+   "Forget transistors and hardware for a minute."
+  ],
+  [
+   7.907,
+   8.946,
+   "At its core,"
+  ],
+  [
+   8.946,
+   11.718,
+   "a bit is one perfect yes-or-no question \u2014"
+  ],
+  [
+   11.718,
+   14.489,
+   "the answer that splits your uncertainty exactly in"
+  ],
+  [
+   14.489,
+   14.836,
+   "half."
+  ],
+  [
+   15.467,
+   17.892,
+   "Let me show you with a game."
+  ],
+  [
+   17.892,
+   20.664,
+   "I am thinking of a number from one"
+  ],
+  [
+   20.664,
+   21.357,
+   "to sixty-four,"
+  ],
+  [
+   21.357,
+   23.435,
+   "and you have to find it."
+  ],
+  [
+   24.067,
+   26.492,
+   "You could guess one at a time."
+  ],
+  [
+   26.492,
+   27.531,
+   "Is it one?"
+  ],
+  [
+   27.531,
+   28.571,
+   "Is it two?"
+  ],
+  [
+   28.571,
+   28.917,
+   "Slow,"
+  ],
+  [
+   28.917,
+   31.689,
+   "and up to sixty-four tries in the worst"
+  ],
+  [
+   31.689,
+   32.035,
+   "case."
+  ],
+  [
+   32.667,
+   34.399,
+   "Or you could be clever."
+  ],
+  [
+   34.399,
+   34.745,
+   "Ask:"
+  ],
+  [
+   34.745,
+   37.517,
+   "is it in the top half \u2014 thirty-three"
+  ],
+  [
+   37.517,
+   38.21,
+   "or above?"
+  ],
+  [
+   38.21,
+   39.249,
+   "Whatever I answer,"
+  ],
+  [
+   39.249,
+   42.021,
+   "you have just eliminated half of all the"
+  ],
+  [
+   42.021,
+   43.753,
+   "possibilities in a single question."
+  ],
+  [
+   44.384,
+   45.077,
+   "Ask again,"
+  ],
+  [
+   45.077,
+   46.81,
+   "about the half that remains."
+  ],
+  [
+   46.81,
+   48.195,
+   "Sixty-four candidates become thirty-two."
+  ],
+  [
+   48.827,
+   49.52,
+   "Then sixteen."
+  ],
+  [
+   49.52,
+   50.213,
+   "Then eight,"
+  ],
+  [
+   50.213,
+   50.559,
+   "four,"
+  ],
+  [
+   50.559,
+   50.906,
+   "two,"
+  ],
+  [
+   50.906,
+   51.945,
+   "and finally one."
+  ],
+  [
+   51.945,
+   54.716,
+   "Watch the field of squares collapse each time."
+  ],
+  [
+   55.348,
+   57.427,
+   "Now count the questions it took."
+  ],
+  [
+   57.427,
+   60.198,
+   "Just six of them pinned down one option"
+  ],
+  [
+   60.198,
+   61.238,
+   "out of sixty-four."
+  ],
+  [
+   61.869,
+   63.948,
+   "And six is precisely the logarithm,"
+  ],
+  [
+   63.948,
+   64.641,
+   "base two,"
+  ],
+  [
+   64.641,
+   65.334,
+   "of sixty-four."
+  ],
+  [
+   65.334,
+   67.066,
+   "There is that log again."
+  ],
+  [
+   67.697,
+   70.469,
+   "So this is what a bit really is."
+  ],
+  [
+   70.469,
+   73.24,
+   "It is the information in one ideal question"
+  ],
+  [
+   73.24,
+   76.012,
+   "\u2014 the answer that cuts your uncertainty cleanly"
+  ],
+  [
+   76.012,
+   76.705,
+   "in half."
+  ],
+  [
+   77.336,
+   79.761,
+   "And it ties straight back to surprise."
+  ],
+  [
+   79.761,
+   82.533,
+   "An outcome with probability one in sixty-four\ncarries"
+  ],
+  [
+   82.533,
+   83.919,
+   "six bits of surprise,"
+  ],
+  [
+   83.919,
+   86.69,
+   "and it takes six perfect questions to resolve."
+  ],
+  [
+   86.69,
+   89.115,
+   "The two ideas are the same idea."
+  ],
+  [
+   89.747,
+   91.479,
+   "Everything digital \u2014 every file,"
+  ],
+  [
+   91.479,
+   92.172,
+   "every message,"
+  ],
+  [
+   92.172,
+   93.558,
+   "every image \u2014 is,"
+  ],
+  [
+   93.558,
+   94.251,
+   "at bottom,"
+  ],
+  [
+   94.251,
+   97.022,
+   "a pile of these halving answers stacked on"
+  ],
+  [
+   97.022,
+   98.408,
+   "top of one another."
+  ],
+  [
+   98.908,
+   101.614,
+   "Now let's put bits to work and actually"
+  ],
+  [
+   101.614,
+   102.29,
+   "encode something,"
+  ],
+  [
+   102.29,
+   104.996,
+   "because this is where the theory starts paying"
+  ],
+  [
+   104.996,
+   105.335,
+   "off."
+  ],
+  [
+   105.966,
+   108.672,
+   "Suppose our messages are built from just four"
+  ],
+  [
+   108.672,
+   109.687,
+   "symbols \u2014 A,"
+  ],
+  [
+   109.687,
+   110.025,
+   "B,"
+  ],
+  [
+   110.025,
+   110.363,
+   "C,"
+  ],
+  [
+   110.363,
+   111.04,
+   "and D."
+  ],
+  [
+   111.671,
+   114.377,
+   "The obvious scheme gives each symbol its own"
+  ],
+  [
+   114.377,
+   115.054,
+   "two-bit codeword."
+  ],
+  [
+   115.054,
+   116.068,
+   "A is zero-zero."
+  ],
+  [
+   116.068,
+   117.083,
+   "B is zero-one."
+  ],
+  [
+   117.083,
+   118.098,
+   "C is one-zero."
+  ],
+  [
+   118.098,
+   119.113,
+   "D is one-one."
+  ],
+  [
+   119.113,
+   119.789,
+   "Four symbols,"
+  ],
+  [
+   119.789,
+   120.804,
+   "two bits each,"
+  ],
+  [
+   120.804,
+   121.142,
+   "always."
+  ],
+  [
+   121.142,
+   122.157,
+   "Simple and clear."
+  ],
+  [
+   122.788,
+   125.494,
+   "But now suppose the symbols are not equally"
+  ],
+  [
+   125.494,
+   125.833,
+   "common."
+  ],
+  [
+   125.833,
+   128.2,
+   "Suppose A shows up half the time,"
+  ],
+  [
+   128.2,
+   130.23,
+   "B a quarter of the time,"
+  ],
+  [
+   130.23,
+   132.597,
+   "and C and D just one-eighth each."
+  ],
+  [
+   133.229,
+   135.597,
+   "Then spending two whole bits on A,"
+  ],
+  [
+   135.597,
+   136.95,
+   "the most frequent symbol,"
+  ],
+  [
+   136.95,
+   138.303,
+   "starts to feel wasteful."
+  ],
+  [
+   138.303,
+   141.009,
+   "We pay the same for the common and"
+  ],
+  [
+   141.009,
+   141.685,
+   "the rare."
+  ],
+  [
+   142.317,
+   144.346,
+   "So let's be smarter about it."
+  ],
+  [
+   144.346,
+   147.052,
+   "Give the common A a single short bit"
+  ],
+  [
+   147.052,
+   148.067,
+   "\u2014 just zero."
+  ],
+  [
+   148.067,
+   150.773,
+   "And give the rarer symbols longer codes to"
+  ],
+  [
+   150.773,
+   152.126,
+   "make up for it."
+  ],
+  [
+   152.757,
+   155.463,
+   "Now compute the average length across a typical"
+  ],
+  [
+   155.463,
+   155.801,
+   "message."
+  ],
+  [
+   155.801,
+   158.169,
+   "Half the time we send one bit."
+  ],
+  [
+   158.169,
+   159.86,
+   "A quarter of the time,"
+  ],
+  [
+   159.86,
+   160.537,
+   "two bits."
+  ],
+  [
+   160.537,
+   161.89,
+   "And the last quarter,"
+  ],
+  [
+   161.89,
+   162.566,
+   "three bits."
+  ],
+  [
+   163.198,
+   164.212,
+   "Add it up,"
+  ],
+  [
+   164.212,
+   165.227,
+   "weighted by frequency,"
+  ],
+  [
+   165.227,
+   167.933,
+   "and it comes to one point seven five"
+  ],
+  [
+   167.933,
+   170.639,
+   "bits per symbol \u2014 instead of a flat"
+  ],
+  [
+   170.639,
+   170.977,
+   "two."
+  ],
+  [
+   171.609,
+   172.285,
+   "Same messages."
+  ],
+  [
+   172.285,
+   172.962,
+   "Same information."
+  ],
+  [
+   172.962,
+   173.977,
+   "Twelve percent shorter,"
+  ],
+  [
+   173.977,
+   175.33,
+   "with absolutely nothing lost."
+  ],
+  [
+   175.961,
+   178.667,
+   "And there is the golden rule of coding"
+  ],
+  [
+   178.667,
+   179.682,
+   "in one line:"
+  ],
+  [
+   179.682,
+   181.711,
+   "spend few bits on common things,"
+  ],
+  [
+   181.711,
+   183.741,
+   "and more bits on rare things."
+  ],
+  [
+   184.372,
+   187.078,
+   "But this opens the real question \u2014 the"
+  ],
+  [
+   187.078,
+   189.784,
+   "one that drives the middle of this course."
+  ],
+  [
+   189.784,
+   191.814,
+   "How short can we possibly go?"
+  ],
+  [
+   191.814,
+   193.505,
+   "Is there a hard limit?"
+  ],
+  [
+   194.136,
+   194.813,
+   "There is."
+  ],
+  [
+   194.813,
+   196.504,
+   "And its name is entropy."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch04-the-bit.wav",
+   "volume": 1.0
+  }
+ }
+}

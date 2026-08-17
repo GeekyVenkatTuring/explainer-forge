@@ -1,0 +1,1247 @@
+{
+  "cuts": [
+    {
+      "id": "e_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 41.052,
+      "props": {
+        "title": "How to Analyse Energy Stocks",
+        "sub": "Oil, gas & power · fundamentals · technicals · strategies",
+        "kicker": "SECTOR DEEP-DIVE · ENERGY",
+        "dur": 41.552
+      }
+    },
+    {
+      "id": "e_overview",
+      "type": "sm_iconcards",
+      "in_seconds": 41.552,
+      "out_seconds": 123.66,
+      "props": {
+        "kicker": "SUB-SECTORS",
+        "title": "Energy is really four businesses",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🛢️",
+            "k": "Upstream (E&P)",
+            "v": "Explorers & producers like ONGC — they profit when crude prices are HIGH",
+            "chip": "Producers"
+          },
+          {
+            "emoji": "⛽",
+            "k": "OMCs (downstream)",
+            "v": "BPCL, HPCL, IOC — refine & sell fuel; they benefit when crude is LOW/soft",
+            "chip": "Refiners"
+          },
+          {
+            "emoji": "🔥",
+            "k": "Gas",
+            "v": "Gas transmission & city-gas distribution — volume-and-tariff businesses",
+            "chip": "Gas"
+          },
+          {
+            "emoji": "⚡",
+            "k": "Power & utilities",
+            "v": "Generators, transmission, renewables — steady, regulated, capex-heavy",
+            "chip": "Power"
+          }
+        ],
+        "dur": 82.608
+      }
+    },
+    {
+      "id": "e_drivers",
+      "type": "sm_iconcards",
+      "in_seconds": 124.16,
+      "out_seconds": 204.396,
+      "props": {
+        "kicker": "WHAT MOVES ENERGY",
+        "title": "The forces that drive the sector",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🌍",
+            "k": "Crude oil price",
+            "v": "The master variable — helps upstream, hurts OMCs; watch Brent & OPEC",
+            "chip": "Crude"
+          },
+          {
+            "emoji": "🏛️",
+            "k": "Government policy",
+            "v": "Fuel pricing, subsidies, taxes — the state heavily influences OMC economics",
+            "chip": "Policy"
+          },
+          {
+            "emoji": "💵",
+            "k": "USD & imports",
+            "v": "India imports most of its oil in dollars — a weak rupee raises the import bill",
+            "chip": "Forex"
+          },
+          {
+            "emoji": "🔋",
+            "k": "Energy transition",
+            "v": "The long shift to renewables & EVs — an opportunity for power, a risk for oil",
+            "chip": "Long-term"
+          }
+        ],
+        "dur": 80.736
+      }
+    },
+    {
+      "id": "e_fund",
+      "type": "sm_iconcards",
+      "in_seconds": 204.896,
+      "out_seconds": 289.96,
+      "props": {
+        "kicker": "FUNDAMENTALS · OMCs",
+        "title": "The metrics for refiners (OMCs)",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏭",
+            "k": "GRM",
+            "v": "Gross Refining Margin — profit per barrel refined. In Q3FY26 it jumped to ~$10 from ~$3",
+            "chip": "Refining"
+          },
+          {
+            "emoji": "⛽",
+            "k": "Marketing margin",
+            "v": "Profit on selling fuel — squeezed when crude rises but pump prices are held",
+            "chip": "Retail"
+          },
+          {
+            "emoji": "📦",
+            "k": "Inventory gain/loss",
+            "v": "Rising crude = paper inventory gains; falling crude = losses. Adjust for it",
+            "chip": "One-off"
+          },
+          {
+            "emoji": "🏷️",
+            "k": "Cheap valuation",
+            "v": "OMCs trade at low P/E (~6–7x) & high dividends — a value/cyclical profile",
+            "chip": "Value"
+          }
+        ],
+        "dur": 85.564
+      }
+    },
+    {
+      "id": "e_fund2",
+      "type": "sm_compare3",
+      "in_seconds": 290.46,
+      "out_seconds": 364.892,
+      "props": {
+        "kicker": "FUNDAMENTALS · THE REST",
+        "title": "Upstream, gas & power — what to check",
+        "cols": [
+          {
+            "name": "Upstream",
+            "color": "#FBBF24",
+            "emoji": "🛢️",
+            "rows": [
+              {
+                "k": "Key driver",
+                "v": "crude realisation per barrel"
+              },
+              {
+                "k": "Watch",
+                "v": "output volumes, reserves"
+              },
+              {
+                "k": "Profits when",
+                "v": "crude is HIGH"
+              },
+              {
+                "k": "Valuation",
+                "v": "cheap, high dividend"
+              }
+            ]
+          },
+          {
+            "name": "Gas",
+            "color": "#22D3EE",
+            "emoji": "🔥",
+            "hi": true,
+            "rows": [
+              {
+                "k": "Key driver",
+                "v": "volumes + tariff/margin per unit"
+              },
+              {
+                "k": "Watch",
+                "v": "volume growth, gas prices"
+              },
+              {
+                "k": "Profits when",
+                "v": "volumes & spreads grow"
+              },
+              {
+                "k": "Valuation",
+                "v": "steadier, re-rating story"
+              }
+            ]
+          },
+          {
+            "name": "Power",
+            "color": "#34D399",
+            "emoji": "⚡",
+            "rows": [
+              {
+                "k": "Key driver",
+                "v": "capacity, PLF, tariffs"
+              },
+              {
+                "k": "Watch",
+                "v": "debt, receivables, capex"
+              },
+              {
+                "k": "Profits when",
+                "v": "demand & capacity rise"
+              },
+              {
+                "k": "Valuation",
+                "v": "regulated, asset-heavy"
+              }
+            ]
+          }
+        ],
+        "dur": 74.932
+      }
+    },
+    {
+      "id": "e_check",
+      "type": "sm_checklist",
+      "in_seconds": 365.392,
+      "out_seconds": 450.664,
+      "props": {
+        "kicker": "HOW TO EVALUATE",
+        "title": "Evaluating an energy stock — checklist",
+        "color": "#34D399",
+        "icon": "✅",
+        "items": [
+          "Identify the sub-sector first (upstream / OMC / gas / power)",
+          "For OMCs: GRM + marketing margin, adjusted for inventory swings",
+          "Map the stock's crude sensitivity — helped or hurt by high crude?",
+          "Check debt & receivables (critical for power utilities)",
+          "Weigh the low valuation against policy & transition risk"
+        ],
+        "dur": 85.772
+      }
+    },
+    {
+      "id": "e_tech",
+      "type": "sm_iconcards",
+      "in_seconds": 451.164,
+      "out_seconds": 517.052,
+      "props": {
+        "kicker": "TECHNICAL ANALYSIS",
+        "title": "Reading energy on the chart",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "📈",
+            "k": "Nifty Energy / Oil & Gas",
+            "v": "The sector indices — track trend & relative strength",
+            "chip": "Index"
+          },
+          {
+            "emoji": "🛢️",
+            "k": "Overlay crude",
+            "v": "Put Brent on the chart — but remember it's inverse for OMCs, direct for producers",
+            "chip": "Crude"
+          },
+          {
+            "emoji": "🗓️",
+            "k": "Policy & results",
+            "v": "Fuel-price decisions, subsidy news & GRM at results drive the moves",
+            "chip": "Events"
+          },
+          {
+            "emoji": "🛡️",
+            "k": "Defensive tilt",
+            "v": "Utilities & city-gas can act defensively; oil is more cyclical",
+            "chip": "Mixed"
+          }
+        ],
+        "dur": 66.388
+      }
+    },
+    {
+      "id": "e_strat",
+      "type": "sm_iconcards",
+      "in_seconds": 517.552,
+      "out_seconds": 591.932,
+      "props": {
+        "kicker": "STRATEGIES",
+        "title": "Strategies for energy",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "⛽",
+            "k": "OMCs on soft crude",
+            "v": "When crude falls & stays soft, OMC margins & re-rating can be a strong play",
+            "chip": "Cyclical"
+          },
+          {
+            "emoji": "💵",
+            "k": "Dividend harvest",
+            "v": "Upstream & OMCs pay big dividends — a steady income play at cheap valuations",
+            "chip": "Income"
+          },
+          {
+            "emoji": "⚡",
+            "k": "Power & renewables theme",
+            "v": "India's rising power demand + green shift — a structural, multi-year growth play",
+            "chip": "Growth"
+          },
+          {
+            "emoji": "🔥",
+            "k": "City-gas re-rating",
+            "v": "Volume-growth gas distributors offer steadier, less crude-driven upside",
+            "chip": "Steady"
+          }
+        ],
+        "dur": 74.88
+      }
+    },
+    {
+      "id": "e_risk",
+      "type": "sm_myths",
+      "in_seconds": 592.432,
+      "out_seconds": 664.248,
+      "props": {
+        "kicker": "WHAT TO AVOID",
+        "title": "Energy sector — the risks",
+        "mythLabel": "✗ TRAP",
+        "factLabel": "✓ REALITY",
+        "pairs": [
+          {
+            "m": "Crude is rising — buy all energy stocks",
+            "f": "Rising crude HELPS producers but HURTS OMCs — know which you hold"
+          },
+          {
+            "m": "OMCs are super cheap, so a steal",
+            "f": "Cheap reflects policy risk — governments can hold pump prices & squeeze margins"
+          },
+          {
+            "m": "Oil is forever — ignore the transition",
+            "f": "The long shift to renewables & EVs is a real structural headwind for oil"
+          }
+        ],
+        "dur": 72.316
+      }
+    },
+    {
+      "id": "e_recap",
+      "type": "sm_recap",
+      "in_seconds": 664.748,
+      "out_seconds": 718.968,
+      "props": {
+        "title": "Energy sector — recap",
+        "items": [
+          "Four businesses: upstream, OMCs, gas, power — they differ",
+          "Crude HELPS producers, HURTS OMCs — opposite reactions",
+          "OMCs: GRM + marketing margin, adjust for inventory swings",
+          "Cheap valuations reflect policy + transition risk",
+          "Strategy: OMCs on soft crude; dividends; power/renewables growth"
+        ],
+        "closer": "In energy, always ask: which side of crude am I on?",
+        "dur": 54.72
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.344,
+      "The energy sector — oil, gas, and power."
+    ],
+    [
+      3.344,
+      6.521,
+      "The fuel that runs the entire economy."
+    ],
+    [
+      6.521,
+      11.12,
+      "It is not one business but several very different ones,"
+    ],
+    [
+      11.12,
+      18.979,
+      "from drilling crude out of the ground to selling petrol at the pump to generating electricity."
+    ],
+    [
+      18.979,
+      23.578,
+      "Each sub-sector has its own economics, its own metrics,"
+    ],
+    [
+      23.578,
+      28.009,
+      "and its own relationship with the price of crude oil."
+    ],
+    [
+      28.009,
+      32.607,
+      "This is a detailed sector, so we'll take it carefully —"
+    ],
+    [
+      32.607,
+      36.788,
+      "the sub-sectors, the fundamentals, the technicals,"
+    ],
+    [
+      36.788,
+      38.377,
+      "and the strategies."
+    ],
+    [
+      38.377,
+      41.052,
+      "Company names are examples only."
+    ],
+    [
+      41.552,
+      49.001,
+      "The first thing to understand about energy is that it is really four different businesses,"
+    ],
+    [
+      49.001,
+      51.402,
+      "and they don't move together."
+    ],
+    [
+      51.402,
+      56.616,
+      "The first is upstream — the explorers and producers, like ONGC,"
+    ],
+    [
+      56.616,
+      60.341,
+      "who pull crude oil and gas out of the ground."
+    ],
+    [
+      60.341,
+      64.479,
+      "Crucially, they profit when crude prices are high."
+    ],
+    [
+      64.479,
+      67.956,
+      "The second is the oil marketing companies,"
+    ],
+    [
+      67.956,
+      72.011,
+      "the downstream refiners like BPCL, HPCL, and IOC."
+    ],
+    [
+      72.011,
+      76.812,
+      "They buy crude, refine it, and sell you petrol and diesel."
+    ],
+    [
+      76.812,
+      78.633,
+      "And here's the twist —"
+    ],
+    [
+      78.633,
+      82.689,
+      "they generally benefit when crude is low or soft,"
+    ],
+    [
+      82.689,
+      85.089,
+      "because their margins expand."
+    ],
+    [
+      85.089,
+      89.393,
+      "So upstream and downstream are almost mirror images."
+    ],
+    [
+      89.393,
+      94.277,
+      "The third is gas — the pipelines and city-gas distributors,"
+    ],
+    [
+      94.277,
+      98.084,
+      "which are really volume-and-tariff businesses,"
+    ],
+    [
+      98.084,
+      99.574,
+      "steadier than oil."
+    ],
+    [
+      99.574,
+      104.788,
+      "The fourth is power and utilities — the electricity generators,"
+    ],
+    [
+      104.788,
+      109.424,
+      "transmission companies, and the fast-growing renewables."
+    ],
+    [
+      109.424,
+      114.224,
+      "These are steady, often regulated, and very capital-heavy."
+    ],
+    [
+      114.224,
+      117.121,
+      "Because they behave so differently,"
+    ],
+    [
+      117.121,
+      123.66,
+      "you must always know which sub-sector a stock belongs to before you analyse it."
+    ],
+    [
+      124.16,
+      126.591,
+      "What moves the energy sector?"
+    ],
+    [
+      126.591,
+      127.933,
+      "Four big forces."
+    ],
+    [
+      127.933,
+      131.79,
+      "The master variable is the price of crude oil."
+    ],
+    [
+      131.79,
+      136.988,
+      "It helps upstream producers and hurts oil marketing companies,"
+    ],
+    [
+      136.988,
+      143.36,
+      "so a single crude move sends different energy stocks in opposite directions."
+    ],
+    [
+      143.36,
+      147.132,
+      "Watch Brent crude and OPEC decisions closely."
+    ],
+    [
+      147.132,
+      149.815,
+      "The second is government policy."
+    ],
+    [
+      149.815,
+      152.75,
+      "Because fuel touches every citizen,"
+    ],
+    [
+      152.75,
+      157.361,
+      "the state heavily influences it — through fuel pricing,"
+    ],
+    [
+      157.361,
+      159.122,
+      "subsidies, and taxes."
+    ],
+    [
+      159.122,
+      165.829,
+      "This political layer makes OMC earnings less predictable than a normal business."
+    ],
+    [
+      165.829,
+      169.518,
+      "The third is the dollar and the import bill."
+    ],
+    [
+      169.518,
+      173.626,
+      "India imports most of its oil, priced in dollars,"
+    ],
+    [
+      173.626,
+      179.998,
+      "so a weak rupee raises the cost of that oil and pressures the whole economy,"
+    ],
+    [
+      179.998,
+      181.675,
+      "not just the sector."
+    ],
+    [
+      181.675,
+      185.196,
+      "The fourth is the long energy transition —"
+    ],
+    [
+      185.196,
+      190.143,
+      "the multi-decade shift to renewables and electric vehicles."
+    ],
+    [
+      190.143,
+      196.263,
+      "This is a structural opportunity for the power and renewables sub-sector,"
+    ],
+    [
+      196.263,
+      199.952,
+      "and a slow, long-term risk hanging over oil."
+    ],
+    [
+      199.952,
+      204.396,
+      "Now, the metrics that let you value these businesses."
+    ],
+    [
+      204.896,
+      208.524,
+      "Let's take the oil marketing companies first,"
+    ],
+    [
+      208.524,
+      212.636,
+      "because they're the most-watched and the trickiest."
+    ],
+    [
+      212.636,
+      213.685,
+      "Four metrics."
+    ],
+    [
+      213.685,
+      217.635,
+      "The first is the Gross Refining Margin, the GRM —"
+    ],
+    [
+      217.635,
+      222.07,
+      "the profit a refiner makes on each barrel it processes."
+    ],
+    [
+      222.07,
+      233.519,
+      "It swings a lot: for the public-sector OMCs it jumped to around ten dollars a barrel in the third quarter of financial year twenty twenty-six,"
+    ],
+    [
+      233.519,
+      236.986,
+      "up from just over three the quarter before."
+    ],
+    [
+      236.986,
+      239.325,
+      "A fat GRM lifts profits fast."
+    ],
+    [
+      239.325,
+      242.227,
+      "The second is the marketing margin —"
+    ],
+    [
+      242.227,
+      245.453,
+      "the profit on actually selling the fuel."
+    ],
+    [
+      245.453,
+      251.903,
+      "This gets squeezed when crude rises but the government holds pump prices steady,"
+    ],
+    [
+      251.903,
+      254.08,
+      "which is a recurring worry."
+    ],
+    [
+      254.08,
+      256.983,
+      "The third is inventory gain or loss."
+    ],
+    [
+      256.983,
+      260.127,
+      "Because OMCs hold huge stocks of crude,"
+    ],
+    [
+      260.127,
+      267.142,
+      "a rising crude price creates paper inventory gains and a falling price creates losses —"
+    ],
+    [
+      267.142,
+      271.415,
+      "so you must strip these one-offs out to see the true,"
+    ],
+    [
+      271.415,
+      273.028,
+      "underlying earnings."
+    ],
+    [
+      273.028,
+      274.963,
+      "The fourth is valuation."
+    ],
+    [
+      274.963,
+      278.672,
+      "OMCs typically trade at low price-to-earnings,"
+    ],
+    [
+      278.672,
+      282.865,
+      "around six to seven times, with generous dividends —"
+    ],
+    [
+      282.865,
+      285.848,
+      "a classic value and cyclical profile."
+    ],
+    [
+      285.848,
+      289.96,
+      "That cheapness is partly the political uncertainty."
+    ],
+    [
+      290.46,
+      295.411,
+      "Now the other three sub-sectors, each with its own scorecard."
+    ],
+    [
+      295.411,
+      297.278,
+      "For upstream producers,"
+    ],
+    [
+      297.278,
+      300.606,
+      "the key driver is the crude realisation —"
+    ],
+    [
+      300.606,
+      303.122,
+      "the price they get per barrel —"
+    ],
+    [
+      303.122,
+      306.45,
+      "so you watch output volumes and reserves,"
+    ],
+    [
+      306.45,
+      310.346,
+      "and you remember they profit when crude is high."
+    ],
+    [
+      310.346,
+      314.648,
+      "Like OMCs, they're usually cheap with high dividends."
+    ],
+    [
+      314.648,
+      318.95,
+      "For gas companies, it's a volumes-plus-margin story —"
+    ],
+    [
+      318.95,
+      324.389,
+      "how much gas they move and the tariff or spread they earn per unit."
+    ],
+    [
+      324.389,
+      327.554,
+      "You watch volume growth and gas prices."
+    ],
+    [
+      327.554,
+      329.989,
+      "These are steadier businesses,"
+    ],
+    [
+      329.989,
+      334.535,
+      "often with a re-rating angle as India's gas usage grows."
+    ],
+    [
+      334.535,
+      339.405,
+      "For power and utilities, the drivers are installed capacity,"
+    ],
+    [
+      339.405,
+      344.519,
+      "the plant load factor — how fully the plants run — and tariffs."
+    ],
+    [
+      344.519,
+      349.308,
+      "Because these are hugely capital-intensive, you watch debt,"
+    ],
+    [
+      349.308,
+      353.041,
+      "receivables from state distribution companies,"
+    ],
+    [
+      353.041,
+      354.584,
+      "and the capex plan."
+    ],
+    [
+      354.584,
+      358.074,
+      "They're regulated, asset-heavy, and steady."
+    ],
+    [
+      358.074,
+      361.726,
+      "Four sub-sectors, four different scorecards —"
+    ],
+    [
+      361.726,
+      364.892,
+      "that's the essence of analysing energy."
+    ],
+    [
+      365.392,
+      372.879,
+      "Let's turn all of that into a practical checklist you can actually use on an energy stock."
+    ],
+    [
+      372.879,
+      373.794,
+      "Five steps."
+    ],
+    [
+      373.794,
+      378.453,
+      "Step one — identify the sub-sector before anything else."
+    ],
+    [
+      378.453,
+      382.862,
+      "Is it an upstream producer, an oil marketing company,"
+    ],
+    [
+      382.862,
+      385.774,
+      "a gas business, or a power utility?"
+    ],
+    [
+      385.774,
+      388.02,
+      "Everything flows from that."
+    ],
+    [
+      388.02,
+      390.183,
+      "Step two — if it's an OMC,"
+    ],
+    [
+      390.183,
+      395.84,
+      "look at the gross refining margin and the marketing margin together,"
+    ],
+    [
+      395.84,
+      401.747,
+      "and adjust the reported profit for those crude-driven inventory swings,"
+    ],
+    [
+      401.747,
+      404.16,
+      "so you see the real earnings."
+    ],
+    [
+      404.16,
+      408.07,
+      "Step three — map the stock's crude sensitivity."
+    ],
+    [
+      408.07,
+      413.643,
+      "Ask plainly: does this company get helped or hurt when crude rises?"
+    ],
+    [
+      413.643,
+      418.302,
+      "That single answer tells you how to trade the oil price."
+    ],
+    [
+      418.302,
+      421.547,
+      "Step four — check debt and receivables,"
+    ],
+    [
+      421.547,
+      430.615,
+      "which is absolutely critical for the capital-heavy power utilities that are owed money by state distributors."
+    ],
+    [
+      430.615,
+      431.53,
+      "Step five —"
+    ],
+    [
+      431.53,
+      436.272,
+      "weigh the tempting low valuation against the real risks —"
+    ],
+    [
+      436.272,
+      439.932,
+      "government policy interference and the slow,"
+    ],
+    [
+      439.932,
+      442.262,
+      "long-term energy transition."
+    ],
+    [
+      442.262,
+      446.005,
+      "Cheap for a reason is a recurring theme here."
+    ],
+    [
+      446.005,
+      450.664,
+      "Run that checklist, and you can analyse any energy name."
+    ],
+    [
+      451.164,
+      457.649,
+      "The technicals for energy demand that you think in sub-sectors even on the chart."
+    ],
+    [
+      457.649,
+      465.254,
+      "Track the Nifty Energy and Nifty Oil and Gas indices for the broad trend and relative strength."
+    ],
+    [
+      465.254,
+      470.298,
+      "Overlay Brent crude on your chart — but interpret it correctly."
+    ],
+    [
+      470.298,
+      475.742,
+      "Rising crude is bullish for upstream producers and bearish for OMCs,"
+    ],
+    [
+      475.742,
+      481.026,
+      "so the same crude line means opposite things for different stocks."
+    ],
+    [
+      481.026,
+      484.468,
+      "Never apply it blindly to the whole sector."
+    ],
+    [
+      484.468,
+      489.432,
+      "Watch the event catalysts — government fuel-pricing decisions,"
+    ],
+    [
+      489.432,
+      494.476,
+      "subsidy announcements, and the GRM number at quarterly results."
+    ],
+    [
+      494.476,
+      498.719,
+      "These, not chart patterns alone, drive the big moves."
+    ],
+    [
+      498.719,
+      506.484,
+      "And note the split personality: power utilities and city-gas distributors can behave defensively,"
+    ],
+    [
+      506.484,
+      511.208,
+      "holding up in weak markets, while oil is far more cyclical."
+    ],
+    [
+      511.208,
+      517.052,
+      "So the sector's relative strength depends on which sub-sector is leading."
+    ],
+    [
+      517.552,
+      519.679,
+      "So how do you play energy?"
+    ],
+    [
+      519.679,
+      522.216,
+      "Four strategies, one per angle."
+    ],
+    [
+      522.216,
+      524.671,
+      "First, the OMC cyclical play —"
+    ],
+    [
+      524.671,
+      527.617,
+      "when crude oil falls and stays soft,"
+    ],
+    [
+      527.617,
+      530.726,
+      "refining and marketing margins expand,"
+    ],
+    [
+      530.726,
+      534.326,
+      "and these cheap stocks can re-rate strongly."
+    ],
+    [
+      534.326,
+      536.699,
+      "Time it with the crude cycle."
+    ],
+    [
+      536.699,
+      539.072,
+      "Second, the dividend harvest."
+    ],
+    [
+      539.072,
+      546.764,
+      "Upstream producers and OMCs pay some of the market's biggest dividends at very low valuations,"
+    ],
+    [
+      546.764,
+      551.428,
+      "making them a genuine income play for patient investors —"
+    ],
+    [
+      551.428,
+      553.556,
+      "you get paid well to wait."
+    ],
+    [
+      553.556,
+      558.22,
+      "Third, the structural growth play — power and renewables."
+    ],
+    [
+      558.22,
+      561.493,
+      "India's electricity demand keeps rising,"
+    ],
+    [
+      561.493,
+      565.502,
+      "and the green-energy shift is a multi-year theme,"
+    ],
+    [
+      565.502,
+      571.23,
+      "so well-run power and renewable companies offer real long-term growth."
+    ],
+    [
+      571.23,
+      574.339,
+      "Fourth, the city-gas re-rating story —"
+    ],
+    [
+      574.339,
+      582.44,
+      "gas distributors growing volumes offer steadier upside that is far less hostage to the crude price."
+    ],
+    [
+      582.44,
+      585.468,
+      "Match the strategy to the sub-sector,"
+    ],
+    [
+      585.468,
+      591.932,
+      "and energy offers something for both the income-seeker and the growth-investor."
+    ],
+    [
+      592.432,
+      594.452,
+      "Now the traps in energy —"
+    ],
+    [
+      594.452,
+      598.41,
+      "and they catch people who treat it as one sector."
+    ],
+    [
+      598.41,
+      599.299,
+      "The first —"
+    ],
+    [
+      599.299,
+      603.984,
+      "hearing that crude is rising and buying all energy stocks."
+    ],
+    [
+      603.984,
+      609.72,
+      "Rising crude helps the producers but hurts the oil marketing companies,"
+    ],
+    [
+      609.72,
+      614.567,
+      "so a blanket bet on the sector is half right and half wrong."
+    ],
+    [
+      614.567,
+      618.686,
+      "Always know which side of crude your stock sits on."
+    ],
+    [
+      618.686,
+      623.695,
+      "The second — buying OMCs purely because they look super cheap."
+    ],
+    [
+      623.695,
+      628.784,
+      "That cheapness reflects genuine policy risk: when crude spikes,"
+    ],
+    [
+      628.784,
+      633.308,
+      "governments often force OMCs to hold pump prices steady,"
+    ],
+    [
+      633.308,
+      635.974,
+      "crushing their marketing margins."
+    ],
+    [
+      635.974,
+      639.044,
+      "The low valuation is partly a warning."
+    ],
+    [
+      639.044,
+      639.932,
+      "The third —"
+    ],
+    [
+      639.932,
+      645.264,
+      "assuming oil demand is forever and ignoring the energy transition."
+    ],
+    [
+      645.264,
+      653.827,
+      "The multi-decade shift to renewables and electric vehicles is a slow but real structural headwind for oil,"
+    ],
+    [
+      653.827,
+      655.847,
+      "and a tailwind for power."
+    ],
+    [
+      655.847,
+      658.028,
+      "Don't ignore the long game."
+    ],
+    [
+      658.028,
+      661.744,
+      "Know your sub-sector, respect the policy risk,"
+    ],
+    [
+      661.744,
+      664.248,
+      "and energy rewards the careful."
+    ],
+    [
+      664.748,
+      666.552,
+      "Energy, gathered up."
+    ],
+    [
+      666.552,
+      671.244,
+      "It's four different businesses — upstream producers,"
+    ],
+    [
+      671.244,
+      674.942,
+      "oil marketing companies, gas, and power —"
+    ],
+    [
+      674.942,
+      677.829,
+      "and they react in opposite ways."
+    ],
+    [
+      677.829,
+      683.333,
+      "The master rule: rising crude helps producers and hurts OMCs."
+    ],
+    [
+      683.333,
+      687.843,
+      "For OMCs, read the refining and marketing margins,"
+    ],
+    [
+      687.843,
+      690.55,
+      "adjusted for inventory swings."
+    ],
+    [
+      690.55,
+      696.685,
+      "The tempting low valuations reflect real policy and transition risk,"
+    ],
+    [
+      696.685,
+      700.293,
+      "so cheap is not automatically a bargain."
+    ],
+    [
+      700.293,
+      703.631,
+      "In strategy, play OMCs on soft crude,"
+    ],
+    [
+      703.631,
+      705.977,
+      "harvest the fat dividends,"
+    ],
+    [
+      705.977,
+      710.668,
+      "and ride the structural power-and-renewables growth."
+    ],
+    [
+      710.668,
+      714.367,
+      "Always ask which side of crude you're on."
+    ],
+    [
+      714.367,
+      718.968,
+      "Next, the bricks-and-mortar cyclical — real estate."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sx/ene.wav",
+      "volume": 1.0
+    }
+  }
+}

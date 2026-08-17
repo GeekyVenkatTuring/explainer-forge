@@ -1,0 +1,1009 @@
+{
+  "cuts": [
+    {
+      "id": "me_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 40.068,
+      "props": {
+        "title": "How to Analyse Metal Stocks",
+        "sub": "Metals & mining · fundamentals · technicals · strategies",
+        "kicker": "SECTOR DEEP-DIVE · METALS",
+        "dur": 40.568
+      }
+    },
+    {
+      "id": "me_overview",
+      "type": "sm_iconcards",
+      "in_seconds": 40.568,
+      "out_seconds": 101.124,
+      "props": {
+        "kicker": "SUB-SECTORS",
+        "title": "Ferrous, non-ferrous & mining",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "🏗️",
+            "k": "Ferrous (steel)",
+            "v": "The biggest piece — driven by construction, autos & infrastructure",
+            "chip": "Steel"
+          },
+          {
+            "emoji": "🔌",
+            "k": "Non-ferrous",
+            "v": "Aluminium, copper, zinc — global, LME-priced, electrification-linked",
+            "chip": "Base metals"
+          },
+          {
+            "emoji": "⛏️",
+            "k": "Mining",
+            "v": "Coal, iron-ore & ore producers — feed the metal-makers; policy-sensitive",
+            "chip": "Ore"
+          },
+          {
+            "emoji": "🔗",
+            "k": "Integrated vs converters",
+            "v": "Own the ore (low cost, safer) vs buy it (higher cost, more cyclical)",
+            "chip": "Cost edge"
+          }
+        ],
+        "dur": 61.056
+      }
+    },
+    {
+      "id": "me_drivers",
+      "type": "sm_iconcards",
+      "in_seconds": 101.624,
+      "out_seconds": 169.644,
+      "props": {
+        "kicker": "WHAT MOVES METALS",
+        "title": "The forces that drive the sector",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🇨🇳",
+            "k": "China",
+            "v": "The world's largest producer & consumer — its demand & output rule prices",
+            "chip": "China"
+          },
+          {
+            "emoji": "🌍",
+            "k": "LME / global prices",
+            "v": "Metals are globally priced — domestic realisations follow LME with a lag",
+            "chip": "Prices"
+          },
+          {
+            "emoji": "💵",
+            "k": "US dollar",
+            "v": "Commodities are priced in dollars — a strong dollar often pressures metals",
+            "chip": "USD"
+          },
+          {
+            "emoji": "🏛️",
+            "k": "Domestic capex",
+            "v": "India's infrastructure & construction demand gives steel a structural floor",
+            "chip": "India"
+          }
+        ],
+        "dur": 68.52
+      }
+    },
+    {
+      "id": "me_fund",
+      "type": "sm_iconcards",
+      "in_seconds": 170.144,
+      "out_seconds": 246.688,
+      "props": {
+        "kicker": "FUNDAMENTALS · CORE",
+        "title": "The metrics unique to metals",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "🌍",
+            "k": "Global prices (LME)",
+            "v": "LME copper, aluminium & steel prices set the revenue ceiling — track them weekly",
+            "chip": "Prices"
+          },
+          {
+            "emoji": "🏭",
+            "k": "Cost per tonne",
+            "v": "The lowest-cost producer wins every cycle — cheap production survives the downturn",
+            "chip": "Cost"
+          },
+          {
+            "emoji": "⚖️",
+            "k": "EBITDA per tonne",
+            "v": "Compares true profitability across firms, stripping out leverage differences",
+            "chip": "Profit"
+          },
+          {
+            "emoji": "🏋️",
+            "k": "Net debt / EBITDA",
+            "v": "Deadly at the cycle bottom — high debt + collapsing profit can sink a company",
+            "chip": "Debt"
+          }
+        ],
+        "dur": 77.044
+      }
+    },
+    {
+      "id": "me_tech",
+      "type": "sm_iconcards",
+      "in_seconds": 247.188,
+      "out_seconds": 303.956,
+      "props": {
+        "kicker": "TECHNICAL ANALYSIS",
+        "title": "Reading metals on the chart",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "📈",
+            "k": "Nifty Metal",
+            "v": "The sector index — highly volatile, moves in big cyclical waves",
+            "chip": "Index"
+          },
+          {
+            "emoji": "🇨🇳",
+            "k": "China & LME cues",
+            "v": "China's demand & output, and LME prices, drive the sector — watch global, not local",
+            "chip": "Global"
+          },
+          {
+            "emoji": "💵",
+            "k": "Dollar link",
+            "v": "Commodities are priced in dollars — dollar strength often pressures metals",
+            "chip": "USD"
+          },
+          {
+            "emoji": "🌊",
+            "k": "Big cyclical swings",
+            "v": "Trends in long waves — great for cycle timing, punishing if you chase the top",
+            "chip": "Cyclical"
+          }
+        ],
+        "dur": 57.268
+      }
+    },
+    {
+      "id": "me_strat",
+      "type": "sm_iconcards",
+      "in_seconds": 304.456,
+      "out_seconds": 378.908,
+      "props": {
+        "kicker": "STRATEGIES",
+        "title": "Strategies for metals",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🔄",
+            "k": "Buy low in the cycle",
+            "v": "Accumulate when metals are hated & prices are depressed — sell into the boom",
+            "chip": "Cycle"
+          },
+          {
+            "emoji": "🏭",
+            "k": "Own the low-cost king",
+            "v": "The lowest-cost producer with low debt survives every downturn — own it",
+            "chip": "Survivor"
+          },
+          {
+            "emoji": "🧺",
+            "k": "Diversified vs pure-play",
+            "v": "Diversified miners are steadier; single-metal names are higher-beta bets",
+            "chip": "Risk"
+          },
+          {
+            "emoji": "🏛️",
+            "k": "Ride India's capex",
+            "v": "Domestic infrastructure & construction demand supports steel structurally",
+            "chip": "Theme"
+          }
+        ],
+        "dur": 74.952
+      }
+    },
+    {
+      "id": "me_check",
+      "type": "sm_checklist",
+      "in_seconds": 379.408,
+      "out_seconds": 443.488,
+      "props": {
+        "kicker": "HOW TO EVALUATE",
+        "title": "Evaluating a metal stock — checklist",
+        "color": "#34D399",
+        "icon": "✅",
+        "items": [
+          "Start with the LME price trend & China demand",
+          "Find the lowest cost-per-tonne producer (the survivor)",
+          "Compare EBITDA per tonne across companies",
+          "Stress-test net debt/EBITDA at cycle-BOTTOM prices",
+          "Buy when hated & cheap; never chase the price peak"
+        ],
+        "dur": 64.58
+      }
+    },
+    {
+      "id": "me_risk",
+      "type": "sm_myths",
+      "in_seconds": 443.988,
+      "out_seconds": 514.22,
+      "props": {
+        "kicker": "WHAT TO AVOID",
+        "title": "Metals sector — the risks",
+        "mythLabel": "✗ TRAP",
+        "factLabel": "✓ REALITY",
+        "pairs": [
+          {
+            "m": "Metal prices are soaring — buy now!",
+            "f": "Buying at the price peak locks in compressed future margins"
+          },
+          {
+            "m": "Low P/E metal stock = cheap",
+            "f": "Cyclicals show low P/E at the TOP; use price-to-book & the cycle instead"
+          },
+          {
+            "m": "High debt is fine, profits are huge",
+            "f": "At the cycle bottom, that debt can bankrupt the company"
+          }
+        ],
+        "dur": 70.732
+      }
+    },
+    {
+      "id": "me_recap",
+      "type": "sm_recap",
+      "in_seconds": 514.72,
+      "out_seconds": 557.9,
+      "props": {
+        "title": "Metals sector — recap",
+        "items": [
+          "LME prices & China set the revenue — track global",
+          "Cost per tonne & EBITDA per tonne — lowest cost wins",
+          "Net debt/EBITDA is deadly at the cycle bottom",
+          "Deep cyclical: buy low & hated, sell high & loved",
+          "Trap: low P/E and record profits at the PEAK"
+        ],
+        "closer": "In metals, buy the fear — never the euphoria.",
+        "dur": 43.68
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      5.448,
+      "The metals and mining sector — steel, aluminium, copper, zinc."
+    ],
+    [
+      5.448,
+      9.49,
+      "The most cyclical corner of the entire market."
+    ],
+    [
+      9.49,
+      14.323,
+      "These companies don't really control their own destiny."
+    ],
+    [
+      14.323,
+      19.595,
+      "Their fortunes are set by global commodity prices, by China,"
+    ],
+    [
+      19.595,
+      21.44,
+      "and by the US dollar."
+    ],
+    [
+      21.44,
+      29.436,
+      "Get the cycle right and metals can multiply your money; get it wrong and they can halve it."
+    ],
+    [
+      29.436,
+      31.72,
+      "Timing is everything here."
+    ],
+    [
+      31.72,
+      35.323,
+      "Let's learn the fundamentals, technicals,"
+    ],
+    [
+      35.323,
+      40.068,
+      "and strategies for this high-risk, high-reward sector."
+    ],
+    [
+      40.568,
+      43.498,
+      "First, split metals into its pieces."
+    ],
+    [
+      43.498,
+      48.626,
+      "The biggest is ferrous — steel — driven by construction, autos,"
+    ],
+    [
+      48.626,
+      50.172,
+      "and infrastructure,"
+    ],
+    [
+      50.172,
+      53.754,
+      "and closely tied to India's own capex story."
+    ],
+    [
+      53.754,
+      58.312,
+      "Then there's non-ferrous — aluminium, copper, and zinc —"
+    ],
+    [
+      58.312,
+      62.707,
+      "which are global, priced on the London Metal Exchange,"
+    ],
+    [
+      62.707,
+      68.323,
+      "and increasingly linked to electrification and the energy transition."
+    ],
+    [
+      68.323,
+      71.253,
+      "There's mining — the coal, iron-ore,"
+    ],
+    [
+      71.253,
+      74.834,
+      "and ore producers who feed the metal-makers,"
+    ],
+    [
+      74.834,
+      79.229,
+      "and who are especially sensitive to government policy."
+    ],
+    [
+      79.229,
+      88.02,
+      "And a crucial distinction cuts across all of it: integrated producers who own their own ore have a low-cost,"
+    ],
+    [
+      88.02,
+      89.241,
+      "safer position,"
+    ],
+    [
+      89.241,
+      95.915,
+      "while converters who buy their raw material are higher-cost and far more cyclical."
+    ],
+    [
+      95.915,
+      98.601,
+      "That cost position, as we'll see,"
+    ],
+    [
+      98.601,
+      101.124,
+      "decides who survives the cycle."
+    ],
+    [
+      101.624,
+      103.248,
+      "What drives metals?"
+    ],
+    [
+      103.248,
+      105.897,
+      "Four forces, almost all global."
+    ],
+    [
+      105.897,
+      108.973,
+      "The first, and the giant, is China —"
+    ],
+    [
+      108.973,
+      113.416,
+      "the world's largest producer and consumer of metals."
+    ],
+    [
+      113.416,
+      119.911,
+      "Its demand and its output policy rule global prices more than anything else."
+    ],
+    [
+      119.911,
+      124.952,
+      "When China stimulates, metals soar; when it slows or dumps,"
+    ],
+    [
+      124.952,
+      125.892,
+      "they crash."
+    ],
+    [
+      125.892,
+      129.054,
+      "The second is LME and global prices —"
+    ],
+    [
+      129.054,
+      131.447,
+      "metals are priced worldwide,"
+    ],
+    [
+      131.447,
+      139.308,
+      "and Indian producers' realisations simply follow the London Metal Exchange with a short lag."
+    ],
+    [
+      139.308,
+      141.616,
+      "The third is the US dollar."
+    ],
+    [
+      141.616,
+      145.205,
+      "Because commodities are priced in dollars,"
+    ],
+    [
+      145.205,
+      150.588,
+      "a strong dollar often pushes metal prices down, and vice versa."
+    ],
+    [
+      150.588,
+      154.433,
+      "The fourth, and the one bright domestic spot,"
+    ],
+    [
+      154.433,
+      156.313,
+      "is India's own capex —"
+    ],
+    [
+      156.313,
+      165.628,
+      "the infrastructure and construction boom that gives steel demand a structural floor beneath the global cycle."
+    ],
+    [
+      165.628,
+      169.644,
+      "Now, the metrics for analysing a metal company."
+    ],
+    [
+      170.144,
+      173.447,
+      "Metals have their own hard-edged metrics."
+    ],
+    [
+      173.447,
+      178.362,
+      "The first is global prices, set on the London Metal Exchange,"
+    ],
+    [
+      178.362,
+      179.007,
+      "the LME."
+    ],
+    [
+      179.007,
+      180.457,
+      "Copper, aluminium,"
+    ],
+    [
+      180.457,
+      185.936,
+      "and steel prices there set the revenue ceiling for Indian producers,"
+    ],
+    [
+      185.936,
+      189.884,
+      "whose realisations follow with a week or two lag."
+    ],
+    [
+      189.884,
+      191.657,
+      "Track the LME weekly —"
+    ],
+    [
+      191.657,
+      194.96,
+      "it matters more than any domestic factor."
+    ],
+    [
+      194.96,
+      197.297,
+      "The second is cost per tonne."
+    ],
+    [
+      197.297,
+      199.231,
+      "In a commodity business,"
+    ],
+    [
+      199.231,
+      202.454,
+      "everyone sells at the same market price,"
+    ],
+    [
+      202.454,
+      206.724,
+      "so the lowest-cost producer wins every single cycle —"
+    ],
+    [
+      206.724,
+      208.819,
+      "because when prices crash,"
+    ],
+    [
+      208.819,
+      213.573,
+      "the cheap producer survives while the expensive one bleeds."
+    ],
+    [
+      213.573,
+      218.246,
+      "The third is EBITDA per tonne — profit per unit of metal —"
+    ],
+    [
+      218.246,
+      223.805,
+      "which lets you compare true operating profitability across companies,"
+    ],
+    [
+      223.805,
+      227.189,
+      "stripping out their different debt levels."
+    ],
+    [
+      227.189,
+      231.863,
+      "The fourth, and the one that kills, is net debt to EBITDA."
+    ],
+    [
+      231.863,
+      238.389,
+      "A debt load that looks fine at the top of the cycle becomes lethal at the bottom,"
+    ],
+    [
+      238.389,
+      241.854,
+      "when profits collapse but the debt remains."
+    ],
+    [
+      241.854,
+      246.688,
+      "In metals, debt is the difference between survival and ruin."
+    ],
+    [
+      247.188,
+      251.637,
+      "On the chart, metals move in dramatic, sweeping waves."
+    ],
+    [
+      251.637,
+      253.944,
+      "Track the Nifty Metal index,"
+    ],
+    [
+      253.944,
+      257.24,
+      "one of the most volatile sector indices,"
+    ],
+    [
+      257.24,
+      262.348,
+      "which trends in big cyclical swings rather than gentle drifts."
+    ],
+    [
+      262.348,
+      265.561,
+      "Its drivers are almost entirely global."
+    ],
+    [
+      265.561,
+      269.104,
+      "China's steel output and its export policy,"
+    ],
+    [
+      269.104,
+      271.246,
+      "plus LME commodity prices,"
+    ],
+    [
+      271.246,
+      275.86,
+      "move these stocks more than anything happening in India."
+    ],
+    [
+      275.86,
+      280.804,
+      "So you analyse metals with your eyes on China and the world,"
+    ],
+    [
+      280.804,
+      282.534,
+      "not on domestic news."
+    ],
+    [
+      282.534,
+      287.642,
+      "Watch the dollar link too — commodities are priced in dollars,"
+    ],
+    [
+      287.642,
+      291.597,
+      "so a strong dollar often pressures metal prices,"
+    ],
+    [
+      291.597,
+      293.822,
+      "and therefore metal stocks."
+    ],
+    [
+      293.822,
+      303.956,
+      "Those big cyclical swings are a gift for patient cycle-timers and a trap for anyone who chases a vertical rally at the top."
+    ],
+    [
+      304.456,
+      308.052,
+      "How do you play the deepest cyclical of all?"
+    ],
+    [
+      308.052,
+      309.36,
+      "Four strategies."
+    ],
+    [
+      309.36,
+      313.364,
+      "First, and most important — buy low in the cycle."
+    ],
+    [
+      313.364,
+      316.47,
+      "Accumulate metals when they are hated,"
+    ],
+    [
+      316.47,
+      320.474,
+      "when prices are depressed and headlines are grim,"
+    ],
+    [
+      320.474,
+      324.397,
+      "and sell into the boom when everyone loves them."
+    ],
+    [
+      324.397,
+      328.238,
+      "This is the opposite of what feels comfortable,"
+    ],
+    [
+      328.238,
+      330.118,
+      "and it's exactly right."
+    ],
+    [
+      330.118,
+      332.57,
+      "Second, own the low-cost king."
+    ],
+    [
+      332.57,
+      336.166,
+      "The lowest-cost producer, carrying low debt,"
+    ],
+    [
+      336.166,
+      340.415,
+      "survives every downturn and thrives in every upturn."
+    ],
+    [
+      340.415,
+      342.377,
+      "In a commodity business,"
+    ],
+    [
+      342.377,
+      346.626,
+      "the cheapest and safest operator is the one to hold."
+    ],
+    [
+      346.626,
+      349.16,
+      "Third, choose your risk level —"
+    ],
+    [
+      349.16,
+      353.573,
+      "a diversified miner across several metals is steadier,"
+    ],
+    [
+      353.573,
+      359.866,
+      "while a single-metal pure-play is a higher-beta bet on one commodity's price."
+    ],
+    [
+      359.866,
+      362.726,
+      "Fourth, ride the structural theme —"
+    ],
+    [
+      362.726,
+      371.062,
+      "India's own infrastructure and construction boom provides a steady floor of domestic demand for steel,"
+    ],
+    [
+      371.062,
+      373.923,
+      "softening the global cycle's blows."
+    ],
+    [
+      373.923,
+      378.908,
+      "In metals, buy fear and sell greed, and always mind the debt."
+    ],
+    [
+      379.408,
+      382.131,
+      "Let's make metals a checklist."
+    ],
+    [
+      382.131,
+      383.129,
+      "Five steps."
+    ],
+    [
+      383.129,
+      384.037,
+      "Step one —"
+    ],
+    [
+      384.037,
+      390.118,
+      "start with the big picture: the LME price trend and China's demand,"
+    ],
+    [
+      390.118,
+      393.386,
+      "because these set the sector's fate."
+    ],
+    [
+      393.386,
+      398.015,
+      "Step two — find the lowest cost-per-tonne producer,"
+    ],
+    [
+      398.015,
+      401.373,
+      "the one that survives every downturn."
+    ],
+    [
+      401.373,
+      402.462,
+      "Step three —"
+    ],
+    [
+      402.462,
+      409.905,
+      "compare EBITDA per tonne across companies to see who is genuinely more profitable,"
+    ],
+    [
+      409.905,
+      411.993,
+      "stripping out leverage."
+    ],
+    [
+      411.993,
+      414.806,
+      "Step four — and this is vital —"
+    ],
+    [
+      414.806,
+      420.888,
+      "stress-test the net-debt-to-EBITDA ratio using cycle-bottom prices,"
+    ],
+    [
+      420.888,
+      421.977,
+      "not today's."
+    ],
+    [
+      421.977,
+      426.969,
+      "Ask: could this company survive if metal prices halved?"
+    ],
+    [
+      426.969,
+      431.598,
+      "Step five — buy when the sector is hated and cheap,"
+    ],
+    [
+      431.598,
+      435.047,
+      "and never chase a euphoric price peak."
+    ],
+    [
+      435.047,
+      440.674,
+      "In metals, your entry point in the cycle is almost everything."
+    ],
+    [
+      440.674,
+      443.488,
+      "Now, the severe cyclical traps."
+    ],
+    [
+      443.988,
+      448.511,
+      "Now the cyclical traps in metals — and they are severe."
+    ],
+    [
+      448.511,
+      449.416,
+      "The first —"
+    ],
+    [
+      449.416,
+      454.679,
+      "buying because metal prices are soaring and profits are gushing."
+    ],
+    [
+      454.679,
+      459.942,
+      "Buying at the price peak means buying compressed future margins,"
+    ],
+    [
+      459.942,
+      463.89,
+      "because prices will eventually mean-revert down."
+    ],
+    [
+      463.89,
+      468.331,
+      "The best time to buy is when prices are low, not high."
+    ],
+    [
+      468.331,
+      469.318,
+      "The second —"
+    ],
+    [
+      469.318,
+      474.005,
+      "the classic cyclical illusion of a low price-to-earnings."
+    ],
+    [
+      474.005,
+      478.282,
+      "Metal stocks show their lowest P E right at the top,"
+    ],
+    [
+      478.282,
+      480.42,
+      "when earnings are peaking."
+    ],
+    [
+      480.42,
+      481.818,
+      "Don't be fooled —"
+    ],
+    [
+      481.818,
+      486.917,
+      "judge them by price-to-book and by where you are in the cycle,"
+    ],
+    [
+      486.917,
+      487.821,
+      "not by P E."
+    ],
+    [
+      487.821,
+      488.726,
+      "The third —"
+    ],
+    [
+      488.726,
+      493.167,
+      "dismissing high debt because current profits are huge."
+    ],
+    [
+      493.167,
+      497.279,
+      "At the top of the cycle, that debt looks harmless."
+    ],
+    [
+      497.279,
+      500.322,
+      "At the bottom, when EBITDA collapses,"
+    ],
+    [
+      500.322,
+      503.529,
+      "the same debt can bankrupt the company."
+    ],
+    [
+      503.529,
+      507.23,
+      "Debt is the number-one killer in this sector."
+    ],
+    [
+      507.23,
+      511.753,
+      "Buy low, own the low-cost survivor, and fear leverage —"
+    ],
+    [
+      511.753,
+      514.22,
+      "that is how you win in metals."
+    ],
+    [
+      514.72,
+      516.542,
+      "Metals, gathered up."
+    ],
+    [
+      516.542,
+      520.55,
+      "Global LME prices and China set the revenue,"
+    ],
+    [
+      520.55,
+      523.648,
+      "so you track the world, not India."
+    ],
+    [
+      523.648,
+      529.113,
+      "Cost per tonne and EBITDA per tonne reveal the real winner —"
+    ],
+    [
+      529.113,
+      531.482,
+      "the lowest-cost producer —"
+    ],
+    [
+      531.482,
+      535.399,
+      "and net debt is deadly at the cycle bottom."
+    ],
+    [
+      535.399,
+      541.594,
+      "It's the deepest cyclical of all: buy when metals are low and hated,"
+    ],
+    [
+      541.594,
+      544.6,
+      "sell when they're high and loved."
+    ],
+    [
+      544.6,
+      550.703,
+      "And never fall for the trap of a low price-to-earnings at the peak."
+    ],
+    [
+      550.703,
+      554.712,
+      "In metals, buy the fear, never the euphoria."
+    ],
+    [
+      554.712,
+      557.9,
+      "Next, energy — oil, gas, and power."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sx/met.wav",
+      "volume": 1.0
+    }
+  }
+}

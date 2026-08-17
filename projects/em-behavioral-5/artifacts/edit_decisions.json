@@ -1,0 +1,377 @@
+{
+  "cuts": [
+    {
+      "id": "s01_title",
+      "type": "em_titlex",
+      "in_seconds": 0.0,
+      "out_seconds": 19.595,
+      "props": {
+        "kicker": "ENGINEERING LEADERSHIP \u00b7 PART FIVE",
+        "line1": "Partnership &",
+        "line2": "Self-Awareness",
+        "sub": "four more behavioral questions \u00b7 with full worked answers \u00b7 Senior EM",
+        "dur": 20.095
+      }
+    },
+    {
+      "id": "s02_star",
+      "type": "em_star",
+      "in_seconds": 20.095,
+      "out_seconds": 35.798,
+      "props": {
+        "dur": 16.203
+      }
+    },
+    {
+      "id": "s03_newteam",
+      "type": "em_q",
+      "in_seconds": 36.298,
+      "out_seconds": 69.312,
+      "props": {
+        "cat": "LEADERSHIP \u00b7 ONBOARDING",
+        "title": "Taking over a new or struggling team",
+        "q": "How do you approach your first 90 days with a new team?",
+        "color": "#38BDF8",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Listen before you change",
+            "desc": "Resist reorganizing on day one. Diagnose first \u2014 earn the right to lead."
+          },
+          {
+            "node": "A",
+            "title": "Meet everyone, read everything",
+            "desc": "One-on-ones with the whole team and key partners; learn the system and the history."
+          },
+          {
+            "node": "A",
+            "title": "Find and ship an early win",
+            "desc": "Pick one visible, real problem and fix it fast, to build trust and momentum."
+          },
+          {
+            "node": "L",
+            "title": "Then set direction with them",
+            "desc": "Only once you understand it, set a clear direction the team helped shape."
+          }
+        ],
+        "trap": "You came in as the \u201chero fixer\u201d and reorganized everything before you understood it.",
+        "signal": "You lead with humility and diagnosis, then act \u2014 you don't impose before you understand.",
+        "foot": "The first 90 days are for listening and one early win \u2014 not a grand reorg you'll regret.",
+        "dur": 33.514
+      }
+    },
+    {
+      "id": "s03s_newteam",
+      "type": "em_story",
+      "in_seconds": 69.812,
+      "out_seconds": 170.882,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 ONBOARDING",
+        "title": "Taking over a team that had lost the company's trust",
+        "color": "#38BDF8",
+        "situation": "I was asked to take over a team with a terrible reputation. It had missed three launches in a row, other teams had stopped depending on it, and morale was rock bottom. Leadership wanted a fast turnaround.",
+        "task": "My mandate: turn it around \u2014 but I resisted the pressure to slash and reorganize on day one.",
+        "actions": [
+          {
+            "d": "Listened first, for three weeks \u2014 one-on-ones with every engineer and every frustrated partner team, just asking what was really wrong."
+          },
+          {
+            "d": "Found the real problem \u2014 it wasn't the people. It was impossible scope, no clear priorities, and constant thrash from above."
+          },
+          {
+            "d": "Shipped a fast, visible win \u2014 I renegotiated scope, cut the roadmap in half, and we delivered one solid thing in a month."
+          },
+          {
+            "d": "Then set direction with them \u2014 a focused mission the team helped write, and I shielded them from the thrash."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "3 misses \u2192 on-time",
+            "l": "delivery restored"
+          },
+          {
+            "v": "trust",
+            "l": "rebuilt with partners"
+          },
+          {
+            "v": "+28",
+            "l": "team morale"
+          }
+        ],
+        "learning": "Resist the hero-fixer urge. Diagnose first, ship one early win, then set direction together.",
+        "foot": "You led with humility and a fast win, not a reorg. That's how you earn a team, not command it.",
+        "dur": 101.57
+      }
+    },
+    {
+      "id": "s04_pmconflict",
+      "type": "em_q",
+      "in_seconds": 171.382,
+      "out_seconds": 203.45,
+      "props": {
+        "cat": "CROSS-FUNCTIONAL \u00b7 PRODUCT",
+        "title": "Partnering, and clashing, with Product",
+        "q": "Tell me about a conflict with a product manager or partner.",
+        "color": "#34D399",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Assume a shared goal",
+            "desc": "You and the PM both want a great product. Start from the goal, not the turf."
+          },
+          {
+            "node": "A",
+            "title": "Separate the what from the how",
+            "desc": "PM owns the what and why; you own the how and its cost. Respect the line."
+          },
+          {
+            "node": "A",
+            "title": "Bring data and options, not a veto",
+            "desc": "\u201cNo\u201d becomes \u201chere's the cost, and two paths.\u201d Make the trade-off shared."
+          },
+          {
+            "node": "L",
+            "title": "Protect the relationship",
+            "desc": "You'll work with this person for years. Win the decision, keep the partnership."
+          }
+        ],
+        "trap": "You made it engineering versus product, or you silently complied and resented it.",
+        "signal": "You're a true partner to product \u2014 candid, data-driven, and durable across disagreements.",
+        "foot": "The EM\u2013PM relationship is a marriage. Disagree on the decision; never damage the partnership.",
+        "dur": 32.568
+      }
+    },
+    {
+      "id": "s04s_pmconflict",
+      "type": "em_story",
+      "in_seconds": 203.95,
+      "out_seconds": 302.362,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 PRODUCT",
+        "title": "The PM who wanted it all shipped by Friday",
+        "color": "#34D399",
+        "situation": "My product partner wanted a major feature shipped in two weeks to hit a launch event. My team was certain it needed four \u2014 and doing it in two meant cutting testing on a payments flow. It got tense fast.",
+        "task": "My mandate: protect quality and the relationship, without just stonewalling with a \u201cno.\u201d",
+        "actions": [
+          {
+            "d": "Anchored on the shared goal \u2014 we both wanted a successful launch, not a demo that broke live on stage."
+          },
+          {
+            "d": "Respected the line \u2014 I acknowledged the launch date was his call; the engineering risk was mine to make visible."
+          },
+          {
+            "d": "Brought options, not a veto \u2014 I showed the real risk, and offered a phased plan: a solid core at the event, the rest a week later."
+          },
+          {
+            "d": "Made the trade-off jointly \u2014 we chose the phased plan together, and I put it in writing as a shared decision."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "launched on time",
+            "l": "the core, safely"
+          },
+          {
+            "v": "0 payment bugs",
+            "l": "live on stage"
+          },
+          {
+            "v": "stronger",
+            "l": "EM\u2013PM partnership"
+          }
+        ],
+        "learning": "Turn a \u201cversus\u201d into a shared trade-off. Win the decision with data, and keep the partner.",
+        "foot": "You disagreed hard on the how and still strengthened the partnership. That's the maturity they want.",
+        "dur": 98.912
+      }
+    },
+    {
+      "id": "s05_sponsor",
+      "type": "em_q",
+      "in_seconds": 302.862,
+      "out_seconds": 333.298,
+      "props": {
+        "cat": "PEOPLE \u00b7 SPONSORSHIP",
+        "title": "Mentoring and sponsoring others",
+        "q": "Tell me about someone you mentored or sponsored.",
+        "color": "#F5A524",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Know the difference",
+            "desc": "Mentoring is advice you give them. Sponsorship is advocacy when they're not in the room."
+          },
+          {
+            "node": "A",
+            "title": "Invest beyond your reports",
+            "desc": "The best mentoring often crosses team lines and levels \u2014 not just your org chart."
+          },
+          {
+            "node": "A",
+            "title": "Sponsor with your capital",
+            "desc": "Put their name forward, hand them visible work, and defend it where it matters."
+          },
+          {
+            "node": "L",
+            "title": "Measure it by their trajectory",
+            "desc": "Did they get promoted, unstuck, or braver? Their growth is the receipt."
+          }
+        ],
+        "trap": "You described giving generic advice, with no real risk or advocacy on your part.",
+        "signal": "You actively grow people and spend your own credibility to lift them \u2014 a force multiplier.",
+        "foot": "Mentoring is talking. Sponsorship is spending your own capital to open a door. Great leaders do both.",
+        "dur": 30.936
+      }
+    },
+    {
+      "id": "s05s_sponsor",
+      "type": "em_story",
+      "in_seconds": 333.798,
+      "out_seconds": 432.535,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 SPONSORSHIP",
+        "title": "Sponsoring an engineer everyone had overlooked",
+        "color": "#F5A524",
+        "situation": "A quiet, mid-level engineer on a neighboring team, Meera, did consistently excellent work but got no recognition. She wasn't loud, she was on a low-visibility team, and she'd been stuck at the same level for years.",
+        "task": "She wasn't even my report, but her own manager wasn't advocating for her \u2014 so I decided to sponsor her.",
+        "actions": [
+          {
+            "d": "Started with mentoring \u2014 regular sessions on scope, visibility, and how to navigate the promotion process."
+          },
+          {
+            "d": "Then actually sponsored her \u2014 I pulled her onto a high-visibility cross-team project that I could influence."
+          },
+          {
+            "d": "Spent my own capital \u2014 I put her name forward in staffing rooms, and vouched for her in the promotion calibration."
+          },
+          {
+            "d": "Coached her manager too \u2014 so the advocacy would keep going after I stepped back."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "promoted",
+            "l": "to Senior, then lead"
+          },
+          {
+            "v": "cross-team",
+            "l": "visibility earned"
+          },
+          {
+            "v": "pattern fixed",
+            "l": "for her whole team"
+          }
+        ],
+        "learning": "Mentoring is advice. Sponsorship is spending your credibility to open a door someone has earned.",
+        "foot": "You spent your own capital to lift someone, with no upside for you. That's the leader they want.",
+        "dur": 99.237
+      }
+    },
+    {
+      "id": "s06_coachable",
+      "type": "em_q",
+      "in_seconds": 433.035,
+      "out_seconds": 464.261,
+      "props": {
+        "cat": "SELF \u00b7 COACHABILITY",
+        "title": "Getting hard feedback \u2014 and changing",
+        "q": "Tell me about tough feedback you received, and what you did.",
+        "color": "#A78BFA",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Pick feedback that stung",
+            "desc": "A real criticism of you as a leader \u2014 not \u201cI take on too much.\u201d"
+          },
+          {
+            "node": "A",
+            "title": "Own it without defending",
+            "desc": "The tell is your first reaction: did you get curious, or defensive?"
+          },
+          {
+            "node": "A",
+            "title": "Make a visible change",
+            "desc": "A concrete behavior you altered, that other people could actually see."
+          },
+          {
+            "node": "L",
+            "title": "Close the loop",
+            "desc": "Go back to the person who gave the feedback and show them it landed."
+          }
+        ],
+        "trap": "You picked flattering feedback, or you explained why the feedback was actually wrong.",
+        "signal": "You're coachable \u2014 you can hear a hard truth about yourself and genuinely change.",
+        "foot": "How you take feedback is how they predict you'll grow. Coachability is a senior-leadership signal.",
+        "dur": 31.726
+      }
+    },
+    {
+      "id": "s06s_coachable",
+      "type": "em_story",
+      "in_seconds": 464.761,
+      "out_seconds": 563.486,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 COACHABILITY",
+        "title": "The feedback that I was intimidating my own team",
+        "color": "#A78BFA",
+        "situation": "In a skip-level review, my manager told me something that stung. My team found me intimidating in technical discussions. As a strong engineer, I'd jump in with the answer \u2014 and people had started staying quiet and deferring to me instead of thinking.",
+        "task": "My mandate to myself: actually change this, rather than explain it away.",
+        "actions": [
+          {
+            "d": "Sat with the discomfort \u2014 my first instinct was to defend myself, but I made myself get curious and ask for specifics."
+          },
+          {
+            "d": "Made a visible behavior change \u2014 I stopped giving my opinion first in design reviews, and started asking questions instead."
+          },
+          {
+            "d": "Created space on purpose \u2014 I had others present and decide, and I deliberately let the silences sit."
+          },
+          {
+            "d": "Closed the loop \u2014 months later, I asked the team, and my manager, whether it had changed. It had."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "team spoke up",
+            "l": "measurably more"
+          },
+          {
+            "v": "better decisions",
+            "l": "not just faster ones"
+          },
+          {
+            "v": "closed the loop",
+            "l": "and it stuck"
+          }
+        ],
+        "learning": "How you receive hard feedback about yourself is the truest measure of whether you'll grow.",
+        "foot": "You heard a painful truth, changed a real behavior, and checked that it landed. That's coachability.",
+        "dur": 99.225
+      }
+    },
+    {
+      "id": "s07_recap",
+      "type": "em_recap",
+      "in_seconds": 563.986,
+      "out_seconds": 604.58,
+      "props": {
+        "items": [
+          "In a new role, listen and ship one win before you reorganize.",
+          "Turn product conflict into a shared trade-off, not a turf war.",
+          "Sponsorship is spending your capital, not just giving advice.",
+          "Coachability \u2014 hearing hard feedback and changing \u2014 is senior.",
+          "Same spine every time: STAR, plus what you learned."
+        ],
+        "closer": "The best leaders listen hard, lift others, and never stop being coachable.",
+        "dur": 41.094
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "em5/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

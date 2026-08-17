@@ -1,0 +1,339 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch02-surprise_div",
+   "type": "it_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 13.819,
+   "props": {
+    "n": 1,
+    "title": "Measuring Information",
+    "sub": "turning surprise into a number of bits",
+    "color": "#FBBF24",
+    "dur": 14.319
+   }
+  },
+  {
+   "id": "it-ch02-surprise_surprise",
+   "type": "it_surprise",
+   "in_seconds": 14.319,
+   "out_seconds": 104.12,
+   "props": {
+    "dur": 90.301
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.776,
+   "Part one."
+  ],
+  [
+   0.776,
+   1.551,
+   "Measuring information."
+  ],
+  [
+   2.183,
+   2.959,
+   "Before entropy,"
+  ],
+  [
+   2.959,
+   3.735,
+   "before compression,"
+  ],
+  [
+   3.735,
+   4.51,
+   "before channels,"
+  ],
+  [
+   4.51,
+   7.613,
+   "we need the atom of the whole theory"
+  ],
+  [
+   7.613,
+   10.716,
+   "\u2014 the information carried by a single event."
+  ],
+  [
+   10.716,
+   12.268,
+   "Let's build that atom,"
+  ],
+  [
+   12.268,
+   13.819,
+   "from the ground up."
+  ],
+  [
+   14.319,
+   17.056,
+   "Let's line up a few events by how"
+  ],
+  [
+   17.056,
+   18.083,
+   "surprising they are,"
+  ],
+  [
+   18.083,
+   19.793,
+   "and look for a pattern."
+  ],
+  [
+   20.425,
+   21.794,
+   "A coin lands heads."
+  ],
+  [
+   21.794,
+   23.847,
+   "The probability is one in two."
+  ],
+  [
+   23.847,
+   25.557,
+   "Barely a surprise at all."
+  ],
+  [
+   26.189,
+   28.242,
+   "A single die rolls a six."
+  ],
+  [
+   28.242,
+   29.61,
+   "One chance in six."
+  ],
+  [
+   29.61,
+   30.979,
+   "A little more surprising."
+  ],
+  [
+   31.611,
+   34.348,
+   "Now snake eyes \u2014 two ones on a"
+  ],
+  [
+   34.348,
+   36.059,
+   "pair of dice at once."
+  ],
+  [
+   36.059,
+   37.427,
+   "One chance in thirty-six."
+  ],
+  [
+   37.427,
+   38.111,
+   "Rarer still,"
+  ],
+  [
+   38.111,
+   39.138,
+   "and more surprising."
+  ],
+  [
+   39.77,
+   41.48,
+   "And the ace of spades,"
+  ],
+  [
+   41.48,
+   43.875,
+   "drawn first from a freshly shuffled deck."
+  ],
+  [
+   43.875,
+   44.902,
+   "One in fifty-two."
+  ],
+  [
+   45.533,
+   46.902,
+   "Watch the bars grow."
+  ],
+  [
+   46.902,
+   48.271,
+   "As the probability shrinks,"
+  ],
+  [
+   48.271,
+   49.297,
+   "the surprise climbs."
+  ],
+  [
+   49.297,
+   50.666,
+   "So whatever information is,"
+  ],
+  [
+   50.666,
+   53.403,
+   "it must be some function of one over"
+  ],
+  [
+   53.403,
+   56.14,
+   "p \u2014 of how rare the event was."
+  ],
+  [
+   56.772,
+   57.798,
+   "But which function,"
+  ],
+  [
+   57.798,
+   58.14,
+   "exactly?"
+  ],
+  [
+   58.14,
+   59.509,
+   "Here is the clean,"
+  ],
+  [
+   59.509,
+   61.22,
+   "and it turns out only,"
+  ],
+  [
+   61.22,
+   61.562,
+   "choice."
+  ],
+  [
+   61.562,
+   63.957,
+   "We measure the surprise as the logarithm,"
+  ],
+  [
+   63.957,
+   64.641,
+   "base two,"
+  ],
+  [
+   64.641,
+   66.01,
+   "of one over p."
+  ],
+  [
+   66.641,
+   67.668,
+   "Why base two?"
+  ],
+  [
+   67.668,
+   70.405,
+   "Because it measures the answer in bits \u2014"
+  ],
+  [
+   70.405,
+   71.432,
+   "in yes-or-no questions,"
+  ],
+  [
+   71.432,
+   73.827,
+   "as we will see in a moment."
+  ],
+  [
+   74.458,
+   75.485,
+   "Let's sanity-check it."
+  ],
+  [
+   75.485,
+   78.222,
+   "An event with probability one half gives the"
+  ],
+  [
+   78.222,
+   79.248,
+   "log of two,"
+  ],
+  [
+   79.248,
+   80.959,
+   "which is exactly one bit."
+  ],
+  [
+   80.959,
+   83.012,
+   "One in four gives two bits."
+  ],
+  [
+   83.012,
+   84.038,
+   "One in eight,"
+  ],
+  [
+   84.038,
+   84.723,
+   "three bits."
+  ],
+  [
+   85.354,
+   86.381,
+   "Notice the rhythm."
+  ],
+  [
+   86.381,
+   89.118,
+   "Every time the odds get twice as long,"
+  ],
+  [
+   89.118,
+   91.855,
+   "the surprise goes up by exactly one bit."
+  ],
+  [
+   91.855,
+   92.882,
+   "Halve the probability,"
+  ],
+  [
+   92.882,
+   93.908,
+   "add a bit."
+  ],
+  [
+   94.54,
+   95.224,
+   "That simple,"
+  ],
+  [
+   95.224,
+   97.961,
+   "steady rule \u2014 surprise equals log of one"
+  ],
+  [
+   97.961,
+   100.698,
+   "over p \u2014 is the single foundation the"
+  ],
+  [
+   100.698,
+   102.409,
+   "entire field is built on."
+  ],
+  [
+   102.409,
+   104.12,
+   "Everything else grows from it."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch02-surprise.wav",
+   "volume": 1.0
+  }
+ }
+}

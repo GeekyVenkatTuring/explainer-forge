@@ -1,0 +1,103 @@
+{
+ "ticker": "UBL",
+ "scraped_at": "2026-08-14T15:29:24",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 36382.0,
+ "current_price": 1376.0,
+ "pe": 105.0,
+ "book_value": 171.0,
+ "dividend_yield_pct": 0.72,
+ "roce_pct": 10.7,
+ "roe_pct": 7.69,
+ "face_value": 1.0,
+ "high": 1946.0,
+ "sales_growth": {
+  "10 Years": 2.0,
+  "5 Years": 24.0,
+  "3 Years": 2.0,
+  "TTM": -26.0
+ },
+ "profit_growth": {
+  "10 Years": 6.0,
+  "5 Years": 0.0,
+  "3 Years": -3.0,
+  "1 Year": -28.0
+ },
+ "roe_hist": {
+  "Operating Profit": 223.0,
+  "OPM %": 10.0,
+  "Other Income&nbsp; +": 10.0,
+  "Interest": 2.0,
+  "Depreciation": 51.0,
+  "Profit before tax": 180.0,
+  "Tax %": 24.0,
+  "Net Profit&nbsp; +": 136.0,
+  "EPS in Rs": 5.15
+ },
+ "price_cagr": {
+  "10 Years": 10.0,
+  "5 Years": 9.0,
+  "3 Years": 9.0,
+  "Last Year": 8.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "10%",
+   "10%",
+   "8%",
+   "7%",
+   "12%",
+   "11%",
+   "7%",
+   "8%",
+   "11%",
+   "6%",
+   "11%",
+   "6%",
+   "9%"
+  ],
+  "eps": [
+   "5.15",
+   "4.06",
+   "3.23",
+   "3.07",
+   "6.56",
+   "5.00",
+   "1.45",
+   "3.69",
+   "6.95",
+   "1.76",
+   "3.06",
+   "3.85",
+   "6.29"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 62.8%",
+  "Company&#x27;s working capital requirements have reduced from 45.6 days to 24.6 days"
+ ],
+ "cons": [
+  "Stock is trading at 8.09 times its book value",
+  "Company has a low return on equity of 9.47% over last 3 years.",
+  "Company might be capitalizing the interest cost"
+ ]
+}

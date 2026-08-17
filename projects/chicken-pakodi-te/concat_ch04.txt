@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/chicken-pakodi-te/assets/c4_div.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/chicken-pakodi-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/chicken-pakodi-te/assets/c4_formats.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/chicken-pakodi-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/chicken-pakodi-te/assets/c4_capex.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/chicken-pakodi-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/chicken-pakodi-te/assets/c4_lic.wav'

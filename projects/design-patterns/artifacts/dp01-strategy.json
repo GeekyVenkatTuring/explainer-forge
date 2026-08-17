@@ -1,0 +1,2199 @@
+{
+ "cuts": [
+  {
+   "id": "dp01-strategy_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 24.298,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 01",
+    "line1": "One switch statement",
+    "line2": "that keeps growing",
+    "sub": "a checkout bug story \u2014 and the fix that never touches old code",
+    "dur": 24.798
+   }
+  },
+  {
+   "id": "dp01-strategy_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 24.798,
+   "out_seconds": 55.179,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "You run an online store",
+    "situation": "A customer reaches checkout and picks how they want the order shipped. Your job: given the order, return the shipping cost. Each method prices it differently.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udce6",
+      "label": "Standard"
+     },
+     {
+      "emoji": "\ud83d\ude9a",
+      "label": "Express"
+     },
+     {
+      "emoji": "\u2708\ufe0f",
+      "label": "Overnight"
+     }
+    ],
+    "ask": "Three ways to price one order. How would you write that?",
+    "dur": 30.881
+   }
+  },
+  {
+   "id": "dp01-strategy_naive",
+   "type": "dp_code",
+   "in_seconds": 55.679,
+   "out_seconds": 88.803,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "It works. Ship it.",
+    "file": "ShippingCalculator.java",
+    "lines": [
+     {
+      "t": "class ShippingCalculator {"
+     },
+     {
+      "t": "  double cost(Order order, String method) {"
+     },
+     {
+      "t": "    double w = order.weight();"
+     },
+     {
+      "t": "    if (method.equals(\"STANDARD\"))  return 5.00 + w * 0.50;",
+      "s": "hi"
+     },
+     {
+      "t": "    if (method.equals(\"EXPRESS\"))   return 15.00 + w * 0.75;",
+      "s": "hi"
+     },
+     {
+      "t": "    if (method.equals(\"OVERNIGHT\")) return 30.00 + w * 1.20;",
+      "s": "hi"
+     },
+     {
+      "t": "    throw new IllegalArgumentException(\"method: \" + method);"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "One method, one branch per shipping type. Clear, direct, correct.",
+    "dur": 33.624
+   }
+  },
+  {
+   "id": "dp01-strategy_pain",
+   "type": "dp_pain",
+   "in_seconds": 89.303,
+   "out_seconds": 144.028,
+   "props": {
+    "title": "\"Add international shipping.\"",
+    "file": "ShippingCalculator.java",
+    "lines": [
+     {
+      "t": "  double cost(Order order, String method) {"
+     },
+     {
+      "t": "    double w = order.weight();"
+     },
+     {
+      "t": "    if (method.equals(\"STANDARD\"))  return 5.00 + w*0.50;",
+      "s": "dim"
+     },
+     {
+      "t": "    if (method.equals(\"EXPRESS\"))   return 15.00 + w*0.75;",
+      "s": "dim"
+     },
+     {
+      "t": "    if (method.equals(\"OVERNIGHT\")) return 30.00 + w*1.20;",
+      "s": "dim"
+     },
+     {
+      "t": "    if (method.equals(\"INTERNATIONAL\"))            // NEW",
+      "s": "hi"
+     },
+     {
+      "t": "      return 20.00 + w*0.90 + customs(order.zone());  // NEW",
+      "s": "hi"
+     },
+     {
+      "t": "    throw new IllegalArgumentException(method);"
+     },
+     {
+      "t": "  }"
+     }
+    ],
+    "smell": "Open\u2013Closed violated + shotgun surgery",
+    "touched": [
+     "cost() \u2014 add a branch",
+     "estimateDelivery() \u2014 same switch",
+     "printLabel() \u2014 same switch again"
+    ],
+    "dur": 55.225
+   }
+  },
+  {
+   "id": "dp01-strategy_insight",
+   "type": "dp_insight",
+   "in_seconds": 144.528,
+   "out_seconds": 190.886,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "\"Take an order, return a cost\"",
+     "The checkout flow that asks for it",
+     "The type of the answer \u2014 a double"
+    ],
+    "varies": [
+     "The formula for each method",
+     "How many methods exist",
+     "New ones you cannot predict yet"
+    ],
+    "principle": "Isolate what varies behind a stable interface \u2014 so new behavior is added, never edited in.",
+    "dur": 46.858
+   }
+  },
+  {
+   "id": "dp01-strategy_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 191.386,
+   "out_seconds": 239.237,
+   "props": {
+    "title": "Think of a camera",
+    "emoji": "\ud83d\udcf7",
+    "analogy": "One camera body. Many lenses. Same mount.",
+    "map": [
+     {
+      "from": "The camera body",
+      "to": "the fixed method signature"
+     },
+     {
+      "from": "The lens mount",
+      "to": "a shared interface"
+     },
+     {
+      "from": "A specific lens",
+      "to": "one pricing formula"
+     },
+     {
+      "from": "Swapping lenses",
+      "to": "choosing a strategy"
+     }
+    ],
+    "breaks": "a camera holds one lens at a time and you swap by hand \u2014 in code the caller can pass a different behavior on every single call, even pick it automatically.",
+    "dur": 48.351
+   }
+  },
+  {
+   "id": "dp01-strategy_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 239.737,
+   "out_seconds": 267.306,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "Name the thing that varies",
+    "file": "ShippingStrategy.java",
+    "lines": [
+     {
+      "t": "// the one thing that varies: a cost formula."
+     },
+     {
+      "t": "// give it a name and a shape."
+     },
+     {
+      "t": "interface ShippingStrategy {",
+      "s": "add"
+     },
+     {
+      "t": "  double cost(Order order);",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "note": "That's the mount. Anything that can price an order will fit it.",
+    "dur": 28.069
+   }
+  },
+  {
+   "id": "dp01-strategy_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 267.806,
+   "out_seconds": 298.245,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "One class per formula",
+    "file": "strategies/*.java",
+    "lines": [
+     {
+      "t": "class StandardShipping implements ShippingStrategy {",
+      "s": "add"
+     },
+     {
+      "t": "  public double cost(Order o) {",
+      "s": "add"
+     },
+     {
+      "t": "    return 5.00 + o.weight() * 0.50;",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "class ExpressShipping implements ShippingStrategy {",
+      "s": "add"
+     },
+     {
+      "t": "  public double cost(Order o) {",
+      "s": "add"
+     },
+     {
+      "t": "    return 15.00 + o.weight() * 0.75;",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "note": "Each old branch becomes its own small, testable class \u2014 the lenses.",
+    "dur": 30.939
+   }
+  },
+  {
+   "id": "dp01-strategy_try",
+   "type": "dp_try",
+   "in_seconds": 298.745,
+   "out_seconds": 330.565,
+   "props": {
+    "title": "Write the overnight lens",
+    "file": "OvernightShipping.java",
+    "lines": [
+     {
+      "t": "class OvernightShipping implements ShippingStrategy {"
+     },
+     {
+      "t": "  public double cost(Order o) {"
+     },
+     {
+      "t": "    // \u25af your line: base 30.00, plus 1.20 per kilo",
+      "s": "ghost"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Fill in the one line of overnight's cost formula.",
+    "hint": "return 30.00 + o.weight() * 1.20;",
+    "dur": 32.32
+   }
+  },
+  {
+   "id": "dp01-strategy_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 331.065,
+   "out_seconds": 368.449,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "The calculator just delegates",
+    "file": "ShippingCalculator.java",
+    "lines": [
+     {
+      "t": "class ShippingCalculator {"
+     },
+     {
+      "t": "  private final ShippingStrategy strategy;",
+      "s": "add"
+     },
+     {
+      "t": "  ShippingCalculator(ShippingStrategy strategy) {",
+      "s": "add"
+     },
+     {
+      "t": "    this.strategy = strategy;",
+      "s": "add"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "  double cost(Order order) {"
+     },
+     {
+      "t": "    return strategy.cost(order);   // no switch, ever",
+      "s": "add"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "The switch is gone. Which lens to use is now chosen at the edge.",
+    "dur": 37.884
+   }
+  },
+  {
+   "id": "dp01-strategy_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 368.949,
+   "out_seconds": 410.7,
+   "props": {
+    "requirement": "\"Add international shipping\" \u2014 the exact same request",
+    "naiveLabel": "Before",
+    "naiveCost": "Reopen a working file. Edit three switches.",
+    "patLabel": "Now",
+    "patCost": "Add one new class. Touch nothing else.",
+    "patLines": [
+     {
+      "t": "class InternationalShipping",
+      "s": "add"
+     },
+     {
+      "t": "    implements ShippingStrategy {",
+      "s": "add"
+     },
+     {
+      "t": "  public double cost(Order o) {",
+      "s": "add"
+     },
+     {
+      "t": "    return 20.00 + o.weight()*0.90",
+      "s": "add"
+     },
+     {
+      "t": "         + customs(o.zone());",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "dur": 42.251
+   }
+  },
+  {
+   "id": "dp01-strategy_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 411.2,
+   "out_seconds": 452.399,
+   "props": {
+    "name": "The Strategy Pattern",
+    "plain": "A family of interchangeable algorithms, each in its own class, swapped behind one shared interface.",
+    "nodes": [
+     {
+      "id": "strat",
+      "title": "ShippingStrategy",
+      "stereo": "interface",
+      "members": [
+       "+ cost(order): double"
+      ],
+      "x": 760,
+      "y": 220,
+      "w": 400,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "ctx",
+      "title": "ShippingCalculator",
+      "members": [
+       "- strategy: ShippingStrategy",
+       "+ cost(order): double"
+      ],
+      "x": 150,
+      "y": 235,
+      "w": 430,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "std",
+      "title": "StandardShipping",
+      "members": [
+       "+ cost(o): double"
+      ],
+      "x": 150,
+      "y": 630,
+      "w": 370,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "exp",
+      "title": "ExpressShipping",
+      "members": [
+       "+ cost(o): double"
+      ],
+      "x": 555,
+      "y": 630,
+      "w": 370,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "ovn",
+      "title": "OvernightShipping",
+      "members": [
+       "+ cost(o): double"
+      ],
+      "x": 960,
+      "y": 630,
+      "w": 370,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "intl",
+      "title": "InternationalShipping",
+      "members": [
+       "+ cost(o): double"
+      ],
+      "x": 1365,
+      "y": 630,
+      "w": 370,
+      "color": "#34D399"
+     }
+    ],
+    "edges": [
+     {
+      "from": "ctx",
+      "to": "strat",
+      "kind": "has"
+     },
+     {
+      "from": "std",
+      "to": "strat",
+      "kind": "impl"
+     },
+     {
+      "from": "exp",
+      "to": "strat",
+      "kind": "impl"
+     },
+     {
+      "from": "ovn",
+      "to": "strat",
+      "kind": "impl"
+     },
+     {
+      "from": "intl",
+      "to": "strat",
+      "kind": "impl"
+     }
+    ],
+    "dur": 41.699
+   }
+  },
+  {
+   "id": "dp01-strategy_map",
+   "type": "dp_map",
+   "in_seconds": 452.899,
+   "out_seconds": 498.122,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Strategy",
+      "your": "interface ShippingStrategy"
+     },
+     {
+      "role": "ConcreteStrategy",
+      "your": "StandardShipping, ExpressShipping, \u2026"
+     },
+     {
+      "role": "Context",
+      "your": "ShippingCalculator"
+     },
+     {
+      "role": "Client",
+      "your": "checkout \u2014 picks the strategy"
+     }
+    ],
+    "plain": "Put each algorithm in its own class behind a shared interface, and let the caller pick which one to use.",
+    "gof": "Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.",
+    "dur": 45.723
+   }
+  },
+  {
+   "id": "dp01-strategy_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 498.622,
+   "out_seconds": 549.964,
+   "props": {
+    "title": "Don't reach for it out of habit",
+    "costs": [
+     "More classes and files to navigate",
+     "The client must know which strategy to pick",
+     "Selection logic moves \u2014 it does not vanish"
+    ],
+    "dont": [
+     "There are only two cases, forever",
+     "The behavior never varies at runtime",
+     "A simple if is genuinely clearer"
+    ],
+    "signal": "a switch on a 'type' keeps growing, and each case is an interchangeable behavior you keep adding to.",
+    "dur": 51.842
+   }
+  },
+  {
+   "id": "dp01-strategy_recap",
+   "type": "dp_recap",
+   "in_seconds": 550.464,
+   "out_seconds": 605.561,
+   "props": {
+    "title": "Strategy, in one breath",
+    "items": [
+     "A growing switch on shipping type forced edits to working code, in three places, every time.",
+     "The formula varies; 'take an order, return a cost' stays fixed \u2014 so wall the formula off behind an interface.",
+     "Strategy: one class per algorithm, swapped behind a shared interface. New behavior is a new class."
+    ],
+    "challenge": "Your app exports reports, and a switch on format handles PDF and CSV today. Marketing wants HTML now, and XLSX next quarter.",
+    "question": "Does Strategy fit? What's the interface \u2014 and what are the classes?",
+    "dur": 55.597
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.757,
+   "Here is a piece of code that works"
+  ],
+  [
+   2.757,
+   3.447,
+   "perfectly today."
+  ],
+  [
+   4.078,
+   5.457,
+   "And every single week,"
+  ],
+  [
+   5.457,
+   8.214,
+   "it forces you to open it up and"
+  ],
+  [
+   8.214,
+   8.904,
+   "change it."
+  ],
+  [
+   9.535,
+   10.224,
+   "Same file."
+  ],
+  [
+   10.224,
+   10.914,
+   "Same method."
+  ],
+  [
+   10.914,
+   11.948,
+   "Over and over."
+  ],
+  [
+   12.579,
+   14.647,
+   "By the end of this video,"
+  ],
+  [
+   14.647,
+   17.405,
+   "you will see exactly why that happens \u2014"
+  ],
+  [
+   17.405,
+   20.162,
+   "and a way to add new behavior without"
+  ],
+  [
+   20.162,
+   22.23,
+   "ever touching the working code again."
+  ],
+  [
+   22.23,
+   24.298,
+   "Let's start at the checkout page."
+  ],
+  [
+   24.798,
+   26.8,
+   "You run an online store."
+  ],
+  [
+   27.431,
+   29.433,
+   "A customer reaches the checkout,"
+  ],
+  [
+   29.433,
+   32.636,
+   "and picks how they want their order shipped."
+  ],
+  [
+   33.267,
+   35.269,
+   "Standard is cheap and slow."
+  ],
+  [
+   35.269,
+   36.47,
+   "Express costs more."
+  ],
+  [
+   36.47,
+   38.071,
+   "Overnight costs the most."
+  ],
+  [
+   38.703,
+   41.105,
+   "Your job is simple to state."
+  ],
+  [
+   41.105,
+   42.306,
+   "Given the order,"
+  ],
+  [
+   42.306,
+   45.509,
+   "return the shipping cost \u2014 and each method"
+  ],
+  [
+   45.509,
+   47.911,
+   "prices it with a different formula."
+  ],
+  [
+   48.542,
+   50.944,
+   "Three ways to price one order."
+  ],
+  [
+   51.576,
+   52.777,
+   "Take a second."
+  ],
+  [
+   52.777,
+   55.179,
+   "How would you actually write that?"
+  ],
+  [
+   55.679,
+   58.639,
+   "And here is what most of us reach"
+  ],
+  [
+   58.639,
+   59.009,
+   "for."
+  ],
+  [
+   59.64,
+   60.38,
+   "One method."
+  ],
+  [
+   60.38,
+   63.34,
+   "It takes the order and the chosen method,"
+  ],
+  [
+   63.34,
+   64.45,
+   "as a string."
+  ],
+  [
+   65.081,
+   67.301,
+   "Then a branch for each type."
+  ],
+  [
+   67.301,
+   68.781,
+   "If it is standard,"
+  ],
+  [
+   68.781,
+   71.37,
+   "five dollars plus fifty cents a kilo."
+  ],
+  [
+   71.37,
+   71.74,
+   "Express,"
+  ],
+  [
+   71.74,
+   72.85,
+   "a bit more."
+  ],
+  [
+   72.85,
+   73.22,
+   "Overnight,"
+  ],
+  [
+   73.22,
+   73.96,
+   "more still."
+  ],
+  [
+   74.592,
+   75.701,
+   "Anything unknown throws."
+  ],
+  [
+   76.333,
+   77.073,
+   "And honestly?"
+  ],
+  [
+   77.073,
+   78.183,
+   "This is fine."
+  ],
+  [
+   78.183,
+   79.293,
+   "It is clear."
+  ],
+  [
+   79.293,
+   80.402,
+   "It is direct."
+  ],
+  [
+   80.402,
+   81.142,
+   "It compiles,"
+  ],
+  [
+   81.142,
+   82.622,
+   "it passes the tests,"
+  ],
+  [
+   82.622,
+   83.362,
+   "it ships."
+  ],
+  [
+   83.994,
+   85.843,
+   "If the story ended here,"
+  ],
+  [
+   85.843,
+   87.693,
+   "there would be no video."
+  ],
+  [
+   87.693,
+   88.803,
+   "But it doesn't."
+  ],
+  [
+   89.303,
+   90.358,
+   "Two weeks later,"
+  ],
+  [
+   90.358,
+   91.765,
+   "the request comes in."
+  ],
+  [
+   91.765,
+   92.821,
+   "Add international shipping."
+  ],
+  [
+   93.452,
+   96.267,
+   "So you open the file \u2014 the working,"
+  ],
+  [
+   96.267,
+   99.081,
+   "tested file \u2014 and you add another branch."
+  ],
+  [
+   99.081,
+   99.784,
+   "Twenty dollars,"
+  ],
+  [
+   99.784,
+   100.488,
+   "plus weight,"
+  ],
+  [
+   100.488,
+   101.895,
+   "plus a customs fee."
+  ],
+  [
+   102.527,
+   103.23,
+   "Easy enough."
+  ],
+  [
+   103.23,
+   106.044,
+   "But now look at what you just did."
+  ],
+  [
+   106.676,
+   108.787,
+   "You edited code that already worked,"
+  ],
+  [
+   108.787,
+   111.601,
+   "and put every existing shipping type at risk"
+  ],
+  [
+   111.601,
+   112.656,
+   "of your typo."
+  ],
+  [
+   113.288,
+   115.398,
+   "There is a name for that."
+  ],
+  [
+   115.398,
+   117.861,
+   "Code should be open to new behavior,"
+  ],
+  [
+   117.861,
+   120.675,
+   "but closed to modification \u2014 you keep reopening"
+  ],
+  [
+   120.675,
+   121.027,
+   "it."
+  ],
+  [
+   121.658,
+   123.065,
+   "And it gets worse."
+  ],
+  [
+   123.065,
+   125.88,
+   "That exact same switch is copied inside the"
+  ],
+  [
+   125.88,
+   127.638,
+   "method that estimates delivery dates,"
+  ],
+  [
+   127.638,
+   130.453,
+   "and again in the one that prints the"
+  ],
+  [
+   130.453,
+   130.804,
+   "label."
+  ],
+  [
+   131.436,
+   132.843,
+   "One new shipping type."
+  ],
+  [
+   132.843,
+   134.25,
+   "Three files to touch,"
+  ],
+  [
+   134.25,
+   135.306,
+   "in perfect sync."
+  ],
+  [
+   135.937,
+   136.992,
+   "Change one place,"
+  ],
+  [
+   136.992,
+   139.807,
+   "forget another \u2014 that is a bug that"
+  ],
+  [
+   139.807,
+   140.51,
+   "reaches customers."
+  ],
+  [
+   140.51,
+   141.917,
+   "This is the pain."
+  ],
+  [
+   141.917,
+   144.028,
+   "Sit with it for a second."
+  ],
+  [
+   144.528,
+   147.596,
+   "So let's step back and ask the question"
+  ],
+  [
+   147.596,
+   149.13,
+   "that unlocks every pattern."
+  ],
+  [
+   149.762,
+   151.296,
+   "What is actually changing,"
+  ],
+  [
+   151.296,
+   153.597,
+   "and what is staying the same?"
+  ],
+  [
+   154.228,
+   154.995,
+   "Look carefully."
+  ],
+  [
+   154.995,
+   156.529,
+   "The shape never changes."
+  ],
+  [
+   156.529,
+   157.68,
+   "Take an order,"
+  ],
+  [
+   157.68,
+   158.83,
+   "return a cost,"
+  ],
+  [
+   158.83,
+   159.981,
+   "as a number."
+  ],
+  [
+   159.981,
+   162.665,
+   "The checkout always asks the same question."
+  ],
+  [
+   163.297,
+   166.365,
+   "What changes is only the formula inside \u2014"
+  ],
+  [
+   166.365,
+   168.666,
+   "and how many formulas there are."
+  ],
+  [
+   168.666,
+   169.049,
+   "Standard,"
+  ],
+  [
+   169.049,
+   169.433,
+   "express,"
+  ],
+  [
+   169.433,
+   169.816,
+   "overnight,"
+  ],
+  [
+   169.816,
+   170.2,
+   "international,"
+  ],
+  [
+   170.2,
+   172.884,
+   "and whatever marketing dreams up next quarter."
+  ],
+  [
+   173.516,
+   175.433,
+   "So here is the principle,"
+  ],
+  [
+   175.433,
+   177.734,
+   "and it is the whole game."
+  ],
+  [
+   178.366,
+   180.283,
+   "Find the thing that varies,"
+  ],
+  [
+   180.283,
+   183.351,
+   "and wall it off behind something that stays"
+  ],
+  [
+   183.351,
+   183.735,
+   "fixed."
+  ],
+  [
+   184.366,
+   185.133,
+   "Do that,"
+  ],
+  [
+   185.133,
+   188.201,
+   "and adding a new behavior becomes adding something"
+  ],
+  [
+   188.201,
+   190.886,
+   "new \u2014 instead of editing something old."
+  ],
+  [
+   191.386,
+   193.288,
+   "Here is a picture for it."
+  ],
+  [
+   193.288,
+   194.556,
+   "Think of a camera."
+  ],
+  [
+   195.187,
+   196.772,
+   "The body stays the same."
+  ],
+  [
+   196.772,
+   199.308,
+   "But you can twist off one lens and"
+  ],
+  [
+   199.308,
+   200.893,
+   "click on another \u2014 wide,"
+  ],
+  [
+   200.893,
+   201.21,
+   "zoom,"
+  ],
+  [
+   201.21,
+   203.746,
+   "macro \u2014 because they all share the same"
+  ],
+  [
+   203.746,
+   204.063,
+   "mount."
+  ],
+  [
+   204.694,
+   207.23,
+   "The body doesn't care which lens is on"
+  ],
+  [
+   207.23,
+   207.547,
+   "it."
+  ],
+  [
+   207.547,
+   209.766,
+   "It just knows the mount will fit."
+  ],
+  [
+   210.397,
+   212.299,
+   "That is exactly what we want."
+  ],
+  [
+   212.299,
+   214.518,
+   "The camera body is our fixed method."
+  ],
+  [
+   214.518,
+   216.42,
+   "The mount is a shared interface."
+  ],
+  [
+   216.42,
+   218.322,
+   "Each lens is one pricing formula,"
+  ],
+  [
+   218.322,
+   220.857,
+   "and swapping lenses is choosing which one to"
+  ],
+  [
+   220.857,
+   221.174,
+   "use."
+  ],
+  [
+   221.806,
+   224.342,
+   "But let me flag where the picture lies,"
+  ],
+  [
+   224.342,
+   225.927,
+   "so it doesn't mislead you."
+  ],
+  [
+   226.558,
+   229.094,
+   "A camera holds one lens at a time,"
+  ],
+  [
+   229.094,
+   230.996,
+   "and you swap it by hand."
+  ],
+  [
+   230.996,
+   231.63,
+   "In code,"
+  ],
+  [
+   231.63,
+   234.165,
+   "the caller can hand in a different behavior"
+  ],
+  [
+   234.165,
+   236.701,
+   "on every call \u2014 and can even pick"
+  ],
+  [
+   236.701,
+   237.335,
+   "it automatically."
+  ],
+  [
+   237.335,
+   239.237,
+   "Keep that difference in your pocket."
+  ],
+  [
+   239.737,
+   240.085,
+   "Alright."
+  ],
+  [
+   240.085,
+   241.128,
+   "Let's fix it,"
+  ],
+  [
+   241.128,
+   242.867,
+   "one move at a time."
+  ],
+  [
+   243.499,
+   244.195,
+   "Move one."
+  ],
+  [
+   244.195,
+   246.977,
+   "We take the thing that varies \u2014 a"
+  ],
+  [
+   246.977,
+   249.76,
+   "cost formula \u2014 and we give it a"
+  ],
+  [
+   249.76,
+   251.151,
+   "name and a shape."
+  ],
+  [
+   251.782,
+   252.478,
+   "An interface."
+  ],
+  [
+   252.478,
+   253.174,
+   "Shipping strategy."
+  ],
+  [
+   253.174,
+   253.869,
+   "One method:"
+  ],
+  [
+   253.869,
+   254.913,
+   "given an order,"
+  ],
+  [
+   254.913,
+   255.956,
+   "return a cost."
+  ],
+  [
+   256.588,
+   257.631,
+   "That is it."
+  ],
+  [
+   257.631,
+   259.37,
+   "That is our lens mount."
+  ],
+  [
+   260.002,
+   262.784,
+   "Notice we have not written a single formula"
+  ],
+  [
+   262.784,
+   263.132,
+   "yet."
+  ],
+  [
+   263.132,
+   265.915,
+   "We have only declared the shape that every"
+  ],
+  [
+   265.915,
+   267.306,
+   "formula will fit into."
+  ],
+  [
+   267.806,
+   268.615,
+   "Move two."
+  ],
+  [
+   268.615,
+   271.851,
+   "Every branch from that switch becomes its own"
+  ],
+  [
+   271.851,
+   272.66,
+   "little class."
+  ],
+  [
+   273.292,
+   275.315,
+   "Standard shipping implements the interface,"
+  ],
+  [
+   275.315,
+   278.551,
+   "and its cost method holds exactly the old"
+  ],
+  [
+   278.551,
+   279.36,
+   "standard formula."
+  ],
+  [
+   279.992,
+   282.014,
+   "Express shipping \u2014 another class,"
+  ],
+  [
+   282.014,
+   283.228,
+   "the express formula."
+  ],
+  [
+   283.859,
+   285.477,
+   "Each one is tiny."
+  ],
+  [
+   285.477,
+   287.905,
+   "Each one does exactly one thing."
+  ],
+  [
+   287.905,
+   291.141,
+   "And each one can be tested completely on"
+  ],
+  [
+   291.141,
+   291.95,
+   "its own,"
+  ],
+  [
+   291.95,
+   294.377,
+   "with no giant switch around it."
+  ],
+  [
+   295.009,
+   296.627,
+   "These are our lenses."
+  ],
+  [
+   296.627,
+   297.436,
+   "Same mount,"
+  ],
+  [
+   297.436,
+   298.245,
+   "different glass."
+  ],
+  [
+   298.745,
+   299.844,
+   "Now your turn."
+  ],
+  [
+   300.475,
+   302.306,
+   "Here is the overnight class,"
+  ],
+  [
+   302.306,
+   304.503,
+   "with the mount already in place."
+  ],
+  [
+   304.503,
+   307.432,
+   "The only thing missing is the one line"
+  ],
+  [
+   307.432,
+   308.165,
+   "inside cost."
+  ],
+  [
+   308.796,
+   310.627,
+   "Overnight is thirty dollars flat,"
+  ],
+  [
+   310.627,
+   312.824,
+   "plus one dollar twenty per kilo."
+  ],
+  [
+   313.456,
+   314.554,
+   "Pause the video,"
+  ],
+  [
+   314.554,
+   316.385,
+   "and write that line yourself."
+  ],
+  [
+   317.017,
+   317.749,
+   "Got it?"
+  ],
+  [
+   317.749,
+   320.678,
+   "It follows the exact same shape as the"
+  ],
+  [
+   320.678,
+   322.509,
+   "other two \u2014 return thirty,"
+  ],
+  [
+   322.509,
+   324.706,
+   "plus the weight times one twenty."
+  ],
+  [
+   324.706,
+   326.171,
+   "If you wrote that,"
+  ],
+  [
+   326.171,
+   329.1,
+   "you now understand the pattern better than any"
+  ],
+  [
+   329.1,
+   330.565,
+   "diagram could teach you."
+  ],
+  [
+   331.065,
+   331.826,
+   "Move three,"
+  ],
+  [
+   331.826,
+   334.107,
+   "and this is where it clicks."
+  ],
+  [
+   334.739,
+   337.401,
+   "The calculator no longer knows any formulas."
+  ],
+  [
+   337.401,
+   340.443,
+   "It just holds a strategy \u2014 whichever lens"
+  ],
+  [
+   340.443,
+   343.105,
+   "you clicked on \u2014 and it delegates."
+  ],
+  [
+   343.737,
+   346.399,
+   "Its cost method is now one line."
+  ],
+  [
+   346.399,
+   347.54,
+   "Ask the strategy."
+  ],
+  [
+   348.171,
+   350.453,
+   "The entire switch statement is gone."
+  ],
+  [
+   350.453,
+   350.833,
+   "Deleted."
+  ],
+  [
+   351.465,
+   354.507,
+   "And that duplicated switch in delivery estimates\nand"
+  ],
+  [
+   354.507,
+   355.268,
+   "label printing?"
+  ],
+  [
+   355.268,
+   356.409,
+   "They delegate too."
+  ],
+  [
+   356.409,
+   359.451,
+   "The knowledge lives in one place now \u2014"
+  ],
+  [
+   359.451,
+   360.592,
+   "the class itself."
+  ],
+  [
+   361.223,
+   363.886,
+   "Which lens to use gets decided once,"
+  ],
+  [
+   363.886,
+   366.167,
+   "at the edge of the system,"
+  ],
+  [
+   366.167,
+   368.449,
+   "where the customer's choice comes in."
+  ],
+  [
+   368.949,
+   372.564,
+   "Now let's rewind to the request that caused"
+  ],
+  [
+   372.564,
+   373.92,
+   "all the pain."
+  ],
+  [
+   373.92,
+   375.276,
+   "Add international shipping."
+  ],
+  [
+   375.908,
+   377.263,
+   "The same request."
+  ],
+  [
+   377.263,
+   379.523,
+   "Watch how different it feels."
+  ],
+  [
+   380.154,
+   380.606,
+   "Before,"
+  ],
+  [
+   380.606,
+   384.222,
+   "you reopened working code and edited three\nseparate"
+  ],
+  [
+   384.222,
+   384.674,
+   "switches,"
+  ],
+  [
+   384.674,
+   387.385,
+   "hoping you did not miss one."
+  ],
+  [
+   388.017,
+   388.469,
+   "Now?"
+  ],
+  [
+   388.469,
+   390.728,
+   "You write one new class."
+  ],
+  [
+   390.728,
+   391.632,
+   "International shipping,"
+  ],
+  [
+   391.632,
+   392.988,
+   "implements the interface,"
+  ],
+  [
+   392.988,
+   394.796,
+   "holds its own formula."
+  ],
+  [
+   395.427,
+   396.783,
+   "You register it,"
+  ],
+  [
+   396.783,
+   398.591,
+   "and you are done."
+  ],
+  [
+   399.222,
+   401.03,
+   "The calculator \u2014 untouched."
+  ],
+  [
+   401.03,
+   401.482,
+   "Standard,"
+  ],
+  [
+   401.482,
+   401.934,
+   "express,"
+  ],
+  [
+   401.934,
+   403.29,
+   "overnight \u2014 untouched,"
+  ],
+  [
+   403.29,
+   403.742,
+   "unretested,"
+  ],
+  [
+   403.741,
+   404.193,
+   "unbroken."
+  ],
+  [
+   404.825,
+   406.633,
+   "New behavior was added,"
+  ],
+  [
+   406.633,
+   407.988,
+   "not edited in."
+  ],
+  [
+   407.988,
+   410.248,
+   "That is the whole promise,"
+  ],
+  [
+   410.248,
+   410.7,
+   "delivered."
+  ],
+  [
+   411.2,
+   414.254,
+   "And now \u2014 only now \u2014 we name"
+  ],
+  [
+   414.254,
+   414.636,
+   "it."
+  ],
+  [
+   415.267,
+   418.321,
+   "What you just built is the Strategy pattern."
+  ],
+  [
+   418.953,
+   422.006,
+   "Look at the shape you created without being"
+  ],
+  [
+   422.006,
+   422.77,
+   "told to."
+  ],
+  [
+   423.401,
+   424.547,
+   "In the middle,"
+  ],
+  [
+   424.547,
+   426.455,
+   "the interface \u2014 shipping strategy."
+  ],
+  [
+   426.455,
+   427.219,
+   "The mount."
+  ],
+  [
+   427.85,
+   428.996,
+   "On the left,"
+  ],
+  [
+   428.996,
+   429.759,
+   "the calculator."
+  ],
+  [
+   429.759,
+   432.813,
+   "It holds a strategy and points to that"
+  ],
+  [
+   432.813,
+   433.195,
+   "interface."
+  ],
+  [
+   433.195,
+   436.248,
+   "It never knows which concrete one it has."
+  ],
+  [
+   436.88,
+   437.643,
+   "And underneath,"
+  ],
+  [
+   437.643,
+   439.552,
+   "your four classes \u2014 standard,"
+  ],
+  [
+   439.552,
+   439.934,
+   "express,"
+  ],
+  [
+   439.934,
+   440.316,
+   "overnight,"
+  ],
+  [
+   440.316,
+   442.988,
+   "international \u2014 all implementing that one\ninterface."
+  ],
+  [
+   443.619,
+   444.764,
+   "The green one,"
+  ],
+  [
+   444.764,
+   445.146,
+   "international,"
+  ],
+  [
+   445.146,
+   447.437,
+   "is the one you added last."
+  ],
+  [
+   447.437,
+   450.109,
+   "Notice it just slots into the row."
+  ],
+  [
+   450.109,
+   452.399,
+   "Nothing above it had to move."
+  ],
+  [
+   452.899,
+   455.56,
+   "The textbooks give these four roles names,"
+  ],
+  [
+   455.56,
+   458.601,
+   "so let's map each one to a class"
+  ],
+  [
+   458.601,
+   459.741,
+   "you already wrote."
+  ],
+  [
+   460.373,
+   462.273,
+   "The Strategy is your interface."
+  ],
+  [
+   462.905,
+   465.946,
+   "The concrete strategies are your four shipping\nclasses."
+  ],
+  [
+   466.578,
+   469.619,
+   "The Context is the calculator that holds one"
+  ],
+  [
+   469.619,
+   471.139,
+   "and delegates to it."
+  ],
+  [
+   471.771,
+   474.812,
+   "And the Client is the checkout code that"
+  ],
+  [
+   474.812,
+   477.092,
+   "decides which strategy to hand in."
+  ],
+  [
+   477.724,
+   480.765,
+   "In plain English \u2014 put each algorithm in"
+  ],
+  [
+   480.765,
+   483.426,
+   "its own class behind a shared interface,"
+  ],
+  [
+   483.426,
+   485.326,
+   "and let the caller choose."
+  ],
+  [
+   485.958,
+   488.999,
+   "The Gang of Four said it more formally:"
+  ],
+  [
+   488.999,
+   490.9,
+   "define a family of algorithms,"
+  ],
+  [
+   490.9,
+   492.04,
+   "encapsulate each one,"
+  ],
+  [
+   492.04,
+   493.561,
+   "and make them interchangeable,"
+  ],
+  [
+   493.561,
+   496.602,
+   "so the algorithm can vary independently from the"
+  ],
+  [
+   496.602,
+   498.122,
+   "code that uses it."
+  ],
+  [
+   498.622,
+   499.972,
+   "Now the honest part,"
+  ],
+  [
+   499.972,
+   501.66,
+   "because no pattern is free."
+  ],
+  [
+   502.292,
+   503.642,
+   "Strategy costs you classes."
+  ],
+  [
+   503.642,
+   506.342,
+   "Four formulas that used to be four lines"
+  ],
+  [
+   506.342,
+   507.693,
+   "are now four files."
+  ],
+  [
+   508.324,
+   511.025,
+   "And the choice of which strategy to use"
+  ],
+  [
+   511.025,
+   513.725,
+   "does not disappear \u2014 it moves out to"
+  ],
+  [
+   513.725,
+   514.4,
+   "the caller."
+  ],
+  [
+   514.4,
+   516.088,
+   "Someone still has to pick."
+  ],
+  [
+   516.72,
+   519.42,
+   "So do not reach for this out of"
+  ],
+  [
+   519.42,
+   519.758,
+   "habit."
+  ],
+  [
+   520.389,
+   523.09,
+   "If you have exactly two cases and you"
+  ],
+  [
+   523.09,
+   525.79,
+   "are certain there will only ever be two"
+  ],
+  [
+   525.79,
+   528.153,
+   "\u2014 a plain if statement is clearer,"
+  ],
+  [
+   528.153,
+   530.516,
+   "and you should just write the if."
+  ],
+  [
+   531.148,
+   533.511,
+   "If the behavior never changes at runtime,"
+  ],
+  [
+   533.511,
+   535.536,
+   "you may not need it either."
+  ],
+  [
+   536.168,
+   538.868,
+   "Here is the one signal that means yes,"
+  ],
+  [
+   538.868,
+   539.543,
+   "use it."
+  ],
+  [
+   540.175,
+   542.875,
+   "You have a switch on some type field,"
+  ],
+  [
+   542.875,
+   543.888,
+   "it keeps growing,"
+  ],
+  [
+   543.888,
+   546.588,
+   "and every case is an interchangeable behavior you"
+  ],
+  [
+   546.588,
+   547.264,
+   "keep adding."
+  ],
+  [
+   547.264,
+   548.951,
+   "The moment you feel that,"
+  ],
+  [
+   548.951,
+   549.964,
+   "reach for Strategy."
+  ],
+  [
+   550.464,
+   550.826,
+   "So,"
+  ],
+  [
+   550.826,
+   552.998,
+   "the whole journey in three beats."
+  ],
+  [
+   553.629,
+   554.353,
+   "The problem:"
+  ],
+  [
+   554.353,
+   557.249,
+   "a switch on shipping type forced you to"
+  ],
+  [
+   557.249,
+   558.335,
+   "edit working code,"
+  ],
+  [
+   558.335,
+   559.421,
+   "in three places,"
+  ],
+  [
+   559.421,
+   561.231,
+   "every single time it grew."
+  ],
+  [
+   561.862,
+   562.586,
+   "The insight:"
+  ],
+  [
+   562.586,
+   563.672,
+   "the formula varies,"
+  ],
+  [
+   563.672,
+   566.568,
+   "but take an order return a cost stays"
+  ],
+  [
+   566.568,
+   569.464,
+   "fixed \u2014 so wall the formula off behind"
+  ],
+  [
+   569.464,
+   570.188,
+   "an interface."
+  ],
+  [
+   570.819,
+   571.543,
+   "The pattern:"
+  ],
+  [
+   571.543,
+   571.905,
+   "Strategy."
+  ],
+  [
+   571.905,
+   573.353,
+   "One class per algorithm,"
+  ],
+  [
+   573.353,
+   575.163,
+   "swapped behind a shared interface,"
+  ],
+  [
+   575.163,
+   578.059,
+   "so new behavior is a new class instead"
+  ],
+  [
+   578.059,
+   579.145,
+   "of an edit."
+  ],
+  [
+   579.776,
+   580.138,
+   "Now,"
+  ],
+  [
+   580.138,
+   581.586,
+   "before the next episode,"
+  ],
+  [
+   581.586,
+   583.396,
+   "here is one for you."
+  ],
+  [
+   584.027,
+   585.475,
+   "Your app exports reports."
+  ],
+  [
+   585.475,
+   588.371,
+   "A switch on format handles P D F"
+  ],
+  [
+   588.371,
+   590.181,
+   "and C S V today."
+  ],
+  [
+   590.181,
+   592.715,
+   "Marketing now wants H T M L,"
+  ],
+  [
+   592.715,
+   593.801,
+   "and next quarter,"
+  ],
+  [
+   593.801,
+   594.163,
+   "spreadsheets."
+  ],
+  [
+   594.794,
+   596.242,
+   "Does Strategy fit here?"
+  ],
+  [
+   596.242,
+   599.138,
+   "What would the interface be \u2014 and what"
+  ],
+  [
+   599.138,
+   600.586,
+   "are the concrete classes?"
+  ],
+  [
+   601.217,
+   601.579,
+   "Pause,"
+  ],
+  [
+   601.579,
+   602.665,
+   "and sketch it,"
+  ],
+  [
+   602.665,
+   605.561,
+   "before you press play on the next one."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp01-strategy.wav",
+   "volume": 1.0
+  }
+ }
+}

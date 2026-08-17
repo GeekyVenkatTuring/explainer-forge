@@ -1,0 +1,318 @@
+{
+ "cuts": [
+  {
+   "id": "ch05_div",
+   "type": "nb_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 17.158,
+   "props": {
+    "dur": 17.658,
+    "n": 5,
+    "title": "The Portfolio",
+    "sub": "All fifty \u00b7 allocation, risks, and honesty",
+    "tier": "1",
+    "total": 5
+   }
+  },
+  {
+   "id": "ch05_grid",
+   "type": "nb_portfolio",
+   "in_seconds": 17.658,
+   "out_seconds": 45.878,
+   "props": {
+    "dur": 28.72,
+    "picks": [
+     {
+      "t": "1",
+      "nm": "ICICI Bank"
+     },
+     {
+      "t": "1",
+      "nm": "HDFC Bank"
+     },
+     {
+      "t": "1",
+      "nm": "State Bank of India"
+     },
+     {
+      "t": "1",
+      "nm": "Bajaj Finance"
+     },
+     {
+      "t": "1",
+      "nm": "Larsen & Toubro"
+     },
+     {
+      "t": "1",
+      "nm": "Mahindra & Mahindra"
+     },
+     {
+      "t": "1",
+      "nm": "Bharat Electronics"
+     },
+     {
+      "t": "1",
+      "nm": "Titan Company"
+     },
+     {
+      "t": "1",
+      "nm": "Sun Pharma"
+     },
+     {
+      "t": "1",
+      "nm": "Tata Consultancy Services"
+     },
+     {
+      "t": "1",
+      "nm": "Polycab India"
+     },
+     {
+      "t": "1",
+      "nm": "UltraTech Cement"
+     },
+     {
+      "t": "1",
+      "nm": "Zydus Lifesciences"
+     },
+     {
+      "t": "1",
+      "nm": "Bajaj Auto"
+     },
+     {
+      "t": "1",
+      "nm": "Solar Industries"
+     },
+     {
+      "t": "1",
+      "nm": "APL Apollo Tubes"
+     },
+     {
+      "t": "2",
+      "nm": "Dixon Technologies"
+     },
+     {
+      "t": "2",
+      "nm": "Kalyan Jewellers"
+     },
+     {
+      "t": "2",
+      "nm": "Trent (Westside \u00b7 Zudio)"
+     },
+     {
+      "t": "2",
+      "nm": "Varun Beverages"
+     },
+     {
+      "t": "2",
+      "nm": "Apar Industries"
+     },
+     {
+      "t": "2",
+      "nm": "Blue Star"
+     },
+     {
+      "t": "2",
+      "nm": "KPIT Technologies"
+     },
+     {
+      "t": "2",
+      "nm": "Coforge"
+     },
+     {
+      "t": "2",
+      "nm": "Shriram Finance"
+     },
+     {
+      "t": "2",
+      "nm": "Cholamandalam Finance"
+     },
+     {
+      "t": "2",
+      "nm": "Max Healthcare"
+     },
+     {
+      "t": "2",
+      "nm": "Apollo Hospitals"
+     },
+     {
+      "t": "2",
+      "nm": "Phoenix Mills"
+     },
+     {
+      "t": "2",
+      "nm": "Brigade Enterprises"
+     },
+     {
+      "t": "2",
+      "nm": "CAMS"
+     },
+     {
+      "t": "2",
+      "nm": "CDSL"
+     },
+     {
+      "t": "2",
+      "nm": "BSE Ltd"
+     },
+     {
+      "t": "2",
+      "nm": "Lupin"
+     },
+     {
+      "t": "3",
+      "nm": "Zen Technologies"
+     },
+     {
+      "t": "3",
+      "nm": "Astra Microwave"
+     },
+     {
+      "t": "3",
+      "nm": "Kaynes Technology"
+     },
+     {
+      "t": "3",
+      "nm": "Cochin Shipyard"
+     },
+     {
+      "t": "3",
+      "nm": "Titagarh Rail Systems"
+     },
+     {
+      "t": "3",
+      "nm": "Vedanta"
+     },
+     {
+      "t": "3",
+      "nm": "Hindustan Zinc"
+     },
+     {
+      "t": "3",
+      "nm": "Nuvama Wealth"
+     },
+     {
+      "t": "3",
+      "nm": "PB Fintech (Policybazaar)"
+     },
+     {
+      "t": "3",
+      "nm": "Coromandel International"
+     },
+     {
+      "t": "3",
+      "nm": "Fortis Healthcare"
+     },
+     {
+      "t": "3",
+      "nm": "Global Health (Medanta)"
+     },
+     {
+      "t": "3",
+      "nm": "NTPC"
+     },
+     {
+      "t": "3",
+      "nm": "Tata Power"
+     },
+     {
+      "t": "3",
+      "nm": "Radico Khaitan"
+     },
+     {
+      "t": "3",
+      "nm": "Motilal Oswal"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ch05_alloc",
+   "type": "nb_bars",
+   "in_seconds": 46.378,
+   "out_seconds": 74.406,
+   "props": {
+    "dur": 28.528,
+    "kicker": "THE SHAPE OF IT",
+    "title": "Where the conviction sits",
+    "unit": "",
+    "bars": [
+     {
+      "label": "Tier 1\nCore",
+      "v": 16,
+      "c": "#34D399"
+     },
+     {
+      "label": "Tier 2\nGrowth",
+      "v": 18,
+      "c": "#FBBF24"
+     },
+     {
+      "label": "Tier 3\nHigh-risk",
+      "v": 16,
+      "c": "#FB7185"
+     }
+    ],
+    "foot": "A barbell: a steady core, a growth engine, and a smaller high-torque sleeve."
+   }
+  },
+  {
+   "id": "ch05_risk",
+   "type": "nb_statement",
+   "in_seconds": 74.906,
+   "out_seconds": 119.536,
+   "props": {
+    "dur": 45.13,
+    "kicker": "WHAT COULD GO WRONG",
+    "color": "#FB7185",
+    "lines": [
+     "Valuations can compress.",
+     "Cycles can turn.",
+     "Theses can break."
+    ],
+    "sub": "Five honest risks every one of these carries."
+   }
+  },
+  {
+   "id": "ch05_use",
+   "type": "nb_statement",
+   "in_seconds": 120.036,
+   "out_seconds": 151.47,
+   "props": {
+    "dur": 31.934,
+    "kicker": "HOW TO USE THIS",
+    "color": "#38BDF8",
+    "lines": [
+     "Position sizing.",
+     "Stagger your entries.",
+     "Review every quarter."
+    ],
+    "sub": "A framework to research \u2014 not a signal to buy."
+   }
+  },
+  {
+   "id": "ch05_recap",
+   "type": "nb_recap",
+   "in_seconds": 151.97,
+   "out_seconds": 193.024,
+   "props": {
+    "dur": 41.554,
+    "items": [
+     "Beating the Nifty means looking different from the Nifty",
+     "Fifty picks, filtered from 2,397 on real fundamentals",
+     "Five tests: quality, growth, valuation, moat, investability",
+     "Tier 1 core \u00b7 Tier 2 growth \u00b7 Tier 3 high-risk \u2014 sized accordingly",
+     "Every figure is public, point-in-time, and yours to re-check",
+     "This is analysis, not advice \u2014 do your own work"
+    ],
+    "closer": "Find your conviction. Do the work. Beat the average."
+   }
+  }
+ ],
+ "captions": [],
+ "audio": {
+  "narration": {
+   "src": "nb/ch05.wav",
+   "volume": 1.0
+  }
+ }
+}

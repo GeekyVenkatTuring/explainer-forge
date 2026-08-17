@@ -1,0 +1,727 @@
+{
+  "cuts": [
+    {
+      "id": "technocraft_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 25.796,
+      "props": {
+        "title": "Technocraft Ventures IPO",
+        "sub": "Government EPC & water infra · ₹251.88 Cr · 80% Fresh · 7–11 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 26.296
+      }
+    },
+    {
+      "id": "technocraft_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 26.296,
+      "out_seconds": 75.97,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Technocraft Ventures",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🏗️",
+            "k": "A turnkey EPC builder",
+            "v": "Engineering, procurement and construction — builds infrastructure end-to-end, founded back in 1998",
+            "chip": "EPC"
+          },
+          {
+            "emoji": "💧",
+            "k": "Water, roads & urban infra",
+            "v": "Water and waste-water systems, roads, urban infrastructure, power distribution and trenchless pipelines",
+            "chip": "5 SEGMENTS"
+          },
+          {
+            "emoji": "🏛️",
+            "k": "Government client base",
+            "v": "Mostly state-government projects in UP, Uttarakhand, Rajasthan & Delhi; order book over ₹1,320 Cr",
+            "chip": "GOVT ORDERS"
+          }
+        ],
+        "dur": 50.174
+      }
+    },
+    {
+      "id": "technocraft_fin",
+      "type": "sm_stats",
+      "in_seconds": 76.47,
+      "out_seconds": 128.088,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 347,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+23% YoY (₹281.00 → ₹347.00 Cr)"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 43,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+53.6% YoY (₹28.20 → ₹43.32 Cr)"
+          },
+          {
+            "label": "Order book",
+            "to": 1321,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#22D3EE",
+            "sub": "₹1,320.70 Cr · ~3.8× revenue"
+          }
+        ],
+        "note": "Solid growth and strong visibility. Valued at ~19× earnings (P/E 19.38) — reasonable for a growing EPC. GMP ~7.78% (unofficial, ₹16.50 over ₹212).",
+        "dur": 52.118
+      }
+    },
+    {
+      "id": "technocraft_issue",
+      "type": "sm_stats",
+      "in_seconds": 128.588,
+      "out_seconds": 168.998,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 252,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#22D3EE",
+            "sub": "₹251.88 Cr · band ₹200–212"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 202,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "₹201.51 Cr · 80% funds the business"
+          },
+          {
+            "label": "OFS (to promoter)",
+            "to": 50,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "₹50.37 Cr — promoter part-sells"
+          }
+        ],
+        "note": "A healthy structure: about 80% is a fresh issue funding the business; only 20% is the promoter, Kartikey Constructions, selling part of its stake.",
+        "dur": 40.91
+      }
+    },
+    {
+      "id": "technocraft_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 169.498,
+      "out_seconds": 207.17,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹201.5 Cr Funds",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🔄",
+            "k": "Bulk — working capital",
+            "v": "Most of the fresh money funds working capital — an EPC builder ties up heavy cash in materials and machinery before it gets paid",
+            "chip": "GROWTH"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Balance — general corporate",
+            "v": "The remainder goes to general corporate purposes",
+            "chip": "GCP"
+          },
+          {
+            "emoji": "⏳",
+            "k": "Why so much working capital",
+            "v": "Government projects pay in stages, so cash gets locked up for months — funding it is what lets the company grow",
+            "chip": "WC-HEAVY"
+          }
+        ],
+        "dur": 38.172
+      }
+    },
+    {
+      "id": "technocraft_verdict",
+      "type": "sm_myths",
+      "in_seconds": 207.67,
+      "out_seconds": 256.12,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "Depends heavily on government spending",
+            "f": "Profit up 53.6%; ~19× earnings — reasonable value"
+          },
+          {
+            "m": "Wins work by tendering — can be lumpy",
+            "f": "80% fresh — mostly funds the business; low debt"
+          },
+          {
+            "m": "Working-capital heavy; payment delays hurt",
+            "f": "Order book over ₹1,320 Cr — strong visibility"
+          }
+        ],
+        "dur": 48.95
+      }
+    },
+    {
+      "id": "technocraft_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 256.62,
+      "out_seconds": 297.844,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,840 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 41.724
+      }
+    },
+    {
+      "id": "technocraft_recap",
+      "type": "sm_recap",
+      "in_seconds": 298.344,
+      "out_seconds": 367.982,
+      "props": {
+        "title": "Technocraft Ventures IPO — at a Glance",
+        "items": [
+          "Business: government EPC — water, roads, urban infra",
+          "FY26: revenue ₹347.00 Cr (+23%), profit ₹43.32 Cr (+53.6%)",
+          "₹251.88 Cr issue — 80% fresh, into the company",
+          "Order book ₹1,320.70 Cr · P/E ~19; fresh money funds working capital",
+          "Retail min ~₹14,840 · GMP ~7.78% (unofficial)"
+        ],
+        "closer": "Small, clean and mostly-fresh, with a healthy order book — but a government-dependent, working-capital-heavy EPC play. Read the RHP; decide for yourself.",
+        "dur": 70.138
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.987,
+      "Let's break down the Technocraft Ventures I-P-O —"
+    ],
+    [
+      3.987,
+      10.579,
+      "a two hundred and fifty-two crore issue from a government infrastructure builder."
+    ],
+    [
+      10.579,
+      14.648,
+      "We'll cover what the company does, its financials,"
+    ],
+    [
+      14.648,
+      17.089,
+      "where the money actually goes,"
+    ],
+    [
+      17.089,
+      22.46,
+      "and how much you'd need to apply as a retail or an H-N-I investor."
+    ],
+    [
+      22.46,
+      25.796,
+      "This is education, not investment advice."
+    ],
+    [
+      26.296,
+      29.256,
+      "So what does Technocraft Ventures do?"
+    ],
+    [
+      29.256,
+      33.655,
+      "It's an E-P-C contractor — that stands for engineering,"
+    ],
+    [
+      33.655,
+      35.975,
+      "procurement and construction."
+    ],
+    [
+      35.975,
+      40.774,
+      "In plain terms, it builds infrastructure on a turnkey basis."
+    ],
+    [
+      40.774,
+      44.614,
+      "Its projects span water and waste-water systems,"
+    ],
+    [
+      44.614,
+      49.493,
+      "roads and highways, urban infrastructure, power distribution,"
+    ],
+    [
+      49.493,
+      51.573,
+      "and trenchless pipelines —"
+    ],
+    [
+      51.573,
+      56.292,
+      "mostly for state governments in Uttar Pradesh, Uttarakhand,"
+    ],
+    [
+      56.292,
+      57.892,
+      "Rajasthan and Delhi."
+    ],
+    [
+      57.892,
+      62.612,
+      "Founded in nineteen ninety-eight, it rides a strong theme —"
+    ],
+    [
+      62.612,
+      68.051,
+      "India's heavy government spending on water and urban infrastructure."
+    ],
+    [
+      68.051,
+      72.85,
+      "And it carries an order book of over thirteen hundred crore,"
+    ],
+    [
+      72.85,
+      75.97,
+      "which gives it good revenue visibility."
+    ],
+    [
+      76.47,
+      80.395,
+      "Now the financials — and they're solid and improving."
+    ],
+    [
+      80.395,
+      83.357,
+      "Revenue rose about twenty-three percent,"
+    ],
+    [
+      83.357,
+      88.023,
+      "to three hundred and forty-seven crore in FY twenty twenty-six."
+    ],
+    [
+      88.023,
+      90.393,
+      "But the profit is the standout —"
+    ],
+    [
+      90.393,
+      93.948,
+      "net profit jumped fifty-three point six percent,"
+    ],
+    [
+      93.948,
+      99.576,
+      "from twenty-eight point two zero crore to forty-three point three two crore."
+    ],
+    [
+      99.576,
+      104.39,
+      "Its order book stands at over thirteen hundred and twenty crore —"
+    ],
+    [
+      104.39,
+      107.204,
+      "nearly four times its annual revenue —"
+    ],
+    [
+      107.204,
+      110.61,
+      "so a large pipeline of work is already booked."
+    ],
+    [
+      110.61,
+      115.943,
+      "At the issue price the stock is valued at about nineteen times earnings,"
+    ],
+    [
+      115.943,
+      119.497,
+      "which is reasonable for a growing E-P-C company."
+    ],
+    [
+      119.497,
+      124.459,
+      "The grey-market premium is around seven point seven eight percent —"
+    ],
+    [
+      124.459,
+      128.088,
+      "but remember, that's unofficial and drifts daily."
+    ],
+    [
+      128.588,
+      130.621,
+      "Where does your money go?"
+    ],
+    [
+      130.621,
+      134.605,
+      "This is the most important question in any I-P-O."
+    ],
+    [
+      134.605,
+      138.264,
+      "Of the two hundred and fifty-two crore issue,"
+    ],
+    [
+      138.264,
+      141.841,
+      "about two hundred and one and a half crore —"
+    ],
+    [
+      141.841,
+      145.256,
+      "roughly eighty percent — is a fresh issue."
+    ],
+    [
+      145.256,
+      148.183,
+      "That's money going into the company."
+    ],
+    [
+      148.183,
+      152.005,
+      "The remaining fifty crore is an offer for sale,"
+    ],
+    [
+      152.005,
+      156.151,
+      "where the promoter sells a small part of its stake."
+    ],
+    [
+      156.151,
+      158.835,
+      "So this is a mostly-fresh issue —"
+    ],
+    [
+      158.835,
+      161.355,
+      "four-fifths funds the business,"
+    ],
+    [
+      161.355,
+      164.607,
+      "and only a fifth is a promoter cash-out."
+    ],
+    [
+      164.607,
+      168.998,
+      "That's a genuinely healthy structure, and a good sign."
+    ],
+    [
+      169.498,
+      172.152,
+      "What does the fresh money fund?"
+    ],
+    [
+      172.152,
+      175.834,
+      "Almost all of it goes into working capital."
+    ],
+    [
+      175.834,
+      179.173,
+      "That makes sense for an E-P-C builder —"
+    ],
+    [
+      179.173,
+      183.967,
+      "these projects tie up huge amounts of cash in materials,"
+    ],
+    [
+      183.967,
+      185.937,
+      "machinery and payments,"
+    ],
+    [
+      185.937,
+      189.533,
+      "long before the government pays the bills."
+    ],
+    [
+      189.533,
+      191.587,
+      "So growth needs funding."
+    ],
+    [
+      191.587,
+      195.269,
+      "The rest is for general corporate purposes."
+    ],
+    [
+      195.269,
+      197.324,
+      "The flip side to watch —"
+    ],
+    [
+      197.324,
+      205.115,
+      "a working-capital-heavy model that depends on government payments means cash can get stuck,"
+    ],
+    [
+      205.115,
+      207.17,
+      "and payment delays hurt."
+    ],
+    [
+      207.67,
+      209.226,
+      "Should you subscribe?"
+    ],
+    [
+      209.226,
+      211.004,
+      "The strengths are real —"
+    ],
+    [
+      211.004,
+      229.228,
+      "profit grew over fifty-three percent; eighty percent of the issue is fresh money funding the business; debt is low; the order book of over thirteen hundred crore gives strong visibility; and at nineteen times earnings the valuation is reasonable."
+    ],
+    [
+      229.228,
+      230.413,
+      "The watch-outs —"
+    ],
+    [
+      230.413,
+      234.636,
+      "it depends heavily on government infrastructure spending,"
+    ],
+    [
+      234.636,
+      239.229,
+      "it wins work through competitive tendering which can be lumpy,"
+    ],
+    [
+      239.229,
+      244.341,
+      "and it's a working-capital-hungry business exposed to payment delays."
+    ],
+    [
+      244.341,
+      246.563,
+      "The takeaway — a small, clean,"
+    ],
+    [
+      246.563,
+      249.897,
+      "mostly-fresh issue with a healthy order book,"
+    ],
+    [
+      249.897,
+      252.786,
+      "but a government-dependent E-P-C model."
+    ],
+    [
+      252.786,
+      256.12,
+      "Understand that dependence before you decide."
+    ],
+    [
+      256.62,
+      261.079,
+      "Finally — how do you apply, and how much do you need?"
+    ],
+    [
+      261.079,
+      267.725,
+      "Retail investors can bid up to two lakh rupees for a thirty-five percent quota,"
+    ],
+    [
+      267.725,
+      271.932,
+      "with allotment by lottery if it's oversubscribed —"
+    ],
+    [
+      271.932,
+      274.624,
+      "so a bigger cheque doesn't help."
+    ],
+    [
+      274.624,
+      279.167,
+      "H-N-Is bid above two lakh for a fifteen percent quota."
+    ],
+    [
+      279.167,
+      282.869,
+      "For Technocraft, one lot is seventy shares —"
+    ],
+    [
+      282.869,
+      287.58,
+      "about fourteen thousand eight hundred and forty rupees —"
+    ],
+    [
+      287.58,
+      288.674,
+      "your minimum."
+    ],
+    [
+      288.674,
+      293.974,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      293.974,
+      297.844,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      298.344,
+      300.97,
+      "Let's recap Technocraft Ventures."
+    ],
+    [
+      300.97,
+      305.029,
+      "A government-focused E-P-C builder — water systems,"
+    ],
+    [
+      305.029,
+      307.576,
+      "roads and urban infrastructure —"
+    ],
+    [
+      307.576,
+      312.033,
+      "with a strong order book of over thirteen hundred crore."
+    ],
+    [
+      312.033,
+      313.943,
+      "In FY twenty twenty-six,"
+    ],
+    [
+      313.943,
+      320.549,
+      "revenue rose about twenty-three percent and profit jumped over fifty-three percent."
+    ],
+    [
+      320.549,
+      324.369,
+      "The issue is a healthy, mostly-fresh structure —"
+    ],
+    [
+      324.369,
+      327.313,
+      "eighty percent goes into the company,"
+    ],
+    [
+      327.313,
+      329.223,
+      "funding working capital,"
+    ],
+    [
+      329.223,
+      333.044,
+      "and only twenty percent is a promoter sell-down."
+    ],
+    [
+      333.044,
+      338.853,
+      "Retail minimum is about fourteen thousand eight hundred and forty rupees,"
+    ],
+    [
+      338.853,
+      342.992,
+      "and the grey-market premium is around eight percent,"
+    ],
+    [
+      342.992,
+      344.982,
+      "though that's unofficial."
+    ],
+    [
+      344.982,
+      348.802,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      348.802,
+      351.03,
+      "it is not investment advice,"
+    ],
+    [
+      351.03,
+      353.656,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      353.656,
+      356.681,
+      "and not a prediction of listing gains."
+    ],
+    [
+      356.681,
+      360.899,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      360.899,
+      366.39,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      366.39,
+      367.982,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/technocraft.wav",
+      "volume": 1.0
+    }
+  }
+}

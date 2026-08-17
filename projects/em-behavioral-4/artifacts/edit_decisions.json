@@ -1,0 +1,377 @@
+{
+  "cuts": [
+    {
+      "id": "s01_title",
+      "type": "em_titlex",
+      "in_seconds": 0.0,
+      "out_seconds": 19.541,
+      "props": {
+        "kicker": "ENGINEERING LEADERSHIP \u00b7 PART FOUR",
+        "line1": "Culture &",
+        "line2": "The Long Game",
+        "sub": "four more behavioral questions \u00b7 with full worked answers \u00b7 Senior EM",
+        "dur": 20.041
+      }
+    },
+    {
+      "id": "s02_star",
+      "type": "em_star",
+      "in_seconds": 20.041,
+      "out_seconds": 35.137,
+      "props": {
+        "dur": 15.596
+      }
+    },
+    {
+      "id": "s03_remote",
+      "type": "em_q",
+      "in_seconds": 35.637,
+      "out_seconds": 73.207,
+      "props": {
+        "cat": "TEAMS \u00b7 DISTRIBUTED",
+        "title": "Leading a remote or distributed team",
+        "q": "How do you lead a remote or globally distributed team?",
+        "color": "#38BDF8",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Default to written and async",
+            "desc": "Docs and clear decisions over meetings. Timezone-fair, not meeting-heavy."
+          },
+          {
+            "node": "A",
+            "title": "Engineer connection on purpose",
+            "desc": "Trust doesn't happen by accident remotely. Create the moments deliberately."
+          },
+          {
+            "node": "A",
+            "title": "Measure outcomes, not presence",
+            "desc": "Judge output and impact, never hours online or the green dot."
+          },
+          {
+            "node": "L",
+            "title": "Over-communicate context",
+            "desc": "Remote teams starve on missing context. You feed it relentlessly."
+          }
+        ],
+        "trap": "You recreated the office online \u2014 back-to-back calls across incompatible timezones.",
+        "signal": "You build trust and clarity across distance, and treat async as a feature, not a compromise.",
+        "foot": "Remote leadership is a discipline: written clarity, deliberate connection, outcomes over optics.",
+        "dur": 38.07
+      }
+    },
+    {
+      "id": "s03s_remote",
+      "type": "em_story",
+      "in_seconds": 73.707,
+      "out_seconds": 183.434,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 DISTRIBUTED",
+        "title": "Building one team across three continents",
+        "color": "#38BDF8",
+        "situation": "I inherited a team split across San Francisco, London, and Bangalore \u2014 a fourteen-hour spread. In reality it was three sub-teams that didn't trust each other; meetings excluded someone by design, and context lived in people's heads.",
+        "task": "My mandate: turn three timezones into one team, without burning anyone out on 2am calls.",
+        "actions": [
+          {
+            "d": "Moved decisions to writing \u2014 every significant decision landed in a doc, so nobody was excluded by their timezone."
+          },
+          {
+            "d": "Rotated the pain fairly \u2014 the one necessary sync meeting rotated its awkward hour, so it wasn't always Bangalore's midnight."
+          },
+          {
+            "d": "Engineered connection deliberately \u2014 regional leads, cross-site pairing, and real budget for periodic in-person weeks."
+          },
+          {
+            "d": "Judged outcomes, not presence \u2014 I killed the green-dot culture and measured shipped impact instead."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "3 silos \u2192 1",
+            "l": "one real team"
+          },
+          {
+            "v": "async-first",
+            "l": "decisions in docs"
+          },
+          {
+            "v": "\u2191 trust",
+            "l": "cross-site pairing"
+          }
+        ],
+        "learning": "Distributed teams run on written clarity and deliberate trust, not on more meetings.",
+        "foot": "You made distance a design constraint you solved, not an excuse. That's modern EM leadership.",
+        "dur": 110.227
+      }
+    },
+    {
+      "id": "s04_dei",
+      "type": "em_q",
+      "in_seconds": 183.934,
+      "out_seconds": 220.685,
+      "props": {
+        "cat": "CULTURE \u00b7 INCLUSION",
+        "title": "Building an inclusive team in practice",
+        "q": "What have you actually done to build a diverse, inclusive team?",
+        "color": "#A78BFA",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Move past slogans to actions",
+            "desc": "Talk about what you changed in hiring and daily practice, not your values."
+          },
+          {
+            "node": "A",
+            "title": "Fix the system, not the people",
+            "desc": "Structured interviews, diverse panels, wider sourcing \u2014 take bias out of the process."
+          },
+          {
+            "node": "A",
+            "title": "Make inclusion a daily practice",
+            "desc": "Airtime in meetings, credit attribution, equitable stretch work and on-call."
+          },
+          {
+            "node": "L",
+            "title": "Hold yourself to data",
+            "desc": "Track representation, promotion rates, and who gets the good projects."
+          }
+        ],
+        "trap": "You gave a values speech with no concrete action or measurement behind it.",
+        "signal": "You treat inclusion as an operational discipline with real interventions and metrics.",
+        "foot": "Inclusion isn't a poster. It's who you hire, who speaks, who gets the growth work, and who gets promoted.",
+        "dur": 37.251
+      }
+    },
+    {
+      "id": "s04s_dei",
+      "type": "em_story",
+      "in_seconds": 221.185,
+      "out_seconds": 328.249,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 INCLUSION",
+        "title": "The team where only some voices got heard",
+        "color": "#A78BFA",
+        "situation": "I took over a team that, on paper, looked fairly diverse. But the same three senior men made every real decision, and our quieter engineers and women were leaving faster than anyone else.",
+        "task": "My mandate: turn nominal diversity into real inclusion, and stop the lopsided attrition.",
+        "actions": [
+          {
+            "d": "Looked at the data first \u2014 the growth projects and the promotions were all going to the same few people."
+          },
+          {
+            "d": "Changed the meeting mechanics \u2014 round-robin input, written proposals before discussion, and I attributed ideas to their real authors."
+          },
+          {
+            "d": "Redistributed the good work \u2014 rotated high-visibility projects and on-call, so growth wasn't reserved for the loudest."
+          },
+          {
+            "d": "Fixed hiring too \u2014 diverse interview panels and a structured rubric, so the funnel genuinely widened."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "attrition gap",
+            "l": "closed"
+          },
+          {
+            "v": "+3 promotions",
+            "l": "from underrepresented groups"
+          },
+          {
+            "v": "who decides",
+            "l": "widened"
+          }
+        ],
+        "learning": "Diversity is who's in the room. Inclusion is who actually gets heard, grown, and promoted.",
+        "foot": "You made inclusion measurable and operational, not a slogan. That's what interviewers respect.",
+        "dur": 107.564
+      }
+    },
+    {
+      "id": "s05_reliability",
+      "type": "em_q",
+      "in_seconds": 328.749,
+      "out_seconds": 365.669,
+      "props": {
+        "cat": "OPERATIONS \u00b7 RELIABILITY",
+        "title": "Building a healthy on-call & reliability culture",
+        "q": "How do you build a sustainable on-call and reliability culture?",
+        "color": "#34D399",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Treat toil as a bug",
+            "desc": "A brutal on-call is a systems failure, not a rite of passage. Own it."
+          },
+          {
+            "node": "A",
+            "title": "Make reliability visible and funded",
+            "desc": "SLOs and error budgets, with real time allocated to pay down toil."
+          },
+          {
+            "node": "A",
+            "title": "Blameless by default",
+            "desc": "Postmortems find system fixes, not scapegoats \u2014 or people stop reporting."
+          },
+          {
+            "node": "L",
+            "title": "Protect the humans",
+            "desc": "Fair rotation, comp for pages, hard caps. Burnout is a reliability risk too."
+          }
+        ],
+        "trap": "You treated a painful on-call as normal, and let your best people burn out on it.",
+        "signal": "You build reliability as a system and a culture, and you protect the people running it.",
+        "foot": "Reliability is a culture: SLOs, blameless learning, and humane rotations \u2014 not heroics.",
+        "dur": 37.42
+      }
+    },
+    {
+      "id": "s05s_reliability",
+      "type": "em_story",
+      "in_seconds": 366.169,
+      "out_seconds": 478.027,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 RELIABILITY",
+        "title": "The on-call rotation that was burning people out",
+        "color": "#34D399",
+        "situation": "I took over a team with a brutal on-call. Engineers were getting paged around twenty times a week, mostly for noise. Two people had already quit citing burnout, and everyone dreaded their week on rotation.",
+        "task": "My mandate: make on-call sustainable, without letting reliability actually get worse.",
+        "actions": [
+          {
+            "d": "Treated the toil as a bug \u2014 I had the team spend twenty percent of every sprint killing the top sources of alerts."
+          },
+          {
+            "d": "Made reliability visible \u2014 introduced SLOs and an error budget, so reliability work got real, funded priority."
+          },
+          {
+            "d": "Went fully blameless \u2014 rewrote postmortems to hunt system fixes, never people, so incidents got surfaced, not hidden."
+          },
+          {
+            "d": "Protected the humans \u2014 fair rotation, follow-the-sun where possible, and a hard rule: a bad night earns the next day off."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "20 \u2192 3",
+            "l": "pages per week"
+          },
+          {
+            "v": "99.95%",
+            "l": "reliability, and rising"
+          },
+          {
+            "v": "0",
+            "l": "burnout attrition since"
+          }
+        ],
+        "learning": "A painful on-call is a systems failure. Fix the toil, fund reliability, and protect the people.",
+        "foot": "You turned a burnout machine into a healthy system. That's operational leadership, not heroics.",
+        "dur": 112.358
+      }
+    },
+    {
+      "id": "s06_strategy",
+      "type": "em_q",
+      "in_seconds": 478.527,
+      "out_seconds": 512.787,
+      "props": {
+        "cat": "STRATEGY \u00b7 CROSS-ORG",
+        "title": "Setting technical strategy across teams",
+        "q": "Tell me about a time you set technical strategy beyond your team.",
+        "color": "#F5A524",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Start from the business goal",
+            "desc": "Strategy connects tech investment to where the business is going, not to a favorite rewrite."
+          },
+          {
+            "node": "A",
+            "title": "Get the org bought in",
+            "desc": "Write it down, socialize it, and let stakeholders shape it so they own it."
+          },
+          {
+            "node": "A",
+            "title": "Sequence bets, and say no",
+            "desc": "A roadmap is mostly what you WON'T do. Make the trade-offs explicit."
+          },
+          {
+            "node": "L",
+            "title": "Make it real and measurable",
+            "desc": "Tie it to milestones and metrics, and revisit it. A static strategy is a wish."
+          }
+        ],
+        "trap": "You proposed a grand rewrite with no link to business value and no buy-in.",
+        "signal": "You think in bets and trade-offs at the org level, and can align people behind a direction.",
+        "foot": "A technical strategy is funded bets tied to business outcomes \u2014 and the things you chose NOT to do.",
+        "dur": 34.76
+      }
+    },
+    {
+      "id": "s06s_strategy",
+      "type": "em_story",
+      "in_seconds": 513.287,
+      "out_seconds": 626.405,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 CROSS-ORG",
+        "title": "A three-year platform strategy nobody had written",
+        "color": "#F5A524",
+        "situation": "Across our engineering org of eighty people, every team was independently reinventing infrastructure \u2014 auth, data pipelines, deploy tooling. There was no shared platform strategy, and it was quietly costing us a fortune in duplicated effort and incidents.",
+        "task": "My mandate \u2014 I raised my hand for it: write and drive a shared platform strategy for the whole org.",
+        "actions": [
+          {
+            "d": "Started from the business goal \u2014 I tied the strategy to shipping faster and cheaper, not to elegant architecture."
+          },
+          {
+            "d": "Built it WITH the org, not for it \u2014 interviewed every team lead, wrote a one-page strategy, and let them shape it so they'd own it."
+          },
+          {
+            "d": "Made it a sequence of bets \u2014 I named what we'd build, what we'd buy, and what we'd deliberately NOT do, staged over three phases."
+          },
+          {
+            "d": "Made it measurable \u2014 every bet had a milestone and a metric, and we revisited the whole strategy each quarter."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "8 teams",
+            "l": "aligned on one platform"
+          },
+          {
+            "v": "\u2193 40%",
+            "l": "infrastructure duplication"
+          },
+          {
+            "v": "3-yr roadmap",
+            "l": "with quarterly reviews"
+          }
+        ],
+        "learning": "Strategy is funded bets tied to business outcomes \u2014 and the courage to write down what you won't do.",
+        "foot": "You aligned a whole org behind a direction and made the trade-offs explicit. The senior-EM ceiling.",
+        "dur": 113.618
+      }
+    },
+    {
+      "id": "s07_recap",
+      "type": "em_recap",
+      "in_seconds": 626.905,
+      "out_seconds": 669.999,
+      "props": {
+        "items": [
+          "Lead remote teams with written clarity and deliberate trust.",
+          "Make inclusion operational: who's heard, grown, and promoted.",
+          "Build reliability as a culture, and protect your on-call people.",
+          "Strategy is funded bets tied to business outcomes.",
+          "Across all four parts: STAR, plus what you learned."
+        ],
+        "closer": "Great managers build systems and cultures that outlast them.",
+        "dur": 43.594
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "em4/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

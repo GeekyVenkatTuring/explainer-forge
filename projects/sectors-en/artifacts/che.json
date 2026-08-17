@@ -1,0 +1,1069 @@
+{
+  "cuts": [
+    {
+      "id": "c_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 42.564,
+      "props": {
+        "title": "How to Analyse Chemical Stocks",
+        "sub": "Chemicals sector · fundamentals · technicals · strategies",
+        "kicker": "SECTOR DEEP-DIVE · CHEMICALS",
+        "dur": 43.064
+      }
+    },
+    {
+      "id": "c_overview",
+      "type": "sm_iconcards",
+      "in_seconds": 43.064,
+      "out_seconds": 124.332,
+      "props": {
+        "kicker": "SUB-SECTORS",
+        "title": "Not all chemicals are equal",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "💎",
+            "k": "Specialty chemicals",
+            "v": "Custom, high-value molecules with sticky customers & pricing power — the prize",
+            "chip": "Quality"
+          },
+          {
+            "emoji": "🛢️",
+            "k": "Commodity / bulk",
+            "v": "Mass chemicals sold on price alone — cyclical, low-margin, like metals",
+            "chip": "Cyclical"
+          },
+          {
+            "emoji": "🌾",
+            "k": "Agrochemicals",
+            "v": "Crop-protection & fertilisers — driven by farm demand and the monsoon",
+            "chip": "Agri"
+          },
+          {
+            "emoji": "🧪",
+            "k": "CRAMS / custom synthesis",
+            "v": "Making molecules for global pharma & others — a big China+1 winner",
+            "chip": "Export"
+          }
+        ],
+        "dur": 81.768
+      }
+    },
+    {
+      "id": "c_drivers",
+      "type": "sm_iconcards",
+      "in_seconds": 124.832,
+      "out_seconds": 202.192,
+      "props": {
+        "kicker": "WHAT MOVES CHEMICALS",
+        "title": "The forces that drive the sector",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🌏",
+            "k": "China+1",
+            "v": "The world de-risking away from Chinese supply — India's structural opportunity",
+            "chip": "Structural"
+          },
+          {
+            "emoji": "🛢️",
+            "k": "Raw-material costs",
+            "v": "Many inputs are crude-oil derivatives — crude & currency swings hit margins",
+            "chip": "Inputs"
+          },
+          {
+            "emoji": "🌍",
+            "k": "Global demand",
+            "v": "Exporters ride global industrial, pharma & agri demand cycles",
+            "chip": "Export"
+          },
+          {
+            "emoji": "🇨🇳",
+            "k": "China dumping",
+            "v": "When China floods the market with cheap chemicals, prices & margins crash",
+            "chip": "Risk"
+          }
+        ],
+        "dur": 77.86
+      }
+    },
+    {
+      "id": "c_fund",
+      "type": "sm_iconcards",
+      "in_seconds": 202.692,
+      "out_seconds": 279.188,
+      "props": {
+        "kicker": "FUNDAMENTALS · CORE",
+        "title": "The metrics that separate winners",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "💰",
+            "k": "Gross & EBITDA margins",
+            "v": "High, stable margins = specialty (pricing power); thin, swinging = commodity",
+            "chip": "Quality tell"
+          },
+          {
+            "emoji": "🔬",
+            "k": "R&D & customer stickiness",
+            "v": "R&D + long-term client relationships = a real, durable moat",
+            "chip": "Moat"
+          },
+          {
+            "emoji": "🏭",
+            "k": "Capex & capacity",
+            "v": "Growth needs new plants — watch capex plans and how they'll be funded",
+            "chip": "Growth"
+          },
+          {
+            "emoji": "📊",
+            "k": "Return ratios & debt",
+            "v": "High ROCE with controlled debt marks a genuinely great chemicals business",
+            "chip": "Returns"
+          }
+        ],
+        "dur": 76.996
+      }
+    },
+    {
+      "id": "c_check",
+      "type": "sm_checklist",
+      "in_seconds": 279.688,
+      "out_seconds": 363.256,
+      "props": {
+        "kicker": "HOW TO EVALUATE",
+        "title": "Evaluating a chemical stock — checklist",
+        "color": "#34D399",
+        "icon": "✅",
+        "items": [
+          "First classify it: specialty vs commodity vs agrochem",
+          "Check margin stability — the tell-tale of pricing power",
+          "Look for R&D + sticky global clients (the moat)",
+          "Assess capex vs debt — is growth self-funded?",
+          "Weigh the China+1 tailwind against China-dumping risk"
+        ],
+        "dur": 84.068
+      }
+    },
+    {
+      "id": "c_tech",
+      "type": "sm_iconcards",
+      "in_seconds": 363.756,
+      "out_seconds": 426.188,
+      "props": {
+        "kicker": "TECHNICAL ANALYSIS",
+        "title": "Reading chemicals on the chart",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "📈",
+            "k": "Nifty Chemicals",
+            "v": "A dedicated sector index now exists — track trend & relative strength",
+            "chip": "Index"
+          },
+          {
+            "emoji": "💎",
+            "k": "Specialty vs commodity",
+            "v": "Specialty names trend steadily; commodity names swing with the cycle",
+            "chip": "Split"
+          },
+          {
+            "emoji": "🛢️",
+            "k": "Crude & currency cues",
+            "v": "Input-cost moves (crude, rupee) and global demand guide the sector",
+            "chip": "Macro"
+          },
+          {
+            "emoji": "📊",
+            "k": "Results-driven",
+            "v": "Margin trends at quarterly results are the key catalyst — watch them",
+            "chip": "Results"
+          }
+        ],
+        "dur": 62.932
+      }
+    },
+    {
+      "id": "c_strat",
+      "type": "sm_iconcards",
+      "in_seconds": 426.688,
+      "out_seconds": 499.652,
+      "props": {
+        "kicker": "STRATEGIES",
+        "title": "Strategies for chemicals",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🌳",
+            "k": "Own specialty compounders",
+            "v": "For the long term, hold high-margin specialty leaders with sticky clients",
+            "chip": "Quality"
+          },
+          {
+            "emoji": "🌏",
+            "k": "Ride China+1",
+            "v": "Favour exporters & CRAMS players directly winning global de-risking contracts",
+            "chip": "Theme"
+          },
+          {
+            "emoji": "🔄",
+            "k": "Trade commodity cyclically",
+            "v": "Treat bulk-chemical names like metals — buy the down-cycle, sell the up",
+            "chip": "Cyclical"
+          },
+          {
+            "emoji": "📉",
+            "k": "Buy quality in de-rating",
+            "v": "Great specialty names occasionally get cheap on a scare — a patient entry",
+            "chip": "Contrarian"
+          }
+        ],
+        "dur": 73.464
+      }
+    },
+    {
+      "id": "c_risk",
+      "type": "sm_myths",
+      "in_seconds": 500.152,
+      "out_seconds": 572.784,
+      "props": {
+        "kicker": "WHAT TO AVOID",
+        "title": "Chemicals sector — the risks",
+        "mythLabel": "✗ TRAP",
+        "factLabel": "✓ REALITY",
+        "pairs": [
+          {
+            "m": "It's a chemical stock, so it's a China+1 winner",
+            "f": "Only specialty/CRAMS truly win; commodity names are just cyclicals"
+          },
+          {
+            "m": "Thin-margin bulk maker at low P/E = cheap",
+            "f": "Commodity chemicals are cyclical — low P/E often marks the peak"
+          },
+          {
+            "m": "The structural story means any price is fine",
+            "f": "Quality specialty names can get very expensive — valuation still matters"
+          }
+        ],
+        "dur": 73.132
+      }
+    },
+    {
+      "id": "c_recap",
+      "type": "sm_recap",
+      "in_seconds": 573.284,
+      "out_seconds": 617.784,
+      "props": {
+        "title": "Chemicals sector — recap",
+        "items": [
+          "Split it: specialty (quality) vs commodity (cyclical) vs agrochem",
+          "China+1 is the structural tailwind; dumping is the risk",
+          "Margin stability & R&D reveal the specialty compounders",
+          "Trade commodity names like metals; hold specialty long-term",
+          "Trap: calling every chemical stock a China+1 winner"
+        ],
+        "closer": "In chemicals, specialty compounds — commodity just cycles.",
+        "dur": 45.0
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      1.747,
+      "The chemicals sector —"
+    ],
+    [
+      1.747,
+      7.226,
+      "one of India's most exciting structural growth stories of the decade."
+    ],
+    [
+      7.226,
+      11.991,
+      "As the world diversifies its supply chains away from China —"
+    ],
+    [
+      11.991,
+      14.85,
+      "the so-called China-plus-one shift —"
+    ],
+    [
+      14.85,
+      18.979,
+      "India's chemical makers are winning global business."
+    ],
+    [
+      18.979,
+      22.87,
+      "But 'chemicals' hides two very different worlds —"
+    ],
+    [
+      22.87,
+      28.27,
+      "high-quality specialty chemicals and boom-bust commodity chemicals —"
+    ],
+    [
+      28.27,
+      32.797,
+      "and confusing them is the biggest mistake investors make."
+    ],
+    [
+      32.797,
+      37.72,
+      "We'll cover the sub-sectors, the fundamentals, the technicals,"
+    ],
+    [
+      37.72,
+      40.023,
+      "and the strategies in detail."
+    ],
+    [
+      40.023,
+      42.564,
+      "Company names are examples only."
+    ],
+    [
+      43.064,
+      49.871,
+      "The very first thing in chemicals is to realise that not all chemicals are equal —"
+    ],
+    [
+      49.871,
+      52.361,
+      "there are several worlds here."
+    ],
+    [
+      52.361,
+      57.176,
+      "The first, and the prize, is specialty chemicals — custom,"
+    ],
+    [
+      57.176,
+      61.409,
+      "high-value molecules made to a client's exact need."
+    ],
+    [
+      61.409,
+      64.813,
+      "Because they're hard to switch away from,"
+    ],
+    [
+      64.813,
+      70.043,
+      "these businesses have sticky customers, pricing power, and fat,"
+    ],
+    [
+      70.043,
+      71.288,
+      "stable margins."
+    ],
+    [
+      71.288,
+      74.691,
+      "This is where the great compounders live."
+    ],
+    [
+      74.691,
+      78.261,
+      "The second is commodity or bulk chemicals —"
+    ],
+    [
+      78.261,
+      81.913,
+      "mass-produced products sold purely on price."
+    ],
+    [
+      81.913,
+      84.736,
+      "These are cyclical and low-margin,"
+    ],
+    [
+      84.736,
+      88.72,
+      "and you analyse them almost exactly like metals,"
+    ],
+    [
+      88.72,
+      91.294,
+      "watching spreads and the cycle."
+    ],
+    [
+      91.294,
+      93.618,
+      "The third is agrochemicals —"
+    ],
+    [
+      93.618,
+      97.104,
+      "crop-protection chemicals and fertilisers,"
+    ],
+    [
+      97.104,
+      100.259,
+      "driven by farm demand and the monsoon,"
+    ],
+    [
+      100.259,
+      103.579,
+      "so they carry a seasonal, rural flavour."
+    ],
+    [
+      103.579,
+      107.066,
+      "The fourth is custom synthesis, or CRAMS —"
+    ],
+    [
+      107.066,
+      112.461,
+      "making molecules to order for global pharma and other industries."
+    ],
+    [
+      112.461,
+      116.612,
+      "This is one of the biggest China-plus-one winners."
+    ],
+    [
+      116.612,
+      122.506,
+      "Specialty and CRAMS are the quality end; commodity is the cyclical end."
+    ],
+    [
+      122.506,
+      124.332,
+      "Never confuse the two."
+    ],
+    [
+      124.832,
+      127.586,
+      "What drives the chemicals sector?"
+    ],
+    [
+      127.586,
+      131.174,
+      "Four forces — two tailwinds and a big risk."
+    ],
+    [
+      131.174,
+      136.348,
+      "The first, and the whole investment thesis, is China-plus-one."
+    ],
+    [
+      136.348,
+      143.776,
+      "As global companies de-risk their supply chains away from an over-concentration in China,"
+    ],
+    [
+      143.776,
+      149.033,
+      "India is the natural alternative, winning multi-year contracts."
+    ],
+    [
+      149.033,
+      152.204,
+      "This is a genuine structural tailwind."
+    ],
+    [
+      152.204,
+      154.958,
+      "The second is raw-material costs."
+    ],
+    [
+      154.958,
+      158.964,
+      "Many chemical inputs are derived from crude oil,"
+    ],
+    [
+      158.964,
+      164.388,
+      "so crude prices and the rupee directly move the sector's margins."
+    ],
+    [
+      164.388,
+      168.561,
+      "Rising input costs squeeze; falling costs relieve."
+    ],
+    [
+      168.561,
+      170.814,
+      "The third is global demand."
+    ],
+    [
+      170.814,
+      175.32,
+      "Because these are exporters, they ride the industrial,"
+    ],
+    [
+      175.32,
+      176.572,
+      "pharmaceutical,"
+    ],
+    [
+      176.572,
+      180.745,
+      "and agricultural demand cycles of the whole world,"
+    ],
+    [
+      180.745,
+      181.997,
+      "not just India."
+    ],
+    [
+      181.997,
+      186.253,
+      "And the fourth — the big risk — is Chinese dumping."
+    ],
+    [
+      186.253,
+      188.923,
+      "When China, for its own reasons,"
+    ],
+    [
+      188.923,
+      192.762,
+      "floods the global market with cheap chemicals,"
+    ],
+    [
+      192.762,
+      195.182,
+      "prices and margins can crash,"
+    ],
+    [
+      195.182,
+      199.522,
+      "hurting Indian players hardest in the commodity end."
+    ],
+    [
+      199.522,
+      202.192,
+      "That risk never fully goes away."
+    ],
+    [
+      202.692,
+      205.455,
+      "Now the metrics — and in chemicals,"
+    ],
+    [
+      205.455,
+      212.165,
+      "they literally tell you whether you're looking at a great business or a cyclical one."
+    ],
+    [
+      212.165,
+      215.086,
+      "The first tell is the margin profile."
+    ],
+    [
+      215.086,
+      222.428,
+      "High and stable gross and EBITDA margins signal a specialty business with real pricing power."
+    ],
+    [
+      222.428,
+      222.823,
+      "Thin,"
+    ],
+    [
+      222.823,
+      228.98,
+      "wildly swinging margins signal a commodity business at the mercy of the cycle."
+    ],
+    [
+      228.98,
+      233.796,
+      "The margin chart alone often tells you which world you're in."
+    ],
+    [
+      233.796,
+      237.585,
+      "The second is R&D spend and customer stickiness."
+    ],
+    [
+      237.585,
+      242.637,
+      "A specialty maker that invests in research and builds long-term,"
+    ],
+    [
+      242.637,
+      247.69,
+      "hard-to-replace relationships with global clients has a genuine,"
+    ],
+    [
+      247.69,
+      248.716,
+      "durable moat."
+    ],
+    [
+      248.716,
+      251.242,
+      "The third is capex and capacity."
+    ],
+    [
+      251.242,
+      255.268,
+      "Growth in this sector requires building new plants,"
+    ],
+    [
+      255.268,
+      259.531,
+      "so watch the capital-expenditure plans and, crucially,"
+    ],
+    [
+      259.531,
+      264.347,
+      "whether they're funded by internal cash or by piling on debt."
+    ],
+    [
+      264.347,
+      267.583,
+      "The fourth is the return ratios and debt."
+    ],
+    [
+      267.583,
+      276.504,
+      "A high return on capital employed alongside controlled debt is the signature of a truly great chemicals company —"
+    ],
+    [
+      276.504,
+      279.188,
+      "the kind that compounds for years."
+    ],
+    [
+      279.688,
+      284.735,
+      "Let's make this a working checklist for any chemical stock."
+    ],
+    [
+      284.735,
+      285.675,
+      "Five steps."
+    ],
+    [
+      285.675,
+      288.156,
+      "Step one — classify it first."
+    ],
+    [
+      288.156,
+      292.262,
+      "Is this a specialty maker, a commodity producer,"
+    ],
+    [
+      292.262,
+      294.571,
+      "or an agrochemical company?"
+    ],
+    [
+      294.571,
+      298.249,
+      "Your entire analysis depends on the answer,"
+    ],
+    [
+      298.249,
+      302.184,
+      "because they're valued completely differently."
+    ],
+    [
+      302.184,
+      306.717,
+      "Step two — check margin stability over several years."
+    ],
+    [
+      306.717,
+      307.316,
+      "Steady,"
+    ],
+    [
+      307.316,
+      316.041,
+      "high margins reveal pricing power and a specialty profile; violent swings reveal a commodity business."
+    ],
+    [
+      316.041,
+      317.067,
+      "Step three —"
+    ],
+    [
+      317.067,
+      321.942,
+      "look for the moat: real R&D investment and long-standing,"
+    ],
+    [
+      321.942,
+      325.449,
+      "sticky relationships with global clients."
+    ],
+    [
+      325.449,
+      330.239,
+      "That's what protects a specialty maker from competition."
+    ],
+    [
+      330.239,
+      333.49,
+      "Step four — assess capex against debt."
+    ],
+    [
+      333.49,
+      339.648,
+      "The best growers fund their new plants largely from their own cash flow,"
+    ],
+    [
+      339.648,
+      344.78,
+      "rather than borrowing heavily and risking the balance sheet."
+    ],
+    [
+      344.78,
+      345.721,
+      "Step five —"
+    ],
+    [
+      345.721,
+      352.821,
+      "weigh the two-sided China factor: the powerful China-plus-one tailwind on one hand,"
+    ],
+    [
+      352.821,
+      357.782,
+      "and the ever-present risk of Chinese dumping on the other."
+    ],
+    [
+      357.782,
+      358.552,
+      "Run that,"
+    ],
+    [
+      358.552,
+      363.256,
+      "and you'll separate the compounders from the cyclicals."
+    ],
+    [
+      363.756,
+      368.945,
+      "The technicals for chemicals reflect that same split personality."
+    ],
+    [
+      368.945,
+      377.328,
+      "There's now a dedicated Nifty Chemicals index you can track for the sector's trend and relative strength."
+    ],
+    [
+      377.328,
+      383.955,
+      "But interpret it knowing the divide: specialty names tend to trend steadily upward,"
+    ],
+    [
+      383.955,
+      385.95,
+      "like quality compounders,"
+    ],
+    [
+      385.95,
+      390.741,
+      "while commodity chemical names swing with their price cycle,"
+    ],
+    [
+      390.741,
+      391.699,
+      "like metals."
+    ],
+    [
+      391.699,
+      393.455,
+      "The index blends both."
+    ],
+    [
+      393.455,
+      396.888,
+      "Watch the macro cues that hit input costs —"
+    ],
+    [
+      396.888,
+      398.884,
+      "crude oil and the rupee —"
+    ],
+    [
+      398.884,
+      402.636,
+      "along with signals of global industrial demand,"
+    ],
+    [
+      402.636,
+      404.952,
+      "which together shape margins."
+    ],
+    [
+      404.952,
+      409.742,
+      "And above all, this is a results-driven sector on the chart."
+    ],
+    [
+      409.742,
+      414.532,
+      "The margin trend reported each quarter is the key catalyst —"
+    ],
+    [
+      414.532,
+      424.032,
+      "margins expanding signals the specialty thesis is working; margins compressing warns of dumping or a cyclical downturn."
+    ],
+    [
+      424.032,
+      426.188,
+      "Trade around those results."
+    ],
+    [
+      426.688,
+      428.988,
+      "So how do you play chemicals?"
+    ],
+    [
+      428.988,
+      430.257,
+      "Four strategies."
+    ],
+    [
+      430.257,
+      434.777,
+      "First, for the long term, own the specialty compounders —"
+    ],
+    [
+      434.777,
+      440.25,
+      "the high-margin leaders with sticky global clients and pricing power."
+    ],
+    [
+      440.25,
+      444.691,
+      "These are among the best businesses in the whole market,"
+    ],
+    [
+      444.691,
+      446.674,
+      "and you simply hold them."
+    ],
+    [
+      446.674,
+      450.481,
+      "Second, ride the China-plus-one theme directly —"
+    ],
+    [
+      450.481,
+      460.156,
+      "favour the exporters and custom-synthesis players who are actually winning the contracts as the world de-risks from China."
+    ],
+    [
+      460.156,
+      463.091,
+      "This is the structural growth engine."
+    ],
+    [
+      463.091,
+      468.087,
+      "Third, treat the commodity-chemical names exactly like metals —"
+    ],
+    [
+      468.087,
+      469.435,
+      "a cyclical trade,"
+    ],
+    [
+      469.435,
+      474.987,
+      "where you buy in the down-cycle when prices and margins are depressed,"
+    ],
+    [
+      474.987,
+      477.128,
+      "and sell into the up-cycle."
+    ],
+    [
+      477.128,
+      479.349,
+      "Fourth, a contrarian entry —"
+    ],
+    [
+      479.349,
+      486.645,
+      "even great specialty names occasionally de-rate on a China-dumping scare or a demand wobble."
+    ],
+    [
+      486.645,
+      489.659,
+      "For a genuinely high-quality business,"
+    ],
+    [
+      489.659,
+      493.545,
+      "that fear can be a patient long-term opportunity."
+    ],
+    [
+      493.545,
+      499.652,
+      "The golden rule: know whether you're holding a compounder or trading a cycle."
+    ],
+    [
+      500.152,
+      502.49,
+      "Now the traps in chemicals —"
+    ],
+    [
+      502.49,
+      507.582,
+      "and they come from that specialty-versus-commodity confusion."
+    ],
+    [
+      507.582,
+      508.918,
+      "The first trap —"
+    ],
+    [
+      508.918,
+      513.51,
+      "assuming any chemical stock is a China-plus-one winner."
+    ],
+    [
+      513.51,
+      514.261,
+      "It isn't."
+    ],
+    [
+      514.261,
+      521.691,
+      "Only the specialty and custom-synthesis players truly benefit from that structural shift."
+    ],
+    [
+      521.691,
+      525.949,
+      "A commodity bulk-chemical maker is just a cyclical,"
+    ],
+    [
+      525.949,
+      529.455,
+      "dressed up in the sector's exciting story."
+    ],
+    [
+      529.455,
+      530.875,
+      "The second trap —"
+    ],
+    [
+      530.875,
+      536.718,
+      "thinking a thin-margin bulk maker on a low price-to-earnings is cheap."
+    ],
+    [
+      536.718,
+      537.72,
+      "Like metals,"
+    ],
+    [
+      537.72,
+      543.481,
+      "commodity chemicals show their lowest P E right at the cyclical peak."
+    ],
+    [
+      543.481,
+      544.817,
+      "Don't be fooled."
+    ],
+    [
+      544.817,
+      546.152,
+      "The third trap —"
+    ],
+    [
+      546.152,
+      551.245,
+      "believing the wonderful structural story justifies any price."
+    ],
+    [
+      551.245,
+      555.503,
+      "The best specialty names can become very expensive,"
+    ],
+    [
+      555.503,
+      561.263,
+      "and overpaying even for a great business caps your returns for years."
+    ],
+    [
+      561.263,
+      563.35,
+      "Valuation always matters."
+    ],
+    [
+      563.35,
+      567.775,
+      "Separate specialty from commodity, respect valuation,"
+    ],
+    [
+      567.775,
+      572.784,
+      "and chemicals offer some of the market's finest compounders."
+    ],
+    [
+      573.284,
+      575.256,
+      "Chemicals, gathered up."
+    ],
+    [
+      575.256,
+      582.458,
+      "Always split the sector: specialty and custom-synthesis are the quality compounders,"
+    ],
+    [
+      582.458,
+      586.745,
+      "commodity is a cyclical, and agrochem is seasonal."
+    ],
+    [
+      586.745,
+      591.118,
+      "China-plus-one is the powerful structural tailwind,"
+    ],
+    [
+      591.118,
+      594.719,
+      "and Chinese dumping is the recurring risk."
+    ],
+    [
+      594.719,
+      595.32,
+      "Stable,"
+    ],
+    [
+      595.32,
+      600.464,
+      "high margins and real R&D reveal the true specialty winners."
+    ],
+    [
+      600.464,
+      603.98,
+      "Hold the specialty compounders for years,"
+    ],
+    [
+      603.98,
+      607.238,
+      "trade the commodity names like metals,"
+    ],
+    [
+      607.238,
+      612.382,
+      "and never call every chemical stock a China-plus-one winner."
+    ],
+    [
+      612.382,
+      617.784,
+      "Finally, the sector of screens and signals — media and telecom."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sx/che.wav",
+      "volume": 1.0
+    }
+  }
+}

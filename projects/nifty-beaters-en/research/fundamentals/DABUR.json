@@ -1,0 +1,94 @@
+{
+ "ticker": "DABUR",
+ "scraped_at": "2026-08-14T15:29:21",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 72324.0,
+ "current_price": 408.0,
+ "pe": 36.5,
+ "book_value": 64.4,
+ "dividend_yield_pct": 2.0,
+ "roce_pct": 20.3,
+ "roe_pct": 17.0,
+ "face_value": 1.0,
+ "high": 577.0,
+ "sales_growth": {
+  "10 Years": 4.0,
+  "5 Years": 2.0,
+  "3 Years": 4.0,
+  "TTM": 11.0
+ },
+ "profit_growth": {
+  "10 Years": 3.0,
+  "5 Years": -7.0,
+  "3 Years": -10.0,
+  "1 Year": -18.0
+ },
+ "roe_hist": {
+  "Equity Capital": 176.0,
+  "Borrowings&nbsp; +": 734.0,
+  "CWIP": 50.0
+ },
+ "price_cagr": {
+  "10 Years": 21.0,
+  "5 Years": 19.0,
+  "3 Years": 18.0,
+  "Last Year": 17.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "19%",
+   "21%",
+   "20%",
+   "17%",
+   "20%",
+   "18%",
+   "20%",
+   "15%",
+   "20%",
+   "18%",
+   "21%",
+   "15%",
+   "20%"
+  ],
+  "eps": [
+   "2.62",
+   "2.91",
+   "2.90",
+   "1.97",
+   "2.82",
+   "2.40",
+   "2.95",
+   "1.81",
+   "2.90",
+   "2.55",
+   "3.16",
+   "2.08",
+   "3.33"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 70.1%"
+ ],
+ "cons": [
+  "The company has delivered a poor sales growth of 6.65% over past five years."
+ ]
+}

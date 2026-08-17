@@ -1,0 +1,3 @@
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/cv-ch03-tasks_tasks.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/cv-from-scratch/assets/cv-ch03-tasks_apps.wav'

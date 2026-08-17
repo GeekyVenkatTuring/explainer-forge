@@ -1,0 +1,932 @@
+{
+ "cuts": [
+  {
+   "id": "ch02_div",
+   "type": "nb_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 19.558,
+   "props": {
+    "dur": 20.058,
+    "n": 2,
+    "title": "Core Compounders",
+    "sub": "Tier 1 \u00b7 the sleep-well-at-night quality",
+    "tier": "1",
+    "total": 5
+   }
+  },
+  {
+   "id": "ch02_board",
+   "type": "nb_tierboard",
+   "in_seconds": 20.058,
+   "out_seconds": 38.68,
+   "props": {
+    "tier": "1",
+    "title": "Tier 1 \u00b7 Core Compounders",
+    "sub": "Sixteen quality businesses to anchor the portfolio",
+    "names": [
+     "ICICI Bank",
+     "HDFC Bank",
+     "State Bank of India",
+     "Bajaj Finance",
+     "Larsen & Toubro",
+     "Mahindra & Mahindra",
+     "Bharat Electronics",
+     "Titan Company",
+     "Sun Pharma",
+     "Tata Consultancy Services",
+     "Polycab India",
+     "UltraTech Cement",
+     "Zydus Lifesciences",
+     "Bajaj Auto",
+     "Solar Industries",
+     "APL Apollo Tubes"
+    ],
+    "dur": 19.122
+   }
+  },
+  {
+   "id": "ch02_s01_icicibank",
+   "type": "nb_stock",
+   "in_seconds": 39.18,
+   "out_seconds": 88.8,
+   "props": {
+    "idx": 1,
+    "total": 50,
+    "tier": "1",
+    "name": "ICICI Bank",
+    "ticker": "ICICIBANK",
+    "sector": "Private Bank",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "18.1",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "15.9%",
+      "hero": true
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "24.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "15.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b910.16L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Best-run large private bank: clean book, sector-leading return on equity.",
+     "Retail + business banking engine still compounding loans in the mid-teens.",
+     "Digital-first franchise wins deposits cheaply \u2014 the core banking moat."
+    ],
+    "growth": 19.5,
+    "take": "Quality large-cap compounding, priced sensibly",
+    "dur": 50.12
+   }
+  },
+  {
+   "id": "ch02_s02_hdfcbank",
+   "type": "nb_stock",
+   "in_seconds": 89.3,
+   "out_seconds": 136.904,
+   "props": {
+    "idx": 2,
+    "total": 50,
+    "tier": "1",
+    "name": "HDFC Bank",
+    "ticker": "HDFCBANK",
+    "sector": "Private Bank",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "14.2",
+      "hero": true
+     },
+     {
+      "k": "ROE",
+      "v": "13.6%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "19.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "-1.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b911.21L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "India's largest private bank, now digesting the HDFC merger.",
+     "Deposit re-acceleration + margin recovery set up an earnings re-rating.",
+     "Cheapest it has looked in a decade versus its own history."
+    ],
+    "growth": 9.0,
+    "take": "The re-rating candidate hiding in plain sight",
+    "dur": 48.104
+   }
+  },
+  {
+   "id": "ch02_s03_sbin",
+   "type": "nb_stock",
+   "in_seconds": 137.404,
+   "out_seconds": 184.552,
+   "props": {
+    "idx": 3,
+    "total": 50,
+    "tier": "1",
+    "name": "State Bank of India",
+    "ticker": "SBIN",
+    "sector": "PSU Bank",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "11.7",
+      "hero": true
+     },
+     {
+      "k": "ROE",
+      "v": "15.4%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "30.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "20.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b99.85L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "The PSU banking giant at a single-digit P/E \u2014 cheap for its franchise.",
+     "Cleaned-up book + credit growth riding India's capex cycle.",
+     "Unmatched deposit base and reach no private bank can copy."
+    ],
+    "growth": 25.0,
+    "take": "Value + scale: a bank you buy cheap",
+    "dur": 47.648
+   }
+  },
+  {
+   "id": "ch02_s04_bajfinance",
+   "type": "nb_stock",
+   "in_seconds": 185.052,
+   "out_seconds": 234.432,
+   "props": {
+    "idx": 4,
+    "total": 50,
+    "tier": "1",
+    "name": "Bajaj Finance",
+    "ticker": "BAJFINANCE",
+    "sector": "NBFC",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "33.0",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "18.2%",
+      "hero": true
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "34.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "12.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b96.76L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Premier consumer-lending NBFC with a data + distribution flywheel.",
+     "AUM compounding ~25\u201330% as it cross-sells to 90M+ customers.",
+     "Building its own payments + app stack to defend the moat."
+    ],
+    "growth": 23.0,
+    "take": "The compounding machine of Indian lending",
+    "dur": 49.88
+   }
+  },
+  {
+   "id": "ch02_s05_lt",
+   "type": "nb_stock",
+   "in_seconds": 234.932,
+   "out_seconds": 282.8,
+   "props": {
+    "idx": 5,
+    "total": 50,
+    "tier": "1",
+    "name": "Larsen & Toubro",
+    "ticker": "LT",
+    "sector": "Capex / Infra",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "31.7",
+      "hero": true
+     },
+     {
+      "k": "ROE",
+      "v": "15.9%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "14.6%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "3.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "20.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b95.58L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "The purest proxy for India's infrastructure and capex super-cycle.",
+     "Record order book across roads, power, defence and Gulf projects.",
+     "Asset-light services (IT, tech) add a high-margin second engine."
+    ],
+    "growth": 11.5,
+    "take": "You buy India's build-out in one stock",
+    "dur": 48.368
+   }
+  },
+  {
+   "id": "ch02_s06_mm",
+   "type": "nb_stock",
+   "in_seconds": 283.3,
+   "out_seconds": 329.608,
+   "props": {
+    "idx": 6,
+    "total": 50,
+    "tier": "1",
+    "name": "Mahindra & Mahindra",
+    "ticker": "M&M",
+    "sector": "Auto",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "22.3",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "20.3%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "15.1%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "51.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "35.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b94.26L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "SUV market-share leader with the strongest new-launch pipeline.",
+     "Tractors ride the rural recovery; EV + tech add optionality.",
+     "Trades cheaper than peers despite the fastest earnings growth."
+    ],
+    "growth": 43.0,
+    "take": "Cheapest quality in Indian autos",
+    "dur": 46.808
+   }
+  },
+  {
+   "id": "ch02_s07_bel",
+   "type": "nb_stock",
+   "in_seconds": 330.108,
+   "out_seconds": 378.456,
+   "props": {
+    "idx": 7,
+    "total": 50,
+    "tier": "1",
+    "name": "Bharat Electronics",
+    "ticker": "BEL",
+    "sector": "Defence",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "48.9",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "27.4%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "36.4%",
+      "hero": true
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "24.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "48.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b93.00L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Defence indigenisation tailwind with a multi-year order backlog.",
+     "Elite return on capital and near-zero debt \u2014 a rare combination.",
+     "Radars, missiles, electronic warfare: high-moat, high-margin lines."
+    ],
+    "growth": 36.0,
+    "take": "A structural defence compounder",
+    "dur": 48.848
+   }
+  },
+  {
+   "id": "ch02_s08_titan",
+   "type": "nb_stock",
+   "in_seconds": 378.956,
+   "out_seconds": 427.664,
+   "props": {
+    "idx": 8,
+    "total": 50,
+    "tier": "1",
+    "name": "Titan Company",
+    "ticker": "TITAN",
+    "sector": "Consumption",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "77.2",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "37.7%",
+      "hero": true
+     },
+     {
+      "k": "ROCE",
+      "v": "20.5%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "40.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "22.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b94.51L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Formalisation of India's \u20b95-lakh-crore jewellery market flows to Tanishq.",
+     "Watches, eyewear, and a fast-scaling wearables and care business.",
+     "Premium brand power lets it grow volumes and pricing together."
+    ],
+    "growth": 31.0,
+    "take": "The premiumisation-of-India compounder",
+    "dur": 49.208
+   }
+  },
+  {
+   "id": "ch02_s09_sunpharma",
+   "type": "nb_stock",
+   "in_seconds": 428.164,
+   "out_seconds": 473.824,
+   "props": {
+    "idx": 9,
+    "total": 50,
+    "tier": "1",
+    "name": "Sun Pharma",
+    "ticker": "SUNPHARMA",
+    "sector": "Pharma",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "36.5",
+      "hero": true
+     },
+     {
+      "k": "ROE",
+      "v": "16.0%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "20.5%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "17.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "20.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b94.61L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "India's largest drug-maker pivoting to high-margin global specialty.",
+     "Ilumya, Winlevi and the specialty book de-risk US generic pricing.",
+     "Strong cash generation funds R&D without stressing the balance sheet."
+    ],
+    "growth": 18.5,
+    "take": "Pharma quality with a specialty kicker",
+    "dur": 46.16
+   }
+  },
+  {
+   "id": "ch02_s10_tcs",
+   "type": "nb_stock",
+   "in_seconds": 474.324,
+   "out_seconds": 522.552,
+   "props": {
+    "idx": 10,
+    "total": 50,
+    "tier": "1",
+    "name": "Tata Consultancy Services",
+    "ticker": "TCS",
+    "sector": "IT Services",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "15.9",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "51.8%",
+      "hero": true
+     },
+     {
+      "k": "ROCE",
+      "v": "63.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "9.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "-7.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b98.54L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Best-in-class margins and cash returns in Indian IT.",
+     "AI is a services opportunity, not just a threat, at this scale.",
+     "Defensive ballast: pays out most of its cash as dividends/buybacks."
+    ],
+    "growth": 6,
+    "take": "The steady, cheap quality anchor",
+    "dur": 48.728
+   }
+  },
+  {
+   "id": "ch02_s11_polycab",
+   "type": "nb_stock",
+   "in_seconds": 523.052,
+   "out_seconds": 571.496,
+   "props": {
+    "idx": 11,
+    "total": 50,
+    "tier": "1",
+    "name": "Polycab India",
+    "ticker": "POLYCAB",
+    "sector": "Electrification",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "48.5",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "23.0%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "33.2%",
+      "hero": true
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "24.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "37.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b91.39L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Market-leading wires & cables riding electrification and housing.",
+     "Fast-growing FMEG + exports diversify beyond the core.",
+     "Strong balance sheet and ROCE fund the 'Leap' capex plan."
+    ],
+    "growth": 30.5,
+    "take": "Electrifying India, profitably",
+    "dur": 48.944
+   }
+  },
+  {
+   "id": "ch02_s12_ultracemco",
+   "type": "nb_stock",
+   "in_seconds": 571.996,
+   "out_seconds": 618.496,
+   "props": {
+    "idx": 12,
+    "total": 50,
+    "tier": "1",
+    "name": "UltraTech Cement",
+    "ticker": "ULTRACEMCO",
+    "sector": "Cement / Infra",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "44.9",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "10.3%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "12.6%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "7.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "9.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b93.43L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "The consolidating leader of Indian cement, adding capacity fast.",
+     "Volume + pricing leverage as the housing/infra cycle turns up.",
+     "Scale advantage on cost that smaller peers cannot match."
+    ],
+    "growth": 8.0,
+    "take": "The infrastructure cycle's toll-booth",
+    "dur": 47.0
+   }
+  },
+  {
+   "id": "ch02_s13_zyduslife",
+   "type": "nb_stock",
+   "in_seconds": 618.996,
+   "out_seconds": 665.424,
+   "props": {
+    "idx": 13,
+    "total": 50,
+    "tier": "1",
+    "name": "Zydus Lifesciences",
+    "ticker": "ZYDUSLIFE",
+    "sector": "Pharma",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "23.4",
+      "hero": true
+     },
+     {
+      "k": "ROE",
+      "v": "21.2%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "21.1%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "19.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "16.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b91.14L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Quality pharma at a value-stock P/E \u2014 a rare mispricing.",
+     "Strong US pipeline plus a resilient India branded business.",
+     "Consistent 20%+ return on capital with a light balance sheet."
+    ],
+    "growth": 17.5,
+    "take": "Growth you're barely paying for",
+    "dur": 46.928
+   }
+  },
+  {
+   "id": "ch02_s14_bajajauto",
+   "type": "nb_stock",
+   "in_seconds": 665.924,
+   "out_seconds": 712.424,
+   "props": {
+    "idx": 14,
+    "total": 50,
+    "tier": "1",
+    "name": "Bajaj Auto",
+    "ticker": "BAJAJ-AUTO",
+    "sector": "Auto",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "27.2",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "29.2%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "28.2%",
+      "hero": true
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "17.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "25.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b93.20L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Premium 2-wheelers + a dominant, high-margin export franchise.",
+     "Electric Chetak scaling as it defends the premium ICE base.",
+     "Fortress balance sheet and elite returns on capital."
+    ],
+    "growth": 21.0,
+    "take": "Export-powered 2-wheeler quality",
+    "dur": 47.0
+   }
+  },
+  {
+   "id": "ch02_s15_solarinds",
+   "type": "nb_stock",
+   "in_seconds": 712.924,
+   "out_seconds": 762.136,
+   "props": {
+    "idx": 15,
+    "total": 50,
+    "tier": "1",
+    "name": "Solar Industries",
+    "ticker": "SOLARINDS",
+    "sector": "Defence / Explosives",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "90.8",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "32.6%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "38.1%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "45.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "63.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b91.81L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "World-scale explosives maker now a fast-rising defence supplier.",
+     "Defence (ammo, drones, propellants) is the high-growth new leg.",
+     "Elite ROE/ROCE with 40%+ earnings growth \u2014 a rare pairing."
+    ],
+    "growth": 45,
+    "take": "Explosive growth, literally",
+    "dur": 49.712
+   }
+  },
+  {
+   "id": "ch02_s16_aplapollo",
+   "type": "nb_stock",
+   "in_seconds": 762.636,
+   "out_seconds": 809.712,
+   "props": {
+    "idx": 16,
+    "total": 50,
+    "tier": "1",
+    "name": "APL Apollo Tubes",
+    "ticker": "APLAPOLLO",
+    "sector": "Building Materials",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "47.0",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "25.3%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "31.6%",
+      "hero": true
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "27.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "21.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b957,829 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "The category-creating leader in structural steel tubes.",
+     "Innovation + distribution keep it ahead as construction booms.",
+     "High return on capital with a light, working-capital-lean model."
+    ],
+    "growth": 24.0,
+    "take": "A branded moat in a commodity",
+    "dur": 47.576
+   }
+  },
+  {
+   "id": "ch02_wrap",
+   "type": "nb_statement",
+   "in_seconds": 810.212,
+   "out_seconds": 836.414,
+   "props": {
+    "dur": 26.702,
+    "kicker": "TIER 1 \u00b7 IN ONE LINE",
+    "color": "#34D399",
+    "lines": [
+     "Quality, bought fairly,",
+     "held for years,",
+     "compounds quietly."
+    ],
+    "sub": "The core does the steady work. Now the accelerators."
+   }
+  }
+ ],
+ "captions": [],
+ "audio": {
+  "narration": {
+   "src": "nb/ch02.wav",
+   "volume": 1.0
+  }
+ }
+}

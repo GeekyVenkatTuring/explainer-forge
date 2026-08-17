@@ -1,0 +1,876 @@
+{
+  "cuts": [
+    {
+      "id": "beharilal_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 31.172,
+      "props": {
+        "title": "Behari Lal Engineering IPO",
+        "sub": "Metal rolls manufacturer · ₹302 Cr · 12–14 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 31.672
+      }
+    },
+    {
+      "id": "beharilal_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 31.672,
+      "out_seconds": 71.698,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Behari Lal Engineering",
+        "color": "#F97316",
+        "items": [
+          {
+            "emoji": "🛠️",
+            "k": "Makes metal & steel rolls",
+            "v": "One of India's largest makers of metal rolls — the heavy rollers used inside steel and metal-processing mills",
+            "chip": "METAL ROLLS"
+          },
+          {
+            "emoji": "🏗️",
+            "k": "Custom engineering",
+            "v": "Customised, engineered products for industrial customers — a niche capital-goods business, founded back in 1995",
+            "chip": "NICHE"
+          },
+          {
+            "emoji": "📊",
+            "k": "Sizeable share",
+            "v": "Estimated to serve around 10 to 11 percent of domestic metal-roll demand in FY26",
+            "chip": "~10–11% SHARE"
+          }
+        ],
+        "dur": 40.526
+      }
+    },
+    {
+      "id": "beharilal_clients",
+      "type": "sm_iconcards",
+      "in_seconds": 72.198,
+      "out_seconds": 121.896,
+      "props": {
+        "kicker": "BUSINESS DEEP-DIVE · CLIENTS & ORDER BOOK",
+        "title": "Clients & Order Book",
+        "color": "#F97316",
+        "items": [
+          {
+            "emoji": "🏢",
+            "k": "1,825 customers, many industries",
+            "v": "Serves ~1,825 domestic and international customers across steel, automobile, mining, infrastructure, power, aerospace-and-defence and cement",
+            "chip": "1,825 CLIENTS"
+          },
+          {
+            "emoji": "🛠️",
+            "k": "Four product verticals",
+            "v": "Beyond metal rolls it makes castings, alloy-steel products and forgings — an integrated maker and trader from two plants in Mandi Gobindgarh, Punjab",
+            "chip": "4 VERTICALS"
+          },
+          {
+            "emoji": "📘",
+            "k": "Order book ₹178.57 Cr",
+            "v": "As of 31 May 2026 its order book stood at about ₹178.57 crore — genuine forward visibility that several other names this week don't disclose",
+            "chip": "₹178.57 Cr"
+          }
+        ],
+        "dur": 50.198
+      }
+    },
+    {
+      "id": "beharilal_fin",
+      "type": "sm_stats",
+      "in_seconds": 122.396,
+      "out_seconds": 156.808,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 547,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "≈ ₹546.52 Cr (+5.9%)"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 65,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "≈ ₹64.64 Cr (+22%)"
+          },
+          {
+            "label": "Grey-mkt premium",
+            "to": 11,
+            "prefix": "~",
+            "suffix": "%",
+            "color": "#FBBF24",
+            "sub": "unofficial · ~₹30 over ₹285"
+          }
+        ],
+        "note": "Revenue growth is modest at ~6%, but profit jumped 22% — margins are improving. A steady, profitable niche maker.",
+        "dur": 34.912
+      }
+    },
+    {
+      "id": "beharilal_issue",
+      "type": "sm_stats",
+      "in_seconds": 157.308,
+      "out_seconds": 189.63,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 302,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F97316",
+            "sub": "₹301.62 Cr · band ₹271–285"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 93,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "~31% funds the business"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 209,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "~69% — promoters part-exit"
+          }
+        ],
+        "note": "Mostly an Offer-for-Sale — about seven-tenths goes to selling promoters, not into the company.",
+        "dur": 32.822
+      }
+    },
+    {
+      "id": "beharilal_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 190.13,
+      "out_seconds": 223.22,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the Fresh Money Funds",
+        "color": "#F97316",
+        "items": [
+          {
+            "emoji": "🏭",
+            "k": "Capacity & equipment",
+            "v": "The fresh money largely funds capital expenditure and capacity for its manufacturing operations",
+            "chip": "CAPEX"
+          },
+          {
+            "emoji": "🔄",
+            "k": "Working capital",
+            "v": "Supports working capital, which a heavy, made-to-order engineering business ties up",
+            "chip": "WC"
+          },
+          {
+            "emoji": "🧰",
+            "k": "General corporate",
+            "v": "The balance is for general corporate purposes",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 33.59
+      }
+    },
+    {
+      "id": "beharilal_peers",
+      "type": "sm_iconcards",
+      "in_seconds": 223.72,
+      "out_seconds": 273.514,
+      "props": {
+        "kicker": "COMPETITORS · VALUATION",
+        "title": "No Listed Peer — But Priced Modestly",
+        "color": "#F97316",
+        "items": [
+          {
+            "emoji": "🛠️",
+            "k": "No listed peer (per RHP)",
+            "v": "The offer document lists no directly comparable company — metal-roll makers are a niche with few pure-play listed names",
+            "chip": "NO PEER"
+          },
+          {
+            "emoji": "⚖️",
+            "k": "No clean P/E comparison",
+            "v": "Broader steel-products and engineering firms exist, but none matches its rolls focus, so a like-for-like P/E isn't available",
+            "chip": "NICHE"
+          },
+          {
+            "emoji": "💰",
+            "k": "But the price looks modest",
+            "v": "At the ₹285 upper band it's asking about 17× FY26 earnings — modest versus many recent IPOs, though the lack of a peer makes benchmarking harder",
+            "chip": "~17× P/E"
+          }
+        ],
+        "dur": 50.294
+      }
+    },
+    {
+      "id": "beharilal_verdict",
+      "type": "sm_myths",
+      "in_seconds": 274.014,
+      "out_seconds": 313.08,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "~69% is OFS — mostly a promoter exit",
+            "f": "Profit +22%; margins improving"
+          },
+          {
+            "m": "No listed peer — hard to benchmark",
+            "f": "Modest ~17× valuation"
+          },
+          {
+            "m": "Slow revenue growth (~6%); cyclical demand",
+            "f": "Niche leader (~10–11% share); profitable since 1995"
+          }
+        ],
+        "dur": 39.566
+      }
+    },
+    {
+      "id": "beharilal_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 313.58,
+      "out_seconds": 350.748,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#F97316",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,820 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 37.668
+      }
+    },
+    {
+      "id": "beharilal_recap",
+      "type": "sm_recap",
+      "in_seconds": 351.248,
+      "out_seconds": 413.568,
+      "props": {
+        "title": "Behari Lal Engineering IPO — at a Glance",
+        "items": [
+          "Business: one of India's largest metal-roll makers",
+          "FY26: revenue ₹546.52 Cr (+5.9%), profit ₹64.64 Cr (+22%)",
+          "₹301.62 Cr issue — only ~31% fresh, ~69% OFS",
+          "No listed peer per RHP — but a modest ~17× price",
+          "Retail min ~₹14,820 · GMP ~10.5% (unofficial)"
+        ],
+        "closer": "A profitable niche leader at a modest price — but mostly a promoter sell-down with no peer to benchmark. Read the RHP; decide for yourself.",
+        "dur": 62.82
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.297,
+      "Let's break down the Behari Lal Engineering I-P-O —"
+    ],
+    [
+      4.297,
+      7.835,
+      "the smallest mainboard issue of next week,"
+    ],
+    [
+      7.835,
+      10.952,
+      "at about three hundred and two crore,"
+    ],
+    [
+      10.952,
+      13.733,
+      "from a niche engineering company."
+    ],
+    [
+      13.733,
+      17.439,
+      "It has an unusual feature — no listed peer —"
+    ],
+    [
+      17.439,
+      20.135,
+      "but a surprisingly modest price."
+    ],
+    [
+      20.135,
+      25.022,
+      "We'll cover the business, the financials, the money trail,"
+    ],
+    [
+      25.022,
+      27.718,
+      "the valuation, and how to apply."
+    ],
+    [
+      27.718,
+      31.172,
+      "This is education, not investment advice."
+    ],
+    [
+      31.672,
+      33.846,
+      "So what does Behari Lal do?"
+    ],
+    [
+      33.846,
+      38.679,
+      "It's one of India's largest makers of metal rolls — the big,"
+    ],
+    [
+      38.679,
+      44.638,
+      "heavy rollers used inside steel and metal-processing mills to shape metal."
+    ],
+    [
+      44.638,
+      47.779,
+      "It's a customised, engineered business,"
+    ],
+    [
+      47.779,
+      51.806,
+      "making products to order for industrial customers,"
+    ],
+    [
+      51.806,
+      55.671,
+      "and it's been around since nineteen ninety-five."
+    ],
+    [
+      55.671,
+      58.007,
+      "It's a genuine niche leader —"
+    ],
+    [
+      58.007,
+      64.208,
+      "estimated to serve about ten to eleven percent of domestic metal-roll demand."
+    ],
+    [
+      64.208,
+      65.577,
+      "But keep in mind,"
+    ],
+    [
+      65.577,
+      71.698,
+      "its fortunes are tied to the industrial and steel capital-expenditure cycle."
+    ],
+    [
+      72.198,
+      73.55,
+      "Let's go deeper —"
+    ],
+    [
+      73.55,
+      77.605,
+      "and here we finally get real order-book visibility."
+    ],
+    [
+      77.605,
+      82.933,
+      "Behari Lal serves about eighteen hundred and twenty-five customers,"
+    ],
+    [
+      82.933,
+      87.227,
+      "domestic and international, across steel, automobiles,"
+    ],
+    [
+      87.227,
+      89.612,
+      "mining, infrastructure, power,"
+    ],
+    [
+      89.612,
+      93.906,
+      "aerospace-and-defence and cement — nicely diversified."
+    ],
+    [
+      93.906,
+      96.848,
+      "Beyond metal rolls it makes castings,"
+    ],
+    [
+      96.848,
+      99.552,
+      "alloy-steel products and forgings,"
+    ],
+    [
+      99.552,
+      105.118,
+      "as an integrated maker and trader from two plants in Mandi Gobindgarh,"
+    ],
+    [
+      105.118,
+      105.675,
+      "Punjab."
+    ],
+    [
+      105.675,
+      110.525,
+      "And its order book — as of the end of May twenty twenty-six —"
+    ],
+    [
+      110.525,
+      114.58,
+      "stood at about one hundred and seventy-eight crore."
+    ],
+    [
+      114.58,
+      117.284,
+      "That's genuine forward visibility,"
+    ],
+    [
+      117.284,
+      121.896,
+      "which several other names this week simply don't disclose."
+    ],
+    [
+      122.396,
+      124.491,
+      "The financials are steady."
+    ],
+    [
+      124.491,
+      130.777,
+      "Revenue for FY twenty twenty-six was about five hundred and forty-seven crore,"
+    ],
+    [
+      130.777,
+      132.712,
+      "up a modest six percent."
+    ],
+    [
+      132.712,
+      138.272,
+      "But net profit jumped twenty-two percent to around sixty-five crore —"
+    ],
+    [
+      138.272,
+      140.851,
+      "so margins are improving nicely."
+    ],
+    [
+      140.851,
+      142.302,
+      "It's a profitable,"
+    ],
+    [
+      142.302,
+      146.331,
+      "well-run niche business rather than a fast grower."
+    ],
+    [
+      146.331,
+      150.683,
+      "The grey market premium is near ten to eleven percent,"
+    ],
+    [
+      150.683,
+      154.713,
+      "the most modest of the mainboard names this week —"
+    ],
+    [
+      154.713,
+      156.808,
+      "and of course, unofficial."
+    ],
+    [
+      157.308,
+      159.214,
+      "Where does your money go?"
+    ],
+    [
+      159.214,
+      162.949,
+      "Of the roughly three hundred and two crore issue,"
+    ],
+    [
+      162.949,
+      166.913,
+      "only about ninety-three crore — thirty-one percent —"
+    ],
+    [
+      166.913,
+      169.962,
+      "is a fresh issue going into the company."
+    ],
+    [
+      169.962,
+      173.774,
+      "The larger part, about two hundred and nine crore,"
+    ],
+    [
+      173.774,
+      175.451,
+      "is an Offer for Sale —"
+    ],
+    [
+      175.451,
+      180.482,
+      "the promoters selling part of their stake and pocketing that cash."
+    ],
+    [
+      180.482,
+      187.114,
+      "So it's mostly a sell-down: around seven-tenths of your money buys out existing owners,"
+    ],
+    [
+      187.114,
+      189.63,
+      "rather than funding the business."
+    ],
+    [
+      190.13,
+      192.669,
+      "What does the fresh slice fund?"
+    ],
+    [
+      192.669,
+      198.73,
+      "Largely capital expenditure and capacity for its manufacturing operations."
+    ],
+    [
+      198.73,
+      201.515,
+      "It also supports working capital —"
+    ],
+    [
+      201.515,
+      208.313,
+      "a made-to-order engineering business ties up a lot of cash in orders and inventory."
+    ],
+    [
+      208.313,
+      212.081,
+      "And the balance is general corporate purposes."
+    ],
+    [
+      212.081,
+      216.995,
+      "So the fresh money is put to sensible, growth-oriented use —"
+    ],
+    [
+      216.995,
+      219.289,
+      "there just isn't much of it,"
+    ],
+    [
+      219.289,
+      223.22,
+      "since most of the issue is a promoter sell-down."
+    ],
+    [
+      223.72,
+      225.493,
+      "Now — the competitors."
+    ],
+    [
+      225.493,
+      226.459,
+      "Like Molbio,"
+    ],
+    [
+      226.459,
+      233.55,
+      "Behari Lal says in its offer document that it has no directly comparable listed company."
+    ],
+    [
+      233.55,
+      240.56,
+      "Metal rolls are a narrow niche; there are broader steel-products and engineering firms,"
+    ],
+    [
+      240.56,
+      243.621,
+      "but none is a true like-for-like peer,"
+    ],
+    [
+      243.621,
+      247.086,
+      "so there's no clean P-E to compare against."
+    ],
+    [
+      247.086,
+      250.954,
+      "The good news is the price itself looks modest —"
+    ],
+    [
+      250.954,
+      256.997,
+      "at the top of the band it's asking only about seventeen times its earnings,"
+    ],
+    [
+      256.997,
+      260.381,
+      "which is cheap next to many recent I-P-Os."
+    ],
+    [
+      260.381,
+      262.798,
+      "Just remember, without a peer,"
+    ],
+    [
+      262.798,
+      267.632,
+      "that word 'cheap' has nothing solid to be measured against —"
+    ],
+    [
+      267.632,
+      272.144,
+      "so lean on the business quality and the modest multiple,"
+    ],
+    [
+      272.144,
+      273.514,
+      "not a comparison."
+    ],
+    [
+      274.014,
+      275.681,
+      "Should you subscribe?"
+    ],
+    [
+      275.681,
+      276.872,
+      "The strengths —"
+    ],
+    [
+      276.872,
+      281.16,
+      "it's a profitable niche leader with improving margins,"
+    ],
+    [
+      281.16,
+      284.019,
+      "it's been around since the nineties,"
+    ],
+    [
+      284.019,
+      288.703,
+      "and it's modestly priced at about seventeen times earnings."
+    ],
+    [
+      288.703,
+      289.974,
+      "The watch-outs —"
+    ],
+    [
+      289.974,
+      293.626,
+      "about seventy percent is a promoter sell-down,"
+    ],
+    [
+      293.626,
+      297.12,
+      "there's no listed peer to benchmark against,"
+    ],
+    [
+      297.12,
+      301.09,
+      "and revenue growth is slow in a cyclical industry."
+    ],
+    [
+      301.09,
+      305.378,
+      "The takeaway — a solid, cheaply-priced niche business,"
+    ],
+    [
+      305.378,
+      309.666,
+      "but mostly a cash-out with no peer to check the price."
+    ],
+    [
+      309.666,
+      313.08,
+      "Judge it on the business, not a comparison."
+    ],
+    [
+      313.58,
+      317.28,
+      "How do you apply, and how much do you need?"
+    ],
+    [
+      317.28,
+      323.13,
+      "Retail investors bid up to two lakh for a thirty-five percent quota,"
+    ],
+    [
+      323.13,
+      326.916,
+      "with allotment by lottery if oversubscribed."
+    ],
+    [
+      326.916,
+      331.476,
+      "H-N-Is go above two lakh for a fifteen percent quota."
+    ],
+    [
+      331.476,
+      335.347,
+      "For Behari Lal, one lot is fifty-two shares —"
+    ],
+    [
+      335.347,
+      340.251,
+      "about fourteen thousand eight hundred and twenty rupees —"
+    ],
+    [
+      340.251,
+      341.37,
+      "your minimum."
+    ],
+    [
+      341.37,
+      346.79,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      346.79,
+      350.748,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      351.248,
+      354.114,
+      "Let's recap Behari Lal Engineering."
+    ],
+    [
+      354.114,
+      357.554,
+      "One of India's largest metal-roll makers —"
+    ],
+    [
+      357.554,
+      361.566,
+      "a profitable niche leader with improving margins,"
+    ],
+    [
+      361.566,
+      363.778,
+      "though slow revenue growth."
+    ],
+    [
+      363.778,
+      367.135,
+      "The issue is mostly a promoter sell-down,"
+    ],
+    [
+      367.135,
+      369.182,
+      "only about a third fresh."
+    ],
+    [
+      369.182,
+      370.984,
+      "It has no listed peer,"
+    ],
+    [
+      370.984,
+      375.979,
+      "but it's modestly priced at around seventeen times earnings —"
+    ],
+    [
+      375.979,
+      378.109,
+      "cheap by recent standards."
+    ],
+    [
+      378.109,
+      384.496,
+      "The retail minimum is about fourteen thousand eight hundred and twenty rupees,"
+    ],
+    [
+      384.496,
+      388.427,
+      "and the grey-market premium is near ten percent,"
+    ],
+    [
+      388.427,
+      389.901,
+      "though unofficial."
+    ],
+    [
+      389.901,
+      393.832,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      393.832,
+      396.125,
+      "it is not investment advice,"
+    ],
+    [
+      396.125,
+      398.827,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      398.827,
+      401.939,
+      "and not a prediction of listing gains."
+    ],
+    [
+      401.939,
+      406.28,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      406.28,
+      411.93,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      411.93,
+      413.568,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/beharilal.wav",
+      "volume": 1.0
+    }
+  }
+}

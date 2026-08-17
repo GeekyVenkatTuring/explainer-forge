@@ -1,0 +1,104 @@
+{
+ "ticker": "PRAJIND",
+ "scraped_at": "2026-08-14T15:28:25",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 6148.0,
+ "current_price": 334.0,
+ "pe": 122.0,
+ "book_value": 71.2,
+ "dividend_yield_pct": 1.05,
+ "roce_pct": 6.12,
+ "roe_pct": 1.48,
+ "face_value": 2.0,
+ "high": 433.0,
+ "sales_growth": {
+  "10 Years": -13.0,
+  "5 Years": -24.0,
+  "3 Years": -56.0,
+  "TTM": -64.0
+ },
+ "profit_growth": {
+  "10 Years": 14.0,
+  "5 Years": -1.0,
+  "3 Years": -12.0,
+  "1 Year": -22.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 737.0,
+  "Expenses&nbsp; +": 661.0,
+  "Operating Profit": 75.0,
+  "OPM %": 10.0,
+  "Other Income&nbsp; +": 12.0,
+  "Interest": 1.0,
+  "Depreciation": 9.0,
+  "Profit before tax": 78.0,
+  "Tax %": 24.0,
+  "Net Profit&nbsp; +": 59.0,
+  "EPS in Rs": 3.19
+ },
+ "price_cagr": {
+  "10 Years": 12.0,
+  "5 Years": 15.0,
+  "3 Years": 12.0,
+  "Last Year": 1.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "10%",
+   "10%",
+   "12%",
+   "13%",
+   "13%",
+   "11%",
+   "9%",
+   "9%",
+   "4.9%",
+   "7%",
+   "4.9%",
+   "2.8%",
+   "4.2%"
+  ],
+  "eps": [
+   "3.19",
+   "3.39",
+   "3.83",
+   "5.00",
+   "4.58",
+   "2.93",
+   "2.24",
+   "2.17",
+   "0.29",
+   "1.05",
+   "-0.67",
+   "0.63",
+   "0.63"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 122%",
+  "Company&#x27;s working capital requirements have reduced from 21.3 days to 15.9 days"
+ ],
+ "cons": [
+  "Promoter holding is low: 32.8%",
+  "Company has a low return on equity of 11.7% over last 3 years."
+ ]
+}

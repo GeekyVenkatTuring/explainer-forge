@@ -1,0 +1,8 @@
+  rendered + delivered ch01 (3.53 min) → /Users/appuram/Downloads/generated_videos/nifty-beaters
+  render attempt 1/3 failed for ch02:
+Error: ENOSPC: no space left on device, write
+    at async write (node:internal/fs/promises:744:8)
+    at async writeFileHandle (node:internal/fs/promises:501:7)
+    at async screenshotTask (/Users/appuram/Developer/explainer-forge/composer/node_modules/@remotion/renderer/dist/screenshot-task.js:69:13)
+
+  rendered + delivered ch02 (13.96 min) → /Users/appuram/Downloads/generated_videos/nifty-beaters

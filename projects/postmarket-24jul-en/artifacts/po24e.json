@@ -1,0 +1,891 @@
+{
+  "cuts": [
+    {
+      "id": "po_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 40.556,
+      "props": {
+        "title": "Post-Market Recap",
+        "sub": "July 24, 2026 · five days down — but this was no crash",
+        "kicker": "POST-MARKET · 24 JUL 2026",
+        "dur": 41.056
+      }
+    },
+    {
+      "id": "po_snap",
+      "type": "sm_stats",
+      "in_seconds": 41.056,
+      "out_seconds": 98.936,
+      "props": {
+        "kicker": "INDEX SNAPSHOT",
+        "title": "Closing Numbers — 24 July",
+        "stats": [
+          {
+            "label": "SENSEX",
+            "to": 76060,
+            "prefix": "",
+            "suffix": "",
+            "color": "#FB7185",
+            "sub": "−332 pts · −0.43%"
+          },
+          {
+            "label": "NIFTY 50",
+            "to": 23767,
+            "prefix": "",
+            "suffix": "",
+            "color": "#FB7185",
+            "sub": "−102 · below 23,800"
+          },
+          {
+            "label": "BANK NIFTY",
+            "to": 56694,
+            "prefix": "",
+            "suffix": "",
+            "color": "#34D399",
+            "sub": "+0.18% · GREEN"
+          }
+        ],
+        "note": "Mild on the day — but 5 red sessions add up: Nifty −2.33% for the WEEK. Notice the green box: Bank Nifty held up. The damage was narrow, not broad.",
+        "dur": 58.38
+      }
+    },
+    {
+      "id": "po_why",
+      "type": "sm_iconcards",
+      "in_seconds": 99.436,
+      "out_seconds": 170.804,
+      "props": {
+        "kicker": "WHY IT KEPT FALLING",
+        "title": "Four Forces Behind the Streak",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "🛢️",
+            "k": "A week of $100 oil",
+            "v": "Brent topped $100 mid-week on the West Asia conflict. It eased to $97.04 (−1.47%) on Friday but stayed highly elevated — damage done",
+            "chip": "THE ROOT"
+          },
+          {
+            "emoji": "🌍",
+            "k": "West Asia tensions",
+            "v": "Escalating Middle East conflict kept global markets in a risk-off mood all week long",
+            "chip": "RISK-OFF"
+          },
+          {
+            "emoji": "💸",
+            "k": "FII selling + weak rupee",
+            "v": "Foreign investors stayed net sellers (~₹3,000 cr out); the rupee slid to ₹96.6 to the dollar",
+            "chip": "−₹3,000 Cr"
+          },
+          {
+            "emoji": "📉",
+            "k": "Growth + inflation worry",
+            "v": "Costlier oil feeds inflation and dents India's growth outlook — the overhang that won't lift",
+            "chip": "OVERHANG"
+          }
+        ],
+        "dur": 71.868
+      }
+    },
+    {
+      "id": "po_losers",
+      "type": "sm_iconcards",
+      "in_seconds": 171.304,
+      "out_seconds": 235.424,
+      "props": {
+        "kicker": "TOP LOSERS",
+        "title": "Who Got Hit",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "Bajaj Finance −2.60%",
+            "v": "The single biggest Nifty loser — NBFCs are sensitive to rate and liquidity worries, so they lead the selling",
+            "chip": "TOP LOSER"
+          },
+          {
+            "emoji": "🛒",
+            "k": "Eternal −2.47%",
+            "v": "The Zomato parent slid — high-growth, richly-valued names are the first to be sold in a risk-off tape",
+            "chip": "HIGH-GROWTH"
+          },
+          {
+            "emoji": "🚗",
+            "k": "M&M −2.11% · Auto −1.10%",
+            "v": "Autos led the sector declines; costlier fuel and inputs weigh on demand sentiment",
+            "chip": "AUTO DRAG"
+          },
+          {
+            "emoji": "⚡",
+            "k": "Energy −0.57% · Metals −0.55%",
+            "v": "Realty −0.55% too — the classic crude-and-rates losers. Notice: every loser is domestic & cyclical",
+            "chip": "CYCLICALS"
+          }
+        ],
+        "dur": 64.62
+      }
+    },
+    {
+      "id": "po_gainers",
+      "type": "sm_iconcards",
+      "in_seconds": 235.924,
+      "out_seconds": 304.22,
+      "props": {
+        "kicker": "WHAT HELD UP",
+        "title": "Where the Money Hid",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "💻",
+            "k": "IT: HCLTech +2.08%, Wipro +1.32%",
+            "v": "IT was the top-performing sector (+0.82%). A weak rupee HELPS IT — they earn in dollars, report in rupees",
+            "chip": "TOP SECTOR"
+          },
+          {
+            "emoji": "🏦",
+            "k": "Bank Nifty +0.18%",
+            "v": "Financials steadied and closed green — a tentative but real sign they're trying to stabilise",
+            "chip": "GREEN"
+          },
+          {
+            "emoji": "💊",
+            "k": "Cipla +1.23%",
+            "v": "Rose on strong Q1FY27 results. Pharma, like IT, is both defensive AND a dollar earner",
+            "chip": "Q1 BEAT"
+          },
+          {
+            "emoji": "🛡️",
+            "k": "FMCG defensives",
+            "v": "Consumer staples stayed green as money rotated to safety in a weak-rupee, high-oil market",
+            "chip": "DEFENSIVE"
+          }
+        ],
+        "dur": 68.796
+      }
+    },
+    {
+      "id": "po_reads",
+      "type": "sm_myths",
+      "in_seconds": 304.72,
+      "out_seconds": 361.354,
+      "props": {
+        "kicker": "READ BEHIND THE HEADLINE",
+        "title": "What It Looks Like vs What's Real",
+        "mythLabel": "🧐 THE HEADLINE SAYS",
+        "factLabel": "🔍 WHAT'S REALLY HAPPENING",
+        "pairs": [
+          {
+            "m": "Fifth day down — the market is crashing",
+            "f": "Only −0.43% today; a slow drift, not a plunge. A streak ≠ a crash"
+          },
+          {
+            "m": "Oil eased to $97 — so the fall makes no sense",
+            "f": "Markets price the whole week's trend, not just today's single tick"
+          },
+          {
+            "m": "Everything is selling off",
+            "f": "IT & banks closed GREEN — the damage was narrow, not broad-based"
+          }
+        ],
+        "dur": 57.134
+      }
+    },
+    {
+      "id": "po_take",
+      "type": "sm_checklist",
+      "in_seconds": 361.854,
+      "out_seconds": 429.668,
+      "props": {
+        "kicker": "TAKEAWAYS",
+        "title": "5 Lessons to Carry Forward",
+        "color": "#34D399",
+        "icon": "💡",
+        "items": [
+          "A losing streak isn't a crash — five −0.4% days ≠ one −2% day",
+          "A weak rupee HELPS IT & pharma, HURTS importers & autos",
+          "Watch Nifty 23,600 support — a clean break opens more downside",
+          "Bank Nifty closing green = the first tentative sign of a bottom",
+          "For SIP investors, a −2.33% week is still noise — keep buying"
+        ],
+        "dur": 68.314
+      }
+    },
+    {
+      "id": "po_recap",
+      "type": "sm_recap",
+      "in_seconds": 430.168,
+      "out_seconds": 499.566,
+      "props": {
+        "title": "24 July — At a Glance",
+        "items": [
+          "Sensex −332 (76,060) · Nifty −102 (23,767) — 5th day down",
+          "Weekly: Nifty −2.33% — longest losing streak in 6 months",
+          "Cause: a week of $100 oil + FII selling + weak rupee",
+          "Red: Bajaj Finance, Eternal, M&M, autos · Green: IT, banks, Cipla",
+          "Watch: Nifty 23,600 support · green Bank Nifty = tentative bottom"
+        ],
+        "closer": "Not a crash — a slow bleed. And underneath, IT and banks are quietly holding the line.",
+        "dur": 69.898
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      5.212,
+      "The Indian market just closed lower for the fifth straight day —"
+    ],
+    [
+      5.212,
+      9.284,
+      "its longest losing streak in more than six months."
+    ],
+    [
+      9.284,
+      14.496,
+      "But here's the twist most headlines miss: today was not a crash."
+    ],
+    [
+      14.496,
+      18.486,
+      "The Nifty fell less than half a percent — a slow,"
+    ],
+    [
+      18.486,
+      20.604,
+      "quiet drift, not a plunge."
+    ],
+    [
+      20.604,
+      24.513,
+      "So the real question isn't how far did it fall —"
+    ],
+    [
+      24.513,
+      27.037,
+      "it's why won't it stop falling,"
+    ],
+    [
+      27.037,
+      31.354,
+      "and what the market is quietly telling us underneath."
+    ],
+    [
+      31.354,
+      36.321,
+      "Let's break down exactly what happened on July twenty-fourth."
+    ],
+    [
+      36.321,
+      40.556,
+      "This is information analysis, not investment advice."
+    ],
+    [
+      41.056,
+      42.822,
+      "First, the scoreboard."
+    ],
+    [
+      42.822,
+      49.887,
+      "The Sensex fell three hundred thirty-two points to close at seventy-six thousand sixty —"
+    ],
+    [
+      49.887,
+      52.696,
+      "down zero point four three percent."
+    ],
+    [
+      52.696,
+      60.082,
+      "The Nifty slipped one hundred two points to twenty-three thousand seven hundred sixty-seven,"
+    ],
+    [
+      60.082,
+      64.096,
+      "closing below twenty-three thousand eight hundred."
+    ],
+    [
+      64.096,
+      66.504,
+      "But look at the third number —"
+    ],
+    [
+      66.504,
+      69.474,
+      "the Bank Nifty actually closed green,"
+    ],
+    [
+      69.474,
+      72.043,
+      "up zero point one eight percent."
+    ],
+    [
+      72.043,
+      77.341,
+      "That one green box is the most important clue on this whole slide."
+    ],
+    [
+      77.341,
+      80.392,
+      "Because while any single day was mild,"
+    ],
+    [
+      80.392,
+      87.135,
+      "five red sessions add up: the Nifty lost two point three three percent for the week,"
+    ],
+    [
+      87.135,
+      89.704,
+      "the Sensex two point seven zero."
+    ],
+    [
+      89.704,
+      93.557,
+      "That's the real story — not a crash, but a slow,"
+    ],
+    [
+      93.557,
+      94.601,
+      "steady bleed."
+    ],
+    [
+      94.601,
+      98.936,
+      "And underneath it, the damage was surprisingly narrow."
+    ],
+    [
+      99.436,
+      101.239,
+      "So why five days down?"
+    ],
+    [
+      101.239,
+      105.336,
+      "Four forces — and the first is the root of it all."
+    ],
+    [
+      105.336,
+      106.728,
+      "Number one — oil."
+    ],
+    [
+      106.728,
+      114.84,
+      "Earlier this week Brent crude topped one hundred dollars a barrel as the West Asia conflict flared."
+    ],
+    [
+      114.84,
+      120.412,
+      "And here's the key nuance: even though oil eased slightly on Friday,"
+    ],
+    [
+      120.412,
+      123.116,
+      "to ninety-seven dollars a barrel,"
+    ],
+    [
+      123.116,
+      125.902,
+      "down about one and a half percent,"
+    ],
+    [
+      125.902,
+      128.114,
+      "it stayed highly elevated —"
+    ],
+    [
+      128.114,
+      131.31,
+      "and the week's damage was already done."
+    ],
+    [
+      131.31,
+      135.161,
+      "Markets price the trend, not just today's tick."
+    ],
+    [
+      135.161,
+      136.144,
+      "Number two —"
+    ],
+    [
+      136.144,
+      142.29,
+      "those Middle East tensions kept global markets in a risk-off mood all week."
+    ],
+    [
+      142.29,
+      146.059,
+      "Number three — foreign investors kept selling,"
+    ],
+    [
+      146.059,
+      149.336,
+      "pulling out around three thousand crore,"
+    ],
+    [
+      149.336,
+      156.219,
+      "and a weakening rupee near ninety-six point six to the dollar added to the pressure."
+    ],
+    [
+      156.219,
+      158.431,
+      "Number four — the overhang."
+    ],
+    [
+      158.431,
+      163.512,
+      "Costlier oil feeds inflation and dents India's growth outlook."
+    ],
+    [
+      163.512,
+      167.281,
+      "That's the worry that simply refused to lift —"
+    ],
+    [
+      167.281,
+      170.804,
+      "and it's why one mild down-day became five."
+    ],
+    [
+      171.304,
+      172.754,
+      "Now, who got hit."
+    ],
+    [
+      172.754,
+      176.42,
+      "The single biggest loser was Bajaj Finance,"
+    ],
+    [
+      176.42,
+      179.148,
+      "down two point six zero percent."
+    ],
+    [
+      179.148,
+      184.435,
+      "N-B-F-Cs are sensitive to interest-rate and liquidity worries,"
+    ],
+    [
+      184.435,
+      188.272,
+      "so they lead the selling when the mood sours."
+    ],
+    [
+      188.272,
+      191.512,
+      "Next, Eternal — the parent of Zomato —"
+    ],
+    [
+      191.512,
+      194.411,
+      "fell two point four seven percent."
+    ],
+    [
+      194.411,
+      195.434,
+      "High-growth,"
+    ],
+    [
+      195.434,
+      201.659,
+      "richly-valued names are always the first to be sold in a risk-off market."
+    ],
+    [
+      201.659,
+      206.689,
+      "Then Mahindra and Mahindra, down two point one one percent,"
+    ],
+    [
+      206.689,
+      211.635,
+      "as the whole auto sector fell one point one zero percent —"
+    ],
+    [
+      211.635,
+      214.534,
+      "the worst-performing sector today."
+    ],
+    [
+      214.534,
+      218.03,
+      "Costlier fuel and inputs weigh on demand."
+    ],
+    [
+      218.03,
+      221.185,
+      "And the usual crude-and-rates crowd —"
+    ],
+    [
+      221.185,
+      224.084,
+      "energy down zero point five seven,"
+    ],
+    [
+      224.084,
+      228.944,
+      "metals and realty each down zero point five five percent."
+    ],
+    [
+      228.944,
+      232.866,
+      "Notice the pattern: every loser is a domestic,"
+    ],
+    [
+      232.866,
+      235.424,
+      "rate-sensitive, cyclical name."
+    ],
+    [
+      235.924,
+      237.895,
+      "But it wasn't all red —"
+    ],
+    [
+      237.895,
+      242.437,
+      "and what held up tells you where the smart money hid."
+    ],
+    [
+      242.437,
+      244.236,
+      "The standout was I-T."
+    ],
+    [
+      244.236,
+      248.606,
+      "HCL Technologies rose two point zero eight percent,"
+    ],
+    [
+      248.606,
+      250.834,
+      "Wipro one point three two,"
+    ],
+    [
+      250.834,
+      254.091,
+      "and I-T was the top-performing sector,"
+    ],
+    [
+      254.091,
+      256.833,
+      "up zero point eight two percent."
+    ],
+    [
+      256.833,
+      260.603,
+      "Here's why: a weak rupee actually helps I-T,"
+    ],
+    [
+      260.603,
+      265.83,
+      "because these companies earn in dollars and report in rupees."
+    ],
+    [
+      265.83,
+      271.486,
+      "The very same weak rupee that hurt importers helped the exporters."
+    ],
+    [
+      271.486,
+      273.028,
+      "Second, the banks."
+    ],
+    [
+      273.028,
+      277.484,
+      "The Bank Nifty closed green — a tentative, but real,"
+    ],
+    [
+      277.484,
+      281.34,
+      "sign that financials are trying to stabilise."
+    ],
+    [
+      281.34,
+      287.167,
+      "Cipla rose one point two three percent on strong quarterly results —"
+    ],
+    [
+      287.167,
+      292.309,
+      "and pharma, like I-T, is both defensive and a dollar earner."
+    ],
+    [
+      292.309,
+      296.765,
+      "And defensive consumer, F-M-C-G names, stayed green."
+    ],
+    [
+      296.765,
+      300.621,
+      "The lesson: in a weak-rupee, high-oil market,"
+    ],
+    [
+      300.621,
+      304.22,
+      "money rotates to exporters and defensives."
+    ],
+    [
+      304.72,
+      307.802,
+      "Now let's read behind the headlines —"
+    ],
+    [
+      307.802,
+      314.215,
+      "because today had three things that look confusing until you understand them."
+    ],
+    [
+      314.215,
+      319.711,
+      "The headline says the fifth day down means the market is crashing."
+    ],
+    [
+      319.711,
+      324.042,
+      "The reality: today's fall was under half a percent —"
+    ],
+    [
+      324.042,
+      326.291,
+      "a slow drift, not a plunge."
+    ],
+    [
+      326.291,
+      329.955,
+      "A streak and a crash are not the same thing."
+    ],
+    [
+      329.955,
+      334.286,
+      "The headline says oil eased to ninety-seven dollars,"
+    ],
+    [
+      334.286,
+      336.535,
+      "so the fall makes no sense."
+    ],
+    [
+      336.535,
+      341.116,
+      "The reality: markets price the trend of the whole week,"
+    ],
+    [
+      341.116,
+      343.531,
+      "not just today's single tick."
+    ],
+    [
+      343.531,
+      345.197,
+      "Sentiment has a lag."
+    ],
+    [
+      345.197,
+      349.194,
+      "And the headline says everything is selling off."
+    ],
+    [
+      349.194,
+      354.108,
+      "But I-T and the banks closed green — the damage was narrow,"
+    ],
+    [
+      354.108,
+      355.441,
+      "not broad-based."
+    ],
+    [
+      355.441,
+      361.354,
+      "Reading that nuance is exactly what separates calm analysis from panic."
+    ],
+    [
+      361.854,
+      365.646,
+      "So, five takeaways to carry into next week."
+    ],
+    [
+      365.646,
+      368.909,
+      "One — a losing streak is not a crash."
+    ],
+    [
+      368.909,
+      377.551,
+      "Five gentle down-days is very different from one violent one; don't let the word streak scare you."
+    ],
+    [
+      377.551,
+      379.579,
+      "Two — currency matters."
+    ],
+    [
+      379.579,
+      383.283,
+      "A weak rupee quietly helps I-T and pharma,"
+    ],
+    [
+      383.283,
+      385.928,
+      "and hurts importers and autos."
+    ],
+    [
+      385.928,
+      388.398,
+      "When oil and the rupee move,"
+    ],
+    [
+      388.398,
+      391.396,
+      "always check who earns in dollars."
+    ],
+    [
+      391.396,
+      393.512,
+      "Three — watch the level."
+    ],
+    [
+      393.512,
+      403.213,
+      "The Nifty has support around twenty-three thousand six hundred; a clean break below it opens up more downside."
+    ],
+    [
+      403.213,
+      407.975,
+      "Resistance is near twenty-three thousand nine hundred."
+    ],
+    [
+      407.975,
+      408.504,
+      "Four —"
+    ],
+    [
+      408.504,
+      416.088,
+      "the Bank Nifty closing green is the first tentative sign that a bottom may be forming."
+    ],
+    [
+      416.088,
+      418.38,
+      "Watch closely if it holds."
+    ],
+    [
+      418.38,
+      422.084,
+      "And five — for a long-term S-I-P investor,"
+    ],
+    [
+      422.084,
+      427.111,
+      "a two point three three percent week is still just noise."
+    ],
+    [
+      427.111,
+      429.668,
+      "Keep buying on your schedule."
+    ],
+    [
+      430.168,
+      432.809,
+      "July twenty-fourth, at a glance."
+    ],
+    [
+      432.809,
+      439.328,
+      "The Sensex fell three hundred thirty-two points and the Nifty one hundred two —"
+    ],
+    [
+      439.328,
+      441.638,
+      "the fifth straight down day,"
+    ],
+    [
+      441.638,
+      446.094,
+      "and the longest losing streak in more than six months,"
+    ],
+    [
+      446.094,
+      451.293,
+      "with the Nifty down two point three three percent for the week."
+    ],
+    [
+      451.293,
+      455.089,
+      "The cause — a full week of hundred-dollar oil,"
+    ],
+    [
+      455.089,
+      459.132,
+      "foreign investors selling, and a weakening rupee."
+    ],
+    [
+      459.132,
+      463.836,
+      "The red — Bajaj Finance, Eternal, Mahindra and the autos."
+    ],
+    [
+      463.836,
+      468.209,
+      "The green — I-T, the banks, and Cipla on its results."
+    ],
+    [
+      468.209,
+      469.777,
+      "And what to watch —"
+    ],
+    [
+      469.777,
+      473.985,
+      "Nifty support at twenty-three thousand six hundred,"
+    ],
+    [
+      473.985,
+      478.524,
+      "and a green Bank Nifty as a tentative sign of a bottom."
+    ],
+    [
+      478.524,
+      481.907,
+      "It was not a crash — it was a slow bleed."
+    ],
+    [
+      481.907,
+      483.392,
+      "And underneath it,"
+    ],
+    [
+      483.392,
+      487.271,
+      "I-T and the banks are quietly holding the line."
+    ],
+    [
+      487.271,
+      491.562,
+      "This information is aggregated from public sources —"
+    ],
+    [
+      491.562,
+      494.945,
+      "for analysis only, not investment advice."
+    ],
+    [
+      494.945,
+      499.566,
+      "Thanks for watching, and I'll see you at the next close."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/po24e.wav",
+      "volume": 1.0
+    }
+  }
+}

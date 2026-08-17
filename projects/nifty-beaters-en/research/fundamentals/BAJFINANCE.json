@@ -1,0 +1,85 @@
+{
+ "ticker": "BAJFINANCE",
+ "scraped_at": "2026-08-14T15:27:42",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 676139.0,
+ "current_price": 1086.0,
+ "pe": 33.0,
+ "book_value": 183.0,
+ "dividend_yield_pct": 0.5,
+ "roce_pct": 10.9,
+ "roe_pct": 18.2,
+ "face_value": 1.0,
+ "high": 1178.0,
+ "sales_growth": {
+  "10 Years": 31.0,
+  "5 Years": 34.0,
+  "3 Years": 19.0,
+  "TTM": 18.0
+ },
+ "profit_growth": {
+  "10 Years": 27.0,
+  "5 Years": 12.0,
+  "3 Years": 16.0,
+  "1 Year": 27.0
+ },
+ "roe_hist": {
+  "Equity Capital": 50.0,
+  "Fixed Assets&nbsp; +": 252.0,
+  "CWIP": 0.0,
+  "Investments": 326.0
+ },
+ "price_cagr": {
+  "10 Years": 19.0,
+  "5 Years": 20.0,
+  "3 Years": 20.0,
+  "Last Year": 18.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [],
+  "eps": [
+   "5.67",
+   "5.86",
+   "5.89",
+   "6.18",
+   "6.32",
+   "6.46",
+   "6.86",
+   "7.21",
+   "7.56",
+   "7.84",
+   "6.39",
+   "8.78",
+   "9.61"
+  ]
+ },
+ "pros": [
+  "Company has delivered good profit growth of 34.2% CAGR over last 5 years",
+  "Company has been maintaining a healthy dividend payout of 18.6%",
+  "Company&#x27;s median sales growth is 29.4% of last 10 years"
+ ],
+ "cons": [
+  "Stock is trading at 5.98 times its book value",
+  "Company has low interest coverage ratio.",
+  "Company might be capitalizing the interest cost"
+ ]
+}

@@ -1,0 +1,42 @@
+[17:16] rendering ch03 ch04 ch05 at concurrency=2...
+  render attempt 1/3 failed for ch03:
+Error: ENOSPC: no space left on device, write
+    at async write (node:internal/fs/promises:744:8)
+    at async writeFileHandle (node:internal/fs/promises:501:7)
+    at async screenshotTask (/Users/appuram/Developer/explainer-forge/composer/node_modules/@remotion/renderer/dist/screenshot-task.js:69:13)
+
+  render attempt 2/3 failed for ch03:
+Error: ENOSPC: no space left on device, write
+    at async write (node:internal/fs/promises:744:8)
+    at async writeFileHandle (node:internal/fs/promises:501:7)
+    at async screenshotTask (/Users/appuram/Developer/explainer-forge/composer/node_modules/@remotion/renderer/dist/screenshot-task.js:69:13)
+
+  render attempt 3/3 failed for ch03:
+The browser crashed while rendering frame 7304, retrying 1 more times. Learn more about this error under https://www.remotion.dev/docs/target-closed
+
+  GAVE UP on ch03 after 3 attempts
+  render attempt 1/3 failed for ch04:
+ile downloading file http://localhost:3001/public/nb/ch04.wav.
+The response body was:
+---
+{"statusCode":404,"message":"The requested path (/var/folders/6w/cjhx3ttd31j91f41bltp28840000gn/T/remotion-webpack-bundle-VnSGfj/public/nb/ch04.wav) could not be found"}
+---
+    at readFile (/Users/appuram/Developer/explainer-forge/composer/node_modules/@remotion/renderer/dist/assets/read-file.js:59:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at /Users/appuram/Developer/explainer-forge/composer/node_modules/@remotion/renderer/dist/render-frame-with-option-to-reject.js:136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+
+  render attempt 2/3 failed for ch04:
+nge 0-4
+[in#0 @ 0x6000003ec000] Error opening input: No such file or directory
+Error opening input file /var/folders/6w/cjhx3ttd31j91f41bltp28840000gn/T/react-motion-render6C6XTs/element-%05d.jpeg.
+Error opening input files: No such file or directory
+
+    at ChildProcess.<anonymous> (/Users/appuram/Developer/explainer-forge/composer/node_modules/@remotion/renderer/dist/stitch-frames-to-video.js:305:24)
+    at Object.onceWrapper (node:events:634:26)
+    at ChildProcess.emit (node:events:519:28)
+    at maybeClose (node:internal/child_process:1101:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:519:28)
+    at Pipe.<anonymous> (node:net:346:12)
+

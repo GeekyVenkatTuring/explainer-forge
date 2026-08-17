@@ -1,0 +1,97 @@
+{
+ "ticker": "HEROMOTOCO",
+ "scraped_at": "2026-08-14T15:28:35",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 115504.0,
+ "current_price": 5771.0,
+ "pe": 20.8,
+ "book_value": 1080.0,
+ "dividend_yield_pct": 3.17,
+ "roce_pct": 35.2,
+ "roe_pct": 28.1,
+ "face_value": 2.0,
+ "high": 6390.0,
+ "sales_growth": {
+  "10 Years": 7.0,
+  "5 Years": 16.0,
+  "3 Years": 28.0,
+  "TTM": 10.0
+ },
+ "profit_growth": {
+  "10 Years": 6.0,
+  "5 Years": 16.0,
+  "3 Years": 25.0,
+  "1 Year": 24.0
+ },
+ "roe_hist": {
+  "Equity Capital": 40.0,
+  "Borrowings&nbsp; +": 100.0,
+  "CWIP": 719.0
+ },
+ "price_cagr": {
+  "10 Years": 23.0,
+  "5 Years": 21.0,
+  "3 Years": 24.0,
+  "Last Year": 28.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "13%",
+   "14%",
+   "14%",
+   "14%",
+   "14%",
+   "14%",
+   "14%",
+   "14%",
+   "15%",
+   "14%",
+   "14%",
+   "14%",
+   "13%"
+  ],
+  "eps": [
+   "35.53",
+   "50.35",
+   "54.70",
+   "46.77",
+   "52.31",
+   "53.19",
+   "55.38",
+   "58.06",
+   "85.26",
+   "65.42",
+   "63.35",
+   "72.97",
+   "70.59"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Stock is providing a good dividend yield of 3.19%.",
+  "Company has been maintaining a healthy dividend payout of 71.5%",
+  "Debtor days have improved from 24.5 to 18.0 days."
+ ],
+ "cons": [
+  "The company has delivered a poor sales growth of 8.90% over past five years."
+ ]
+}

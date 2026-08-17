@@ -1,0 +1,96 @@
+{
+ "ticker": "CIPLA",
+ "scraped_at": "2026-08-14T15:28:58",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 117139.0,
+ "current_price": 1450.0,
+ "pe": 32.8,
+ "book_value": 426.0,
+ "dividend_yield_pct": 0.89,
+ "roce_pct": 15.5,
+ "roe_pct": 11.6,
+ "face_value": 2.0,
+ "high": 1673.0,
+ "sales_growth": {
+  "10 Years": 11.0,
+  "5 Years": 10.0,
+  "3 Years": 10.0,
+  "TTM": -34.0
+ },
+ "profit_growth": {
+  "10 Years": 10.0,
+  "5 Years": 10.0,
+  "3 Years": 6.0,
+  "1 Year": -7.0
+ },
+ "roe_hist": {
+  "Equity Capital": 161.0,
+  "CWIP": 581.0,
+  "Investments": 640.0
+ },
+ "price_cagr": {
+  "10 Years": 13.0,
+  "5 Years": 14.0,
+  "3 Years": 15.0,
+  "Last Year": 12.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "24%",
+   "26%",
+   "26%",
+   "21%",
+   "26%",
+   "27%",
+   "28%",
+   "23%",
+   "26%",
+   "25%",
+   "18%",
+   "15%",
+   "17%"
+  ],
+  "eps": [
+   "12.33",
+   "14.01",
+   "13.08",
+   "11.63",
+   "14.58",
+   "16.13",
+   "19.45",
+   "15.13",
+   "16.06",
+   "16.73",
+   "8.37",
+   "6.87",
+   "9.77"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has been maintaining a healthy dividend payout of 25.7%"
+ ],
+ "cons": [
+  "The company has delivered a poor sales growth of 8.01% over past five years.",
+  "Promoter holding has decreased over last 3 years: -4.24%"
+ ]
+}

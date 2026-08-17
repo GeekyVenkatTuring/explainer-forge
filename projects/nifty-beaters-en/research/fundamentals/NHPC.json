@@ -1,0 +1,103 @@
+{
+ "ticker": "NHPC",
+ "scraped_at": "2026-08-14T15:30:27",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 77246.0,
+ "current_price": 76.9,
+ "pe": 20.4,
+ "book_value": 41.2,
+ "dividend_yield_pct": 2.08,
+ "roce_pct": 5.75,
+ "roe_pct": 9.32,
+ "face_value": 10.0,
+ "high": 89.2,
+ "sales_growth": {
+  "10 Years": 6.0,
+  "5 Years": 2.0,
+  "3 Years": -1.0,
+  "TTM": 24.0
+ },
+ "profit_growth": {
+  "10 Years": 11.0,
+  "5 Years": 24.0,
+  "3 Years": 15.0,
+  "1 Year": -6.0
+ },
+ "roe_hist": {
+  "OPM %": 55.0,
+  "Other Income&nbsp; +": 292.0,
+  "Interest": 109.0,
+  "Depreciation": 294.0,
+  "Tax %": 21.0,
+  "EPS in Rs": 1.03
+ },
+ "price_cagr": {
+  "10 Years": 9.0,
+  "5 Years": 9.0,
+  "3 Years": 9.0,
+  "Last Year": 9.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "55%",
+   "60%",
+   "37%",
+   "61%",
+   "60%",
+   "59%",
+   "44%",
+   "51%",
+   "56%",
+   "60%",
+   "10%",
+   "23%",
+   "62%"
+  ],
+  "eps": [
+   "1.03",
+   "1.54",
+   "0.48",
+   "0.54",
+   "1.02",
+   "0.90",
+   "0.23",
+   "0.85",
+   "1.06",
+   "1.02",
+   "0.22",
+   "1.45",
+   "1.09"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 53.3%",
+  "Debtor days have improved from 114 to 82.6 days."
+ ],
+ "cons": [
+  "Promoter holding has decreased over last quarter: -6.01%",
+  "The company has delivered a poor sales growth of 3.78% over past five years.",
+  "Tax rate seems low",
+  "Company has a low return on equity of 8.79% over last 3 years.",
+  "Company might be capitalizing the interest cost",
+  "Earnings include an other income of Rs.2,609 Cr."
+ ]
+}

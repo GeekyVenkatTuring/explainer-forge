@@ -1,0 +1,99 @@
+{
+ "ticker": "NTPC",
+ "scraped_at": "2026-08-14T15:30:22",
+ "source": "screener.in",
+ "ok": true,
+ "error": "<HTTPError 429: 'Too Many Requests'>",
+ "variant": "standalone",
+ "market_cap_cr": 329687.0,
+ "current_price": 340.0,
+ "pe": 13.9,
+ "book_value": 180.0,
+ "dividend_yield_pct": 2.6,
+ "roce_pct": 8.43,
+ "roe_pct": 13.8,
+ "face_value": 10.0,
+ "high": 414.0,
+ "sales_growth": {
+  "10 Years": 8.0,
+  "5 Years": 8.0,
+  "3 Years": 10.0,
+  "TTM": 19.0
+ },
+ "profit_growth": {
+  "10 Years": 10.0,
+  "5 Years": 24.0,
+  "3 Years": 17.0,
+  "1 Year": 1.0
+ },
+ "roe_hist": {
+  "OPM %": 28.0,
+  "Other Income&nbsp; +": 558.0,
+  "Tax %": 29.0,
+  "EPS in Rs": 4.19
+ },
+ "price_cagr": {
+  "10 Years": 13.0,
+  "5 Years": 13.0,
+  "3 Years": 13.0,
+  "Last Year": 14.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "28%",
+   "26%",
+   "25%",
+   "27%",
+   "27%",
+   "24%",
+   "28%",
+   "26%",
+   "24%",
+   "26%",
+   "30%",
+   "13%",
+   "29%"
+  ],
+  "eps": [
+   "4.19",
+   "4.01",
+   "4.71",
+   "5.73",
+   "4.65",
+   "4.79",
+   "4.86",
+   "5.96",
+   "4.92",
+   "4.80",
+   "5.14",
+   "9.02",
+   "5.51"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 40.2%"
+ ],
+ "cons": [
+  "The company has delivered a poor sales growth of 10.8% over past five years.",
+  "Tax rate seems low",
+  "Company has a low return on equity of 13.3% over last 3 years.",
+  "Company might be capitalizing the interest cost"
+ ]
+}

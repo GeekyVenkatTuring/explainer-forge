@@ -1,0 +1,90 @@
+{
+ "ticker": "LTF",
+ "scraped_at": "2026-08-14T15:27:46",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 76798.0,
+ "current_price": 306.0,
+ "pe": 24.0,
+ "book_value": 112.0,
+ "dividend_yield_pct": 0.87,
+ "roce_pct": 8.4,
+ "roe_pct": 11.2,
+ "face_value": 10.0,
+ "high": 339.0,
+ "sales_growth": {
+  "10 Years": 13.0,
+  "5 Years": 32.0,
+  "3 Years": 256.0,
+  "TTM": 20.0
+ },
+ "profit_growth": {
+  "10 Years": 14.0,
+  "5 Years": 30.0,
+  "3 Years": 37.0,
+  "1 Year": 56.0
+ },
+ "roe_hist": {
+  "Financing Profit": 590.0,
+  "Financing Margin %": 18.0,
+  "Other Income&nbsp; +": 153.0,
+  "Depreciation": 30.0,
+  "Profit before tax": 714.0,
+  "Tax %": 26.0,
+  "Net Profit&nbsp; +": 531.0,
+  "EPS in Rs": 2.14
+ },
+ "price_cagr": {
+  "10 Years": 9.0,
+  "5 Years": 8.0,
+  "3 Years": 11.0,
+  "Last Year": 11.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [],
+  "eps": [
+   "2.14",
+   "2.40",
+   "2.57",
+   "2.23",
+   "2.75",
+   "2.79",
+   "2.51",
+   "2.55",
+   "2.81",
+   "2.94",
+   "2.95",
+   "3.22",
+   "3.60"
+  ]
+ },
+ "pros": [
+  "Company has delivered good profit growth of 32.4% CAGR over last 5 years",
+  "Company has been maintaining a healthy dividend payout of 25.3%"
+ ],
+ "cons": [
+  "Stock is trading at 2.79 times its book value",
+  "Company has low interest coverage ratio.",
+  "The company has delivered a poor sales growth of 6.05% over past five years.",
+  "Company has a low return on equity of 10.8% over last 3 years.",
+  "Company might be capitalizing the interest cost"
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "ticker": "MARUTI",
+ "scraped_at": "2026-08-14T15:28:31",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 436076.0,
+ "current_price": 13870.0,
+ "pe": 30.4,
+ "book_value": 3408.0,
+ "dividend_yield_pct": 1.02,
+ "roce_pct": 18.9,
+ "roe_pct": 14.3,
+ "face_value": 5.0,
+ "high": 17372.0,
+ "sales_growth": {
+  "10 Years": 12.0,
+  "5 Years": 27.0,
+  "3 Years": 29.0,
+  "TTM": -1.0
+ },
+ "profit_growth": {
+  "10 Years": 11.0,
+  "5 Years": 15.0,
+  "3 Years": 14.0,
+  "1 Year": 7.0
+ },
+ "roe_hist": {
+  "Equity Capital": 151.0,
+  "Borrowings&nbsp; +": 666.0
+ },
+ "price_cagr": {
+  "10 Years": 13.0,
+  "5 Years": 14.0,
+  "3 Years": 16.0,
+  "Last Year": 14.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "11%",
+   "14%",
+   "13%",
+   "14%",
+   "14%",
+   "13%",
+   "13%",
+   "12%",
+   "12%",
+   "12%",
+   "11%",
+   "12%",
+   "8%"
+  ],
+  "eps": [
+   "84.18",
+   "125.34",
+   "102.00",
+   "125.71",
+   "119.58",
+   "98.68",
+   "118.54",
+   "124.40",
+   "120.62",
+   "106.52",
+   "123.38",
+   "116.38",
+   "109.63"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company is expected to give good quarter",
+  "Company has delivered good profit growth of 26.7% CAGR over last 5 years",
+  "Company has been maintaining a healthy dividend payout of 29.5%"
+ ],
+ "cons": []
+}

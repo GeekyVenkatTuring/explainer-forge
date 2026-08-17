@@ -1,0 +1,500 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch10-hierarchy_hier",
+   "type": "cv_hier",
+   "in_seconds": 0.0,
+   "out_seconds": 104.013,
+   "props": {
+    "dur": 104.513
+   }
+  },
+  {
+   "id": "cv-ch10-hierarchy_receptive",
+   "type": "cv_receptive",
+   "in_seconds": 104.513,
+   "out_seconds": 191.474,
+   "props": {
+    "dur": 87.461
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.943,
+   "Now here is the single most beautiful idea"
+  ],
+  [
+   2.943,
+   4.782,
+   "in all of deep vision."
+  ],
+  [
+   4.782,
+   6.989,
+   "If you take one insight home,"
+  ],
+  [
+   6.989,
+   8.829,
+   "let it be this one."
+  ],
+  [
+   9.46,
+   11.667,
+   "When you stack these layers deep,"
+  ],
+  [
+   11.667,
+   14.61,
+   "something extraordinary emerges on its own\n\u2014 a"
+  ],
+  [
+   14.61,
+   15.714,
+   "hierarchy of understanding."
+  ],
+  [
+   16.345,
+   19.288,
+   "And we do not have to take this"
+  ],
+  [
+   19.288,
+   20.024,
+   "on faith."
+  ],
+  [
+   20.024,
+   22.967,
+   "We can actually peek inside a trained\nnetwork"
+  ],
+  [
+   22.967,
+   25.91,
+   "and see what each layer has learned to"
+  ],
+  [
+   25.91,
+   26.645,
+   "respond to."
+  ],
+  [
+   27.277,
+   28.748,
+   "So let's climb it,"
+  ],
+  [
+   28.748,
+   29.852,
+   "layer by layer."
+  ],
+  [
+   30.483,
+   33.426,
+   "The very first layer learns edges and\nsimple"
+  ],
+  [
+   33.426,
+   33.794,
+   "colors."
+  ],
+  [
+   33.794,
+   36.737,
+   "The raw vocabulary of seeing \u2014 little\nstrokes"
+  ],
+  [
+   36.737,
+   37.473,
+   "and gradients."
+  ],
+  [
+   38.104,
+   41.047,
+   "The next layer up takes those edges and"
+  ],
+  [
+   41.047,
+   43.254,
+   "combines them into textures and corners."
+  ],
+  [
+   43.254,
+   45.461,
+   "Simple shapes made from simpler ones."
+  ],
+  [
+   46.093,
+   47.564,
+   "Go one layer deeper,"
+  ],
+  [
+   47.564,
+   50.507,
+   "and it assembles those shapes into object\nparts."
+  ],
+  [
+   51.139,
+   51.875,
+   "An eye."
+  ],
+  [
+   51.875,
+   52.61,
+   "A wheel."
+  ],
+  [
+   52.61,
+   53.346,
+   "A petal."
+  ],
+  [
+   53.346,
+   54.817,
+   "A patch of skin."
+  ],
+  [
+   55.449,
+   56.185,
+   "Deeper still,"
+  ],
+  [
+   56.185,
+   58.024,
+   "and whole objects light up."
+  ],
+  [
+   58.024,
+   59.128,
+   "A complete face."
+  ],
+  [
+   59.128,
+   59.863,
+   "A car."
+  ],
+  [
+   59.863,
+   60.599,
+   "A cat."
+  ],
+  [
+   61.231,
+   61.599,
+   "Now,"
+  ],
+  [
+   61.599,
+   63.438,
+   "read this next sentence slowly,"
+  ],
+  [
+   63.438,
+   65.645,
+   "because it is the whole point."
+  ],
+  [
+   66.277,
+   68.852,
+   "Nobody programmed the concept of an edge."
+  ],
+  [
+   68.852,
+   70.323,
+   "Nobody defined an eye,"
+  ],
+  [
+   70.323,
+   71.427,
+   "or a face."
+  ],
+  [
+   72.058,
+   74.265,
+   "The network discovered all of it,"
+  ],
+  [
+   74.265,
+   75.737,
+   "entirely on its own,"
+  ],
+  [
+   75.737,
+   78.68,
+   "just by trying over and over to get"
+  ],
+  [
+   78.68,
+   80.151,
+   "the final answer right."
+  ],
+  [
+   80.783,
+   82.622,
+   "It built its own ladder,"
+  ],
+  [
+   82.622,
+   85.565,
+   "from raw pixels all the way up to"
+  ],
+  [
+   85.565,
+   85.933,
+   "meaning."
+  ],
+  [
+   86.564,
+   89.507,
+   "This is precisely the thing we could never"
+  ],
+  [
+   89.507,
+   90.611,
+   "do by hand,"
+  ],
+  [
+   90.611,
+   92.818,
+   "no matter how clever we were."
+  ],
+  [
+   93.449,
+   96.392,
+   "And it is the reason deep learning did"
+  ],
+  [
+   96.392,
+   99.335,
+   "not just improve computer vision \u2014 it\ncompletely"
+  ],
+  [
+   99.335,
+   100.439,
+   "swept the field."
+  ],
+  [
+   101.07,
+   101.806,
+   "Simple parts,"
+  ],
+  [
+   101.806,
+   103.277,
+   "combined layer by layer,"
+  ],
+  [
+   103.277,
+   104.013,
+   "into understanding."
+  ],
+  [
+   104.513,
+   107.566,
+   "Here is a question that puzzles a lot"
+  ],
+  [
+   107.566,
+   108.329,
+   "of people."
+  ],
+  [
+   108.961,
+   112.014,
+   "If every convolution filter only ever\nlooks at"
+  ],
+  [
+   112.014,
+   113.541,
+   "a tiny three-by-three patch,"
+  ],
+  [
+   113.541,
+   116.594,
+   "how can the network possibly recognize a\nwhole"
+  ],
+  [
+   116.594,
+   116.976,
+   "cat,"
+  ],
+  [
+   116.976,
+   118.884,
+   "which fills the entire image?"
+  ],
+  [
+   119.515,
+   122.569,
+   "The answer is one of the most elegant"
+  ],
+  [
+   122.569,
+   124.095,
+   "ideas in deep learning,"
+  ],
+  [
+   124.095,
+   126.767,
+   "and it is called the receptive field."
+  ],
+  [
+   127.398,
+   128.543,
+   "Follow one neuron,"
+  ],
+  [
+   128.543,
+   130.07,
+   "deep in the network,"
+  ],
+  [
+   130.07,
+   133.123,
+   "and ask \u2014 how much of the original"
+  ],
+  [
+   133.123,
+   135.413,
+   "image does it actually depend on?"
+  ],
+  [
+   136.044,
+   139.097,
+   "A neuron in the very first layer sees"
+  ],
+  [
+   139.097,
+   140.624,
+   "just a three-by-three patch."
+  ],
+  [
+   140.624,
+   141.387,
+   "Truly local."
+  ],
+  [
+   142.019,
+   145.072,
+   "But a neuron in the second layer looks"
+  ],
+  [
+   145.072,
+   148.125,
+   "at a patch of first-layer neurons \u2014 and"
+  ],
+  [
+   148.125,
+   151.178,
+   "each of those already saw a patch of"
+  ],
+  [
+   151.178,
+   151.942,
+   "their own."
+  ],
+  [
+   152.573,
+   155.626,
+   "So the second-layer neuron indirectly sees\nroughly a"
+  ],
+  [
+   155.626,
+   156.39,
+   "seven-by-seven region."
+  ],
+  [
+   157.021,
+   158.929,
+   "Go to the third layer,"
+  ],
+  [
+   158.929,
+   161.983,
+   "and the highlighted region on the input\ngrows"
+  ],
+  [
+   161.983,
+   162.364,
+   "again,"
+  ],
+  [
+   162.364,
+   164.273,
+   "to around fifteen by fifteen."
+  ],
+  [
+   164.904,
+   165.667,
+   "Keep stacking,"
+  ],
+  [
+   165.667,
+   168.721,
+   "and a deep neuron ends up influenced by"
+  ],
+  [
+   168.721,
+   170.247,
+   "almost the entire image."
+  ],
+  [
+   170.879,
+   173.932,
+   "Watch the highlighted window expand as we\ngo"
+  ],
+  [
+   173.932,
+   174.313,
+   "deeper."
+  ],
+  [
+   174.945,
+   177.617,
+   "This is the resolution of our puzzle."
+  ],
+  [
+   178.248,
+   180.538,
+   "Early layers see fine local detail."
+  ],
+  [
+   180.538,
+   182.828,
+   "Deep layers see broad global context."
+  ],
+  [
+   183.459,
+   186.131,
+   "The network never needed a giant filter."
+  ],
+  [
+   186.131,
+   187.658,
+   "It just needed depth."
+  ],
+  [
+   187.658,
+   188.421,
+   "Small windows,"
+  ],
+  [
+   188.421,
+   188.802,
+   "stacked,"
+  ],
+  [
+   188.802,
+   191.474,
+   "quietly add up to the whole picture."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch10-hierarchy.wav",
+   "volume": 1.0
+  }
+ }
+}

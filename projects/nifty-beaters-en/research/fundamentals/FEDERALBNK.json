@@ -1,0 +1,88 @@
+{
+ "ticker": "FEDERALBNK",
+ "scraped_at": "2026-08-14T15:27:41",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 87250.0,
+ "current_price": 353.0,
+ "pe": 18.8,
+ "book_value": 162.0,
+ "dividend_yield_pct": 0.34,
+ "roce_pct": 6.39,
+ "roe_pct": 11.6,
+ "face_value": 2.0,
+ "high": 372.0,
+ "sales_growth": {
+  "10 Years": 24.0,
+  "5 Years": 21.0,
+  "3 Years": 11.0,
+  "TTM": 16.0
+ },
+ "profit_growth": {
+  "10 Years": 18.0,
+  "5 Years": 33.0,
+  "3 Years": 38.0,
+  "1 Year": 80.0
+ },
+ "roe_hist": {
+  "Financing Profit": 461.0,
+  "Financing Margin %": 9.0,
+  "Other Income&nbsp; +": 741.0,
+  "Depreciation": 0.0,
+  "Tax %": 26.0,
+  "Net Profit&nbsp; +": 894.0,
+  "EPS in Rs": 4.16,
+  "Gross NPA %": 2.37,
+  "Net NPA %": 0.74
+ },
+ "price_cagr": {
+  "10 Years": 12.0,
+  "5 Years": 13.0,
+  "3 Years": 13.0,
+  "Last Year": 12.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [],
+  "eps": [
+   "4.16",
+   "4.23",
+   "4.26",
+   "3.99",
+   "4.20",
+   "4.47",
+   "3.85",
+   "4.44",
+   "3.74",
+   "4.03",
+   "4.44",
+   "5.44",
+   "5.09"
+  ]
+ },
+ "pros": [],
+ "cons": [
+  "Company has low interest coverage ratio.",
+  "Company has a low return on equity of 12.9% over last 3 years.",
+  "Contingent liabilities of Rs.2,99,451 Cr.",
+  "Company might be capitalizing the interest cost",
+  "Dividend payout has been low at 7.14% of profits over last 3 years"
+ ]
+}

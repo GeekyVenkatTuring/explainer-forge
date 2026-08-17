@@ -1,0 +1,98 @@
+{
+ "cuts": [
+  {
+   "id": "ch2-run-ai-models_s01_title",
+   "type": "gpu_title",
+   "in_seconds": 0.0,
+   "out_seconds": 23.621,
+   "props": {
+    "kicker": "A DEEP-DIVE COURSE \u00b7 CHAPTER 2",
+    "line1": "How GPUs",
+    "line2": "Run AI Models",
+    "sub": "matrix math \u00b7 tensor cores \u00b7 tokens \u00b7 the memory wall",
+    "color": "#A78BFA",
+    "dur": 24.121
+   }
+  },
+  {
+   "id": "ch2-run-ai-models_s02_matmul",
+   "type": "gpu_matmul",
+   "in_seconds": 24.121,
+   "out_seconds": 68.663,
+   "props": {
+    "dur": 45.042
+   }
+  },
+  {
+   "id": "ch2-run-ai-models_s03_tensorcore",
+   "type": "gpu_tensorcore",
+   "in_seconds": 69.163,
+   "out_seconds": 117.454,
+   "props": {
+    "dur": 48.791
+   }
+  },
+  {
+   "id": "ch2-run-ai-models_s04_transformer",
+   "type": "gpu_transformer",
+   "in_seconds": 117.954,
+   "out_seconds": 162.366,
+   "props": {
+    "dur": 44.912
+   }
+  },
+  {
+   "id": "ch2-run-ai-models_s05_prefill",
+   "type": "gpu_prefill",
+   "in_seconds": 162.866,
+   "out_seconds": 205.959,
+   "props": {
+    "dur": 43.593
+   }
+  },
+  {
+   "id": "ch2-run-ai-models_s06_precision",
+   "type": "gpu_precision",
+   "in_seconds": 206.459,
+   "out_seconds": 251.897,
+   "props": {
+    "dur": 45.938
+   }
+  },
+  {
+   "id": "ch2-run-ai-models_s07_membound",
+   "type": "gpu_membound",
+   "in_seconds": 252.397,
+   "out_seconds": 300.884,
+   "props": {
+    "dur": 48.987
+   }
+  },
+  {
+   "id": "ch2-run-ai-models_s08_recap",
+   "type": "gpu_recap",
+   "in_seconds": 301.384,
+   "out_seconds": 325.581,
+   "props": {
+    "kicker": "CHAPTER 2 \u00b7 RECAP",
+    "title": "How a model runs, in one breath",
+    "color": "#A78BFA",
+    "items": [
+     "A model is mostly one operation: matrix multiply",
+     "Tensor Cores multiply whole tiles in a single fused step",
+     "A transformer loops the stack once per token generated",
+     "Prefill is compute-bound; decode is memory-bound",
+     "Lower precision \u2014 FP16 to FP8 to FP4 \u2014 means less memory and more speed"
+    ],
+    "closer": "Writing one token means re-reading the whole model \u2014 the wall everything hits.",
+    "dur": 24.697
+   }
+  }
+ ],
+ "audio": {
+  "narration": {
+   "src": "gpu/ch2-run-ai-models.wav",
+   "volume": 1.0
+  }
+ }
+}

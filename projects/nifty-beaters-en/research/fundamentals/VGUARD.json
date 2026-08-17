@@ -1,0 +1,102 @@
+{
+ "ticker": "VGUARD",
+ "scraped_at": "2026-08-14T15:29:37",
+ "source": "screener.in",
+ "ok": true,
+ "error": "<HTTPError 429: 'Too Many Requests'>",
+ "variant": "standalone",
+ "market_cap_cr": 14252.0,
+ "current_price": 326.0,
+ "pe": 43.9,
+ "book_value": 50.9,
+ "dividend_yield_pct": 0.45,
+ "roce_pct": 16.8,
+ "roe_pct": 12.9,
+ "face_value": 1.0,
+ "high": 392.0,
+ "sales_growth": {
+  "10 Years": 9.0,
+  "5 Years": 6.0,
+  "3 Years": 15.0,
+  "TTM": 39.0
+ },
+ "profit_growth": {
+  "10 Years": 11.0,
+  "5 Years": 7.0,
+  "3 Years": 3.0,
+  "1 Year": -8.0
+ },
+ "roe_hist": {
+  "Operating Profit": 88.0,
+  "OPM %": 8.0,
+  "Other Income&nbsp; +": 11.0,
+  "Interest": 11.0,
+  "Depreciation": 17.0,
+  "Profit before tax": 72.0,
+  "Tax %": 26.0,
+  "Net Profit&nbsp; +": 53.0,
+  "EPS in Rs": 1.23
+ },
+ "price_cagr": {
+  "10 Years": 16.0,
+  "5 Years": 14.0,
+  "3 Years": 13.0,
+  "Last Year": 13.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "8%",
+   "7%",
+   "8%",
+   "8%",
+   "9%",
+   "7%",
+   "7%",
+   "8%",
+   "7%",
+   "7%",
+   "7%",
+   "8%",
+   "9%"
+  ],
+  "eps": [
+   "1.23",
+   "1.20",
+   "1.07",
+   "1.82",
+   "1.88",
+   "1.20",
+   "1.10",
+   "1.79",
+   "1.28",
+   "1.51",
+   "0.97",
+   "2.18",
+   "2.47"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has been maintaining a healthy dividend payout of 25.6%"
+ ],
+ "cons": [
+  "Company has a low return on equity of 13.3% over last 3 years."
+ ]
+}

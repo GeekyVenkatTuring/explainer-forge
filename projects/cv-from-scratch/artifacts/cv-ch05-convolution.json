@@ -1,0 +1,540 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch05-convolution_conv",
+   "type": "cv_conv",
+   "in_seconds": 0.0,
+   "out_seconds": 114.988,
+   "props": {
+    "dur": 115.488
+   }
+  },
+  {
+   "id": "cv-ch05-convolution_kernels",
+   "type": "cv_kernels",
+   "in_seconds": 115.488,
+   "out_seconds": 207.901,
+   "props": {
+    "dur": 92.913
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.375,
+   "Convolution."
+  ],
+  [
+   0.375,
+   3.379,
+   "If you remember only one idea from this"
+  ],
+  [
+   3.379,
+   4.13,
+   "entire course,"
+  ],
+  [
+   4.13,
+   5.631,
+   "make it this one."
+  ],
+  [
+   5.631,
+   8.635,
+   "Everything else is built on top of it."
+  ],
+  [
+   9.267,
+   10.393,
+   "Let's go slowly."
+  ],
+  [
+   11.024,
+   14.028,
+   "We start with a small grid of numbers"
+  ],
+  [
+   14.028,
+   15.154,
+   "called a kernel."
+  ],
+  [
+   15.154,
+   18.158,
+   "Here it is just three pixels by three"
+  ],
+  [
+   18.158,
+   21.161,
+   "pixels \u2014 a tiny window of nine numbers."
+  ],
+  [
+   21.793,
+   24.796,
+   "We place that kernel over the top-left\ncorner"
+  ],
+  [
+   24.796,
+   25.922,
+   "of the image."
+  ],
+  [
+   26.554,
+   26.929,
+   "Now,"
+  ],
+  [
+   26.929,
+   28.056,
+   "at this position,"
+  ],
+  [
+   28.056,
+   29.558,
+   "we do two things."
+  ],
+  [
+   30.189,
+   30.565,
+   "First,"
+  ],
+  [
+   30.565,
+   33.568,
+   "we multiply each kernel number by the\npixel"
+  ],
+  [
+   33.568,
+   34.694,
+   "sitting underneath it."
+  ],
+  [
+   35.326,
+   38.329,
+   "Then we add up all nine of those"
+  ],
+  [
+   38.329,
+   40.206,
+   "products into a single number."
+  ],
+  [
+   40.838,
+   43.842,
+   "That one number is the output for this"
+  ],
+  [
+   43.842,
+   44.217,
+   "spot."
+  ],
+  [
+   44.849,
+   47.852,
+   "Then we slide the kernel one step to"
+  ],
+  [
+   47.852,
+   48.603,
+   "the right,"
+  ],
+  [
+   48.603,
+   50.48,
+   "and do it all again."
+  ],
+  [
+   50.48,
+   50.855,
+   "Multiply,"
+  ],
+  [
+   50.855,
+   51.231,
+   "sum,"
+  ],
+  [
+   51.231,
+   52.357,
+   "write one number."
+  ],
+  [
+   52.989,
+   55.241,
+   "Watch it march across the image."
+  ],
+  [
+   55.241,
+   56.368,
+   "Left to right,"
+  ],
+  [
+   56.368,
+   57.494,
+   "top to bottom,"
+  ],
+  [
+   57.494,
+   58.62,
+   "covering every position."
+  ],
+  [
+   59.252,
+   60.378,
+   "When it finishes,"
+  ],
+  [
+   60.378,
+   63.006,
+   "we have a brand-new grid of numbers."
+  ],
+  [
+   63.006,
+   65.259,
+   "We call it a feature map."
+  ],
+  [
+   65.89,
+   68.894,
+   "Now here is the beautiful part \u2014 the"
+  ],
+  [
+   68.894,
+   70.396,
+   "part that changes everything."
+  ],
+  [
+   71.027,
+   74.031,
+   "The nine numbers inside the kernel decide\nwhat"
+  ],
+  [
+   74.031,
+   74.782,
+   "it detects."
+  ],
+  [
+   75.413,
+   77.29,
+   "Fill the kernel one way,"
+  ],
+  [
+   77.29,
+   79.918,
+   "and it lights up on vertical lines."
+  ],
+  [
+   80.55,
+   82.052,
+   "Fill it another way,"
+  ],
+  [
+   82.052,
+   84.304,
+   "and it responds to horizontal lines."
+  ],
+  [
+   84.304,
+   84.68,
+   "Another,"
+  ],
+  [
+   84.68,
+   86.557,
+   "and it finds a corner,"
+  ],
+  [
+   86.557,
+   89.185,
+   "or a spot of a certain color."
+  ],
+  [
+   89.816,
+   91.694,
+   "The exact same sliding operation,"
+  ],
+  [
+   91.694,
+   93.195,
+   "with different numbers inside,"
+  ],
+  [
+   93.195,
+   95.072,
+   "becomes a completely different detector."
+  ],
+  [
+   95.704,
+   96.83,
+   "For thirty years,"
+  ],
+  [
+   96.83,
+   99.083,
+   "human engineers chose those numbers\ncarefully,"
+  ],
+  [
+   99.083,
+   99.834,
+   "by hand."
+  ],
+  [
+   100.465,
+   103.469,
+   "And the entire deep learning revolution \u2014\nthe"
+  ],
+  [
+   103.469,
+   106.472,
+   "whole thing \u2014 comes down to one move."
+  ],
+  [
+   107.104,
+   108.981,
+   "Stop choosing the numbers ourselves."
+  ],
+  [
+   108.981,
+   110.858,
+   "Let the machine learn them."
+  ],
+  [
+   110.858,
+   112.735,
+   "Hold on to that thought."
+  ],
+  [
+   112.735,
+   114.988,
+   "We will come back to it."
+  ],
+  [
+   115.488,
+   118.482,
+   "Let's really drive home why convolution is\nso"
+  ],
+  [
+   118.482,
+   118.856,
+   "powerful,"
+  ],
+  [
+   118.856,
+   121.85,
+   "by trying a few kernels side by side."
+  ],
+  [
+   122.482,
+   125.101,
+   "On the left is our source image."
+  ],
+  [
+   125.101,
+   128.095,
+   "Now watch what different kernels do to it."
+  ],
+  [
+   128.727,
+   130.972,
+   "The first kernel is all ones."
+  ],
+  [
+   131.604,
+   133.475,
+   "It just averages each neighborhood,"
+  ],
+  [
+   133.475,
+   135.72,
+   "and the result is a smooth,"
+  ],
+  [
+   135.72,
+   136.469,
+   "blurred image."
+  ],
+  [
+   136.469,
+   137.966,
+   "Good for killing noise."
+  ],
+  [
+   138.597,
+   141.591,
+   "The second kernel has a big positive\nnumber"
+  ],
+  [
+   141.591,
+   144.585,
+   "in the center and negative numbers around\nit."
+  ],
+  [
+   145.216,
+   148.21,
+   "It boosts the middle pixel relative to its"
+  ],
+  [
+   148.21,
+   148.585,
+   "neighbors,"
+  ],
+  [
+   148.585,
+   151.578,
+   "and the result is a sharpened image \u2014"
+  ],
+  [
+   151.578,
+   152.327,
+   "edges pop."
+  ],
+  [
+   152.958,
+   155.578,
+   "The third kernel is the difference kernel."
+  ],
+  [
+   156.21,
+   158.829,
+   "It subtracts the neighbors from the\ncenter."
+  ],
+  [
+   158.829,
+   160.326,
+   "In a flat region,"
+  ],
+  [
+   160.326,
+   163.32,
+   "that cancels to zero and comes out dark."
+  ],
+  [
+   163.32,
+   164.817,
+   "But at an edge,"
+  ],
+  [
+   164.817,
+   167.811,
+   "it fires \u2014 and we get a clean"
+  ],
+  [
+   167.811,
+   168.185,
+   "outline."
+  ],
+  [
+   168.817,
+   171.062,
+   "Look at what just happened here,"
+  ],
+  [
+   171.062,
+   174.056,
+   "because it is the whole idea in one"
+  ],
+  [
+   174.056,
+   174.43,
+   "picture."
+  ],
+  [
+   175.062,
+   176.559,
+   "The operation never changed."
+  ],
+  [
+   176.559,
+   178.43,
+   "It was the same slide,"
+  ],
+  [
+   178.43,
+   179.553,
+   "the same multiply,"
+  ],
+  [
+   179.553,
+   180.675,
+   "the same sum,"
+  ],
+  [
+   180.675,
+   181.424,
+   "every time."
+  ],
+  [
+   182.055,
+   185.049,
+   "The only thing that changed was the nine"
+  ],
+  [
+   185.049,
+   186.92,
+   "numbers inside the little window."
+  ],
+  [
+   187.552,
+   187.926,
+   "Blur,"
+  ],
+  [
+   187.926,
+   188.3,
+   "sharpen,"
+  ],
+  [
+   188.3,
+   190.546,
+   "edges \u2014 three completely different\nresults,"
+  ],
+  [
+   190.546,
+   191.669,
+   "from one operation."
+  ],
+  [
+   192.3,
+   194.545,
+   "So imagine having not three kernels,"
+  ],
+  [
+   194.545,
+   196.042,
+   "but hundreds of them."
+  ],
+  [
+   196.042,
+   198.662,
+   "And instead of choosing their numbers\nyourself,"
+  ],
+  [
+   198.662,
+   201.656,
+   "you let the network discover exactly the\nkernels"
+  ],
+  [
+   201.656,
+   202.404,
+   "it needs."
+  ],
+  [
+   203.036,
+   205.281,
+   "That is a convolutional neural network."
+  ],
+  [
+   205.281,
+   207.901,
+   "And that is where we are heading."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch05-convolution.wav",
+   "volume": 1.0
+  }
+ }
+}

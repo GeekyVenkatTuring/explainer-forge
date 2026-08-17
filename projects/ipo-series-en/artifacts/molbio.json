@@ -1,0 +1,841 @@
+{
+  "cuts": [
+    {
+      "id": "molbio_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 27.308,
+      "props": {
+        "title": "Molbio Diagnostics IPO",
+        "sub": "Point-of-care molecular testing · ₹940 Cr · 10–12 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 27.808
+      }
+    },
+    {
+      "id": "molbio_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 27.808,
+      "out_seconds": 70.258,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Molbio Diagnostics",
+        "color": "#2DD4BF",
+        "items": [
+          {
+            "emoji": "🧬",
+            "k": "Truenat molecular testing",
+            "v": "Makes 'Truenat' — a portable, PCR-style device that gives lab-grade molecular diagnosis in about an hour, even in remote clinics",
+            "chip": "POINT-OF-CARE"
+          },
+          {
+            "emoji": "🦠",
+            "k": "TB and much more",
+            "v": "Widely used for tuberculosis and dozens of other infectious and non-communicable diseases — a made-in-India platform used globally",
+            "chip": "MULTI-DISEASE"
+          },
+          {
+            "emoji": "🔁",
+            "k": "Device + test kits",
+            "v": "Sells the machines AND the recurring test cartridges — a razor-and-blade model with a recurring-revenue tail",
+            "chip": "RECURRING"
+          }
+        ],
+        "dur": 42.95
+      }
+    },
+    {
+      "id": "molbio_clients",
+      "type": "sm_iconcards",
+      "in_seconds": 70.758,
+      "out_seconds": 120.0,
+      "props": {
+        "kicker": "BUSINESS DEEP-DIVE · CLIENTS & ORDER BOOK",
+        "title": "Who Uses Molbio's Truenat",
+        "color": "#2DD4BF",
+        "items": [
+          {
+            "emoji": "🏛️",
+            "k": "Governments & public health",
+            "v": "Truenat is ICMR-validated and built into India's National TB Elimination Programme — governments are its anchor customers",
+            "chip": "GOVT ANCHOR"
+          },
+          {
+            "emoji": "🌍",
+            "k": "WHO-endorsed, 100+ countries",
+            "v": "One of only two rapid molecular TB platforms endorsed by the WHO; Truenat is patented in over 100 countries and used well beyond India",
+            "chip": "100+ COUNTRIES"
+          },
+          {
+            "emoji": "🔁",
+            "k": "Installed base, not an order book",
+            "v": "A device maker has no order book — it earns recurring revenue from test cartridges across a large installed base (TB, HIV, dengue, hepatitis & more)",
+            "chip": "RECURRING KITS"
+          }
+        ],
+        "dur": 49.742
+      }
+    },
+    {
+      "id": "molbio_fin",
+      "type": "sm_stats",
+      "in_seconds": 120.5,
+      "out_seconds": 156.184,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 1446,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+41.7% YoY (≈ ₹1,445.70 Cr)"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 167,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+14.8% YoY (≈ ₹166.60 Cr)"
+          },
+          {
+            "label": "Grey-mkt premium",
+            "to": 22,
+            "prefix": "~",
+            "suffix": "%",
+            "color": "#FBBF24",
+            "sub": "unofficial · ~₹180 over ₹807"
+          }
+        ],
+        "note": "Fast-growing and solidly profitable — revenue up nearly 42%. Profit grew slower as it invests in R&D and capacity.",
+        "dur": 36.184
+      }
+    },
+    {
+      "id": "molbio_issue",
+      "type": "sm_stats",
+      "in_seconds": 156.684,
+      "out_seconds": 191.142,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 940,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#2DD4BF",
+            "sub": "₹939.70 Cr · band ₹768–807"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 200,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "~21% funds the business"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 740,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "~79% — existing investors exit"
+          }
+        ],
+        "note": "KEY POINT: nearly four-fifths is an Offer-for-Sale — that money goes to selling shareholders, not into the company.",
+        "dur": 34.958
+      }
+    },
+    {
+      "id": "molbio_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 191.642,
+      "out_seconds": 229.076,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹200 Cr Funds",
+        "color": "#2DD4BF",
+        "items": [
+          {
+            "emoji": "🔬",
+            "k": "₹105.5 Cr — R&D & centre of excellence",
+            "v": "Builds an R&D facility and centre of excellence through subsidiary Bigtec, plus office infrastructure",
+            "chip": "R&D"
+          },
+          {
+            "emoji": "🏭",
+            "k": "₹72.2 Cr — plant & machinery",
+            "v": "New equipment for its manufacturing facilities in Goa and Visakhapatnam",
+            "chip": "CAPEX"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Balance — general corporate",
+            "v": "The remainder funds general corporate purposes",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 37.934
+      }
+    },
+    {
+      "id": "molbio_peers",
+      "type": "sm_iconcards",
+      "in_seconds": 229.576,
+      "out_seconds": 279.274,
+      "props": {
+        "kicker": "COMPETITORS · VALUATION",
+        "title": "No Listed Twin — Judge With Care",
+        "color": "#2DD4BF",
+        "items": [
+          {
+            "emoji": "🧬",
+            "k": "No listed peer (per RHP)",
+            "v": "Molbio's own offer document states there is NO comparable listed company — its point-of-care molecular platform is unique on the exchange",
+            "chip": "NO PEER"
+          },
+          {
+            "emoji": "🏥",
+            "k": "The lab chains aren't peers",
+            "v": "Dr Lal PathLabs, Metropolis and Thyrocare RUN tests as service chains; Molbio MAKES the testing devices — a different business, not a true peer",
+            "chip": "DIFFERENT MODEL"
+          },
+          {
+            "emoji": "⚖️",
+            "k": "What that means for pricing",
+            "v": "With no peer to anchor a P/E, there's no yardstick — so weigh it on growth (+42%) and margins, and be wary of an unchallenged price",
+            "chip": "WATCH PRICE"
+          }
+        ],
+        "dur": 50.198
+      }
+    },
+    {
+      "id": "molbio_verdict",
+      "type": "sm_myths",
+      "in_seconds": 279.774,
+      "out_seconds": 319.488,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "~79% is OFS — mostly investors exiting",
+            "f": "Fast growth (+42%) & solidly profitable"
+          },
+          {
+            "m": "No listed peer — hard to value",
+            "f": "Unique made-in-India platform, used globally"
+          },
+          {
+            "m": "Priced richly, with no benchmark",
+            "f": "Razor-and-blade recurring test-kit revenue; GMP ~22%"
+          }
+        ],
+        "dur": 40.214
+      }
+    },
+    {
+      "id": "molbio_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 319.988,
+      "out_seconds": 357.132,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#2DD4BF",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,526 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 37.644
+      }
+    },
+    {
+      "id": "molbio_recap",
+      "type": "sm_recap",
+      "in_seconds": 357.632,
+      "out_seconds": 417.912,
+      "props": {
+        "title": "Molbio Diagnostics IPO — at a Glance",
+        "items": [
+          "Business: Truenat point-of-care molecular diagnostics",
+          "FY26: revenue ~₹1,446 Cr (+41.7%), profit ~₹167 Cr (+14.8%)",
+          "₹939.70 Cr issue — only ~21% fresh, ~79% OFS",
+          "No listed peer per RHP — no P/E benchmark",
+          "Retail min ~₹14,526 · GMP ~22% (unofficial)"
+        ],
+        "closer": "A unique, fast-growing diagnostics innovator — but mostly a sell-down at a price no peer anchors. Read the RHP; decide for yourself.",
+        "dur": 60.78
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.753,
+      "Let's break down the Molbio Diagnostics I-P-O —"
+    ],
+    [
+      3.753,
+      10.46,
+      "a nine hundred and forty crore issue from a company with a genuinely unique product,"
+    ],
+    [
+      10.46,
+      14.293,
+      "and an unusual twist when it comes to valuation."
+    ],
+    [
+      14.293,
+      17.567,
+      "We'll cover what it does, its financials,"
+    ],
+    [
+      17.567,
+      21.399,
+      "where the money goes, why it has no listed peer,"
+    ],
+    [
+      21.399,
+      24.034,
+      "and how much you'd need to apply."
+    ],
+    [
+      24.034,
+      27.308,
+      "This is education, not investment advice."
+    ],
+    [
+      27.808,
+      29.657,
+      "So what does Molbio do?"
+    ],
+    [
+      29.657,
+      33.355,
+      "It makes a device called Truenat — a portable,"
+    ],
+    [
+      33.355,
+      39.707,
+      "lab-grade molecular testing machine that can diagnose disease in about an hour,"
+    ],
+    [
+      39.707,
+      44.531,
+      "right at the point of care, even in a remote village clinic."
+    ],
+    [
+      44.531,
+      47.827,
+      "It's best known for tuberculosis testing,"
+    ],
+    [
+      47.827,
+      54.098,
+      "but it runs dozens of other infectious and non-communicable disease tests too."
+    ],
+    [
+      54.098,
+      58.279,
+      "It's a made-in-India platform used around the world."
+    ],
+    [
+      58.279,
+      62.218,
+      "And it has a smart model — it sells the machines,"
+    ],
+    [
+      62.218,
+      66.801,
+      "and then the recurring test cartridges that go with them."
+    ],
+    [
+      66.801,
+      70.258,
+      "Razor and blade — a recurring-revenue tail."
+    ],
+    [
+      70.758,
+      72.073,
+      "Let's go deeper."
+    ],
+    [
+      72.073,
+      74.211,
+      "Who uses Molbio's Truenat?"
+    ],
+    [
+      74.211,
+      79.554,
+      "Its anchor customers are governments and public-health programs —"
+    ],
+    [
+      79.554,
+      87.117,
+      "the platform is I-C-M-R validated and built into India's National T-B Elimination Programme."
+    ],
+    [
+      87.117,
+      95.173,
+      "It's also one of only two rapid molecular T-B platforms endorsed by the World Health Organization,"
+    ],
+    [
+      95.173,
+      100.846,
+      "patented in more than a hundred countries and used well beyond India."
+    ],
+    [
+      100.846,
+      104.792,
+      "On order book — a device maker doesn't have one."
+    ],
+    [
+      104.792,
+      112.848,
+      "Instead it earns recurring revenue from test cartridges across a large installed base of machines,"
+    ],
+    [
+      112.848,
+      116.383,
+      "for T-B, H-I-V, dengue, hepatitis and more."
+    ],
+    [
+      116.383,
+      120.0,
+      "That razor-and-blade tail is the real prize."
+    ],
+    [
+      120.5,
+      122.59,
+      "The financials are strong."
+    ],
+    [
+      122.59,
+      129.742,
+      "Revenue for FY twenty twenty-six was about one thousand four hundred and forty-six crore,"
+    ],
+    [
+      129.742,
+      131.993,
+      "up nearly forty-two percent."
+    ],
+    [
+      131.993,
+      136.494,
+      "Net profit was around one hundred and sixty-seven crore,"
+    ],
+    [
+      136.494,
+      138.021,
+      "up fifteen percent."
+    ],
+    [
+      138.021,
+      142.682,
+      "So this is a genuinely profitable, fast-growing business —"
+    ],
+    [
+      142.682,
+      149.433,
+      "the profit grew slower than revenue because it's investing in research and capacity."
+    ],
+    [
+      149.433,
+      153.532,
+      "The grey market premium is near twenty-two percent,"
+    ],
+    [
+      153.532,
+      156.184,
+      "but as always, that's unofficial."
+    ],
+    [
+      156.684,
+      159.128,
+      "Now — where does your money go?"
+    ],
+    [
+      159.128,
+      160.784,
+      "And here's the catch."
+    ],
+    [
+      160.784,
+      164.096,
+      "Of the nine hundred and forty crore issue,"
+    ],
+    [
+      164.096,
+      168.117,
+      "only two hundred crore — about twenty-one percent —"
+    ],
+    [
+      168.117,
+      171.587,
+      "is a fresh issue that goes into the company."
+    ],
+    [
+      171.587,
+      174.741,
+      "The other seven hundred and forty crore,"
+    ],
+    [
+      174.741,
+      178.289,
+      "nearly eighty percent, is an Offer for Sale —"
+    ],
+    [
+      178.289,
+      182.705,
+      "existing investors selling their stakes and cashing out."
+    ],
+    [
+      182.705,
+      184.124,
+      "So when you apply,"
+    ],
+    [
+      184.124,
+      188.54,
+      "most of your money is buying out people who are exiting,"
+    ],
+    [
+      188.54,
+      191.142,
+      "not funding the company's growth."
+    ],
+    [
+      191.642,
+      195.934,
+      "That small fresh-issue slice — the two hundred crore —"
+    ],
+    [
+      195.934,
+      197.364,
+      "what does it fund?"
+    ],
+    [
+      197.364,
+      206.504,
+      "About a hundred and five crore builds an R and D facility and a centre of excellence through its subsidiary Bigtec,"
+    ],
+    [
+      206.504,
+      207.935,
+      "plus office space."
+    ],
+    [
+      207.935,
+      215.406,
+      "Another seventy-two crore buys plant and machinery for its factories in Goa and Visakhapatnam."
+    ],
+    [
+      215.406,
+      218.505,
+      "The rest is general corporate purposes."
+    ],
+    [
+      218.505,
+      223.195,
+      "So the fresh money is well spent on research and capacity —"
+    ],
+    [
+      223.195,
+      225.817,
+      "there just isn't very much of it,"
+    ],
+    [
+      225.817,
+      229.076,
+      "because most of the issue is a sell-down."
+    ],
+    [
+      229.576,
+      233.824,
+      "Now — the competitors, and here Molbio is unusual."
+    ],
+    [
+      233.824,
+      239.431,
+      "Its own offer document says it has NO listed peer to compare with."
+    ],
+    [
+      239.431,
+      244.443,
+      "There simply isn't another company like it on the exchange."
+    ],
+    [
+      244.443,
+      249.54,
+      "People often name Dr Lal PathLabs, Metropolis or Thyrocare —"
+    ],
+    [
+      249.54,
+      256.506,
+      "but those are lab-SERVICE chains that run tests; Molbio MAKES the testing devices."
+    ],
+    [
+      256.506,
+      259.565,
+      "Different business, not a real peer."
+    ],
+    [
+      259.565,
+      261.604,
+      "The catch: with no peer,"
+    ],
+    [
+      261.604,
+      267.465,
+      "there's no P-E yardstick to tell you whether it's cheap or expensive."
+    ],
+    [
+      267.465,
+      272.478,
+      "So judge it on its growth — revenue up over forty percent —"
+    ],
+    [
+      272.478,
+      273.837,
+      "and its margins,"
+    ],
+    [
+      273.837,
+      279.274,
+      "and be a little wary of a price that no rival is keeping honest."
+    ],
+    [
+      279.774,
+      281.473,
+      "Should you subscribe?"
+    ],
+    [
+      281.473,
+      284.627,
+      "The strengths are real — it's a unique,"
+    ],
+    [
+      284.627,
+      287.62,
+      "made-in-India platform used globally,"
+    ],
+    [
+      287.62,
+      290.289,
+      "it's fast-growing and profitable,"
+    ],
+    [
+      290.289,
+      294.495,
+      "and it has a lovely recurring stream from test kits."
+    ],
+    [
+      294.495,
+      295.789,
+      "The watch-outs —"
+    ],
+    [
+      295.789,
+      300.642,
+      "nearly eighty percent of the issue is investors cashing out,"
+    ],
+    [
+      300.642,
+      304.282,
+      "there's no listed peer so it's hard to value,"
+    ],
+    [
+      304.282,
+      309.216,
+      "and it's priced richly with no benchmark to check it against."
+    ],
+    [
+      309.216,
+      312.936,
+      "The takeaway — a genuinely impressive company,"
+    ],
+    [
+      312.936,
+      316.981,
+      "but mostly a sell-down at a price no peer anchors."
+    ],
+    [
+      316.981,
+      319.488,
+      "Size any bet with that in mind."
+    ],
+    [
+      319.988,
+      323.702,
+      "How do you apply, and how much do you need?"
+    ],
+    [
+      323.702,
+      329.576,
+      "Retail investors bid up to two lakh for a thirty-five percent quota,"
+    ],
+    [
+      329.576,
+      333.377,
+      "with allotment by lottery if oversubscribed."
+    ],
+    [
+      333.377,
+      337.955,
+      "H-N-Is go above two lakh for a fifteen percent quota."
+    ],
+    [
+      337.955,
+      341.411,
+      "For Molbio, one lot is eighteen shares —"
+    ],
+    [
+      341.411,
+      346.593,
+      "about fourteen thousand five hundred and twenty-six rupees —"
+    ],
+    [
+      346.593,
+      347.716,
+      "your minimum."
+    ],
+    [
+      347.716,
+      353.158,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      353.158,
+      357.132,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      357.632,
+      360.124,
+      "Let's recap Molbio Diagnostics."
+    ],
+    [
+      360.124,
+      360.847,
+      "A unique,"
+    ],
+    [
+      360.847,
+      366.634,
+      "made-in-India point-of-care testing company behind the Truenat platform,"
+    ],
+    [
+      366.634,
+      368.884,
+      "fast-growing and profitable,"
+    ],
+    [
+      368.884,
+      371.697,
+      "with revenue up over forty percent."
+    ],
+    [
+      371.697,
+      376.037,
+      "But nearly eighty percent of the issue is a sell-down,"
+    ],
+    [
+      376.037,
+      378.208,
+      "and it has no listed peer —"
+    ],
+    [
+      378.208,
+      382.307,
+      "so there's no P-E to tell you if the price is fair."
+    ],
+    [
+      382.307,
+      388.817,
+      "The retail minimum is about fourteen thousand five hundred and twenty-six rupees,"
+    ],
+    [
+      388.817,
+      393.237,
+      "and the grey-market premium is near twenty-two percent,"
+    ],
+    [
+      393.237,
+      394.684,
+      "though unofficial."
+    ],
+    [
+      394.684,
+      398.542,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      398.542,
+      400.792,
+      "it is not investment advice,"
+    ],
+    [
+      400.792,
+      403.445,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      403.445,
+      406.499,
+      "and not a prediction of listing gains."
+    ],
+    [
+      406.499,
+      410.759,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      410.759,
+      416.305,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      416.305,
+      417.912,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/molbio.wav",
+      "volume": 1.0
+    }
+  }
+}

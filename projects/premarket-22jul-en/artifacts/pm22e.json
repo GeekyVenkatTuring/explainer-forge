@@ -1,0 +1,688 @@
+{
+  "cuts": [
+    {
+      "id": "pm_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 31.124,
+      "props": {
+        "title": "Pre-Market Brief",
+        "sub": "July 22, 2026 · Wednesday · before the open",
+        "kicker": "PRE-MARKET · 22 JUL 2026",
+        "dur": 31.624
+      }
+    },
+    {
+      "id": "pm_global",
+      "type": "sm_stats",
+      "in_seconds": 31.624,
+      "out_seconds": 81.61,
+      "props": {
+        "kicker": "OVERNIGHT — WALL STREET RALLIED",
+        "title": "Global Cues — a Positive Lead",
+        "stats": [
+          {
+            "label": "Nasdaq",
+            "to": 25837,
+            "prefix": "",
+            "suffix": "",
+            "color": "#34D399",
+            "sub": "+1.29% · chips surged"
+          },
+          {
+            "label": "Dow Jones",
+            "to": 52225,
+            "prefix": "",
+            "suffix": "",
+            "color": "#34D399",
+            "sub": "+0.74% · 3M, GM beat"
+          },
+          {
+            "label": "GIFT Nifty",
+            "to": 24120,
+            "prefix": "",
+            "suffix": "",
+            "color": "#22D3EE",
+            "sub": "+ firm open indicated"
+          }
+        ],
+        "note": "Wall Street snapped a 3-day losing streak, led by technology — a tailwind for Indian IT. But Brent crude near $90 stays the key risk.",
+        "dur": 50.486
+      }
+    },
+    {
+      "id": "pm_focus",
+      "type": "sm_iconcards",
+      "in_seconds": 82.11,
+      "out_seconds": 145.054,
+      "props": {
+        "kicker": "STOCKS & SECTORS IN FOCUS",
+        "title": "What to Watch at the Open",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "💻",
+            "k": "IT — TCS, Infosys",
+            "v": "Nasdaq +1.3% overnight → a likely tailwind for Indian IT after its recent weak run",
+            "chip": "TAILWIND"
+          },
+          {
+            "emoji": "🏍️",
+            "k": "Autos — TVS, Bajaj",
+            "v": "TVS at an all-time-high Q1 (stock +6%); Bajaj +46% PAT — watch the whole auto pack react",
+            "chip": "EARNINGS"
+          },
+          {
+            "emoji": "🛢️",
+            "k": "OMCs — BPCL, HPCL",
+            "v": "Both report today; crude near $90 pressures marketing margins — the crude-sensitive names",
+            "chip": "CRUDE"
+          },
+          {
+            "emoji": "🏦",
+            "k": "Financials — IndusInd",
+            "v": "IndusInd Bank Q1 today after the sector's NIM worries; Bandhan & M&M Fin beat yesterday",
+            "chip": "IN FOCUS"
+          }
+        ],
+        "dur": 63.444
+      }
+    },
+    {
+      "id": "pm_results",
+      "type": "sm_iconcards",
+      "in_seconds": 145.554,
+      "out_seconds": 206.29,
+      "props": {
+        "kicker": "BIG RESULTS DUE TODAY (~54 FIRMS)",
+        "title": "Earnings to Watch Today",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "IndusInd Bank",
+            "v": "Private-bank Q1 — the day's most-watched result after HDFC & Axis margin misses",
+            "chip": "BANK"
+          },
+          {
+            "emoji": "🍫",
+            "k": "Nestle India · United Spirits",
+            "v": "FMCG bellwethers — volume growth and rural demand in focus",
+            "chip": "FMCG"
+          },
+          {
+            "emoji": "💊",
+            "k": "Dr Reddy's · SRF",
+            "v": "Pharma after Cipla's weak day; SRF for the chemicals read-through",
+            "chip": "PHARMA / CHEM"
+          },
+          {
+            "emoji": "⚡",
+            "k": "Adani Power · Adani Green · Eternal",
+            "v": "Adani power pack + Eternal (Zomato) — the high-beta movers of the day",
+            "chip": "HIGH BETA"
+          }
+        ],
+        "dur": 61.236
+      }
+    },
+    {
+      "id": "pm_levels",
+      "type": "sm_myths",
+      "in_seconds": 206.79,
+      "out_seconds": 255.84,
+      "props": {
+        "kicker": "THE SETUP · A TUG OF WAR",
+        "title": "Headwinds vs Tailwinds Today",
+        "mythLabel": "⚠️ HEADWINDS",
+        "factLabel": "✅ TAILWINDS",
+        "pairs": [
+          {
+            "m": "Brent crude near $90 (Middle East tension)",
+            "f": "Strong US close — Nasdaq +1.3% boosts IT"
+          },
+          {
+            "m": "Nifty fell 2 straight days; FIIs selling",
+            "f": "Midcaps in the green — breadth stays positive"
+          },
+          {
+            "m": "Heavy earnings = sharp single-stock swings",
+            "f": "Nifty holding key support near 24,050"
+          }
+        ],
+        "dur": 49.55
+      }
+    },
+    {
+      "id": "pm_take",
+      "type": "sm_checklist",
+      "in_seconds": 256.34,
+      "out_seconds": 308.986,
+      "props": {
+        "kicker": "HOW TO APPROACH THE OPEN",
+        "title": "5 Things to Remember",
+        "color": "#34D399",
+        "icon": "💡",
+        "items": [
+          "This is a watchlist & setup — NOT a prediction of which stocks will rise",
+          "GIFT Nifty points to a firm open — let the first 15 minutes settle",
+          "Nifty range: ~24,050 support · ~24,350 resistance",
+          "Earnings today = sharp single-stock moves; use stop-losses",
+          "Key swing factors: crude near $90, and IT's reaction to Nasdaq"
+        ],
+        "dur": 53.146
+      }
+    },
+    {
+      "id": "pm_recap",
+      "type": "sm_recap",
+      "in_seconds": 309.486,
+      "out_seconds": 374.872,
+      "props": {
+        "title": "22 July — Pre-Market at a Glance",
+        "items": [
+          "US up: Nasdaq +1.3%, Dow +0.7% — a tech tailwind",
+          "GIFT Nifty: firm-to-positive open indicated",
+          "Focus: IT (US boost), autos (earnings), OMCs (crude)",
+          "Results today: IndusInd, Nestle, Dr Reddy's, BPCL, Adani pack",
+          "Nifty: ~24,050 support · ~24,350 resistance"
+        ],
+        "closer": "A watchlist, not a forecast — trade the reaction, not the prediction.",
+        "dur": 65.886
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      1.091,
+      "Good morning."
+    ],
+    [
+      1.091,
+      4.111,
+      "It's Wednesday, July twenty-second —"
+    ],
+    [
+      4.111,
+      7.97,
+      "and here's your setup before the market opens."
+    ],
+    [
+      7.97,
+      11.158,
+      "We'll cover the overnight global cues,"
+    ],
+    [
+      11.158,
+      16.107,
+      "the stocks and sectors in focus, the big results due today,"
+    ],
+    [
+      16.107,
+      18.96,
+      "and the key Nifty levels to watch."
+    ],
+    [
+      18.96,
+      21.393,
+      "One important note up front —"
+    ],
+    [
+      21.393,
+      24.077,
+      "this is a watchlist and a setup,"
+    ],
+    [
+      24.077,
+      27.768,
+      "not a prediction of which stocks will go up."
+    ],
+    [
+      27.768,
+      31.124,
+      "It's information, not investment advice."
+    ],
+    [
+      31.624,
+      35.581,
+      "First, the overnight cues — and they're positive."
+    ],
+    [
+      35.581,
+      40.265,
+      "Wall Street rallied and snapped a three-day losing streak."
+    ],
+    [
+      40.265,
+      47.048,
+      "The tech-heavy Nasdaq jumped one point three percent as semiconductor stocks surged."
+    ],
+    [
+      47.048,
+      50.52,
+      "The Dow rose zero point seven four percent,"
+    ],
+    [
+      50.52,
+      54.316,
+      "helped by earnings beats — 3M up seven percent,"
+    ],
+    [
+      54.316,
+      56.173,
+      "General Motors up five."
+    ],
+    [
+      56.173,
+      64.167,
+      "GIFT Nifty was trading around twenty-four thousand one hundred; combined with that strong US close,"
+    ],
+    [
+      64.167,
+      68.367,
+      "it points to a firm-to-positive open for our market."
+    ],
+    [
+      68.367,
+      74.181,
+      "The tech strength is a tailwind for Indian IT after its recent weakness."
+    ],
+    [
+      74.181,
+      76.603,
+      "But one thing hasn't changed —"
+    ],
+    [
+      76.603,
+      81.61,
+      "Brent crude near ninety dollars remains the key risk to watch."
+    ],
+    [
+      82.11,
+      86.541,
+      "Now, the stocks and sectors in focus at the open."
+    ],
+    [
+      86.541,
+      87.627,
+      "First — I-T."
+    ],
+    [
+      87.627,
+      92.872,
+      "With the Nasdaq up one point three percent overnight, TCS,"
+    ],
+    [
+      92.872,
+      99.564,
+      "Infosys and the I-T pack could see a tailwind after their recent weakness."
+    ],
+    [
+      99.564,
+      100.921,
+      "Second — autos."
+    ],
+    [
+      100.921,
+      112.497,
+      "TVS Motor posted an all-time-high quarterly profit and its stock jumped six percent; Bajaj Auto's profit rose forty-six percent."
+    ],
+    [
+      112.497,
+      115.843,
+      "Watch the whole auto ecosystem react."
+    ],
+    [
+      115.843,
+      120.998,
+      "Third — the oil marketing companies, B-P-C-L and H-P-C-L."
+    ],
+    [
+      120.998,
+      125.881,
+      "Both report today, and with crude near ninety dollars,"
+    ],
+    [
+      125.881,
+      130.222,
+      "their marketing margins are under the spotlight."
+    ],
+    [
+      130.222,
+      132.031,
+      "Fourth — financials."
+    ],
+    [
+      132.031,
+      134.563,
+      "IndusInd Bank reports today,"
+    ],
+    [
+      134.563,
+      140.442,
+      "closely watched after HDFC and Axis margin misses hit the sector."
+    ],
+    [
+      140.442,
+      145.054,
+      "Bandhan Bank and M&M Financial both beat yesterday."
+    ],
+    [
+      145.554,
+      148.908,
+      "Today is another huge earnings day —"
+    ],
+    [
+      148.908,
+      151.982,
+      "over fifty-four companies report."
+    ],
+    [
+      151.982,
+      154.031,
+      "Here are the big ones."
+    ],
+    [
+      154.031,
+      159.154,
+      "IndusInd Bank — likely the day's most important result."
+    ],
+    [
+      159.154,
+      162.694,
+      "After HDFC and Axis missed on margins,"
+    ],
+    [
+      162.694,
+      168.656,
+      "the market wants to see if the private-bank stress is spreading."
+    ],
+    [
+      168.656,
+      173.686,
+      "Nestle India and United Spirits — F-M-C-G bellwethers."
+    ],
+    [
+      173.686,
+      177.133,
+      "Watch volume growth and rural demand."
+    ],
+    [
+      177.133,
+      180.3,
+      "Doctor Reddy's and S-R-F — pharma,"
+    ],
+    [
+      180.3,
+      183.467,
+      "especially after Cipla's weak day,"
+    ],
+    [
+      183.467,
+      186.635,
+      "and S-R-F for a read on chemicals."
+    ],
+    [
+      186.635,
+      191.385,
+      "And the high-beta names — Adani Power, Adani Green,"
+    ],
+    [
+      191.385,
+      195.018,
+      "and Eternal, the company behind Zomato."
+    ],
+    [
+      195.018,
+      198.745,
+      "These can move sharply on their numbers."
+    ],
+    [
+      198.745,
+      204.241,
+      "Others reporting include Tata Communications, J-S-W Energy,"
+    ],
+    [
+      204.241,
+      206.29,
+      "and Nippon Life A-M-C."
+    ],
+    [
+      206.79,
+      208.884,
+      "So what's the overall setup?"
+    ],
+    [
+      208.884,
+      210.229,
+      "It's a tug of war."
+    ],
+    [
+      210.229,
+      211.874,
+      "On the headwind side —"
+    ],
+    [
+      211.874,
+      215.987,
+      "Brent crude near ninety dollars on Middle East tension,"
+    ],
+    [
+      215.987,
+      218.679,
+      "the Nifty falling two days in a row,"
+    ],
+    [
+      218.679,
+      220.922,
+      "and foreign investors selling."
+    ],
+    [
+      220.922,
+      222.567,
+      "On the tailwind side —"
+    ],
+    [
+      222.567,
+      228.025,
+      "a strong US close with the Nasdaq up one point three percent lifting I-T,"
+    ],
+    [
+      228.025,
+      231.764,
+      "positive market breadth with midcaps in the green,"
+    ],
+    [
+      231.764,
+      234.754,
+      "and the Nifty still holding key support."
+    ],
+    [
+      234.754,
+      235.652,
+      "For levels —"
+    ],
+    [
+      235.652,
+      241.633,
+      "watch support at twenty-four thousand fifty to twenty-four thousand one hundred,"
+    ],
+    [
+      241.633,
+      246.718,
+      "and resistance at twenty-four thousand three hundred to three fifty."
+    ],
+    [
+      246.718,
+      249.335,
+      "The outlook is sideways-to-bullish,"
+    ],
+    [
+      249.335,
+      255.84,
+      "with the range between twenty-four thousand fifty and twenty-four thousand three fifty."
+    ],
+    [
+      256.34,
+      261.053,
+      "Finally, five things to remember as the market opens."
+    ],
+    [
+      261.053,
+      264.433,
+      "One — this is a watchlist and a setup,"
+    ],
+    [
+      264.433,
+      268.256,
+      "not a prediction of which stocks will rise."
+    ],
+    [
+      268.256,
+      270.391,
+      "Nobody can promise that."
+    ],
+    [
+      270.391,
+      273.859,
+      "Two — GIFT Nifty points to a firm open,"
+    ],
+    [
+      273.859,
+      279.728,
+      "but let the first fifteen minutes settle before acting on any gap."
+    ],
+    [
+      279.728,
+      280.351,
+      "Three —"
+    ],
+    [
+      280.351,
+      287.021,
+      "keep the Nifty range in mind: around twenty-four thousand fifty as support,"
+    ],
+    [
+      287.021,
+      291.2,
+      "twenty-four thousand three fifty as resistance."
+    ],
+    [
+      291.2,
+      294.313,
+      "Four — with so many earnings today,"
+    ],
+    [
+      294.313,
+      297.158,
+      "expect sharp single-stock moves."
+    ],
+    [
+      297.158,
+      299.204,
+      "Always use a stop-loss."
+    ],
+    [
+      299.204,
+      299.737,
+      "Five —"
+    ],
+    [
+      299.737,
+      304.895,
+      "the two swing factors today are crude near ninety dollars,"
+    ],
+    [
+      304.895,
+      308.986,
+      "and how I-T reacts to that strong Nasdaq lead."
+    ],
+    [
+      309.486,
+      313.497,
+      "July twenty-second, pre-market at a glance."
+    ],
+    [
+      313.497,
+      318.347,
+      "US markets rose — Nasdaq up one point three percent,"
+    ],
+    [
+      318.347,
+      322.265,
+      "Dow up zero point seven — a tech tailwind."
+    ],
+    [
+      322.265,
+      326.462,
+      "GIFT Nifty points to a firm-to-positive open."
+    ],
+    [
+      326.462,
+      331.126,
+      "In focus — I-T on the US boost, autos on earnings,"
+    ],
+    [
+      331.126,
+      334.95,
+      "and the oil marketing companies on crude."
+    ],
+    [
+      334.95,
+      340.547,
+      "Today's big results — IndusInd Bank, Nestle, Doctor Reddy's,"
+    ],
+    [
+      340.547,
+      343.158,
+      "B-P-C-L, and the Adani pack."
+    ],
+    [
+      343.158,
+      344.651,
+      "And the levels —"
+    ],
+    [
+      344.651,
+      348.941,
+      "Nifty support near twenty-four thousand fifty,"
+    ],
+    [
+      348.941,
+      353.512,
+      "resistance near twenty-four thousand three fifty."
+    ],
+    [
+      353.512,
+      357.896,
+      "Remember — this is a watchlist, not a forecast."
+    ],
+    [
+      357.896,
+      361.534,
+      "Trade the reaction, not the prediction."
+    ],
+    [
+      361.534,
+      366.384,
+      "This information is aggregated from public sources —"
+    ],
+    [
+      366.384,
+      370.208,
+      "for analysis only, not investment advice."
+    ],
+    [
+      370.208,
+      374.872,
+      "Have a great trading day, and thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/pm22e.wav",
+      "volume": 1.0
+    }
+  }
+}

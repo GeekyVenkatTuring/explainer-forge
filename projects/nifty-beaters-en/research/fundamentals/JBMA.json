@@ -1,0 +1,101 @@
+{
+ "ticker": "JBMA",
+ "scraped_at": "2026-08-14T15:28:44",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 14722.0,
+ "current_price": 622.0,
+ "pe": 63.9,
+ "book_value": 65.0,
+ "dividend_yield_pct": 0.13,
+ "roce_pct": 14.8,
+ "roe_pct": 15.6,
+ "face_value": 1.0,
+ "high": 790.0,
+ "sales_growth": {
+  "10 Years": 16.0,
+  "5 Years": 35.0,
+  "3 Years": 22.0,
+  "TTM": 12.0
+ },
+ "profit_growth": {
+  "10 Years": 37.0,
+  "5 Years": 46.0,
+  "3 Years": -1.0,
+  "1 Year": 4.0
+ },
+ "roe_hist": {
+  "Equity Capital": 20.0,
+  "Reserves": 280.0,
+  "Borrowings&nbsp; +": 502.0,
+  "Other Liabilities&nbsp; +": 451.0,
+  "Fixed Assets&nbsp; +": 692.0,
+  "CWIP": 12.0,
+  "Investments": 16.0,
+  "Other Assets&nbsp; +": 534.0
+ },
+ "price_cagr": {
+  "10 Years": 15.0,
+  "5 Years": 16.0,
+  "3 Years": 16.0,
+  "Last Year": 16.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "12%",
+   "11%",
+   "12%",
+   "12%",
+   "11%",
+   "12%",
+   "12%",
+   "11%",
+   "10%",
+   "11%",
+   "11%",
+   "12%",
+   "11%"
+  ],
+  "eps": [
+   "1.28",
+   "1.87",
+   "2.06",
+   "2.36",
+   "1.41",
+   "2.09",
+   "2.23",
+   "2.81",
+   "1.56",
+   "2.23",
+   "2.33",
+   "3.14",
+   "1.78"
+  ]
+ },
+ "pros": [
+  "Company has delivered good profit growth of 35.3% CAGR over last 5 years"
+ ],
+ "cons": [
+  "Stock is trading at 9.67 times its book value",
+  "Company has low interest coverage ratio.",
+  "Debtor days have increased from 82.4 to 131 days."
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "ticker": "ZENTEC",
+ "scraped_at": "2026-08-14T15:28:16",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 16773.0,
+ "current_price": 1858.0,
+ "pe": 92.3,
+ "book_value": 209.0,
+ "dividend_yield_pct": 0.05,
+ "roce_pct": 16.2,
+ "roe_pct": 10.7,
+ "face_value": 1.0,
+ "high": 2024.0,
+ "sales_growth": {
+  "10 Years": 56.0,
+  "5 Years": 128.0,
+  "3 Years": 67.0,
+  "TTM": -28.0
+ },
+ "profit_growth": {
+  "10 Years": 37.0,
+  "5 Years": 85.0,
+  "3 Years": 30.0,
+  "1 Year": 30.0
+ },
+ "roe_hist": {
+  "Equity Capital": 8.0,
+  "Reserves": 91.0,
+  "Borrowings&nbsp; +": 18.0,
+  "Other Liabilities&nbsp; +": 12.0,
+  "Total Liabilities": 128.0,
+  "Fixed Assets&nbsp; +": 49.0,
+  "CWIP": 1.0,
+  "Investments": 0.0,
+  "Other Assets&nbsp; +": 78.0,
+  "Total Assets": 128.0
+ },
+ "price_cagr": {
+  "5 Years": 17.0,
+  "3 Years": 18.0,
+  "Last Year": 11.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "52%",
+   "29%",
+   "43%",
+   "36%",
+   "44%",
+   "33%",
+   "29%",
+   "42%",
+   "41%",
+   "37%",
+   "37%",
+   "28%",
+   "27%"
+  ],
+  "eps": [
+   "5.60",
+   "1.82",
+   "3.64",
+   "4.16",
+   "9.14",
+   "6.94",
+   "4.40",
+   "11.19",
+   "5.29",
+   "6.58",
+   "6.07",
+   "3.49",
+   "3.82"
+  ]
+ },
+ "pros": [
+  "Company has reduced debt.",
+  "Company is almost debt free.",
+  "Company has delivered good profit growth of 128% CAGR over last 5 years",
+  "Company&#x27;s median sales growth is 44.8% of last 10 years"
+ ],
+ "cons": [
+  "Stock is trading at 8.74 times its book value",
+  "Earnings include an other income of Rs.80.4 Cr.",
+  "Promoter holding has decreased over last 3 years: -8.94%",
+  "Working capital days have increased from 379 days to 543 days"
+ ]
+}

@@ -1,0 +1,669 @@
+{
+  "cuts": [
+    {
+      "id": "d4_div",
+      "type": "sm_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 21.356,
+      "props": {
+        "n": 4,
+        "title": "Charts, Tools & Sources",
+        "sub": "Technicals · screeners · trusted channels",
+        "color": "#22D3EE",
+        "dur": 21.856
+      }
+    },
+    {
+      "id": "d4_tech",
+      "type": "sm_iconcards",
+      "in_seconds": 21.856,
+      "out_seconds": 110.612,
+      "props": {
+        "kicker": "TECHNICAL BASICS",
+        "title": "Reading the price chart",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "📈",
+            "k": "Trend",
+            "v": "The direction — higher highs = uptrend. Rule one: don't fight the trend",
+            "chip": "Direction"
+          },
+          {
+            "emoji": "🛗",
+            "k": "Support / Resistance",
+            "v": "A floor where buyers step in; a ceiling where sellers appear",
+            "chip": "Levels"
+          },
+          {
+            "emoji": "📊",
+            "k": "Volume",
+            "v": "The conviction behind a move. A move without volume is suspect",
+            "chip": "Proof"
+          },
+          {
+            "emoji": "➰",
+            "k": "Moving averages",
+            "v": "Smoothed direction. 50-day crossing above 200-day = 'golden cross'",
+            "chip": "Signal"
+          }
+        ],
+        "dur": 89.256
+      }
+    },
+    {
+      "id": "d4_tools",
+      "type": "sm_iconcards",
+      "in_seconds": 111.112,
+      "out_seconds": 183.096,
+      "props": {
+        "kicker": "THE TOOLKIT",
+        "title": "Free & paid research tools",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🔎",
+            "k": "Screener.in",
+            "v": "Free fundamentals, filings & custom screens — start here",
+            "chip": "Screens"
+          },
+          {
+            "emoji": "📇",
+            "k": "Tickertape / Trendlyne",
+            "v": "Ratios, scores, FII/DII flows, results calendar, broker reports",
+            "chip": "Data"
+          },
+          {
+            "emoji": "📑",
+            "k": "Annual report + concall",
+            "v": "The primary source — read management in their own words",
+            "chip": "Primary"
+          },
+          {
+            "emoji": "🏛️",
+            "k": "NSE / BSE / SEBI",
+            "v": "Official filings, announcements — the ground truth",
+            "chip": "Official"
+          }
+        ],
+        "dur": 72.484
+      }
+    },
+    {
+      "id": "d4_channels",
+      "type": "sm_iconcards",
+      "in_seconds": 183.596,
+      "out_seconds": 269.256,
+      "props": {
+        "kicker": "TRUSTED CHANNELS",
+        "title": "Where to learn — the popular channels",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🎓",
+            "k": "Zerodha Varsity",
+            "v": "Free, structured, no tips — the gold standard for learning from zero",
+            "chip": "Learn"
+          },
+          {
+            "emoji": "📺",
+            "k": "Educators",
+            "v": "CA Rachana Ranade, Pranjal Kamra (Finology), Asset Yogi — concepts, not calls",
+            "chip": "YouTube"
+          },
+          {
+            "emoji": "🧮",
+            "k": "Deeper / technical",
+            "v": "Elearnmarkets by StockEdge, Yadnya — structured technical & derivatives",
+            "chip": "Advanced"
+          },
+          {
+            "emoji": "🗣️",
+            "k": "Voices to follow",
+            "v": "Fund managers on X: Samir Arora, Saurabh Mukherjea, Nilesh Shah, Deepak Shenoy",
+            "chip": "Macro"
+          }
+        ],
+        "dur": 86.16
+      }
+    },
+    {
+      "id": "d4_pickchannel",
+      "type": "sm_myths",
+      "in_seconds": 269.756,
+      "out_seconds": 337.204,
+      "props": {
+        "kicker": "SPOT THE TIP-SELLER",
+        "title": "Trustworthy source vs tip-seller",
+        "mythLabel": "✗ AVOID",
+        "factLabel": "✓ TRUST",
+        "pairs": [
+          {
+            "m": "Gives specific 'buy this now' calls & targets",
+            "f": "Explains the reasoning so you can decide yourself"
+          },
+          {
+            "m": "Only posts in bull markets; sells courses on hype",
+            "f": "Posts steadily through bull AND bear phases"
+          },
+          {
+            "m": "Hides credentials & sources; 'guaranteed' returns",
+            "f": "Shows credentials, cites sources, no guarantees"
+          }
+        ],
+        "dur": 67.948
+      }
+    },
+    {
+      "id": "d4_recap",
+      "type": "sm_recap",
+      "in_seconds": 337.704,
+      "out_seconds": 386.812,
+      "props": {
+        "title": "Chapter 4 — tools & sources",
+        "items": [
+          "Technicals help WHEN; fundamentals decide WHAT",
+          "Trend, support/resistance, volume, moving averages",
+          "Tools: Screener, Tickertape, Trendlyne, annual reports",
+          "Learn from Varsity, Rachana Ranade, Kamra; follow fund managers",
+          "Trust methods, not tips — verify everything"
+        ],
+        "closer": "Learn from teachers; never trade on tips.",
+        "dur": 49.608
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.691,
+      "Chapter four — the price chart, the tools,"
+    ],
+    [
+      3.691,
+      6.767,
+      "and where to find genuine research."
+    ],
+    [
+      6.767,
+      9.755,
+      "Fundamentals tell you WHAT to buy."
+    ],
+    [
+      9.755,
+      12.04,
+      "Technicals help with WHEN."
+    ],
+    [
+      12.04,
+      17.577,
+      "And knowing the right sources keeps you learning from teachers,"
+    ],
+    [
+      17.577,
+      19.423,
+      "not from tip-sellers."
+    ],
+    [
+      19.423,
+      21.356,
+      "Let's cover all three."
+    ],
+    [
+      21.856,
+      26.281,
+      "Technical analysis is the study of the price chart."
+    ],
+    [
+      26.281,
+      30.185,
+      "It doesn't tell you what a company is worth —"
+    ],
+    [
+      30.185,
+      35.564,
+      "it tells you what the crowd is doing, which helps with timing."
+    ],
+    [
+      35.564,
+      36.605,
+      "Four basics."
+    ],
+    [
+      36.605,
+      40.249,
+      "The first is trend — simply the direction."
+    ],
+    [
+      40.249,
+      45.021,
+      "A series of higher highs and higher lows is an uptrend."
+    ],
+    [
+      45.021,
+      49.359,
+      "The trader's first rule is: don't fight the trend."
+    ],
+    [
+      49.359,
+      52.396,
+      "Don't try to catch a falling knife."
+    ],
+    [
+      52.396,
+      55.606,
+      "The second is support and resistance."
+    ],
+    [
+      55.606,
+      60.551,
+      "Support is a price floor where buyers repeatedly step in."
+    ],
+    [
+      60.551,
+      65.41,
+      "Resistance is a ceiling where sellers repeatedly appear."
+    ],
+    [
+      65.41,
+      69.054,
+      "These levels are where the action happens."
+    ],
+    [
+      69.054,
+      73.565,
+      "The third is volume — how many shares changed hands."
+    ],
+    [
+      73.565,
+      76.949,
+      "Volume is the conviction behind a move."
+    ],
+    [
+      76.949,
+      83.543,
+      "A big price move on strong volume is real; a move on thin volume is suspect."
+    ],
+    [
+      83.543,
+      86.146,
+      "The fourth is moving averages,"
+    ],
+    [
+      86.146,
+      91.525,
+      "which smooth out the daily noise to reveal the true direction."
+    ],
+    [
+      91.525,
+      96.817,
+      "When the fifty-day average crosses above the two-hundred-day,"
+    ],
+    [
+      96.817,
+      102.023,
+      "traders call it a golden cross — a classic sign of strength."
+    ],
+    [
+      102.023,
+      107.228,
+      "A final caution: technicals are probabilities, not prophecy."
+    ],
+    [
+      107.228,
+      109.397,
+      "The chart shows the past."
+    ],
+    [
+      109.397,
+      110.612,
+      "Use it humbly."
+    ],
+    [
+      111.112,
+      114.346,
+      "Where do you actually do this research?"
+    ],
+    [
+      114.346,
+      119.073,
+      "A toolkit — and the good news is the best tools are free."
+    ],
+    [
+      119.073,
+      121.312,
+      "Start with Screener dot in."
+    ],
+    [
+      121.312,
+      125.376,
+      "It gives you a company's financials, its filings,"
+    ],
+    [
+      125.376,
+      129.357,
+      "and lets you build custom screens — for example,"
+    ],
+    [
+      129.357,
+      135.079,
+      "all companies with return on equity above fifteen and debt below one."
+    ],
+    [
+      135.079,
+      137.816,
+      "It is the beginner's best friend."
+    ],
+    [
+      137.816,
+      143.04,
+      "Next, platforms like Tickertape and Trendlyne add clean ratios,"
+    ],
+    [
+      143.04,
+      147.353,
+      "quality scores, foreign and domestic investor flows,"
+    ],
+    [
+      147.353,
+      151.831,
+      "the results calendar, and broker reports in one place."
+    ],
+    [
+      151.831,
+      161.534,
+      "But the single most valuable source is primary: the company's own annual report and its quarterly concall transcript."
+    ],
+    [
+      161.534,
+      165.432,
+      "This is management speaking in their own words."
+    ],
+    [
+      165.432,
+      170.573,
+      "Reading a few of these teaches you more than a hundred videos."
+    ],
+    [
+      170.573,
+      175.466,
+      "And for the ground truth — official filings, announcements,"
+    ],
+    [
+      175.466,
+      180.442,
+      "order wins — go straight to the NSE, BSE, and SEBI websites."
+    ],
+    [
+      180.442,
+      183.096,
+      "When in doubt, check the source."
+    ],
+    [
+      183.596,
+      185.937,
+      "Now, where should you learn —"
+    ],
+    [
+      185.937,
+      189.409,
+      "the popular channels people actually trust."
+    ],
+    [
+      189.409,
+      193.042,
+      "Present all of these as teachers of concepts,"
+    ],
+    [
+      193.042,
+      194.657,
+      "not sources of tips."
+    ],
+    [
+      194.657,
+      198.128,
+      "For structured learning from absolute zero,"
+    ],
+    [
+      198.128,
+      202.488,
+      "the gold standard is Zerodha Varsity — free, thorough,"
+    ],
+    [
+      202.488,
+      205.475,
+      "and it never gives buy or sell calls."
+    ],
+    [
+      205.475,
+      206.363,
+      "On YouTube,"
+    ],
+    [
+      206.363,
+      210.804,
+      "the most respected educators include CA Rachana Ranade,"
+    ],
+    [
+      210.804,
+      217.505,
+      "a chartered accountant who teaches fundamentals clearly; Pranjal Kamra of Finology,"
+    ],
+    [
+      217.505,
+      223.641,
+      "focused on long-term value investing; and Asset Yogi for financial literacy."
+    ],
+    [
+      223.641,
+      226.143,
+      "They teach concepts, not calls."
+    ],
+    [
+      226.143,
+      229.05,
+      "For deeper, more technical learning,"
+    ],
+    [
+      229.05,
+      238.092,
+      "Elearnmarkets by StockEdge and Yadnya Investment Academy offer structured courses on technicals and derivatives."
+    ],
+    [
+      238.092,
+      242.936,
+      "And to follow seasoned market voices on X, formerly Twitter,"
+    ],
+    [
+      242.936,
+      246.731,
+      "watch fund managers like Samir Arora of Helios,"
+    ],
+    [
+      246.731,
+      251.01,
+      "Saurabh Mukherjea of Marcellus, Nilesh Shah of Kotak,"
+    ],
+    [
+      251.01,
+      253.755,
+      "and Deepak Shenoy of Capitalmind —"
+    ],
+    [
+      253.755,
+      257.711,
+      "for their thinking on the market, not stock tips."
+    ],
+    [
+      257.711,
+      269.256,
+      "Learn from these; verify everything; and remember that the numbers of subscribers matter far less than whether a creator shows their reasoning."
+    ],
+    [
+      269.756,
+      273.161,
+      "This is the most important filter of all —"
+    ],
+    [
+      273.161,
+      276.809,
+      "how to tell a real teacher from a tip-seller."
+    ],
+    [
+      276.809,
+      277.782,
+      "Three tests."
+    ],
+    [
+      277.782,
+      278.268,
+      "First,"
+    ],
+    [
+      278.268,
+      284.916,
+      "avoid anyone whose main product is specific buy-this-now calls with price targets."
+    ],
+    [
+      284.916,
+      289.455,
+      "Trust the ones who explain the reasoning behind an idea,"
+    ],
+    [
+      289.455,
+      291.806,
+      "so you can judge it yourself."
+    ],
+    [
+      291.806,
+      296.508,
+      "A tip makes you dependent; a method makes you independent."
+    ],
+    [
+      296.508,
+      297.076,
+      "Second,"
+    ],
+    [
+      297.076,
+      303.561,
+      "avoid creators who only appear in roaring bull markets and vanish when it turns,"
+    ],
+    [
+      303.561,
+      308.425,
+      "or who exist mainly to sell you an expensive course on hype."
+    ],
+    [
+      308.425,
+      313.694,
+      "Trust those who post steadily through bull and bear phases alike."
+    ],
+    [
+      313.694,
+      314.181,
+      "Third,"
+    ],
+    [
+      314.181,
+      321.072,
+      "avoid anyone who hides their credentials and sources or promises guaranteed returns —"
+    ],
+    [
+      321.072,
+      322.936,
+      "there is no such thing."
+    ],
+    [
+      322.936,
+      325.692,
+      "Trust those who show who they are,"
+    ],
+    [
+      325.692,
+      328.368,
+      "cite where their facts come from,"
+    ],
+    [
+      328.368,
+      331.772,
+      "and are honest that nothing is guaranteed."
+    ],
+    [
+      331.772,
+      333.718,
+      "Apply these three tests,"
+    ],
+    [
+      333.718,
+      337.204,
+      "and ninety percent of the noise falls away."
+    ],
+    [
+      337.704,
+      339.788,
+      "Chapter four, in brief."
+    ],
+    [
+      339.788,
+      345.768,
+      "Technicals help with when to act; fundamentals decide what to own."
+    ],
+    [
+      345.768,
+      349.664,
+      "Know trend, support and resistance, volume,"
+    ],
+    [
+      349.664,
+      351.476,
+      "and moving averages."
+    ],
+    [
+      351.476,
+      357.003,
+      "Do the work in free tools — Screener, Tickertape, Trendlyne —"
+    ],
+    [
+      357.003,
+      359.993,
+      "but treasure the primary sources,"
+    ],
+    [
+      359.993,
+      362.892,
+      "the annual reports and concalls."
+    ],
+    [
+      362.892,
+      367.694,
+      "Learn from trustworthy channels like Zerodha Varsity,"
+    ],
+    [
+      367.694,
+      371.047,
+      "CA Rachana Ranade, and Pranjal Kamra,"
+    ],
+    [
+      371.047,
+      375.849,
+      "and follow seasoned fund managers for their thinking."
+    ],
+    [
+      375.849,
+      381.104,
+      "Above all, trust methods over tips, and verify everything."
+    ],
+    [
+      381.104,
+      386.812,
+      "Now we put research to work — the equity investment strategies."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "eq/eq04.wav",
+      "volume": 1.0
+    }
+  }
+}

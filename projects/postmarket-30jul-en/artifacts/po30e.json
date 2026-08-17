@@ -1,0 +1,829 @@
+{
+  "cuts": [
+    {
+      "id": "po_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 45.884,
+      "props": {
+        "title": "Post-Market Recap",
+        "sub": "July 30, 2026 · a quiet green day — but read the breadth",
+        "kicker": "POST-MARKET · 30 JUL 2026",
+        "dur": 46.384
+      }
+    },
+    {
+      "id": "po_snap",
+      "type": "sm_stats",
+      "in_seconds": 46.384,
+      "out_seconds": 110.528,
+      "props": {
+        "kicker": "INDEX SNAPSHOT",
+        "title": "Closing Numbers — 30 July",
+        "stats": [
+          {
+            "label": "SENSEX",
+            "to": 77928.15,
+            "decimals": 2,
+            "prefix": "",
+            "suffix": "",
+            "color": "#34D399",
+            "sub": "+273.55 pts · +0.35%"
+          },
+          {
+            "label": "NIFTY 50",
+            "to": 24317.15,
+            "decimals": 2,
+            "prefix": "",
+            "suffix": "",
+            "color": "#34D399",
+            "sub": "+66.95 · +0.28%"
+          },
+          {
+            "label": "NIFTY REALTY",
+            "to": 2.06,
+            "decimals": 2,
+            "prefix": "−",
+            "suffix": "%",
+            "color": "#FB7185",
+            "sub": "day's WEAKEST sector"
+          }
+        ],
+        "note": "The headline is green — but the third box is the real story: Realty fell 2.06%, and BOTH midcaps and smallcaps closed red. A narrow rally, not a broad one.",
+        "dur": 64.644
+      }
+    },
+    {
+      "id": "po_why",
+      "type": "sm_iconcards",
+      "in_seconds": 111.028,
+      "out_seconds": 171.476,
+      "props": {
+        "kicker": "WHY THE INDEX ROSE",
+        "title": "What Lifted the Large-Caps",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "The Fed held rates",
+            "v": "The US Federal Reserve kept interest rates unchanged — a steady, risk-friendly global cue that supported equities at the open",
+            "chip": "GLOBAL CUE"
+          },
+          {
+            "emoji": "🚗",
+            "k": "Autos led the charge",
+            "v": "The Nifty Auto index was among the top-performing sectors, with heavyweights like M&M and Eicher doing the heavy lifting",
+            "chip": "AUTO LED"
+          },
+          {
+            "emoji": "🛢️",
+            "k": "Oil & gas + durables joined",
+            "v": "Nifty Oil & Gas and Consumer Durables also outperformed — a rotation into large, index-heavy names",
+            "chip": "HEAVYWEIGHTS"
+          },
+          {
+            "emoji": "🌍",
+            "k": "But West Asia capped it",
+            "v": "Investors stayed watchful of the geopolitical situation in West Asia, which kept the gains modest and trade subdued",
+            "chip": "CAPPED"
+          }
+        ],
+        "dur": 60.948
+      }
+    },
+    {
+      "id": "po_leaders",
+      "type": "sm_iconcards",
+      "in_seconds": 171.976,
+      "out_seconds": 224.672,
+      "props": {
+        "kicker": "WHAT LED",
+        "title": "Where the Money Went",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🚜",
+            "k": "M&M — top Nifty gainer",
+            "v": "Mahindra & Mahindra led the index; autos were the standout sector as demand-sensitive large-caps found buyers",
+            "chip": "AUTO"
+          },
+          {
+            "emoji": "⛏️",
+            "k": "Coal India",
+            "v": "A large-cap PSU and a classic value / high-dividend name — the kind of heavyweight that lifts the index on a rotation day",
+            "chip": "PSU"
+          },
+          {
+            "emoji": "🏍️",
+            "k": "Eicher Motors",
+            "v": "The Royal Enfield maker rose with the auto pack — premium two-wheeler demand keeps it a market favourite",
+            "chip": "AUTO"
+          },
+          {
+            "emoji": "🛢️",
+            "k": "Oil & Gas + Durables",
+            "v": "Beyond single stocks, the Oil & Gas and Consumer Durables sectors outperformed — the leadership was large and defensive-cyclical",
+            "chip": "SECTORS"
+          }
+        ],
+        "dur": 53.196
+      }
+    },
+    {
+      "id": "po_breadth",
+      "type": "sm_iconcards",
+      "in_seconds": 225.172,
+      "out_seconds": 286.87,
+      "props": {
+        "kicker": "LOOK UNDER THE HOOD",
+        "title": "The Breadth Was Red",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "🏗️",
+            "k": "Realty −2.06%",
+            "v": "Real estate was the worst-performing sector by a wide margin — rate-sensitive and the first to be sold when caution creeps in",
+            "chip": "WORST SECTOR"
+          },
+          {
+            "emoji": "📉",
+            "k": "Midcaps −0.35%",
+            "v": "The Nifty Midcap index closed lower even as the Nifty 50 rose — money left the middle of the market",
+            "chip": "RED"
+          },
+          {
+            "emoji": "🔻",
+            "k": "Smallcaps −0.56%",
+            "v": "Smallcaps fell even more — the riskier, retail-favourite end of the market was sold the hardest",
+            "chip": "RED"
+          },
+          {
+            "emoji": "🧭",
+            "k": "The laggards",
+            "v": "Names like Adani Ports and IndiGo were among the heavyweights that lagged — but the real weakness was broad, not in any one stock",
+            "chip": "NARROW UP"
+          }
+        ],
+        "dur": 62.198
+      }
+    },
+    {
+      "id": "po_reads",
+      "type": "sm_myths",
+      "in_seconds": 287.37,
+      "out_seconds": 347.22,
+      "props": {
+        "kicker": "READ BEHIND THE HEADLINE",
+        "title": "What It Looks Like vs What's Real",
+        "mythLabel": "🧐 THE HEADLINE SAYS",
+        "factLabel": "🔍 WHAT'S REALLY HAPPENING",
+        "pairs": [
+          {
+            "m": "Market closed green — it was a strong, broad rally",
+            "f": "Only large-caps rose; midcaps, smallcaps & realty fell. Breadth was red"
+          },
+          {
+            "m": "The Fed held rates, so risk is fully back on",
+            "f": "Gains were under 0.4% — West Asia caution kept the mood subdued"
+          },
+          {
+            "m": "A green index means my portfolio should be up",
+            "f": "If you hold mid/smallcaps, today you likely felt the opposite"
+          }
+        ],
+        "dur": 60.35
+      }
+    },
+    {
+      "id": "po_take",
+      "type": "sm_checklist",
+      "in_seconds": 347.72,
+      "out_seconds": 416.758,
+      "props": {
+        "kicker": "TAKEAWAYS",
+        "title": "5 Lessons to Carry Forward",
+        "color": "#34D399",
+        "icon": "💡",
+        "items": [
+          "A green index isn't always a green market — check the breadth",
+          "When midcaps & smallcaps lag the Nifty, the rally is narrow",
+          "A Fed 'hold' is a steadying cue — not a green light to chase risk",
+          "Realty & rate-sensitive sectors lead the fall when caution rises",
+          "For SIP investors, a +0.3% day is noise — stay on schedule"
+        ],
+        "dur": 69.538
+      }
+    },
+    {
+      "id": "po_recap",
+      "type": "sm_recap",
+      "in_seconds": 417.258,
+      "out_seconds": 486.44,
+      "props": {
+        "title": "30 July — At a Glance",
+        "items": [
+          "Sensex +273.55 (77,928.15) · Nifty +66.95 (24,317.15) — both green",
+          "But breadth RED: Realty −2.06%, Midcaps −0.35%, Smallcaps −0.56%",
+          "Lift: Fed held rates + autos, oil & gas, durables led",
+          "Gainers: M&M, Coal India, Eicher · Laggards: realty & broad market",
+          "Lesson: a narrow, large-cap rally — check breadth, not just the index"
+        ],
+        "closer": "Green on the surface, red underneath. A narrow rally is a reminder to look past the headline number.",
+        "dur": 69.682
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.218,
+      "The Indian market closed higher today —"
+    ],
+    [
+      3.218,
+      12.131,
+      "the Sensex and Nifty both finishing in the green after the US Federal Reserve left interest rates unchanged."
+    ],
+    [
+      12.131,
+      18.238,
+      "But here's the twist most headlines will miss: this was NOT a broad rally."
+    ],
+    [
+      18.238,
+      22.777,
+      "While the big indices rose, the wider market — midcaps,"
+    ],
+    [
+      22.777,
+      26.821,
+      "smallcaps, and real estate — actually closed red."
+    ],
+    [
+      26.821,
+      31.195,
+      "So the real question isn't just did the market go up."
+    ],
+    [
+      31.195,
+      33.588,
+      "It's who went up, who didn't,"
+    ],
+    [
+      33.588,
+      36.889,
+      "and what that gap is quietly telling us."
+    ],
+    [
+      36.889,
+      41.593,
+      "Let's break down exactly what happened on July thirtieth."
+    ],
+    [
+      41.593,
+      45.884,
+      "This is information analysis, not investment advice."
+    ],
+    [
+      46.384,
+      50.111,
+      "First, the scoreboard — and notice the colours."
+    ],
+    [
+      50.111,
+      61.369,
+      "The Sensex rose two hundred seventy-three point five five points to close at seventy-seven thousand nine hundred twenty-eight point one five —"
+    ],
+    [
+      61.369,
+      63.986,
+      "up zero point three five percent."
+    ],
+    [
+      63.986,
+      72.945,
+      "The Nifty added sixty-six point nine five points to twenty-four thousand three hundred seventeen point one five —"
+    ],
+    [
+      72.945,
+      75.483,
+      "up zero point two eight percent."
+    ],
+    [
+      75.483,
+      79.844,
+      "But now look at the third box — the Nifty Realty index."
+    ],
+    [
+      79.844,
+      82.619,
+      "It FELL two point zero six percent,"
+    ],
+    [
+      82.619,
+      84.997,
+      "the weakest sector of the day."
+    ],
+    [
+      84.997,
+      91.023,
+      "And it wasn't alone: the midcap index slipped zero point three five percent,"
+    ],
+    [
+      91.023,
+      95.701,
+      "and the smallcap index dropped zero point five six percent."
+    ],
+    [
+      95.701,
+      98.873,
+      "So while the front-page number is green,"
+    ],
+    [
+      98.873,
+      102.044,
+      "the market underneath it was mostly red."
+    ],
+    [
+      102.044,
+      106.246,
+      "That divergence — big indices up, broad market down —"
+    ],
+    [
+      106.246,
+      110.528,
+      "is the single most important clue on this whole slide."
+    ],
+    [
+      111.028,
+      114.145,
+      "So why did the large-cap indices rise?"
+    ],
+    [
+      114.145,
+      116.769,
+      "Three tailwinds — and one brake."
+    ],
+    [
+      116.769,
+      121.444,
+      "First, the US Federal Reserve held interest rates steady."
+    ],
+    [
+      121.444,
+      126.612,
+      "When the world's most important central bank signals stability,"
+    ],
+    [
+      126.612,
+      131.943,
+      "it's a risk-friendly cue that tends to support equities globally."
+    ],
+    [
+      131.943,
+      134.321,
+      "Second, autos led the charge."
+    ],
+    [
+      134.321,
+      138.668,
+      "The Nifty Auto index was among the day's top sectors,"
+    ],
+    [
+      138.668,
+      145.804,
+      "with heavyweights like Mahindra and Mahindra and Eicher Motors doing the heavy lifting."
+    ],
+    [
+      145.804,
+      150.069,
+      "Third, oil and gas and consumer durables joined in —"
+    ],
+    [
+      150.069,
+      153.924,
+      "a clear rotation into large, index-heavy names."
+    ],
+    [
+      153.924,
+      161.47,
+      "But there was a brake: investors stayed watchful of the geopolitical situation in West Asia."
+    ],
+    [
+      161.47,
+      165.653,
+      "That caution is exactly why the gains were modest —"
+    ],
+    [
+      165.653,
+      167.457,
+      "under half a percent —"
+    ],
+    [
+      167.457,
+      171.476,
+      "and the mood stayed subdued rather than euphoric."
+    ],
+    [
+      171.976,
+      175.006,
+      "Now, where exactly did the money go?"
+    ],
+    [
+      175.006,
+      179.72,
+      "The top gainers on the Nifty were Mahindra and Mahindra,"
+    ],
+    [
+      179.72,
+      182.246,
+      "Coal India, and Eicher Motors."
+    ],
+    [
+      182.246,
+      183.845,
+      "Notice the pattern."
+    ],
+    [
+      183.845,
+      188.812,
+      "Mahindra and Eicher are autos — the standout sector today —"
+    ],
+    [
+      188.812,
+      192.516,
+      "as demand-sensitive large-caps found buyers."
+    ],
+    [
+      192.516,
+      197.651,
+      "Coal India is a large-cap public-sector, high-dividend name —"
+    ],
+    [
+      197.651,
+      203.627,
+      "exactly the kind of index heavyweight that does well on a rotation day."
+    ],
+    [
+      203.627,
+      211.877,
+      "And it wasn't just single stocks: the Oil and Gas and Consumer Durables sectors both outperformed."
+    ],
+    [
+      211.877,
+      216.675,
+      "So the leadership was concentrated in large, index-heavy,"
+    ],
+    [
+      216.675,
+      218.022,
+      "cyclical names —"
+    ],
+    [
+      218.022,
+      224.672,
+      "which is precisely why the headline index rose even as the broader market fell."
+    ],
+    [
+      225.172,
+      229.979,
+      "But here's the part the headline hides — look under the hood,"
+    ],
+    [
+      229.979,
+      231.87,
+      "and the breadth was red."
+    ],
+    [
+      231.87,
+      235.337,
+      "Real estate was the worst-performing sector,"
+    ],
+    [
+      235.337,
+      237.858,
+      "down two point zero six percent."
+    ],
+    [
+      237.858,
+      240.38,
+      "Realty is highly rate-sensitive,"
+    ],
+    [
+      240.38,
+      245.029,
+      "and it's often the first thing sold when caution creeps in."
+    ],
+    [
+      245.029,
+      249.678,
+      "The midcap index closed down zero point three five percent,"
+    ],
+    [
+      249.678,
+      254.169,
+      "and the smallcap index fell zero point five six percent —"
+    ],
+    [
+      254.169,
+      255.115,
+      "the riskier,"
+    ],
+    [
+      255.115,
+      259.527,
+      "retail-favourite end of the market was sold the hardest."
+    ],
+    [
+      259.527,
+      261.025,
+      "Among heavyweights,"
+    ],
+    [
+      261.025,
+      265.674,
+      "names like Adani Ports and IndiGo were among the laggards —"
+    ],
+    [
+      265.674,
+      268.904,
+      "but the key point isn't any single stock."
+    ],
+    [
+      268.904,
+      272.135,
+      "It's that far more stocks fell than rose."
+    ],
+    [
+      272.135,
+      276.39,
+      "When the index is green but the broader market is red,"
+    ],
+    [
+      276.39,
+      281.827,
+      "it means the rally is being carried by just a handful of large names."
+    ],
+    [
+      281.827,
+      283.797,
+      "That's a narrow advance —"
+    ],
+    [
+      283.797,
+      286.87,
+      "and narrow advances are worth watching."
+    ],
+    [
+      287.37,
+      290.179,
+      "Let's read behind the headlines —"
+    ],
+    [
+      290.179,
+      294.947,
+      "because a green day like this can be quietly misleading."
+    ],
+    [
+      294.947,
+      298.523,
+      "The headline says the market closed green,"
+    ],
+    [
+      298.523,
+      301.247,
+      "so it was a strong, broad rally."
+    ],
+    [
+      301.247,
+      304.482,
+      "The reality: only the large-caps rose."
+    ],
+    [
+      304.482,
+      307.802,
+      "Midcaps, smallcaps and realty all fell."
+    ],
+    [
+      307.802,
+      309.505,
+      "The breadth was red."
+    ],
+    [
+      309.505,
+      312.655,
+      "The headline says the Fed held rates,"
+    ],
+    [
+      312.655,
+      314.784,
+      "so risk is fully back on."
+    ],
+    [
+      314.784,
+      318.955,
+      "The reality: the gains were under half a percent,"
+    ],
+    [
+      318.955,
+      323.042,
+      "because West Asia caution kept the mood subdued."
+    ],
+    [
+      323.042,
+      326.277,
+      "Stability is not the same as euphoria."
+    ],
+    [
+      326.277,
+      332.066,
+      "And the headline says a green index means my portfolio should be up."
+    ],
+    [
+      332.066,
+      335.812,
+      "But if you own mostly midcaps and smallcaps,"
+    ],
+    [
+      335.812,
+      338.792,
+      "today you likely felt the opposite."
+    ],
+    [
+      338.792,
+      347.22,
+      "That gap between the index and your holdings is exactly why breadth matters more than the headline."
+    ],
+    [
+      347.72,
+      350.969,
+      "So, five takeaways to carry forward."
+    ],
+    [
+      350.969,
+      355.391,
+      "One — a green index is not always a green market."
+    ],
+    [
+      355.391,
+      361.528,
+      "Always check the breadth: how many stocks actually rose versus fell."
+    ],
+    [
+      361.528,
+      365.318,
+      "Today, the index and the market disagreed."
+    ],
+    [
+      365.318,
+      369.559,
+      "Two — when midcaps and smallcaps lag the Nifty,"
+    ],
+    [
+      369.559,
+      374.072,
+      "the rally is narrow, carried by a few large names."
+    ],
+    [
+      374.072,
+      378.404,
+      "Narrow rallies are more fragile than broad ones."
+    ],
+    [
+      378.404,
+      382.104,
+      "Three — a Fed hold is a steadying signal,"
+    ],
+    [
+      382.104,
+      384.991,
+      "not a green light to chase risk."
+    ],
+    [
+      384.991,
+      389.955,
+      "The subdued gains today show the market took it calmly,"
+    ],
+    [
+      389.955,
+      391.128,
+      "not greedily."
+    ],
+    [
+      391.128,
+      391.67,
+      "Four —"
+    ],
+    [
+      391.67,
+      398.98,
+      "realty and other rate-sensitive sectors tend to lead the fall when caution rises."
+    ],
+    [
+      398.98,
+      402.319,
+      "They're a useful early-warning gauge."
+    ],
+    [
+      402.319,
+      406.109,
+      "And five — for a long-term S-I-P investor,"
+    ],
+    [
+      406.109,
+      411.343,
+      "a zero point three percent day, up or down, is just noise."
+    ],
+    [
+      411.343,
+      416.758,
+      "Keep investing on your schedule and ignore the daily colour."
+    ],
+    [
+      417.258,
+      419.518,
+      "July thirtieth, at a glance."
+    ],
+    [
+      419.518,
+      427.672,
+      "The Sensex rose two hundred seventy-three points to seventy-seven thousand nine hundred twenty-eight,"
+    ],
+    [
+      427.672,
+      434.291,
+      "and the Nifty sixty-seven points to twenty-four thousand three hundred seventeen —"
+    ],
+    [
+      434.291,
+      437.843,
+      "both closing green after the Fed held rates."
+    ],
+    [
+      437.843,
+      444.463,
+      "But under the surface the breadth was red: realty fell two point zero six percent,"
+    ],
+    [
+      444.463,
+      448.015,
+      "and both midcaps and smallcaps closed lower."
+    ],
+    [
+      448.015,
+      451.082,
+      "The lift came from autos, oil and gas,"
+    ],
+    [
+      451.082,
+      454.15,
+      "and consumer durables — with Mahindra,"
+    ],
+    [
+      454.15,
+      457.702,
+      "Coal India and Eicher among the top gainers,"
+    ],
+    [
+      457.702,
+      462.464,
+      "while the broader market and rate-sensitive sectors lagged."
+    ],
+    [
+      462.464,
+      466.339,
+      "The lesson — this was a narrow, large-cap rally."
+    ],
+    [
+      466.339,
+      469.326,
+      "Green on the surface, red underneath."
+    ],
+    [
+      469.326,
+      474.412,
+      "Always look past the headline number to the breadth beneath it."
+    ],
+    [
+      474.412,
+      478.61,
+      "This information is aggregated from public sources —"
+    ],
+    [
+      478.61,
+      481.919,
+      "for analysis only, not investment advice."
+    ],
+    [
+      481.919,
+      486.44,
+      "Thanks for watching, and I'll see you at the next close."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/po30e.wav",
+      "volume": 1.0
+    }
+  }
+}

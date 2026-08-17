@@ -1,0 +1,90 @@
+{
+  "cuts": [
+    {
+      "id": "s01_title",
+      "type": "llm_title",
+      "in_seconds": 0.0,
+      "out_seconds": 7.925,
+      "props": {
+        "dur": 8.275
+      }
+    },
+    {
+      "id": "s02_hook",
+      "type": "llm_hook",
+      "in_seconds": 8.275,
+      "out_seconds": 19.125,
+      "props": {
+        "dur": 11.2
+      }
+    },
+    {
+      "id": "s03_pretrain",
+      "type": "llm_pretrain",
+      "in_seconds": 19.475,
+      "out_seconds": 37.125,
+      "props": {
+        "dur": 18.0
+      }
+    },
+    {
+      "id": "s04_sft",
+      "type": "llm_sft",
+      "in_seconds": 37.475,
+      "out_seconds": 54.8,
+      "props": {
+        "dur": 17.675
+      }
+    },
+    {
+      "id": "s05_lora",
+      "type": "llm_lora",
+      "in_seconds": 55.15,
+      "out_seconds": 71.325,
+      "props": {
+        "dur": 16.525
+      }
+    },
+    {
+      "id": "s06_qlora",
+      "type": "llm_qlora",
+      "in_seconds": 71.675,
+      "out_seconds": 87.525,
+      "props": {
+        "dur": 16.2
+      }
+    },
+    {
+      "id": "s07_rlhf",
+      "type": "llm_rlhf",
+      "in_seconds": 87.875,
+      "out_seconds": 105.975,
+      "props": {
+        "dur": 18.45
+      }
+    },
+    {
+      "id": "s08_recap",
+      "type": "llm_recap",
+      "in_seconds": 106.325,
+      "out_seconds": 121.6,
+      "props": {
+        "items": [
+          "Pretraining \u2014 build a strong foundation",
+          "SFT \u2014 teach instruction following",
+          "LoRA \u2014 efficient fine-tuning",
+          "QLoRA \u2014 fine-tune with less memory",
+          "RLHF \u2014 align with human values"
+        ],
+        "closer": "Five strategies. One intelligent assistant.",
+        "dur": 15.625
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "llm/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

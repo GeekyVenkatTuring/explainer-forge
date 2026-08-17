@@ -1,0 +1,1218 @@
+{
+  "cuts": [
+    {
+      "id": "s01_title",
+      "type": "em_title",
+      "in_seconds": 0.0,
+      "out_seconds": 9.515,
+      "props": {
+        "dur": 10.015
+      }
+    },
+    {
+      "id": "s02_hook",
+      "type": "em_hook",
+      "in_seconds": 10.015,
+      "out_seconds": 35.825,
+      "props": {
+        "dur": 26.31
+      }
+    },
+    {
+      "id": "s03_compass",
+      "type": "em_compass",
+      "in_seconds": 36.325,
+      "out_seconds": 59.192,
+      "props": {
+        "dur": 23.367
+      }
+    },
+    {
+      "id": "s04_star",
+      "type": "em_star",
+      "in_seconds": 59.692,
+      "out_seconds": 84.523,
+      "props": {
+        "dur": 25.331
+      }
+    },
+    {
+      "id": "s05_iwe",
+      "type": "em_iwe",
+      "in_seconds": 85.023,
+      "out_seconds": 110.087,
+      "props": {
+        "dur": 25.564
+      }
+    },
+    {
+      "id": "s06_div1",
+      "type": "em_divider",
+      "in_seconds": 110.587,
+      "out_seconds": 118.206,
+      "props": {
+        "n": 1,
+        "title": "People",
+        "sub": "grow them, or manage them out",
+        "color": "#F5A524",
+        "dur": 8.119
+      }
+    },
+    {
+      "id": "s07_grow",
+      "type": "em_q",
+      "in_seconds": 118.706,
+      "out_seconds": 150.85,
+      "props": {
+        "cat": "PEOPLE \u00b7 GROWTH",
+        "title": "Growing an engineer to the next level",
+        "q": "Tell me about a time you helped an engineer grow.",
+        "color": "#F5A524",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Set a concrete bar",
+            "desc": "Name the specific gap between where they were and the next level."
+          },
+          {
+            "node": "A",
+            "title": "Create the reps",
+            "desc": "Hand them a stretch project with real scope, then step back."
+          },
+          {
+            "node": "A",
+            "title": "Coach, don't rescue",
+            "desc": "Weekly one-on-ones on the how; let them own the mistakes."
+          },
+          {
+            "node": "R",
+            "title": "Show the promotion",
+            "desc": "End on the outcome: promoted, or leading what they couldn't before."
+          }
+        ],
+        "trap": "\u201cI told them to do better and they improved.\u201d No plan, no proof.",
+        "signal": "You build people deliberately, and can scale yourself through others.",
+        "foot": "Growth stories are the most under-prepared, and the most predictive of a good manager.",
+        "dur": 32.644
+      }
+    },
+    {
+      "id": "s07s_grow",
+      "type": "em_story",
+      "in_seconds": 151.35,
+      "out_seconds": 278.936,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 GROWTH",
+        "title": "Growing an engineer to senior \u2014 a full answer",
+        "color": "#F5A524",
+        "situation": "On a payments platform doing forty million transactions a day, I had a mid-level engineer, Priya. Technically excellent, but she'd been passed over for senior twice, and she was frustrated.",
+        "task": "My mandate: get her to the senior bar within a year \u2014 for real, without lowering it.",
+        "actions": [
+          {
+            "d": "Wrote the exact gap down with her \u2014 it was scope and influence, not coding \u2014 mapped to our senior rubric."
+          },
+          {
+            "d": "Handed her the payment-retry idempotency redesign: cross-team, high-stakes, and I deliberately stayed out of it."
+          },
+          {
+            "d": "Coached the how in weekly one-on-ones \u2014 design reviews, stakeholder pushback \u2014 but she made every call."
+          },
+          {
+            "d": "Created visibility: she presented the design to the org, and I pre-wired the promotion committee."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "11 months",
+            "l": "promoted to Senior"
+          },
+          {
+            "v": "\u2193 90%",
+            "l": "retry failures"
+          },
+          {
+            "v": "3 mentees",
+            "l": "she now grows others"
+          }
+        ],
+        "learning": "Define the gap in writing on day one. Vague growth goals grow no one.",
+        "foot": "Every action is \u201cI did\u201d \u2014 but it ends on her growth, not mine. That's the balance.",
+        "dur": 128.086
+      }
+    },
+    {
+      "id": "s08_underperf",
+      "type": "em_q",
+      "in_seconds": 279.436,
+      "out_seconds": 311.304,
+      "props": {
+        "cat": "PEOPLE \u00b7 PERFORMANCE",
+        "title": "Handling an underperformer",
+        "q": "How did you handle an engineer who was underperforming?",
+        "color": "#F5A524",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Diagnose first",
+            "desc": "Skill, will, or fit? Each needs a different fix, so don't guess."
+          },
+          {
+            "node": "A",
+            "title": "Make it explicit",
+            "desc": "Clear expectations, in writing, with dates. No surprises."
+          },
+          {
+            "node": "A",
+            "title": "Support, then decide",
+            "desc": "Real coaching and a fair runway, then act either way."
+          },
+          {
+            "node": "L",
+            "title": "Protect the team",
+            "desc": "One tolerated low performer taxes everyone around them."
+          }
+        ],
+        "trap": "\u201cThey weren't good enough, so I let them go.\u201d No diagnosis, no support.",
+        "signal": "You're fair and direct, and you don't avoid hard conversations.",
+        "foot": "They want to see compassion and a spine. Most candidates show only one.",
+        "dur": 32.368
+      }
+    },
+    {
+      "id": "s08s_underperf",
+      "type": "em_story",
+      "in_seconds": 311.804,
+      "out_seconds": 431.161,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 PERFORMANCE",
+        "title": "Turning around an underperformer \u2014 a full answer",
+        "color": "#F5A524",
+        "situation": "On an ads-ranking team, a solid mid-level engineer, David, had missed his commitments for a full quarter. His code reviews were slow and the team had started to notice.",
+        "task": "My mandate: turn it around fairly within a quarter, or make a clear call.",
+        "actions": [
+          {
+            "d": "Diagnosed privately first \u2014 it wasn't skill. A new baby at home, and he felt his work had gone invisible."
+          },
+          {
+            "d": "Set explicit written expectations: three concrete deliverables over six weeks, with dates."
+          },
+          {
+            "d": "Rebalanced his load and gave him a latency project matched to his real strength."
+          },
+          {
+            "d": "Checked in weekly and documented everything, so there were no surprises for him or me."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "6 weeks",
+            "l": "back to meeting the bar"
+          },
+          {
+            "v": "p99 \u2193 35%",
+            "l": "his latency project"
+          },
+          {
+            "v": "0 surprises",
+            "l": "at his review"
+          }
+        ],
+        "learning": "Diagnose before you judge. Most \u201cunderperformance\u201d is context, not capacity.",
+        "foot": "Compassion and a spine in the same story. That's exactly the balance they score.",
+        "dur": 119.857
+      }
+    },
+    {
+      "id": "s09_feedback",
+      "type": "em_q",
+      "in_seconds": 431.661,
+      "out_seconds": 464.362,
+      "props": {
+        "cat": "PEOPLE \u00b7 FEEDBACK",
+        "title": "Delivering hard feedback",
+        "q": "Tell me about a difficult piece of feedback you gave.",
+        "color": "#F5A524",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Pick real stakes",
+            "desc": "Choose feedback that was genuinely hard. Behavior, not a typo."
+          },
+          {
+            "node": "A",
+            "title": "Specific and kind",
+            "desc": "Name the exact behavior and its impact, not their character."
+          },
+          {
+            "node": "A",
+            "title": "Make it a dialogue",
+            "desc": "Ask for their view; agree on one concrete change together."
+          },
+          {
+            "node": "R",
+            "title": "Follow the thread",
+            "desc": "Show what changed after. Feedback with no follow-up is venting."
+          }
+        ],
+        "trap": "You picked a trivial example, or softened it until there was no message.",
+        "signal": "You have the uncomfortable conversation early, before it becomes a crisis.",
+        "foot": "Candor delivered with care is the single most-tested manager skill.",
+        "dur": 33.201
+      }
+    },
+    {
+      "id": "s09s_feedback",
+      "type": "em_story",
+      "in_seconds": 464.862,
+      "out_seconds": 578.691,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 FEEDBACK",
+        "title": "The brilliant engineer nobody wanted to work with",
+        "color": "#F5A524",
+        "situation": "I had a staff engineer, Marco \u2014 technically the best on the team. But he was condescending in reviews and meetings, and two engineers had quietly asked to transfer off his projects.",
+        "task": "My mandate: keep his output, fix the behavior, or I'd lose the rest of the team.",
+        "actions": [
+          {
+            "d": "Gathered specifics first \u2014 exact quotes from reviews and meetings, not a vague vibe."
+          },
+          {
+            "d": "Had a direct, private conversation: named the behavior and its impact on attrition, not his character."
+          },
+          {
+            "d": "Made it two-way \u2014 asked what was driving it; he felt others shipped sloppy work. We agreed on two concrete changes."
+          },
+          {
+            "d": "Followed up weekly, and deliberately caught him doing it right and reinforced it."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "0 transfers",
+            "l": "both engineers stayed"
+          },
+          {
+            "v": "eNPS +20",
+            "l": "team sentiment"
+          },
+          {
+            "v": "still #1 IC",
+            "l": "output intact"
+          }
+        ],
+        "learning": "Talent never excuses a toxic tax. Address it early, and be specific, not general.",
+        "foot": "Specific, kind, two-way, with follow-up. That's the whole feedback muscle in one story.",
+        "dur": 114.329
+      }
+    },
+    {
+      "id": "s10_letgo",
+      "type": "em_q",
+      "in_seconds": 579.191,
+      "out_seconds": 607.708,
+      "props": {
+        "cat": "PEOPLE \u00b7 THE HARD CALL",
+        "title": "Letting someone go",
+        "q": "Tell me about a time you had to let someone go.",
+        "color": "#F5A524",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Own the context",
+            "desc": "Briefly: performance or role fit. Never gossip about the person."
+          },
+          {
+            "node": "A",
+            "title": "Show the runway",
+            "desc": "What you tried first: feedback, a plan, a fair chance."
+          },
+          {
+            "node": "A",
+            "title": "Act with dignity",
+            "desc": "Decisive, humane, by the book. Protect their exit, not just yours."
+          },
+          {
+            "node": "L",
+            "title": "Carry the lesson",
+            "desc": "Earlier feedback? A better hire? Show you learned from it."
+          }
+        ],
+        "trap": "You sound cavalier about firing, or you dodged it until HR forced you.",
+        "signal": "You'll make the hard call, and you'll make it like a human.",
+        "foot": "They're checking you won't keep a bad situation alive out of fear.",
+        "dur": 29.017
+      }
+    },
+    {
+      "id": "s10s_letgo",
+      "type": "em_story",
+      "in_seconds": 608.208,
+      "out_seconds": 714.59,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 THE HARD CALL",
+        "title": "When a good person can't scale with the platform",
+        "color": "#F5A524",
+        "situation": "I had an engineer, Sam, eight years tenured and genuinely loved by the team. But we'd moved to large-scale distributed systems, his skills hadn't kept up, and he was now blocking projects.",
+        "task": "My mandate: resolve it \u2014 humanely, and without pretending it wasn't happening.",
+        "actions": [
+          {
+            "d": "Gave honest feedback and a real development plan \u2014 training, pairing, a scoped role \u2014 over two quarters."
+          },
+          {
+            "d": "Was explicit about the bar and the risk. No false comfort that things were fine."
+          },
+          {
+            "d": "When it wasn't closing, I partnered with HR early and arranged a dignified exit with severance and a strong reference."
+          },
+          {
+            "d": "Protected his dignity \u2014 he told the team himself, on his own terms."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "2 quarters",
+            "l": "a fair, real runway"
+          },
+          {
+            "v": "kept his reference",
+            "l": "and his dignity"
+          },
+          {
+            "v": "\u2191 velocity",
+            "l": "team unblocked"
+          }
+        ],
+        "learning": "Kindness is clarity early, not avoidance that ends in a cliff.",
+        "foot": "You made the call, and you made it like a human. That's exactly the signal.",
+        "dur": 106.882
+      }
+    },
+    {
+      "id": "s11_div2",
+      "type": "em_divider",
+      "in_seconds": 715.09,
+      "out_seconds": 722.026,
+      "props": {
+        "n": 2,
+        "title": "Conflict",
+        "sub": "and influence without authority",
+        "color": "#38BDF8",
+        "dur": 7.436
+      }
+    },
+    {
+      "id": "s12_conflict",
+      "type": "em_q",
+      "in_seconds": 722.526,
+      "out_seconds": 752.594,
+      "props": {
+        "cat": "CONFLICT \u00b7 WITHIN THE TEAM",
+        "title": "Two engineers at war",
+        "q": "Two of your engineers strongly disagree. What do you do?",
+        "color": "#38BDF8",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Get underneath it",
+            "desc": "Talk to each privately; find the real interest, not the position."
+          },
+          {
+            "node": "A",
+            "title": "Reframe to a shared goal",
+            "desc": "Anchor both on the outcome they actually both want."
+          },
+          {
+            "node": "A",
+            "title": "Decide if they can't",
+            "desc": "Facilitate a decision, and make the call yourself if needed."
+          },
+          {
+            "node": "L",
+            "title": "Repair the relationship",
+            "desc": "The goal isn't a winner; it's two people who work together tomorrow."
+          }
+        ],
+        "trap": "You took a side, or you let it fester hoping it would resolve itself.",
+        "signal": "You de-escalate, stay neutral, and can still make a decision.",
+        "foot": "The test: is the team calmer or tenser after you get involved?",
+        "dur": 30.568
+      }
+    },
+    {
+      "id": "s12s_conflict",
+      "type": "em_story",
+      "in_seconds": 753.094,
+      "out_seconds": 866.094,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 CONFLICT",
+        "title": "Two staff engineers, deadlocked for weeks",
+        "color": "#38BDF8",
+        "situation": "Two of my staff engineers had been deadlocked for weeks over a new notifications system \u2014 one wanted synchronous, one wanted asynchronous. The team was paralyzed and quietly picking sides.",
+        "task": "My mandate: unblock the decision without either of them becoming an enemy.",
+        "actions": [
+          {
+            "d": "Met each privately \u2014 the real fears were different: one feared latency, the other feared operational complexity. Both valid."
+          },
+          {
+            "d": "Reframed around the shared goal in a joint doc: reliability at scale, with the actual requirements written down."
+          },
+          {
+            "d": "Ran a time-boxed bake-off with success criteria they both signed off on beforehand."
+          },
+          {
+            "d": "The data pointed to async; I made the final call publicly, and credited both of them by name."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "5 days",
+            "l": "decided, after weeks stuck"
+          },
+          {
+            "v": "both stayed",
+            "l": "no one left angry"
+          },
+          {
+            "v": "99.99%",
+            "l": "the system's uptime"
+          }
+        ],
+        "learning": "Conflict is usually two right people optimizing different things. Surface the interest.",
+        "foot": "Neutral, structured, decisive \u2014 and the relationship survived. That's the whole test.",
+        "dur": 113.5
+      }
+    },
+    {
+      "id": "s13_disagree",
+      "type": "em_q",
+      "in_seconds": 866.594,
+      "out_seconds": 896.082,
+      "props": {
+        "cat": "CONFLICT \u00b7 MANAGING UP",
+        "title": "Disagreeing with leadership",
+        "q": "Tell me about a time you disagreed with your manager.",
+        "color": "#38BDF8",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Pick a real one",
+            "desc": "Something that mattered, not the color of a button."
+          },
+          {
+            "node": "A",
+            "title": "Disagree with data",
+            "desc": "Bring evidence and user or business impact, not just opinion."
+          },
+          {
+            "node": "A",
+            "title": "Commit once decided",
+            "desc": "Say it clearly, then disagree and commit, and mean it."
+          },
+          {
+            "node": "L",
+            "title": "Know when you're wrong",
+            "desc": "Bonus points if the leader was right, and you say so."
+          }
+        ],
+        "trap": "You were a pushover, or you undermined the decision afterward.",
+        "signal": "You have a spine, and you can be an adult about losing a call.",
+        "foot": "They want someone who tells them the truth, then rows in one direction.",
+        "dur": 29.988
+      }
+    },
+    {
+      "id": "s13s_disagree",
+      "type": "em_story",
+      "in_seconds": 896.582,
+      "out_seconds": 1004.856,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 MANAGING UP",
+        "title": "Pushing back on a date that would ship broken",
+        "color": "#38BDF8",
+        "situation": "My director wanted to commit to a hard external launch date for a checkout redesign, tied to a marketing campaign. I believed it was about six weeks too aggressive and would ship broken.",
+        "task": "My mandate: push back honestly, without becoming the blocker in the room.",
+        "actions": [
+          {
+            "d": "Didn't argue in the meeting \u2014 I came back with data: a bottom-up estimate, the top risk areas, and our QA gap."
+          },
+          {
+            "d": "Proposed an alternative, not just an objection: a phased rollout that still hit the marketing beat with a smaller scope."
+          },
+          {
+            "d": "Stated my view clearly once, then said: if we go for the full date, I'm all in. Disagree and commit."
+          },
+          {
+            "d": "The director chose the phased plan \u2014 and I owned the delivery of it."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "hit the date",
+            "l": "phased, not broken"
+          },
+          {
+            "v": "0 P0 bugs",
+            "l": "at launch"
+          },
+          {
+            "v": "+12%",
+            "l": "checkout conversion"
+          }
+        ],
+        "learning": "Bring an alternative, not just an objection. And mean the commit.",
+        "foot": "A spine and professional maturity in one answer \u2014 exactly what managing up needs.",
+        "dur": 108.774
+      }
+    },
+    {
+      "id": "s14_influence",
+      "type": "em_q",
+      "in_seconds": 1005.356,
+      "out_seconds": 1037.267,
+      "props": {
+        "cat": "INFLUENCE \u00b7 CROSS-TEAM",
+        "title": "Influence without authority",
+        "q": "How did you drive a decision across teams you don't own?",
+        "color": "#38BDF8",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Name the stakeholders",
+            "desc": "Who cared, what they wanted, where incentives clashed."
+          },
+          {
+            "node": "A",
+            "title": "Sell the why",
+            "desc": "Build a shared narrative plus data, so it becomes their idea too."
+          },
+          {
+            "node": "A",
+            "title": "Trade and align",
+            "desc": "Find the win-win; give something to get the alignment you need."
+          },
+          {
+            "node": "R",
+            "title": "Land it, credit others",
+            "desc": "Show the decision shipped, and spread the credit widely."
+          }
+        ],
+        "trap": "You \u201cescalated to your VP.\u201d That's borrowing authority, not influence.",
+        "signal": "You can move an org through persuasion, the core senior-EM muscle.",
+        "foot": "The higher the role, the more your power is influence, not your title.",
+        "dur": 32.411
+      }
+    },
+    {
+      "id": "s14s_influence",
+      "type": "em_story",
+      "in_seconds": 1037.767,
+      "out_seconds": 1147.886,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 INFLUENCE",
+        "title": "Three teams, three feature-flag systems, no authority",
+        "color": "#38BDF8",
+        "situation": "Three teams had each built their own feature-flag system. It was wasteful, inconsistent, and had caused two incidents. Nobody owned consolidation, and I had zero authority over the other two teams.",
+        "task": "My mandate \u2014 self-assigned: get all three onto one platform.",
+        "actions": [
+          {
+            "d": "Mapped the stakeholders and their incentives \u2014 one team cared about speed, one about safety, one about cost."
+          },
+          {
+            "d": "Built a shared proposal and a small working prototype that solved each team's single biggest pain point."
+          },
+          {
+            "d": "Traded: I offered to have my team own and staff the platform, if they adopted it."
+          },
+          {
+            "d": "Landed it in an architecture review, and credited the other teams' input publicly."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "3 \u2192 1",
+            "l": "systems consolidated"
+          },
+          {
+            "v": "\u2193 80%",
+            "l": "flag-related incidents"
+          },
+          {
+            "v": "3 teams",
+            "l": "all adopted it"
+          }
+        ],
+        "learning": "Influence is finding the win-win, then doing the unglamorous integration work yourself.",
+        "foot": "You moved an org through persuasion, not your title. That's the senior-EM muscle.",
+        "dur": 110.619
+      }
+    },
+    {
+      "id": "s15_div3",
+      "type": "em_divider",
+      "in_seconds": 1148.386,
+      "out_seconds": 1156.298,
+      "props": {
+        "n": 3,
+        "title": "Delivery",
+        "sub": "shipping when it's on fire",
+        "color": "#34D399",
+        "dur": 8.412
+      }
+    },
+    {
+      "id": "s16_deadline",
+      "type": "em_q",
+      "in_seconds": 1156.798,
+      "out_seconds": 1186.758,
+      "props": {
+        "cat": "DELIVERY \u00b7 THE SLIP",
+        "title": "A project that missed its deadline",
+        "q": "Tell me about a project that slipped or missed a deadline.",
+        "color": "#34D399",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Own it plainly",
+            "desc": "No blaming QA, the PM, or \u201crequirements changed.\u201d"
+          },
+          {
+            "node": "A",
+            "title": "Detect it early",
+            "desc": "How you saw the slip coming and re-planned, not last minute."
+          },
+          {
+            "node": "A",
+            "title": "Communicate up early",
+            "desc": "You raised the risk and options before it blew up."
+          },
+          {
+            "node": "L",
+            "title": "Fix the system",
+            "desc": "What you changed so it can't recur: estimation, scope, staffing."
+          }
+        ],
+        "trap": "A blameless story where nothing was your fault and you learned nothing.",
+        "signal": "You surface bad news early and turn a miss into a durable fix.",
+        "foot": "How you handle a slip matters more than the slip itself.",
+        "dur": 30.46
+      }
+    },
+    {
+      "id": "s16s_deadline",
+      "type": "em_story",
+      "in_seconds": 1187.258,
+      "out_seconds": 1291.72,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 THE SLIP",
+        "title": "The launch that was going to miss by two months",
+        "color": "#34D399",
+        "situation": "We'd committed a major search-relevance launch to the org for the third quarter. Six weeks out, a core dependency team slipped, and it was clear we were going to miss badly.",
+        "task": "My mandate: recover the situation, not just the date.",
+        "actions": [
+          {
+            "d": "Caught it early \u2014 our burn-down stopped adding up, so I flagged it six weeks out, not the week before."
+          },
+          {
+            "d": "Re-planned with the team: cut two non-critical features and parallelized the critical path."
+          },
+          {
+            "d": "Communicated up immediately \u2014 the risk, the new plan, and the trade-offs \u2014 before anyone asked."
+          },
+          {
+            "d": "Set a weekly exec update so leadership was never surprised again."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "2 weeks late",
+            "l": "not eight"
+          },
+          {
+            "v": "0 surprise",
+            "l": "for leadership"
+          },
+          {
+            "v": "+9%",
+            "l": "search relevance shipped"
+          }
+        ],
+        "learning": "The miss is survivable. Hiding it is not. Escalate early, with a plan.",
+        "foot": "You turned a slip into a controlled, communicated recovery. That's what they want.",
+        "dur": 104.962
+      }
+    },
+    {
+      "id": "s17_tradeoff",
+      "type": "em_q",
+      "in_seconds": 1292.22,
+      "out_seconds": 1321.131,
+      "props": {
+        "cat": "DELIVERY \u00b7 PRIORITIES",
+        "title": "A hard trade-off, or saying no",
+        "q": "Tell me about a hard trade-off, or a time you said no.",
+        "color": "#34D399",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Frame the tension",
+            "desc": "Speed versus quality; a feature versus paying down debt."
+          },
+          {
+            "node": "A",
+            "title": "Make criteria explicit",
+            "desc": "Decide on principles and data, not the loudest voice."
+          },
+          {
+            "node": "A",
+            "title": "Say no with a reason",
+            "desc": "Decline clearly, explain the why, offer an alternative."
+          },
+          {
+            "node": "R",
+            "title": "Stand by it",
+            "desc": "Show the outcome, and that you'd defend the call again."
+          }
+        ],
+        "trap": "You tried to please everyone, so nothing was actually prioritized.",
+        "signal": "You can prioritize under pressure and hold the line when it's right.",
+        "foot": "Managers who can't say no ship blurry roadmaps and burned-out teams.",
+        "dur": 29.411
+      }
+    },
+    {
+      "id": "s17s_tradeoff",
+      "type": "em_story",
+      "in_seconds": 1321.631,
+      "out_seconds": 1439.302,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 PRIORITIES",
+        "title": "Saying no to the biggest customer",
+        "color": "#34D399",
+        "situation": "Our largest enterprise customer demanded a custom reporting feature, and sales was pushing hard. Meanwhile, reliability debt had caused three incidents that quarter and was threatening our SLA.",
+        "task": "My mandate: decide where the team's next quarter actually goes.",
+        "actions": [
+          {
+            "d": "Made the criteria explicit \u2014 I laid out the cost of the incidents in churn risk versus the value of one deal."
+          },
+          {
+            "d": "Took it to data: one customer's request, versus SLA breaches affecting hundreds of accounts."
+          },
+          {
+            "d": "Said no to the custom feature, clearly, with the reasoning \u2014 and offered a lighter alternative on the standard roadmap."
+          },
+          {
+            "d": "Held the line with sales and my VP, and put the quarter on reliability."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "3 \u2192 0",
+            "l": "incidents that quarter"
+          },
+          {
+            "v": "99.95%",
+            "l": "SLA restored"
+          },
+          {
+            "v": "kept them",
+            "l": "the customer stayed"
+          }
+        ],
+        "learning": "Saying no with a reason and an alternative builds more trust than a reluctant yes.",
+        "foot": "You prioritized under real pressure and held the line. That's the judgment they test.",
+        "dur": 118.171
+      }
+    },
+    {
+      "id": "s18_incident",
+      "type": "em_q",
+      "in_seconds": 1439.802,
+      "out_seconds": 1469.789,
+      "props": {
+        "cat": "DELIVERY \u00b7 CRISIS",
+        "title": "Leading through an incident",
+        "q": "Walk me through a major outage you led through.",
+        "color": "#34D399",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Set the stakes fast",
+            "desc": "Impact in one line: users, revenue, duration. Then move on."
+          },
+          {
+            "node": "A",
+            "title": "Lead calm, coordinate",
+            "desc": "You ran the response, roles and comms, not solo heroics."
+          },
+          {
+            "node": "A",
+            "title": "Communicate outward",
+            "desc": "Honest, frequent updates to stakeholders during the fire."
+          },
+          {
+            "node": "L",
+            "title": "Blameless postmortem",
+            "desc": "The real leadership: the fix that makes a repeat impossible."
+          }
+        ],
+        "trap": "You personally fixed it at 3am. Heroic, but you led no one.",
+        "signal": "You're the calm center in a crisis, and you build systems, not patches.",
+        "foot": "In an incident they watch one thing: does the room calm down when you speak?",
+        "dur": 30.487
+      }
+    },
+    {
+      "id": "s18s_incident",
+      "type": "em_story",
+      "in_seconds": 1470.289,
+      "out_seconds": 1582.645,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 CRISIS",
+        "title": "Checkout down on Black Friday",
+        "color": "#34D399",
+        "situation": "On Black Friday, checkout started failing. A payment-provider integration degraded, and about fifteen percent of transactions were erroring. We were bleeding revenue by the minute.",
+        "task": "My mandate: lead the response \u2014 as the manager, not the debugger.",
+        "actions": [
+          {
+            "d": "Set stakes and structure fast \u2014 declared a Sev-1, took incident-commander, assigned a comms lead and a debug lead. I did not touch the code."
+          },
+          {
+            "d": "Ran one clear channel and updated stakeholders honestly every fifteen minutes."
+          },
+          {
+            "d": "We failed over to the backup provider within forty minutes to stop the bleeding, then root-caused calmly."
+          },
+          {
+            "d": "Ran a blameless postmortem; the durable fix was an automatic circuit-breaker and failover."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "40 min",
+            "l": "to full mitigation"
+          },
+          {
+            "v": "auto-failover",
+            "l": "shipped the next week"
+          },
+          {
+            "v": "0 repeats",
+            "l": "since"
+          }
+        ],
+        "learning": "In a crisis, your job is to coordinate and communicate \u2014 not to be the hero.",
+        "foot": "Calm center, honest comms, systemic fix. That's the leadership they're scanning for.",
+        "dur": 112.856
+      }
+    },
+    {
+      "id": "s19_div4",
+      "type": "em_divider",
+      "in_seconds": 1583.145,
+      "out_seconds": 1592.716,
+      "props": {
+        "n": 4,
+        "title": "Scale & Self",
+        "sub": "the senior-EM bar",
+        "color": "#A78BFA",
+        "dur": 10.071
+      }
+    },
+    {
+      "id": "s20_scaling",
+      "type": "em_q",
+      "in_seconds": 1593.216,
+      "out_seconds": 1623.969,
+      "props": {
+        "cat": "SCALE \u00b7 TEAM BUILDING",
+        "title": "Building and scaling a team",
+        "q": "Tell me about a time you built or scaled a team.",
+        "color": "#A78BFA",
+        "moves": [
+          {
+            "node": "A",
+            "title": "Hire to a bar",
+            "desc": "Define the bar and raise it. Who you said no to, not just yes."
+          },
+          {
+            "node": "A",
+            "title": "Build for diversity",
+            "desc": "Widen the funnel and structure interviews to reduce bias."
+          },
+          {
+            "node": "A",
+            "title": "Onboard for impact",
+            "desc": "How new hires reached real output fast, ramp not sink-or-swim."
+          },
+          {
+            "node": "R",
+            "title": "Show the health",
+            "desc": "Retention, velocity, promotions. The team outlived the hiring."
+          }
+        ],
+        "trap": "\u201cI hired ten people.\u201d Headcount is not a skill; the bar is.",
+        "signal": "You build durable teams, not just bigger ones.",
+        "foot": "Senior signal: you scale the org, and the quality bar goes up, not down.",
+        "dur": 31.253
+      }
+    },
+    {
+      "id": "s20s_scaling",
+      "type": "em_story",
+      "in_seconds": 1624.469,
+      "out_seconds": 1742.67,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 TEAM BUILDING",
+        "title": "From four engineers to twenty in a year",
+        "color": "#A78BFA",
+        "situation": "We got funding to grow a new infrastructure team from four engineers to twenty in a year. I owned the hiring bar and the culture, under real pressure to just fill seats fast.",
+        "task": "My mandate: scale fast without dropping the bar or building a monoculture.",
+        "actions": [
+          {
+            "d": "Defined the bar explicitly and trained every interviewer \u2014 and I personally reviewed the rejections, not just the offers."
+          },
+          {
+            "d": "Widened the funnel deliberately: partnered with programs for underrepresented candidates and used structured interviews to cut bias."
+          },
+          {
+            "d": "Built real onboarding \u2014 a 30-60-90 plan and a buddy \u2014 so new hires shipped in weeks, not months."
+          },
+          {
+            "d": "Protected the culture with explicit values and fast, early feedback for every new hire."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "4 \u2192 19",
+            "l": "in twelve months"
+          },
+          {
+            "v": "40%",
+            "l": "from underrepresented groups"
+          },
+          {
+            "v": "92%",
+            "l": "one-year retention"
+          }
+        ],
+        "learning": "Headcount is easy. A high bar and a healthy culture at speed is the actual job.",
+        "foot": "You scaled the org and the bar went up, not down. That's the senior signal.",
+        "dur": 118.701
+      }
+    },
+    {
+      "id": "s21_ambiguity",
+      "type": "em_q",
+      "in_seconds": 1743.17,
+      "out_seconds": 1775.055,
+      "props": {
+        "cat": "STRATEGY \u00b7 AMBIGUITY",
+        "title": "Acting with no direction",
+        "q": "Tell me about a time you acted with no clear direction.",
+        "color": "#A78BFA",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Name the fog",
+            "desc": "No spec, no owner, unclear goal. Be honest about the ambiguity."
+          },
+          {
+            "node": "A",
+            "title": "Create the clarity",
+            "desc": "You wrote the doc, set the goal, drew the line to follow."
+          },
+          {
+            "node": "A",
+            "title": "Make a reversible bet",
+            "desc": "Pick a direction, ship small, learn. Don't wait for permission."
+          },
+          {
+            "node": "L",
+            "title": "Bring people with you",
+            "desc": "You aligned the team around the clarity you manufactured."
+          }
+        ],
+        "trap": "You waited for someone above you to tell you what to do.",
+        "signal": "You generate direction instead of consuming it. The leap into leadership.",
+        "foot": "The more senior the role, the more the job IS the ambiguity.",
+        "dur": 32.385
+      }
+    },
+    {
+      "id": "s21s_ambiguity",
+      "type": "em_story",
+      "in_seconds": 1775.555,
+      "out_seconds": 1894.676,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 AMBIGUITY",
+        "title": "\u201cDeveloper productivity is too low\u201d \u2014 go fix it",
+        "color": "#A78BFA",
+        "situation": "My VP said, \u201cdeveloper productivity is too low,\u201d and handed it to me. No spec, no metric, no team. Just a vague, politically charged problem and an expectation that I'd figure it out.",
+        "task": "My mandate: turn a complaint into an actual direction.",
+        "actions": [
+          {
+            "d": "Named the ambiguity and created clarity \u2014 I interviewed thirty engineers and instrumented our build and CI pipeline to find the real bottlenecks."
+          },
+          {
+            "d": "Wrote a one-page strategy with a single north-star metric: time from commit to production."
+          },
+          {
+            "d": "Made a reversible bet \u2014 started with the biggest bottleneck, flaky tests, and shipped a fix in three weeks to show a win."
+          },
+          {
+            "d": "Aligned the org around the one-pager and pulled together a small team to go further."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "3 days \u2192 8 hrs",
+            "l": "commit to production"
+          },
+          {
+            "v": "\u2193 70%",
+            "l": "flaky test failures"
+          },
+          {
+            "v": "org-wide",
+            "l": "the metric was adopted"
+          }
+        ],
+        "learning": "Leaders manufacture direction out of ambiguity instead of waiting for a spec.",
+        "foot": "You generated direction where there was none. That's the leap into real leadership.",
+        "dur": 119.621
+      }
+    },
+    {
+      "id": "s22_failure",
+      "type": "em_q",
+      "in_seconds": 1895.176,
+      "out_seconds": 1926.901,
+      "props": {
+        "cat": "SELF \u00b7 THE MATURITY TEST",
+        "title": "Your biggest failure",
+        "q": "What's the biggest failure of your career?",
+        "color": "#A78BFA",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Pick a real one",
+            "desc": "A genuine failure with real cost, not \u201cI work too hard.\u201d"
+          },
+          {
+            "node": "A",
+            "title": "Own your part fully",
+            "desc": "Your decisions and their consequences. Don't diffuse blame."
+          },
+          {
+            "node": "L",
+            "title": "Extract the lesson",
+            "desc": "The specific principle you now operate by because of it."
+          },
+          {
+            "node": "R",
+            "title": "Prove it changed you",
+            "desc": "A later time you did it differently, and it worked."
+          }
+        ],
+        "trap": "A humblebrag disguised as a failure. Interviewers spot it instantly.",
+        "signal": "You're self-aware, accountable, and you genuinely learn.",
+        "foot": "This is the most important story you'll tell. Have a real one.",
+        "dur": 32.225
+      }
+    },
+    {
+      "id": "s22s_failure",
+      "type": "em_story",
+      "in_seconds": 1927.401,
+      "out_seconds": 2039.995,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 THE MATURITY TEST",
+        "title": "The person I kept too long",
+        "color": "#A78BFA",
+        "situation": "Early as a manager, I had an engineer who was quietly underperforming. I liked him, so I gave him \u201cone more quarter\u201d \u2014 three times, across a whole year. This is a real mistake I own.",
+        "task": "The honest version: I avoided a hard conversation and told myself it was kindness.",
+        "actions": [
+          {
+            "d": "Own it plainly: I dodged the hard conversation because it was uncomfortable, and I dressed it up as being kind."
+          },
+          {
+            "d": "The real cost: two of my strongest engineers burned out covering for him, and one of them left the company."
+          },
+          {
+            "d": "The lesson: tolerating underperformance isn't kindness to anyone \u2014 it's a tax on your best people."
+          },
+          {
+            "d": "How I changed: the next time, I gave clear feedback and a firm 60-day plan in week one, and acted when it didn't close."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "1 great engineer",
+            "l": "lost \u2014 that's on me"
+          },
+          {
+            "v": "60 days",
+            "l": "my rule now, not a year"
+          },
+          {
+            "v": "changed",
+            "l": "how I manage"
+          }
+        ],
+        "learning": "Avoiding a hard conversation is a decision \u2014 and it's usually the wrong one.",
+        "foot": "A real failure, fully owned, with proof you changed. That's the maturity test, passed.",
+        "dur": 113.094
+      }
+    },
+    {
+      "id": "s23_signals",
+      "type": "em_signals",
+      "in_seconds": 2040.495,
+      "out_seconds": 2067.746,
+      "props": {
+        "dur": 27.751
+      }
+    },
+    {
+      "id": "s24_redflags",
+      "type": "em_redflags",
+      "in_seconds": 2068.246,
+      "out_seconds": 2093.132,
+      "props": {
+        "dur": 25.386
+      }
+    },
+    {
+      "id": "s25_matrix",
+      "type": "em_matrix",
+      "in_seconds": 2093.632,
+      "out_seconds": 2121.857,
+      "props": {
+        "dur": 28.725
+      }
+    },
+    {
+      "id": "s26_recap",
+      "type": "em_recap",
+      "in_seconds": 2122.357,
+      "out_seconds": 2165.765,
+      "props": {
+        "items": [
+          "It's one question: how do you lead when it's hard?",
+          "Structure every answer with STAR, plus the Learning.",
+          "Say \u201cI\u201d for your decisions; give the team the credit.",
+          "Two sentences of context, then live in the Action.",
+          "End on a measurable result, and what you learned.",
+          "Prep 12 to 15 real stories in a category matrix."
+        ],
+        "closer": "They're not testing what you did. They're testing how you think.",
+        "dur": 43.908
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "em/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

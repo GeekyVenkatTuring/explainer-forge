@@ -1,0 +1,326 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch17-capacity_capacity",
+   "type": "it_capacity",
+   "in_seconds": 0.0,
+   "out_seconds": 120.936,
+   "props": {
+    "dur": 121.436
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.487,
+   "So how much real,"
+  ],
+  [
+   1.487,
+   4.46,
+   "trustworthy information can a noisy channel\nactually carry?"
+  ],
+  [
+   5.092,
+   8.065,
+   "Shannon gave the answer both a name and"
+  ],
+  [
+   8.065,
+   9.18,
+   "an exact formula."
+  ],
+  [
+   9.18,
+   11.41,
+   "The name is the channel capacity."
+  ],
+  [
+   12.041,
+   13.9,
+   "For our binary symmetric channel,"
+  ],
+  [
+   13.9,
+   15.758,
+   "the capacity C equals one,"
+  ],
+  [
+   15.758,
+   18.36,
+   "minus the entropy of the noise itself."
+  ],
+  [
+   18.36,
+   20.218,
+   "One minus H of p."
+  ],
+  [
+   20.85,
+   22.336,
+   "Look at the curve,"
+  ],
+  [
+   22.336,
+   24.566,
+   "and read off its two ends."
+  ],
+  [
+   25.198,
+   27.428,
+   "When the flip probability is zero,"
+  ],
+  [
+   27.428,
+   28.914,
+   "the wire is flawless,"
+  ],
+  [
+   28.914,
+   30.773,
+   "the noise has zero entropy,"
+  ],
+  [
+   30.773,
+   33.746,
+   "and the capacity is a full one bit"
+  ],
+  [
+   33.746,
+   34.489,
+   "per use."
+  ],
+  [
+   34.489,
+   37.091,
+   "You get out everything you put in."
+  ],
+  [
+   37.723,
+   40.696,
+   "Now slide the noise up toward one half."
+  ],
+  [
+   40.696,
+   41.811,
+   "The capacity falls,"
+  ],
+  [
+   41.811,
+   42.554,
+   "and falls,"
+  ],
+  [
+   42.554,
+   45.527,
+   "until \u2014 at a flip probability of one"
+  ],
+  [
+   45.527,
+   47.386,
+   "half \u2014 it hits zero."
+  ],
+  [
+   48.017,
+   49.876,
+   "And that makes perfect sense."
+  ],
+  [
+   49.876,
+   52.849,
+   "A channel that flips every bit with a"
+  ],
+  [
+   52.849,
+   54.707,
+   "coin toss is pure randomness."
+  ],
+  [
+   54.707,
+   57.681,
+   "Its output has nothing to do with its"
+  ],
+  [
+   57.681,
+   58.052,
+   "input."
+  ],
+  [
+   58.052,
+   59.911,
+   "It carries no information whatsoever."
+  ],
+  [
+   60.542,
+   63.515,
+   "But between those extremes lies the wonderful\npart."
+  ],
+  [
+   63.515,
+   66.489,
+   "Even a genuinely noisy channel \u2014 say one"
+  ],
+  [
+   66.489,
+   69.462,
+   "that corrupts eighteen percent of its bits \u2014"
+  ],
+  [
+   69.462,
+   72.435,
+   "still carries a solid third of a bit"
+  ],
+  [
+   72.435,
+   75.037,
+   "of real information on every single use."
+  ],
+  [
+   75.669,
+   78.642,
+   "And now the theorem that stunned the world"
+  ],
+  [
+   78.642,
+   79.385,
+   "of engineering."
+  ],
+  [
+   79.385,
+   80.872,
+   "Shannon's noisy-channel coding theorem."
+  ],
+  [
+   81.503,
+   84.477,
+   "As long as you transmit at a rate"
+  ],
+  [
+   84.477,
+   85.592,
+   "below the capacity,"
+  ],
+  [
+   85.592,
+   88.565,
+   "you can drive your probability of error as"
+  ],
+  [
+   88.565,
+   90.795,
+   "close to zero as you desire."
+  ],
+  [
+   90.795,
+   92.282,
+   "Not smaller \u2014 arbitrarily,"
+  ],
+  [
+   92.282,
+   95.255,
+   "vanishingly close to zero \u2014 with clever enough"
+  ],
+  [
+   95.255,
+   95.627,
+   "coding."
+  ],
+  [
+   96.258,
+   97.373,
+   "Read that again."
+  ],
+  [
+   97.373,
+   97.745,
+   "Perfect,"
+  ],
+  [
+   97.745,
+   98.488,
+   "reliable communication,"
+  ],
+  [
+   98.488,
+   99.975,
+   "straight through an imperfect,"
+  ],
+  [
+   99.975,
+   100.718,
+   "noisy channel."
+  ],
+  [
+   100.718,
+   103.691,
+   "The ceiling everyone believed in simply does not"
+  ],
+  [
+   103.691,
+   104.063,
+   "exist."
+  ],
+  [
+   104.695,
+   106.925,
+   "But there is a hard edge."
+  ],
+  [
+   106.925,
+   109.155,
+   "Try to transmit above the capacity,"
+  ],
+  [
+   109.155,
+   111.013,
+   "and reliable communication becomes flatly,"
+  ],
+  [
+   111.013,
+   111.756,
+   "provably impossible."
+  ],
+  [
+   112.388,
+   115.361,
+   "Capacity is the true speed limit of every"
+  ],
+  [
+   115.361,
+   115.733,
+   "wire,"
+  ],
+  [
+   115.733,
+   116.476,
+   "every antenna,"
+  ],
+  [
+   116.476,
+   117.963,
+   "every fibre on Earth."
+  ],
+  [
+   117.963,
+   119.449,
+   "Below it lies paradise."
+  ],
+  [
+   119.449,
+   120.193,
+   "Above it,"
+  ],
+  [
+   120.193,
+   120.936,
+   "a wall."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch17-capacity.wav",
+   "volume": 1.0
+  }
+ }
+}

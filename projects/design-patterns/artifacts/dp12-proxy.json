@@ -1,0 +1,1903 @@
+{
+ "cuts": [
+  {
+   "id": "dp12-proxy_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 30.356,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 12",
+    "line1": "Don't load it",
+    "line2": "until someone looks",
+    "sub": "a stand-in that fronts an expensive object and summons it only on demand",
+    "dur": 30.856
+   }
+  },
+  {
+   "id": "dp12-proxy_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 30.856,
+   "out_seconds": 60.396,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "A document full of high-res images",
+    "situation": "A document embeds hundreds of high-resolution images. Each is slow to load and heavy in memory \u2014 but on open, the reader only ever sees the first page.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udcc4",
+      "label": "A long document"
+     },
+     {
+      "emoji": "\ud83d\uddbc\ufe0f",
+      "label": "200 heavy images"
+     },
+     {
+      "emoji": "\ud83d\udc41\ufe0f",
+      "label": "\u2026one page in view"
+     }
+    ],
+    "ask": "How do you open instantly and load only the images actually shown?",
+    "dur": 30.04
+   }
+  },
+  {
+   "id": "dp12-proxy_naive",
+   "type": "dp_code",
+   "in_seconds": 60.896,
+   "out_seconds": 93.883,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "Load them all, up front.",
+    "file": "Document.java",
+    "lines": [
+     {
+      "t": "class Document {"
+     },
+     {
+      "t": "  List<RealImage> images = new ArrayList<>();"
+     },
+     {
+      "t": "  Document(List<String> files) {"
+     },
+     {
+      "t": "    for (String f : files)",
+      "s": "hi"
+     },
+     {
+      "t": "      images.add(new RealImage(f));  // decodes NOW",
+      "s": "hi"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Opening decodes all 200 images \u2014 before a single one is shown.",
+    "dur": 33.487
+   }
+  },
+  {
+   "id": "dp12-proxy_pain",
+   "type": "dp_pain",
+   "in_seconds": 94.383,
+   "out_seconds": 130.365,
+   "props": {
+    "title": "\"Fine \u2014 load them lazily, then.\"",
+    "file": "leaked.java",
+    "lines": [
+     {
+      "t": "void drawPage(int p) {"
+     },
+     {
+      "t": "  for (Image img : pageImages(p)) {"
+     },
+     {
+      "t": "    if (!img.isLoaded()) img.load();  // lazy check\u2026",
+      "s": "hi"
+     },
+     {
+      "t": "    img.draw();"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "// the same guard in getWidth(), export(), print()\u2026",
+      "s": "hi"
+     }
+    ],
+    "smell": "Lazy-loading logic smeared across every caller",
+    "touched": [
+     "every draw() guarded by isLoaded()",
+     "getWidth/getHeight need the same guard",
+     "forget one \u2192 a blank or a crash",
+     "Document now knows about loading"
+    ],
+    "dur": 36.482
+   }
+  },
+  {
+   "id": "dp12-proxy_insight",
+   "type": "dp_insight",
+   "in_seconds": 130.865,
+   "out_seconds": 170.105,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "The client just wants an Image to draw",
+     "Every image has width, height, draw()",
+     "The real image is expensive to load"
+    ],
+    "varies": [
+     "Whether the pixels are loaded yet",
+     "Whether this image is ever shown"
+    ],
+    "principle": "Put a stand-in with the SAME interface in front of the real object; it loads on demand.",
+    "dur": 39.74
+   }
+  },
+  {
+   "id": "dp12-proxy_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 170.605,
+   "out_seconds": 211.413,
+   "props": {
+    "title": "A valet ticket",
+    "emoji": "\ud83c\udf9f\ufe0f",
+    "analogy": "The ticket stands in for your car; the valet fetches the real one only when you present it.",
+    "map": [
+     {
+      "from": "The valet ticket",
+      "to": "the proxy object"
+     },
+     {
+      "from": "Your actual car",
+      "to": "the real, heavy object"
+     },
+     {
+      "from": "\"Bring the car\"",
+      "to": "a method call, e.g. draw()"
+     },
+     {
+      "from": "Fetched only on request",
+      "to": "loaded lazily, on first use"
+     }
+    ],
+    "breaks": "a ticket obviously isn't a car; a good proxy is indistinguishable from the real object through the interface.",
+    "dur": 41.308
+   }
+  },
+  {
+   "id": "dp12-proxy_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 211.913,
+   "out_seconds": 246.742,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "One interface; the real image is heavy",
+    "file": "Image.java",
+    "lines": [
+     {
+      "t": "interface Image {",
+      "s": "add"
+     },
+     {
+      "t": "  void draw();  int width();",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "class RealImage implements Image {"
+     },
+     {
+      "t": "  RealImage(String f) { load(f); }   // heavy!",
+      "s": "hi"
+     },
+     {
+      "t": "  public void draw() { /* blit pixels */ }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Both the real image and its stand-in will implement this one interface.",
+    "dur": 35.329
+   }
+  },
+  {
+   "id": "dp12-proxy_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 247.242,
+   "out_seconds": 282.167,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "The proxy: same interface, no pixels yet",
+    "file": "ImageProxy.java",
+    "lines": [
+     {
+      "t": "class ImageProxy implements Image {",
+      "s": "hi"
+     },
+     {
+      "t": "  private final String file;"
+     },
+     {
+      "t": "  private RealImage real;      // null until needed",
+      "s": "hi"
+     },
+     {
+      "t": "  ImageProxy(String f) { this.file = f; }  // cheap!"
+     },
+     {
+      "t": "  public int width() { return readMeta(file).w; }  // no decode"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Constructing a proxy costs nothing \u2014 it just remembers the filename.",
+    "dur": 35.425
+   }
+  },
+  {
+   "id": "dp12-proxy_try",
+   "type": "dp_try",
+   "in_seconds": 282.667,
+   "out_seconds": 310.843,
+   "props": {
+    "title": "Write the proxy's draw()",
+    "file": "ImageProxy.java",
+    "lines": [
+     {
+      "t": "private RealImage real;   // starts null"
+     },
+     {
+      "t": "public void draw() {"
+     },
+     {
+      "t": "  // \u25af load the RealImage on first draw, then delegate",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "First draw() must create the RealImage; every draw after reuses it.",
+    "hint": "if (real == null) real = new RealImage(file);  real.draw();",
+    "dur": 28.676
+   }
+  },
+  {
+   "id": "dp12-proxy_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 311.343,
+   "out_seconds": 349.437,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "The client holds proxies, unaware",
+    "file": "Document.java",
+    "lines": [
+     {
+      "t": "for (String f : files)",
+      "s": "add"
+     },
+     {
+      "t": "  images.add(new ImageProxy(f));   // instant",
+      "s": "add"
+     },
+     {
+      "t": "// ...opening the document is now free..."
+     },
+     {
+      "t": "void drawPage(int p) {"
+     },
+     {
+      "t": "  for (Image img : pageImages(p))"
+     },
+     {
+      "t": "    img.draw();     // THIS is where loading happens",
+      "s": "hi"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Same Image type, same draw() call \u2014 loading moved inside, out of sight.",
+    "dur": 38.594
+   }
+  },
+  {
+   "id": "dp12-proxy_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 349.937,
+   "out_seconds": 390.356,
+   "props": {
+    "requirement": "\"Open a 200-image report; user reads page 1\"",
+    "naiveLabel": "Eager",
+    "naiveCost": "All 200 decoded on open.",
+    "naiveSteps": [
+     "\u2248 8 s to open",
+     "\u2248 2 GB resident",
+     "199 images never viewed"
+    ],
+    "patLabel": "With proxy",
+    "patCost": "Only what's on screen is ever loaded.",
+    "patFile": "same client code",
+    "patLines": [
+     {
+      "t": "doc.open();          // instant \u2014 all proxies",
+      "s": "add"
+     },
+     {
+      "t": "doc.drawPage(1);     // loads ~3 images",
+      "s": "add"
+     },
+     {
+      "t": "// pages never scrolled to cost nothing",
+      "s": "add"
+     }
+    ],
+    "dur": 40.919
+   }
+  },
+  {
+   "id": "dp12-proxy_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 390.856,
+   "out_seconds": 425.009,
+   "props": {
+    "name": "The Proxy Pattern",
+    "plain": "A stand-in that implements the same interface as a real object and controls access to it \u2014 here, delaying its expensive creation.",
+    "nodes": [
+     {
+      "id": "subj",
+      "title": "Image",
+      "stereo": "interface",
+      "members": [
+       "+ draw() / width()"
+      ],
+      "x": 760,
+      "y": 200,
+      "w": 400,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "real",
+      "title": "RealImage",
+      "stereo": "real subject",
+      "members": [
+       "- pixels (heavy)",
+       "+ draw()"
+      ],
+      "x": 150,
+      "y": 470,
+      "w": 380,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "proxy",
+      "title": "ImageProxy",
+      "stereo": "proxy",
+      "members": [
+       "- real: RealImage",
+       "+ draw(): load,",
+       "  then delegate"
+      ],
+      "x": 1400,
+      "y": 470,
+      "w": 400,
+      "color": "#A78BFA"
+     }
+    ],
+    "edges": [
+     {
+      "from": "real",
+      "to": "subj",
+      "kind": "impl"
+     },
+     {
+      "from": "proxy",
+      "to": "subj",
+      "kind": "impl"
+     },
+     {
+      "from": "proxy",
+      "to": "real",
+      "kind": "has"
+     }
+    ],
+    "dur": 34.653
+   }
+  },
+  {
+   "id": "dp12-proxy_map",
+   "type": "dp_map",
+   "in_seconds": 425.509,
+   "out_seconds": 464.378,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Subject",
+      "your": "interface Image"
+     },
+     {
+      "role": "RealSubject",
+      "your": "RealImage (the costly one)"
+     },
+     {
+      "role": "Proxy",
+      "your": "ImageProxy (stands in)"
+     },
+     {
+      "role": "Client",
+      "your": "Document \u2014 sees only Image"
+     }
+    ],
+    "plain": "The proxy shares the subject's interface and holds the real subject, forwarding calls while adding control: lazy load, access checks, caching, remoting.",
+    "gof": "Provide a surrogate or placeholder for another object to control access to it.",
+    "dur": 39.369
+   }
+  },
+  {
+   "id": "dp12-proxy_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 464.878,
+   "out_seconds": 512.681,
+   "props": {
+    "title": "A stand-in has its own costs",
+    "costs": [
+     "Another class mirroring the full interface",
+     "One more hop on every call",
+     "A 'cheap' call can secretly do I/O"
+    ],
+    "dont": [
+     "The real object is already cheap to make",
+     "You don't need to control access at all",
+     "A plain lazy field would do"
+    ],
+    "signal": "you want to control access to an object \u2014 delay it, guard it, cache it, or reach it remotely \u2014 without the client knowing.",
+    "dur": 48.303
+   }
+  },
+  {
+   "id": "dp12-proxy_recap",
+   "type": "dp_recap",
+   "in_seconds": 513.181,
+   "out_seconds": 565.512,
+   "props": {
+    "title": "Proxy, in one breath",
+    "items": [
+     "Eagerly creating expensive objects wasted time and memory on things no one ever used.",
+     "The client only needs the interface \u2014 so a lightweight stand-in can implement it and defer the real work.",
+     "Proxy: same interface as the real object, holds it, and controls access \u2014 here, creating it lazily on first use."
+    ],
+    "challenge": "You call a slow remote pricing service. You want callers to use it like a local object, but cache each result for 60 seconds.",
+    "question": "Does Proxy fit? What's the subject, the real subject, and what does this proxy control?",
+    "dur": 52.831
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.162,
+   "Some objects are expensive to create."
+  ],
+  [
+   2.793,
+   3.874,
+   "A high-resolution image,"
+  ],
+  [
+   3.874,
+   4.955,
+   "a remote connection,"
+  ],
+  [
+   4.955,
+   7.837,
+   "a large file \u2014 the cost is real,"
+  ],
+  [
+   7.837,
+   10.719,
+   "and often you pay it for objects no"
+  ],
+  [
+   10.719,
+   12.16,
+   "one ever actually uses."
+  ],
+  [
+   12.792,
+   15.674,
+   "What if something could stand in for the"
+  ],
+  [
+   15.674,
+   18.196,
+   "real object \u2014 look exactly like it,"
+  ],
+  [
+   18.196,
+   21.078,
+   "sit exactly where it sits \u2014 and conjure"
+  ],
+  [
+   21.078,
+   21.798,
+   "the real,"
+  ],
+  [
+   21.798,
+   24.681,
+   "expensive thing only at the moment it is"
+  ],
+  [
+   24.681,
+   25.401,
+   "first needed?"
+  ],
+  [
+   26.033,
+   27.834,
+   "That stand-in has a name."
+  ],
+  [
+   27.834,
+   30.356,
+   "Let's build a document full of images."
+  ],
+  [
+   30.856,
+   32.311,
+   "Here is the situation:"
+  ],
+  [
+   32.311,
+   35.221,
+   "a document with hundreds of embedded\nhigh-resolution images."
+  ],
+  [
+   35.853,
+   38.763,
+   "Each image is expensive \u2014 slow to decode,"
+  ],
+  [
+   38.763,
+   39.854,
+   "heavy in memory."
+  ],
+  [
+   40.485,
+   43.032,
+   "But when a reader opens the document,"
+  ],
+  [
+   43.032,
+   44.487,
+   "they see one page."
+  ],
+  [
+   44.487,
+   46.306,
+   "Maybe they scroll a little."
+  ],
+  [
+   46.306,
+   49.216,
+   "Most of those images are never looked at"
+  ],
+  [
+   49.216,
+   50.671,
+   "in a given session."
+  ],
+  [
+   51.302,
+   52.757,
+   "So the question is:"
+  ],
+  [
+   52.757,
+   55.303,
+   "how do you open the document instantly,"
+  ],
+  [
+   55.303,
+   58.213,
+   "and pay to load an image only when"
+  ],
+  [
+   58.213,
+   60.396,
+   "it is actually put on screen?"
+  ],
+  [
+   60.896,
+   62.068,
+   "The direct approach:"
+  ],
+  [
+   62.068,
+   63.63,
+   "when the document loads,"
+  ],
+  [
+   63.63,
+   64.801,
+   "load its images."
+  ],
+  [
+   65.433,
+   68.557,
+   "The constructor walks the list of filenames and,"
+  ],
+  [
+   68.557,
+   69.729,
+   "for each one,"
+  ],
+  [
+   69.729,
+   72.853,
+   "creates a RealImage \u2014 which immediately reads the"
+  ],
+  [
+   72.853,
+   74.805,
+   "file and decodes the pixels."
+  ],
+  [
+   75.437,
+   76.608,
+   "It is simple,"
+  ],
+  [
+   76.608,
+   78.171,
+   "and it is correct."
+  ],
+  [
+   78.802,
+   81.926,
+   "But opening a two-hundred-image document now\ndecodes all"
+  ],
+  [
+   81.926,
+   82.707,
+   "two hundred,"
+  ],
+  [
+   82.707,
+   83.488,
+   "up front,"
+  ],
+  [
+   83.488,
+   86.613,
+   "before the reader has seen a single page."
+  ],
+  [
+   87.244,
+   88.416,
+   "Seconds of delay,"
+  ],
+  [
+   88.416,
+   89.978,
+   "and gigabytes of memory,"
+  ],
+  [
+   89.978,
+   93.102,
+   "spent almost entirely on images no one will"
+  ],
+  [
+   93.102,
+   93.883,
+   "look at."
+  ],
+  [
+   94.383,
+   96.613,
+   "So you make it lazy by hand."
+  ],
+  [
+   96.613,
+   98.207,
+   "Don't load in the constructor;"
+  ],
+  [
+   98.207,
+   99.481,
+   "load on first use."
+  ],
+  [
+   100.113,
+   102.662,
+   "But now every place that touches an image"
+  ],
+  [
+   102.662,
+   105.211,
+   "has to ask the same question first \u2014"
+  ],
+  [
+   105.211,
+   106.485,
+   "is it loaded yet?"
+  ],
+  [
+   106.485,
+   107.122,
+   "If not,"
+  ],
+  [
+   107.122,
+   107.76,
+   "load it,"
+  ],
+  [
+   107.76,
+   108.715,
+   "then use it."
+  ],
+  [
+   109.347,
+   111.259,
+   "That guard shows up in draw."
+  ],
+  [
+   111.259,
+   112.215,
+   "And in getWidth."
+  ],
+  [
+   112.215,
+   113.171,
+   "And in export,"
+  ],
+  [
+   113.171,
+   113.808,
+   "and print."
+  ],
+  [
+   114.439,
+   116.988,
+   "Forget it in one place and you get"
+  ],
+  [
+   116.988,
+   117.944,
+   "a blank image,"
+  ],
+  [
+   117.944,
+   118.9,
+   "or a crash."
+  ],
+  [
+   119.532,
+   122.081,
+   "The lazy-loading logic \u2014 which has nothing to"
+  ],
+  [
+   122.081,
+   124.63,
+   "do with what a document is \u2014 is"
+  ],
+  [
+   124.63,
+   127.179,
+   "now smeared across every method that touches an"
+  ],
+  [
+   127.179,
+   127.497,
+   "image."
+  ],
+  [
+   127.497,
+   130.046,
+   "The client is doing the object's job for"
+  ],
+  [
+   130.046,
+   130.365,
+   "it."
+  ],
+  [
+   130.865,
+   131.924,
+   "What is fixed,"
+  ],
+  [
+   131.924,
+   132.983,
+   "and what varies?"
+  ],
+  [
+   133.615,
+   133.968,
+   "Fixed:"
+  ],
+  [
+   133.968,
+   136.792,
+   "the client just wants something it can treat"
+  ],
+  [
+   136.792,
+   138.91,
+   "as an image \u2014 draw it,"
+  ],
+  [
+   138.91,
+   139.969,
+   "ask its size."
+  ],
+  [
+   139.969,
+   142.087,
+   "Every image has that same interface."
+  ],
+  [
+   142.087,
+   143.146,
+   "And the real,"
+  ],
+  [
+   143.146,
+   144.558,
+   "pixel-loaded image is expensive."
+  ],
+  [
+   145.19,
+   148.014,
+   "What varies is only whether the pixels are"
+  ],
+  [
+   148.014,
+   148.72,
+   "loaded yet,"
+  ],
+  [
+   148.72,
+   151.544,
+   "and whether this particular image is ever shown"
+  ],
+  [
+   151.544,
+   152.25,
+   "at all."
+  ],
+  [
+   152.882,
+   154.294,
+   "Here is the move."
+  ],
+  [
+   154.925,
+   157.749,
+   "Put a lightweight stand-in in front of the"
+  ],
+  [
+   157.749,
+   160.574,
+   "real image \u2014 one that implements the exact"
+  ],
+  [
+   160.574,
+   161.28,
+   "same interface."
+  ],
+  [
+   161.28,
+   163.045,
+   "The client holds the stand-in,"
+  ],
+  [
+   163.045,
+   164.81,
+   "treats it as an image,"
+  ],
+  [
+   164.81,
+   167.634,
+   "and the stand-in quietly loads the real one"
+  ],
+  [
+   167.634,
+   170.105,
+   "the first moment it is genuinely needed."
+  ],
+  [
+   170.605,
+   172.255,
+   "Think of a valet ticket."
+  ],
+  [
+   172.887,
+   174.537,
+   "You hand over your car,"
+  ],
+  [
+   174.537,
+   177.177,
+   "and you get back a small paper ticket."
+  ],
+  [
+   177.808,
+   179.128,
+   "For all practical purposes,"
+  ],
+  [
+   179.128,
+   181.769,
+   "that ticket is your car \u2014 it is"
+  ],
+  [
+   181.769,
+   182.759,
+   "what you hold,"
+  ],
+  [
+   182.759,
+   184.409,
+   "what you present to leave."
+  ],
+  [
+   184.409,
+   187.049,
+   "But the real car is parked somewhere expensive"
+  ],
+  [
+   187.049,
+   187.709,
+   "to reach,"
+  ],
+  [
+   187.709,
+   190.349,
+   "and the valet fetches it only when you"
+  ],
+  [
+   190.349,
+   191.669,
+   "hand over the ticket."
+  ],
+  [
+   192.301,
+   193.951,
+   "The ticket is the proxy."
+  ],
+  [
+   193.951,
+   195.931,
+   "Your actual car is the real,"
+  ],
+  [
+   195.931,
+   196.591,
+   "heavy object."
+  ],
+  [
+   196.591,
+   199.231,
+   "Asking for the car is a method call."
+  ],
+  [
+   199.231,
+   201.871,
+   "And the car is fetched only on request."
+  ],
+  [
+   202.503,
+   203.493,
+   "Where it breaks:"
+  ],
+  [
+   203.493,
+   205.803,
+   "a ticket obviously is not a car."
+  ],
+  [
+   205.803,
+   208.443,
+   "A good software proxy is built so that,"
+  ],
+  [
+   208.443,
+   209.433,
+   "through the interface,"
+  ],
+  [
+   209.433,
+   211.413,
+   "you truly cannot tell the difference."
+  ],
+  [
+   211.913,
+   212.701,
+   "The refactor,"
+  ],
+  [
+   212.701,
+   213.489,
+   "step one."
+  ],
+  [
+   214.12,
+   214.514,
+   "First,"
+  ],
+  [
+   214.514,
+   216.484,
+   "pin down the shared interface."
+  ],
+  [
+   216.484,
+   219.635,
+   "An image is something you can draw and"
+  ],
+  [
+   219.635,
+   222.787,
+   "ask the size of \u2014 that is all"
+  ],
+  [
+   222.787,
+   224.363,
+   "the client ever needs."
+  ],
+  [
+   224.994,
+   227.358,
+   "The RealImage implements it the honest,"
+  ],
+  [
+   227.358,
+   228.146,
+   "expensive way:"
+  ],
+  [
+   228.146,
+   231.297,
+   "its constructor loads and decodes the file\nimmediately,"
+  ],
+  [
+   231.297,
+   233.267,
+   "and draw blits the pixels."
+  ],
+  [
+   233.898,
+   235.474,
+   "Nothing about RealImage changes."
+  ],
+  [
+   235.474,
+   238.626,
+   "It stays exactly as costly as it always"
+  ],
+  [
+   238.626,
+   239.02,
+   "was."
+  ],
+  [
+   239.651,
+   242.803,
+   "The point is only this \u2014 it now"
+  ],
+  [
+   242.803,
+   245.954,
+   "sits behind an interface that something else can"
+  ],
+  [
+   245.954,
+   246.742,
+   "also implement."
+  ],
+  [
+   247.242,
+   248.001,
+   "Step two:"
+  ],
+  [
+   248.001,
+   249.14,
+   "the proxy itself."
+  ],
+  [
+   249.772,
+   252.429,
+   "ImageProxy implements the very same Image\ninterface."
+  ],
+  [
+   252.429,
+   255.467,
+   "But its constructor does almost nothing \u2014 it"
+  ],
+  [
+   255.467,
+   256.985,
+   "just remembers the filename."
+  ],
+  [
+   256.985,
+   258.124,
+   "No file read,"
+  ],
+  [
+   258.124,
+   258.884,
+   "no decode."
+  ],
+  [
+   258.884,
+   260.402,
+   "Creating one is free."
+  ],
+  [
+   261.034,
+   264.071,
+   "It holds a reference to a RealImage that"
+  ],
+  [
+   264.071,
+   265.21,
+   "starts out null,"
+  ],
+  [
+   265.21,
+   268.247,
+   "and stays null until someone genuinely needs the"
+  ],
+  [
+   268.247,
+   268.627,
+   "pixels."
+  ],
+  [
+   269.259,
+   272.296,
+   "And notice \u2014 some questions it can answer"
+  ],
+  [
+   272.296,
+   273.435,
+   "without ever loading."
+  ],
+  [
+   273.435,
+   276.472,
+   "Width and height often live in a tiny"
+  ],
+  [
+   276.472,
+   277.231,
+   "metadata header,"
+  ],
+  [
+   277.231,
+   279.889,
+   "so the proxy can read just that,"
+  ],
+  [
+   279.889,
+   282.167,
+   "and skip decoding the whole image."
+  ],
+  [
+   282.667,
+   284.499,
+   "Your turn \u2014 pause here."
+  ],
+  [
+   285.131,
+   287.696,
+   "The proxy has answered the cheap questions."
+  ],
+  [
+   287.696,
+   289.161,
+   "Now the expensive one:"
+  ],
+  [
+   289.161,
+   289.528,
+   "draw."
+  ],
+  [
+   290.159,
+   292.358,
+   "The first time draw is called,"
+  ],
+  [
+   292.358,
+   295.289,
+   "there are no pixels yet \u2014 so the"
+  ],
+  [
+   295.289,
+   297.121,
+   "proxy must create the RealImage,"
+  ],
+  [
+   297.121,
+   299.32,
+   "paying the load cost exactly once,"
+  ],
+  [
+   299.32,
+   300.053,
+   "right then."
+  ],
+  [
+   300.684,
+   303.616,
+   "Every draw after that should reuse the one"
+  ],
+  [
+   303.616,
+   304.715,
+   "it already made."
+  ],
+  [
+   305.347,
+   306.079,
+   "Write it."
+  ],
+  [
+   306.079,
+   306.812,
+   "Two lines:"
+  ],
+  [
+   306.812,
+   307.912,
+   "create if missing,"
+  ],
+  [
+   307.912,
+   310.843,
+   "then hand the call to the real image."
+  ],
+  [
+   311.343,
+   312.125,
+   "Step three,"
+  ],
+  [
+   312.125,
+   313.688,
+   "and watch the client."
+  ],
+  [
+   314.32,
+   317.447,
+   "The document now fills its list with ImageProxy"
+  ],
+  [
+   317.447,
+   319.01,
+   "objects instead of RealImages."
+  ],
+  [
+   319.01,
+   320.573,
+   "Constructing them is instant,"
+  ],
+  [
+   320.573,
+   323.7,
+   "so opening a two-hundred-image document is\neffectively free."
+  ],
+  [
+   324.332,
+   325.895,
+   "And drawing a page?"
+  ],
+  [
+   325.895,
+   329.022,
+   "The client just calls draw on each image"
+  ],
+  [
+   329.022,
+   332.149,
+   "on that page \u2014 the exact same call"
+  ],
+  [
+   332.149,
+   332.931,
+   "as before."
+  ],
+  [
+   333.562,
+   336.689,
+   "It has no idea some of those images"
+  ],
+  [
+   336.689,
+   337.471,
+   "are proxies."
+  ],
+  [
+   337.471,
+   339.034,
+   "It never checks isLoaded."
+  ],
+  [
+   339.034,
+   340.988,
+   "It never sees the loading."
+  ],
+  [
+   341.62,
+   344.747,
+   "The lazy loading happens inside the draw call,"
+  ],
+  [
+   344.747,
+   347.874,
+   "precisely for the images that page actually shows"
+  ],
+  [
+   347.874,
+   349.437,
+   "\u2014 and nowhere else."
+  ],
+  [
+   349.937,
+   351.051,
+   "Now the payoff,"
+  ],
+  [
+   351.051,
+   351.794,
+   "in numbers."
+  ],
+  [
+   352.426,
+   355.398,
+   "Open a two-hundred-image report and read page one."
+  ],
+  [
+   356.03,
+   356.401,
+   "Eagerly,"
+  ],
+  [
+   356.401,
+   359.373,
+   "that is roughly eight seconds to open and"
+  ],
+  [
+   359.373,
+   362.345,
+   "two gigabytes resident \u2014 to decode a hundred"
+  ],
+  [
+   362.345,
+   365.317,
+   "and ninety-nine images the reader never scrolls\nto."
+  ],
+  [
+   365.949,
+   367.063,
+   "With the proxy,"
+  ],
+  [
+   367.063,
+   368.178,
+   "opening is instant,"
+  ],
+  [
+   368.178,
+   371.15,
+   "because every image is just a proxy holding"
+  ],
+  [
+   371.15,
+   371.893,
+   "a filename."
+  ],
+  [
+   371.893,
+   374.865,
+   "Drawing page one loads the two or three"
+  ],
+  [
+   374.865,
+   376.351,
+   "images actually on it."
+  ],
+  [
+   376.982,
+   379.211,
+   "And here is the quiet beauty:"
+  ],
+  [
+   379.211,
+   382.183,
+   "the client code did not change at all."
+  ],
+  [
+   382.183,
+   385.155,
+   "The exact same draw calls now cost a"
+  ],
+  [
+   385.155,
+   385.898,
+   "tiny fraction,"
+  ],
+  [
+   385.898,
+   388.87,
+   "because the expense moved behind a stand-in that"
+  ],
+  [
+   388.87,
+   390.356,
+   "only pays when asked."
+  ],
+  [
+   390.856,
+   392.653,
+   "This is the Proxy pattern."
+  ],
+  [
+   393.285,
+   394.363,
+   "At the top,"
+  ],
+  [
+   394.363,
+   396.878,
+   "the interface both sides share \u2014 Image."
+  ],
+  [
+   397.51,
+   398.588,
+   "On the left,"
+  ],
+  [
+   398.588,
+   398.948,
+   "RealImage:"
+  ],
+  [
+   398.948,
+   399.666,
+   "the genuine,"
+  ],
+  [
+   399.666,
+   400.385,
+   "expensive object."
+  ],
+  [
+   401.017,
+   402.095,
+   "On the right,"
+  ],
+  [
+   402.095,
+   404.97,
+   "ImageProxy \u2014 and look at its two relationships."
+  ],
+  [
+   404.97,
+   406.048,
+   "It implements Image,"
+  ],
+  [
+   406.048,
+   408.923,
+   "so it is usable anywhere an image is."
+  ],
+  [
+   408.923,
+   411.799,
+   "And it holds a reference to a RealImage,"
+  ],
+  [
+   411.799,
+   414.674,
+   "which it creates lazily and then forwards calls"
+  ],
+  [
+   414.674,
+   415.033,
+   "to."
+  ],
+  [
+   415.665,
+   417.462,
+   "That is the whole shape."
+  ],
+  [
+   417.462,
+   420.337,
+   "A stand-in that looks like the real thing"
+  ],
+  [
+   420.337,
+   421.415,
+   "to the client,"
+  ],
+  [
+   421.415,
+   424.29,
+   "and controls when and how the real thing"
+  ],
+  [
+   424.29,
+   425.009,
+   "is reached."
+  ],
+  [
+   425.509,
+   426.279,
+   "The names,"
+  ],
+  [
+   426.279,
+   427.82,
+   "mapped to your code."
+  ],
+  [
+   428.451,
+   430.762,
+   "The Subject is the Image interface."
+  ],
+  [
+   430.762,
+   432.303,
+   "The RealSubject is RealImage,"
+  ],
+  [
+   432.303,
+   433.458,
+   "the costly object."
+  ],
+  [
+   433.458,
+   434.999,
+   "The Proxy is ImageProxy,"
+  ],
+  [
+   434.999,
+   435.769,
+   "the stand-in."
+  ],
+  [
+   435.769,
+   438.08,
+   "And the Client is the Document,"
+  ],
+  [
+   438.08,
+   440.776,
+   "which only ever sees the Image interface."
+  ],
+  [
+   441.408,
+   444.489,
+   "Ours is a virtual proxy \u2014 it controls"
+  ],
+  [
+   444.489,
+   444.874,
+   "creation,"
+  ],
+  [
+   444.874,
+   446.415,
+   "delaying an expensive object."
+  ],
+  [
+   446.415,
+   448.726,
+   "But the same shape does more."
+  ],
+  [
+   448.726,
+   451.037,
+   "A protection proxy adds access checks."
+  ],
+  [
+   451.037,
+   452.962,
+   "A caching proxy remembers results."
+  ],
+  [
+   452.962,
+   456.043,
+   "A remote proxy stands in for an object"
+  ],
+  [
+   456.043,
+   457.199,
+   "on another machine."
+  ],
+  [
+   457.83,
+   459.371,
+   "The Gang of Four:"
+  ],
+  [
+   459.371,
+   462.452,
+   "provide a surrogate or placeholder for another\nobject"
+  ],
+  [
+   462.452,
+   464.378,
+   "to control access to it."
+  ],
+  [
+   464.878,
+   466.53,
+   "Proxy is not free either."
+  ],
+  [
+   467.162,
+   469.806,
+   "You are writing another class that must mirror"
+  ],
+  [
+   469.806,
+   472.45,
+   "the real object's entire interface \u2014 every method"
+  ],
+  [
+   472.45,
+   472.78,
+   "forwarded."
+  ],
+  [
+   472.78,
+   475.424,
+   "And every call now takes one extra hop"
+  ],
+  [
+   475.424,
+   476.416,
+   "through the stand-in."
+  ],
+  [
+   477.047,
+   479.03,
+   "There is a subtler cost too."
+  ],
+  [
+   479.03,
+   481.674,
+   "A proxy can make an innocent-looking method\nsecretly"
+  ],
+  [
+   481.674,
+   484.318,
+   "expensive \u2014 a call that used to be"
+  ],
+  [
+   484.318,
+   486.962,
+   "instant might now quietly touch the disk or"
+  ],
+  [
+   486.962,
+   487.623,
+   "the network."
+  ],
+  [
+   487.623,
+   490.267,
+   "That can surprise whoever is reading the client."
+  ],
+  [
+   490.898,
+   493.542,
+   "So skip it when the real object is"
+  ],
+  [
+   493.542,
+   494.864,
+   "already cheap to build,"
+  ],
+  [
+   494.864,
+   497.178,
+   "when there is no access to control,"
+  ],
+  [
+   497.178,
+   499.821,
+   "or when a simple lazy field would do"
+  ],
+  [
+   499.821,
+   500.482,
+   "the job."
+  ],
+  [
+   501.114,
+   503.758,
+   "Reach for it when you genuinely need to"
+  ],
+  [
+   503.758,
+   506.402,
+   "control access to an object \u2014 to delay"
+  ],
+  [
+   506.402,
+   506.732,
+   "it,"
+  ],
+  [
+   506.732,
+   507.393,
+   "guard it,"
+  ],
+  [
+   507.393,
+   508.054,
+   "cache it,"
+  ],
+  [
+   508.054,
+   510.698,
+   "or reach it across a network \u2014 without"
+  ],
+  [
+   510.698,
+   512.681,
+   "the client ever knowing the difference."
+  ],
+  [
+   513.181,
+   513.555,
+   "Proxy,"
+  ],
+  [
+   513.555,
+   514.678,
+   "in one breath."
+  ],
+  [
+   515.31,
+   518.304,
+   "Eagerly building expensive objects wasted time and\nmemory"
+  ],
+  [
+   518.304,
+   520.55,
+   "on things no one ever used."
+  ],
+  [
+   521.181,
+   524.176,
+   "But the client only needs the interface \u2014"
+  ],
+  [
+   524.176,
+   527.17,
+   "so a lightweight stand-in can implement it and"
+  ],
+  [
+   527.17,
+   530.165,
+   "defer the real work until it is genuinely"
+  ],
+  [
+   530.165,
+   530.539,
+   "needed."
+  ],
+  [
+   531.17,
+   531.545,
+   "Proxy:"
+  ],
+  [
+   531.545,
+   534.165,
+   "the same interface as the real object,"
+  ],
+  [
+   534.165,
+   535.662,
+   "a reference to it,"
+  ],
+  [
+   535.662,
+   537.908,
+   "and control over access \u2014 here,"
+  ],
+  [
+   537.908,
+   540.154,
+   "creating it lazily on first use."
+  ],
+  [
+   540.785,
+   542.657,
+   "Now one to carry out."
+  ],
+  [
+   543.288,
+   545.908,
+   "You call a slow remote pricing service,"
+  ],
+  [
+   545.908,
+   548.903,
+   "and you want your callers to use it"
+  ],
+  [
+   548.903,
+   551.897,
+   "like an ordinary local object \u2014 but to"
+  ],
+  [
+   551.897,
+   554.143,
+   "cache each result for sixty seconds."
+  ],
+  [
+   554.774,
+   555.897,
+   "Does Proxy fit?"
+  ],
+  [
+   555.897,
+   557.394,
+   "What is the subject,"
+  ],
+  [
+   557.394,
+   559.266,
+   "what is the real subject,"
+  ],
+  [
+   559.266,
+   561.886,
+   "and what exactly does this proxy control?"
+  ],
+  [
+   562.518,
+   562.892,
+   "Pause,"
+  ],
+  [
+   562.892,
+   565.512,
+   "and sketch it before the next episode."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp12-proxy.wav",
+   "volume": 1.0
+  }
+ }
+}

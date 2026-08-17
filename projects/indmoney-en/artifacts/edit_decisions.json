@@ -1,0 +1,630 @@
+{
+  "cuts": [
+    {
+      "id": "idm01_title",
+      "type": "idm_title",
+      "in_seconds": 0.0,
+      "out_seconds": 23.066,
+      "props": {
+        "dur": 23.566
+      }
+    },
+    {
+      "id": "idm02_ask",
+      "type": "idm_steps",
+      "in_seconds": 23.566,
+      "out_seconds": 54.581,
+      "props": {
+        "kicker": "WHAT WE'LL ANSWER",
+        "title": "We'll go in three honest passes",
+        "color": "#2DD4BF",
+        "items": [
+          {
+            "emoji": "\ud83e\udded",
+            "label": "How it works",
+            "sub": "sign-up to first US share",
+            "c": "#2DD4BF"
+          },
+          {
+            "emoji": "\ud83d\udee1\ufe0f",
+            "label": "Is it safe?",
+            "sub": "custody & regulation",
+            "c": "#60A5FA"
+          },
+          {
+            "emoji": "\u2696\ufe0f",
+            "label": "Worth it?",
+            "sub": "costs, rivals, complaints",
+            "c": "#4ADE80"
+          }
+        ],
+        "note": "Then a straight verdict for the money you've already put in \u2014 no hype, no sponsorship.",
+        "dur": 31.515
+      }
+    },
+    {
+      "id": "idm03_div1",
+      "type": "idm_divider",
+      "in_seconds": 55.081,
+      "out_seconds": 65.858,
+      "props": {
+        "n": 1,
+        "title": "How It Works",
+        "sub": "From signing up to your first US share",
+        "color": "#2DD4BF",
+        "dur": 11.277
+      }
+    },
+    {
+      "id": "idm04_what",
+      "type": "idm_cards",
+      "in_seconds": 66.358,
+      "out_seconds": 103.797,
+      "props": {
+        "kicker": "MORE THAN US STOCKS",
+        "title": "INDmoney is a financial super-app",
+        "color": "#2DD4BF",
+        "items": [
+          {
+            "emoji": "\ud83c\uddfa\ud83c\uddf8",
+            "k": "US stocks",
+            "v": "10,000+ US stocks and global ETFs, from just $1 \u2014 the part you're using",
+            "chip": "FRACTIONAL"
+          },
+          {
+            "emoji": "\ud83c\uddee\ud83c\uddf3",
+            "k": "Indian stocks",
+            "v": "A full SEBI-registered broker for Indian shares and mutual funds too",
+            "chip": "INDstocks"
+          },
+          {
+            "emoji": "\ud83d\udcca",
+            "k": "Track it all",
+            "v": "Links your banks, cards and EPF to show your whole net worth in one place",
+            "chip": "MONEY VIEW"
+          },
+          {
+            "emoji": "\ud83c\udfaf",
+            "k": "One login",
+            "v": "The pitch: your entire financial life \u2014 invest, track, plan \u2014 in a single app",
+            "chip": "ALL-IN-ONE"
+          }
+        ],
+        "dur": 37.939
+      }
+    },
+    {
+      "id": "idm05_steps",
+      "type": "idm_steps",
+      "in_seconds": 104.297,
+      "out_seconds": 147.943,
+      "props": {
+        "kicker": "US STOCKS \u00b7 THE FLOW",
+        "title": "From zero to your first US share",
+        "color": "#2DD4BF",
+        "items": [
+          {
+            "emoji": "\ud83d\udcdd",
+            "label": "Sign up + KYC",
+            "sub": "PAN, paperless, ~5 min",
+            "c": "#2DD4BF"
+          },
+          {
+            "emoji": "\ud83d\udcb0",
+            "label": "Add money",
+            "sub": "bank \u2192 wallet, \u20b9\u2192$",
+            "c": "#F59E0B"
+          },
+          {
+            "emoji": "\ud83d\uded2",
+            "label": "Buy",
+            "sub": "fractional, from $1",
+            "c": "#60A5FA"
+          },
+          {
+            "emoji": "\ud83d\udd01",
+            "label": "SIP",
+            "sub": "auto-invest monthly",
+            "c": "#A78BFA"
+          },
+          {
+            "emoji": "\ud83c\udfe7",
+            "label": "Withdraw",
+            "sub": "one tap to your bank",
+            "c": "#4ADE80"
+          }
+        ],
+        "note": "The rupee-to-dollar hop runs on the RBI's LRS \u2014 the app files the paperwork for you.",
+        "dur": 44.146
+      }
+    },
+    {
+      "id": "idm06_stats",
+      "type": "idm_stats",
+      "in_seconds": 148.443,
+      "out_seconds": 183.299,
+      "props": {
+        "kicker": "THE ON-RAMP",
+        "title": "Why beginners start here",
+        "color": "#2DD4BF",
+        "stats": [
+          {
+            "label": "US stocks & ETFs you can buy",
+            "to": 10000,
+            "suffix": "+",
+            "color": "#60A5FA",
+            "sub": "Apple, Nvidia, S&P 500\u2026"
+          },
+          {
+            "label": "Minimum to buy one",
+            "to": 1,
+            "prefix": "$",
+            "color": "#4ADE80",
+            "sub": "fractional \u2014 own a slice"
+          },
+          {
+            "label": "Account & withdrawal fees",
+            "to": 0,
+            "prefix": "\u20b9",
+            "color": "#2DD4BF",
+            "sub": "zero to open, zero to withdraw"
+          }
+        ],
+        "note": "A tiny floor and no account fees \u2014 that low barrier is why it's a popular first app.",
+        "dur": 35.356
+      }
+    },
+    {
+      "id": "idm07_div2",
+      "type": "idm_divider",
+      "in_seconds": 183.799,
+      "out_seconds": 195.103,
+      "props": {
+        "n": 2,
+        "title": "Is It Safe?",
+        "sub": "Who actually holds your shares",
+        "color": "#60A5FA",
+        "dur": 11.804
+      }
+    },
+    {
+      "id": "idm08_pipe",
+      "type": "idm_pipe",
+      "in_seconds": 195.603,
+      "out_seconds": 235.565,
+      "props": {
+        "kicker": "WHERE YOUR SHARES LIVE",
+        "title": "Your money doesn't sit inside INDmoney",
+        "color": "#60A5FA",
+        "nodes": [
+          {
+            "emoji": "\ud83e\uddd1\u200d\ud83d\udcbb",
+            "label": "You",
+            "sub": "KYC in your name",
+            "c": "#2DD4BF"
+          },
+          {
+            "emoji": "\ud83d\udcf1",
+            "label": "INDmoney",
+            "sub": "the app / the pipe",
+            "c": "#60A5FA"
+          },
+          {
+            "emoji": "\ud83c\udfdb\ufe0f",
+            "label": "US broker",
+            "sub": "DriveWealth \u00b7 Alpaca",
+            "c": "#60A5FA"
+          },
+          {
+            "emoji": "\ud83d\udcc8",
+            "label": "Your shares",
+            "sub": "held in your name",
+            "c": "#4ADE80"
+          }
+        ],
+        "note": "The US broker is SEC- and FINRA-regulated. INDmoney is the app \u2014 not the vault your stock sits in.",
+        "dur": 40.462
+      }
+    },
+    {
+      "id": "idm09_safe",
+      "type": "idm_stats",
+      "in_seconds": 236.065,
+      "out_seconds": 282.161,
+      "props": {
+        "kicker": "THE SAFETY NET",
+        "title": "Regulated at both ends",
+        "color": "#4ADE80",
+        "stats": [
+          {
+            "label": "US broker protection (SIPC)",
+            "to": 500000,
+            "prefix": "$",
+            "color": "#4ADE80",
+            "sub": "if the US broker fails"
+          },
+          {
+            "label": "\u2026of which cash is covered",
+            "to": 250000,
+            "prefix": "$",
+            "color": "#60A5FA",
+            "sub": "the rest covers your shares"
+          },
+          {
+            "label": "Regulators overseeing it",
+            "to": 3,
+            "prefix": "",
+            "color": "#2DD4BF",
+            "sub": "SEC \u00b7 FINRA \u00b7 SEBI"
+          }
+        ],
+        "note": "Honest caveat: SIPC covers a broker FAILURE \u2014 NOT your losses if the stock falls.",
+        "dur": 46.596
+      }
+    },
+    {
+      "id": "idm10_div3",
+      "type": "idm_divider",
+      "in_seconds": 282.661,
+      "out_seconds": 296.781,
+      "props": {
+        "n": 3,
+        "title": "What It Costs",
+        "sub": "The fee that hides in plain sight",
+        "color": "#FB7185",
+        "dur": 14.62
+      }
+    },
+    {
+      "id": "idm11_fees",
+      "type": "idm_fees",
+      "in_seconds": 297.281,
+      "out_seconds": 341.48,
+      "props": {
+        "kicker": "WHAT IT COSTS",
+        "title": "Add \u20b91,00,000 \u2014 what actually gets invested?",
+        "gross": 100000,
+        "steps": [
+          {
+            "label": "Forex markup (~1%)",
+            "delta": -1000,
+            "c": "#FB7185",
+            "note": "the \u20b9\u2192$ spread"
+          },
+          {
+            "label": "TCS (>\u20b910L/yr)",
+            "delta": 0,
+            "c": "#A78BFA",
+            "note": "\u20b90 \u2014 you're under \u20b910L"
+          },
+          {
+            "label": "Brokerage (0.25%)",
+            "delta": -250,
+            "c": "#FB7185",
+            "note": "about \u20b9250"
+          },
+          {
+            "label": "Invested",
+            "delta": 0,
+            "c": "#4ADE80",
+            "note": "this buys stock"
+          }
+        ],
+        "note": "The forex markup \u2014 not brokerage \u2014 is your real cost. It hits every rupee you convert.",
+        "dur": 44.699
+      }
+    },
+    {
+      "id": "idm12_costcards",
+      "type": "idm_cards",
+      "in_seconds": 341.98,
+      "out_seconds": 382.363,
+      "props": {
+        "kicker": "THE COSTS, HONESTLY",
+        "title": "Four truths about the price",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "\ud83d\udcb1",
+            "k": "Forex is the real fee",
+            "v": "Roughly 0.5% to 1.5% each way, on every conversion \u2014 INDmoney's true cost",
+            "chip": "~0.5\u20131.5%"
+          },
+          {
+            "emoji": "\ud83d\udd01",
+            "k": "Withdrawing costs too",
+            "v": "Money coming home is converted back \u2014 a second forex markup. Don't do it often",
+            "chip": "DOUBLE FX"
+          },
+          {
+            "emoji": "\ud83e\uddfe",
+            "k": "TCS is refundable",
+            "v": "20% only above \u20b910 lakh a year \u2014 and you claim it back in your tax return",
+            "chip": "REFUNDABLE"
+          },
+          {
+            "emoji": "\ud83d\udc8e",
+            "k": "INDprime is optional",
+            "v": "A ~\u20b999/month membership adds instant funding and perks. You don't need it to start",
+            "chip": "\u20b999/MO"
+          }
+        ],
+        "dur": 40.883
+      }
+    },
+    {
+      "id": "idm13_div4",
+      "type": "idm_divider",
+      "in_seconds": 382.863,
+      "out_seconds": 393.8,
+      "props": {
+        "n": 4,
+        "title": "So \u2014 Worth It?",
+        "sub": "How it stacks up against the rivals",
+        "color": "#2DD4BF",
+        "dur": 11.437
+      }
+    },
+    {
+      "id": "idm14_compare",
+      "type": "idm_compare",
+      "in_seconds": 394.3,
+      "out_seconds": 444.133,
+      "props": {
+        "kicker": "PLATFORMS \u00b7 SIDE BY SIDE",
+        "title": "INDmoney vs Vested vs Interactive Brokers",
+        "color": "#2DD4BF",
+        "cols": [
+          {
+            "name": "INDmoney",
+            "color": "#2DD4BF",
+            "emoji": "\ud83d\udcf1",
+            "hi": true,
+            "rows": [
+              {
+                "k": "FOREX MARKUP",
+                "v": "~0.6\u20131.0% (mid-pack)"
+              },
+              {
+                "k": "BROKERAGE",
+                "v": "0.25% per trade"
+              },
+              {
+                "k": "BEST FOR",
+                "v": "All-in-one beginners"
+              },
+              {
+                "k": "ITS EDGE",
+                "v": "Fast funding, super-app"
+              }
+            ]
+          },
+          {
+            "name": "Vested",
+            "color": "#60A5FA",
+            "emoji": "\ud83e\uddba",
+            "rows": [
+              {
+                "k": "FOREX MARKUP",
+                "v": "~0.9\u20131.2% (pricier)"
+              },
+              {
+                "k": "BROKERAGE",
+                "v": "0.25% per trade"
+              },
+              {
+                "k": "BEST FOR",
+                "v": "US-stocks focus"
+              },
+              {
+                "k": "ITS EDGE",
+                "v": "Curated US baskets"
+              }
+            ]
+          },
+          {
+            "name": "Interactive Brokers",
+            "color": "#4ADE80",
+            "emoji": "\ud83c\udf10",
+            "rows": [
+              {
+                "k": "FOREX MARKUP",
+                "v": "Near-zero (tiny)"
+              },
+              {
+                "k": "BROKERAGE",
+                "v": "~$0.005 / share"
+              },
+              {
+                "k": "BEST FOR",
+                "v": "Large / serious money"
+              },
+              {
+                "k": "ITS EDGE",
+                "v": "Cheapest FX at scale"
+              }
+            ]
+          }
+        ],
+        "dur": 50.333
+      }
+    },
+    {
+      "id": "idm15_verdict",
+      "type": "idm_routes",
+      "in_seconds": 444.633,
+      "out_seconds": 491.207,
+      "props": {
+        "kicker": "THE VERDICT",
+        "title": "Keep it \u2014 or switch?",
+        "left": {
+          "label": "Keep INDmoney if\u2026",
+          "sub": "the beginner's sweet spot",
+          "color": "#4ADE80",
+          "emoji": "\u2705",
+          "items": [
+            "You invest small, regular amounts",
+            "You want one simple all-in-one app",
+            "You're holding for the long term",
+            "Your $100 start \u2014 this is totally fine"
+          ]
+        },
+        "right": {
+          "label": "Look elsewhere if\u2026",
+          "sub": "bigger or busier plans",
+          "color": "#F59E0B",
+          "emoji": "\u26a0\ufe0f",
+          "items": [
+            "You'll remit large sums (\u20b910L+ a year)",
+            "You trade often \u2014 per-trade fees add up",
+            "You want the lowest possible forex cost",
+            "Then compare IBKR, or Vested / Rovia"
+          ]
+        },
+        "dur": 47.074
+      }
+    },
+    {
+      "id": "idm16_div5",
+      "type": "idm_divider",
+      "in_seconds": 491.707,
+      "out_seconds": 501.774,
+      "props": {
+        "n": 5,
+        "title": "The Complaints",
+        "sub": "What real users actually report",
+        "color": "#F59E0B",
+        "dur": 10.567
+      }
+    },
+    {
+      "id": "idm17_complaints",
+      "type": "idm_cards",
+      "in_seconds": 502.274,
+      "out_seconds": 545.498,
+      "props": {
+        "kicker": "WHAT USERS REPORT",
+        "title": "The recurring complaints",
+        "color": "#F59E0B",
+        "items": [
+          {
+            "emoji": "\u23f3",
+            "k": "Slow withdrawals",
+            "v": "The loudest gripe: US-stock withdrawals that took weeks, not the promised days",
+            "chip": "WITHDRAWALS"
+          },
+          {
+            "emoji": "\ud83e\uddca",
+            "k": "Funds stuck",
+            "v": "Money added but not showing \u2014 deposits 'stuck' mid-transfer for a day or more",
+            "chip": "FUNDING"
+          },
+          {
+            "emoji": "\ud83c\udfa7",
+            "k": "Weak support",
+            "v": "Slow, scripted replies; no easy phone or live chat when something goes wrong",
+            "chip": "SUPPORT"
+          },
+          {
+            "emoji": "\ud83d\udc1e",
+            "k": "Bugs & slow KYC",
+            "v": "Occasional failed orders, and account or KYC setups that dragged on for weeks",
+            "chip": "RELIABILITY"
+          }
+        ],
+        "dur": 43.724
+      }
+    },
+    {
+      "id": "idm18_balance",
+      "type": "idm_cards",
+      "in_seconds": 545.998,
+      "out_seconds": 578.115,
+      "props": {
+        "kicker": "KEEP IT IN PROPORTION",
+        "title": "But read the complaints fairly",
+        "color": "#60A5FA",
+        "items": [
+          {
+            "emoji": "\ud83d\udce3",
+            "k": "Angry voices are loud",
+            "v": "Complaint sites collect the furious few. Millions use INDmoney without ever posting a word",
+            "chip": "SELECTION BIAS"
+          },
+          {
+            "emoji": "\u2b50",
+            "k": "The averages are high",
+            "v": "On the official app stores, its rating sits around four stars \u2014 from hundreds of thousands of reviews",
+            "chip": "~4\u2605 \u00b7 MANY"
+          }
+        ],
+        "dur": 32.617
+      }
+    },
+    {
+      "id": "idm19_smart",
+      "type": "idm_steps",
+      "in_seconds": 578.615,
+      "out_seconds": 618.549,
+      "props": {
+        "kicker": "USE IT WISELY",
+        "title": "Four habits that matter more than the app",
+        "color": "#4ADE80",
+        "items": [
+          {
+            "emoji": "\ud83d\udce6",
+            "label": "Invest in chunks",
+            "sub": "fewer, bigger transfers",
+            "c": "#2DD4BF"
+          },
+          {
+            "emoji": "\ud83d\udeab",
+            "label": "Don't hop out",
+            "sub": "avoid the double forex",
+            "c": "#FB7185"
+          },
+          {
+            "emoji": "\ud83e\uddfe",
+            "label": "File Schedule FA",
+            "sub": "declare foreign holdings",
+            "c": "#A78BFA"
+          },
+          {
+            "emoji": "\ud83d\udcf8",
+            "label": "Keep records",
+            "sub": "screenshots, ticket IDs",
+            "c": "#4ADE80"
+          }
+        ],
+        "note": "Do these, and which app you picked matters far less than how you use it.",
+        "dur": 40.434
+      }
+    },
+    {
+      "id": "idm20_recap",
+      "type": "idm_recap",
+      "in_seconds": 619.049,
+      "out_seconds": 688.977,
+      "props": {
+        "title": "INDmoney, honestly, in one breath",
+        "items": [
+          "INDmoney is a legit, SEBI-registered super-app",
+          "US shares sit at a regulated US broker, in your name",
+          "SIPC covers broker failure \u2014 not market losses",
+          "The real cost is forex (~0.5\u20131.5%), not brokerage",
+          "Great for small, long-term, all-in-one investing",
+          "For big sums or active trading, compare IBKR",
+          "Real weak spots: slow withdrawals & thin support"
+        ],
+        "closer": "For your $100 \u2014 keep going, and invest smart.",
+        "dur": 70.428
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "idm/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

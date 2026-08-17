@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/credit-cards-te/assets/c13_title.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/credit-cards-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/credit-cards-te/assets/c13_festival.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/credit-cards-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/credit-cards-te/assets/c13_bt.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/credit-cards-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/credit-cards-te/assets/c13_recap.wav'

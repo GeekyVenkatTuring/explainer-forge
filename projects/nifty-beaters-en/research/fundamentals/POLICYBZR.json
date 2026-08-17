@@ -1,0 +1,107 @@
+{
+ "ticker": "POLICYBZR",
+ "scraped_at": "2026-08-14T15:28:03",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 80634.0,
+ "current_price": 1743.0,
+ "pe": 108.0,
+ "book_value": 158.0,
+ "dividend_yield_pct": 0.0,
+ "roce_pct": 10.3,
+ "roe_pct": 9.75,
+ "face_value": 2.0,
+ "high": 1974.0,
+ "sales_growth": {
+  "10 Years": 22.0,
+  "5 Years": 42.0,
+  "3 Years": 50.0,
+  "TTM": 99.0
+ },
+ "profit_growth": {
+  "3 Years": 34.0,
+  "1 Year": -5.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 666.0,
+  "Expenses&nbsp; +": 743.0,
+  "Operating Profit": -77.0,
+  "OPM %": -12.0,
+  "Other Income&nbsp; +": 91.0,
+  "Interest": 6.0,
+  "Depreciation": 20.0,
+  "Profit before tax": -12.0,
+  "Tax %": 3.0,
+  "Net Profit&nbsp; +": -12.0,
+  "EPS in Rs": -0.25
+ },
+ "price_cagr": {
+  "5 Years": -1.0,
+  "3 Years": 6.0,
+  "Last Year": 10.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "-12%",
+   "-11%",
+   "-3.1%",
+   "0.5%",
+   "-3.9%",
+   "-0.7%",
+   "2.1%",
+   "7%",
+   "2.5%",
+   "6%",
+   "9%",
+   "10%",
+   "7%"
+  ],
+  "eps": [
+   "-0.25",
+   "-0.45",
+   "0.84",
+   "1.34",
+   "1.32",
+   "1.11",
+   "1.56",
+   "3.70",
+   "1.84",
+   "2.94",
+   "4.09",
+   "5.64",
+   "3.52"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company is expected to give good quarter",
+  "Company has delivered good profit growth of 41.9% CAGR over last 5 years",
+  "Company&#x27;s median sales growth is 46.1% of last 10 years",
+  "Company&#x27;s working capital requirements have reduced from 196 days to 141 days"
+ ],
+ "cons": [
+  "Stock is trading at 11.1 times its book value",
+  "Though the company is reporting repeated profits, it is not paying out dividend",
+  "Tax rate seems low",
+  "Company has a low return on equity of 5.63% over last 3 years.",
+  "Earnings include an other income of Rs.370 Cr."
+ ]
+}

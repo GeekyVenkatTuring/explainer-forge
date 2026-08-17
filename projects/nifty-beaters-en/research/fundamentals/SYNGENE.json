@@ -1,0 +1,104 @@
+{
+ "ticker": "SYNGENE",
+ "scraped_at": "2026-08-14T15:29:06",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 16203.0,
+ "current_price": 401.0,
+ "pe": 54.6,
+ "book_value": 120.0,
+ "dividend_yield_pct": 0.31,
+ "roce_pct": 9.99,
+ "roe_pct": 7.78,
+ "face_value": 10.0,
+ "high": 685.0,
+ "sales_growth": {
+  "5 Years": 0.0,
+  "3 Years": -8.0,
+  "TTM": -42.0
+ },
+ "profit_growth": {
+  "10 Years": 7.0,
+  "5 Years": -8.0,
+  "3 Years": -20.0,
+  "1 Year": -40.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 808.1,
+  "Expenses&nbsp; +": 596.2,
+  "Operating Profit": 211.9,
+  "OPM %": 26.22,
+  "Other Income&nbsp; +": 23.6,
+  "Interest": 10.5,
+  "Depreciation": 102.1,
+  "Profit before tax": 122.9,
+  "Tax %": 24.0,
+  "Net Profit&nbsp; +": 93.4,
+  "EPS in Rs": 2.32
+ },
+ "price_cagr": {
+  "5 Years": 11.0,
+  "3 Years": 10.0,
+  "Last Year": 8.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "26.22%",
+   "27.92%",
+   "27.12%",
+   "34.56%",
+   "21.50%",
+   "27.47%",
+   "30.05%",
+   "33.75%",
+   "23.60%",
+   "21.91%",
+   "22.81%",
+   "29.27%",
+   "12.34%"
+  ],
+  "eps": [
+   "2.32",
+   "2.90",
+   "2.77",
+   "4.69",
+   "1.88",
+   "2.64",
+   "3.26",
+   "4.55",
+   "2.15",
+   "1.67",
+   "0.37",
+   "3.67",
+   "-0.22"
+  ]
+ },
+ "pros": [
+  "Company has reduced debt.",
+  "Company is almost debt free."
+ ],
+ "cons": [
+  "Stock is trading at 3.29 times its book value",
+  "The company has delivered a poor sales growth of 11.4% over past five years.",
+  "Company has a low return on equity of 10.1% over last 3 years.",
+  "Dividend payout has been low at 12.0% of profits over last 3 years"
+ ]
+}

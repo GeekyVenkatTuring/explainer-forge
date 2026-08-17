@@ -1,0 +1,944 @@
+{
+  "cuts": [
+    {
+      "id": "gaja_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 28.7,
+      "props": {
+        "title": "Gaja Alternative Asset Management IPO",
+        "sub": "India's first PE/AIF manager to list · ₹550 Cr · 19–21 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 29.2
+      }
+    },
+    {
+      "id": "gaja_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 29.2,
+      "out_seconds": 69.778,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Gaja Capital",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏛️",
+            "k": "A private-equity / AIF manager",
+            "v": "Manages India-focused alternative investment funds — Category I and II AIFs — and advises offshore funds",
+            "chip": "PRIVATE EQUITY"
+          },
+          {
+            "emoji": "🇮🇳",
+            "k": "India's first home-grown PE to list",
+            "v": "Founded 1999 in Mumbai; a mid-market PE firm — the first independent Indian alternative-asset manager to seek a listing",
+            "chip": "A FIRST"
+          },
+          {
+            "emoji": "💸",
+            "k": "Earns fees on assets managed",
+            "v": "Makes money from management & performance fees on the capital it runs — a high-margin, fee-based model",
+            "chip": "FEE MODEL"
+          }
+        ],
+        "dur": 41.078
+      }
+    },
+    {
+      "id": "gaja_fin",
+      "type": "sm_stats",
+      "in_seconds": 70.278,
+      "out_seconds": 107.086,
+      "props": {
+        "kicker": "FINANCIALS",
+        "title": "The Headline Numbers",
+        "stats": [
+          {
+            "label": "Total income FY26",
+            "to": 158,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "₹157.80 Cr · +28% YoY"
+          },
+          {
+            "label": "Net profit FY26",
+            "to": 80,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "₹79.60 Cr · +33.8% YoY"
+          },
+          {
+            "label": "PAT margin",
+            "to": 51.9,
+            "prefix": "",
+            "suffix": "%",
+            "decimals": 1,
+            "color": "#FBBF24",
+            "sub": "exceptional — fee-based model"
+          }
+        ],
+        "note": "A high-margin compounder: income up 28% and profit up ~34% to ₹79.60 Cr, on an outstanding ~52% net margin.",
+        "dur": 37.308
+      }
+    },
+    {
+      "id": "gaja_threestmt",
+      "type": "sm_financials",
+      "in_seconds": 107.586,
+      "out_seconds": 152.46,
+      "props": {
+        "kicker": "FINANCIALS · 3 STATEMENTS",
+        "title": "Income, Balance Sheet & Cash Flow",
+        "color": "#34D399",
+        "cols": [
+          {
+            "name": "Income Statement",
+            "icon": "📊",
+            "accent": "#34D399",
+            "rows": [
+              {
+                "label": "Total income FY26",
+                "val": "₹157.80 Cr",
+                "sub": "FY25 ₹123.28 Cr · +28%"
+              },
+              {
+                "label": "Net profit FY26",
+                "val": "₹79.60 Cr",
+                "hi": true,
+                "sub": "FY25 ₹59.50 Cr · +33.8%"
+              },
+              {
+                "label": "PAT margin",
+                "val": "~51.94%",
+                "sub": "fee-based, high margin"
+              }
+            ]
+          },
+          {
+            "name": "Balance Sheet",
+            "icon": "🏦",
+            "accent": "#FBBF24",
+            "rows": [
+              {
+                "label": "Total borrowings",
+                "val": "₹41.56 Cr",
+                "hi": true,
+                "sub": "FY25 ₹4.00 Cr · D/E 0.07"
+              },
+              {
+                "label": "Sponsor commitments",
+                "val": "~₹274 Cr",
+                "sub": "6.4% of fund corpus"
+              },
+              {
+                "label": "Model",
+                "val": "Asset-light",
+                "sub": "fee income on AUM"
+              }
+            ]
+          },
+          {
+            "name": "Cash Flow",
+            "icon": "💵",
+            "accent": "#38BDF8",
+            "rows": [
+              {
+                "label": "Fresh issue inflow",
+                "val": "₹450 Cr",
+                "sub": "into the company"
+              },
+              {
+                "label": "→ Fund commitments",
+                "val": "₹372 Cr",
+                "hi": true,
+                "sub": "sponsor commits + bridge repay"
+              },
+              {
+                "label": "Operating cash flow",
+                "val": "Not disclosed",
+                "sub": "summary omits it; read RHP"
+              }
+            ]
+          }
+        ],
+        "note": "High-margin income statement & a light balance sheet; the full cash-flow statement isn't in public summaries — read the RHP.",
+        "dur": 45.374
+      }
+    },
+    {
+      "id": "gaja_issue",
+      "type": "sm_stats",
+      "in_seconds": 152.96,
+      "out_seconds": 186.074,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 550,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "band ₹152–160"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 450,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "~82% funds the business"
+          },
+          {
+            "label": "OFS (to promoters)",
+            "to": 100,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "~18% — a small sell-down"
+          }
+        ],
+        "note": "A strong mix: about 82% is fresh money; only ~18% is a promoter sell-down. Promoters hold ~71% pre-issue.",
+        "dur": 33.614
+      }
+    },
+    {
+      "id": "gaja_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 186.574,
+      "out_seconds": 218.728,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹450 Cr Funds",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🤝",
+            "k": "₹372 Cr — sponsor commitments",
+            "v": "Puts the firm's OWN money into its funds alongside investors — 'skin in the game' that aligns interests",
+            "chip": "ALIGNMENT"
+          },
+          {
+            "emoji": "🏦",
+            "k": "Repay a bridge loan",
+            "v": "Part of the same allocation repays a bridge loan, tidying the balance sheet",
+            "chip": "DEBT"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Balance — general corporate",
+            "v": "The remainder supports general corporate purposes as the platform grows",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 32.654
+      }
+    },
+    {
+      "id": "gaja_peers",
+      "type": "sm_iconcards",
+      "in_seconds": 219.228,
+      "out_seconds": 271.854,
+      "props": {
+        "kicker": "COMPETITORS · VALUATION",
+        "title": "How Is It Priced? A One-of-a-Kind Listing",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🔢",
+            "k": "~28× P/E at ₹2,256 Cr value",
+            "v": "At ₹160 the firm is valued near ₹2,256 Cr — about 28 times FY26 earnings. Punchy, but its margins are exceptional",
+            "chip": "~28×"
+          },
+          {
+            "emoji": "🆚",
+            "k": "Listed AMCs aren't the same model",
+            "v": "HDFC AMC and Nippon are MUTUAL-FUND managers with huge, steady AUM; Gaja is a PE firm with lumpier, performance-linked fees",
+            "chip": "DIFFERENT"
+          },
+          {
+            "emoji": "📊",
+            "k": "Judge on AUM growth & fund returns",
+            "v": "For a PE manager, what matters is raising bigger funds and delivering returns — that drives future fees, not this year's P/E",
+            "chip": "AUM ENGINE"
+          }
+        ],
+        "dur": 53.126
+      }
+    },
+    {
+      "id": "gaja_verdict",
+      "type": "sm_myths",
+      "in_seconds": 272.354,
+      "out_seconds": 322.628,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "~28× P/E; PE fees can be lumpy",
+            "f": "Exceptional ~52% net margin; +34% profit"
+          },
+          {
+            "m": "No listed pure-PE peer to benchmark",
+            "f": "~82% fresh; promoters keep most of their stake"
+          },
+          {
+            "m": "Success rides on future fundraising",
+            "f": "India's first home-grown PE listing; skin-in-the-game"
+          }
+        ],
+        "dur": 50.774
+      }
+    },
+    {
+      "id": "gaja_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 323.128,
+      "out_seconds": 362.096,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = about ₹15,000 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 39.468
+      }
+    },
+    {
+      "id": "gaja_recap",
+      "type": "sm_recap",
+      "in_seconds": 362.596,
+      "out_seconds": 427.34,
+      "props": {
+        "title": "Gaja Alternative Asset Management IPO — at a Glance",
+        "items": [
+          "Business: India's first home-grown PE / AIF manager to list",
+          "FY26: income ₹157.80 Cr, profit ₹79.60 Cr (+34%), ~52% margin",
+          "₹550 Cr issue — ~82% fresh; funds sponsor commitments",
+          "~28× P/E; no listed pure-PE peer — judge on fundraising",
+          "Retail min ~₹15,000 · lists 26 Aug"
+        ],
+        "closer": "A high-margin, one-of-a-kind PE listing with the founders keeping most of their stake — but with lumpy fees and no clean peer. Read the RHP; decide for yourself.",
+        "dur": 65.244
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.929,
+      "Let's break down the Gaja Alternative Asset Management I-P-O —"
+    ],
+    [
+      4.929,
+      15.423,
+      "a five hundred and fifty crore issue that's a genuine first: India's own home-grown private-equity firm coming to the public market."
+    ],
+    [
+      15.423,
+      19.08,
+      "We'll cover what it does, its full financials,"
+    ],
+    [
+      19.08,
+      23.532,
+      "where the money goes, how to value a business like this,"
+    ],
+    [
+      23.532,
+      25.44,
+      "and whether it fits you."
+    ],
+    [
+      25.44,
+      28.7,
+      "This is education, not investment advice."
+    ],
+    [
+      29.2,
+      30.877,
+      "So what does Gaja do?"
+    ],
+    [
+      30.877,
+      34.951,
+      "It's an alternative-asset manager — in plain terms,"
+    ],
+    [
+      34.951,
+      36.709,
+      "a private-equity firm."
+    ],
+    [
+      36.709,
+      38.945,
+      "It runs India-focused funds,"
+    ],
+    [
+      38.945,
+      43.259,
+      "the Category one and two alternative investment funds,"
+    ],
+    [
+      43.259,
+      47.971,
+      "and advises offshore funds that invest in Indian companies."
+    ],
+    [
+      47.971,
+      51.885,
+      "It was founded in nineteen ninety-nine in Mumbai,"
+    ],
+    [
+      51.885,
+      56.838,
+      "and here's why this I-P-O matters: it's the first independent,"
+    ],
+    [
+      56.838,
+      61.87,
+      "home-grown Indian private-equity firm to seek a public listing."
+    ],
+    [
+      61.87,
+      67.302,
+      "It earns management and performance fees on the capital it manages —"
+    ],
+    [
+      67.302,
+      69.778,
+      "a high-margin, fee-based model."
+    ],
+    [
+      70.278,
+      71.918,
+      "Now the financials —"
+    ],
+    [
+      71.918,
+      76.016,
+      "and they show why fee-based businesses are prized."
+    ],
+    [
+      76.016,
+      79.705,
+      "Total income rose about twenty-eight percent,"
+    ],
+    [
+      79.705,
+      83.23,
+      "to roughly a hundred and fifty-eight crore."
+    ],
+    [
+      83.23,
+      86.674,
+      "Net profit grew about thirty-four percent,"
+    ],
+    [
+      86.674,
+      88.559,
+      "to around eighty crore."
+    ],
+    [
+      88.559,
+      92.33,
+      "But the number that stands out is the margin —"
+    ],
+    [
+      92.33,
+      95.855,
+      "a net profit margin near fifty-two percent."
+    ],
+    [
+      95.855,
+      98.806,
+      "That's the beauty of an asset-light,"
+    ],
+    [
+      98.806,
+      102.413,
+      "fee-based model: once the funds are running,"
+    ],
+    [
+      102.413,
+      107.086,
+      "a very large share of each rupee of fees drops to profit."
+    ],
+    [
+      107.586,
+      110.553,
+      "Let's put all three statements together."
+    ],
+    [
+      110.553,
+      113.446,
+      "The income statement is the highlight —"
+    ],
+    [
+      113.446,
+      116.561,
+      "a hundred and fifty-eight crore of income,"
+    ],
+    [
+      116.561,
+      120.64,
+      "eighty crore of profit, and a fifty-two percent margin."
+    ],
+    [
+      120.64,
+      122.717,
+      "The balance sheet is light —"
+    ],
+    [
+      122.717,
+      125.906,
+      "modest borrowings of about forty-two crore,"
+    ],
+    [
+      125.906,
+      134.214,
+      "and about two hundred and seventy-four crore of the firm's own money committed alongside investors in its funds."
+    ],
+    [
+      134.214,
+      135.178,
+      "On cash flow,"
+    ],
+    [
+      135.178,
+      139.257,
+      "the fresh issue brings in four hundred and fifty crore,"
+    ],
+    [
+      139.257,
+      146.675,
+      "of which about three hundred and seventy-two crore goes to fund commitments and repay a bridge loan."
+    ],
+    [
+      146.675,
+      151.347,
+      "The operating cash-flow line isn't published in the summaries —"
+    ],
+    [
+      151.347,
+      152.46,
+      "read the R-H-P."
+    ],
+    [
+      152.96,
+      154.903,
+      "Where does your money go?"
+    ],
+    [
+      154.903,
+      158.168,
+      "Of the five hundred and fifty crore issue,"
+    ],
+    [
+      158.168,
+      160.966,
+      "about four hundred and fifty crore —"
+    ],
+    [
+      160.966,
+      164.309,
+      "some eighty-two percent — is a fresh issue,"
+    ],
+    [
+      164.309,
+      166.563,
+      "money going into the company."
+    ],
+    [
+      166.563,
+      170.294,
+      "Only about a hundred crore is an Offer for Sale,"
+    ],
+    [
+      170.294,
+      172.393,
+      "a small promoter sell-down."
+    ],
+    [
+      172.393,
+      175.425,
+      "So this is a strongly fresh-led issue —"
+    ],
+    [
+      175.425,
+      179.855,
+      "most of your money funds the business, and the promoters,"
+    ],
+    [
+      179.855,
+      182.576,
+      "who hold about seventy-one percent,"
+    ],
+    [
+      182.576,
+      186.074,
+      "are keeping the vast majority of their stake."
+    ],
+    [
+      186.574,
+      189.17,
+      "What does the fresh money fund?"
+    ],
+    [
+      189.17,
+      194.026,
+      "The main use — about three hundred and seventy-two crore —"
+    ],
+    [
+      194.026,
+      200.306,
+      "goes to sponsor commitments: the firm putting its OWN money into its funds,"
+    ],
+    [
+      200.306,
+      202.651,
+      "alongside outside investors."
+    ],
+    [
+      202.651,
+      206.754,
+      "That 'skin in the game' is actually a good sign —"
+    ],
+    [
+      206.754,
+      210.522,
+      "it aligns the manager's interests with yours."
+    ],
+    [
+      210.522,
+      214.709,
+      "Part of that allocation also repays a bridge loan,"
+    ],
+    [
+      214.709,
+      218.728,
+      "and the rest goes to general corporate purposes."
+    ],
+    [
+      219.228,
+      220.899,
+      "So how is it priced?"
+    ],
+    [
+      220.899,
+      222.82,
+      "At the top of the band,"
+    ],
+    [
+      222.82,
+      228.333,
+      "Gaja is valued near two thousand two hundred and fifty-six crore —"
+    ],
+    [
+      228.333,
+      232.677,
+      "about twenty-eight times its FY twenty-six earnings."
+    ],
+    [
+      232.677,
+      233.846,
+      "That's punchy,"
+    ],
+    [
+      233.846,
+      237.772,
+      "though its fifty-two percent margins soften it."
+    ],
+    [
+      237.772,
+      238.107,
+      "Now,"
+    ],
+    [
+      238.107,
+      242.951,
+      "be careful with peers: the listed names people reach for —"
+    ],
+    [
+      242.951,
+      247.88,
+      "H-D-F-C A-M-C, Nippon — are mutual-fund managers with huge,"
+    ],
+    [
+      247.88,
+      250.386,
+      "steady assets and stable fees."
+    ],
+    [
+      250.386,
+      254.061,
+      "Gaja is a private-equity firm, with lumpier,"
+    ],
+    [
+      254.061,
+      256.066,
+      "performance-linked fees."
+    ],
+    [
+      256.066,
+      257.486,
+      "Different animal."
+    ],
+    [
+      257.486,
+      259.491,
+      "For a manager like this,"
+    ],
+    [
+      259.491,
+      266.591,
+      "what really matters is whether it can raise bigger funds and deliver strong returns —"
+    ],
+    [
+      266.591,
+      269.348,
+      "that's the engine of future fees,"
+    ],
+    [
+      269.348,
+      271.854,
+      "far more than this year's P/E."
+    ],
+    [
+      272.354,
+      274.296,
+      "So — should you subscribe?"
+    ],
+    [
+      274.296,
+      276.537,
+      "The strengths are attractive —"
+    ],
+    [
+      276.537,
+      279.824,
+      "an exceptional fifty-two percent net margin,"
+    ],
+    [
+      279.824,
+      282.513,
+      "profit up about thirty-four percent,"
+    ],
+    [
+      282.513,
+      284.979,
+      "most of the issue is fresh money,"
+    ],
+    [
+      284.979,
+      288.191,
+      "the promoters keep the bulk of their stake,"
+    ],
+    [
+      288.191,
+      292.299,
+      "and the firm is putting its own capital into its funds."
+    ],
+    [
+      292.299,
+      294.017,
+      "The watch-outs matter —"
+    ],
+    [
+      294.017,
+      310.078,
+      "at twenty-eight times earnings it isn't cheap; private-equity fees can be lumpy and performance-linked; there's no listed pure-PE peer to benchmark against; and future success rides on the firm raising bigger funds."
+    ],
+    [
+      310.078,
+      312.319,
+      "The takeaway — a high-quality,"
+    ],
+    [
+      312.319,
+      315.233,
+      "high-margin first-of-its-kind business,"
+    ],
+    [
+      315.233,
+      321.134,
+      "but one whose earnings and value are harder to pin down than a mutual-fund AMC."
+    ],
+    [
+      321.134,
+      322.628,
+      "Only you can decide."
+    ],
+    [
+      323.128,
+      326.671,
+      "Finally — how do you apply, and how much?"
+    ],
+    [
+      326.671,
+      332.546,
+      "Retail investors bid up to two lakh for a thirty-five percent quota,"
+    ],
+    [
+      332.546,
+      336.348,
+      "with allotment by lottery if oversubscribed."
+    ],
+    [
+      336.348,
+      341.014,
+      "H-N-Is bid above two lakh for a fifteen percent quota."
+    ],
+    [
+      341.014,
+      341.791,
+      "For Gaja,"
+    ],
+    [
+      341.791,
+      347.062,
+      "at a hundred and fifty-two to a hundred and sixty rupee band,"
+    ],
+    [
+      347.062,
+      351.555,
+      "one lot works out to about fifteen thousand rupees —"
+    ],
+    [
+      351.555,
+      352.678,
+      "your minimum."
+    ],
+    [
+      352.678,
+      358.121,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      358.121,
+      362.096,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      362.596,
+      366.337,
+      "Let's recap Gaja Alternative Asset Management."
+    ],
+    [
+      366.337,
+      370.73,
+      "India's first home-grown private-equity firm to list —"
+    ],
+    [
+      370.73,
+      371.868,
+      "a high-margin,"
+    ],
+    [
+      371.868,
+      379.595,
+      "fee-based business with a fifty-two percent net margin and profit up about thirty-four percent."
+    ],
+    [
+      379.595,
+      383.174,
+      "The issue is about eighty-two percent fresh,"
+    ],
+    [
+      383.174,
+      387.241,
+      "funding the firm's own commitments into its funds."
+    ],
+    [
+      387.241,
+      392.04,
+      "The caveats — it's priced near twenty-eight times earnings,"
+    ],
+    [
+      392.04,
+      396.432,
+      "PE fees are lumpy, and there's no listed pure-PE peer,"
+    ],
+    [
+      396.432,
+      399.604,
+      "so success rides on future fundraising."
+    ],
+    [
+      399.604,
+      403.834,
+      "The retail minimum is about fifteen thousand rupees."
+    ],
+    [
+      403.834,
+      407.738,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      407.738,
+      410.015,
+      "it is not investment advice,"
+    ],
+    [
+      410.015,
+      412.699,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      412.699,
+      415.79,
+      "and not a prediction of listing gains."
+    ],
+    [
+      415.79,
+      420.101,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      420.101,
+      425.713,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      425.713,
+      427.34,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/gaja.wav",
+      "volume": 1.0
+    }
+  }
+}

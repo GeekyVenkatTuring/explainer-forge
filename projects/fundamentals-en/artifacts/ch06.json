@@ -1,0 +1,859 @@
+{
+ "cuts": [
+  {
+   "id": "ch06_s01_divider",
+   "type": "fa_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 19.798,
+   "props": {
+    "n": 6,
+    "title": "Growth & Quality",
+    "sub": "is the growth real \u2014 and does it become cash?",
+    "color": "#38BDF8",
+    "total": 7,
+    "dur": 20.298
+   }
+  },
+  {
+   "id": "ch06_s02_ramp",
+   "type": "fa_bars",
+   "in_seconds": 20.298,
+   "out_seconds": 53.846,
+   "props": {
+    "kicker": "GROWTH \u00b7 ARDEE'S REVENUE",
+    "title": "Three years of revenue",
+    "unit": "",
+    "decimals": 0,
+    "bars": [
+     {
+      "label": "FY24",
+      "val": 463,
+      "c": "#38BDF8",
+      "note": "\u20b9463 Cr"
+     },
+     {
+      "label": "FY25",
+      "val": 743,
+      "c": "#2DD4BF",
+      "note": "\u20b9743 Cr"
+     },
+     {
+      "label": "FY26",
+      "val": 1168,
+      "c": "#34D399",
+      "note": "\u20b91,168 Cr"
+     }
+    ],
+    "note": "Revenue more than doubled in two years \u2014 a compound annual growth rate of about 57%.",
+    "color": "#38BDF8",
+    "dur": 34.048
+   }
+  },
+  {
+   "id": "ch06_s03_cagr",
+   "type": "fa_keyidea",
+   "in_seconds": 54.346,
+   "out_seconds": 94.852,
+   "props": {
+    "kicker": "THE SMOOTHED RATE \u00b7 CAGR",
+    "color": "#38BDF8",
+    "big": "CAGR is the one steady yearly rate that connects the start to the end.",
+    "sub": "It smooths bumpy years into a single 'speed'. Ardee's revenue CAGR is about 57% a year.",
+    "dur": 41.006
+   }
+  },
+  {
+   "id": "ch06_s04_quality",
+   "type": "fa_keyidea",
+   "in_seconds": 95.352,
+   "out_seconds": 135.138,
+   "props": {
+    "kicker": "THE CATCH \u00b7 QUALITY OF GROWTH",
+    "color": "#2DD4BF",
+    "big": "Growth is only good if it earns more than it costs \u2014 and turns into cash.",
+    "sub": "Chasing revenue with heavy debt and no cash profit is how fast-growing companies go bust.",
+    "dur": 40.286
+   }
+  },
+  {
+   "id": "ch06_s05_fcf",
+   "type": "fa_formula",
+   "in_seconds": 135.638,
+   "out_seconds": 176.506,
+   "props": {
+    "kicker": "QUALITY 1 \u00b7 FREE CASH FLOW",
+    "title": "The cash left after keeping the lights on",
+    "name": "Free cash flow  =  Operating cash flow  \u2212  Capital spending",
+    "num": [
+     {
+      "label": "Operating cash flow",
+      "val": 110,
+      "c": "#34D399"
+     }
+    ],
+    "den": [
+     {
+      "label": "Capex",
+      "val": 70,
+      "c": "#F87171"
+     }
+    ],
+    "op": "\u2212",
+    "result": {
+     "label": "Free cash flow \u2014 truly surplus cash",
+     "val": 40,
+     "unit": "\u20b9 Cr",
+     "decimals": 0,
+     "c": "#34D399"
+    },
+    "note": "Illustrative. Fast-growing firms spend heavily on capacity, so FCF is often thin \u2014 that's fine, if intentional.",
+    "color": "#34D399",
+    "dur": 41.368
+   }
+  },
+  {
+   "id": "ch06_s06_conversion",
+   "type": "fa_keyidea",
+   "in_seconds": 177.006,
+   "out_seconds": 216.744,
+   "props": {
+    "kicker": "QUALITY 2 \u00b7 CASH CONVERSION",
+    "color": "#A78BFA",
+    "big": "Does the paper profit actually show up as cash in the bank?",
+    "sub": "Compare cash from operations to net profit. A healthy business converts most of its profit to cash.",
+    "dur": 40.238
+   }
+  },
+  {
+   "id": "ch06_s07_workcap",
+   "type": "fa_keyidea",
+   "in_seconds": 217.244,
+   "out_seconds": 261.302,
+   "props": {
+    "kicker": "QUALITY 3 \u00b7 WORKING CAPITAL",
+    "color": "#38BDF8",
+    "big": "Working capital is the cash trapped in day-to-day operations.",
+    "sub": "Money stuck in unpaid invoices and unsold stock. The less trapped, the healthier the business.",
+    "dur": 44.558
+   }
+  },
+  {
+   "id": "ch06_s08_checklist",
+   "type": "fa_keyidea",
+   "in_seconds": 261.802,
+   "out_seconds": 298.036,
+   "props": {
+    "kicker": "PUTTING QUALITY TOGETHER",
+    "color": "#34D399",
+    "big": "Great quality = growing, high returns, converts profit to cash, low debt.",
+    "sub": "Ardee scores well on growth and returns; the things to watch are its cash conversion and debt.",
+    "dur": 36.734
+   }
+  },
+  {
+   "id": "ch06_s09_recap",
+   "type": "fa_recap",
+   "in_seconds": 298.536,
+   "out_seconds": 344.562,
+   "props": {
+    "kicker": "RECAP \u00b7 CHAPTER 6",
+    "title": "Growth & quality in one breath",
+    "items": [
+     "CAGR = the single smoothed yearly growth rate",
+     "Ardee revenue: \u20b9463 \u2192 \u20b9743 \u2192 \u20b91,168 Cr (~57% CAGR)",
+     "Growth only counts if it beats the cost of capital",
+     "Free cash flow = operating cash \u2212 capex (real surplus)",
+     "Cash conversion: does profit become cash? (the lie-detector)",
+     "Working capital = cash trapped in receivables + stock",
+     "Quality = growing + high returns + cash + low debt"
+    ],
+    "closer": "You now have every tool. Next: read a whole company with them.",
+    "color": "#38BDF8",
+    "dur": 46.526
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.1,
+   "Chapter six."
+  ],
+  [
+   1.1,
+   1.65,
+   "Growth,"
+  ],
+  [
+   1.65,
+   2.75,
+   "and quality."
+  ],
+  [
+   3.3,
+   4.4,
+   "A cheap,"
+  ],
+  [
+   4.4,
+   8.799,
+   "well-run company is only exciting if it's also"
+  ],
+  [
+   8.799,
+   9.899,
+   "going somewhere."
+  ],
+  [
+   9.899,
+   12.649,
+   "So now we measure growth."
+  ],
+  [
+   12.649,
+   16.498,
+   "And then we ask the harder question."
+  ],
+  [
+   16.498,
+   19.798,
+   "Is that growth actually worth anything?"
+  ],
+  [
+   20.298,
+   23.293,
+   "Let's start with the good news."
+  ],
+  [
+   23.293,
+   23.792,
+   "Growth."
+  ],
+  [
+   24.342,
+   27.837,
+   "Here is Ardee's revenue over three years."
+  ],
+  [
+   27.837,
+   30.333,
+   "Four hundred sixty three crore,"
+  ],
+  [
+   30.333,
+   32.33,
+   "then seven forty three,"
+  ],
+  [
+   32.33,
+   34.326,
+   "then eleven sixty eight."
+  ],
+  [
+   34.876,
+   36.873,
+   "In just two years,"
+  ],
+  [
+   36.873,
+   39.369,
+   "revenue has more than doubled."
+  ],
+  [
+   39.369,
+   41.865,
+   "Its profit grew even faster,"
+  ],
+  [
+   41.865,
+   44.86,
+   "from nine crore to eighty five."
+  ],
+  [
+   44.86,
+   47.856,
+   "That is a seriously fast-growing company."
+  ],
+  [
+   47.856,
+   51.849,
+   "But how do we describe that growth in"
+  ],
+  [
+   51.849,
+   52.848,
+   "a single,"
+  ],
+  [
+   52.848,
+   53.846,
+   "fair number?"
+  ],
+  [
+   54.346,
+   56.153,
+   "Growth is never smooth."
+  ],
+  [
+   56.153,
+   57.509,
+   "Some years jump,"
+  ],
+  [
+   57.509,
+   58.864,
+   "some years dip."
+  ],
+  [
+   59.414,
+   61.221,
+   "So we use CAGR."
+  ],
+  [
+   61.221,
+   63.48,
+   "The compound annual growth rate."
+  ],
+  [
+   63.48,
+   66.643,
+   "Think of it as one steady speed."
+  ],
+  [
+   67.193,
+   70.808,
+   "It's the single yearly rate that would take"
+  ],
+  [
+   70.808,
+   74.422,
+   "you from the starting number to the ending"
+  ],
+  [
+   74.422,
+   74.874,
+   "number,"
+  ],
+  [
+   74.874,
+   77.133,
+   "if growth were perfectly smooth."
+  ],
+  [
+   77.133,
+   78.489,
+   "For Ardee's revenue,"
+  ],
+  [
+   78.489,
+   82.103,
+   "that rate is about fifty seven percent a"
+  ],
+  [
+   82.103,
+   82.555,
+   "year."
+  ],
+  [
+   83.105,
+   86.719,
+   "CAGR lets you compare the growth of any"
+  ],
+  [
+   86.719,
+   87.623,
+   "two companies,"
+  ],
+  [
+   87.623,
+   89.43,
+   "over any time period,"
+  ],
+  [
+   89.43,
+   91.237,
+   "on a level field."
+  ],
+  [
+   91.237,
+   94.852,
+   "Just always check how many years it covers."
+  ],
+  [
+   95.352,
+   99.073,
+   "But here is the trap that catches beginners."
+  ],
+  [
+   99.623,
+   102.413,
+   "Not all growth is good growth."
+  ],
+  [
+   102.413,
+   106.134,
+   "A company can grow revenue quickly by selling"
+  ],
+  [
+   106.134,
+   106.599,
+   "cheaply,"
+  ],
+  [
+   106.599,
+   108.924,
+   "or by piling on debt."
+  ],
+  [
+   109.474,
+   112.73,
+   "That kind of growth actually destroys value,"
+  ],
+  [
+   112.73,
+   115.985,
+   "just like we saw in chapter three."
+  ],
+  [
+   115.985,
+   119.706,
+   "Good growth has to clear the cost of"
+  ],
+  [
+   119.706,
+   120.171,
+   "capital."
+  ],
+  [
+   120.171,
+   123.891,
+   "And it has to turn into real cash."
+  ],
+  [
+   124.441,
+   128.162,
+   "Fast growth with no cash and rising debt"
+  ],
+  [
+   128.162,
+   131.882,
+   "is exactly how exciting companies quietly go\nbankrupt."
+  ],
+  [
+   131.882,
+   135.138,
+   "So growth always needs a quality check."
+  ],
+  [
+   135.638,
+   139.295,
+   "The most honest measure of quality is free"
+  ],
+  [
+   139.295,
+   140.209,
+   "cash flow."
+  ],
+  [
+   140.759,
+   144.416,
+   "Start with the cash the business actually generated"
+  ],
+  [
+   144.416,
+   145.33,
+   "from operations."
+  ],
+  [
+   145.33,
+   148.987,
+   "Then subtract what it must spend on new"
+  ],
+  [
+   148.987,
+   150.358,
+   "plants and machines,"
+  ],
+  [
+   150.358,
+   151.272,
+   "called capex."
+  ],
+  [
+   151.272,
+   154.015,
+   "What's left is free cash flow."
+  ],
+  [
+   154.015,
+   155.386,
+   "Truly surplus money."
+  ],
+  [
+   155.936,
+   159.593,
+   "For a company expanding as fast as Ardee,"
+  ],
+  [
+   159.593,
+   163.25,
+   "a lot of cash goes straight back into"
+  ],
+  [
+   163.25,
+   164.164,
+   "new capacity."
+  ],
+  [
+   164.164,
+   167.821,
+   "So free cash flow is thin right now."
+  ],
+  [
+   167.821,
+   168.735,
+   "That's acceptable,"
+  ],
+  [
+   168.735,
+   172.392,
+   "as long as it's a choice to grow,"
+  ],
+  [
+   172.392,
+   176.049,
+   "and not a sign the profit was never"
+  ],
+  [
+   176.049,
+   176.506,
+   "real."
+  ],
+  [
+   177.006,
+   180.053,
+   "Remember our line from chapter one?"
+  ],
+  [
+   180.603,
+   182.634,
+   "Profit is an opinion."
+  ],
+  [
+   182.634,
+   184.666,
+   "Cash is a fact."
+  ],
+  [
+   184.666,
+   187.713,
+   "This is where we test it."
+  ],
+  [
+   188.263,
+   192.326,
+   "We compare the cash a company generated from"
+  ],
+  [
+   192.326,
+   195.373,
+   "operations against the profit it reported."
+  ],
+  [
+   195.373,
+   199.435,
+   "A healthy business turns most of its profit"
+  ],
+  [
+   199.435,
+   200.959,
+   "into actual cash."
+  ],
+  [
+   201.509,
+   203.54,
+   "If profit keeps rising,"
+  ],
+  [
+   203.54,
+   205.572,
+   "but cash doesn't follow,"
+  ],
+  [
+   205.572,
+   207.095,
+   "something is wrong."
+  ],
+  [
+   207.095,
+   209.126,
+   "Maybe customers aren't paying,"
+  ],
+  [
+   209.126,
+   212.173,
+   "or unsold stock is piling up."
+  ],
+  [
+   212.173,
+   216.236,
+   "Cash conversion is the lie-detector of the income"
+  ],
+  [
+   216.236,
+   216.744,
+   "statement."
+  ],
+  [
+   217.244,
+   220.273,
+   "There's one more place cash hides."
+  ],
+  [
+   220.273,
+   221.283,
+   "Working capital."
+  ],
+  [
+   221.833,
+   225.872,
+   "Every business has money tied up in the"
+  ],
+  [
+   225.872,
+   226.881,
+   "everyday cycle."
+  ],
+  [
+   226.881,
+   229.406,
+   "Stock sitting in the warehouse."
+  ],
+  [
+   229.406,
+   231.93,
+   "Invoices customers haven't paid yet."
+  ],
+  [
+   232.48,
+   235.509,
+   "That trapped cash is working capital."
+  ],
+  [
+   235.509,
+   238.538,
+   "We even measure it in days."
+  ],
+  [
+   238.538,
+   241.567,
+   "How many days until customers pay?"
+  ],
+  [
+   241.567,
+   245.606,
+   "How many days does stock sit before it"
+  ],
+  [
+   245.606,
+   246.111,
+   "sells?"
+  ],
+  [
+   246.661,
+   250.7,
+   "The faster a company collects its cash and"
+  ],
+  [
+   250.7,
+   252.215,
+   "turns its stock,"
+  ],
+  [
+   252.215,
+   254.739,
+   "the less money is trapped,"
+  ],
+  [
+   254.739,
+   257.263,
+   "and the healthier it is."
+  ],
+  [
+   257.263,
+   259.283,
+   "For a commodity business,"
+  ],
+  [
+   259.283,
+   261.302,
+   "this discipline is everything."
+  ],
+  [
+   261.802,
+   264.725,
+   "So let's define a quality business."
+  ],
+  [
+   265.275,
+   266.249,
+   "It's growing."
+  ],
+  [
+   266.249,
+   269.171,
+   "It earns high returns on capital."
+  ],
+  [
+   269.171,
+   272.094,
+   "It turns its profit into cash."
+  ],
+  [
+   272.094,
+   275.991,
+   "And it doesn't rely too heavily on debt."
+  ],
+  [
+   276.541,
+   278.002,
+   "By that scorecard,"
+  ],
+  [
+   278.002,
+   281.899,
+   "Ardee is genuinely strong on growth and returns."
+  ],
+  [
+   281.899,
+   285.796,
+   "The two things to keep watching are whether"
+  ],
+  [
+   285.796,
+   288.718,
+   "its profit is converting to cash,"
+  ],
+  [
+   288.718,
+   291.641,
+   "and whether its debt keeps falling."
+  ],
+  [
+   292.191,
+   296.088,
+   "Growth plus quality is the rarest and most"
+  ],
+  [
+   296.088,
+   298.036,
+   "valuable combination in investing."
+  ],
+  [
+   298.536,
+   300.896,
+   "Let's lock in chapter six."
+  ],
+  [
+   301.446,
+   305.223,
+   "CAGR smooths bumpy growth into one steady rate."
+  ],
+  [
+   305.223,
+   309.0,
+   "Ardee's revenue has compounded at about fifty seven"
+  ],
+  [
+   309.0,
+   309.472,
+   "percent."
+  ],
+  [
+   309.472,
+   313.249,
+   "But growth only matters if it beats the"
+  ],
+  [
+   313.249,
+   314.665,
+   "cost of capital,"
+  ],
+  [
+   314.665,
+   316.081,
+   "and becomes cash."
+  ],
+  [
+   316.631,
+   318.047,
+   "Free cash flow,"
+  ],
+  [
+   318.047,
+   318.991,
+   "cash conversion,"
+  ],
+  [
+   318.991,
+   322.768,
+   "and working capital are the three tests of"
+  ],
+  [
+   322.768,
+   323.24,
+   "quality."
+  ],
+  [
+   323.24,
+   326.545,
+   "Ardee is strong on growth and returns,"
+  ],
+  [
+   326.545,
+   330.322,
+   "with cash conversion and debt as the things"
+  ],
+  [
+   330.322,
+   331.266,
+   "to watch."
+  ],
+  [
+   331.816,
+   335.592,
+   "You now hold every tool in the kit."
+  ],
+  [
+   335.592,
+   337.481,
+   "In our final chapter,"
+  ],
+  [
+   337.481,
+   340.313,
+   "we'll use all of them together,"
+  ],
+  [
+   340.313,
+   341.729,
+   "on one company,"
+  ],
+  [
+   341.729,
+   343.146,
+   "start to finish."
+  ],
+  [
+   343.146,
+   344.562,
+   "Thanks for watching."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "fa/ch06.wav",
+   "volume": 1.0
+  }
+ }
+}

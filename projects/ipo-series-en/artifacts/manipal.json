@@ -1,0 +1,707 @@
+{
+  "cuts": [
+    {
+      "id": "manipal_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 30.956,
+      "props": {
+        "title": "Manipal Health IPO",
+        "sub": "India's biggest hospital IPO · ₹9,275 Cr · 29–31 Jul 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 31.456
+      }
+    },
+    {
+      "id": "manipal_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 31.456,
+      "out_seconds": 70.378,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Manipal Health",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "🏥",
+            "k": "A large hospital network",
+            "v": "One of India's largest multispeciality hospital chains, running a network of hospitals across the country",
+            "chip": "HOSPITALS"
+          },
+          {
+            "emoji": "🩺",
+            "k": "Full-service healthcare",
+            "v": "From complex quaternary care to diagnostics and pharmacies — a strong, trusted brand, especially in South and West India",
+            "chip": "FULL-STACK"
+          },
+          {
+            "emoji": "🏦",
+            "k": "Marquee ownership",
+            "v": "Backed by big global investors — Temasek is the promoter, with TPG and Novo Holdings among the shareholders",
+            "chip": "BIG BACKERS"
+          }
+        ],
+        "dur": 39.422
+      }
+    },
+    {
+      "id": "manipal_fin",
+      "type": "sm_stats",
+      "in_seconds": 70.878,
+      "out_seconds": 107.978,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 10521,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "≈ ₹10,520.52 Cr"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 917,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "≈ ₹916.52 Cr — solidly profitable"
+          },
+          {
+            "label": "Valuation",
+            "to": 77600,
+            "prefix": "~₹",
+            "suffix": " Cr",
+            "color": "#FB7185",
+            "sub": "at the ₹590 upper band"
+          }
+        ],
+        "note": "A large, genuinely profitable hospital chain. But at roughly ₹77,600 crore, it's valued near 85 times its earnings — a rich, premium price.",
+        "dur": 37.6
+      }
+    },
+    {
+      "id": "manipal_issue",
+      "type": "sm_stats",
+      "in_seconds": 108.478,
+      "out_seconds": 152.008,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 9275,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#FB7185",
+            "sub": "price band ₹560–590"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 8000,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "86% — into the company"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 1275,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "~14% — TPG, Novo & others exit"
+          }
+        ],
+        "note": "Mostly a FRESH issue — the better structure. But watch where that fresh money goes: the bulk simply repays debt, not new hospitals.",
+        "dur": 44.03
+      }
+    },
+    {
+      "id": "manipal_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 152.508,
+      "out_seconds": 195.486,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹8,000 Cr Funds",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "₹5,378 Cr — repay debt",
+            "v": "The bulk of the fresh money simply pays down borrowings at its subsidiary, Manipal Hospitals — it de-risks the balance sheet, but doesn't add new capacity",
+            "chip": "DEBT"
+          },
+          {
+            "emoji": "🏥",
+            "k": "₹574 Cr — buy out Sahyadri minority",
+            "v": "Acquires the remaining minority stake in Sahyadri Hospitals, tightening its ownership of an acquired chain",
+            "chip": "CONSOLIDATE"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Balance — general corporate",
+            "v": "The rest goes to general corporate purposes, the standard catch-all bucket",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 43.478
+      }
+    },
+    {
+      "id": "manipal_verdict",
+      "type": "sm_myths",
+      "in_seconds": 195.986,
+      "out_seconds": 243.284,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "₹5,378 Cr of fresh money repays debt, not new capacity",
+            "f": "Large, profitable, trusted hospital brand"
+          },
+          {
+            "m": "Rich valuation — roughly 85x earnings",
+            "f": "86% is a fresh issue — mostly funds the company"
+          },
+          {
+            "m": "GMP is modest (~1%) — a muted listing signal",
+            "f": "Marquee backers; ~₹4,167 Cr anchor book"
+          }
+        ],
+        "dur": 47.798
+      }
+    },
+    {
+      "id": "manipal_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 243.784,
+      "out_seconds": 289.256,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,750 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 45.972
+      }
+    },
+    {
+      "id": "manipal_recap",
+      "type": "sm_recap",
+      "in_seconds": 289.756,
+      "out_seconds": 357.572,
+      "props": {
+        "title": "Manipal Health IPO — at a Glance",
+        "items": [
+          "Business: one of India's largest hospital chains",
+          "FY26: revenue ₹10,520.52 Cr, profit ₹916.52 Cr",
+          "₹9,275 Cr issue — India's biggest healthcare IPO, 86% fresh",
+          "But ₹5,378 Cr of fresh money repays debt, not new hospitals",
+          "Retail min ~₹14,750 · ~85x earnings · GMP ~1% (unofficial)"
+        ],
+        "closer": "A quality hospital chain at a premium price — mostly deleveraging, not expansion. Read the RHP; decide for yourself.",
+        "dur": 68.316
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.361,
+      "Let's break down the Manipal Health I-P-O —"
+    ],
+    [
+      3.361,
+      7.974,
+      "at nine thousand two hundred and seventy-five crore rupees,"
+    ],
+    [
+      7.974,
+      12.273,
+      "it is the biggest healthcare I-P-O India has ever seen."
+    ],
+    [
+      12.273,
+      16.26,
+      "By the end you'll understand what the company does,"
+    ],
+    [
+      16.26,
+      19.934,
+      "its financials, where your money actually goes,"
+    ],
+    [
+      19.934,
+      25.093,
+      "and how much you'd need to apply as a retail or an H-N-I investor."
+    ],
+    [
+      25.093,
+      29.314,
+      "Quick note — this is education, not investment advice,"
+    ],
+    [
+      29.314,
+      30.956,
+      "and not a tip to buy."
+    ],
+    [
+      31.456,
+      33.6,
+      "So what is Manipal Health?"
+    ],
+    [
+      33.6,
+      38.63,
+      "It's one of India's largest multispeciality hospital chains —"
+    ],
+    [
+      38.63,
+      42.671,
+      "a network of hospitals spread across the country."
+    ],
+    [
+      42.671,
+      45.392,
+      "It offers the full range of care,"
+    ],
+    [
+      45.392,
+      50.67,
+      "from complex quaternary treatment to diagnostics and pharmacies,"
+    ],
+    [
+      50.67,
+      52.731,
+      "and it's a trusted brand,"
+    ],
+    [
+      52.731,
+      55.782,
+      "particularly in South and West India."
+    ],
+    [
+      55.782,
+      60.235,
+      "It also has serious backers — Temasek is the promoter,"
+    ],
+    [
+      60.235,
+      65.513,
+      "and investors like T-P-G and Novo Holdings are on the cap table."
+    ],
+    [
+      65.513,
+      70.378,
+      "A big, established, professionally-run healthcare business."
+    ],
+    [
+      70.878,
+      73.843,
+      "Now the financials — and they're solid."
+    ],
+    [
+      73.843,
+      77.036,
+      "In the year ended March twenty twenty-six,"
+    ],
+    [
+      77.036,
+      87.147,
+      "Manipal did about ten thousand five hundred and twenty crore in revenue and a net profit of roughly nine hundred and seventeen crore."
+    ],
+    [
+      87.147,
+      90.948,
+      "So this is a large, genuinely profitable business,"
+    ],
+    [
+      90.948,
+      92.241,
+      "not a loss-maker."
+    ],
+    [
+      92.241,
+      93.913,
+      "But here's the catch —"
+    ],
+    [
+      93.913,
+      100.832,
+      "at the top of the band the company is valued near seventy-seven thousand six hundred crore."
+    ],
+    [
+      100.832,
+      105.013,
+      "That's roughly eighty-five times its earnings — a rich,"
+    ],
+    [
+      105.013,
+      107.978,
+      "premium valuation you're paying up for."
+    ],
+    [
+      108.478,
+      111.957,
+      "Here's the most important part of any I-P-O —"
+    ],
+    [
+      111.957,
+      113.89,
+      "where does your money go?"
+    ],
+    [
+      113.89,
+      115.05,
+      "The good news —"
+    ],
+    [
+      115.05,
+      120.54,
+      "eight thousand crore of the nine-thousand-crore issue is a fresh issue,"
+    ],
+    [
+      120.54,
+      122.782,
+      "money going into the company."
+    ],
+    [
+      122.782,
+      125.256,
+      "That's about eighty-six percent."
+    ],
+    [
+      125.256,
+      131.751,
+      "The remaining one thousand two hundred and seventy-five crore is an Offer for Sale —"
+    ],
+    [
+      131.751,
+      139.56,
+      "existing investors like T-P-G and Novo Holdings selling part of their stakes and pocketing that cash."
+    ],
+    [
+      139.56,
+      143.039,
+      "So structurally this is mostly a fresh issue,"
+    ],
+    [
+      143.039,
+      145.204,
+      "which is the healthier kind."
+    ],
+    [
+      145.204,
+      147.214,
+      "But — and it's a big but —"
+    ],
+    [
+      147.214,
+      152.008,
+      "what the company DOES with that fresh money is the real story."
+    ],
+    [
+      152.508,
+      157.802,
+      "So what does that eight thousand crore of fresh money actually fund?"
+    ],
+    [
+      157.802,
+      158.581,
+      "The bulk —"
+    ],
+    [
+      158.581,
+      162.707,
+      "five thousand three hundred and seventy-eight crore —"
+    ],
+    [
+      162.707,
+      167.457,
+      "simply repays debt at its main subsidiary, Manipal Hospitals."
+    ],
+    [
+      167.457,
+      173.218,
+      "That's not bad; it cuts interest costs and strengthens the balance sheet —"
+    ],
+    [
+      173.218,
+      176.956,
+      "but it does not build new hospitals or add beds."
+    ],
+    [
+      176.956,
+      184.43,
+      "Another five hundred and seventy-four crore buys out the minority holders in Sahyadri Hospitals,"
+    ],
+    [
+      184.43,
+      185.987,
+      "a chain it acquired."
+    ],
+    [
+      185.987,
+      192.372,
+      "So most of the fresh money cleans up the balance sheet and consolidates ownership,"
+    ],
+    [
+      192.372,
+      195.486,
+      "rather than funding brand-new expansion."
+    ],
+    [
+      195.986,
+      197.976,
+      "So — should you subscribe?"
+    ],
+    [
+      197.976,
+      199.813,
+      "Let's weigh it honestly."
+    ],
+    [
+      199.813,
+      203.563,
+      "On the strengths side — it's a large, profitable,"
+    ],
+    [
+      203.563,
+      208.155,
+      "well-known hospital brand; the deal is mostly a fresh issue,"
+    ],
+    [
+      208.155,
+      215.579,
+      "which is the healthier structure; and it pulled in a big anchor book of over four thousand crore,"
+    ],
+    [
+      215.579,
+      218.564,
+      "a vote of confidence from institutions."
+    ],
+    [
+      218.564,
+      220.324,
+      "On the watch-out side —"
+    ],
+    [
+      220.324,
+      225.987,
+      "the bulk of the fresh money repays debt rather than building new capacity,"
+    ],
+    [
+      225.987,
+      230.503,
+      "the valuation is rich at around eighty-five times earnings,"
+    ],
+    [
+      230.503,
+      234.789,
+      "and the grey-market premium is modest, near one percent,"
+    ],
+    [
+      234.789,
+      236.702,
+      "hinting at a muted debut."
+    ],
+    [
+      236.702,
+      240.146,
+      "The takeaway — a high-quality hospital chain,"
+    ],
+    [
+      240.146,
+      243.284,
+      "but you're paying a premium price for it."
+    ],
+    [
+      243.784,
+      248.158,
+      "Finally — how do you apply, and how much do you need?"
+    ],
+    [
+      248.158,
+      252.944,
+      "As a retail investor you can put in up to two lakh rupees,"
+    ],
+    [
+      252.944,
+      255.585,
+      "for a thirty-five percent quota."
+    ],
+    [
+      255.585,
+      260.619,
+      "But if it's oversubscribed, shares are given out by lottery —"
+    ],
+    [
+      260.619,
+      264.003,
+      "so a bigger cheque does not get you more."
+    ],
+    [
+      264.003,
+      268.955,
+      "H-N-Is bid above two lakh and share a fifteen percent quota."
+    ],
+    [
+      268.955,
+      272.586,
+      "For Manipal, one lot is twenty-five shares —"
+    ],
+    [
+      272.586,
+      277.207,
+      "about fourteen thousand seven hundred and fifty rupees —"
+    ],
+    [
+      277.207,
+      279.188,
+      "and that's your minimum."
+    ],
+    [
+      279.188,
+      282.489,
+      "To watch the subscription build up live,"
+    ],
+    [
+      282.489,
+      286.533,
+      "use the N-S-E and B-S-E I-P-O pages, Chittorgarh,"
+    ],
+    [
+      286.533,
+      289.256,
+      "Moneycontrol, or your broker app."
+    ],
+    [
+      289.756,
+      291.908,
+      "Let's recap Manipal Health."
+    ],
+    [
+      291.908,
+      296.769,
+      "One of India's largest hospital chains, genuinely profitable,"
+    ],
+    [
+      296.769,
+      300.036,
+      "doing over ten thousand crore in revenue."
+    ],
+    [
+      300.036,
+      306.331,
+      "At nine thousand two hundred crore it's the biggest healthcare I-P-O in India —"
+    ],
+    [
+      306.331,
+      308.722,
+      "and it's mostly a fresh issue."
+    ],
+    [
+      308.722,
+      313.424,
+      "But the bulk of that fresh money, over five thousand crore,"
+    ],
+    [
+      313.424,
+      317.169,
+      "repays debt rather than building new hospitals,"
+    ],
+    [
+      317.169,
+      322.19,
+      "and the valuation is rich at around eighty-five times earnings."
+    ],
+    [
+      322.19,
+      328.007,
+      "Retail minimum is about fourteen thousand seven hundred and fifty rupees,"
+    ],
+    [
+      328.007,
+      332.549,
+      "and the grey-market premium is modest, near one percent —"
+    ],
+    [
+      332.549,
+      334.542,
+      "though that's unofficial."
+    ],
+    [
+      334.542,
+      338.367,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      338.367,
+      340.598,
+      "it is not investment advice,"
+    ],
+    [
+      340.598,
+      343.228,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      343.228,
+      346.256,
+      "and not a prediction of listing gains."
+    ],
+    [
+      346.256,
+      350.48,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      350.48,
+      355.978,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      355.978,
+      357.572,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/manipal.wav",
+      "volume": 1.0
+    }
+  }
+}

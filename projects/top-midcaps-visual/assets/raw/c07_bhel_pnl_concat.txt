@@ -1,0 +1,5 @@
+file '/Users/appuram/Developer/explainer-forge/projects/top-midcaps-visual/assets/raw/c07_bhel_pnl_c0.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/top-midcaps-visual/assets/raw/_pause.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/top-midcaps-visual/assets/raw/c07_bhel_pnl_c1.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/top-midcaps-visual/assets/raw/_pause.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/top-midcaps-visual/assets/raw/c07_bhel_pnl_c2.wav'

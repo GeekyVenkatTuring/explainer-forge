@@ -1,0 +1,105 @@
+{
+ "ticker": "TORNTPHARM",
+ "scraped_at": "2026-08-14T15:29:01",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 185125.0,
+ "current_price": 4867.0,
+ "pe": 83.0,
+ "book_value": 248.0,
+ "dividend_yield_pct": 0.77,
+ "roce_pct": 15.2,
+ "roe_pct": 27.4,
+ "face_value": 5.0,
+ "high": 5250.0,
+ "sales_growth": {
+  "10 Years": 2.0,
+  "5 Years": 12.0,
+  "3 Years": 22.0,
+  "TTM": 10.0
+ },
+ "profit_growth": {
+  "10 Years": 21.0,
+  "5 Years": 27.0,
+  "3 Years": 36.0,
+  "1 Year": 36.0
+ },
+ "roe_hist": {
+  "Operating Profit": 791.0,
+  "OPM %": 31.0,
+  "Other Income&nbsp; +": 34.0,
+  "Interest": 103.0,
+  "Depreciation": 191.0,
+  "Profit before tax": 531.0,
+  "Tax %": 29.0,
+  "Net Profit&nbsp; +": 378.0,
+  "EPS in Rs": 11.17
+ },
+ "price_cagr": {
+  "10 Years": 22.0,
+  "5 Years": 24.0,
+  "3 Years": 26.0,
+  "Last Year": 27.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "31%",
+   "31%",
+   "32%",
+   "32%",
+   "32%",
+   "32%",
+   "33%",
+   "33%",
+   "32%",
+   "33%",
+   "33%",
+   "32%",
+   "34%"
+  ],
+  "eps": [
+   "11.17",
+   "11.41",
+   "13.09",
+   "13.27",
+   "13.50",
+   "13.38",
+   "14.86",
+   "14.71",
+   "16.19",
+   "17.46",
+   "18.76",
+   "10.76",
+   "16.72"
+  ]
+ },
+ "pros": [
+  "Company is expected to give good quarter",
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 26.2%",
+  "Company has been maintaining a healthy dividend payout of 57.8%"
+ ],
+ "cons": [
+  "Stock is trading at 19.7 times its book value",
+  "Promoter holding has decreased over last quarter: -7.53%",
+  "The company has delivered a poor sales growth of 11.8% over past five years.",
+  "Company might be capitalizing the interest cost"
+ ]
+}

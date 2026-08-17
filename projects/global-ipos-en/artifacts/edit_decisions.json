@@ -1,0 +1,547 @@
+{
+  "cuts": [
+    {
+      "id": "gi01_title",
+      "type": "gi_title",
+      "in_seconds": 0.0,
+      "out_seconds": 18.316,
+      "props": {
+        "dur": 18.816
+      }
+    },
+    {
+      "id": "gi02_split",
+      "type": "gi_split",
+      "in_seconds": 18.816,
+      "out_seconds": 52.62,
+      "props": {
+        "usItems": [
+          {
+            "name": "Attovia Therapeutics",
+            "tag": "BIOTECH"
+          },
+          {
+            "name": "Braveheart Bio",
+            "tag": "BIOTECH"
+          },
+          {
+            "name": "Vogenx",
+            "tag": "BIOTECH"
+          },
+          {
+            "name": "OceanLight",
+            "tag": "SPAC"
+          },
+          {
+            "name": "\u2026and more small deals",
+            "tag": "NASDAQ"
+          }
+        ],
+        "cnBig": {
+          "name": "CXMT \u00b7 ChangXin Memory",
+          "tag": "SHANGHAI \u00b7 STAR",
+          "note": "memory chips \u00b7 reportedly a record-size STAR listing"
+        },
+        "cnSmall": {
+          "name": "Zhongji Innolight",
+          "tag": "HONG KONG"
+        },
+        "dur": 34.304
+      }
+    },
+    {
+      "id": "gi03_ipoflow",
+      "type": "gi_steps",
+      "in_seconds": 53.12,
+      "out_seconds": 85.006,
+      "props": {
+        "kicker": "I-P-O IN ONE BREATH",
+        "title": "What 'going public' actually means",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "\ud83c\udfe2",
+            "label": "A private company",
+            "sub": "owned by founders & backers",
+            "c": "#22D3EE"
+          },
+          {
+            "emoji": "\ud83d\udcc4",
+            "label": "Files a prospectus",
+            "sub": "opens its books to regulators",
+            "c": "#22D3EE"
+          },
+          {
+            "emoji": "\ud83c\udff7\ufe0f",
+            "label": "Sets a price",
+            "sub": "and sells new shares",
+            "c": "#FBBF24"
+          },
+          {
+            "emoji": "\ud83d\udd14",
+            "label": "Shares start trading",
+            "sub": "anyone can now buy",
+            "c": "#34D399"
+          }
+        ],
+        "note": "An IPO simply turns a private company into one whose shares you can buy on an exchange.",
+        "dur": 32.386
+      }
+    },
+    {
+      "id": "gi04_div1",
+      "type": "gi_divider",
+      "in_seconds": 85.506,
+      "out_seconds": 93.811,
+      "props": {
+        "n": 1,
+        "title": "The American Way",
+        "sub": "Many small deals, driven by the market",
+        "color": "#4F86F7",
+        "dur": 8.805
+      }
+    },
+    {
+      "id": "gi05_usslate",
+      "type": "gi_cards",
+      "in_seconds": 94.311,
+      "out_seconds": 127.353,
+      "props": {
+        "kicker": "THIS WEEK ON THE NASDAQ",
+        "title": "America's slate: small and biotech-heavy",
+        "color": "#4F86F7",
+        "items": [
+          {
+            "emoji": "\ud83e\uddec",
+            "k": "Attovia Therapeutics",
+            "v": "An immunology biotech \u2014 one of several small drug developers pricing this week",
+            "chip": "\u2248 $200M"
+          },
+          {
+            "emoji": "\ud83e\uddec",
+            "k": "Braveheart Bio",
+            "v": "Another clinical-stage biotech tapping public markets for research cash",
+            "chip": "\u2248 $300M"
+          },
+          {
+            "emoji": "\ud83e\uddea",
+            "k": "Vogenx",
+            "v": "A smaller biotech deal \u2014 the long tail of tiny US listings",
+            "chip": "\u2248 $75M"
+          },
+          {
+            "emoji": "\ud83d\udce6",
+            "k": "OceanLight",
+            "v": "Not a real business yet \u2014 a SPAC, a blank-cheque shell raising cash to merge later",
+            "chip": "SPAC"
+          }
+        ],
+        "dur": 33.542
+      }
+    },
+    {
+      "id": "gi06_usmech",
+      "type": "gi_steps",
+      "in_seconds": 127.853,
+      "out_seconds": 165.07,
+      "props": {
+        "kicker": "HOW A US I-P-O WORKS",
+        "title": "File, review, sell \u2014 the book-build",
+        "color": "#4F86F7",
+        "items": [
+          {
+            "emoji": "\ud83d\udcdd",
+            "label": "File an S-1",
+            "sub": "the SEC prospectus",
+            "c": "#4F86F7"
+          },
+          {
+            "emoji": "\ud83d\udd0d",
+            "label": "SEC review",
+            "sub": "disclosure, back-and-forth",
+            "c": "#22D3EE"
+          },
+          {
+            "emoji": "\ud83d\udce3",
+            "label": "Roadshow",
+            "sub": "book-build a price range",
+            "c": "#FBBF24"
+          },
+          {
+            "emoji": "\ud83d\udd14",
+            "label": "List & trade",
+            "sub": "opens at a market price",
+            "c": "#34D399"
+          }
+        ],
+        "note": "You see a price RANGE before the deal; the final price is set the night before it lists.",
+        "dur": 37.717
+      }
+    },
+    {
+      "id": "gi07_spac",
+      "type": "gi_spac",
+      "in_seconds": 165.57,
+      "out_seconds": 200.12,
+      "props": {
+        "dur": 35.05
+      }
+    },
+    {
+      "id": "gi08_ustake",
+      "type": "gi_cards",
+      "in_seconds": 200.62,
+      "out_seconds": 234.75,
+      "props": {
+        "kicker": "WHAT THE US SLATE SAYS",
+        "title": "The American signature",
+        "color": "#4F86F7",
+        "items": [
+          {
+            "emoji": "\ud83d\udc1c",
+            "k": "Volume over size",
+            "v": "Hundreds of small IPOs a year \u2014 the market funds lots of tiny bets",
+            "chip": "MANY SMALL"
+          },
+          {
+            "emoji": "\ud83e\uddec",
+            "k": "Innovation-led",
+            "v": "Biotech and tech dominate \u2014 high-risk, high-reward science",
+            "chip": "BIOTECH"
+          },
+          {
+            "emoji": "\ud83d\udd70\ufe0f",
+            "k": "Market timing",
+            "v": "Deals cluster when appetite is high; they stall when it isn't",
+            "chip": "MARKET-DRIVEN"
+          },
+          {
+            "emoji": "\ud83d\uded2",
+            "k": "Open access",
+            "v": "Any brokerage account can buy once shares trade \u2014 but at the open price",
+            "chip": "RETAIL-EASY"
+          }
+        ],
+        "dur": 34.63
+      }
+    },
+    {
+      "id": "gi09_div2",
+      "type": "gi_divider",
+      "in_seconds": 235.25,
+      "out_seconds": 243.82,
+      "props": {
+        "n": 2,
+        "title": "The Chinese Way",
+        "sub": "A few giant deals, aligned with the state",
+        "color": "#F5546B",
+        "dur": 9.07
+      }
+    },
+    {
+      "id": "gi10_cnslate",
+      "type": "gi_cards",
+      "in_seconds": 244.32,
+      "out_seconds": 281.993,
+      "props": {
+        "kicker": "THIS WEEK IN CHINA",
+        "title": "China's slate: fewer, but enormous",
+        "color": "#F5546B",
+        "items": [
+          {
+            "emoji": "\ud83c\udfed",
+            "k": "CXMT \u2014 ChangXin Memory",
+            "v": "A DRAM memory-chip maker; listed in Shanghai, reportedly the STAR board's largest-ever IPO",
+            "chip": "\u2248 $8.6B"
+          },
+          {
+            "emoji": "\ud83d\udd26",
+            "k": "Zhongji Innolight",
+            "v": "An optical-module giant doing a multi-billion-dollar Hong Kong listing",
+            "chip": "HONG KONG"
+          },
+          {
+            "emoji": "\u2b50",
+            "k": "The STAR Market",
+            "v": "Shanghai's Nasdaq-style board for hard-tech \u2014 tickers starting 688",
+            "chip": "688xxx"
+          },
+          {
+            "emoji": "\ud83c\udfaf",
+            "k": "Why so big?",
+            "v": "These are strategic industries \u2014 chips China wants to build at home",
+            "chip": "STRATEGIC"
+          }
+        ],
+        "dur": 38.173
+      }
+    },
+    {
+      "id": "gi11_cnvenues",
+      "type": "gi_compare",
+      "in_seconds": 282.493,
+      "out_seconds": 319.505,
+      "props": {
+        "kicker": "WHERE CHINA LISTS",
+        "title": "Three very different doors",
+        "color": "#22D3EE",
+        "cols": [
+          {
+            "name": "STAR Market",
+            "color": "#F5546B",
+            "emoji": "\u2b50",
+            "hi": true,
+            "rows": [
+              {
+                "k": "WHERE",
+                "v": "Shanghai \u00b7 tickers 688"
+              },
+              {
+                "k": "FOR",
+                "v": "Hard-tech: chips, biotech"
+              },
+              {
+                "k": "FIRST 5 DAYS",
+                "v": "No daily price limit"
+              },
+              {
+                "k": "FOREIGNERS",
+                "v": "Gated \u2014 via Stock Connect"
+              }
+            ]
+          },
+          {
+            "name": "ChiNext",
+            "color": "#4F86F7",
+            "emoji": "\ud83c\udf31",
+            "rows": [
+              {
+                "k": "WHERE",
+                "v": "Shenzhen \u00b7 growth firms"
+              },
+              {
+                "k": "FOR",
+                "v": "Younger, innovative names"
+              },
+              {
+                "k": "FIRST 5 DAYS",
+                "v": "No daily price limit"
+              },
+              {
+                "k": "THEN",
+                "v": "\u00b120% daily band"
+              }
+            ]
+          },
+          {
+            "name": "Hong Kong",
+            "color": "#FBBF24",
+            "emoji": "\ud83c\udded\ud83c\uddf0",
+            "rows": [
+              {
+                "k": "WHERE",
+                "v": "HKEX \u00b7 global gateway"
+              },
+              {
+                "k": "FOR",
+                "v": "Big dual-listings"
+              },
+              {
+                "k": "LIMITS",
+                "v": "No daily price cap"
+              },
+              {
+                "k": "FOREIGNERS",
+                "v": "Open to global money"
+              }
+            ]
+          }
+        ],
+        "dur": 37.512
+      }
+    },
+    {
+      "id": "gi12_cnmech",
+      "type": "gi_steps",
+      "in_seconds": 320.005,
+      "out_seconds": 357.951,
+      "props": {
+        "kicker": "HOW A CHINA I-P-O DIFFERS",
+        "title": "More hands on the wheel",
+        "color": "#F5546B",
+        "items": [
+          {
+            "emoji": "\ud83d\udcc4",
+            "label": "File & register",
+            "sub": "with the exchange",
+            "c": "#F5546B"
+          },
+          {
+            "emoji": "\ud83c\udfdb\ufe0f",
+            "label": "Regulator sign-off",
+            "sub": "the CSRC's blessing",
+            "c": "#22D3EE"
+          },
+          {
+            "emoji": "\ud83e\udd1d",
+            "label": "Strategic placement",
+            "sub": "big anchors take chunks",
+            "c": "#4F86F7"
+          },
+          {
+            "emoji": "\ud83d\udd14",
+            "label": "List",
+            "sub": "no price cap, first 5 days",
+            "c": "#34D399"
+          }
+        ],
+        "note": "The state and strategic investors shape the deal far more than in the US.",
+        "dur": 38.446
+      }
+    },
+    {
+      "id": "gi13_div3",
+      "type": "gi_divider",
+      "in_seconds": 358.451,
+      "out_seconds": 366.413,
+      "props": {
+        "n": 3,
+        "title": "Same Word, Different Game",
+        "sub": "What the contrast means for you",
+        "color": "#34D399",
+        "dur": 8.462
+      }
+    },
+    {
+      "id": "gi14_bigcompare",
+      "type": "gi_compare",
+      "in_seconds": 366.913,
+      "out_seconds": 407.823,
+      "props": {
+        "kicker": "US vs CHINA \u00b7 THIS WEEK",
+        "title": "The contrast in one frame",
+        "color": "#34D399",
+        "cols": [
+          {
+            "name": "United States",
+            "color": "#4F86F7",
+            "emoji": "\ud83c\uddfa\ud83c\uddf8",
+            "rows": [
+              {
+                "k": "THIS WEEK",
+                "v": "A cluster of small deals"
+              },
+              {
+                "k": "TYPICAL SIZE",
+                "v": "Tens to a few hundred $M"
+              },
+              {
+                "k": "SECTORS",
+                "v": "Biotech, tech, a SPAC"
+              },
+              {
+                "k": "WHAT DRIVES IT",
+                "v": "Market appetite"
+              },
+              {
+                "k": "WHO CAN BUY",
+                "v": "Any broker, at the open"
+              }
+            ]
+          },
+          {
+            "name": "China",
+            "color": "#F5546B",
+            "emoji": "\ud83c\udde8\ud83c\uddf3",
+            "rows": [
+              {
+                "k": "THIS WEEK",
+                "v": "One or two giants"
+              },
+              {
+                "k": "TYPICAL SIZE",
+                "v": "Billions of dollars"
+              },
+              {
+                "k": "SECTORS",
+                "v": "Chips & hard-tech"
+              },
+              {
+                "k": "WHAT DRIVES IT",
+                "v": "National priorities"
+              },
+              {
+                "k": "WHO CAN BUY",
+                "v": "Gated; HK & ADRs open"
+              }
+            ]
+          }
+        ],
+        "dur": 41.41
+      }
+    },
+    {
+      "id": "gi15_investor",
+      "type": "gi_cards",
+      "in_seconds": 408.323,
+      "out_seconds": 447.6,
+      "props": {
+        "kicker": "WHAT IT MEANS FOR YOU",
+        "title": "Reading any IPO like a pro",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "\ud83c\udf10",
+            "k": "Access the giants carefully",
+            "v": "Reach Chinese names via Hong Kong shares or US-listed ADRs \u2014 not the mainland directly",
+            "chip": "ADRs / HK"
+          },
+          {
+            "emoji": "\u26a0\ufe0f",
+            "k": "Read the structure",
+            "v": "Watch for VIEs, dual-class voting and lock-up expiries \u2014 they change who really controls what",
+            "chip": "RISKS"
+          },
+          {
+            "emoji": "\ud83d\udd0e",
+            "k": "Go to the source",
+            "v": "SEC EDGAR for US filings, HKEXnews for Hong Kong, and reputable outlets for the rest",
+            "chip": "SOURCES"
+          },
+          {
+            "emoji": "\ud83e\udded",
+            "k": "An IPO is a start",
+            "v": "Going public is a fundraising event, not a promise of gains \u2014 judge the business, not the buzz",
+            "chip": "MINDSET"
+          }
+        ],
+        "dur": 39.777
+      }
+    },
+    {
+      "id": "gi16_recap",
+      "type": "gi_recap",
+      "in_seconds": 448.1,
+      "out_seconds": 502.103,
+      "props": {
+        "title": "This week, in one breath",
+        "items": [
+          "US: many small IPOs \u2014 biotech-heavy, plus a SPAC",
+          "China: one or two giants \u2014 chips & hard-tech",
+          "US deals are market-driven; China's align with the state",
+          "STAR & ChiNext have no price limit for 5 days",
+          "Reach Chinese names via Hong Kong or ADRs",
+          "Watch VIEs, dual-class shares & lock-ups"
+        ],
+        "closer": "Same word, two different games \u2014 know which one you're playing.",
+        "dur": 54.503
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "gi/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

@@ -1,0 +1,964 @@
+{
+  "cuts": [
+    {
+      "id": "p_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 36.228,
+      "props": {
+        "title": "How to Analyse Pharma Stocks",
+        "sub": "Pharma & healthcare · fundamentals · technicals · strategies",
+        "kicker": "SECTOR DEEP-DIVE · PHARMA",
+        "dur": 36.728
+      }
+    },
+    {
+      "id": "p_overview",
+      "type": "sm_iconcards",
+      "in_seconds": 36.728,
+      "out_seconds": 108.276,
+      "props": {
+        "kicker": "SUB-SECTORS",
+        "title": "Pharma is several businesses",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "💊",
+            "k": "US generics",
+            "v": "Sell copies of off-patent drugs in the US — high margin, but FDA-and-price-risk",
+            "chip": "Exports"
+          },
+          {
+            "emoji": "🏠",
+            "k": "Domestic formulations",
+            "v": "Branded medicines sold in India — steady, defensive, brand-driven",
+            "chip": "Stable"
+          },
+          {
+            "emoji": "🧪",
+            "k": "API / CDMO",
+            "v": "Ingredients & contract manufacturing — a China+1 structural winner",
+            "chip": "B2B"
+          },
+          {
+            "emoji": "🏥",
+            "k": "Hospitals & diagnostics",
+            "v": "Healthcare services — a domestic consumption growth story",
+            "chip": "Services"
+          }
+        ],
+        "dur": 72.048
+      }
+    },
+    {
+      "id": "p_drivers",
+      "type": "sm_iconcards",
+      "in_seconds": 108.776,
+      "out_seconds": 172.428,
+      "props": {
+        "kicker": "WHAT MOVES PHARMA",
+        "title": "The forces that drive the sector",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🏛️",
+            "k": "USFDA actions",
+            "v": "Inspections, approvals, warning letters — the biggest swing factor for exporters",
+            "chip": "Regulator"
+          },
+          {
+            "emoji": "💵",
+            "k": "US price erosion",
+            "v": "Brutal generic competition steadily erodes US drug prices & margins",
+            "chip": "Pricing"
+          },
+          {
+            "emoji": "🌏",
+            "k": "China+1",
+            "v": "Global supply chains diversifying to India — a tailwind for API & CDMO",
+            "chip": "Structural"
+          },
+          {
+            "emoji": "💊",
+            "k": "Domestic growth",
+            "v": "Rising incomes, insurance & chronic disease drive steady home-market demand",
+            "chip": "India"
+          }
+        ],
+        "dur": 64.152
+      }
+    },
+    {
+      "id": "p_fund",
+      "type": "sm_iconcards",
+      "in_seconds": 172.928,
+      "out_seconds": 248.464,
+      "props": {
+        "kicker": "FUNDAMENTALS · CORE",
+        "title": "The metrics unique to pharma",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏛️",
+            "k": "USFDA status",
+            "v": "The #1 risk. A Form 483, warning letter or import alert can stall approvals & crush a stock",
+            "chip": "Regulatory"
+          },
+          {
+            "emoji": "💊",
+            "k": "Approvals pipeline",
+            "v": "ANDA filings & approvals = future US revenue; a rich pipeline is the growth engine",
+            "chip": "Pipeline"
+          },
+          {
+            "emoji": "🌍",
+            "k": "Revenue mix",
+            "v": "US vs India vs API/emerging. US = high-margin but risky; domestic = steady & defensive",
+            "chip": "Mix"
+          },
+          {
+            "emoji": "🔬",
+            "k": "R&D & margins",
+            "v": "R&D spend fuels the pipeline; watch gross margins and US price erosion",
+            "chip": "Quality"
+          }
+        ],
+        "dur": 76.036
+      }
+    },
+    {
+      "id": "p_tech",
+      "type": "sm_iconcards",
+      "in_seconds": 248.964,
+      "out_seconds": 305.804,
+      "props": {
+        "kicker": "TECHNICAL ANALYSIS",
+        "title": "Reading pharma on the chart",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "📈",
+            "k": "Nifty Pharma / Healthcare",
+            "v": "The sector indices to track for trend and relative strength",
+            "chip": "Index"
+          },
+          {
+            "emoji": "🛡️",
+            "k": "Defensive nature",
+            "v": "Tends to hold up in slowdowns & risk-off — check if it's leading a defensive rotation",
+            "chip": "Defensive"
+          },
+          {
+            "emoji": "⚡",
+            "k": "News-driven gaps",
+            "v": "FDA outcomes & approvals cause sharp single-stock gaps — stock-specific, not just index",
+            "chip": "Events"
+          },
+          {
+            "emoji": "💵",
+            "k": "Weak-rupee tailwind",
+            "v": "Dollar earners — a weaker rupee helps, like IT",
+            "chip": "USD"
+          }
+        ],
+        "dur": 57.34
+      }
+    },
+    {
+      "id": "p_strat",
+      "type": "sm_iconcards",
+      "in_seconds": 306.304,
+      "out_seconds": 380.804,
+      "props": {
+        "kicker": "STRATEGIES",
+        "title": "Strategies for pharma",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "✅",
+            "k": "Clean-record leaders",
+            "v": "Favour companies with a strong FDA compliance track record — fewer nasty surprises",
+            "chip": "Quality"
+          },
+          {
+            "emoji": "🏥",
+            "k": "Domestic & hospitals",
+            "v": "India-focused pharma, hospitals & diagnostics = steadier, less FDA-exposed growth",
+            "chip": "Stable"
+          },
+          {
+            "emoji": "🧪",
+            "k": "CDMO / API theme",
+            "v": "Contract manufacturing & ingredients ride the 'China+1' shift — a structural play",
+            "chip": "Theme"
+          },
+          {
+            "emoji": "📉",
+            "k": "Buy the FDA over-reaction",
+            "v": "A quality name oversold on a resolvable FDA issue can be a patient entry",
+            "chip": "Contrarian"
+          }
+        ],
+        "dur": 75.0
+      }
+    },
+    {
+      "id": "p_check",
+      "type": "sm_checklist",
+      "in_seconds": 381.304,
+      "out_seconds": 444.496,
+      "props": {
+        "kicker": "HOW TO EVALUATE",
+        "title": "Evaluating a pharma stock — checklist",
+        "color": "#34D399",
+        "icon": "✅",
+        "items": [
+          "Check the FDA status of ALL key plants first",
+          "Assess US vs domestic revenue mix (risk vs stability)",
+          "Look at the approvals pipeline & R&D spend",
+          "Watch gross margins for US price-erosion pressure",
+          "Prefer a clean compliance track record over a cheap price"
+        ],
+        "dur": 63.692
+      }
+    },
+    {
+      "id": "p_risk",
+      "type": "sm_myths",
+      "in_seconds": 444.996,
+      "out_seconds": 511.148,
+      "props": {
+        "kicker": "WHAT TO AVOID",
+        "title": "Pharma sector — the risks",
+        "mythLabel": "✗ TRAP",
+        "factLabel": "✓ REALITY",
+        "pairs": [
+          {
+            "m": "Cheap pharma stock after a fall = bargain",
+            "f": "An unresolved FDA warning can keep revenue & the stock down for years"
+          },
+          {
+            "m": "Big US pipeline guarantees growth",
+            "f": "US generic price erosion can eat the gains — margins matter"
+          },
+          {
+            "m": "Pharma is defensive, so always safe",
+            "f": "Single-plant FDA risk makes individual stocks anything but safe"
+          }
+        ],
+        "dur": 66.652
+      }
+    },
+    {
+      "id": "p_recap",
+      "type": "sm_recap",
+      "in_seconds": 511.648,
+      "out_seconds": 557.108,
+      "props": {
+        "title": "Pharma sector — recap",
+        "items": [
+          "USFDA status is the #1 metric — warning letters crush stocks",
+          "Watch approvals pipeline, revenue mix, R&D, price erosion",
+          "Defensive sector, but stocks gap hard on FDA news",
+          "Strategy: clean-record leaders, domestic/hospitals, China+1 CDMO",
+          "Weak rupee = tailwind (dollar earners)"
+        ],
+        "closer": "In pharma, FDA compliance is everything.",
+        "dur": 45.96
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      2.94,
+      "The pharma and healthcare sector —"
+    ],
+    [
+      2.94,
+      6.225,
+      "India's medicine cabinet to the world."
+    ],
+    [
+      6.225,
+      10.808,
+      "India is the largest maker of generic drugs on earth,"
+    ],
+    [
+      10.808,
+      16.342,
+      "and about a third of its pharma exports go to the United States."
+    ],
+    [
+      16.342,
+      19.454,
+      "That single fact shapes everything —"
+    ],
+    [
+      19.454,
+      23.172,
+      "because it means the US regulator, the FDA,"
+    ],
+    [
+      23.172,
+      26.544,
+      "holds enormous power over these stocks."
+    ],
+    [
+      26.544,
+      31.818,
+      "Let's learn the sector's unique fundamentals, its technicals,"
+    ],
+    [
+      31.818,
+      33.461,
+      "and its strategies."
+    ],
+    [
+      33.461,
+      36.228,
+      "Company names are examples only."
+    ],
+    [
+      36.728,
+      37.216,
+      "First,"
+    ],
+    [
+      37.216,
+      43.565,
+      "understand that pharma is really several different businesses under one label."
+    ],
+    [
+      43.565,
+      45.682,
+      "The first is US generics —"
+    ],
+    [
+      45.682,
+      50.728,
+      "making low-cost copies of off-patent drugs to sell in America."
+    ],
+    [
+      50.728,
+      52.112,
+      "It's high-margin,"
+    ],
+    [
+      52.112,
+      58.705,
+      "but it carries the twin risks of FDA regulation and relentless price competition."
+    ],
+    [
+      58.705,
+      61.717,
+      "The second is domestic formulations —"
+    ],
+    [
+      61.717,
+      64.729,
+      "branded medicines sold here in India."
+    ],
+    [
+      64.729,
+      68.88,
+      "This is a steady, defensive, brand-driven business,"
+    ],
+    [
+      68.88,
+      71.159,
+      "much safer than the US game."
+    ],
+    [
+      71.159,
+      76.043,
+      "The third is active ingredients and contract manufacturing —"
+    ],
+    [
+      76.043,
+      80.764,
+      "the API and CDMO businesses that supply other drug-makers."
+    ],
+    [
+      80.764,
+      84.589,
+      "This is a big China-plus-one structural winner."
+    ],
+    [
+      84.589,
+      87.764,
+      "And the fourth is healthcare services —"
+    ],
+    [
+      87.764,
+      91.02,
+      "hospitals and diagnostic-testing chains,"
+    ],
+    [
+      91.02,
+      97.613,
+      "which are really a domestic consumption growth story rather than a drug business."
+    ],
+    [
+      97.613,
+      104.532,
+      "A company focused on US generics is analysed very differently from a hospital chain —"
+    ],
+    [
+      104.532,
+      108.276,
+      "so always know which pharma you're looking at."
+    ],
+    [
+      108.776,
+      110.252,
+      "What moves pharma?"
+    ],
+    [
+      110.252,
+      111.237,
+      "Four forces."
+    ],
+    [
+      111.237,
+      115.994,
+      "The first, and the biggest swing factor, is USFDA action —"
+    ],
+    [
+      115.994,
+      119.603,
+      "inspections, approvals, and warning letters."
+    ],
+    [
+      119.603,
+      125.755,
+      "A single regulatory outcome can move an exporter's stock by twenty percent."
+    ],
+    [
+      125.755,
+      128.298,
+      "The second is US price erosion."
+    ],
+    [
+      128.298,
+      132.645,
+      "The American generics market is brutally competitive,"
+    ],
+    [
+      132.645,
+      135.27,
+      "and prices grind steadily lower,"
+    ],
+    [
+      135.27,
+      139.7,
+      "constantly pressuring the margins of Indian exporters."
+    ],
+    [
+      139.7,
+      142.817,
+      "The third is the China-plus-one shift,"
+    ],
+    [
+      142.817,
+      154.136,
+      "a genuine tailwind for the ingredients and contract-manufacturing businesses as the world diversifies its drug supply chains toward India."
+    ],
+    [
+      154.136,
+      157.991,
+      "The fourth is domestic growth — rising incomes,"
+    ],
+    [
+      157.991,
+      160.206,
+      "expanding health insurance,"
+    ],
+    [
+      160.206,
+      165.128,
+      "and an unfortunate rise in chronic disease all drive steady,"
+    ],
+    [
+      165.128,
+      168.081,
+      "defensive demand in the home market."
+    ],
+    [
+      168.081,
+      172.428,
+      "Now, the metrics that let you value these businesses."
+    ],
+    [
+      172.928,
+      175.799,
+      "Pharma has its own special metrics,"
+    ],
+    [
+      175.799,
+      178.997,
+      "and the first one dominates all others."
+    ],
+    [
+      178.997,
+      182.934,
+      "It is the USFDA status of a company's factories."
+    ],
+    [
+      182.934,
+      188.019,
+      "Because so much revenue comes from America, a bad inspection —"
+    ],
+    [
+      188.019,
+      192.12,
+      "a Form 483, a warning letter, or an import alert —"
+    ],
+    [
+      192.12,
+      196.138,
+      "can halt new approvals and hit revenue overnight."
+    ],
+    [
+      196.138,
+      200.813,
+      "A single warning letter has cratered many a pharma stock."
+    ],
+    [
+      200.813,
+      203.848,
+      "This is the number-one risk to track."
+    ],
+    [
+      203.848,
+      206.964,
+      "The second is the approvals pipeline —"
+    ],
+    [
+      206.964,
+      210.245,
+      "the count of ANDA filings and approvals,"
+    ],
+    [
+      210.245,
+      215.74,
+      "which are the pending applications to sell generic drugs in the US."
+    ],
+    [
+      215.74,
+      218.774,
+      "A rich pipeline is the growth engine."
+    ],
+    [
+      218.774,
+      223.531,
+      "The third is the revenue mix — how much comes from the US,"
+    ],
+    [
+      223.531,
+      227.878,
+      "from India, and from ingredients or emerging markets."
+    ],
+    [
+      227.878,
+      235.67,
+      "US business is high-margin but regulatory-risky; the domestic business is steady and defensive."
+    ],
+    [
+      235.67,
+      240.344,
+      "The fourth is R&D spend, which fuels tomorrow's pipeline,"
+    ],
+    [
+      240.344,
+      248.464,
+      "alongside gross margins and the constant threat of price erosion in the crowded US generics market."
+    ],
+    [
+      248.964,
+      253.107,
+      "On the chart, pharma behaves in a distinctive way."
+    ],
+    [
+      253.107,
+      262.801,
+      "Track the Nifty Pharma and Nifty Healthcare indices for the sector trend and its relative strength versus the market."
+    ],
+    [
+      262.801,
+      265.701,
+      "Remember it is a defensive sector —"
+    ],
+    [
+      265.701,
+      268.933,
+      "people need medicine in every economy —"
+    ],
+    [
+      268.933,
+      272.33,
+      "so it often holds up when cyclicals fall."
+    ],
+    [
+      272.33,
+      274.07,
+      "In a risk-off market,"
+    ],
+    [
+      274.07,
+      278.627,
+      "check whether pharma is leading a flight to defensives."
+    ],
+    [
+      278.627,
+      283.101,
+      "But individual pharma stocks are famously news-driven."
+    ],
+    [
+      283.101,
+      290.393,
+      "An FDA outcome or a big approval can gap a single stock ten or twenty percent overnight,"
+    ],
+    [
+      290.393,
+      292.381,
+      "regardless of the index."
+    ],
+    [
+      292.381,
+      293.044,
+      "So here,"
+    ],
+    [
+      293.044,
+      297.767,
+      "stock-specific chart levels matter as much as the sector."
+    ],
+    [
+      297.767,
+      300.915,
+      "And like IT, these are dollar earners,"
+    ],
+    [
+      300.915,
+      305.804,
+      "so a weaker rupee is a quiet tailwind for the whole sector."
+    ],
+    [
+      306.304,
+      309.083,
+      "How do you play pharma sensibly?"
+    ],
+    [
+      309.083,
+      310.472,
+      "Four strategies."
+    ],
+    [
+      310.472,
+      315.768,
+      "First, favour the leaders with a clean FDA compliance record."
+    ],
+    [
+      315.768,
+      322.802,
+      "Fewer regulatory surprises means fewer sleepless nights and fewer sudden crashes."
+    ],
+    [
+      322.802,
+      327.751,
+      "Second, lean on the domestic side — India-focused pharma,"
+    ],
+    [
+      327.751,
+      332.353,
+      "plus hospitals and diagnostics, which offer steadier,"
+    ],
+    [
+      332.353,
+      337.042,
+      "defensive growth with far less US regulatory exposure."
+    ],
+    [
+      337.042,
+      342.078,
+      "Third, ride the structural theme — contract manufacturing,"
+    ],
+    [
+      342.078,
+      346.506,
+      "the CDMO business, and active ingredients, or APIs."
+    ],
+    [
+      346.506,
+      351.369,
+      "As the world diversifies supply chains away from China —"
+    ],
+    [
+      351.369,
+      356.492,
+      "the China-plus-one shift — Indian makers benefit for years."
+    ],
+    [
+      356.492,
+      357.099,
+      "Fourth,"
+    ],
+    [
+      357.099,
+      366.13,
+      "a contrarian entry: when a genuinely good company is oversold on an FDA issue that is likely resolvable,"
+    ],
+    [
+      366.13,
+      370.732,
+      "that fear can create a patient long-term opportunity."
+    ],
+    [
+      370.732,
+      372.642,
+      "But only for quality —"
+    ],
+    [
+      372.642,
+      376.81,
+      "a weak company with FDA trouble can stay broken."
+    ],
+    [
+      376.81,
+      380.804,
+      "In pharma, compliance quality is your compass."
+    ],
+    [
+      381.304,
+      382.78,
+      "Before the risks,"
+    ],
+    [
+      382.78,
+      388.335,
+      "let's turn this into a practical checklist for any pharma stock."
+    ],
+    [
+      388.335,
+      389.29,
+      "Five steps."
+    ],
+    [
+      389.29,
+      390.158,
+      "Step one —"
+    ],
+    [
+      390.158,
+      395.279,
+      "check the FDA status of all the company's key plants first,"
+    ],
+    [
+      395.279,
+      400.053,
+      "because one troubled facility can sink the whole stock."
+    ],
+    [
+      400.053,
+      400.921,
+      "Step two —"
+    ],
+    [
+      400.921,
+      408.213,
+      "assess the revenue mix between the high-margin but risky US business and the steady,"
+    ],
+    [
+      408.213,
+      410.643,
+      "defensive domestic business."
+    ],
+    [
+      410.643,
+      415.678,
+      "Step three — look at the approvals pipeline and R&D spend,"
+    ],
+    [
+      415.678,
+      419.323,
+      "which together tell you the future growth."
+    ],
+    [
+      419.323,
+      420.278,
+      "Step four —"
+    ],
+    [
+      420.278,
+      427.483,
+      "watch the gross margins for signs of US price-erosion pressure eating into profits."
+    ],
+    [
+      427.483,
+      429.74,
+      "Step five — and above all,"
+    ],
+    [
+      429.74,
+      437.291,
+      "prefer a company with a clean compliance track record over one that merely looks cheap."
+    ],
+    [
+      437.291,
+      442.413,
+      "In pharma, compliance quality beats a low price every time."
+    ],
+    [
+      442.413,
+      444.496,
+      "Now, the traps to avoid."
+    ],
+    [
+      444.996,
+      447.694,
+      "Now the traps unique to pharma."
+    ],
+    [
+      447.694,
+      448.652,
+      "The first —"
+    ],
+    [
+      448.652,
+      454.919,
+      "assuming a pharma stock that has fallen hard is automatically a bargain."
+    ],
+    [
+      454.919,
+      459.01,
+      "If it fell on an unresolved FDA warning letter,"
+    ],
+    [
+      459.01,
+      465.973,
+      "its revenue and its stock can stay depressed for years until the issue is fixed."
+    ],
+    [
+      465.973,
+      468.933,
+      "Check the compliance status first."
+    ],
+    [
+      468.933,
+      474.242,
+      "The second — believing a large US pipeline guarantees growth."
+    ],
+    [
+      474.242,
+      478.333,
+      "The US generics market is brutally competitive,"
+    ],
+    [
+      478.333,
+      482.424,
+      "and constant price erosion can eat those gains."
+    ],
+    [
+      482.424,
+      485.993,
+      "A pipeline only helps if margins survive."
+    ],
+    [
+      485.993,
+      490.693,
+      "The third — thinking that because pharma is defensive,"
+    ],
+    [
+      490.693,
+      493.043,
+      "every pharma stock is safe."
+    ],
+    [
+      493.043,
+      495.132,
+      "The sector is defensive,"
+    ],
+    [
+      495.132,
+      502.618,
+      "but an individual company that depends on one FDA-troubled plant is anything but safe."
+    ],
+    [
+      502.618,
+      505.664,
+      "Diversify, and mind the plant risk."
+    ],
+    [
+      505.664,
+      511.148,
+      "Respect the FDA, respect price erosion, and pharma rewards you."
+    ],
+    [
+      511.648,
+      513.628,
+      "Pharma, in one breath."
+    ],
+    [
+      513.628,
+      519.03,
+      "The USFDA status of the factories is the number-one metric —"
+    ],
+    [
+      519.03,
+      524.251,
+      "a warning letter can crush a stock, so watch it above all."
+    ],
+    [
+      524.251,
+      529.832,
+      "Also track the approvals pipeline, the revenue mix, R&D spend,"
+    ],
+    [
+      529.832,
+      531.722,
+      "and US price erosion."
+    ],
+    [
+      531.722,
+      533.883,
+      "It's a defensive sector,"
+    ],
+    [
+      533.883,
+      538.204,
+      "but individual stocks gap violently on FDA news,"
+    ],
+    [
+      538.204,
+      541.715,
+      "and a weak rupee helps the whole group."
+    ],
+    [
+      541.715,
+      545.405,
+      "In strategy, favour clean-record leaders,"
+    ],
+    [
+      545.405,
+      549.096,
+      "the steadier domestic and hospital names,"
+    ],
+    [
+      549.096,
+      553.777,
+      "and the China-plus-one contract-manufacturing theme."
+    ],
+    [
+      553.777,
+      557.108,
+      "Next, a very cyclical sector — autos."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sx/pha.wav",
+      "volume": 1.0
+    }
+  }
+}

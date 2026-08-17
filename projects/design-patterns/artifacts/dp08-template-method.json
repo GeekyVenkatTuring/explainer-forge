@@ -1,0 +1,1931 @@
+{
+ "cuts": [
+  {
+   "id": "dp08-template-method_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 24.04,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 08",
+    "line1": "Two classes, eighty",
+    "line2": "percent identical",
+    "sub": "every importer repeats the same steps \u2014 and every fix must be made twice",
+    "dur": 24.54
+   }
+  },
+  {
+   "id": "dp08-template-method_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 24.54,
+   "out_seconds": 55.371,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Nightly data imports",
+    "situation": "Every night you import vendor data. One vendor sends CSV, another sends JSON. Both follow the same flow \u2014 open, parse, validate, save \u2014 and only the parsing differs.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udcc4",
+      "label": "CSV feed"
+     },
+     {
+      "emoji": "\ud83d\udd27",
+      "label": "JSON feed"
+     },
+     {
+      "emoji": "\ud83d\uddc4\ufe0f",
+      "label": "Database"
+     }
+    ],
+    "ask": "Same five steps, one different line. Why does each importer repeat them all?",
+    "dur": 31.331
+   }
+  },
+  {
+   "id": "dp08-template-method_naive",
+   "type": "dp_code",
+   "in_seconds": 55.871,
+   "out_seconds": 83.86,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "One importer per format.",
+    "file": "CsvImporter.java",
+    "lines": [
+     {
+      "t": "class CsvImporter {"
+     },
+     {
+      "t": "  void run(File f) {"
+     },
+     {
+      "t": "    var raw = open(f);"
+     },
+     {
+      "t": "    var rows = parseCsv(raw);   // the only real difference",
+      "s": "hi"
+     },
+     {
+      "t": "    validate(rows);"
+     },
+     {
+      "t": "    dedupe(rows);"
+     },
+     {
+      "t": "    save(rows);"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}  // JsonImporter is a copy \u2014 only parseCsv \u2192 parseJson"
+     }
+    ],
+    "note": "Clean and obvious. And JsonImporter is this, pasted.",
+    "dur": 28.489
+   }
+  },
+  {
+   "id": "dp08-template-method_pain",
+   "type": "dp_pain",
+   "in_seconds": 84.36,
+   "out_seconds": 122.953,
+   "props": {
+    "title": "\"Skip rows we already imported.\"",
+    "file": "both importers",
+    "lines": [
+     {
+      "t": "// CsvImporter.run():"
+     },
+     {
+      "t": "  validate(rows);",
+      "s": "dim"
+     },
+     {
+      "t": "  rows = skipAlreadyImported(rows);  // NEW",
+      "s": "hi"
+     },
+     {
+      "t": "  dedupe(rows);"
+     },
+     {
+      "t": "// JsonImporter.run():   \u2190 paste the SAME new line"
+     },
+     {
+      "t": "  rows = skipAlreadyImported(rows);  // AGAIN",
+      "s": "hi"
+     },
+     {
+      "t": "// XmlImporter next quarter \u2192 a third copy"
+     }
+    ],
+    "smell": "Duplicated skeleton \u2014 every fix, made N times",
+    "touched": [
+     "CsvImporter.run() \u2014 add step",
+     "JsonImporter.run() \u2014 same step",
+     "a validation bug \u2192 fix in both",
+     "add XML \u2192 copy all five steps"
+    ],
+    "dur": 39.093
+   }
+  },
+  {
+   "id": "dp08-template-method_insight",
+   "type": "dp_insight",
+   "in_seconds": 123.453,
+   "out_seconds": 153.352,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "The sequence of steps",
+     "Four of the five steps exactly",
+     "The order they must run in"
+    ],
+    "varies": [
+     "Only the parse step",
+     "Maybe one optional extra step",
+     "The formats you support"
+    ],
+    "principle": "Write the skeleton once in a parent; leave holes for the one or two steps that differ.",
+    "dur": 30.399
+   }
+  },
+  {
+   "id": "dp08-template-method_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 153.852,
+   "out_seconds": 193.207,
+   "props": {
+    "title": "Think of a form letter",
+    "emoji": "\ud83d\udcdd",
+    "analogy": "The letter is printed. Only the blanks get filled in.",
+    "map": [
+     {
+      "from": "The printed letter",
+      "to": "the fixed run() skeleton"
+     },
+     {
+      "from": "The fill-in blanks",
+      "to": "the abstract steps"
+     },
+     {
+      "from": "Each person's answers",
+      "to": "a subclass's overrides"
+     },
+     {
+      "from": "You can't reorder it",
+      "to": "the parent locks the sequence"
+     }
+    ],
+    "breaks": "on a form YOU choose when to fill each blank \u2014 here the parent decides when each step runs, and calls you. Don't call it; it calls you.",
+    "dur": 39.855
+   }
+  },
+  {
+   "id": "dp08-template-method_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 193.707,
+   "out_seconds": 223.358,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "The skeleton, written once",
+    "file": "Importer.java",
+    "lines": [
+     {
+      "t": "abstract class Importer {",
+      "s": "add"
+     },
+     {
+      "t": "  public final void run(File f) {   // the template \u2014 final!",
+      "s": "add"
+     },
+     {
+      "t": "    var raw = open(f);",
+      "s": "add"
+     },
+     {
+      "t": "    var rows = parse(raw);          // a hole",
+      "s": "add"
+     },
+     {
+      "t": "    validate(rows); dedupe(rows); save(rows);",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "  protected abstract List<Row> parse(String raw);  // fill me",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "run() is final \u2014 the sequence is locked. parse() is the hole.",
+    "dur": 30.151
+   }
+  },
+  {
+   "id": "dp08-template-method_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 223.858,
+   "out_seconds": 248.533,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "A subclass fills only the hole",
+    "file": "CsvImporter.java",
+    "lines": [
+     {
+      "t": "class CsvImporter extends Importer {",
+      "s": "add"
+     },
+     {
+      "t": "  protected List<Row> parse(String raw) {",
+      "s": "add"
+     },
+     {
+      "t": "    return Csv.split(raw);   // the ONE thing CSV does",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "// no run(), no open(), no validate() \u2014 all inherited"
+     }
+    ],
+    "note": "The whole class is one method. Everything else is inherited.",
+    "dur": 25.175
+   }
+  },
+  {
+   "id": "dp08-template-method_try",
+   "type": "dp_try",
+   "in_seconds": 249.033,
+   "out_seconds": 273.339,
+   "props": {
+    "title": "Write JsonImporter",
+    "file": "JsonImporter.java",
+    "lines": [
+     {
+      "t": "class JsonImporter extends Importer {"
+     },
+     {
+      "t": "  // \u25af override just parse() to read JSON",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Write JsonImporter \u2014 override only parse() to parse JSON.",
+    "hint": "protected List<Row> parse(String raw) { return Json.rows(raw); }",
+    "dur": 24.806
+   }
+  },
+  {
+   "id": "dp08-template-method_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 273.839,
+   "out_seconds": 303.922,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "One skeleton fix helps everyone",
+    "file": "Importer.java",
+    "lines": [
+     {
+      "t": "  public final void run(File f) {"
+     },
+     {
+      "t": "    var rows = parse(open(f));"
+     },
+     {
+      "t": "    validate(rows);"
+     },
+     {
+      "t": "    rows = skipAlreadyImported(rows);  // added ONCE",
+      "s": "add"
+     },
+     {
+      "t": "    dedupe(rows); save(rows);"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "  protected boolean useCache() { return true; }  // a hook",
+      "s": "add"
+     }
+    ],
+    "note": "That new step now applies to CSV, JSON, XML \u2014 automatically.",
+    "dur": 30.583
+   }
+  },
+  {
+   "id": "dp08-template-method_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 304.422,
+   "out_seconds": 336.146,
+   "props": {
+    "requirement": "\"Add an XML importer\" \u2014 a third format",
+    "naiveLabel": "Before",
+    "naiveCost": "Copy all five steps into a third class.",
+    "naiveSteps": [
+     "paste the whole run() flow",
+     "keep all three in sync forever",
+     "fix every bug three times"
+    ],
+    "patLabel": "Now",
+    "patCost": "One method. The skeleton is already yours.",
+    "patFile": "XmlImporter.java",
+    "patLines": [
+     {
+      "t": "class XmlImporter",
+      "s": "add"
+     },
+     {
+      "t": "    extends Importer {",
+      "s": "add"
+     },
+     {
+      "t": "  protected List<Row> parse(",
+      "s": "add"
+     },
+     {
+      "t": "      String raw) {",
+      "s": "add"
+     },
+     {
+      "t": "    return Xml.rows(raw);",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "dur": 32.224
+   }
+  },
+  {
+   "id": "dp08-template-method_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 336.646,
+   "out_seconds": 369.663,
+   "props": {
+    "name": "The Template Method Pattern",
+    "plain": "A parent defines the algorithm's skeleton in one method and leaves certain steps abstract for subclasses to fill.",
+    "nodes": [
+     {
+      "id": "base",
+      "title": "Importer",
+      "stereo": "abstract",
+      "members": [
+       "+ run()   \u00abtemplate, final\u00bb",
+       "# parse()   \u00ababstract\u00bb",
+       "# validate() / save()"
+      ],
+      "x": 660,
+      "y": 210,
+      "w": 600,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "csv",
+      "title": "CsvImporter",
+      "members": [
+       "# parse()"
+      ],
+      "x": 250,
+      "y": 640,
+      "w": 380,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "json",
+      "title": "JsonImporter",
+      "members": [
+       "# parse()"
+      ],
+      "x": 770,
+      "y": 640,
+      "w": 380,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "xml",
+      "title": "XmlImporter",
+      "members": [
+       "# parse()"
+      ],
+      "x": 1290,
+      "y": 640,
+      "w": 380,
+      "color": "#34D399"
+     }
+    ],
+    "edges": [
+     {
+      "from": "csv",
+      "to": "base",
+      "kind": "impl"
+     },
+     {
+      "from": "json",
+      "to": "base",
+      "kind": "impl"
+     },
+     {
+      "from": "xml",
+      "to": "base",
+      "kind": "impl"
+     }
+    ],
+    "dur": 33.517
+   }
+  },
+  {
+   "id": "dp08-template-method_map",
+   "type": "dp_map",
+   "in_seconds": 370.163,
+   "out_seconds": 414.125,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "AbstractClass",
+      "your": "abstract Importer"
+     },
+     {
+      "role": "Template Method",
+      "your": "run() \u2014 final, fixed order"
+     },
+     {
+      "role": "Primitive / hook",
+      "your": "parse() (abstract), useCache() (hook)"
+     },
+     {
+      "role": "ConcreteClass",
+      "your": "CsvImporter, JsonImporter, \u2026"
+     }
+    ],
+    "plain": "The parent's template method calls the fixed steps in order, calling down to abstract steps the subclass provides.",
+    "gof": "Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps without changing the algorithm's structure.",
+    "dur": 44.462
+   }
+  },
+  {
+   "id": "dp08-template-method_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 414.625,
+   "out_seconds": 456.517,
+   "props": {
+    "title": "Inheritance is the catch",
+    "costs": [
+     "It's inheritance \u2014 one rigid superclass",
+     "Flow jumps between parent and child",
+     "Subclasses can't change the order"
+    ],
+    "dont": [
+     "The steps vary more than they share",
+     "You'd rather compose than inherit",
+     "There's really only one version"
+    ],
+    "signal": "several methods share an identical skeleton and differ in just a step or two \u2014 and you keep copy-pasting the skeleton.",
+    "dur": 42.392
+   }
+  },
+  {
+   "id": "dp08-template-method_recap",
+   "type": "dp_recap",
+   "in_seconds": 457.017,
+   "out_seconds": 509.662,
+   "props": {
+    "title": "Template Method, in one breath",
+    "items": [
+     "Each importer copy-pasted the same five steps, so every fix and every new step had to be made in every copy.",
+     "The skeleton and most steps are fixed; only one step varies \u2014 so write the skeleton once and leave holes.",
+     "Template Method: a final parent method runs the fixed steps and calls down to abstract ones. New variant, one method."
+    ],
+    "challenge": "A game's enemy types all take a turn the same way \u2014 sense, decide, act \u2014 but each decides differently. A boss adds one extra step.",
+    "question": "Does Template Method fit? What's the template, and what are the holes?",
+    "dur": 53.145
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   3.055,
+   "Here are two classes that are almost the"
+  ],
+  [
+   3.055,
+   3.436,
+   "same."
+  ],
+  [
+   4.068,
+   4.832,
+   "Same steps,"
+  ],
+  [
+   4.832,
+   5.595,
+   "same order,"
+  ],
+  [
+   5.595,
+   8.65,
+   "same nearly-identical code \u2014 differing in just one"
+  ],
+  [
+   8.65,
+   9.032,
+   "place."
+  ],
+  [
+   9.663,
+   11.572,
+   "So every bug you fix,"
+  ],
+  [
+   11.572,
+   12.718,
+   "you fix twice."
+  ],
+  [
+   12.718,
+   14.245,
+   "Every step you add,"
+  ],
+  [
+   14.245,
+   15.39,
+   "you add twice."
+  ],
+  [
+   16.022,
+   19.076,
+   "There is a clean way to write the"
+  ],
+  [
+   19.076,
+   20.604,
+   "shared skeleton exactly once,"
+  ],
+  [
+   20.604,
+   22.513,
+   "and leave only the holes."
+  ],
+  [
+   22.513,
+   24.04,
+   "Let's import some data."
+  ],
+  [
+   24.54,
+   25.385,
+   "Every night,"
+  ],
+  [
+   25.385,
+   27.92,
+   "your app imports data from vendors."
+  ],
+  [
+   28.551,
+   30.664,
+   "One sends a CSV file."
+  ],
+  [
+   30.664,
+   31.931,
+   "Another sends JSON."
+  ],
+  [
+   32.562,
+   35.942,
+   "And both importers do the exact same things,"
+  ],
+  [
+   35.942,
+   38.054,
+   "in the exact same order."
+  ],
+  [
+   38.054,
+   39.322,
+   "Open the file."
+  ],
+  [
+   39.322,
+   40.167,
+   "Parse it."
+  ],
+  [
+   40.167,
+   41.434,
+   "Validate the rows."
+  ],
+  [
+   41.434,
+   42.279,
+   "Remove duplicates."
+  ],
+  [
+   42.279,
+   43.969,
+   "Save to the database."
+  ],
+  [
+   44.6,
+   47.98,
+   "The only real difference is the parsing step"
+  ],
+  [
+   47.98,
+   49.67,
+   "\u2014 CSV versus JSON."
+  ],
+  [
+   50.302,
+   53.681,
+   "So why does each importer spell out all"
+  ],
+  [
+   53.681,
+   55.371,
+   "five steps from scratch?"
+  ],
+  [
+   55.871,
+   57.244,
+   "The obvious approach:"
+  ],
+  [
+   57.244,
+   59.076,
+   "one importer per format."
+  ],
+  [
+   59.707,
+   62.454,
+   "The CSV importer opens the file,"
+  ],
+  [
+   62.454,
+   63.827,
+   "parses the CSV,"
+  ],
+  [
+   63.827,
+   64.285,
+   "validates,"
+  ],
+  [
+   64.285,
+   64.743,
+   "dedupes,"
+  ],
+  [
+   64.743,
+   65.658,
+   "and saves."
+  ],
+  [
+   65.658,
+   67.032,
+   "Five clear steps."
+  ],
+  [
+   67.663,
+   69.495,
+   "And the JSON importer?"
+  ],
+  [
+   69.495,
+   71.784,
+   "It is this exact class,"
+  ],
+  [
+   71.784,
+   74.53,
+   "copied \u2014 with one line changed."
+  ],
+  [
+   74.53,
+   76.819,
+   "Parse CSV becomes parse JSON."
+  ],
+  [
+   76.819,
+   78.65,
+   "Everything else is identical."
+  ],
+  [
+   79.282,
+   80.655,
+   "Two importers today."
+  ],
+  [
+   80.655,
+   82.029,
+   "It feels harmless."
+  ],
+  [
+   82.029,
+   83.86,
+   "It is a trap."
+  ],
+  [
+   84.36,
+   85.56,
+   "Then the request:"
+  ],
+  [
+   85.56,
+   87.96,
+   "skip rows we have already imported."
+  ],
+  [
+   88.592,
+   91.792,
+   "So you add a step to the CSV"
+  ],
+  [
+   91.792,
+   92.192,
+   "importer."
+  ],
+  [
+   92.192,
+   95.393,
+   "Then you paste the very same line into"
+  ],
+  [
+   95.393,
+   96.593,
+   "the JSON importer."
+  ],
+  [
+   97.224,
+   99.625,
+   "And that is the whole disease."
+  ],
+  [
+   100.256,
+   103.456,
+   "The skeleton \u2014 the sequence of steps \u2014"
+  ],
+  [
+   103.456,
+   104.257,
+   "is duplicated."
+  ],
+  [
+   104.257,
+   106.257,
+   "So every change happens twice."
+  ],
+  [
+   106.888,
+   108.889,
+   "Find a bug in validation?"
+  ],
+  [
+   108.889,
+   110.489,
+   "Fix it in both."
+  ],
+  [
+   110.489,
+   111.689,
+   "Reorder the steps?"
+  ],
+  [
+   111.689,
+   112.489,
+   "In both."
+  ],
+  [
+   113.12,
+   116.321,
+   "And when the XML vendor arrives next quarter,"
+  ],
+  [
+   116.321,
+   119.521,
+   "you copy all five steps a third time."
+  ],
+  [
+   120.153,
+   122.953,
+   "The shared algorithm has no single home."
+  ],
+  [
+   123.453,
+   124.193,
+   "What changes,"
+  ],
+  [
+   124.193,
+   125.672,
+   "and what stays fixed?"
+  ],
+  [
+   126.304,
+   127.784,
+   "Almost everything is fixed."
+  ],
+  [
+   127.784,
+   129.263,
+   "The sequence of steps."
+  ],
+  [
+   129.263,
+   131.113,
+   "Four of the five steps,"
+  ],
+  [
+   131.113,
+   131.483,
+   "exactly."
+  ],
+  [
+   131.483,
+   134.072,
+   "And the order they must run in."
+  ],
+  [
+   134.703,
+   137.663,
+   "What actually varies is tiny \u2014 just the"
+  ],
+  [
+   137.663,
+   138.403,
+   "parse step,"
+  ],
+  [
+   138.403,
+   140.252,
+   "and maybe one optional extra."
+  ],
+  [
+   140.884,
+   142.733,
+   "So the fix writes itself."
+  ],
+  [
+   143.365,
+   146.324,
+   "Put the skeleton \u2014 the fixed sequence \u2014"
+  ],
+  [
+   146.324,
+   147.434,
+   "in one place,"
+  ],
+  [
+   147.434,
+   148.543,
+   "a parent class."
+  ],
+  [
+   148.543,
+   149.653,
+   "And leave holes,"
+  ],
+  [
+   149.653,
+   151.502,
+   "exactly where the steps differ,"
+  ],
+  [
+   151.502,
+   153.352,
+   "for the children to fill."
+  ],
+  [
+   153.852,
+   155.773,
+   "Think of a printed form letter."
+  ],
+  [
+   156.405,
+   158.967,
+   "The body is already written \u2014 the greeting,"
+  ],
+  [
+   158.967,
+   159.608,
+   "the structure,"
+  ],
+  [
+   159.608,
+   160.248,
+   "the closing."
+  ],
+  [
+   160.248,
+   162.81,
+   "All you do is fill in a few"
+  ],
+  [
+   162.81,
+   163.13,
+   "blanks."
+  ],
+  [
+   163.13,
+   164.091,
+   "Your name here."
+  ],
+  [
+   164.091,
+   165.052,
+   "The date there."
+  ],
+  [
+   165.683,
+   167.285,
+   "You cannot rearrange the letter."
+  ],
+  [
+   167.285,
+   168.886,
+   "The template fixes the order;"
+  ],
+  [
+   168.886,
+   170.807,
+   "you only supply the missing pieces."
+  ],
+  [
+   171.439,
+   173.04,
+   "That is our fix exactly."
+  ],
+  [
+   173.04,
+   175.602,
+   "The printed letter is the fixed sequence of"
+  ],
+  [
+   175.602,
+   175.922,
+   "steps."
+  ],
+  [
+   175.922,
+   178.164,
+   "The blanks are the steps that differ."
+  ],
+  [
+   178.164,
+   179.765,
+   "Each subclass fills them in."
+  ],
+  [
+   180.397,
+   182.959,
+   "Where it breaks \u2014 and this is the"
+  ],
+  [
+   182.959,
+   183.279,
+   "subtle,"
+  ],
+  [
+   183.279,
+   183.92,
+   "important part."
+  ],
+  [
+   183.92,
+   184.881,
+   "With a form,"
+  ],
+  [
+   184.881,
+   187.122,
+   "you decide when to fill each blank."
+  ],
+  [
+   187.122,
+   187.443,
+   "Here,"
+  ],
+  [
+   187.443,
+   189.684,
+   "the parent decides when each step runs,"
+  ],
+  [
+   189.684,
+   191.286,
+   "and calls down to you."
+  ],
+  [
+   191.286,
+   192.246,
+   "Don't call it."
+  ],
+  [
+   192.246,
+   193.207,
+   "It calls you."
+  ],
+  [
+   193.707,
+   194.392,
+   "Move one."
+  ],
+  [
+   194.392,
+   196.106,
+   "We write the skeleton once,"
+  ],
+  [
+   196.106,
+   197.476,
+   "in an abstract importer."
+  ],
+  [
+   198.108,
+   200.849,
+   "There is a run method \u2014 and notice"
+  ],
+  [
+   200.849,
+   201.877,
+   "it is final."
+  ],
+  [
+   201.877,
+   202.905,
+   "That is deliberate."
+  ],
+  [
+   202.905,
+   204.961,
+   "The sequence of steps is locked;"
+  ],
+  [
+   204.961,
+   206.675,
+   "no subclass can reorder it."
+  ],
+  [
+   207.306,
+   207.649,
+   "Inside,"
+  ],
+  [
+   207.649,
+   208.334,
+   "it opens,"
+  ],
+  [
+   208.334,
+   208.677,
+   "parses,"
+  ],
+  [
+   208.677,
+   209.02,
+   "validates,"
+  ],
+  [
+   209.02,
+   209.362,
+   "dedupes,"
+  ],
+  [
+   209.362,
+   211.418,
+   "and saves \u2014 the shared flow,"
+  ],
+  [
+   211.418,
+   212.446,
+   "in one place."
+  ],
+  [
+   213.078,
+   215.134,
+   "But parse is not written here."
+  ],
+  [
+   215.134,
+   217.533,
+   "It is declared abstract \u2014 a hole."
+  ],
+  [
+   217.533,
+   218.561,
+   "The parent says,"
+  ],
+  [
+   218.561,
+   220.959,
+   "at this exact point I will parse,"
+  ],
+  [
+   220.959,
+   223.358,
+   "but a child must tell me how."
+  ],
+  [
+   223.858,
+   224.657,
+   "Move two."
+  ],
+  [
+   224.657,
+   227.455,
+   "The CSV importer shrinks to almost nothing."
+  ],
+  [
+   228.086,
+   229.685,
+   "It extends the importer,"
+  ],
+  [
+   229.685,
+   232.882,
+   "and it overrides exactly one method \u2014 parse"
+  ],
+  [
+   232.882,
+   234.481,
+   "\u2014 to split CSV."
+  ],
+  [
+   235.113,
+   237.111,
+   "That is the entire class."
+  ],
+  [
+   237.111,
+   237.91,
+   "No run."
+  ],
+  [
+   237.91,
+   238.709,
+   "No open."
+  ],
+  [
+   238.709,
+   239.509,
+   "No validate,"
+  ],
+  [
+   239.509,
+   239.908,
+   "dedupe,"
+  ],
+  [
+   239.908,
+   240.708,
+   "or save."
+  ],
+  [
+   240.708,
+   243.905,
+   "All of that is inherited from the parent,"
+  ],
+  [
+   243.905,
+   244.704,
+   "written once."
+  ],
+  [
+   245.336,
+   247.334,
+   "The subclass fills the hole,"
+  ],
+  [
+   247.334,
+   248.533,
+   "and nothing more."
+  ],
+  [
+   249.033,
+   249.78,
+   "Your turn."
+  ],
+  [
+   250.412,
+   253.4,
+   "The JSON importer needs nothing but its own"
+  ],
+  [
+   253.4,
+   253.773,
+   "parse."
+  ],
+  [
+   254.405,
+   257.393,
+   "Everything else \u2014 the whole flow \u2014 it"
+  ],
+  [
+   257.393,
+   257.767,
+   "inherits."
+  ],
+  [
+   257.767,
+   258.14,
+   "Pause,"
+  ],
+  [
+   258.14,
+   259.261,
+   "and write it."
+  ],
+  [
+   259.261,
+   261.502,
+   "Just override parse to read JSON,"
+  ],
+  [
+   261.502,
+   262.249,
+   "and stop."
+  ],
+  [
+   262.88,
+   265.122,
+   "If you wrote a single method,"
+  ],
+  [
+   265.122,
+   266.989,
+   "you got it exactly right."
+  ],
+  [
+   266.989,
+   269.977,
+   "That is the entire class \u2014 because everything"
+  ],
+  [
+   269.977,
+   272.965,
+   "the two importers share now lives in one"
+  ],
+  [
+   272.965,
+   273.339,
+   "place."
+  ],
+  [
+   273.839,
+   274.562,
+   "Move three,"
+  ],
+  [
+   274.562,
+   277.453,
+   "and here is the payoff of a single"
+  ],
+  [
+   277.453,
+   277.814,
+   "skeleton."
+  ],
+  [
+   278.446,
+   281.337,
+   "Remember that skip already imported step you had"
+  ],
+  [
+   281.337,
+   282.421,
+   "to paste everywhere?"
+  ],
+  [
+   282.421,
+   283.505,
+   "Add it once,"
+  ],
+  [
+   283.505,
+   284.951,
+   "in the parent's run."
+  ],
+  [
+   285.582,
+   286.305,
+   "And instantly,"
+  ],
+  [
+   286.305,
+   287.751,
+   "every importer \u2014 CSV,"
+  ],
+  [
+   287.751,
+   288.112,
+   "JSON,"
+  ],
+  [
+   288.112,
+   290.642,
+   "and every future one \u2014 gets it."
+  ],
+  [
+   290.642,
+   291.365,
+   "For free."
+  ],
+  [
+   291.996,
+   294.165,
+   "You can even leave optional holes,"
+  ],
+  [
+   294.165,
+   297.056,
+   "called hooks \u2014 a method with a sensible"
+  ],
+  [
+   297.056,
+   299.947,
+   "default that a subclass may override if it"
+  ],
+  [
+   299.947,
+   300.308,
+   "wants,"
+  ],
+  [
+   300.308,
+   302.115,
+   "but does not have to."
+  ],
+  [
+   302.115,
+   303.922,
+   "The skeleton stays in charge."
+  ],
+  [
+   304.422,
+   306.115,
+   "Now the third format."
+  ],
+  [
+   306.115,
+   307.807,
+   "Add an XML importer."
+  ],
+  [
+   308.439,
+   308.862,
+   "Before,"
+  ],
+  [
+   308.862,
+   312.247,
+   "that meant pasting all five steps into a"
+  ],
+  [
+   312.247,
+   313.094,
+   "third class,"
+  ],
+  [
+   313.094,
+   316.056,
+   "then keeping three copies in sync forever,"
+  ],
+  [
+   316.056,
+   318.595,
+   "and fixing every bug three times."
+  ],
+  [
+   319.226,
+   319.649,
+   "Now?"
+  ],
+  [
+   319.649,
+   320.496,
+   "One method."
+  ],
+  [
+   320.496,
+   321.765,
+   "Parse the XML."
+  ],
+  [
+   322.397,
+   323.243,
+   "The open,"
+  ],
+  [
+   323.243,
+   324.089,
+   "the validate,"
+  ],
+  [
+   324.089,
+   324.936,
+   "the dedupe,"
+  ],
+  [
+   324.936,
+   325.782,
+   "the save,"
+  ],
+  [
+   325.782,
+   327.898,
+   "the skip-already-imported \u2014 all inherited,"
+  ],
+  [
+   327.898,
+   328.744,
+   "all shared,"
+  ],
+  [
+   328.744,
+   329.59,
+   "all correct."
+  ],
+  [
+   330.222,
+   333.607,
+   "A new format became a single new method."
+  ],
+  [
+   333.607,
+   336.146,
+   "The algorithm was written exactly once."
+  ],
+  [
+   336.646,
+   338.23,
+   "Now we name it."
+  ],
+  [
+   338.862,
+   341.237,
+   "This is the Template Method pattern."
+  ],
+  [
+   341.869,
+   343.057,
+   "At the top,"
+  ],
+  [
+   343.057,
+   344.245,
+   "the abstract importer."
+  ],
+  [
+   344.245,
+   346.225,
+   "It owns the template method,"
+  ],
+  [
+   346.225,
+   347.413,
+   "run \u2014 final,"
+  ],
+  [
+   347.413,
+   350.581,
+   "so the sequence cannot change \u2014 and it"
+  ],
+  [
+   350.581,
+   352.165,
+   "declares the abstract step,"
+  ],
+  [
+   352.165,
+   352.561,
+   "parse."
+  ],
+  [
+   353.192,
+   353.588,
+   "Underneath,"
+  ],
+  [
+   353.588,
+   355.568,
+   "the concrete importers \u2014 CSV,"
+  ],
+  [
+   355.568,
+   355.964,
+   "JSON,"
+  ],
+  [
+   355.964,
+   358.736,
+   "and the green XML you just added."
+  ],
+  [
+   358.736,
+   361.112,
+   "Each one fills the single hole,"
+  ],
+  [
+   361.112,
+   362.696,
+   "and inherits everything else."
+  ],
+  [
+   363.327,
+   365.703,
+   "There is just one hierarchy here."
+  ],
+  [
+   365.703,
+   367.683,
+   "The parent holds the algorithm;"
+  ],
+  [
+   367.683,
+   369.663,
+   "the children hold the details."
+  ],
+  [
+   370.163,
+   370.991,
+   "The roles,"
+  ],
+  [
+   370.991,
+   372.648,
+   "mapped to your code."
+  ],
+  [
+   373.279,
+   375.764,
+   "The abstract class is your importer."
+  ],
+  [
+   376.396,
+   379.295,
+   "The template method is run \u2014 final,"
+  ],
+  [
+   379.295,
+   380.952,
+   "holding the fixed order."
+  ],
+  [
+   381.583,
+   384.068,
+   "The primitive operations are the holes,"
+  ],
+  [
+   384.068,
+   384.896,
+   "like parse,"
+  ],
+  [
+   384.896,
+   386.553,
+   "that subclasses must fill;"
+  ],
+  [
+   386.553,
+   389.866,
+   "and hooks are the optional ones with defaults."
+  ],
+  [
+   390.498,
+   392.983,
+   "The concrete classes are your CSV,"
+  ],
+  [
+   392.983,
+   393.397,
+   "JSON,"
+  ],
+  [
+   393.397,
+   394.639,
+   "and XML importers."
+  ],
+  [
+   395.271,
+   398.584,
+   "In plain terms \u2014 the parent's one method"
+  ],
+  [
+   398.584,
+   400.241,
+   "runs the fixed steps,"
+  ],
+  [
+   400.241,
+   403.554,
+   "calling down to the pieces a subclass supplies."
+  ],
+  [
+   404.185,
+   405.842,
+   "The Gang of Four:"
+  ],
+  [
+   405.842,
+   408.327,
+   "define the skeleton of an algorithm,"
+  ],
+  [
+   408.327,
+   410.398,
+   "deferring some steps to subclasses,"
+  ],
+  [
+   410.398,
+   413.711,
+   "so they can redefine steps without changing the"
+  ],
+  [
+   413.711,
+   414.125,
+   "structure."
+  ],
+  [
+   414.625,
+   415.652,
+   "The honest costs."
+  ],
+  [
+   416.284,
+   418.337,
+   "Template Method is built on inheritance,"
+  ],
+  [
+   418.337,
+   421.076,
+   "so each concrete class is locked to one"
+  ],
+  [
+   421.076,
+   423.814,
+   "rigid superclass \u2014 and the flow jumps between"
+  ],
+  [
+   423.814,
+   424.841,
+   "parent and child,"
+  ],
+  [
+   424.841,
+   426.895,
+   "which can be hard to follow."
+  ],
+  [
+   427.527,
+   430.265,
+   "And subclasses genuinely cannot change the order\nof"
+  ],
+  [
+   430.265,
+   430.608,
+   "steps;"
+  ],
+  [
+   430.608,
+   431.977,
+   "that is the point,"
+  ],
+  [
+   431.977,
+   434.031,
+   "but it is also a constraint."
+  ],
+  [
+   434.662,
+   437.401,
+   "So skip it when the steps vary more"
+  ],
+  [
+   437.401,
+   440.139,
+   "than they share \u2014 at that point you"
+  ],
+  [
+   440.139,
+   440.824,
+   "want composition,"
+  ],
+  [
+   440.824,
+   441.508,
+   "and Strategy,"
+  ],
+  [
+   441.508,
+   443.22,
+   "which we have already met,"
+  ],
+  [
+   443.22,
+   444.931,
+   "is often the better tool."
+  ],
+  [
+   445.563,
+   447.275,
+   "The signal to use it:"
+  ],
+  [
+   447.275,
+   450.013,
+   "several methods share an identical skeleton and\ndiffer"
+  ],
+  [
+   450.013,
+   452.067,
+   "in only a step or two,"
+  ],
+  [
+   452.067,
+   454.121,
+   "and you keep copy-pasting that skeleton."
+  ],
+  [
+   454.121,
+   455.148,
+   "Write it once,"
+  ],
+  [
+   455.148,
+   456.517,
+   "and leave the holes."
+  ],
+  [
+   457.017,
+   458.803,
+   "The journey in three beats."
+  ],
+  [
+   459.435,
+   460.149,
+   "The problem:"
+  ],
+  [
+   460.149,
+   462.65,
+   "each importer copy-pasted the same five steps,"
+  ],
+  [
+   462.65,
+   465.507,
+   "so every fix and every new step had"
+  ],
+  [
+   465.507,
+   467.651,
+   "to be made in every copy."
+  ],
+  [
+   468.282,
+   468.997,
+   "The insight:"
+  ],
+  [
+   468.997,
+   471.497,
+   "the skeleton and most steps are fixed,"
+  ],
+  [
+   471.497,
+   473.283,
+   "and only one step varies,"
+  ],
+  [
+   473.283,
+   476.141,
+   "so write the skeleton once and leave holes."
+  ],
+  [
+   476.772,
+   477.487,
+   "The pattern:"
+  ],
+  [
+   477.487,
+   478.201,
+   "Template Method."
+  ],
+  [
+   478.201,
+   481.059,
+   "A final parent method runs the fixed steps"
+  ],
+  [
+   481.059,
+   483.202,
+   "and calls down to abstract ones,"
+  ],
+  [
+   483.202,
+   486.06,
+   "so a new variant is just one method."
+  ],
+  [
+   486.692,
+   487.049,
+   "Now,"
+  ],
+  [
+   487.049,
+   487.763,
+   "for you,"
+  ],
+  [
+   487.763,
+   489.192,
+   "before the next episode."
+  ],
+  [
+   489.824,
+   492.681,
+   "A game's enemies all take a turn the"
+  ],
+  [
+   492.681,
+   494.11,
+   "same way \u2014 sense,"
+  ],
+  [
+   494.11,
+   494.467,
+   "decide,"
+  ],
+  [
+   494.467,
+   496.968,
+   "act \u2014 but each one decides differently,"
+  ],
+  [
+   496.968,
+   499.826,
+   "and a boss adds one extra step at"
+  ],
+  [
+   499.826,
+   500.54,
+   "the end."
+  ],
+  [
+   501.172,
+   502.601,
+   "Does Template Method fit?"
+  ],
+  [
+   502.601,
+   504.387,
+   "What is the template here,"
+  ],
+  [
+   504.387,
+   506.173,
+   "and what are the holes?"
+  ],
+  [
+   506.804,
+   507.161,
+   "Pause,"
+  ],
+  [
+   507.161,
+   509.662,
+   "and sketch it before you press play."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp08-template-method.wav",
+   "volume": 1.0
+  }
+ }
+}

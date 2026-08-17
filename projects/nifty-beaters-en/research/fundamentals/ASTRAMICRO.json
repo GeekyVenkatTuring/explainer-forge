@@ -1,0 +1,104 @@
+{
+ "ticker": "ASTRAMICRO",
+ "scraped_at": "2026-08-14T15:28:14",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 16501.0,
+ "current_price": 1738.0,
+ "pe": 87.4,
+ "book_value": 138.0,
+ "dividend_yield_pct": 0.14,
+ "roce_pct": 20.2,
+ "roe_pct": 16.0,
+ "face_value": 2.0,
+ "high": 1960.0,
+ "sales_growth": {
+  "10 Years": 13.0,
+  "5 Years": 46.0,
+  "3 Years": 40.0,
+  "TTM": 16.0
+ },
+ "profit_growth": {
+  "10 Years": 31.0,
+  "5 Years": 59.0,
+  "3 Years": 69.0,
+  "1 Year": 69.0
+ },
+ "roe_hist": {
+  "Equity Capital": 16.0,
+  "Reserves": 275.0,
+  "Borrowings&nbsp; +": 92.0,
+  "Other Liabilities&nbsp; +": 111.0,
+  "Total Liabilities": 495.0,
+  "Fixed Assets&nbsp; +": 142.0,
+  "CWIP": 0.0,
+  "Investments": 0.0,
+  "Other Assets&nbsp; +": 354.0,
+  "Total Assets": 495.0
+ },
+ "price_cagr": {
+  "10 Years": 11.0,
+  "5 Years": 13.0,
+  "3 Years": 15.0,
+  "Last Year": 16.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "2.2%",
+   "22%",
+   "29%",
+   "23%",
+   "15%",
+   "21%",
+   "29%",
+   "29%",
+   "20%",
+   "22%",
+   "32%",
+   "33%",
+   "19%"
+  ],
+  "eps": [
+   "-0.71",
+   "3.16",
+   "4.57",
+   "5.73",
+   "0.76",
+   "2.67",
+   "5.00",
+   "7.74",
+   "1.71",
+   "2.52",
+   "4.93",
+   "11.16",
+   "1.30"
+  ]
+ },
+ "pros": [
+  "Company has reduced debt.",
+  "Company has delivered good profit growth of 46.2% CAGR over last 5 years"
+ ],
+ "cons": [
+  "Stock is trading at 12.6 times its book value",
+  "Promoter holding is low: 6.54%",
+  "Company has high debtors of 216 days."
+ ]
+}

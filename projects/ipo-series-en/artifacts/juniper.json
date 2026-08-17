@@ -1,0 +1,697 @@
+{
+  "cuts": [
+    {
+      "id": "juniper_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 30.932,
+      "props": {
+        "title": "Juniper Green Energy IPO",
+        "sub": "Renewable power · ₹1,800 Cr · 100% Fresh · 30 Jul–3 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 31.432
+      }
+    },
+    {
+      "id": "juniper_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 31.432,
+      "out_seconds": 67.954,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Juniper Green Energy",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "⚡",
+            "k": "Renewable power producer",
+            "v": "Develops, owns and operates solar and wind power projects — an independent power producer, or I-P-P",
+            "chip": "SOLAR + WIND"
+          },
+          {
+            "emoji": "🔌",
+            "k": "Sells power on long contracts",
+            "v": "Supplies electricity under long-term purchase agreements, giving it contracted, recurring cash flows",
+            "chip": "LONG-TERM PPAs"
+          },
+          {
+            "emoji": "🌱",
+            "k": "Rides the clean-energy push",
+            "v": "Sits on India's fast-growing renewable theme — but it's a capital-hungry, heavily-financed business",
+            "chip": "GROWTH THEME"
+          }
+        ],
+        "dur": 37.022
+      }
+    },
+    {
+      "id": "juniper_fin",
+      "type": "sm_stats",
+      "in_seconds": 68.454,
+      "out_seconds": 110.712,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 805,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "₹424 → ₹570 → ₹805 Cr (FY24-26)"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 40,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#FBBF24",
+            "sub": "just +11% YoY (₹36.48 → ₹40.46 Cr)"
+          },
+          {
+            "label": "Net worth",
+            "to": 123,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "tiny vs an ₹1,800 Cr raise"
+          }
+        ],
+        "note": "Revenue nearly doubled in two years — impressive. But profit barely grew, and net worth is just ₹123 crore against an ₹1,800 crore raise, which tells you how leveraged this is.",
+        "dur": 42.758
+      }
+    },
+    {
+      "id": "juniper_issue",
+      "type": "sm_stats",
+      "in_seconds": 111.212,
+      "out_seconds": 154.814,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 1800,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "price band ₹214–225"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 1800,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "100% — all new money"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 0,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "ZERO — no promoter exit"
+          }
+        ],
+        "note": "Structurally, this is the good kind — a 100% fresh issue, no promoters cashing out. But the twist is what the fresh money is USED for — see next.",
+        "dur": 44.102
+      }
+    },
+    {
+      "id": "juniper_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 155.314,
+      "out_seconds": 195.316,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹1,800 Cr Funds",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "₹683 Cr — repay own debt",
+            "v": "The company uses a big chunk to pay down its own borrowings",
+            "chip": "DEBT"
+          },
+          {
+            "emoji": "🏭",
+            "k": "₹729 Cr — fund subsidiaries' debt",
+            "v": "More money goes into subsidiaries so THEY can repay their borrowings too",
+            "chip": "MORE DEBT"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Balance — general corporate",
+            "v": "Only the remainder is flexible, for general corporate purposes",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 40.502
+      }
+    },
+    {
+      "id": "juniper_verdict",
+      "type": "sm_myths",
+      "in_seconds": 195.816,
+      "out_seconds": 240.45,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "~78% of fresh money repays debt, not new capacity",
+            "f": "100% fresh issue — no promoter cash-out"
+          },
+          {
+            "m": "Heavily leveraged; profit up just 11%",
+            "f": "Revenue nearly doubled in two years"
+          },
+          {
+            "m": "Capital-intensive; execution & tariff risk",
+            "f": "On India's clean-energy tailwind"
+          }
+        ],
+        "dur": 45.134
+      }
+    },
+    {
+      "id": "juniper_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 240.95,
+      "out_seconds": 281.454,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,850 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 41.004
+      }
+    },
+    {
+      "id": "juniper_recap",
+      "type": "sm_recap",
+      "in_seconds": 281.954,
+      "out_seconds": 346.386,
+      "props": {
+        "title": "Juniper Green Energy IPO — at a Glance",
+        "items": [
+          "Business: renewable solar & wind power producer",
+          "FY26: revenue ₹804.93 Cr, profit ₹40.46 Cr (+11%)",
+          "₹1,800 Cr issue — 100% fresh, no promoter exit",
+          "But ~₹1,412 Cr (78%) repays debt, not new capacity",
+          "Retail min ~₹14,850 · GMP ~7.6% (unofficial)"
+        ],
+        "closer": "A fresh issue that mostly repays debt — deleveraging, not growth. Read the RHP; decide for yourself.",
+        "dur": 64.932
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.658,
+      "Let's analyse the Juniper Green Energy I-P-O —"
+    ],
+    [
+      3.658,
+      8.667,
+      "an eighteen hundred crore issue from a renewable-power company."
+    ],
+    [
+      8.667,
+      11.768,
+      "It's a one hundred percent fresh issue,"
+    ],
+    [
+      11.768,
+      13.995,
+      "which usually sounds great —"
+    ],
+    [
+      13.995,
+      20.595,
+      "but there's a twist in where that money goes that every investor should understand."
+    ],
+    [
+      20.595,
+      25.207,
+      "We'll cover the business, the financials, the money trail,"
+    ],
+    [
+      25.207,
+      27.672,
+      "and how much you need to apply."
+    ],
+    [
+      27.672,
+      30.932,
+      "This is education, not investment advice."
+    ],
+    [
+      31.432,
+      34.395,
+      "So what does Juniper Green Energy do?"
+    ],
+    [
+      34.395,
+      36.958,
+      "It's a renewable-power company —"
+    ],
+    [
+      36.958,
+      40.482,
+      "an independent power producer that develops,"
+    ],
+    [
+      40.482,
+      43.846,
+      "owns and operates solar and wind projects."
+    ],
+    [
+      43.846,
+      49.293,
+      "It sells that electricity under long-term power-purchase agreements,"
+    ],
+    [
+      49.293,
+      54.178,
+      "which gives it steady, contracted cash flows year after year."
+    ],
+    [
+      54.178,
+      58.423,
+      "It's riding India's fast-growing clean-energy theme —"
+    ],
+    [
+      58.423,
+      64.75,
+      "but keep one thing in mind: building power plants is enormously capital-hungry,"
+    ],
+    [
+      64.75,
+      67.954,
+      "so these businesses carry a lot of debt."
+    ],
+    [
+      68.454,
+      69.958,
+      "Now the financials."
+    ],
+    [
+      69.958,
+      71.857,
+      "Revenue has grown fast —"
+    ],
+    [
+      71.857,
+      76.13,
+      "from four hundred and twenty-four crore two years ago,"
+    ],
+    [
+      76.13,
+      78.346,
+      "to five hundred and seventy,"
+    ],
+    [
+      78.346,
+      82.777,
+      "to eight hundred and five crore in FY twenty twenty-six."
+    ],
+    [
+      82.777,
+      85.626,
+      "That's nearly doubling in two years."
+    ],
+    [
+      85.626,
+      88.317,
+      "But profit tells a quieter story —"
+    ],
+    [
+      88.317,
+      91.324,
+      "net profit was only about forty crore,"
+    ],
+    [
+      91.324,
+      93.144,
+      "up just eleven percent."
+    ],
+    [
+      93.144,
+      96.389,
+      "And here's the number that matters most —"
+    ],
+    [
+      96.389,
+      102.245,
+      "the company's net worth is only around one hundred and twenty-three crore,"
+    ],
+    [
+      102.245,
+      105.41,
+      "against an eighteen hundred crore raise."
+    ],
+    [
+      105.41,
+      109.129,
+      "That gap tells you this is a heavily-leveraged,"
+    ],
+    [
+      109.129,
+      110.712,
+      "debt-laden business."
+    ],
+    [
+      111.212,
+      113.605,
+      "So where does the money go?"
+    ],
+    [
+      113.605,
+      117.859,
+      "On the surface, this is the good kind of I-P-O —"
+    ],
+    [
+      117.859,
+      120.872,
+      "a one hundred percent fresh issue."
+    ],
+    [
+      120.872,
+      125.923,
+      "There's no offer for sale, so no promoter is cashing out."
+    ],
+    [
+      125.923,
+      129.645,
+      "Every rupee — all eighteen hundred crore —"
+    ],
+    [
+      129.645,
+      131.595,
+      "goes into the company."
+    ],
+    [
+      131.595,
+      132.659,
+      "But hold on,"
+    ],
+    [
+      132.659,
+      138.153,
+      "because this is exactly where you have to read the fine print."
+    ],
+    [
+      138.153,
+      141.521,
+      "A fresh issue funds the company, yes —"
+    ],
+    [
+      141.521,
+      143.648,
+      "but funds it to do WHAT?"
+    ],
+    [
+      143.648,
+      148.345,
+      "For many I-P-Os that means new factories or capacity."
+    ],
+    [
+      148.345,
+      151.18,
+      "For Juniper, as you'll see next,"
+    ],
+    [
+      151.18,
+      154.814,
+      "most of it does something very different."
+    ],
+    [
+      155.314,
+      156.562,
+      "Here's the twist."
+    ],
+    [
+      156.562,
+      159.865,
+      "Of the eighteen hundred crore of fresh money,"
+    ],
+    [
+      159.865,
+      165.516,
+      "about six hundred and eighty-three crore repays the company's own borrowings,"
+    ],
+    [
+      165.516,
+      173.517,
+      "and another seven hundred and twenty-nine crore is pushed into its subsidiaries so THEY can repay their debt."
+    ],
+    [
+      173.517,
+      177.407,
+      "Add those up — that's roughly fourteen hundred crore,"
+    ],
+    [
+      177.407,
+      180.93,
+      "about seventy-eight percent of the entire issue,"
+    ],
+    [
+      180.93,
+      182.398,
+      "going to repay debt."
+    ],
+    [
+      182.398,
+      185.334,
+      "So while it's technically a fresh issue,"
+    ],
+    [
+      185.334,
+      188.343,
+      "it's not really funding new solar farms —"
+    ],
+    [
+      188.343,
+      191.646,
+      "it's deleveraging a debt-heavy balance sheet."
+    ],
+    [
+      191.646,
+      195.316,
+      "That's a very different thing from funding growth."
+    ],
+    [
+      195.816,
+      197.418,
+      "Should you subscribe?"
+    ],
+    [
+      197.418,
+      198.563,
+      "The strengths —"
+    ],
+    [
+      198.563,
+      210.313,
+      "it's a hundred-percent fresh issue with no promoter selling; revenue has nearly doubled in two years; and it rides India's powerful clean-energy tailwind."
+    ],
+    [
+      210.313,
+      211.533,
+      "The watch-outs —"
+    ],
+    [
+      211.533,
+      230.608,
+      "around seventy-eight percent of the fresh money repays debt rather than building new capacity; the balance sheet is heavily leveraged and profit grew only eleven percent; and power generation is capital-intensive with real execution and tariff risks."
+    ],
+    [
+      230.608,
+      233.507,
+      "The takeaway — a fresh issue on paper,"
+    ],
+    [
+      233.507,
+      236.177,
+      "but mostly a deleveraging exercise."
+    ],
+    [
+      236.177,
+      240.45,
+      "Judge it as a debt clean-up, not a growth-capital raise."
+    ],
+    [
+      240.95,
+      244.571,
+      "How do you apply, and how much do you need?"
+    ],
+    [
+      244.571,
+      250.971,
+      "Retail investors bid up to two lakh rupees for a thirty-five percent quota —"
+    ],
+    [
+      250.971,
+      255.35,
+      "and if it's oversubscribed, allotment is by lottery,"
+    ],
+    [
+      255.35,
+      257.792,
+      "so a bigger bid doesn't help."
+    ],
+    [
+      257.792,
+      262.591,
+      "H-N-Is invest above two lakh for a fifteen percent quota."
+    ],
+    [
+      262.591,
+      266.128,
+      "For Juniper, one lot is sixty-six shares —"
+    ],
+    [
+      266.128,
+      270.844,
+      "about fourteen thousand eight hundred and fifty rupees —"
+    ],
+    [
+      270.844,
+      272.275,
+      "your minimum bid."
+    ],
+    [
+      272.275,
+      277.58,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      277.58,
+      281.454,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      281.954,
+      284.573,
+      "Let's recap Juniper Green Energy."
+    ],
+    [
+      284.573,
+      290.048,
+      "A renewable-power producer whose revenue nearly doubled in two years,"
+    ],
+    [
+      290.048,
+      293.142,
+      "though profit grew just eleven percent."
+    ],
+    [
+      293.142,
+      296.951,
+      "The I-P-O is a one hundred percent fresh issue —"
+    ],
+    [
+      296.951,
+      298.538,
+      "the good structure —"
+    ],
+    [
+      298.538,
+      307.743,
+      "but here's the catch: about seventy-eight percent of that fresh money repays debt rather than building new capacity."
+    ],
+    [
+      307.743,
+      310.837,
+      "The balance sheet is heavily leveraged."
+    ],
+    [
+      310.837,
+      316.63,
+      "Retail minimum is about fourteen thousand eight hundred and fifty rupees,"
+    ],
+    [
+      316.63,
+      321.47,
+      "and the grey-market premium is near seven and a half percent,"
+    ],
+    [
+      321.47,
+      323.454,
+      "though that's unofficial."
+    ],
+    [
+      323.454,
+      327.263,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      327.263,
+      329.485,
+      "it is not investment advice,"
+    ],
+    [
+      329.485,
+      332.103,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      332.103,
+      335.118,
+      "and not a prediction of listing gains."
+    ],
+    [
+      335.118,
+      339.324,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      339.324,
+      344.799,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      344.799,
+      346.386,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/juniper.wav",
+      "volume": 1.0
+    }
+  }
+}

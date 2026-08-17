@@ -1,0 +1,1049 @@
+{
+  "cuts": [
+    {
+      "id": "f_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 40.092,
+      "props": {
+        "title": "How to Analyse Bank Stocks",
+        "sub": "Finance sector · fundamentals · technicals · strategies",
+        "kicker": "SECTOR DEEP-DIVE · FINANCE",
+        "dur": 40.592
+      }
+    },
+    {
+      "id": "f_why",
+      "type": "sm_iconcards",
+      "in_seconds": 40.592,
+      "out_seconds": 98.58,
+      "props": {
+        "kicker": "WHY IT MATTERS",
+        "title": "The finance sector — the market's engine",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "Heaviest weight",
+            "v": "Banking & financials are ~35–40% of the Nifty — the market's engine",
+            "chip": "Index driver"
+          },
+          {
+            "emoji": "🔀",
+            "k": "Many kinds",
+            "v": "Private banks, PSU banks, NBFCs, insurers, AMCs — each analysed a bit differently",
+            "chip": "Sub-sectors"
+          },
+          {
+            "emoji": "🏛️",
+            "k": "RBI-driven",
+            "v": "Rate decisions, credit growth and liquidity move this sector first",
+            "chip": "Macro"
+          },
+          {
+            "emoji": "💧",
+            "k": "Most liquid",
+            "v": "Bank Nifty is India's most traded derivative — huge participation",
+            "chip": "Bank Nifty"
+          }
+        ],
+        "dur": 58.488
+      }
+    },
+    {
+      "id": "f_fund1",
+      "type": "sm_iconcards",
+      "in_seconds": 99.08,
+      "out_seconds": 180.472,
+      "props": {
+        "kicker": "FUNDAMENTALS · CORE",
+        "title": "The four numbers that define a bank",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "📊",
+            "k": "NIM",
+            "v": "Net Interest Margin — the spread a bank earns on lending. ~3–4% is healthy",
+            "chip": "Profit"
+          },
+          {
+            "emoji": "⚠️",
+            "k": "GNPA / NNPA",
+            "v": "Bad-loan ratio — asset quality. Below 1% is strong; above ~2% is a worry",
+            "chip": "Quality"
+          },
+          {
+            "emoji": "🏧",
+            "k": "CASA ratio",
+            "v": "Share of cheap current & savings deposits. Higher = cheaper funding = better margins",
+            "chip": "Funding"
+          },
+          {
+            "emoji": "🛡️",
+            "k": "CAR",
+            "v": "Capital Adequacy Ratio — the safety buffer. RBI minimum ~11.5%; strong banks 17–22%+",
+            "chip": "Safety"
+          }
+        ],
+        "dur": 81.892
+      }
+    },
+    {
+      "id": "f_fund2",
+      "type": "sm_compare3",
+      "in_seconds": 180.972,
+      "out_seconds": 261.264,
+      "props": {
+        "kicker": "FUNDAMENTALS · MORE",
+        "title": "Two more essentials — and how banks are valued",
+        "cols": [
+          {
+            "name": "Returns",
+            "color": "#34D399",
+            "emoji": "💹",
+            "hi": true,
+            "rows": [
+              {
+                "k": "ROA",
+                "v": "profit on assets; >1% good, >1.5% great"
+              },
+              {
+                "k": "ROE",
+                "v": "return on shareholder funds"
+              },
+              {
+                "k": "Provision cover",
+                "v": "cushion set aside vs bad loans"
+              },
+              {
+                "k": "Watch",
+                "v": "steady, high, improving"
+              }
+            ]
+          },
+          {
+            "name": "Growth",
+            "color": "#22D3EE",
+            "emoji": "📈",
+            "rows": [
+              {
+                "k": "Credit growth",
+                "v": "loan-book growth vs system"
+              },
+              {
+                "k": "Deposit growth",
+                "v": "funding keeping pace"
+              },
+              {
+                "k": "Cost-to-income",
+                "v": "efficiency; lower is better"
+              },
+              {
+                "k": "Watch",
+                "v": "growth WITH quality"
+              }
+            ]
+          },
+          {
+            "name": "Valuation",
+            "color": "#FBBF24",
+            "emoji": "🏷️",
+            "rows": [
+              {
+                "k": "Use P/B",
+                "v": "banks valued on Price-to-Book, not P/E"
+              },
+              {
+                "k": "Quality premium",
+                "v": "HDFC ~3x book; SBI ~1.5–2x"
+              },
+              {
+                "k": "PSU discount",
+                "v": "cheaper for a reason — check quality"
+              },
+              {
+                "k": "Watch",
+                "v": "pay up for clean books"
+              }
+            ]
+          }
+        ],
+        "dur": 80.792
+      }
+    },
+    {
+      "id": "f_tech",
+      "type": "sm_iconcards",
+      "in_seconds": 261.764,
+      "out_seconds": 327.82,
+      "props": {
+        "kicker": "TECHNICAL ANALYSIS",
+        "title": "Reading the sector on the chart",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "📉",
+            "k": "Track Bank Nifty",
+            "v": "The sector index. Its trend leads the broad market — watch its 50 & 200-DMA",
+            "chip": "Index"
+          },
+          {
+            "emoji": "💪",
+            "k": "Relative strength",
+            "v": "Is Bank Nifty outperforming the Nifty? Buy the sector that's leading",
+            "chip": "vs Nifty"
+          },
+          {
+            "emoji": "🌡️",
+            "k": "Breadth",
+            "v": ">70% of bank stocks green with a positive index = real rotation, not 1–2 names",
+            "chip": "Breadth"
+          },
+          {
+            "emoji": "🗓️",
+            "k": "The catalyst",
+            "v": "RBI policy day & quarterly results (NIM, NPA) drive the big moves",
+            "chip": "RBI"
+          }
+        ],
+        "dur": 66.556
+      }
+    },
+    {
+      "id": "f_strat",
+      "type": "sm_iconcards",
+      "in_seconds": 328.32,
+      "out_seconds": 403.54,
+      "props": {
+        "kicker": "STRATEGIES",
+        "title": "Strategies for the finance sector",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "👑",
+            "k": "Own the leaders",
+            "v": "For long-term, hold the highest-quality private banks — clean books, high ROA",
+            "chip": "Quality"
+          },
+          {
+            "emoji": "🔄",
+            "k": "PSU re-rating",
+            "v": "In up-cycles, cheap PSU banks with improving asset quality can re-rate hard",
+            "chip": "Cyclical"
+          },
+          {
+            "emoji": "📉",
+            "k": "Play the rate cycle",
+            "v": "Falling rates can lift NBFCs & rate-sensitives; watch RBI direction",
+            "chip": "Macro"
+          },
+          {
+            "emoji": "🎯",
+            "k": "Buy on NIM stability",
+            "v": "After a margin-miss fall (like HDFC/Axis), quality can be a patient entry",
+            "chip": "Contrarian"
+          }
+        ],
+        "dur": 75.72
+      }
+    },
+    {
+      "id": "f_check",
+      "type": "sm_checklist",
+      "in_seconds": 404.04,
+      "out_seconds": 471.816,
+      "props": {
+        "kicker": "HOW TO EVALUATE",
+        "title": "Evaluating a bank stock — checklist",
+        "color": "#34D399",
+        "icon": "✅",
+        "items": [
+          "Asset quality first: GNPA/NNPA low & improving?",
+          "NIM healthy (~3–4%) and stable or rising?",
+          "CASA high (cheap funding) & CAR well above 11.5%?",
+          "ROA above 1%, with credit growth WITH quality?",
+          "Valuation on P/B vs peers — pay up for clean books"
+        ],
+        "dur": 68.276
+      }
+    },
+    {
+      "id": "f_risk",
+      "type": "sm_myths",
+      "in_seconds": 472.316,
+      "out_seconds": 532.828,
+      "props": {
+        "kicker": "WHAT TO AVOID",
+        "title": "Finance sector — traps to avoid",
+        "mythLabel": "✗ TRAP",
+        "factLabel": "✓ REALITY",
+        "pairs": [
+          {
+            "m": "This bank is cheap on P/E — bargain!",
+            "f": "Value banks on P/B; a low multiple often hides bad loans"
+          },
+          {
+            "m": "Fast loan growth = a great bank",
+            "f": "Reckless growth today = the NPA crisis of tomorrow"
+          },
+          {
+            "m": "High dividend PSU bank is safe",
+            "f": "Check asset quality & capital first — yield can't fix a weak book"
+          }
+        ],
+        "dur": 61.012
+      }
+    },
+    {
+      "id": "f_recap",
+      "type": "sm_recap",
+      "in_seconds": 533.328,
+      "out_seconds": 578.932,
+      "props": {
+        "title": "Finance sector — recap",
+        "items": [
+          "Analyse banks with NIM, GNPA/NNPA, CASA, CAR",
+          "Also ROA (>1%), credit growth, cost-to-income",
+          "Value on Price-to-Book, never P/E",
+          "Technicals: track Bank Nifty, relative strength, breadth, RBI day",
+          "Strategy: own quality leaders; asset quality is king"
+        ],
+        "closer": "In banking, a clean book beats a cheap price.",
+        "dur": 46.104
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.83,
+      "Welcome to the first of our sector deep-dives —"
+    ],
+    [
+      3.83,
+      8.067,
+      "the finance sector, the beating heart of the market."
+    ],
+    [
+      8.067,
+      13.445,
+      "Banks and financials are the single heaviest weight in the index —"
+    ],
+    [
+      13.445,
+      16.624,
+      "when they move, the whole market moves."
+    ],
+    [
+      16.624,
+      20.861,
+      "But you cannot analyse a bank like a normal company."
+    ],
+    [
+      20.861,
+      23.55,
+      "A bank's product is money itself,"
+    ],
+    [
+      23.55,
+      26.484,
+      "so it needs its own special metrics."
+    ],
+    [
+      26.484,
+      30.395,
+      "In this video: the fundamentals unique to banks,"
+    ],
+    [
+      30.395,
+      32.84,
+      "the technicals for the sector,"
+    ],
+    [
+      32.84,
+      35.61,
+      "and the strategies that work here."
+    ],
+    [
+      35.61,
+      40.092,
+      "Company names are only examples, never recommendations."
+    ],
+    [
+      40.592,
+      43.957,
+      "First, why this sector matters so much."
+    ],
+    [
+      43.957,
+      50.947,
+      "Banking and financials make up roughly thirty-five to forty percent of the Nifty."
+    ],
+    [
+      50.947,
+      55.52,
+      "When banking leads, the index almost always follows —"
+    ],
+    [
+      55.52,
+      59.921,
+      "so it is the single most important sector to watch."
+    ],
+    [
+      59.921,
+      63.718,
+      "It is not one thing but many: private banks,"
+    ],
+    [
+      63.718,
+      68.637,
+      "public-sector banks, non-bank lenders or NBFCs, insurers,"
+    ],
+    [
+      68.637,
+      73.469,
+      "and asset managers — each analysed a little differently."
+    ],
+    [
+      73.469,
+      77.611,
+      "It is driven, before anything else, by the RBI —"
+    ],
+    [
+      77.611,
+      82.53,
+      "interest-rate decisions, the credit cycle, and liquidity."
+    ],
+    [
+      82.53,
+      92.022,
+      "And it is the most liquid corner of the market: Bank Nifty is India's most heavily traded derivative contract."
+    ],
+    [
+      92.022,
+      98.58,
+      "So let's learn the metrics that actually tell you whether a bank is healthy."
+    ],
+    [
+      99.08,
+      103.602,
+      "Here are the four numbers that define a bank's health."
+    ],
+    [
+      103.602,
+      106.868,
+      "Learn these, and you can read any bank."
+    ],
+    [
+      106.868,
+      110.552,
+      "The first is Net Interest Margin, the N I M."
+    ],
+    [
+      110.552,
+      118.423,
+      "A bank borrows money as deposits and lends it out; the gap between the two is its core profit."
+    ],
+    [
+      118.423,
+      123.364,
+      "Around three to four percent is healthy for an Indian bank."
+    ],
+    [
+      123.364,
+      126.294,
+      "A rising N I M is a very good sign."
+    ],
+    [
+      126.294,
+      128.723,
+      "The second is asset quality —"
+    ],
+    [
+      128.723,
+      132.575,
+      "the gross and net non-performing asset ratios,"
+    ],
+    [
+      132.575,
+      135.757,
+      "the share of loans that have gone bad."
+    ],
+    [
+      135.757,
+      141.451,
+      "Below one percent is strong; above roughly two percent is a warning."
+    ],
+    [
+      141.451,
+      145.889,
+      "This is where banks quietly die, so watch it closely."
+    ],
+    [
+      145.889,
+      148.317,
+      "The third is the CASA ratio —"
+    ],
+    [
+      148.317,
+      153.425,
+      "the proportion of cheap current and savings-account deposits."
+    ],
+    [
+      153.425,
+      157.612,
+      "The higher the CASA, the cheaper the bank's money,"
+    ],
+    [
+      157.612,
+      159.873,
+      "and the fatter its margins."
+    ],
+    [
+      159.873,
+      163.473,
+      "The best banks run CASA near fifty percent."
+    ],
+    [
+      163.473,
+      167.744,
+      "The fourth is the Capital Adequacy Ratio, the CAR —"
+    ],
+    [
+      167.744,
+      170.507,
+      "the safety buffer against losses."
+    ],
+    [
+      170.507,
+      180.472,
+      "The RBI insists on around eleven and a half percent; the strongest banks carry seventeen to twenty-two percent or more."
+    ],
+    [
+      180.972,
+      184.682,
+      "Beyond the core four, a few more essentials —"
+    ],
+    [
+      184.682,
+      189.298,
+      "and the one thing beginners always get wrong: valuation."
+    ],
+    [
+      189.298,
+      192.513,
+      "On returns: Return on Assets, or R O A,"
+    ],
+    [
+      192.513,
+      197.789,
+      "above one percent is good and above one and a half is excellent."
+    ],
+    [
+      197.789,
+      201.169,
+      "Return on equity and provision coverage —"
+    ],
+    [
+      201.169,
+      206.362,
+      "the cushion set aside against bad loans — complete the picture."
+    ],
+    [
+      206.362,
+      209.824,
+      "You want them steady, high, and improving."
+    ],
+    [
+      209.824,
+      212.957,
+      "On growth: watch loan-book, or credit,"
+    ],
+    [
+      212.957,
+      215.76,
+      "growth against the banking system,"
+    ],
+    [
+      215.76,
+      220.788,
+      "that deposits are keeping pace, and the cost-to-income ratio,"
+    ],
+    [
+      220.788,
+      224.086,
+      "where lower means a more efficient bank."
+    ],
+    [
+      224.086,
+      227.713,
+      "But growth without asset quality is a trap —"
+    ],
+    [
+      227.713,
+      229.362,
+      "chase both together."
+    ],
+    [
+      229.362,
+      232.659,
+      "And here is the crucial one — valuation."
+    ],
+    [
+      232.659,
+      236.369,
+      "You do not value a bank on price-to-earnings."
+    ],
+    [
+      236.369,
+      241.562,
+      "You value it on price-to-book — the price versus its net worth."
+    ],
+    [
+      241.562,
+      242.221,
+      "A clean,"
+    ],
+    [
+      242.221,
+      247.745,
+      "high-return private bank like HDFC may trade near three times book,"
+    ],
+    [
+      247.745,
+      253.35,
+      "while a public-sector bank like SBI trades at one and a half to two."
+    ],
+    [
+      253.35,
+      256.565,
+      "That P S U discount is often deserved —"
+    ],
+    [
+      256.565,
+      261.264,
+      "so pay up for clean books, don't just chase the cheapest."
+    ],
+    [
+      261.764,
+      263.397,
+      "Now the technicals —"
+    ],
+    [
+      263.397,
+      266.99,
+      "how to read the finance sector on the chart."
+    ],
+    [
+      266.99,
+      270.827,
+      "Start with the sector index itself, Bank Nifty."
+    ],
+    [
+      270.827,
+      274.175,
+      "Its trend tends to lead the whole market,"
+    ],
+    [
+      274.175,
+      278.992,
+      "so track its fifty-day and two-hundred-day moving averages,"
+    ],
+    [
+      278.992,
+      281.197,
+      "its support and resistance."
+    ],
+    [
+      281.197,
+      283.81,
+      "Then measure relative strength —"
+    ],
+    [
+      283.81,
+      288.627,
+      "is Bank Nifty outperforming the broad Nifty, or lagging it?"
+    ],
+    [
+      288.627,
+      294.996,
+      "The rule of sector rotation is simple: lean toward the sector that is leading,"
+    ],
+    [
+      294.996,
+      297.201,
+      "not the one that is fading."
+    ],
+    [
+      297.201,
+      298.344,
+      "Check breadth."
+    ],
+    [
+      298.344,
+      304.549,
+      "If more than seventy percent of bank stocks are green while the index rises,"
+    ],
+    [
+      304.549,
+      309.04,
+      "that's genuine institutional rotation into the sector —"
+    ],
+    [
+      309.04,
+      313.694,
+      "not just one or two heavyweights dragging the average up."
+    ],
+    [
+      313.694,
+      315.654,
+      "And know your catalysts."
+    ],
+    [
+      315.654,
+      316.47,
+      "For banks,"
+    ],
+    [
+      316.47,
+      322.513,
+      "the big moves cluster around RBI policy day and around quarterly results —"
+    ],
+    [
+      322.513,
+      326.432,
+      "specifically the N I M and the bad-loan numbers."
+    ],
+    [
+      326.432,
+      327.82,
+      "Mark those dates."
+    ],
+    [
+      328.32,
+      332.351,
+      "So how do you actually play the finance sector?"
+    ],
+    [
+      332.351,
+      333.723,
+      "Four strategies."
+    ],
+    [
+      333.723,
+      338.012,
+      "First, for the long term, simply own the leaders —"
+    ],
+    [
+      338.012,
+      345.131,
+      "the highest-quality private banks with clean loan books and high returns on assets."
+    ],
+    [
+      345.131,
+      348.304,
+      "Boring, and it compounds beautifully."
+    ],
+    [
+      348.304,
+      352.764,
+      "Second, the cyclical play — in an economic up-cycle,"
+    ],
+    [
+      352.764,
+      359.54,
+      "cheap public-sector banks whose asset quality is improving can re-rate sharply,"
+    ],
+    [
+      359.54,
+      362.885,
+      "closing that discount to private banks."
+    ],
+    [
+      362.885,
+      365.201,
+      "Higher risk, higher reward."
+    ],
+    [
+      365.201,
+      367.517,
+      "Third, play the rate cycle."
+    ],
+    [
+      367.517,
+      370.09,
+      "When the RBI is cutting rates,"
+    ],
+    [
+      370.09,
+      375.408,
+      "non-bank lenders and rate-sensitive financials often benefit —"
+    ],
+    [
+      375.408,
+      378.238,
+      "so watch the direction of policy."
+    ],
+    [
+      378.238,
+      380.639,
+      "Fourth, a contrarian entry —"
+    ],
+    [
+      380.639,
+      385.614,
+      "when a quality bank falls hard on a temporary margin miss,"
+    ],
+    [
+      385.614,
+      389.56,
+      "as we saw with HDFC and Axis on their results,"
+    ],
+    [
+      389.56,
+      392.819,
+      "that can be a patient long-term entry,"
+    ],
+    [
+      392.819,
+      395.049,
+      "once the N I M stabilises."
+    ],
+    [
+      395.049,
+      399.938,
+      "Whichever you choose, in banking, asset quality is king —"
+    ],
+    [
+      399.938,
+      403.54,
+      "never buy cheap growth built on bad loans."
+    ],
+    [
+      404.04,
+      410.169,
+      "Let's turn all of that into a practical checklist for any bank stock."
+    ],
+    [
+      410.169,
+      411.146,
+      "Five steps."
+    ],
+    [
+      411.146,
+      414.433,
+      "Step one — check asset quality first."
+    ],
+    [
+      414.433,
+      419.052,
+      "Are the bad-loan ratios low, and are they improving?"
+    ],
+    [
+      419.052,
+      423.849,
+      "Never buy a bank whose asset quality is deteriorating."
+    ],
+    [
+      423.849,
+      427.935,
+      "Step two — is the net interest margin healthy,"
+    ],
+    [
+      427.935,
+      432.465,
+      "around three to four percent, and stable or rising?"
+    ],
+    [
+      432.465,
+      437.617,
+      "Step three — is the CASA ratio high, giving cheap funding,"
+    ],
+    [
+      437.617,
+      442.769,
+      "and is capital adequacy comfortably above the RBI minimum?"
+    ],
+    [
+      442.769,
+      447.211,
+      "Step four — is return on assets above one percent,"
+    ],
+    [
+      447.211,
+      451.652,
+      "with loan growth that comes together with quality,"
+    ],
+    [
+      451.652,
+      453.517,
+      "not reckless lending?"
+    ],
+    [
+      453.517,
+      455.294,
+      "Step five — finally,"
+    ],
+    [
+      455.294,
+      459.202,
+      "value it on price-to-book against its peers,"
+    ],
+    [
+      459.202,
+      462.489,
+      "and be willing to pay up for a clean,"
+    ],
+    [
+      462.489,
+      467.108,
+      "well-run book rather than chasing the cheapest name."
+    ],
+    [
+      467.108,
+      470.572,
+      "Run that, and you can size up any bank."
+    ],
+    [
+      470.572,
+      471.816,
+      "Now the traps."
+    ],
+    [
+      472.316,
+      476.964,
+      "Finally, the traps that catch beginners in this sector."
+    ],
+    [
+      476.964,
+      478.316,
+      "The first trap —"
+    ],
+    [
+      478.316,
+      484.148,
+      "thinking a bank is a bargain because its price-to-earnings looks low."
+    ],
+    [
+      484.148,
+      487.021,
+      "Banks are valued on price-to-book,"
+    ],
+    [
+      487.021,
+      492.177,
+      "and a low multiple very often hides a book full of bad loans."
+    ],
+    [
+      492.177,
+      495.473,
+      "Cheap can be cheap for a deadly reason."
+    ],
+    [
+      495.473,
+      500.797,
+      "The second trap — assuming fast loan growth means a great bank."
+    ],
+    [
+      500.797,
+      506.122,
+      "Reckless lending today becomes the bad-loan crisis of tomorrow."
+    ],
+    [
+      506.122,
+      511.953,
+      "Every banking blow-up in history began with someone growing too fast."
+    ],
+    [
+      511.953,
+      513.305,
+      "The third trap —"
+    ],
+    [
+      513.305,
+      518.207,
+      "chasing a public-sector bank purely for its high dividend."
+    ],
+    [
+      518.207,
+      521.588,
+      "A yield cannot fix a weak balance sheet."
+    ],
+    [
+      521.588,
+      526.151,
+      "Always check asset quality and capital adequacy first."
+    ],
+    [
+      526.151,
+      528.856,
+      "Respect asset quality above all,"
+    ],
+    [
+      528.856,
+      532.828,
+      "and the finance sector rewards you for decades."
+    ],
+    [
+      533.328,
+      536.435,
+      "The finance sector, in one breath."
+    ],
+    [
+      536.435,
+      540.822,
+      "Analyse a bank with its special metrics — N I M,"
+    ],
+    [
+      540.822,
+      545.3,
+      "the bad-loan ratios, CASA, and capital adequacy —"
+    ],
+    [
+      545.3,
+      550.144,
+      "plus return on assets, credit growth, and efficiency."
+    ],
+    [
+      550.144,
+      555.079,
+      "Value it on price-to-book, never on price-to-earnings."
+    ],
+    [
+      555.079,
+      557.912,
+      "On the chart, track Bank Nifty,"
+    ],
+    [
+      557.912,
+      562.664,
+      "its relative strength versus the Nifty, its breadth,"
+    ],
+    [
+      562.664,
+      564.584,
+      "and the RBI calendar."
+    ],
+    [
+      564.584,
+      569.884,
+      "And in strategy, own the quality leaders for the long run,"
+    ],
+    [
+      569.884,
+      575.276,
+      "because in banking a clean book always beats a cheap price."
+    ],
+    [
+      575.276,
+      578.932,
+      "Next, a very different sector — defence."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sx/fin.wav",
+      "volume": 1.0
+    }
+  }
+}

@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-te/assets/g07_title.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-te/assets/g07_steps.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-te/assets/g07_alloys.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-te/assets/g07_recap.wav'

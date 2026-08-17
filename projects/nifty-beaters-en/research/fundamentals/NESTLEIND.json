@@ -1,0 +1,88 @@
+{
+ "ticker": "NESTLEIND",
+ "scraped_at": "2026-08-14T15:29:17",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 289324.0,
+ "current_price": 1500.0,
+ "pe": 78.0,
+ "book_value": 26.7,
+ "dividend_yield_pct": 0.8,
+ "roce_pct": 85.3,
+ "roe_pct": 74.2,
+ "face_value": 1.0,
+ "high": 1553.0,
+ "sales_growth": {
+  "TTM": 25.0
+ },
+ "profit_growth": {
+  "10 Years": 16.0,
+  "5 Years": 11.0,
+  "3 Years": 11.0,
+  "1 Year": 38.0
+ },
+ "roe_hist": {
+  "OPM %": 24.0,
+  "Other Income&nbsp; +": -77.0,
+  "Interest": 23.0,
+  "Depreciation": 109.0,
+  "Profit before tax": 886.0,
+  "Tax %": 26.0,
+  "Net Profit&nbsp; +": 656.0,
+  "EPS in Rs": 3.4
+ },
+ "price_cagr": {
+  "3 Years": 90.0,
+  "Last Year": 74.0
+ },
+ "quarters": {
+  "periods": [
+   "Dec 2023",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "24%",
+   "23%",
+   "23%",
+   "23%",
+   "25%",
+   "21%",
+   "22%",
+   "21%",
+   "26%",
+   "24%"
+  ],
+  "eps": [
+   "3.40",
+   "3.87",
+   "4.66",
+   "3.57",
+   "4.53",
+   "3.35",
+   "3.85",
+   "5.18",
+   "5.76",
+   "4.97"
+  ]
+ },
+ "pros": [
+  "Company has reduced debt.",
+  "Company is almost debt free.",
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 89.6%",
+  "Company has been maintaining a healthy dividend payout of 75.4%"
+ ],
+ "cons": [
+  "Stock is trading at 56.3 times its book value"
+ ]
+}

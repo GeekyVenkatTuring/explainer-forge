@@ -1,0 +1,105 @@
+{
+ "ticker": "BSE",
+ "scraped_at": "2026-08-14T15:27:50",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 140425.0,
+ "current_price": 3448.0,
+ "pe": 49.6,
+ "book_value": 164.0,
+ "dividend_yield_pct": 0.29,
+ "roce_pct": 60.0,
+ "roe_pct": 46.0,
+ "face_value": 2.0,
+ "high": 4447.0,
+ "sales_growth": {
+  "10 Years": 32.0,
+  "5 Years": 69.0,
+  "3 Years": 126.0,
+  "TTM": 79.0
+ },
+ "profit_growth": {
+  "5 Years": 94.0,
+  "3 Years": 129.0,
+  "1 Year": 41.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 260.0,
+  "Expenses&nbsp; +": 146.0,
+  "Operating Profit": 114.0,
+  "OPM %": 44.0,
+  "Other Income&nbsp; +": 430.0,
+  "Interest": 7.0,
+  "Depreciation": 21.0,
+  "Profit before tax": 516.0,
+  "Tax %": 15.0,
+  "Net Profit&nbsp; +": 440.0,
+  "EPS in Rs": 10.89
+ },
+ "price_cagr": {
+  "10 Years": 20.0,
+  "5 Years": 28.0,
+  "3 Years": 36.0,
+  "Last Year": 46.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "44%",
+   "52%",
+   "34%",
+   "28%",
+   "47%",
+   "56%",
+   "31%",
+   "57%",
+   "65%",
+   "64%",
+   "59%",
+   "67%",
+   "67%"
+  ],
+  "eps": [
+   "10.89",
+   "2.97",
+   "2.66",
+   "2.64",
+   "6.53",
+   "8.54",
+   "5.41",
+   "12.17",
+   "13.28",
+   "13.73",
+   "14.78",
+   "19.58",
+   "21.46"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company is expected to give good quarter",
+  "Company has delivered good profit growth of 69.4% CAGR over last 5 years",
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 36.1%",
+  "Company has been maintaining a healthy dividend payout of 22.0%"
+ ],
+ "cons": [
+  "Stock is trading at 21.0 times its book value"
+ ]
+}

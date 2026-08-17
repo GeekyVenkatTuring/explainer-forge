@@ -1,0 +1,789 @@
+{
+ "cuts": [
+  {
+   "id": "lag-ch10-protect_div",
+   "type": "lag_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 12.932,
+   "props": {
+    "n": 10,
+    "title": "Pests and packing",
+    "sub": "the week after ripe is the risk",
+    "color": "#E76F51",
+    "dur": 13.432
+   }
+  },
+  {
+   "id": "lag-ch10-protect_pests",
+   "type": "lag_cards",
+   "in_seconds": 13.432,
+   "out_seconds": 53.286,
+   "props": {
+    "kicker": "INSECTS",
+    "title": "Leaf roller and aphids, then ask K V K",
+    "cols": 2,
+    "foot": "Bloom sprays are how you buy a pretty barren tree.",
+    "items": [
+     {
+      "label": "Leaf roller",
+      "sub": "Rolled leaves, chewed flush. Scout the new growth.",
+      "c": "risk"
+     },
+     {
+      "label": "Aphids",
+      "sub": "Curl, honeydew, black mould. Worse on lush nitrogen.",
+      "c": "cool"
+     },
+     {
+      "label": "No bloom spray",
+      "sub": "Protect bees or you protect nothing.",
+      "c": "leaf"
+     },
+     {
+      "label": "Current label",
+      "sub": "This course will not recite banned chemistry.",
+      "c": "fruit"
+     }
+    ],
+    "dur": 40.354
+   }
+  },
+  {
+   "id": "lag-ch10-protect_disease",
+   "type": "lag_cards",
+   "in_seconds": 53.786,
+   "out_seconds": 91.72,
+   "props": {
+    "kicker": "DISEASE",
+    "title": "Black spot steals grade, then price",
+    "cols": 3,
+    "foot": "Blemish is a market disease even when the tree lives.",
+    "items": [
+     {
+      "label": "Black spot",
+      "sub": "Fungus. Leaves and fruit. Wet weather friend.",
+      "c": "risk"
+     },
+     {
+      "label": "Air flow",
+      "sub": "May prune and spacing are the first spray.",
+      "c": "leaf"
+     },
+     {
+      "label": "Sanitation",
+      "sub": "Get sick wood off the orchard floor.",
+      "c": "cool"
+     }
+    ],
+    "dur": 38.434
+   }
+  },
+  {
+   "id": "lag-ch10-protect_post",
+   "type": "lag_cards",
+   "in_seconds": 92.22,
+   "out_seconds": 130.418,
+   "props": {
+    "kicker": "POSTHARVEST",
+    "title": "Days to a buyer, or days to a loss",
+    "cols": 2,
+    "foot": "Perishability is a line on the P and L.",
+    "items": [
+     {
+      "label": "Morning pick",
+      "sub": "Cooler fruit, longer fuse.",
+      "c": "cool"
+     },
+     {
+      "label": "Shallow crates",
+      "sub": "Clusters crush. Depth is a decision.",
+      "c": "fruit"
+     },
+     {
+      "label": "Same-week sale",
+      "sub": "No apple fantasy. Move or process.",
+      "c": "leaf"
+     },
+     {
+      "label": "Bad road",
+      "sub": "Distance is a quality tax.",
+      "c": "risk"
+     }
+    ],
+    "dur": 38.698
+   }
+  },
+  {
+   "id": "lag-ch10-protect_pack",
+   "type": "lag_pipe",
+   "in_seconds": 130.918,
+   "out_seconds": 159.9,
+   "props": {
+    "kicker": "PACK LINE",
+    "title": "Someone must own the hours after clip",
+    "foot": "Harvest without a pack owner is a hobby.",
+    "nodes": [
+     {
+      "label": "Clip",
+      "sub": "Cool hours",
+      "c": "fruit"
+     },
+     {
+      "label": "Sort",
+      "sub": "A / B / kettle",
+      "c": "leaf"
+     },
+     {
+      "label": "Weigh",
+      "sub": "Ticket it",
+      "c": "cool"
+     },
+     {
+      "label": "Move",
+      "sub": "Mandi or pan",
+      "c": "fruit"
+     }
+    ],
+    "dur": 29.482
+   }
+  },
+  {
+   "id": "lag-ch10-protect_birds",
+   "type": "lag_cards",
+   "in_seconds": 160.4,
+   "out_seconds": 197.854,
+   "props": {
+    "kicker": "BIRDS",
+    "title": "They harvest the best fruit first",
+    "cols": 2,
+    "foot": "A dawn count beats a late netting regret.",
+    "items": [
+     {
+      "label": "Edges first",
+      "sub": "Colour plus access. That is bird logic.",
+      "c": "risk"
+     },
+     {
+      "label": "Net a block",
+      "sub": "Works small. Plan labour to drape and undrape.",
+      "c": "leaf"
+     },
+     {
+      "label": "Tape / scare",
+      "sub": "Partial. Birds get bored of your cleverness.",
+      "c": "cool"
+     },
+     {
+      "label": "Earlier clip",
+      "sub": "Last resort. Flavour pays the tax.",
+      "c": "fruit"
+     }
+    ],
+    "dur": 37.954
+   }
+  },
+  {
+   "id": "lag-ch10-protect_spray",
+   "type": "lag_cards",
+   "in_seconds": 198.354,
+   "out_seconds": 233.96,
+   "props": {
+    "kicker": "SPRAY RULES",
+    "title": "Scout. Legal. Interval. Record.",
+    "cols": 2,
+    "foot": "Residue is a market pest.",
+    "items": [
+     {
+      "label": "Scout first",
+      "sub": "No calendar dump 'because mango does'.",
+      "c": "leaf"
+     },
+     {
+      "label": "P H I",
+      "sub": "Pre-harvest interval is part of ripening.",
+      "c": "fruit"
+     },
+     {
+      "label": "Under leaf",
+      "sub": "Aphids live there. Spray the sky and you miss.",
+      "c": "cool"
+     },
+     {
+      "label": "Write it",
+      "sub": "Date, product, reason. Future you needs this.",
+      "c": "risk"
+     }
+    ],
+    "dur": 36.106
+   }
+  },
+  {
+   "id": "lag-ch10-protect_cold",
+   "type": "lag_cards",
+   "in_seconds": 234.46,
+   "out_seconds": 268.17,
+   "props": {
+    "kicker": "COLD REALITY",
+    "title": "Shade and speed beat a fictional packhouse",
+    "cols": 3,
+    "foot": "Book the vehicle before the clip.",
+    "items": [
+     {
+      "label": "No freeze",
+      "sub": "Ice crystals wreck dessert fruit.",
+      "c": "risk"
+     },
+     {
+      "label": "Brief chill",
+      "sub": "A few crates, maybe. Not a season.",
+      "c": "cool"
+     },
+     {
+      "label": "Speed",
+      "sub": "The real cold chain is a fast road.",
+      "c": "fruit"
+     }
+    ],
+    "dur": 34.21
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.392,
+   "Part ten."
+  ],
+  [
+   1.392,
+   4.176,
+   "What eats your margin."
+  ],
+  [
+   4.726,
+   5.422,
+   "Insects,"
+  ],
+  [
+   5.422,
+   6.118,
+   "fungus,"
+  ],
+  [
+   6.118,
+   6.814,
+   "birds,"
+  ],
+  [
+   6.814,
+   8.902,
+   "and the crate."
+  ],
+  [
+   9.452,
+   12.932,
+   "Perishability is the silent cost."
+  ],
+  [
+   13.432,
+   16.706,
+   "Leaf roller ties leaves and chews."
+  ],
+  [
+   17.256,
+   19.438,
+   "Aphids suck new growth,"
+  ],
+  [
+   19.438,
+   20.53,
+   "curl leaves,"
+  ],
+  [
+   20.53,
+   23.804,
+   "and grow sooty mould on honeydew."
+  ],
+  [
+   24.354,
+   27.082,
+   "Old notes name specific insecticides."
+  ],
+  [
+   27.082,
+   28.719,
+   "Those labels change."
+  ],
+  [
+   28.719,
+   32.538,
+   "Ask K V K for today's list."
+  ],
+  [
+   33.088,
+   36.362,
+   "Do not spray in open bloom."
+  ],
+  [
+   36.362,
+   39.09,
+   "You kill the crop's pollinators."
+  ],
+  [
+   39.64,
+   42.369,
+   "Scout weekly in flush periods,"
+  ],
+  [
+   42.369,
+   46.188,
+   "not once when the tree looks sad."
+  ],
+  [
+   46.738,
+   47.83,
+   "A clean,"
+  ],
+  [
+   47.83,
+   50.558,
+   "fed tree still needs eyes."
+  ],
+  [
+   50.558,
+   53.286,
+   "Loquat is not 'no pest'."
+  ],
+  [
+   53.786,
+   58.184,
+   "Black spot is the fungus leaflets keep repeating."
+  ],
+  [
+   58.734,
+   61.483,
+   "Sunken dark spots on leaves,"
+  ],
+  [
+   61.483,
+   65.331,
+   "and sometimes fruit blemish that kills grade."
+  ],
+  [
+   65.881,
+   68.08,
+   "Wet springs favour it."
+  ],
+  [
+   68.08,
+   70.829,
+   "Open canopies and sanitation help."
+  ],
+  [
+   71.379,
+   75.777,
+   "Fungicide names in old PDFs may still be"
+  ],
+  [
+   75.777,
+   76.327,
+   "legal,"
+  ],
+  [
+   76.327,
+   77.426,
+   "or not."
+  ],
+  [
+   77.426,
+   77.976,
+   "Check."
+  ],
+  [
+   78.526,
+   80.725,
+   "Remove badly infected wood."
+  ],
+  [
+   80.725,
+   85.123,
+   "Do not compost obvious disease in the basin."
+  ],
+  [
+   85.673,
+   90.071,
+   "Fruit with spots is process fruit at best,"
+  ],
+  [
+   90.071,
+   91.72,
+   "dump at worst."
+  ],
+  [
+   92.22,
+   93.935,
+   "After the clip,"
+  ],
+  [
+   93.935,
+   95.65,
+   "physics owns you."
+  ],
+  [
+   96.2,
+   97.344,
+   "Field heat."
+  ],
+  [
+   97.344,
+   100.203,
+   "Compression in a deep crate."
+  ],
+  [
+   100.203,
+   101.918,
+   "One split fruit."
+  ],
+  [
+   102.468,
+   107.042,
+   "There is no national cold-chain built for Indian"
+  ],
+  [
+   107.042,
+   107.614,
+   "loquat."
+  ],
+  [
+   107.614,
+   108.757,
+   "You improvise."
+  ],
+  [
+   109.307,
+   110.451,
+   "Shade nets,"
+  ],
+  [
+   110.451,
+   111.594,
+   "morning harvest,"
+  ],
+  [
+   111.594,
+   112.737,
+   "shallow layers,"
+  ],
+  [
+   112.737,
+   113.881,
+   "fast truck."
+  ],
+  [
+   114.431,
+   117.861,
+   "Hotels and retail want this week."
+  ],
+  [
+   117.861,
+   121.292,
+   "Processors wanted a call last month."
+  ],
+  [
+   121.842,
+   126.416,
+   "If the mandi is four hours of bad"
+  ],
+  [
+   126.416,
+   126.988,
+   "road,"
+  ],
+  [
+   126.988,
+   128.703,
+   "pack for bruises,"
+  ],
+  [
+   128.703,
+   130.418,
+   "not for Instagram."
+  ],
+  [
+   130.918,
+   135.033,
+   "A simple pack line you can actually run."
+  ],
+  [
+   135.583,
+   138.155,
+   "Clip in the cool hours."
+  ],
+  [
+   138.705,
+   140.248,
+   "Sort in shade:"
+  ],
+  [
+   140.248,
+   141.276,
+   "A crate,"
+  ],
+  [
+   141.276,
+   142.305,
+   "B crate,"
+  ],
+  [
+   142.305,
+   142.819,
+   "kettle."
+  ],
+  [
+   143.369,
+   143.884,
+   "Weigh."
+  ],
+  [
+   143.884,
+   144.398,
+   "Ticket."
+  ],
+  [
+   144.948,
+   147.52,
+   "Truck or tempo to mandi,"
+  ],
+  [
+   147.52,
+   148.549,
+   "kirana aggregator,"
+  ],
+  [
+   148.549,
+   150.606,
+   "or the jam bench."
+  ],
+  [
+   151.156,
+   155.271,
+   "If that line has no owner on your"
+  ],
+  [
+   155.271,
+   155.785,
+   "farm,"
+  ],
+  [
+   155.785,
+   159.9,
+   "the fruit will find the compost by itself."
+  ],
+  [
+   160.4,
+   164.483,
+   "Birds love coloured fruit at the edge of"
+  ],
+  [
+   164.483,
+   165.504,
+   "the canopy."
+  ],
+  [
+   166.054,
+   169.626,
+   "They teach you which clusters were ready."
+  ],
+  [
+   169.626,
+   171.667,
+   "Then they eat them."
+  ],
+  [
+   172.217,
+   175.28,
+   "Netting a few trees is possible."
+  ],
+  [
+   175.28,
+   178.342,
+   "Netting ten acres is a project."
+  ],
+  [
+   178.892,
+   181.443,
+   "Reflective tape is a maybe."
+  ],
+  [
+   181.443,
+   184.506,
+   "Dogs are not a bird plan."
+  ],
+  [
+   185.056,
+   189.138,
+   "Harvest a little earlier on the outer colour"
+  ],
+  [
+   189.138,
+   193.221,
+   "if theft by beak is severe \u2014 flavour"
+  ],
+  [
+   193.221,
+   193.732,
+   "tradeoff."
+  ],
+  [
+   194.282,
+   195.813,
+   "Watch one dawn."
+  ],
+  [
+   195.813,
+   196.833,
+   "Count pecks."
+  ],
+  [
+   196.833,
+   197.854,
+   "Then spend."
+  ],
+  [
+   198.354,
+   202.461,
+   "A spray philosophy that will not age as"
+  ],
+  [
+   202.461,
+   205.028,
+   "badly as a product name."
+  ],
+  [
+   205.578,
+   206.091,
+   "Scout."
+  ],
+  [
+   206.091,
+   206.605,
+   "Identify."
+  ],
+  [
+   206.605,
+   210.712,
+   "Then choose a legal product with the K"
+  ],
+  [
+   210.712,
+   211.738,
+   "V K."
+  ],
+  [
+   212.288,
+   215.882,
+   "Cover the underside of leaves for aphids."
+  ],
+  [
+   216.432,
+   220.539,
+   "Rotate modes of action if you spray more"
+  ],
+  [
+   220.539,
+   221.566,
+   "than once."
+  ],
+  [
+   222.116,
+   223.656,
+   "Record the date."
+  ],
+  [
+   223.656,
+   227.763,
+   "Respect pre-harvest interval so April fruit is not"
+  ],
+  [
+   227.763,
+   229.303,
+   "a residue story."
+  ],
+  [
+   229.853,
+   233.96,
+   "Hotels will not take a mystery chemical smell."
+  ],
+  [
+   234.46,
+   234.994,
+   "Cold."
+  ],
+  [
+   235.544,
+   239.28,
+   "A household fridge is not a packhouse."
+  ],
+  [
+   239.28,
+   241.416,
+   "A few crates overnight,"
+  ],
+  [
+   241.416,
+   241.949,
+   "maybe."
+  ],
+  [
+   242.499,
+   244.634,
+   "Do not freeze loquat."
+  ],
+  [
+   244.634,
+   245.702,
+   "Texture dies."
+  ],
+  [
+   246.252,
+   249.989,
+   "If you ever get a cold room,"
+  ],
+  [
+   249.989,
+   254.259,
+   "keep it gentle and do not mix with"
+  ],
+  [
+   254.259,
+   254.793,
+   "onion."
+  ],
+  [
+   255.343,
+   259.079,
+   "Most Indian growers will not have this."
+  ],
+  [
+   259.079,
+   262.816,
+   "Design for ambient shade and speed instead."
+  ],
+  [
+   263.366,
+   267.636,
+   "Fantasy cold-chain is how people skip the tempo"
+  ],
+  [
+   267.636,
+   268.17,
+   "booking."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "lag/lag-ch10-protect.wav",
+   "volume": 1.0
+  }
+ }
+}

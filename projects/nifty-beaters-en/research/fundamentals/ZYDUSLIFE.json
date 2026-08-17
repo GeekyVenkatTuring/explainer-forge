@@ -1,0 +1,92 @@
+{
+ "ticker": "ZYDUSLIFE",
+ "scraped_at": "2026-08-14T15:29:03",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 113715.0,
+ "current_price": 1140.0,
+ "pe": 23.4,
+ "book_value": 269.0,
+ "dividend_yield_pct": 0.09,
+ "roce_pct": 21.1,
+ "roe_pct": 21.2,
+ "face_value": 1.0,
+ "high": 1206.0,
+ "sales_growth": {
+  "10 Years": 11.0,
+  "5 Years": 19.0,
+  "3 Years": 32.0,
+  "TTM": 5.0
+ },
+ "profit_growth": {
+  "10 Years": 12.0,
+  "5 Years": 16.0,
+  "3 Years": 22.0,
+  "1 Year": 18.0
+ },
+ "roe_hist": {
+  "Equity Capital": 102.0,
+  "CWIP": 798.0,
+  "Investments": 154.0
+ },
+ "price_cagr": {
+  "10 Years": 20.0,
+  "5 Years": 21.0,
+  "3 Years": 21.0,
+  "Last Year": 21.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "29%",
+   "26%",
+   "24%",
+   "29%",
+   "34%",
+   "28%",
+   "26%",
+   "33%",
+   "32%",
+   "33%",
+   "26%",
+   "34%",
+   "24%"
+  ],
+  "eps": [
+   "10.74",
+   "7.91",
+   "7.80",
+   "11.75",
+   "14.11",
+   "9.06",
+   "10.17",
+   "11.64",
+   "14.58",
+   "12.51",
+   "10.36",
+   "12.65",
+   "9.42"
+  ]
+ },
+ "pros": [
+  "Company has delivered good profit growth of 18.8% CAGR over last 5 years"
+ ],
+ "cons": []
+}

@@ -1,0 +1,84 @@
+  t01_title       35.34s
+  t01_hook        38.63s
+  t01_lens        50.05s
+  t01_map         35.63s
+  t01_recap       25.60s
+ch01: total 187.25s (3.12 min), 5 scenes, 49 cues
+  t02_ptitle      15.69s
+  t02_invest      43.98s
+  t02_margin      38.13s
+  t02_payback     35.05s
+  t02_recap       24.61s
+ch02: total 159.47s (2.66 min), 5 scenes, 47 cues
+  t03_ptitle      16.46s
+  t03_licences    41.39s
+  t03_funding     46.02s
+  t03_order       36.13s
+  t03_recap       28.09s
+ch03: total 170.10s (2.83 min), 5 scenes, 46 cues
+  i04_div          9.00s
+  i04_what        35.13s
+  i04_capex       30.78s
+  i04_econ        38.65s
+  i04_risk        35.44s
+ch04: total 150.99s (2.52 min), 5 scenes, 43 cues
+  i05_div         14.71s
+  i05_how         34.86s
+  i05_capex       37.04s
+  i05_stats       31.17s
+  i05_lic         38.36s
+ch05: total 158.15s (2.64 min), 5 scenes, 41 cues
+  i06_div         13.99s
+  i06_how         29.70s
+  i06_capex       33.47s
+  i06_econ        41.24s
+  i06_risk        34.43s
+ch06: total 154.83s (2.58 min), 5 scenes, 43 cues
+  i07_div         13.82s
+  i07_capex       33.73s
+  i07_stats       34.65s
+  i07_win         42.45s
+ch07: total 126.14s (2.10 min), 4 scenes, 33 cues
+  i08_div         16.15s
+  i08_capex       33.66s
+  i08_stats       39.66s
+  i08_win         34.29s
+ch08: total 125.25s (2.09 min), 4 scenes, 35 cues
+  i09_div         10.39s
+  i09_what        38.39s
+  i09_capex       40.21s
+  i09_econ        46.45s
+  i09_risk        40.62s
+ch09: total 178.07s (2.97 min), 5 scenes, 51 cues
+  i10_div         11.73s
+  i10_how         31.65s
+  i10_capex       34.09s
+  i10_stats       42.18s
+ch10: total 121.15s (2.02 min), 4 scenes, 32 cues
+  i11_div         11.16s
+  i11_what        29.61s
+  i11_capex       30.37s
+  i11_stats       36.47s
+ch11: total 109.11s (1.82 min), 4 scenes, 31 cues
+  i12_div         13.84s
+  i12_capex       35.22s
+  i12_stats       36.37s
+  i12_win         42.37s
+ch12: total 129.31s (2.16 min), 4 scenes, 35 cues
+  i13_div         15.98s
+  i13_how         33.40s
+  i13_capex       32.82s
+  i13_risk        45.95s
+ch13: total 129.65s (2.16 min), 4 scenes, 35 cues
+  d14_div          9.48s
+  d14_mtx1        44.44s
+  d14_mtx2        43.28s
+  d14_choose      45.42s
+ch14: total 144.12s (2.40 min), 4 scenes, 40 cues
+  d15_ptitle       8.66s
+  d15_plan        53.85s
+  d15_mistakes    50.20s
+ch15: total 113.70s (1.90 min), 3 scenes, 32 cues
+  f16_recap       47.34s
+  f16_end         45.54s
+ch16: total 93.38s (1.56 min), 2 scenes, 26 cues

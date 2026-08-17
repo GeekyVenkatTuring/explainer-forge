@@ -1,0 +1,106 @@
+{
+ "ticker": "CRAFTSMAN",
+ "scraped_at": "2026-08-14T15:28:42",
+ "source": "screener.in",
+ "ok": true,
+ "error": "<HTTPError 429: 'Too Many Requests'>",
+ "variant": "standalone",
+ "market_cap_cr": 26808.0,
+ "current_price": 10250.0,
+ "pe": 96.5,
+ "book_value": 1262.0,
+ "dividend_yield_pct": 0.11,
+ "roce_pct": 10.3,
+ "roe_pct": 7.72,
+ "face_value": 5.0,
+ "high": 10765.0,
+ "sales_growth": {
+  "10 Years": 19.0,
+  "5 Years": 18.0,
+  "3 Years": -2.0,
+  "TTM": 175.0
+ },
+ "profit_growth": {
+  "5 Years": 39.0,
+  "3 Years": 29.0,
+  "1 Year": 46.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 756.0,
+  "Expenses&nbsp; +": 592.0,
+  "Operating Profit": 163.0,
+  "OPM %": 22.0,
+  "Other Income&nbsp; +": 3.0,
+  "Interest": 36.0,
+  "Depreciation": 58.0,
+  "Profit before tax": 73.0,
+  "Tax %": 25.0,
+  "Net Profit&nbsp; +": 54.0,
+  "EPS in Rs": 25.6
+ },
+ "price_cagr": {
+  "10 Years": 10.0,
+  "5 Years": 10.0,
+  "3 Years": 8.0,
+  "Last Year": 8.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "22%",
+   "21%",
+   "20%",
+   "18%",
+   "17%",
+   "15%",
+   "12%",
+   "14%",
+   "17%",
+   "17%",
+   "17%",
+   "19%",
+   "18%"
+  ],
+  "eps": [
+   "25.60",
+   "29.68",
+   "21.45",
+   "16.78",
+   "13.54",
+   "11.99",
+   "2.22",
+   "11.52",
+   "16.66",
+   "19.79",
+   "23.57",
+   "32.81",
+   "35.91"
+  ]
+ },
+ "pros": [
+  "Company is expected to give good quarter",
+  "Company&#x27;s median sales growth is 23.2% of last 10 years"
+ ],
+ "cons": [
+  "Stock is trading at 8.14 times its book value",
+  "Promoter holding has decreased over last quarter: -6.29%",
+  "Company has a low return on equity of 7.88% over last 3 years.",
+  "Dividend payout has been low at 12.3% of profits over last 3 years"
+ ]
+}

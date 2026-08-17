@@ -1,0 +1,1874 @@
+{
+ "cuts": [
+  {
+   "id": "dp02-observer_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 20.095,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 02",
+    "line1": "One method that keeps",
+    "line2": "sprouting new calls",
+    "sub": "when an order ships, five things must happen \u2014 and tomorrow, six",
+    "dur": 20.595
+   }
+  },
+  {
+   "id": "dp02-observer_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 20.595,
+   "out_seconds": 51.561,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "An order changes status",
+    "situation": "The moment an order is marked 'shipped', several parts of your system must react \u2014 and none of them are optional.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udce7",
+      "label": "Email the buyer"
+     },
+     {
+      "emoji": "\ud83d\udce6",
+      "label": "Update inventory"
+     },
+     {
+      "emoji": "\ud83d\udcca",
+      "label": "Track analytics"
+     }
+    ],
+    "ask": "One event. Many reactions. Where does that code live?",
+    "dur": 31.466
+   }
+  },
+  {
+   "id": "dp02-observer_naive",
+   "type": "dp_code",
+   "in_seconds": 52.061,
+   "out_seconds": 78.576,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "Just call them, right there.",
+    "file": "Order.java",
+    "lines": [
+     {
+      "t": "class Order {"
+     },
+     {
+      "t": "  private Status status;"
+     },
+     {
+      "t": "  void setStatus(Status s) {"
+     },
+     {
+      "t": "    this.status = s;"
+     },
+     {
+      "t": "    email.send(this);",
+      "s": "hi"
+     },
+     {
+      "t": "    inventory.update(this);",
+      "s": "hi"
+     },
+     {
+      "t": "    analytics.track(this);",
+      "s": "hi"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "setStatus does the one thing it should \u2014 and then four favors.",
+    "dur": 27.015
+   }
+  },
+  {
+   "id": "dp02-observer_pain",
+   "type": "dp_pain",
+   "in_seconds": 79.076,
+   "out_seconds": 121.7,
+   "props": {
+    "title": "\"Also award loyalty points.\"",
+    "file": "Order.java",
+    "lines": [
+     {
+      "t": "  void setStatus(Status s) {"
+     },
+     {
+      "t": "    this.status = s;"
+     },
+     {
+      "t": "    email.send(this);",
+      "s": "dim"
+     },
+     {
+      "t": "    inventory.update(this);",
+      "s": "dim"
+     },
+     {
+      "t": "    analytics.track(this);",
+      "s": "dim"
+     },
+     {
+      "t": "    loyalty.award(this);        // NEW today",
+      "s": "hi"
+     },
+     {
+      "t": "    // sms? push? fraud check? ...",
+      "s": "hi"
+     },
+     {
+      "t": "  }"
+     }
+    ],
+    "smell": "A domain object drowning in dependencies",
+    "touched": [
+     "Order now imports 5 services",
+     "setStatus() edited yet again",
+     "can't test Order without all 5"
+    ],
+    "dur": 43.124
+   }
+  },
+  {
+   "id": "dp02-observer_insight",
+   "type": "dp_insight",
+   "in_seconds": 122.2,
+   "out_seconds": 160.529,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "The fact that the status changed",
+     "The order's job: announce it happened",
+     "There is exactly one order"
+    ],
+    "varies": [
+     "Who wants to hear about it",
+     "How many listeners there are",
+     "What each listener does in response"
+    ],
+    "principle": "Let the one that changed announce it once \u2014 and let whoever cares listen in.",
+    "dur": 38.829
+   }
+  },
+  {
+   "id": "dp02-observer_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 161.029,
+   "out_seconds": 205.145,
+   "props": {
+    "title": "Think of a newsletter",
+    "emoji": "\ud83d\udcf0",
+    "analogy": "The publisher sends one issue. Every subscriber gets it.",
+    "map": [
+     {
+      "from": "The publisher",
+      "to": "the Order (the subject)"
+     },
+     {
+      "from": "A subscriber",
+      "to": "a listener object"
+     },
+     {
+      "from": "Subscribing",
+      "to": "registering to be notified"
+     },
+     {
+      "from": "The issue going out",
+      "to": "one notify() call"
+     }
+    ],
+    "breaks": "a newsletter is one-way and delayed \u2014 here the notification is immediate, in-process, and a listener can even react before the next one runs.",
+    "dur": 44.616
+   }
+  },
+  {
+   "id": "dp02-observer_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 205.645,
+   "out_seconds": 230.58,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "Name the listener",
+    "file": "OrderObserver.java",
+    "lines": [
+     {
+      "t": "// anyone who wants to react to an order change"
+     },
+     {
+      "t": "// only has to promise one thing:"
+     },
+     {
+      "t": "interface OrderObserver {",
+      "s": "add"
+     },
+     {
+      "t": "  void onStatusChanged(Order order);",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "note": "One tiny promise. Email, SMS, loyalty \u2014 all can make it.",
+    "dur": 25.435
+   }
+  },
+  {
+   "id": "dp02-observer_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 231.08,
+   "out_seconds": 257.12,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "The order keeps a guest list",
+    "file": "Order.java",
+    "lines": [
+     {
+      "t": "class Order {"
+     },
+     {
+      "t": "  private final List<OrderObserver> observers",
+      "s": "add"
+     },
+     {
+      "t": "      = new ArrayList<>();",
+      "s": "add"
+     },
+     {
+      "t": "  void subscribe(OrderObserver o) { observers.add(o); }",
+      "s": "add"
+     },
+     {
+      "t": "  void setStatus(Status s) {"
+     },
+     {
+      "t": "    this.status = s;"
+     },
+     {
+      "t": "    notifyObservers();   // that's all it does now",
+      "s": "add"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "The order holds a list of listeners and one way to add to it.",
+    "dur": 26.54
+   }
+  },
+  {
+   "id": "dp02-observer_try",
+   "type": "dp_try",
+   "in_seconds": 257.62,
+   "out_seconds": 283.242,
+   "props": {
+    "title": "Write notifyObservers()",
+    "file": "Order.java",
+    "lines": [
+     {
+      "t": "private void notifyObservers() {"
+     },
+     {
+      "t": "  // \u25af your lines: tell every observer, in turn",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Loop the guest list and call each observer with this order.",
+    "hint": "for (OrderObserver o : observers) o.onStatusChanged(this);",
+    "dur": 26.122
+   }
+  },
+  {
+   "id": "dp02-observer_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 283.742,
+   "out_seconds": 309.445,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "Services become listeners, wired at startup",
+    "file": "AppStartup.java",
+    "lines": [
+     {
+      "t": "class EmailObserver implements OrderObserver {",
+      "s": "add"
+     },
+     {
+      "t": "  public void onStatusChanged(Order o) { email.send(o); }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "// wiring, once, at the edge \u2014 not inside Order:"
+     },
+     {
+      "t": "order.subscribe(new EmailObserver());",
+      "s": "add"
+     },
+     {
+      "t": "order.subscribe(new InventoryObserver());",
+      "s": "add"
+     },
+     {
+      "t": "order.subscribe(new AnalyticsObserver());",
+      "s": "add"
+     }
+    ],
+    "note": "Each service implements the interface; subscriptions live at the edge.",
+    "dur": 26.203
+   }
+  },
+  {
+   "id": "dp02-observer_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 309.945,
+   "out_seconds": 343.2,
+   "props": {
+    "requirement": "\"Also award loyalty points\" \u2014 the exact same request",
+    "naiveLabel": "Before",
+    "naiveCost": "Reopen the core Order. Add another dependency.",
+    "naiveSteps": [
+     "reopen the core Order",
+     "add another dependency",
+     "recompile + retest it all"
+    ],
+    "patLabel": "Now",
+    "patCost": "Add one observer. Subscribe it. Order untouched.",
+    "patFile": "LoyaltyObserver.java",
+    "patLines": [
+     {
+      "t": "class LoyaltyObserver",
+      "s": "add"
+     },
+     {
+      "t": "    implements OrderObserver {",
+      "s": "add"
+     },
+     {
+      "t": "  public void onStatusChanged(Order o) {",
+      "s": "add"
+     },
+     {
+      "t": "    points.award(o.buyer());",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "order.subscribe(new LoyaltyObserver());",
+      "s": "add"
+     }
+    ],
+    "dur": 33.755
+   }
+  },
+  {
+   "id": "dp02-observer_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 343.7,
+   "out_seconds": 377.978,
+   "props": {
+    "name": "The Observer Pattern",
+    "plain": "One subject holds many listeners; when it changes, it notifies every one of them \u2014 without knowing who they are.",
+    "nodes": [
+     {
+      "id": "obs",
+      "title": "OrderObserver",
+      "stereo": "interface",
+      "members": [
+       "+ onStatusChanged(o)"
+      ],
+      "x": 760,
+      "y": 220,
+      "w": 400,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "subj",
+      "title": "Order",
+      "members": [
+       "- observers: List",
+       "+ subscribe(o)",
+       "+ notify()"
+      ],
+      "x": 150,
+      "y": 225,
+      "w": 430,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "em",
+      "title": "EmailObserver",
+      "members": [
+       "+ onStatusChanged(o)"
+      ],
+      "x": 150,
+      "y": 640,
+      "w": 370,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "iv",
+      "title": "InventoryObserver",
+      "members": [
+       "+ onStatusChanged(o)"
+      ],
+      "x": 555,
+      "y": 640,
+      "w": 370,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "an",
+      "title": "AnalyticsObserver",
+      "members": [
+       "+ onStatusChanged(o)"
+      ],
+      "x": 960,
+      "y": 640,
+      "w": 370,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "lo",
+      "title": "LoyaltyObserver",
+      "members": [
+       "+ onStatusChanged(o)"
+      ],
+      "x": 1365,
+      "y": 640,
+      "w": 370,
+      "color": "#34D399"
+     }
+    ],
+    "edges": [
+     {
+      "from": "subj",
+      "to": "obs",
+      "kind": "has"
+     },
+     {
+      "from": "em",
+      "to": "obs",
+      "kind": "impl"
+     },
+     {
+      "from": "iv",
+      "to": "obs",
+      "kind": "impl"
+     },
+     {
+      "from": "an",
+      "to": "obs",
+      "kind": "impl"
+     },
+     {
+      "from": "lo",
+      "to": "obs",
+      "kind": "impl"
+     }
+    ],
+    "dur": 34.778
+   }
+  },
+  {
+   "id": "dp02-observer_map",
+   "type": "dp_map",
+   "in_seconds": 378.478,
+   "out_seconds": 416.729,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Subject",
+      "your": "Order (holds + notifies)"
+     },
+     {
+      "role": "Observer",
+      "your": "interface OrderObserver"
+     },
+     {
+      "role": "ConcreteObserver",
+      "your": "EmailObserver, LoyaltyObserver, \u2026"
+     },
+     {
+      "role": "Client",
+      "your": "startup \u2014 wires subscriptions"
+     }
+    ],
+    "plain": "Objects subscribe to a subject; when it changes, it notifies them all \u2014 each reacting on its own.",
+    "gof": "Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.",
+    "dur": 38.751
+   }
+  },
+  {
+   "id": "dp02-observer_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 417.229,
+   "out_seconds": 462.514,
+   "props": {
+    "title": "The costs nobody warns you about",
+    "costs": [
+     "Notification order is not guaranteed",
+     "Forget to unsubscribe \u2192 memory leak",
+     "Cascades get hard to trace and debug"
+    ],
+    "dont": [
+     "There is one fixed reaction, forever",
+     "The listeners never change",
+     "A direct call is clearer and safer"
+    ],
+    "signal": "one event must trigger many independent reactions, and that set of reactions keeps growing.",
+    "dur": 45.785
+   }
+  },
+  {
+   "id": "dp02-observer_recap",
+   "type": "dp_recap",
+   "in_seconds": 463.014,
+   "out_seconds": 514.923,
+   "props": {
+    "title": "Observer, in one breath",
+    "items": [
+     "One method kept sprouting calls \u2014 every new reaction reopened the core Order and coupled it tighter.",
+     "The order's job is just to announce a change; who listens, and how many, varies \u2014 so let them subscribe.",
+     "Observer: a subject notifies a list of listeners it does not know. New reaction, new observer."
+    ],
+    "challenge": "In your chat app, a new message updates the unread badge and plays a sound. Now product wants desktop notifications and a typing indicator.",
+    "question": "Does Observer fit? What's the subject, and what are the observers?",
+    "dur": 52.409
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   3.075,
+   "There is a method in almost every codebase"
+  ],
+  [
+   3.075,
+   4.612,
+   "that has a disease."
+  ],
+  [
+   5.243,
+   8.318,
+   "Every time the business wants one more thing"
+  ],
+  [
+   8.318,
+   9.087,
+   "to happen,"
+  ],
+  [
+   9.087,
+   11.008,
+   "this method grows another line."
+  ],
+  [
+   11.008,
+   11.777,
+   "Another dependency."
+  ],
+  [
+   11.777,
+   13.314,
+   "Another reason to break."
+  ],
+  [
+   13.946,
+   16.636,
+   "Today we are going to cure it."
+  ],
+  [
+   16.636,
+   19.711,
+   "Watch what happens the moment an order changes"
+  ],
+  [
+   19.711,
+   20.095,
+   "status."
+  ],
+  [
+   20.595,
+   22.184,
+   "Here is the situation."
+  ],
+  [
+   22.816,
+   25.199,
+   "An order gets marked as shipped."
+  ],
+  [
+   25.831,
+   27.817,
+   "And the instant that happens,"
+  ],
+  [
+   27.817,
+   30.995,
+   "a whole crowd of things need to react."
+  ],
+  [
+   31.627,
+   34.01,
+   "Email the buyer their tracking number."
+  ],
+  [
+   34.01,
+   35.599,
+   "Decrement the warehouse inventory."
+  ],
+  [
+   35.599,
+   37.586,
+   "Send the event to analytics."
+  ],
+  [
+   38.217,
+   40.203,
+   "None of these are optional,"
+  ],
+  [
+   40.203,
+   43.382,
+   "and there will only be more of them"
+  ],
+  [
+   43.382,
+   44.176,
+   "over time."
+  ],
+  [
+   44.808,
+   46.794,
+   "So here is the question."
+  ],
+  [
+   46.794,
+   47.588,
+   "One event,"
+  ],
+  [
+   47.588,
+   50.766,
+   "many reactions \u2014 where does all that code"
+  ],
+  [
+   50.766,
+   51.561,
+   "actually live?"
+  ],
+  [
+   52.061,
+   53.771,
+   "And the obvious answer is:"
+  ],
+  [
+   53.771,
+   54.797,
+   "just call them."
+  ],
+  [
+   54.797,
+   56.506,
+   "Right there in the order."
+  ],
+  [
+   57.138,
+   58.848,
+   "When we set the status,"
+  ],
+  [
+   58.848,
+   61.583,
+   "we set the field \u2014 and then we"
+  ],
+  [
+   61.583,
+   62.609,
+   "email the buyer,"
+  ],
+  [
+   62.609,
+   63.293,
+   "update inventory,"
+  ],
+  [
+   63.293,
+   64.661,
+   "and track the event."
+  ],
+  [
+   65.292,
+   67.002,
+   "It reads top to bottom."
+  ],
+  [
+   67.002,
+   67.686,
+   "It works."
+  ],
+  [
+   67.686,
+   69.054,
+   "Anyone can follow it."
+  ],
+  [
+   69.685,
+   72.421,
+   "But look closely at what the order has"
+  ],
+  [
+   72.421,
+   73.105,
+   "quietly become."
+  ],
+  [
+   73.105,
+   75.84,
+   "It sets a status \u2014 and then it"
+  ],
+  [
+   75.84,
+   78.576,
+   "does four unrelated favors for four other systems."
+  ],
+  [
+   79.076,
+   81.641,
+   "Now marketing asks for one small thing."
+  ],
+  [
+   81.641,
+   84.205,
+   "Award loyalty points when an order ships."
+  ],
+  [
+   84.837,
+   87.768,
+   "So you open the order \u2014 your core"
+  ],
+  [
+   87.768,
+   90.332,
+   "domain class \u2014 and add a line."
+  ],
+  [
+   90.964,
+   93.162,
+   "And it is never just one."
+  ],
+  [
+   93.162,
+   94.994,
+   "Tomorrow it is text messages."
+  ],
+  [
+   94.994,
+   96.093,
+   "Then push notifications."
+  ],
+  [
+   96.093,
+   97.558,
+   "Then a fraud check."
+  ],
+  [
+   98.19,
+   100.388,
+   "Every single one reopens this method."
+  ],
+  [
+   101.02,
+   103.218,
+   "Step back and see the damage."
+  ],
+  [
+   103.218,
+   106.149,
+   "Your order \u2014 a thing that should just"
+  ],
+  [
+   106.149,
+   109.08,
+   "model an order \u2014 now depends on email,"
+  ],
+  [
+   109.08,
+   109.446,
+   "inventory,"
+  ],
+  [
+   109.446,
+   109.812,
+   "analytics,"
+  ],
+  [
+   109.812,
+   110.179,
+   "loyalty,"
+  ],
+  [
+   110.179,
+   110.911,
+   "and more."
+  ],
+  [
+   111.543,
+   114.474,
+   "It cannot even be tested without dragging all"
+  ],
+  [
+   114.474,
+   115.939,
+   "five of them along."
+  ],
+  [
+   116.571,
+   119.502,
+   "The order knows far too much about a"
+  ],
+  [
+   119.502,
+   121.7,
+   "crowd it should not care about."
+  ],
+  [
+   122.2,
+   123.579,
+   "Same question as always."
+  ],
+  [
+   123.579,
+   124.959,
+   "What actually changes here,"
+  ],
+  [
+   124.959,
+   126.338,
+   "and what stays fixed?"
+  ],
+  [
+   126.969,
+   128.693,
+   "The fixed part is small."
+  ],
+  [
+   128.693,
+   131.452,
+   "The status changed \u2014 that is a fact."
+  ],
+  [
+   131.452,
+   134.21,
+   "And the order's job is simply to announce"
+  ],
+  [
+   134.21,
+   134.9,
+   "that fact."
+  ],
+  [
+   134.9,
+   136.279,
+   "There is one order."
+  ],
+  [
+   136.911,
+   137.945,
+   "Everything else varies."
+  ],
+  [
+   137.945,
+   139.325,
+   "Who wants to know."
+  ],
+  [
+   139.325,
+   141.394,
+   "How many of them there are."
+  ],
+  [
+   141.394,
+   143.807,
+   "And what each one does about it."
+  ],
+  [
+   144.439,
+   146.163,
+   "So here is the shift."
+  ],
+  [
+   146.794,
+   149.553,
+   "Instead of the order reaching out and calling"
+  ],
+  [
+   149.553,
+   150.932,
+   "each system by name,"
+  ],
+  [
+   150.932,
+   152.656,
+   "let the order just announce,"
+  ],
+  [
+   152.656,
+   153.001,
+   "once,"
+  ],
+  [
+   153.001,
+   155.76,
+   "that something happened \u2014 and let anyone who"
+  ],
+  [
+   155.76,
+   156.794,
+   "cares listen in."
+  ],
+  [
+   157.426,
+   157.77,
+   "Crucially,"
+  ],
+  [
+   157.77,
+   160.529,
+   "the order should not know who is listening."
+  ],
+  [
+   161.029,
+   162.114,
+   "Picture a newsletter."
+  ],
+  [
+   162.746,
+   165.639,
+   "The publisher writes one issue and sends it."
+  ],
+  [
+   165.639,
+   167.085,
+   "Every subscriber receives it."
+  ],
+  [
+   167.717,
+   169.525,
+   "And here is the key:"
+  ],
+  [
+   169.525,
+   172.418,
+   "the publisher does not phone each reader by"
+  ],
+  [
+   172.418,
+   172.78,
+   "name."
+  ],
+  [
+   172.78,
+   175.673,
+   "It does not even keep a mental list"
+  ],
+  [
+   175.673,
+   177.12,
+   "of who you are."
+  ],
+  [
+   177.12,
+   177.843,
+   "People subscribe,"
+  ],
+  [
+   177.843,
+   178.566,
+   "people unsubscribe,"
+  ],
+  [
+   178.566,
+   180.375,
+   "and the publisher just broadcasts."
+  ],
+  [
+   181.006,
+   182.814,
+   "That is exactly our fix."
+  ],
+  [
+   182.814,
+   184.623,
+   "The order is the publisher."
+  ],
+  [
+   184.623,
+   187.154,
+   "Each system that reacts is a subscriber."
+  ],
+  [
+   187.154,
+   189.324,
+   "Subscribing means asking to be told,"
+  ],
+  [
+   189.324,
+   192.217,
+   "and sending the issue is a single notify."
+  ],
+  [
+   192.849,
+   194.657,
+   "Where does the picture break?"
+  ],
+  [
+   194.657,
+   197.189,
+   "A newsletter is slow and one directional."
+  ],
+  [
+   197.189,
+   200.082,
+   "Our notification is immediate and in the same"
+  ],
+  [
+   200.082,
+   202.975,
+   "process \u2014 a listener can even finish its"
+  ],
+  [
+   202.975,
+   205.145,
+   "work before the next one starts."
+  ],
+  [
+   205.645,
+   206.708,
+   "Let's fix it,"
+  ],
+  [
+   206.708,
+   208.481,
+   "one move at a time."
+  ],
+  [
+   209.112,
+   209.821,
+   "Move one."
+  ],
+  [
+   209.821,
+   211.239,
+   "We name the listener."
+  ],
+  [
+   211.871,
+   214.706,
+   "Anyone who wants to react to an order"
+  ],
+  [
+   214.706,
+   217.542,
+   "only has to promise one thing \u2014 a"
+  ],
+  [
+   217.542,
+   219.314,
+   "method called on status changed,"
+  ],
+  [
+   219.314,
+   220.732,
+   "that takes the order."
+  ],
+  [
+   221.364,
+   223.136,
+   "That is the whole contract."
+  ],
+  [
+   223.136,
+   224.554,
+   "Email can promise it."
+  ],
+  [
+   224.554,
+   225.972,
+   "Inventory can promise it."
+  ],
+  [
+   225.972,
+   226.326,
+   "Loyalty,"
+  ],
+  [
+   226.326,
+   229.162,
+   "a class that does not even exist yet,"
+  ],
+  [
+   229.162,
+   230.58,
+   "can promise it too."
+  ],
+  [
+   231.08,
+   231.801,
+   "Move two."
+  ],
+  [
+   231.801,
+   233.603,
+   "The order stops calling services,"
+  ],
+  [
+   233.603,
+   235.765,
+   "and instead keeps a guest list."
+  ],
+  [
+   236.396,
+   238.198,
+   "A plain list of observers,"
+  ],
+  [
+   238.198,
+   240.721,
+   "and a subscribe method to add one."
+  ],
+  [
+   241.353,
+   243.515,
+   "And now look at set status."
+  ],
+  [
+   243.515,
+   244.956,
+   "It sets the field,"
+  ],
+  [
+   244.956,
+   247.839,
+   "and then it does one single thing \u2014"
+  ],
+  [
+   247.839,
+   248.56,
+   "it notifies."
+  ],
+  [
+   249.192,
+   250.994,
+   "It no longer mentions email,"
+  ],
+  [
+   250.994,
+   251.714,
+   "or inventory,"
+  ],
+  [
+   251.714,
+   252.435,
+   "or analytics."
+  ],
+  [
+   252.435,
+   255.318,
+   "It has no idea who is even on"
+  ],
+  [
+   255.318,
+   256.039,
+   "the list."
+  ],
+  [
+   256.039,
+   257.12,
+   "It just announces."
+  ],
+  [
+   257.62,
+   258.39,
+   "Your turn."
+  ],
+  [
+   259.021,
+   260.946,
+   "The notify method is empty."
+  ],
+  [
+   260.946,
+   264.026,
+   "Its whole job is to walk the guest"
+  ],
+  [
+   264.026,
+   265.95,
+   "list and tell every observer,"
+  ],
+  [
+   265.95,
+   266.72,
+   "in turn,"
+  ],
+  [
+   266.72,
+   268.26,
+   "that this order changed."
+  ],
+  [
+   268.891,
+   269.276,
+   "Pause,"
+  ],
+  [
+   269.276,
+   270.431,
+   "and write it."
+  ],
+  [
+   271.063,
+   273.372,
+   "It is a single for-each loop."
+  ],
+  [
+   273.372,
+   275.682,
+   "For each observer on the list,"
+  ],
+  [
+   275.682,
+   277.221,
+   "call on status changed,"
+  ],
+  [
+   277.221,
+   278.376,
+   "passing this order."
+  ],
+  [
+   279.008,
+   282.087,
+   "That one loop is the beating heart of"
+  ],
+  [
+   282.087,
+   283.242,
+   "the entire pattern."
+  ],
+  [
+   283.742,
+   284.463,
+   "Move three."
+  ],
+  [
+   284.463,
+   286.628,
+   "Each old service becomes a listener."
+  ],
+  [
+   287.259,
+   289.424,
+   "The email observer implements the interface,"
+  ],
+  [
+   289.424,
+   292.31,
+   "and its react method does the exact thing"
+  ],
+  [
+   292.31,
+   294.835,
+   "that used to sit inside the order."
+  ],
+  [
+   295.466,
+   298.352,
+   "And the wiring \u2014 deciding who subscribes \u2014"
+  ],
+  [
+   298.352,
+   301.238,
+   "moves out to the startup of the app,"
+  ],
+  [
+   301.238,
+   303.402,
+   "at the edge of the system."
+  ],
+  [
+   304.034,
+   306.559,
+   "The order does not assemble this list."
+  ],
+  [
+   306.559,
+   309.445,
+   "Something on the outside hands it its audience."
+  ],
+  [
+   309.945,
+   313.486,
+   "Now rewind to the request that started the"
+  ],
+  [
+   313.486,
+   313.928,
+   "pain."
+  ],
+  [
+   313.928,
+   315.699,
+   "Also award loyalty points."
+  ],
+  [
+   316.33,
+   316.773,
+   "Before,"
+  ],
+  [
+   316.773,
+   320.314,
+   "that meant reopening the core order and bolting"
+  ],
+  [
+   320.314,
+   321.642,
+   "on another dependency."
+  ],
+  [
+   322.273,
+   322.716,
+   "Now?"
+  ],
+  [
+   322.716,
+   324.929,
+   "You write one new observer."
+  ],
+  [
+   324.929,
+   327.142,
+   "It reacts by awarding points."
+  ],
+  [
+   327.773,
+   328.216,
+   "Then,"
+  ],
+  [
+   328.216,
+   329.101,
+   "at startup,"
+  ],
+  [
+   329.101,
+   330.872,
+   "one line subscribes it."
+  ],
+  [
+   331.503,
+   334.159,
+   "The order class \u2014 never opened."
+  ],
+  [
+   334.159,
+   334.602,
+   "Email,"
+  ],
+  [
+   334.602,
+   335.044,
+   "inventory,"
+  ],
+  [
+   335.044,
+   336.815,
+   "analytics \u2014 never touched,"
+  ],
+  [
+   336.815,
+   337.7,
+   "never retested."
+  ],
+  [
+   338.331,
+   341.43,
+   "A new reaction became a new class."
+  ],
+  [
+   341.43,
+   343.2,
+   "The core stayed frozen."
+  ],
+  [
+   343.7,
+   345.164,
+   "Now we name it."
+  ],
+  [
+   345.796,
+   348.359,
+   "What you built is the Observer pattern."
+  ],
+  [
+   348.99,
+   350.455,
+   "Look at the shape."
+  ],
+  [
+   350.455,
+   351.553,
+   "In the middle,"
+  ],
+  [
+   351.553,
+   354.116,
+   "the observer interface \u2014 the one-line promise."
+  ],
+  [
+   354.748,
+   355.846,
+   "On the left,"
+  ],
+  [
+   355.846,
+   356.578,
+   "the order."
+  ],
+  [
+   356.578,
+   359.507,
+   "It holds a list of observers and a"
+  ],
+  [
+   359.507,
+   360.606,
+   "way to subscribe."
+  ],
+  [
+   360.606,
+   362.802,
+   "It points only at the interface."
+  ],
+  [
+   362.802,
+   365.731,
+   "It has no idea what an email observer"
+  ],
+  [
+   365.731,
+   366.464,
+   "even is."
+  ],
+  [
+   367.095,
+   367.827,
+   "And underneath,"
+  ],
+  [
+   367.827,
+   368.56,
+   "your listeners,"
+  ],
+  [
+   368.56,
+   370.024,
+   "each implementing that promise."
+  ],
+  [
+   370.656,
+   371.754,
+   "The green one,"
+  ],
+  [
+   371.754,
+   372.12,
+   "loyalty,"
+  ],
+  [
+   372.12,
+   375.049,
+   "is the one you added last \u2014 it"
+  ],
+  [
+   375.049,
+   376.514,
+   "just joins the row."
+  ],
+  [
+   376.514,
+   377.978,
+   "Nothing above it moved."
+  ],
+  [
+   378.478,
+   379.279,
+   "Four roles,"
+  ],
+  [
+   379.279,
+   381.283,
+   "mapped to what you wrote."
+  ],
+  [
+   381.915,
+   385.12,
+   "The Subject is the order \u2014 the thing"
+  ],
+  [
+   385.12,
+   387.525,
+   "that holds listeners and notifies them."
+  ],
+  [
+   388.156,
+   390.16,
+   "The Observer is your interface."
+  ],
+  [
+   390.791,
+   393.196,
+   "The concrete observers are your email,"
+  ],
+  [
+   393.196,
+   393.596,
+   "inventory,"
+  ],
+  [
+   393.596,
+   394.798,
+   "and loyalty classes."
+  ],
+  [
+   395.43,
+   398.636,
+   "And the Client is the startup code that"
+  ],
+  [
+   398.636,
+   399.838,
+   "decides who subscribes."
+  ],
+  [
+   400.47,
+   403.675,
+   "In plain terms \u2014 objects subscribe to a"
+  ],
+  [
+   403.675,
+   404.076,
+   "subject,"
+  ],
+  [
+   404.076,
+   405.679,
+   "and when it changes,"
+  ],
+  [
+   405.679,
+   407.282,
+   "it tells them all."
+  ],
+  [
+   407.913,
+   411.119,
+   "The Gang of Four called it a one"
+  ],
+  [
+   411.119,
+   412.321,
+   "to many dependency,"
+  ],
+  [
+   412.321,
+   415.527,
+   "where a change in one object notifies all"
+  ],
+  [
+   415.527,
+   416.729,
+   "its dependents automatically."
+  ],
+  [
+   417.229,
+   418.775,
+   "Now the honest costs,"
+  ],
+  [
+   418.775,
+   421.094,
+   "and Observer has some sharp ones."
+  ],
+  [
+   421.725,
+   424.817,
+   "The order that listeners run in is not"
+  ],
+  [
+   424.817,
+   425.204,
+   "guaranteed,"
+  ],
+  [
+   425.204,
+   428.296,
+   "so never rely on email firing before analytics."
+  ],
+  [
+   428.927,
+   432.019,
+   "If a listener subscribes and forgets to\nunsubscribe,"
+  ],
+  [
+   432.019,
+   435.111,
+   "it lives forever \u2014 a classic memory leak."
+  ],
+  [
+   435.743,
+   438.062,
+   "And when one notification triggers another,"
+  ],
+  [
+   438.062,
+   441.154,
+   "tracing the cascade at three in the morning"
+  ],
+  [
+   441.154,
+   442.313,
+   "is genuinely painful."
+  ],
+  [
+   442.945,
+   446.036,
+   "So skip it when there is exactly one"
+  ],
+  [
+   446.036,
+   449.128,
+   "reaction that will never change \u2014 just call"
+  ],
+  [
+   449.128,
+   449.901,
+   "it directly,"
+  ],
+  [
+   449.901,
+   451.061,
+   "it is clearer."
+  ],
+  [
+   451.692,
+   454.398,
+   "The signal to use it is unmistakable."
+  ],
+  [
+   454.398,
+   457.49,
+   "One event must fan out to many independent"
+  ],
+  [
+   457.49,
+   457.876,
+   "reactions,"
+  ],
+  [
+   457.876,
+   459.809,
+   "and that set keeps growing."
+  ],
+  [
+   459.809,
+   461.355,
+   "When you feel that,"
+  ],
+  [
+   461.355,
+   462.514,
+   "reach for Observer."
+  ],
+  [
+   463.014,
+   465.293,
+   "The whole journey in three beats."
+  ],
+  [
+   465.925,
+   466.685,
+   "The problem:"
+  ],
+  [
+   466.685,
+   468.584,
+   "one method kept sprouting calls,"
+  ],
+  [
+   468.584,
+   471.624,
+   "and every new reaction reopened the core order"
+  ],
+  [
+   471.624,
+   473.143,
+   "and coupled it tighter."
+  ],
+  [
+   473.775,
+   474.535,
+   "The insight:"
+  ],
+  [
+   474.535,
+   477.574,
+   "the order's only job is to announce that"
+  ],
+  [
+   477.574,
+   479.473,
+   "something changed \u2014 who listens,"
+  ],
+  [
+   479.473,
+   480.613,
+   "and how many,"
+  ],
+  [
+   480.613,
+   482.133,
+   "is not its business."
+  ],
+  [
+   482.764,
+   483.524,
+   "The pattern:"
+  ],
+  [
+   483.524,
+   483.904,
+   "Observer."
+  ],
+  [
+   483.904,
+   486.943,
+   "A subject notifies a list of listeners it"
+  ],
+  [
+   486.943,
+   488.463,
+   "does not even know,"
+  ],
+  [
+   488.463,
+   491.502,
+   "so a new reaction is just a new"
+  ],
+  [
+   491.502,
+   491.882,
+   "observer."
+  ],
+  [
+   492.513,
+   494.033,
+   "Now one for you,"
+  ],
+  [
+   494.033,
+   495.553,
+   "before the next episode."
+  ],
+  [
+   496.184,
+   497.704,
+   "In a chat app,"
+  ],
+  [
+   497.704,
+   500.743,
+   "a new message updates the unread badge and"
+  ],
+  [
+   500.743,
+   501.883,
+   "plays a sound."
+  ],
+  [
+   501.883,
+   503.782,
+   "Now product wants desktop notifications,"
+  ],
+  [
+   503.782,
+   505.682,
+   "and a typing indicator too."
+  ],
+  [
+   506.313,
+   507.453,
+   "Does Observer fit?"
+  ],
+  [
+   507.453,
+   510.492,
+   "What is the subject \u2014 and what are"
+  ],
+  [
+   510.492,
+   511.252,
+   "the observers?"
+  ],
+  [
+   511.884,
+   512.264,
+   "Pause,"
+  ],
+  [
+   512.264,
+   513.403,
+   "and sketch it,"
+  ],
+  [
+   513.403,
+   514.923,
+   "before you press play."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp02-observer.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,1675 @@
+{
+ "cuts": [
+  {
+   "id": "kg-ch02-ontology_divider",
+   "type": "kg_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 10.223,
+   "props": {
+    "n": 1,
+    "title": "Ontology",
+    "sub": "the layer of meaning \u2014 a shared grammar machines can agree on",
+    "color": "#FBBF24",
+    "layer": 0,
+    "dur": 10.723
+   }
+  },
+  {
+   "id": "kg-ch02-ontology_vs",
+   "type": "kg_compare",
+   "in_seconds": 10.723,
+   "out_seconds": 70.712,
+   "props": {
+    "kicker": "WHAT AN ONTOLOGY ACTUALLY IS",
+    "title": "Not a schema. Not a taxonomy. A model of meaning.",
+    "color": "#FBBF24",
+    "left": {
+     "head": "Schema / taxonomy",
+     "sub": "structure only",
+     "c": "#8B93B0",
+     "rows": [
+      "A database schema says how bytes are stored.",
+      "A taxonomy is just a tree of categories.",
+      "Neither one tells a machine what a thing MEANS.",
+      "Change the storage, and the meaning is lost."
+     ]
+    },
+    "right": {
+     "head": "Ontology",
+     "sub": "shared, explicit meaning",
+     "c": "#FBBF24",
+     "rows": [
+      "Defines entities: Report, Query, Table, Service.",
+      "Defines relationships: USES, READS, DEPLOYED_AS.",
+      "Defines rules: every Report must use \u22651 Query.",
+      "Independent of any one database or vendor."
+     ]
+    },
+    "foot": "The ontology is the contract every source, every query, and every agent shares.",
+    "dur": 60.489
+   }
+  },
+  {
+   "id": "kg-ch02-ontology_triple",
+   "type": "kg_triple",
+   "in_seconds": 71.212,
+   "out_seconds": 128.795,
+   "props": {
+    "kicker": "THE ATOM OF MEANING",
+    "title": "Everything reduces to a triple: subject \u2192 predicate \u2192 object",
+    "subj": "Report",
+    "pred": "USES",
+    "obj": "Query",
+    "examples": [
+     "Query READS Table",
+     "Service DEPLOYED_AS Pod",
+     "Wiki DOCUMENTS Service",
+     "Pod EMITS LogEvent"
+    ],
+    "foot": "Millions of triples, sharing one vocabulary, become a graph of meaning.",
+    "dur": 58.083
+   }
+  },
+  {
+   "id": "kg-ch02-ontology_reuse",
+   "type": "kg_cards",
+   "in_seconds": 129.295,
+   "out_seconds": 189.967,
+   "props": {
+    "kicker": "DON'T START FROM A BLANK PAGE",
+    "title": "Most of your ontology has already been written",
+    "color": "#FBBF24",
+    "cards": [
+     {
+      "head": "Upper ontologies",
+      "emoji": "\ud83c\udf10",
+      "body": "Generic building blocks for things, people, documents \u2014 schema.org, Gist, Dublin Core.",
+      "tag": "generic"
+     },
+     {
+      "head": "Domain ontologies",
+      "emoji": "\ud83c\udfe6",
+      "body": "Whole worlds, pre-built: FIBO for finance, SNOMED for health, Microsoft's DTDL ontologies for buildings.",
+      "tag": "domain"
+     },
+     {
+      "head": "Import & extend",
+      "emoji": "\ud83e\udde9",
+      "body": "Pull in a standard vocabulary, then add only your project's specifics on top.",
+      "tag": "reuse"
+     }
+    ],
+    "foot": "Reuse buys you interoperability for free \u2014 and saves months of arguing about words.",
+    "dur": 61.172
+   }
+  },
+  {
+   "id": "kg-ch02-ontology_code",
+   "type": "kg_code",
+   "in_seconds": 190.467,
+   "out_seconds": 254.365,
+   "props": {
+    "kicker": "OWL SAYS WHAT IS \u00b7 SHACL SAYS WHAT MUST BE",
+    "title": "Meaning you can reason on, and rules you can enforce",
+    "color": "#FBBF24",
+    "lang": "turtle",
+    "lines": [
+     ":Report  a owl:Class .",
+     ":Query   a owl:Class .",
+     ":uses    a owl:ObjectProperty ;",
+     "         rdfs:domain :Report ;",
+     "         rdfs:range  :Query .",
+     "",
+     "sh:ReportShape a sh:NodeShape ;",
+     "  sh:targetClass :Report ;",
+     "  sh:property [ sh:path :uses ;",
+     "               sh:minCount 1 ] ."
+    ],
+    "caption": "OWL declares the concepts \u00b7 SHACL validates every instance against the rules",
+    "foot": "Machine-checkable meaning: the ontology can catch a broken model before an agent ever sees it.",
+    "dur": 64.398
+   }
+  },
+  {
+   "id": "kg-ch02-ontology_inference",
+   "type": "kg_pipeline",
+   "in_seconds": 254.865,
+   "out_seconds": 307.592,
+   "props": {
+    "kicker": "REASONING \u00b7 FACTS YOU NEVER WROTE DOWN",
+    "title": "OWL lets the machine derive new truths from stated ones",
+    "color": "#FBBF24",
+    "nodes": [
+     {
+      "emoji": "\u270d\ufe0f",
+      "label": "Stated",
+      "sub": "Report uses Query",
+      "c": "#FBBF24"
+     },
+     {
+      "emoji": "\ud83e\udd89",
+      "label": "Reasoner",
+      "sub": "applies OWL rules",
+      "c": "#818CF8"
+     },
+     {
+      "emoji": "\ud83d\udca1",
+      "label": "Inferred",
+      "sub": "Report DEPENDS_ON Table",
+      "c": "#22D3EE"
+     },
+     {
+      "emoji": "\ud83e\uddf9",
+      "label": "Less to maintain",
+      "sub": "derive, don't duplicate",
+      "c": "#34D399"
+     }
+    ],
+    "foot": "Declare the rules once; the reasoner keeps the derived facts correct for free.",
+    "dur": 53.227
+   }
+  },
+  {
+   "id": "kg-ch02-ontology_standards",
+   "type": "kg_orbit",
+   "in_seconds": 308.092,
+   "out_seconds": 371.555,
+   "props": {
+    "kicker": "THE ONTOLOGY TOOLBOX",
+    "title": "The standards and tools you'll actually reach for",
+    "color": "#FBBF24",
+    "hub": "Ontology\nstack",
+    "items": [
+     {
+      "emoji": "\ud83d\udd17",
+      "label": "RDF \u2014 triples, global IDs"
+     },
+     {
+      "emoji": "\ud83e\udd89",
+      "label": "OWL \u2014 classes + inference"
+     },
+     {
+      "emoji": "\u2696\ufe0f",
+      "label": "SHACL \u2014 validation"
+     },
+     {
+      "emoji": "\ud83c\udff7\ufe0f",
+      "label": "SKOS \u2014 vocabularies"
+     },
+     {
+      "emoji": "\ud83d\udee0\ufe0f",
+      "label": "Prot\u00e9g\u00e9 \u2014 the editor"
+     },
+     {
+      "emoji": "\u2601\ufe0f",
+      "label": "DTDL \u2014 Azure twins"
+     },
+     {
+      "emoji": "\ud83c\udfdb\ufe0f",
+      "label": "Palantir \u2014 enterprise"
+     }
+    ],
+    "foot": "Standards for portability; a good editor for the humans; a platform when you scale.",
+    "dur": 63.963
+   }
+  },
+  {
+   "id": "kg-ch02-ontology_wild",
+   "type": "kg_cards",
+   "in_seconds": 372.055,
+   "out_seconds": 425.348,
+   "props": {
+    "kicker": "THIS ALREADY RUNS THE INTERNET",
+    "title": "You use ontology-backed knowledge graphs every day",
+    "color": "#FBBF24",
+    "cards": [
+     {
+      "head": "Google",
+      "emoji": "\ud83d\udd0d",
+      "body": "The Knowledge Graph behind every search panel \u2014 billions of entities and facts.",
+      "tag": "search"
+     },
+     {
+      "head": "Amazon \u00b7 LinkedIn",
+      "emoji": "\ud83d\uded2",
+      "body": "Product graphs, and LinkedIn's \u2018Economic Graph\u2019 of people, jobs and skills.",
+      "tag": "commerce"
+     },
+     {
+      "head": "Health \u00b7 Finance",
+      "emoji": "\ud83c\udfe5",
+      "body": "SNOMED for medicine, FIBO for finance \u2014 safety-critical shared meaning.",
+      "tag": "regulated"
+     }
+    ],
+    "foot": "Proven at planet scale. What's new is that a normal team can finally build one too.",
+    "dur": 53.793
+   }
+  },
+  {
+   "id": "kg-ch02-ontology_design",
+   "type": "kg_cards",
+   "in_seconds": 425.848,
+   "out_seconds": 480.179,
+   "props": {
+    "kicker": "HOW TO DESIGN ONE THAT SHIPS",
+    "title": "The principles that keep an ontology from becoming a swamp",
+    "color": "#FBBF24",
+    "cards": [
+     {
+      "head": "Start from questions",
+      "emoji": "\u2753",
+      "body": "List the \u2018competency questions\u2019 it must answer \u2014 \u2018which reports break if this table changes?\u2019 \u2014 and model just enough to answer them.",
+      "tag": "scope"
+     },
+     {
+      "head": "Small, then grow",
+      "emoji": "\ud83c\udf31",
+      "body": "Twenty classes that earn their keep beat five hundred that never ship. Add classes when a real question needs them.",
+      "tag": "iterate"
+     },
+     {
+      "head": "Test-driven",
+      "emoji": "\u2705",
+      "body": "Encode the rules as SHACL shapes \u2014 your ontology gets a test suite, exactly like code.",
+      "tag": "TDD"
+     }
+    ],
+    "foot": "An ontology is software. Scope it, iterate it, test it \u2014 don't try to model the universe.",
+    "dur": 54.831
+   }
+  },
+  {
+   "id": "kg-ch02-ontology_decision",
+   "type": "kg_cards",
+   "in_seconds": 480.679,
+   "out_seconds": 545.187,
+   "props": {
+    "kicker": "WHY AGENTS NEED THIS \u00b7 THE DECISION-CENTRIC ONTOLOGY",
+    "title": "Palantir's insight: meaning isn't enough \u2014 model the action too",
+    "color": "#FBBF24",
+    "cards": [
+     {
+      "head": "Data",
+      "emoji": "\ud83d\udce6",
+      "body": "The objects and links \u2014 your report, query, table, and how they relate.",
+      "tag": "semantic"
+     },
+     {
+      "head": "Logic",
+      "emoji": "\ud83e\uddee",
+      "body": "Derived facts and business rules computed over the objects.",
+      "tag": "semantic"
+     },
+     {
+      "head": "Action",
+      "emoji": "\u26a1",
+      "body": "The typed, allowed operations \u2014 \u2018open a work item\u2019, \u2018page the owner\u2019.",
+      "tag": "kinetic"
+     },
+     {
+      "head": "Security",
+      "emoji": "\ud83d\udd12",
+      "body": "Who \u2014 human or agent \u2014 may see and do what, enforced at the meaning layer.",
+      "tag": "kinetic"
+     }
+    ],
+    "foot": "So: an ontology is the shared grammar \u2014 and it defines the safe verbs an agent is allowed to use.",
+    "dur": 65.008
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.799,
+   "Part one."
+  ],
+  [
+   0.799,
+   3.197,
+   "Ontology \u2014 the layer of meaning."
+  ],
+  [
+   3.829,
+   5.827,
+   "Before you can connect anything,"
+  ],
+  [
+   5.827,
+   9.024,
+   "everyone and everything has to agree on what"
+  ],
+  [
+   9.024,
+   10.223,
+   "the words mean."
+  ],
+  [
+   10.723,
+   11.083,
+   "First,"
+  ],
+  [
+   11.083,
+   12.885,
+   "let's kill a common confusion."
+  ],
+  [
+   12.885,
+   15.406,
+   "An ontology is not a database schema,"
+  ],
+  [
+   15.406,
+   17.568,
+   "and it is not a taxonomy."
+  ],
+  [
+   18.199,
+   21.081,
+   "A schema describes how bytes are laid out"
+  ],
+  [
+   21.081,
+   21.802,
+   "on disk."
+  ],
+  [
+   21.802,
+   24.684,
+   "A taxonomy is a tidy tree of categories."
+  ],
+  [
+   24.684,
+   27.566,
+   "Useful \u2014 but neither one tells a machine"
+  ],
+  [
+   27.566,
+   29.367,
+   "what a thing actually means."
+  ],
+  [
+   29.999,
+   31.08,
+   "An ontology does."
+  ],
+  [
+   31.08,
+   33.962,
+   "It names the entities in your world \u2014"
+  ],
+  [
+   33.962,
+   34.322,
+   "Report,"
+  ],
+  [
+   34.322,
+   34.682,
+   "Query,"
+  ],
+  [
+   34.682,
+   35.042,
+   "Table,"
+  ],
+  [
+   35.042,
+   35.403,
+   "Service."
+  ],
+  [
+   36.034,
+   38.916,
+   "It names the relationships between them \u2014 a"
+  ],
+  [
+   38.916,
+   40.357,
+   "report USES a query,"
+  ],
+  [
+   40.357,
+   42.159,
+   "a query READS a table,"
+  ],
+  [
+   42.159,
+   44.32,
+   "a service is DEPLOYED_AS a pod."
+  ],
+  [
+   44.952,
+   47.834,
+   "And it names the rules \u2014 for example,"
+  ],
+  [
+   47.834,
+   50.716,
+   "every report must use at least one query."
+  ],
+  [
+   51.347,
+   51.707,
+   "Crucially,"
+  ],
+  [
+   51.707,
+   54.59,
+   "it is independent of any single database or"
+  ],
+  [
+   54.59,
+   54.95,
+   "vendor."
+  ],
+  [
+   54.95,
+   56.751,
+   "It is the shared contract."
+  ],
+  [
+   57.383,
+   60.265,
+   "So when the wiki says \u2018orders table\u2019 and"
+  ],
+  [
+   60.265,
+   62.066,
+   "the SQL database says \u2018ORDERS\u2019,"
+  ],
+  [
+   62.066,
+   64.948,
+   "the ontology is what lets us know those"
+  ],
+  [
+   64.948,
+   66.389,
+   "are the same idea."
+  ],
+  [
+   66.389,
+   69.271,
+   "That shared vocabulary is the foundation the\nentire"
+  ],
+  [
+   69.271,
+   70.712,
+   "stack is built on."
+  ],
+  [
+   71.212,
+   72.993,
+   "Here is the beautiful part:"
+  ],
+  [
+   72.993,
+   75.487,
+   "no matter how complex your world is,"
+  ],
+  [
+   75.487,
+   77.981,
+   "it is built from one tiny atom."
+  ],
+  [
+   78.612,
+   79.325,
+   "The triple."
+  ],
+  [
+   79.325,
+   79.681,
+   "Subject,"
+  ],
+  [
+   79.681,
+   80.037,
+   "predicate,"
+  ],
+  [
+   80.037,
+   80.394,
+   "object."
+  ],
+  [
+   81.025,
+   82.806,
+   "Report \u2014 uses \u2014 query."
+  ],
+  [
+   82.806,
+   84.231,
+   "That is a complete,"
+  ],
+  [
+   84.231,
+   84.944,
+   "machine-readable fact."
+  ],
+  [
+   85.575,
+   87.713,
+   "And you just keep adding them."
+  ],
+  [
+   87.713,
+   88.782,
+   "Query reads table."
+  ],
+  [
+   88.782,
+   90.919,
+   "Service is deployed as a pod."
+  ],
+  [
+   90.919,
+   92.7,
+   "The wiki documents a service."
+  ],
+  [
+   92.7,
+   94.838,
+   "A pod emits a log event."
+  ],
+  [
+   95.469,
+   97.963,
+   "Each triple is trivial on its own."
+  ],
+  [
+   97.963,
+   100.813,
+   "But because they all draw from the same"
+  ],
+  [
+   100.813,
+   101.526,
+   "shared vocabulary,"
+  ],
+  [
+   101.526,
+   102.594,
+   "they snap together."
+  ],
+  [
+   103.226,
+   106.076,
+   "String a million of them together and you"
+  ],
+  [
+   106.076,
+   108.926,
+   "no longer have facts \u2014 you have a"
+  ],
+  [
+   108.926,
+   109.282,
+   "fabric."
+  ],
+  [
+   109.282,
+   112.132,
+   "A graph of meaning where you can start"
+  ],
+  [
+   112.132,
+   114.982,
+   "at any node and walk to any related"
+  ],
+  [
+   114.982,
+   115.338,
+   "fact."
+  ],
+  [
+   115.97,
+   118.82,
+   "This triple is the format behind the web"
+  ],
+  [
+   118.82,
+   119.889,
+   "standard called RDF,"
+  ],
+  [
+   119.889,
+   122.026,
+   "which we'll meet in a moment."
+  ],
+  [
+   122.026,
+   124.876,
+   "But the idea is older and simpler than"
+  ],
+  [
+   124.876,
+   125.589,
+   "any technology:"
+  ],
+  [
+   125.589,
+   127.37,
+   "write meaning down as relationships,"
+  ],
+  [
+   127.37,
+   128.795,
+   "not as isolated values."
+  ],
+  [
+   129.295,
+   131.89,
+   "Before you model a single class,"
+  ],
+  [
+   131.89,
+   132.754,
+   "know this:"
+  ],
+  [
+   132.754,
+   135.782,
+   "you rarely start from a blank page."
+  ],
+  [
+   136.413,
+   139.873,
+   "There are upper ontologies \u2014 generic building\nblocks"
+  ],
+  [
+   139.873,
+   142.035,
+   "for universal concepts like things,"
+  ],
+  [
+   142.035,
+   142.467,
+   "people,"
+  ],
+  [
+   142.467,
+   143.332,
+   "and documents."
+  ],
+  [
+   143.332,
+   143.765,
+   "schema.org,"
+  ],
+  [
+   143.765,
+   144.197,
+   "Gist,"
+  ],
+  [
+   144.197,
+   146.792,
+   "and Dublin Core are common ones."
+  ],
+  [
+   147.423,
+   150.883,
+   "And there are domain ontologies \u2014 entire worlds"
+  ],
+  [
+   150.883,
+   152.612,
+   "already modeled by experts."
+  ],
+  [
+   152.612,
+   153.91,
+   "FIBO covers finance."
+  ],
+  [
+   153.91,
+   155.207,
+   "SNOMED covers medicine."
+  ],
+  [
+   155.207,
+   158.667,
+   "Microsoft ships DTDL ontologies for smart\nbuildings and"
+  ],
+  [
+   158.667,
+   159.099,
+   "energy."
+  ],
+  [
+   159.731,
+   163.19,
+   "The smart move is to import a standard"
+  ],
+  [
+   163.19,
+   166.65,
+   "vocabulary and then extend it with only what's"
+  ],
+  [
+   166.65,
+   168.379,
+   "unique to your project."
+  ],
+  [
+   169.011,
+   170.308,
+   "For our example,"
+  ],
+  [
+   170.308,
+   173.335,
+   "most of the software concepts \u2014 services,"
+  ],
+  [
+   173.335,
+   173.768,
+   "deployments,"
+  ],
+  [
+   173.768,
+   177.227,
+   "incidents \u2014 map to existing DevOps and\nobservability"
+  ],
+  [
+   177.227,
+   177.66,
+   "vocabularies."
+  ],
+  [
+   177.66,
+   180.254,
+   "You'd add just your report-and-pipeline specifics."
+  ],
+  [
+   180.886,
+   182.183,
+   "Reuse isn't laziness."
+  ],
+  [
+   182.183,
+   184.778,
+   "It buys you interoperability for free,"
+  ],
+  [
+   184.778,
+   188.237,
+   "and saves months of a committee arguing about"
+  ],
+  [
+   188.237,
+   189.967,
+   "what a word means."
+  ],
+  [
+   190.467,
+   190.846,
+   "Now,"
+  ],
+  [
+   190.846,
+   193.877,
+   "how do we actually write an ontology down?"
+  ],
+  [
+   194.508,
+   197.539,
+   "Two W3C standards do most of the work,"
+  ],
+  [
+   197.539,
+   199.054,
+   "and they are complementary."
+  ],
+  [
+   199.686,
+   202.716,
+   "The first is OWL \u2014 the Web Ontology"
+  ],
+  [
+   202.716,
+   203.095,
+   "Language."
+  ],
+  [
+   203.095,
+   204.611,
+   "OWL declares your concepts."
+  ],
+  [
+   204.611,
+   204.989,
+   "Here,"
+  ],
+  [
+   204.989,
+   206.505,
+   "Report is a class,"
+  ],
+  [
+   206.505,
+   208.02,
+   "Query is a class,"
+  ],
+  [
+   208.02,
+   211.051,
+   "and \u2018uses\u2019 is a relationship whose subject is"
+  ],
+  [
+   211.051,
+   214.081,
+   "a Report and whose object is a Query."
+  ],
+  [
+   214.713,
+   216.228,
+   "From declarations like these,"
+  ],
+  [
+   216.228,
+   219.259,
+   "a reasoner can actually infer new facts you"
+  ],
+  [
+   219.259,
+   220.017,
+   "never stated."
+  ],
+  [
+   220.648,
+   223.679,
+   "The second standard is SHACL \u2014 the Shapes"
+  ],
+  [
+   223.679,
+   224.437,
+   "Constraint Language."
+  ],
+  [
+   224.437,
+   226.71,
+   "Where OWL says what things are,"
+  ],
+  [
+   226.71,
+   228.983,
+   "SHACL says what must be true."
+  ],
+  [
+   229.614,
+   230.751,
+   "This shape says:"
+  ],
+  [
+   230.751,
+   233.781,
+   "every Report must use at least one Query."
+  ],
+  [
+   234.413,
+   235.928,
+   "Feed your data in,"
+  ],
+  [
+   235.928,
+   238.959,
+   "and SHACL flags any report that violates it."
+  ],
+  [
+   239.59,
+   241.106,
+   "Hold onto that idea."
+  ],
+  [
+   241.106,
+   244.136,
+   "That same SHACL rule will come back at"
+  ],
+  [
+   244.136,
+   247.167,
+   "the very end as the guardrail that keeps"
+  ],
+  [
+   247.167,
+   248.682,
+   "an AI agent honest."
+  ],
+  [
+   248.682,
+   250.577,
+   "Meaning you can reason on,"
+  ],
+  [
+   250.577,
+   253.607,
+   "plus rules you can enforce \u2014 in plain,"
+  ],
+  [
+   253.607,
+   254.365,
+   "portable text."
+  ],
+  [
+   254.865,
+   257.924,
+   "Here's a superpower that separates an ontology\nfrom"
+  ],
+  [
+   257.924,
+   259.453,
+   "a plain data model:"
+  ],
+  [
+   259.453,
+   259.835,
+   "inference."
+  ],
+  [
+   260.467,
+   263.525,
+   "You state a few facts \u2014 a report"
+  ],
+  [
+   263.525,
+   264.672,
+   "uses a query,"
+  ],
+  [
+   264.672,
+   266.584,
+   "a query reads a table."
+  ],
+  [
+   267.216,
+   269.51,
+   "Then you declare a rule once:"
+  ],
+  [
+   269.51,
+   270.656,
+   "depends-on is transitive,"
+  ],
+  [
+   270.656,
+   273.333,
+   "and it flows across uses and reads."
+  ],
+  [
+   273.964,
+   277.023,
+   "Now an OWL reasoner can derive a fact"
+  ],
+  [
+   277.023,
+   278.17,
+   "nobody ever typed:"
+  ],
+  [
+   278.17,
+   280.464,
+   "this report depends on that table."
+  ],
+  [
+   281.095,
+   284.154,
+   "Multiply that across thousands of nodes and the"
+  ],
+  [
+   284.154,
+   287.213,
+   "reasoner maintains a whole layer of derived truth"
+  ],
+  [
+   287.213,
+   288.742,
+   "for you \u2014 automatically,"
+  ],
+  [
+   288.742,
+   289.889,
+   "and always consistent."
+  ],
+  [
+   290.52,
+   292.432,
+   "The practical payoff is huge."
+  ],
+  [
+   292.432,
+   294.726,
+   "You don't hand-maintain the \u2018depends-on\u2019 edges;"
+  ],
+  [
+   294.726,
+   297.785,
+   "you declare the rule and let the machine"
+  ],
+  [
+   297.785,
+   300.461,
+   "keep them correct as the graph changes."
+  ],
+  [
+   301.092,
+   303.769,
+   "Stated facts plus rules become inferred facts."
+  ],
+  [
+   303.769,
+   306.827,
+   "That's meaning you can compute on \u2014 not"
+  ],
+  [
+   306.827,
+   307.592,
+   "just store."
+  ],
+  [
+   308.092,
+   311.179,
+   "Let's ground this in real tools you can"
+  ],
+  [
+   311.179,
+   311.951,
+   "open today."
+  ],
+  [
+   312.583,
+   315.67,
+   "RDF is the data model \u2014 the triple,"
+  ],
+  [
+   315.67,
+   318.757,
+   "with global identifiers so two teams can point"
+  ],
+  [
+   318.757,
+   320.686,
+   "at the exact same concept."
+  ],
+  [
+   321.318,
+   321.704,
+   "OWL,"
+  ],
+  [
+   321.704,
+   322.861,
+   "as we saw,"
+  ],
+  [
+   322.861,
+   324.405,
+   "adds classes and inference."
+  ],
+  [
+   324.405,
+   325.563,
+   "SHACL adds validation."
+  ],
+  [
+   326.194,
+   329.281,
+   "SKOS is a lightweight way to manage controlled"
+  ],
+  [
+   329.281,
+   332.369,
+   "vocabularies and synonyms \u2014 handy when the\nbusiness"
+  ],
+  [
+   332.369,
+   335.07,
+   "calls the same thing five different names."
+  ],
+  [
+   335.701,
+   337.631,
+   "To edit all of this,"
+  ],
+  [
+   337.631,
+   340.718,
+   "the classic tool is Prot\u00e9g\u00e9 \u2014 it's free,"
+  ],
+  [
+   340.718,
+   343.805,
+   "and it's what the medical and scientific world"
+  ],
+  [
+   343.805,
+   345.735,
+   "uses to build enormous ontologies."
+  ],
+  [
+   346.366,
+   347.91,
+   "In the Microsoft world,"
+  ],
+  [
+   347.91,
+   350.997,
+   "there's DTDL \u2014 a JSON-based ontology language\nbuilt"
+  ],
+  [
+   350.997,
+   352.541,
+   "specifically for digital twins,"
+  ],
+  [
+   352.541,
+   354.856,
+   "which we'll use in part three."
+  ],
+  [
+   355.488,
+   357.417,
+   "And at the enterprise end,"
+  ],
+  [
+   357.417,
+   360.504,
+   "Palantir's Foundry treats the ontology as the\nproduct"
+  ],
+  [
+   360.504,
+   360.89,
+   "itself."
+  ],
+  [
+   361.522,
+   364.609,
+   "You do not need all of these on"
+  ],
+  [
+   364.609,
+   365.381,
+   "day one."
+  ],
+  [
+   365.381,
+   367.696,
+   "You need the idea \u2014 shared,"
+  ],
+  [
+   367.696,
+   370.783,
+   "explicit meaning \u2014 and one place to write"
+  ],
+  [
+   370.783,
+   371.555,
+   "it down."
+  ],
+  [
+   372.055,
+   373.969,
+   "If this still feels abstract,"
+  ],
+  [
+   373.969,
+   377.03,
+   "look around \u2014 you already use it every"
+  ],
+  [
+   377.03,
+   377.413,
+   "day."
+  ],
+  [
+   378.045,
+   381.106,
+   "When Google shows a panel about a person"
+  ],
+  [
+   381.106,
+   382.254,
+   "or a place,"
+  ],
+  [
+   382.254,
+   385.316,
+   "that's the Google Knowledge Graph \u2014 billions of"
+  ],
+  [
+   385.316,
+   386.464,
+   "entities and facts,"
+  ],
+  [
+   386.464,
+   387.995,
+   "backed by an ontology."
+  ],
+  [
+   388.627,
+   390.54,
+   "Amazon runs a product graph;"
+  ],
+  [
+   390.54,
+   393.602,
+   "LinkedIn famously built its \u2018Economic Graph\u2019 of\npeople,"
+  ],
+  [
+   393.602,
+   393.985,
+   "jobs,"
+  ],
+  [
+   393.985,
+   394.75,
+   "and skills."
+  ],
+  [
+   395.382,
+   396.53,
+   "In regulated worlds,"
+  ],
+  [
+   396.53,
+   399.591,
+   "medicine runs on SNOMED and finance on FIBO"
+  ],
+  [
+   399.591,
+   402.653,
+   "\u2014 shared ontologies where a wrong meaning is"
+  ],
+  [
+   402.653,
+   404.567,
+   "a safety or compliance failure."
+  ],
+  [
+   405.198,
+   407.877,
+   "So this is not a research curiosity."
+  ],
+  [
+   407.877,
+   410.939,
+   "It's the proven backbone of the biggest systems"
+  ],
+  [
+   410.939,
+   412.087,
+   "on the internet."
+  ],
+  [
+   412.719,
+   415.78,
+   "The only thing that changed is that the"
+  ],
+  [
+   415.78,
+   417.311,
+   "tooling \u2014 LLM extraction,"
+  ],
+  [
+   417.311,
+   417.694,
+   "GraphRAG,"
+  ],
+  [
+   417.694,
+   420.755,
+   "open standards \u2014 finally lets a normal team"
+  ],
+  [
+   420.755,
+   423.052,
+   "build one for their own project."
+  ],
+  [
+   423.052,
+   425.348,
+   "Which is exactly what we're doing."
+  ],
+  [
+   425.848,
+   428.815,
+   "So how do you design one that actually"
+  ],
+  [
+   428.815,
+   429.185,
+   "ships,"
+  ],
+  [
+   429.185,
+   431.781,
+   "instead of a five-hundred-class swamp nobody\nfinishes?"
+  ],
+  [
+   431.781,
+   432.523,
+   "Three principles."
+  ],
+  [
+   433.154,
+   433.525,
+   "First,"
+  ],
+  [
+   433.525,
+   434.638,
+   "start from questions."
+  ],
+  [
+   434.638,
+   435.75,
+   "Before modeling anything,"
+  ],
+  [
+   435.75,
+   438.717,
+   "write down the competency questions the graph must"
+  ],
+  [
+   438.717,
+   439.829,
+   "answer \u2014 like,"
+  ],
+  [
+   439.829,
+   442.796,
+   "\u2018which reports break if this table changes?\u2019 Then"
+  ],
+  [
+   442.796,
+   445.021,
+   "model just enough to answer them,"
+  ],
+  [
+   445.021,
+   446.133,
+   "and no more."
+  ],
+  [
+   446.765,
+   447.135,
+   "Second,"
+  ],
+  [
+   447.135,
+   448.619,
+   "start small and grow."
+  ],
+  [
+   448.619,
+   451.585,
+   "Twenty well-chosen classes beat five hundred\nspeculative ones."
+  ],
+  [
+   451.585,
+   454.552,
+   "Add a class the day a real question"
+  ],
+  [
+   454.552,
+   455.293,
+   "needs it."
+  ],
+  [
+   455.925,
+   456.296,
+   "Third,"
+  ],
+  [
+   456.296,
+   457.408,
+   "make it test-driven."
+  ],
+  [
+   457.408,
+   459.633,
+   "Encode your rules as SHACL shapes,"
+  ],
+  [
+   459.633,
+   462.6,
+   "and suddenly your ontology has a test suite"
+  ],
+  [
+   462.6,
+   464.083,
+   "\u2014 just like code."
+  ],
+  [
+   464.715,
+   466.94,
+   "That reframe is the whole trick:"
+  ],
+  [
+   466.94,
+   468.423,
+   "an ontology is software."
+  ],
+  [
+   468.423,
+   469.535,
+   "You scope it,"
+  ],
+  [
+   469.535,
+   470.648,
+   "you iterate it,"
+  ],
+  [
+   470.648,
+   471.76,
+   "you test it."
+  ],
+  [
+   471.76,
+   474.727,
+   "You do not try to model the universe"
+  ],
+  [
+   474.727,
+   475.839,
+   "in one sitting."
+  ],
+  [
+   476.471,
+   476.842,
+   "Now,"
+  ],
+  [
+   476.842,
+   479.808,
+   "the idea that makes all this matter for"
+  ],
+  [
+   479.808,
+   480.179,
+   "agents."
+  ],
+  [
+   480.679,
+   483.253,
+   "One more idea before we move on,"
+  ],
+  [
+   483.253,
+   486.194,
+   "and it's the one that makes ontologies matter"
+  ],
+  [
+   486.194,
+   486.929,
+   "for AI."
+  ],
+  [
+   487.561,
+   489.399,
+   "Palantir popularized a decision-centric view:"
+  ],
+  [
+   489.399,
+   491.605,
+   "a good ontology models four things,"
+  ],
+  [
+   491.605,
+   492.34,
+   "not one."
+  ],
+  [
+   492.972,
+   495.545,
+   "Data \u2014 the objects and their links."
+  ],
+  [
+   496.177,
+   499.118,
+   "Logic \u2014 the rules and derived facts computed"
+  ],
+  [
+   499.118,
+   499.853,
+   "over them."
+  ],
+  [
+   500.485,
+   502.691,
+   "Those two are the semantic side:"
+  ],
+  [
+   502.691,
+   503.794,
+   "what is true."
+  ],
+  [
+   504.425,
+   505.896,
+   "But then two more."
+  ],
+  [
+   505.896,
+   508.837,
+   "Action \u2014 the typed operations that are actually"
+  ],
+  [
+   508.837,
+   509.205,
+   "allowed,"
+  ],
+  [
+   509.205,
+   512.146,
+   "like \u2018open a work item\u2019 or \u2018page the"
+  ],
+  [
+   512.146,
+   512.881,
+   "on-call owner\u2019."
+  ],
+  [
+   513.513,
+   514.983,
+   "And security \u2014 who,"
+  ],
+  [
+   514.983,
+   516.086,
+   "human or agent,"
+  ],
+  [
+   516.086,
+   517.925,
+   "may see and do what."
+  ],
+  [
+   518.556,
+   520.394,
+   "These are the kinetic side:"
+  ],
+  [
+   520.394,
+   521.865,
+   "what can be done."
+  ],
+  [
+   522.496,
+   525.07,
+   "This is the key that unlocks agents."
+  ],
+  [
+   525.07,
+   528.011,
+   "The ontology doesn't just tell an agent what"
+  ],
+  [
+   528.011,
+   530.952,
+   "exists \u2014 it hands it a menu of"
+  ],
+  [
+   530.952,
+   531.688,
+   "safe verbs."
+  ],
+  [
+   532.319,
+   532.687,
+   "So,"
+  ],
+  [
+   532.687,
+   534.158,
+   "to recap part one:"
+  ],
+  [
+   534.158,
+   537.099,
+   "an ontology is the shared grammar of your"
+  ],
+  [
+   537.099,
+   537.466,
+   "world,"
+  ],
+  [
+   537.466,
+   537.834,
+   "and,"
+  ],
+  [
+   537.834,
+   538.569,
+   "done right,"
+  ],
+  [
+   538.569,
+   541.511,
+   "it also defines the governed actions an agent"
+  ],
+  [
+   541.511,
+   542.246,
+   "may take."
+  ],
+  [
+   542.246,
+   545.187,
+   "Now let's fill that grammar with real data."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "kg/kg-ch02-ontology.wav",
+   "volume": 1.0
+  }
+ }
+}

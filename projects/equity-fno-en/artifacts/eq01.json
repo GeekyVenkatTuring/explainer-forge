@@ -1,0 +1,549 @@
+{
+  "cuts": [
+    {
+      "id": "a1_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 51.06,
+      "props": {
+        "title": "Equities, Futures & Options",
+        "sub": "Sectors · Research · Strategies · Commodities — full course",
+        "kicker": "MASTERCLASS · 2026",
+        "dur": 51.56
+      }
+    },
+    {
+      "id": "a1_promise",
+      "type": "sm_checklist",
+      "in_seconds": 51.56,
+      "out_seconds": 111.268,
+      "props": {
+        "kicker": "WHAT YOU'LL LEARN",
+        "title": "The roadmap of this course",
+        "color": "#34D399",
+        "icon": "🎯",
+        "items": [
+          "Which sector to select — and the top-down method",
+          "How to research a stock — fundamentals + technicals",
+          "Where to find real research — channels, tools, voices",
+          "Futures & Options — what they are, and every strategy",
+          "Commodities — gold, silver, crude on MCX",
+          "Risk management — the rules that keep you in the game"
+        ],
+        "dur": 60.208
+      }
+    },
+    {
+      "id": "a1_arenas",
+      "type": "sm_iconcards",
+      "in_seconds": 111.768,
+      "out_seconds": 184.156,
+      "props": {
+        "kicker": "THE FOUR ARENAS",
+        "title": "Four ways to participate in markets",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🏢",
+            "k": "Equities",
+            "v": "Owning a piece of a company. Buy a share, own a slice; grow as the business grows",
+            "chip": "Ownership"
+          },
+          {
+            "emoji": "📜",
+            "k": "Futures",
+            "v": "A contract to buy/sell later at a set price. Leveraged, expires — a derivative",
+            "chip": "Contract"
+          },
+          {
+            "emoji": "🎯",
+            "k": "Options",
+            "v": "The right, not obligation, to buy/sell at a strike. Pay a premium — a derivative",
+            "chip": "Right"
+          },
+          {
+            "emoji": "🥇",
+            "k": "Commodities",
+            "v": "Gold, silver, crude on the MCX — traded via futures contracts",
+            "chip": "MCX"
+          }
+        ],
+        "dur": 72.888
+      }
+    },
+    {
+      "id": "a1_structure",
+      "type": "sm_iconcards",
+      "in_seconds": 184.656,
+      "out_seconds": 252.004,
+      "props": {
+        "kicker": "HOW THE MARKET WORKS",
+        "title": "The Indian market — the basics",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🏛️",
+            "k": "Exchanges",
+            "v": "NSE (1992) and BSE (1875) — where buyers and sellers meet electronically",
+            "chip": "NSE · BSE"
+          },
+          {
+            "emoji": "🛡️",
+            "k": "SEBI",
+            "v": "The regulator (1992) — the umpire that protects investors from fraud",
+            "chip": "Regulator"
+          },
+          {
+            "emoji": "🗄️",
+            "k": "Demat",
+            "v": "Shares held digitally with NSDL/CDSL; you need a demat + trading account",
+            "chip": "Required"
+          },
+          {
+            "emoji": "⏱️",
+            "k": "Settlement",
+            "v": "T+1 — shares reach your demat the next working day; hours 9:15 to 3:30",
+            "chip": "T+1"
+          }
+        ],
+        "dur": 67.848
+      }
+    },
+    {
+      "id": "a1_recap",
+      "type": "sm_recap",
+      "in_seconds": 252.504,
+      "out_seconds": 294.676,
+      "props": {
+        "title": "Chapter 1 — the foundation",
+        "items": [
+          "Four arenas: equities, futures, options, commodities",
+          "Equities = ownership; F&O = derivatives; commodities = MCX",
+          "NSE & BSE exchanges · SEBI the regulator",
+          "Demat account, T+1 settlement, 9:15 to 3:30",
+          "This course: learn to think, never blindly follow tips"
+        ],
+        "closer": "Master the basics — everything else is built on them.",
+        "dur": 42.672
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      5.226,
+      "Welcome to the complete course on equities, futures, options,"
+    ],
+    [
+      5.226,
+      6.597,
+      "and commodities."
+    ],
+    [
+      6.597,
+      9.938,
+      "This is a long, structured masterclass."
+    ],
+    [
+      9.938,
+      15.078,
+      "We start from the very basics — what these instruments are —"
+    ],
+    [
+      15.078,
+      17.391,
+      "and build up, step by step,"
+    ],
+    [
+      17.391,
+      23.046,
+      "to the strategies professional investors and traders actually use."
+    ],
+    [
+      23.046,
+      28.186,
+      "We will cover how to pick a sector, how to research a stock,"
+    ],
+    [
+      28.186,
+      31.184,
+      "where to find trustworthy research,"
+    ],
+    [
+      31.184,
+      35.468,
+      "futures and options explained simply, commodities,"
+    ],
+    [
+      35.468,
+      38.381,
+      "and every major strategy for each."
+    ],
+    [
+      38.381,
+      42.664,
+      "One promise up front: this is education, not tips."
+    ],
+    [
+      42.664,
+      45.663,
+      "We will never tell you what to buy."
+    ],
+    [
+      45.663,
+      51.06,
+      "We will teach you how to think, so you can decide for yourself."
+    ],
+    [
+      51.56,
+      53.4,
+      "Here is the roadmap."
+    ],
+    [
+      53.4,
+      54.78,
+      "Six big blocks."
+    ],
+    [
+      54.78,
+      57.632,
+      "First — which sector to select,"
+    ],
+    [
+      57.632,
+      61.864,
+      "using a top-down method the professionals use."
+    ],
+    [
+      61.864,
+      67.016,
+      "Second — how to research a stock, both the fundamentals,"
+    ],
+    [
+      67.016,
+      71.524,
+      "the business and its numbers, and the technicals,"
+    ],
+    [
+      71.524,
+      72.996,
+      "the price chart."
+    ],
+    [
+      72.996,
+      73.64,
+      "Third —"
+    ],
+    [
+      73.64,
+      79.62,
+      "where to find genuine research: the trustworthy YouTube channels,"
+    ],
+    [
+      79.62,
+      82.38,
+      "data tools, and market voices,"
+    ],
+    [
+      82.38,
+      86.796,
+      "and how to tell a real source from a tip-seller."
+    ],
+    [
+      86.796,
+      91.396,
+      "Fourth — futures and options, explained from zero,"
+    ],
+    [
+      91.396,
+      93.788,
+      "with every major strategy."
+    ],
+    [
+      93.788,
+      99.308,
+      "Fifth — commodities: gold, silver, and crude oil on the MCX."
+    ],
+    [
+      99.308,
+      104.46,
+      "And running through all of it — sixth — risk management,"
+    ],
+    [
+      104.46,
+      108.232,
+      "the discipline that decides who survives."
+    ],
+    [
+      108.232,
+      111.268,
+      "Let's begin with the big picture."
+    ],
+    [
+      111.768,
+      115.237,
+      "There are four arenas we will master."
+    ],
+    [
+      115.237,
+      117.3,
+      "The first is equities."
+    ],
+    [
+      117.3,
+      118.988,
+      "This is ownership."
+    ],
+    [
+      118.988,
+      124.895,
+      "When you buy a share, you own a small slice of a real business,"
+    ],
+    [
+      124.895,
+      127.24,
+      "and you grow as it grows."
+    ],
+    [
+      127.24,
+      130.053,
+      "This is where wealth is built."
+    ],
+    [
+      130.053,
+      132.115,
+      "The second is futures."
+    ],
+    [
+      132.115,
+      137.179,
+      "A future is a contract to buy or sell something later,"
+    ],
+    [
+      137.179,
+      139.335,
+      "at a price fixed today."
+    ],
+    [
+      139.335,
+      142.242,
+      "It is leveraged and it expires."
+    ],
+    [
+      142.242,
+      144.118,
+      "It is a derivative —"
+    ],
+    [
+      144.118,
+      148.15,
+      "its value derives from an underlying asset."
+    ],
+    [
+      148.15,
+      150.119,
+      "The third is options."
+    ],
+    [
+      150.119,
+      155.182,
+      "An option gives you the right, but not the obligation,"
+    ],
+    [
+      155.182,
+      157.995,
+      "to buy or sell at a set price,"
+    ],
+    [
+      157.995,
+      161.089,
+      "for a small fee called a premium."
+    ],
+    [
+      161.089,
+      162.777,
+      "Also a derivative."
+    ],
+    [
+      162.777,
+      167.747,
+      "The fourth is commodities — gold, silver, crude oil —"
+    ],
+    [
+      167.747,
+      171.685,
+      "traded on the MCX, mostly through futures."
+    ],
+    [
+      171.685,
+      174.217,
+      "Equities are for investing."
+    ],
+    [
+      174.217,
+      178.811,
+      "Futures and options are powerful but risky tools."
+    ],
+    [
+      178.811,
+      182.281,
+      "Commodities are a world of their own."
+    ],
+    [
+      182.281,
+      184.156,
+      "We will do them all."
+    ],
+    [
+      184.656,
+      187.753,
+      "Before we go deeper, the plumbing —"
+    ],
+    [
+      187.753,
+      191.028,
+      "how the Indian market actually works."
+    ],
+    [
+      191.028,
+      197.223,
+      "Buyers and sellers meet on two exchanges: the National Stock Exchange,"
+    ],
+    [
+      197.223,
+      202.444,
+      "founded 1992, and the Bombay Stock Exchange, Asia's oldest,"
+    ],
+    [
+      202.444,
+      203.329,
+      "from 1875."
+    ],
+    [
+      203.329,
+      207.489,
+      "Watching over everyone is the regulator, SEBI —"
+    ],
+    [
+      207.489,
+      211.294,
+      "the Securities and Exchange Board of India."
+    ],
+    [
+      211.294,
+      216.073,
+      "Think of it as the umpire whose job is to protect you."
+    ],
+    [
+      216.073,
+      220.587,
+      "Your shares are held digitally, in a demat account,"
+    ],
+    [
+      220.587,
+      224.392,
+      "with one of two depositories, NSDL or CDSL."
+    ],
+    [
+      224.392,
+      228.817,
+      "To trade you need a demat plus a trading account —"
+    ],
+    [
+      228.817,
+      231.649,
+      "most brokers open both together."
+    ],
+    [
+      231.649,
+      232.8,
+      "When you buy,"
+    ],
+    [
+      232.8,
+      237.402,
+      "the shares reach your account the next working day —"
+    ],
+    [
+      237.402,
+      239.968,
+      "that's T plus one settlement."
+    ],
+    [
+      239.968,
+      247.845,
+      "And the market is open from nine-fifteen in the morning to three-thirty in the afternoon,"
+    ],
+    [
+      247.845,
+      249.349,
+      "Monday to Friday."
+    ],
+    [
+      249.349,
+      250.854,
+      "That's the stage."
+    ],
+    [
+      250.854,
+      252.004,
+      "Now the play."
+    ],
+    [
+      252.504,
+      254.957,
+      "Let's lock in chapter one."
+    ],
+    [
+      254.957,
+      259.674,
+      "There are four arenas: equities, futures, options,"
+    ],
+    [
+      259.674,
+      261.184,
+      "and commodities."
+    ],
+    [
+      261.184,
+      269.675,
+      "Equities are ownership; futures and options are derivatives; commodities trade on the MCX."
+    ],
+    [
+      269.675,
+      275.052,
+      "The NSE and BSE are the exchanges, SEBI is the regulator,"
+    ],
+    [
+      275.052,
+      278.354,
+      "your shares sit in a demat account,"
+    ],
+    [
+      278.354,
+      281.09,
+      "and settlement is T plus one."
+    ],
+    [
+      281.09,
+      287.128,
+      "And the spirit of this course: we learn to think for ourselves —"
+    ],
+    [
+      287.128,
+      289.864,
+      "we never blindly follow tips."
+    ],
+    [
+      289.864,
+      294.676,
+      "Next, the first real skill: how to choose a sector."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "eq/eq01.wav",
+      "volume": 1.0
+    }
+  }
+}

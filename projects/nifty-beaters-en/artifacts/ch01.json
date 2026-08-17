@@ -1,0 +1,89 @@
+{
+ "cuts": [
+  {
+   "id": "ch01_title",
+   "type": "nb_title",
+   "in_seconds": 0.0,
+   "out_seconds": 26.588,
+   "props": {
+    "dur": 27.088
+   }
+  },
+  {
+   "id": "ch01_bar",
+   "type": "nb_statement",
+   "in_seconds": 27.088,
+   "out_seconds": 58.93,
+   "props": {
+    "dur": 32.342,
+    "kicker": "THE BAR",
+    "color": "#38BDF8",
+    "lines": [
+     "The index is the bar.",
+     "Beating it is the job.",
+     "Most funds don't."
+    ],
+    "sub": "To beat the Nifty, you can't just own the Nifty."
+   }
+  },
+  {
+   "id": "ch01_funnel",
+   "type": "nb_funnel",
+   "in_seconds": 59.43,
+   "out_seconds": 97.128,
+   "props": {
+    "dur": 38.198
+   }
+  },
+  {
+   "id": "ch01_score",
+   "type": "nb_scorecard",
+   "in_seconds": 97.628,
+   "out_seconds": 135.754,
+   "props": {
+    "dur": 38.626
+   }
+  },
+  {
+   "id": "ch01_tiers",
+   "type": "nb_statement",
+   "in_seconds": 136.254,
+   "out_seconds": 172.872,
+   "props": {
+    "dur": 37.118,
+    "kicker": "THREE TIERS",
+    "color": "#34D399",
+    "lines": [
+     "Tier 1 \u2014 Core compounders.",
+     "Tier 2 \u2014 Growth accelerators.",
+     "Tier 3 \u2014 High risk, high reward."
+    ],
+    "sub": "Sorted by conviction and risk, not by hype."
+   }
+  },
+  {
+   "id": "ch01_how",
+   "type": "nb_statement",
+   "in_seconds": 173.372,
+   "out_seconds": 210.566,
+   "props": {
+    "dur": 37.694,
+    "kicker": "BEFORE WE BEGIN",
+    "color": "#FB7185",
+    "lines": [
+     "This is analysis.",
+     "Not investment advice.",
+     "Do your own work."
+    ],
+    "sub": "Figures point-in-time (screener.in, Aug 2026). Past performance \u2260 future returns."
+   }
+  }
+ ],
+ "captions": [],
+ "audio": {
+  "narration": {
+   "src": "nb/ch01.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/c11_div.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/c11_stack.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/c11_workflow.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/c11_caution.wav'

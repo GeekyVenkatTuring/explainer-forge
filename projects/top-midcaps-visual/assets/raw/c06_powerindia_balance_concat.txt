@@ -1,0 +1,5 @@
+file '/Users/appuram/Developer/explainer-forge/projects/top-midcaps-visual/assets/raw/c06_powerindia_balance_c0.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/top-midcaps-visual/assets/raw/_pause.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/top-midcaps-visual/assets/raw/c06_powerindia_balance_c1.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/top-midcaps-visual/assets/raw/_pause.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/top-midcaps-visual/assets/raw/c06_powerindia_balance_c2.wav'

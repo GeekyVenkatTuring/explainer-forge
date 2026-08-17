@@ -1,0 +1,105 @@
+{
+ "ticker": "TITAGARH",
+ "scraped_at": "2026-08-14T15:28:18",
+ "source": "screener.in",
+ "ok": true,
+ "error": "<HTTPError 429: 'Too Many Requests'>",
+ "variant": "standalone",
+ "market_cap_cr": 11210.0,
+ "current_price": 832.0,
+ "pe": 49.1,
+ "book_value": 184.0,
+ "dividend_yield_pct": 0.12,
+ "roce_pct": 11.7,
+ "roe_pct": 8.09,
+ "face_value": 2.0,
+ "high": 971.0,
+ "sales_growth": {
+  "10 Years": 35.0,
+  "5 Years": 34.0,
+  "3 Years": 15.0,
+  "TTM": -28.0
+ },
+ "profit_growth": {
+  "10 Years": 24.0,
+  "5 Years": 55.0,
+  "3 Years": 9.0,
+  "1 Year": 5.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 911.0,
+  "Expenses&nbsp; +": 805.0,
+  "Operating Profit": 106.0,
+  "OPM %": 12.0,
+  "Other Income&nbsp; +": 10.0,
+  "Interest": 19.0,
+  "Depreciation": 7.0,
+  "Profit before tax": 90.0,
+  "Tax %": 25.0,
+  "Net Profit&nbsp; +": 68.0,
+  "EPS in Rs": 5.65
+ },
+ "price_cagr": {
+  "10 Years": 10.0,
+  "5 Years": 12.0,
+  "3 Years": 12.0,
+  "Last Year": 8.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "12%",
+   "12%",
+   "12%",
+   "11%",
+   "11%",
+   "13%",
+   "11%",
+   "12%",
+   "11%",
+   "11%",
+   "12%",
+   "12%",
+   "13%"
+  ],
+  "eps": [
+   "5.65",
+   "5.57",
+   "5.57",
+   "6.19",
+   "5.30",
+   "6.32",
+   "5.12",
+   "-10.99",
+   "3.17",
+   "3.51",
+   "3.46",
+   "5.05",
+   "3.86"
+  ]
+ },
+ "pros": [
+  "Company&#x27;s median sales growth is 25.3% of last 10 years"
+ ],
+ "cons": [
+  "Company has a low return on equity of 12.4% over last 3 years.",
+  "Dividend payout has been low at 5.67% of profits over last 3 years",
+  "Promoter holding has decreased over last 3 years: -7.36%"
+ ]
+}

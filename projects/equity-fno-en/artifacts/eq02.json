@@ -1,0 +1,779 @@
+{
+  "cuts": [
+    {
+      "id": "b2_div",
+      "type": "sm_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 19.604,
+      "props": {
+        "n": 2,
+        "title": "Choosing a Sector",
+        "sub": "Top-down · drivers · rotation",
+        "color": "#22D3EE",
+        "dur": 20.104
+      }
+    },
+    {
+      "id": "b2_why",
+      "type": "sm_iconcards",
+      "in_seconds": 20.104,
+      "out_seconds": 81.288,
+      "props": {
+        "kicker": "TOP-DOWN",
+        "title": "Why start with the sector?",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🌊",
+            "k": "Ride the tide",
+            "v": "A rising sector lifts most stocks in it; a falling one drags them down",
+            "chip": "Tailwind"
+          },
+          {
+            "emoji": "🔭",
+            "k": "Top-down flow",
+            "v": "Read the macro → pick the sector with the tailwind → pick the leaders in it",
+            "chip": "Macro→Stock"
+          },
+          {
+            "emoji": "🧭",
+            "k": "Fewer, better bets",
+            "v": "Narrowing to 1–2 strong sectors focuses your research and your risk",
+            "chip": "Focus"
+          },
+          {
+            "emoji": "⚖️",
+            "k": "Balance",
+            "v": "Spreading across a few uncorrelated sectors protects you when one falls",
+            "chip": "Diversify"
+          }
+        ],
+        "dur": 61.684
+      }
+    },
+    {
+      "id": "b2_sectors",
+      "type": "sm_iconcards",
+      "in_seconds": 81.788,
+      "out_seconds": 143.608,
+      "props": {
+        "kicker": "THE MAP",
+        "title": "The main sectors of the market",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "Banking & Financials",
+            "v": "The market's heaviest weight — banks, NBFCs, insurers",
+            "chip": "Heavy"
+          },
+          {
+            "emoji": "💻",
+            "k": "IT Services",
+            "v": "Exporters — TCS, Infosys; earn in dollars",
+            "chip": "Export"
+          },
+          {
+            "emoji": "💊",
+            "k": "Pharma & FMCG",
+            "v": "Defensives — steady demand in good times and bad",
+            "chip": "Defensive"
+          },
+          {
+            "emoji": "🚗",
+            "k": "Auto · Metals · Realty",
+            "v": "Cyclicals — boom in expansion, suffer in slowdowns",
+            "chip": "Cyclical"
+          },
+          {
+            "emoji": "🛢️",
+            "k": "Energy & OMCs",
+            "v": "BPCL, HPCL, IOC — moved by crude oil prices",
+            "chip": "Crude"
+          },
+          {
+            "emoji": "🛡️",
+            "k": "PSU & Defence",
+            "v": "HAL, BEL — government capex, budgets, order books",
+            "chip": "Govt"
+          }
+        ],
+        "dur": 62.32
+      }
+    },
+    {
+      "id": "b2_drivers",
+      "type": "sm_compare3",
+      "in_seconds": 144.108,
+      "out_seconds": 218.132,
+      "props": {
+        "kicker": "WHAT MOVES EACH",
+        "title": "Every sector has a driver — watch it",
+        "cols": [
+          {
+            "name": "Rate-sensitive",
+            "color": "#34D399",
+            "emoji": "🏦",
+            "hi": true,
+            "rows": [
+              {
+                "k": "Banks / NBFCs",
+                "v": "RBI rates, credit growth, NIM"
+              },
+              {
+                "k": "Realty / Infra",
+                "v": "interest rates, govt capex"
+              },
+              {
+                "k": "Auto",
+                "v": "demand, rates, input costs"
+              },
+              {
+                "k": "Watch",
+                "v": "RBI policy day"
+              }
+            ]
+          },
+          {
+            "name": "Global-linked",
+            "color": "#22D3EE",
+            "emoji": "🌍",
+            "rows": [
+              {
+                "k": "IT services",
+                "v": "USD/INR, US & EU demand"
+              },
+              {
+                "k": "Pharma",
+                "v": "US FDA approvals / warnings"
+              },
+              {
+                "k": "Metals",
+                "v": "global cycle, China demand"
+              },
+              {
+                "k": "Watch",
+                "v": "dollar, crude, US data"
+              }
+            ]
+          },
+          {
+            "name": "Event-driven",
+            "color": "#FBBF24",
+            "emoji": "📢",
+            "rows": [
+              {
+                "k": "OMCs (BPCL…)",
+                "v": "crude oil price"
+              },
+              {
+                "k": "PSU / Defence",
+                "v": "Budget, order wins"
+              },
+              {
+                "k": "FMCG / Auto",
+                "v": "GST, monsoon, rural demand"
+              },
+              {
+                "k": "Watch",
+                "v": "Budget, results, policy"
+              }
+            ]
+          }
+        ],
+        "dur": 74.524
+      }
+    },
+    {
+      "id": "b2_cyclical",
+      "type": "sm_myths",
+      "in_seconds": 218.632,
+      "out_seconds": 279.168,
+      "props": {
+        "kicker": "TIMING SECTORS",
+        "title": "Cyclical vs Defensive — the rotation",
+        "pairs": [
+          {
+            "m": "One sector is always best to hold",
+            "f": "Leadership rotates — different sectors lead in different phases"
+          },
+          {
+            "m": "In a slowdown, hide in cash only",
+            "f": "Defensives (FMCG, pharma, IT) tend to hold up better"
+          },
+          {
+            "m": "Cyclicals are just risky",
+            "f": "In an expansion, cyclicals (auto, metals, banks) often lead the rally"
+          }
+        ],
+        "dur": 61.036
+      }
+    },
+    {
+      "id": "b2_process",
+      "type": "sm_steps",
+      "in_seconds": 279.668,
+      "out_seconds": 350.736,
+      "props": {
+        "kicker": "THE METHOD",
+        "title": "Top-down sector selection — 4 steps",
+        "color": "#34D399",
+        "note": "Macro → Sector → Leaders → Position size. Never skip straight to a stock tip.",
+        "items": [
+          {
+            "emoji": "🌐",
+            "label": "Read macro",
+            "sub": "rates, crude, USD/INR"
+          },
+          {
+            "emoji": "🎯",
+            "label": "Pick sector",
+            "sub": "with the tailwind"
+          },
+          {
+            "emoji": "🏆",
+            "label": "Pick leaders",
+            "sub": "strongest 1–2 in it"
+          },
+          {
+            "emoji": "⚖️",
+            "label": "Size & spread",
+            "sub": "diversify, control risk"
+          }
+        ],
+        "dur": 71.568
+      }
+    },
+    {
+      "id": "b2_recap",
+      "type": "sm_recap",
+      "in_seconds": 351.236,
+      "out_seconds": 390.0,
+      "props": {
+        "title": "Chapter 2 — sectors",
+        "items": [
+          "Pick the neighbourhood before the house — ride the tailwind",
+          "Top-down: macro → sector → leaders → size",
+          "Learn each sector's one main driver",
+          "Defensives hold up in slowdowns; cyclicals lead expansions",
+          "Leadership rotates — that's sector rotation"
+        ],
+        "closer": "The right sector does half the work for you.",
+        "dur": 39.264
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      2.625,
+      "Chapter two — choosing a sector."
+    ],
+    [
+      2.625,
+      7.054,
+      "Before you pick a stock, pick the right neighbourhood."
+    ],
+    [
+      7.054,
+      16.979,
+      "A great company in a struggling sector is an uphill battle; an average company in a booming sector often gets carried up."
+    ],
+    [
+      16.979,
+      19.604,
+      "Let's learn how the pros choose."
+    ],
+    [
+      20.104,
+      23.06,
+      "Why start with the sector at all?"
+    ],
+    [
+      23.06,
+      24.852,
+      "Because of the tide."
+    ],
+    [
+      24.852,
+      27.271,
+      "When a sector is in favour,"
+    ],
+    [
+      27.271,
+      31.75,
+      "money flows in and lifts almost every stock in it."
+    ],
+    [
+      31.75,
+      34.258,
+      "When it falls out of favour,"
+    ],
+    [
+      34.258,
+      37.572,
+      "even good companies get dragged down."
+    ],
+    [
+      37.572,
+      41.156,
+      "You want the tailwind, not the headwind."
+    ],
+    [
+      41.156,
+      45.455,
+      "This gives us the professional method: top-down."
+    ],
+    [
+      45.455,
+      50.562,
+      "First read the macro picture — interest rates, crude oil,"
+    ],
+    [
+      50.562,
+      52.622,
+      "the rupee, the economy."
+    ],
+    [
+      52.622,
+      56.564,
+      "Then pick the sector that the macro favours."
+    ],
+    [
+      56.564,
+      58.355,
+      "Then, and only then,"
+    ],
+    [
+      58.355,
+      63.64,
+      "pick the strongest one or two companies inside that sector."
+    ],
+    [
+      63.64,
+      66.059,
+      "Macro, to sector, to stock."
+    ],
+    [
+      66.059,
+      72.509,
+      "Narrowing your focus this way means better research and controlled risk."
+    ],
+    [
+      72.509,
+      78.511,
+      "But you also spread across a few sectors that don't move together —"
+    ],
+    [
+      78.511,
+      81.288,
+      "so when one zigs, another zags."
+    ],
+    [
+      81.788,
+      84.172,
+      "Let's map the main sectors."
+    ],
+    [
+      84.172,
+      89.56,
+      "Banking and financials are the heaviest weight in the index —"
+    ],
+    [
+      89.56,
+      92.562,
+      "when banks move, the market moves."
+    ],
+    [
+      92.562,
+      96.801,
+      "IT services are exporters; they earn in dollars,"
+    ],
+    [
+      96.801,
+      99.186,
+      "so a weak rupee helps them."
+    ],
+    [
+      99.186,
+      103.425,
+      "Pharma and consumer staples, the FMCG companies,"
+    ],
+    [
+      103.425,
+      104.838,
+      "are defensives —"
+    ],
+    [
+      104.838,
+      109.607,
+      "people buy medicine and soap in every kind of economy,"
+    ],
+    [
+      109.607,
+      111.903,
+      "so their demand is steady."
+    ],
+    [
+      111.903,
+      115.877,
+      "Auto, metals, and real estate are cyclicals —"
+    ],
+    [
+      115.877,
+      121.176,
+      "they boom when the economy expands and suffer when it slows."
+    ],
+    [
+      121.176,
+      127.182,
+      "Energy and the oil marketing companies move with the price of crude."
+    ],
+    [
+      127.182,
+      132.834,
+      "And public-sector and defence names live on government spending,"
+    ],
+    [
+      132.834,
+      135.042,
+      "budgets, and order books."
+    ],
+    [
+      135.042,
+      140.075,
+      "Notice the deep split there: defensives versus cyclicals."
+    ],
+    [
+      140.075,
+      143.608,
+      "That split is the key to timing sectors."
+    ],
+    [
+      144.108,
+      151.245,
+      "Here is the single most useful table in sector analysis: what drives each one."
+    ],
+    [
+      151.245,
+      154.173,
+      "Some sectors are rate-sensitive."
+    ],
+    [
+      154.173,
+      157.559,
+      "Banks, non-bank lenders, real estate,"
+    ],
+    [
+      157.559,
+      163.232,
+      "and autos all care deeply about interest rates set by the RBI,"
+    ],
+    [
+      163.232,
+      166.8,
+      "about credit growth, and about margins."
+    ],
+    [
+      166.8,
+      169.637,
+      "On RBI policy day, watch these."
+    ],
+    [
+      169.637,
+      172.107,
+      "Others are globally linked."
+    ],
+    [
+      172.107,
+      177.689,
+      "IT services live on the dollar-rupee rate and Western demand."
+    ],
+    [
+      177.689,
+      181.989,
+      "Pharma swings on US FDA approvals and warnings."
+    ],
+    [
+      181.989,
+      186.656,
+      "Metals follow the global commodity cycle and China."
+    ],
+    [
+      186.656,
+      191.048,
+      "For these, watch the dollar, crude, and US data."
+    ],
+    [
+      191.048,
+      193.427,
+      "And some are event-driven."
+    ],
+    [
+      193.427,
+      198.002,
+      "Oil marketing companies move inversely with crude."
+    ],
+    [
+      198.002,
+      204.315,
+      "Public-sector and defence names jump on the Budget and on order wins."
+    ],
+    [
+      204.315,
+      209.622,
+      "Consumer and auto names react to GST changes, the monsoon,"
+    ],
+    [
+      209.622,
+      211.178,
+      "and rural demand."
+    ],
+    [
+      211.178,
+      214.472,
+      "Learn each sector's one main driver,"
+    ],
+    [
+      214.472,
+      218.132,
+      "and the news suddenly tells you a story."
+    ],
+    [
+      218.632,
+      224.053,
+      "Now the timing idea that ties it together — sector rotation."
+    ],
+    [
+      224.053,
+      229.926,
+      "The first myth is that one sector is always the best place to be."
+    ],
+    [
+      229.926,
+      230.739,
+      "It isn't."
+    ],
+    [
+      230.739,
+      232.456,
+      "Leadership rotates."
+    ],
+    [
+      232.456,
+      238.329,
+      "Different sectors lead in different phases of the economic cycle."
+    ],
+    [
+      238.329,
+      241.491,
+      "In a slowdown or a risk-off market,"
+    ],
+    [
+      241.491,
+      244.021,
+      "you don't only hide in cash."
+    ],
+    [
+      244.021,
+      248.81,
+      "Defensives — consumer staples, pharma, and often IT —"
+    ],
+    [
+      248.81,
+      254.14,
+      "tend to hold up better because their demand doesn't vanish."
+    ],
+    [
+      254.14,
+      257.755,
+      "And cyclicals aren't just risky gambles."
+    ],
+    [
+      257.755,
+      262.905,
+      "When the economy is expanding, cyclicals — autos, metals,"
+    ],
+    [
+      262.905,
+      266.248,
+      "banks — often lead the rally hardest."
+    ],
+    [
+      266.248,
+      270.313,
+      "So the skill is reading which phase we're in,"
+    ],
+    [
+      270.313,
+      274.921,
+      "and rotating toward the sectors that phase favours."
+    ],
+    [
+      274.921,
+      279.168,
+      "That's what the top-down process is really for."
+    ],
+    [
+      279.668,
+      284.339,
+      "Let's turn this into a repeatable four-step method."
+    ],
+    [
+      284.339,
+      286.72,
+      "Step one — read the macro."
+    ],
+    [
+      286.72,
+      289.742,
+      "Where are interest rates heading?"
+    ],
+    [
+      289.742,
+      291.574,
+      "What is crude doing?"
+    ],
+    [
+      291.574,
+      294.138,
+      "Is the rupee strong or weak?"
+    ],
+    [
+      294.138,
+      297.069,
+      "What's the state of the economy?"
+    ],
+    [
+      297.069,
+      301.739,
+      "Step two — pick the sector that this macro favours."
+    ],
+    [
+      301.739,
+      303.663,
+      "If rates are falling,"
+    ],
+    [
+      303.663,
+      307.692,
+      "rate-sensitive banks and realty may benefit."
+    ],
+    [
+      307.692,
+      313.462,
+      "If crude is spiking, oil producers gain and oil consumers hurt."
+    ],
+    [
+      313.462,
+      316.393,
+      "Step three — inside that sector,"
+    ],
+    [
+      316.393,
+      320.056,
+      "pick the strongest one or two companies."
+    ],
+    [
+      320.056,
+      321.155,
+      "The leaders,"
+    ],
+    [
+      321.155,
+      325.826,
+      "with the best balance sheets and the widest moats —"
+    ],
+    [
+      325.826,
+      329.489,
+      "not the weakest name hoping to catch up."
+    ],
+    [
+      329.489,
+      330.496,
+      "Step four —"
+    ],
+    [
+      330.496,
+      338.006,
+      "size your position and spread across a few sectors so no single call can sink you."
+    ],
+    [
+      338.006,
+      340.662,
+      "Macro, sector, leaders, size."
+    ],
+    [
+      340.662,
+      345.058,
+      "Never skip straight from nowhere to a stock tip."
+    ],
+    [
+      345.058,
+      350.736,
+      "That process is what the next chapter — research — makes real."
+    ],
+    [
+      351.236,
+      353.699,
+      "Chapter two, in one breath."
+    ],
+    [
+      353.699,
+      359.171,
+      "Pick the neighbourhood before the house — ride the tailwind,"
+    ],
+    [
+      359.171,
+      360.722,
+      "not the headwind."
+    ],
+    [
+      360.722,
+      365.647,
+      "Use the top-down method: macro, to sector, to leaders,"
+    ],
+    [
+      365.647,
+      367.198,
+      "to position size."
+    ],
+    [
+      367.198,
+      370.755,
+      "Learn each sector's single main driver,"
+    ],
+    [
+      370.755,
+      373.4,
+      "so the news becomes readable."
+    ],
+    [
+      373.4,
+      380.514,
+      "Remember that defensives hold up in slowdowns while cyclicals lead expansions,"
+    ],
+    [
+      380.514,
+      384.254,
+      "and leadership rotates through the cycle."
+    ],
+    [
+      384.254,
+      386.99,
+      "Next, we go inside a company —"
+    ],
+    [
+      386.99,
+      390.0,
+      "how to actually research a stock."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "eq/eq02.wav",
+      "volume": 1.0
+    }
+  }
+}

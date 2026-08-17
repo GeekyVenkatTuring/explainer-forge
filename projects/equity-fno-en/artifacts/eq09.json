@@ -1,0 +1,527 @@
+{
+  "cuts": [
+    {
+      "id": "i9_div",
+      "type": "sm_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 21.26,
+      "props": {
+        "n": 9,
+        "title": "Commodities",
+        "sub": "Gold · silver · crude on the MCX",
+        "color": "#FBBF24",
+        "dur": 21.76
+      }
+    },
+    {
+      "id": "i9_what",
+      "type": "sm_iconcards",
+      "in_seconds": 21.76,
+      "out_seconds": 97.028,
+      "props": {
+        "kicker": "THE MCX",
+        "title": "What are commodities?",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🥇",
+            "k": "Bullion",
+            "v": "Gold and silver — safe-haven assets, wealth stores",
+            "chip": "Metals"
+          },
+          {
+            "emoji": "🛢️",
+            "k": "Energy",
+            "v": "Crude oil and natural gas — driven by OPEC & geopolitics",
+            "chip": "Energy"
+          },
+          {
+            "emoji": "🔩",
+            "k": "Base metals",
+            "v": "Copper, zinc, aluminium — track global growth & China",
+            "chip": "Industrial"
+          },
+          {
+            "emoji": "🏛️",
+            "k": "The MCX",
+            "v": "India's main commodity exchange, SEBI-regulated; open ~9 AM to ~11:55 PM",
+            "chip": "Exchange"
+          }
+        ],
+        "dur": 75.768
+      }
+    },
+    {
+      "id": "i9_how",
+      "type": "sm_iconcards",
+      "in_seconds": 97.528,
+      "out_seconds": 168.672,
+      "props": {
+        "kicker": "HOW THEY TRADE",
+        "title": "Traded through futures — with leverage",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "📜",
+            "k": "Via futures",
+            "v": "You trade commodity futures contracts, not the physical metal",
+            "chip": "Futures"
+          },
+          {
+            "emoji": "📦",
+            "k": "Lot sizes",
+            "v": "Standardised — e.g. Gold 1kg (main) and a Gold Mini (100g) for smaller size",
+            "chip": "Lots"
+          },
+          {
+            "emoji": "💰",
+            "k": "Small margin",
+            "v": "Pay a fraction of value — same double-edged leverage as stock futures",
+            "chip": "Leverage"
+          },
+          {
+            "emoji": "🌍",
+            "k": "Global drivers",
+            "v": "USD, real interest rates, geopolitics, OPEC — plus India's festival gold demand",
+            "chip": "Macro"
+          }
+        ],
+        "dur": 71.644
+      }
+    },
+    {
+      "id": "i9_gold",
+      "type": "sm_iconcards",
+      "in_seconds": 169.172,
+      "out_seconds": 243.628,
+      "props": {
+        "kicker": "GOLD IN A PORTFOLIO",
+        "title": "You don't have to trade the leverage",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🥇",
+            "k": "Gold ETF",
+            "v": "Own gold in your demat — no leverage, no storage, easy to sell",
+            "chip": "ETF"
+          },
+          {
+            "emoji": "🧾",
+            "k": "Sovereign Gold Bond",
+            "v": "Government gold that also pays interest — a non-leveraged way to hold",
+            "chip": "SGB"
+          },
+          {
+            "emoji": "🛡️",
+            "k": "The hedge role",
+            "v": "Gold often rises when equities fall — low correlation = a cushion",
+            "chip": "Cushion"
+          },
+          {
+            "emoji": "⚖️",
+            "k": "How much",
+            "v": "Around 5–10% of a portfolio, as ballast — not the main engine",
+            "chip": "5–10%"
+          }
+        ],
+        "dur": 74.956
+      }
+    },
+    {
+      "id": "i9_recap",
+      "type": "sm_recap",
+      "in_seconds": 244.128,
+      "out_seconds": 288.964,
+      "props": {
+        "title": "Chapter 9 — commodities",
+        "items": [
+          "Bullion, energy, base metals — trade on the MCX",
+          "Traded via futures, with the same leverage risk",
+          "Driven by global macro: USD, rates, OPEC, geopolitics",
+          "Gold ETF / SGB = own gold without leverage",
+          "Keep ~5–10% gold as a portfolio hedge"
+        ],
+        "closer": "For most investors, gold is insurance — not a bet.",
+        "dur": 45.336
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      2.633,
+      "Chapter nine — commodities."
+    ],
+    [
+      2.633,
+      6.924,
+      "Beyond stocks lies a parallel market — real,"
+    ],
+    [
+      6.924,
+      11.703,
+      "physical things: gold, silver, crude oil, metals."
+    ],
+    [
+      11.703,
+      14.823,
+      "In India these trade on the MCX."
+    ],
+    [
+      14.823,
+      16.384,
+      "Let's learn how,"
+    ],
+    [
+      16.384,
+      21.26,
+      "and why gold in particular belongs in a portfolio."
+    ],
+    [
+      21.76,
+      24.019,
+      "So, what are commodities?"
+    ],
+    [
+      24.019,
+      27.904,
+      "Raw, physical goods, grouped into families."
+    ],
+    [
+      27.904,
+      30.886,
+      "First, bullion — gold and silver."
+    ],
+    [
+      30.886,
+      33.416,
+      "These are safe-haven assets,"
+    ],
+    [
+      33.416,
+      38.476,
+      "stores of wealth that people flee to in uncertain times."
+    ],
+    [
+      38.476,
+      42.362,
+      "Second, energy — crude oil and natural gas,"
+    ],
+    [
+      42.362,
+      46.879,
+      "driven by OPEC decisions, demand, and geopolitics."
+    ],
+    [
+      46.879,
+      51.036,
+      "Third, base metals — copper, zinc, aluminium —"
+    ],
+    [
+      51.036,
+      56.819,
+      "the industrial metals that rise and fall with global growth and,"
+    ],
+    [
+      56.819,
+      58.445,
+      "especially, China."
+    ],
+    [
+      58.445,
+      61.427,
+      "In India, these trade on the MCX,"
+    ],
+    [
+      61.427,
+      65.764,
+      "the Multi Commodity Exchange — the largest, and,"
+    ],
+    [
+      65.764,
+      69.469,
+      "like the stock market, regulated by SEBI."
+    ],
+    [
+      69.469,
+      74.981,
+      "One big difference: because commodities track global markets,"
+    ],
+    [
+      74.981,
+      77.782,
+      "the MCX stays open far longer —"
+    ],
+    [
+      77.782,
+      82.571,
+      "from about nine in the morning until nearly midnight,"
+    ],
+    [
+      82.571,
+      85.191,
+      "around eleven fifty-five p m,"
+    ],
+    [
+      85.191,
+      90.251,
+      "so it can react to overnight news from around the world."
+    ],
+    [
+      90.251,
+      95.492,
+      "That long window, plus leverage, makes commodities a fast,"
+    ],
+    [
+      95.492,
+      97.028,
+      "demanding market."
+    ],
+    [
+      97.528,
+      100.849,
+      "How do you actually trade a commodity?"
+    ],
+    [
+      100.849,
+      105.481,
+      "Almost always through futures — you trade a contract,"
+    ],
+    [
+      105.481,
+      107.229,
+      "not a vault of gold."
+    ],
+    [
+      107.229,
+      111.162,
+      "The contracts come in standardised lot sizes."
+    ],
+    [
+      111.162,
+      115.795,
+      "Gold, for instance, has a main one-kilogram contract,"
+    ],
+    [
+      115.795,
+      122.699,
+      "and a smaller Gold Mini of one hundred grams so ordinary traders can take part."
+    ],
+    [
+      122.699,
+      127.244,
+      "As with stock futures, you pay only a small margin —"
+    ],
+    [
+      127.244,
+      130.391,
+      "a fraction of the contract's value —"
+    ],
+    [
+      130.391,
+      134.149,
+      "which means the same double-edged leverage."
+    ],
+    [
+      134.149,
+      139.742,
+      "A small favourable move is magnified; so is an unfavourable one."
+    ],
+    [
+      139.742,
+      142.539,
+      "And what moves commodity prices?"
+    ],
+    [
+      142.539,
+      143.763,
+      "Global forces."
+    ],
+    [
+      143.763,
+      147.346,
+      "Gold and silver respond to the US dollar,"
+    ],
+    [
+      147.346,
+      152.241,
+      "to real interest rates, and to geopolitical fear — plus,"
+    ],
+    [
+      152.241,
+      156.349,
+      "in India, the huge festival and wedding demand."
+    ],
+    [
+      156.349,
+      159.932,
+      "Crude follows OPEC and the world economy."
+    ],
+    [
+      159.932,
+      162.816,
+      "Base metals follow global growth."
+    ],
+    [
+      162.816,
+      165.613,
+      "This is a macro trader's arena —"
+    ],
+    [
+      165.613,
+      168.672,
+      "you're really trading world events."
+    ],
+    [
+      169.172,
+      178.611,
+      "Here is the most useful commodity idea for a normal investor: you do not have to touch the leverage at all."
+    ],
+    [
+      178.611,
+      183.199,
+      "You can own gold simply, without a futures contract."
+    ],
+    [
+      183.199,
+      188.227,
+      "A gold ETF holds gold in your demat account — no storage,"
+    ],
+    [
+      188.227,
+      191.227,
+      "no leverage, sell it in one click."
+    ],
+    [
+      191.227,
+      199.254,
+      "A Sovereign Gold Bond is government-issued gold that even pays you a small interest on top."
+    ],
+    [
+      199.254,
+      203.312,
+      "Both are calm, non-leveraged ways to own gold."
+    ],
+    [
+      203.312,
+      205.077,
+      "Why own gold at all?"
+    ],
+    [
+      205.077,
+      207.811,
+      "Because of its role as a hedge."
+    ],
+    [
+      207.811,
+      211.781,
+      "Gold often rises exactly when equities fall —"
+    ],
+    [
+      211.781,
+      214.075,
+      "they have low correlation."
+    ],
+    [
+      214.075,
+      218.839,
+      "So a slice of gold cushions your portfolio in a crash."
+    ],
+    [
+      218.839,
+      219.633,
+      "How much?"
+    ],
+    [
+      219.633,
+      224.749,
+      "Around five to ten percent of your portfolio, as ballast —"
+    ],
+    [
+      224.749,
+      228.631,
+      "a stabiliser, not the main engine of growth."
+    ],
+    [
+      228.631,
+      233.571,
+      "For traders, commodities offer trend-following, hedging,"
+    ],
+    [
+      233.571,
+      237.894,
+      "and spread strategies like the gold-silver ratio."
+    ],
+    [
+      237.894,
+      240.54,
+      "But for the everyday investor,"
+    ],
+    [
+      240.54,
+      243.628,
+      "gold's real job is quiet insurance."
+    ],
+    [
+      244.128,
+      246.228,
+      "Chapter nine, in brief."
+    ],
+    [
+      246.228,
+      250.611,
+      "Commodities — bullion, energy, and base metals —"
+    ],
+    [
+      250.611,
+      255.269,
+      "trade on the MCX, mostly through leveraged futures."
+    ],
+    [
+      255.269,
+      260.656,
+      "Their prices are driven by global macro forces: the dollar,"
+    ],
+    [
+      260.656,
+      264.126,
+      "interest rates, OPEC, and geopolitics."
+    ],
+    [
+      264.126,
+      267.14,
+      "But you don't need the leverage —"
+    ],
+    [
+      267.14,
+      272.71,
+      "a gold ETF or a Sovereign Gold Bond lets you own gold calmly."
+    ],
+    [
+      272.71,
+      277.458,
+      "And gold's real value to a portfolio is as a hedge —"
+    ],
+    [
+      277.458,
+      282.846,
+      "keep around five to ten percent as insurance, not as a bet."
+    ],
+    [
+      282.846,
+      287.503,
+      "Finally, the thread that ties everything together —"
+    ],
+    [
+      287.503,
+      288.964,
+      "risk management."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "eq/eq09.wav",
+      "volume": 1.0
+    }
+  }
+}

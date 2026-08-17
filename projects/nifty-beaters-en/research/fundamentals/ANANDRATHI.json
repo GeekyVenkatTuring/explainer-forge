@@ -1,0 +1,103 @@
+{
+ "ticker": "ANANDRATHI",
+ "scraped_at": "2026-08-14T15:27:53",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 36102.0,
+ "current_price": 2174.0,
+ "pe": 77.6,
+ "book_value": 60.1,
+ "dividend_yield_pct": 0.3,
+ "roce_pct": 59.2,
+ "roe_pct": 47.3,
+ "face_value": 5.0,
+ "high": 2230.0,
+ "sales_growth": {
+  "5 Years": 55.0,
+  "3 Years": 33.0,
+  "TTM": 45.0
+ },
+ "profit_growth": {
+  "3 Years": 84.0,
+  "1 Year": 62.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 175.0,
+  "Expenses&nbsp; +": 102.0,
+  "Operating Profit": 73.0,
+  "OPM %": 42.0,
+  "Other Income&nbsp; +": 3.0,
+  "Interest": 1.0,
+  "Depreciation": 5.0,
+  "Profit before tax": 71.0,
+  "Tax %": 25.0,
+  "Net Profit&nbsp; +": 53.0,
+  "EPS in Rs": 3.18
+ },
+ "price_cagr": {
+  "5 Years": 44.0,
+  "3 Years": 45.0,
+  "Last Year": 47.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "42%",
+   "42%",
+   "44%",
+   "40%",
+   "41%",
+   "43%",
+   "45%",
+   "41%",
+   "47%",
+   "46%",
+   "45%",
+   "29%",
+   "34%"
+  ],
+  "eps": [
+   "3.18",
+   "3.44",
+   "3.46",
+   "3.38",
+   "4.42",
+   "4.58",
+   "4.64",
+   "4.42",
+   "5.64",
+   "5.98",
+   "6.02",
+   "6.21",
+   "9.80"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has delivered good profit growth of 54.7% CAGR over last 5 years",
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 44.8%",
+  "Company has been maintaining a healthy dividend payout of 30.7%"
+ ],
+ "cons": [
+  "Stock is trading at 36.4 times its book value",
+  "Promoter holding has decreased over last quarter: -1.74%",
+  "Earnings include an other income of Rs.205 Cr."
+ ]
+}

@@ -1,0 +1,448 @@
+{
+ "cuts": [
+  {
+   "id": "solar-ch01-opportunity_title",
+   "type": "sol_title",
+   "in_seconds": 0.0,
+   "out_seconds": 22.304,
+   "props": {
+    "dur": 22.804
+   }
+  },
+  {
+   "id": "solar-ch01-opportunity_roadmap",
+   "type": "sol_roadmap",
+   "in_seconds": 22.804,
+   "out_seconds": 64.032,
+   "props": {
+    "dur": 41.728
+   }
+  },
+  {
+   "id": "solar-ch01-opportunity_hook",
+   "type": "sol_hook",
+   "in_seconds": 64.532,
+   "out_seconds": 110.94,
+   "props": {
+    "dur": 46.908
+   }
+  },
+  {
+   "id": "solar-ch01-opportunity_why",
+   "type": "sol_why",
+   "in_seconds": 111.44,
+   "out_seconds": 157.325,
+   "props": {
+    "dur": 46.385
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.672,
+   "Every roof you have ever seen is sitting"
+  ],
+  [
+   2.672,
+   3.674,
+   "under a fortune,"
+  ],
+  [
+   3.674,
+   5.344,
+   "and doing nothing with it."
+  ],
+  [
+   5.975,
+   7.311,
+   "Over the next hour,"
+  ],
+  [
+   7.311,
+   9.983,
+   "I am going to take you from knowing"
+  ],
+  [
+   9.983,
+   11.319,
+   "nothing about solar panels,"
+  ],
+  [
+   11.319,
+   13.323,
+   "to understanding exactly how they work,"
+  ],
+  [
+   13.323,
+   14.659,
+   "how they get installed,"
+  ],
+  [
+   14.659,
+   17.331,
+   "and how people build a real business selling"
+  ],
+  [
+   17.331,
+   17.665,
+   "them."
+  ],
+  [
+   18.296,
+   19.966,
+   "No jargon you can't follow."
+  ],
+  [
+   19.966,
+   21.302,
+   "We build it up,"
+  ],
+  [
+   21.302,
+   22.304,
+   "step by step."
+  ],
+  [
+   22.804,
+   24.38,
+   "Here is the journey."
+  ],
+  [
+   25.012,
+   25.406,
+   "First,"
+  ],
+  [
+   25.406,
+   28.559,
+   "why solar has suddenly become a real opportunity,"
+  ],
+  [
+   28.559,
+   29.741,
+   "on ordinary rooftops."
+  ],
+  [
+   30.373,
+   33.525,
+   "Then the science \u2014 how a flat panel"
+  ],
+  [
+   33.525,
+   35.496,
+   "quietly turns sunlight into electricity,"
+  ],
+  [
+   35.496,
+   37.86,
+   "with no moving parts at all."
+  ],
+  [
+   38.492,
+   41.251,
+   "Then the system around it \u2014 inverters,"
+  ],
+  [
+   41.251,
+   44.009,
+   "and how you connect to the grid."
+  ],
+  [
+   44.641,
+   47.399,
+   "Then the part that pays the bills:"
+  ],
+  [
+   47.399,
+   48.582,
+   "installing on homes,"
+  ],
+  [
+   48.582,
+   49.764,
+   "sizing a system,"
+  ],
+  [
+   49.764,
+   51.34,
+   "and the government subsidy."
+  ],
+  [
+   51.972,
+   53.154,
+   "Then serving businesses,"
+  ],
+  [
+   53.154,
+   55.519,
+   "where the numbers get much bigger."
+  ],
+  [
+   56.15,
+   56.938,
+   "And finally,"
+  ],
+  [
+   56.938,
+   60.091,
+   "the business itself \u2014 the different ways to"
+  ],
+  [
+   60.091,
+   60.485,
+   "sell,"
+  ],
+  [
+   60.485,
+   63.244,
+   "and the margins you can actually earn."
+  ],
+  [
+   63.244,
+   64.032,
+   "Let's begin."
+  ],
+  [
+   64.532,
+   66.736,
+   "Start with a problem everyone shares."
+  ],
+  [
+   67.368,
+   68.103,
+   "Every month,"
+  ],
+  [
+   68.103,
+   69.572,
+   "an electricity bill arrives,"
+  ],
+  [
+   69.572,
+   72.512,
+   "and every year it seems to climb a"
+  ],
+  [
+   72.512,
+   73.246,
+   "little higher."
+  ],
+  [
+   73.878,
+   75.348,
+   "That money just leaves,"
+  ],
+  [
+   75.348,
+   75.715,
+   "forever."
+  ],
+  [
+   76.347,
+   79.286,
+   "Now look at the same house from above."
+  ],
+  [
+   79.286,
+   80.755,
+   "The roof is bare."
+  ],
+  [
+   80.755,
+   82.592,
+   "Sunlight is pouring onto it,"
+  ],
+  [
+   82.592,
+   83.327,
+   "all day,"
+  ],
+  [
+   83.327,
+   85.899,
+   "completely free \u2014 and it's being wasted."
+  ],
+  [
+   86.531,
+   89.47,
+   "Solar is simply the business of catching some"
+  ],
+  [
+   89.47,
+   92.409,
+   "of that sunlight and turning it into electricity,"
+  ],
+  [
+   92.409,
+   94.613,
+   "so the bill drops by eighty,"
+  ],
+  [
+   94.613,
+   94.981,
+   "ninety,"
+  ],
+  [
+   94.981,
+   96.45,
+   "sometimes a hundred percent."
+  ],
+  [
+   97.082,
+   99.654,
+   "And here is the scale of it."
+  ],
+  [
+   99.654,
+   102.593,
+   "Enough sunlight strikes the Earth in a single"
+  ],
+  [
+   102.593,
+   105.532,
+   "hour to power all of humanity for an"
+  ],
+  [
+   105.532,
+   106.267,
+   "entire year."
+  ],
+  [
+   106.899,
+   109.103,
+   "The energy is not the problem."
+  ],
+  [
+   109.103,
+   110.94,
+   "Catching it is the opportunity."
+  ],
+  [
+   111.44,
+   114.587,
+   "So why is this a business right now,"
+  ],
+  [
+   114.587,
+   116.554,
+   "and not ten years ago?"
+  ],
+  [
+   117.186,
+   119.153,
+   "Four things changed at once."
+  ],
+  [
+   119.785,
+   120.178,
+   "First,"
+  ],
+  [
+   120.178,
+   121.752,
+   "panels collapsed in price."
+  ],
+  [
+   121.752,
+   124.899,
+   "A solar panel today costs roughly a tenth"
+  ],
+  [
+   124.899,
+   127.653,
+   "of what it did a decade ago."
+  ],
+  [
+   128.285,
+   128.678,
+   "Second,"
+  ],
+  [
+   128.678,
+   131.825,
+   "grid electricity keeps getting more expensive \u2014 so"
+  ],
+  [
+   131.825,
+   134.973,
+   "the bill you avoid is bigger every year."
+  ],
+  [
+   135.604,
+   135.998,
+   "Third,"
+  ],
+  [
+   135.998,
+   137.571,
+   "the government is paying."
+  ],
+  [
+   137.571,
+   140.325,
+   "Under the P M Surya Ghar scheme,"
+  ],
+  [
+   140.325,
+   143.473,
+   "a home can get up to seventy-eight thousand"
+  ],
+  [
+   143.473,
+   144.259,
+   "rupees back."
+  ],
+  [
+   144.891,
+   145.678,
+   "And fourth,"
+  ],
+  [
+   145.678,
+   147.645,
+   "the market has barely started."
+  ],
+  [
+   147.645,
+   150.792,
+   "Fewer than five percent of Indian rooftops have"
+  ],
+  [
+   150.792,
+   151.186,
+   "solar."
+  ],
+  [
+   151.817,
+   152.604,
+   "Cheaper hardware,"
+  ],
+  [
+   152.604,
+   153.391,
+   "costlier power,"
+  ],
+  [
+   153.391,
+   154.178,
+   "public money,"
+  ],
+  [
+   154.178,
+   155.751,
+   "and a wide-open market."
+  ],
+  [
+   155.751,
+   157.325,
+   "That is why now."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "sol/solar-ch01-opportunity.wav",
+   "volume": 1.0
+  }
+ }
+}

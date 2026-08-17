@@ -1,0 +1,93 @@
+{
+ "ticker": "COROMANDEL",
+ "scraped_at": "2026-08-14T15:29:54",
+ "source": "screener.in",
+ "ok": true,
+ "error": "<HTTPError 429: 'Too Many Requests'>",
+ "variant": "standalone",
+ "market_cap_cr": 61804.0,
+ "current_price": 2095.0,
+ "pe": 31.7,
+ "book_value": 423.0,
+ "dividend_yield_pct": 0.53,
+ "roce_pct": 24.6,
+ "roe_pct": 17.3,
+ "face_value": 1.0,
+ "high": 2500.0,
+ "sales_growth": {
+  "10 Years": 19.0,
+  "5 Years": 9.0,
+  "3 Years": 0.0,
+  "TTM": -4.0
+ },
+ "profit_growth": {
+  "10 Years": 23.0,
+  "5 Years": 20.0,
+  "3 Years": 25.0,
+  "1 Year": -11.0
+ },
+ "roe_hist": {
+  "Equity Capital": 29.0,
+  "CWIP": 46.0,
+  "Investments": 352.0
+ },
+ "price_cagr": {
+  "10 Years": 22.0,
+  "5 Years": 21.0,
+  "3 Years": 18.0,
+  "Last Year": 17.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "12%",
+   "15%",
+   "7%",
+   "7%",
+   "11%",
+   "13%",
+   "10%",
+   "9%",
+   "11%",
+   "12%",
+   "9%",
+   "8%",
+   "8%"
+  ],
+  "eps": [
+   "17.18",
+   "25.88",
+   "8.24",
+   "7.11",
+   "11.24",
+   "23.63",
+   "17.83",
+   "13.20",
+   "17.24",
+   "27.68",
+   "17.96",
+   "5.23",
+   "12.78"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free."
+ ],
+ "cons": []
+}

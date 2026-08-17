@@ -1,0 +1,936 @@
+{
+  "cuts": [
+    {
+      "id": "d_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 37.476,
+      "props": {
+        "title": "How to Analyse Defence Stocks",
+        "sub": "Defence sector · fundamentals · technicals · strategies",
+        "kicker": "SECTOR DEEP-DIVE · DEFENCE",
+        "dur": 37.976
+      }
+    },
+    {
+      "id": "d_why",
+      "type": "sm_iconcards",
+      "in_seconds": 37.976,
+      "out_seconds": 120.396,
+      "props": {
+        "kicker": "THE BIG PICTURE",
+        "title": "Why defence is a structural theme",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "💰",
+            "k": "Record budgets",
+            "v": "Union Budget 2026-27: ₹6.81 lakh crore for defence (+13%); capital outlay ₹2.19 lakh crore",
+            "chip": "Govt spend"
+          },
+          {
+            "emoji": "🇮🇳",
+            "k": "Indigenisation",
+            "v": "509 items reserved for Indian makers; 60% local content rule; 75% target by 2029",
+            "chip": "Make in India"
+          },
+          {
+            "emoji": "🌍",
+            "k": "Exports rising",
+            "v": "Defence exports ₹686 cr (FY17) → ₹21,083 cr (FY24); ₹50,000 cr target by 2029",
+            "chip": "Exports"
+          },
+          {
+            "emoji": "⚔️",
+            "k": "Geopolitics",
+            "v": "Global tensions keep defence spending — and investor attention — elevated",
+            "chip": "Tailwind"
+          }
+        ],
+        "dur": 82.92
+      }
+    },
+    {
+      "id": "d_fund",
+      "type": "sm_iconcards",
+      "in_seconds": 120.896,
+      "out_seconds": 201.904,
+      "props": {
+        "kicker": "FUNDAMENTALS · CORE",
+        "title": "The metrics unique to defence",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "📚",
+            "k": "Order book",
+            "v": "The #1 metric — confirmed future orders. Bigger = more visible revenue",
+            "chip": "Backlog"
+          },
+          {
+            "emoji": "🔭",
+            "k": "Book-to-bill",
+            "v": "Order book ÷ annual revenue = years of visibility. E.g. BEL ~₹76,000 cr ≈ 4.5 yrs",
+            "chip": "Visibility"
+          },
+          {
+            "emoji": "🏭",
+            "k": "Execution & margins",
+            "v": "Can they convert orders to revenue on time? Watch EBITDA margin & delivery track record",
+            "chip": "Delivery"
+          },
+          {
+            "emoji": "💧",
+            "k": "Working capital",
+            "v": "Long project cycles lock up cash — watch receivables & cash flow, not just profit",
+            "chip": "Cash"
+          }
+        ],
+        "dur": 81.508
+      }
+    },
+    {
+      "id": "d_tech",
+      "type": "sm_iconcards",
+      "in_seconds": 202.404,
+      "out_seconds": 272.324,
+      "props": {
+        "kicker": "TECHNICAL ANALYSIS",
+        "title": "Reading defence on the chart",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "📈",
+            "k": "Nifty India Defence",
+            "v": "The sector index. Concentrated: HAL ~24%, Solar ~14%, Mazagon ~8%, Bharat Forge ~7%",
+            "chip": "Index"
+          },
+          {
+            "emoji": "🚀",
+            "k": "Momentum theme",
+            "v": "A strong momentum sector — but momentum can crash hard after a big run",
+            "chip": "Momentum"
+          },
+          {
+            "emoji": "🗓️",
+            "k": "Event catalysts",
+            "v": "Budget, order-win announcements, geopolitics spike these stocks — often on the news",
+            "chip": "Events"
+          },
+          {
+            "emoji": "🌪️",
+            "k": "High volatility",
+            "v": "Sharp swings; use wider stops and never chase a vertical, news-driven spike",
+            "chip": "Volatile"
+          }
+        ],
+        "dur": 70.42
+      }
+    },
+    {
+      "id": "d_strat",
+      "type": "sm_iconcards",
+      "in_seconds": 272.824,
+      "out_seconds": 342.764,
+      "props": {
+        "kicker": "STRATEGIES",
+        "title": "Strategies for the defence sector",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🌳",
+            "k": "Order-book compounders",
+            "v": "For the long term, hold leaders with huge, growing order books & strong execution",
+            "chip": "Hold"
+          },
+          {
+            "emoji": "📉",
+            "k": "Buy the dips, not the hype",
+            "v": "Accumulate quality on corrections — not on a Budget-day or war-news spike",
+            "chip": "Patience"
+          },
+          {
+            "emoji": "🧺",
+            "k": "Basket / index fund",
+            "v": "A Nifty India Defence index fund spreads single-stock risk across the theme",
+            "chip": "Diversify"
+          },
+          {
+            "emoji": "🏭",
+            "k": "PSU vs private",
+            "v": "PSU giants (HAL, BEL) for scale; select private names for niche, higher-growth plays",
+            "chip": "Mix"
+          }
+        ],
+        "dur": 70.44
+      }
+    },
+    {
+      "id": "d_check",
+      "type": "sm_checklist",
+      "in_seconds": 343.264,
+      "out_seconds": 407.488,
+      "props": {
+        "kicker": "HOW TO EVALUATE",
+        "title": "Evaluating a defence stock — checklist",
+        "color": "#34D399",
+        "icon": "✅",
+        "items": [
+          "Order book size AND book-to-bill (years of visibility)",
+          "Execution track record — can they deliver on time?",
+          "Cash flow & working capital (long cycles lock cash)",
+          "Indigenisation & export angle (structural growth)",
+          "Valuation vs the order book — is the growth already priced in?"
+        ],
+        "dur": 64.724
+      }
+    },
+    {
+      "id": "d_risk",
+      "type": "sm_myths",
+      "in_seconds": 407.988,
+      "out_seconds": 480.092,
+      "props": {
+        "kicker": "WHAT TO AVOID",
+        "title": "Defence sector — the big risks",
+        "mythLabel": "✗ TRAP",
+        "factLabel": "✓ REALITY",
+        "pairs": [
+          {
+            "m": "War news — buy defence stocks now!",
+            "f": "The spike is usually already priced in; latecomers get trapped"
+          },
+          {
+            "m": "Order book is huge, so any price is fine",
+            "f": "Nifty Defence P/E ~57 vs ~52 median — rich; valuation still matters"
+          },
+          {
+            "m": "Profit is strong, so it's healthy",
+            "f": "Long cycles lock cash — weak cash flow can hide behind paper profit"
+          }
+        ],
+        "dur": 72.604
+      }
+    },
+    {
+      "id": "d_recap",
+      "type": "sm_recap",
+      "in_seconds": 480.592,
+      "out_seconds": 528.836,
+      "props": {
+        "title": "Defence sector — recap",
+        "items": [
+          "Structural theme: record budgets, indigenisation, exports",
+          "Key metrics: order book, book-to-bill visibility, execution, cash",
+          "Index concentrated (HAL ~24%); momentum + event-driven",
+          "Strategy: order-book compounders; buy dips, not hype",
+          "Biggest risk: overpaying after a run (P/E ~57)"
+        ],
+        "closer": "A great theme is not a licence to overpay.",
+        "dur": 48.744
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.307,
+      "Our second deep-dive — the defence sector,"
+    ],
+    [
+      3.307,
+      8.66,
+      "one of the most exciting and most hyped themes in the Indian market."
+    ],
+    [
+      8.66,
+      12.125,
+      "This is a long-cycle, order-driven business,"
+    ],
+    [
+      12.125,
+      17.872,
+      "powered by government spending and India's push to build its own weapons."
+    ],
+    [
+      17.872,
+      22.281,
+      "That makes it very different from a bank or an IT firm —"
+    ],
+    [
+      22.281,
+      26.847,
+      "it has its own language of order books and indigenisation."
+    ],
+    [
+      26.847,
+      31.807,
+      "We'll cover the fundamentals unique to defence, the technicals,"
+    ],
+    [
+      31.807,
+      34.484,
+      "the strategies — and, importantly,"
+    ],
+    [
+      34.484,
+      37.476,
+      "the valuation risk after a huge rally."
+    ],
+    [
+      37.976,
+      42.039,
+      "First, why defence is a genuine structural theme,"
+    ],
+    [
+      42.039,
+      43.283,
+      "not just a fad."
+    ],
+    [
+      43.283,
+      44.278,
+      "Four forces."
+    ],
+    [
+      44.278,
+      46.931,
+      "One — record government budgets."
+    ],
+    [
+      46.931,
+      56.467,
+      "The Union Budget for twenty twenty-six to twenty-seven set aside six point eight one lakh crore rupees for defence,"
+    ],
+    [
+      56.467,
+      60.115,
+      "up thirteen percent, with a capital outlay —"
+    ],
+    [
+      60.115,
+      62.768,
+      "the money for actual equipment —"
+    ],
+    [
+      62.768,
+      65.505,
+      "of two point one nine lakh crore."
+    ],
+    [
+      65.505,
+      67.246,
+      "Two — indigenisation."
+    ],
+    [
+      67.246,
+      75.123,
+      "India now reserves over five hundred defence items to be bought only from Indian manufacturers,"
+    ],
+    [
+      75.123,
+      80.015,
+      "has raised the minimum local-content rule to sixty percent,"
+    ],
+    [
+      80.015,
+      85.405,
+      "and targets seventy-five percent home-made by twenty twenty-nine."
+    ],
+    [
+      85.405,
+      89.385,
+      "That structurally protects domestic order flows."
+    ],
+    [
+      89.385,
+      90.712,
+      "Three — exports."
+    ],
+    [
+      90.712,
+      102.652,
+      "Defence exports have exploded from under seven hundred crore rupees in twenty seventeen to over twenty-one thousand crore by twenty twenty-four,"
+    ],
+    [
+      102.652,
+      106.051,
+      "with a fifty-thousand-crore target ahead."
+    ],
+    [
+      106.051,
+      107.627,
+      "Four — geopolitics."
+    ],
+    [
+      107.627,
+      112.685,
+      "A tense world keeps defence spending, and investor attention,"
+    ],
+    [
+      112.685,
+      113.099,
+      "high."
+    ],
+    [
+      113.099,
+      116.333,
+      "That's a powerful, multi-year tailwind."
+    ],
+    [
+      116.333,
+      120.396,
+      "Now, how do you actually analyse these companies?"
+    ],
+    [
+      120.896,
+      123.869,
+      "Defence has its own special metrics,"
+    ],
+    [
+      123.869,
+      126.511,
+      "and the first one is everything."
+    ],
+    [
+      126.511,
+      130.31,
+      "The order book — the total value of confirmed,"
+    ],
+    [
+      130.31,
+      133.861,
+      "signed orders a company has yet to execute."
+    ],
+    [
+      133.861,
+      138.733,
+      "A large order book means visible, locked-in future revenue."
+    ],
+    [
+      138.733,
+      143.274,
+      "This is the single most important number in the sector."
+    ],
+    [
+      143.274,
+      144.265,
+      "Even better,"
+    ],
+    [
+      144.265,
+      150.128,
+      "divide the order book by annual revenue to get the book-to-bill ratio —"
+    ],
+    [
+      150.128,
+      154.835,
+      "literally, how many years of revenue are already in hand."
+    ],
+    [
+      154.835,
+      157.478,
+      "Bharat Electronics, for example,"
+    ],
+    [
+      157.478,
+      162.763,
+      "carries an order book around seventy-six thousand crore rupees —"
+    ],
+    [
+      162.763,
+      166.396,
+      "roughly four and a half years of visibility."
+    ],
+    [
+      166.396,
+      167.965,
+      "That is a fortress."
+    ],
+    [
+      167.965,
+      173.167,
+      "But a big order book is worthless if the company can't deliver."
+    ],
+    [
+      173.167,
+      174.819,
+      "So watch execution —"
+    ],
+    [
+      174.819,
+      179.03,
+      "can they convert those orders into revenue on time?"
+    ],
+    [
+      179.03,
+      184.067,
+      "Track the EBITDA margin and their historical delivery record."
+    ],
+    [
+      184.067,
+      186.214,
+      "And watch working capital."
+    ],
+    [
+      186.214,
+      188.774,
+      "Defence projects run for years,"
+    ],
+    [
+      188.774,
+      192.408,
+      "which locks up enormous cash in receivables."
+    ],
+    [
+      192.408,
+      197.775,
+      "A company can show fat profits on paper while starving for cash —"
+    ],
+    [
+      197.775,
+      201.904,
+      "so follow the cash flow, not just the profit line."
+    ],
+    [
+      202.404,
+      206.571,
+      "Now the technicals for defence — a momentum-heavy,"
+    ],
+    [
+      206.571,
+      208.238,
+      "event-driven sector."
+    ],
+    [
+      208.238,
+      211.071,
+      "There is a dedicated sector index,"
+    ],
+    [
+      211.071,
+      213.571,
+      "the Nifty India Defence index,"
+    ],
+    [
+      213.571,
+      220.322,
+      "but note it's concentrated: Hindustan Aeronautics alone is about a quarter of it,"
+    ],
+    [
+      220.322,
+      223.322,
+      "with Solar Industries, Mazagon Dock,"
+    ],
+    [
+      223.322,
+      226.989,
+      "and Bharat Forge making up much of the rest."
+    ],
+    [
+      226.989,
+      230.489,
+      "So the index can be moved by a few giants."
+    ],
+    [
+      230.489,
+      233.155,
+      "It is a strong momentum sector —"
+    ],
+    [
+      233.155,
+      235.989,
+      "it has delivered spectacular runs."
+    ],
+    [
+      235.989,
+      243.323,
+      "But remember the lesson from options: momentum can crash hard and fast after a big move."
+    ],
+    [
+      243.323,
+      246.906,
+      "What went vertical up can go vertical down."
+    ],
+    [
+      246.906,
+      252.156,
+      "The catalysts are events — the Budget, order-win announcements,"
+    ],
+    [
+      252.156,
+      254.406,
+      "and geopolitical flare-ups."
+    ],
+    [
+      254.406,
+      258.657,
+      "These stocks often spike the moment such news hits."
+    ],
+    [
+      258.657,
+      260.907,
+      "And expect high volatility."
+    ],
+    [
+      260.907,
+      265.157,
+      "Use wider stop-losses if you trade them, and never,"
+    ],
+    [
+      265.157,
+      268.657,
+      "ever chase a vertical, news-driven spike —"
+    ],
+    [
+      268.657,
+      272.324,
+      "that's exactly where latecomers get trapped."
+    ],
+    [
+      272.824,
+      276.238,
+      "So how do you invest in defence sensibly?"
+    ],
+    [
+      276.238,
+      277.57,
+      "Four strategies."
+    ],
+    [
+      277.57,
+      282.732,
+      "First, treat the leaders as long-term order-book compounders —"
+    ],
+    [
+      282.732,
+      284.397,
+      "companies with huge,"
+    ],
+    [
+      284.397,
+      288.727,
+      "growing order books and a proven ability to execute."
+    ],
+    [
+      288.727,
+      291.641,
+      "Hold them for the multi-year theme."
+    ],
+    [
+      291.641,
+      296.637,
+      "Second, and this is vital here — buy the dips, not the hype."
+    ],
+    [
+      296.637,
+      300.051,
+      "Accumulate quality on market corrections,"
+    ],
+    [
+      300.051,
+      305.879,
+      "not on the day a big order or a war headline sends the stock vertical."
+    ],
+    [
+      305.879,
+      309.293,
+      "The news is already in the price by then."
+    ],
+    [
+      309.293,
+      312.956,
+      "Third, if picking single stocks feels risky,"
+    ],
+    [
+      312.956,
+      318.118,
+      "a Nifty India Defence index fund lets you own the whole theme,"
+    ],
+    [
+      318.118,
+      320.949,
+      "spreading the single-company risk."
+    ],
+    [
+      320.949,
+      323.197,
+      "Fourth, mix your exposure —"
+    ],
+    [
+      323.197,
+      331.44,
+      "the public-sector giants like Hindustan Aeronautics and Bharat Electronics for scale and stability,"
+    ],
+    [
+      331.44,
+      336.436,
+      "and select private players for niche, higher-growth stories."
+    ],
+    [
+      336.436,
+      338.684,
+      "The theme is real and long."
+    ],
+    [
+      338.684,
+      342.764,
+      "The danger is only ever the price you pay for it."
+    ],
+    [
+      343.264,
+      346.916,
+      "Let's make defence a practical checklist."
+    ],
+    [
+      346.916,
+      347.896,
+      "Five steps."
+    ],
+    [
+      347.896,
+      348.787,
+      "Step one —"
+    ],
+    [
+      348.787,
+      354.488,
+      "look at the order book size and the book-to-bill ratio together,"
+    ],
+    [
+      354.488,
+      358.674,
+      "to see how many years of revenue are locked in."
+    ],
+    [
+      358.674,
+      362.594,
+      "Step two — check the execution track record."
+    ],
+    [
+      362.594,
+      368.562,
+      "A big order book is worthless if the company can't deliver on time."
+    ],
+    [
+      368.562,
+      373.105,
+      "Step three — examine cash flow and working capital,"
+    ],
+    [
+      373.105,
+      379.162,
+      "since long project cycles lock up cash and paper profit can mislead."
+    ],
+    [
+      379.162,
+      384.061,
+      "Step four — assess the indigenisation and export angle,"
+    ],
+    [
+      384.061,
+      388.426,
+      "which provides the structural, multi-year growth."
+    ],
+    [
+      388.426,
+      390.742,
+      "Step five — and crucially,"
+    ],
+    [
+      390.742,
+      394.661,
+      "weigh the valuation against that order book."
+    ],
+    [
+      394.661,
+      401.164,
+      "Ask honestly: is all this wonderful growth already priced into the stock?"
+    ],
+    [
+      401.164,
+      406.241,
+      "In defence, the growth is real, but it's often expensive."
+    ],
+    [
+      406.241,
+      407.488,
+      "Now the risks."
+    ],
+    [
+      407.988,
+      409.224,
+      "Now the risks —"
+    ],
+    [
+      409.224,
+      414.004,
+      "because this is where the excitement does the most damage."
+    ],
+    [
+      414.004,
+      415.322,
+      "The first trap —"
+    ],
+    [
+      415.322,
+      420.431,
+      "buying defence stocks the moment war or tension hits the news."
+    ],
+    [
+      420.431,
+      424.881,
+      "By then, the spike is almost always already priced in,"
+    ],
+    [
+      424.881,
+      431.308,
+      "and the people buying the headline are the ones who get trapped when it fades."
+    ],
+    [
+      431.308,
+      432.709,
+      "The second trap —"
+    ],
+    [
+      432.709,
+      436.5,
+      "believing that because the order book is huge,"
+    ],
+    [
+      436.5,
+      438.395,
+      "any price is justified."
+    ],
+    [
+      438.395,
+      439.137,
+      "It isn't."
+    ],
+    [
+      439.137,
+      445.317,
+      "The Nifty India Defence index has traded around fifty-seven times earnings,"
+    ],
+    [
+      445.317,
+      449.685,
+      "richer than its own three-year median near fifty-two."
+    ],
+    [
+      449.685,
+      454.959,
+      "Even a wonderful theme becomes a poor investment if you overpay."
+    ],
+    [
+      454.959,
+      457.019,
+      "Valuation always matters."
+    ],
+    [
+      457.019,
+      458.337,
+      "The third trap —"
+    ],
+    [
+      458.337,
+      462.21,
+      "assuming strong profit means a healthy company."
+    ],
+    [
+      462.21,
+      466.248,
+      "In this sector, long project cycles lock up cash,"
+    ],
+    [
+      466.248,
+      471.44,
+      "so weak cash flow can hide behind healthy-looking paper profit."
+    ],
+    [
+      471.44,
+      473.252,
+      "Always check the cash."
+    ],
+    [
+      473.252,
+      477.537,
+      "Love the theme, but respect the price and the cash —"
+    ],
+    [
+      477.537,
+      480.092,
+      "that is how you win in defence."
+    ],
+    [
+      480.592,
+      483.324,
+      "The defence sector, gathered up."
+    ],
+    [
+      483.324,
+      487.508,
+      "It's a genuine structural theme — record budgets,"
+    ],
+    [
+      487.508,
+      488.789,
+      "indigenisation,"
+    ],
+    [
+      488.789,
+      492.973,
+      "and rising exports give it a multi-year tailwind."
+    ],
+    [
+      492.973,
+      497.072,
+      "Analyse it with its own metrics: the order book,"
+    ],
+    [
+      497.072,
+      501.597,
+      "the book-to-bill visibility, execution ability, and —"
+    ],
+    [
+      501.597,
+      506.294,
+      "crucially — cash flow, since long cycles lock up money."
+    ],
+    [
+      506.294,
+      509.111,
+      "On the chart it's a concentrated,"
+    ],
+    [
+      509.111,
+      514.149,
+      "momentum-and-event-driven sector, so beware chasing spikes."
+    ],
+    [
+      514.149,
+      515.174,
+      "In strategy,"
+    ],
+    [
+      515.174,
+      520.468,
+      "hold the order-book compounders and buy dips rather than hype,"
+    ],
+    [
+      520.468,
+      525.506,
+      "because the one real danger is overpaying after a huge run."
+    ],
+    [
+      525.506,
+      528.836,
+      "Finally, our third sector — technology."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sx/def.wav",
+      "volume": 1.0
+    }
+  }
+}

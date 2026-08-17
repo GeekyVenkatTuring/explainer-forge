@@ -1,0 +1,98 @@
+{
+ "ticker": "APARINDS",
+ "scraped_at": "2026-08-14T15:28:23",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 67010.0,
+ "current_price": 16676.0,
+ "pe": 55.6,
+ "book_value": 1343.0,
+ "dividend_yield_pct": 0.3,
+ "roce_pct": 31.1,
+ "roe_pct": 20.2,
+ "face_value": 10.0,
+ "high": 18465.0,
+ "sales_growth": {
+  "10 Years": 24.0,
+  "5 Years": 44.0,
+  "3 Years": 16.0,
+  "TTM": 37.0
+ },
+ "profit_growth": {
+  "10 Years": 41.0,
+  "5 Years": 94.0,
+  "3 Years": 61.0,
+  "1 Year": 101.0
+ },
+ "roe_hist": {
+  "Equity Capital": 38.0,
+  "Reserves": 691.0,
+  "Borrowings&nbsp; +": 494.0,
+  "Fixed Assets&nbsp; +": 395.0,
+  "CWIP": 10.0,
+  "Investments": 5.0
+ },
+ "price_cagr": {
+  "10 Years": 20.0,
+  "5 Years": 22.0,
+  "3 Years": 22.0,
+  "Last Year": 20.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "9%",
+   "9%",
+   "10%",
+   "10%",
+   "9%",
+   "8%",
+   "8%",
+   "9%",
+   "9%",
+   "8%",
+   "8%",
+   "8%",
+   "11%"
+  ],
+  "eps": [
+   "51.59",
+   "45.44",
+   "54.16",
+   "58.81",
+   "50.42",
+   "48.27",
+   "43.55",
+   "62.24",
+   "65.45",
+   "62.66",
+   "52.01",
+   "63.09",
+   "116.36"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 24.8%"
+ ],
+ "cons": [
+  "Stock is trading at 12.5 times its book value",
+  "Company&#x27;s cost of borrowing seems high"
+ ]
+}

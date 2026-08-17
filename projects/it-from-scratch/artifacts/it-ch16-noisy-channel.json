@@ -1,0 +1,349 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch16-noisy-channel_div",
+   "type": "it_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 21.628,
+   "props": {
+    "n": 5,
+    "title": "Noisy Channels",
+    "sub": "talking clearly through a broken wire",
+    "color": "#22D3EE",
+    "dur": 22.128
+   }
+  },
+  {
+   "id": "it-ch16-noisy-channel_channel",
+   "type": "it_channel",
+   "in_seconds": 22.128,
+   "out_seconds": 123.248,
+   "props": {
+    "dur": 101.62
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.799,
+   "Part five."
+  ],
+  [
+   0.799,
+   1.597,
+   "Noisy channels."
+  ],
+  [
+   2.229,
+   5.423,
+   "Everything so far assumed our bits arrive exactly"
+  ],
+  [
+   5.423,
+   7.021,
+   "as they were sent."
+  ],
+  [
+   7.021,
+   10.215,
+   "But the real world is not so tidy."
+  ],
+  [
+   10.215,
+   11.014,
+   "Wires crackle."
+  ],
+  [
+   11.014,
+   11.812,
+   "Signals fade."
+  ],
+  [
+   11.812,
+   13.41,
+   "Bits flip in transit."
+  ],
+  [
+   14.041,
+   17.236,
+   "This is where Shannon reached his most astonishing"
+  ],
+  [
+   17.236,
+   20.43,
+   "result of all \u2014 and rewrote what engineers"
+  ],
+  [
+   20.43,
+   21.628,
+   "believed was possible."
+  ],
+  [
+   22.128,
+   24.117,
+   "Every real communication channel is noisy."
+  ],
+  [
+   24.117,
+   25.111,
+   "A radio link,"
+  ],
+  [
+   25.111,
+   26.106,
+   "a phone line,"
+  ],
+  [
+   26.106,
+   27.763,
+   "a scratch on a DVD,"
+  ],
+  [
+   27.763,
+   29.752,
+   "a fading signal from a spacecraft."
+  ],
+  [
+   30.384,
+   33.036,
+   "To reason about all of them at once,"
+  ],
+  [
+   33.036,
+   35.687,
+   "we strip the idea down to its bones"
+  ],
+  [
+   35.687,
+   38.339,
+   "\u2014 the simplest model of noise there is,"
+  ],
+  [
+   38.339,
+   39.665,
+   "the binary symmetric channel."
+  ],
+  [
+   40.297,
+   41.954,
+   "Here is how it works."
+  ],
+  [
+   41.954,
+   43.943,
+   "You send a single bit in."
+  ],
+  [
+   43.943,
+   45.269,
+   "Most of the time,"
+  ],
+  [
+   45.269,
+   47.589,
+   "it comes out the other side unchanged."
+  ],
+  [
+   47.589,
+   49.247,
+   "But with some fixed probability,"
+  ],
+  [
+   49.247,
+   50.573,
+   "the noise flips it."
+  ],
+  [
+   50.573,
+   52.562,
+   "A zero arrives as a one."
+  ],
+  [
+   52.562,
+   54.551,
+   "A one arrives as a zero."
+  ],
+  [
+   55.182,
+   56.177,
+   "Watch the stream."
+  ],
+  [
+   56.177,
+   57.171,
+   "On the left,"
+  ],
+  [
+   57.171,
+   58.497,
+   "the sender pushes clean,"
+  ],
+  [
+   58.497,
+   60.154,
+   "deliberate bits into the channel."
+  ],
+  [
+   60.786,
+   61.117,
+   "Inside,"
+  ],
+  [
+   61.117,
+   62.443,
+   "noise strikes at random,"
+  ],
+  [
+   62.443,
+   65.095,
+   "sparking here and there with no pattern you"
+  ],
+  [
+   65.095,
+   65.758,
+   "can predict."
+  ],
+  [
+   66.39,
+   67.716,
+   "And on the right,"
+  ],
+  [
+   67.716,
+   69.705,
+   "the receiver reads out whatever survived."
+  ],
+  [
+   69.705,
+   72.357,
+   "A few of those bits are now wrong"
+  ],
+  [
+   72.357,
+   74.345,
+   "\u2014 flipped \u2014 marked in red."
+  ],
+  [
+   74.977,
+   77.297,
+   "Now here is the genuinely cruel part,"
+  ],
+  [
+   77.297,
+   79.286,
+   "the thing that makes this hard."
+  ],
+  [
+   79.286,
+   81.938,
+   "The receiver has no way of knowing which"
+  ],
+  [
+   81.938,
+   82.601,
+   "bits flipped."
+  ],
+  [
+   83.233,
+   85.885,
+   "A received one looks utterly identical whether it"
+  ],
+  [
+   85.885,
+   87.542,
+   "was sent as a one,"
+  ],
+  [
+   87.542,
+   90.194,
+   "or sent as a zero and corrupted along"
+  ],
+  [
+   90.194,
+   90.857,
+   "the way."
+  ],
+  [
+   90.857,
+   92.183,
+   "The damage is invisible."
+  ],
+  [
+   92.814,
+   94.472,
+   "So it looks completely hopeless."
+  ],
+  [
+   94.472,
+   96.792,
+   "If any bit can silently betray you,"
+  ],
+  [
+   96.792,
+   98.781,
+   "and you can never tell which,"
+  ],
+  [
+   98.781,
+   101.433,
+   "how could you ever communicate reliably at all?"
+  ],
+  [
+   102.064,
+   102.727,
+   "For years,"
+  ],
+  [
+   102.727,
+   105.048,
+   "the smartest engineers believed you simply\ncouldn't."
+  ],
+  [
+   105.048,
+   107.7,
+   "They were convinced that noise imposed a permanent"
+  ],
+  [
+   107.7,
+   109.689,
+   "ceiling \u2014 that to cut errors,"
+  ],
+  [
+   109.689,
+   112.34,
+   "you had to slow down toward a crawl,"
+  ],
+  [
+   112.34,
+   114.992,
+   "and even then a little noise always leaked"
+  ],
+  [
+   114.992,
+   115.324,
+   "through."
+  ],
+  [
+   115.955,
+   118.276,
+   "Shannon proved every one of them wrong."
+  ],
+  [
+   118.276,
+   120.928,
+   "And the way he did it is the"
+  ],
+  [
+   120.928,
+   123.248,
+   "most beautiful surprise in the whole subject."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch16-noisy-channel.wav",
+   "volume": 1.0
+  }
+ }
+}

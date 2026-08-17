@@ -1,0 +1,841 @@
+{
+  "cuts": [
+    {
+      "id": "v6_title",
+      "type": "au_title",
+      "in_seconds": 0.0,
+      "out_seconds": 26.646,
+      "props": {
+        "kicker": "AUTO & AUTO-COMPONENTS \u00b7 PART 6 OF 6",
+        "title": "Indian Auto Stocks\nElectricals & the Aftermarket",
+        "sub": "23 companies \u00b7 wiring \u00b7 lighting \u00b7 cables \u00b7 dealers \u00b7 P/E \u00b7 moat",
+        "dur": 27.146
+      }
+    },
+    {
+      "id": "l_d1",
+      "type": "au_divider",
+      "in_seconds": 27.146,
+      "out_seconds": 40.056,
+      "props": {
+        "part": "PART ONE",
+        "title": "Wiring, Lighting & Electronics",
+        "sub": "The vehicle's nervous system",
+        "color": "#38BDF8",
+        "pips": 3,
+        "at": 1,
+        "dur": 13.41
+      }
+    },
+    {
+      "id": "l01_motherson",
+      "type": "au_company",
+      "in_seconds": 40.556,
+      "out_seconds": 72.176,
+      "props": {
+        "idx": "01 / 23",
+        "kicker": "WIRING \u00b7 LIGHTING",
+        "name": "Samvardhana Motherson",
+        "ticker": "MOTHERSON",
+        "price": "\u20b9168",
+        "pe": "38.9\u00d7",
+        "seg": "Global mega-supplier",
+        "biz": [
+          "One of the world's largest, most diversified parts groups",
+          "Wiring, mirrors, modules and lighting",
+          "Operates across dozens of countries"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 35244
+          },
+          "pat": {
+            "to": 1076
+          },
+          "note": "A truly global business, expanding beyond autos too."
+        },
+        "moat": "A global, diversified mega-supplier with scale and deep OEM integration \u2014 one of the sector's widest moats.",
+        "moatStrength": "WIDE",
+        "dur": 32.12
+      }
+    },
+    {
+      "id": "l02_msumi",
+      "type": "au_company",
+      "in_seconds": 72.676,
+      "out_seconds": 102.491,
+      "props": {
+        "idx": "02 / 23",
+        "kicker": "WIRING \u00b7 LIGHTING",
+        "name": "Motherson Sumi Wiring",
+        "ticker": "MSUMI",
+        "price": "\u20b941.2",
+        "pe": "43.5\u00d7",
+        "seg": "Wiring harnesses",
+        "biz": [
+          "India's wiring-harness leader \u2014 over 40% share",
+          "A Sumitomo and Motherson joint venture",
+          "Focused purely on the domestic harness market"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 3407
+          },
+          "pat": {
+            "to": 145
+          },
+          "note": "EVs need far more wiring \u2014 a direct tailwind."
+        },
+        "moat": "India's dominant wiring-harness maker at 40%-plus share \u2014 and EVs use much more wiring, not less.",
+        "moatStrength": "WIDE",
+        "dur": 30.315
+      }
+    },
+    {
+      "id": "l03_unominda",
+      "type": "au_company",
+      "in_seconds": 102.991,
+      "out_seconds": 132.717,
+      "props": {
+        "idx": "03 / 23",
+        "kicker": "WIRING \u00b7 LIGHTING",
+        "name": "UNO Minda",
+        "ticker": "UNOMINDA",
+        "price": "\u20b91,285",
+        "pe": "60.7\u00d7",
+        "seg": "Diversified electricals",
+        "biz": [
+          "Switches, lighting, horns, acoustics and alloy wheels",
+          "Sensors and EV components",
+          "A diversified tier-1 for every vehicle type"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 5557
+          },
+          "pat": {
+            "to": 316
+          },
+          "note": "Rising content per vehicle and a strong EV portfolio."
+        },
+        "moat": "A broad, fast-growing electricals platform with rising content per vehicle and real EV products \u2014 a wide moat.",
+        "moatStrength": "WIDE",
+        "dur": 30.226
+      }
+    },
+    {
+      "id": "l04_mindacorp",
+      "type": "au_company",
+      "in_seconds": 133.217,
+      "out_seconds": 160.679,
+      "props": {
+        "idx": "04 / 23",
+        "kicker": "WIRING \u00b7 LIGHTING",
+        "name": "Minda Corporation",
+        "ticker": "MINDACORP",
+        "price": "\u20b9722",
+        "pe": "48.5\u00d7",
+        "seg": "Security & electricals",
+        "biz": [
+          "Spark Minda group \u2014 security and access systems",
+          "Wiring harnesses, clusters and die-casting",
+          "For two-wheelers, cars and commercial vehicles"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1704
+          },
+          "pat": {
+            "to": 124
+          },
+          "note": "A distinct Minda group from UNO Minda \u2014 don't confuse the two."
+        },
+        "moat": "A diversified tier-1 in locks, wiring and clusters \u2014 solid, but a step behind UNO Minda in scale and multiple.",
+        "moatStrength": "NARROW",
+        "dur": 27.962
+      }
+    },
+    {
+      "id": "l05_lumaxind",
+      "type": "au_company",
+      "in_seconds": 161.179,
+      "out_seconds": 189.934,
+      "props": {
+        "idx": "05 / 23",
+        "kicker": "WIRING \u00b7 LIGHTING",
+        "name": "Lumax Industries",
+        "ticker": "LUMAXIND",
+        "price": "\u20b95,792",
+        "pe": "26.9\u00d7",
+        "seg": "Auto lighting",
+        "biz": [
+          "A leading maker of automotive lighting",
+          "Head lamps, tail lamps and LED lighting",
+          "In collaboration with Stanley Electric of Japan"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1223
+          },
+          "pat": {
+            "to": 51,
+            "yoy": "+41%",
+            "up": true
+          },
+          "note": "LED lighting is lifting both revenue and margins."
+        },
+        "moat": "A lighting leader with Japanese technology (Stanley) \u2014 LED and premium lighting keep raising its content.",
+        "moatStrength": "WIDE",
+        "dur": 29.255
+      }
+    },
+    {
+      "id": "l06_lumaxtech",
+      "type": "au_company",
+      "in_seconds": 190.434,
+      "out_seconds": 218.693,
+      "props": {
+        "idx": "06 / 23",
+        "kicker": "WIRING \u00b7 LIGHTING",
+        "name": "Lumax Auto Technologies",
+        "ticker": "LUMAXTECH",
+        "price": "\u20b91,722",
+        "pe": "41.4\u00d7",
+        "seg": "Diversified parts",
+        "biz": [
+          "Gear-shifters, structural parts and modules",
+          "Chassis, seat frames and aftermarket products",
+          "Serves two- and four-wheeler OEMs"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q4 FY26 (Mar-26)",
+          "rev": {
+            "to": 1417
+          },
+          "pat": {
+            "to": 98
+          },
+          "note": "The broader parts arm of the Lumax group."
+        },
+        "moat": "The diversified parts arm of the Lumax group \u2014 a good spread of products, but no single dominant one.",
+        "moatStrength": "NARROW",
+        "dur": 28.759
+      }
+    },
+    {
+      "id": "l07_varroc",
+      "type": "au_company",
+      "in_seconds": 219.193,
+      "out_seconds": 249.842,
+      "props": {
+        "idx": "07 / 23",
+        "kicker": "WIRING \u00b7 LIGHTING",
+        "name": "Varroc Engineering",
+        "ticker": "VARROC",
+        "price": "\u20b9811",
+        "pe": "43.4\u00d7",
+        "seg": "2W electricals",
+        "biz": [
+          "Automotive lighting, electricals and electronics",
+          "Metallic and polymer components",
+          "Mainly for two- and three-wheelers"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 2634
+          },
+          "pat": {
+            "to": 78
+          },
+          "note": "Revenue up ~30% after a turnaround and de-leveraging."
+        },
+        "moat": "A recovering 2W lighting-and-electricals maker \u2014 improving, but margins still trail the sector leaders.",
+        "moatStrength": "NARROW",
+        "dur": 31.149
+      }
+    },
+    {
+      "id": "l08_fiem",
+      "type": "au_company",
+      "in_seconds": 250.342,
+      "out_seconds": 279.936,
+      "props": {
+        "idx": "08 / 23",
+        "kicker": "WIRING \u00b7 LIGHTING",
+        "name": "Fiem Industries",
+        "ticker": "FIEMIND",
+        "price": "\u20b92,580",
+        "pe": "26.7\u00d7",
+        "seg": "2W LED lighting",
+        "biz": [
+          "Automotive lighting and signalling",
+          "LED lamps and mirrors for two-wheelers",
+          "Also LED luminaires for general lighting"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q4 FY26 (Mar-26)",
+          "rev": {
+            "to": 751
+          },
+          "pat": {
+            "to": 71
+          },
+          "note": "A key LED-lighting supplier to Honda and TVS."
+        },
+        "moat": "A leading 2W LED-lighting supplier to big OEMs like Honda and TVS \u2014 an EV-agnostic, growing niche.",
+        "moatStrength": "WIDE",
+        "dur": 30.094
+      }
+    },
+    {
+      "id": "k_d2",
+      "type": "au_divider",
+      "in_seconds": 280.436,
+      "out_seconds": 290.95,
+      "props": {
+        "part": "PART TWO",
+        "title": "Cables, Locks & Steering",
+        "sub": "The mechanical bits \u2014 and the Rane group",
+        "color": "#34D399",
+        "pips": 3,
+        "at": 2,
+        "dur": 11.014
+      }
+    },
+    {
+      "id": "k09_suprajit",
+      "type": "au_company",
+      "in_seconds": 291.45,
+      "out_seconds": 320.287,
+      "props": {
+        "idx": "09 / 23",
+        "kicker": "CABLES \u00b7 LOCKS",
+        "name": "Suprajit Engineering",
+        "ticker": "SUPRAJIT",
+        "price": "\u20b9522",
+        "pe": "38.1\u00d7",
+        "seg": "Control cables",
+        "biz": [
+          "The world's largest maker of automotive control cables",
+          "Plus halogen bulbs and speedometers",
+          "Supplies OEMs and the aftermarket globally"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1070
+          },
+          "pat": {
+            "to": 52
+          },
+          "note": "Global cable leadership, expanding via acquisitions."
+        },
+        "moat": "The world's largest control-cable maker \u2014 global scale and cost leadership in a humble but essential part.",
+        "moatStrength": "WIDE",
+        "dur": 29.337
+      }
+    },
+    {
+      "id": "k10_sandhar",
+      "type": "au_company",
+      "in_seconds": 320.787,
+      "out_seconds": 348.461,
+      "props": {
+        "idx": "10 / 23",
+        "kicker": "CABLES \u00b7 LOCKS",
+        "name": "Sandhar Technologies",
+        "ticker": "SANDHAR",
+        "price": "\u20b9667",
+        "pe": "20.0\u00d7",
+        "seg": "Locks & mirrors",
+        "biz": [
+          "Locking systems, mirrors and die-cast parts",
+          "Sheet-metal components and cabins",
+          "Many joint ventures with global partners"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q1 FY26 (Jun-25)",
+          "rev": {
+            "to": 1090
+          },
+          "pat": {
+            "to": 28
+          },
+          "note": "Diversified via JVs, but margins are on the thinner side."
+        },
+        "moat": "A diversified locks-and-mirrors maker with many global JVs \u2014 broad, but modest margins.",
+        "moatStrength": "NARROW",
+        "dur": 28.174
+      }
+    },
+    {
+      "id": "k11_remsons",
+      "type": "au_company",
+      "in_seconds": 348.961,
+      "out_seconds": 375.399,
+      "props": {
+        "idx": "11 / 23",
+        "kicker": "CABLES \u00b7 LOCKS",
+        "name": "Remsons Industries",
+        "ticker": "REMSONSIND",
+        "price": "\u20b990.2",
+        "pe": "16.9\u00d7",
+        "seg": "Cables & shifters",
+        "biz": [
+          "Control cables and gear-shift systems",
+          "Mechanical and electronic components",
+          "For two-, three- and four-wheelers"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q1 FY26 (Jun-25)",
+          "rev": {
+            "to": 100
+          },
+          "pat": {
+            "to": 5
+          },
+          "note": "A small cable maker competing with the much larger Suprajit."
+        },
+        "moat": "A small cables-and-shifters maker \u2014 a real niche, but dwarfed by Suprajit and short on scale.",
+        "moatStrength": "WEAK",
+        "dur": 26.938
+      }
+    },
+    {
+      "id": "k12_pavna",
+      "type": "au_company",
+      "in_seconds": 375.899,
+      "out_seconds": 401.177,
+      "props": {
+        "idx": "12 / 23",
+        "kicker": "CABLES \u00b7 LOCKS",
+        "name": "Pavna Industries",
+        "ticker": "PAVNAIND",
+        "price": "\u20b918.3",
+        "pe": "41.9\u00d7",
+        "seg": "Locks & switches",
+        "biz": [
+          "Ignition switches, lock kits and handlebars",
+          "Switches for two- and three-wheelers",
+          "Security and electrical control parts"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 54
+          },
+          "pat": {
+            "to": 2
+          },
+          "note": "A micro-cap supplier of locks and switches."
+        },
+        "moat": "A micro-cap lock-and-switch maker \u2014 a small niche with limited scale or differentiation.",
+        "moatStrength": "WEAK",
+        "dur": 25.778
+      }
+    },
+    {
+      "id": "k13_ppap",
+      "type": "au_company",
+      "in_seconds": 401.677,
+      "out_seconds": 431.586,
+      "props": {
+        "idx": "13 / 23",
+        "kicker": "CABLES \u00b7 LOCKS",
+        "name": "PPAP Automotive",
+        "ticker": "PPAP",
+        "price": "\u20b9321",
+        "pe": "112\u00d7",
+        "seg": "Sealing & plastics",
+        "biz": [
+          "Automotive sealing systems and weatherstrips",
+          "Injection-moulded interior and exterior plastics",
+          "With Japanese technical partners"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 156
+          },
+          "note": "Revenue up ~34%, but barely profitable \u2014 hence a huge P/E."
+        },
+        "moat": "A sealing-and-plastics maker with Japanese tech \u2014 a decent niche, but thin profits and an extreme valuation.",
+        "moatStrength": "WEAK",
+        "dur": 30.409
+      }
+    },
+    {
+      "id": "k14_ranemadras",
+      "type": "au_company",
+      "in_seconds": 432.086,
+      "out_seconds": 462.993,
+      "props": {
+        "idx": "14 / 23",
+        "kicker": "CABLES \u00b7 LOCKS",
+        "name": "Rane (Madras)",
+        "ticker": "RML",
+        "price": "\u20b91,054",
+        "pe": "24.1\u00d7",
+        "seg": "Steering & suspension",
+        "biz": [
+          "Steering and suspension systems",
+          "Ball joints, linkages and die-casting",
+          "Just bought Hindustan Composites' friction business"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1042
+          },
+          "pat": {
+            "to": 30
+          },
+          "note": "Buying the friction business we saw in Part 4 expands its range."
+        },
+        "moat": "A quality Rane-group steering and suspension maker, now adding friction \u2014 a steady, well-run compounder.",
+        "moatStrength": "NARROW",
+        "dur": 31.407
+      }
+    },
+    {
+      "id": "k15_raneholdings",
+      "type": "au_company",
+      "in_seconds": 463.493,
+      "out_seconds": 492.02,
+      "props": {
+        "idx": "15 / 23",
+        "kicker": "CABLES \u00b7 LOCKS",
+        "name": "Rane Holdings",
+        "ticker": "RANEHOLDIN",
+        "price": "\u20b91,766",
+        "pe": "31.9\u00d7",
+        "seg": "Rane group holdco",
+        "biz": [
+          "The holding company of the Rane group",
+          "Steering, seatbelts, friction and engine valves",
+          "Through its listed and JV companies"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q4 FY26 (Mar-26)",
+          "rev": {
+            "to": 1609
+          },
+          "pat": {
+            "to": 88
+          },
+          "note": "A way to own the whole Rane group in one stock."
+        },
+        "moat": "The parent that owns a portfolio of solid Rane businesses \u2014 quality management, but a holding-company discount.",
+        "moatStrength": "NARROW",
+        "dur": 29.027
+      }
+    },
+    {
+      "id": "m_d3",
+      "type": "au_divider",
+      "in_seconds": 492.52,
+      "out_seconds": 503.613,
+      "props": {
+        "part": "PART THREE",
+        "title": "Dealers & Distribution",
+        "sub": "Selling and servicing it all",
+        "color": "#FBBF24",
+        "pips": 3,
+        "at": 3,
+        "dur": 11.593
+      }
+    },
+    {
+      "id": "m16_impal",
+      "type": "au_company",
+      "in_seconds": 504.113,
+      "out_seconds": 534.21,
+      "props": {
+        "idx": "16 / 23",
+        "kicker": "DEALERS \u00b7 DISTRIBUTION",
+        "name": "India Motor Parts (IMPAL)",
+        "ticker": "IMPAL",
+        "price": "\u20b91,098",
+        "pe": "17.5\u00d7",
+        "seg": "Parts distribution",
+        "biz": [
+          "A TVS-group spare-parts distributor",
+          "One of India's largest aftermarket networks",
+          "Distributes a wide range of components"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 234
+          },
+          "pat": {
+            "to": 22
+          },
+          "note": "Cash-rich and cheap \u2014 a quiet, steady distributor."
+        },
+        "moat": "A large, trusted aftermarket distribution network in the TVS group \u2014 cash-rich, steady and cheaply valued.",
+        "moatStrength": "NARROW",
+        "dur": 30.597
+      }
+    },
+    {
+      "id": "m17_landmark",
+      "type": "au_company",
+      "in_seconds": 534.71,
+      "out_seconds": 564.491,
+      "props": {
+        "idx": "17 / 23",
+        "kicker": "DEALERS \u00b7 DISTRIBUTION",
+        "name": "Landmark Cars",
+        "ticker": "LANDMARK",
+        "price": "\u20b9535",
+        "pe": "56.8\u00d7",
+        "seg": "Luxury dealership",
+        "biz": [
+          "A leading premium and luxury car dealership",
+          "Mercedes, Honda, Jeep, VW, Renault and BYD",
+          "New sales, service, spares and pre-owned cars"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q1 FY26 (Jun-25)",
+          "rev": {
+            "to": 1062
+          },
+          "pat": {
+            "to": 7
+          },
+          "note": "Big revenue, but razor-thin dealership margins."
+        },
+        "moat": "A leading luxury-car dealer \u2014 but dealerships are low-margin, capital-heavy and depend on carmakers.",
+        "moatStrength": "NARROW",
+        "dur": 30.281
+      }
+    },
+    {
+      "id": "m18_jma",
+      "type": "au_company",
+      "in_seconds": 564.991,
+      "out_seconds": 593.189,
+      "props": {
+        "idx": "18 / 23",
+        "kicker": "DEALERS \u00b7 DISTRIBUTION",
+        "name": "Jullundur Motor Agency",
+        "ticker": "JMA",
+        "price": "\u20b988.4",
+        "pe": "6.80\u00d7",
+        "seg": "Parts trading",
+        "biz": [
+          "A long-established parts and accessories distributor",
+          "Batteries, lubricants and petroleum products",
+          "Trading and distribution across India"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q4 FY26 (Mar-26)",
+          "rev": {
+            "to": 622
+          },
+          "pat": {
+            "to": 30
+          },
+          "note": "Very cheap \u2014 trades below book value, with lean debt."
+        },
+        "moat": "A long-standing parts distributor \u2014 thin-margin trading, but strikingly cheap, below book value.",
+        "moatStrength": "NARROW",
+        "dur": 28.698
+      }
+    },
+    {
+      "id": "m19_kalyanicom",
+      "type": "au_company",
+      "in_seconds": 593.689,
+      "out_seconds": 619.735,
+      "props": {
+        "idx": "19 / 23",
+        "kicker": "DEALERS \u00b7 DISTRIBUTION",
+        "name": "Kalyani Commercials",
+        "ticker": "KALYANI",
+        "price": "\u20b9138",
+        "pe": "5.71\u00d7",
+        "seg": "Vehicle dealership",
+        "biz": [
+          "A commercial-vehicle and tractor dealership",
+          "Deals in vehicles, spares and services",
+          "A small-cap trading and distribution business"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 FY25",
+          "rev": {
+            "to": 229
+          },
+          "pat": {
+            "to": 2
+          },
+          "note": "Thinly traded, small dealership; data is dated \u2014 verify."
+        },
+        "moat": "A tiny CV/tractor dealership \u2014 low-margin trading with little scale; the cheap P/E reflects the small size.",
+        "moatStrength": "WEAK",
+        "dur": 26.546
+      }
+    },
+    {
+      "id": "m20_majestic",
+      "type": "au_company",
+      "in_seconds": 620.235,
+      "out_seconds": 647.015,
+      "props": {
+        "idx": "20 / 23",
+        "kicker": "DEALERS \u00b7 DISTRIBUTION",
+        "name": "Majestic Auto",
+        "ticker": "MAJESAUT",
+        "price": "\u20b9492",
+        "pe": "22.8\u00d7",
+        "seg": "Investments",
+        "biz": [
+          "Historically a moped and components maker",
+          "Part of the Hero (Munjal) group legacy",
+          "Now largely an investment company"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 15
+          },
+          "pat": {
+            "to": 14
+          },
+          "note": "Profit exceeds sales \u2014 earnings now come from investments, not operations."
+        },
+        "moat": "No operating moat \u2014 its profit comes from investments, not from making anything. An asset story.",
+        "moatStrength": "WEAK",
+        "dur": 27.28
+      }
+    },
+    {
+      "id": "m21_autoline",
+      "type": "au_company",
+      "in_seconds": 647.515,
+      "out_seconds": 673.712,
+      "props": {
+        "idx": "21 / 23",
+        "kicker": "DEALERS \u00b7 DISTRIBUTION",
+        "name": "Autoline Industries",
+        "ticker": "AUTOIND",
+        "price": "\u20b993.8",
+        "pe": "21.6\u00d7",
+        "seg": "Sheet metal",
+        "biz": [
+          "Sheet-metal components and pressed parts",
+          "Sub-assemblies and pedal-box assemblies",
+          "A tier-1 supplier to CV and PV makers"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q1 FY26 (Jun-25)",
+          "rev": {
+            "to": 152
+          },
+          "pat": {
+            "to": 1
+          },
+          "note": "A small stamper with wafer-thin, volatile profits."
+        },
+        "moat": "A small sheet-metal supplier \u2014 commoditised pressings with thin, volatile margins and little pricing power.",
+        "moatStrength": "WEAK",
+        "dur": 26.697
+      }
+    },
+    {
+      "id": "m22_omax",
+      "type": "au_company",
+      "in_seconds": 674.212,
+      "out_seconds": 698.858,
+      "props": {
+        "idx": "22 / 23",
+        "kicker": "DEALERS \u00b7 DISTRIBUTION",
+        "name": "Omax Autos",
+        "ticker": "OMAXAUTO",
+        "price": "\u20b9183",
+        "pe": "N/A",
+        "seg": "Sheet metal",
+        "biz": [
+          "Sheet-metal, tubular and machined components",
+          "For two-wheelers and commercial vehicles",
+          "Also supplies railways"
+        ],
+        "fin": {
+          "pending": true,
+          "qlabel": "Recent results modest / near breakeven",
+          "note": "A restructured sheet-metal maker that has struggled to earn consistently."
+        },
+        "moat": "A restructured sheet-metal supplier that has struggled for years \u2014 little in the way of a durable edge.",
+        "moatStrength": "WEAK",
+        "dur": 25.146
+      }
+    },
+    {
+      "id": "m23_jbm",
+      "type": "au_company",
+      "in_seconds": 699.358,
+      "out_seconds": 731.61,
+      "props": {
+        "idx": "23 / 23",
+        "kicker": "DEALERS \u00b7 DISTRIBUTION",
+        "name": "JBM Auto",
+        "ticker": "JBMA",
+        "price": "\u20b9649",
+        "pe": "66.7\u00d7",
+        "seg": "Sheet metal + e-buses",
+        "biz": [
+          "Sheet-metal components, tools and dies",
+          "A fast-growing electric-bus business (Ecolife)",
+          "E-buses and charging solutions"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1442
+          },
+          "pat": {
+            "to": 44
+          },
+          "note": "An e-bus market leader with 30-35% share \u2014 hence the rich P/E."
+        },
+        "moat": "A traditional parts maker turned e-bus leader (30-35% share) \u2014 real EV momentum, but leveraged and richly priced.",
+        "moatStrength": "EMERGING",
+        "dur": 32.752
+      }
+    },
+    {
+      "id": "v6_recap",
+      "type": "au_recap",
+      "in_seconds": 732.11,
+      "out_seconds": 788.892,
+      "props": {
+        "title": "Electricals & Aftermarket \u2014 and the whole sector",
+        "color": "#38BDF8",
+        "items": [
+          "Motherson, UNO Minda, Suprajit: global-scale champions",
+          "Wiring & lighting GAIN from EVs \u2014 content per vehicle rises",
+          "The Rane group: quiet, quality compounders",
+          "Dealers & distributors are cheap but thin-margin",
+          "Across 125 companies, moats ranged from wide to none",
+          "EV-agnostic winners: wiring, lighting, bearings, fasteners",
+          "Always match the price you pay to the moat you get"
+        ],
+        "closer": "Six parts, 125 companies \u2014 now you can read the whole Indian auto sector. Thanks for watching.",
+        "dur": 57.282
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "au/narration6.wav",
+      "volume": 1.0
+    }
+  }
+}

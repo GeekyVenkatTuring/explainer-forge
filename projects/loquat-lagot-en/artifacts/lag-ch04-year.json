@@ -1,0 +1,821 @@
+{
+ "cuts": [
+  {
+   "id": "lag-ch04-year_div",
+   "type": "lag_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 13.652,
+   "props": {
+    "n": 4,
+    "title": "The farm year",
+    "sub": "one crop, one short window",
+    "color": "#F4A261",
+    "dur": 14.152
+   }
+  },
+  {
+   "id": "lag-ch04-year_cal",
+   "type": "lag_cal",
+   "in_seconds": 14.152,
+   "out_seconds": 55.638,
+   "props": {
+    "kicker": "TWELVE MONTHS",
+    "title": "Monsoon plant. Spring harvest. May prune.",
+    "foot": "The money weeks are few. Everything else is setup.",
+    "bands": [
+     {
+      "label": "Plant / graft  June\u2013September",
+      "from": 0,
+      "to": 3,
+      "c": "leaf"
+     },
+     {
+      "label": "Useful flowering  Oct\u2013Feb",
+      "from": 4,
+      "to": 8,
+      "c": "cool"
+     },
+     {
+      "label": "Harvest  late March\u2013April",
+      "from": 9,
+      "to": 10,
+      "c": "fruit"
+     },
+     {
+      "label": "Light prune  end of May",
+      "from": 11,
+      "to": 11,
+      "c": "risk"
+     }
+    ],
+    "dur": 41.986
+   }
+  },
+  {
+   "id": "lag-ch04-year_plantwin",
+   "type": "lag_cards",
+   "in_seconds": 56.138,
+   "out_seconds": 90.76,
+   "props": {
+    "kicker": "PLANTING WINDOW",
+    "title": "June to September, pits already open",
+    "cols": 3,
+    "foot": "Rain helps. Waterlogging kills.",
+    "items": [
+     {
+      "label": "Pits first",
+      "sub": "Metre-class pits, filled with topsoil and F Y M, then plant.",
+      "c": "leaf"
+     },
+     {
+      "label": "Union high",
+      "sub": "Graft joint stays above ground. Always.",
+      "c": "risk"
+     },
+     {
+      "label": "Stake",
+      "sub": "Two stakes, not a hopeful bamboo. Wind is real.",
+      "c": "cool"
+     }
+    ],
+    "dur": 35.122
+   }
+  },
+  {
+   "id": "lag-ch04-year_flower",
+   "type": "lag_cards",
+   "in_seconds": 91.26,
+   "out_seconds": 129.866,
+   "props": {
+    "kicker": "FLOWER FLUSHES",
+    "title": "The second flush is the crop",
+    "cols": 2,
+    "foot": "Count clusters in winter, not leaves in August.",
+    "items": [
+     {
+      "label": "Flush one",
+      "sub": "Often sheds. Do not celebrate it as harvest.",
+      "c": "risk"
+     },
+     {
+      "label": "Flush two",
+      "sub": "October to February. This is the money bloom.",
+      "c": "fruit"
+     },
+     {
+      "label": "Flush three",
+      "sub": "Usually poor. Do not delay prune for it.",
+      "c": "cool"
+     },
+     {
+      "label": "Pollination",
+      "sub": "Mix cultivars. Bees. Do not plant a lonely clone block.",
+      "c": "leaf"
+     }
+    ],
+    "dur": 39.106
+   }
+  },
+  {
+   "id": "lag-ch04-year_harvestwin",
+   "type": "lag_cards",
+   "in_seconds": 130.366,
+   "out_seconds": 168.708,
+   "props": {
+    "kicker": "HARVEST WINDOW",
+    "title": "Three to five weeks, then it is gone",
+    "cols": 2,
+    "foot": "Labour in April is part of the crop, not an afterthought.",
+    "items": [
+     {
+      "label": "Early",
+      "sub": "Golden Yellow class. Third week of March in Punjab guides.",
+      "c": "fruit"
+     },
+     {
+      "label": "Mid",
+      "sub": "Fire Ball, Safeda, and similar lists in extension notes.",
+      "c": "leaf"
+     },
+     {
+      "label": "Late",
+      "sub": "California Advance, Tanaka. Stretch into late April.",
+      "c": "cool"
+     },
+     {
+      "label": "Clock",
+      "sub": "Ripe to buyer in days. No mango-style holding fantasy.",
+      "c": "risk"
+     }
+    ],
+    "dur": 38.842
+   }
+  },
+  {
+   "id": "lag-ch04-year_flushwhy",
+   "type": "lag_cards",
+   "in_seconds": 169.208,
+   "out_seconds": 198.694,
+   "props": {
+    "kicker": "WHY FLUSHES FAIL",
+    "title": "Do not worship the first blossom",
+    "cols": 3,
+    "foot": "The paying bloom is the one you water in winter.",
+    "items": [
+     {
+      "label": "Early shed",
+      "sub": "Normal. Not a tragedy.",
+      "c": "risk"
+     },
+     {
+      "label": "Autumn water",
+      "sub": "Sets the useful bloom.",
+      "c": "cool"
+     },
+     {
+      "label": "No urea panic",
+      "sub": "Nitrogen in the wrong month is leaves.",
+      "c": "leaf"
+     }
+    ],
+    "dur": 29.986
+   }
+  },
+  {
+   "id": "lag-ch04-year_labourcal",
+   "type": "lag_cal",
+   "in_seconds": 199.194,
+   "out_seconds": 231.296,
+   "props": {
+    "kicker": "LABOUR CALENDAR",
+    "title": "April is not optional overtime",
+    "foot": "Hire before colour, not after the first crate collapses.",
+    "bands": [
+     {
+      "label": "Plant labour  Jun\u2013Sep",
+      "from": 0,
+      "to": 3,
+      "c": "leaf"
+     },
+     {
+      "label": "Winter thin / watch  Nov\u2013Feb",
+      "from": 5,
+      "to": 8,
+      "c": "cool"
+     },
+     {
+      "label": "Harvest crew  Mar\u2013Apr",
+      "from": 9,
+      "to": 10,
+      "c": "fruit"
+     },
+     {
+      "label": "May prune crew",
+      "from": 11,
+      "to": 11,
+      "c": "risk"
+     }
+    ],
+    "dur": 32.602
+   }
+  },
+  {
+   "id": "lag-ch04-year_irrigcal",
+   "type": "lag_cards",
+   "in_seconds": 231.796,
+   "out_seconds": 263.202,
+   "props": {
+    "kicker": "WATER CALENDAR",
+    "title": "Wet at plant. Wet at swell. Dry feet in flood.",
+    "cols": 2,
+    "foot": "The dangerous week is fruit swell on sand in a dry April.",
+    "items": [
+     {
+      "label": "Establish",
+      "sub": "Frequent small drinks. Mulch.",
+      "c": "leaf"
+     },
+     {
+      "label": "Bloom winter",
+      "sub": "Do not drought the paying flush.",
+      "c": "cool"
+     },
+     {
+      "label": "Swell",
+      "sub": "Three to four pulses. Size lives here.",
+      "c": "fruit"
+     },
+     {
+      "label": "Monsoon",
+      "sub": "Drain. Do not add a flood.",
+      "c": "risk"
+     }
+    ],
+    "dur": 31.906
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.046,
+   "Part four."
+  ],
+  [
+   1.046,
+   2.092,
+   "The calendar."
+  ],
+  [
+   2.642,
+   6.826,
+   "Loquat is not a year-round fruit like sapota"
+  ],
+  [
+   6.826,
+   8.395,
+   "in the tropics."
+  ],
+  [
+   8.945,
+   11.56,
+   "You get one main harvest,"
+  ],
+  [
+   11.56,
+   13.652,
+   "and it is short."
+  ],
+  [
+   14.152,
+   17.021,
+   "Plant and graft in the monsoon,"
+  ],
+  [
+   17.021,
+   18.456,
+   "June to September."
+  ],
+  [
+   19.006,
+   22.832,
+   "Flowering can run from July thoughts through\nJanuary,"
+  ],
+  [
+   22.832,
+   25.701,
+   "but the useful flush is later."
+  ],
+  [
+   26.251,
+   28.642,
+   "The first flush often sheds."
+  ],
+  [
+   28.642,
+   30.555,
+   "The third is weak."
+  ],
+  [
+   30.555,
+   31.99,
+   "The second flush,"
+  ],
+  [
+   31.99,
+   33.903,
+   "around October to February,"
+  ],
+  [
+   33.903,
+   35.337,
+   "is the crop."
+  ],
+  [
+   35.887,
+   39.713,
+   "Fruit needs about two months on the tree"
+  ],
+  [
+   39.713,
+   40.67,
+   "after set,"
+  ],
+  [
+   40.67,
+   44.495,
+   "and about ninety days from bloom to ripe"
+  ],
+  [
+   44.495,
+   45.93,
+   "in many climates."
+  ],
+  [
+   46.48,
+   46.958,
+   "Harvest:"
+  ],
+  [
+   46.958,
+   49.349,
+   "end of March into April."
+  ],
+  [
+   49.349,
+   51.262,
+   "Then a May prune."
+  ],
+  [
+   51.812,
+   55.638,
+   "Miss that rhythm and you are decorating land."
+  ],
+  [
+   56.138,
+   57.485,
+   "Why monsoon planting?"
+  ],
+  [
+   58.035,
+   61.626,
+   "Young grafts need water without you living on"
+  ],
+  [
+   61.626,
+   63.87,
+   "the pump in week one."
+  ],
+  [
+   64.42,
+   68.012,
+   "June to September is the usual window in"
+  ],
+  [
+   68.012,
+   69.358,
+   "North Indian guides."
+  ],
+  [
+   69.908,
+   73.051,
+   "Pits should be ready before the rains,"
+  ],
+  [
+   73.051,
+   75.295,
+   "not scraped during a downpour."
+  ],
+  [
+   75.845,
+   79.436,
+   "Keep the graft union well above soil so"
+  ],
+  [
+   79.436,
+   83.028,
+   "it does not rot or root from the"
+  ],
+  [
+   83.028,
+   83.476,
+   "scion."
+  ],
+  [
+   84.026,
+   85.373,
+   "Stake every plant."
+  ],
+  [
+   85.373,
+   88.964,
+   "A spreading loquat in wind is a snapped"
+  ],
+  [
+   88.964,
+   90.76,
+   "union waiting to happen."
+  ],
+  [
+   91.26,
+   94.167,
+   "Flowering is the part farmers misread."
+  ],
+  [
+   94.717,
+   98.594,
+   "You will see blooms in more than one"
+  ],
+  [
+   98.594,
+   99.078,
+   "flush."
+  ],
+  [
+   99.078,
+   101.985,
+   "Most of the early ones drop."
+  ],
+  [
+   102.535,
+   106.412,
+   "Protect the October to February flush with water"
+  ],
+  [
+   106.412,
+   107.381,
+   "and nutrition,"
+  ],
+  [
+   107.381,
+   108.834,
+   "not with hope."
+  ],
+  [
+   109.384,
+   110.353,
+   "Bees help."
+  ],
+  [
+   110.353,
+   114.23,
+   "Mixing varieties helps when a type is a"
+  ],
+  [
+   114.23,
+   115.199,
+   "shy pollinator."
+  ],
+  [
+   115.749,
+   119.625,
+   "Frost on open flowers is a silent yield"
+  ],
+  [
+   119.625,
+   120.11,
+   "cut."
+  ],
+  [
+   120.11,
+   122.532,
+   "Low spots collect cold air."
+  ],
+  [
+   123.082,
+   126.474,
+   "If your block is a frost pocket,"
+  ],
+  [
+   126.474,
+   129.866,
+   "loquat flowers will teach you that once."
+  ],
+  [
+   130.366,
+   134.113,
+   "Harvest is late March to April in the"
+  ],
+  [
+   134.113,
+   135.517,
+   "North Indian belt."
+  ],
+  [
+   136.067,
+   139.346,
+   "Early types like Golden Yellow come first."
+  ],
+  [
+   139.346,
+   143.092,
+   "Late types stretch the stall into late April."
+  ],
+  [
+   143.642,
+   147.389,
+   "That is why a mixed orchard is not"
+  ],
+  [
+   147.389,
+   147.857,
+   "decoration."
+  ],
+  [
+   147.857,
+   151.604,
+   "It is a two to three week longer"
+  ],
+  [
+   151.604,
+   152.54,
+   "sales window."
+  ],
+  [
+   153.09,
+   156.837,
+   "Fruit must colour and flavour on the tree."
+  ],
+  [
+   157.387,
+   158.323,
+   "Once clipped,"
+  ],
+  [
+   158.323,
+   160.197,
+   "the clock is days,"
+  ],
+  [
+   160.197,
+   161.133,
+   "not months."
+  ],
+  [
+   161.683,
+   163.557,
+   "Plan labour for bunches,"
+  ],
+  [
+   163.557,
+   164.025,
+   "crates,"
+  ],
+  [
+   164.025,
+   166.835,
+   "and a truck the same week,"
+  ],
+  [
+   166.835,
+   168.708,
+   "not 'sometime in summer'."
+  ],
+  [
+   169.208,
+   171.553,
+   "Why the first flush sheds."
+  ],
+  [
+   172.103,
+   172.572,
+   "Heat,"
+  ],
+  [
+   172.572,
+   173.51,
+   "incomplete chill,"
+  ],
+  [
+   173.51,
+   176.325,
+   "and a tree still pushing leaves."
+  ],
+  [
+   176.875,
+   180.627,
+   "You cannot bully that flush into a crop"
+  ],
+  [
+   180.627,
+   181.565,
+   "with urea."
+  ],
+  [
+   182.115,
+   185.868,
+   "You can make the second flush worse by"
+  ],
+  [
+   185.868,
+   187.744,
+   "starving water in autumn."
+  ],
+  [
+   188.294,
+   190.639,
+   "Think like a fruit grower:"
+  ],
+  [
+   190.639,
+   193.923,
+   "protect the flush that history says pays."
+  ],
+  [
+   194.473,
+   198.225,
+   "Write October to February on the pump shed"
+  ],
+  [
+   198.225,
+   198.694,
+   "wall."
+  ],
+  [
+   199.194,
+   200.739,
+   "Labour peaks twice."
+  ],
+  [
+   201.289,
+   201.804,
+   "Monsoon:"
+  ],
+  [
+   201.804,
+   202.319,
+   "pits,"
+  ],
+  [
+   202.319,
+   202.834,
+   "planting,"
+  ],
+  [
+   202.834,
+   203.349,
+   "staking."
+  ],
+  [
+   203.899,
+   204.414,
+   "April:"
+  ],
+  [
+   204.414,
+   204.929,
+   "clip,"
+  ],
+  [
+   204.929,
+   205.443,
+   "grade,"
+  ],
+  [
+   205.443,
+   205.958,
+   "pack,"
+  ],
+  [
+   205.958,
+   209.048,
+   "every day for a few weeks."
+  ],
+  [
+   209.598,
+   212.688,
+   "May prune is a smaller crew."
+  ],
+  [
+   212.688,
+   215.777,
+   "Winter thinning is skilled and slow."
+  ],
+  [
+   216.327,
+   220.447,
+   "If your family is away in April for"
+  ],
+  [
+   220.447,
+   221.992,
+   "a wedding season,"
+  ],
+  [
+   221.992,
+   224.567,
+   "you will watch fruit rot."
+  ],
+  [
+   225.117,
+   229.236,
+   "Put April on the calendar like a harvest"
+  ],
+  [
+   229.236,
+   231.296,
+   "festival that cannot move."
+  ],
+  [
+   231.796,
+   232.898,
+   "Irrigation calendar,"
+  ],
+  [
+   232.898,
+   233.449,
+   "plain."
+  ],
+  [
+   233.999,
+   235.101,
+   "After planting:"
+  ],
+  [
+   235.101,
+   238.959,
+   "keep the basin moist until roots bite."
+  ],
+  [
+   239.509,
+   240.06,
+   "Winter:"
+  ],
+  [
+   240.06,
+   244.469,
+   "do not let the useful bloom sit in"
+  ],
+  [
+   244.469,
+   245.02,
+   "dust."
+  ],
+  [
+   245.57,
+   246.672,
+   "Fruit swell:"
+  ],
+  [
+   246.672,
+   249.427,
+   "three to four real irrigations,"
+  ],
+  [
+   249.427,
+   251.08,
+   "more on sand."
+  ],
+  [
+   251.63,
+   252.182,
+   "Monsoon:"
+  ],
+  [
+   252.182,
+   253.284,
+   "often none,"
+  ],
+  [
+   253.284,
+   254.386,
+   "except drainage."
+  ],
+  [
+   254.936,
+   259.344,
+   "A moisture metre is nicer than a fight."
+  ],
+  [
+   259.344,
+   263.202,
+   "A finger in the basin is free."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "lag/lag-ch04-year.wav",
+   "volume": 1.0
+  }
+ }
+}

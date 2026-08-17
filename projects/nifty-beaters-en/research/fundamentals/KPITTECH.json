@@ -1,0 +1,100 @@
+{
+ "ticker": "KPITTECH",
+ "scraped_at": "2026-08-14T15:28:49",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 16812.0,
+ "current_price": 613.0,
+ "pe": 26.9,
+ "book_value": 129.0,
+ "dividend_yield_pct": 1.21,
+ "roce_pct": 26.3,
+ "roe_pct": 20.9,
+ "face_value": 10.0,
+ "high": 1329.0,
+ "sales_growth": {
+  "5 Years": 37.0,
+  "3 Years": 21.0,
+  "TTM": -23.0
+ },
+ "profit_growth": {
+  "5 Years": 13.0,
+  "3 Years": -18.0,
+  "1 Year": -49.0
+ },
+ "roe_hist": {
+  "Expenses&nbsp; +": 884.0,
+  "Operating Profit": 214.0,
+  "OPM %": 19.0,
+  "Other Income&nbsp; +": 22.0,
+  "Interest": 14.0,
+  "Depreciation": 45.0,
+  "Profit before tax": 177.0,
+  "Tax %": 24.0,
+  "Net Profit&nbsp; +": 134.0,
+  "EPS in Rs": 4.89
+ },
+ "price_cagr": {
+  "5 Years": 26.0,
+  "3 Years": 27.0,
+  "Last Year": 21.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "19%",
+   "20%",
+   "21%",
+   "21%",
+   "21%",
+   "20%",
+   "21%",
+   "21%",
+   "19%",
+   "19%",
+   "19%",
+   "18%",
+   "15%"
+  ],
+  "eps": [
+   "4.89",
+   "5.14",
+   "5.67",
+   "6.00",
+   "7.45",
+   "7.43",
+   "6.82",
+   "8.93",
+   "6.27",
+   "6.17",
+   "4.86",
+   "5.95",
+   "4.27"
+  ]
+ },
+ "pros": [
+  "Company has delivered good profit growth of 36.8% CAGR over last 5 years",
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 27.1%",
+  "Company has been maintaining a healthy dividend payout of 30.0%"
+ ],
+ "cons": [
+  "Promoter holding has decreased over last quarter: -0.82%"
+ ]
+}

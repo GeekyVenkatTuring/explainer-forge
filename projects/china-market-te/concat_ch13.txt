@@ -1,0 +1,5 @@
+file '/Users/appuram/Developer/explainer-forge/projects/china-market-te/assets/fin_recap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-market-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-market-te/assets/fin_watch.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-market-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-market-te/assets/fin_close.wav'

@@ -1,0 +1,306 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch18b-repetition_repetition",
+   "type": "it_repetition",
+   "in_seconds": 0.0,
+   "out_seconds": 107.382,
+   "props": {
+    "dur": 107.882
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.763,
+   "We know reliable communication through noise is\npossible."
+  ],
+  [
+   2.763,
+   5.525,
+   "Let's start with the crudest possible way to"
+  ],
+  [
+   5.525,
+   6.216,
+   "do it,"
+  ],
+  [
+   6.216,
+   8.979,
+   "just to feel the problem in our hands."
+  ],
+  [
+   9.61,
+   10.646,
+   "The repetition code."
+  ],
+  [
+   11.278,
+   13.695,
+   "You want to send a single one,"
+  ],
+  [
+   13.695,
+   16.458,
+   "and you are worried the channel might flip"
+  ],
+  [
+   16.458,
+   16.803,
+   "it."
+  ],
+  [
+   16.803,
+   18.875,
+   "So you do the obvious thing."
+  ],
+  [
+   18.875,
+   20.602,
+   "You send it three times."
+  ],
+  [
+   20.602,
+   20.947,
+   "One,"
+  ],
+  [
+   20.947,
+   21.293,
+   "one,"
+  ],
+  [
+   21.293,
+   21.638,
+   "one."
+  ],
+  [
+   22.27,
+   23.651,
+   "Now the noise strikes,"
+  ],
+  [
+   23.651,
+   25.378,
+   "and flips the middle bit."
+  ],
+  [
+   25.378,
+   26.759,
+   "The receiver sees one,"
+  ],
+  [
+   26.759,
+   27.105,
+   "zero,"
+  ],
+  [
+   27.105,
+   27.45,
+   "one."
+  ],
+  [
+   28.081,
+   29.808,
+   "But the fix is easy."
+  ],
+  [
+   29.808,
+   31.535,
+   "Just take a majority vote."
+  ],
+  [
+   31.535,
+   34.298,
+   "Two ones against a single zero \u2014 the"
+  ],
+  [
+   34.298,
+   34.988,
+   "ones win."
+  ],
+  [
+   34.988,
+   37.751,
+   "The receiver correctly decides you meant a one."
+  ],
+  [
+   38.383,
+   40.8,
+   "The error has been detected and corrected,"
+  ],
+  [
+   40.8,
+   41.145,
+   "automatically,"
+  ],
+  [
+   41.145,
+   43.908,
+   "with no need to ask you to send"
+  ],
+  [
+   43.908,
+   44.599,
+   "it again."
+  ],
+  [
+   45.23,
+   47.993,
+   "And you can make it as safe as"
+  ],
+  [
+   47.993,
+   48.684,
+   "you like."
+  ],
+  [
+   48.684,
+   49.72,
+   "Send five copies,"
+  ],
+  [
+   49.72,
+   50.41,
+   "or seven,"
+  ],
+  [
+   50.41,
+   53.173,
+   "and you can survive two or three flips."
+  ],
+  [
+   53.173,
+   54.209,
+   "The more copies,"
+  ],
+  [
+   54.209,
+   56.281,
+   "the more errors you can outvote."
+  ],
+  [
+   56.913,
+   57.949,
+   "So repetition works."
+  ],
+  [
+   57.949,
+   60.366,
+   "But look at the price you paid."
+  ],
+  [
+   60.998,
+   63.415,
+   "To send one real bit of information,"
+  ],
+  [
+   63.415,
+   64.451,
+   "you transmitted three."
+  ],
+  [
+   64.451,
+   67.214,
+   "Your code rate \u2014 useful bits divided by"
+  ],
+  [
+   67.214,
+   69.631,
+   "total bits \u2014 is just one third."
+  ],
+  [
+   70.263,
+   73.025,
+   "Two out of every three bits were pure"
+  ],
+  [
+   73.025,
+   73.371,
+   "overhead."
+  ],
+  [
+   73.371,
+   75.097,
+   "And to get safer still,"
+  ],
+  [
+   75.097,
+   76.824,
+   "the rate gets even worse,"
+  ],
+  [
+   76.824,
+   77.86,
+   "crawling toward zero."
+  ],
+  [
+   78.492,
+   81.254,
+   "This is the trap everyone assumed was inescapable"
+  ],
+  [
+   81.254,
+   84.017,
+   "\u2014 that you could only buy reliability by"
+  ],
+  [
+   84.017,
+   85.053,
+   "throwing away speed."
+  ],
+  [
+   85.685,
+   88.447,
+   "And this is exactly the ceiling Shannon shattered."
+  ],
+  [
+   88.447,
+   91.21,
+   "His theorem promised you could drive the error"
+  ],
+  [
+   91.21,
+   93.973,
+   "rate to nearly zero while keeping the rate"
+  ],
+  [
+   93.973,
+   96.736,
+   "high \u2014 right up near the channel capacity."
+  ],
+  [
+   97.367,
+   98.749,
+   "Repetition is the sledgehammer."
+  ],
+  [
+   98.749,
+   101.511,
+   "What we really need are the surgical tools"
+  ],
+  [
+   101.511,
+   103.929,
+   "\u2014 codes that add just a little,"
+  ],
+  [
+   103.929,
+   104.965,
+   "cleverly shaped redundancy,"
+  ],
+  [
+   104.965,
+   107.382,
+   "and get far more protection in return."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch18b-repetition.wav",
+   "volume": 1.0
+  }
+ }
+}

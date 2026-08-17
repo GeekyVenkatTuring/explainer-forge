@@ -1,0 +1,1215 @@
+{
+  "cuts": [
+    {
+      "id": "pm_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 39.5,
+      "props": {
+        "title": "Pre-Market Brief",
+        "sub": "August 3, 2026 · Monday · before the open",
+        "kicker": "PRE-MARKET · 03 AUG 2026",
+        "dur": 40.0
+      }
+    },
+    {
+      "id": "pm_close",
+      "type": "sm_stats",
+      "in_seconds": 40.0,
+      "out_seconds": 91.956,
+      "props": {
+        "kicker": "FRIDAY'S CLOSE — A STRONG FINISH",
+        "title": "Where We Closed on July 31",
+        "stats": [
+          {
+            "label": "Sensex",
+            "to": 78094.64,
+            "prefix": "",
+            "suffix": "",
+            "decimals": 2,
+            "color": "#34D399",
+            "sub": "+166.49 pts · +0.21%"
+          },
+          {
+            "label": "Nifty 50",
+            "to": 24383.6,
+            "prefix": "",
+            "suffix": "",
+            "decimals": 2,
+            "color": "#34D399",
+            "sub": "+66.45 pts · +0.27%"
+          },
+          {
+            "label": "Bank Nifty",
+            "to": 57264.85,
+            "prefix": "",
+            "suffix": "",
+            "decimals": 2,
+            "color": "#34D399",
+            "sub": "+117.35 pts · +0.21%"
+          }
+        ],
+        "note": "That capped Nifty's biggest weekly gain in nearly four months — up over 2.5% for the week, and a second straight monthly gain.",
+        "dur": 52.456
+      }
+    },
+    {
+      "id": "pm_split",
+      "type": "sm_iconcards",
+      "in_seconds": 92.456,
+      "out_seconds": 155.546,
+      "props": {
+        "kicker": "UNDER THE SURFACE — A CLEAR SPLIT",
+        "title": "What Led and What Lagged on Friday",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "Financials led the charge",
+            "v": "Bajaj Finance hit a fresh 52-week high after Q1 profit jumped 29% to ₹5,436 cr; Bajaj Finserv and Jio Financial gained too",
+            "chip": "52-WK HIGH"
+          },
+          {
+            "emoji": "🚗",
+            "k": "Autos were the best sector",
+            "v": "Nifty Auto rose 1.64% — the top-performing index — riding a blockbuster set of July sales numbers",
+            "chip": "+1.64%"
+          },
+          {
+            "emoji": "💻",
+            "k": "IT was the biggest drag",
+            "v": "Nifty IT fell 1.56%; TCS, Infosys, HCL Tech, Tech Mahindra and Wipro all slipped 2 to 3 percent",
+            "chip": "IT -1.56%"
+          },
+          {
+            "emoji": "🧴",
+            "k": "FMCG stayed soft",
+            "v": "Nifty FMCG eased 1.05% — the defensives took a back seat as money rotated into financials and autos",
+            "chip": "FMCG -1.05%"
+          }
+        ],
+        "dur": 63.59
+      }
+    },
+    {
+      "id": "pm_global",
+      "type": "sm_stats",
+      "in_seconds": 156.046,
+      "out_seconds": 213.882,
+      "props": {
+        "kicker": "OVERNIGHT — WALL STREET HIGHER",
+        "title": "Global Cues This Morning",
+        "stats": [
+          {
+            "label": "Dow Jones",
+            "to": 52485.03,
+            "prefix": "",
+            "suffix": "",
+            "decimals": 2,
+            "color": "#34D399",
+            "sub": "+276.97 pts · +0.53%"
+          },
+          {
+            "label": "Nasdaq",
+            "to": 25373.85,
+            "prefix": "",
+            "suffix": "",
+            "decimals": 2,
+            "color": "#34D399",
+            "sub": "≈ +1.0% · Amazon surged"
+          },
+          {
+            "label": "Brent crude",
+            "to": 88.16,
+            "prefix": "$",
+            "suffix": "",
+            "decimals": 2,
+            "color": "#34D399",
+            "sub": "-0.98% · eased from the $92 spike"
+          }
+        ],
+        "note": "A supportive backdrop: US stocks closed higher Friday, the Dow logged a 4th straight winning month, and crude has cooled.",
+        "dur": 58.336
+      }
+    },
+    {
+      "id": "pm_weekend",
+      "type": "sm_iconcards",
+      "in_seconds": 214.382,
+      "out_seconds": 275.816,
+      "props": {
+        "kicker": "WEEKEND DATA — THE ECONOMY IS HOT",
+        "title": "Three Strong Numbers Over the Weekend",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🧾",
+            "k": "GST at ₹2.11 lakh crore",
+            "v": "July collections rose 15.4% year-on-year — one of the strongest prints yet, with import revenue up nearly 29%",
+            "chip": "+15.4% YoY"
+          },
+          {
+            "emoji": "🚙",
+            "k": "Auto sales boomed in July",
+            "v": "M&M up 26%, Hyundai a record 75,360 units, Maruti 2.41 lakh — why autos led Friday and stay in focus today",
+            "chip": "RECORD"
+          },
+          {
+            "emoji": "🏭",
+            "k": "Factory activity still expanding",
+            "v": "The manufacturing PMI held firmly in expansion, pointing to steady momentum in the real economy",
+            "chip": "EXPANSION"
+          }
+        ],
+        "dur": 61.934
+      }
+    },
+    {
+      "id": "pm_rbi",
+      "type": "sm_iconcards",
+      "in_seconds": 276.316,
+      "out_seconds": 328.822,
+      "props": {
+        "kicker": "THE WEEK'S BIGGEST EVENT",
+        "title": "RBI Policy — Wednesday, August 5",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🏛️",
+            "k": "The rate decision",
+            "v": "The Monetary Policy Committee announces its verdict Wednesday — the single biggest swing factor for the whole week",
+            "chip": "AUG 5"
+          },
+          {
+            "emoji": "🗣️",
+            "k": "The stance & commentary",
+            "v": "Beyond the rate itself, the Governor's tone on inflation and growth guides where the market heads next",
+            "chip": "WATCH TONE"
+          },
+          {
+            "emoji": "🏦",
+            "k": "Who reacts most",
+            "v": "Rate-sensitives — banks, autos, and real estate — will move hardest on the decision and the guidance",
+            "chip": "RATE-SENSITIVE"
+          }
+        ],
+        "dur": 53.006
+      }
+    },
+    {
+      "id": "pm_earnings",
+      "type": "sm_iconcards",
+      "in_seconds": 329.322,
+      "out_seconds": 384.852,
+      "props": {
+        "kicker": "EARNINGS SEASON — HEAVYWEIGHTS DUE",
+        "title": "Big Q1 Results This Week",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "State Bank of India",
+            "v": "The country's largest lender — its asset quality and loan growth set the tone for the whole banking pack",
+            "chip": "PSU BANK"
+          },
+          {
+            "emoji": "📶",
+            "k": "Bharti Airtel",
+            "v": "A telecom bellwether; watch ARPU — the average revenue per user — and subscriber additions",
+            "chip": "TELECOM"
+          },
+          {
+            "emoji": "🛢️",
+            "k": "ONGC · Power Grid · Hindalco",
+            "v": "Energy, power and metals — cyclical heavyweights that move the broader index",
+            "chip": "CYCLICALS"
+          },
+          {
+            "emoji": "🛍️",
+            "k": "Titan · Trent",
+            "v": "The consumption story — jewellery and retail; a read on how the Indian shopper is spending",
+            "chip": "CONSUMER"
+          }
+        ],
+        "dur": 56.03
+      }
+    },
+    {
+      "id": "pm_ipo",
+      "type": "sm_iconcards",
+      "in_seconds": 385.352,
+      "out_seconds": 436.442,
+      "props": {
+        "kicker": "THE IPO CORNER",
+        "title": "Primary Market — What's Live",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "⚡",
+            "k": "MV Electrosystems — closes TODAY",
+            "v": "Mainboard issue of ₹290 cr, price band ₹400–425; subscription ends today, listing on August 6",
+            "chip": "LAST DAY"
+          },
+          {
+            "emoji": "🏗️",
+            "k": "Ardee Industries — opens Aug 5",
+            "v": "A ₹425.87 cr issue, price band ₹50–53, open August 5 to 7; listing expected August 12",
+            "chip": "OPENS AUG 5"
+          },
+          {
+            "emoji": "🛠️",
+            "k": "Technocraft Ventures — opens Aug 7",
+            "v": "An EPC infrastructure play; a ₹138 cr fresh issue plus an offer-for-sale, open from August 7",
+            "chip": "OPENS AUG 7"
+          }
+        ],
+        "dur": 51.59
+      }
+    },
+    {
+      "id": "pm_setup",
+      "type": "sm_myths",
+      "in_seconds": 436.942,
+      "out_seconds": 501.736,
+      "props": {
+        "kicker": "THE SETUP · A TUG OF WAR",
+        "title": "Tailwinds vs Headwinds Today",
+        "mythLabel": "⚠️ HEADWINDS",
+        "factLabel": "✅ TAILWINDS",
+        "pairs": [
+          {
+            "m": "RBI policy Wednesday — event risk",
+            "f": "Strong momentum: biggest weekly gain in ~4 months"
+          },
+          {
+            "m": "IT sector weak and out of favour",
+            "f": "Crude cooled to ~$88; supportive global cues"
+          },
+          {
+            "m": "Nifty nearing 24,500–24,600 resistance",
+            "f": "Hot data: GST, auto sales and DII buying (₹2,260 cr)"
+          }
+        ],
+        "dur": 65.294
+      }
+    },
+    {
+      "id": "pm_take",
+      "type": "sm_checklist",
+      "in_seconds": 502.236,
+      "out_seconds": 555.482,
+      "props": {
+        "kicker": "HOW TO APPROACH THE WEEK",
+        "title": "5 Things to Remember",
+        "color": "#34D399",
+        "icon": "💡",
+        "items": [
+          "This is a watchlist & setup — NOT a prediction of which stocks will rise",
+          "RBI on Wednesday is the master switch — don't over-trade before it",
+          "Autos & financials lead; IT is the laggard to watch for a turn",
+          "Nifty: hold 24,500 = rally continues; 24,150 is first support",
+          "Earnings season = sharp single-stock moves; always use a stop-loss"
+        ],
+        "dur": 53.746
+      }
+    },
+    {
+      "id": "pm_recap",
+      "type": "sm_recap",
+      "in_seconds": 555.982,
+      "out_seconds": 638.764,
+      "props": {
+        "title": "3 August — Pre-Market at a Glance",
+        "items": [
+          "Friday: Sensex +166 (78,094), Nifty +66 (24,383) — strong finish",
+          "Best week in ~4 months; autos & financials led, IT lagged",
+          "Global: Wall Street up, Brent eased to ~$88",
+          "Weekend data hot: GST +15.4%, record July auto sales",
+          "Big event: RBI policy Wednesday, Aug 5",
+          "Earnings: SBI, Airtel, ONGC, Titan, Trent + more",
+          "Nifty: 24,500 resistance · 24,150 support"
+        ],
+        "closer": "Momentum is strong — but the RBI runs the week. Trade the reaction, not the prediction.",
+        "dur": 83.282
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      1.09,
+      "Good morning."
+    ],
+    [
+      1.09,
+      3.355,
+      "It's Monday, August third —"
+    ],
+    [
+      3.355,
+      7.212,
+      "and here's your setup before the market opens."
+    ],
+    [
+      7.212,
+      11.406,
+      "The market comes into this week on a strong note —"
+    ],
+    [
+      11.406,
+      14.005,
+      "so today we'll do three things."
+    ],
+    [
+      14.005,
+      17.192,
+      "Recap how Friday and last week closed,"
+    ],
+    [
+      17.192,
+      20.044,
+      "look at the weekend cues and data,"
+    ],
+    [
+      20.044,
+      24.908,
+      "and then map out the week's big events — the R-B-I policy,"
+    ],
+    [
+      24.908,
+      28.094,
+      "the earnings, and the levels to watch."
+    ],
+    [
+      28.094,
+      32.455,
+      "One note up front — this is a watchlist and a setup,"
+    ],
+    [
+      32.455,
+      36.145,
+      "not a prediction of which stocks will go up."
+    ],
+    [
+      36.145,
+      39.5,
+      "It's information, not investment advice."
+    ],
+    [
+      40.0,
+      41.114,
+      "First, Friday."
+    ],
+    [
+      41.114,
+      43.58,
+      "It was a quietly strong finish."
+    ],
+    [
+      43.58,
+      47.24,
+      "The Sensex added one hundred sixty-six points,"
+    ],
+    [
+      47.24,
+      49.627,
+      "up zero point two one percent,"
+    ],
+    [
+      49.627,
+      53.367,
+      "to close at seventy-eight thousand ninety-four."
+    ],
+    [
+      53.367,
+      55.913,
+      "The Nifty rose sixty-six points,"
+    ],
+    [
+      55.913,
+      58.459,
+      "up zero point two seven percent,"
+    ],
+    [
+      58.459,
+      61.88,
+      "to twenty-four thousand three eighty-three."
+    ],
+    [
+      61.88,
+      66.336,
+      "And the Bank Nifty climbed one hundred seventeen points,"
+    ],
+    [
+      66.336,
+      69.121,
+      "also up zero point two one percent."
+    ],
+    [
+      69.121,
+      73.656,
+      "But the day is the small story — the week is the big one."
+    ],
+    [
+      73.656,
+      79.385,
+      "That close capped the Nifty's biggest weekly gain in nearly four months,"
+    ],
+    [
+      79.385,
+      82.249,
+      "up more than two and a half percent,"
+    ],
+    [
+      82.249,
+      85.034,
+      "and a second straight monthly gain."
+    ],
+    [
+      85.034,
+      87.262,
+      "After a rough patch in July,"
+    ],
+    [
+      87.262,
+      91.956,
+      "the bulls are firmly back in control coming into this week."
+    ],
+    [
+      92.456,
+      94.738,
+      "Now, look under the surface,"
+    ],
+    [
+      94.738,
+      97.836,
+      "because Friday had a very clear split."
+    ],
+    [
+      97.836,
+      99.955,
+      "Financials led the charge."
+    ],
+    [
+      99.955,
+      112.263,
+      "Bajaj Finance hit a fresh fifty-two-week high after its June-quarter profit jumped twenty-nine percent to five thousand four hundred thirty-six crore —"
+    ],
+    [
+      112.263,
+      116.257,
+      "and Bajaj Finserv and Jio Financial rose with it."
+    ],
+    [
+      116.257,
+      119.355,
+      "Autos were the best-performing sector,"
+    ],
+    [
+      119.355,
+      121.8,
+      "up one point six four percent,"
+    ],
+    [
+      121.8,
+      127.751,
+      "riding a blockbuster set of July sales numbers we'll come to in a moment."
+    ],
+    [
+      127.751,
+      131.419,
+      "On the other side, I-T was the biggest drag —"
+    ],
+    [
+      131.419,
+      135.739,
+      "down one point five six percent, with T-C-S, Infosys,"
+    ],
+    [
+      135.739,
+      136.635,
+      "H-C-L Tech,"
+    ],
+    [
+      136.635,
+      141.363,
+      "Tech Mahindra and Wipro all slipping two to three percent."
+    ],
+    [
+      141.363,
+      143.319,
+      "And F-M-C-G stayed soft."
+    ],
+    [
+      143.319,
+      146.009,
+      "The lesson — this was a rotation,"
+    ],
+    [
+      146.009,
+      151.633,
+      "money moving into financials and autos and out of I-T and defensives."
+    ],
+    [
+      151.633,
+      155.546,
+      "That rotation is the story to watch again today."
+    ],
+    [
+      156.046,
+      161.137,
+      "Now, the overnight and weekend cues — and they're supportive."
+    ],
+    [
+      161.137,
+      164.141,
+      "Wall Street closed higher on Friday."
+    ],
+    [
+      164.141,
+      167.98,
+      "The Dow rose two hundred seventy-seven points,"
+    ],
+    [
+      167.98,
+      170.735,
+      "up zero point five three percent,"
+    ],
+    [
+      170.735,
+      174.49,
+      "and logged its fourth straight winning month."
+    ],
+    [
+      174.49,
+      179.164,
+      "The Nasdaq climbed about one percent, powered by Amazon,"
+    ],
+    [
+      179.164,
+      182.001,
+      "which surged after strong results."
+    ],
+    [
+      182.001,
+      184.755,
+      "And crucially for us — crude oil."
+    ],
+    [
+      184.755,
+      191.599,
+      "Brent eased zero point nine eight percent to around eighty-eight dollars a barrel."
+    ],
+    [
+      191.599,
+      193.268,
+      "That's a big relief."
+    ],
+    [
+      193.268,
+      194.019,
+      "Remember,"
+    ],
+    [
+      194.019,
+      200.445,
+      "just two weeks ago Brent had spiked past ninety-two on the U-S–Iran flare-up."
+    ],
+    [
+      200.445,
+      204.201,
+      "Cheaper oil is a genuine tailwind for India —"
+    ],
+    [
+      204.201,
+      208.457,
+      "it eases inflation, the import bill, and the rupee."
+    ],
+    [
+      208.457,
+      209.793,
+      "Put it together,"
+    ],
+    [
+      209.793,
+      213.882,
+      "and the global setup this morning leans positive."
+    ],
+    [
+      214.382,
+      217.991,
+      "Over the weekend, three data points landed —"
+    ],
+    [
+      217.991,
+      220.123,
+      "and all three were strong."
+    ],
+    [
+      220.123,
+      221.19,
+      "First, G-S-T."
+    ],
+    [
+      221.19,
+      226.439,
+      "July collections came in at two point one one lakh crore rupees,"
+    ],
+    [
+      226.439,
+      230.294,
+      "up fifteen point four percent from a year ago —"
+    ],
+    [
+      230.294,
+      233.083,
+      "one of the strongest readings yet,"
+    ],
+    [
+      233.083,
+      237.676,
+      "with revenue from imports up nearly twenty-nine percent."
+    ],
+    [
+      237.676,
+      241.039,
+      "That's a sign of a busy, growing economy."
+    ],
+    [
+      241.039,
+      242.597,
+      "Second, auto sales."
+    ],
+    [
+      242.597,
+      247.191,
+      "July was a blockbuster — Mahindra up twenty-six percent,"
+    ],
+    [
+      247.191,
+      253.178,
+      "Hyundai posting a record seventy-five thousand three hundred sixty units,"
+    ],
+    [
+      253.178,
+      256.295,
+      "and Maruti at two point four one lakh."
+    ],
+    [
+      256.295,
+      259.576,
+      "That is exactly why autos led on Friday,"
+    ],
+    [
+      259.576,
+      264.087,
+      "and why the auto pack stays in focus at the open today."
+    ],
+    [
+      264.087,
+      266.137,
+      "Third, factory activity —"
+    ],
+    [
+      266.137,
+      270.157,
+      "the manufacturing P-M-I held firmly in expansion."
+    ],
+    [
+      270.157,
+      273.765,
+      "Three green lights for the domestic economy,"
+    ],
+    [
+      273.765,
+      275.816,
+      "right as the week begins."
+    ],
+    [
+      276.316,
+      280.785,
+      "Now to the week ahead — and it's dominated by one event."
+    ],
+    [
+      280.785,
+      281.822,
+      "On Wednesday,"
+    ],
+    [
+      281.822,
+      286.69,
+      "the R-B-I's Monetary Policy Committee announces its decision."
+    ],
+    [
+      286.69,
+      291.477,
+      "This is the single biggest swing factor for the entire week."
+    ],
+    [
+      291.477,
+      296.105,
+      "And it's not just about the rate itself — it's the stance."
+    ],
+    [
+      296.105,
+      304.005,
+      "The Governor's commentary on inflation and growth will tell the market where policy is headed next,"
+    ],
+    [
+      304.005,
+      308.235,
+      "and that guidance often matters more than the number."
+    ],
+    [
+      308.235,
+      312.384,
+      "The stocks that react most are the rate-sensitives —"
+    ],
+    [
+      312.384,
+      316.214,
+      "the banks, the autos, and the real-estate names."
+    ],
+    [
+      316.214,
+      319.566,
+      "Expect them to swing hardest on Wednesday."
+    ],
+    [
+      319.566,
+      320.443,
+      "Until then,"
+    ],
+    [
+      320.443,
+      325.151,
+      "the market may stay a touch cautious ahead of the verdict —"
+    ],
+    [
+      325.151,
+      328.822,
+      "so don't over-read Monday and Tuesday's moves."
+    ],
+    [
+      329.322,
+      331.986,
+      "It's also a heavy earnings week,"
+    ],
+    [
+      331.986,
+      335.483,
+      "with several index heavyweights reporting."
+    ],
+    [
+      335.483,
+      338.48,
+      "The biggest is State Bank of India —"
+    ],
+    [
+      338.48,
+      340.894,
+      "the country's largest lender."
+    ],
+    [
+      340.894,
+      347.138,
+      "Its asset quality and loan growth set the tone for the entire banking pack."
+    ],
+    [
+      347.138,
+      351.218,
+      "Bharti Airtel reports too — a telecom bellwether."
+    ],
+    [
+      351.218,
+      354.298,
+      "The number to watch there is A-R-P-U,"
+    ],
+    [
+      354.298,
+      356.712,
+      "the average revenue per user,"
+    ],
+    [
+      356.712,
+      359.376,
+      "along with subscriber additions."
+    ],
+    [
+      359.376,
+      363.622,
+      "Then the cyclicals — O-N-G-C in energy, Power Grid,"
+    ],
+    [
+      363.622,
+      365.62,
+      "and Hindalco in metals —"
+    ],
+    [
+      365.62,
+      369.367,
+      "heavyweights that can move the broader index."
+    ],
+    [
+      369.367,
+      371.698,
+      "And on the consumption side,"
+    ],
+    [
+      371.698,
+      377.942,
+      "Titan and Trent give us a fresh read on how the Indian shopper is spending."
+    ],
+    [
+      377.942,
+      382.854,
+      "In earnings season, remember — react to the actual numbers,"
+    ],
+    [
+      382.854,
+      384.852,
+      "not the pre-result hype."
+    ],
+    [
+      385.352,
+      387.77,
+      "The primary market is busy too."
+    ],
+    [
+      387.77,
+      389.252,
+      "M-V Electrosystems,"
+    ],
+    [
+      389.252,
+      397.754,
+      "a mainboard issue of two hundred ninety crore with a band of four hundred to four hundred twenty-five rupees,"
+    ],
+    [
+      397.754,
+      402.2,
+      "closes for subscription today — it lists on August sixth."
+    ],
+    [
+      402.2,
+      406.412,
+      "Then two more open later this week — Ardee Industries,"
+    ],
+    [
+      406.412,
+      411.794,
+      "a four hundred twenty-six crore issue at fifty to fifty-three rupees,"
+    ],
+    [
+      411.794,
+      415.85,
+      "opens Wednesday the fifth; and Technocraft Ventures,"
+    ],
+    [
+      415.85,
+      419.204,
+      "an infrastructure and construction company,"
+    ],
+    [
+      419.204,
+      421.154,
+      "opens Friday the seventh."
+    ],
+    [
+      421.154,
+      423.65,
+      "A quick, honest word on I-P-Os —"
+    ],
+    [
+      423.65,
+      427.55,
+      "do your own homework on the price, the financials,"
+    ],
+    [
+      427.55,
+      429.968,
+      "and how the money will be used."
+    ],
+    [
+      429.968,
+      436.442,
+      "And ignore grey-market chatter; it's unofficial and it is not a listing prediction."
+    ],
+    [
+      436.942,
+      438.997,
+      "So what's the overall setup?"
+    ],
+    [
+      438.997,
+      443.399,
+      "A genuine tug of war between strong momentum and event risk."
+    ],
+    [
+      443.399,
+      445.014,
+      "On the headwind side —"
+    ],
+    [
+      445.014,
+      448.903,
+      "the R-B-I decision on Wednesday is a real event risk,"
+    ],
+    [
+      448.903,
+      453.085,
+      "the market may tread carefully into it, I-T remains weak,"
+    ],
+    [
+      453.085,
+      456.314,
+      "and the Nifty is now approaching resistance."
+    ],
+    [
+      456.314,
+      457.929,
+      "On the tailwind side —"
+    ],
+    [
+      457.929,
+      461.891,
+      "momentum is strong after the best week in four months,"
+    ],
+    [
+      461.891,
+      465.413,
+      "crude has cooled to around eighty-eight dollars,"
+    ],
+    [
+      465.413,
+      467.248,
+      "the weekend data was hot,"
+    ],
+    [
+      467.248,
+      473.485,
+      "and domestic institutions bought over two thousand two hundred crore on Friday alone."
+    ],
+    [
+      473.485,
+      475.466,
+      "For levels — on the upside,"
+    ],
+    [
+      475.466,
+      482.364,
+      "twenty-four thousand five hundred to twenty-four thousand six hundred is the first resistance,"
+    ],
+    [
+      482.364,
+      488.674,
+      "and above that sits the two-hundred-day average near twenty-four thousand seven fifty."
+    ],
+    [
+      488.674,
+      489.849,
+      "On the downside,"
+    ],
+    [
+      489.849,
+      493.664,
+      "twenty-four thousand one fifty is immediate support,"
+    ],
+    [
+      493.664,
+      495.572,
+      "then twenty-four thousand."
+    ],
+    [
+      495.572,
+      501.736,
+      "Reclaiming and holding twenty-four thousand five hundred would keep the rally alive."
+    ],
+    [
+      502.236,
+      506.264,
+      "Finally, five things to remember for the week."
+    ],
+    [
+      506.264,
+      509.592,
+      "One — this is a watchlist and a setup,"
+    ],
+    [
+      509.592,
+      513.358,
+      "not a prediction of which stocks will rise."
+    ],
+    [
+      513.358,
+      518.525,
+      "Two — the R-B-I decision on Wednesday is the master switch."
+    ],
+    [
+      518.525,
+      525.181,
+      "It's usually unwise to over-trade in the two days before a big policy event."
+    ],
+    [
+      525.181,
+      525.794,
+      "Three —"
+    ],
+    [
+      525.794,
+      531.661,
+      "autos and financials are the leaders right now; I-T is the laggard,"
+    ],
+    [
+      531.661,
+      534.727,
+      "so watch it for any sign of a turn."
+    ],
+    [
+      534.727,
+      536.215,
+      "Four — on levels,"
+    ],
+    [
+      536.215,
+      546.987,
+      "holding twenty-four thousand five hundred keeps the rally alive; twenty-four thousand one fifty is the first support below."
+    ],
+    [
+      546.987,
+      550.665,
+      "Five — with earnings season in full swing,"
+    ],
+    [
+      550.665,
+      553.468,
+      "expect sharp single-stock moves."
+    ],
+    [
+      553.468,
+      555.482,
+      "Always use a stop-loss."
+    ],
+    [
+      555.982,
+      559.326,
+      "August third, pre-market at a glance."
+    ],
+    [
+      559.326,
+      561.856,
+      "Friday was a strong finish —"
+    ],
+    [
+      561.856,
+      568.182,
+      "the Sensex up one hundred sixty-six points and the Nifty up sixty-six,"
+    ],
+    [
+      568.182,
+      572.159,
+      "capping the best week in nearly four months."
+    ],
+    [
+      572.159,
+      576.135,
+      "Under the surface, autos and financials led,"
+    ],
+    [
+      576.135,
+      577.672,
+      "while I-T lagged."
+    ],
+    [
+      577.672,
+      578.485,
+      "Globally,"
+    ],
+    [
+      578.485,
+      585.715,
+      "Wall Street closed higher and Brent crude eased to around eighty-eight dollars —"
+    ],
+    [
+      585.715,
+      587.432,
+      "a relief for India."
+    ],
+    [
+      587.432,
+      589.782,
+      "The weekend data was hot —"
+    ],
+    [
+      589.782,
+      593.035,
+      "G-S-T up fifteen point four percent,"
+    ],
+    [
+      593.035,
+      595.475,
+      "and record July auto sales."
+    ],
+    [
+      595.475,
+      598.638,
+      "But the week belongs to one event —"
+    ],
+    [
+      598.638,
+      602.163,
+      "the R-B-I policy decision on Wednesday."
+    ],
+    [
+      602.163,
+      605.507,
+      "On earnings — S-B-I, Airtel, O-N-G-C,"
+    ],
+    [
+      605.507,
+      608.579,
+      "Titan and Trent lead a heavy week."
+    ],
+    [
+      608.579,
+      611.11,
+      "And the level that matters —"
+    ],
+    [
+      611.11,
+      616.894,
+      "holding twenty-four thousand five hundred keeps the rally alive."
+    ],
+    [
+      616.894,
+      622.226,
+      "Remember — momentum is strong, but the R-B-I runs the week."
+    ],
+    [
+      622.226,
+      625.75,
+      "Trade the reaction, not the prediction."
+    ],
+    [
+      625.75,
+      630.45,
+      "This information is aggregated from public sources —"
+    ],
+    [
+      630.45,
+      634.155,
+      "for analysis only, not investment advice."
+    ],
+    [
+      634.155,
+      638.764,
+      "Have a great trading week, and thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/pm03e.wav",
+      "volume": 1.0
+    }
+  }
+}

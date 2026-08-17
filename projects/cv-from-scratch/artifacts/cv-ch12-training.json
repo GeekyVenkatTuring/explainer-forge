@@ -1,0 +1,729 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch12-training_train",
+   "type": "cv_train",
+   "in_seconds": 0.0,
+   "out_seconds": 124.356,
+   "props": {
+    "dur": 124.856
+   }
+  },
+  {
+   "id": "cv-ch12-training_augment",
+   "type": "cv_augment",
+   "in_seconds": 124.856,
+   "out_seconds": 208.686,
+   "props": {
+    "dur": 84.33
+   }
+  },
+  {
+   "id": "cv-ch12-training_transfer",
+   "type": "cv_transfer",
+   "in_seconds": 209.186,
+   "out_seconds": 292.02,
+   "props": {
+    "dur": 83.334
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.97,
+   "So how does a network actually learn those"
+  ],
+  [
+   2.97,
+   4.456,
+   "millions of filter numbers?"
+  ],
+  [
+   5.087,
+   6.201,
+   "Through a loop."
+  ],
+  [
+   6.201,
+   9.172,
+   "And it is essentially the same loop for"
+  ],
+  [
+   9.172,
+   11.399,
+   "nearly every model in deep learning."
+  ],
+  [
+   12.031,
+   13.888,
+   "It begins knowing absolutely nothing."
+  ],
+  [
+   13.888,
+   16.487,
+   "Every filter is set to random numbers."
+  ],
+  [
+   17.118,
+   19.346,
+   "We show it a training image,"
+  ],
+  [
+   19.346,
+   21.203,
+   "and it makes a guess."
+  ],
+  [
+   21.203,
+   21.945,
+   "Early on,"
+  ],
+  [
+   21.945,
+   24.544,
+   "that guess is basically a coin flip."
+  ],
+  [
+   24.544,
+   27.515,
+   "It says dog when the answer is cat."
+  ],
+  [
+   28.146,
+   31.117,
+   "Now we measure exactly how wrong it was,"
+  ],
+  [
+   31.117,
+   33.716,
+   "with a single number called the loss."
+  ],
+  [
+   34.347,
+   37.318,
+   "A high loss means a badly wrong guess."
+  ],
+  [
+   37.318,
+   39.917,
+   "A low loss means it was close."
+  ],
+  [
+   39.917,
+   42.887,
+   "Our entire goal is to push that number"
+  ],
+  [
+   42.887,
+   43.259,
+   "down."
+  ],
+  [
+   43.89,
+   46.861,
+   "Then comes the truly clever step \u2014\nbackpropagation."
+  ],
+  [
+   47.492,
+   50.463,
+   "Backpropagation works backward through the\nnetwork and figures"
+  ],
+  [
+   50.463,
+   50.834,
+   "out,"
+  ],
+  [
+   50.834,
+   52.319,
+   "for every single weight,"
+  ],
+  [
+   52.319,
+   55.29,
+   "how it nudged the loss up or down."
+  ],
+  [
+   55.921,
+   58.892,
+   "Then we adjust every weight a tiny amount"
+  ],
+  [
+   58.892,
+   61.862,
+   "in the direction that would have made the"
+  ],
+  [
+   61.862,
+   62.605,
+   "loss smaller."
+  ],
+  [
+   63.236,
+   65.093,
+   "One image barely moves anything."
+  ],
+  [
+   65.093,
+   67.321,
+   "But do this millions of times,"
+  ],
+  [
+   67.321,
+   68.806,
+   "over millions of images,"
+  ],
+  [
+   68.806,
+   71.405,
+   "and watch the loss curve slide downward."
+  ],
+  [
+   71.405,
+   72.89,
+   "The guesses get better,"
+  ],
+  [
+   72.89,
+   73.633,
+   "and better,"
+  ],
+  [
+   73.633,
+   74.376,
+   "and better."
+  ],
+  [
+   75.007,
+   77.978,
+   "Two more tricks make this practical in the"
+  ],
+  [
+   77.978,
+   78.72,
+   "real world."
+  ],
+  [
+   79.352,
+   81.208,
+   "The first is data augmentation."
+  ],
+  [
+   81.84,
+   82.211,
+   "Flip,"
+  ],
+  [
+   82.211,
+   82.582,
+   "rotate,"
+  ],
+  [
+   82.582,
+   82.954,
+   "crop,"
+  ],
+  [
+   82.954,
+   84.81,
+   "and recolor your training images,"
+  ],
+  [
+   84.81,
+   87.781,
+   "so the model sees endless variety and\ncannot"
+  ],
+  [
+   87.781,
+   88.523,
+   "simply memorize."
+  ],
+  [
+   88.523,
+   90.38,
+   "It has to actually generalize."
+  ],
+  [
+   91.011,
+   92.868,
+   "The second trick is enormous,"
+  ],
+  [
+   92.868,
+   95.096,
+   "and you will use it constantly."
+  ],
+  [
+   95.096,
+   96.952,
+   "It is called transfer learning."
+  ],
+  [
+   97.584,
+   100.554,
+   "Do not start from random numbers at all."
+  ],
+  [
+   101.186,
+   104.156,
+   "Take a network already trained on ImageNet\n\u2014"
+  ],
+  [
+   104.156,
+   106.013,
+   "one that already knows edges,"
+  ],
+  [
+   106.013,
+   106.384,
+   "textures,"
+  ],
+  [
+   106.384,
+   109.355,
+   "and shapes \u2014 and simply fine-tune it on"
+  ],
+  [
+   109.355,
+   110.468,
+   "your specific problem."
+  ],
+  [
+   111.1,
+   113.699,
+   "Because it starts with real visual\nknowledge,"
+  ],
+  [
+   113.699,
+   116.67,
+   "it can learn your task from just a"
+  ],
+  [
+   116.67,
+   117.784,
+   "few hundred examples,"
+  ],
+  [
+   117.784,
+   118.897,
+   "instead of millions."
+  ],
+  [
+   119.529,
+   119.9,
+   "Alright."
+  ],
+  [
+   119.9,
+   120.643,
+   "Enough theory."
+  ],
+  [
+   120.643,
+   123.613,
+   "Let's open a code editor and build one"
+  ],
+  [
+   123.613,
+   124.356,
+   "for real."
+  ],
+  [
+   124.856,
+   127.534,
+   "Let's slow down on that first trick,"
+  ],
+  [
+   127.534,
+   127.917,
+   "augmentation,"
+  ],
+  [
+   127.917,
+   130.595,
+   "because it matters more than people\nexpect."
+  ],
+  [
+   131.226,
+   133.139,
+   "A deep network is greedy."
+  ],
+  [
+   133.139,
+   135.052,
+   "Give it a small dataset,"
+  ],
+  [
+   135.052,
+   138.113,
+   "and it will happily memorize every image\ninstead"
+  ],
+  [
+   138.113,
+   140.026,
+   "of learning the real pattern."
+  ],
+  [
+   140.658,
+   142.188,
+   "We call that overfitting,"
+  ],
+  [
+   142.188,
+   144.484,
+   "and augmentation is our main defense."
+  ],
+  [
+   145.115,
+   146.645,
+   "The idea is simple."
+  ],
+  [
+   146.645,
+   148.176,
+   "Take each training image,"
+  ],
+  [
+   148.176,
+   151.237,
+   "and make many altered copies of it \u2014"
+  ],
+  [
+   151.237,
+   153.532,
+   "all still clearly the same thing."
+  ],
+  [
+   154.164,
+   156.077,
+   "Flip it left to right."
+  ],
+  [
+   156.077,
+   158.372,
+   "A cat is still a cat."
+  ],
+  [
+   159.004,
+   160.534,
+   "Rotate it a little."
+  ],
+  [
+   160.534,
+   161.682,
+   "Still a cat."
+  ],
+  [
+   162.314,
+   163.844,
+   "Crop in and zoom."
+  ],
+  [
+   163.844,
+   164.992,
+   "Still a cat."
+  ],
+  [
+   165.623,
+   166.771,
+   "Change the brightness,"
+  ],
+  [
+   166.771,
+   169.067,
+   "as if the lighting were different."
+  ],
+  [
+   169.067,
+   170.214,
+   "Still a cat."
+  ],
+  [
+   170.846,
+   172.376,
+   "Shift the colors slightly."
+  ],
+  [
+   172.376,
+   173.524,
+   "Still a cat."
+  ],
+  [
+   174.156,
+   175.303,
+   "From one photo,"
+  ],
+  [
+   175.303,
+   177.599,
+   "we have manufactured half a dozen."
+  ],
+  [
+   178.231,
+   178.996,
+   "And crucially,"
+  ],
+  [
+   178.996,
+   180.526,
+   "the label never changes."
+  ],
+  [
+   181.158,
+   184.218,
+   "The network now sees the cat from many"
+  ],
+  [
+   184.218,
+   184.601,
+   "angles,"
+  ],
+  [
+   184.601,
+   185.749,
+   "in many lights,"
+  ],
+  [
+   185.749,
+   188.809,
+   "and it can no longer cheat by memorizing"
+  ],
+  [
+   188.809,
+   189.575,
+   "exact pixels."
+  ],
+  [
+   190.206,
+   193.267,
+   "It is forced to learn what actually makes"
+  ],
+  [
+   193.267,
+   194.797,
+   "a cat a cat."
+  ],
+  [
+   195.429,
+   196.577,
+   "Best of all,"
+  ],
+  [
+   196.577,
+   199.637,
+   "augmentation is nearly free \u2014 it is just"
+  ],
+  [
+   199.637,
+   202.698,
+   "a few cheap transforms on data you already"
+  ],
+  [
+   202.698,
+   203.081,
+   "have."
+  ],
+  [
+   203.712,
+   206.773,
+   "It is one of the highest-value habits in"
+  ],
+  [
+   206.773,
+   208.686,
+   "all of practical computer vision."
+  ],
+  [
+   209.186,
+   211.177,
+   "And now the second trick,"
+  ],
+  [
+   211.177,
+   214.362,
+   "transfer learning \u2014 which is honestly how\nalmost"
+  ],
+  [
+   214.362,
+   217.149,
+   "all real vision work gets done today."
+  ],
+  [
+   217.781,
+   220.966,
+   "Think about what a network trained on\nImageNet"
+  ],
+  [
+   220.966,
+   221.763,
+   "already knows."
+  ],
+  [
+   222.394,
+   224.385,
+   "Its early layers learned edges."
+  ],
+  [
+   224.385,
+   225.978,
+   "Deeper ones learned textures,"
+  ],
+  [
+   225.978,
+   227.173,
+   "then object parts,"
+  ],
+  [
+   227.173,
+   228.367,
+   "then whole objects."
+  ],
+  [
+   228.999,
+   230.591,
+   "That knowledge is general."
+  ],
+  [
+   230.591,
+   233.777,
+   "Edges and textures are useful for almost\nany"
+  ],
+  [
+   233.777,
+   234.573,
+   "image task,"
+  ],
+  [
+   234.573,
+   237.758,
+   "not just the one it was trained on."
+  ],
+  [
+   238.39,
+   240.381,
+   "So why throw it away?"
+  ],
+  [
+   241.012,
+   242.605,
+   "Here is the move."
+  ],
+  [
+   242.605,
+   245.791,
+   "Take that pretrained network and freeze\nits backbone"
+  ],
+  [
+   245.791,
+   248.578,
+   "\u2014 lock those learned filters in place,"
+  ],
+  [
+   248.578,
+   250.967,
+   "so training does not touch them."
+  ],
+  [
+   251.598,
+   254.784,
+   "Then bolt a small new head onto the"
+  ],
+  [
+   254.784,
+   257.969,
+   "end \u2014 a fresh layer for your specific"
+  ],
+  [
+   257.969,
+   258.367,
+   "classes."
+  ],
+  [
+   258.999,
+   260.99,
+   "Maybe healthy versus diseased leaves."
+  ],
+  [
+   260.99,
+   262.583,
+   "Maybe your company's products."
+  ],
+  [
+   263.214,
+   266.001,
+   "And you train only that little head."
+  ],
+  [
+   266.633,
+   268.226,
+   "Because the hard part,"
+  ],
+  [
+   268.226,
+   269.818,
+   "understanding images in general,"
+  ],
+  [
+   269.818,
+   271.013,
+   "is already done,"
+  ],
+  [
+   271.013,
+   274.198,
+   "you can learn your task from just a"
+  ],
+  [
+   274.198,
+   275.791,
+   "few hundred labeled examples,"
+  ],
+  [
+   275.791,
+   276.587,
+   "in minutes,"
+  ],
+  [
+   276.587,
+   278.18,
+   "on a single computer."
+  ],
+  [
+   278.812,
+   281.997,
+   "Notice this is the exact same idea as"
+  ],
+  [
+   281.997,
+   283.988,
+   "fine-tuning a large language model."
+  ],
+  [
+   284.619,
+   286.212,
+   "Reuse enormous general knowledge,"
+  ],
+  [
+   286.212,
+   287.805,
+   "and specialize it cheaply."
+  ],
+  [
+   288.436,
+   291.622,
+   "That is why you almost never start from"
+  ],
+  [
+   291.622,
+   292.02,
+   "scratch."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch12-training.wav",
+   "volume": 1.0
+  }
+ }
+}

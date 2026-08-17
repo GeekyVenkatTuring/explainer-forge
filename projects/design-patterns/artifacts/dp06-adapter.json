@@ -1,0 +1,1889 @@
+{
+ "cuts": [
+  {
+   "id": "dp06-adapter_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 20.989,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 06",
+    "line1": "Two interfaces that",
+    "line2": "refuse to fit",
+    "sub": "your checkout speaks one language; the new payment SDK speaks another",
+    "dur": 21.489
+   }
+  },
+  {
+   "id": "dp06-adapter_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 21.489,
+   "out_seconds": 57.901,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Adding a new payment provider",
+    "situation": "Your checkout already charges cards through a clean PaymentGateway interface. Now the business wants PayPal \u2014 whose SDK looks nothing like yours, and you can't edit it.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udcb3",
+      "label": "Your interface"
+     },
+     {
+      "emoji": "\ud83c\udd7f\ufe0f",
+      "label": "PayPal SDK"
+     },
+     {
+      "emoji": "\ud83d\udd0c",
+      "label": "?"
+     }
+    ],
+    "ask": "Same goal \u2014 take a payment. Totally different shapes. Now what?",
+    "dur": 36.912
+   }
+  },
+  {
+   "id": "dp06-adapter_naive",
+   "type": "dp_code",
+   "in_seconds": 58.401,
+   "out_seconds": 87.942,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "Just translate it inline.",
+    "file": "Checkout.java",
+    "lines": [
+     {
+      "t": "void pay(Order order) {"
+     },
+     {
+      "t": "  if (order.usesPayPal()) {"
+     },
+     {
+      "t": "    long cents = (long)(order.total() * 100);",
+      "s": "hi"
+     },
+     {
+      "t": "    PayPalResponse r =",
+      "s": "hi"
+     },
+     {
+      "t": "        paypal.sendPayment(\"USD\", cents);",
+      "s": "hi"
+     },
+     {
+      "t": "    if (!r.ok()) throw new PaymentError(r.msg());",
+      "s": "hi"
+     },
+     {
+      "t": "  } else {"
+     },
+     {
+      "t": "    stripe.charge(order.total());"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "It works \u2014 PayPal's quirks translated right where you need them.",
+    "dur": 30.041
+   }
+  },
+  {
+   "id": "dp06-adapter_pain",
+   "type": "dp_pain",
+   "in_seconds": 88.442,
+   "out_seconds": 125.299,
+   "props": {
+    "title": "\"Add PayPal to refunds too. And receipts.\"",
+    "file": "everywhere.java",
+    "lines": [
+     {
+      "t": "// refund flow:"
+     },
+     {
+      "t": "if (order.usesPayPal()) {",
+      "s": "dim"
+     },
+     {
+      "t": "  paypal.reverse(txId, (long)(amt*100));  // again",
+      "s": "hi"
+     },
+     {
+      "t": "} else { stripe.refund(txId, amt); }"
+     },
+     {
+      "t": "// receipt flow, reporting flow, webhook flow..."
+     },
+     {
+      "t": "if (order.usesPayPal()) { /* translate AGAIN */ }",
+      "s": "hi"
+     }
+    ],
+    "smell": "A foreign shape leaking into every flow",
+    "touched": [
+     "pay() \u2014 translate cents/currency",
+     "refund() \u2014 translate again",
+     "receipts, webhooks, reports\u2026",
+     "add Razorpay? every flow again"
+    ],
+    "dur": 37.357
+   }
+  },
+  {
+   "id": "dp06-adapter_insight",
+   "type": "dp_insight",
+   "in_seconds": 125.799,
+   "out_seconds": 158.904,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "Your interface: charge, get a receipt",
+     "Everything that calls it",
+     "The idea of 'take a payment'"
+    ],
+    "varies": [
+     "Each SDK's method names and types",
+     "Dollars vs cents, response shapes",
+     "How many providers you support"
+    ],
+    "principle": "Translate the foreign shape in ONE place \u2014 an object that speaks your interface on the outside.",
+    "dur": 33.605
+   }
+  },
+  {
+   "id": "dp06-adapter_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 159.404,
+   "out_seconds": 199.513,
+   "props": {
+    "title": "Think of a travel plug adapter",
+    "emoji": "\ud83d\udd0c",
+    "analogy": "Your plug on one side, the foreign socket on the other.",
+    "map": [
+     {
+      "from": "Your appliance's plug",
+      "to": "your PaymentGateway interface"
+     },
+     {
+      "from": "The foreign wall socket",
+      "to": "the PayPal SDK"
+     },
+     {
+      "from": "The little adapter",
+      "to": "a PayPalAdapter class"
+     },
+     {
+      "from": "Plug in, it just works",
+      "to": "checkout stays unchanged"
+     }
+    ],
+    "breaks": "a plug adapter only reshapes the pins \u2014 a code adapter often converts the signal too, like dollars into cents and back.",
+    "dur": 40.609
+   }
+  },
+  {
+   "id": "dp06-adapter_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 200.013,
+   "out_seconds": 225.995,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "Your side already has a shape",
+    "file": "PaymentGateway.java",
+    "lines": [
+     {
+      "t": "// the shape your whole app speaks:"
+     },
+     {
+      "t": "interface PaymentGateway {",
+      "s": "add"
+     },
+     {
+      "t": "  Receipt charge(double amount);",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": ""
+     },
+     {
+      "t": "class StripeGateway implements PaymentGateway { /*ok*/ }",
+      "s": "add"
+     }
+    ],
+    "note": "Stripe already fits. The target interface is the plug shape.",
+    "dur": 26.482
+   }
+  },
+  {
+   "id": "dp06-adapter_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 226.495,
+   "out_seconds": 260.408,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "An adapter that speaks both",
+    "file": "PayPalAdapter.java",
+    "lines": [
+     {
+      "t": "class PayPalAdapter implements PaymentGateway {",
+      "s": "add"
+     },
+     {
+      "t": "  private final PayPalClient paypal;   // the foreign SDK",
+      "s": "add"
+     },
+     {
+      "t": "  public Receipt charge(double amount) {",
+      "s": "add"
+     },
+     {
+      "t": "    long cents = (long)(amount * 100);        // convert",
+      "s": "add"
+     },
+     {
+      "t": "    PayPalResponse r = paypal.sendPayment(\"USD\", cents);",
+      "s": "add"
+     },
+     {
+      "t": "    return Receipt.from(r);                   // convert back",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Your interface on the outside; PayPal's mess sealed on the inside.",
+    "dur": 34.413
+   }
+  },
+  {
+   "id": "dp06-adapter_try",
+   "type": "dp_try",
+   "in_seconds": 260.908,
+   "out_seconds": 289.764,
+   "props": {
+    "title": "Adapt the refund",
+    "file": "PayPalAdapter.java",
+    "lines": [
+     {
+      "t": "public Receipt refund(String txId, double amount) {"
+     },
+     {
+      "t": "  // \u25af convert to cents, call paypal.reverse(...)",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Write refund(): convert dollars to cents, call PayPal's reverse.",
+    "hint": "long c = (long)(amount*100); return Receipt.from(paypal.reverse(txId, c));",
+    "dur": 29.356
+   }
+  },
+  {
+   "id": "dp06-adapter_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 290.264,
+   "out_seconds": 320.279,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "Checkout goes back to being simple",
+    "file": "Checkout.java",
+    "lines": [
+     {
+      "t": "void pay(Order order, PaymentGateway gateway) {",
+      "s": "add"
+     },
+     {
+      "t": "  Receipt r = gateway.charge(order.total());   // that's all",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": ""
+     },
+     {
+      "t": "// wiring, at the edge \u2014 checkout never sees PayPal:"
+     },
+     {
+      "t": "PaymentGateway g = order.usesPayPal()",
+      "s": "add"
+     },
+     {
+      "t": "    ? new PayPalAdapter(paypal)",
+      "s": "add"
+     },
+     {
+      "t": "    : new StripeGateway();",
+      "s": "add"
+     }
+    ],
+    "note": "Every 'if PayPal' branch across the app collapses to one line at the edge.",
+    "dur": 30.515
+   }
+  },
+  {
+   "id": "dp06-adapter_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 320.779,
+   "out_seconds": 356.425,
+   "props": {
+    "requirement": "\"Add Razorpay\" \u2014 a third provider, third shape",
+    "naiveLabel": "Before",
+    "naiveCost": "A third translate-branch in every money flow.",
+    "naiveSteps": [
+     "add if-Razorpay to pay()",
+     "and refund, receipts, webhooks",
+     "translate its shape each time"
+    ],
+    "patLabel": "Now",
+    "patCost": "One adapter class. Every flow already works.",
+    "patFile": "RazorpayAdapter.java",
+    "patLines": [
+     {
+      "t": "class RazorpayAdapter",
+      "s": "add"
+     },
+     {
+      "t": "    implements PaymentGateway {",
+      "s": "add"
+     },
+     {
+      "t": "  private final RazorpaySdk rz;",
+      "s": "add"
+     },
+     {
+      "t": "  public Receipt charge(double amt) {",
+      "s": "add"
+     },
+     {
+      "t": "    return Receipt.from(",
+      "s": "add"
+     },
+     {
+      "t": "        rz.pay(amt, Currency.USD));",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "dur": 36.146
+   }
+  },
+  {
+   "id": "dp06-adapter_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 356.925,
+   "out_seconds": 393.276,
+   "props": {
+    "name": "The Adapter Pattern",
+    "plain": "Wrap an incompatible class in one that implements the interface your code expects, translating between the two.",
+    "nodes": [
+     {
+      "id": "target",
+      "title": "PaymentGateway",
+      "stereo": "interface",
+      "members": [
+       "+ charge(amount): Receipt"
+      ],
+      "x": 720,
+      "y": 210,
+      "w": 440,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "adaptee",
+      "title": "PayPalClient",
+      "stereo": "external SDK",
+      "members": [
+       "+ sendPayment(cur, cents)"
+      ],
+      "x": 1420,
+      "y": 250,
+      "w": 380,
+      "color": "#FBBF24"
+     },
+     {
+      "id": "stripe",
+      "title": "StripeGateway",
+      "members": [
+       "+ charge()"
+      ],
+      "x": 200,
+      "y": 650,
+      "w": 340,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "ppa",
+      "title": "PayPalAdapter",
+      "members": [
+       "+ charge()  \u2192 translates"
+      ],
+      "x": 720,
+      "y": 650,
+      "w": 440,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "rza",
+      "title": "RazorpayAdapter",
+      "members": [
+       "+ charge()"
+      ],
+      "x": 1340,
+      "y": 650,
+      "w": 380,
+      "color": "#34D399"
+     }
+    ],
+    "edges": [
+     {
+      "from": "stripe",
+      "to": "target",
+      "kind": "impl"
+     },
+     {
+      "from": "ppa",
+      "to": "target",
+      "kind": "impl"
+     },
+     {
+      "from": "rza",
+      "to": "target",
+      "kind": "impl"
+     },
+     {
+      "from": "ppa",
+      "to": "adaptee",
+      "kind": "has"
+     }
+    ],
+    "dur": 36.851
+   }
+  },
+  {
+   "id": "dp06-adapter_map",
+   "type": "dp_map",
+   "in_seconds": 393.776,
+   "out_seconds": 432.878,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Target",
+      "your": "interface PaymentGateway"
+     },
+     {
+      "role": "Adaptee",
+      "your": "PayPalClient (external SDK)"
+     },
+     {
+      "role": "Adapter",
+      "your": "PayPalAdapter"
+     },
+     {
+      "role": "Client",
+      "your": "checkout \u2014 speaks Target only"
+     }
+    ],
+    "plain": "The adapter implements the target and delegates to the adaptee, converting calls and data between the two shapes.",
+    "gof": "Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.",
+    "dur": 39.602
+   }
+  },
+  {
+   "id": "dp06-adapter_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 433.378,
+   "out_seconds": 474.724,
+   "props": {
+    "title": "It's glue, not magic",
+    "costs": [
+     "One more layer of indirection",
+     "Leaky abstractions if shapes differ deeply",
+     "A class per external provider"
+    ],
+    "dont": [
+     "You own both sides \u2014 just change one",
+     "The interfaces already match",
+     "It's a one-off, throwaway call"
+    ],
+    "signal": "you must use a class you can't change, and its interface doesn't match the one your code already speaks.",
+    "dur": 41.846
+   }
+  },
+  {
+   "id": "dp06-adapter_recap",
+   "type": "dp_recap",
+   "in_seconds": 475.224,
+   "out_seconds": 529.581,
+   "props": {
+    "title": "Adapter, in one breath",
+    "items": [
+     "A third-party SDK's shape \u2014 cents, odd methods, its own responses \u2014 leaked its quirks into every money flow.",
+     "Your interface is fixed; only the foreign shapes vary \u2014 so translate them in one place, behind your interface.",
+     "Adapter: a class that implements your target and wraps the foreign one, converting between them. New SDK, new adapter."
+    ],
+    "challenge": "Your app logs through a clean Logger interface. Ops wants everything sent to a third-party service whose client is a totally different shape you can't modify.",
+    "question": "Does Adapter fit? What's the target, and what's the adaptee?",
+    "dur": 54.857
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.721,
+   "Sometimes the problem is not your code at"
+  ],
+  [
+   2.721,
+   3.061,
+   "all."
+  ],
+  [
+   3.692,
+   6.413,
+   "It is a library you did not write,"
+  ],
+  [
+   6.413,
+   7.093,
+   "cannot change,"
+  ],
+  [
+   7.093,
+   9.814,
+   "and absolutely must use \u2014 and its shape"
+  ],
+  [
+   9.814,
+   11.515,
+   "is all wrong for yours."
+  ],
+  [
+   12.146,
+   13.507,
+   "Force them together directly,"
+  ],
+  [
+   13.507,
+   16.228,
+   "and the mismatch bleeds into every corner of"
+  ],
+  [
+   16.228,
+   16.908,
+   "your app."
+  ],
+  [
+   16.908,
+   19.629,
+   "There is a clean seam for exactly this."
+  ],
+  [
+   19.629,
+   20.989,
+   "Let's take a payment."
+  ],
+  [
+   21.489,
+   23.809,
+   "Your checkout already takes card payments."
+  ],
+  [
+   24.441,
+   27.534,
+   "It does it through a clean interface you"
+  ],
+  [
+   27.534,
+   29.467,
+   "designed \u2014 a payment gateway,"
+  ],
+  [
+   29.467,
+   32.561,
+   "with a charge method that takes an amount"
+  ],
+  [
+   32.561,
+   34.108,
+   "and returns a receipt."
+  ],
+  [
+   34.108,
+   34.494,
+   "Lovely."
+  ],
+  [
+   35.126,
+   37.059,
+   "Now the business wants PayPal."
+  ],
+  [
+   37.691,
+   40.784,
+   "So you pull in PayPal's official SDK \u2014"
+  ],
+  [
+   40.784,
+   43.491,
+   "and its class looks nothing like yours."
+  ],
+  [
+   43.491,
+   44.651,
+   "Different method name."
+  ],
+  [
+   44.651,
+   45.811,
+   "Money in cents,"
+  ],
+  [
+   45.811,
+   46.584,
+   "not dollars."
+  ],
+  [
+   46.584,
+   48.131,
+   "Its own response type."
+  ],
+  [
+   48.763,
+   51.856,
+   "And you cannot change a line of it."
+  ],
+  [
+   51.856,
+   53.403,
+   "It is a library."
+  ],
+  [
+   54.034,
+   54.808,
+   "Same goal,"
+  ],
+  [
+   54.808,
+   55.968,
+   "take a payment."
+  ],
+  [
+   55.968,
+   57.128,
+   "Completely different shapes."
+  ],
+  [
+   57.128,
+   57.901,
+   "Now what?"
+  ],
+  [
+   58.401,
+   59.522,
+   "The quickest fix:"
+  ],
+  [
+   59.522,
+   60.643,
+   "just translate it,"
+  ],
+  [
+   60.643,
+   62.137,
+   "right here in checkout."
+  ],
+  [
+   62.769,
+   64.637,
+   "If the order uses PayPal,"
+  ],
+  [
+   64.637,
+   66.505,
+   "convert the dollars to cents,"
+  ],
+  [
+   66.505,
+   69.12,
+   "call send payment with a currency string,"
+  ],
+  [
+   69.12,
+   72.109,
+   "then unpack PayPal's response and turn a failure"
+  ],
+  [
+   72.109,
+   73.603,
+   "into your own error."
+  ],
+  [
+   73.603,
+   73.977,
+   "Otherwise,"
+  ],
+  [
+   73.977,
+   75.471,
+   "use the normal charge."
+  ],
+  [
+   76.102,
+   77.223,
+   "And it works."
+  ],
+  [
+   77.855,
+   80.47,
+   "But look at what you have done."
+  ],
+  [
+   80.47,
+   81.217,
+   "PayPal's cents,"
+  ],
+  [
+   81.217,
+   82.338,
+   "its currency codes,"
+  ],
+  [
+   82.338,
+   85.327,
+   "its response type \u2014 all of PayPal's quirks"
+  ],
+  [
+   85.327,
+   87.942,
+   "are now sitting inside your checkout logic."
+  ],
+  [
+   88.442,
+   89.618,
+   "Then it spreads,"
+  ],
+  [
+   89.618,
+   91.577,
+   "the way these things do."
+  ],
+  [
+   92.208,
+   95.343,
+   "Refunds need PayPal too \u2014 so the same"
+  ],
+  [
+   95.343,
+   96.127,
+   "dollars-to-cents dance,"
+  ],
+  [
+   96.127,
+   97.694,
+   "the same response unpacking,"
+  ],
+  [
+   97.694,
+   99.654,
+   "copied into the refund flow."
+  ],
+  [
+   100.285,
+   101.069,
+   "Then receipts."
+  ],
+  [
+   101.069,
+   101.853,
+   "Then reporting."
+  ],
+  [
+   101.853,
+   102.636,
+   "Then webhooks."
+  ],
+  [
+   103.268,
+   106.403,
+   "Every single flow that touches money now has"
+  ],
+  [
+   106.403,
+   107.578,
+   "an if-PayPal branch,"
+  ],
+  [
+   107.578,
+   110.321,
+   "translating the same quirks over and over."
+  ],
+  [
+   110.953,
+   114.087,
+   "The foreign shape has leaked into your entire"
+  ],
+  [
+   114.087,
+   114.479,
+   "codebase."
+  ],
+  [
+   115.111,
+   118.246,
+   "And when the company adds Razorpay next quarter"
+  ],
+  [
+   118.246,
+   121.38,
+   "\u2014 a third shape \u2014 you get to"
+  ],
+  [
+   121.38,
+   124.123,
+   "do all of it a third time."
+  ],
+  [
+   124.123,
+   125.299,
+   "This is untenable."
+  ],
+  [
+   125.799,
+   126.494,
+   "What changes,"
+  ],
+  [
+   126.494,
+   127.884,
+   "and what stays fixed?"
+  ],
+  [
+   128.515,
+   129.905,
+   "Your side is fixed."
+  ],
+  [
+   129.905,
+   132.685,
+   "You have a payment gateway interface \u2014 charge"
+  ],
+  [
+   132.685,
+   133.38,
+   "an amount,"
+  ],
+  [
+   133.38,
+   136.16,
+   "get a receipt \u2014 and a whole app"
+  ],
+  [
+   136.16,
+   137.203,
+   "that speaks it."
+  ],
+  [
+   137.834,
+   139.919,
+   "What varies is each provider's shape."
+  ],
+  [
+   139.919,
+   140.962,
+   "Its method names,"
+  ],
+  [
+   140.962,
+   141.657,
+   "its cents,"
+  ],
+  [
+   141.657,
+   142.699,
+   "its response types,"
+  ],
+  [
+   142.699,
+   145.131,
+   "and how many of them there are."
+  ],
+  [
+   145.763,
+   148.543,
+   "So the fix is almost obvious once you"
+  ],
+  [
+   148.543,
+   149.238,
+   "see it."
+  ],
+  [
+   149.869,
+   151.607,
+   "Do the translation exactly once,"
+  ],
+  [
+   151.607,
+   154.387,
+   "hidden inside one object \u2014 a thing that"
+  ],
+  [
+   154.387,
+   156.472,
+   "looks like PayPal on the inside,"
+  ],
+  [
+   156.472,
+   158.904,
+   "but speaks your interface on the outside."
+  ],
+  [
+   159.404,
+   162.158,
+   "You already own the perfect picture for this."
+  ],
+  [
+   162.158,
+   163.535,
+   "A travel plug adapter."
+  ],
+  [
+   164.167,
+   166.577,
+   "Your laptop has one kind of plug."
+  ],
+  [
+   166.577,
+   168.987,
+   "The hotel wall has a different socket."
+  ],
+  [
+   168.987,
+   171.741,
+   "The little adapter fits your plug on one"
+  ],
+  [
+   171.741,
+   174.495,
+   "side and the foreign socket on the other"
+  ],
+  [
+   174.495,
+   177.249,
+   "\u2014 and your laptop neither knows nor cares."
+  ],
+  [
+   177.881,
+   179.602,
+   "That is the fix exactly."
+  ],
+  [
+   179.602,
+   181.668,
+   "Your plug is your payment interface."
+  ],
+  [
+   181.668,
+   183.733,
+   "The foreign socket is PayPal's SDK."
+  ],
+  [
+   183.733,
+   186.488,
+   "And the adapter is a small class that"
+  ],
+  [
+   186.488,
+   187.176,
+   "bridges them."
+  ],
+  [
+   187.808,
+   189.529,
+   "Where does the picture break?"
+  ],
+  [
+   189.529,
+   191.939,
+   "A plug adapter only reshapes the pins."
+  ],
+  [
+   191.939,
+   194.693,
+   "A software adapter usually converts the signal too"
+  ],
+  [
+   194.693,
+   197.103,
+   "\u2014 turning your dollars into their cents,"
+  ],
+  [
+   197.103,
+   199.513,
+   "and their response back into your receipt."
+  ],
+  [
+   200.013,
+   200.816,
+   "Move one."
+  ],
+  [
+   200.816,
+   203.626,
+   "Notice you already have the target shape."
+  ],
+  [
+   204.258,
+   207.469,
+   "Your payment gateway interface \u2014 charge an amount,"
+  ],
+  [
+   207.469,
+   208.674,
+   "return a receipt."
+  ],
+  [
+   209.305,
+   211.313,
+   "Stripe already implements it cleanly,"
+  ],
+  [
+   211.313,
+   213.32,
+   "because it happened to fit."
+  ],
+  [
+   213.951,
+   215.959,
+   "This interface is the plug."
+  ],
+  [
+   215.959,
+   219.17,
+   "Everything downstream expects this shape and\nnothing else."
+  ],
+  [
+   219.17,
+   222.382,
+   "Our job is to make PayPal fit it"
+  ],
+  [
+   222.382,
+   224.389,
+   "too \u2014 without touching PayPal,"
+  ],
+  [
+   224.389,
+   225.995,
+   "and without touching checkout."
+  ],
+  [
+   226.495,
+   229.714,
+   "Move two \u2014 the whole pattern in one"
+  ],
+  [
+   229.714,
+   230.117,
+   "class."
+  ],
+  [
+   230.748,
+   233.565,
+   "The PayPal adapter implements your payment\ngateway,"
+  ],
+  [
+   233.565,
+   236.784,
+   "so from the outside it looks exactly like"
+  ],
+  [
+   236.784,
+   237.186,
+   "Stripe."
+  ],
+  [
+   237.818,
+   238.22,
+   "Inside,"
+  ],
+  [
+   238.22,
+   241.44,
+   "it holds a PayPal client \u2014 the foreign"
+  ],
+  [
+   241.44,
+   241.842,
+   "SDK."
+  ],
+  [
+   242.474,
+   245.693,
+   "Its charge method does the translation you were"
+  ],
+  [
+   245.693,
+   246.497,
+   "scattering everywhere:"
+  ],
+  [
+   246.497,
+   247.705,
+   "dollars to cents,"
+  ],
+  [
+   247.705,
+   248.912,
+   "call send payment,"
+  ],
+  [
+   248.912,
+   252.131,
+   "then turn PayPal's response back into your\nreceipt."
+  ],
+  [
+   252.763,
+   255.982,
+   "All of PayPal's quirks are now sealed inside"
+  ],
+  [
+   255.982,
+   257.189,
+   "this one class."
+  ],
+  [
+   257.189,
+   258.798,
+   "Your interface faces out;"
+  ],
+  [
+   258.798,
+   260.408,
+   "the mess faces in."
+  ],
+  [
+   260.908,
+   261.671,
+   "Your turn."
+  ],
+  [
+   262.303,
+   264.592,
+   "The adapter should handle refunds too."
+  ],
+  [
+   264.592,
+   266.5,
+   "Here is the refund method,"
+  ],
+  [
+   266.5,
+   266.882,
+   "empty."
+  ],
+  [
+   267.513,
+   270.566,
+   "It is the same idea as charge \u2014"
+  ],
+  [
+   270.566,
+   272.474,
+   "convert the dollars to cents,"
+  ],
+  [
+   272.474,
+   275.527,
+   "then call PayPal's reverse with the transaction\nid,"
+  ],
+  [
+   275.527,
+   278.198,
+   "and wrap the result in a receipt."
+  ],
+  [
+   278.83,
+   279.211,
+   "Pause,"
+  ],
+  [
+   279.211,
+   280.356,
+   "and write it."
+  ],
+  [
+   280.987,
+   283.659,
+   "Notice you are doing the translation here,"
+  ],
+  [
+   283.659,
+   286.711,
+   "once \u2014 so that no refund flow anywhere"
+  ],
+  [
+   286.711,
+   289.764,
+   "else ever has to know PayPal uses cents."
+  ],
+  [
+   290.264,
+   291.045,
+   "Move three."
+  ],
+  [
+   291.045,
+   292.607,
+   "Now watch checkout heal."
+  ],
+  [
+   293.239,
+   296.363,
+   "Pay just takes a payment gateway and calls"
+  ],
+  [
+   296.363,
+   296.754,
+   "charge."
+  ],
+  [
+   296.754,
+   297.535,
+   "One line."
+  ],
+  [
+   297.535,
+   298.316,
+   "No cents,"
+  ],
+  [
+   298.316,
+   299.488,
+   "no currency codes,"
+  ],
+  [
+   299.488,
+   300.66,
+   "no response unpacking."
+  ],
+  [
+   300.66,
+   303.003,
+   "It has no idea PayPal exists."
+  ],
+  [
+   303.634,
+   306.759,
+   "The only place that chooses PayPal is the"
+  ],
+  [
+   306.759,
+   307.15,
+   "wiring,"
+  ],
+  [
+   307.15,
+   307.54,
+   "once,"
+  ],
+  [
+   307.54,
+   309.883,
+   "at the edge of the system."
+  ],
+  [
+   310.515,
+   313.639,
+   "And every one of those if-PayPal branches \u2014"
+  ],
+  [
+   313.639,
+   314.421,
+   "in refunds,"
+  ],
+  [
+   314.421,
+   314.811,
+   "receipts,"
+  ],
+  [
+   314.811,
+   315.202,
+   "reports,"
+  ],
+  [
+   315.202,
+   316.373,
+   "webhooks \u2014 collapses."
+  ],
+  [
+   316.373,
+   318.326,
+   "They all just call charge,"
+  ],
+  [
+   318.326,
+   319.107,
+   "or refund,"
+  ],
+  [
+   319.107,
+   320.279,
+   "on the gateway."
+  ],
+  [
+   320.779,
+   322.435,
+   "Now the third provider."
+  ],
+  [
+   322.435,
+   324.919,
+   "Add Razorpay \u2014 yet another shape."
+  ],
+  [
+   325.551,
+   325.965,
+   "Before,"
+  ],
+  [
+   325.965,
+   328.863,
+   "that meant a third branch in pay,"
+  ],
+  [
+   328.863,
+   329.69,
+   "and refund,"
+  ],
+  [
+   329.69,
+   330.518,
+   "and receipts,"
+  ],
+  [
+   330.518,
+   331.346,
+   "and webhooks,"
+  ],
+  [
+   331.346,
+   333.83,
+   "translating Razorpay's quirks in every one."
+  ],
+  [
+   334.462,
+   334.876,
+   "Now?"
+  ],
+  [
+   334.876,
+   336.118,
+   "One adapter class."
+  ],
+  [
+   336.118,
+   337.774,
+   "It implements your gateway,"
+  ],
+  [
+   337.774,
+   339.016,
+   "wraps Razorpay's SDK,"
+  ],
+  [
+   339.016,
+   340.258,
+   "and translates inside."
+  ],
+  [
+   340.89,
+   343.374,
+   "And that is the entire change."
+  ],
+  [
+   344.005,
+   344.419,
+   "Checkout,"
+  ],
+  [
+   344.419,
+   344.833,
+   "refunds,"
+  ],
+  [
+   344.833,
+   347.317,
+   "reporting \u2014 none of them move."
+  ],
+  [
+   347.317,
+   350.215,
+   "They already speak to a payment gateway,"
+  ],
+  [
+   350.215,
+   353.113,
+   "and Razorpay is now just another one."
+  ],
+  [
+   353.113,
+   356.425,
+   "A new provider became a single new class."
+  ],
+  [
+   356.925,
+   358.434,
+   "Now we name it."
+  ],
+  [
+   359.065,
+   360.951,
+   "This is the Adapter pattern."
+  ],
+  [
+   361.583,
+   362.714,
+   "At the top,"
+  ],
+  [
+   362.714,
+   365.732,
+   "your target \u2014 the payment gateway your app"
+  ],
+  [
+   365.732,
+   366.109,
+   "speaks."
+  ],
+  [
+   366.741,
+   367.872,
+   "On the right,"
+  ],
+  [
+   367.872,
+   370.136,
+   "the adaptee \u2014 PayPal's external SDK,"
+  ],
+  [
+   370.136,
+   370.89,
+   "in amber,"
+  ],
+  [
+   370.89,
+   372.776,
+   "the shape you cannot change."
+  ],
+  [
+   373.408,
+   374.916,
+   "And in the middle-bottom,"
+  ],
+  [
+   374.916,
+   375.671,
+   "the adapter."
+  ],
+  [
+   375.671,
+   377.557,
+   "Look at its two arrows."
+  ],
+  [
+   377.557,
+   379.065,
+   "It implements your interface,"
+  ],
+  [
+   379.065,
+   381.329,
+   "and it holds the foreign SDK."
+  ],
+  [
+   381.96,
+   384.978,
+   "That is the signature \u2014 it faces your"
+  ],
+  [
+   384.978,
+   386.487,
+   "code with your shape,"
+  ],
+  [
+   386.487,
+   388.372,
+   "and faces PayPal with PayPal's."
+  ],
+  [
+   388.372,
+   389.504,
+   "Stripe fits natively;"
+  ],
+  [
+   389.504,
+   392.522,
+   "the green Razorpay adapter is the one you"
+  ],
+  [
+   392.522,
+   393.276,
+   "just added."
+  ],
+  [
+   393.776,
+   394.579,
+   "The roles,"
+  ],
+  [
+   394.579,
+   396.184,
+   "mapped to your code."
+  ],
+  [
+   396.815,
+   400.025,
+   "The Target is your payment gateway interface \u2014"
+  ],
+  [
+   400.025,
+   401.631,
+   "the shape you want."
+  ],
+  [
+   402.262,
+   405.472,
+   "The Adaptee is PayPal's SDK \u2014 the shape"
+  ],
+  [
+   405.472,
+   406.275,
+   "you have."
+  ],
+  [
+   406.907,
+   410.117,
+   "The Adapter is the class that bridges them."
+  ],
+  [
+   410.748,
+   413.156,
+   "And the Client is your checkout,"
+  ],
+  [
+   413.156,
+   415.564,
+   "which only ever speaks the target."
+  ],
+  [
+   416.195,
+   419.406,
+   "In plain terms \u2014 the adapter implements your"
+  ],
+  [
+   419.406,
+   422.214,
+   "interface and delegates to the foreign class,"
+  ],
+  [
+   422.214,
+   423.82,
+   "converting between the two."
+  ],
+  [
+   424.451,
+   426.056,
+   "The Gang of Four:"
+  ],
+  [
+   426.056,
+   429.266,
+   "convert the interface of a class into another"
+  ],
+  [
+   429.266,
+   430.47,
+   "interface clients expect,"
+  ],
+  [
+   430.47,
+   432.878,
+   "so incompatible classes can work together."
+  ],
+  [
+   433.378,
+   434.382,
+   "The honest costs."
+  ],
+  [
+   435.014,
+   437.356,
+   "An adapter is a layer of glue,"
+  ],
+  [
+   437.356,
+   440.033,
+   "and glue is still code to maintain \u2014"
+  ],
+  [
+   440.033,
+   442.041,
+   "a class for every external provider."
+  ],
+  [
+   442.673,
+   445.35,
+   "And if the two shapes differ deeply \u2014"
+  ],
+  [
+   445.35,
+   448.027,
+   "say one is asynchronous and one is not"
+  ],
+  [
+   448.027,
+   449.701,
+   "\u2014 the abstraction can leak,"
+  ],
+  [
+   449.701,
+   451.374,
+   "and the adapter gets complicated."
+  ],
+  [
+   452.005,
+   454.683,
+   "So skip it when you own both sides."
+  ],
+  [
+   454.683,
+   457.36,
+   "If you can just change one interface to"
+  ],
+  [
+   457.36,
+   457.694,
+   "match,"
+  ],
+  [
+   457.694,
+   460.372,
+   "do that \u2014 an adapter would be ceremony."
+  ],
+  [
+   460.372,
+   463.049,
+   "And do not build one for a single"
+  ],
+  [
+   463.049,
+   463.718,
+   "throwaway call."
+  ],
+  [
+   464.35,
+   465.688,
+   "The signal is specific."
+  ],
+  [
+   465.688,
+   468.366,
+   "You must use a class you cannot change,"
+  ],
+  [
+   468.366,
+   471.043,
+   "and its interface does not match the one"
+  ],
+  [
+   471.043,
+   472.381,
+   "your code already speaks."
+  ],
+  [
+   472.381,
+   474.724,
+   "That gap is exactly what Adapter fills."
+  ],
+  [
+   475.224,
+   477.13,
+   "The journey in three beats."
+  ],
+  [
+   477.762,
+   478.524,
+   "The problem:"
+  ],
+  [
+   478.524,
+   481.192,
+   "a third-party SDK's shape \u2014 its cents,"
+  ],
+  [
+   481.192,
+   482.717,
+   "its odd method names,"
+  ],
+  [
+   482.717,
+   485.767,
+   "its own response type \u2014 leaked into every"
+  ],
+  [
+   485.767,
+   487.291,
+   "flow that touched money."
+  ],
+  [
+   487.923,
+   488.685,
+   "The insight:"
+  ],
+  [
+   488.685,
+   490.21,
+   "your interface is fixed,"
+  ],
+  [
+   490.21,
+   492.497,
+   "and only the foreign shapes vary,"
+  ],
+  [
+   492.497,
+   494.022,
+   "so translate them once,"
+  ],
+  [
+   494.022,
+   495.165,
+   "behind your interface."
+  ],
+  [
+   495.797,
+   496.559,
+   "The pattern:"
+  ],
+  [
+   496.559,
+   496.941,
+   "Adapter."
+  ],
+  [
+   496.941,
+   499.99,
+   "A class that implements your target and wraps"
+  ],
+  [
+   499.99,
+   501.134,
+   "the foreign one,"
+  ],
+  [
+   501.134,
+   504.183,
+   "converting between them \u2014 so a new SDK"
+  ],
+  [
+   504.183,
+   506.089,
+   "is just a new adapter."
+  ],
+  [
+   506.721,
+   507.102,
+   "Now,"
+  ],
+  [
+   507.102,
+   507.864,
+   "for you,"
+  ],
+  [
+   507.864,
+   509.389,
+   "before the next episode."
+  ],
+  [
+   510.021,
+   513.07,
+   "Your app logs through a clean logger interface."
+  ],
+  [
+   513.07,
+   516.12,
+   "Ops wants every log shipped to a third-party"
+  ],
+  [
+   516.12,
+   519.169,
+   "service whose client is a completely different\nshape"
+  ],
+  [
+   519.169,
+   520.313,
+   "you cannot modify."
+  ],
+  [
+   520.944,
+   522.088,
+   "Does Adapter fit?"
+  ],
+  [
+   522.088,
+   523.994,
+   "What is the target here,"
+  ],
+  [
+   523.994,
+   525.9,
+   "and what is the adaptee?"
+  ],
+  [
+   526.531,
+   526.913,
+   "Pause,"
+  ],
+  [
+   526.913,
+   529.581,
+   "and sketch it before you press play."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp06-adapter.wav",
+   "volume": 1.0
+  }
+ }
+}

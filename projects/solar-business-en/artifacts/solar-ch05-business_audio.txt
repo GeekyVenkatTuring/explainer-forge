@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/solar-ch05-business_divider.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/solar-ch05-business_cni.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/solar-ch05-business_models.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/solar-business-en/assets/solar-ch05-business_bizcase.wav'

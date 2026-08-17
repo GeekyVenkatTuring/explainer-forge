@@ -1,0 +1,760 @@
+{
+ "cuts": [
+  {
+   "id": "lag-ch08-care_div",
+   "type": "lag_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 16.556,
+   "props": {
+    "n": 8,
+    "title": "Care that decides yield",
+    "sub": "water, wood, and a clip",
+    "color": "#7CB518",
+    "dur": 17.056
+   }
+  },
+  {
+   "id": "lag-ch08-care_water",
+   "type": "lag_cards",
+   "in_seconds": 17.056,
+   "out_seconds": 55.23,
+   "props": {
+    "kicker": "IRRIGATION",
+    "title": "Three to four pulses while fruit swells",
+    "cols": 2,
+    "foot": "Survival drought-tolerance is not a sizing strategy.",
+    "items": [
+     {
+      "label": "Fruit-set water",
+      "sub": "This is when size is decided. Miss it, sell small fruit.",
+      "c": "cool"
+     },
+     {
+      "label": "Drip if you can",
+      "sub": "Pulses without a wet pan. Better on loam too.",
+      "c": "leaf"
+     },
+     {
+      "label": "Mulch",
+      "sub": "Keeps April heat off shallow roots.",
+      "c": "fruit"
+     },
+     {
+      "label": "No flood clay",
+      "sub": "Wet feet plus heat is how trees fade.",
+      "c": "risk"
+     }
+    ],
+    "dur": 38.674
+   }
+  },
+  {
+   "id": "lag-ch08-care_prune",
+   "type": "lag_cards",
+   "in_seconds": 55.73,
+   "out_seconds": 87.328,
+   "props": {
+    "kicker": "PRUNING",
+    "title": "May tip-prune. Do not butcher.",
+    "cols": 3,
+    "foot": "Wood you cut in May is next April's money.",
+    "items": [
+     {
+      "label": "End of May",
+      "sub": "After harvest. Light heading, not topping.",
+      "c": "fruit"
+     },
+     {
+      "label": "Open light",
+      "sub": "Colour needs sun on the bunch.",
+      "c": "leaf"
+     },
+     {
+      "label": "Heavy = leaves",
+      "sub": "A savage prune delays bearing. Again.",
+      "c": "risk"
+     }
+    ],
+    "dur": 32.098
+   }
+  },
+  {
+   "id": "lag-ch08-care_thin",
+   "type": "lag_cards",
+   "in_seconds": 87.828,
+   "out_seconds": 123.146,
+   "props": {
+    "kicker": "CROP LOAD",
+    "title": "Thin for size, or leave for pulp",
+    "cols": 2,
+    "foot": "Every fruit on a cluster is not a victory.",
+    "items": [
+     {
+      "label": "Fresh path",
+      "sub": "Fewer, larger fruit. Buyers pay for size and colour.",
+      "c": "fruit"
+     },
+     {
+      "label": "Pulp path",
+      "sub": "More fruit, smaller, processed the same week.",
+      "c": "leaf"
+     },
+     {
+      "label": "Birds",
+      "sub": "Net or lose the coloured ones first.",
+      "c": "risk"
+     },
+     {
+      "label": "Labour",
+      "sub": "Thinning is a line item. Budget it.",
+      "c": "cool"
+     }
+    ],
+    "dur": 35.818
+   }
+  },
+  {
+   "id": "lag-ch08-care_weed",
+   "type": "lag_cards",
+   "in_seconds": 123.646,
+   "out_seconds": 159.948,
+   "props": {
+    "kicker": "WEEDS",
+    "title": "Clean basin. Careful alley.",
+    "cols": 3,
+    "foot": "Current label beats a 2015 PDF.",
+    "items": [
+     {
+      "label": "Hoe the basin",
+      "sub": "Safe. Always legal. Always useful.",
+      "c": "leaf"
+     },
+     {
+      "label": "Alley only",
+      "sub": "If you use herbicide, it is for weeds, not the tree.",
+      "c": "risk"
+     },
+     {
+      "label": "Mulch helps",
+      "sub": "Less germination, cooler soil, fewer hoes.",
+      "c": "cool"
+     }
+    ],
+    "dur": 36.802
+   }
+  },
+  {
+   "id": "lag-ch08-care_microfeed",
+   "type": "lag_cards",
+   "in_seconds": 160.448,
+   "out_seconds": 192.622,
+   "props": {
+    "kicker": "MICRONUTRIENTS",
+    "title": "Yellow is a question, not more urea",
+    "cols": 3,
+    "foot": "Match the symptom to a test, not to a shopkeeper\u2019s bag.",
+    "items": [
+     {
+      "label": "Soil test",
+      "sub": "Every few years. Especially if leaves misbehave.",
+      "c": "cool"
+     },
+     {
+      "label": "Foliar fix",
+      "sub": "When a named deficiency is diagnosed.",
+      "c": "leaf"
+     },
+     {
+      "label": "Urea dump",
+      "sub": "The usual wrong answer.",
+      "c": "risk"
+     }
+    ],
+    "dur": 32.674
+   }
+  },
+  {
+   "id": "lag-ch08-care_drip",
+   "type": "lag_cards",
+   "in_seconds": 193.122,
+   "out_seconds": 227.6,
+   "props": {
+    "kicker": "DRIP",
+    "title": "Wet the roots. Not the trunk.",
+    "cols": 2,
+    "foot": "Clogged emitters in April are a yield event.",
+    "items": [
+     {
+      "label": "Basin ring",
+      "sub": "Where the feeder roots actually are.",
+      "c": "cool"
+     },
+     {
+      "label": "Off trunk",
+      "sub": "Dry collar. Wet soil.",
+      "c": "leaf"
+     },
+     {
+      "label": "Filter + flush",
+      "sub": "Plumbing is plant care.",
+      "c": "fruit"
+     },
+     {
+      "label": "Power gaps",
+      "sub": "Tank buffer. Fruit swell will not wait.",
+      "c": "risk"
+     }
+    ],
+    "dur": 34.978
+   }
+  },
+  {
+   "id": "lag-ch08-care_thinhow",
+   "type": "lag_cards",
+   "in_seconds": 228.1,
+   "out_seconds": 259.266,
+   "props": {
+    "kicker": "THINNING HOW",
+    "title": "Marble size. Small ones off. Air in the bunch.",
+    "cols": 3,
+    "foot": "A crowded bunch is a rot bunch.",
+    "items": [
+     {
+      "label": "Marble stage",
+      "sub": "Early enough that remaining fruit swell.",
+      "c": "fruit"
+     },
+     {
+      "label": "Damaged first",
+      "sub": "Scars and insect hits never become A grade.",
+      "c": "risk"
+     },
+     {
+      "label": "Air",
+      "sub": "Skins that do not kiss survive the crate.",
+      "c": "cool"
+     }
+    ],
+    "dur": 31.666
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.145,
+   "Part eight."
+  ],
+  [
+   1.145,
+   4.007,
+   "The work that changes yield."
+  ],
+  [
+   4.557,
+   6.847,
+   "Water at fruit set."
+  ],
+  [
+   6.847,
+   8.564,
+   "A May prune."
+  ],
+  [
+   8.564,
+   10.282,
+   "A trained frame."
+  ],
+  [
+   10.832,
+   15.411,
+   "Skip these and year fifteen still looks like"
+  ],
+  [
+   15.411,
+   16.556,
+   "year four."
+  ],
+  [
+   17.056,
+   20.938,
+   "Loquat can look drought-tough and still fail you"
+  ],
+  [
+   20.938,
+   22.394,
+   "at fruit size."
+  ],
+  [
+   22.944,
+   26.826,
+   "Guides call for three to four irrigations from"
+  ],
+  [
+   26.826,
+   28.767,
+   "fruit set to maturity."
+  ],
+  [
+   29.317,
+   31.743,
+   "That is the yield irrigation,"
+  ],
+  [
+   31.743,
+   33.684,
+   "not the survival irrigation."
+  ],
+  [
+   34.234,
+   36.661,
+   "Drip makes those pulses cheap."
+  ],
+  [
+   36.661,
+   40.057,
+   "Flood on heavy soil invites root rot."
+  ],
+  [
+   40.607,
+   42.063,
+   "Mulch the basin."
+  ],
+  [
+   42.063,
+   45.945,
+   "Weeds in March steal the water you just"
+  ],
+  [
+   45.945,
+   46.916,
+   "paid for."
+  ],
+  [
+   47.466,
+   51.348,
+   "If you cannot water in the sixty days"
+  ],
+  [
+   51.348,
+   52.318,
+   "before harvest,"
+  ],
+  [
+   52.318,
+   55.23,
+   "do not plant a dessert fruit."
+  ],
+  [
+   55.73,
+   57.653,
+   "Prune for a frame,"
+  ],
+  [
+   57.653,
+   59.576,
+   "then stop showing off."
+  ],
+  [
+   60.126,
+   61.088,
+   "After harvest,"
+  ],
+  [
+   61.088,
+   63.492,
+   "around the end of May,"
+  ],
+  [
+   63.492,
+   67.338,
+   "snip about five centimetres below the shoot tips."
+  ],
+  [
+   67.888,
+   71.254,
+   "That light heading sets next season's wood."
+  ],
+  [
+   71.804,
+   73.727,
+   "Heavy pruning makes leaves,"
+  ],
+  [
+   73.727,
+   74.689,
+   "not fruit."
+  ],
+  [
+   75.239,
+   79.085,
+   "Open the centre enough that a cluster can"
+  ],
+  [
+   79.085,
+   79.566,
+   "colour."
+  ],
+  [
+   80.116,
+   83.962,
+   "Take out dead wood and watersprouts whenever you"
+  ],
+  [
+   83.962,
+   84.924,
+   "see them,"
+  ],
+  [
+   84.924,
+   87.328,
+   "not in a once-a-decade rage."
+  ],
+  [
+   87.828,
+   88.733,
+   "Clusters overbear."
+  ],
+  [
+   88.733,
+   90.09,
+   "That is normal."
+  ],
+  [
+   90.64,
+   92.901,
+   "If you want mandi size,"
+  ],
+  [
+   92.901,
+   96.52,
+   "thin fruit in the cluster while they are"
+  ],
+  [
+   96.52,
+   96.972,
+   "small."
+  ],
+  [
+   97.522,
+   99.784,
+   "If you want jam pulp,"
+  ],
+  [
+   99.784,
+   102.046,
+   "you can leave more on,"
+  ],
+  [
+   102.046,
+   103.855,
+   "and accept small fruit."
+  ],
+  [
+   104.405,
+   106.214,
+   "Decide that before bloom,"
+  ],
+  [
+   106.214,
+   108.024,
+   "not at the crate."
+  ],
+  [
+   108.574,
+   112.192,
+   "Birds and bats will thin for you in"
+  ],
+  [
+   112.192,
+   113.549,
+   "a bad way."
+  ],
+  [
+   113.549,
+   116.716,
+   "Netting is a cost in some sites."
+  ],
+  [
+   117.266,
+   119.075,
+   "Hand thinning is skilled,"
+  ],
+  [
+   119.075,
+   119.527,
+   "slow,"
+  ],
+  [
+   119.527,
+   123.146,
+   "and worth it on the fresh market path."
+  ],
+  [
+   123.646,
+   124.147,
+   "Weeds:"
+  ],
+  [
+   124.147,
+   126.15,
+   "hand hoe the basin."
+  ],
+  [
+   126.7,
+   130.706,
+   "Old leaflets mention glyphosate in the alley at"
+  ],
+  [
+   130.706,
+   132.208,
+   "a labelled rate,"
+  ],
+  [
+   132.208,
+   133.711,
+   "off the crop."
+  ],
+  [
+   134.261,
+   136.264,
+   "Rules and products change."
+  ],
+  [
+   136.264,
+   138.267,
+   "Read the current label."
+  ],
+  [
+   138.267,
+   141.272,
+   "Keep spray off green loquat wood."
+  ],
+  [
+   141.822,
+   145.828,
+   "A weedy March basin is a water thief."
+  ],
+  [
+   146.378,
+   150.384,
+   "A herbicide scar on a young graft is"
+  ],
+  [
+   150.384,
+   151.886,
+   "a dead tree."
+  ],
+  [
+   152.436,
+   154.439,
+   "If labour can hoe,"
+  ],
+  [
+   154.439,
+   154.94,
+   "hoe."
+  ],
+  [
+   154.94,
+   157.945,
+   "Chemical shortcuts belong in the alley,"
+  ],
+  [
+   157.945,
+   159.948,
+   "never on the trunk."
+  ],
+  [
+   160.448,
+   160.993,
+   "Micronutrients."
+  ],
+  [
+   161.543,
+   164.812,
+   "If leaves yellow in a pattern,"
+  ],
+  [
+   164.812,
+   168.082,
+   "do not dump more urea blindly."
+  ],
+  [
+   168.632,
+   169.176,
+   "Iron,"
+  ],
+  [
+   169.176,
+   169.721,
+   "zinc,"
+  ],
+  [
+   169.721,
+   174.08,
+   "and manganese issues show up on some calcareous"
+  ],
+  [
+   174.08,
+   174.625,
+   "soils."
+  ],
+  [
+   175.175,
+   179.534,
+   "Leaflets say foliar correction when symptoms are\nclear."
+  ],
+  [
+   180.084,
+   184.444,
+   "A soil test every few years is cheaper"
+  ],
+  [
+   184.444,
+   186.623,
+   "than a yellow mystery."
+  ],
+  [
+   187.173,
+   189.898,
+   "Green leaves are not vanity."
+  ],
+  [
+   189.898,
+   192.622,
+   "They are next year\u2019s clusters."
+  ],
+  [
+   193.122,
+   194.18,
+   "Drip design,"
+  ],
+  [
+   194.18,
+   194.708,
+   "briefly."
+  ],
+  [
+   195.258,
+   198.96,
+   "Two laterals per row once canopies widen,"
+  ],
+  [
+   198.96,
+   203.19,
+   "or a ring of points in the basin."
+  ],
+  [
+   203.74,
+   206.384,
+   "Keep emitters off the trunk."
+  ],
+  [
+   206.384,
+   210.615,
+   "Wet trunk plus fungus is a classic own-goal."
+  ],
+  [
+   211.165,
+   212.751,
+   "Filter the water."
+  ],
+  [
+   212.751,
+   216.982,
+   "Loquat drip fails as plumbing more than as"
+  ],
+  [
+   216.982,
+   217.51,
+   "agronomy."
+  ],
+  [
+   218.06,
+   219.118,
+   "Flush lines."
+  ],
+  [
+   219.668,
+   221.783,
+   "If power is erratic,"
+  ],
+  [
+   221.783,
+   226.014,
+   "a small tank and gravity still beats a"
+  ],
+  [
+   226.014,
+   227.6,
+   "cracked flood basin."
+  ],
+  [
+   228.1,
+   229.498,
+   "How to thin,"
+  ],
+  [
+   229.498,
+   229.963,
+   "practically."
+  ],
+  [
+   230.513,
+   232.843,
+   "When fruit is marble size,"
+  ],
+  [
+   232.843,
+   235.638,
+   "remove the smallest and the damaged."
+  ],
+  [
+   236.188,
+   239.914,
+   "Leave a cluster that can colour without a"
+  ],
+  [
+   239.914,
+   241.778,
+   "pile of touching skins."
+  ],
+  [
+   242.328,
+   246.054,
+   "Touching skins in a tight bunch rot together"
+  ],
+  [
+   246.054,
+   247.452,
+   "in the crate."
+  ],
+  [
+   248.002,
+   251.728,
+   "Work from the outside of the tree in."
+  ],
+  [
+   252.278,
+   256.005,
+   "Stop when your hands say the remaining fruit"
+  ],
+  [
+   256.005,
+   256.937,
+   "can grow."
+  ],
+  [
+   256.937,
+   259.266,
+   "Greed is a small-fruit machine."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "lag/lag-ch08-care.wav",
+   "volume": 1.0
+  }
+ }
+}

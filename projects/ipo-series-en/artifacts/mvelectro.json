@@ -1,0 +1,670 @@
+{
+  "cuts": [
+    {
+      "id": "mvelectro_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 32.228,
+      "props": {
+        "title": "MV Electrosystems IPO",
+        "sub": "Railway power-electronics · ₹290 Cr · 100% Fresh · 30 Jul–3 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 32.728
+      }
+    },
+    {
+      "id": "mvelectro_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 32.728,
+      "out_seconds": 75.034,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside MV Electrosystems",
+        "color": "#38BDF8",
+        "items": [
+          {
+            "emoji": "🚆",
+            "k": "Railway propulsion systems",
+            "v": "Builds I-G-B-T based 3-phase drive propulsion equipment — the systems that actually move electric locomotives",
+            "chip": "PROPULSION"
+          },
+          {
+            "emoji": "🔧",
+            "k": "Coach & EMU electricals",
+            "v": "Also makes switchgear panels, cable management and electrical sub-systems for railway coaches and E-M-Us",
+            "chip": "RAIL GEAR"
+          },
+          {
+            "emoji": "🇮🇳",
+            "k": "A Make-in-India rail play",
+            "v": "A decade-long Indian Railways supplier with in-house research and development",
+            "chip": "IN-HOUSE R&D"
+          }
+        ],
+        "dur": 42.806
+      }
+    },
+    {
+      "id": "mvelectro_fin",
+      "type": "sm_stats",
+      "in_seconds": 75.534,
+      "out_seconds": 120.048,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 49.79,
+            "decimals": 2,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "FELL from ₹64.64 Cr in FY25"
+          },
+          {
+            "label": "Net result FY26",
+            "to": 12.63,
+            "decimals": 2,
+            "prefix": "−₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "swung to a LOSS (from ₹1.40 Cr profit)"
+          },
+          {
+            "label": "Executable order book",
+            "to": 921.64,
+            "decimals": 2,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#38BDF8",
+            "sub": "~18x FY26 revenue"
+          }
+        ],
+        "note": "The whole tension of this IPO: revenue is tiny and just turned loss-making — yet the order book is ₹921.64 crore, nearly 18 times last year's sales.",
+        "dur": 45.014
+      }
+    },
+    {
+      "id": "mvelectro_issue",
+      "type": "sm_stats",
+      "in_seconds": 120.548,
+      "out_seconds": 160.646,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 290,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#38BDF8",
+            "sub": "price band ₹400–425"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 290,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "100% — all into the firm"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 0,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "ZERO — no promoter exit"
+          }
+        ],
+        "note": "Structurally clean: a 100% fresh issue. Every rupee goes into the company — mostly working capital to deliver that huge order book.",
+        "dur": 40.598
+      }
+    },
+    {
+      "id": "mvelectro_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 161.146,
+      "out_seconds": 203.716,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹290 Cr Funds",
+        "color": "#38BDF8",
+        "items": [
+          {
+            "emoji": "🔄",
+            "k": "~₹180 Cr — working capital",
+            "v": "The bulk funds long-term working capital — buying raw materials and scaling output to deliver the large order book",
+            "chip": "GROWTH"
+          },
+          {
+            "emoji": "🔬",
+            "k": "~₹21 Cr — R&D",
+            "v": "Invests in research and development of next-generation power-electronics equipment",
+            "chip": "R&D"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Balance — general corporate",
+            "v": "The remainder goes to general corporate purposes",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 43.07
+      }
+    },
+    {
+      "id": "mvelectro_verdict",
+      "type": "sm_myths",
+      "in_seconds": 204.216,
+      "out_seconds": 253.314,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "Tiny & just turned loss-making (−₹12.63 Cr)",
+            "f": "100% fresh issue — money funds delivery"
+          },
+          {
+            "m": "76.72% of revenue from Indian Railways alone",
+            "f": "₹921.64 Cr executable order book"
+          },
+          {
+            "m": "Negative returns at this valuation",
+            "f": "Make-in-India rail theme; in-house R&D"
+          }
+        ],
+        "dur": 49.598
+      }
+    },
+    {
+      "id": "mvelectro_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 253.814,
+      "out_seconds": 292.11,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#38BDF8",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,450 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 38.796
+      }
+    },
+    {
+      "id": "mvelectro_recap",
+      "type": "sm_recap",
+      "in_seconds": 292.61,
+      "out_seconds": 355.65,
+      "props": {
+        "title": "MV Electrosystems IPO — at a Glance",
+        "items": [
+          "Business: railway propulsion & coach electricals",
+          "FY26: revenue ₹49.79 Cr (fell), NET LOSS ₹12.63 Cr",
+          "₹290 Cr issue — 100% fresh, all into the company",
+          "Order book ₹921.64 Cr, but 76.72% from Railways",
+          "Retail min ~₹14,450 · high-risk small-cap"
+        ],
+        "closer": "A clean structure and a huge order book — but tiny, loss-making and single-customer heavy. A pure execution bet. Read the RHP.",
+        "dur": 63.54
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.526,
+      "Let's look at the MV Electrosystems I-P-O —"
+    ],
+    [
+      3.526,
+      9.759,
+      "a two hundred and ninety crore issue from a railway power-electronics maker."
+    ],
+    [
+      9.759,
+      14.269,
+      "This one has a fascinating tension inside it — a clean,"
+    ],
+    [
+      14.269,
+      19.681,
+      "hundred-percent fresh structure and a huge order book on one side,"
+    ],
+    [
+      19.681,
+      24.192,
+      "and a tiny, loss-making set of financials on the other."
+    ],
+    [
+      24.192,
+      28.866,
+      "We'll unpack all of it, and how much you'd need to apply."
+    ],
+    [
+      28.866,
+      32.228,
+      "This is education, not investment advice."
+    ],
+    [
+      32.728,
+      35.526,
+      "So what does MV Electrosystems do?"
+    ],
+    [
+      35.526,
+      38.901,
+      "It's a railway power-electronics company."
+    ],
+    [
+      38.901,
+      45.321,
+      "Its flagship product is I-G-B-T based three-phase drive propulsion equipment —"
+    ],
+    [
+      45.321,
+      51.083,
+      "essentially the systems that move electric locomotives down the track."
+    ],
+    [
+      51.083,
+      53.716,
+      "It also makes switchgear panels,"
+    ],
+    [
+      53.716,
+      60.63,
+      "cable-management products and electrical sub-systems for railway coaches and E-M-Us."
+    ],
+    [
+      60.63,
+      64.087,
+      "It's very much a Make-in-India rail play —"
+    ],
+    [
+      64.087,
+      68.12,
+      "a supplier to Indian Railways for about a decade,"
+    ],
+    [
+      68.12,
+      71.989,
+      "with its own in-house research and development."
+    ],
+    [
+      71.989,
+      75.034,
+      "A specialised, engineering-led niche."
+    ],
+    [
+      75.534,
+      80.292,
+      "Now the financials — and this is where it gets interesting."
+    ],
+    [
+      80.292,
+      83.679,
+      "Revenue in FY twenty twenty-six was tiny —"
+    ],
+    [
+      83.679,
+      85.614,
+      "just under fifty crore —"
+    ],
+    [
+      85.614,
+      90.856,
+      "and it actually FELL from about sixty-five crore the year before."
+    ],
+    [
+      90.856,
+      91.34,
+      "Worse,"
+    ],
+    [
+      91.34,
+      96.259,
+      "the company swung to a loss of about twelve and a half crore,"
+    ],
+    [
+      96.259,
+      99.404,
+      "after a small profit the previous year."
+    ],
+    [
+      99.404,
+      102.468,
+      "So on the face of it, this looks weak."
+    ],
+    [
+      102.468,
+      104.646,
+      "But here's the other side —"
+    ],
+    [
+      104.646,
+      109.726,
+      "its executable order book is nine hundred and twenty-one crore."
+    ],
+    [
+      109.726,
+      113.758,
+      "That is nearly eighteen times last year's revenue."
+    ],
+    [
+      113.758,
+      120.048,
+      "The whole bet is whether it can convert that order book into profitable sales."
+    ],
+    [
+      120.548,
+      122.454,
+      "Where does the money go?"
+    ],
+    [
+      122.454,
+      124.756,
+      "Here the structure is clean —"
+    ],
+    [
+      124.756,
+      128.091,
+      "this is a one hundred percent fresh issue."
+    ],
+    [
+      128.091,
+      132.617,
+      "There's no offer for sale, so no promoter is cashing out."
+    ],
+    [
+      132.617,
+      137.699,
+      "All two hundred and ninety crore goes straight into the company."
+    ],
+    [
+      137.699,
+      140.637,
+      "And that actually matters a lot here,"
+    ],
+    [
+      140.637,
+      148.815,
+      "because a company sitting on a nine-hundred-crore order book but tiny revenue has one obvious problem —"
+    ],
+    [
+      148.815,
+      153.738,
+      "it needs cash to buy raw materials and build all those orders."
+    ],
+    [
+      153.738,
+      158.979,
+      "So the fresh money is going exactly where this business needs it —"
+    ],
+    [
+      158.979,
+      160.646,
+      "into working capital."
+    ],
+    [
+      161.146,
+      163.816,
+      "So what does the fresh money fund?"
+    ],
+    [
+      163.816,
+      167.586,
+      "The bulk — around one hundred and eighty crore —"
+    ],
+    [
+      167.586,
+      170.414,
+      "goes into long-term working capital."
+    ],
+    [
+      170.414,
+      175.833,
+      "That's the fuel it needs to buy raw materials and ramp up production,"
+    ],
+    [
+      175.833,
+      181.096,
+      "reportedly from around twenty propulsion sets a month toward fifty."
+    ],
+    [
+      181.096,
+      188.557,
+      "About twenty-one crore goes into research and development of next-generation power electronics,"
+    ],
+    [
+      188.557,
+      191.149,
+      "and the rest to general purposes."
+    ],
+    [
+      191.149,
+      193.034,
+      "But note the flip side —"
+    ],
+    [
+      193.034,
+      201.438,
+      "a working-capital-hungry model that's already loss-making means the business constantly needs cash to grow."
+    ],
+    [
+      201.438,
+      203.716,
+      "Execution is everything here."
+    ],
+    [
+      204.216,
+      205.837,
+      "Should you subscribe?"
+    ],
+    [
+      205.837,
+      209.774,
+      "The strengths — it's a hundred-percent fresh issue,"
+    ],
+    [
+      209.774,
+      222.821,
+      "so your money funds delivery of that order book; the order book itself is huge at over nine hundred crore; and it rides the Make-in-India railway theme with its own R&D."
+    ],
+    [
+      222.821,
+      225.523,
+      "The watch-outs are serious though —"
+    ],
+    [
+      225.523,
+      235.018,
+      "the company is tiny and just turned loss-making; more than seventy-six percent of its revenue comes from a single customer,"
+    ],
+    [
+      235.018,
+      241.58,
+      "Indian Railways; and its returns on capital are currently negative at this valuation."
+    ],
+    [
+      241.58,
+      246.057,
+      "The takeaway — this is a high-risk, order-book-driven bet."
+    ],
+    [
+      246.057,
+      250.998,
+      "It works only if it executes and turns that backlog into profit."
+    ],
+    [
+      250.998,
+      253.314,
+      "Size any position accordingly."
+    ],
+    [
+      253.814,
+      257.523,
+      "How much do you need, and how do you apply?"
+    ],
+    [
+      257.523,
+      263.388,
+      "Retail investors bid up to two lakh for a thirty-five percent quota,"
+    ],
+    [
+      263.388,
+      267.614,
+      "with allotment by lottery if it's oversubscribed."
+    ],
+    [
+      267.614,
+      272.186,
+      "H-N-Is go above two lakh for a fifteen percent quota."
+    ],
+    [
+      272.186,
+      276.843,
+      "For MV Electrosystems, one lot is thirty-four shares —"
+    ],
+    [
+      276.843,
+      281.587,
+      "about fourteen thousand four hundred and fifty rupees —"
+    ],
+    [
+      281.587,
+      282.709,
+      "your minimum."
+    ],
+    [
+      282.709,
+      288.142,
+      "Watch the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      288.142,
+      292.11,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      292.61,
+      295.079,
+      "Let's recap MV Electrosystems."
+    ],
+    [
+      295.079,
+      298.947,
+      "A railway power-electronics maker with a clean,"
+    ],
+    [
+      298.947,
+      301.334,
+      "hundred-percent fresh issue —"
+    ],
+    [
+      301.334,
+      305.86,
+      "money that funds working capital to deliver its orders."
+    ],
+    [
+      305.86,
+      310.798,
+      "The tension — its revenue is tiny and just turned to a loss,"
+    ],
+    [
+      310.798,
+      316.559,
+      "and over seventy-six percent of sales come from Indian Railways alone."
+    ],
+    [
+      316.559,
+      320.344,
+      "Yet its order book is over nine hundred crore,"
+    ],
+    [
+      320.344,
+      322.813,
+      "nearly eighteen times revenue."
+    ],
+    [
+      322.813,
+      325.364,
+      "It's a high-risk execution bet,"
+    ],
+    [
+      325.364,
+      331.866,
+      "with a retail minimum of about fourteen thousand four hundred and fifty rupees."
+    ],
+    [
+      331.866,
+      335.816,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      335.816,
+      338.121,
+      "it is not investment advice,"
+    ],
+    [
+      338.121,
+      340.836,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      340.836,
+      343.964,
+      "and not a prediction of listing gains."
+    ],
+    [
+      343.964,
+      348.326,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      348.326,
+      354.004,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      354.004,
+      355.65,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/mvelectro.wav",
+      "volume": 1.0
+    }
+  }
+}

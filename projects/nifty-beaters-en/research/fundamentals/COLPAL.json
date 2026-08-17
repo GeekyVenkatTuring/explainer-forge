@@ -1,0 +1,48 @@
+{
+ "ticker": "COLPAL",
+ "scraped_at": "2026-08-14T15:29:23",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 53883.0,
+ "current_price": 1981.0,
+ "pe": 125.0,
+ "book_value": 12.1,
+ "dividend_yield_pct": 2.44,
+ "roce_pct": 179.0,
+ "roe_pct": 158.0,
+ "face_value": 1.0,
+ "high": 2505.0,
+ "sales_growth": {
+  "3 Years": 33.0,
+  "TTM": 50.0
+ },
+ "profit_growth": {
+  "10 Years": 8.0,
+  "5 Years": 4.0,
+  "3 Years": 1.0,
+  "1 Year": -7.0
+ },
+ "roe_hist": {},
+ "price_cagr": {
+  "5 Years": 102.0,
+  "3 Years": 139.0,
+  "Last Year": 158.0
+ },
+ "quarters": {
+  "periods": [],
+  "sales": [],
+  "net_profit": [],
+  "opm": [],
+  "eps": []
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 139%",
+  "Company has been maintaining a healthy dividend payout of 69.7%"
+ ],
+ "cons": [
+  "Stock is trading at 163 times its book value",
+  "Tax rate seems low"
+ ]
+}

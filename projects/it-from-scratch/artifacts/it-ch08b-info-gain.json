@@ -1,0 +1,276 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch08b-info-gain_infogain",
+   "type": "it_infogain",
+   "in_seconds": 0.0,
+   "out_seconds": 106.359,
+   "props": {
+    "dur": 106.859
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.822,
+   "Let's turn entropy into a tool for making"
+  ],
+  [
+   2.822,
+   3.175,
+   "decisions."
+  ],
+  [
+   3.807,
+   5.571,
+   "Think back to twenty questions."
+  ],
+  [
+   5.571,
+   8.393,
+   "A good question halves the possibilities \u2014 but"
+  ],
+  [
+   8.393,
+   11.215,
+   "what actually makes one question better than\nanother?"
+  ],
+  [
+   11.215,
+   13.332,
+   "Entropy gives us the exact answer."
+  ],
+  [
+   13.963,
+   16.786,
+   "Suppose you are sorting a mixed group \u2014"
+  ],
+  [
+   16.786,
+   18.55,
+   "six cats and six dogs,"
+  ],
+  [
+   18.55,
+   19.608,
+   "all jumbled together."
+  ],
+  [
+   19.608,
+   21.019,
+   "Before you ask anything,"
+  ],
+  [
+   21.019,
+   23.489,
+   "the label is a perfect coin flip."
+  ],
+  [
+   23.489,
+   25.605,
+   "The entropy is one full bit."
+  ],
+  [
+   26.237,
+   28.001,
+   "Now you ask a question."
+  ],
+  [
+   28.001,
+   29.059,
+   "Does it purr?"
+  ],
+  [
+   29.691,
+   30.749,
+   "Watch what happens."
+  ],
+  [
+   30.749,
+   32.866,
+   "The cats fall into one group,"
+  ],
+  [
+   32.866,
+   34.63,
+   "the dogs into the other."
+  ],
+  [
+   34.63,
+   37.452,
+   "Each group is now pure \u2014 all one"
+  ],
+  [
+   37.452,
+   37.805,
+   "kind."
+  ],
+  [
+   37.805,
+   40.274,
+   "And a pure group has zero entropy."
+  ],
+  [
+   40.274,
+   43.097,
+   "There is nothing left to be uncertain about."
+  ],
+  [
+   43.728,
+   46.551,
+   "So your uncertainty just dropped from one full"
+  ],
+  [
+   46.551,
+   46.903,
+   "bit,"
+  ],
+  [
+   46.903,
+   48.667,
+   "all the way to zero."
+  ],
+  [
+   49.299,
+   52.121,
+   "That drop has a name \u2014 the information"
+  ],
+  [
+   52.121,
+   53.532,
+   "gain of the question."
+  ],
+  [
+   53.532,
+   55.649,
+   "It is simply the entropy before,"
+  ],
+  [
+   55.649,
+   57.413,
+   "minus the average entropy afterward."
+  ],
+  [
+   58.045,
+   58.397,
+   "Here,"
+  ],
+  [
+   58.397,
+   61.22,
+   "one bit minus zero \u2014 a gain of"
+  ],
+  [
+   61.22,
+   62.278,
+   "one whole bit."
+  ],
+  [
+   62.278,
+   63.336,
+   "A perfect question."
+  ],
+  [
+   63.968,
+   65.732,
+   "A weak question \u2014 say,"
+  ],
+  [
+   65.732,
+   68.554,
+   "is it sitting down \u2014 barely separates the"
+  ],
+  [
+   68.554,
+   68.907,
+   "animals,"
+  ],
+  [
+   68.907,
+   70.671,
+   "leaves both groups still mixed,"
+  ],
+  [
+   70.671,
+   72.435,
+   "and yields almost no gain."
+  ],
+  [
+   73.066,
+   75.183,
+   "And here is the beautiful connection."
+  ],
+  [
+   75.183,
+   78.005,
+   "Information gain is exactly the mutual information\nbetween"
+  ],
+  [
+   78.005,
+   79.769,
+   "the question and the label."
+  ],
+  [
+   79.769,
+   82.592,
+   "It measures how much the answer tells you"
+  ],
+  [
+   82.592,
+   84.708,
+   "about the thing you care about."
+  ],
+  [
+   85.34,
+   88.162,
+   "This one idea is the engine inside a"
+  ],
+  [
+   88.162,
+   89.926,
+   "whole family of machine-learning models."
+  ],
+  [
+   90.558,
+   93.38,
+   "Every time a decision tree grows a branch,"
+  ],
+  [
+   93.38,
+   96.202,
+   "it examines every possible question and greedily\npicks"
+  ],
+  [
+   96.202,
+   99.024,
+   "the one with the highest information gain \u2014"
+  ],
+  [
+   99.024,
+   101.494,
+   "the one that cuts entropy the most."
+  ],
+  [
+   102.126,
+   103.537,
+   "It is twenty questions,"
+  ],
+  [
+   103.537,
+   104.948,
+   "played by a machine,"
+  ],
+  [
+   104.948,
+   106.359,
+   "with Shannon keeping score."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch08b-info-gain.wav",
+   "volume": 1.0
+  }
+ }
+}

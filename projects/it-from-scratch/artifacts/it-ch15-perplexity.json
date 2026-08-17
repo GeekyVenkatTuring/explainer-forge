@@ -1,0 +1,296 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch15-perplexity_perplexity",
+   "type": "it_perplexity",
+   "in_seconds": 0.0,
+   "out_seconds": 111.067,
+   "props": {
+    "dur": 111.567
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.843,
+   "Let's bring these ideas crashing into the present"
+  ],
+  [
+   2.843,
+   5.686,
+   "day \u2014 into the large language models behind"
+  ],
+  [
+   5.686,
+   6.396,
+   "today's A-I."
+  ],
+  [
+   6.396,
+   7.818,
+   "Because at their core,"
+  ],
+  [
+   7.818,
+   10.661,
+   "they run on exactly the information theory we"
+  ],
+  [
+   10.661,
+   11.371,
+   "have built."
+  ],
+  [
+   12.003,
+   14.846,
+   "A language model does one deceptively simple\nthing."
+  ],
+  [
+   14.846,
+   17.689,
+   "It looks at some text and predicts the"
+  ],
+  [
+   17.689,
+   18.399,
+   "next word,"
+  ],
+  [
+   18.399,
+   20.887,
+   "as a probability over every possible word."
+  ],
+  [
+   21.519,
+   22.585,
+   "Take the sentence:"
+  ],
+  [
+   22.585,
+   25.072,
+   "the cat sat on the \u2014 blank."
+  ],
+  [
+   25.704,
+   28.547,
+   "A good model puts most of its probability"
+  ],
+  [
+   28.547,
+   29.257,
+   "on mat,"
+  ],
+  [
+   29.257,
+   31.034,
+   "a decent chunk on floor,"
+  ],
+  [
+   31.034,
+   32.455,
+   "a little on sofa,"
+  ],
+  [
+   32.455,
+   35.298,
+   "and only a sliver on something like moon."
+  ],
+  [
+   35.93,
+   36.285,
+   "Now,"
+  ],
+  [
+   36.285,
+   38.417,
+   "how do we score that prediction?"
+  ],
+  [
+   38.417,
+   39.128,
+   "With cross-entropy,"
+  ],
+  [
+   39.128,
+   41.971,
+   "our exact tool for the cost of an"
+  ],
+  [
+   41.971,
+   42.682,
+   "imperfect model."
+  ],
+  [
+   43.313,
+   45.445,
+   "When the true next word arrives,"
+  ],
+  [
+   45.445,
+   48.288,
+   "we measure the surprise the model felt \u2014"
+  ],
+  [
+   48.288,
+   51.131,
+   "the log of one over the probability it"
+  ],
+  [
+   51.131,
+   51.486,
+   "assigned."
+  ],
+  [
+   51.486,
+   54.329,
+   "Low probability on the right answer means high"
+  ],
+  [
+   54.329,
+   54.685,
+   "surprise,"
+  ],
+  [
+   54.685,
+   56.106,
+   "means a big penalty."
+  ],
+  [
+   56.738,
+   58.514,
+   "Averaged over an entire corpus,"
+  ],
+  [
+   58.514,
+   60.291,
+   "that is the cross-entropy loss,"
+  ],
+  [
+   60.291,
+   63.134,
+   "and driving it down is the whole of"
+  ],
+  [
+   63.134,
+   63.489,
+   "training."
+  ],
+  [
+   64.121,
+   66.964,
+   "But researchers love to report a friendlier cousin"
+  ],
+  [
+   66.964,
+   68.03,
+   "of this number,"
+  ],
+  [
+   68.03,
+   68.741,
+   "called perplexity."
+  ],
+  [
+   68.741,
+   71.584,
+   "It is simply two raised to the power"
+  ],
+  [
+   71.584,
+   72.65,
+   "of the cross-entropy."
+  ],
+  [
+   73.281,
+   75.769,
+   "And it has a wonderfully concrete meaning."
+  ],
+  [
+   75.769,
+   78.612,
+   "Perplexity is the effective number of words the"
+  ],
+  [
+   78.612,
+   81.099,
+   "model is choosing between at each step."
+  ],
+  [
+   81.731,
+   84.573,
+   "A perplexity of two means the model is"
+  ],
+  [
+   84.573,
+   87.416,
+   "as confused as if it were flipping a"
+  ],
+  [
+   87.416,
+   89.193,
+   "fair coin between two options."
+  ],
+  [
+   89.193,
+   92.036,
+   "A perplexity of a hundred means it is"
+  ],
+  [
+   92.036,
+   93.457,
+   "floundering among a hundred."
+  ],
+  [
+   94.089,
+   96.932,
+   "So the entire race to build better language"
+  ],
+  [
+   96.932,
+   97.643,
+   "models is,"
+  ],
+  [
+   97.643,
+   98.709,
+   "underneath the marketing,"
+  ],
+  [
+   98.709,
+   101.551,
+   "a race to lower perplexity \u2014 to make"
+  ],
+  [
+   101.551,
+   104.039,
+   "the machine less surprised by human language."
+  ],
+  [
+   104.671,
+   107.158,
+   "Every A-I you have ever used is,"
+  ],
+  [
+   107.158,
+   107.869,
+   "at heart,"
+  ],
+  [
+   107.869,
+   108.935,
+   "an entropy-minimizing machine."
+  ],
+  [
+   108.935,
+   111.067,
+   "Shannon's fingerprints are all over it."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch15-perplexity.wav",
+   "volume": 1.0
+  }
+ }
+}

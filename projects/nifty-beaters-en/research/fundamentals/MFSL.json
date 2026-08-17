@@ -1,0 +1,105 @@
+{
+ "ticker": "MFSL",
+ "scraped_at": "2026-08-14T15:28:00",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 53424.0,
+ "current_price": 1548.0,
+ "pe": 492.0,
+ "book_value": 153.0,
+ "dividend_yield_pct": 0.0,
+ "roce_pct": 2.87,
+ "roe_pct": 1.52,
+ "face_value": 2.0,
+ "high": 1892.0,
+ "sales_growth": {
+  "10 Years": -11.0,
+  "5 Years": -28.0,
+  "3 Years": -40.0,
+  "TTM": -60.0
+ },
+ "profit_growth": {
+  "10 Years": 12.0,
+  "5 Years": 7.0,
+  "3 Years": 21.0,
+  "1 Year": -5.0
+ },
+ "roe_hist": {
+  "Operating Profit": 125.0,
+  "OPM %": 1.4,
+  "Other Income&nbsp; +": 3.0,
+  "Interest": 9.0,
+  "Depreciation": 1.0,
+  "Profit before tax": 118.0,
+  "Tax %": 14.0,
+  "Net Profit&nbsp; +": 101.0,
+  "EPS in Rs": 2.54
+ },
+ "price_cagr": {
+  "10 Years": 9.0,
+  "5 Years": 7.0,
+  "3 Years": 6.0,
+  "Last Year": 2.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "1.4%",
+   "1.4%",
+   "1.7%",
+   "-0.4%",
+   "1.6%",
+   "1.3%",
+   "1.0%",
+   "0.2%",
+   "0.9%",
+   "0.2%",
+   "0.6%",
+   "-0.1%",
+   "1.1%"
+  ],
+  "eps": [
+   "2.54",
+   "4.29",
+   "4.30",
+   "-1.28",
+   "3.69",
+   "3.26",
+   "1.62",
+   "0.91",
+   "2.02",
+   "0.12",
+   "1.06",
+   "-0.76",
+   "2.77"
+  ]
+ },
+ "pros": [],
+ "cons": [
+  "Stock is trading at 10.1 times its book value",
+  "Though the company is reporting repeated profits, it is not paying out dividend",
+  "The company has delivered a poor sales growth of 8.80% over past five years.",
+  "Promoter holding is low: 1.25%",
+  "Tax rate seems low",
+  "Company has a low return on equity of 5.57% over last 3 years.",
+  "Promoters have pledged 26.9% of their holding.",
+  "Promoter holding has decreased over last 3 years: -8.89%"
+ ]
+}

@@ -1,0 +1,420 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch01-big-picture_title",
+   "type": "cv_title",
+   "in_seconds": 0.0,
+   "out_seconds": 67.121,
+   "props": {
+    "dur": 67.621
+   }
+  },
+  {
+   "id": "cv-ch01-big-picture_hook",
+   "type": "cv_hook",
+   "in_seconds": 67.621,
+   "out_seconds": 143.553,
+   "props": {
+    "dur": 76.432
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.454,
+   "You open your eyes,"
+  ],
+  [
+   1.454,
+   2.545,
+   "and you just..."
+  ],
+  [
+   2.545,
+   2.908,
+   "see."
+  ],
+  [
+   2.908,
+   3.635,
+   "A cat."
+  ],
+  [
+   3.635,
+   4.362,
+   "A street."
+  ],
+  [
+   4.362,
+   5.453,
+   "A friend's face."
+  ],
+  [
+   6.085,
+   7.175,
+   "It feels effortless."
+  ],
+  [
+   7.175,
+   8.629,
+   "You don't compute anything."
+  ],
+  [
+   8.629,
+   9.72,
+   "You just know."
+  ],
+  [
+   10.351,
+   11.806,
+   "But for a computer,"
+  ],
+  [
+   11.806,
+   14.714,
+   "seeing is one of the hardest problems we"
+  ],
+  [
+   14.714,
+   16.531,
+   "have ever tried to solve."
+  ],
+  [
+   17.163,
+   20.071,
+   "This is computer vision \u2014 the field that"
+  ],
+  [
+   20.071,
+   22.98,
+   "teaches machines to turn raw light into\nunderstanding."
+  ],
+  [
+   23.611,
+   26.156,
+   "It is the technology behind self-driving\ncars,"
+  ],
+  [
+   26.156,
+   26.883,
+   "medical scanners,"
+  ],
+  [
+   26.883,
+   27.61,
+   "face unlock,"
+  ],
+  [
+   27.61,
+   30.518,
+   "and the image generators taking over the\ninternet."
+  ],
+  [
+   31.15,
+   32.24,
+   "Over this course,"
+  ],
+  [
+   32.24,
+   35.149,
+   "we are going to build that understanding\nfrom"
+  ],
+  [
+   35.149,
+   36.239,
+   "the ground up."
+  ],
+  [
+   36.871,
+   39.416,
+   "We will start with a single pixel."
+  ],
+  [
+   39.416,
+   42.324,
+   "Then convolution \u2014 the one idea at the"
+  ],
+  [
+   42.324,
+   43.778,
+   "heart of it all."
+  ],
+  [
+   44.409,
+   45.5,
+   "Then deep networks,"
+  ],
+  [
+   45.5,
+   46.954,
+   "the tasks they solve,"
+  ],
+  [
+   46.954,
+   49.862,
+   "and the transformers and foundation models\nrunning today."
+  ],
+  [
+   50.494,
+   53.402,
+   "We will even open a code editor and"
+  ],
+  [
+   53.402,
+   55.583,
+   "write a working vision model together."
+  ],
+  [
+   56.215,
+   58.033,
+   "There is no magic here."
+  ],
+  [
+   58.033,
+   60.214,
+   "Just a handful of clear ideas,"
+  ],
+  [
+   60.214,
+   62.395,
+   "stacked one on top of another,"
+  ],
+  [
+   62.395,
+   65.303,
+   "until a machine can look at the world"
+  ],
+  [
+   65.303,
+   66.394,
+   "and understand it."
+  ],
+  [
+   66.394,
+   67.121,
+   "Let's begin."
+  ],
+  [
+   67.621,
+   70.514,
+   "Let me show you the whole problem in"
+  ],
+  [
+   70.514,
+   71.238,
+   "one picture."
+  ],
+  [
+   71.869,
+   73.316,
+   "You see a cat."
+  ],
+  [
+   73.947,
+   76.841,
+   "The computer sees this \u2014 a grid of"
+  ],
+  [
+   76.841,
+   77.202,
+   "numbers."
+  ],
+  [
+   77.834,
+   78.919,
+   "That is it."
+  ],
+  [
+   78.919,
+   81.089,
+   "There is no cat in there."
+  ],
+  [
+   81.089,
+   81.812,
+   "No fur,"
+  ],
+  [
+   81.812,
+   82.535,
+   "no ears,"
+  ],
+  [
+   82.535,
+   83.259,
+   "no whiskers."
+  ],
+  [
+   83.259,
+   84.344,
+   "Only brightness values,"
+  ],
+  [
+   84.344,
+   85.429,
+   "row after row."
+  ],
+  [
+   86.06,
+   86.784,
+   "This distance,"
+  ],
+  [
+   86.784,
+   89.677,
+   "between the raw numbers at the bottom and"
+  ],
+  [
+   89.677,
+   91.485,
+   "the meaning at the top,"
+  ],
+  [
+   91.485,
+   92.57,
+   "has a name."
+  ],
+  [
+   92.57,
+   93.655,
+   "The semantic gap."
+  ],
+  [
+   94.287,
+   95.733,
+   "And it is enormous."
+  ],
+  [
+   96.365,
+   99.258,
+   "Move the cat a little to the left,"
+  ],
+  [
+   99.258,
+   101.066,
+   "and every single number changes."
+  ],
+  [
+   101.698,
+   102.783,
+   "Dim the lights,"
+  ],
+  [
+   102.783,
+   104.591,
+   "and they all change again."
+  ],
+  [
+   104.591,
+   106.399,
+   "Yet your brain still says,"
+  ],
+  [
+   106.399,
+   106.761,
+   "instantly,"
+  ],
+  [
+   106.761,
+   107.123,
+   "cat."
+  ],
+  [
+   107.754,
+   110.648,
+   "The same object can produce a billion\ndifferent"
+  ],
+  [
+   110.648,
+   111.733,
+   "grids of numbers."
+  ],
+  [
+   112.364,
+   114.896,
+   "That is what makes vision so hard."
+  ],
+  [
+   114.896,
+   116.704,
+   "We are not matching pictures."
+  ],
+  [
+   116.704,
+   119.597,
+   "We are trying to find meaning that\nsurvives"
+  ],
+  [
+   119.597,
+   120.682,
+   "across endless variation."
+  ],
+  [
+   121.314,
+   124.207,
+   "The entire history of this field is one"
+  ],
+  [
+   124.207,
+   126.377,
+   "long campaign to cross this gap."
+  ],
+  [
+   127.009,
+   127.732,
+   "For decades,"
+  ],
+  [
+   127.732,
+   130.263,
+   "we tried to cross it by hand,"
+  ],
+  [
+   130.263,
+   131.348,
+   "writing rules ourselves."
+  ],
+  [
+   131.348,
+   132.433,
+   "It barely worked."
+  ],
+  [
+   133.065,
+   135.958,
+   "Then we discovered how to let the machine"
+  ],
+  [
+   135.958,
+   138.851,
+   "cross it on its own \u2014 and everything"
+  ],
+  [
+   138.851,
+   139.213,
+   "changed."
+  ],
+  [
+   139.213,
+   142.106,
+   "That is the story we are about to"
+  ],
+  [
+   142.106,
+   142.468,
+   "tell,"
+  ],
+  [
+   142.468,
+   143.553,
+   "step by step."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch01-big-picture.wav",
+   "volume": 1.0
+  }
+ }
+}

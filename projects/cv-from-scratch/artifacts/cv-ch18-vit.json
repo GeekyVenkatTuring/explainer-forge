@@ -1,0 +1,329 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch18-vit_div",
+   "type": "cv_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 19.515,
+   "props": {
+    "n": 6,
+    "title": "The Modern Era",
+    "sub": "transformers, multimodal, generative, frontier",
+    "color": "#F472B6",
+    "dur": 20.015
+   }
+  },
+  {
+   "id": "cv-ch18-vit_vit",
+   "type": "cv_vit",
+   "in_seconds": 20.015,
+   "out_seconds": 128.374,
+   "props": {
+    "dur": 108.859
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.76,
+   "Part six."
+  ],
+  [
+   0.76,
+   1.901,
+   "The modern era."
+  ],
+  [
+   2.533,
+   4.054,
+   "For nearly a decade,"
+  ],
+  [
+   4.054,
+   6.716,
+   "convolution was the undisputed king of\nvision."
+  ],
+  [
+   6.716,
+   7.856,
+   "Then an idea,"
+  ],
+  [
+   7.856,
+   10.898,
+   "born over in the world of language models,"
+  ],
+  [
+   10.898,
+   13.94,
+   "crossed over \u2014 and shook everything up all"
+  ],
+  [
+   13.94,
+   14.701,
+   "over again."
+  ],
+  [
+   15.332,
+   16.853,
+   "That idea is attention."
+  ],
+  [
+   16.853,
+   19.515,
+   "Let's watch how it learned to see."
+  ],
+  [
+   20.015,
+   21.786,
+   "This is the Vision Transformer,"
+  ],
+  [
+   21.786,
+   23.202,
+   "usually shortened to ViT."
+  ],
+  [
+   23.202,
+   25.681,
+   "And its core idea is delightfully strange."
+  ],
+  [
+   26.313,
+   28.792,
+   "Treat an image exactly like a sentence."
+  ],
+  [
+   29.424,
+   30.486,
+   "Let's see how."
+  ],
+  [
+   30.486,
+   30.84,
+   "First,"
+  ],
+  [
+   30.84,
+   33.674,
+   "we cut the image up into a grid"
+  ],
+  [
+   33.674,
+   35.798,
+   "of small square patches \u2014 say,"
+  ],
+  [
+   35.798,
+   37.923,
+   "sixteen pixels by sixteen pixels each."
+  ],
+  [
+   38.555,
+   41.388,
+   "Watch the patches lift off the image and"
+  ],
+  [
+   41.388,
+   43.513,
+   "line up in a single row."
+  ],
+  [
+   44.145,
+   46.978,
+   "Each patch now becomes a token \u2014 the"
+  ],
+  [
+   46.978,
+   49.811,
+   "very same concept as a word in a"
+  ],
+  [
+   49.811,
+   50.165,
+   "sentence."
+  ],
+  [
+   50.165,
+   52.998,
+   "So an image becomes a sentence of patches."
+  ],
+  [
+   53.63,
+   56.463,
+   "Then we feed that row of tokens into"
+  ],
+  [
+   56.463,
+   59.296,
+   "a standard transformer \u2014 the exact same\narchitecture"
+  ],
+  [
+   59.296,
+   62.13,
+   "that powers large language models like the\none"
+  ],
+  [
+   62.13,
+   63.9,
+   "you may have chatted with."
+  ],
+  [
+   64.532,
+   66.657,
+   "The transformer's key mechanism is\nself-attention."
+  ],
+  [
+   67.289,
+   69.059,
+   "Here is what it does."
+  ],
+  [
+   69.059,
+   71.538,
+   "Every patch looks at every other patch,"
+  ],
+  [
+   71.538,
+   74.372,
+   "and decides which ones are relevant to it."
+  ],
+  [
+   75.003,
+   77.836,
+   "Look at the arcs connecting the patches \u2014"
+  ],
+  [
+   77.836,
+   80.67,
+   "a patch of ear reaching across to a"
+  ],
+  [
+   80.67,
+   81.732,
+   "patch of eye,"
+  ],
+  [
+   81.732,
+   84.565,
+   "linking distant parts of the image in a"
+  ],
+  [
+   84.565,
+   85.274,
+   "single step."
+  ],
+  [
+   85.905,
+   88.738,
+   "And this is the crucial difference from a"
+  ],
+  [
+   88.738,
+   89.801,
+   "C N N."
+  ],
+  [
+   90.432,
+   93.266,
+   "A convolution only ever sees a small local"
+  ],
+  [
+   93.266,
+   93.62,
+   "window,"
+  ],
+  [
+   93.62,
+   96.453,
+   "and has to build up a global view"
+  ],
+  [
+   96.453,
+   96.807,
+   "slowly,"
+  ],
+  [
+   96.807,
+   97.87,
+   "layer by layer."
+  ],
+  [
+   98.501,
+   101.334,
+   "A transformer sees the entire image at\nonce,"
+  ],
+  [
+   101.334,
+   103.105,
+   "from its very first layer."
+  ],
+  [
+   103.737,
+   105.153,
+   "There is a catch,"
+  ],
+  [
+   105.153,
+   106.924,
+   "and it is worth knowing."
+  ],
+  [
+   106.924,
+   107.987,
+   "ViT is hungry."
+  ],
+  [
+   107.987,
+   110.82,
+   "It needs a lot of data to learn"
+  ],
+  [
+   110.82,
+   111.174,
+   "well,"
+  ],
+  [
+   111.174,
+   113.653,
+   "more than a C N N does."
+  ],
+  [
+   114.285,
+   116.055,
+   "But give it that data,"
+  ],
+  [
+   116.055,
+   118.534,
+   "and it matches or beats convolution\noutright."
+  ],
+  [
+   119.166,
+   121.999,
+   "And the best part \u2014 if you already"
+  ],
+  [
+   121.999,
+   123.77,
+   "understand attention from language models,"
+  ],
+  [
+   123.77,
+   125.541,
+   "then you already understand ViT."
+  ],
+  [
+   125.541,
+   128.374,
+   "The tokens are just patches instead of\nwords."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch18-vit.wav",
+   "volume": 1.0
+  }
+ }
+}

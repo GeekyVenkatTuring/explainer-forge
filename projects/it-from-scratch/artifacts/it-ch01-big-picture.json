@@ -1,0 +1,868 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch01-big-picture_title",
+   "type": "it_title",
+   "in_seconds": 0.0,
+   "out_seconds": 32.149,
+   "props": {
+    "dur": 32.649
+   }
+  },
+  {
+   "id": "it-ch01-big-picture_roadmap",
+   "type": "it_roadmap",
+   "in_seconds": 32.649,
+   "out_seconds": 88.805,
+   "props": {
+    "dur": 56.656
+   }
+  },
+  {
+   "id": "it-ch01-big-picture_hook",
+   "type": "it_hook",
+   "in_seconds": 89.305,
+   "out_seconds": 172.777,
+   "props": {
+    "dur": 83.972
+   }
+  },
+  {
+   "id": "it-ch01-big-picture_system",
+   "type": "it_system",
+   "in_seconds": 173.277,
+   "out_seconds": 297.975,
+   "props": {
+    "dur": 125.198
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.926,
+   "Here is a question that sounds impossible to"
+  ],
+  [
+   2.926,
+   3.291,
+   "answer."
+  ],
+  [
+   3.923,
+   5.752,
+   "How do you measure information?"
+  ],
+  [
+   6.383,
+   8.577,
+   "Not whether a message is true."
+  ],
+  [
+   8.577,
+   10.04,
+   "Not what it means."
+  ],
+  [
+   10.04,
+   12.966,
+   "Just how much information is in it \u2014"
+  ],
+  [
+   12.966,
+   14.429,
+   "as an honest number,"
+  ],
+  [
+   14.429,
+   16.989,
+   "the way we measure length or weight."
+  ],
+  [
+   17.62,
+   18.717,
+   "In nineteen forty-eight,"
+  ],
+  [
+   18.717,
+   21.643,
+   "a quiet engineer named Claude Shannon answered\nthat"
+  ],
+  [
+   21.643,
+   22.009,
+   "question,"
+  ],
+  [
+   22.009,
+   24.935,
+   "in a single paper \u2014 and in doing"
+  ],
+  [
+   24.935,
+   25.3,
+   "so,"
+  ],
+  [
+   25.3,
+   27.129,
+   "he invented the digital world."
+  ],
+  [
+   27.76,
+   28.858,
+   "Over this course,"
+  ],
+  [
+   28.858,
+   31.783,
+   "we are going to rebuild his answer from"
+  ],
+  [
+   31.783,
+   32.149,
+   "nothing."
+  ],
+  [
+   32.649,
+   35.715,
+   "So here is the journey ahead of us."
+  ],
+  [
+   36.346,
+   39.029,
+   "We will start at the very bottom,"
+  ],
+  [
+   39.029,
+   40.945,
+   "with a single surprising event,"
+  ],
+  [
+   40.945,
+   44.011,
+   "and turn it into a precise number of"
+  ],
+  [
+   44.011,
+   44.394,
+   "bits."
+  ],
+  [
+   45.026,
+   45.792,
+   "From there,"
+  ],
+  [
+   45.792,
+   47.325,
+   "entropy \u2014 the true,"
+  ],
+  [
+   47.325,
+   49.241,
+   "irreducible size of a message."
+  ],
+  [
+   49.873,
+   50.639,
+   "Then compression,"
+  ],
+  [
+   50.639,
+   53.705,
+   "and the hard wall on how small things"
+  ],
+  [
+   53.705,
+   54.854,
+   "can ever shrink."
+  ],
+  [
+   55.486,
+   58.552,
+   "Then we will learn to compare beliefs \u2014"
+  ],
+  [
+   58.552,
+   58.935,
+   "cross-entropy,"
+  ],
+  [
+   58.935,
+   59.318,
+   "divergence,"
+  ],
+  [
+   59.318,
+   60.468,
+   "and mutual information,"
+  ],
+  [
+   60.468,
+   63.151,
+   "the tools that now train artificial intelligence."
+  ],
+  [
+   63.782,
+   65.315,
+   "Then the noisy channel,"
+  ],
+  [
+   65.315,
+   67.231,
+   "and Shannon's almost unbelievable promise:"
+  ],
+  [
+   67.231,
+   69.147,
+   "perfect communication through an imperfect,"
+  ],
+  [
+   69.147,
+   69.914,
+   "crackling wire."
+  ],
+  [
+   70.545,
+   71.312,
+   "And finally,"
+  ],
+  [
+   71.312,
+   74.377,
+   "the big picture \u2014 how this one idea"
+  ],
+  [
+   74.377,
+   75.91,
+   "reaches from your phone,"
+  ],
+  [
+   75.91,
+   77.06,
+   "to your genes,"
+  ],
+  [
+   77.06,
+   79.359,
+   "to the edge of physics itself."
+  ],
+  [
+   79.991,
+   83.057,
+   "There is no mathematics here we will not"
+  ],
+  [
+   83.057,
+   83.823,
+   "build together,"
+  ],
+  [
+   83.823,
+   84.973,
+   "brick by brick."
+  ],
+  [
+   84.973,
+   86.122,
+   "So let's begin,"
+  ],
+  [
+   86.122,
+   88.805,
+   "at the very beginning \u2014 with surprise."
+  ],
+  [
+   89.305,
+   92.126,
+   "Let me show you the entire idea in"
+  ],
+  [
+   92.126,
+   93.184,
+   "just two sentences."
+  ],
+  [
+   93.816,
+   95.579,
+   "Here is the first one."
+  ],
+  [
+   95.579,
+   97.342,
+   "The sun rose this morning."
+  ],
+  [
+   97.974,
+   99.032,
+   "Is that informative?"
+  ],
+  [
+   99.032,
+   99.737,
+   "Not really."
+  ],
+  [
+   99.737,
+   101.5,
+   "You already knew it would."
+  ],
+  [
+   101.5,
+   104.321,
+   "It was practically certain \u2014 so hearing it"
+  ],
+  [
+   104.321,
+   106.085,
+   "tells you almost nothing new."
+  ],
+  [
+   106.716,
+   108.127,
+   "Now the second sentence."
+  ],
+  [
+   108.127,
+   108.832,
+   "It snowed,"
+  ],
+  [
+   108.832,
+   109.185,
+   "today,"
+  ],
+  [
+   109.185,
+   110.595,
+   "in the Sahara desert."
+  ],
+  [
+   111.227,
+   112.99,
+   "That one stops you cold."
+  ],
+  [
+   112.99,
+   114.048,
+   "It is rare."
+  ],
+  [
+   114.048,
+   115.106,
+   "It is unexpected."
+  ],
+  [
+   115.106,
+   117.927,
+   "It is surprising \u2014 and suddenly you have"
+  ],
+  [
+   117.927,
+   119.338,
+   "learned a great deal."
+  ],
+  [
+   119.969,
+   121.38,
+   "Look at the two."
+  ],
+  [
+   121.38,
+   122.085,
+   "Same length."
+  ],
+  [
+   122.085,
+   122.791,
+   "Same grammar."
+  ],
+  [
+   122.791,
+   124.201,
+   "Both perfectly ordinary English."
+  ],
+  [
+   124.201,
+   127.022,
+   "Yet they carry wildly different amounts of\ninformation."
+  ],
+  [
+   127.654,
+   129.417,
+   "So what is the difference?"
+  ],
+  [
+   129.417,
+   131.18,
+   "It is not the words."
+  ],
+  [
+   131.18,
+   132.944,
+   "It is not the meaning."
+  ],
+  [
+   132.944,
+   135.412,
+   "It is how likely each message was."
+  ],
+  [
+   136.044,
+   138.16,
+   "And here is Shannon's great reversal,"
+  ],
+  [
+   138.16,
+   140.628,
+   "the hinge the whole field swings on."
+  ],
+  [
+   141.26,
+   143.728,
+   "Information is not about meaning at all."
+  ],
+  [
+   143.728,
+   145.139,
+   "It is about surprise."
+  ],
+  [
+   145.771,
+   147.534,
+   "The less likely a message,"
+  ],
+  [
+   147.534,
+   149.297,
+   "the more information it delivers."
+  ],
+  [
+   149.297,
+   150.355,
+   "The more predictable,"
+  ],
+  [
+   150.355,
+   151.06,
+   "the less."
+  ],
+  [
+   151.06,
+   153.881,
+   "A message you could have guessed carries nothing."
+  ],
+  [
+   154.513,
+   157.334,
+   "That single flip \u2014 measuring surprise instead of"
+  ],
+  [
+   157.334,
+   160.155,
+   "meaning \u2014 is the seed of everything ahead."
+  ],
+  [
+   160.787,
+   163.608,
+   "So our very first job is to take"
+  ],
+  [
+   163.608,
+   164.313,
+   "that soft,"
+  ],
+  [
+   164.313,
+   165.019,
+   "fuzzy word,"
+  ],
+  [
+   165.019,
+   165.371,
+   "surprise,"
+  ],
+  [
+   165.371,
+   167.84,
+   "and forge it into a hard number."
+  ],
+  [
+   167.84,
+   168.193,
+   "And,"
+  ],
+  [
+   168.193,
+   168.545,
+   "remarkably,"
+  ],
+  [
+   168.545,
+   171.366,
+   "there turns out to be only one sensible"
+  ],
+  [
+   171.366,
+   172.777,
+   "way to do it."
+  ],
+  [
+   173.277,
+   176.171,
+   "So how did Shannon actually attack a problem"
+  ],
+  [
+   176.171,
+   176.895,
+   "this slippery?"
+  ],
+  [
+   176.895,
+   179.789,
+   "He did what every great scientist does \u2014"
+  ],
+  [
+   179.789,
+   181.236,
+   "he drew a picture."
+  ],
+  [
+   181.867,
+   183.314,
+   "And this one diagram,"
+  ],
+  [
+   183.314,
+   185.123,
+   "from his nineteen forty-eight paper,"
+  ],
+  [
+   185.123,
+   187.294,
+   "quietly organizes the entire digital world."
+  ],
+  [
+   187.925,
+   190.819,
+   "On the far left sits the source \u2014"
+  ],
+  [
+   190.819,
+   192.628,
+   "whatever is producing a message."
+  ],
+  [
+   192.628,
+   193.352,
+   "Your voice."
+  ],
+  [
+   193.352,
+   194.075,
+   "A file."
+  ],
+  [
+   194.075,
+   194.799,
+   "A photo."
+  ],
+  [
+   194.799,
+   195.884,
+   "A sensor reading."
+  ],
+  [
+   196.516,
+   199.41,
+   "The message enters an encoder \u2014 sometimes called"
+  ],
+  [
+   199.41,
+   202.304,
+   "the transmitter \u2014 which turns it into a"
+  ],
+  [
+   202.304,
+   202.666,
+   "signal,"
+  ],
+  [
+   202.666,
+   205.198,
+   "a stream of bits ready to travel."
+  ],
+  [
+   205.83,
+   208.724,
+   "That signal crosses the channel \u2014 the wire,"
+  ],
+  [
+   208.724,
+   209.447,
+   "the air,"
+  ],
+  [
+   209.447,
+   210.171,
+   "the fibre,"
+  ],
+  [
+   210.171,
+   211.256,
+   "the magnetic disk."
+  ],
+  [
+   211.256,
+   213.427,
+   "Anything that carries information across space,"
+  ],
+  [
+   213.427,
+   214.512,
+   "or across time."
+  ],
+  [
+   215.143,
+   216.591,
+   "At the far end,"
+  ],
+  [
+   216.591,
+   219.485,
+   "a decoder reads the incoming signal and\nreconstructs"
+  ],
+  [
+   219.485,
+   220.208,
+   "the message."
+  ],
+  [
+   220.208,
+   223.102,
+   "And finally it arrives at the destination \u2014"
+  ],
+  [
+   223.102,
+   223.826,
+   "the person,"
+  ],
+  [
+   223.826,
+   224.549,
+   "or machine,"
+  ],
+  [
+   224.549,
+   225.635,
+   "that needed it."
+  ],
+  [
+   226.266,
+   226.628,
+   "Source,"
+  ],
+  [
+   226.628,
+   226.99,
+   "encoder,"
+  ],
+  [
+   226.99,
+   227.351,
+   "channel,"
+  ],
+  [
+   227.351,
+   227.713,
+   "decoder,"
+  ],
+  [
+   227.713,
+   228.075,
+   "destination."
+  ],
+  [
+   228.075,
+   228.798,
+   "Five boxes."
+  ],
+  [
+   229.43,
+   231.601,
+   "But there is a sixth thing,"
+  ],
+  [
+   231.601,
+   234.495,
+   "and it is the villain of our whole"
+  ],
+  [
+   234.495,
+   234.857,
+   "story."
+  ],
+  [
+   234.857,
+   235.218,
+   "Noise."
+  ],
+  [
+   235.85,
+   238.744,
+   "Noise creeps into the channel from the side"
+  ],
+  [
+   238.744,
+   239.467,
+   "\u2014 static,"
+  ],
+  [
+   239.467,
+   239.829,
+   "interference,"
+  ],
+  [
+   239.829,
+   240.553,
+   "a scratch,"
+  ],
+  [
+   240.553,
+   243.447,
+   "a stray cosmic ray \u2014 corrupting the signal"
+  ],
+  [
+   243.447,
+   244.17,
+   "in transit."
+  ],
+  [
+   244.802,
+   247.334,
+   "Here is the genius of the diagram."
+  ],
+  [
+   247.334,
+   249.505,
+   "It deliberately throws the meaning away."
+  ],
+  [
+   249.505,
+   252.399,
+   "Shannon does not care whether you are sending"
+  ],
+  [
+   252.399,
+   254.931,
+   "a love letter or a stock price."
+  ],
+  [
+   255.563,
+   258.095,
+   "By separating the meaning from the medium,"
+  ],
+  [
+   258.095,
+   260.989,
+   "he turned a vague human problem \u2014 communication"
+  ],
+  [
+   260.989,
+   263.16,
+   "\u2014 into something sharp and mathematical."
+  ],
+  [
+   263.791,
+   266.686,
+   "Every idea in this course lives somewhere on"
+  ],
+  [
+   266.686,
+   267.409,
+   "this map."
+  ],
+  [
+   267.409,
+   269.218,
+   "Compression makes the encoder lean."
+  ],
+  [
+   269.218,
+   271.027,
+   "Error-correcting codes fight the noise."
+  ],
+  [
+   271.027,
+   273.559,
+   "Capacity measures what the channel can bear."
+  ],
+  [
+   274.191,
+   275.638,
+   "And notice something subtle."
+  ],
+  [
+   275.638,
+   278.532,
+   "The same diagram describes storage as well as"
+  ],
+  [
+   278.532,
+   278.894,
+   "transmission."
+  ],
+  [
+   278.894,
+   281.426,
+   "Saving a file to a disk today,"
+  ],
+  [
+   281.426,
+   283.235,
+   "and reading it back tomorrow,"
+  ],
+  [
+   283.235,
+   286.129,
+   "is just sending a message through time instead"
+  ],
+  [
+   286.129,
+   288.661,
+   "of space \u2014 with the same noise,"
+  ],
+  [
+   288.661,
+   290.108,
+   "and the same defences."
+  ],
+  [
+   290.74,
+   293.634,
+   "Keep this picture in the back of your"
+  ],
+  [
+   293.634,
+   293.996,
+   "mind."
+  ],
+  [
+   293.996,
+   296.89,
+   "Everything we build from here plugs into one"
+  ],
+  [
+   296.89,
+   297.975,
+   "of these boxes."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch01-big-picture.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,797 @@
+{
+ "cuts": [
+  {
+   "id": "lag-ch02-uses_div",
+   "type": "lag_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 15.572,
+   "props": {
+    "n": 2,
+    "title": "Eat, kitchen, factory",
+    "sub": "food first \u2014 claims last",
+    "color": "#7CB518",
+    "dur": 16.072
+   }
+  },
+  {
+   "id": "lag-ch02-uses_anatomy",
+   "type": "lag_anatomy",
+   "in_seconds": 16.072,
+   "out_seconds": 56.958,
+   "props": {
+    "dur": 41.386
+   }
+  },
+  {
+   "id": "lag-ch02-uses_eat",
+   "type": "lag_orbit",
+   "in_seconds": 57.458,
+   "out_seconds": 99.16,
+   "props": {
+    "kicker": "CAN WE EAT IT",
+    "title": "Yes \u2014 as a short-season dessert fruit",
+    "hub": "FRESH",
+    "foot": "Edible. Perishable. Seasonal. That triad is the business.",
+    "items": [
+     {
+      "label": "Eat fresh",
+      "c": "fruit"
+     },
+     {
+      "label": "Jam and jelly",
+      "c": "leaf"
+     },
+     {
+      "label": "Squash / nectar",
+      "c": "cool"
+     },
+     {
+      "label": "Chutney",
+      "c": "fruit"
+     },
+     {
+      "label": "Leaf tea (Asia)",
+      "c": "cool"
+     },
+     {
+      "label": "Not a drug crop",
+      "c": "risk"
+     }
+    ],
+    "dur": 42.202
+   }
+  },
+  {
+   "id": "lag-ch02-uses_kitchen",
+   "type": "lag_cards",
+   "in_seconds": 99.66,
+   "out_seconds": 136.586,
+   "props": {
+    "kicker": "COMMERCIAL USES",
+    "title": "Processing is a buffer, not a given",
+    "cols": 2,
+    "foot": "A buyer on paper beats a recipe in your head.",
+    "items": [
+     {
+      "label": "Fresh mandi",
+      "sub": "Highest price if fruit is uniform, ripe, and in the city this week.",
+      "c": "fruit"
+     },
+     {
+      "label": "Jam / jelly",
+      "sub": "Saves soft fruit. Needs sugar, jars, FSSAI sense, and a brand or a contract.",
+      "c": "leaf"
+     },
+     {
+      "label": "Squash",
+      "sub": "Pulp plus acid plus sugar. Works when fresh glut hits.",
+      "c": "cool"
+     },
+     {
+      "label": "Leaf tea",
+      "sub": "Popular in East Asia. Not a listed Indian commodity you can scale blindly.",
+      "c": "risk"
+     }
+    ],
+    "dur": 37.426
+   }
+  },
+  {
+   "id": "lag-ch02-uses_medicine",
+   "type": "lag_cards",
+   "in_seconds": 137.086,
+   "out_seconds": 176.412,
+   "props": {
+    "kicker": "MEDICINE CLAIMS",
+    "title": "Nutrients yes. A clinic crop no.",
+    "cols": 3,
+    "foot": "This video is not medical advice.",
+    "items": [
+     {
+      "label": "Food value",
+      "sub": "Vitamin A carotenoids, potassium, vitamin C. Eat as fruit.",
+      "c": "leaf"
+     },
+     {
+      "label": "Leaf tradition",
+      "sub": "East Asian teas. Not your Indian mandi ticket.",
+      "c": "cool"
+     },
+     {
+      "label": "Do not claim cures",
+      "sub": "Inflammation, tumours, liver \u2014 those papers are not a farm model.",
+      "c": "risk"
+     }
+    ],
+    "dur": 39.826
+   }
+  },
+  {
+   "id": "lag-ch02-uses_howeat",
+   "type": "lag_cards",
+   "in_seconds": 176.912,
+   "out_seconds": 210.118,
+   "props": {
+    "kicker": "HOW TO EAT",
+    "title": "Ripe, gentle, spit the stones",
+    "cols": 2,
+    "foot": "Seeds are waste, not a second product, on a small farm.",
+    "items": [
+     {
+      "label": "Skin on",
+      "sub": "Thin. Many eat it. Wash dust and spray residue.",
+      "c": "fruit"
+     },
+     {
+      "label": "Spit seeds",
+      "sub": "Large stones. Not almond culture.",
+      "c": "leaf"
+     },
+     {
+      "label": "Slight give",
+      "sub": "Ripe test. Hard-green stays disappointing.",
+      "c": "cool"
+     },
+     {
+      "label": "No counter-ripe",
+      "sub": "It is not banana. Tree-ripe or not at all.",
+      "c": "risk"
+     }
+    ],
+    "dur": 33.706
+   }
+  },
+  {
+   "id": "lag-ch02-uses_nutri",
+   "type": "lag_cards",
+   "in_seconds": 210.618,
+   "out_seconds": 247.76,
+   "props": {
+    "kicker": "NUTRITION",
+    "title": "A fruit. Not a pharmacy.",
+    "cols": 3,
+    "foot": "Sell flavour and season. Not diagnoses.",
+    "items": [
+     {
+      "label": "Carotenoids",
+      "sub": "The orange colour is not just pretty.",
+      "c": "fruit"
+     },
+     {
+      "label": "Potassium",
+      "sub": "Food mineral. Still a fruit serving.",
+      "c": "cool"
+     },
+     {
+      "label": "No cure card",
+      "sub": "Refuse medical marketing on the crate.",
+      "c": "risk"
+     }
+    ],
+    "dur": 37.642
+   }
+  },
+  {
+   "id": "lag-ch02-uses_valueadd",
+   "type": "lag_pipe",
+   "in_seconds": 248.26,
+   "out_seconds": 289.194,
+   "props": {
+    "kicker": "VALUE ADD",
+    "title": "Jam is the grown-up side path",
+    "foot": "Process the seconds. Do not process your A grade unless the mandi failed.",
+    "nodes": [
+     {
+      "label": "Sort",
+      "sub": "Seconds only",
+      "c": "leaf"
+     },
+     {
+      "label": "Cook",
+      "sub": "Sugar + acid",
+      "c": "fruit"
+     },
+     {
+      "label": "Fill",
+      "sub": "Hot, clean",
+      "c": "cool"
+     },
+     {
+      "label": "Label",
+      "sub": "FSSAI",
+      "c": "risk"
+     },
+     {
+      "label": "Sell",
+      "sub": "One SKU",
+      "c": "fruit"
+     }
+    ],
+    "dur": 41.434
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.034,
+   "Part two."
+  ],
+  [
+   1.034,
+   3.618,
+   "What the fruit is for."
+  ],
+  [
+   4.168,
+   6.235,
+   "You can eat it."
+  ],
+  [
+   6.235,
+   8.303,
+   "You can cook it."
+  ],
+  [
+   8.303,
+   10.37,
+   "You can process it."
+  ],
+  [
+   10.92,
+   15.055,
+   "You should not plant it as a medicine"
+  ],
+  [
+   15.055,
+   15.572,
+   "factory."
+  ],
+  [
+   16.072,
+   20.309,
+   "What you sell is a small yellow to"
+  ],
+  [
+   20.309,
+   21.369,
+   "orange fruit."
+  ],
+  [
+   21.919,
+   22.978,
+   "Thin skin."
+  ],
+  [
+   22.978,
+   24.567,
+   "Juicy sweet-sour flesh."
+  ],
+  [
+   24.567,
+   26.686,
+   "A few large seeds."
+  ],
+  [
+   27.236,
+   29.884,
+   "It ripens on the tree."
+  ],
+  [
+   29.884,
+   34.121,
+   "Half-ripe fruit does not finish like a banana."
+  ],
+  [
+   34.671,
+   38.379,
+   "That is why harvest timing is everything."
+  ],
+  [
+   38.379,
+   39.968,
+   "Pick too early,"
+  ],
+  [
+   39.968,
+   41.557,
+   "flavour never arrives."
+  ],
+  [
+   42.107,
+   43.696,
+   "Pick too late,"
+  ],
+  [
+   43.696,
+   47.404,
+   "and the bunch collapses in the crate."
+  ],
+  [
+   47.954,
+   49.543,
+   "Dessert fruit first."
+  ],
+  [
+   49.543,
+   51.661,
+   "Jam and squash second."
+  ],
+  [
+   51.661,
+   54.839,
+   "Leaf tea is a side story,"
+  ],
+  [
+   54.839,
+   56.958,
+   "not a farm plan."
+  ],
+  [
+   57.458,
+   57.922,
+   "Yes,"
+  ],
+  [
+   57.922,
+   59.313,
+   "you eat it."
+  ],
+  [
+   59.313,
+   59.777,
+   "Fresh,"
+  ],
+  [
+   59.777,
+   61.168,
+   "out of hand,"
+  ],
+  [
+   61.168,
+   63.486,
+   "is the main Indian use."
+  ],
+  [
+   64.036,
+   67.282,
+   "The window is late March into April,"
+  ],
+  [
+   67.282,
+   70.528,
+   "when few other local fruits are cheap."
+  ],
+  [
+   71.078,
+   73.861,
+   "That scarcity is the price story."
+  ],
+  [
+   73.861,
+   76.643,
+   "It is also the logistics story."
+  ],
+  [
+   77.193,
+   79.048,
+   "The fruit is perishable."
+  ],
+  [
+   79.048,
+   82.757,
+   "It does not sit like apple in cold"
+  ],
+  [
+   82.757,
+   84.149,
+   "store for months."
+  ],
+  [
+   84.699,
+   88.408,
+   "If you cannot reach a buyer in days,"
+  ],
+  [
+   88.408,
+   92.118,
+   "you need a processing plan before you plant."
+  ],
+  [
+   92.668,
+   94.523,
+   "Eating it is easy."
+  ],
+  [
+   94.523,
+   98.233,
+   "Selling a truck of ripe loquat is the"
+  ],
+  [
+   98.233,
+   99.16,
+   "hard part."
+  ],
+  [
+   99.66,
+   103.257,
+   "Kitchen uses are real and they add a"
+  ],
+  [
+   103.257,
+   104.157,
+   "second buyer."
+  ],
+  [
+   104.707,
+   108.304,
+   "Jam and jelly take fruit that is too"
+  ],
+  [
+   108.304,
+   110.553,
+   "soft for the fresh stall."
+  ],
+  [
+   111.103,
+   113.351,
+   "Squash and nectar take pulp."
+  ],
+  [
+   113.351,
+   115.6,
+   "Chutney takes the sweet-sour edge."
+  ],
+  [
+   116.15,
+   119.747,
+   "Canning exists in countries with a bigger crop."
+  ],
+  [
+   119.747,
+   122.895,
+   "India barely has that industry for loquat."
+  ],
+  [
+   123.445,
+   127.042,
+   "So do not assume a factory will appear"
+  ],
+  [
+   127.042,
+   129.291,
+   "because you planted twenty acres."
+  ],
+  [
+   129.841,
+   132.089,
+   "If processing is your plan,"
+  ],
+  [
+   132.089,
+   135.687,
+   "talk to a pulp unit before the pits"
+  ],
+  [
+   135.687,
+   136.586,
+   "are dug."
+  ],
+  [
+   137.086,
+   139.524,
+   "You will see health videos."
+  ],
+  [
+   139.524,
+   141.475,
+   "Treat them as noise."
+  ],
+  [
+   142.025,
+   143.976,
+   "The fruit has carotenoids,"
+  ],
+  [
+   143.976,
+   144.464,
+   "potassium,"
+  ],
+  [
+   144.464,
+   145.439,
+   "vitamin C,"
+  ],
+  [
+   145.439,
+   145.927,
+   "polyphenols."
+  ],
+  [
+   145.927,
+   147.39,
+   "That is food."
+  ],
+  [
+   147.94,
+   151.841,
+   "Leaves are used in Chinese and Japanese herbal"
+  ],
+  [
+   151.841,
+   155.742,
+   "teas for cough and inflammation in those\ntraditions."
+  ],
+  [
+   156.292,
+   158.731,
+   "Tradition is not a licence,"
+  ],
+  [
+   158.731,
+   162.145,
+   "and it is not a purchase order."
+  ],
+  [
+   162.695,
+   166.596,
+   "Do not tell a banker this orchard is"
+  ],
+  [
+   166.596,
+   169.522,
+   "an Ayurvedic A P I farm."
+  ],
+  [
+   170.072,
+   172.511,
+   "Plant it to sell fruit."
+  ],
+  [
+   172.511,
+   176.412,
+   "Anything else is a bonus you cannot bank."
+  ],
+  [
+   176.912,
+   179.45,
+   "How people actually eat it."
+  ],
+  [
+   180.0,
+   180.508,
+   "Wash."
+  ],
+  [
+   180.508,
+   182.538,
+   "Eat skin and all,"
+  ],
+  [
+   182.538,
+   185.584,
+   "or peel if it bothers you."
+  ],
+  [
+   186.134,
+   188.164,
+   "Spit the large seeds."
+  ],
+  [
+   188.164,
+   191.717,
+   "Do not crush them for a snack."
+  ],
+  [
+   192.267,
+   194.805,
+   "Chill briefly if you can."
+  ],
+  [
+   194.805,
+   196.836,
+   "Warm fruit tastes flatter."
+  ],
+  [
+   197.386,
+   201.446,
+   "A ripe fruit yields to a gentle press"
+  ],
+  [
+   201.446,
+   202.969,
+   "and smells floral-sweet."
+  ],
+  [
+   203.519,
+   207.58,
+   "Green-hard fruit is sour and never becomes a"
+  ],
+  [
+   207.58,
+   210.118,
+   "banana on the kitchen counter."
+  ],
+  [
+   210.618,
+   211.116,
+   "Nutrition,"
+  ],
+  [
+   211.116,
+   212.612,
+   "without a sermon."
+  ],
+  [
+   213.162,
+   214.657,
+   "You get carotenoids,"
+  ],
+  [
+   214.657,
+   218.645,
+   "which the body can use as vitamin A"
+  ],
+  [
+   218.645,
+   219.143,
+   "activity."
+  ],
+  [
+   219.693,
+   223.68,
+   "Potassium is in the pulp \u2014 think banana-class"
+  ],
+  [
+   223.68,
+   224.179,
+   "mineral,"
+  ],
+  [
+   224.179,
+   225.674,
+   "not a pill."
+  ],
+  [
+   226.224,
+   229.215,
+   "Vitamin C and polyphenols ride along."
+  ],
+  [
+   229.215,
+   232.205,
+   "Water is most of the fruit."
+  ],
+  [
+   232.755,
+   235.248,
+   "That is a good dessert."
+  ],
+  [
+   235.248,
+   237.74,
+   "It is not a prescription."
+  ],
+  [
+   238.29,
+   242.277,
+   "If a seller says it cures blood pressure,"
+  ],
+  [
+   242.277,
+   245.268,
+   "you are not in a nursery."
+  ],
+  [
+   245.268,
+   247.76,
+   "You are in a pitch."
+  ],
+  [
+   248.26,
+   250.684,
+   "If you add value,"
+  ],
+  [
+   250.684,
+   253.109,
+   "keep the line short."
+  ],
+  [
+   253.659,
+   254.265,
+   "Wash."
+  ],
+  [
+   254.265,
+   254.871,
+   "Sort."
+  ],
+  [
+   254.871,
+   257.901,
+   "Cook with sugar and acid."
+  ],
+  [
+   257.901,
+   259.114,
+   "Fill hot."
+  ],
+  [
+   259.114,
+   259.72,
+   "Label."
+  ],
+  [
+   260.27,
+   263.906,
+   "Jam is the realistic Indian micro-product."
+  ],
+  [
+   263.906,
+   268.149,
+   "Wine and leather and cosmetics are hobbies."
+  ],
+  [
+   268.699,
+   273.548,
+   "FSSAI registration is not optional if you sell"
+  ],
+  [
+   273.548,
+   274.76,
+   "beyond friends."
+  ],
+  [
+   275.31,
+   280.159,
+   "A pretty jar without a buyer is inventory"
+  ],
+  [
+   280.159,
+   282.583,
+   "with a shelf life."
+  ],
+  [
+   283.133,
+   285.557,
+   "Start with one SKU."
+  ],
+  [
+   285.557,
+   286.77,
+   "One flavour."
+  ],
+  [
+   286.77,
+   289.194,
+   "One city kirana list."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "lag/lag-ch02-uses.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,1833 @@
+{
+ "cuts": [
+  {
+   "id": "ch01_s01_title",
+   "type": "fa_title",
+   "in_seconds": 0.0,
+   "out_seconds": 20.588,
+   "props": {
+    "kicker": "FUNDAMENTAL ANALYSIS \u00b7 FROM SCRATCH",
+    "line1": "Reading a Business",
+    "line2": "by the Numbers",
+    "sub": "Chapter 1 \u2014 the three financial statements",
+    "color": "#2DD4BF",
+    "dur": 21.088
+   }
+  },
+  {
+   "id": "ch01_s02_roadmap",
+   "type": "fa_roadmap",
+   "in_seconds": 21.088,
+   "out_seconds": 57.396,
+   "props": {
+    "kicker": "THE COURSE \u00b7 SEVEN CHAPTERS",
+    "parts": [
+     {
+      "n": 1,
+      "title": "The Statements",
+      "sub": "revenue to profit, line by line",
+      "c": "#38BDF8"
+     },
+     {
+      "n": 2,
+      "title": "Margins",
+      "sub": "how much of each rupee you keep",
+      "c": "#34D399"
+     },
+     {
+      "n": 3,
+      "title": "Returns",
+      "sub": "R O E, R O C E, and DuPont",
+      "c": "#2DD4BF"
+     },
+     {
+      "n": 4,
+      "title": "Valuation",
+      "sub": "market cap, E V, P E, E V to EBITDA",
+      "c": "#A78BFA"
+     },
+     {
+      "n": 5,
+      "title": "Leverage",
+      "sub": "debt, coverage, solvency",
+      "c": "#FBBF24"
+     },
+     {
+      "n": 6,
+      "title": "Growth & Quality",
+      "sub": "C A G R, free cash flow",
+      "c": "#38BDF8"
+     },
+     {
+      "n": 7,
+      "title": "Putting It Together",
+      "sub": "reading a company end to end",
+      "c": "#34D399"
+     }
+    ],
+    "dur": 36.808
+   }
+  },
+  {
+   "id": "ch01_s03_analogy",
+   "type": "fa_analogy",
+   "in_seconds": 57.896,
+   "out_seconds": 93.914,
+   "props": {
+    "kicker": "ANALOGY \u00b7 WHAT A COMPANY IS",
+    "title": "A company is a money machine",
+    "left": {
+     "emoji": "\ud83c\udf4b",
+     "label": "A lemonade stall",
+     "cap": "Buy lemons and sugar. Sell juice. Keep what's left.",
+     "c": "#8B93B0"
+    },
+    "right": {
+     "emoji": "\ud83c\udfed",
+     "label": "Any company",
+     "cap": "Buy inputs. Sell output. Keep the profit.",
+     "c": "#2DD4BF"
+    },
+    "note": "Every business, big or small, runs on this one loop: money in, costs out, profit left.",
+    "color": "#2DD4BF",
+    "dur": 36.518
+   }
+  },
+  {
+   "id": "ch01_s04_three",
+   "type": "fa_compare",
+   "in_seconds": 94.414,
+   "out_seconds": 133.288,
+   "props": {
+    "kicker": "THREE STATEMENTS \u00b7 ONE COMPANY",
+    "title": "How a business reports itself",
+    "cos": [
+     {
+      "name": "Income statement",
+      "c": "#34D399",
+      "tag": "the P&L",
+      "stats": [
+       {
+        "k": "Question",
+        "v": "Did we profit?"
+       },
+       {
+        "k": "Covers",
+        "v": "a period"
+       },
+       {
+        "k": "Top line",
+        "v": "Revenue",
+        "hot": true
+       },
+       {
+        "k": "Bottom line",
+        "v": "Net profit",
+        "hot": true
+       }
+      ]
+     },
+     {
+      "name": "Balance sheet",
+      "c": "#38BDF8",
+      "tag": "what we own & owe",
+      "stats": [
+       {
+        "k": "Question",
+        "v": "How strong?"
+       },
+       {
+        "k": "Covers",
+        "v": "a moment"
+       },
+       {
+        "k": "Left",
+        "v": "Assets",
+        "hot": true
+       },
+       {
+        "k": "Right",
+        "v": "Debt + equity",
+        "hot": true
+       }
+      ]
+     },
+     {
+      "name": "Cash flow",
+      "c": "#A78BFA",
+      "tag": "real money moving",
+      "stats": [
+       {
+        "k": "Question",
+        "v": "Did cash come?"
+       },
+       {
+        "k": "Covers",
+        "v": "a period"
+       },
+       {
+        "k": "Watch",
+        "v": "Operating cash",
+        "hot": true
+       },
+       {
+        "k": "Truth test",
+        "v": "Cash \u2260 profit",
+        "hot": true
+       }
+      ]
+     }
+    ],
+    "note": "This chapter lives mostly in the first one \u2014 the income statement.",
+    "color": "#2DD4BF",
+    "dur": 39.374
+   }
+  },
+  {
+   "id": "ch01_s05_pnl_ledger",
+   "type": "fa_ledger",
+   "in_seconds": 133.788,
+   "out_seconds": 177.726,
+   "props": {
+    "kicker": "THE INCOME STATEMENT",
+    "title": "Revenue at the top, profit at the bottom",
+    "rows": [
+     {
+      "label": "Revenue",
+      "val": "1,168",
+      "c": "#38BDF8",
+      "bold": true
+     },
+     {
+      "label": "less  Operating costs",
+      "val": "(1,021)",
+      "c": "#F87171",
+      "indent": 1
+     },
+     {
+      "label": "EBITDA",
+      "val": "147",
+      "c": "#34D399",
+      "bold": true,
+      "rule": true
+     },
+     {
+      "label": "less  Depreciation",
+      "val": "(20)",
+      "c": "#F87171",
+      "indent": 1
+     },
+     {
+      "label": "less  Interest",
+      "val": "(18)",
+      "c": "#FBBF24",
+      "indent": 1
+     },
+     {
+      "label": "less  Tax",
+      "val": "(24)",
+      "c": "#F87171",
+      "indent": 1
+     },
+     {
+      "label": "Net profit  (PAT)",
+      "val": "85",
+      "c": "#34D399",
+      "bold": true,
+      "rule": true
+     }
+    ],
+    "caption": "Ardee, FY26, \u20b9 crore (approx). Read it top to bottom, like a staircase down.",
+    "color": "#2DD4BF",
+    "dur": 44.438
+   }
+  },
+  {
+   "id": "ch01_s06_waterfall",
+   "type": "fa_waterfall",
+   "in_seconds": 178.226,
+   "out_seconds": 222.98,
+   "props": {
+    "kicker": "THE P&L WATERFALL",
+    "title": "Watch the money fall from revenue to profit",
+    "unit": "\u20b9 Cr",
+    "segs": [
+     {
+      "label": "Revenue",
+      "value": 1168,
+      "c": "#38BDF8",
+      "subtotal": true
+     },
+     {
+      "label": "\u2212 Operating costs",
+      "delta": -1021,
+      "c": "#F87171"
+     },
+     {
+      "label": "EBITDA",
+      "value": 147,
+      "c": "#34D399",
+      "subtotal": true
+     },
+     {
+      "label": "\u2212 Depreciation",
+      "delta": -20,
+      "c": "#F87171"
+     },
+     {
+      "label": "\u2212 Interest",
+      "delta": -18,
+      "c": "#FBBF24"
+     },
+     {
+      "label": "\u2212 Tax",
+      "delta": -24,
+      "c": "#F87171"
+     },
+     {
+      "label": "Net profit",
+      "value": 85,
+      "c": "#34D399",
+      "subtotal": true
+     }
+    ],
+    "note": "Ardee FY26 (approx). Of every \u20b9100 that came in, about \u20b97 survived as profit.",
+    "color": "#38BDF8",
+    "dur": 45.254
+   }
+  },
+  {
+   "id": "ch01_s07_revenue",
+   "type": "fa_keyidea",
+   "in_seconds": 223.48,
+   "out_seconds": 263.122,
+   "props": {
+    "kicker": "TERM 1 \u00b7 REVENUE",
+    "color": "#38BDF8",
+    "big": "Revenue is the top line \u2014 all the money coming in, before a single cost.",
+    "sub": "Also called sales or turnover. Big revenue is not the same as big profit.",
+    "dur": 40.142
+   }
+  },
+  {
+   "id": "ch01_s08_gross",
+   "type": "fa_formula",
+   "in_seconds": 263.622,
+   "out_seconds": 302.976,
+   "props": {
+    "kicker": "TERM 2 \u00b7 GROSS PROFIT",
+    "title": "Revenue minus the cost of the goods",
+    "name": "Gross profit  =  Revenue  \u2212  Cost of goods sold",
+    "num": [
+     {
+      "label": "Revenue",
+      "val": 1168,
+      "c": "#38BDF8"
+     }
+    ],
+    "den": [
+     {
+      "label": "Cost of goods sold",
+      "val": 1021,
+      "c": "#F87171"
+     }
+    ],
+    "op": "\u2212",
+    "result": {
+     "label": "Gross profit \u2014 what's left to run everything else",
+     "val": 147,
+     "unit": "\u20b9 Cr",
+     "decimals": 0,
+     "c": "#34D399"
+    },
+    "note": "Here shown against operating cost. Gross profit pays for everything downstream.",
+    "color": "#34D399",
+    "dur": 39.854
+   }
+  },
+  {
+   "id": "ch01_s09_ebitda",
+   "type": "fa_keyidea",
+   "in_seconds": 303.476,
+   "out_seconds": 349.358,
+   "props": {
+    "kicker": "TERM 3 \u00b7 EBITDA",
+    "color": "#34D399",
+    "big": "EBITDA is profit from the core operations \u2014 before interest, tax, and depreciation.",
+    "sub": "It asks: ignoring how the company is financed, does the actual business make money?",
+    "dur": 46.382
+   }
+  },
+  {
+   "id": "ch01_s10_ebit_dep",
+   "type": "fa_ledger",
+   "in_seconds": 349.858,
+   "out_seconds": 390.1,
+   "props": {
+    "kicker": "TERM 4 \u00b7 DEPRECIATION & EBIT",
+    "title": "The cost of machines wearing out",
+    "rows": [
+     {
+      "label": "EBITDA  (core operating profit)",
+      "val": "147",
+      "c": "#34D399",
+      "bold": true
+     },
+     {
+      "label": "less  Depreciation \u2014 machines ageing",
+      "val": "(20)",
+      "c": "#F87171",
+      "indent": 1
+     },
+     {
+      "label": "EBIT  (operating profit)",
+      "val": "127",
+      "c": "#2DD4BF",
+      "bold": true,
+      "rule": true
+     }
+    ],
+    "caption": "Depreciation spreads a machine's cost over the years it is used. No cash leaves today.",
+    "color": "#2DD4BF",
+    "dur": 40.742
+   }
+  },
+  {
+   "id": "ch01_s11_pat",
+   "type": "fa_keyidea",
+   "in_seconds": 390.6,
+   "out_seconds": 430.986,
+   "props": {
+    "kicker": "TERM 5 \u00b7 INTEREST, TAX & PAT",
+    "color": "#34D399",
+    "big": "After interest to lenders and tax to the government, what remains is Net Profit \u2014 PAT.",
+    "sub": "The true bottom line. This is the money that belongs to the shareholders.",
+    "dur": 40.886
+   }
+  },
+  {
+   "id": "ch01_s12_eps",
+   "type": "fa_formula",
+   "in_seconds": 431.486,
+   "out_seconds": 472.064,
+   "props": {
+    "kicker": "TERM 6 \u00b7 EARNINGS PER SHARE",
+    "title": "Profit, sliced per share",
+    "name": "EPS  =  Net profit  \u00f7  Number of shares",
+    "num": [
+     {
+      "label": "Net profit (PAT)",
+      "val": 85,
+      "c": "#34D399"
+     }
+    ],
+    "den": [
+     {
+      "label": "Shares (crore)",
+      "val": 30,
+      "c": "#38BDF8"
+     }
+    ],
+    "op": "\u00f7",
+    "result": {
+     "label": "Earnings per share \u2014 profit behind one share",
+     "val": 2.8,
+     "unit": "\u20b9",
+     "decimals": 1,
+     "c": "#2DD4BF"
+    },
+    "note": "\u2248 30 crore shares (approx). EPS lets you compare profit to the share price later.",
+    "color": "#2DD4BF",
+    "dur": 41.078
+   }
+  },
+  {
+   "id": "ch01_s13_balance",
+   "type": "fa_analogy",
+   "in_seconds": 472.564,
+   "out_seconds": 514.414,
+   "props": {
+    "kicker": "THE BALANCE SHEET",
+    "title": "What you own must equal what you owe plus your own money",
+    "left": {
+     "emoji": "\ud83c\udfe0",
+     "label": "Buying a house",
+     "cap": "House worth \u20b91 crore = bank loan + your savings.",
+     "c": "#38BDF8"
+    },
+    "right": {
+     "emoji": "\u2696\ufe0f",
+     "label": "The balance sheet",
+     "cap": "Assets = Liabilities + Equity. Always balances.",
+     "c": "#34D399"
+    },
+    "note": "Assets are what the company owns. Liabilities are what it owes. Equity is the owners' share.",
+    "color": "#38BDF8",
+    "dur": 42.35
+   }
+  },
+  {
+   "id": "ch01_s14_cashflow",
+   "type": "fa_keyidea",
+   "in_seconds": 514.914,
+   "out_seconds": 562.188,
+   "props": {
+    "kicker": "THE CASH FLOW STATEMENT",
+    "color": "#A78BFA",
+    "big": "Profit is an opinion. Cash is a fact.",
+    "sub": "A company can report profit yet run out of cash \u2014 so we track the money that truly moved.",
+    "dur": 47.774
+   }
+  },
+  {
+   "id": "ch01_s15_recap",
+   "type": "fa_recap",
+   "in_seconds": 562.688,
+   "out_seconds": 624.05,
+   "props": {
+    "kicker": "RECAP \u00b7 CHAPTER 1",
+    "title": "The statements in one breath",
+    "items": [
+     "Three statements: income (P&L), balance sheet, cash flow",
+     "The P&L runs top to bottom: Revenue \u2192 costs \u2192 Profit",
+     "Revenue is size; profit is what survives every cost",
+     "EBITDA = core operating profit, before interest, tax, depreciation",
+     "PAT is the true bottom line; EPS is PAT per share",
+     "Balance sheet: Assets = Liabilities + Equity, always",
+     "Profit is an opinion; cash is a fact"
+    ],
+    "closer": "Master these lines \u2014 every ratio ahead is just built from them.",
+    "color": "#2DD4BF",
+    "dur": 61.862
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.377,
+   "Open any company's annual report,"
+  ],
+  [
+   2.377,
+   4.753,
+   "and you drown in numbers."
+  ],
+  [
+   5.303,
+   9.106,
+   "But behind all of them sit just a"
+  ],
+  [
+   9.106,
+   11.007,
+   "handful of simple ideas."
+  ],
+  [
+   11.007,
+   13.384,
+   "This course teaches every one,"
+  ],
+  [
+   13.384,
+   14.334,
+   "from scratch."
+  ],
+  [
+   14.884,
+   16.31,
+   "By the end,"
+  ],
+  [
+   16.31,
+   20.113,
+   "you'll read a business the way an analyst"
+  ],
+  [
+   20.113,
+   20.588,
+   "does."
+  ],
+  [
+   21.088,
+   22.848,
+   "Here's the map."
+  ],
+  [
+   23.398,
+   24.572,
+   "Seven chapters."
+  ],
+  [
+   24.572,
+   25.159,
+   "First,"
+  ],
+  [
+   25.159,
+   26.332,
+   "the statements,"
+  ],
+  [
+   26.332,
+   29.266,
+   "where every number is born."
+  ],
+  [
+   29.266,
+   30.44,
+   "Then margins,"
+  ],
+  [
+   30.44,
+   31.027,
+   "returns,"
+  ],
+  [
+   31.027,
+   32.2,
+   "and valuation,"
+  ],
+  [
+   32.2,
+   35.721,
+   "the three questions that matter most."
+  ],
+  [
+   35.721,
+   36.895,
+   "Then leverage,"
+  ],
+  [
+   36.895,
+   38.655,
+   "growth and quality."
+  ],
+  [
+   39.205,
+   40.379,
+   "And finally,"
+  ],
+  [
+   40.379,
+   45.073,
+   "we put it all together on one real"
+  ],
+  [
+   45.073,
+   45.66,
+   "company."
+  ],
+  [
+   45.66,
+   50.354,
+   "We'll learn each idea on three real businesses."
+  ],
+  [
+   50.354,
+   50.941,
+   "Ardee,"
+  ],
+  [
+   50.941,
+   51.528,
+   "Gravita,"
+  ],
+  [
+   51.528,
+   52.702,
+   "and Pondy."
+  ],
+  [
+   52.702,
+   57.396,
+   "Three companies that recycle old batteries into\nlead."
+  ],
+  [
+   57.896,
+   59.348,
+   "Before any jargon,"
+  ],
+  [
+   59.348,
+   62.253,
+   "hold one picture in your head."
+  ],
+  [
+   62.803,
+   66.191,
+   "A company is just a money machine."
+  ],
+  [
+   66.191,
+   69.095,
+   "Think of a child's lemonade stall."
+  ],
+  [
+   69.095,
+   71.516,
+   "She buys lemons and sugar."
+  ],
+  [
+   71.516,
+   72.968,
+   "She sells juice."
+  ],
+  [
+   73.518,
+   76.906,
+   "Whatever is left over is her profit."
+  ],
+  [
+   76.906,
+   80.779,
+   "A giant factory works exactly the same way."
+  ],
+  [
+   80.779,
+   82.231,
+   "Money comes in,"
+  ],
+  [
+   82.231,
+   83.683,
+   "costs go out,"
+  ],
+  [
+   83.683,
+   86.103,
+   "and profit is what survives."
+  ],
+  [
+   86.653,
+   90.526,
+   "Every ratio in this course is just a"
+  ],
+  [
+   90.526,
+   93.914,
+   "sharper way to study that one loop."
+  ],
+  [
+   94.414,
+   97.553,
+   "A company reports itself in three statements."
+  ],
+  [
+   98.103,
+   99.449,
+   "The income statement,"
+  ],
+  [
+   99.449,
+   102.14,
+   "also called the P and L,"
+  ],
+  [
+   102.14,
+   103.485,
+   "answers one question."
+  ],
+  [
+   103.485,
+   105.279,
+   "Over the last year,"
+  ],
+  [
+   105.279,
+   107.521,
+   "did we make a profit?"
+  ],
+  [
+   108.071,
+   110.762,
+   "The balance sheet is a snapshot."
+  ],
+  [
+   110.762,
+   114.35,
+   "It shows what the company owns and what"
+  ],
+  [
+   114.35,
+   115.247,
+   "it owes,"
+  ],
+  [
+   115.247,
+   116.593,
+   "at one moment."
+  ],
+  [
+   117.143,
+   120.731,
+   "And the cash flow statement tracks the real"
+  ],
+  [
+   120.731,
+   122.524,
+   "money that actually moved."
+  ],
+  [
+   122.524,
+   124.318,
+   "Because profit on paper,"
+  ],
+  [
+   124.318,
+   126.561,
+   "and cash in the bank,"
+  ],
+  [
+   126.561,
+   128.803,
+   "are not the same thing."
+  ],
+  [
+   128.803,
+   131.494,
+   "We'll start with the first one,"
+  ],
+  [
+   131.494,
+   133.288,
+   "the P and L."
+  ],
+  [
+   133.788,
+   136.882,
+   "Here is a real income statement,"
+  ],
+  [
+   136.882,
+   137.398,
+   "simplified."
+  ],
+  [
+   137.398,
+   138.945,
+   "This is Ardee,"
+  ],
+  [
+   138.945,
+   141.008,
+   "in crores of rupees."
+  ],
+  [
+   141.558,
+   144.652,
+   "You read it top to bottom,"
+  ],
+  [
+   144.652,
+   147.231,
+   "like walking down a staircase."
+  ],
+  [
+   147.231,
+   150.325,
+   "At the very top sits revenue,"
+  ],
+  [
+   150.325,
+   153.935,
+   "one thousand one hundred sixty eight crore."
+  ],
+  [
+   154.485,
+   155.001,
+   "Then,"
+  ],
+  [
+   155.001,
+   156.548,
+   "step by step,"
+  ],
+  [
+   156.548,
+   158.095,
+   "we subtract costs."
+  ],
+  [
+   158.095,
+   159.126,
+   "Operating costs,"
+  ],
+  [
+   159.126,
+   159.642,
+   "depreciation,"
+  ],
+  [
+   159.642,
+   160.158,
+   "interest,"
+  ],
+  [
+   160.158,
+   161.189,
+   "and tax."
+  ],
+  [
+   161.189,
+   165.315,
+   "And whatever reaches the bottom step is net"
+  ],
+  [
+   165.315,
+   165.83,
+   "profit."
+  ],
+  [
+   165.83,
+   167.893,
+   "Just eighty five crore."
+  ],
+  [
+   168.443,
+   172.569,
+   "Notice how much fell away on the way"
+  ],
+  [
+   172.569,
+   173.085,
+   "down."
+  ],
+  [
+   173.085,
+   177.21,
+   "That gap is the whole story of the"
+  ],
+  [
+   177.21,
+   177.726,
+   "business."
+  ],
+  [
+   178.226,
+   181.506,
+   "Let's watch that staircase as a waterfall."
+  ],
+  [
+   182.056,
+   185.804,
+   "The tall blue bar on the left is"
+  ],
+  [
+   185.804,
+   187.209,
+   "all the revenue,"
+  ],
+  [
+   187.209,
+   189.083,
+   "everything that came in."
+  ],
+  [
+   189.083,
+   192.832,
+   "Then each red drop is a cost being"
+  ],
+  [
+   192.832,
+   193.769,
+   "taken out."
+  ],
+  [
+   194.319,
+   195.724,
+   "The biggest drop,"
+  ],
+  [
+   195.724,
+   196.661,
+   "by far,"
+  ],
+  [
+   196.661,
+   198.067,
+   "is operating costs."
+  ],
+  [
+   198.067,
+   199.472,
+   "That's the lead,"
+  ],
+  [
+   199.472,
+   200.409,
+   "the labour,"
+  ],
+  [
+   200.409,
+   203.221,
+   "the power to run the plant."
+  ],
+  [
+   203.221,
+   206.5,
+   "What's left standing after it is EBITDA,"
+  ],
+  [
+   206.5,
+   208.843,
+   "one hundred forty seven crore."
+  ],
+  [
+   209.393,
+   211.735,
+   "Then smaller drops for depreciation,"
+  ],
+  [
+   211.735,
+   212.204,
+   "interest,"
+  ],
+  [
+   212.204,
+   213.141,
+   "and tax."
+  ],
+  [
+   213.141,
+   216.889,
+   "And the green bar at the end is"
+  ],
+  [
+   216.889,
+   217.358,
+   "profit."
+  ],
+  [
+   217.358,
+   220.637,
+   "Of every hundred rupees that came in,"
+  ],
+  [
+   220.637,
+   222.98,
+   "only about seven rupees survived."
+  ],
+  [
+   223.48,
+   225.741,
+   "Let's name the lines properly,"
+  ],
+  [
+   225.741,
+   227.551,
+   "starting at the top."
+  ],
+  [
+   228.101,
+   231.719,
+   "Revenue is simply all the money a company"
+  ],
+  [
+   231.719,
+   234.433,
+   "brought in from selling its product."
+  ],
+  [
+   234.433,
+   237.146,
+   "You'll also hear it called sales,"
+  ],
+  [
+   237.146,
+   238.051,
+   "or turnover."
+  ],
+  [
+   238.601,
+   240.862,
+   "It is the top line,"
+  ],
+  [
+   240.862,
+   243.576,
+   "before any cost is taken out."
+  ],
+  [
+   243.576,
+   246.742,
+   "And here is the trap for beginners."
+  ],
+  [
+   246.742,
+   250.36,
+   "A company can have huge revenue and still"
+  ],
+  [
+   250.36,
+   252.169,
+   "make almost no profit."
+  ],
+  [
+   252.719,
+   255.433,
+   "Ardee sells over eleven hundred crore,"
+  ],
+  [
+   255.433,
+   257.695,
+   "but keeps only eighty five."
+  ],
+  [
+   257.695,
+   261.313,
+   "So revenue tells you the size of a"
+  ],
+  [
+   261.313,
+   261.765,
+   "business,"
+  ],
+  [
+   261.765,
+   263.122,
+   "not its quality."
+  ],
+  [
+   263.622,
+   267.3,
+   "The first real profit line is gross profit."
+  ],
+  [
+   267.85,
+   268.77,
+   "It's revenue,"
+  ],
+  [
+   268.77,
+   272.448,
+   "minus the direct cost of the goods you"
+  ],
+  [
+   272.448,
+   272.908,
+   "sold."
+  ],
+  [
+   272.908,
+   273.828,
+   "For Ardee,"
+  ],
+  [
+   273.828,
+   277.506,
+   "that direct cost is mostly the old batteries"
+  ],
+  [
+   277.506,
+   280.265,
+   "and metal it buys to recycle."
+  ],
+  [
+   280.815,
+   283.114,
+   "Revenue of eleven sixty eight,"
+  ],
+  [
+   283.114,
+   284.494,
+   "minus that cost,"
+  ],
+  [
+   284.494,
+   287.712,
+   "leaves roughly one hundred forty seven crore."
+  ],
+  [
+   287.712,
+   291.391,
+   "Gross profit is the money left over to"
+  ],
+  [
+   291.391,
+   293.23,
+   "pay for everything else."
+  ],
+  [
+   293.23,
+   294.15,
+   "The offices,"
+  ],
+  [
+   294.15,
+   295.069,
+   "the interest,"
+  ],
+  [
+   295.069,
+   295.989,
+   "the taxes."
+  ],
+  [
+   296.539,
+   298.838,
+   "If gross profit is thin,"
+  ],
+  [
+   298.838,
+   302.516,
+   "the business has very little room to work"
+  ],
+  [
+   302.516,
+   302.976,
+   "with."
+  ],
+  [
+   303.476,
+   306.018,
+   "Now the term everyone quotes,"
+  ],
+  [
+   306.018,
+   307.543,
+   "but few explain."
+  ],
+  [
+   307.543,
+   308.052,
+   "EBITDA."
+  ],
+  [
+   308.602,
+   312.669,
+   "It's an ugly word for a simple idea."
+  ],
+  [
+   312.669,
+   316.736,
+   "It's the profit from just running the business,"
+  ],
+  [
+   316.736,
+   319.278,
+   "before we worry about loans,"
+  ],
+  [
+   319.278,
+   319.787,
+   "taxes,"
+  ],
+  [
+   319.787,
+   321.312,
+   "or ageing machines."
+  ],
+  [
+   321.862,
+   325.421,
+   "The letters stand for earnings before interest,"
+  ],
+  [
+   325.421,
+   325.929,
+   "tax,"
+  ],
+  [
+   325.929,
+   327.455,
+   "depreciation and amortisation."
+  ],
+  [
+   327.455,
+   328.98,
+   "In plain words,"
+  ],
+  [
+   328.98,
+   332.539,
+   "strip away how the company is financed,"
+  ],
+  [
+   332.539,
+   333.556,
+   "and ask,"
+  ],
+  [
+   333.556,
+   337.114,
+   "does the core operation itself make money?"
+  ],
+  [
+   337.664,
+   338.681,
+   "For Ardee,"
+  ],
+  [
+   338.681,
+   342.24,
+   "EBITDA is one hundred forty seven crore."
+  ],
+  [
+   342.24,
+   345.799,
+   "It's the cleanest look at the engine,"
+  ],
+  [
+   345.799,
+   349.358,
+   "before the accountants and bankers get involved."
+  ],
+  [
+   349.858,
+   351.812,
+   "Next we subtract depreciation."
+  ],
+  [
+   352.362,
+   355.293,
+   "When a company buys a machine,"
+  ],
+  [
+   355.293,
+   359.201,
+   "it doesn't count the whole cost in one"
+  ],
+  [
+   359.201,
+   359.69,
+   "year."
+  ],
+  [
+   359.69,
+   363.598,
+   "It spreads that cost across all the years"
+  ],
+  [
+   363.598,
+   366.04,
+   "the machine will be used."
+  ],
+  [
+   366.04,
+   368.483,
+   "That yearly slice is depreciation."
+  ],
+  [
+   369.033,
+   370.987,
+   "It's a real cost,"
+  ],
+  [
+   370.987,
+   372.941,
+   "but a strange one."
+  ],
+  [
+   372.941,
+   376.36,
+   "No cash actually leaves the bank today."
+  ],
+  [
+   376.36,
+   378.803,
+   "Take depreciation out of EBITDA,"
+  ],
+  [
+   378.803,
+   380.757,
+   "and you get EBIT."
+  ],
+  [
+   380.757,
+   383.199,
+   "Earnings before interest and tax,"
+  ],
+  [
+   383.199,
+   385.153,
+   "also called operating profit."
+  ],
+  [
+   385.703,
+   386.68,
+   "For Ardee,"
+  ],
+  [
+   386.68,
+   390.1,
+   "that's about one hundred twenty seven crore."
+  ],
+  [
+   390.6,
+   392.071,
+   "Two subtractions remain."
+  ],
+  [
+   392.621,
+   393.111,
+   "First,"
+  ],
+  [
+   393.111,
+   393.602,
+   "interest,"
+  ],
+  [
+   393.602,
+   397.524,
+   "the rent a company pays on its loans."
+  ],
+  [
+   397.524,
+   401.447,
+   "Ardee pays about eighteen crore to its lenders."
+  ],
+  [
+   401.997,
+   402.978,
+   "Then tax,"
+  ],
+  [
+   402.978,
+   404.449,
+   "the government's share,"
+  ],
+  [
+   404.449,
+   406.41,
+   "around twenty four crore."
+  ],
+  [
+   406.41,
+   409.842,
+   "And what finally remains is net profit,"
+  ],
+  [
+   409.842,
+   410.823,
+   "or PAT."
+  ],
+  [
+   410.823,
+   412.294,
+   "Profit after tax."
+  ],
+  [
+   412.844,
+   415.786,
+   "This is the true bottom line,"
+  ],
+  [
+   415.786,
+   417.257,
+   "eighty five crore."
+  ],
+  [
+   417.257,
+   421.179,
+   "This is the money that actually belongs to"
+  ],
+  [
+   421.179,
+   422.16,
+   "the owners,"
+  ],
+  [
+   422.16,
+   423.141,
+   "the shareholders."
+  ],
+  [
+   423.141,
+   427.063,
+   "Every other number we've seen was just a"
+  ],
+  [
+   427.063,
+   430.986,
+   "step on the way down to this one."
+  ],
+  [
+   431.486,
+   435.379,
+   "One more number turns profit into something\npersonal."
+  ],
+  [
+   435.379,
+   436.839,
+   "Earnings per share,"
+  ],
+  [
+   436.839,
+   437.812,
+   "or EPS."
+  ],
+  [
+   438.362,
+   442.255,
+   "A company's profit is shared among all its"
+  ],
+  [
+   442.255,
+   442.741,
+   "shares."
+  ],
+  [
+   442.741,
+   446.634,
+   "So we divide net profit by the number"
+  ],
+  [
+   446.634,
+   447.607,
+   "of shares."
+  ],
+  [
+   448.157,
+   451.077,
+   "Ardee's eighty five crore of profit,"
+  ],
+  [
+   451.077,
+   453.996,
+   "split across roughly thirty crore shares,"
+  ],
+  [
+   453.996,
+   457.889,
+   "is about two rupees and eighty paise per"
+  ],
+  [
+   457.889,
+   458.376,
+   "share."
+  ],
+  [
+   458.376,
+   462.269,
+   "That's the profit sitting behind a single share."
+  ],
+  [
+   462.819,
+   464.765,
+   "Hold on to EPS."
+  ],
+  [
+   464.765,
+   466.225,
+   "In chapter four,"
+  ],
+  [
+   466.225,
+   469.631,
+   "we'll compare it to the share price,"
+  ],
+  [
+   469.631,
+   472.064,
+   "and that's where valuation begins."
+  ],
+  [
+   472.564,
+   475.435,
+   "Now leave the P and L,"
+  ],
+  [
+   475.435,
+   478.307,
+   "and look at the balance sheet."
+  ],
+  [
+   478.857,
+   482.685,
+   "Think about buying a house worth one crore."
+  ],
+  [
+   482.685,
+   485.078,
+   "Part is a bank loan,"
+  ],
+  [
+   485.078,
+   487.95,
+   "and part is your own savings."
+  ],
+  [
+   487.95,
+   491.778,
+   "Those two must add up to the value"
+  ],
+  [
+   491.778,
+   493.214,
+   "of the house."
+  ],
+  [
+   493.764,
+   495.678,
+   "A company is identical."
+  ],
+  [
+   495.678,
+   497.114,
+   "Everything it owns,"
+  ],
+  [
+   497.114,
+   498.071,
+   "its assets,"
+  ],
+  [
+   498.071,
+   501.421,
+   "is funded either by money it owes,"
+  ],
+  [
+   501.421,
+   502.378,
+   "called liabilities,"
+  ],
+  [
+   502.378,
+   505.25,
+   "or by the owners' own money,"
+  ],
+  [
+   505.25,
+   506.207,
+   "called equity."
+  ],
+  [
+   506.757,
+   509.15,
+   "Assets equal liabilities plus equity."
+  ],
+  [
+   509.15,
+   511.064,
+   "That equation always balances."
+  ],
+  [
+   511.064,
+   514.414,
+   "That's why it's called a balance sheet."
+  ],
+  [
+   514.914,
+   517.29,
+   "That leaves the third statement,"
+  ],
+  [
+   517.29,
+   518.241,
+   "cash flow."
+  ],
+  [
+   518.241,
+   521.567,
+   "And it exists to catch a lie."
+  ],
+  [
+   522.117,
+   524.494,
+   "Profit is partly an opinion."
+  ],
+  [
+   524.494,
+   526.87,
+   "It depends on judgement calls,"
+  ],
+  [
+   526.87,
+   529.721,
+   "like how fast machines wear out."
+  ],
+  [
+   529.721,
+   531.622,
+   "Cash is a fact."
+  ],
+  [
+   531.622,
+   533.999,
+   "It's either in the bank,"
+  ],
+  [
+   533.999,
+   535.424,
+   "or it isn't."
+  ],
+  [
+   535.975,
+   539.777,
+   "A company can report a healthy profit and"
+  ],
+  [
+   539.776,
+   542.153,
+   "still run out of cash,"
+  ],
+  [
+   542.153,
+   544.054,
+   "if customers haven't paid,"
+  ],
+  [
+   544.054,
+   546.43,
+   "or stock is piling up."
+  ],
+  [
+   546.43,
+   550.232,
+   "So the cash flow statement follows the real"
+  ],
+  [
+   550.232,
+   550.707,
+   "money."
+  ],
+  [
+   551.257,
+   555.059,
+   "The most important line is cash from operations."
+  ],
+  [
+   555.059,
+   558.861,
+   "Healthy businesses turn their profit into actual\ncash."
+  ],
+  [
+   558.861,
+   562.188,
+   "We'll return to this in chapter six."
+  ],
+  [
+   562.688,
+   564.729,
+   "Let's lock it in."
+  ],
+  [
+   565.279,
+   568.342,
+   "A company reports in three statements."
+  ],
+  [
+   568.342,
+   572.424,
+   "The income statement runs from revenue at the"
+  ],
+  [
+   572.424,
+   572.935,
+   "top,"
+  ],
+  [
+   572.935,
+   574.466,
+   "down through costs,"
+  ],
+  [
+   574.466,
+   577.018,
+   "to profit at the bottom."
+  ],
+  [
+   577.018,
+   578.549,
+   "Revenue is size."
+  ],
+  [
+   578.549,
+   580.59,
+   "Profit is what survives."
+  ],
+  [
+   581.14,
+   583.692,
+   "EBITDA is the core engine."
+  ],
+  [
+   583.692,
+   586.754,
+   "PAT is the true bottom line,"
+  ],
+  [
+   586.754,
+   590.327,
+   "and EPS is that profit per share."
+  ],
+  [
+   590.327,
+   592.878,
+   "The balance sheet always balances,"
+  ],
+  [
+   592.878,
+   595.43,
+   "assets equal liabilities plus equity."
+  ],
+  [
+   595.43,
+   597.982,
+   "And profit is an opinion,"
+  ],
+  [
+   597.982,
+   600.534,
+   "while cash is a fact."
+  ],
+  [
+   601.084,
+   605.167,
+   "Every ratio in the coming chapters is just"
+  ],
+  [
+   605.167,
+   607.208,
+   "built from these lines."
+  ],
+  [
+   607.208,
+   608.739,
+   "One last thing."
+  ],
+  [
+   608.739,
+   610.781,
+   "This course is education,"
+  ],
+  [
+   610.781,
+   612.312,
+   "not investment advice."
+  ],
+  [
+   612.312,
+   614.864,
+   "Always do your own research,"
+  ],
+  [
+   614.864,
+   617.926,
+   "or talk to a registered advisor."
+  ],
+  [
+   617.926,
+   619.457,
+   "In chapter two,"
+  ],
+  [
+   619.457,
+   622.519,
+   "we turn these numbers into margins."
+  ],
+  [
+   622.519,
+   624.05,
+   "Thanks for watching."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "fa/ch01.wav",
+   "volume": 1.0
+  }
+ }
+}

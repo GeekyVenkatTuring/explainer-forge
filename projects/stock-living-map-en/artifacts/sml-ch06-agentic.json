@@ -1,0 +1,1028 @@
+{
+ "cuts": [
+  {
+   "id": "sml-ch06-agentic_divider",
+   "type": "sml_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 10.172,
+   "props": {
+    "n": 5,
+    "title": "Agentic Engineering",
+    "sub": "the acting mind \u2014 an agent that retrieves, reasons, and answers with citations",
+    "color": "#F472B6",
+    "layer": 4,
+    "dur": 10.672
+   }
+  },
+  {
+   "id": "sml-ch06-agentic_loop",
+   "type": "sml_agentloop",
+   "in_seconds": 10.672,
+   "out_seconds": 61.486,
+   "props": {
+    "dur": 51.314
+   }
+  },
+  {
+   "id": "sml-ch06-agentic_kit",
+   "type": "sml_cards",
+   "in_seconds": 61.986,
+   "out_seconds": 116.526,
+   "props": {
+    "kicker": "THE ANTI-HALLUCINATION KIT",
+    "title": "The six rules that make the agent factual",
+    "color": "#F472B6",
+    "cards": [
+     {
+      "head": "Answer from the graph only",
+      "emoji": "\ud83c\udfaf",
+      "body": "GraphRAG retrieves the company's subgraph; the agent may not emit a number that isn't a node.",
+      "tag": "grounding"
+     },
+     {
+      "head": "Cite source + time",
+      "emoji": "\ud83c\udff7\ufe0f",
+      "body": "Every figure shows where and when it came from. Missing or stale \u2192 \u2018not available as of\u2026\u2019.",
+      "tag": "provenance"
+     },
+     {
+      "head": "Math in code",
+      "emoji": "\ud83e\uddee",
+      "body": "P/E, YoY, margins computed by a tool, never by the model.",
+      "tag": "no-arithmetic"
+     },
+     {
+      "head": "Verify before answer",
+      "emoji": "\u2696\ufe0f",
+      "body": "A freshness/SHACL gate checks the facts; typed tools only; no free web access; no advice.",
+      "tag": "guardrails"
+     }
+    ],
+    "foot": "None of these trusts the model. Each one makes it structurally unable to make things up.",
+    "dur": 55.04
+   }
+  },
+  {
+   "id": "sml-ch06-agentic_twobrain",
+   "type": "sml_twobrain",
+   "in_seconds": 117.026,
+   "out_seconds": 161.409,
+   "props": {
+    "foot": "The model drafts the answer; the graph's rules verify every fact before it's shown.",
+    "dur": 44.883
+   }
+  },
+  {
+   "id": "sml-ch06-agentic_frameworks",
+   "type": "sml_orbit",
+   "in_seconds": 161.909,
+   "out_seconds": 209.372,
+   "props": {
+    "kicker": "THE TOOLKIT",
+    "title": "The frameworks you'll wire together",
+    "color": "#F472B6",
+    "hub": "Agent\n+ graph",
+    "items": [
+     {
+      "emoji": "\ud83d\udd00",
+      "label": "LangGraph \u2014 control + gate"
+     },
+     {
+      "emoji": "\ud83d\udcda",
+      "label": "LlamaIndex \u2014 retrieval"
+     },
+     {
+      "emoji": "\ud83d\udd78\ufe0f",
+      "label": "Neo4j GraphRAG"
+     },
+     {
+      "emoji": "\ud83d\udd0c",
+      "label": "MCP \u2014 the tools"
+     },
+     {
+      "emoji": "\ud83e\udde0",
+      "label": "Ollama \u2014 local LLM"
+     },
+     {
+      "emoji": "\u26a1",
+      "label": "FastAPI \u2014 serve it"
+     }
+    ],
+    "foot": "Free-first: Neo4j Community + GraphRAG + LangGraph + a local model = \u20b90 to prototype.",
+    "dur": 47.963
+   }
+  },
+  {
+   "id": "sml-ch06-agentic_mcptools",
+   "type": "sml_orbit",
+   "in_seconds": 209.872,
+   "out_seconds": 253.06,
+   "props": {
+    "kicker": "MCP \u00b7 THE AGENT'S TOOLS",
+    "title": "Each source becomes a typed, permissioned tool",
+    "color": "#F472B6",
+    "hub": "Agent",
+    "items": [
+     {
+      "emoji": "\ud83d\udcc8",
+      "label": "price \u2014 live / delayed quote"
+     },
+     {
+      "emoji": "\ud83d\udcca",
+      "label": "fundamentals \u2014 P/E, ratios"
+     },
+     {
+      "emoji": "\ud83d\udcd1",
+      "label": "results \u2014 quarterly filings"
+     },
+     {
+      "emoji": "\ud83d\udcf0",
+      "label": "news \u2014 recent + sentiment"
+     },
+     {
+      "emoji": "\ud83c\udfa4",
+      "label": "guidance \u2014 concall extract"
+     },
+     {
+      "emoji": "\ud83e\uddee",
+      "label": "calc \u2014 P/E, YoY, margins"
+     }
+    ],
+    "foot": "Typed tools only \u2014 no open web. The agent literally cannot fetch an unverified number.",
+    "dur": 43.688
+   }
+  },
+  {
+   "id": "sml-ch06-agentic_traverse",
+   "type": "sml_traverse",
+   "in_seconds": 253.56,
+   "out_seconds": 323.653,
+   "props": {
+    "dur": 70.593
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.795,
+   "Part five."
+  ],
+  [
+   0.795,
+   3.18,
+   "Agentic engineering \u2014 the acting mind."
+  ],
+  [
+   3.812,
+   6.992,
+   "Now we put an AI on top of"
+  ],
+  [
+   6.992,
+   7.389,
+   "everything,"
+  ],
+  [
+   7.389,
+   10.172,
+   "and the whole design finally pays off."
+  ],
+  [
+   10.672,
+   12.842,
+   "The agent runs a simple loop:"
+  ],
+  [
+   12.842,
+   13.204,
+   "observe,"
+  ],
+  [
+   13.204,
+   13.566,
+   "reason,"
+  ],
+  [
+   13.566,
+   13.928,
+   "answer."
+  ],
+  [
+   14.559,
+   17.453,
+   "What makes it factual is what it does"
+  ],
+  [
+   17.453,
+   18.538,
+   "at each step."
+  ],
+  [
+   19.17,
+   22.064,
+   "It observes the knowledge graph and the live"
+  ],
+  [
+   22.064,
+   23.51,
+   "twin \u2014 the real,"
+  ],
+  [
+   23.51,
+   25.319,
+   "current facts about the company."
+  ],
+  [
+   25.951,
+   28.844,
+   "It reasons by walking the graph across the"
+  ],
+  [
+   28.844,
+   30.291,
+   "five factors \u2014 price,"
+  ],
+  [
+   30.291,
+   30.653,
+   "valuation,"
+  ],
+  [
+   30.653,
+   31.015,
+   "growth,"
+  ],
+  [
+   31.015,
+   31.377,
+   "news,"
+  ],
+  [
+   31.377,
+   33.909,
+   "guidance \u2014 the way an analyst would."
+  ],
+  [
+   34.54,
+   37.434,
+   "And it answers with citations \u2014 every figure"
+  ],
+  [
+   37.434,
+   39.243,
+   "carrying its source and time,"
+  ],
+  [
+   39.243,
+   42.136,
+   "and never a number that isn't in the"
+  ],
+  [
+   42.136,
+   42.498,
+   "graph."
+  ],
+  [
+   43.13,
+   46.024,
+   "Notice it does not place trades and it"
+  ],
+  [
+   46.024,
+   47.471,
+   "does not give advice."
+  ],
+  [
+   47.471,
+   48.194,
+   "It informs,"
+  ],
+  [
+   48.194,
+   48.556,
+   "factually,"
+  ],
+  [
+   48.556,
+   49.641,
+   "and you decide."
+  ],
+  [
+   50.272,
+   53.166,
+   "Strip the graph away and this loop is"
+  ],
+  [
+   53.166,
+   54.975,
+   "just a chatbot inventing numbers."
+  ],
+  [
+   54.975,
+   56.784,
+   "Wrap it around the graph,"
+  ],
+  [
+   56.784,
+   59.677,
+   "and it becomes a research assistant you can"
+  ],
+  [
+   59.677,
+   60.401,
+   "actually trust."
+  ],
+  [
+   60.401,
+   61.486,
+   "Let's unpack how."
+  ],
+  [
+   61.986,
+   64.782,
+   "This is the heart of the whole course"
+  ],
+  [
+   64.782,
+   66.18,
+   "\u2014 the anti-hallucination kit,"
+  ],
+  [
+   66.18,
+   67.229,
+   "in four rules."
+  ],
+  [
+   67.861,
+   68.21,
+   "One:"
+  ],
+  [
+   68.21,
+   69.958,
+   "answer from the graph only."
+  ],
+  [
+   69.958,
+   72.754,
+   "The agent retrieves the company's subgraph and may"
+  ],
+  [
+   72.754,
+   75.55,
+   "not emit a number that isn't a node"
+  ],
+  [
+   75.55,
+   76.25,
+   "in it."
+  ],
+  [
+   76.881,
+   77.231,
+   "Two:"
+  ],
+  [
+   77.231,
+   79.677,
+   "cite source and time on every figure."
+  ],
+  [
+   79.677,
+   82.124,
+   "If a fact is missing or stale,"
+  ],
+  [
+   82.124,
+   84.921,
+   "it says \u2018not available as of\u2019 \u2014 never"
+  ],
+  [
+   84.921,
+   85.62,
+   "a guess."
+  ],
+  [
+   86.251,
+   86.601,
+   "Three:"
+  ],
+  [
+   86.601,
+   88.348,
+   "do the math in code."
+  ],
+  [
+   88.348,
+   88.698,
+   "P/E,"
+  ],
+  [
+   88.698,
+   89.047,
+   "year-on-year,"
+  ],
+  [
+   89.047,
+   91.145,
+   "margins are computed by a tool,"
+  ],
+  [
+   91.145,
+   93.941,
+   "never by the model \u2014 because models are"
+  ],
+  [
+   93.941,
+   96.737,
+   "bad at arithmetic and good at sounding confident."
+  ],
+  [
+   97.369,
+   97.718,
+   "Four:"
+  ],
+  [
+   97.718,
+   98.767,
+   "verify before answering."
+  ],
+  [
+   98.767,
+   100.864,
+   "A freshness gate checks every fact;"
+  ],
+  [
+   100.864,
+   102.962,
+   "the agent has only typed tools,"
+  ],
+  [
+   102.962,
+   104.01,
+   "no open web,"
+  ],
+  [
+   104.01,
+   105.408,
+   "and never gives advice."
+  ],
+  [
+   106.04,
+   108.836,
+   "Notice not one of these asks the model"
+  ],
+  [
+   108.836,
+   109.535,
+   "to behave."
+  ],
+  [
+   109.535,
+   112.332,
+   "Each one makes it structurally unable to\nmisbehave."
+  ],
+  [
+   112.332,
+   115.128,
+   "That is the difference between a demo and"
+  ],
+  [
+   115.128,
+   116.526,
+   "something you'd rely on."
+  ],
+  [
+   117.026,
+   120.137,
+   "The pattern behind that is called neuro-symbolic \u2014"
+  ],
+  [
+   120.137,
+   121.693,
+   "two brains working together."
+  ],
+  [
+   122.325,
+   123.491,
+   "On the left,"
+  ],
+  [
+   123.491,
+   124.658,
+   "the language model."
+  ],
+  [
+   124.658,
+   125.825,
+   "Flexible and fluent."
+  ],
+  [
+   125.825,
+   127.38,
+   "It reads your question,"
+  ],
+  [
+   127.38,
+   128.547,
+   "gathers the facts,"
+  ],
+  [
+   128.547,
+   130.492,
+   "and drafts a clear answer."
+  ],
+  [
+   131.123,
+   132.679,
+   "But on its own,"
+  ],
+  [
+   132.679,
+   133.846,
+   "it can hallucinate."
+  ],
+  [
+   134.477,
+   136.033,
+   "So on the right,"
+  ],
+  [
+   136.033,
+   137.2,
+   "a symbolic brain:"
+  ],
+  [
+   137.2,
+   139.144,
+   "the freshness and SHACL rules."
+  ],
+  [
+   139.144,
+   141.867,
+   "It doesn't write prose \u2014 it checks."
+  ],
+  [
+   141.867,
+   144.978,
+   "Is every number in the draft actually a"
+  ],
+  [
+   144.978,
+   145.756,
+   "graph node,"
+  ],
+  [
+   145.756,
+   148.478,
+   "with a source and a fresh timestamp?"
+  ],
+  [
+   149.11,
+   151.832,
+   "Only a verified draft is allowed through."
+  ],
+  [
+   152.464,
+   154.02,
+   "Fluency from the model,"
+  ],
+  [
+   154.02,
+   155.575,
+   "guarantees from the graph."
+  ],
+  [
+   155.575,
+   157.52,
+   "Neither half is trustworthy alone;"
+  ],
+  [
+   157.52,
+   157.909,
+   "together,"
+  ],
+  [
+   157.909,
+   161.02,
+   "they are the architecture behind any serious\nfactual"
+  ],
+  [
+   161.02,
+   161.409,
+   "AI."
+  ],
+  [
+   161.909,
+   165.269,
+   "You don't build this from scratch \u2014 you"
+  ],
+  [
+   165.269,
+   166.108,
+   "compose it,"
+  ],
+  [
+   166.108,
+   168.208,
+   "and mostly from free parts."
+  ],
+  [
+   168.84,
+   171.359,
+   "LangGraph gives you the control flow,"
+  ],
+  [
+   171.359,
+   174.719,
+   "including that all-important verification gate as\na step"
+  ],
+  [
+   174.719,
+   176.399,
+   "the agent must pass."
+  ],
+  [
+   177.03,
+   180.39,
+   "LlamaIndex and Neo4j's GraphRAG handle retrieval\nfrom the"
+  ],
+  [
+   180.39,
+   180.81,
+   "graph."
+  ],
+  [
+   181.441,
+   184.801,
+   "MCP \u2014 the Model Context Protocol \u2014 is"
+  ],
+  [
+   184.801,
+   187.32,
+   "how the agent gets its tools."
+  ],
+  [
+   187.952,
+   189.632,
+   "For the model itself,"
+  ],
+  [
+   189.632,
+   192.991,
+   "you can run a local one with Ollama"
+  ],
+  [
+   192.991,
+   195.931,
+   "to keep costs at zero while prototyping."
+  ],
+  [
+   196.562,
+   199.082,
+   "And FastAPI serves the whole thing."
+  ],
+  [
+   199.713,
+   200.553,
+   "Neo4j Community,"
+  ],
+  [
+   200.553,
+   200.973,
+   "GraphRAG,"
+  ],
+  [
+   200.973,
+   201.393,
+   "LangGraph,"
+  ],
+  [
+   201.393,
+   204.753,
+   "and a local model \u2014 that's a real"
+  ],
+  [
+   204.753,
+   206.432,
+   "prototype for zero rupees."
+  ],
+  [
+   206.432,
+   206.852,
+   "Now,"
+  ],
+  [
+   206.852,
+   209.372,
+   "the tools the agent actually uses."
+  ],
+  [
+   209.872,
+   212.625,
+   "Here are the agent's hands \u2014 its tools,"
+  ],
+  [
+   212.625,
+   213.657,
+   "exposed through MCP."
+  ],
+  [
+   214.289,
+   217.042,
+   "A price tool for the live or delayed"
+  ],
+  [
+   217.042,
+   217.386,
+   "quote."
+  ],
+  [
+   217.386,
+   219.795,
+   "A fundamentals tool for P/E and ratios."
+  ],
+  [
+   219.795,
+   222.203,
+   "A results tool for the quarterly filings."
+  ],
+  [
+   222.203,
+   223.924,
+   "A news tool with sentiment."
+  ],
+  [
+   223.924,
+   226.333,
+   "A guidance tool that reads the concall."
+  ],
+  [
+   226.333,
+   229.086,
+   "And a calc tool that does the arithmetic"
+  ],
+  [
+   229.086,
+   229.43,
+   "deterministically."
+  ],
+  [
+   230.061,
+   232.47,
+   "Notice what is not on this list:"
+  ],
+  [
+   232.47,
+   233.846,
+   "an open web browser."
+  ],
+  [
+   233.846,
+   236.599,
+   "The agent has typed tools and nothing else."
+  ],
+  [
+   237.231,
+   239.984,
+   "It literally cannot reach out and grab an"
+  ],
+  [
+   239.984,
+   242.737,
+   "unverified number off a random page \u2014 every"
+  ],
+  [
+   242.737,
+   245.49,
+   "fact must come through a tool that stamps"
+  ],
+  [
+   245.49,
+   246.866,
+   "it with a source."
+  ],
+  [
+   246.866,
+   248.587,
+   "That restriction is a feature,"
+  ],
+  [
+   248.587,
+   249.619,
+   "not a limitation."
+  ],
+  [
+   249.619,
+   249.963,
+   "Now,"
+  ],
+  [
+   249.963,
+   252.716,
+   "let's put it all together on a real"
+  ],
+  [
+   252.716,
+   253.06,
+   "question."
+  ],
+  [
+   253.56,
+   255.967,
+   "Twenty minutes and six tabs ago,"
+  ],
+  [
+   255.967,
+   258.774,
+   "\u2018how is TCS doing?\u2019 was a chore."
+  ],
+  [
+   258.774,
+   260.78,
+   "Watch what it is now."
+  ],
+  [
+   261.412,
+   262.214,
+   "You ask:"
+  ],
+  [
+   262.214,
+   263.016,
+   "analyze TCS."
+  ],
+  [
+   263.648,
+   266.857,
+   "The agent pulls the price \u2014 four thousand"
+  ],
+  [
+   266.857,
+   268.06,
+   "one oh two,"
+  ],
+  [
+   268.06,
+   268.862,
+   "from NSE,"
+  ],
+  [
+   268.862,
+   270.467,
+   "as of fifteen twenty-nine."
+  ],
+  [
+   271.098,
+   273.505,
+   "The P/E \u2014 twenty-nine point four,"
+  ],
+  [
+   273.505,
+   274.307,
+   "from screener."
+  ],
+  [
+   274.939,
+   278.148,
+   "The latest quarter \u2014 profit up twelve percent"
+  ],
+  [
+   278.148,
+   279.351,
+   "year on year,"
+  ],
+  [
+   279.351,
+   280.955,
+   "from the BSE filing."
+  ],
+  [
+   281.587,
+   283.191,
+   "Two recent news items,"
+  ],
+  [
+   283.191,
+   283.994,
+   "from Moneycontrol."
+  ],
+  [
+   284.625,
+   287.834,
+   "And the guidance from the last concall \u2014"
+  ],
+  [
+   287.834,
+   288.636,
+   "margins steady."
+  ],
+  [
+   289.268,
+   291.675,
+   "Then it composes one grounded answer,"
+  ],
+  [
+   291.675,
+   294.884,
+   "where every single figure carries its source and"
+  ],
+  [
+   294.884,
+   295.686,
+   "its timestamp."
+  ],
+  [
+   295.686,
+   296.889,
+   "Zero uncited numbers."
+  ],
+  [
+   296.889,
+   297.691,
+   "Zero guesses."
+  ],
+  [
+   298.323,
+   301.131,
+   "If a fact were missing or stale,"
+  ],
+  [
+   301.131,
+   302.735,
+   "it would say so,"
+  ],
+  [
+   302.735,
+   303.939,
+   "not invent it."
+  ],
+  [
+   304.57,
+   306.175,
+   "Retrieve from the graph,"
+  ],
+  [
+   306.175,
+   307.779,
+   "reason over the factors,"
+  ],
+  [
+   307.779,
+   308.982,
+   "answer with citations."
+  ],
+  [
+   308.982,
+   310.988,
+   "That is the entire video,"
+  ],
+  [
+   310.988,
+   312.191,
+   "working as one."
+  ],
+  [
+   312.823,
+   313.224,
+   "So,"
+  ],
+  [
+   313.224,
+   314.828,
+   "to recap part five:"
+  ],
+  [
+   314.828,
+   318.037,
+   "an agent grounded on this stack is trustworthy"
+  ],
+  [
+   318.037,
+   320.444,
+   "because the graph gives it facts,"
+  ],
+  [
+   320.444,
+   320.845,
+   "freshness,"
+  ],
+  [
+   320.845,
+   321.647,
+   "and citations."
+  ],
+  [
+   321.647,
+   323.653,
+   "Let's assemble the whole picture."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "sml/sml-ch06-agentic.wav",
+   "volume": 1.0
+  }
+ }
+}

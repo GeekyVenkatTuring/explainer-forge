@@ -1,0 +1,623 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch13-cross-entropy_div",
+   "type": "it_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 23.463,
+   "props": {
+    "n": 4,
+    "title": "Comparing Beliefs",
+    "sub": "the bit-cost of being wrong",
+    "color": "#F472B6",
+    "dur": 23.963
+   }
+  },
+  {
+   "id": "it-ch13-cross-entropy_crossentropy",
+   "type": "it_crossentropy",
+   "in_seconds": 23.963,
+   "out_seconds": 125.828,
+   "props": {
+    "dur": 102.365
+   }
+  },
+  {
+   "id": "it-ch13-cross-entropy_kl",
+   "type": "it_kl",
+   "in_seconds": 126.328,
+   "out_seconds": 222.026,
+   "props": {
+    "dur": 96.198
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.683,
+   "Part four."
+  ],
+  [
+   0.683,
+   1.366,
+   "Comparing beliefs."
+  ],
+  [
+   1.998,
+   2.681,
+   "Until now,"
+  ],
+  [
+   2.681,
+   5.413,
+   "we have quietly assumed we know the true"
+  ],
+  [
+   5.413,
+   6.779,
+   "probabilities of our source."
+  ],
+  [
+   6.779,
+   9.512,
+   "But in the real world we almost never"
+  ],
+  [
+   9.512,
+   9.853,
+   "do."
+  ],
+  [
+   9.853,
+   12.585,
+   "We work from a model \u2014 a guess"
+  ],
+  [
+   12.585,
+   14.293,
+   "about how the world behaves."
+  ],
+  [
+   14.925,
+   17.657,
+   "So what happens when that guess is wrong?"
+  ],
+  [
+   17.657,
+   17.998,
+   "Remarkably,"
+  ],
+  [
+   17.998,
+   20.731,
+   "information theory can measure the cost of being"
+  ],
+  [
+   20.731,
+   23.463,
+   "wrong \u2014 and it measures it in bits."
+  ],
+  [
+   23.963,
+   26.723,
+   "Every optimal code is tailored to one specific"
+  ],
+  [
+   26.723,
+   27.757,
+   "set of probabilities."
+  ],
+  [
+   27.757,
+   29.827,
+   "So here is the sharp question:"
+  ],
+  [
+   29.827,
+   32.587,
+   "what does it cost you when your probabilities"
+  ],
+  [
+   32.587,
+   33.276,
+   "are wrong?"
+  ],
+  [
+   33.908,
+   36.668,
+   "Let the true frequencies of our four symbols"
+  ],
+  [
+   36.668,
+   38.047,
+   "be the distribution p."
+  ],
+  [
+   38.047,
+   39.427,
+   "A is one half,"
+  ],
+  [
+   39.427,
+   40.462,
+   "B a quarter,"
+  ],
+  [
+   40.462,
+   42.532,
+   "C and D an eighth each."
+  ],
+  [
+   42.532,
+   45.291,
+   "The perfect code for p costs its entropy"
+  ],
+  [
+   45.291,
+   48.051,
+   "\u2014 one point seven five bits per symbol,"
+  ],
+  [
+   48.051,
+   49.43,
+   "as we found before."
+  ],
+  [
+   50.062,
+   52.822,
+   "But suppose you did not know that truth."
+  ],
+  [
+   52.822,
+   53.511,
+   "You assumed,"
+  ],
+  [
+   53.511,
+   53.856,
+   "instead,"
+  ],
+  [
+   53.856,
+   56.616,
+   "that all four symbols were equally likely \u2014"
+  ],
+  [
+   56.616,
+   59.376,
+   "a model we will call q \u2014 and"
+  ],
+  [
+   59.376,
+   62.135,
+   "you built your code from that wrong belief."
+  ],
+  [
+   62.767,
+   63.457,
+   "Your code,"
+  ],
+  [
+   63.457,
+   64.491,
+   "tuned for q,"
+  ],
+  [
+   64.491,
+   66.906,
+   "gives every symbol a flat two bits."
+  ],
+  [
+   67.538,
+   69.952,
+   "Now run the real world through it."
+  ],
+  [
+   69.952,
+   72.022,
+   "Send data that actually follows p,"
+  ],
+  [
+   72.022,
+   74.436,
+   "encoded with the code built for q."
+  ],
+  [
+   74.436,
+   76.161,
+   "What is the average cost?"
+  ],
+  [
+   76.793,
+   79.552,
+   "It comes out to two full bits per"
+  ],
+  [
+   79.552,
+   82.312,
+   "symbol \u2014 more than the one point seven"
+  ],
+  [
+   82.312,
+   84.381,
+   "five that the data truly required."
+  ],
+  [
+   85.013,
+   87.773,
+   "That quantity \u2014 the average bits you spend"
+  ],
+  [
+   87.773,
+   90.532,
+   "encoding the real distribution p using a code"
+  ],
+  [
+   90.532,
+   93.292,
+   "designed for the wrong distribution q \u2014 is"
+  ],
+  [
+   93.292,
+   94.326,
+   "called the cross-entropy."
+  ],
+  [
+   94.958,
+   97.028,
+   "And it obeys an iron law."
+  ],
+  [
+   97.028,
+   99.787,
+   "Cross-entropy is always greater than or equal to"
+  ],
+  [
+   99.787,
+   100.822,
+   "the true entropy."
+  ],
+  [
+   100.822,
+   101.167,
+   "Always."
+  ],
+  [
+   101.799,
+   104.558,
+   "A wrong model can only ever cost you"
+  ],
+  [
+   104.558,
+   105.248,
+   "extra bits."
+  ],
+  [
+   105.248,
+   106.283,
+   "It can never,"
+  ],
+  [
+   106.283,
+   109.042,
+   "ever beat the code built for the truth."
+  ],
+  [
+   109.674,
+   110.019,
+   "Now,"
+  ],
+  [
+   110.019,
+   112.778,
+   "if measuring how well a guessed distribution q"
+  ],
+  [
+   112.778,
+   115.538,
+   "matches a true distribution p reminds you of"
+  ],
+  [
+   115.538,
+   117.953,
+   "machine learning \u2014 hold that thought tight."
+  ],
+  [
+   118.584,
+   121.344,
+   "Because cross-entropy is not just an analogy for"
+  ],
+  [
+   121.344,
+   122.724,
+   "training modern neural networks."
+  ],
+  [
+   122.724,
+   123.413,
+   "It is,"
+  ],
+  [
+   123.413,
+   124.103,
+   "quite literally,"
+  ],
+  [
+   124.103,
+   125.828,
+   "the loss function they minimize."
+  ],
+  [
+   126.328,
+   129.157,
+   "Let's isolate the waste itself \u2014 the pure"
+  ],
+  [
+   129.157,
+   130.571,
+   "penalty for being wrong."
+  ],
+  [
+   131.203,
+   134.031,
+   "We just held two numbers side by side."
+  ],
+  [
+   134.031,
+   135.092,
+   "The true entropy,"
+  ],
+  [
+   135.092,
+   137.921,
+   "H of p \u2014 the bits you would"
+  ],
+  [
+   137.921,
+   139.689,
+   "spend with a perfect model."
+  ],
+  [
+   139.689,
+   140.75,
+   "And the cross-entropy,"
+  ],
+  [
+   140.75,
+   143.578,
+   "H of p and q \u2014 the bits"
+  ],
+  [
+   143.578,
+   146.053,
+   "you actually spend with your imperfect one."
+  ],
+  [
+   146.685,
+   148.806,
+   "Subtract the first from the second."
+  ],
+  [
+   148.806,
+   151.635,
+   "Whatever is left over is the cost of"
+  ],
+  [
+   151.635,
+   152.342,
+   "your error,"
+  ],
+  [
+   152.342,
+   153.403,
+   "and nothing else."
+  ],
+  [
+   154.035,
+   155.803,
+   "That leftover has a name:"
+  ],
+  [
+   155.803,
+   158.631,
+   "the Kullback-Leibler divergence \u2014 usually just\ncalled K-L"
+  ],
+  [
+   158.631,
+   158.985,
+   "divergence,"
+  ],
+  [
+   158.985,
+   160.046,
+   "or relative entropy."
+  ],
+  [
+   160.677,
+   163.506,
+   "It is the number of extra bits you"
+  ],
+  [
+   163.506,
+   163.86,
+   "pay,"
+  ],
+  [
+   163.86,
+   164.567,
+   "per symbol,"
+  ],
+  [
+   164.567,
+   167.395,
+   "for believing q when reality is actually p."
+  ],
+  [
+   168.027,
+   170.856,
+   "It has three properties worth burning into memory."
+  ],
+  [
+   171.487,
+   171.841,
+   "First,"
+  ],
+  [
+   171.841,
+   174.67,
+   "it is zero \u2014 and only zero \u2014"
+  ],
+  [
+   174.67,
+   176.791,
+   "when your model exactly matches reality."
+  ],
+  [
+   176.791,
+   177.498,
+   "Perfect belief,"
+  ],
+  [
+   177.498,
+   178.205,
+   "zero penalty."
+  ],
+  [
+   178.837,
+   179.191,
+   "Second,"
+  ],
+  [
+   179.191,
+   180.605,
+   "it is never negative."
+  ],
+  [
+   180.605,
+   183.434,
+   "You can never do better than the truth;"
+  ],
+  [
+   183.434,
+   186.262,
+   "the best you can hope for is to"
+  ],
+  [
+   186.262,
+   186.97,
+   "match it."
+  ],
+  [
+   187.601,
+   187.955,
+   "Third,"
+  ],
+  [
+   187.955,
+   189.723,
+   "and this one surprises people,"
+  ],
+  [
+   189.723,
+   191.137,
+   "it is not symmetric."
+  ],
+  [
+   191.137,
+   193.966,
+   "The cost of mistaking p for q is"
+  ],
+  [
+   193.966,
+   196.794,
+   "generally not the same as mistaking q for"
+  ],
+  [
+   196.794,
+   197.148,
+   "p."
+  ],
+  [
+   197.148,
+   197.855,
+   "Direction matters."
+  ],
+  [
+   197.855,
+   199.27,
+   "It is a divergence,"
+  ],
+  [
+   199.27,
+   200.684,
+   "not a true distance."
+  ],
+  [
+   201.315,
+   204.144,
+   "And now the payoff that ties this whole"
+  ],
+  [
+   204.144,
+   204.851,
+   "part together."
+  ],
+  [
+   205.483,
+   208.312,
+   "When you train a model by minimizing its"
+  ],
+  [
+   208.312,
+   208.665,
+   "cross-entropy,"
+  ],
+  [
+   208.665,
+   210.08,
+   "you are \u2014 provably,"
+  ],
+  [
+   210.08,
+   212.908,
+   "exactly \u2014 shrinking the K-L divergence between\nyour"
+  ],
+  [
+   212.908,
+   213.969,
+   "model and reality."
+  ],
+  [
+   214.601,
+   214.954,
+   "Learning,"
+  ],
+  [
+   214.954,
+   217.076,
+   "in the language of information theory,"
+  ],
+  [
+   217.076,
+   218.137,
+   "is just this:"
+  ],
+  [
+   218.137,
+   220.258,
+   "dragging your beliefs toward the truth,"
+  ],
+  [
+   220.258,
+   222.026,
+   "one bit at a time."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch13-cross-entropy.wav",
+   "volume": 1.0
+  }
+ }
+}

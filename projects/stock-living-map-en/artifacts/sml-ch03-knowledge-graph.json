@@ -1,0 +1,930 @@
+{
+ "cuts": [
+  {
+   "id": "sml-ch03-knowledge-graph_divider",
+   "type": "sml_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 10.751,
+   "props": {
+    "n": 2,
+    "title": "Knowledge Graph",
+    "sub": "the layer of memory \u2014 the ontology filled with real companies and facts",
+    "color": "#22D3EE",
+    "layer": 1,
+    "dur": 11.251
+   }
+  },
+  {
+   "id": "sml-ch03-knowledge-graph_ingest",
+   "type": "sml_ingest",
+   "in_seconds": 11.251,
+   "out_seconds": 63.749,
+   "props": {
+    "dur": 52.998
+   }
+  },
+  {
+   "id": "sml-ch03-knowledge-graph_merge",
+   "type": "sml_merge",
+   "in_seconds": 64.249,
+   "out_seconds": 116.753,
+   "props": {
+    "dur": 53.004
+   }
+  },
+  {
+   "id": "sml-ch03-knowledge-graph_provenance",
+   "type": "sml_cards",
+   "in_seconds": 117.253,
+   "out_seconds": 169.204,
+   "props": {
+    "kicker": "THE ANTI-HALLUCINATION CORE",
+    "title": "Every fact carries where and when it came from",
+    "color": "#22D3EE",
+    "cards": [
+     {
+      "head": "Source on every fact",
+      "emoji": "\ud83c\udff7\ufe0f",
+      "body": "\u2018P/E 29.4\u2019 isn't stored alone \u2014 it's stored with \u2018source: screener, asOf: 15:29\u2019.",
+      "tag": "provenance"
+     },
+     {
+      "head": "Freshness built in",
+      "emoji": "\u23f1\ufe0f",
+      "body": "A price older than its window is marked stale \u2014 the agent then refuses to quote it as current.",
+      "tag": "freshness"
+     },
+     {
+      "head": "Derived, not guessed",
+      "emoji": "\ud83e\uddee",
+      "body": "P/E is computed in code from a stored price and EPS, and links back to both inputs.",
+      "tag": "audit"
+     }
+    ],
+    "foot": "This is the whole game: a number with no source + time never gets stored \u2014 so it can never be spoken.",
+    "dur": 52.451
+   }
+  },
+  {
+   "id": "sml-ch03-knowledge-graph_factors",
+   "type": "sml_cards",
+   "in_seconds": 169.704,
+   "out_seconds": 216.049,
+   "props": {
+    "kicker": "MODELING THE FIVE FACTORS",
+    "title": "Everything you asked to reason over \u2014 as graph nodes",
+    "color": "#22D3EE",
+    "cards": [
+     {
+      "head": "Earnings & P/E",
+      "emoji": "\ud83d\udcb0",
+      "body": "EPS, PAT, and P/E as metric nodes, each linked to the price and result they derive from.",
+      "tag": "valuation"
+     },
+     {
+      "head": "Quarterly results",
+      "emoji": "\ud83d\udcd1",
+      "body": "Revenue, PAT, margins per quarter, with YoY and QoQ computed and stored.",
+      "tag": "growth"
+     },
+     {
+      "head": "News & roadmap",
+      "emoji": "\ud83d\udcf0",
+      "body": "NewsEvent nodes with sentiment; ManagementGuidance extracted from concalls.",
+      "tag": "context"
+     }
+    ],
+    "foot": "Five factors, one graph \u2014 so the agent can weigh them together, each fact cited.",
+    "dur": 46.845
+   }
+  },
+  {
+   "id": "sml-ch03-knowledge-graph_cypher",
+   "type": "sml_code",
+   "in_seconds": 216.549,
+   "out_seconds": 257.871,
+   "props": {
+    "kicker": "ONE QUERY, MANY FACTS",
+    "title": "Ask for a whole company view in a single graph query",
+    "color": "#22D3EE",
+    "lang": "cypher",
+    "lines": [
+     "MATCH (c:Company {isin:'INE467B01029'})",
+     "OPTIONAL MATCH (c)-[:HAS_METRIC]->(m)",
+     "OPTIONAL MATCH (c)-[:REPORTED]->(q:Quarter)",
+     "OPTIONAL MATCH (n:News)-[:ABOUT]->(c)",
+     "WHERE n.asOf > datetime() - duration('P7D')",
+     "RETURN c, m, q, n"
+    ],
+    "result": [
+     "TCS",
+     "P/E 29.4",
+     "Q3 PAT +12%",
+     "2 news \u00b7 7d"
+    ],
+    "caption": "one traversal gathers price, metrics, results and recent news \u2014 all with provenance",
+    "foot": "The agent's main tool: turn a question into a query, get back facts with sources attached.",
+    "dur": 41.822
+   }
+  },
+  {
+   "id": "sml-ch03-knowledge-graph_graphrag",
+   "type": "sml_chart",
+   "in_seconds": 258.371,
+   "out_seconds": 307.989,
+   "props": {
+    "kicker": "GROUNDED vs UNGROUNDED",
+    "title": "Why grounding on the graph beats a model guessing",
+    "color": "#22D3EE",
+    "bars": [
+     {
+      "label": "LLM alone (guessing)",
+      "v": 32,
+      "c": "#F87171"
+     },
+     {
+      "label": "Graph-grounded (GraphRAG)",
+      "v": 86,
+      "c": "#22D3EE"
+     }
+    ],
+    "note": "illustrative \u2014 accuracy on grounded, multi-hop financial questions",
+    "foot": "The graph doesn't just find similar text \u2014 it returns the exact, sourced fact.",
+    "dur": 50.118
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.75,
+   "Part two."
+  ],
+  [
+   0.75,
+   3.748,
+   "The knowledge graph \u2014 the layer of memory."
+  ],
+  [
+   4.38,
+   6.628,
+   "An empty ontology is a template."
+  ],
+  [
+   6.628,
+   9.252,
+   "Pour in real companies and their facts,"
+  ],
+  [
+   9.252,
+   10.751,
+   "and it comes alive."
+  ],
+  [
+   11.251,
+   13.792,
+   "This is where it gets real,"
+  ],
+  [
+   13.792,
+   16.334,
+   "so let's go source by source."
+  ],
+  [
+   16.965,
+   20.354,
+   "Prices come from NSE and BSE \u2014 polled"
+  ],
+  [
+   20.354,
+   23.318,
+   "every few minutes from yfinance or jugaad-data,"
+  ],
+  [
+   23.318,
+   26.283,
+   "or streamed live from a broker API."
+  ],
+  [
+   26.915,
+   28.186,
+   "Fundamentals \u2014 P/E,"
+  ],
+  [
+   28.186,
+   28.609,
+   "ratios,"
+  ],
+  [
+   28.609,
+   31.998,
+   "shareholding \u2014 are parsed from screener dot in."
+  ],
+  [
+   32.629,
+   36.018,
+   "Quarterly results are official PDFs on the BSE"
+  ],
+  [
+   36.018,
+   36.865,
+   "filings page;"
+  ],
+  [
+   36.865,
+   39.406,
+   "a language model extracts the numbers."
+  ],
+  [
+   40.038,
+   43.426,
+   "News flows in from Google News and Moneycontrol"
+  ],
+  [
+   43.426,
+   44.273,
+   "RSS feeds,"
+  ],
+  [
+   44.273,
+   45.544,
+   "with sentiment scored."
+  ],
+  [
+   46.175,
+   49.14,
+   "Roadmap and guidance come from earnings-call\ntranscripts,"
+  ],
+  [
+   49.14,
+   50.834,
+   "again via LLM extraction."
+  ],
+  [
+   51.466,
+   54.854,
+   "Every source runs through a builder that extracts,"
+  ],
+  [
+   54.854,
+   55.278,
+   "resolves,"
+  ],
+  [
+   55.278,
+   58.666,
+   "and loads \u2014 and stamps each fact with"
+  ],
+  [
+   58.666,
+   60.361,
+   "its source and time."
+  ],
+  [
+   60.361,
+   61.631,
+   "Six sources in,"
+  ],
+  [
+   61.631,
+   63.749,
+   "one connected company graph out."
+  ],
+  [
+   64.249,
+   66.618,
+   "But that raises a subtle danger."
+  ],
+  [
+   67.249,
+   69.223,
+   "The news calls it \u2018Reliance\u2019."
+  ],
+  [
+   69.223,
+   72.381,
+   "NSE and yfinance call it \u2018RELIANCE dot N-S\u2019."
+  ],
+  [
+   72.381,
+   75.145,
+   "The BSE calls it scrip code\nfive-oh-oh-three-two-five."
+  ],
+  [
+   75.776,
+   77.355,
+   "To a naive importer,"
+  ],
+  [
+   77.355,
+   80.513,
+   "those are three different companies \u2014 and your"
+  ],
+  [
+   80.513,
+   82.092,
+   "graph is instantly polluted,"
+  ],
+  [
+   82.092,
+   83.277,
+   "your numbers double-counted."
+  ],
+  [
+   83.908,
+   85.882,
+   "The fix is entity resolution:"
+  ],
+  [
+   85.882,
+   89.04,
+   "recognizing that all three refer to the same"
+  ],
+  [
+   89.04,
+   91.804,
+   "company and collapsing them into one node."
+  ],
+  [
+   92.435,
+   95.593,
+   "The trick for stocks is to resolve on"
+  ],
+  [
+   95.593,
+   98.752,
+   "the ISIN first \u2014 the unique international\nidentifier"
+  ],
+  [
+   98.752,
+   101.91,
+   "\u2014 and the name only as a fallback."
+  ],
+  [
+   102.541,
+   103.726,
+   "Watch three names,"
+  ],
+  [
+   103.726,
+   104.515,
+   "three sources,"
+  ],
+  [
+   104.515,
+   106.489,
+   "become one canonical Reliance node."
+  ],
+  [
+   106.489,
+   109.647,
+   "Get this right and the same company means"
+  ],
+  [
+   109.647,
+   112.805,
+   "the same thing no matter which feed it"
+  ],
+  [
+   112.805,
+   113.595,
+   "came from."
+  ],
+  [
+   113.595,
+   114.384,
+   "Skip it,"
+  ],
+  [
+   114.384,
+   116.753,
+   "and your agent quietly contradicts itself."
+  ],
+  [
+   117.253,
+   119.854,
+   "This is the single most important scene in"
+  ],
+  [
+   119.854,
+   120.505,
+   "the course,"
+  ],
+  [
+   120.505,
+   122.13,
+   "so slow down with me."
+  ],
+  [
+   122.762,
+   125.363,
+   "Every fact carries where and when it came"
+  ],
+  [
+   125.363,
+   125.688,
+   "from."
+  ],
+  [
+   125.688,
+   128.29,
+   "A P/E of twenty-nine point four is not"
+  ],
+  [
+   128.29,
+   129.916,
+   "stored as a lonely number."
+  ],
+  [
+   129.916,
+   131.867,
+   "It is stored with \u2014 source,"
+  ],
+  [
+   131.867,
+   132.192,
+   "screener;"
+  ],
+  [
+   132.192,
+   132.517,
+   "as-of,"
+  ],
+  [
+   132.517,
+   133.492,
+   "three twenty-nine PM."
+  ],
+  [
+   134.124,
+   135.425,
+   "Freshness is built in."
+  ],
+  [
+   135.425,
+   138.026,
+   "A price older than its window is automatically"
+  ],
+  [
+   138.026,
+   138.676,
+   "marked stale,"
+  ],
+  [
+   138.676,
+   141.278,
+   "and the agent will then refuse to present"
+  ],
+  [
+   141.278,
+   142.253,
+   "it as current."
+  ],
+  [
+   142.885,
+   144.51,
+   "And derived numbers are computed,"
+  ],
+  [
+   144.51,
+   145.161,
+   "not guessed:"
+  ],
+  [
+   145.161,
+   147.762,
+   "the P/E is calculated in code from a"
+  ],
+  [
+   147.762,
+   150.038,
+   "stored price and a stored earnings figure,"
+  ],
+  [
+   150.038,
+   152.639,
+   "and it links straight back to both inputs."
+  ],
+  [
+   153.271,
+   155.872,
+   "Here is the whole game in one line."
+  ],
+  [
+   155.872,
+   158.474,
+   "A number with no source and no time"
+  ],
+  [
+   158.474,
+   161.075,
+   "never gets stored \u2014 so the agent can"
+  ],
+  [
+   161.075,
+   162.05,
+   "never speak it."
+  ],
+  [
+   162.05,
+   164.652,
+   "That is how you make an AI factual:"
+  ],
+  [
+   164.652,
+   165.952,
+   "not by trusting it,"
+  ],
+  [
+   165.952,
+   168.554,
+   "but by only giving it facts that can"
+  ],
+  [
+   168.554,
+   169.204,
+   "prove themselves."
+  ],
+  [
+   169.704,
+   172.806,
+   "Let's map the exact factors you want the"
+  ],
+  [
+   172.806,
+   175.908,
+   "agent to reason over \u2014 because each one"
+  ],
+  [
+   175.908,
+   177.847,
+   "becomes nodes in this graph."
+  ],
+  [
+   178.479,
+   179.642,
+   "Earnings and valuation:"
+  ],
+  [
+   179.642,
+   180.03,
+   "EPS,"
+  ],
+  [
+   180.03,
+   180.418,
+   "profit,"
+  ],
+  [
+   180.418,
+   181.581,
+   "and the P/E,"
+  ],
+  [
+   181.581,
+   184.683,
+   "each linked back to the price and the"
+  ],
+  [
+   184.683,
+   186.234,
+   "result it came from."
+  ],
+  [
+   186.866,
+   187.254,
+   "Growth:"
+  ],
+  [
+   187.254,
+   187.642,
+   "revenue,"
+  ],
+  [
+   187.642,
+   188.029,
+   "profit,"
+  ],
+  [
+   188.029,
+   189.968,
+   "and margins for every quarter,"
+  ],
+  [
+   189.968,
+   193.07,
+   "with year-on-year and quarter-on-quarter changes\ncomputed and stored."
+  ],
+  [
+   193.702,
+   194.478,
+   "And context:"
+  ],
+  [
+   194.478,
+   195.253,
+   "news events,"
+  ],
+  [
+   195.253,
+   197.192,
+   "each with a sentiment score,"
+  ],
+  [
+   197.192,
+   200.294,
+   "plus management guidance extracted from the\nearnings call"
+  ],
+  [
+   200.294,
+   202.233,
+   "\u2014 that's your future roadmap."
+  ],
+  [
+   202.865,
+   205.579,
+   "Put all five factors in one graph,"
+  ],
+  [
+   205.579,
+   208.681,
+   "and the agent can finally weigh them together"
+  ],
+  [
+   208.681,
+   211.783,
+   "\u2014 earnings against valuation against the latest\nnews"
+  ],
+  [
+   211.783,
+   214.11,
+   "\u2014 with every single fact cited."
+  ],
+  [
+   214.11,
+   215.661,
+   "That is multi-factor reasoning,"
+  ],
+  [
+   215.661,
+   216.049,
+   "grounded."
+  ],
+  [
+   216.549,
+   219.225,
+   "Now the payoff of a graph over six"
+  ],
+  [
+   219.225,
+   219.559,
+   "tabs."
+  ],
+  [
+   220.191,
+   222.197,
+   "To pull a whole company view,"
+  ],
+  [
+   222.197,
+   223.535,
+   "it's a single query."
+  ],
+  [
+   223.535,
+   225.876,
+   "Start at the company by its ISIN,"
+  ],
+  [
+   225.876,
+   227.214,
+   "then gather its metrics,"
+  ],
+  [
+   227.214,
+   228.217,
+   "its latest quarter,"
+  ],
+  [
+   228.217,
+   230.893,
+   "and any news from the last seven days."
+  ],
+  [
+   231.524,
+   232.528,
+   "This is Cypher,"
+  ],
+  [
+   232.528,
+   234.2,
+   "but read it as English:"
+  ],
+  [
+   234.2,
+   236.876,
+   "get me this company and everything currently\nattached"
+  ],
+  [
+   236.876,
+   237.544,
+   "to it."
+  ],
+  [
+   238.176,
+   239.514,
+   "Back comes the P/E,"
+  ],
+  [
+   239.514,
+   240.517,
+   "the latest result,"
+  ],
+  [
+   240.517,
+   243.193,
+   "the recent news \u2014 each row carrying its"
+  ],
+  [
+   243.193,
+   244.196,
+   "source and timestamp."
+  ],
+  [
+   244.828,
+   247.503,
+   "No single website could answer that in one"
+  ],
+  [
+   247.503,
+   247.838,
+   "shot,"
+  ],
+  [
+   247.838,
+   250.179,
+   "because the answer lived in the connections."
+  ],
+  [
+   250.179,
+   252.854,
+   "This one query is what the agent will"
+  ],
+  [
+   252.854,
+   255.53,
+   "run under the hood \u2014 and it is"
+  ],
+  [
+   255.53,
+   257.871,
+   "why the answer can always be cited."
+  ],
+  [
+   258.371,
+   260.631,
+   "Here is the difference grounding makes."
+  ],
+  [
+   261.263,
+   264.277,
+   "Ask a language model on its own for"
+  ],
+  [
+   264.277,
+   267.291,
+   "a company's numbers and it will confidently\nproduce"
+  ],
+  [
+   267.291,
+   268.798,
+   "something \u2014 often wrong,"
+  ],
+  [
+   268.798,
+   269.928,
+   "sometimes months stale."
+  ],
+  [
+   269.928,
+   270.681,
+   "On grounded,"
+  ],
+  [
+   270.681,
+   271.812,
+   "multi-hop financial questions,"
+  ],
+  [
+   271.812,
+   273.318,
+   "that approach is unreliable."
+  ],
+  [
+   273.95,
+   276.964,
+   "Retrieve from a knowledge graph instead \u2014 an"
+  ],
+  [
+   276.964,
+   279.978,
+   "approach called GraphRAG \u2014 and the model is"
+  ],
+  [
+   279.978,
+   281.108,
+   "handed the exact,"
+  ],
+  [
+   281.108,
+   281.861,
+   "sourced fact."
+  ],
+  [
+   281.861,
+   282.992,
+   "Accuracy jumps dramatically."
+  ],
+  [
+   283.623,
+   285.13,
+   "These bars are illustrative,"
+  ],
+  [
+   285.13,
+   287.767,
+   "but the direction is the whole point:"
+  ],
+  [
+   287.767,
+   290.781,
+   "the graph does not find text that sounds"
+  ],
+  [
+   290.781,
+   291.158,
+   "right,"
+  ],
+  [
+   291.158,
+   293.795,
+   "it returns the number that is right,"
+  ],
+  [
+   293.795,
+   294.925,
+   "with its citation."
+  ],
+  [
+   295.557,
+   295.934,
+   "So,"
+  ],
+  [
+   295.934,
+   297.44,
+   "to recap part two:"
+  ],
+  [
+   297.44,
+   300.454,
+   "the knowledge graph is your ontology filled with"
+  ],
+  [
+   300.454,
+   300.831,
+   "resolved,"
+  ],
+  [
+   300.831,
+   301.208,
+   "sourced,"
+  ],
+  [
+   301.208,
+   304.222,
+   "timestamped facts \u2014 and it is what lets"
+  ],
+  [
+   304.222,
+   306.105,
+   "the agent answer without guessing."
+  ],
+  [
+   306.105,
+   306.482,
+   "Next,"
+  ],
+  [
+   306.482,
+   307.989,
+   "we make it live."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "sml/sml-ch03-knowledge-graph.wav",
+   "volume": 1.0
+  }
+ }
+}

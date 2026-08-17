@@ -1,0 +1,281 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch07-conditional_conditional",
+   "type": "it_conditional",
+   "in_seconds": 0.0,
+   "out_seconds": 99.685,
+   "props": {
+    "dur": 100.185
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.659,
+   "So far we have measured the uncertainty of"
+  ],
+  [
+   2.659,
+   4.321,
+   "one source at a time."
+  ],
+  [
+   4.321,
+   6.315,
+   "But the world comes in pairs."
+  ],
+  [
+   6.315,
+   7.313,
+   "Clouds and rain."
+  ],
+  [
+   7.313,
+   8.975,
+   "A symptom and a disease."
+  ],
+  [
+   8.975,
+   11.301,
+   "A word and the word before it."
+  ],
+  [
+   11.933,
+   14.592,
+   "So let's learn to slice uncertainty apart when"
+  ],
+  [
+   14.592,
+   15.257,
+   "two variables,"
+  ],
+  [
+   15.257,
+   16.254,
+   "X and Y,"
+  ],
+  [
+   16.254,
+   17.251,
+   "are tangled together."
+  ],
+  [
+   17.883,
+   19.545,
+   "Start with the joint entropy,"
+  ],
+  [
+   19.545,
+   21.539,
+   "written H of X and Y."
+  ],
+  [
+   21.539,
+   24.198,
+   "It is just the total surprise in the"
+  ],
+  [
+   24.198,
+   24.531,
+   "pair,"
+  ],
+  [
+   24.531,
+   27.19,
+   "considered together \u2014 everything you do not know"
+  ],
+  [
+   27.19,
+   28.519,
+   "about both at once."
+  ],
+  [
+   29.151,
+   31.81,
+   "The beautiful fact is that this total splits"
+  ],
+  [
+   31.81,
+   33.14,
+   "cleanly into three blocks."
+  ],
+  [
+   33.14,
+   34.137,
+   "Watch the bar."
+  ],
+  [
+   34.768,
+   35.766,
+   "On the left,"
+  ],
+  [
+   35.766,
+   38.425,
+   "the part of X that Y tells you"
+  ],
+  [
+   38.425,
+   40.419,
+   "nothing about \u2014 X's private uncertainty."
+  ],
+  [
+   40.419,
+   42.413,
+   "We call it the conditional entropy,"
+  ],
+  [
+   42.413,
+   44.075,
+   "H of X given Y."
+  ],
+  [
+   44.707,
+   45.704,
+   "On the right,"
+  ],
+  [
+   45.704,
+   48.031,
+   "the mirror image \u2014 Y's private uncertainty,"
+  ],
+  [
+   48.031,
+   49.693,
+   "H of Y given X."
+  ],
+  [
+   50.324,
+   51.654,
+   "And in the middle,"
+  ],
+  [
+   51.654,
+   53.648,
+   "the piece the two variables share."
+  ],
+  [
+   53.648,
+   55.31,
+   "Hold onto that middle block;"
+  ],
+  [
+   55.31,
+   57.637,
+   "it is about to become a star."
+  ],
+  [
+   58.269,
+   60.928,
+   "Now here is the single most useful identity"
+  ],
+  [
+   60.928,
+   61.925,
+   "in the subject,"
+  ],
+  [
+   61.925,
+   63.919,
+   "and the bar makes it obvious."
+  ],
+  [
+   63.919,
+   64.917,
+   "The chain rule."
+  ],
+  [
+   65.548,
+   68.207,
+   "The joint entropy H of X and Y"
+  ],
+  [
+   68.207,
+   69.869,
+   "equals the entropy of X,"
+  ],
+  [
+   69.869,
+   72.528,
+   "plus the entropy of Y given that you"
+  ],
+  [
+   72.528,
+   73.526,
+   "already know X."
+  ],
+  [
+   74.157,
+   75.154,
+   "In plain words:"
+  ],
+  [
+   75.154,
+   77.813,
+   "the total surprise in the pair is the"
+  ],
+  [
+   77.813,
+   79.143,
+   "surprise of the first,"
+  ],
+  [
+   79.143,
+   81.802,
+   "plus whatever surprise is left in the second"
+  ],
+  [
+   81.802,
+   83.464,
+   "once the first is known."
+  ],
+  [
+   84.096,
+   85.093,
+   "Learn one variable,"
+  ],
+  [
+   85.093,
+   87.752,
+   "and it can only shrink your uncertainty about"
+  ],
+  [
+   87.752,
+   89.746,
+   "the other \u2014 never grow it."
+  ],
+  [
+   90.378,
+   91.708,
+   "Knowing something never hurts."
+  ],
+  [
+   91.708,
+   93.37,
+   "And that shared middle block,"
+  ],
+  [
+   93.37,
+   96.029,
+   "the amount one variable reveals about the other,"
+  ],
+  [
+   96.029,
+   98.688,
+   "is important enough that it deserves a beat"
+  ],
+  [
+   98.688,
+   99.685,
+   "all its own."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch07-conditional.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "ticker": "BERGEPAINT",
+ "scraped_at": "2026-08-14T15:29:55",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 63506.0,
+ "current_price": 545.0,
+ "pe": 51.7,
+ "book_value": 59.3,
+ "dividend_yield_pct": 0.73,
+ "roce_pct": 21.6,
+ "roe_pct": 17.3,
+ "face_value": 1.0,
+ "high": 595.0,
+ "sales_growth": {
+  "10 Years": 12.0,
+  "5 Years": 10.0,
+  "3 Years": 10.0,
+  "TTM": 5.0
+ },
+ "profit_growth": {
+  "10 Years": 11.0,
+  "5 Years": -4.0,
+  "3 Years": -2.0,
+  "1 Year": 2.0
+ },
+ "roe_hist": {
+  "Equity Capital": 69.0,
+  "Borrowings&nbsp; +": 610.0,
+  "Other Liabilities&nbsp; +": 846.0,
+  "Fixed Assets&nbsp; +": 931.0,
+  "CWIP": 100.0,
+  "Investments": 134.0
+ },
+ "price_cagr": {
+  "10 Years": 21.0,
+  "5 Years": 20.0,
+  "3 Years": 20.0,
+  "Last Year": 17.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "18%",
+   "17%",
+   "17%",
+   "14%",
+   "17%",
+   "16%",
+   "16%",
+   "16%",
+   "17%",
+   "12%",
+   "16%",
+   "17%",
+   "17%"
+  ],
+  "eps": [
+   "3.04",
+   "2.50",
+   "2.57",
+   "1.91",
+   "3.03",
+   "2.31",
+   "2.53",
+   "2.25",
+   "2.70",
+   "1.77",
+   "2.33",
+   "2.87",
+   "3.47"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has been maintaining a healthy dividend payout of 38.0%"
+ ],
+ "cons": [
+  "Stock is trading at 9.40 times its book value",
+  "The company has delivered a poor sales growth of 11.8% over past five years."
+ ]
+}

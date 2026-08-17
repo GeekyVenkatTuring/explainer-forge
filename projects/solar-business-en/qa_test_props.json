@@ -1,0 +1,281 @@
+{
+ "cuts": [
+  {
+   "id": "sol_title",
+   "type": "sol_title",
+   "in_seconds": 0.0,
+   "out_seconds": 30.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_roadmap",
+   "type": "sol_roadmap",
+   "in_seconds": 30.0,
+   "out_seconds": 60.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_hook",
+   "type": "sol_hook",
+   "in_seconds": 60.0,
+   "out_seconds": 90.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_why",
+   "type": "sol_why",
+   "in_seconds": 90.0,
+   "out_seconds": 120.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_divider",
+   "type": "sol_divider",
+   "in_seconds": 120.0,
+   "out_seconds": 150.0,
+   "props": {
+    "n": 3,
+    "title": "The System",
+    "sub": "inverters and the grid",
+    "color": "#34D399",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_spectrum",
+   "type": "sol_spectrum",
+   "in_seconds": 150.0,
+   "out_seconds": 180.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_cell",
+   "type": "sol_cell",
+   "in_seconds": 180.0,
+   "out_seconds": 210.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_panel",
+   "type": "sol_panel",
+   "in_seconds": 210.0,
+   "out_seconds": 240.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_efficiency",
+   "type": "sol_efficiency",
+   "in_seconds": 240.0,
+   "out_seconds": 270.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_types",
+   "type": "sol_types",
+   "in_seconds": 270.0,
+   "out_seconds": 300.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_dcac",
+   "type": "sol_dcac",
+   "in_seconds": 300.0,
+   "out_seconds": 330.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_ongrid",
+   "type": "sol_ongrid",
+   "in_seconds": 330.0,
+   "out_seconds": 360.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_offgrid",
+   "type": "sol_offgrid",
+   "in_seconds": 360.0,
+   "out_seconds": 390.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_components",
+   "type": "sol_components",
+   "in_seconds": 390.0,
+   "out_seconds": 420.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_sizing",
+   "type": "sol_sizing",
+   "in_seconds": 420.0,
+   "out_seconds": 450.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_rooftop",
+   "type": "sol_rooftop",
+   "in_seconds": 450.0,
+   "out_seconds": 480.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_install",
+   "type": "sol_install",
+   "in_seconds": 480.0,
+   "out_seconds": 510.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_savings",
+   "type": "sol_savings",
+   "in_seconds": 510.0,
+   "out_seconds": 540.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_subsidy",
+   "type": "sol_subsidy",
+   "in_seconds": 540.0,
+   "out_seconds": 570.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_cni",
+   "type": "sol_cni",
+   "in_seconds": 570.0,
+   "out_seconds": 600.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_models",
+   "type": "sol_models",
+   "in_seconds": 600.0,
+   "out_seconds": 630.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_bizcase",
+   "type": "sol_bizcase",
+   "in_seconds": 630.0,
+   "out_seconds": 660.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_valuechain",
+   "type": "sol_valuechain",
+   "in_seconds": 660.0,
+   "out_seconds": 690.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_channels",
+   "type": "sol_channels",
+   "in_seconds": 690.0,
+   "out_seconds": 720.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_margins",
+   "type": "sol_margins",
+   "in_seconds": 720.0,
+   "out_seconds": 750.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_economics",
+   "type": "sol_economics",
+   "in_seconds": 750.0,
+   "out_seconds": 780.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_getstarted",
+   "type": "sol_getstarted",
+   "in_seconds": 780.0,
+   "out_seconds": 810.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_risks",
+   "type": "sol_risks",
+   "in_seconds": 810.0,
+   "out_seconds": 840.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sol_recap",
+   "type": "sol_recap",
+   "in_seconds": 840.0,
+   "out_seconds": 870.0,
+   "props": {
+    "items": [
+     "Sunlight arrives as photons; a silicon cell frees electrons \u2014 that flow is electricity",
+     "Cells make a panel, panels make an array, sized to the customer's bill",
+     "The inverter turns DC into AC; net metering makes the grid your free battery",
+     "Size a system by dividing monthly units by 120; ~100 sq ft of clear roof per kW",
+     "PM Surya Ghar pays up to \u20b978,000; home payback is about 3.5 to 5 years",
+     "Businesses have the big bills \u2014 CAPEX or the zero-upfront OPEX / RESCO model",
+     "Enter near the customer: refer, sell, or install \u2014 service earns the best margin",
+     "Win on trust and clean execution, not on being the cheapest quote"
+    ],
+    "closer": "Sunlight is free \u2014 the business is turning it into savings people gladly pay for.",
+    "dur": 30.0
+   }
+  }
+ ],
+ "audio": {}
+}

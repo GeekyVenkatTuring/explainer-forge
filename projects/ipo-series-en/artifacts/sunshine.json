@@ -1,0 +1,929 @@
+{
+  "cuts": [
+    {
+      "id": "sunshine_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 31.578,
+      "props": {
+        "title": "Sunshine Pictures IPO",
+        "sub": "Film & content production · ₹282.14 Cr · 18–20 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 32.078
+      }
+    },
+    {
+      "id": "sunshine_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 32.078,
+      "out_seconds": 78.75,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Sunshine Pictures",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🎬",
+            "k": "Produces films, TV & web series",
+            "v": "A Mumbai content house that produces and distributes movies, television serials and web series",
+            "chip": "CONTENT"
+          },
+          {
+            "emoji": "🎞️",
+            "k": "In-house VFX, colour & sound",
+            "v": "Uses digital-intermediate colour grading, Dolby Atmos mixing and dedicated VFX pipelines — a full production stack",
+            "chip": "POST-PROD"
+          },
+          {
+            "emoji": "🌐",
+            "k": "Theatrical, satellite, digital, music",
+            "v": "Monetises across theatres, satellite/TV, streaming platforms and music — in India and overseas",
+            "chip": "MULTI-WINDOW"
+          }
+        ],
+        "dur": 47.172
+      }
+    },
+    {
+      "id": "sunshine_fin",
+      "type": "sm_stats",
+      "in_seconds": 79.25,
+      "out_seconds": 119.922,
+      "props": {
+        "kicker": "FINANCIALS",
+        "title": "The Headline Numbers",
+        "stats": [
+          {
+            "label": "Total income FY26",
+            "to": 76,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#FBBF24",
+            "sub": "₹76.27 Cr — DOWN from FY25 ₹105.80 Cr"
+          },
+          {
+            "label": "Net profit FY26",
+            "to": 40,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "₹40.02 Cr (FY25 ₹34.46 Cr)"
+          },
+          {
+            "label": "Debt-to-equity",
+            "to": 0.06,
+            "prefix": "",
+            "suffix": "",
+            "decimals": 2,
+            "color": "#A78BFA",
+            "sub": "near debt-free · borrowings ₹9.09 Cr"
+          }
+        ],
+        "note": "Note the lumpiness: FY26 income FELL versus FY25, yet profit rose — classic project-dependent content economics.",
+        "dur": 41.172
+      }
+    },
+    {
+      "id": "sunshine_threestmt",
+      "type": "sm_financials",
+      "in_seconds": 120.422,
+      "out_seconds": 164.696,
+      "props": {
+        "kicker": "FINANCIALS · 3 STATEMENTS",
+        "title": "Income, Balance Sheet & Cash Flow",
+        "color": "#A78BFA",
+        "cols": [
+          {
+            "name": "Income Statement",
+            "icon": "📊",
+            "accent": "#FBBF24",
+            "rows": [
+              {
+                "label": "Total income FY26",
+                "val": "₹76.27 Cr",
+                "hi": true,
+                "sub": "FY25 ₹105.80 Cr — DOWN (lumpy)"
+              },
+              {
+                "label": "Net profit FY26",
+                "val": "₹40.02 Cr",
+                "sub": "FY25 ₹34.46 Cr"
+              },
+              {
+                "label": "EBITDA (FY25)",
+                "val": "₹50.76 Cr",
+                "sub": "strong margins in a hit year"
+              }
+            ]
+          },
+          {
+            "name": "Balance Sheet",
+            "icon": "🏦",
+            "accent": "#34D399",
+            "rows": [
+              {
+                "label": "Net worth",
+                "val": "₹145.13 Cr",
+                "sub": "healthy equity base"
+              },
+              {
+                "label": "Total borrowings",
+                "val": "₹9.09 Cr",
+                "hi": true,
+                "sub": "D/E 0.06 — near debt-free"
+              },
+              {
+                "label": "Balance sheet",
+                "val": "Clean",
+                "sub": "low leverage"
+              }
+            ]
+          },
+          {
+            "name": "Cash Flow",
+            "icon": "💵",
+            "accent": "#38BDF8",
+            "rows": [
+              {
+                "label": "Fresh issue inflow",
+                "val": "~₹172.80 Cr",
+                "sub": "48L fresh shares @ ₹360"
+              },
+              {
+                "label": "→ Long-term WC",
+                "val": "₹112.50 Cr",
+                "hi": true,
+                "sub": "fund content pipeline"
+              },
+              {
+                "label": "Operating cash flow",
+                "val": "Not disclosed",
+                "sub": "lumpy; read RHP"
+              }
+            ]
+          }
+        ],
+        "note": "Clean balance sheet; but income is project-dependent — and the full cash-flow statement isn't in public summaries. Read the RHP.",
+        "dur": 44.774
+      }
+    },
+    {
+      "id": "sunshine_issue",
+      "type": "sm_stats",
+      "in_seconds": 165.196,
+      "out_seconds": 195.406,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 282,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#A78BFA",
+            "sub": "₹282.14 Cr · band ₹342–360"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 173,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "~₹172.8 Cr · ~61% funds the business"
+          },
+          {
+            "label": "OFS (to promoters)",
+            "to": 109,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "~₹109 Cr — Vipul & Shefali Shah sell"
+          }
+        ],
+        "note": "About 61% is fresh money for the content pipeline; ~39% is the promoter family (Vipul & Shefali Shah) partly cashing out.",
+        "dur": 30.71
+      }
+    },
+    {
+      "id": "sunshine_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 195.906,
+      "out_seconds": 228.66,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the Fresh Money Funds",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🎥",
+            "k": "₹112.50 Cr — long-term working capital",
+            "v": "Funds the content pipeline — developing and producing the next slate of films and series",
+            "chip": "PIPELINE"
+          },
+          {
+            "emoji": "🧰",
+            "k": "General corporate purposes",
+            "v": "The balance supports general corporate needs as the company scales its output",
+            "chip": "GCP"
+          },
+          {
+            "emoji": "⚠️",
+            "k": "Growth needs fresh content bets",
+            "v": "More content means more upfront spend before revenue lands — the working-capital ask reflects that",
+            "chip": "UPFRONT"
+          }
+        ],
+        "dur": 33.254
+      }
+    },
+    {
+      "id": "sunshine_peers",
+      "type": "sm_iconcards",
+      "in_seconds": 229.16,
+      "out_seconds": 273.866,
+      "props": {
+        "kicker": "COMPETITORS · VALUATION",
+        "title": "How Is It Priced? ~32.5× on Lumpy Earnings",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🔢",
+            "k": "~32.55× post-issue P/E",
+            "v": "At ₹360, the company is valued near ₹1,121 Cr — about 32.5 times FY26 earnings. That's a demanding multiple",
+            "chip": "~32.5×"
+          },
+          {
+            "emoji": "🎲",
+            "k": "Earnings are project-dependent",
+            "v": "A P/E built on one year's profit is fragile when the next year's profit rides on which films land",
+            "chip": "LUMPY"
+          },
+          {
+            "emoji": "🎬",
+            "k": "Few clean listed twins",
+            "v": "Pure film-production peers are scarce and messy on the exchanges — so the P/E is hard to anchor to a peer set",
+            "chip": "NO PEER"
+          }
+        ],
+        "dur": 45.206
+      }
+    },
+    {
+      "id": "sunshine_verdict",
+      "type": "sm_myths",
+      "in_seconds": 274.366,
+      "out_seconds": 319.504,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "Lumpy, project-dependent earnings",
+            "f": "Near debt-free balance sheet (D/E 0.06)"
+          },
+          {
+            "m": "~32.5× P/E is demanding on one year",
+            "f": "Experienced promoter; full in-house production stack"
+          },
+          {
+            "m": "FY26 revenue fell vs FY25",
+            "f": "Rare listed play on films & content; profitable"
+          }
+        ],
+        "dur": 45.638
+      }
+    },
+    {
+      "id": "sunshine_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 320.004,
+      "out_seconds": 359.668,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = about ₹15,000 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 40.164
+      }
+    },
+    {
+      "id": "sunshine_recap",
+      "type": "sm_recap",
+      "in_seconds": 360.168,
+      "out_seconds": 421.888,
+      "props": {
+        "title": "Sunshine Pictures IPO — at a Glance",
+        "items": [
+          "Business: Vipul Shah's film, TV & web content house (Mumbai)",
+          "FY26: income ₹76.27 Cr (down YoY), profit ₹40.02 Cr; near debt-free",
+          "₹282.14 Cr issue — ~61% fresh; funds content pipeline",
+          "~32.5× P/E on lumpy, project-dependent earnings",
+          "Retail min ~₹15,000 · lists 25 Aug"
+        ],
+        "closer": "A rare, profitable, clean-balance-sheet listed content play — but with lumpy earnings and a demanding price. Read the RHP; decide for yourself.",
+        "dur": 62.22
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.677,
+      "Let's break down the Sunshine Pictures I-P-O —"
+    ],
+    [
+      3.677,
+      11.432,
+      "a two hundred and eighty-two crore mainboard issue from film-maker Vipul Shah's production house."
+    ],
+    [
+      11.432,
+      15.189,
+      "It's a rare listed play on movies and content —"
+    ],
+    [
+      15.189,
+      19.666,
+      "but with the lumpy earnings that come with the business."
+    ],
+    [
+      19.666,
+      23.344,
+      "We'll cover what it does, its full financials,"
+    ],
+    [
+      23.344,
+      26.382,
+      "where the money goes, how it's priced,"
+    ],
+    [
+      26.382,
+      28.3,
+      "and whether it fits you."
+    ],
+    [
+      28.3,
+      31.578,
+      "This is education, not investment advice."
+    ],
+    [
+      32.078,
+      34.199,
+      "So what does Sunshine do?"
+    ],
+    [
+      34.199,
+      36.66,
+      "It's a Mumbai content house —"
+    ],
+    [
+      36.66,
+      39.546,
+      "it produces and distributes films,"
+    ],
+    [
+      39.546,
+      42.431,
+      "television serials and web series,"
+    ],
+    [
+      42.431,
+      45.231,
+      "led by the film-maker Vipul Shah."
+    ],
+    [
+      45.231,
+      50.747,
+      "It runs a full production stack in-house: digital colour grading,"
+    ],
+    [
+      50.747,
+      55.669,
+      "Dolby Atmos sound, and dedicated visual-effects pipelines."
+    ],
+    [
+      55.669,
+      59.742,
+      "And it monetises across every window — theatres,"
+    ],
+    [
+      59.742,
+      63.9,
+      "satellite and TV, streaming platforms, and music,"
+    ],
+    [
+      63.9,
+      66.191,
+      "both in India and overseas."
+    ],
+    [
+      66.191,
+      73.149,
+      "But keep one thing in mind throughout: a production business is project-dependent,"
+    ],
+    [
+      73.149,
+      77.053,
+      "so its earnings are lumpy — big in a hit year,"
+    ],
+    [
+      77.053,
+      78.75,
+      "thin in a quiet one."
+    ],
+    [
+      79.25,
+      83.788,
+      "Now the financials — and here you must read carefully."
+    ],
+    [
+      83.788,
+      89.334,
+      "Total income in FY twenty twenty-six was about seventy-six crore —"
+    ],
+    [
+      89.334,
+      90.258,
+      "and notice,"
+    ],
+    [
+      90.258,
+      96.309,
+      "that's actually DOWN from about a hundred and six crore the year before."
+    ],
+    [
+      96.309,
+      99.838,
+      "Yet net profit ROSE, to about forty crore."
+    ],
+    [
+      99.838,
+      103.872,
+      "That mismatch — falling revenue, rising profit —"
+    ],
+    [
+      103.872,
+      110.594,
+      "is classic content economics: it depends on which projects landed in which year."
+    ],
+    [
+      110.594,
+      114.46,
+      "On the plus side, the balance sheet is clean —"
+    ],
+    [
+      114.46,
+      115.72,
+      "near debt-free,"
+    ],
+    [
+      115.72,
+      119.922,
+      "with a debt-to-equity of just zero point zero six."
+    ],
+    [
+      120.422,
+      123.518,
+      "Let's put all three statements together."
+    ],
+    [
+      123.518,
+      127.001,
+      "The income statement carries that lumpiness —"
+    ],
+    [
+      127.001,
+      130.484,
+      "seventy-six crore of income in FY twenty-six,"
+    ],
+    [
+      130.484,
+      134.741,
+      "down from a hundred and six, but forty crore of profit."
+    ],
+    [
+      134.741,
+      137.915,
+      "The balance sheet is a genuine strength —"
+    ],
+    [
+      137.915,
+      143.256,
+      "net worth of about a hundred and forty-five crore and almost no debt,"
+    ],
+    [
+      143.256,
+      144.494,
+      "just nine crore."
+    ],
+    [
+      144.494,
+      145.5,
+      "On cash flow,"
+    ],
+    [
+      145.5,
+      150.609,
+      "the fresh issue brings in about a hundred and seventy-three crore,"
+    ],
+    [
+      150.609,
+      158.659,
+      "of which a hundred and twelve and a half crore funds long-term working capital for the content pipeline."
+    ],
+    [
+      158.659,
+      163.535,
+      "The operating cash-flow line isn't published in the summaries —"
+    ],
+    [
+      163.535,
+      164.696,
+      "read the R-H-P."
+    ],
+    [
+      165.196,
+      167.158,
+      "Where does your money go?"
+    ],
+    [
+      167.158,
+      170.767,
+      "Of the two hundred and eighty-two crore issue,"
+    ],
+    [
+      170.767,
+      173.984,
+      "about a hundred and seventy-three crore —"
+    ],
+    [
+      173.984,
+      176.103,
+      "roughly sixty-one percent —"
+    ],
+    [
+      176.103,
+      179.556,
+      "is a fresh issue that goes into the company."
+    ],
+    [
+      179.556,
+      184.107,
+      "The remaining hundred and nine crore is an Offer for Sale,"
+    ],
+    [
+      184.107,
+      188.03,
+      "where the promoter family, Vipul and Shefali Shah,"
+    ],
+    [
+      188.03,
+      189.286,
+      "partly cash out."
+    ],
+    [
+      189.286,
+      191.796,
+      "So it's a majority-fresh issue —"
+    ],
+    [
+      191.796,
+      195.406,
+      "most of your money funds the content pipeline."
+    ],
+    [
+      195.906,
+      198.341,
+      "What does the fresh money fund?"
+    ],
+    [
+      198.341,
+      203.054,
+      "The main use — about a hundred and twelve and a half crore —"
+    ],
+    [
+      203.054,
+      207.688,
+      "is long-term working capital: funding the content pipeline,"
+    ],
+    [
+      207.688,
+      212.401,
+      "developing and producing the next slate of films and series."
+    ],
+    [
+      212.401,
+      215.857,
+      "The rest goes to general corporate purposes."
+    ],
+    [
+      215.857,
+      218.449,
+      "It makes sense for the business —"
+    ],
+    [
+      218.449,
+      223.476,
+      "more content means more upfront spend before the revenue lands —"
+    ],
+    [
+      223.476,
+      228.66,
+      "but it also means growth depends on making the right content bets."
+    ],
+    [
+      229.16,
+      230.74,
+      "So how is it priced?"
+    ],
+    [
+      230.74,
+      232.556,
+      "At the top of the band,"
+    ],
+    [
+      232.556,
+      238.164,
+      "Sunshine is valued near one thousand one hundred and twenty-one crore —"
+    ],
+    [
+      238.164,
+      242.983,
+      "about thirty-two and a half times its FY twenty-six earnings."
+    ],
+    [
+      242.983,
+      245.273,
+      "That is a demanding multiple."
+    ],
+    [
+      245.273,
+      250.091,
+      "And here's the catch: because earnings are project-dependent,"
+    ],
+    [
+      250.091,
+      254.041,
+      "a P/E built on a single year's profit is fragile —"
+    ],
+    [
+      254.041,
+      257.595,
+      "next year's number rides on which films land."
+    ],
+    [
+      257.595,
+      260.596,
+      "There also aren't clean listed twins —"
+    ],
+    [
+      260.596,
+      266.125,
+      "pure film-production companies are scarce and messy on the exchanges —"
+    ],
+    [
+      266.125,
+      271.259,
+      "so you can't easily anchor that thirty-two times to a peer group."
+    ],
+    [
+      271.259,
+      273.866,
+      "Treat the valuation with caution."
+    ],
+    [
+      274.366,
+      276.411,
+      "So — should you subscribe?"
+    ],
+    [
+      276.411,
+      280.814,
+      "The strengths are real — a near debt-free balance sheet,"
+    ],
+    [
+      280.814,
+      283.803,
+      "an experienced film-maker at the helm,"
+    ],
+    [
+      283.803,
+      287.734,
+      "a full in-house production stack, and it's a rare,"
+    ],
+    [
+      287.734,
+      291.666,
+      "profitable, listed way to play movies and content."
+    ],
+    [
+      291.666,
+      294.261,
+      "The watch-outs are equally real —"
+    ],
+    [
+      294.261,
+      297.485,
+      "earnings are lumpy and project-dependent,"
+    ],
+    [
+      297.485,
+      302.125,
+      "FY twenty-six revenue actually fell versus the year before,"
+    ],
+    [
+      302.125,
+      309.045,
+      "and at about thirty-two times earnings the price is demanding on a single year's profit."
+    ],
+    [
+      309.045,
+      311.404,
+      "The takeaway — an interesting,"
+    ],
+    [
+      311.404,
+      315.258,
+      "clean-balance-sheet content play, but a volatile,"
+    ],
+    [
+      315.258,
+      317.931,
+      "hard-to-value one at a full price."
+    ],
+    [
+      317.931,
+      319.504,
+      "Only you can decide."
+    ],
+    [
+      320.004,
+      323.501,
+      "Finally — how do you apply, and how much?"
+    ],
+    [
+      323.501,
+      329.302,
+      "Retail investors bid up to two lakh for a thirty-five percent quota,"
+    ],
+    [
+      329.302,
+      333.055,
+      "with allotment by lottery if oversubscribed."
+    ],
+    [
+      333.055,
+      337.661,
+      "H-N-Is bid above two lakh for a fifteen percent quota."
+    ],
+    [
+      337.661,
+      338.77,
+      "For Sunshine,"
+    ],
+    [
+      338.77,
+      344.826,
+      "at a three hundred and forty-two to three hundred and sixty rupee band,"
+    ],
+    [
+      344.826,
+      349.262,
+      "one lot works out to about fifteen thousand rupees —"
+    ],
+    [
+      349.262,
+      350.37,
+      "your minimum."
+    ],
+    [
+      350.37,
+      355.744,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      355.744,
+      359.668,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      360.168,
+      362.637,
+      "Let's recap Sunshine Pictures."
+    ],
+    [
+      362.637,
+      367.328,
+      "Film-maker Vipul Shah's content house — producing movies,"
+    ],
+    [
+      367.328,
+      374.816,
+      "TV and web series with a full in-house production stack and a near debt-free balance sheet."
+    ],
+    [
+      374.816,
+      378.355,
+      "The issue is about sixty-one percent fresh,"
+    ],
+    [
+      378.355,
+      380.741,
+      "funding the content pipeline."
+    ],
+    [
+      380.741,
+      383.539,
+      "But remember the two big caveats —"
+    ],
+    [
+      383.539,
+      386.913,
+      "earnings are lumpy and project-dependent,"
+    ],
+    [
+      386.913,
+      389.135,
+      "FY twenty-six revenue fell,"
+    ],
+    [
+      389.135,
+      393.826,
+      "and it's priced at a demanding thirty-two times earnings."
+    ],
+    [
+      393.826,
+      398.105,
+      "The retail minimum is about fifteen thousand rupees."
+    ],
+    [
+      398.105,
+      402.055,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      402.055,
+      404.36,
+      "it is not investment advice,"
+    ],
+    [
+      404.36,
+      407.075,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      407.075,
+      410.202,
+      "and not a prediction of listing gains."
+    ],
+    [
+      410.202,
+      414.564,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      414.564,
+      420.242,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      420.242,
+      421.888,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/sunshine.wav",
+      "volume": 1.0
+    }
+  }
+}

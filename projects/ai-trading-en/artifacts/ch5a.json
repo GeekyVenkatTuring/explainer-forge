@@ -1,0 +1,436 @@
+{
+  "cuts": [
+    {
+      "id": "s50_divider",
+      "type": "ait_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 10.777,
+      "props": {
+        "n": 5,
+        "title": "Build Your Own",
+        "sub": "From a first strategy to an AI agent",
+        "color": "ai",
+        "parts": 6,
+        "dur": 11.277
+      }
+    },
+    {
+      "id": "s51_arch",
+      "type": "ait_pipeline",
+      "in_seconds": 11.277,
+      "out_seconds": 46.917,
+      "props": {
+        "kicker": "THE BLUEPRINT",
+        "title": "Your bot is the six boxes, in code",
+        "stages": [
+          {
+            "label": "Data",
+            "sub": "yfinance / broker",
+            "c": "data"
+          },
+          {
+            "label": "Features",
+            "sub": "pandas-ta",
+            "c": "data"
+          },
+          {
+            "label": "Model",
+            "sub": "a rule, then ML",
+            "c": "ai"
+          },
+          {
+            "label": "Signal",
+            "sub": "buy / sell / hold",
+            "c": "edge"
+          },
+          {
+            "label": "Risk",
+            "sub": "position sizing",
+            "c": "risk"
+          },
+          {
+            "label": "Order",
+            "sub": "broker API",
+            "c": "money"
+          }
+        ],
+        "caption": "Same six boxes as part one \u2014 now each becomes a small, testable function.",
+        "dur": 36.14
+      }
+    },
+    {
+      "id": "s52_data",
+      "type": "ait_code",
+      "in_seconds": 47.417,
+      "out_seconds": 90.014,
+      "props": {
+        "kicker": "BOX 1 \u00b7 DATA",
+        "title": "Get clean price data \u2014 for free",
+        "file": "data.py",
+        "color": "data",
+        "lines": [
+          "import yfinance as yf",
+          "",
+          "def get_data(symbol, period='5y'):",
+          "    df = yf.download(symbol, period=period)",
+          "    df = df.dropna()                 # remove gaps",
+          "    return df",
+          "",
+          "# Indian stocks use the .NS suffix on NSE",
+          "df = get_data('RELIANCE.NS')",
+          "print(df.shape, df.index[-1])"
+        ],
+        "side": {
+          "title": "The rules of data",
+          "points": [
+            "Garbage in, garbage out \u2014 clean it first",
+            "Use enough history: 3\u20135 years minimum",
+            "Watch for splits and survivorship bias",
+            "For live trading, use your broker's feed"
+          ]
+        },
+        "caption": "yfinance is free and perfect for learning; upgrade to your broker's data later.",
+        "dur": 43.097
+      }
+    },
+    {
+      "id": "s52b_clean",
+      "type": "ait_code",
+      "in_seconds": 90.514,
+      "out_seconds": 136.395,
+      "props": {
+        "kicker": "BOX 1, DONE RIGHT",
+        "title": "Clean data before you trust it",
+        "file": "clean.py",
+        "color": "data",
+        "lines": [
+          "def clean(df):",
+          "    df = df[~df.index.duplicated()]   # drop dupes",
+          "    df = df.sort_index()              # time order",
+          "    df = df.ffill(limit=2)            # small gaps only",
+          "    df = df.dropna()                  # then drop rest",
+          "    # sanity: no zero or negative prices",
+          "    df = df[df['Close'] > 0]",
+          "    return df"
+        ],
+        "side": {
+          "title": "Cleaning checklist",
+          "points": [
+            "Remove duplicate timestamps",
+            "Sort strictly by time",
+            "Fill only tiny gaps \u2014 never invent data",
+            "Reject impossible prices (0 or negative)"
+          ]
+        },
+        "caption": "Ninety percent of 'my bot is broken' turns out to be dirty data.",
+        "dur": 46.381
+      }
+    },
+    {
+      "id": "s53_features",
+      "type": "ait_code",
+      "in_seconds": 136.895,
+      "out_seconds": 179.621,
+      "props": {
+        "kicker": "BOX 2 \u00b7 FEATURES",
+        "title": "Turn raw prices into signals",
+        "file": "features.py",
+        "color": "data",
+        "lines": [
+          "import pandas_ta as ta",
+          "",
+          "def add_features(df):",
+          "    df['rsi'] = ta.rsi(df['Close'], length=14)",
+          "    df['sma_fast'] = ta.sma(df['Close'], 20)",
+          "    df['sma_slow'] = ta.sma(df['Close'], 50)",
+          "    df['ret'] = df['Close'].pct_change()",
+          "    df['vol'] = df['ret'].rolling(20).std()",
+          "    return df.dropna()"
+        ],
+        "side": {
+          "title": "What a feature is",
+          "points": [
+            "A number that describes the market now",
+            "RSI: is it over-bought or over-sold?",
+            "Two averages: is the trend up or down?",
+            "Volatility: how wild is it right now?"
+          ]
+        },
+        "caption": "Features are how the market speaks to your model \u2014 choose them thoughtfully.",
+        "dur": 43.226
+      }
+    },
+    {
+      "id": "s53b_lookahead",
+      "type": "ait_code",
+      "in_seconds": 180.121,
+      "out_seconds": 229.836,
+      "props": {
+        "kicker": "THE DEADLIEST BUG",
+        "title": "Look-ahead bias: using the future by accident",
+        "file": "danger.py",
+        "color": "risk",
+        "lines": [
+          "# WRONG \u2014 this peeks at the future:",
+          "df['sig'] = (df['Close'] > df['Close'].mean())",
+          "#            ^ mean() uses ALL rows, incl. tomorrow",
+          "",
+          "# RIGHT \u2014 only use data available at that moment:",
+          "roll = df['Close'].rolling(50).mean()",
+          "df['sig'] = df['Close'] > roll   # past 50 days only",
+          "",
+          "# rule: at row t, touch nothing after row t"
+        ],
+        "side": {
+          "title": "Why it's deadly",
+          "points": [
+            "It makes any backtest look brilliant",
+            "It passes tests, then fails live",
+            "Rolling/expanding windows fix it",
+            "Suspiciously perfect? Check for this first"
+          ]
+        },
+        "caption": "If a backtest looks too good, you almost certainly peeked at the future.",
+        "dur": 50.215
+      }
+    },
+    {
+      "id": "s54_signal",
+      "type": "ait_code",
+      "in_seconds": 230.336,
+      "out_seconds": 274.852,
+      "props": {
+        "kicker": "BOX 3 & 4 \u00b7 MODEL \u2192 SIGNAL",
+        "title": "The model, as a plain rule first",
+        "file": "strategy.py",
+        "color": "edge",
+        "lines": [
+          "def signal(df):",
+          "    # start transparent: a moving-average crossover",
+          "    long = df['sma_fast'] > df['sma_slow']",
+          "    # +1 = enter long, -1 = exit, 0 = hold",
+          "    return long.astype(int).diff().fillna(0)",
+          "",
+          "df['signal'] = signal(df)",
+          "print(df['signal'].value_counts())"
+        ],
+        "side": {
+          "title": "Why start with a rule",
+          "points": [
+            "You can read and explain every trade",
+            "It's a fair baseline to beat later",
+            "SEBI calls this a white-box strategy",
+            "Most 'AI bots' still end in a line like this"
+          ]
+        },
+        "caption": "Get a transparent rule working end-to-end before you add any AI.",
+        "dur": 45.016
+      }
+    },
+    {
+      "id": "s55_backtest",
+      "type": "ait_code",
+      "in_seconds": 275.352,
+      "out_seconds": 318.039,
+      "props": {
+        "kicker": "BOX 5 \u00b7 THE BACKTEST",
+        "title": "Test it on history \u2014 honestly",
+        "file": "backtest.py",
+        "color": "money",
+        "lines": [
+          "from backtesting import Backtest, Strategy",
+          "",
+          "class Cross(Strategy):",
+          "    def next(self):",
+          "        if self.data.signal[-1] == 1:",
+          "            self.buy()",
+          "        elif self.data.signal[-1] == -1:",
+          "            self.position.close()",
+          "",
+          "bt = Backtest(df, Cross, commission=0.002)",
+          "print(bt.run())   # returns, Sharpe, drawdown"
+        ],
+        "side": {
+          "title": "Backtest honestly",
+          "points": [
+            "Always include commission + slippage",
+            "No peeking at future bars \u2014 ever",
+            "A perfect equity curve is a red flag",
+            "It's a hypothesis, not a guarantee"
+          ]
+        },
+        "caption": "Set commission realistically \u2014 a costless backtest is a fairy tale.",
+        "dur": 43.187
+      }
+    },
+    {
+      "id": "s55b_read",
+      "type": "ait_code",
+      "in_seconds": 318.539,
+      "out_seconds": 364.343,
+      "props": {
+        "kicker": "READING THE REPORT",
+        "title": "What the backtest is actually telling you",
+        "file": "report.py",
+        "color": "money",
+        "lines": [
+          "stats = bt.run()",
+          "print(stats['Return [%]'])        # total return",
+          "print(stats['Sharpe Ratio'])      # return per risk",
+          "print(stats['Max. Drawdown [%]']) # worst fall",
+          "print(stats['# Trades'])          # sample size",
+          "print(stats['Win Rate [%]'])      # % winners",
+          "",
+          "# few trades = luck. Thousands = costs matter."
+        ],
+        "side": {
+          "title": "Read it like a pro",
+          "points": [
+            "Ignore return; read risk first",
+            "Under ~30 trades? It's noise, not signal",
+            "High win rate can still lose to big losers",
+            "One number never tells the story"
+          ]
+        },
+        "caption": "A beginner reads the return. A professional reads the drawdown and the trade count.",
+        "dur": 46.304
+      }
+    },
+    {
+      "id": "s56_overfit_trap",
+      "type": "ait_callout",
+      "in_seconds": 364.843,
+      "out_seconds": 406.438,
+      "props": {
+        "kicker": "THE TRAP, AGAIN",
+        "color": "risk",
+        "text": "Tuning until the backtest looks perfect is how you guarantee it fails live.",
+        "sub": "Every knob you twist to fit the past is a promise the future won't keep.",
+        "dur": 42.095
+      }
+    },
+    {
+      "id": "s57_walkforward",
+      "type": "ait_loop",
+      "in_seconds": 406.938,
+      "out_seconds": 450.1,
+      "props": {
+        "kicker": "THE ANTIDOTE",
+        "title": "Walk-forward: prove it on data it hasn't seen",
+        "steps": [
+          {
+            "label": "Train window",
+            "sub": "fit on months 1\u201312",
+            "c": "data"
+          },
+          {
+            "label": "Test window",
+            "sub": "check months 13\u201315",
+            "c": "edge"
+          },
+          {
+            "label": "Record result",
+            "sub": "unseen performance",
+            "c": "ai"
+          },
+          {
+            "label": "Roll forward",
+            "sub": "shift the window",
+            "c": "money"
+          },
+          {
+            "label": "Repeat",
+            "sub": "across all history",
+            "c": "money"
+          },
+          {
+            "label": "Judge honestly",
+            "sub": "most ideas die here",
+            "c": "risk"
+          }
+        ],
+        "caption": "If it survives many unseen windows, you may \u2014 may \u2014 have something real.",
+        "dur": 43.662
+      }
+    },
+    {
+      "id": "s57b_wfcode",
+      "type": "ait_code",
+      "in_seconds": 450.6,
+      "out_seconds": 498.973,
+      "props": {
+        "kicker": "WALK-FORWARD IN CODE",
+        "title": "The honesty test, as a loop",
+        "file": "walkforward.py",
+        "color": "ai",
+        "lines": [
+          "results = []",
+          "for start in range(0, len(df) - WIN - TEST, TEST):",
+          "    train = df[start : start + WIN]",
+          "    test  = df[start + WIN : start + WIN + TEST]",
+          "    params = optimise(train)      # fit on train",
+          "    r = run(test, params)         # judge on UNSEEN",
+          "    results.append(r)",
+          "",
+          "print('median out-of-sample:', median(results))"
+        ],
+        "side": {
+          "title": "The one honest number",
+          "points": [
+            "Optimise on train, score on test \u2014 never mix",
+            "Roll the window across all history",
+            "The median test result is your reality",
+            "In-sample numbers are for the bin"
+          ]
+        },
+        "caption": "This tiny loop is the difference between fooling yourself and knowing the truth.",
+        "dur": 48.873
+      }
+    },
+    {
+      "id": "s58_metrics",
+      "type": "ait_stat",
+      "in_seconds": 499.473,
+      "out_seconds": 543.309,
+      "props": {
+        "kicker": "WHAT \u201cGOOD\u201d LOOKS LIKE",
+        "title": "Judge a strategy by these, not by returns",
+        "color": "money",
+        "stats": [
+          {
+            "value": 1.5,
+            "prefix": "~",
+            "decimals": 1,
+            "label": "a realistic, durable Sharpe ratio",
+            "src": "1 to 2 is genuinely good",
+            "c": "money"
+          },
+          {
+            "value": 20,
+            "prefix": "< ",
+            "suffix": "%",
+            "label": "max drawdown you can stomach",
+            "src": "size positions for the worst case",
+            "c": "risk"
+          },
+          {
+            "value": 1.5,
+            "prefix": "> ",
+            "decimals": 1,
+            "label": "profit factor: gains over losses",
+            "src": "above 1.5 is meaningful",
+            "c": "edge"
+          }
+        ],
+        "note": "Anyone quoting a Sharpe of 8 is overfit, lying, or high-frequency \u2014 not you.",
+        "dur": 44.336
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "ait/ch5a.wav",
+      "volume": 1.0
+    }
+  }
+}

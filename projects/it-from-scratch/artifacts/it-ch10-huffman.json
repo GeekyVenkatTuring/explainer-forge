@@ -1,0 +1,321 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch10-huffman_huffman",
+   "type": "it_huffman",
+   "in_seconds": 0.0,
+   "out_seconds": 108.094,
+   "props": {
+    "dur": 108.594
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.321,
+   "Knowing the limit exists is one thing."
+  ],
+  [
+   2.321,
+   4.973,
+   "Actually building a code that reaches it is"
+  ],
+  [
+   4.973,
+   5.304,
+   "another."
+  ],
+  [
+   5.304,
+   6.631,
+   "So let's construct one,"
+  ],
+  [
+   6.631,
+   8.62,
+   "by hand \u2014 the Huffman code,"
+  ],
+  [
+   8.62,
+   10.94,
+   "still in daily use seventy years on."
+  ],
+  [
+   11.572,
+   12.898,
+   "Here is our source:"
+  ],
+  [
+   12.898,
+   14.556,
+   "six symbols with different frequencies."
+  ],
+  [
+   14.556,
+   16.213,
+   "E is the most common;"
+  ],
+  [
+   16.213,
+   17.208,
+   "N the rarest."
+  ],
+  [
+   17.208,
+   19.86,
+   "We want short codes for the frequent ones."
+  ],
+  [
+   20.492,
+   23.144,
+   "Huffman's insight is to build the code backwards"
+  ],
+  [
+   23.144,
+   25.133,
+   "\u2014 not from the top down,"
+  ],
+  [
+   25.133,
+   26.791,
+   "but from the bottom up,"
+  ],
+  [
+   26.791,
+   28.78,
+   "starting with the least likely symbols."
+  ],
+  [
+   29.411,
+   30.737,
+   "Here is the move."
+  ],
+  [
+   30.737,
+   33.39,
+   "Find the two least likely items and merge"
+  ],
+  [
+   33.39,
+   35.047,
+   "them into a small pair."
+  ],
+  [
+   35.047,
+   37.699,
+   "Their combined probability becomes a brand-new\nnode that"
+  ],
+  [
+   37.699,
+   39.026,
+   "stands in for both."
+  ],
+  [
+   39.657,
+   40.652,
+   "Then simply repeat."
+  ],
+  [
+   40.652,
+   40.983,
+   "Again,"
+  ],
+  [
+   40.983,
+   43.635,
+   "reach for the two least likely items \u2014"
+  ],
+  [
+   43.635,
+   46.288,
+   "whether they are original symbols or merged nodes"
+  ],
+  [
+   46.288,
+   48.94,
+   "\u2014 and join them under a new parent."
+  ],
+  [
+   49.571,
+   50.898,
+   "Watch the pieces combine,"
+  ],
+  [
+   50.898,
+   51.892,
+   "step by step,"
+  ],
+  [
+   51.892,
+   53.881,
+   "the rarest ones binding together first,"
+  ],
+  [
+   53.881,
+   56.533,
+   "until everything hangs from a single root at"
+  ],
+  [
+   56.533,
+   57.196,
+   "the top."
+  ],
+  [
+   57.196,
+   58.191,
+   "A whole tree,"
+  ],
+  [
+   58.191,
+   59.517,
+   "grown from the bottom."
+  ],
+  [
+   60.149,
+   60.48,
+   "Now,"
+  ],
+  [
+   60.48,
+   62.469,
+   "to read off each symbol's codeword,"
+  ],
+  [
+   62.469,
+   64.79,
+   "you just walk down from the root."
+  ],
+  [
+   64.79,
+   66.448,
+   "Every time you go left,"
+  ],
+  [
+   66.448,
+   67.442,
+   "write a zero."
+  ],
+  [
+   67.442,
+   69.1,
+   "Every time you go right,"
+  ],
+  [
+   69.1,
+   70.094,
+   "write a one."
+  ],
+  [
+   70.726,
+   72.384,
+   "Look where the symbols landed."
+  ],
+  [
+   72.384,
+   74.041,
+   "The common E sits high,"
+  ],
+  [
+   74.041,
+   75.367,
+   "with a short code."
+  ],
+  [
+   75.367,
+   77.025,
+   "The rare N sits deep,"
+  ],
+  [
+   77.025,
+   79.677,
+   "with a long one \u2014 exactly the trade"
+  ],
+  [
+   79.677,
+   80.34,
+   "we wanted."
+  ],
+  [
+   80.972,
+   83.624,
+   "And here is the property that makes it"
+  ],
+  [
+   83.624,
+   84.287,
+   "all work."
+  ],
+  [
+   84.287,
+   86.939,
+   "No codeword is the beginning of any other"
+  ],
+  [
+   86.939,
+   87.271,
+   "codeword."
+  ],
+  [
+   87.271,
+   88.928,
+   "It is a prefix-free code."
+  ],
+  [
+   89.56,
+   92.212,
+   "So a receiver reading the raw stream of"
+  ],
+  [
+   92.212,
+   94.864,
+   "bits never gets confused about where one symbol"
+  ],
+  [
+   94.864,
+   97.517,
+   "ends and the next begins \u2014 no commas,"
+  ],
+  [
+   97.517,
+   98.511,
+   "no separators needed."
+  ],
+  [
+   99.143,
+   100.137,
+   "Best of all,"
+  ],
+  [
+   100.137,
+   102.79,
+   "the average length lands right down at the"
+  ],
+  [
+   102.79,
+   103.121,
+   "entropy."
+  ],
+  [
+   103.121,
+   104.779,
+   "Huffman does not just compress."
+  ],
+  [
+   104.779,
+   107.431,
+   "It compresses provably about as well as anything"
+  ],
+  [
+   107.431,
+   108.094,
+   "ever could."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch10-huffman.wav",
+   "volume": 1.0
+  }
+ }
+}

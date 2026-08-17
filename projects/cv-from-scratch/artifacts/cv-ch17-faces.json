@@ -1,0 +1,510 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch17-faces_face",
+   "type": "cv_face",
+   "in_seconds": 0.0,
+   "out_seconds": 111.799,
+   "props": {
+    "dur": 112.299
+   }
+  },
+  {
+   "id": "cv-ch17-faces_ocr",
+   "type": "cv_ocr",
+   "in_seconds": 112.299,
+   "out_seconds": 191.232,
+   "props": {
+    "dur": 79.433
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.88,
+   "Now a task that feels like pure magic,"
+  ],
+  [
+   2.88,
+   5.04,
+   "but rests entirely on one simple,"
+  ],
+  [
+   5.04,
+   6.84,
+   "powerful idea \u2014 face recognition."
+  ],
+  [
+   7.471,
+   10.351,
+   "Let's think about why the obvious approach\nfails."
+  ],
+  [
+   10.983,
+   13.863,
+   "The naive plan would be to train a"
+  ],
+  [
+   13.863,
+   16.383,
+   "classifier on every person in the world."
+  ],
+  [
+   16.383,
+   18.543,
+   "But there are billions of people,"
+  ],
+  [
+   18.543,
+   21.063,
+   "and new ones you have never seen."
+  ],
+  [
+   21.063,
+   22.503,
+   "It is completely impossible."
+  ],
+  [
+   23.134,
+   25.294,
+   "So we do something much cleverer."
+  ],
+  [
+   25.926,
+   26.286,
+   "First,"
+  ],
+  [
+   26.286,
+   29.166,
+   "a pipeline finds the face in the image,"
+  ],
+  [
+   29.166,
+   32.045,
+   "marks its landmarks \u2014 the corners of the"
+  ],
+  [
+   32.045,
+   32.405,
+   "eyes,"
+  ],
+  [
+   32.405,
+   33.125,
+   "the nose,"
+  ],
+  [
+   33.125,
+   36.005,
+   "the mouth \u2014 and rotates it to a"
+  ],
+  [
+   36.005,
+   36.365,
+   "standard,"
+  ],
+  [
+   36.365,
+   37.085,
+   "straight-on position."
+  ],
+  [
+   37.717,
+   39.517,
+   "Then comes the key part."
+  ],
+  [
+   39.517,
+   42.397,
+   "An embedding network turns that aligned\nface into"
+  ],
+  [
+   42.397,
+   43.837,
+   "a list of numbers."
+  ],
+  [
+   44.468,
+   45.188,
+   "A vector."
+  ],
+  [
+   45.188,
+   48.068,
+   "Think of it as a fingerprint made of,"
+  ],
+  [
+   48.068,
+   48.428,
+   "say,"
+  ],
+  [
+   48.428,
+   50.228,
+   "five hundred and twelve numbers."
+  ],
+  [
+   50.86,
+   53.74,
+   "And here is the trick that makes it"
+  ],
+  [
+   53.74,
+   54.46,
+   "all work."
+  ],
+  [
+   55.091,
+   57.971,
+   "The network is trained so that photos of"
+  ],
+  [
+   57.971,
+   60.851,
+   "the same person always land at nearby\nvectors,"
+  ],
+  [
+   60.851,
+   63.731,
+   "and photos of different people land far\napart."
+  ],
+  [
+   64.362,
+   65.082,
+   "So now,"
+  ],
+  [
+   65.082,
+   67.242,
+   "to check whether two faces match,"
+  ],
+  [
+   67.242,
+   69.042,
+   "we do not classify anything."
+  ],
+  [
+   69.674,
+   72.554,
+   "We just measure the distance between their\ntwo"
+  ],
+  [
+   72.554,
+   72.914,
+   "vectors."
+  ],
+  [
+   73.545,
+   74.265,
+   "Same person,"
+  ],
+  [
+   74.265,
+   76.065,
+   "in a completely new photo?"
+  ],
+  [
+   76.065,
+   77.865,
+   "The vectors sit close together."
+  ],
+  [
+   77.865,
+   79.305,
+   "The distance is small."
+  ],
+  [
+   79.305,
+   80.745,
+   "It is a match."
+  ],
+  [
+   81.377,
+   82.817,
+   "A different person entirely?"
+  ],
+  [
+   82.817,
+   84.617,
+   "The vectors are far apart."
+  ],
+  [
+   84.617,
+   86.057,
+   "The distance is large."
+  ],
+  [
+   86.057,
+   86.777,
+   "No match."
+  ],
+  [
+   87.408,
+   90.288,
+   "And the real beauty is this \u2014 you"
+  ],
+  [
+   90.288,
+   93.168,
+   "can enroll a brand-new person with a\nsingle"
+  ],
+  [
+   93.168,
+   93.528,
+   "photo,"
+  ],
+  [
+   93.528,
+   95.328,
+   "and never retrain the model."
+  ],
+  [
+   95.328,
+   98.208,
+   "Their photo just becomes one more vector\nto"
+  ],
+  [
+   98.208,
+   98.928,
+   "compare against."
+  ],
+  [
+   99.559,
+   100.279,
+   "This idea,"
+  ],
+  [
+   100.279,
+   102.439,
+   "of turning things into comparable vectors,"
+  ],
+  [
+   102.439,
+   105.319,
+   "is one of the most powerful ideas in"
+  ],
+  [
+   105.319,
+   106.759,
+   "all of machine learning,"
+  ],
+  [
+   106.759,
+   109.639,
+   "and it will come back when we reach"
+  ],
+  [
+   109.639,
+   111.799,
+   "language models in a few chapters."
+  ],
+  [
+   112.299,
+   115.229,
+   "Here is another everyday task that is\nsecretly"
+  ],
+  [
+   115.229,
+   118.159,
+   "two vision problems stacked together \u2014\nreading text"
+  ],
+  [
+   118.159,
+   119.258,
+   "from an image."
+  ],
+  [
+   119.258,
+   121.455,
+   "We call it O C R,"
+  ],
+  [
+   121.455,
+   122.554,
+   "optical character recognition."
+  ],
+  [
+   123.185,
+   126.115,
+   "Think about all the text that lives in"
+  ],
+  [
+   126.115,
+   127.214,
+   "the visual world."
+  ],
+  [
+   127.214,
+   127.947,
+   "Street signs."
+  ],
+  [
+   127.947,
+   128.679,
+   "License plates."
+  ],
+  [
+   128.679,
+   129.045,
+   "Receipts."
+  ],
+  [
+   129.045,
+   131.243,
+   "Whole pages of a scanned book."
+  ],
+  [
+   131.874,
+   134.804,
+   "None of it arrives as neat digital\ncharacters."
+  ],
+  [
+   134.804,
+   136.269,
+   "It arrives as pixels."
+  ],
+  [
+   136.901,
+   139.465,
+   "So we solve it in two stages."
+  ],
+  [
+   140.096,
+   143.026,
+   "Stage one is detection \u2014 exactly the idea"
+  ],
+  [
+   143.026,
+   144.125,
+   "we just learned."
+  ],
+  [
+   144.125,
+   145.956,
+   "Find where the text is,"
+  ],
+  [
+   145.956,
+   148.886,
+   "and draw a box around each word or"
+  ],
+  [
+   148.886,
+   149.252,
+   "line."
+  ],
+  [
+   149.884,
+   152.814,
+   "Watch the boxes snap onto the stop sign,"
+  ],
+  [
+   152.814,
+   153.913,
+   "the exit sign,"
+  ],
+  [
+   153.913,
+   155.011,
+   "the shop hours."
+  ],
+  [
+   155.643,
+   157.108,
+   "Stage two is recognition."
+  ],
+  [
+   157.108,
+   158.207,
+   "Take each box,"
+  ],
+  [
+   158.207,
+   160.77,
+   "and turn those pixels into actual\ncharacters."
+  ],
+  [
+   161.402,
+   163.599,
+   "Read the letters out \u2014 S,"
+  ],
+  [
+   163.599,
+   163.966,
+   "T,"
+  ],
+  [
+   163.966,
+   164.332,
+   "O,"
+  ],
+  [
+   164.332,
+   166.895,
+   "P \u2014 and produce the word stop."
+  ],
+  [
+   167.527,
+   169.358,
+   "Notice the shape of this."
+  ],
+  [
+   169.358,
+   170.457,
+   "It is detect,"
+  ],
+  [
+   170.457,
+   173.387,
+   "then classify \u2014 the same one-two pattern\nthat"
+  ],
+  [
+   173.387,
+   175.951,
+   "runs through so much of computer vision."
+  ],
+  [
+   176.582,
+   179.512,
+   "And it is everywhere in the real world."
+  ],
+  [
+   179.512,
+   180.977,
+   "It digitizes old documents,"
+  ],
+  [
+   180.977,
+   182.808,
+   "reads plates at parking gates,"
+  ],
+  [
+   182.808,
+   185.006,
+   "scans receipts into your expense app,"
+  ],
+  [
+   185.006,
+   187.936,
+   "and powers the live camera translation\nthat rewrites"
+  ],
+  [
+   187.936,
+   190.866,
+   "a foreign menu right in front of your"
+  ],
+  [
+   190.866,
+   191.232,
+   "eyes."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch17-faces.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+  "cuts": [
+    {
+      "id": "s70_recap",
+      "type": "ait_recap",
+      "in_seconds": 0.0,
+      "out_seconds": 51.857,
+      "props": {
+        "kicker": "RECAP \u2014 THE WHOLE MAP",
+        "title": "AI trading in one breath",
+        "items": [
+          "AI trading = the Data \u2192 Model \u2192 Signal \u2192 Risk \u2192 Order pipeline, automated",
+          "AI only lives in the model box \u2014 it finds patterns, it can't predict",
+          "Institutions win on speed and scale; your only hope is a smarter, slower niche",
+          "Most bots die of overfitting, costs, and latency \u2014 the backtest is a hypothesis",
+          "Start no-code, keep money in your own broker, and follow SEBI's rules",
+          "Build in code box-by-box; add AI last; walk-forward is your honesty test",
+          "The edge is a process you build, not a product you buy"
+        ],
+        "closer": "Trade the process, not the hype. Thanks for watching.",
+        "dur": 52.357
+      }
+    },
+    {
+      "id": "s71_disclaimer",
+      "type": "ait_list",
+      "in_seconds": 52.357,
+      "out_seconds": 96.374,
+      "props": {
+        "kicker": "BEFORE YOU GO",
+        "title": "One important disclaimer",
+        "tone": "neutral",
+        "color": "risk",
+        "items": [
+          {
+            "h": "This is education, not investment advice",
+            "sub": "Nothing here is a buy, sell, or hold recommendation for anyone."
+          },
+          {
+            "h": "Markets carry real risk of real loss",
+            "sub": "You can lose money, quickly. Never risk what you can't afford to lose."
+          },
+          {
+            "h": "Verify every rule and figure yourself",
+            "sub": "Regulations and costs change \u2014 confirm on official SEBI and exchange sites."
+          },
+          {
+            "h": "For personal advice, see a SEBI-registered advisor",
+            "sub": "A licensed professional can look at your specific situation."
+          }
+        ],
+        "caption": "Learn deeply, act carefully, and let the process protect you.",
+        "dur": 44.517
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "ait/ch7.wav",
+      "volume": 1.0
+    }
+  }
+}

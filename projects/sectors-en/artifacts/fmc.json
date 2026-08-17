@@ -1,0 +1,969 @@
+{
+  "cuts": [
+    {
+      "id": "m_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 37.572,
+      "props": {
+        "title": "How to Analyse FMCG Stocks",
+        "sub": "Consumer staples · fundamentals · technicals · strategies",
+        "kicker": "SECTOR DEEP-DIVE · FMCG",
+        "dur": 38.072
+      }
+    },
+    {
+      "id": "m_overview",
+      "type": "sm_iconcards",
+      "in_seconds": 38.072,
+      "out_seconds": 91.788,
+      "props": {
+        "kicker": "SUB-SECTORS",
+        "title": "What sits inside FMCG",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🍜",
+            "k": "Food & beverages",
+            "v": "Packaged foods, tea, snacks — everyday staples with steady demand",
+            "chip": "Food"
+          },
+          {
+            "emoji": "🧼",
+            "k": "Home & personal care",
+            "v": "Soaps, detergents, cosmetics — high-frequency, brand-driven",
+            "chip": "HPC"
+          },
+          {
+            "emoji": "🚬",
+            "k": "Staples & tobacco",
+            "v": "Cigarettes & basics — cash-generative, very pricing-power-rich",
+            "chip": "Cash"
+          },
+          {
+            "emoji": "✨",
+            "k": "Premium & new-age",
+            "v": "Premium and D2C brands riding India's trade-up — the faster growth",
+            "chip": "Premium"
+          }
+        ],
+        "dur": 54.216
+      }
+    },
+    {
+      "id": "m_drivers",
+      "type": "sm_iconcards",
+      "in_seconds": 92.288,
+      "out_seconds": 154.62,
+      "props": {
+        "kicker": "WHAT MOVES FMCG",
+        "title": "The forces that drive the sector",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🏘️",
+            "k": "Rural demand",
+            "v": "About a third of sales — monsoon & farm income swing the whole sector",
+            "chip": "Rural"
+          },
+          {
+            "emoji": "🛢️",
+            "k": "Input costs",
+            "v": "Palm oil, crude derivatives & packaging drive margins up and down",
+            "chip": "Costs"
+          },
+          {
+            "emoji": "💰",
+            "k": "Pricing power",
+            "v": "Ability to pass on cost rises without losing customers — the real moat",
+            "chip": "Power"
+          },
+          {
+            "emoji": "✨",
+            "k": "Premiumisation",
+            "v": "Consumers trading up to costlier products — the sector's growth engine",
+            "chip": "Growth"
+          }
+        ],
+        "dur": 62.832
+      }
+    },
+    {
+      "id": "m_fund",
+      "type": "sm_iconcards",
+      "in_seconds": 155.12,
+      "out_seconds": 230.248,
+      "props": {
+        "kicker": "FUNDAMENTALS · CORE",
+        "title": "The metrics unique to FMCG",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "📦",
+            "k": "Volume growth",
+            "v": "The #1 metric — real growth in units sold, NOT just value inflated by price hikes",
+            "chip": "Real growth"
+          },
+          {
+            "emoji": "🏘️",
+            "k": "Rural vs urban",
+            "v": "Rural is ~a third of sales — its recovery (monsoon, income) swings the sector",
+            "chip": "Demand"
+          },
+          {
+            "emoji": "💰",
+            "k": "Gross margin",
+            "v": "Input costs — palm oil, crude derivatives — drive margins; pricing power protects them",
+            "chip": "Margins"
+          },
+          {
+            "emoji": "🛒",
+            "k": "Distribution & premium",
+            "v": "Reach into millions of stores + premiumisation (trading up) = the growth levers",
+            "chip": "Moat"
+          }
+        ],
+        "dur": 75.628
+      }
+    },
+    {
+      "id": "m_tech",
+      "type": "sm_iconcards",
+      "in_seconds": 230.748,
+      "out_seconds": 286.268,
+      "props": {
+        "kicker": "TECHNICAL ANALYSIS",
+        "title": "Reading FMCG on the chart",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "📈",
+            "k": "Nifty FMCG",
+            "v": "The sector index — usually a smooth, low-volatility trend",
+            "chip": "Index"
+          },
+          {
+            "emoji": "🛡️",
+            "k": "Defensive rotation",
+            "v": "Outperforms when markets get scared — a 'flight to safety' signal",
+            "chip": "Safe haven"
+          },
+          {
+            "emoji": "🌧️",
+            "k": "Monsoon & rural cues",
+            "v": "A good monsoon lifts rural demand hopes — a recurring seasonal driver",
+            "chip": "Seasonal"
+          },
+          {
+            "emoji": "🐌",
+            "k": "Low beta",
+            "v": "Moves less than the market — gentle trends, not sharp swings",
+            "chip": "Stable"
+          }
+        ],
+        "dur": 56.02
+      }
+    },
+    {
+      "id": "m_strat",
+      "type": "sm_iconcards",
+      "in_seconds": 286.768,
+      "out_seconds": 358.7,
+      "props": {
+        "kicker": "STRATEGIES",
+        "title": "Strategies for FMCG",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🌳",
+            "k": "Steady compounders",
+            "v": "Own the market-leading brands for slow, reliable long-term compounding",
+            "chip": "Hold"
+          },
+          {
+            "emoji": "📉",
+            "k": "Buy input-cost dips",
+            "v": "When rising input costs dent margins & the stock, quality names can be accumulated",
+            "chip": "Contrarian"
+          },
+          {
+            "emoji": "✨",
+            "k": "Premiumisation plays",
+            "v": "Favour firms riding the trade-up to premium products & new categories",
+            "chip": "Growth"
+          },
+          {
+            "emoji": "🛡️",
+            "k": "Portfolio ballast",
+            "v": "Use FMCG to steady a portfolio — it cushions the fall when cyclicals drop",
+            "chip": "Defence"
+          }
+        ],
+        "dur": 72.432
+      }
+    },
+    {
+      "id": "m_check",
+      "type": "sm_checklist",
+      "in_seconds": 359.2,
+      "out_seconds": 421.744,
+      "props": {
+        "kicker": "HOW TO EVALUATE",
+        "title": "Evaluating an FMCG stock — checklist",
+        "color": "#34D399",
+        "icon": "✅",
+        "items": [
+          "Look at VOLUME growth, not just value/sales growth",
+          "Check rural vs urban demand trends",
+          "Watch gross margins & the company's pricing power",
+          "Assess distribution reach & premiumisation runway",
+          "Compare valuation (P/E) to its own history — don't overpay"
+        ],
+        "dur": 63.044
+      }
+    },
+    {
+      "id": "m_risk",
+      "type": "sm_myths",
+      "in_seconds": 422.244,
+      "out_seconds": 484.844,
+      "props": {
+        "kicker": "WHAT TO AVOID",
+        "title": "FMCG sector — the risks",
+        "mythLabel": "✗ TRAP",
+        "factLabel": "✓ REALITY",
+        "pairs": [
+          {
+            "m": "It's safe, so any price is fine",
+            "f": "FMCG trades at rich P/E — overpaying caps returns for years"
+          },
+          {
+            "m": "Sales value is up, so it's growing",
+            "f": "Check VOLUME — value can rise on price hikes while units shrink"
+          },
+          {
+            "m": "Defensives never fall",
+            "f": "They fall less, but a stretched premium stock can still de-rate"
+          }
+        ],
+        "dur": 63.1
+      }
+    },
+    {
+      "id": "m_recap",
+      "type": "sm_recap",
+      "in_seconds": 485.344,
+      "out_seconds": 525.308,
+      "props": {
+        "title": "FMCG sector — recap",
+        "items": [
+          "Volume growth is the #1 metric — not value",
+          "Rural/urban split, gross margins, distribution moat",
+          "The great defensive — low beta, flight-to-safety",
+          "Strategy: steady compounders; buy input-cost dips",
+          "Biggest risk: overpaying for a rich valuation"
+        ],
+        "closer": "Great businesses — just never overpay for calm.",
+        "dur": 40.464
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      5.248,
+      "The FMCG sector — fast-moving consumer goods, the soaps, foods,"
+    ],
+    [
+      5.248,
+      8.248,
+      "and everyday products in every home."
+    ],
+    [
+      8.248,
+      11.746,
+      "This is the great defensive of the market."
+    ],
+    [
+      11.746,
+      16.745,
+      "People buy toothpaste and biscuits in booms and busts alike,"
+    ],
+    [
+      16.745,
+      19.744,
+      "so demand is steady and predictable."
+    ],
+    [
+      19.744,
+      25.409,
+      "That stability makes these the classic slow-and-steady compounders —"
+    ],
+    [
+      25.409,
+      29.991,
+      "but it comes at a price, quite literally, in valuation."
+    ],
+    [
+      29.991,
+      33.407,
+      "Let's learn the fundamentals, technicals,"
+    ],
+    [
+      33.407,
+      37.572,
+      "and strategies for this calm corner of the market."
+    ],
+    [
+      38.072,
+      41.659,
+      "First, a quick map of what sits inside FMCG."
+    ],
+    [
+      41.659,
+      46.631,
+      "There's food and beverages — packaged foods, tea, and snacks,"
+    ],
+    [
+      46.631,
+      50.543,
+      "everyday staples with beautifully steady demand."
+    ],
+    [
+      50.543,
+      54.7,
+      "There's home and personal care — soaps, detergents,"
+    ],
+    [
+      54.7,
+      59.754,
+      "and cosmetics — high-frequency, deeply brand-driven purchases."
+    ],
+    [
+      59.754,
+      63.504,
+      "There are the pure staples and tobacco names —"
+    ],
+    [
+      63.504,
+      65.378,
+      "hugely cash-generative,"
+    ],
+    [
+      65.378,
+      70.351,
+      "with some of the strongest pricing power in the whole market."
+    ],
+    [
+      70.351,
+      73.692,
+      "And there's the premium and new-age end —"
+    ],
+    [
+      73.692,
+      79.235,
+      "premium brands and direct-to-consumer names riding India's trade-up,"
+    ],
+    [
+      79.235,
+      83.963,
+      "where the faster growth hides in an otherwise slow sector."
+    ],
+    [
+      83.963,
+      86.653,
+      "All share the same defensive DNA,"
+    ],
+    [
+      86.653,
+      91.788,
+      "but their growth rates and valuations differ — so know the mix."
+    ],
+    [
+      92.288,
+      93.732,
+      "What drives FMCG?"
+    ],
+    [
+      93.732,
+      95.345,
+      "Four gentle forces."
+    ],
+    [
+      95.345,
+      99.761,
+      "The first is rural demand, roughly a third of sales,"
+    ],
+    [
+      99.761,
+      103.837,
+      "which swings with the monsoon and farm incomes —"
+    ],
+    [
+      103.837,
+      108.253,
+      "a good monsoon is a genuine tailwind for the sector."
+    ],
+    [
+      108.253,
+      113.518,
+      "The second is input costs — palm oil, crude-derived materials,"
+    ],
+    [
+      113.518,
+      114.792,
+      "and packaging —"
+    ],
+    [
+      114.792,
+      119.548,
+      "which push margins up and down as commodity prices move."
+    ],
+    [
+      119.548,
+      121.925,
+      "The third is pricing power —"
+    ],
+    [
+      121.925,
+      128.804,
+      "a company's ability to pass those cost rises on to customers without losing them."
+    ],
+    [
+      128.804,
+      132.201,
+      "That is the real moat in consumer goods,"
+    ],
+    [
+      132.201,
+      136.702,
+      "and it separates the great brands from the also-rans."
+    ],
+    [
+      136.702,
+      139.249,
+      "The fourth is premiumisation —"
+    ],
+    [
+      139.249,
+      144.345,
+      "consumers steadily trading up to costlier, fancier products."
+    ],
+    [
+      144.345,
+      146.468,
+      "In a slow-growing sector,"
+    ],
+    [
+      146.468,
+      150.119,
+      "this is where the faster growth comes from."
+    ],
+    [
+      150.119,
+      154.62,
+      "Now, the metrics that reveal a healthy FMCG business."
+    ],
+    [
+      155.12,
+      158.372,
+      "FMCG has its own gentle set of metrics."
+    ],
+    [
+      158.372,
+      159.206,
+      "The first,"
+    ],
+    [
+      159.206,
+      163.708,
+      "and the one that separates the real from the illusory,"
+    ],
+    [
+      163.708,
+      167.961,
+      "is volume growth — the growth in actual units sold,"
+    ],
+    [
+      167.961,
+      171.13,
+      "not the value inflated by price hikes."
+    ],
+    [
+      171.13,
+      177.467,
+      "A company can grow sales value by raising prices while selling fewer packs —"
+    ],
+    [
+      177.467,
+      179.134,
+      "that is not healthy."
+    ],
+    [
+      179.134,
+      182.053,
+      "Always look for real volume growth."
+    ],
+    [
+      182.053,
+      185.638,
+      "The second is the rural-versus-urban split."
+    ],
+    [
+      185.638,
+      189.39,
+      "Rural India is roughly a third of FMCG sales,"
+    ],
+    [
+      189.39,
+      194.643,
+      "and its ups and downs — driven by the monsoon and farm income —"
+    ],
+    [
+      194.643,
+      196.561,
+      "swing the whole sector."
+    ],
+    [
+      196.561,
+      198.729,
+      "The third is gross margin."
+    ],
+    [
+      198.729,
+      204.399,
+      "Input costs like palm oil and crude-derived packaging drive margins,"
+    ],
+    [
+      204.399,
+      206.984,
+      "and a company's pricing power —"
+    ],
+    [
+      206.984,
+      211.987,
+      "its ability to pass on cost rises without losing customers —"
+    ],
+    [
+      211.987,
+      213.822,
+      "is what protects them."
+    ],
+    [
+      213.822,
+      216.406,
+      "The fourth is the moat itself —"
+    ],
+    [
+      216.406,
+      221.493,
+      "a vast distribution network reaching millions of tiny stores,"
+    ],
+    [
+      221.493,
+      226.746,
+      "plus premiumisation, as customers trade up to fancier products."
+    ],
+    [
+      226.746,
+      230.248,
+      "Those are the sector's real growth levers."
+    ],
+    [
+      230.748,
+      234.696,
+      "On the chart, FMCG is the calmest sector of all."
+    ],
+    [
+      234.696,
+      239.467,
+      "Track the Nifty FMCG index, which usually traces a smooth,"
+    ],
+    [
+      239.467,
+      243.168,
+      "low-volatility trend rather than wild swings."
+    ],
+    [
+      243.168,
+      246.54,
+      "Its key technical role is as a defensive."
+    ],
+    [
+      246.54,
+      250.242,
+      "When markets get scared and money flees risk,"
+    ],
+    [
+      250.242,
+      252.38,
+      "FMCG tends to outperform —"
+    ],
+    [
+      252.38,
+      263.978,
+      "so its relative strength rising versus the Nifty is a classic flight-to-safety signal that tells you something about the whole market's mood."
+    ],
+    [
+      263.978,
+      266.034,
+      "Watch the seasonal cues —"
+    ],
+    [
+      266.034,
+      272.367,
+      "a good monsoon forecast lifts hopes for rural demand and can move the sector."
+    ],
+    [
+      272.367,
+      274.753,
+      "And understand its low beta —"
+    ],
+    [
+      274.753,
+      278.783,
+      "it moves less than the market in both directions."
+    ],
+    [
+      278.783,
+      282.402,
+      "That means gentle trends, smaller drawdowns,"
+    ],
+    [
+      282.402,
+      286.268,
+      "and a place to hide, not a place for fireworks."
+    ],
+    [
+      286.768,
+      288.61,
+      "How do you play FMCG?"
+    ],
+    [
+      288.61,
+      290.628,
+      "Four gentle strategies."
+    ],
+    [
+      290.628,
+      294.312,
+      "First, simply own the steady compounders —"
+    ],
+    [
+      294.312,
+      299.312,
+      "the market-leading brands with unbreakable distribution —"
+    ],
+    [
+      299.312,
+      302.997,
+      "for slow, reliable, long-term compounding."
+    ],
+    [
+      302.997,
+      306.505,
+      "This is a buy-and-hold sector by nature."
+    ],
+    [
+      306.505,
+      309.225,
+      "Second, buy the input-cost dip."
+    ],
+    [
+      309.225,
+      314.05,
+      "When commodity costs rise and temporarily dent margins,"
+    ],
+    [
+      314.05,
+      316.769,
+      "a quality FMCG stock may fall —"
+    ],
+    [
+      316.769,
+      320.892,
+      "and that fear can be a fine accumulation point,"
+    ],
+    [
+      320.892,
+      324.313,
+      "because the costs eventually normalise."
+    ],
+    [
+      324.313,
+      327.822,
+      "Third, favour the premiumisation plays —"
+    ],
+    [
+      327.822,
+      330.804,
+      "the firms riding India's trade-up,"
+    ],
+    [
+      330.804,
+      335.805,
+      "as consumers move to premium products and new categories."
+    ],
+    [
+      335.805,
+      340.542,
+      "That's where the faster growth hides in a slow sector."
+    ],
+    [
+      340.542,
+      343.875,
+      "Fourth, use FMCG as portfolio ballast."
+    ],
+    [
+      343.875,
+      348.173,
+      "Its job in your portfolio is to steady the ship —"
+    ],
+    [
+      348.173,
+      353.612,
+      "to cushion the fall when cyclicals like autos and metals drop."
+    ],
+    [
+      353.612,
+      358.7,
+      "The one thing to always respect here is the price you pay."
+    ],
+    [
+      359.2,
+      362.209,
+      "Let's turn FMCG into a checklist."
+    ],
+    [
+      362.209,
+      363.212,
+      "Five steps."
+    ],
+    [
+      363.212,
+      368.135,
+      "Step one — look at volume growth, the real units sold,"
+    ],
+    [
+      368.135,
+      374.243,
+      "not just value or sales growth that can be inflated by price hikes."
+    ],
+    [
+      374.243,
+      379.167,
+      "Step two — check the rural-versus-urban demand trends,"
+    ],
+    [
+      379.167,
+      381.902,
+      "since rural swings the sector."
+    ],
+    [
+      381.902,
+      386.278,
+      "Step three — watch gross margins and, above all,"
+    ],
+    [
+      386.278,
+      388.922,
+      "the company's pricing power —"
+    ],
+    [
+      388.922,
+      392.022,
+      "its ability to pass on cost rises."
+    ],
+    [
+      392.022,
+      393.025,
+      "Step four —"
+    ],
+    [
+      393.025,
+      398.495,
+      "assess the distribution reach and the premiumisation runway,"
+    ],
+    [
+      398.495,
+      400.957,
+      "the two real growth levers."
+    ],
+    [
+      400.957,
+      401.96,
+      "Step five —"
+    ],
+    [
+      401.96,
+      407.612,
+      "and always compare the valuation to the company's own history,"
+    ],
+    [
+      407.612,
+      412.353,
+      "so you don't overpay for the comfort of a defensive."
+    ],
+    [
+      412.353,
+      413.083,
+      "In FMCG,"
+    ],
+    [
+      413.083,
+      419.829,
+      "the business is usually great; the entry price is what you must get right."
+    ],
+    [
+      419.829,
+      421.744,
+      "Now, the quiet traps."
+    ],
+    [
+      422.244,
+      424.652,
+      "Now the quiet traps in FMCG."
+    ],
+    [
+      424.652,
+      427.059,
+      "The first, and the big one —"
+    ],
+    [
+      427.059,
+      430.585,
+      "assuming that because the sector is safe,"
+    ],
+    [
+      430.585,
+      432.821,
+      "any price is worth paying."
+    ],
+    [
+      432.821,
+      437.55,
+      "FMCG leaders trade at rich price-to-earnings multiples,"
+    ],
+    [
+      437.55,
+      439.184,
+      "and if you overpay,"
+    ],
+    [
+      439.184,
+      444.859,
+      "your returns can be flat for years even as the business does fine."
+    ],
+    [
+      444.859,
+      448.729,
+      "Safety is not the same as a good entry price."
+    ],
+    [
+      448.729,
+      449.76,
+      "The second —"
+    ],
+    [
+      449.76,
+      454.576,
+      "celebrating rising sales value without checking volumes."
+    ],
+    [
+      454.576,
+      455.522,
+      "As we said,"
+    ],
+    [
+      455.522,
+      460.595,
+      "value can climb on price hikes while units actually shrink."
+    ],
+    [
+      460.595,
+      464.379,
+      "Always look under the hood at volume growth."
+    ],
+    [
+      464.379,
+      468.162,
+      "The third — believing defensives never fall."
+    ],
+    [
+      468.162,
+      472.634,
+      "They fall less than cyclicals, yes, but a stretched,"
+    ],
+    [
+      472.634,
+      480.459,
+      "premium-priced FMCG stock can still de-rate meaningfully when its lofty valuation corrects."
+    ],
+    [
+      480.459,
+      484.844,
+      "Own the quality, but never overpay for the comfort."
+    ],
+    [
+      485.344,
+      487.148,
+      "FMCG, in one breath."
+    ],
+    [
+      487.148,
+      491.839,
+      "Volume growth is the number-one metric — real units,"
+    ],
+    [
+      491.839,
+      494.095,
+      "not price-inflated value."
+    ],
+    [
+      494.095,
+      497.974,
+      "Watch the rural-urban split, gross margins,"
+    ],
+    [
+      497.974,
+      500.319,
+      "and the distribution moat."
+    ],
+    [
+      500.319,
+      502.665,
+      "It's the great defensive —"
+    ],
+    [
+      502.665,
+      507.897,
+      "low beta and a flight-to-safety haven when markets wobble."
+    ],
+    [
+      507.897,
+      508.98,
+      "In strategy,"
+    ],
+    [
+      508.98,
+      513.941,
+      "own the steady compounders and buy the input-cost dips,"
+    ],
+    [
+      513.941,
+      521.429,
+      "but never forget the one real risk: overpaying for the comfort of a rich valuation."
+    ],
+    [
+      521.429,
+      525.308,
+      "Next, the deepest cyclical of all — metals."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sx/fmc.wav",
+      "volume": 1.0
+    }
+  }
+}

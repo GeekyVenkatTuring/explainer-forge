@@ -1,0 +1,1945 @@
+{
+ "cuts": [
+  {
+   "id": "dp03-decorator_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 19.567,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 03",
+    "line1": "One class, a dozen",
+    "line2": "booleans, and a mess",
+    "sub": "a coffee menu that doubles in size every time the barista learns a trick",
+    "dur": 20.067
+   }
+  },
+  {
+   "id": "dp03-decorator_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 20.067,
+   "out_seconds": 48.292,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Pricing a customized coffee",
+    "situation": "A customer orders an espresso, then customizes it \u2014 add milk, add caramel, add whip. You need the final price and a description.",
+    "actors": [
+     {
+      "emoji": "\u2615",
+      "label": "Espresso"
+     },
+     {
+      "emoji": "\ud83e\udd5b",
+      "label": "+ Milk"
+     },
+     {
+      "emoji": "\ud83c\udf6f",
+      "label": "+ Caramel"
+     }
+    ],
+    "ask": "Any add-on, any combination, even twice. What's the price?",
+    "dur": 28.725
+   }
+  },
+  {
+   "id": "dp03-decorator_naive",
+   "type": "dp_code",
+   "in_seconds": 48.792,
+   "out_seconds": 75.779,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "A flag for each extra.",
+    "file": "Coffee.java",
+    "lines": [
+     {
+      "t": "class Coffee {"
+     },
+     {
+      "t": "  boolean milk, caramel, whip;"
+     },
+     {
+      "t": "  double cost() {"
+     },
+     {
+      "t": "    double c = 2.00;              // base espresso"
+     },
+     {
+      "t": "    if (milk)    c += 0.50;",
+      "s": "hi"
+     },
+     {
+      "t": "    if (caramel) c += 0.60;",
+      "s": "hi"
+     },
+     {
+      "t": "    if (whip)    c += 0.70;",
+      "s": "hi"
+     },
+     {
+      "t": "    return c;"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "A boolean per add-on, an if per boolean. Feels tidy enough.",
+    "dur": 27.487
+   }
+  },
+  {
+   "id": "dp03-decorator_pain",
+   "type": "dp_pain",
+   "in_seconds": 76.279,
+   "out_seconds": 115.529,
+   "props": {
+    "title": "\"Add oat milk, hazelnut, extra shot\u2026\"",
+    "file": "Coffee.java",
+    "lines": [
+     {
+      "t": "  boolean milk, caramel, whip,"
+     },
+     {
+      "t": "      oat, hazelnut, extraShot;   // and counting",
+      "s": "hi"
+     },
+     {
+      "t": "  double cost() {"
+     },
+     {
+      "t": "    if (milk)     c += 0.50;",
+      "s": "dim"
+     },
+     {
+      "t": "    if (caramel)  c += 0.60;",
+      "s": "dim"
+     },
+     {
+      "t": "    if (oat)      c += 0.55;",
+      "s": "hi"
+     },
+     {
+      "t": "    if (hazelnut) c += 0.60;",
+      "s": "hi"
+     },
+     {
+      "t": "    // ...and the same list again in desc()"
+     },
+     {
+      "t": "  }"
+     }
+    ],
+    "smell": "Class explosion + you can't order it twice",
+    "touched": [
+     "cost() \u2014 new if",
+     "desc() \u2014 same list",
+     "calories() \u2014 same list",
+     "double caramel? impossible"
+    ],
+    "dur": 39.75
+   }
+  },
+  {
+   "id": "dp03-decorator_insight",
+   "type": "dp_insight",
+   "in_seconds": 116.029,
+   "out_seconds": 151.805,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "A drink has a cost and a description",
+     "Every add-on wraps a drink",
+     "The result is still just a drink"
+    ],
+    "varies": [
+     "Which extras are on the drink",
+     "How they stack \u2014 any order, any count",
+     "New extras invented all the time"
+    ],
+    "principle": "Make each extra a wrapper around a drink that adds a little \u2014 and is itself a drink.",
+    "dur": 36.276
+   }
+  },
+  {
+   "id": "dp03-decorator_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 152.305,
+   "out_seconds": 188.398,
+   "props": {
+    "title": "Think of gift wrapping",
+    "emoji": "\ud83c\udf81",
+    "analogy": "A gift, in a box, in wrapping paper, with a bow.",
+    "map": [
+     {
+      "from": "The gift inside",
+      "to": "the base Espresso"
+     },
+     {
+      "from": "Each layer of wrap",
+      "to": "one add-on wrapper"
+     },
+     {
+      "from": "Still one parcel",
+      "to": "still implements Beverage"
+     },
+     {
+      "from": "Add another layer",
+      "to": "wrap it once more"
+     }
+    ],
+    "breaks": "with a real gift the outer layer hides the inside \u2014 here each wrapper asks the layer within for its price, then adds its own.",
+    "dur": 36.593
+   }
+  },
+  {
+   "id": "dp03-decorator_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 188.898,
+   "out_seconds": 209.227,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "A drink is a drink",
+    "file": "Beverage.java",
+    "lines": [
+     {
+      "t": "// the fixed shape: anything drinkable"
+     },
+     {
+      "t": "interface Beverage {",
+      "s": "add"
+     },
+     {
+      "t": "  double cost();",
+      "s": "add"
+     },
+     {
+      "t": "  String desc();",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": ""
+     },
+     {
+      "t": "class Espresso implements Beverage {",
+      "s": "add"
+     },
+     {
+      "t": "  public double cost() { return 2.00; }",
+      "s": "add"
+     },
+     {
+      "t": "  public String desc() { return \"espresso\"; }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "note": "The base drink, with no add-ons, knows only itself.",
+    "dur": 20.829
+   }
+  },
+  {
+   "id": "dp03-decorator_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 209.727,
+   "out_seconds": 239.557,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "A wrapper that is also a drink",
+    "file": "AddOn.java",
+    "lines": [
+     {
+      "t": "// wraps a Beverage, and IS a Beverage"
+     },
+     {
+      "t": "abstract class AddOn implements Beverage {",
+      "s": "add"
+     },
+     {
+      "t": "  protected final Beverage inner;",
+      "s": "add"
+     },
+     {
+      "t": "  AddOn(Beverage inner) { this.inner = inner; }",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "class Milk extends AddOn {",
+      "s": "add"
+     },
+     {
+      "t": "  Milk(Beverage b) { super(b); }",
+      "s": "add"
+     },
+     {
+      "t": "  public double cost() { return inner.cost() + 0.50; }",
+      "s": "add"
+     },
+     {
+      "t": "  public String desc() { return inner.desc() + \", milk\"; }",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "The wrapper holds the layer inside, and adds to whatever it returns.",
+    "dur": 30.33
+   }
+  },
+  {
+   "id": "dp03-decorator_try",
+   "type": "dp_try",
+   "in_seconds": 240.057,
+   "out_seconds": 263.074,
+   "props": {
+    "title": "Write the Whip wrapper",
+    "file": "Whip.java",
+    "lines": [
+     {
+      "t": "class Whip extends AddOn {"
+     },
+     {
+      "t": "  Whip(Beverage b) { super(b); }"
+     },
+     {
+      "t": "  // \u25af your line: cost is inner + 0.70",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Write Whip's cost() \u2014 the inner drink's price, plus seventy cents.",
+    "hint": "public double cost() { return inner.cost() + 0.70; }",
+    "dur": 23.517
+   }
+  },
+  {
+   "id": "dp03-decorator_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 263.574,
+   "out_seconds": 294.802,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "Stack them like layers",
+    "file": "Order.java",
+    "lines": [
+     {
+      "t": "// espresso, then milk around it, then whip around that:"
+     },
+     {
+      "t": "Beverage drink =",
+      "s": "add"
+     },
+     {
+      "t": "    new Whip(new Milk(new Espresso()));",
+      "s": "add"
+     },
+     {
+      "t": ""
+     },
+     {
+      "t": "drink.cost();   // 2.00 + 0.50 + 0.70 = 3.20",
+      "s": "hi"
+     },
+     {
+      "t": "drink.desc();   // \"espresso, milk, whip\""
+     },
+     {
+      "t": ""
+     },
+     {
+      "t": "// double caramel? just wrap twice:"
+     },
+     {
+      "t": "new Caramel(new Caramel(new Espresso()));",
+      "s": "add"
+     }
+    ],
+    "note": "Each call unwraps one layer inward, summing as it goes.",
+    "dur": 31.728
+   }
+  },
+  {
+   "id": "dp03-decorator_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 295.302,
+   "out_seconds": 328.723,
+   "props": {
+    "requirement": "\"Add caramel drizzle\" \u2014 the newest add-on",
+    "naiveLabel": "Before",
+    "naiveCost": "A new boolean, and a new if in three methods.",
+    "naiveSteps": [
+     "add a boolean field",
+     "edit cost, desc, calories",
+     "still can't stack it twice"
+    ],
+    "patLabel": "Now",
+    "patCost": "One wrapper class. Stack it any way you like.",
+    "patFile": "Caramel.java",
+    "patLines": [
+     {
+      "t": "class Caramel extends AddOn {",
+      "s": "add"
+     },
+     {
+      "t": "  Caramel(Beverage b) {",
+      "s": "add"
+     },
+     {
+      "t": "    super(b);",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "  public double cost() {",
+      "s": "add"
+     },
+     {
+      "t": "    return inner.cost() + 0.60;",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "dur": 33.921
+   }
+  },
+  {
+   "id": "dp03-decorator_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 329.223,
+   "out_seconds": 363.054,
+   "props": {
+    "name": "The Decorator Pattern",
+    "plain": "Wrap an object in another object of the same type that adds behavior \u2014 and stack the wrappers freely.",
+    "nodes": [
+     {
+      "id": "bev",
+      "title": "Beverage",
+      "stereo": "interface",
+      "members": [
+       "+ cost(): double",
+       "+ desc(): String"
+      ],
+      "x": 760,
+      "y": 205,
+      "w": 400,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "esp",
+      "title": "Espresso",
+      "members": [
+       "+ cost()",
+       "+ desc()"
+      ],
+      "x": 150,
+      "y": 250,
+      "w": 360,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "dec",
+      "title": "AddOn",
+      "stereo": "abstract",
+      "members": [
+       "- inner: Beverage",
+       "+ cost() / desc()"
+      ],
+      "x": 1410,
+      "y": 250,
+      "w": 380,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "mk",
+      "title": "Milk",
+      "members": [
+       "+ cost() / desc()"
+      ],
+      "x": 430,
+      "y": 650,
+      "w": 360,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "wh",
+      "title": "Whip",
+      "members": [
+       "+ cost() / desc()"
+      ],
+      "x": 830,
+      "y": 650,
+      "w": 360,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "ca",
+      "title": "Caramel",
+      "members": [
+       "+ cost() / desc()"
+      ],
+      "x": 1230,
+      "y": 650,
+      "w": 360,
+      "color": "#34D399"
+     }
+    ],
+    "edges": [
+     {
+      "from": "esp",
+      "to": "bev",
+      "kind": "impl"
+     },
+     {
+      "from": "dec",
+      "to": "bev",
+      "kind": "impl"
+     },
+     {
+      "from": "dec",
+      "to": "bev",
+      "kind": "has"
+     },
+     {
+      "from": "mk",
+      "to": "dec",
+      "kind": "impl"
+     },
+     {
+      "from": "wh",
+      "to": "dec",
+      "kind": "impl"
+     },
+     {
+      "from": "ca",
+      "to": "dec",
+      "kind": "impl"
+     }
+    ],
+    "dur": 34.331
+   }
+  },
+  {
+   "id": "dp03-decorator_map",
+   "type": "dp_map",
+   "in_seconds": 363.554,
+   "out_seconds": 402.729,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Component",
+      "your": "interface Beverage"
+     },
+     {
+      "role": "ConcreteComponent",
+      "your": "Espresso"
+     },
+     {
+      "role": "Decorator (abstract)",
+      "your": "AddOn (wraps a Beverage)"
+     },
+     {
+      "role": "ConcreteDecorator",
+      "your": "Milk, Whip, Caramel"
+     }
+    ],
+    "plain": "A decorator wraps a component, forwards to it, and adds a little before or after \u2014 and is a component itself.",
+    "gof": "Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.",
+    "dur": 39.675
+   }
+  },
+  {
+   "id": "dp03-decorator_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 403.229,
+   "out_seconds": 442.455,
+   "props": {
+    "title": "It is not free",
+    "costs": [
+     "Many small classes and tiny objects",
+     "A deep stack is hard to debug",
+     "Order of wrapping can matter"
+    ],
+    "dont": [
+     "There is one fixed set of extras",
+     "Behavior never combines or repeats",
+     "A field or subclass truly suffices"
+    ],
+    "signal": "responsibilities need to be added and combined at runtime, in combinations you can't enumerate ahead of time.",
+    "dur": 39.726
+   }
+  },
+  {
+   "id": "dp03-decorator_recap",
+   "type": "dp_recap",
+   "in_seconds": 442.955,
+   "out_seconds": 493.416,
+   "props": {
+    "title": "Decorator, in one breath",
+    "items": [
+     "Boolean flags for add-ons exploded across three methods \u2014 and could never model 'double caramel'.",
+     "Each extra is really a layer that wraps a drink and adds a little \u2014 and is itself a drink.",
+     "Decorator: wrap an object in another of the same type; stack wrappers freely. New extra, new wrapper."
+    ],
+    "challenge": "You have an InputStream. You need it buffered, then gzip-compressed, then encrypted \u2014 in different combinations per file.",
+    "question": "Does Decorator fit? What's the component, and what are the wrappers?",
+    "dur": 50.961
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.464,
+   "This is a class that starts clean,"
+  ],
+  [
+   2.464,
+   3.52,
+   "with one job."
+  ],
+  [
+   4.152,
+   6.968,
+   "Then the feature requests arrive \u2014 and it"
+  ],
+  [
+   6.968,
+   9.784,
+   "grows a new boolean flag for every single"
+  ],
+  [
+   9.784,
+   10.135,
+   "one,"
+  ],
+  [
+   10.135,
+   12.247,
+   "until nobody can read it anymore."
+  ],
+  [
+   12.879,
+   14.639,
+   "There is a beautiful fix,"
+  ],
+  [
+   14.639,
+   17.455,
+   "and it comes from thinking about wrapping paper."
+  ],
+  [
+   17.455,
+   19.567,
+   "Let's start at a coffee shop."
+  ],
+  [
+   20.067,
+   22.883,
+   "You are building the till for a coffee"
+  ],
+  [
+   22.883,
+   23.235,
+   "shop."
+  ],
+  [
+   23.867,
+   25.627,
+   "A customer orders an espresso."
+  ],
+  [
+   25.627,
+   27.035,
+   "Then they start customizing."
+  ],
+  [
+   27.035,
+   27.739,
+   "Add milk."
+  ],
+  [
+   27.739,
+   28.443,
+   "Add caramel."
+  ],
+  [
+   28.443,
+   30.204,
+   "A double shot of whip."
+  ],
+  [
+   30.835,
+   33.651,
+   "You need two things out of any order:"
+  ],
+  [
+   33.651,
+   34.708,
+   "the final price,"
+  ],
+  [
+   34.708,
+   37.524,
+   "and a description to print on the cup."
+  ],
+  [
+   38.155,
+   39.916,
+   "And here is the catch."
+  ],
+  [
+   39.916,
+   42.732,
+   "Any add-on can combine with any other \u2014"
+  ],
+  [
+   42.732,
+   45.548,
+   "and someone will absolutely ask for double\ncaramel."
+  ],
+  [
+   46.18,
+   46.532,
+   "So,"
+  ],
+  [
+   46.532,
+   48.292,
+   "how do you price that?"
+  ],
+  [
+   48.792,
+   50.345,
+   "The natural first move:"
+  ],
+  [
+   50.345,
+   51.898,
+   "one boolean per add-on."
+  ],
+  [
+   52.53,
+   52.918,
+   "Milk,"
+  ],
+  [
+   52.918,
+   53.306,
+   "caramel,"
+  ],
+  [
+   53.306,
+   56.412,
+   "whip \u2014 flip the ones the customer wants."
+  ],
+  [
+   57.044,
+   60.15,
+   "Then cost starts at two dollars for the"
+  ],
+  [
+   60.15,
+   60.538,
+   "espresso,"
+  ],
+  [
+   60.538,
+   63.644,
+   "and adds a little for each flag that"
+  ],
+  [
+   63.644,
+   64.421,
+   "is on."
+  ],
+  [
+   65.053,
+   65.441,
+   "Honestly,"
+  ],
+  [
+   65.441,
+   66.606,
+   "it looks tidy."
+  ],
+  [
+   66.606,
+   67.77,
+   "It reads fine."
+  ],
+  [
+   67.77,
+   68.935,
+   "For three add-ons,"
+  ],
+  [
+   68.935,
+   70.488,
+   "this is completely reasonable."
+  ],
+  [
+   71.12,
+   73.061,
+   "But watch what the fourth,"
+  ],
+  [
+   73.061,
+   73.449,
+   "fifth,"
+  ],
+  [
+   73.449,
+   75.779,
+   "and sixth add-on do to it."
+  ],
+  [
+   76.279,
+   77.411,
+   "The menu grows,"
+  ],
+  [
+   77.411,
+   78.92,
+   "the way menus do."
+  ],
+  [
+   78.92,
+   79.674,
+   "Oat milk."
+  ],
+  [
+   79.674,
+   80.051,
+   "Hazelnut."
+  ],
+  [
+   80.051,
+   81.183,
+   "An extra shot."
+  ],
+  [
+   81.815,
+   84.078,
+   "Each one adds a boolean field,"
+  ],
+  [
+   84.078,
+   85.964,
+   "and an if in cost."
+  ],
+  [
+   85.964,
+   88.605,
+   "And another if in the description method."
+  ],
+  [
+   88.605,
+   90.868,
+   "And another in the calorie counter."
+  ],
+  [
+   91.5,
+   93.009,
+   "The same growing list,"
+  ],
+  [
+   93.009,
+   94.518,
+   "copied in three places,"
+  ],
+  [
+   94.518,
+   94.895,
+   "forever."
+  ],
+  [
+   95.527,
+   97.413,
+   "But here is the killer,"
+  ],
+  [
+   97.413,
+   100.054,
+   "the thing a boolean can never do."
+  ],
+  [
+   100.685,
+   102.949,
+   "A customer asks for double caramel."
+  ],
+  [
+   103.58,
+   105.844,
+   "Your flag is true or false."
+  ],
+  [
+   105.844,
+   107.73,
+   "It cannot be true twice."
+  ],
+  [
+   108.361,
+   111.379,
+   "The whole model is wrong \u2014 you are"
+  ],
+  [
+   111.379,
+   114.397,
+   "trying to describe stackable layers with a row"
+  ],
+  [
+   114.397,
+   115.529,
+   "of on-off switches."
+  ],
+  [
+   116.029,
+   117.783,
+   "The question that unlocks it."
+  ],
+  [
+   117.783,
+   118.484,
+   "What changes,"
+  ],
+  [
+   118.484,
+   119.536,
+   "what stays fixed?"
+  ],
+  [
+   120.168,
+   120.519,
+   "Fixed:"
+  ],
+  [
+   120.519,
+   123.324,
+   "a drink always has a cost and a"
+  ],
+  [
+   123.324,
+   123.675,
+   "description."
+  ],
+  [
+   123.675,
+   124.727,
+   "That never changes."
+  ],
+  [
+   125.359,
+   128.165,
+   "What varies is which extras are on it,"
+  ],
+  [
+   128.165,
+   129.217,
+   "how they stack,"
+  ],
+  [
+   129.217,
+   131.321,
+   "and how many new ones exist."
+  ],
+  [
+   131.953,
+   133.707,
+   "Now here is the leap."
+  ],
+  [
+   134.338,
+   137.144,
+   "What if each add-on were not a flag,"
+  ],
+  [
+   137.144,
+   139.95,
+   "but a wrapper \u2014 something you put around"
+  ],
+  [
+   139.95,
+   142.756,
+   "a drink that takes its price and adds"
+  ],
+  [
+   142.756,
+   143.457,
+   "a little?"
+  ],
+  [
+   144.089,
+   146.895,
+   "And crucially \u2014 the wrapper is itself a"
+  ],
+  [
+   146.895,
+   147.245,
+   "drink."
+  ],
+  [
+   147.245,
+   149.35,
+   "So you can wrap a wrapper."
+  ],
+  [
+   149.35,
+   151.805,
+   "That one idea makes double caramel trivial."
+  ],
+  [
+   152.305,
+   153.56,
+   "Picture wrapping a gift."
+  ],
+  [
+   154.191,
+   155.446,
+   "There is the present,"
+  ],
+  [
+   155.446,
+   157.015,
+   "then a box around it,"
+  ],
+  [
+   157.015,
+   158.583,
+   "then paper around the box,"
+  ],
+  [
+   158.583,
+   159.524,
+   "then a bow."
+  ],
+  [
+   160.156,
+   162.666,
+   "Each layer goes around everything so far \u2014"
+  ],
+  [
+   162.666,
+   165.175,
+   "and the whole thing is still just one"
+  ],
+  [
+   165.175,
+   166.744,
+   "parcel you can hand over."
+  ],
+  [
+   167.375,
+   168.944,
+   "That is our fix exactly."
+  ],
+  [
+   168.944,
+   170.513,
+   "The gift is the espresso."
+  ],
+  [
+   170.513,
+   173.022,
+   "Each add-on is a layer wrapped around it."
+  ],
+  [
+   173.022,
+   174.277,
+   "And wrapped or not,"
+  ],
+  [
+   174.277,
+   176.787,
+   "it is still a drink you can ask"
+  ],
+  [
+   176.787,
+   177.728,
+   "for a price."
+  ],
+  [
+   178.359,
+   179.928,
+   "Where does the picture break?"
+  ],
+  [
+   179.928,
+   181.81,
+   "Real wrapping hides what is inside."
+  ],
+  [
+   181.81,
+   184.32,
+   "Our wrapper does the opposite \u2014 it asks"
+  ],
+  [
+   184.32,
+   186.202,
+   "the layer within for its price,"
+  ],
+  [
+   186.202,
+   188.398,
+   "and then adds its own on top."
+  ],
+  [
+   188.898,
+   189.717,
+   "Move one."
+  ],
+  [
+   189.717,
+   192.585,
+   "We pin down what a drink is."
+  ],
+  [
+   193.216,
+   194.036,
+   "An interface,"
+  ],
+  [
+   194.036,
+   194.445,
+   "beverage,"
+  ],
+  [
+   194.445,
+   196.903,
+   "with a cost and a description."
+  ],
+  [
+   197.535,
+   199.993,
+   "Then the plain espresso implements it."
+  ],
+  [
+   199.993,
+   200.812,
+   "Two dollars,"
+  ],
+  [
+   200.812,
+   202.451,
+   "and the word espresso."
+  ],
+  [
+   203.082,
+   203.902,
+   "No flags."
+  ],
+  [
+   203.902,
+   204.721,
+   "No add-ons."
+  ],
+  [
+   204.721,
+   206.359,
+   "It knows only itself."
+  ],
+  [
+   206.359,
+   207.998,
+   "This is the gift,"
+  ],
+  [
+   207.998,
+   209.227,
+   "before any wrapping."
+  ],
+  [
+   209.727,
+   210.4,
+   "Move two,"
+  ],
+  [
+   210.4,
+   212.42,
+   "and this is the whole trick."
+  ],
+  [
+   213.051,
+   215.744,
+   "An add-on is an abstract class that implements"
+  ],
+  [
+   215.744,
+   218.436,
+   "beverage \u2014 so it is a drink \u2014"
+  ],
+  [
+   218.436,
+   220.792,
+   "and also holds a beverage inside it:"
+  ],
+  [
+   220.792,
+   222.139,
+   "the layer it wraps."
+  ],
+  [
+   222.77,
+   224.116,
+   "Then milk extends it."
+  ],
+  [
+   224.116,
+   226.809,
+   "Its cost asks the inner drink for its"
+  ],
+  [
+   226.809,
+   227.145,
+   "price,"
+  ],
+  [
+   227.145,
+   228.492,
+   "and adds fifty cents."
+  ],
+  [
+   228.492,
+   230.511,
+   "Its description takes the inner description,"
+  ],
+  [
+   230.511,
+   232.194,
+   "and appends the word milk."
+  ],
+  [
+   232.826,
+   235.182,
+   "It does not care what is inside."
+  ],
+  [
+   235.182,
+   235.518,
+   "Espresso,"
+  ],
+  [
+   235.518,
+   238.211,
+   "or another wrapper \u2014 it just adds its"
+  ],
+  [
+   238.211,
+   239.557,
+   "own bit on top."
+  ],
+  [
+   240.057,
+   240.785,
+   "Your turn."
+  ],
+  [
+   241.417,
+   243.238,
+   "Here is the whip wrapper,"
+  ],
+  [
+   243.238,
+   245.059,
+   "already holding its inner drink."
+  ],
+  [
+   245.059,
+   247.608,
+   "All it needs is a cost method."
+  ],
+  [
+   248.24,
+   251.153,
+   "Whip adds seventy cents on top of whatever"
+  ],
+  [
+   251.153,
+   251.881,
+   "it wraps."
+  ],
+  [
+   251.881,
+   252.245,
+   "Pause,"
+  ],
+  [
+   252.245,
+   254.066,
+   "and write that one line."
+  ],
+  [
+   254.698,
+   257.611,
+   "It mirrors milk exactly \u2014 return the inner"
+  ],
+  [
+   257.611,
+   257.976,
+   "cost,"
+  ],
+  [
+   257.976,
+   259.068,
+   "plus seventy cents."
+  ],
+  [
+   259.068,
+   260.525,
+   "If you wrote that,"
+  ],
+  [
+   260.525,
+   263.074,
+   "you have the pattern in your hands."
+  ],
+  [
+   263.574,
+   264.371,
+   "Move three."
+  ],
+  [
+   264.371,
+   265.966,
+   "Now we stack them,"
+  ],
+  [
+   265.966,
+   267.959,
+   "just like layers of wrapping."
+  ],
+  [
+   268.591,
+   268.989,
+   "Espresso,"
+  ],
+  [
+   268.989,
+   270.982,
+   "with milk wrapped around it,"
+  ],
+  [
+   270.982,
+   272.976,
+   "with whip wrapped around that."
+  ],
+  [
+   273.607,
+   276.398,
+   "Ask the outer drink for its cost,"
+  ],
+  [
+   276.398,
+   277.992,
+   "and watch it cascade."
+  ],
+  [
+   277.992,
+   279.188,
+   "Whip asks milk,"
+  ],
+  [
+   279.188,
+   281.58,
+   "milk asks espresso \u2014 two dollars,"
+  ],
+  [
+   281.58,
+   282.377,
+   "plus fifty,"
+  ],
+  [
+   282.377,
+   284.37,
+   "plus seventy \u2014 three twenty."
+  ],
+  [
+   284.37,
+   286.762,
+   "The description assembles the same way."
+  ],
+  [
+   287.394,
+   289.785,
+   "And that impossible request from before?"
+  ],
+  [
+   289.785,
+   290.583,
+   "Double caramel?"
+  ],
+  [
+   291.214,
+   293.606,
+   "You just wrap caramel around caramel."
+  ],
+  [
+   293.606,
+   294.403,
+   "Two layers."
+  ],
+  [
+   294.403,
+   294.802,
+   "Done."
+  ],
+  [
+   295.302,
+   296.791,
+   "Now the newest request."
+  ],
+  [
+   296.791,
+   298.28,
+   "Add a caramel drizzle."
+  ],
+  [
+   298.911,
+   299.284,
+   "Before,"
+  ],
+  [
+   299.284,
+   300.773,
+   "that meant another boolean,"
+  ],
+  [
+   300.773,
+   302.634,
+   "and another if in cost,"
+  ],
+  [
+   302.634,
+   303.75,
+   "and in description,"
+  ],
+  [
+   303.75,
+   306.728,
+   "and in calories \u2014 and it still could"
+  ],
+  [
+   306.728,
+   308.217,
+   "not be ordered twice."
+  ],
+  [
+   308.849,
+   309.221,
+   "Now?"
+  ],
+  [
+   309.221,
+   310.71,
+   "One small wrapper class."
+  ],
+  [
+   310.71,
+   311.082,
+   "Caramel,"
+  ],
+  [
+   311.082,
+   313.688,
+   "adding sixty cents to whatever it wraps."
+  ],
+  [
+   314.319,
+   315.436,
+   "Espresso \u2014 untouched."
+  ],
+  [
+   315.436,
+   317.297,
+   "Milk and whip \u2014 untouched."
+  ],
+  [
+   317.928,
+   320.534,
+   "And because caramel is just a drink,"
+  ],
+  [
+   320.534,
+   322.023,
+   "you can stack it,"
+  ],
+  [
+   322.023,
+   322.767,
+   "combine it,"
+  ],
+  [
+   322.767,
+   323.884,
+   "wrap it twice."
+  ],
+  [
+   323.884,
+   326.49,
+   "A new extra became a new wrapper,"
+  ],
+  [
+   326.49,
+   328.723,
+   "and every old combination still works."
+  ],
+  [
+   329.223,
+   330.666,
+   "Now we name it."
+  ],
+  [
+   331.298,
+   333.102,
+   "This is the Decorator pattern."
+  ],
+  [
+   333.734,
+   334.816,
+   "In the middle,"
+  ],
+  [
+   334.816,
+   337.342,
+   "the beverage interface \u2014 the fixed shape."
+  ],
+  [
+   337.974,
+   339.057,
+   "On the left,"
+  ],
+  [
+   339.057,
+   340.139,
+   "the plain espresso,"
+  ],
+  [
+   340.139,
+   340.861,
+   "implementing it."
+  ],
+  [
+   341.493,
+   342.575,
+   "On the right,"
+  ],
+  [
+   342.575,
+   343.297,
+   "the add-on."
+  ],
+  [
+   343.297,
+   346.184,
+   "Look closely at it \u2014 it implements beverage,"
+  ],
+  [
+   346.184,
+   347.988,
+   "and it holds a beverage."
+  ],
+  [
+   347.988,
+   349.071,
+   "That double arrow,"
+  ],
+  [
+   349.071,
+   350.514,
+   "both is-a and has-a,"
+  ],
+  [
+   350.514,
+   353.04,
+   "is the whole signature of the pattern."
+  ],
+  [
+   353.672,
+   354.032,
+   "Underneath,"
+  ],
+  [
+   354.032,
+   355.476,
+   "your wrappers \u2014 milk,"
+  ],
+  [
+   355.476,
+   355.837,
+   "whip,"
+  ],
+  [
+   355.837,
+   358.724,
+   "and the green caramel you just added \u2014"
+  ],
+  [
+   358.724,
+   361.611,
+   "each one a decorator you can stack as"
+  ],
+  [
+   361.611,
+   363.054,
+   "deep as you like."
+  ],
+  [
+   363.554,
+   364.387,
+   "The roles,"
+  ],
+  [
+   364.387,
+   366.052,
+   "mapped to your code."
+  ],
+  [
+   366.683,
+   369.181,
+   "The Component is the beverage interface."
+  ],
+  [
+   369.813,
+   372.727,
+   "The concrete component is the plain espresso."
+  ],
+  [
+   373.358,
+   375.856,
+   "The Decorator is your abstract add-on,"
+  ],
+  [
+   375.856,
+   378.354,
+   "the one that wraps a beverage."
+  ],
+  [
+   378.986,
+   381.483,
+   "And the concrete decorators are milk,"
+  ],
+  [
+   381.483,
+   381.9,
+   "whip,"
+  ],
+  [
+   381.9,
+   382.732,
+   "and caramel."
+  ],
+  [
+   383.364,
+   386.694,
+   "In plain terms \u2014 a decorator wraps a"
+  ],
+  [
+   386.694,
+   387.111,
+   "component,"
+  ],
+  [
+   387.111,
+   388.36,
+   "forwards to it,"
+  ],
+  [
+   388.36,
+   391.274,
+   "and adds a little of its own,"
+  ],
+  [
+   391.274,
+   393.355,
+   "while being a component itself."
+  ],
+  [
+   393.987,
+   397.317,
+   "The Gang of Four put it this way:"
+  ],
+  [
+   397.317,
+   400.647,
+   "attach extra responsibilities to an object\ndynamically \u2014"
+  ],
+  [
+   400.647,
+   402.729,
+   "a flexible alternative to subclassing."
+  ],
+  [
+   403.229,
+   404.319,
+   "The honest costs."
+  ],
+  [
+   404.951,
+   406.041,
+   "Decorator multiplies objects."
+  ],
+  [
+   406.041,
+   408.948,
+   "A single latte can be four or five"
+  ],
+  [
+   408.948,
+   410.038,
+   "wrapped instances deep,"
+  ],
+  [
+   410.038,
+   412.945,
+   "and stepping through that stack in a debugger"
+  ],
+  [
+   412.945,
+   414.035,
+   "is not fun."
+  ],
+  [
+   414.666,
+   417.573,
+   "And order can matter \u2014 tax around a"
+  ],
+  [
+   417.573,
+   420.48,
+   "discount is not the same as a discount"
+  ],
+  [
+   420.48,
+   423.387,
+   "around tax \u2014 so you have to think"
+  ],
+  [
+   423.387,
+   424.114,
+   "about it."
+  ],
+  [
+   424.745,
+   427.652,
+   "Skip it when there is one fixed set"
+  ],
+  [
+   427.652,
+   430.196,
+   "of options that never combines or repeats."
+  ],
+  [
+   430.196,
+   432.013,
+   "A plain field is simpler."
+  ],
+  [
+   432.644,
+   434.824,
+   "The signal to reach for it:"
+  ],
+  [
+   434.824,
+   437.731,
+   "you need to add and combine responsibilities at"
+  ],
+  [
+   437.731,
+   438.095,
+   "runtime,"
+  ],
+  [
+   438.095,
+   440.638,
+   "in combinations you cannot list in advance."
+  ],
+  [
+   440.638,
+   442.455,
+   "That is Decorator's home turf."
+  ],
+  [
+   442.955,
+   444.811,
+   "The journey in three beats."
+  ],
+  [
+   445.443,
+   446.186,
+   "The problem:"
+  ],
+  [
+   446.186,
+   449.156,
+   "boolean flags for add-ons exploded across three\nmethods,"
+  ],
+  [
+   449.156,
+   451.755,
+   "and still could not express double caramel."
+  ],
+  [
+   452.387,
+   453.129,
+   "The insight:"
+  ],
+  [
+   453.129,
+   456.099,
+   "each extra is really a layer that wraps"
+  ],
+  [
+   456.099,
+   459.07,
+   "a drink and adds a little \u2014 while"
+  ],
+  [
+   459.07,
+   460.555,
+   "being a drink itself."
+  ],
+  [
+   461.186,
+   461.929,
+   "The pattern:"
+  ],
+  [
+   461.929,
+   462.3,
+   "Decorator."
+  ],
+  [
+   462.3,
+   465.271,
+   "Wrap an object in another of the same"
+  ],
+  [
+   465.271,
+   465.642,
+   "type,"
+  ],
+  [
+   465.642,
+   468.612,
+   "and stack the wrappers as deep as you"
+  ],
+  [
+   468.612,
+   468.984,
+   "like."
+  ],
+  [
+   469.615,
+   469.986,
+   "Now,"
+  ],
+  [
+   469.986,
+   470.729,
+   "for you,"
+  ],
+  [
+   470.729,
+   472.214,
+   "before the next episode."
+  ],
+  [
+   472.846,
+   474.702,
+   "You have an input stream."
+  ],
+  [
+   474.702,
+   477.301,
+   "For some files you need it buffered."
+  ],
+  [
+   477.301,
+   478.044,
+   "For others,"
+  ],
+  [
+   478.044,
+   479.158,
+   "buffered then compressed."
+  ],
+  [
+   479.158,
+   480.272,
+   "For others still,"
+  ],
+  [
+   480.272,
+   481.385,
+   "compressed then encrypted."
+  ],
+  [
+   482.017,
+   483.131,
+   "Does Decorator fit?"
+  ],
+  [
+   483.131,
+   486.101,
+   "What is the component here \u2014 and what"
+  ],
+  [
+   486.101,
+   487.215,
+   "are the wrappers?"
+  ],
+  [
+   487.847,
+   488.218,
+   "Pause,"
+  ],
+  [
+   488.218,
+   489.332,
+   "and sketch it."
+  ],
+  [
+   489.332,
+   492.302,
+   "And notice \u2014 Java's own streams already work"
+  ],
+  [
+   492.302,
+   493.416,
+   "exactly this way."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp03-decorator.wav",
+   "volume": 1.0
+  }
+ }
+}

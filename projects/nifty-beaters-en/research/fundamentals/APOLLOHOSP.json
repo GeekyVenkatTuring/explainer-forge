@@ -1,0 +1,96 @@
+{
+ "ticker": "APOLLOHOSP",
+ "scraped_at": "2026-08-14T15:29:09",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 128285.0,
+ "current_price": 8922.0,
+ "pe": 60.9,
+ "book_value": 659.0,
+ "dividend_yield_pct": 0.23,
+ "roce_pct": 17.4,
+ "roe_pct": 21.2,
+ "face_value": 5.0,
+ "high": 9327.0,
+ "sales_growth": {
+  "10 Years": 23.0,
+  "5 Years": 76.0,
+  "3 Years": 32.0,
+  "TTM": 34.0
+ },
+ "profit_growth": {
+  "10 Years": 20.0,
+  "5 Years": 16.0,
+  "3 Years": 21.0,
+  "1 Year": 10.0
+ },
+ "roe_hist": {
+  "Equity Capital": 70.0,
+  "CWIP": 533.0,
+  "Investments": 311.0
+ },
+ "price_cagr": {
+  "10 Years": 13.0,
+  "5 Years": 17.0,
+  "3 Years": 18.0,
+  "Last Year": 21.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "12%",
+   "13%",
+   "13%",
+   "13%",
+   "13%",
+   "15%",
+   "14%",
+   "14%",
+   "15%",
+   "15%",
+   "15%",
+   "15%",
+   "16%"
+  ],
+  "eps": [
+   "11.59",
+   "16.20",
+   "17.06",
+   "17.65",
+   "21.23",
+   "26.34",
+   "25.89",
+   "27.10",
+   "30.10",
+   "33.19",
+   "34.93",
+   "36.81",
+   "40.39"
+  ]
+ },
+ "pros": [
+  "Company has delivered good profit growth of 76.2% CAGR over last 5 years",
+  "Company has been maintaining a healthy dividend payout of 17.7%"
+ ],
+ "cons": [
+  "Stock is trading at 13.4 times its book value",
+  "Company might be capitalizing the interest cost"
+ ]
+}

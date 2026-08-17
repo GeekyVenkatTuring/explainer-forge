@@ -1,0 +1,155 @@
+{
+  "cuts": [
+    {
+      "id": "s01_title",
+      "type": "pe_title",
+      "in_seconds": 0.0,
+      "out_seconds": 29.324,
+      "props": {
+        "dur": 29.824
+      }
+    },
+    {
+      "id": "s02_hook",
+      "type": "pe_hook",
+      "in_seconds": 29.824,
+      "out_seconds": 86.862,
+      "props": {
+        "dur": 57.538
+      }
+    },
+    {
+      "id": "s03_div1",
+      "type": "pe_div",
+      "in_seconds": 87.362,
+      "out_seconds": 96.242,
+      "props": {
+        "n": 1,
+        "title": "Why Order Matters",
+        "sub": "Attention is blind to it \u2014 and the classic fix",
+        "color": "#38BDF8",
+        "dur": 9.38
+      }
+    },
+    {
+      "id": "s04_orderblind",
+      "type": "pe_orderblind",
+      "in_seconds": 96.742,
+      "out_seconds": 157.236,
+      "props": {
+        "dur": 60.994
+      }
+    },
+    {
+      "id": "s05_tag",
+      "type": "pe_tag",
+      "in_seconds": 157.736,
+      "out_seconds": 215.854,
+      "props": {
+        "dur": 58.618
+      }
+    },
+    {
+      "id": "s06_naive",
+      "type": "pe_naive",
+      "in_seconds": 216.354,
+      "out_seconds": 283.016,
+      "props": {
+        "dur": 67.162
+      }
+    },
+    {
+      "id": "s07_sinusoid",
+      "type": "pe_sinusoid",
+      "in_seconds": 283.516,
+      "out_seconds": 350.202,
+      "props": {
+        "dur": 67.186
+      }
+    },
+    {
+      "id": "s08_heatmap",
+      "type": "pe_heatmap",
+      "in_seconds": 350.702,
+      "out_seconds": 400.206,
+      "props": {
+        "dur": 50.004
+      }
+    },
+    {
+      "id": "s09_added",
+      "type": "pe_added",
+      "in_seconds": 400.706,
+      "out_seconds": 453.162,
+      "props": {
+        "dur": 52.956
+      }
+    },
+    {
+      "id": "s10_div2",
+      "type": "pe_div",
+      "in_seconds": 453.662,
+      "out_seconds": 463.094,
+      "props": {
+        "n": 2,
+        "title": "Modern Upgrades",
+        "sub": "Learned \u00b7 Relative \u00b7 RoPE",
+        "color": "#A78BFA",
+        "dur": 9.932
+      }
+    },
+    {
+      "id": "s11_learned",
+      "type": "pe_learned",
+      "in_seconds": 463.594,
+      "out_seconds": 523.176,
+      "props": {
+        "dur": 60.082
+      }
+    },
+    {
+      "id": "s12_relative",
+      "type": "pe_relative",
+      "in_seconds": 523.676,
+      "out_seconds": 571.788,
+      "props": {
+        "dur": 48.612
+      }
+    },
+    {
+      "id": "s13_rope",
+      "type": "pe_rope",
+      "in_seconds": 572.288,
+      "out_seconds": 636.504,
+      "props": {
+        "dur": 64.716
+      }
+    },
+    {
+      "id": "s14_recap",
+      "type": "pe_recap",
+      "in_seconds": 637.004,
+      "out_seconds": 703.568,
+      "props": {
+        "items": [
+          "Attention is order-blind \u2014 on its own it sees a SET of tokens, not a sequence",
+          "Fix: add a position vector onto each token embedding (same size, no extra slots)",
+          "Naive tags fail \u2014 a raw index explodes; 0\u20261 rescaling changes with length",
+          "Sinusoids = clock hands at many speeds \u2192 a unique, bounded fingerprint per position",
+          "The striped heatmap IS that matrix; similar rows mean nearby positions",
+          "Added in, 'dog bites man' finally differs from 'man bites dog'",
+          "Learned PE: simple but capped. Relative PE: encodes the gap i \u2212 j",
+          "RoPE rotates q and k so only the relative angle survives \u2014 the modern default (Llama)"
+        ],
+        "closer": "Position isn't in attention by default \u2014 putting it back is what lets transformers read language at all.",
+        "dur": 67.064
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "pe/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

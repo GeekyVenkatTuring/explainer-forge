@@ -1,0 +1,87 @@
+{
+ "ticker": "ABB",
+ "scraped_at": "2026-08-14T15:28:05",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 162004.0,
+ "current_price": 7645.0,
+ "pe": 105.0,
+ "book_value": 441.0,
+ "dividend_yield_pct": 0.51,
+ "roce_pct": 29.9,
+ "roe_pct": 22.4,
+ "face_value": 2.0,
+ "high": 7924.0,
+ "sales_growth": {
+  "TTM": -13.0
+ },
+ "profit_growth": {
+  "10 Years": 22.0,
+  "5 Years": 35.0,
+  "3 Years": 21.0,
+  "1 Year": 53.0
+ },
+ "roe_hist": {
+  "Equity Capital": 42.0,
+  "Borrowings&nbsp; +": 0.0,
+  "CWIP": 74.0,
+  "Investments": 17.0
+ },
+ "price_cagr": {
+  "Last Year": 22.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2019",
+   "Sep 2019",
+   "Mar 2022",
+   "Jun 2022",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "7%",
+   "7%",
+   "10%",
+   "10%",
+   "19%",
+   "20%",
+   "19%",
+   "14%",
+   "15%",
+   "15%",
+   "13%",
+   "13%"
+  ],
+  "eps": [
+   "6.15",
+   "6.38",
+   "3.76",
+   "6.87",
+   "20.79",
+   "24.94",
+   "22.40",
+   "16.60",
+   "19.30",
+   "20.43",
+   "84.17",
+   "17.10"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free."
+ ],
+ "cons": [
+  "Stock is trading at 17.4 times its book value",
+  "Earnings include an other income of Rs.1,799 Cr."
+ ]
+}

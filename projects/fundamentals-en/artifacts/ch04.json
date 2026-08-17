@@ -1,0 +1,1552 @@
+{
+ "cuts": [
+  {
+   "id": "ch04_s01_divider",
+   "type": "fa_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 20.11,
+   "props": {
+    "n": 4,
+    "title": "Valuation",
+    "sub": "price is what you pay; value is what you get",
+    "color": "#A78BFA",
+    "total": 7,
+    "dur": 20.61
+   }
+  },
+  {
+   "id": "ch04_s02_analogy",
+   "type": "fa_analogy",
+   "in_seconds": 20.61,
+   "out_seconds": 63.108,
+   "props": {
+    "kicker": "ANALOGY \u00b7 PRICE vs VALUE",
+    "title": "A great company can be a terrible buy",
+    "left": {
+     "emoji": "\ud83c\udfea",
+     "label": "A shop for sale",
+     "cap": "It earns \u20b91 lakh a year. Solid little business.",
+     "c": "#34D399"
+    },
+    "right": {
+     "emoji": "\ud83c\udff7\ufe0f",
+     "label": "The asking price",
+     "cap": "\u20b950 lakh? Or \u20b95 lakh? Same shop \u2014 very different deal.",
+     "c": "#A78BFA"
+    },
+    "note": "Valuation compares the price you pay to the profit you get. Even a great shop is a bad buy if overpriced.",
+    "color": "#A78BFA",
+    "dur": 42.998
+   }
+  },
+  {
+   "id": "ch04_s03_what",
+   "type": "fa_keyidea",
+   "in_seconds": 63.608,
+   "out_seconds": 97.97,
+   "props": {
+    "kicker": "THE BIG IDEA",
+    "color": "#A78BFA",
+    "big": "Price is what you pay. Value is what you get.",
+    "sub": "A valuation multiple divides the price by a fundamental \u2014 profit, cash flow, or assets.",
+    "dur": 34.862
+   }
+  },
+  {
+   "id": "ch04_s04_mcap",
+   "type": "fa_formula",
+   "in_seconds": 98.47,
+   "out_seconds": 137.368,
+   "props": {
+    "kicker": "PRICE TAG 1 \u00b7 MARKET CAP",
+    "title": "The price of all the shares",
+    "name": "Market cap  =  Share price  \u00d7  Number of shares",
+    "num": [
+     {
+      "label": "Share price",
+      "val": 70,
+      "c": "#A78BFA"
+     }
+    ],
+    "den": [
+     {
+      "label": "Shares (crore)",
+      "val": 30,
+      "c": "#38BDF8"
+     }
+    ],
+    "op": "\u00d7",
+    "result": {
+     "label": "Market capitalisation \u2014 the equity price tag",
+     "val": 2100,
+     "unit": "\u20b9 Cr",
+     "decimals": 0,
+     "c": "#A78BFA"
+    },
+    "note": "Ardee approx. Market cap is what the stock market says the equity is worth.",
+    "color": "#A78BFA",
+    "dur": 39.398
+   }
+  },
+  {
+   "id": "ch04_s05_ev",
+   "type": "fa_stack",
+   "in_seconds": 137.868,
+   "out_seconds": 176.958,
+   "props": {
+    "kicker": "PRICE TAG 2 \u00b7 ENTERPRISE VALUE",
+    "title": "The true takeover price",
+    "unit": "\u20b9 Cr",
+    "segs": [
+     {
+      "label": "Market cap",
+      "val": 2100,
+      "c": "#A78BFA",
+      "op": "+"
+     },
+     {
+      "label": "add  Debt you inherit",
+      "val": 180,
+      "c": "#FBBF24",
+      "op": "+"
+     },
+     {
+      "label": "less  Cash you receive",
+      "val": -30,
+      "c": "#34D399",
+      "op": "\u2212"
+     }
+    ],
+    "result": {
+     "label": "Enterprise Value (EV)",
+     "val": 2250,
+     "c": "#A78BFA"
+    },
+    "note": "Buy the whole company and you take on its debt but pocket its cash. EV is the real price.",
+    "color": "#A78BFA",
+    "dur": 39.59
+   }
+  },
+  {
+   "id": "ch04_s06_ev_why",
+   "type": "fa_keyidea",
+   "in_seconds": 177.458,
+   "out_seconds": 217.436,
+   "props": {
+    "kicker": "WHY EV MATTERS",
+    "color": "#A78BFA",
+    "big": "EV lets you compare two companies fairly \u2014 even if one is loaded with debt.",
+    "sub": "Market cap ignores debt. Enterprise value doesn't. That's why pros value on EV.",
+    "dur": 40.478
+   }
+  },
+  {
+   "id": "ch04_s07_pe",
+   "type": "fa_formula",
+   "in_seconds": 217.936,
+   "out_seconds": 250.26,
+   "props": {
+    "kicker": "MULTIPLE 1 \u00b7 THE P/E RATIO",
+    "title": "The most famous number in the market",
+    "name": "P/E  =  Share price  \u00f7  Earnings per share",
+    "num": [
+     {
+      "label": "Share price",
+      "val": 70,
+      "c": "#A78BFA"
+     }
+    ],
+    "den": [
+     {
+      "label": "EPS",
+      "val": 2.8,
+      "c": "#34D399"
+     }
+    ],
+    "op": "\u00f7",
+    "result": {
+     "label": "Price-to-Earnings \u2014 \u20b9 paid per \u20b91 of annual profit",
+     "val": 25,
+     "unit": "\u00d7",
+     "decimals": 0,
+     "c": "#A78BFA"
+    },
+    "note": "Ardee \u2248 25\u00d7. Remember EPS from chapter one: profit per share.",
+    "color": "#A78BFA",
+    "dur": 32.824
+   }
+  },
+  {
+   "id": "ch04_s08_pe_mean",
+   "type": "fa_keyidea",
+   "in_seconds": 250.76,
+   "out_seconds": 287.524,
+   "props": {
+    "kicker": "READING THE P/E",
+    "color": "#A78BFA",
+    "big": "A P/E of 25 means ~25 years of today's profit to earn back your price.",
+    "sub": "A high P/E isn't 'expensive' \u2014 it's the market pricing in future growth. Low isn't always cheap.",
+    "dur": 37.264
+   }
+  },
+  {
+   "id": "ch04_s09_evebitda",
+   "type": "fa_formula",
+   "in_seconds": 288.024,
+   "out_seconds": 327.644,
+   "props": {
+    "kicker": "MULTIPLE 2 \u00b7 EV / EBITDA",
+    "title": "The professional's multiple",
+    "name": "EV / EBITDA  =  Enterprise value  \u00f7  EBITDA",
+    "num": [
+     {
+      "label": "Enterprise value",
+      "val": 2250,
+      "c": "#A78BFA"
+     }
+    ],
+    "den": [
+     {
+      "label": "EBITDA",
+      "val": 147,
+      "c": "#34D399"
+     }
+    ],
+    "op": "\u00f7",
+    "result": {
+     "label": "EV/EBITDA \u2014 price of the whole business per \u20b9 of core profit",
+     "val": 15,
+     "unit": "\u00d7",
+     "decimals": 0,
+     "c": "#A78BFA"
+    },
+    "note": "Ardee \u2248 15\u00d7. Uses EV (whole business) over EBITDA (core operating profit).",
+    "color": "#A78BFA",
+    "dur": 40.12
+   }
+  },
+  {
+   "id": "ch04_s10_compare_pe",
+   "type": "fa_bars",
+   "in_seconds": 328.144,
+   "out_seconds": 365.388,
+   "props": {
+    "kicker": "P/E \u00b7 ARDEE vs GRAVITA vs PONDY",
+    "title": "Who is the market paying up for?",
+    "unit": "\u00d7",
+    "decimals": 0,
+    "bars": [
+     {
+      "label": "Ardee",
+      "val": 25,
+      "c": "#2DD4BF",
+      "note": "cheapest"
+     },
+     {
+      "label": "Gravita",
+      "val": 31,
+      "c": "#818CF8",
+      "note": "the leader"
+     },
+     {
+      "label": "Pondy",
+      "val": 40,
+      "c": "#FB923C",
+      "note": "priciest"
+     }
+    ],
+    "note": "On P/E, Ardee is the cheapest of the three \u2014 but a low multiple has two meanings.",
+    "color": "#A78BFA",
+    "dur": 37.744
+   }
+  },
+  {
+   "id": "ch04_s11_compare_ev",
+   "type": "fa_bars",
+   "in_seconds": 365.888,
+   "out_seconds": 401.02,
+   "props": {
+    "kicker": "EV / EBITDA \u00b7 THE FAIRER LENS",
+    "title": "The gap widens on the professional multiple",
+    "unit": "\u00d7",
+    "decimals": 0,
+    "bars": [
+     {
+      "label": "Ardee",
+      "val": 15,
+      "c": "#2DD4BF",
+      "note": "~half its peers"
+     },
+     {
+      "label": "Gravita",
+      "val": 26,
+      "c": "#818CF8",
+      "note": "quality premium"
+     },
+     {
+      "label": "Pondy",
+      "val": 25,
+      "c": "#FB923C",
+      "note": "pricey for its margin"
+     }
+    ],
+    "note": "On EV/EBITDA, Ardee (~15\u00d7) is roughly half of Gravita and Pondy (~26\u00d7). A real discount.",
+    "color": "#A78BFA",
+    "dur": 35.632
+   }
+  },
+  {
+   "id": "ch04_s12_pb_yield",
+   "type": "fa_formula",
+   "in_seconds": 401.52,
+   "out_seconds": 441.308,
+   "props": {
+    "kicker": "MULTIPLE 3 \u00b7 PRICE-TO-BOOK & YIELD",
+    "title": "Price against the company's own net worth",
+    "name": "P/B  =  Share price  \u00f7  Book value per share",
+    "num": [
+     {
+      "label": "Share price",
+      "val": 70,
+      "c": "#A78BFA"
+     }
+    ],
+    "den": [
+     {
+      "label": "Book value / share",
+      "val": 10,
+      "c": "#2DD4BF"
+     }
+    ],
+    "op": "\u00f7",
+    "result": {
+     "label": "Price-to-Book \u2014 \u20b9 paid per \u20b91 of net worth",
+     "val": 7,
+     "unit": "\u00d7",
+     "decimals": 0,
+     "c": "#A78BFA"
+    },
+    "note": "Also: earnings yield = 1 \u00f7 P/E \u2248 4%. It's the flip side of the P/E, like an interest rate.",
+    "color": "#A78BFA",
+    "dur": 40.288
+   }
+  },
+  {
+   "id": "ch04_s13_map",
+   "type": "fa_quadrant",
+   "in_seconds": 441.808,
+   "out_seconds": 488.218,
+   "props": {
+    "kicker": "THE VALUATION MAP",
+    "title": "Cheap vs quality \u2014 where each one sits",
+    "xlab": "cheaper",
+    "ylab": "higher quality",
+    "xlo": "expensive",
+    "xhi": "cheap",
+    "points": [
+     {
+      "x": 0.82,
+      "y": 0.72,
+      "label": "Ardee \u2014 cheap + high return",
+      "c": "#2DD4BF"
+     },
+     {
+      "x": 0.34,
+      "y": 0.8,
+      "label": "Gravita \u2014 quality, pay up",
+      "c": "#818CF8"
+     },
+     {
+      "x": 0.22,
+      "y": 0.4,
+      "label": "Pondy \u2014 pricey, thin margin",
+      "c": "#FB923C"
+     }
+    ],
+    "note": "The dream is top-right: cheap AND high quality. Ardee screens there \u2014 if its numbers hold.",
+    "color": "#A78BFA",
+    "dur": 46.91
+   }
+  },
+  {
+   "id": "ch04_s14_recap",
+   "type": "fa_recap",
+   "in_seconds": 488.718,
+   "out_seconds": 537.192,
+   "props": {
+    "kicker": "RECAP \u00b7 CHAPTER 4",
+    "title": "Valuation in one breath",
+    "items": [
+     "Price is what you pay; value is what you get",
+     "Market cap = price \u00d7 shares (the equity tag)",
+     "Enterprise value = market cap + debt \u2212 cash (true takeover price)",
+     "P/E = price \u00f7 EPS \u2014 \u20b9 paid per \u20b91 of profit",
+     "EV/EBITDA is fairer \u2014 it accounts for debt",
+     "Ardee: P/E \u2248 25\u00d7, EV/EBITDA \u2248 15\u00d7 \u2014 cheapest of the three",
+     "A low multiple = bargain OR warning; context decides"
+    ],
+    "closer": "You now know quality and price. Next: the risk hiding in the debt.",
+    "color": "#A78BFA",
+    "dur": 48.974
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.118,
+   "Chapter four."
+  ],
+  [
+   1.118,
+   1.677,
+   "Valuation."
+  ],
+  [
+   2.227,
+   6.139,
+   "So far we've judged the business itself."
+  ],
+  [
+   6.139,
+   7.256,
+   "Its profit,"
+  ],
+  [
+   7.256,
+   8.374,
+   "its margins,"
+  ],
+  [
+   8.374,
+   9.492,
+   "its returns."
+  ],
+  [
+   9.492,
+   13.963,
+   "Now we ask the question that decides whether"
+  ],
+  [
+   13.963,
+   16.198,
+   "it's a good investment."
+  ],
+  [
+   16.198,
+   20.11,
+   "What price should you pay for it?"
+  ],
+  [
+   20.61,
+   23.712,
+   "Picture a small shop for sale."
+  ],
+  [
+   24.262,
+   28.399,
+   "It earns one lakh rupees of profit a"
+  ],
+  [
+   28.399,
+   28.916,
+   "year."
+  ],
+  [
+   28.916,
+   30.984,
+   "A nice little business."
+  ],
+  [
+   30.984,
+   33.57,
+   "But should you buy it?"
+  ],
+  [
+   34.12,
+   37.739,
+   "It completely depends on the asking price."
+  ],
+  [
+   37.739,
+   39.29,
+   "At five lakh,"
+  ],
+  [
+   39.29,
+   42.91,
+   "it pays for itself in five years."
+  ],
+  [
+   42.91,
+   43.944,
+   "A bargain."
+  ],
+  [
+   43.944,
+   45.495,
+   "At fifty lakh,"
+  ],
+  [
+   45.495,
+   47.563,
+   "it takes fifty years."
+  ],
+  [
+   47.563,
+   49.114,
+   "A terrible deal."
+  ],
+  [
+   49.664,
+   50.698,
+   "Same shop,"
+  ],
+  [
+   50.698,
+   51.733,
+   "same profit."
+  ],
+  [
+   51.733,
+   55.869,
+   "The only thing that changed is the price."
+  ],
+  [
+   55.869,
+   59.489,
+   "That is the entire job of valuation."
+  ],
+  [
+   59.489,
+   63.108,
+   "Comparing price to what you actually get."
+  ],
+  [
+   63.608,
+   67.077,
+   "So hold this line in your head."
+  ],
+  [
+   67.627,
+   70.106,
+   "Price is what you pay."
+  ],
+  [
+   70.106,
+   72.584,
+   "Value is what you get."
+  ],
+  [
+   72.584,
+   75.558,
+   "They are not the same thing."
+  ],
+  [
+   76.108,
+   77.595,
+   "To compare them,"
+  ],
+  [
+   77.595,
+   79.577,
+   "we build valuation multiples."
+  ],
+  [
+   79.577,
+   82.055,
+   "Every multiple is a price,"
+  ],
+  [
+   82.055,
+   84.038,
+   "divided by something fundamental."
+  ],
+  [
+   84.038,
+   84.533,
+   "Profit,"
+  ],
+  [
+   84.533,
+   86.02,
+   "or cash flow,"
+  ],
+  [
+   86.02,
+   87.012,
+   "or assets."
+  ],
+  [
+   87.562,
+   91.527,
+   "The multiple tells you how many rupees you're"
+  ],
+  [
+   91.527,
+   95.492,
+   "paying for one rupee of what the business"
+  ],
+  [
+   95.492,
+   95.987,
+   "produces."
+  ],
+  [
+   95.987,
+   97.97,
+   "Let's build them up."
+  ],
+  [
+   98.47,
+   101.45,
+   "Start with the simplest price tag."
+  ],
+  [
+   101.45,
+   102.443,
+   "Market capitalisation."
+  ],
+  [
+   102.993,
+   105.476,
+   "It's just the share price,"
+  ],
+  [
+   105.476,
+   107.96,
+   "times the number of shares."
+  ],
+  [
+   107.96,
+   110.443,
+   "Ardee trades near seventy rupees,"
+  ],
+  [
+   110.443,
+   113.423,
+   "and has about thirty crore shares."
+  ],
+  [
+   113.973,
+   114.966,
+   "Multiply them,"
+  ],
+  [
+   114.966,
+   118.939,
+   "and the whole company's equity is worth around"
+  ],
+  [
+   118.939,
+   121.422,
+   "two thousand one hundred crore."
+  ],
+  [
+   121.422,
+   122.912,
+   "That's market cap."
+  ],
+  [
+   122.912,
+   126.885,
+   "It's the price the stock market is putting"
+  ],
+  [
+   126.885,
+   128.872,
+   "on all the shares,"
+  ],
+  [
+   128.872,
+   129.865,
+   "right now."
+  ],
+  [
+   130.415,
+   134.388,
+   "But market cap is not the full cost"
+  ],
+  [
+   134.388,
+   136.375,
+   "of owning the business."
+  ],
+  [
+   136.375,
+   137.368,
+   "Here's why."
+  ],
+  [
+   137.868,
+   140.542,
+   "If you bought the entire company,"
+  ],
+  [
+   140.542,
+   143.217,
+   "you'd get more than its shares."
+  ],
+  [
+   143.767,
+   145.995,
+   "You'd also inherit its debt,"
+  ],
+  [
+   145.995,
+   148.224,
+   "which you have to repay."
+  ],
+  [
+   148.224,
+   150.898,
+   "But you'd also get its cash,"
+  ],
+  [
+   150.898,
+   153.127,
+   "which is yours to keep."
+  ],
+  [
+   153.677,
+   156.797,
+   "So the true price is market cap,"
+  ],
+  [
+   156.797,
+   157.688,
+   "plus debt,"
+  ],
+  [
+   157.688,
+   158.579,
+   "minus cash."
+  ],
+  [
+   158.579,
+   159.917,
+   "That's enterprise value,"
+  ],
+  [
+   159.917,
+   160.808,
+   "or EV."
+  ],
+  [
+   160.808,
+   161.699,
+   "For Ardee,"
+  ],
+  [
+   161.699,
+   163.482,
+   "two thousand one hundred,"
+  ],
+  [
+   163.482,
+   165.711,
+   "plus one eighty of debt,"
+  ],
+  [
+   165.711,
+   167.494,
+   "minus thirty of cash."
+  ],
+  [
+   167.494,
+   170.614,
+   "About two thousand two hundred fifty crore."
+  ],
+  [
+   171.164,
+   174.729,
+   "EV is what it would really cost to"
+  ],
+  [
+   174.729,
+   176.958,
+   "take the whole business home."
+  ],
+  [
+   177.458,
+   180.083,
+   "Why go to this trouble?"
+  ],
+  [
+   180.633,
+   184.834,
+   "Because market cap can lie when you compare"
+  ],
+  [
+   184.834,
+   185.884,
+   "two companies."
+  ],
+  [
+   185.884,
+   187.984,
+   "Imagine two identical businesses."
+  ],
+  [
+   187.984,
+   190.084,
+   "One has no debt."
+  ],
+  [
+   190.084,
+   193.234,
+   "The other is buried in loans."
+  ],
+  [
+   193.784,
+   197.459,
+   "They might have the same market cap."
+  ],
+  [
+   197.459,
+   201.66,
+   "But the indebted one is far more expensive"
+  ],
+  [
+   201.66,
+   203.235,
+   "to actually own,"
+  ],
+  [
+   203.235,
+   206.91,
+   "because you take on all that debt."
+  ],
+  [
+   206.91,
+   209.01,
+   "Enterprise value captures that."
+  ],
+  [
+   209.01,
+   210.586,
+   "Market cap doesn't."
+  ],
+  [
+   211.136,
+   215.336,
+   "That's why professional investors value companies on\nEV,"
+  ],
+  [
+   215.336,
+   217.436,
+   "not just market cap."
+  ],
+  [
+   217.936,
+   221.779,
+   "Now the most famous number in all of"
+  ],
+  [
+   221.779,
+   222.259,
+   "investing."
+  ],
+  [
+   222.259,
+   224.181,
+   "The P E ratio."
+  ],
+  [
+   224.731,
+   226.652,
+   "It's the share price,"
+  ],
+  [
+   226.652,
+   229.054,
+   "divided by earnings per share."
+  ],
+  [
+   229.054,
+   231.456,
+   "Remember EPS from chapter one?"
+  ],
+  [
+   231.456,
+   231.936,
+   "Profit,"
+  ],
+  [
+   231.936,
+   232.897,
+   "per share."
+  ],
+  [
+   233.447,
+   235.369,
+   "Ardee at seventy rupees,"
+  ],
+  [
+   235.369,
+   238.251,
+   "with EPS near two rupees eighty,"
+  ],
+  [
+   238.251,
+   242.094,
+   "trades at a P E of about twenty"
+  ],
+  [
+   242.094,
+   242.574,
+   "five."
+  ],
+  [
+   242.574,
+   246.417,
+   "So you're paying twenty five rupees for every"
+  ],
+  [
+   246.417,
+   250.26,
+   "one rupee of annual profit the company makes."
+  ],
+  [
+   250.76,
+   254.239,
+   "What does a P E of twenty five"
+  ],
+  [
+   254.239,
+   255.109,
+   "actually mean?"
+  ],
+  [
+   255.659,
+   257.834,
+   "One way to read it."
+  ],
+  [
+   257.834,
+   259.574,
+   "If profits never grew,"
+  ],
+  [
+   259.574,
+   263.053,
+   "it would take about twenty five years of"
+  ],
+  [
+   263.053,
+   265.663,
+   "earnings to get your money back."
+  ],
+  [
+   266.213,
+   268.387,
+   "But here's the subtle part."
+  ],
+  [
+   268.387,
+   271.867,
+   "A high P E doesn't simply mean expensive."
+  ],
+  [
+   271.867,
+   275.346,
+   "It usually means the market expects profits to"
+  ],
+  [
+   275.346,
+   276.216,
+   "grow fast."
+  ],
+  [
+   276.216,
+   279.695,
+   "And a low P E isn't always a"
+  ],
+  [
+   279.695,
+   280.13,
+   "bargain."
+  ],
+  [
+   280.13,
+   283.61,
+   "Sometimes it's a warning that trouble is coming."
+  ],
+  [
+   283.61,
+   286.219,
+   "The P E is a question,"
+  ],
+  [
+   286.219,
+   287.524,
+   "not an answer."
+  ],
+  [
+   288.024,
+   291.106,
+   "The P E has a weakness."
+  ],
+  [
+   291.106,
+   292.646,
+   "It ignores debt,"
+  ],
+  [
+   292.646,
+   295.728,
+   "and it's affected by tax tricks."
+  ],
+  [
+   296.278,
+   298.846,
+   "So professionals prefer another multiple."
+  ],
+  [
+   298.846,
+   300.9,
+   "E V to EBITDA."
+  ],
+  [
+   300.9,
+   301.928,
+   "On top,"
+  ],
+  [
+   301.928,
+   302.955,
+   "enterprise value,"
+  ],
+  [
+   302.955,
+   304.496,
+   "the whole business."
+  ],
+  [
+   304.496,
+   306.036,
+   "On the bottom,"
+  ],
+  [
+   306.036,
+   306.55,
+   "EBITDA,"
+  ],
+  [
+   306.55,
+   308.604,
+   "the core operating profit."
+  ],
+  [
+   309.154,
+   310.182,
+   "For Ardee,"
+  ],
+  [
+   310.182,
+   312.75,
+   "two thousand two hundred fifty,"
+  ],
+  [
+   312.75,
+   314.804,
+   "over one forty seven,"
+  ],
+  [
+   314.804,
+   316.858,
+   "is about fifteen times."
+  ],
+  [
+   316.858,
+   318.913,
+   "Because it uses EV,"
+  ],
+  [
+   318.913,
+   320.967,
+   "it accounts for debt."
+  ],
+  [
+   320.967,
+   325.076,
+   "So it compares two companies far more fairly"
+  ],
+  [
+   325.076,
+   327.644,
+   "than the P E can."
+  ],
+  [
+   328.144,
+   331.949,
+   "Let's put our three recyclers side by side,"
+  ],
+  [
+   331.949,
+   333.851,
+   "on the P E."
+  ],
+  [
+   334.401,
+   338.206,
+   "Ardee trades at about twenty five times earnings."
+  ],
+  [
+   338.206,
+   338.681,
+   "Gravita,"
+  ],
+  [
+   338.681,
+   340.108,
+   "the established leader,"
+  ],
+  [
+   340.108,
+   341.535,
+   "at thirty one."
+  ],
+  [
+   341.535,
+   342.486,
+   "And Pondy,"
+  ],
+  [
+   342.486,
+   343.437,
+   "the priciest,"
+  ],
+  [
+   343.437,
+   344.864,
+   "at around forty."
+  ],
+  [
+   345.414,
+   347.792,
+   "So on the P E,"
+  ],
+  [
+   347.792,
+   351.121,
+   "Ardee looks the cheapest of the three."
+  ],
+  [
+   351.121,
+   353.499,
+   "But remember what we said."
+  ],
+  [
+   353.499,
+   355.876,
+   "Cheap can mean a bargain,"
+  ],
+  [
+   355.876,
+   359.681,
+   "or it can mean the market is worried."
+  ],
+  [
+   359.681,
+   363.01,
+   "One ratio alone can't tell you which."
+  ],
+  [
+   363.01,
+   365.388,
+   "Let's add the fairer one."
+  ],
+  [
+   365.888,
+   367.833,
+   "Now the same three,"
+  ],
+  [
+   367.833,
+   370.264,
+   "on E V to EBITDA."
+  ],
+  [
+   370.814,
+   373.731,
+   "And look how the gap widens."
+  ],
+  [
+   373.731,
+   376.161,
+   "Ardee is about fifteen times."
+  ],
+  [
+   376.161,
+   380.051,
+   "Gravita and Pondy are both around twenty five"
+  ],
+  [
+   380.051,
+   381.509,
+   "to twenty six."
+  ],
+  [
+   382.059,
+   384.004,
+   "So on the fairer,"
+  ],
+  [
+   384.004,
+   384.976,
+   "debt-adjusted multiple,"
+  ],
+  [
+   384.976,
+   388.866,
+   "Ardee trades at roughly half the price of"
+  ],
+  [
+   388.866,
+   389.838,
+   "its peers."
+  ],
+  [
+   389.838,
+   391.783,
+   "That's a genuine discount."
+  ],
+  [
+   391.783,
+   395.672,
+   "The question every investor must then ask is"
+  ],
+  [
+   395.672,
+   396.158,
+   "simply,"
+  ],
+  [
+   396.158,
+   396.644,
+   "why?"
+  ],
+  [
+   396.644,
+   398.589,
+   "Is it a bargain,"
+  ],
+  [
+   398.589,
+   401.02,
+   "or is the discount deserved?"
+  ],
+  [
+   401.52,
+   403.299,
+   "Two more quick tools."
+  ],
+  [
+   403.849,
+   407.406,
+   "Price to book compares the share price to"
+  ],
+  [
+   407.406,
+   410.074,
+   "the company's net worth per share."
+  ],
+  [
+   410.074,
+   413.632,
+   "Ardee's book value is about ten rupees a"
+  ],
+  [
+   413.632,
+   414.077,
+   "share,"
+  ],
+  [
+   414.077,
+   415.411,
+   "so at seventy,"
+  ],
+  [
+   415.411,
+   418.968,
+   "its price to book is around seven times."
+  ],
+  [
+   419.518,
+   423.076,
+   "High price to book is justified only by"
+  ],
+  [
+   423.076,
+   423.965,
+   "high returns,"
+  ],
+  [
+   423.965,
+   424.41,
+   "which,"
+  ],
+  [
+   424.41,
+   424.854,
+   "remember,"
+  ],
+  [
+   424.854,
+   425.744,
+   "Ardee has."
+  ],
+  [
+   425.744,
+   426.633,
+   "And finally,"
+  ],
+  [
+   426.633,
+   429.301,
+   "flip the P E upside down,"
+  ],
+  [
+   429.301,
+   431.97,
+   "and you get the earnings yield."
+  ],
+  [
+   431.97,
+   435.527,
+   "One divided by twenty five is about four"
+  ],
+  [
+   435.527,
+   435.972,
+   "percent."
+  ],
+  [
+   435.972,
+   439.529,
+   "It lets you compare a stock's profit to"
+  ],
+  [
+   439.529,
+   441.308,
+   "a bank deposit's interest."
+  ],
+  [
+   441.808,
+   445.289,
+   "Let's put it all on one map."
+  ],
+  [
+   445.839,
+   447.331,
+   "Across the bottom,"
+  ],
+  [
+   447.331,
+   448.823,
+   "cheap to expensive."
+  ],
+  [
+   448.823,
+   450.315,
+   "Up the side,"
+  ],
+  [
+   450.315,
+   452.802,
+   "low quality to high quality."
+  ],
+  [
+   453.352,
+   455.341,
+   "Gravita sits top left."
+  ],
+  [
+   455.341,
+   456.336,
+   "High quality,"
+  ],
+  [
+   456.336,
+   460.315,
+   "but you pay a full price for it."
+  ],
+  [
+   460.315,
+   463.796,
+   "Pondy sits lower and to the left."
+  ],
+  [
+   463.796,
+   464.293,
+   "Pricey,"
+  ],
+  [
+   464.293,
+   466.283,
+   "with the thinnest margins."
+  ],
+  [
+   466.283,
+   468.769,
+   "And Ardee sits top right."
+  ],
+  [
+   468.769,
+   469.764,
+   "The cheapest,"
+  ],
+  [
+   469.764,
+   471.753,
+   "with the strongest returns."
+  ],
+  [
+   472.303,
+   475.287,
+   "Top right is the dream corner."
+  ],
+  [
+   475.287,
+   476.779,
+   "Cheap and good."
+  ],
+  [
+   476.779,
+   478.271,
+   "Ardee screens there,"
+  ],
+  [
+   478.271,
+   478.769,
+   "if,"
+  ],
+  [
+   478.769,
+   480.261,
+   "and only if,"
+  ],
+  [
+   480.261,
+   482.25,
+   "its numbers hold up."
+  ],
+  [
+   482.25,
+   486.229,
+   "And checking whether they hold is what the"
+  ],
+  [
+   486.229,
+   488.218,
+   "last chapters are for."
+  ],
+  [
+   488.718,
+   490.969,
+   "Let's lock in chapter four."
+  ],
+  [
+   491.519,
+   493.77,
+   "Price is what you pay,"
+  ],
+  [
+   493.77,
+   496.021,
+   "value is what you get."
+  ],
+  [
+   496.021,
+   499.623,
+   "Market cap is the price of the shares."
+  ],
+  [
+   499.623,
+   502.775,
+   "Enterprise value adds debt and removes cash,"
+  ],
+  [
+   502.775,
+   506.377,
+   "for the true cost of the whole business."
+  ],
+  [
+   506.927,
+   510.529,
+   "The P E tells you the price per"
+  ],
+  [
+   510.529,
+   511.879,
+   "rupee of profit."
+  ],
+  [
+   511.879,
+   515.031,
+   "E V to EBITDA does the same,"
+  ],
+  [
+   515.031,
+   515.931,
+   "but fairer,"
+  ],
+  [
+   515.931,
+   517.732,
+   "because it counts debt."
+  ],
+  [
+   517.732,
+   518.633,
+   "On both,"
+  ],
+  [
+   518.633,
+   522.235,
+   "Ardee looks the cheapest of our three companies."
+  ],
+  [
+   522.785,
+   525.936,
+   "But a low multiple is a question,"
+  ],
+  [
+   525.936,
+   527.287,
+   "not an answer."
+  ],
+  [
+   527.287,
+   528.638,
+   "To answer it,"
+  ],
+  [
+   528.638,
+   531.789,
+   "we need to look at the risk."
+  ],
+  [
+   531.789,
+   534.491,
+   "And risk lives in the debt."
+  ],
+  [
+   534.491,
+   535.841,
+   "That's chapter five."
+  ],
+  [
+   535.841,
+   537.192,
+   "Thanks for watching."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "fa/ch04.wav",
+   "volume": 1.0
+  }
+ }
+}

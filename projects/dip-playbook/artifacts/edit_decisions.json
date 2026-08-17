@@ -1,0 +1,181 @@
+{
+  "cuts": [
+    {
+      "id": "s01_title",
+      "type": "dip_title",
+      "in_seconds": 0.0,
+      "out_seconds": 38.898,
+      "props": {
+        "dur": 39.398
+      }
+    },
+    {
+      "id": "s02_thesis",
+      "type": "dip_thesis",
+      "in_seconds": 39.398,
+      "out_seconds": 92.334,
+      "props": {
+        "dur": 53.436
+      }
+    },
+    {
+      "id": "s03_div1",
+      "type": "dip_div",
+      "in_seconds": 92.834,
+      "out_seconds": 101.81,
+      "props": {
+        "n": 1,
+        "title": "The Setup",
+        "sub": "What dragged the market down \u2014 and who it hit",
+        "color": "#FBBF24",
+        "dur": 9.476
+      }
+    },
+    {
+      "id": "s04_setup",
+      "type": "dip_setup",
+      "in_seconds": 102.31,
+      "out_seconds": 154.504,
+      "props": {
+        "dur": 52.694
+      }
+    },
+    {
+      "id": "s05_crude",
+      "type": "dip_crude",
+      "in_seconds": 155.004,
+      "out_seconds": 202.252,
+      "props": {
+        "dur": 47.748
+      }
+    },
+    {
+      "id": "s06_rupee",
+      "type": "dip_rupee",
+      "in_seconds": 202.752,
+      "out_seconds": 249.952,
+      "props": {
+        "dur": 47.7
+      }
+    },
+    {
+      "id": "s07_fii",
+      "type": "dip_fii",
+      "in_seconds": 250.452,
+      "out_seconds": 300.388,
+      "props": {
+        "dur": 50.436
+      }
+    },
+    {
+      "id": "s08_war",
+      "type": "dip_war",
+      "in_seconds": 300.888,
+      "out_seconds": 342.114,
+      "props": {
+        "dur": 41.726
+      }
+    },
+    {
+      "id": "s09_usit",
+      "type": "dip_usit",
+      "in_seconds": 342.614,
+      "out_seconds": 392.764,
+      "props": {
+        "dur": 50.65
+      }
+    },
+    {
+      "id": "s10_div2",
+      "type": "dip_div",
+      "in_seconds": 393.264,
+      "out_seconds": 402.312,
+      "props": {
+        "n": 2,
+        "title": "The Playbook",
+        "sub": "Dip vs trap \u00b7 quality \u00b7 value \u00b7 the screen \u00b7 risk",
+        "color": "#34D399",
+        "dur": 9.548
+      }
+    },
+    {
+      "id": "s11_dipvstrap",
+      "type": "dip_dipvstrap",
+      "in_seconds": 402.812,
+      "out_seconds": 455.27,
+      "props": {
+        "dur": 52.958
+      }
+    },
+    {
+      "id": "s12_quality",
+      "type": "dip_quality",
+      "in_seconds": 455.77,
+      "out_seconds": 503.526,
+      "props": {
+        "dur": 48.256
+      }
+    },
+    {
+      "id": "s13_value",
+      "type": "dip_value",
+      "in_seconds": 504.026,
+      "out_seconds": 554.634,
+      "props": {
+        "dur": 51.108
+      }
+    },
+    {
+      "id": "s14_screen",
+      "type": "dip_screen",
+      "in_seconds": 555.134,
+      "out_seconds": 614.43,
+      "props": {
+        "dur": 59.796
+      }
+    },
+    {
+      "id": "s15_confirm",
+      "type": "dip_confirm",
+      "in_seconds": 614.93,
+      "out_seconds": 667.024,
+      "props": {
+        "dur": 52.594
+      }
+    },
+    {
+      "id": "s16_risk",
+      "type": "dip_risk",
+      "in_seconds": 667.524,
+      "out_seconds": 706.108,
+      "props": {
+        "dur": 39.084
+      }
+    },
+    {
+      "id": "s17_recap",
+      "type": "dip_recap",
+      "in_seconds": 706.608,
+      "out_seconds": 778.906,
+      "props": {
+        "items": [
+          "A market-wide sell-off drags quality down with the junk \u2014 that's the opening",
+          "Last week: crude, weak rupee, FII selling, war, and US curbs on IT",
+          "Macro DIP (business fine) vs company DAMAGE (business broken) \u2014 did peers fall too?",
+          "Filter 1 \u2014 strong: high ROE, low debt, steady growth, real cash flow",
+          "Filter 2 \u2014 cheap: PE below peers & its own history, not just 'fallen'",
+          "Screen it \u2192 intersect with the week's losers \u2192 verify every name by hand",
+          "Confirm why it fell, wait for stability, enter in tranches, manage risk"
+        ],
+        "closer": "Buying the dip isn't courage \u2014 it's a repeatable process. The market hands you quality on sale; the checklist tells you which.",
+        "dur": 72.798
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "dip/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

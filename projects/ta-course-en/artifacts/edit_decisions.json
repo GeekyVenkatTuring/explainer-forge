@@ -1,0 +1,1980 @@
+{
+  "cuts": [
+    {
+      "id": "s01_title",
+      "type": "tac_title",
+      "in_seconds": 0.0,
+      "out_seconds": 38.828,
+      "props": {
+        "dur": 39.328
+      }
+    },
+    {
+      "id": "s02_div1",
+      "type": "tac_div",
+      "in_seconds": 39.328,
+      "out_seconds": 47.056,
+      "props": {
+        "n": 1,
+        "title": "The Language of Charts",
+        "sub": "Why charts \u00b7 Timeframes \u00b7 Reading one candle",
+        "color": "#22D3EE",
+        "dur": 8.228
+      }
+    },
+    {
+      "id": "s03_whyta",
+      "type": "tac_whyta",
+      "in_seconds": 47.556,
+      "out_seconds": 89.024,
+      "props": {
+        "dur": 41.968
+      }
+    },
+    {
+      "id": "s04_timeframes",
+      "type": "tac_timeframes",
+      "in_seconds": 89.524,
+      "out_seconds": 126.862,
+      "props": {
+        "dur": 37.838
+      }
+    },
+    {
+      "id": "s05_anatomy",
+      "type": "tac_anatomy",
+      "in_seconds": 127.362,
+      "out_seconds": 173.338,
+      "props": {
+        "dur": 46.476
+      }
+    },
+    {
+      "id": "s06_div2",
+      "type": "tac_div",
+      "in_seconds": 173.838,
+      "out_seconds": 180.966,
+      "props": {
+        "n": 2,
+        "title": "Single Candle Patterns",
+        "sub": "Doji \u00b7 Hammer \u00b7 Marubozu \u00b7 Engulfing",
+        "color": "#FBBF24",
+        "dur": 7.628
+      }
+    },
+    {
+      "id": "s07_doji",
+      "type": "tac_doji",
+      "in_seconds": 181.466,
+      "out_seconds": 227.586,
+      "props": {
+        "dur": 46.62
+      }
+    },
+    {
+      "id": "s08_hammer",
+      "type": "tac_hammer",
+      "in_seconds": 228.086,
+      "out_seconds": 275.286,
+      "props": {
+        "dur": 47.7
+      }
+    },
+    {
+      "id": "s09_marubozu",
+      "type": "tac_marubozu",
+      "in_seconds": 275.786,
+      "out_seconds": 317.9,
+      "props": {
+        "dur": 42.614
+      }
+    },
+    {
+      "id": "s10_engulfing",
+      "type": "tac_engulfing",
+      "in_seconds": 318.4,
+      "out_seconds": 361.906,
+      "props": {
+        "dur": 44.006
+      }
+    },
+    {
+      "id": "s11_div3",
+      "type": "tac_div",
+      "in_seconds": 362.406,
+      "out_seconds": 370.662,
+      "props": {
+        "n": 3,
+        "title": "Multi-Candle Patterns",
+        "sub": "Harami \u00b7 Morning Star \u00b7 Three Soldiers",
+        "color": "#A78BFA",
+        "dur": 8.756
+      }
+    },
+    {
+      "id": "s12_harami",
+      "type": "tac_harami",
+      "in_seconds": 371.162,
+      "out_seconds": 414.548,
+      "props": {
+        "dur": 43.886
+      }
+    },
+    {
+      "id": "s13_morningstar",
+      "type": "tac_morningstar",
+      "in_seconds": 415.048,
+      "out_seconds": 457.856,
+      "props": {
+        "dur": 43.308
+      }
+    },
+    {
+      "id": "s14_threewhite",
+      "type": "tac_threewhite",
+      "in_seconds": 458.356,
+      "out_seconds": 498.19,
+      "props": {
+        "dur": 40.334
+      }
+    },
+    {
+      "id": "s15_div4",
+      "type": "tac_div",
+      "in_seconds": 498.69,
+      "out_seconds": 507.618,
+      "props": {
+        "n": 4,
+        "title": "Chart Patterns",
+        "sub": "SR \u00b7 Trendlines \u00b7 H&S \u00b7 Double Top \u00b7 Flag \u00b7 Triangle",
+        "color": "#22D3EE",
+        "dur": 9.428
+      }
+    },
+    {
+      "id": "s16_sr",
+      "type": "tac_sr",
+      "in_seconds": 508.118,
+      "out_seconds": 554.84,
+      "props": {
+        "dur": 47.222
+      }
+    },
+    {
+      "id": "s17_trendlines",
+      "type": "tac_trendlines",
+      "in_seconds": 555.34,
+      "out_seconds": 600.596,
+      "props": {
+        "dur": 45.756
+      }
+    },
+    {
+      "id": "s18_hs",
+      "type": "tac_hs",
+      "in_seconds": 601.096,
+      "out_seconds": 640.618,
+      "props": {
+        "dur": 40.022
+      }
+    },
+    {
+      "id": "s19_doubletop",
+      "type": "tac_doubletop",
+      "in_seconds": 641.118,
+      "out_seconds": 683.04,
+      "props": {
+        "dur": 42.422
+      }
+    },
+    {
+      "id": "s20_flag",
+      "type": "tac_flag",
+      "in_seconds": 683.54,
+      "out_seconds": 731.966,
+      "props": {
+        "dur": 48.926
+      }
+    },
+    {
+      "id": "s21_triangle",
+      "type": "tac_triangle",
+      "in_seconds": 732.466,
+      "out_seconds": 781.058,
+      "props": {
+        "dur": 49.092
+      }
+    },
+    {
+      "id": "s22_div5",
+      "type": "tac_div",
+      "in_seconds": 781.558,
+      "out_seconds": 794.254,
+      "props": {
+        "n": 5,
+        "title": "Indicators",
+        "sub": "Volume \u00b7 MA \u00b7 RSI \u00b7 MACD \u00b7 Bollinger Bands",
+        "color": "#FBBF24",
+        "dur": 13.196
+      }
+    },
+    {
+      "id": "s23_volume",
+      "type": "tac_volume",
+      "in_seconds": 794.754,
+      "out_seconds": 841.858,
+      "props": {
+        "dur": 47.604
+      }
+    },
+    {
+      "id": "s24_ma",
+      "type": "tac_ma",
+      "in_seconds": 842.358,
+      "out_seconds": 897.164,
+      "props": {
+        "dur": 55.306
+      }
+    },
+    {
+      "id": "s25_rsi",
+      "type": "tac_rsi",
+      "in_seconds": 897.664,
+      "out_seconds": 946.808,
+      "props": {
+        "dur": 49.644
+      }
+    },
+    {
+      "id": "s26_macd",
+      "type": "tac_macd",
+      "in_seconds": 947.308,
+      "out_seconds": 995.782,
+      "props": {
+        "dur": 48.974
+      }
+    },
+    {
+      "id": "s27_bb",
+      "type": "tac_bb",
+      "in_seconds": 996.282,
+      "out_seconds": 1039.404,
+      "props": {
+        "dur": 43.622
+      }
+    },
+    {
+      "id": "s28_div6",
+      "type": "tac_div",
+      "in_seconds": 1039.904,
+      "out_seconds": 1048.976,
+      "props": {
+        "n": 6,
+        "title": "Putting It Together",
+        "sub": "Confluence \u00b7 Risk \u00b7 Pre-trade checklist",
+        "color": "#34D399",
+        "dur": 9.572
+      }
+    },
+    {
+      "id": "s29_confluence",
+      "type": "tac_confluence",
+      "in_seconds": 1049.476,
+      "out_seconds": 1099.102,
+      "props": {
+        "dur": 50.126
+      }
+    },
+    {
+      "id": "s30_risk",
+      "type": "tac_risk",
+      "in_seconds": 1099.602,
+      "out_seconds": 1149.034,
+      "props": {
+        "dur": 49.932
+      }
+    },
+    {
+      "id": "s31_checklist",
+      "type": "tac_checklist",
+      "in_seconds": 1149.534,
+      "out_seconds": 1190.76,
+      "props": {
+        "items": [
+          "What is the trend on the weekly chart? Are we WITH it?",
+          "What is the key support or resistance level nearest to entry?",
+          "Is there a candle signal \u2014 doji, engulfing, hammer \u2014 confirming?",
+          "Does an indicator (RSI, MACD, BB) support the same direction?",
+          "Where exactly is my stop-loss, and why is it there?",
+          "Where is my target, and is R:R at least 2:1?",
+          "Am I risking more than 2% of capital on this trade?",
+          "Is volume confirming this move, or is it suspiciously low?"
+        ],
+        "dur": 41.726
+      }
+    },
+    {
+      "id": "s32_recap",
+      "type": "tac_recap",
+      "in_seconds": 1191.26,
+      "out_seconds": 1255.522,
+      "props": {
+        "items": [
+          "Every candle = Open, High, Low, Close \u2014 a complete battle report",
+          "Doji = indecision; Hammer = demand at lows (only in downtrend)",
+          "Engulfing & Three White Soldiers = momentum shift with force",
+          "Morning Star / Evening Star = three-candle trend reversals",
+          "Support & Resistance: price has memory \u2014 these levels repeat",
+          "H&S, Double Top, Flag, Triangle all carry measured-move targets",
+          "Indicators (RSI, MACD, BB, Volume) CONFIRM \u2014 they don't predict",
+          "Confluence: stack 3\u20134 signals before acting. Risk: 2:1 R:R minimum"
+        ],
+        "closer": "Charts don't lie \u2014 but they speak in probabilities, not certainties. Learn the language.",
+        "dur": 64.762
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.814,
+      "Every price \u2014 every candle \u2014 is a vote."
+    ],
+    [
+      3.814,
+      6.846,
+      "Bulls vote up, bears vote down."
+    ],
+    [
+      6.846,
+      9.878,
+      "The chart is the running tally."
+    ],
+    [
+      9.878,
+      14.768,
+      "This course: candle anatomy, candlestick patterns,"
+    ],
+    [
+      14.768,
+      20.343,
+      "chart formations, and confirming indicators \u2014 end to end."
+    ],
+    [
+      20.343,
+      25.136,
+      "One note: technical analysis reads probabilities,"
+    ],
+    [
+      25.136,
+      26.7,
+      "not certainties."
+    ],
+    [
+      26.7,
+      30.123,
+      "These are patterns, not guarantees."
+    ],
+    [
+      30.123,
+      33.84,
+      "Education only, not investment advice."
+    ],
+    [
+      33.84,
+      38.828,
+      "Consult a SEBI-registered advisor before investing."
+    ],
+    [
+      39.328,
+      40.166,
+      "Part one."
+    ],
+    [
+      40.166,
+      42.401,
+      "The language of charts \u2014"
+    ],
+    [
+      42.401,
+      47.056,
+      "why price tells the story before the headlines do."
+    ],
+    [
+      47.556,
+      49.749,
+      "Why bother with charts?"
+    ],
+    [
+      49.749,
+      53.562,
+      "By the time a story breaks in the press,"
+    ],
+    [
+      53.562,
+      56.803,
+      "the smart money has already acted."
+    ],
+    [
+      56.803,
+      61.665,
+      "The chart recorded every transaction in real time \u2014"
+    ],
+    [
+      61.665,
+      66.717,
+      "every buyer, every seller, every institutional order."
+    ],
+    [
+      66.717,
+      68.91,
+      "Look at the two panels."
+    ],
+    [
+      68.91,
+      71.865,
+      "The analyst consensus said buy."
+    ],
+    [
+      71.865,
+      74.439,
+      "What did price actually do?"
+    ],
+    [
+      74.439,
+      78.157,
+      "It broke support, expanded on red days,"
+    ],
+    [
+      78.157,
+      80.54,
+      "and diverged on momentum."
+    ],
+    [
+      80.54,
+      82.828,
+      "The chart was not wrong."
+    ],
+    [
+      82.828,
+      86.069,
+      "Price already had the information."
+    ],
+    [
+      86.069,
+      89.024,
+      "Our job is to learn to read it."
+    ],
+    [
+      89.524,
+      94.356,
+      "The same stock looks different on different timeframes."
+    ],
+    [
+      94.356,
+      99.364,
+      "The one-hour chart is noisy \u2014 hard to read any direction."
+    ],
+    [
+      99.364,
+      102.175,
+      "The daily shows a cleaner trend."
+    ],
+    [
+      102.175,
+      103.141,
+      "The weekly?"
+    ],
+    [
+      103.141,
+      105.338,
+      "The move is unmistakable."
+    ],
+    [
+      105.338,
+      109.818,
+      "Use the larger timeframe for your directional bias,"
+    ],
+    [
+      109.818,
+      112.015,
+      "the daily for your setup,"
+    ],
+    [
+      112.015,
+      115.177,
+      "and intraday only for precise entry."
+    ],
+    [
+      115.177,
+      117.989,
+      "Trade WITH the larger timeframe."
+    ],
+    [
+      117.989,
+      126.862,
+      "Fighting the weekly trend on a one-hour chart is one of the most expensive mistakes a beginner makes."
+    ],
+    [
+      127.362,
+      132.024,
+      "Every candle has four data points: Open, High, Low,"
+    ],
+    [
+      132.024,
+      132.938,
+      "and Close."
+    ],
+    [
+      132.938,
+      135.588,
+      "The body spans Open to Close."
+    ],
+    [
+      135.588,
+      140.707,
+      "Green means Close is above Open \u2014 bulls won the session."
+    ],
+    [
+      140.707,
+      146.191,
+      "The upper wick shows how high price went \u2014 then pulled back."
+    ],
+    [
+      146.191,
+      151.401,
+      "Sellers stepped in at the tip and pushed price back down."
+    ],
+    [
+      151.401,
+      156.611,
+      "The lower wick shows how low price went \u2014 then recovered."
+    ],
+    [
+      156.611,
+      160.45,
+      "Buyers stepped in and defended that level."
+    ],
+    [
+      160.45,
+      166.3,
+      "One candle encodes a complete battle: where the session started,"
+    ],
+    [
+      166.3,
+      171.053,
+      "how far each side pushed, and who had the final say."
+    ],
+    [
+      171.053,
+      173.338,
+      "The close is the verdict."
+    ],
+    [
+      173.838,
+      174.65,
+      "Part two."
+    ],
+    [
+      174.65,
+      176.816,
+      "Single candle patterns \u2014"
+    ],
+    [
+      176.816,
+      180.966,
+      "what one candle can tell you about the battle."
+    ],
+    [
+      181.466,
+      186.262,
+      "The doji: open and close are nearly identical \u2014"
+    ],
+    [
+      186.262,
+      187.894,
+      "paper-thin body."
+    ],
+    [
+      187.894,
+      189.629,
+      "Neither side won."
+    ],
+    [
+      189.629,
+      194.527,
+      "Standard doji has equal wicks \u2014 pure indecision."
+    ],
+    [
+      194.527,
+      198.812,
+      "Dragonfly doji: long lower wick, no upper."
+    ],
+    [
+      198.812,
+      200.649,
+      "Bears pushed hard,"
+    ],
+    [
+      200.649,
+      206.873,
+      "buyers absorbed everything and closed price back at the open."
+    ],
+    [
+      206.873,
+      208.403,
+      "Demand at lows."
+    ],
+    [
+      208.403,
+      214.525,
+      "Gravestone: bulls pushed high, then sellers dragged it back."
+    ],
+    [
+      214.525,
+      218.709,
+      "Long-legged: both sides tried and failed."
+    ],
+    [
+      218.709,
+      220.75,
+      "Maximum uncertainty."
+    ],
+    [
+      220.75,
+      222.484,
+      "Context matters \u2014"
+    ],
+    [
+      222.484,
+      227.586,
+      "a doji after a long trend is far more significant."
+    ],
+    [
+      228.086,
+      233.938,
+      "Hammer: small body at the TOP of the range, long lower wick \u2014"
+    ],
+    [
+      233.938,
+      236.24,
+      "at least twice the body."
+    ],
+    [
+      236.24,
+      239.598,
+      "Sellers drove price sharply lower \u2014"
+    ],
+    [
+      239.598,
+      244.587,
+      "but buyers absorbed everything and drove it back up."
+    ],
+    [
+      244.587,
+      246.218,
+      "A sign of demand."
+    ],
+    [
+      246.218,
+      249.959,
+      "The hammer only matters in a DOWNTREND."
+    ],
+    [
+      249.959,
+      254.372,
+      "Left panel: five red candles, then the hammer."
+    ],
+    [
+      254.372,
+      256.195,
+      "Potential reversal."
+    ],
+    [
+      256.195,
+      260.8,
+      "Right panel: the identical shape in an uptrend \u2014"
+    ],
+    [
+      260.8,
+      262.335,
+      "the Hanging Man."
+    ],
+    [
+      262.335,
+      266.076,
+      "Same body, same wick, opposite meaning."
+    ],
+    [
+      266.076,
+      271.449,
+      "After a rally, a long lower wick says bulls had trouble,"
+    ],
+    [
+      271.449,
+      272.696,
+      "not strength."
+    ],
+    [
+      272.696,
+      275.286,
+      "Context decides everything."
+    ],
+    [
+      275.786,
+      278.493,
+      "If a doji shows indecision,"
+    ],
+    [
+      278.493,
+      283.306,
+      "a Marubozu shows the opposite: total conviction."
+    ],
+    [
+      283.306,
+      286.014,
+      "Bullish Marubozu: no wicks."
+    ],
+    [
+      286.014,
+      289.523,
+      "Open equals Low, Close equals High."
+    ],
+    [
+      289.523,
+      295.038,
+      "From first tick to last, bulls controlled every moment."
+    ],
+    [
+      295.038,
+      298.949,
+      "Not a single seller could push it back."
+    ],
+    [
+      298.949,
+      301.656,
+      "Bearish Marubozu: no wicks."
+    ],
+    [
+      301.656,
+      305.166,
+      "Open equals High, Close equals Low."
+    ],
+    [
+      305.166,
+      308.274,
+      "Bears owned the entire session."
+    ],
+    [
+      308.274,
+      315.493,
+      "A Marubozu at a key breakout level signals strong follow-through intent."
+    ],
+    [
+      315.493,
+      317.9,
+      "There was no hesitation."
+    ],
+    [
+      318.4,
+      324.173,
+      "The engulfing pattern shows a clear shift in who controls the market."
+    ],
+    [
+      324.173,
+      326.767,
+      "Left panel: a small red candle,"
+    ],
+    [
+      326.767,
+      333.376,
+      "then a much larger green candle whose body completely covers the previous body."
+    ],
+    [
+      333.376,
+      338.312,
+      "Bullish engulfing \u2014 buyers came in with overwhelming force."
+    ],
+    [
+      338.312,
+      341.157,
+      "Right panel: a small green candle,"
+    ],
+    [
+      341.157,
+      345.089,
+      "then a large red candle that swallows it whole."
+    ],
+    [
+      345.089,
+      349.858,
+      "Bearish engulfing \u2014 sellers took the full range and more."
+    ],
+    [
+      349.858,
+      353.456,
+      "The second body must fully cover the first."
+    ],
+    [
+      353.456,
+      357.388,
+      "It's most significant after an extended trend \u2014"
+    ],
+    [
+      357.388,
+      361.906,
+      "the bigger the momentum shift, the cleaner the signal."
+    ],
+    [
+      362.406,
+      363.404,
+      "Part three."
+    ],
+    [
+      363.404,
+      365.491,
+      "Multi-candle patterns \u2014"
+    ],
+    [
+      365.491,
+      370.662,
+      "when two or three candles together tell a stronger story."
+    ],
+    [
+      371.162,
+      376.442,
+      "Harami means 'pregnant' in Japanese \u2014 a large mother candle,"
+    ],
+    [
+      376.442,
+      379.17,
+      "a small baby nestled inside it."
+    ],
+    [
+      379.17,
+      390.259,
+      "Bullish harami: a large bearish candle followed by a smaller bullish candle whose body fits entirely within the mother's body."
+    ],
+    [
+      390.259,
+      393.779,
+      "The prior downward momentum has stalled."
+    ],
+    [
+      393.779,
+      396.419,
+      "Selling pressure is narrowing."
+    ],
+    [
+      396.419,
+      400.115,
+      "Bearish harami is the inverse: an uptrend,"
+    ],
+    [
+      400.115,
+      402.139,
+      "a large bullish candle,"
+    ],
+    [
+      402.139,
+      405.484,
+      "then a small bearish candle inside it."
+    ],
+    [
+      405.484,
+      408.036,
+      "Buying momentum is drying up."
+    ],
+    [
+      408.036,
+      410.94,
+      "Harami is an alert, not a signal."
+    ],
+    [
+      410.94,
+      414.548,
+      "Wait for confirmation on the next candle."
+    ],
+    [
+      415.048,
+      417.524,
+      "Morning Star: three candles,"
+    ],
+    [
+      417.524,
+      421.328,
+      "one of the most reliable bullish reversals."
+    ],
+    [
+      421.328,
+      425.573,
+      "Candle one: strong bearish \u2014 trend clearly down."
+    ],
+    [
+      425.573,
+      428.403,
+      "Candle two: small body or doji \u2014"
+    ],
+    [
+      428.403,
+      430.968,
+      "selling has exhausted itself."
+    ],
+    [
+      430.968,
+      433.533,
+      "Candle three: strong bullish,"
+    ],
+    [
+      433.533,
+      437.69,
+      "closing well into the body of the first candle."
+    ],
+    [
+      437.69,
+      439.901,
+      "Bulls have taken control."
+    ],
+    [
+      439.901,
+      444.943,
+      "Most powerful when the second candle gaps from the first,"
+    ],
+    [
+      444.943,
+      450.338,
+      "and the third closes more than halfway into the first's body."
+    ],
+    [
+      450.338,
+      457.856,
+      "Evening Star is the mirror: the same three-candle structure at the top of an uptrend."
+    ],
+    [
+      458.356,
+      462.937,
+      "Three White Soldiers is a momentum continuation signal \u2014"
+    ],
+    [
+      462.937,
+      464.163,
+      "not a reversal."
+    ],
+    [
+      464.163,
+      466.944,
+      "Three consecutive bullish candles,"
+    ],
+    [
+      466.944,
+      472.506,
+      "each opening within the previous body and closing near its own high."
+    ],
+    [
+      472.506,
+      476.842,
+      "A staircase of buying pressure across three sessions."
+    ],
+    [
+      476.842,
+      484.857,
+      "Three Black Crows is the same structure inverted: three consecutive bearish candles stepping down,"
+    ],
+    [
+      484.857,
+      490.011,
+      "each opening inside the previous body and closing near the low."
+    ],
+    [
+      490.011,
+      491.646,
+      "Strong distribution."
+    ],
+    [
+      491.646,
+      495.736,
+      "When Three Black Crows appears after a long rally,"
+    ],
+    [
+      495.736,
+      498.19,
+      "treat it as a serious warning."
+    ],
+    [
+      498.69,
+      499.565,
+      "Part four."
+    ],
+    [
+      499.565,
+      500.966,
+      "Chart patterns \u2014"
+    ],
+    [
+      500.966,
+      507.618,
+      "formations that develop over days and weeks and carry measured-move targets."
+    ],
+    [
+      508.118,
+      513.185,
+      "Support is a price level where buyers historically step in."
+    ],
+    [
+      513.185,
+      518.338,
+      "Resistance is the ceiling where sellers consistently appear."
+    ],
+    [
+      518.338,
+      523.062,
+      "Watch the chart: each time price approaches resistance,"
+    ],
+    [
+      523.062,
+      525.038,
+      "it stalls and reverses."
+    ],
+    [
+      525.038,
+      527.958,
+      "Each test of support finds buyers."
+    ],
+    [
+      527.958,
+      530.105,
+      "These levels have memory."
+    ],
+    [
+      530.105,
+      532.596,
+      "The more times a level holds,"
+    ],
+    [
+      532.596,
+      535.344,
+      "the more significant it becomes."
+    ],
+    [
+      535.344,
+      539.466,
+      "And when price breaks cleanly ABOVE resistance \u2014"
+    ],
+    [
+      539.466,
+      544.276,
+      "that resistance often flips and becomes the new support."
+    ],
+    [
+      544.276,
+      548.227,
+      "Former resistance becomes support on a retest."
+    ],
+    [
+      548.227,
+      554.84,
+      "This flip is one of the most reliable phenomena in all of technical analysis."
+    ],
+    [
+      555.34,
+      559.31,
+      "A trendline connects the lows of an uptrend \u2014"
+    ],
+    [
+      559.31,
+      563.809,
+      "or the highs of a downtrend \u2014 into a straight line."
+    ],
+    [
+      563.809,
+      567.691,
+      "In an uptrend: higher highs AND higher lows."
+    ],
+    [
+      567.691,
+      572.984,
+      "Each pullback finds support at a higher point than the last."
+    ],
+    [
+      572.984,
+      577.659,
+      "Connect those higher lows \u2014 that's your uptrend line."
+    ],
+    [
+      577.659,
+      582.864,
+      "As long as price stays above the line, the trend is intact."
+    ],
+    [
+      582.864,
+      585.422,
+      "Traders buy dips to the line."
+    ],
+    [
+      585.422,
+      589.745,
+      "A close BELOW the trendline is the first warning."
+    ],
+    [
+      589.745,
+      593.274,
+      "A second close below confirms the break."
+    ],
+    [
+      593.274,
+      597.597,
+      "You need at least two points to draw a trendline."
+    ],
+    [
+      597.597,
+      600.596,
+      "Three touches make it significant."
+    ],
+    [
+      601.096,
+      606.817,
+      "Head and Shoulders is one of the most reliable reversal patterns."
+    ],
+    [
+      606.817,
+      610.778,
+      "Three parts: a rally to a peak and pullback \u2014"
+    ],
+    [
+      610.778,
+      612.363,
+      "the left shoulder."
+    ],
+    [
+      612.363,
+      614.563,
+      "A higher peak \u2014 the head."
+    ],
+    [
+      614.563,
+      618.436,
+      "A third rally that fails to reach the head \u2014"
+    ],
+    [
+      618.436,
+      620.109,
+      "the right shoulder."
+    ],
+    [
+      620.109,
+      623.982,
+      "The neckline connects the two pullback lows."
+    ],
+    [
+      623.982,
+      628.031,
+      "Break below the neckline confirms the pattern."
+    ],
+    [
+      628.031,
+      631.112,
+      "Measured move: head minus neckline,"
+    ],
+    [
+      631.112,
+      633.752,
+      "projected below the breakdown."
+    ],
+    [
+      633.752,
+      638.593,
+      "Here \u2014 head at one eighteen, neckline at one oh three \u2014"
+    ],
+    [
+      638.593,
+      640.618,
+      "target is eighty-eight."
+    ],
+    [
+      641.118,
+      644.633,
+      "The double top \u2014 two roughly equal peaks,"
+    ],
+    [
+      644.633,
+      646.69,
+      "separated by a pullback."
+    ],
+    [
+      646.69,
+      648.919,
+      "The shape of the letter M."
+    ],
+    [
+      648.919,
+      652.177,
+      "Price rallied to a peak, was rejected,"
+    ],
+    [
+      652.177,
+      654.578,
+      "pulled back to the neckline,"
+    ],
+    [
+      654.578,
+      657.835,
+      "then rallied again to the same height."
+    ],
+    [
+      657.835,
+      660.922,
+      "The second time, sellers were ready."
+    ],
+    [
+      660.922,
+      665.98,
+      "When price breaks below the neckline, the pattern confirms."
+    ],
+    [
+      665.98,
+      670.266,
+      "Target: project the height from neckline to peaks,"
+    ],
+    [
+      670.266,
+      672.667,
+      "downward from the breakdown."
+    ],
+    [
+      672.667,
+      675.581,
+      "The double bottom \u2014 the letter W \u2014"
+    ],
+    [
+      675.581,
+      680.64,
+      "is the mirror: two equal lows, breakout above the neckline,"
+    ],
+    [
+      680.64,
+      683.04,
+      "same measured move going up."
+    ],
+    [
+      683.54,
+      687.21,
+      "The bull flag is a continuation pattern \u2014"
+    ],
+    [
+      687.21,
+      690.343,
+      "the trend isn't over, just pausing."
+    ],
+    [
+      690.343,
+      691.238,
+      "Two parts."
+    ],
+    [
+      691.238,
+      695.803,
+      "Flagpole: a sharp, strong move up with high volume."
+    ],
+    [
+      695.803,
+      701.174,
+      "Then the flag: a slow, tight pullback in a downward channel,"
+    ],
+    [
+      701.174,
+      702.964,
+      "on declining volume."
+    ],
+    [
+      702.964,
+      706.008,
+      "Bulls are resting, not retreating."
+    ],
+    [
+      706.008,
+      712.184,
+      "Breakout above the flag's upper channel line resumes the prior trend."
+    ],
+    [
+      712.184,
+      717.376,
+      "Volume should surge on breakout \u2014 that's the confirmation."
+    ],
+    [
+      717.376,
+      722.03,
+      "Target: flagpole height added to the breakout point."
+    ],
+    [
+      722.03,
+      727.311,
+      "Bear flag is the same structure inverted \u2014 sharp move down,"
+    ],
+    [
+      727.311,
+      731.966,
+      "tight upward consolidation, then continuation lower."
+    ],
+    [
+      732.466,
+      740.309,
+      "The ascending triangle shows buyers getting stronger while sellers hold the same level."
+    ],
+    [
+      740.309,
+      744.907,
+      "A flat resistance line at the top \u2014 price tests it,"
+    ],
+    [
+      744.907,
+      748.784,
+      "gets rejected, pulls back, and tests again."
+    ],
+    [
+      748.784,
+      750.947,
+      "Same ceiling every time."
+    ],
+    [
+      750.947,
+      757.438,
+      "But the lows keep rising: each pullback finds support at a HIGHER level."
+    ],
+    [
+      757.438,
+      762.216,
+      "Higher lows mean buyers are becoming more aggressive."
+    ],
+    [
+      762.216,
+      765.732,
+      "As the lines converge, the setup coils."
+    ],
+    [
+      765.732,
+      768.707,
+      "Eventually resistance gives way \u2014"
+    ],
+    [
+      768.707,
+      772.043,
+      "and the move is often sharp and fast."
+    ],
+    [
+      772.043,
+      776.55,
+      "Descending triangle: flat support, falling highs \u2014"
+    ],
+    [
+      776.55,
+      778.714,
+      "sellers more aggressive."
+    ],
+    [
+      778.714,
+      781.058,
+      "Usually resolves downward."
+    ],
+    [
+      781.558,
+      782.513,
+      "Part five."
+    ],
+    [
+      782.513,
+      783.658,
+      "Indicators \u2014"
+    ],
+    [
+      783.658,
+      788.908,
+      "tools that confirm what price action is already saying."
+    ],
+    [
+      788.908,
+      794.254,
+      "Never use them instead of price \u2014 use them alongside it."
+    ],
+    [
+      794.754,
+      798.563,
+      "Before RSI, before MACD \u2014 there's volume."
+    ],
+    [
+      798.563,
+      803.301,
+      "Volume is the number of shares traded in a session."
+    ],
+    [
+      803.301,
+      807.389,
+      "A price move with high volume is meaningful."
+    ],
+    [
+      807.389,
+      810.084,
+      "On low volume \u2014 it's suspect."
+    ],
+    [
+      810.084,
+      816.216,
+      "Heavy green volume on up days means large buyers are accumulating."
+    ],
+    [
+      816.216,
+      820.768,
+      "Heavy red volume on down days means distribution."
+    ],
+    [
+      820.768,
+      826.435,
+      "Classic warning: price making new highs but volume shrinking."
+    ],
+    [
+      826.435,
+      829.501,
+      "The rally is running out of fuel."
+    ],
+    [
+      829.501,
+      835.819,
+      "On-Balance Volume adds volume on up days and subtracts on down days."
+    ],
+    [
+      835.819,
+      841.858,
+      "The OBV line tracks whether money is flowing in or out over time."
+    ],
+    [
+      842.358,
+      849.874,
+      "A moving average smooths price noise by averaging closes over N periods."
+    ],
+    [
+      849.874,
+      853.424,
+      "SMA ten: last ten closes averaged."
+    ],
+    [
+      853.424,
+      856.764,
+      "SMA thirty: slower and smoother."
+    ],
+    [
+      856.764,
+      861.879,
+      "When the faster SMA ten crosses above SMA thirty,"
+    ],
+    [
+      861.879,
+      867.517,
+      "recent momentum has shifted upward \u2014 the golden cross."
+    ],
+    [
+      867.517,
+      869.082,
+      "Bullish signal."
+    ],
+    [
+      869.082,
+      874.198,
+      "Death cross: faster MA crossing below the slower."
+    ],
+    [
+      874.198,
+      875.972,
+      "Bearish momentum."
+    ],
+    [
+      875.972,
+      881.714,
+      "EMA weights recent prices more heavily \u2014 reacts faster."
+    ],
+    [
+      881.714,
+      888.395,
+      "Short-term traders prefer EMAs; position traders use simple MAs."
+    ],
+    [
+      888.395,
+      890.483,
+      "Moving averages lag."
+    ],
+    [
+      890.483,
+      894.345,
+      "They confirm trends after they start."
+    ],
+    [
+      894.345,
+      897.164,
+      "Use alongside price action."
+    ],
+    [
+      897.664,
+      902.94,
+      "RSI measures the speed and size of recent price moves,"
+    ],
+    [
+      902.94,
+      906.262,
+      "on a scale of zero to one hundred."
+    ],
+    [
+      906.262,
+      908.802,
+      "Above seventy: overbought."
+    ],
+    [
+      908.802,
+      911.049,
+      "Below thirty: oversold."
+    ],
+    [
+      911.049,
+      913.394,
+      "But in a STRONG uptrend,"
+    ],
+    [
+      913.394,
+      917.009,
+      "RSI can stay above seventy for weeks."
+    ],
+    [
+      917.009,
+      925.021,
+      "Selling just because RSI is high is one of the most expensive mistakes in trading."
+    ],
+    [
+      925.021,
+      928.342,
+      "The more powerful use: divergence."
+    ],
+    [
+      928.342,
+      933.325,
+      "Price makes a higher high, RSI makes a lower high \u2014"
+    ],
+    [
+      933.325,
+      937.917,
+      "momentum is weakening before price confirms it."
+    ],
+    [
+      937.917,
+      941.337,
+      "That warns of a potential reversal."
+    ],
+    [
+      941.337,
+      943.975,
+      "Use RSI to confirm a setup."
+    ],
+    [
+      943.975,
+      946.808,
+      "Not to create one on its own."
+    ],
+    [
+      947.308,
+      951.866,
+      "MACD is built from three components: the MACD line \u2014"
+    ],
+    [
+      951.866,
+      955.986,
+      "gap between a twelve and twenty-six period EMA."
+    ],
+    [
+      955.986,
+      960.632,
+      "The signal line \u2014 a nine-period EMA of the MACD line."
+    ],
+    [
+      960.632,
+      963.787,
+      "The histogram \u2014 gap between the two."
+    ],
+    [
+      963.787,
+      972.378,
+      "Key signal: MACD line crossing above the signal line means short-term momentum has turned bullish."
+    ],
+    [
+      972.378,
+      974.569,
+      "Crossing below \u2014 bearish."
+    ],
+    [
+      974.569,
+      980.793,
+      "The histogram turning positive is often the earliest sign of the cross."
+    ],
+    [
+      980.793,
+      984.562,
+      "Watch for it flipping near a support level."
+    ],
+    [
+      984.562,
+      985.964,
+      "MACD is lagging."
+    ],
+    [
+      985.964,
+      991.136,
+      "It confirms momentum has shifted \u2014 not where price will go."
+    ],
+    [
+      991.136,
+      995.782,
+      "Combine with support, resistance, and candle signals."
+    ],
+    [
+      996.282,
+      1000.688,
+      "Bollinger Bands: a dynamic volatility envelope."
+    ],
+    [
+      1000.688,
+      1004.719,
+      "Middle band \u2014 twenty-period moving average."
+    ],
+    [
+      1004.719,
+      1009.687,
+      "Upper and lower bands \u2014 two standard deviations away."
+    ],
+    [
+      1009.687,
+      1012.312,
+      "When bands squeeze together,"
+    ],
+    [
+      1012.312,
+      1015.781,
+      "the market is coiling for a big move."
+    ],
+    [
+      1015.781,
+      1019.249,
+      "Direction unknown until price breaks."
+    ],
+    [
+      1019.249,
+      1022.999,
+      "After the squeeze, bands expand rapidly."
+    ],
+    [
+      1022.999,
+      1029.092,
+      "Initial breakout direction usually tells you where the move goes."
+    ],
+    [
+      1029.092,
+      1033.123,
+      "Touching the upper band does NOT mean sell."
+    ],
+    [
+      1033.123,
+      1036.873,
+      "In a strong trend, price walks the band."
+    ],
+    [
+      1036.873,
+      1039.404,
+      "Confirm with candle or RSI."
+    ],
+    [
+      1039.904,
+      1040.746,
+      "Part six."
+    ],
+    [
+      1040.746,
+      1045.796,
+      "Putting it all together \u2014 confluence, risk management,"
+    ],
+    [
+      1045.796,
+      1048.976,
+      "and the ritual before every trade."
+    ],
+    [
+      1049.476,
+      1054.72,
+      "No single signal is reliable enough to trade on its own."
+    ],
+    [
+      1054.72,
+      1057.809,
+      "The power comes from confluence \u2014"
+    ],
+    [
+      1057.809,
+      1061.461,
+      "multiple signals pointing the same way."
+    ],
+    [
+      1061.461,
+      1067.266,
+      "Look at the example: a support zone that has held three times."
+    ],
+    [
+      1067.266,
+      1070.169,
+      "A bullish doji at that support."
+    ],
+    [
+      1070.169,
+      1074.851,
+      "RSI entering oversold for the first time in weeks."
+    ],
+    [
+      1074.851,
+      1078.315,
+      "A volume spike suggesting big buyers."
+    ],
+    [
+      1078.315,
+      1082.997,
+      "Price touching the two-hundred-day moving average."
+    ],
+    [
+      1082.997,
+      1085.712,
+      "Any one factor alone \u2014 maybe."
+    ],
+    [
+      1085.712,
+      1089.645,
+      "All five together at the same price level?"
+    ],
+    [
+      1089.645,
+      1092.641,
+      "That's a high-probability setup."
+    ],
+    [
+      1092.641,
+      1097.697,
+      "Stack three or four confluent signals before entering."
+    ],
+    [
+      1097.697,
+      1099.102,
+      "Fewer is noise."
+    ],
+    [
+      1099.602,
+      1102.644,
+      "Even the best setup fails sometimes."
+    ],
+    [
+      1102.644,
+      1106.362,
+      "Risk management is how you stay in the game."
+    ],
+    [
+      1106.362,
+      1111.347,
+      "Every trade needs three levels defined BEFORE entry: Entry,"
+    ],
+    [
+      1111.347,
+      1113.206,
+      "Stop-loss, and Target."
+    ],
+    [
+      1113.206,
+      1116.755,
+      "Entry at one hundred, stop at ninety-six \u2014"
+    ],
+    [
+      1116.755,
+      1119.037,
+      "four points of risk, one R."
+    ],
+    [
+      1119.037,
+      1123.684,
+      "Target at one oh eight \u2014 eight points of reward, two R."
+    ],
+    [
+      1123.684,
+      1125.966,
+      "Risk-to-reward: two to one."
+    ],
+    [
+      1125.966,
+      1127.487,
+      "At two-to-one R:R,"
+    ],
+    [
+      1127.487,
+      1134.247,
+      "you only need to win thirty-four percent of the time to be profitable long-term."
+    ],
+    [
+      1134.247,
+      1141.936,
+      "You can lose two out of three trades and still make money if winners are twice your losers."
+    ],
+    [
+      1141.936,
+      1149.034,
+      "Position sizing: never risk more than one to two percent of total capital per trade."
+    ],
+    [
+      1149.534,
+      1153.196,
+      "Before every trade, run this checklist."
+    ],
+    [
+      1153.196,
+      1157.986,
+      "What is the weekly trend \u2014 are you trading with it?"
+    ],
+    [
+      1157.986,
+      1161.367,
+      "Is there a candle signal confirming?"
+    ],
+    [
+      1161.367,
+      1163.62,
+      "Does an indicator agree?"
+    ],
+    [
+      1163.62,
+      1169.349,
+      "Where is your stop \u2014 at a logical level, not a random number?"
+    ],
+    [
+      1169.349,
+      1171.884,
+      "Is R:R at least two to one?"
+    ],
+    [
+      1171.884,
+      1176.486,
+      "Are you risking more than two percent of capital?"
+    ],
+    [
+      1176.486,
+      1178.458,
+      "Is volume confirming?"
+    ],
+    [
+      1178.458,
+      1183.717,
+      "If you can't answer confidently \u2014 the setup isn't ready."
+    ],
+    [
+      1183.717,
+      1184.186,
+      "Wait."
+    ],
+    [
+      1184.186,
+      1190.76,
+      "Capital you protect today is ammunition for the setups that ARE ready."
+    ],
+    [
+      1191.26,
+      1192.735,
+      "The whole map."
+    ],
+    [
+      1192.735,
+      1194.526,
+      "Doji: indecision."
+    ],
+    [
+      1194.526,
+      1199.266,
+      "Hammer: demand at lows \u2014 only in a downtrend."
+    ],
+    [
+      1199.266,
+      1203.164,
+      "Engulfing: momentum shift with force."
+    ],
+    [
+      1203.164,
+      1207.8,
+      "Morning Star: three-candle reversal warning."
+    ],
+    [
+      1207.8,
+      1211.487,
+      "Support and resistance have memory."
+    ],
+    [
+      1211.487,
+      1215.279,
+      "H&S, double tops, flags, triangles \u2014"
+    ],
+    [
+      1215.279,
+      1218.545,
+      "all have measured-move targets."
+    ],
+    [
+      1218.545,
+      1224.234,
+      "Indicators confirm price \u2014 RSI, MACD, Bollinger Bands,"
+    ],
+    [
+      1224.234,
+      1224.971,
+      "volume."
+    ],
+    [
+      1224.971,
+      1228.448,
+      "They do not replace price action."
+    ],
+    [
+      1228.448,
+      1233.083,
+      "Before every trade: stack confluent signals,"
+    ],
+    [
+      1233.083,
+      1238.666,
+      "define stop and target first, two-to-one R:R minimum,"
+    ],
+    [
+      1238.666,
+      1241.932,
+      "two percent max risk per trade."
+    ],
+    [
+      1241.932,
+      1246.989,
+      "These tools read probabilities, not certainties."
+    ],
+    [
+      1246.989,
+      1249.833,
+      "Education only, not advice."
+    ],
+    [
+      1249.833,
+      1253.415,
+      "Consult a SEBI-registered advisor."
+    ],
+    [
+      1253.415,
+      1255.522,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "tac/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

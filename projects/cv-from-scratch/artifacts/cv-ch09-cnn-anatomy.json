@@ -1,0 +1,505 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch09-cnn-anatomy_cnn",
+   "type": "cv_cnn",
+   "in_seconds": 0.0,
+   "out_seconds": 109.172,
+   "props": {
+    "dur": 109.672
+   }
+  },
+  {
+   "id": "cv-ch09-cnn-anatomy_pool",
+   "type": "cv_pool",
+   "in_seconds": 109.672,
+   "out_seconds": 204.819,
+   "props": {
+    "dur": 95.647
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   3.044,
+   "So let's look at the shape of a"
+  ],
+  [
+   3.044,
+   6.088,
+   "full convolutional network \u2014 a C N N."
+  ],
+  [
+   6.72,
+   9.003,
+   "It is a stack of layers,"
+  ],
+  [
+   9.003,
+   11.286,
+   "and the image flows through them,"
+  ],
+  [
+   11.286,
+   12.428,
+   "left to right,"
+  ],
+  [
+   12.428,
+   13.95,
+   "transforming as it goes."
+  ],
+  [
+   14.582,
+   17.626,
+   "The first layer is a set of learned"
+  ],
+  [
+   17.626,
+   18.387,
+   "convolution filters."
+  ],
+  [
+   19.018,
+   21.302,
+   "Each filter slides across the image,"
+  ],
+  [
+   21.302,
+   22.824,
+   "exactly as we saw,"
+  ],
+  [
+   22.824,
+   25.107,
+   "and produces its own feature map."
+  ],
+  [
+   25.107,
+   25.868,
+   "Many filters,"
+  ],
+  [
+   25.868,
+   28.532,
+   "so many feature maps side by side."
+  ],
+  [
+   29.163,
+   32.207,
+   "The early filters tend to learn simple\nthings"
+  ],
+  [
+   32.207,
+   32.969,
+   "\u2014 edges,"
+  ],
+  [
+   32.969,
+   34.491,
+   "and patches of color."
+  ],
+  [
+   34.491,
+   36.393,
+   "The raw alphabet of vision."
+  ],
+  [
+   37.025,
+   37.405,
+   "Now,"
+  ],
+  [
+   37.405,
+   38.547,
+   "after every convolution,"
+  ],
+  [
+   38.547,
+   41.211,
+   "each number passes through an activation\nfunction."
+  ],
+  [
+   41.842,
+   44.506,
+   "The most common one is called ReLU,"
+  ],
+  [
+   44.506,
+   46.789,
+   "and it could not be simpler."
+  ],
+  [
+   46.789,
+   48.692,
+   "If a number is positive,"
+  ],
+  [
+   48.692,
+   49.453,
+   "keep it."
+  ],
+  [
+   49.453,
+   50.975,
+   "If it is negative,"
+  ],
+  [
+   50.975,
+   52.497,
+   "replace it with zero."
+  ],
+  [
+   53.129,
+   55.792,
+   "That tiny bend is doing something\nessential."
+  ],
+  [
+   56.424,
+   57.185,
+   "Without it,"
+  ],
+  [
+   57.185,
+   60.229,
+   "stacking layers would just be adding\nstraight lines"
+  ],
+  [
+   60.229,
+   61.371,
+   "to straight lines,"
+  ],
+  [
+   61.371,
+   64.415,
+   "and the whole network could only ever\nlearn"
+  ],
+  [
+   64.415,
+   64.796,
+   "simple,"
+  ],
+  [
+   64.796,
+   65.557,
+   "straight relationships."
+  ],
+  [
+   66.188,
+   69.232,
+   "That little kink is what lets the network"
+  ],
+  [
+   69.232,
+   72.277,
+   "bend and curve and learn genuinely complex\nshapes."
+  ],
+  [
+   72.908,
+   75.952,
+   "Then we stack another convolution layer on\ntop"
+  ],
+  [
+   75.952,
+   77.094,
+   "of the first."
+  ],
+  [
+   77.726,
+   80.77,
+   "This second layer combines the simple\nfeatures below"
+  ],
+  [
+   80.77,
+   83.814,
+   "it into richer ones \u2014 edges into corners,"
+  ],
+  [
+   83.814,
+   84.956,
+   "corners into textures."
+  ],
+  [
+   85.587,
+   86.729,
+   "Layer after layer,"
+  ],
+  [
+   86.729,
+   89.012,
+   "the picture gets smaller in size,"
+  ],
+  [
+   89.012,
+   90.534,
+   "but deeper in meaning."
+  ],
+  [
+   91.166,
+   93.068,
+   "And at the very end,"
+  ],
+  [
+   93.068,
+   96.112,
+   "an ordinary fully connected layer reads\nthe final,"
+  ],
+  [
+   96.112,
+   99.157,
+   "rich features and produces the answer \u2014\nthe"
+  ],
+  [
+   99.157,
+   99.918,
+   "class scores."
+  ],
+  [
+   100.549,
+   100.93,
+   "Convolve,"
+  ],
+  [
+   100.93,
+   101.31,
+   "activate,"
+  ],
+  [
+   101.31,
+   101.691,
+   "repeat."
+  ],
+  [
+   101.691,
+   103.213,
+   "That is the engine."
+  ],
+  [
+   103.845,
+   106.889,
+   "Now let's zoom in on the step that"
+  ],
+  [
+   106.889,
+   109.172,
+   "shrinks the image along the way."
+  ],
+  [
+   109.672,
+   111.154,
+   "In between convolution layers,"
+  ],
+  [
+   111.154,
+   114.117,
+   "we almost always add a step called\npooling."
+  ],
+  [
+   114.748,
+   116.601,
+   "Pooling shrinks the feature map,"
+  ],
+  [
+   116.601,
+   119.193,
+   "and its whole job is to summarize."
+  ],
+  [
+   119.825,
+   122.418,
+   "The most common form is max pooling."
+  ],
+  [
+   123.049,
+   126.013,
+   "You take a small window \u2014 let's say"
+  ],
+  [
+   126.013,
+   128.976,
+   "two pixels by two pixels \u2014 and from"
+  ],
+  [
+   128.976,
+   130.087,
+   "those four numbers,"
+  ],
+  [
+   130.087,
+   132.31,
+   "you keep only the largest one."
+  ],
+  [
+   132.941,
+   133.682,
+   "Watch it."
+  ],
+  [
+   133.682,
+   135.164,
+   "Four numbers go in."
+  ],
+  [
+   135.164,
+   137.016,
+   "The single strongest one survives."
+  ],
+  [
+   137.016,
+   139.238,
+   "The other three are thrown away."
+  ],
+  [
+   139.87,
+   142.462,
+   "Slide that window across the whole map,"
+  ],
+  [
+   142.462,
+   145.426,
+   "and the map shrinks to half the width"
+  ],
+  [
+   145.426,
+   146.907,
+   "and half the height."
+  ],
+  [
+   146.907,
+   149.871,
+   "That is four times fewer numbers to carry"
+  ],
+  [
+   149.871,
+   150.241,
+   "forward."
+  ],
+  [
+   150.873,
+   152.725,
+   "But why keep the maximum,"
+  ],
+  [
+   152.725,
+   153.836,
+   "of all things?"
+  ],
+  [
+   154.467,
+   157.431,
+   "Because the maximum answers a genuinely\nuseful question."
+  ],
+  [
+   157.431,
+   160.394,
+   "Was this feature present anywhere in this\nlittle"
+  ],
+  [
+   160.394,
+   160.764,
+   "region?"
+  ],
+  [
+   161.396,
+   163.248,
+   "A high value means yes,"
+  ],
+  [
+   163.248,
+   163.618,
+   "strongly,"
+  ],
+  [
+   163.618,
+   164.73,
+   "somewhere in here."
+  ],
+  [
+   165.361,
+   168.324,
+   "And keeping only that fact gives us\nsomething"
+  ],
+  [
+   168.324,
+   170.917,
+   "precious \u2014 a little tolerance to position."
+  ],
+  [
+   171.549,
+   174.512,
+   "If the cat's ear shifts a few pixels"
+  ],
+  [
+   174.512,
+   175.623,
+   "to the side,"
+  ],
+  [
+   175.623,
+   178.216,
+   "the pooled summary barely changes at all."
+  ],
+  [
+   178.848,
+   181.811,
+   "The network stops caring about the exact\npixel,"
+  ],
+  [
+   181.811,
+   184.774,
+   "and starts caring about the presence of\nthe"
+  ],
+  [
+   184.774,
+   185.145,
+   "pattern."
+  ],
+  [
+   185.776,
+   188.74,
+   "So pooling makes the network cheaper to\nrun"
+  ],
+  [
+   188.74,
+   191.332,
+   "and more robust at the same time."
+  ],
+  [
+   191.964,
+   193.446,
+   "Convolution finds the patterns."
+  ],
+  [
+   193.446,
+   194.557,
+   "Pooling zooms out."
+  ],
+  [
+   195.188,
+   197.04,
+   "Alternate them again and again,"
+  ],
+  [
+   197.04,
+   200.004,
+   "and you build a pyramid \u2014 from fine"
+  ],
+  [
+   200.004,
+   201.856,
+   "local detail at the bottom,"
+  ],
+  [
+   201.856,
+   204.819,
+   "up to the big picture at the top."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch09-cnn-anatomy.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,490 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch16-segmentation_segment",
+   "type": "cv_segment",
+   "in_seconds": 0.0,
+   "out_seconds": 105.704,
+   "props": {
+    "dur": 106.204
+   }
+  },
+  {
+   "id": "cv-ch16-segmentation_sam",
+   "type": "cv_sam",
+   "in_seconds": 106.204,
+   "out_seconds": 197.853,
+   "props": {
+    "dur": 92.149
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.5,
+   "A box is useful,"
+  ],
+  [
+   1.5,
+   3.0,
+   "but it is rough."
+  ],
+  [
+   3.0,
+   5.625,
+   "It always includes background in the\ncorners."
+  ],
+  [
+   5.625,
+   8.624,
+   "Sometimes you need the exact shape of a"
+  ],
+  [
+   8.624,
+   8.999,
+   "thing."
+  ],
+  [
+   9.631,
+   12.631,
+   "That is segmentation \u2014 labeling every\nsingle pixel"
+  ],
+  [
+   12.631,
+   13.756,
+   "in the image."
+  ],
+  [
+   14.387,
+   16.637,
+   "And it comes in two flavors,"
+  ],
+  [
+   16.637,
+   19.262,
+   "so let's be precise about the difference."
+  ],
+  [
+   19.894,
+   21.768,
+   "The first is semantic segmentation."
+  ],
+  [
+   21.768,
+   24.393,
+   "It paints every pixel with its class."
+  ],
+  [
+   24.393,
+   27.393,
+   "All the pixels of people get one color."
+  ],
+  [
+   27.393,
+   28.893,
+   "The road gets another."
+  ],
+  [
+   28.893,
+   30.393,
+   "The sky gets another."
+  ],
+  [
+   31.024,
+   34.024,
+   "But notice its limit \u2014 it does not"
+  ],
+  [
+   34.024,
+   34.774,
+   "separate individuals."
+  ],
+  [
+   34.774,
+   37.774,
+   "Two people standing together blur into one\nsingle"
+  ],
+  [
+   37.774,
+   39.649,
+   "blob of the person color."
+  ],
+  [
+   40.28,
+   42.53,
+   "The second flavor fixes exactly that."
+  ],
+  [
+   42.53,
+   43.28,
+   "Instance segmentation."
+  ],
+  [
+   43.912,
+   46.912,
+   "Now person number one and person number\ntwo"
+  ],
+  [
+   46.912,
+   49.161,
+   "each get their own separate mask,"
+  ],
+  [
+   49.161,
+   51.786,
+   "even though they are the same class."
+  ],
+  [
+   51.786,
+   54.411,
+   "A method called Mask R-CNN does this."
+  ],
+  [
+   55.043,
+   58.042,
+   "So how does a network paint a clean"
+  ],
+  [
+   58.042,
+   59.917,
+   "mask in the first place?"
+  ],
+  [
+   60.549,
+   61.299,
+   "Very often,"
+  ],
+  [
+   61.299,
+   63.549,
+   "with a U-shaped design called U-Net."
+  ],
+  [
+   64.18,
+   66.43,
+   "It first shrinks the image down,"
+  ],
+  [
+   66.43,
+   67.555,
+   "step by step,"
+  ],
+  [
+   67.555,
+   69.805,
+   "to understand what is in it."
+  ],
+  [
+   69.805,
+   72.805,
+   "Then it grows it back up to full"
+  ],
+  [
+   72.805,
+   73.18,
+   "resolution,"
+  ],
+  [
+   73.18,
+   75.805,
+   "to paint the answer pixel by pixel."
+  ],
+  [
+   76.436,
+   79.436,
+   "The clever part is the skip connections \u2014"
+  ],
+  [
+   79.436,
+   81.311,
+   "those shortcuts across the U."
+  ],
+  [
+   81.942,
+   83.442,
+   "They carry the fine,"
+  ],
+  [
+   83.442,
+   86.442,
+   "sharp detail from the early layers\nstraight over"
+  ],
+  [
+   86.442,
+   87.567,
+   "to the end,"
+  ],
+  [
+   87.567,
+   90.567,
+   "so the final outline stays crisp instead\nof"
+  ],
+  [
+   90.567,
+   90.942,
+   "blurry."
+  ],
+  [
+   91.573,
+   94.573,
+   "This is the absolute favorite tool of\nmedical"
+  ],
+  [
+   94.573,
+   96.448,
+   "imaging \u2014 outlining an organ,"
+  ],
+  [
+   96.448,
+   99.073,
+   "or the precise boundary of a tumor,"
+  ],
+  [
+   99.073,
+   100.948,
+   "one pixel at a time."
+  ],
+  [
+   101.579,
+   102.704,
+   "Remember the difference."
+  ],
+  [
+   102.704,
+   104.204,
+   "Detection draws the box."
+  ],
+  [
+   104.204,
+   105.704,
+   "Segmentation traces the outline."
+  ],
+  [
+   106.204,
+   106.57,
+   "Recently,"
+  ],
+  [
+   106.57,
+   109.494,
+   "segmentation took a giant leap forward \u2014\nand"
+  ],
+  [
+   109.494,
+   111.687,
+   "it came from a foundation model."
+  ],
+  [
+   112.318,
+   113.415,
+   "Meet Segment Anything,"
+  ],
+  [
+   113.415,
+   114.877,
+   "usually just called SAM."
+  ],
+  [
+   115.509,
+   117.702,
+   "Here is the shift in thinking."
+  ],
+  [
+   117.702,
+   119.529,
+   "Instead of training a fresh,"
+  ],
+  [
+   119.529,
+   121.723,
+   "specialized model for every new dataset,"
+  ],
+  [
+   121.723,
+   123.185,
+   "we train one single,"
+  ],
+  [
+   123.185,
+   126.109,
+   "enormous model \u2014 on a truly colossal\nscale."
+  ],
+  [
+   126.74,
+   129.665,
+   "SAM was trained on over one billion masks."
+  ],
+  [
+   130.296,
+   133.22,
+   "And once you have a model like that,"
+  ],
+  [
+   133.22,
+   135.048,
+   "you do not retrain it."
+  ],
+  [
+   135.048,
+   136.51,
+   "You simply prompt it,"
+  ],
+  [
+   136.51,
+   138.703,
+   "like you would prompt a chatbot."
+  ],
+  [
+   139.335,
+   141.893,
+   "Click a single point on an object."
+  ],
+  [
+   141.893,
+   144.452,
+   "Or drag a rough box around it."
+  ],
+  [
+   144.452,
+   146.28,
+   "Or sketch a crude shape."
+  ],
+  [
+   146.911,
+   149.104,
+   "And SAM instantly returns a clean,"
+  ],
+  [
+   149.104,
+   152.028,
+   "precise mask \u2014 even for objects it never"
+  ],
+  [
+   152.028,
+   153.491,
+   "explicitly saw during training."
+  ],
+  [
+   154.122,
+   154.853,
+   "That ability,"
+  ],
+  [
+   154.853,
+   157.777,
+   "to handle brand-new things with no extra\ntraining,"
+  ],
+  [
+   157.777,
+   158.874,
+   "is called zero-shot."
+  ],
+  [
+   159.506,
+   160.602,
+   "Click the cat,"
+  ],
+  [
+   160.602,
+   162.064,
+   "and get the cat."
+  ],
+  [
+   162.064,
+   163.161,
+   "Click the plant,"
+  ],
+  [
+   163.161,
+   164.623,
+   "and get the plant."
+  ],
+  [
+   164.623,
+   165.719,
+   "Watch it work."
+  ],
+  [
+   166.351,
+   167.082,
+   "Its successor,"
+  ],
+  [
+   167.082,
+   167.813,
+   "SAM two,"
+  ],
+  [
+   167.813,
+   170.737,
+   "does the very same thing across an entire"
+  ],
+  [
+   170.737,
+   173.296,
+   "video \u2014 you select an object once,"
+  ],
+  [
+   173.296,
+   175.489,
+   "and it tracks and masks it,"
+  ],
+  [
+   175.489,
+   176.586,
+   "frame after frame."
+  ],
+  [
+   177.217,
+   180.141,
+   "And this is the single biggest shift\nhappening"
+  ],
+  [
+   180.141,
+   182.7,
+   "across all of computer vision right now."
+  ],
+  [
+   183.332,
+   184.794,
+   "From training a small,"
+  ],
+  [
+   184.794,
+   186.621,
+   "narrow model for every task,"
+  ],
+  [
+   186.621,
+   188.083,
+   "to prompting one giant,"
+  ],
+  [
+   188.083,
+   190.277,
+   "pretrained model for almost any task."
+  ],
+  [
+   190.908,
+   192.736,
+   "Hold on to that idea."
+  ],
+  [
+   192.736,
+   195.66,
+   "It is going to return again and again"
+  ],
+  [
+   195.66,
+   197.853,
+   "for the rest of this course."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch16-segmentation.wav",
+   "volume": 1.0
+  }
+ }
+}

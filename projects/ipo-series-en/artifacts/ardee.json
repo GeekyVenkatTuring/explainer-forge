@@ -1,0 +1,683 @@
+{
+  "cuts": [
+    {
+      "id": "ardee_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 27.452,
+      "props": {
+        "title": "Ardee Industries IPO",
+        "sub": "Battery & lead recycling · ₹425.87 Cr · 75% Fresh · 5–7 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 27.952
+      }
+    },
+    {
+      "id": "ardee_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 27.952,
+      "out_seconds": 70.282,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Ardee Industries",
+        "color": "#FACC15",
+        "items": [
+          {
+            "emoji": "♻️",
+            "k": "Recycles old batteries",
+            "v": "Recovers lead and non-ferrous metals from end-of-life batteries and energy-storage products",
+            "chip": "RECYCLING"
+          },
+          {
+            "emoji": "🔋",
+            "k": "Makes high-purity lead",
+            "v": "Turns that recovered material into high-purity lead and specialised alloys for industry",
+            "chip": "PURE LEAD"
+          },
+          {
+            "emoji": "🌍",
+            "k": "A circular-economy / EV play",
+            "v": "Serves battery, e-mobility, automotive and chemical customers; based in Tirupati, Andhra Pradesh",
+            "chip": "EV THEME"
+          }
+        ],
+        "dur": 42.83
+      }
+    },
+    {
+      "id": "ardee_fin",
+      "type": "sm_stats",
+      "in_seconds": 70.782,
+      "out_seconds": 109.992,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 1168,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+57% YoY (₹742.7 → ₹1,167.65 Cr)"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 85,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+155% YoY (₹33.3 → ₹84.68 Cr)"
+          },
+          {
+            "label": "Grey-mkt premium",
+            "to": 24.5,
+            "decimals": 1,
+            "prefix": "~",
+            "suffix": "%",
+            "color": "#FACC15",
+            "sub": "unofficial · ₹13 over ₹53 cap"
+          }
+        ],
+        "note": "The fastest grower of the batch — revenue up 57% and profit up a striking 155%. The grey market is pricing a strong debut, but GMP is unofficial.",
+        "dur": 39.71
+      }
+    },
+    {
+      "id": "ardee_issue",
+      "type": "sm_stats",
+      "in_seconds": 110.492,
+      "out_seconds": 153.734,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 426,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#FACC15",
+            "sub": "₹425.87 Cr · band ₹50–53"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 320,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "75% — funds the business"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 106,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "₹105.87 Cr — promoters part-sell"
+          }
+        ],
+        "note": "A healthy mix: 75% is a fresh issue funding the business; 25% is the promoters, Sandeep and Nikunj Aggarwal, selling part of their stake.",
+        "dur": 43.742
+      }
+    },
+    {
+      "id": "ardee_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 154.234,
+      "out_seconds": 191.764,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹320 Cr Funds",
+        "color": "#FACC15",
+        "items": [
+          {
+            "emoji": "🔄",
+            "k": "₹220 Cr — working capital",
+            "v": "The bulk funds working capital — a recycling and metals business ties up heavy cash in inventory and raw material",
+            "chip": "GROWTH"
+          },
+          {
+            "emoji": "🏦",
+            "k": "₹20 Cr — repay debt",
+            "v": "A slice repays borrowings, trimming interest costs",
+            "chip": "DEBT"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Balance — general corporate",
+            "v": "The rest goes to general corporate purposes",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 38.03
+      }
+    },
+    {
+      "id": "ardee_verdict",
+      "type": "sm_myths",
+      "in_seconds": 192.264,
+      "out_seconds": 240.042,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "Lead & commodity price swings hit margins",
+            "f": "Explosive growth — revenue +57%, profit +155%"
+          },
+          {
+            "m": "Working-capital heavy — always needs cash",
+            "f": "75% fresh — mostly funds the business"
+          },
+          {
+            "m": "25% OFS — promoters partly cash out",
+            "f": "On the EV / battery-recycling theme; GMP ~24.5%"
+          }
+        ],
+        "dur": 48.278
+      }
+    },
+    {
+      "id": "ardee_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 240.542,
+      "out_seconds": 282.366,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#FACC15",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,893 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 42.324
+      }
+    },
+    {
+      "id": "ardee_recap",
+      "type": "sm_recap",
+      "in_seconds": 282.866,
+      "out_seconds": 347.37,
+      "props": {
+        "title": "Ardee Industries IPO — at a Glance",
+        "items": [
+          "Business: battery & lead recycling (circular economy)",
+          "FY26: revenue ₹1,167.65 Cr (+57%), profit ₹84.68 Cr (+155%)",
+          "₹425.87 Cr issue — 75% fresh, 25% promoter OFS",
+          "Fresh money mainly funds working capital",
+          "Retail min ~₹14,893 · GMP ~24.5% (unofficial)"
+        ],
+        "closer": "The best growth and structure of the batch — but a commodity-linked, lead-price-sensitive business. Read the RHP; decide for yourself.",
+        "dur": 65.004
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.612,
+      "Let's break down the Ardee Industries I-P-O —"
+    ],
+    [
+      3.612,
+      9.632,
+      "a four hundred and twenty-six crore issue from a battery-recycling company,"
+    ],
+    [
+      9.632,
+      13.887,
+      "and the fastest-growing business of this whole batch."
+    ],
+    [
+      13.887,
+      17.178,
+      "We'll cover what it does, its financials,"
+    ],
+    [
+      17.178,
+      18.863,
+      "where the money goes,"
+    ],
+    [
+      18.863,
+      24.161,
+      "and how much you'd need to apply as a retail or an H-N-I investor."
+    ],
+    [
+      24.161,
+      27.452,
+      "This is education, not investment advice."
+    ],
+    [
+      27.952,
+      30.691,
+      "So what does Ardee Industries do?"
+    ],
+    [
+      30.691,
+      32.766,
+      "It's a recycling company."
+    ],
+    [
+      32.766,
+      42.892,
+      "It takes end-of-life batteries and other energy-storage products and recovers the lead and non-ferrous metals inside them."
+    ],
+    [
+      42.892,
+      48.37,
+      "It then refines that into high-purity lead and specialised alloys,"
+    ],
+    [
+      48.37,
+      51.109,
+      "which it sells to battery makers,"
+    ],
+    [
+      51.109,
+      54.512,
+      "the e-mobility and automotive industries,"
+    ],
+    [
+      54.512,
+      56.421,
+      "and chemical companies."
+    ],
+    [
+      56.421,
+      59.658,
+      "It's based in Tirupati, Andhra Pradesh,"
+    ],
+    [
+      59.658,
+      63.476,
+      "and it sits on a genuinely interesting theme —"
+    ],
+    [
+      63.476,
+      65.219,
+      "the circular economy."
+    ],
+    [
+      65.219,
+      70.282,
+      "As batteries and E-Vs grow, so does the need to recycle them."
+    ],
+    [
+      70.782,
+      72.32,
+      "Now the financials —"
+    ],
+    [
+      72.32,
+      76.394,
+      "and they're the strongest growth story of this batch."
+    ],
+    [
+      76.394,
+      79.085,
+      "Revenue jumped fifty-seven percent,"
+    ],
+    [
+      79.085,
+      88.004,
+      "from about seven hundred and forty-three crore to over eleven hundred and sixty-seven crore in FY twenty twenty-six."
+    ],
+    [
+      88.004,
+      92.386,
+      "And net profit exploded a hundred and fifty-five percent,"
+    ],
+    [
+      92.386,
+      96.384,
+      "from thirty-three crore to nearly eighty-five crore."
+    ],
+    [
+      96.384,
+      98.69,
+      "That's genuinely rapid growth."
+    ],
+    [
+      98.69,
+      101.535,
+      "The grey market has taken notice too,"
+    ],
+    [
+      101.535,
+      105.302,
+      "pricing a premium of around twenty-four percent —"
+    ],
+    [
+      105.302,
+      109.992,
+      "but remember, that number is unofficial and drifts every day."
+    ],
+    [
+      110.492,
+      112.45,
+      "Where does your money go?"
+    ],
+    [
+      112.45,
+      115.349,
+      "Here Ardee strikes a healthy balance."
+    ],
+    [
+      115.349,
+      119.031,
+      "Of the four hundred and twenty-six crore issue,"
+    ],
+    [
+      119.031,
+      123.809,
+      "three hundred and twenty crore — about seventy-five percent —"
+    ],
+    [
+      123.809,
+      127.491,
+      "is a fresh issue, money going into the company."
+    ],
+    [
+      127.491,
+      132.27,
+      "The remaining one hundred and six crore is an offer for sale,"
+    ],
+    [
+      132.27,
+      136.108,
+      "where the promoters, Sandeep and Nikunj Aggarwal,"
+    ],
+    [
+      136.108,
+      140.652,
+      "sell part of their stake and take some cash off the table."
+    ],
+    [
+      140.652,
+      144.412,
+      "So this isn't a pure sell-down like some I-P-Os,"
+    ],
+    [
+      144.412,
+      148.72,
+      "nor entirely fresh — three-quarters funds the business,"
+    ],
+    [
+      148.72,
+      151.306,
+      "one-quarter rewards the founders."
+    ],
+    [
+      151.306,
+      153.734,
+      "A reasonable, common structure."
+    ],
+    [
+      154.234,
+      156.731,
+      "What does the fresh money fund?"
+    ],
+    [
+      156.731,
+      161.321,
+      "The large majority — about two hundred and twenty crore —"
+    ],
+    [
+      161.321,
+      163.415,
+      "goes into working capital."
+    ],
+    [
+      163.415,
+      171.63,
+      "That makes sense: a recycling and metals business ties up a lot of cash in inventory and raw material,"
+    ],
+    [
+      171.63,
+      173.563,
+      "so growth needs funding."
+    ],
+    [
+      173.563,
+      178.073,
+      "Around twenty crore repays debt, cutting interest costs,"
+    ],
+    [
+      178.073,
+      181.053,
+      "and the rest is for general purposes."
+    ],
+    [
+      181.053,
+      184.999,
+      "The flip side to watch — a working-capital-heavy,"
+    ],
+    [
+      184.999,
+      191.764,
+      "commodity-linked model means both cash needs and profits can swing with lead prices."
+    ],
+    [
+      192.264,
+      193.842,
+      "Should you subscribe?"
+    ],
+    [
+      193.842,
+      198.048,
+      "The strengths are attractive — it's growing explosively,"
+    ],
+    [
+      198.048,
+      212.322,
+      "with revenue up fifty-seven percent and profit up a hundred and fifty-five; three-quarters of the issue is fresh money funding the business; and it rides the E-V and battery-recycling theme,"
+    ],
+    [
+      212.322,
+      215.026,
+      "which the grey market clearly likes."
+    ],
+    [
+      215.026,
+      216.228,
+      "The watch-outs —"
+    ],
+    [
+      216.228,
+      223.44,
+      "its profits are tied to volatile lead and commodity prices; the model is working-capital hungry,"
+    ],
+    [
+      223.44,
+      229.525,
+      "so it always needs cash; and a quarter of the issue is the promoters cashing out."
+    ],
+    [
+      229.525,
+      233.957,
+      "The takeaway — the best growth and structure of this batch,"
+    ],
+    [
+      233.957,
+      236.361,
+      "but a commodity-linked business."
+    ],
+    [
+      236.361,
+      240.042,
+      "Understand the lead-price risk before you decide."
+    ],
+    [
+      240.542,
+      244.888,
+      "Finally — how do you apply, and how much do you need?"
+    ],
+    [
+      244.888,
+      251.367,
+      "Retail investors can bid up to two lakh rupees for a thirty-five percent quota,"
+    ],
+    [
+      251.367,
+      255.467,
+      "with allotment by lottery if it's oversubscribed —"
+    ],
+    [
+      255.467,
+      258.092,
+      "so a bigger cheque doesn't help."
+    ],
+    [
+      258.092,
+      262.52,
+      "H-N-Is bid above two lakh for a fifteen percent quota."
+    ],
+    [
+      262.52,
+      267.195,
+      "For Ardee, one lot is two hundred and eighty-one shares —"
+    ],
+    [
+      267.195,
+      272.361,
+      "about fourteen thousand eight hundred and ninety-three rupees —"
+    ],
+    [
+      272.361,
+      273.427,
+      "your minimum."
+    ],
+    [
+      273.427,
+      278.594,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      278.594,
+      282.366,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      282.866,
+      285.128,
+      "Let's recap Ardee Industries."
+    ],
+    [
+      285.128,
+      290.432,
+      "A battery and lead-recycling business on the circular-economy theme,"
+    ],
+    [
+      290.432,
+      293.396,
+      "and the fastest grower of this batch —"
+    ],
+    [
+      293.396,
+      295.814,
+      "revenue up fifty-seven percent,"
+    ],
+    [
+      295.814,
+      298.544,
+      "profit up a hundred and fifty-five."
+    ],
+    [
+      298.544,
+      304.861,
+      "The issue is a healthy mix: seventy-five percent fresh money funding the company,"
+    ],
+    [
+      304.861,
+      308.059,
+      "twenty-five percent a promoter sell-down,"
+    ],
+    [
+      308.059,
+      312.115,
+      "with the fresh money mainly funding working capital."
+    ],
+    [
+      312.115,
+      318.355,
+      "Retail minimum is about fourteen thousand eight hundred and ninety-three rupees,"
+    ],
+    [
+      318.355,
+      322.879,
+      "and the grey-market premium is around twenty-four percent,"
+    ],
+    [
+      322.879,
+      324.829,
+      "though that's unofficial."
+    ],
+    [
+      324.829,
+      328.573,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      328.573,
+      330.757,
+      "it is not investment advice,"
+    ],
+    [
+      330.757,
+      333.33,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      333.33,
+      336.294,
+      "and not a prediction of listing gains."
+    ],
+    [
+      336.294,
+      340.428,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      340.428,
+      345.81,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      345.81,
+      347.37,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/ardee.wav",
+      "volume": 1.0
+    }
+  }
+}

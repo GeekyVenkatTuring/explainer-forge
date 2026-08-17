@@ -1,0 +1,3 @@
+file '/Users/appuram/Developer/explainer-forge/projects/loquat-lagot-en/assets/raw/lag-ch09-harvest_div_c0.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/loquat-lagot-en/assets/raw/_pause.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/loquat-lagot-en/assets/raw/lag-ch09-harvest_div_c1.wav'

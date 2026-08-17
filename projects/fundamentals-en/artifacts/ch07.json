@@ -1,0 +1,1008 @@
+{
+ "cuts": [
+  {
+   "id": "ch07_s01_divider",
+   "type": "fa_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 19.966,
+   "props": {
+    "n": 7,
+    "title": "Putting It Together",
+    "sub": "reading a whole company, end to end",
+    "color": "#34D399",
+    "total": 7,
+    "dur": 20.466
+   }
+  },
+  {
+   "id": "ch07_s02_fivequestions",
+   "type": "fa_keyidea",
+   "in_seconds": 20.466,
+   "out_seconds": 60.204,
+   "props": {
+    "kicker": "THE WHOLE FRAMEWORK",
+    "color": "#2DD4BF",
+    "big": "Every analysis is really just five questions.",
+    "sub": "Is it growing? Are margins healthy? Are returns high? Is debt safe? Is the price fair?",
+    "dur": 40.238
+   }
+  },
+  {
+   "id": "ch07_s03_scorecard",
+   "type": "fa_ledger",
+   "in_seconds": 60.704,
+   "out_seconds": 109.946,
+   "props": {
+    "kicker": "ARDEE \u00b7 THE FULL SCORECARD",
+    "title": "Five questions, five answers",
+    "rows": [
+     {
+      "label": "1 \u00b7 Growth",
+      "val": "Revenue CAGR ~57%",
+      "c": "#34D399",
+      "bold": true
+     },
+     {
+      "label": "2 \u00b7 Margins",
+      "val": "EBITDA 12.6% \u2014 best of peers",
+      "c": "#34D399",
+      "bold": true
+     },
+     {
+      "label": "3 \u00b7 Returns",
+      "val": "ROCE ~26%  (>> ~12% cost)",
+      "c": "#34D399",
+      "bold": true
+     },
+     {
+      "label": "4 \u00b7 Leverage",
+      "val": "D/E 0.6\u00d7 \u2014 highest of peers",
+      "c": "#FBBF24",
+      "bold": true
+     },
+     {
+      "label": "5 \u00b7 Valuation",
+      "val": "EV/EBITDA ~15\u00d7 \u2014 cheapest",
+      "c": "#A78BFA",
+      "bold": true
+     }
+    ],
+    "caption": "Four green lights, one amber (debt). Approx figures \u2014 verify before acting.",
+    "color": "#2DD4BF",
+    "dur": 49.742
+   }
+  },
+  {
+   "id": "ch07_s04_compare",
+   "type": "fa_compare",
+   "in_seconds": 110.446,
+   "out_seconds": 148.962,
+   "props": {
+    "kicker": "THE FINAL COMPARISON",
+    "title": "Three recyclers, side by side",
+    "cos": [
+     {
+      "name": "Ardee",
+      "c": "#2DD4BF",
+      "tag": "cheap + risky",
+      "stats": [
+       {
+        "k": "EBITDA margin",
+        "v": "12.6%",
+        "hot": true
+       },
+       {
+        "k": "ROCE",
+        "v": "~26%",
+        "hot": true
+       },
+       {
+        "k": "D/E",
+        "v": "0.6\u00d7",
+        "hot": true
+       },
+       {
+        "k": "EV/EBITDA",
+        "v": "~15\u00d7",
+        "hot": true
+       }
+      ]
+     },
+     {
+      "name": "Gravita",
+      "c": "#818CF8",
+      "tag": "quality leader",
+      "stats": [
+       {
+        "k": "EBITDA margin",
+        "v": "10.6%"
+       },
+       {
+        "k": "ROCE",
+        "v": "high"
+       },
+       {
+        "k": "D/E",
+        "v": "0.14\u00d7"
+       },
+       {
+        "k": "EV/EBITDA",
+        "v": "~26\u00d7"
+       }
+      ]
+     },
+     {
+      "name": "Pondy",
+      "c": "#FB923C",
+      "tag": "pricey",
+      "stats": [
+       {
+        "k": "EBITDA margin",
+        "v": "7.4%"
+       },
+       {
+        "k": "ROCE",
+        "v": "mid"
+       },
+       {
+        "k": "D/E",
+        "v": "0.17\u00d7"
+       },
+       {
+        "k": "EV/EBITDA",
+        "v": "~25\u00d7"
+       }
+      ]
+     }
+    ],
+    "note": "Same business, three profiles: Ardee cheap+levered, Gravita quality+net-cash, Pondy pricey+thin.",
+    "color": "#2DD4BF",
+    "dur": 39.016
+   }
+  },
+  {
+   "id": "ch07_s05_cyclical",
+   "type": "fa_keyidea",
+   "in_seconds": 149.462,
+   "out_seconds": 189.368,
+   "props": {
+    "kicker": "KNOW THE BUSINESS TYPE",
+    "color": "#FBBF24",
+    "big": "A recycler is a cyclical \u2014 its fortunes swing with the metal price.",
+    "sub": "Cyclicals can look cheapest at the top of the cycle. Never judge one on a single great year.",
+    "dur": 40.406
+   }
+  },
+  {
+   "id": "ch07_s06_redflags",
+   "type": "fa_keyidea",
+   "in_seconds": 189.868,
+   "out_seconds": 232.03,
+   "props": {
+    "kicker": "THE RED FLAGS",
+    "color": "#F87171",
+    "big": "Profit rising but cash flat. Debt climbing. Margins slipping.",
+    "sub": "Any one of these is a reason to dig deeper \u2014 or to walk away. Numbers hide stories.",
+    "dur": 42.662
+   }
+  },
+  {
+   "id": "ch07_s07_verdict",
+   "type": "fa_keyidea",
+   "in_seconds": 232.53,
+   "out_seconds": 271.932,
+   "props": {
+    "kicker": "THE HONEST VERDICT",
+    "color": "#34D399",
+    "big": "Ardee screens as cheap and high-quality \u2014 if the debt keeps falling and profit turns to cash.",
+    "sub": "That 'if' is the whole game. A screen is where research starts, never where it ends.",
+    "dur": 39.902
+   }
+  },
+  {
+   "id": "ch07_s08_recap",
+   "type": "fa_recap",
+   "in_seconds": 272.432,
+   "out_seconds": 350.182,
+   "props": {
+    "kicker": "THE WHOLE COURSE \u00b7 IN ONE BREATH",
+    "title": "Everything, on one page",
+    "items": [
+     "The statements: revenue \u2192 costs \u2192 profit; cash \u2260 profit",
+     "Margins: the keep-rate; judge against the industry",
+     "Returns: ROE & ROCE \u2014 must beat the cost of capital",
+     "Valuation: market cap, EV, P/E, EV/EBITDA \u2014 price vs value",
+     "Leverage: debt magnifies returns AND risk",
+     "Growth & quality: real growth turns into cash",
+     "Together: five questions \u2014 grow, margin, return, debt, price"
+    ],
+    "closer": "Buy good businesses at fair prices \u2014 and always do your own homework.",
+    "color": "#2DD4BF",
+    "dur": 78.25
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.177,
+   "Chapter seven."
+  ],
+  [
+   1.177,
+   3.53,
+   "Putting it all together."
+  ],
+  [
+   4.08,
+   7.022,
+   "You now know every term."
+  ],
+  [
+   7.022,
+   8.787,
+   "Revenue and profit,"
+  ],
+  [
+   8.787,
+   9.375,
+   "margins,"
+  ],
+  [
+   9.375,
+   9.964,
+   "returns,"
+  ],
+  [
+   9.964,
+   10.552,
+   "valuation,"
+  ],
+  [
+   10.552,
+   12.317,
+   "leverage and cash."
+  ],
+  [
+   12.317,
+   14.671,
+   "In this final chapter,"
+  ],
+  [
+   14.671,
+   17.613,
+   "we use all of them,"
+  ],
+  [
+   17.613,
+   19.966,
+   "as one connected checklist."
+  ],
+  [
+   20.466,
+   22.884,
+   "Here's a comforting truth."
+  ],
+  [
+   23.434,
+   28.271,
+   "Everything in this course collapses into just five"
+  ],
+  [
+   28.271,
+   28.875,
+   "questions."
+  ],
+  [
+   29.425,
+   30.03,
+   "One."
+  ],
+  [
+   30.03,
+   32.448,
+   "Is the business growing?"
+  ],
+  [
+   32.448,
+   33.053,
+   "Two."
+  ],
+  [
+   33.053,
+   35.471,
+   "Are its margins healthy?"
+  ],
+  [
+   35.471,
+   36.076,
+   "Three."
+  ],
+  [
+   36.076,
+   40.308,
+   "Does it earn high returns on capital?"
+  ],
+  [
+   40.308,
+   40.912,
+   "Four."
+  ],
+  [
+   40.912,
+   43.331,
+   "Is its debt safe?"
+  ],
+  [
+   43.331,
+   44.54,
+   "And five."
+  ],
+  [
+   44.54,
+   46.958,
+   "Is the price fair?"
+  ],
+  [
+   47.508,
+   49.322,
+   "Answer those five,"
+  ],
+  [
+   49.322,
+   50.531,
+   "in order,"
+  ],
+  [
+   50.531,
+   54.763,
+   "and you've done a real fundamental analysis."
+  ],
+  [
+   54.763,
+   58.39,
+   "Let's run Ardee through all five,"
+  ],
+  [
+   58.39,
+   60.204,
+   "one last time."
+  ],
+  [
+   60.704,
+   65.087,
+   "Here's the whole scorecard on one screen."
+  ],
+  [
+   65.637,
+   66.264,
+   "Growth?"
+  ],
+  [
+   66.264,
+   70.021,
+   "Revenue compounding at fifty seven percent."
+  ],
+  [
+   70.021,
+   71.9,
+   "A green light."
+  ],
+  [
+   71.9,
+   72.526,
+   "Margins?"
+  ],
+  [
+   72.526,
+   76.283,
+   "The best of its three peers."
+  ],
+  [
+   76.283,
+   76.909,
+   "Green."
+  ],
+  [
+   76.909,
+   77.535,
+   "Returns?"
+  ],
+  [
+   77.535,
+   80.04,
+   "Around twenty six percent,"
+  ],
+  [
+   80.04,
+   83.171,
+   "double its cost of capital."
+  ],
+  [
+   83.171,
+   83.798,
+   "Green."
+  ],
+  [
+   84.348,
+   84.974,
+   "Leverage?"
+  ],
+  [
+   84.974,
+   88.105,
+   "More debt than its rivals."
+  ],
+  [
+   88.105,
+   91.236,
+   "That's the one amber light."
+  ],
+  [
+   91.236,
+   91.862,
+   "Valuation?"
+  ],
+  [
+   91.862,
+   94.993,
+   "The cheapest of the three,"
+  ],
+  [
+   94.993,
+   98.124,
+   "on E V to EBITDA."
+  ],
+  [
+   98.124,
+   98.75,
+   "Green."
+  ],
+  [
+   99.3,
+   101.805,
+   "So four green lights,"
+  ],
+  [
+   101.805,
+   104.31,
+   "and one to watch."
+  ],
+  [
+   104.31,
+   106.815,
+   "In a single glance,"
+  ],
+  [
+   106.815,
+   109.946,
+   "that's the entire investment case."
+  ],
+  [
+   110.446,
+   112.974,
+   "Now the same five questions,"
+  ],
+  [
+   112.974,
+   114.997,
+   "across all three rivals."
+  ],
+  [
+   115.547,
+   118.075,
+   "Ardee has the fattest margins,"
+  ],
+  [
+   118.075,
+   119.592,
+   "the cheapest price,"
+  ],
+  [
+   119.592,
+   121.614,
+   "but the most debt."
+  ],
+  [
+   121.614,
+   124.142,
+   "Gravita is the quality leader."
+  ],
+  [
+   124.142,
+   125.153,
+   "Net cash,"
+  ],
+  [
+   125.153,
+   125.659,
+   "proven,"
+  ],
+  [
+   125.659,
+   128.693,
+   "but you pay up for it."
+  ],
+  [
+   128.693,
+   130.715,
+   "Pondy is the priciest,"
+  ],
+  [
+   130.715,
+   132.738,
+   "with the thinnest margins."
+  ],
+  [
+   133.288,
+   137.333,
+   "See how the numbers paint three completely different"
+  ],
+  [
+   137.333,
+   137.838,
+   "characters,"
+  ],
+  [
+   137.838,
+   140.366,
+   "from the very same business?"
+  ],
+  [
+   140.366,
+   143.906,
+   "That is fundamental analysis doing its job."
+  ],
+  [
+   143.906,
+   147.951,
+   "It turns a vague feeling into a clear,"
+  ],
+  [
+   147.951,
+   148.962,
+   "comparable picture."
+  ],
+  [
+   149.462,
+   153.149,
+   "One vital warning before you use any of"
+  ],
+  [
+   153.149,
+   153.61,
+   "this."
+  ],
+  [
+   154.16,
+   157.387,
+   "Know what kind of business you're holding."
+  ],
+  [
+   157.387,
+   160.152,
+   "Our three recyclers are cyclical companies."
+  ],
+  [
+   160.152,
+   163.839,
+   "Their profits rise and fall with the price"
+  ],
+  [
+   163.839,
+   164.761,
+   "of lead."
+  ],
+  [
+   165.311,
+   168.077,
+   "And cyclicals play a nasty trick."
+  ],
+  [
+   168.077,
+   169.92,
+   "They often look cheapest,"
+  ],
+  [
+   169.92,
+   172.225,
+   "on a low P E,"
+  ],
+  [
+   172.225,
+   175.912,
+   "right at the very top of their cycle,"
+  ],
+  [
+   175.912,
+   177.756,
+   "just before profits fall."
+  ],
+  [
+   178.306,
+   181.993,
+   "So never judge a cyclical on one brilliant"
+  ],
+  [
+   181.993,
+   182.454,
+   "year."
+  ],
+  [
+   182.454,
+   184.759,
+   "Look across a full cycle,"
+  ],
+  [
+   184.759,
+   188.446,
+   "and ask whether these margins and returns can"
+  ],
+  [
+   188.446,
+   189.368,
+   "actually last."
+  ],
+  [
+   189.868,
+   192.869,
+   "Let's also name the warning signs."
+  ],
+  [
+   192.869,
+   194.369,
+   "The red flags."
+  ],
+  [
+   194.919,
+   196.92,
+   "Profit that keeps rising,"
+  ],
+  [
+   196.92,
+   199.421,
+   "while cash flow stays flat."
+  ],
+  [
+   199.421,
+   200.921,
+   "Debt that climbs,"
+  ],
+  [
+   200.921,
+   202.422,
+   "year after year."
+  ],
+  [
+   202.422,
+   204.422,
+   "Margins that quietly slip."
+  ],
+  [
+   204.972,
+   207.473,
+   "A company that reports profit,"
+  ],
+  [
+   207.473,
+   210.974,
+   "but never seems to have any money."
+  ],
+  [
+   210.974,
+   214.475,
+   "Promoters selling or pledging their own shares."
+  ],
+  [
+   215.025,
+   216.525,
+   "None of these,"
+  ],
+  [
+   216.525,
+   218.026,
+   "on its own,"
+  ],
+  [
+   218.026,
+   220.026,
+   "proves anything is wrong."
+  ],
+  [
+   220.026,
+   224.028,
+   "But each one is a reason to slow"
+  ],
+  [
+   224.028,
+   224.528,
+   "down,"
+  ],
+  [
+   224.528,
+   226.028,
+   "and dig deeper."
+  ],
+  [
+   226.028,
+   229.029,
+   "The numbers always hide a story."
+  ],
+  [
+   229.029,
+   232.03,
+   "Your job is to find it."
+  ],
+  [
+   232.53,
+   235.51,
+   "So what's the verdict on Ardee?"
+  ],
+  [
+   236.06,
+   237.551,
+   "On the numbers,"
+  ],
+  [
+   237.551,
+   239.041,
+   "it screens beautifully."
+  ],
+  [
+   239.041,
+   239.538,
+   "Cheap,"
+  ],
+  [
+   239.538,
+   240.034,
+   "fast-growing,"
+  ],
+  [
+   240.034,
+   241.525,
+   "and highly profitable."
+  ],
+  [
+   241.525,
+   245.002,
+   "The dream top-right corner of our map."
+  ],
+  [
+   245.552,
+   248.532,
+   "But it rests on two ifs."
+  ],
+  [
+   248.532,
+   251.016,
+   "If the debt keeps falling."
+  ],
+  [
+   251.016,
+   254.99,
+   "And if that paper profit keeps turning into"
+  ],
+  [
+   254.99,
+   255.983,
+   "real cash."
+  ],
+  [
+   256.533,
+   257.527,
+   "That word,"
+  ],
+  [
+   257.527,
+   258.023,
+   "if,"
+  ],
+  [
+   258.023,
+   260.01,
+   "is the whole game."
+  ],
+  [
+   260.01,
+   263.984,
+   "A good screen tells you where to start"
+  ],
+  [
+   263.984,
+   264.481,
+   "digging."
+  ],
+  [
+   264.481,
+   265.474,
+   "It never,"
+  ],
+  [
+   265.474,
+   267.958,
+   "ever tells you to stop."
+  ],
+  [
+   267.958,
+   271.932,
+   "Now you know exactly what to dig for."
+  ],
+  [
+   272.432,
+   275.693,
+   "Let's bring the whole course together,"
+  ],
+  [
+   275.693,
+   277.323,
+   "in one breath."
+  ],
+  [
+   277.873,
+   281.134,
+   "The statements show revenue becoming profit,"
+  ],
+  [
+   281.134,
+   284.395,
+   "and remind us cash is king."
+  ],
+  [
+   284.395,
+   286.569,
+   "Margins are the keep-rate."
+  ],
+  [
+   286.569,
+   290.373,
+   "Returns must beat the cost of capital."
+  ],
+  [
+   290.923,
+   293.641,
+   "Valuation compares price to value,"
+  ],
+  [
+   293.641,
+   295.271,
+   "through market cap,"
+  ],
+  [
+   295.271,
+   297.989,
+   "E V and the multiples."
+  ],
+  [
+   297.989,
+   299.619,
+   "Leverage magnifies everything,"
+  ],
+  [
+   299.619,
+   301.249,
+   "good and bad."
+  ],
+  [
+   301.249,
+   305.054,
+   "And real growth always turns into cash."
+  ],
+  [
+   305.604,
+   308.865,
+   "It all reduces to five questions."
+  ],
+  [
+   308.865,
+   310.495,
+   "Is it growing,"
+  ],
+  [
+   310.495,
+   311.039,
+   "profitable,"
+  ],
+  [
+   311.039,
+   311.582,
+   "high-returning,"
+  ],
+  [
+   311.582,
+   312.669,
+   "safely financed,"
+  ],
+  [
+   312.669,
+   314.299,
+   "and fairly priced?"
+  ],
+  [
+   314.299,
+   315.386,
+   "Answer those,"
+  ],
+  [
+   315.386,
+   319.734,
+   "and you can read any company in the"
+  ],
+  [
+   319.734,
+   320.278,
+   "world."
+  ],
+  [
+   320.828,
+   321.915,
+   "One last,"
+  ],
+  [
+   321.915,
+   323.002,
+   "important word."
+  ],
+  [
+   323.002,
+   325.175,
+   "This has been education,"
+  ],
+  [
+   325.175,
+   326.806,
+   "not investment advice."
+  ],
+  [
+   326.806,
+   329.523,
+   "Every figure here was approximate,"
+  ],
+  [
+   329.523,
+   331.154,
+   "from public sources."
+  ],
+  [
+   331.154,
+   334.415,
+   "Always verify the latest numbers yourself,"
+  ],
+  [
+   334.415,
+   338.762,
+   "and talk to a registered financial advisor before"
+  ],
+  [
+   338.762,
+   339.849,
+   "you invest."
+  ],
+  [
+   340.399,
+   342.03,
+   "Buy good businesses,"
+  ],
+  [
+   342.03,
+   343.66,
+   "at fair prices,"
+  ],
+  [
+   343.66,
+   346.921,
+   "and always do your own homework."
+  ],
+  [
+   346.921,
+   350.182,
+   "Thank you for watching this course."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "fa/ch07.wav",
+   "volume": 1.0
+  }
+ }
+}

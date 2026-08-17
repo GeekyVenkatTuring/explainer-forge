@@ -1,0 +1,784 @@
+{
+ "cuts": [
+  {
+   "id": "lag-ch01-identity_title",
+   "type": "lag_title",
+   "in_seconds": 0.0,
+   "out_seconds": 17.516,
+   "props": {
+    "dur": 18.016
+   }
+  },
+  {
+   "id": "lag-ch01-identity_roadmap",
+   "type": "lag_roadmap",
+   "in_seconds": 18.016,
+   "out_seconds": 57.028,
+   "props": {
+    "dur": 39.512
+   }
+  },
+  {
+   "id": "lag-ch01-identity_hook",
+   "type": "lag_compare",
+   "in_seconds": 57.528,
+   "out_seconds": 94.792,
+   "props": {
+    "kicker": "HOOK \u00b7 WRONG TREE, WRONG LIFE",
+    "title": "Lagot is loquat, not wood apple",
+    "leftTitle": "Lagot / loquat / lukat",
+    "leftBody": "Evergreen subtropical tree. Soft yellow-orange fruit in clusters. Native to China. Eaten fresh in March and April.",
+    "rightTitle": "Wood apple / kaitha",
+    "rightBody": "Hard woody shell. Brown aromatic pulp. Different genus. Different season. Different market.",
+    "vs": "NOT THE SAME TREE",
+    "leftC": "fruit",
+    "rightC": "risk",
+    "foot": "Confirm the Latin name before you pay for plants.",
+    "dur": 37.764
+   }
+  },
+  {
+   "id": "lag-ch01-identity_names",
+   "type": "lag_cards",
+   "in_seconds": 95.292,
+   "out_seconds": 132.482,
+   "props": {
+    "kicker": "NAMES ON THE TAG",
+    "title": "If the Latin name is wrong, stop",
+    "cols": 3,
+    "foot": "Ask for Eriobotrya japonica, grafted.",
+    "items": [
+     {
+      "label": "Loquat",
+      "sub": "English trade name. Soft clustered fruit.",
+      "c": "fruit"
+     },
+     {
+      "label": "Lukat / lugath",
+      "sub": "Common North Indian names for the same tree.",
+      "c": "leaf"
+     },
+     {
+      "label": "Biwa",
+      "sub": "Japanese name. Leaves used as tea there.",
+      "c": "cool"
+     },
+     {
+      "label": "Not kaitha",
+      "sub": "Wood apple. Hard shell. Different crop.",
+      "c": "risk"
+     },
+     {
+      "label": "Not bael",
+      "sub": "Aegle marmelos. Another lookalike in search.",
+      "c": "risk"
+     },
+     {
+      "label": "Not chikoo",
+      "sub": "Sapota. Tropical. Fruits most of the year.",
+      "c": "cool"
+     }
+    ],
+    "dur": 37.69
+   }
+  },
+  {
+   "id": "lag-ch01-identity_tree",
+   "type": "lag_cards",
+   "in_seconds": 132.982,
+   "out_seconds": 171.564,
+   "props": {
+    "kicker": "THE TREE",
+    "title": "A spreading evergreen, not a bush",
+    "cols": 2,
+    "foot": "Plan canopy room now, not in year eight.",
+    "items": [
+     {
+      "label": "Height 5\u20136 m",
+      "sub": "Spreading crown. Needs a real grid, not a fence line of leftovers.",
+      "c": "leaf"
+     },
+     {
+      "label": "Evergreen",
+      "sub": "Shade all year. Intercrops only work while the trees are young.",
+      "c": "cool"
+     },
+     {
+      "label": "Cluster fruit",
+      "sub": "One clip per bunch. Pulling fruit bruises and rots the lot.",
+      "c": "fruit"
+     },
+     {
+      "label": "Long life",
+      "sub": "Peak yield around year fifteen. This is an orchard, not an annual.",
+      "c": "fruit"
+     }
+    ],
+    "dur": 39.082
+   }
+  },
+  {
+   "id": "lag-ch01-identity_origin",
+   "type": "lag_cards",
+   "in_seconds": 172.064,
+   "out_seconds": 207.934,
+   "props": {
+    "kicker": "ORIGIN",
+    "title": "Chinese fruit. Indian niche. No package.",
+    "cols": 3,
+    "foot": "No MSP, no national mission, no default buyer.",
+    "items": [
+     {
+      "label": "China",
+      "sub": "Still the world's orchard. Breeding and volume live there.",
+      "c": "fruit"
+     },
+     {
+      "label": "Japan",
+      "sub": "Culture and leaf tea. Not your mandi.",
+      "c": "cool"
+     },
+     {
+      "label": "India",
+      "sub": "Scattered belts. You must build the market by hand.",
+      "c": "leaf"
+     }
+    ],
+    "dur": 36.37
+   }
+  },
+  {
+   "id": "lag-ch01-identity_family",
+   "type": "lag_cards",
+   "in_seconds": 208.434,
+   "out_seconds": 240.584,
+   "props": {
+    "kicker": "BOTANY CLUE",
+    "title": "Rose family. Evergreen. Not mango.",
+    "cols": 2,
+    "foot": "Wrong spray calendar is how you burn bees and fruit.",
+    "items": [
+     {
+      "label": "Like apple",
+      "sub": "Thinning, frame, bloom care, fruit in clusters.",
+      "c": "leaf"
+     },
+     {
+      "label": "Unlike apple",
+      "sub": "Evergreen. Subtropical. Spring harvest in India.",
+      "c": "cool"
+     },
+     {
+      "label": "Unlike mango",
+      "sub": "Different pests, different season, different pack.",
+      "c": "fruit"
+     },
+     {
+      "label": "Unlike kaitha",
+      "sub": "Soft fruit. No crowbar. No brown pulp.",
+      "c": "risk"
+     }
+    ],
+    "dur": 32.65
+   }
+  },
+  {
+   "id": "lag-ch01-identity_idleaf",
+   "type": "lag_cards",
+   "in_seconds": 241.084,
+   "out_seconds": 273.93,
+   "props": {
+    "kicker": "FIELD ID",
+    "title": "Leaf first, fruit story second",
+    "cols": 3,
+    "foot": "A felted leaf underside is a loquat tell.",
+    "items": [
+     {
+      "label": "Thick leaf",
+      "sub": "Leathery. Not a thin citrus leaf.",
+      "c": "leaf"
+     },
+     {
+      "label": "Felt below",
+      "sub": "Rusty hairs on the underside are common.",
+      "c": "fruit"
+     },
+     {
+      "label": "Not trifoliate",
+      "sub": "If you see bael\u2019s three leaflets, you are in the wrong queue.",
+      "c": "risk"
+     }
+    ],
+    "dur": 33.346
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   3.863,
+   "This is not a ten minute fruit tour."
+  ],
+  [
+   4.413,
+   8.275,
+   "It is the briefing you want before you"
+  ],
+  [
+   8.275,
+   10.206,
+   "put lagot on farmland."
+  ],
+  [
+   10.756,
+   12.205,
+   "What it is."
+  ],
+  [
+   12.205,
+   13.653,
+   "How it grows."
+  ],
+  [
+   13.653,
+   15.102,
+   "What it costs."
+  ],
+  [
+   15.102,
+   17.516,
+   "Whether it is worth it."
+  ],
+  [
+   18.016,
+   19.082,
+   "Twelve parts."
+  ],
+  [
+   19.632,
+   20.165,
+   "First,"
+  ],
+  [
+   20.165,
+   22.297,
+   "what lagot actually is,"
+  ],
+  [
+   22.297,
+   26.028,
+   "and the trees people confuse with it."
+  ],
+  [
+   26.578,
+   28.177,
+   "Then food uses,"
+  ],
+  [
+   28.177,
+   29.776,
+   "not miracle medicine."
+  ],
+  [
+   30.326,
+   31.392,
+   "Then climate,"
+  ],
+  [
+   31.392,
+   35.123,
+   "and which Indian states really crop it."
+  ],
+  [
+   35.673,
+   37.805,
+   "Then the farm year,"
+  ],
+  [
+   37.805,
+   38.339,
+   "varieties,"
+  ],
+  [
+   38.339,
+   38.872,
+   "planting,"
+  ],
+  [
+   38.872,
+   42.07,
+   "and the wait until year three."
+  ],
+  [
+   42.62,
+   43.686,
+   "Then care,"
+  ],
+  [
+   43.686,
+   44.219,
+   "harvest,"
+  ],
+  [
+   44.219,
+   44.752,
+   "pests,"
+  ],
+  [
+   44.752,
+   45.285,
+   "costs,"
+  ],
+  [
+   45.285,
+   47.417,
+   "and the market verdict."
+  ],
+  [
+   47.967,
+   50.099,
+   "Stay for the numbers."
+  ],
+  [
+   50.099,
+   54.363,
+   "They are why most people should not plant"
+  ],
+  [
+   54.363,
+   57.028,
+   "this as their only crop."
+  ],
+  [
+   57.528,
+   61.247,
+   "People search lagot and get wood apple."
+  ],
+  [
+   61.247,
+   64.435,
+   "Those are not the same plant."
+  ],
+  [
+   64.985,
+   66.578,
+   "Lagot is loquat."
+  ],
+  [
+   66.578,
+   69.766,
+   "In India you also hear lukat,"
+  ],
+  [
+   69.766,
+   70.829,
+   "and lugath."
+  ],
+  [
+   71.379,
+   74.566,
+   "The scientific name is Eriobotrya japonica."
+  ],
+  [
+   74.566,
+   77.754,
+   "It is in the rose family,"
+  ],
+  [
+   77.754,
+   79.879,
+   "with apple and pear."
+  ],
+  [
+   80.429,
+   82.554,
+   "Wood apple is kaitha."
+  ],
+  [
+   82.554,
+   83.617,
+   "Hard shell."
+  ],
+  [
+   83.617,
+   84.679,
+   "Brown pulp."
+  ],
+  [
+   84.679,
+   86.804,
+   "A totally different tree."
+  ],
+  [
+   87.354,
+   91.073,
+   "If you plant the wrong nursery label,"
+  ],
+  [
+   91.073,
+   94.792,
+   "you wait years for the wrong fruit."
+  ],
+  [
+   95.292,
+   99.344,
+   "Say the names out loud so a nursery"
+  ],
+  [
+   99.344,
+   100.863,
+   "cannot bluff you."
+  ],
+  [
+   101.413,
+   101.92,
+   "English:"
+  ],
+  [
+   101.92,
+   102.426,
+   "loquat,"
+  ],
+  [
+   102.426,
+   103.946,
+   "sometimes Japanese medlar."
+  ],
+  [
+   104.496,
+   105.508,
+   "North India:"
+  ],
+  [
+   105.508,
+   106.015,
+   "lukat,"
+  ],
+  [
+   106.015,
+   106.521,
+   "lugath,"
+  ],
+  [
+   106.521,
+   107.028,
+   "lagot."
+  ],
+  [
+   107.578,
+   110.11,
+   "Japan calls the fruit biwa."
+  ],
+  [
+   110.11,
+   113.656,
+   "China is still the world's main producer."
+  ],
+  [
+   114.206,
+   118.257,
+   "In much of South India the same tree"
+  ],
+  [
+   118.257,
+   120.79,
+   "is planted as an ornamental,"
+  ],
+  [
+   120.79,
+   124.841,
+   "because warm winters do not set a crop."
+  ],
+  [
+   125.391,
+   128.43,
+   "Your first job is not marketing."
+  ],
+  [
+   128.43,
+   132.482,
+   "It is matching the name to the species."
+  ],
+  [
+   132.982,
+   137.019,
+   "Picture the tree you will live with for"
+  ],
+  [
+   137.019,
+   138.029,
+   "twenty years."
+  ],
+  [
+   138.579,
+   139.083,
+   "Evergreen."
+  ],
+  [
+   139.083,
+   139.588,
+   "Spreading."
+  ],
+  [
+   139.588,
+   143.626,
+   "Usually five to six metres tall in Indian"
+  ],
+  [
+   143.626,
+   144.13,
+   "orchards."
+  ],
+  [
+   144.68,
+   146.194,
+   "Large leathery leaves."
+  ],
+  [
+   146.194,
+   149.727,
+   "White flower clusters in the cool months."
+  ],
+  [
+   150.277,
+   152.296,
+   "Fruit hangs in bunches,"
+  ],
+  [
+   152.296,
+   154.819,
+   "not as single mango-like units."
+  ],
+  [
+   155.369,
+   157.892,
+   "That bunch habit decides harvest:"
+  ],
+  [
+   157.892,
+   159.911,
+   "you clip the cluster,"
+  ],
+  [
+   159.911,
+   162.939,
+   "you do not yank one fruit."
+  ],
+  [
+   163.489,
+   167.527,
+   "If your land cannot host a spreading evergreen"
+  ],
+  [
+   167.527,
+   169.041,
+   "of that size,"
+  ],
+  [
+   169.041,
+   171.564,
+   "this is the wrong crop."
+  ],
+  [
+   172.064,
+   174.986,
+   "Where did this tree come from?"
+  ],
+  [
+   175.536,
+   176.998,
+   "Central eastern China."
+  ],
+  [
+   176.998,
+   179.92,
+   "Japan made it famous as biwa."
+  ],
+  [
+   180.47,
+   184.366,
+   "It travelled as an ornamental and a fruit"
+  ],
+  [
+   184.366,
+   184.853,
+   "tree,"
+  ],
+  [
+   184.853,
+   188.75,
+   "not as a British plantation staple like tea."
+  ],
+  [
+   189.3,
+   190.761,
+   "That history matters."
+  ],
+  [
+   190.761,
+   194.658,
+   "There is no colonial playbook for Indian loquat"
+  ],
+  [
+   194.658,
+   195.145,
+   "acres."
+  ],
+  [
+   195.695,
+   199.591,
+   "You are closer to a homestead fruit that"
+  ],
+  [
+   199.591,
+   202.026,
+   "found a few serious districts."
+  ],
+  [
+   202.576,
+   205.499,
+   "Treat it like a specialist orchard,"
+  ],
+  [
+   205.499,
+   207.934,
+   "not like a wheat package."
+  ],
+  [
+   208.434,
+   212.052,
+   "The rose family is a clue for care."
+  ],
+  [
+   212.602,
+   216.221,
+   "Apple and pear people already know fire blight"
+  ],
+  [
+   216.221,
+   218.03,
+   "anxiety and fruit thinning."
+  ],
+  [
+   218.58,
+   219.937,
+   "Loquat is evergreen,"
+  ],
+  [
+   219.937,
+   223.556,
+   "so it does not take a hard winter"
+  ],
+  [
+   223.556,
+   224.912,
+   "rest like apple."
+  ],
+  [
+   225.462,
+   227.724,
+   "But it still wants thinning,"
+  ],
+  [
+   227.724,
+   228.629,
+   "a frame,"
+  ],
+  [
+   228.629,
+   230.438,
+   "and respect at bloom."
+  ],
+  [
+   230.988,
+   234.606,
+   "Do not copy mango spray calendars onto this"
+  ],
+  [
+   234.606,
+   235.059,
+   "tree."
+  ],
+  [
+   235.609,
+   239.227,
+   "Copy the idea of a trained fruit tree,"
+  ],
+  [
+   239.227,
+   240.584,
+   "not a jungle."
+  ],
+  [
+   241.084,
+   244.78,
+   "Identify a tree in a nursery yard."
+  ],
+  [
+   245.33,
+   246.914,
+   "Leaves are large,"
+  ],
+  [
+   246.914,
+   247.442,
+   "thick,"
+  ],
+  [
+   247.442,
+   249.026,
+   "dark green above,"
+  ],
+  [
+   249.026,
+   250.61,
+   "often rusty-felted below."
+  ],
+  [
+   251.16,
+   253.272,
+   "The leaf looks tropical."
+  ],
+  [
+   253.272,
+   257.496,
+   "The fruit looks like a small apricot cluster."
+  ],
+  [
+   258.046,
+   262.27,
+   "Wood apple leaves do not look like that."
+  ],
+  [
+   262.27,
+   264.382,
+   "Bael leaves are trifoliate."
+  ],
+  [
+   264.932,
+   269.156,
+   "Take a photo of the leaf underside before"
+  ],
+  [
+   269.156,
+   270.212,
+   "you pay."
+  ],
+  [
+   270.762,
+   273.402,
+   "If the seller hates that,"
+  ],
+  [
+   273.402,
+   273.93,
+   "walk."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "lag/lag-ch01-identity.wav",
+   "volume": 1.0
+  }
+ }
+}

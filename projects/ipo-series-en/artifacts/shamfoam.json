@@ -1,0 +1,831 @@
+{
+  "cuts": [
+    {
+      "id": "shamfoam_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 25.22,
+      "props": {
+        "title": "Sham Foam IPO",
+        "sub": "Foam & furniture maker · ₹40 Cr · NSE SME · 11–13 Aug 2026",
+        "kicker": "SME IPO ANALYSIS · NSE SME",
+        "dur": 25.72
+      }
+    },
+    {
+      "id": "shamfoam_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 25.72,
+      "out_seconds": 63.514,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Sham Foam",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🛏️",
+            "k": "Foam & furniture maker",
+            "v": "Manufactures foam-based products and furniture from its base in Ambala, Haryana",
+            "chip": "FOAM"
+          },
+          {
+            "emoji": "🛢️",
+            "k": "Input-cost linked",
+            "v": "Foam is made from crude-linked chemicals, so raw-material costs — and margins — swing with oil prices",
+            "chip": "CRUDE-LINKED"
+          },
+          {
+            "emoji": "📦",
+            "k": "Fixed-price SME issue",
+            "v": "A fixed-price issue at ₹130 a share — a small, lightly-covered offering on the NSE SME platform",
+            "chip": "FIXED ₹130"
+          }
+        ],
+        "dur": 38.294
+      }
+    },
+    {
+      "id": "shamfoam_clients",
+      "type": "sm_iconcards",
+      "in_seconds": 64.014,
+      "out_seconds": 103.704,
+      "props": {
+        "kicker": "BUSINESS DEEP-DIVE · PRODUCTS & CUSTOMERS",
+        "title": "Products & Customers",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🛏️",
+            "k": "Mattresses & PU foam",
+            "v": "Makes memory-foam, hybrid and orthopedic mattresses and PU-foam products from Ambala, Haryana — led by the founding Jindal family",
+            "chip": "MATTRESSES"
+          },
+          {
+            "emoji": "🏪",
+            "k": "Dealer & direct-to-home sales",
+            "v": "Sells through dealers and direct factory delivery, backed by long warranties — a branded, distribution-led mattress market",
+            "chip": "DEALERS + D2H"
+          },
+          {
+            "emoji": "ℹ️",
+            "k": "No disclosed order book",
+            "v": "As a make-to-stock manufacturer it doesn't quote an order book — judge it on its revenue trend and margins, not forward orders",
+            "chip": "MAKE-TO-STOCK"
+          }
+        ],
+        "dur": 40.19
+      }
+    },
+    {
+      "id": "shamfoam_fin",
+      "type": "sm_stats",
+      "in_seconds": 104.204,
+      "out_seconds": 134.654,
+      "props": {
+        "kicker": "FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY24",
+            "to": 81,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "≈ ₹81.15 Cr (full year)"
+          },
+          {
+            "label": "Net Profit FY24",
+            "to": 4,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#FBBF24",
+            "sub": "≈ ₹3.58 Cr — thin ~4% margin"
+          },
+          {
+            "label": "Issue size",
+            "to": 40,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#22D3EE",
+            "sub": "fixed ₹130 · NSE SME"
+          }
+        ],
+        "note": "A reasonable revenue base but a thin ~4% profit margin — and recent figures look lumpy across periods. Read the RHP carefully.",
+        "dur": 30.95
+      }
+    },
+    {
+      "id": "shamfoam_issue",
+      "type": "sm_stats",
+      "in_seconds": 135.154,
+      "out_seconds": 162.868,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "A 100% Fresh Issue",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 40,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#22D3EE",
+            "sub": "₹40 Cr · fixed ₹130"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 40,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "100% — funds the business"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 0,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "none — no promoter sell-down"
+          }
+        ],
+        "note": "The best possible structure: a 100% fresh issue. Every rupee raised goes INTO the company — no promoter cashes out.",
+        "dur": 28.214
+      }
+    },
+    {
+      "id": "shamfoam_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 163.368,
+      "out_seconds": 190.05,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹40 Cr Funds",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🔄",
+            "k": "Working capital",
+            "v": "Most of the fresh money funds working capital for its manufacturing operations",
+            "chip": "WC"
+          },
+          {
+            "emoji": "🏭",
+            "k": "Capacity",
+            "v": "Part supports capacity and equipment to make more product",
+            "chip": "CAPACITY"
+          },
+          {
+            "emoji": "🧰",
+            "k": "General corporate",
+            "v": "The balance is for general corporate purposes",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 27.182
+      }
+    },
+    {
+      "id": "shamfoam_peers",
+      "type": "sm_iconcards",
+      "in_seconds": 190.55,
+      "out_seconds": 236.432,
+      "props": {
+        "kicker": "COMPETITORS · VALUATION",
+        "title": "Sheela Foam Is the Big Name — Not a Peer",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🛌",
+            "k": "Sheela Foam (Sleepwell)",
+            "v": "The dominant LISTED foam & mattress maker (Sleepwell). It's vastly larger and branded — a scale reference, not a like-for-like peer for a tiny SME",
+            "chip": "REFERENCE"
+          },
+          {
+            "emoji": "🛢️",
+            "k": "Input-cost sensitive",
+            "v": "Foam uses crude-linked chemicals, so margins swing with oil prices; furniture is competitive and commoditised",
+            "chip": "CRUDE-LINKED"
+          },
+          {
+            "emoji": "⚖️",
+            "k": "No clean SME P/E",
+            "v": "No reliable listed twin at this size means a P/E comparison isn't meaningful — weigh the fixed ₹130 price against its small, uneven profit",
+            "chip": "WATCH PRICE"
+          }
+        ],
+        "dur": 46.382
+      }
+    },
+    {
+      "id": "shamfoam_verdict",
+      "type": "sm_myths",
+      "in_seconds": 236.932,
+      "out_seconds": 275.35,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "Thin ~4% margins; lumpy recent numbers",
+            "f": "100% fresh — all money funds the company"
+          },
+          {
+            "m": "Input costs track crude — margins swing",
+            "f": "Reasonable revenue base (~₹81 Cr FY24)"
+          },
+          {
+            "m": "Tiny SME; big minimum bid; thin liquidity",
+            "f": "No promoter sell-down"
+          }
+        ],
+        "dur": 38.918
+      }
+    },
+    {
+      "id": "shamfoam_apply",
+      "type": "sm_iconcards",
+      "in_seconds": 275.85,
+      "out_seconds": 326.482,
+      "props": {
+        "kicker": "HOW TO APPLY · SME IPO",
+        "title": "Platform & Money Needed",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🏢",
+            "k": "Lists on NSE SME",
+            "v": "A separate platform for small companies — NOT the mainboard. Lot sizes, liquidity and risk all differ",
+            "chip": "SME"
+          },
+          {
+            "emoji": "💰",
+            "k": "A large minimum bid",
+            "v": "One lot is 1,000 shares (₹1.30 lakh). The minimum you need is about ₹2.60 lakh (2 lots) — far above a mainboard IPO's ~₹15,000",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "⚠️",
+            "k": "Higher risk, thin liquidity",
+            "v": "SME stocks are volatile and lightly traded, with lighter disclosure — invest only money you can afford to lock up",
+            "chip": "RISK"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE/BSE SME IPO pages, Chittorgarh or your broker app; allotment is by lottery if oversubscribed",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 51.132
+      }
+    },
+    {
+      "id": "shamfoam_recap",
+      "type": "sm_recap",
+      "in_seconds": 326.982,
+      "out_seconds": 380.878,
+      "props": {
+        "title": "Sham Foam IPO — at a Glance",
+        "items": [
+          "Business: foam & furniture maker, Ambala",
+          "FY24: revenue ₹81.15 Cr, profit ₹3.58 Cr (thin margin)",
+          "₹40 Cr issue — 100% FRESH; NSE SME, fixed ₹130",
+          "No listed peer at its size — no meaningful P/E",
+          "SME min ~₹2.60 lakh · GMP flat at open (unofficial)"
+        ],
+        "closer": "A cleanly-structured, all-fresh micro-cap — but thin-margin, input-cost sensitive and lumpy. Read the RHP; decide for yourself.",
+        "dur": 54.396
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.018,
+      "Let's break down the Sham Foam I-P-O — a small,"
+    ],
+    [
+      4.018,
+      9.746,
+      "forty-crore S-M-E issue from a foam and furniture maker in Haryana."
+    ],
+    [
+      9.746,
+      13.251,
+      "We'll cover what it does, its financials,"
+    ],
+    [
+      13.251,
+      15.047,
+      "where the money goes,"
+    ],
+    [
+      15.047,
+      18.894,
+      "how it stacks up against the big listed name,"
+    ],
+    [
+      18.894,
+      21.715,
+      "and how much you'd need to apply."
+    ],
+    [
+      21.715,
+      25.22,
+      "This is education, not investment advice."
+    ],
+    [
+      25.72,
+      27.856,
+      "So what does Sham Foam do?"
+    ],
+    [
+      27.856,
+      31.964,
+      "It manufactures foam-based products and furniture,"
+    ],
+    [
+      31.964,
+      34.676,
+      "from its base in Ambala, Haryana."
+    ],
+    [
+      34.676,
+      42.07,
+      "One thing to understand about foam: it's made from chemicals whose prices track crude oil."
+    ],
+    [
+      42.07,
+      45.11,
+      "So the company's raw-material costs —"
+    ],
+    [
+      45.11,
+      49.218,
+      "and therefore its margins — swing with oil prices,"
+    ],
+    [
+      49.218,
+      50.943,
+      "which is a real risk."
+    ],
+    [
+      50.943,
+      57.352,
+      "And this is a fixed-price S-M-E issue at a hundred and thirty rupees a share —"
+    ],
+    [
+      57.352,
+      60.145,
+      "a small, lightly-covered offering,"
+    ],
+    [
+      60.145,
+      63.514,
+      "so expect thin research and thin trading."
+    ],
+    [
+      64.014,
+      65.374,
+      "Let's go deeper."
+    ],
+    [
+      65.374,
+      68.858,
+      "Sham Foam makes mattresses — memory-foam,"
+    ],
+    [
+      68.858,
+      72.768,
+      "hybrid and orthopedic — and P-U foam products,"
+    ],
+    [
+      72.768,
+      76.507,
+      "from Ambala in Haryana, led by its founders,"
+    ],
+    [
+      76.507,
+      78.037,
+      "the Jindal family."
+    ],
+    [
+      78.037,
+      82.542,
+      "It sells through dealers and direct factory delivery,"
+    ],
+    [
+      82.542,
+      86.791,
+      "backed by long warranties, competing in a branded,"
+    ],
+    [
+      86.791,
+      89.596,
+      "distribution-led mattress market."
+    ],
+    [
+      89.596,
+      90.871,
+      "On order book —"
+    ],
+    [
+      90.871,
+      95.63,
+      "as a make-to-stock manufacturer it doesn't disclose one."
+    ],
+    [
+      95.63,
+      99.964,
+      "So judge this one on its revenue trend and margins,"
+    ],
+    [
+      99.964,
+      103.704,
+      "rather than on any forward-order visibility."
+    ],
+    [
+      104.204,
+      105.755,
+      "Now the financials."
+    ],
+    [
+      105.755,
+      109.102,
+      "For the year to March twenty twenty-four,"
+    ],
+    [
+      109.102,
+      111.959,
+      "revenue was about eighty-one crore,"
+    ],
+    [
+      111.959,
+      116.531,
+      "with net profit of roughly three point five eight crore."
+    ],
+    [
+      116.531,
+      118.082,
+      "Notice the margin —"
+    ],
+    [
+      118.082,
+      122.98,
+      "profit is only about four percent of revenue, which is thin."
+    ],
+    [
+      122.98,
+      127.797,
+      "And the recent numbers look lumpy across reporting periods,"
+    ],
+    [
+      127.797,
+      134.654,
+      "so read the offer document carefully to understand the trend before you form a view."
+    ],
+    [
+      135.154,
+      137.368,
+      "Where does your money go?"
+    ],
+    [
+      137.368,
+      141.706,
+      "And here Sham Foam has the best possible answer —"
+    ],
+    [
+      141.706,
+      145.071,
+      "this is a hundred percent fresh issue."
+    ],
+    [
+      145.071,
+      147.993,
+      "There's no offer for sale at all."
+    ],
+    [
+      147.993,
+      151.623,
+      "Every rupee raised goes into the company,"
+    ],
+    [
+      151.623,
+      154.191,
+      "not into a promoter's pocket."
+    ],
+    [
+      154.191,
+      158.884,
+      "For a small, growing manufacturer that needs capital,"
+    ],
+    [
+      158.884,
+      162.868,
+      "that's exactly the structure you want to see."
+    ],
+    [
+      163.368,
+      165.874,
+      "What does the fresh money fund?"
+    ],
+    [
+      165.874,
+      167.734,
+      "Mostly working capital,"
+    ],
+    [
+      167.734,
+      173.394,
+      "which a manufacturing business ties up in raw materials and inventory."
+    ],
+    [
+      173.394,
+      178.65,
+      "Part supports capacity and equipment so it can make more product,"
+    ],
+    [
+      178.65,
+      182.126,
+      "and the rest is general corporate purposes."
+    ],
+    [
+      182.126,
+      186.897,
+      "So the money is aimed at running and growing the business —"
+    ],
+    [
+      186.897,
+      190.05,
+      "the right use for a young manufacturer."
+    ],
+    [
+      190.55,
+      192.305,
+      "Now — the competitors."
+    ],
+    [
+      192.305,
+      196.056,
+      "The obvious listed name in foam is Sheela Foam,"
+    ],
+    [
+      196.056,
+      198.37,
+      "the company behind Sleepwell."
+    ],
+    [
+      198.37,
+      201.163,
+      "But it's vastly bigger and branded,"
+    ],
+    [
+      201.163,
+      203.557,
+      "so it's a reference for scale,"
+    ],
+    [
+      203.557,
+      206.988,
+      "not a real peer for a tiny S-M-E like this."
+    ],
+    [
+      206.988,
+      211.217,
+      "As we said, foam is made from crude-linked chemicals,"
+    ],
+    [
+      211.217,
+      213.77,
+      "so margins move with oil prices,"
+    ],
+    [
+      213.77,
+      217.84,
+      "and furniture is a competitive, commoditised trade."
+    ],
+    [
+      217.84,
+      221.59,
+      "With no comparable listed company at this size,"
+    ],
+    [
+      221.59,
+      224.622,
+      "there's no meaningful P-E to compare —"
+    ],
+    [
+      224.622,
+      233.4,
+      "so weigh the fixed price of one hundred and thirty rupees against Sham Foam's small and rather uneven profits,"
+    ],
+    [
+      233.4,
+      236.432,
+      "and read the offer document carefully."
+    ],
+    [
+      236.932,
+      238.616,
+      "Should you subscribe?"
+    ],
+    [
+      238.616,
+      239.819,
+      "The strengths —"
+    ],
+    [
+      239.819,
+      244.952,
+      "it's a hundred percent fresh issue with no promoter cashing out,"
+    ],
+    [
+      244.952,
+      249.685,
+      "and it has a reasonable revenue base of about eighty crore."
+    ],
+    [
+      249.685,
+      254.256,
+      "The watch-outs — margins are thin at around four percent,"
+    ],
+    [
+      254.256,
+      259.149,
+      "the recent numbers are lumpy, its costs swing with crude oil,"
+    ],
+    [
+      259.149,
+      264.121,
+      "and it's a tiny S-M-E with a big minimum bid and thin trading."
+    ],
+    [
+      264.121,
+      267.811,
+      "The takeaway — a cleanly-structured micro-cap,"
+    ],
+    [
+      267.811,
+      271.34,
+      "but a thin-margin, input-cost-sensitive one."
+    ],
+    [
+      271.34,
+      275.35,
+      "Read the offer document closely before you decide."
+    ],
+    [
+      275.85,
+      280.136,
+      "Now — how to apply, and how S-M-E I-P-Os differ."
+    ],
+    [
+      280.136,
+      284.065,
+      "Sham Foam lists on the N-S-E S-M-E platform,"
+    ],
+    [
+      284.065,
+      286.566,
+      "separate from the mainboard."
+    ],
+    [
+      286.566,
+      288.441,
+      "The minimum is large."
+    ],
+    [
+      288.441,
+      291.12,
+      "One lot is a thousand shares —"
+    ],
+    [
+      291.12,
+      294.603,
+      "about one lakh thirty thousand rupees —"
+    ],
+    [
+      294.603,
+      298.889,
+      "and the smallest retail application is two lots,"
+    ],
+    [
+      298.889,
+      302.372,
+      "roughly two lakh sixty thousand rupees."
+    ],
+    [
+      302.372,
+      306.39,
+      "That's a big ticket versus a mainboard I-P-O."
+    ],
+    [
+      306.39,
+      311.659,
+      "And remember, S-M-E stocks are volatile and lightly traded,"
+    ],
+    [
+      311.659,
+      315.141,
+      "so only commit money you can lock away."
+    ],
+    [
+      315.141,
+      319.785,
+      "Track the live subscription on the N-S-E S-M-E page,"
+    ],
+    [
+      319.785,
+      322.731,
+      "Chittorgarh, or your broker app —"
+    ],
+    [
+      322.731,
+      326.482,
+      "allotment is by lottery if oversubscribed."
+    ],
+    [
+      326.982,
+      328.861,
+      "Let's recap Sham Foam."
+    ],
+    [
+      328.861,
+      332.192,
+      "A foam and furniture maker from Ambala,"
+    ],
+    [
+      332.192,
+      336.89,
+      "with a reasonable revenue base but thin, lumpy profits."
+    ],
+    [
+      336.89,
+      339.879,
+      "The best feature is the structure —"
+    ],
+    [
+      339.879,
+      344.236,
+      "a hundred percent fresh issue, no promoter selling."
+    ],
+    [
+      344.236,
+      347.823,
+      "But margins are thin and swing with crude,"
+    ],
+    [
+      347.823,
+      350.898,
+      "there's no listed peer to benchmark,"
+    ],
+    [
+      350.898,
+      356.193,
+      "and the S-M-E minimum is about two lakh sixty thousand rupees."
+    ],
+    [
+      356.193,
+      360.293,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      360.293,
+      362.685,
+      "it is not investment advice,"
+    ],
+    [
+      362.685,
+      365.504,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      365.504,
+      368.749,
+      "and not a prediction of listing gains."
+    ],
+    [
+      368.749,
+      373.276,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      373.276,
+      379.17,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      379.17,
+      380.878,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/shamfoam.wav",
+      "volume": 1.0
+    }
+  }
+}

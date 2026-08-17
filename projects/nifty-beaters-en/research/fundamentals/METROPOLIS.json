@@ -1,0 +1,101 @@
+{
+ "ticker": "METROPOLIS",
+ "scraped_at": "2026-08-14T15:29:14",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 11300.0,
+ "current_price": 545.0,
+ "pe": 54.3,
+ "book_value": 73.0,
+ "dividend_yield_pct": 0.36,
+ "roce_pct": 17.8,
+ "roe_pct": 13.6,
+ "face_value": 2.0,
+ "high": 609.0,
+ "sales_growth": {
+  "10 Years": 11.0,
+  "5 Years": 1.0,
+  "3 Years": 11.0,
+  "TTM": 37.0
+ },
+ "profit_growth": {
+  "5 Years": -4.0,
+  "3 Years": 18.0,
+  "1 Year": 5.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 277.0,
+  "Expenses&nbsp; +": 214.0,
+  "Operating Profit": 63.0,
+  "OPM %": 23.0,
+  "Other Income&nbsp; +": 3.0,
+  "Interest": 6.0,
+  "Depreciation": 21.0,
+  "Profit before tax": 39.0,
+  "Tax %": 26.0,
+  "Net Profit&nbsp; +": 29.0,
+  "EPS in Rs": 1.41
+ },
+ "price_cagr": {
+  "10 Years": 19.0,
+  "5 Years": 15.0,
+  "3 Years": 12.0,
+  "Last Year": 14.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "23%",
+   "24%",
+   "22%",
+   "24%",
+   "25%",
+   "26%",
+   "22%",
+   "18%",
+   "23%",
+   "25%",
+   "23%",
+   "25%",
+   "25%"
+  ],
+  "eps": [
+   "1.41",
+   "1.73",
+   "1.33",
+   "1.78",
+   "1.85",
+   "2.27",
+   "1.53",
+   "1.41",
+   "2.17",
+   "2.54",
+   "2.00",
+   "2.46",
+   "2.73"
+  ]
+ },
+ "pros": [],
+ "cons": [
+  "Stock is trading at 7.56 times its book value",
+  "The company has delivered a poor sales growth of 10.5% over past five years.",
+  "Company has a low return on equity of 12.4% over last 3 years."
+ ]
+}

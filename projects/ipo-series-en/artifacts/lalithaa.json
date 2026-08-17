@@ -1,0 +1,924 @@
+{
+  "cuts": [
+    {
+      "id": "lalithaa_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 29.898,
+      "props": {
+        "title": "Lalithaa Jewellery Mart IPO",
+        "sub": "South-India jewellery chain · ₹1,700 Cr · 17–19 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 30.398
+      }
+    },
+    {
+      "id": "lalithaa_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 30.398,
+      "out_seconds": 71.672,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Lalithaa Jewellery Mart",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "💍",
+            "k": "South-India jewellery retailer",
+            "v": "Sells gold, silver and diamond jewellery through large-format stores — a trusted regional brand",
+            "chip": "RETAIL"
+          },
+          {
+            "emoji": "🏬",
+            "k": "56 stores across 46 cities",
+            "v": "Spread over Tamil Nadu, Andhra, Telangana, Karnataka and Puducherry — strong in Tier-2 and Tier-3 towns",
+            "chip": "56 STORES"
+          },
+          {
+            "emoji": "🏆",
+            "k": "Best-in-class store economics",
+            "v": "Claims the highest operating revenue and EBITDA per store among major organised Indian jewellers",
+            "chip": "EFFICIENCY"
+          }
+        ],
+        "dur": 41.774
+      }
+    },
+    {
+      "id": "lalithaa_fin",
+      "type": "sm_stats",
+      "in_seconds": 72.172,
+      "out_seconds": 108.55,
+      "props": {
+        "kicker": "FINANCIALS",
+        "title": "The Headline Numbers",
+        "stats": [
+          {
+            "label": "Total income FY26",
+            "to": 25024,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "₹25,023.93 Cr (FY25 ₹16,897.32 Cr)"
+          },
+          {
+            "label": "Net profit FY26",
+            "to": 1010,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "₹1,009.82 Cr · +176.9% YoY"
+          },
+          {
+            "label": "Return on equity",
+            "to": 41.6,
+            "prefix": "",
+            "suffix": "%",
+            "decimals": 1,
+            "color": "#FBBF24",
+            "sub": "vs ~21.7% peer average"
+          }
+        ],
+        "note": "A big jump: income up ~48% and profit nearly tripling to ₹1,009.82 Cr — with a best-in-class 41.60% return on equity.",
+        "dur": 36.878
+      }
+    },
+    {
+      "id": "lalithaa_threestmt",
+      "type": "sm_financials",
+      "in_seconds": 109.05,
+      "out_seconds": 152.172,
+      "props": {
+        "kicker": "FINANCIALS · 3 STATEMENTS",
+        "title": "Income, Balance Sheet & Cash Flow",
+        "color": "#FBBF24",
+        "cols": [
+          {
+            "name": "Income Statement",
+            "icon": "📊",
+            "accent": "#34D399",
+            "rows": [
+              {
+                "label": "Total income FY26",
+                "val": "₹25,023.93 Cr",
+                "sub": "FY25 ₹16,897.32 Cr"
+              },
+              {
+                "label": "Net profit FY26",
+                "val": "₹1,009.82 Cr",
+                "hi": true,
+                "sub": "FY25 ₹364.73 Cr · +176.9%"
+              },
+              {
+                "label": "PAT margin",
+                "val": "4.04%",
+                "sub": "thin, as jewellery is"
+              }
+            ]
+          },
+          {
+            "name": "Balance Sheet",
+            "icon": "🏦",
+            "accent": "#FBBF24",
+            "rows": [
+              {
+                "label": "Net worth FY26",
+                "val": "₹3,033.14 Cr",
+                "sub": "FY25 ₹2,028.80 Cr"
+              },
+              {
+                "label": "Total assets",
+                "val": "₹10,945.14 Cr",
+                "sub": "inventory-heavy"
+              },
+              {
+                "label": "Total borrowings",
+                "val": "₹1,604.14 Cr",
+                "hi": true,
+                "sub": "D/E 0.53 — moderate"
+              }
+            ]
+          },
+          {
+            "name": "Cash Flow",
+            "icon": "💵",
+            "accent": "#38BDF8",
+            "rows": [
+              {
+                "label": "Fresh issue inflow",
+                "val": "₹1,200 Cr",
+                "sub": "into the company"
+              },
+              {
+                "label": "→ New stores, WC, debt",
+                "val": "expansion",
+                "hi": true,
+                "sub": "stores + inventory + repay"
+              },
+              {
+                "label": "Operating cash flow",
+                "val": "Not disclosed",
+                "sub": "summary omits it; read RHP"
+              }
+            ]
+          }
+        ],
+        "note": "Income statement & balance sheet look strong; the full cash-flow statement isn't in public summaries — read the RHP.",
+        "dur": 43.622
+      }
+    },
+    {
+      "id": "lalithaa_issue",
+      "type": "sm_stats",
+      "in_seconds": 152.672,
+      "out_seconds": 185.186,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 1700,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#FBBF24",
+            "sub": "band ₹190–201"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 1200,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "~71% — funds growth & debt"
+          },
+          {
+            "label": "OFS (to promoters)",
+            "to": 500,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "~29% — promoters part-sell"
+          }
+        ],
+        "note": "A healthy mix: about 71% is fresh money funding the business; ~29% is a promoter sell-down (holding 97.72% → 82.85%).",
+        "dur": 33.014
+      }
+    },
+    {
+      "id": "lalithaa_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 185.686,
+      "out_seconds": 217.48,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹1,200 Cr Funds",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🏬",
+            "k": "New retail stores",
+            "v": "Expanding the showroom network — the core growth engine for a store-led jewellery retailer",
+            "chip": "EXPANSION"
+          },
+          {
+            "emoji": "🏦",
+            "k": "Repay borrowings",
+            "v": "Cutting debt lowers interest costs and strengthens an already-solid balance sheet",
+            "chip": "DEBT"
+          },
+          {
+            "emoji": "💎",
+            "k": "Working capital + GCP",
+            "v": "Funding inventory — gold stock is a jeweller's biggest working-capital need — and general purposes",
+            "chip": "INVENTORY"
+          }
+        ],
+        "dur": 32.294
+      }
+    },
+    {
+      "id": "lalithaa_peers",
+      "type": "sm_peers",
+      "in_seconds": 217.98,
+      "out_seconds": 266.716,
+      "props": {
+        "kicker": "COMPETITORS · VALUATION",
+        "title": "Priced Well Below the Big Jewellers",
+        "color": "#FBBF24",
+        "peLabel": "P/E (×) · higher = pricier",
+        "rows": [
+          {
+            "name": "Kalyan Jewellers",
+            "pe": 46.9,
+            "note": "national organised leader"
+          },
+          {
+            "name": "Thangamayil",
+            "pe": 46.3,
+            "note": "Tamil Nadu jeweller"
+          },
+          {
+            "name": "PN Gadgil",
+            "pe": 22.2,
+            "note": "western India · recent IPO"
+          },
+          {
+            "name": "Senco Gold",
+            "pe": 11.5,
+            "note": "east India · value-priced"
+          },
+          {
+            "name": "Lalithaa (this IPO)",
+            "pe": 11.1,
+            "hi": true,
+            "note": "~11× · best ROE in the pack"
+          }
+        ],
+        "verdict": "At ~11× earnings, Lalithaa is priced far below the peer average of ~44× — cheaper than Kalyan or Thangamayil — despite the highest ROE. A genuine value angle.",
+        "dur": 49.236
+      }
+    },
+    {
+      "id": "lalithaa_verdict",
+      "type": "sm_myths",
+      "in_seconds": 267.216,
+      "out_seconds": 315.354,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "Concentrated in South India — regional risk",
+            "f": "Priced ~11× — well BELOW peer average of ~44×"
+          },
+          {
+            "m": "Thin 4% margins; gold-price swings hurt",
+            "f": "Profit nearly tripled; best-in-class 41.6% ROE"
+          },
+          {
+            "m": "Inventory-heavy; needs constant working capital",
+            "f": "~71% fresh; strong per-store economics"
+          }
+        ],
+        "dur": 48.638
+      }
+    },
+    {
+      "id": "lalithaa_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 315.854,
+      "out_seconds": 353.766,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,874 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 38.412
+      }
+    },
+    {
+      "id": "lalithaa_recap",
+      "type": "sm_recap",
+      "in_seconds": 354.266,
+      "out_seconds": 420.234,
+      "props": {
+        "title": "Lalithaa Jewellery Mart IPO — at a Glance",
+        "items": [
+          "Business: South-India jewellery chain (56 stores, best per-store economics)",
+          "FY26: income ₹25,023.93 Cr, profit ₹1,009.82 Cr (+177%), ROE 41.6%",
+          "₹1,700 Cr issue — ~71% fresh; funds new stores, WC, debt",
+          "Priced ~11× vs peer avg ~44× — a real value angle",
+          "Retail min ₹14,874 · GMP ~12.44% (unofficial)"
+        ],
+        "closer": "A highly profitable regional jeweller priced well below its listed peers — with South-India concentration as the main risk. Read the RHP; decide for yourself.",
+        "dur": 66.468
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.146,
+      "Let's break down the Lalithaa Jewellery Mart I-P-O —"
+    ],
+    [
+      4.146,
+      11.321,
+      "a one thousand seven hundred crore mainboard issue from a big South-India jewellery chain."
+    ],
+    [
+      11.321,
+      16.823,
+      "And it has one of the most interesting valuation stories of the week."
+    ],
+    [
+      16.823,
+      20.49,
+      "We'll cover what it does, its full financials,"
+    ],
+    [
+      20.49,
+      24.716,
+      "where the money goes, how it's priced against rivals,"
+    ],
+    [
+      24.716,
+      26.629,
+      "and whether it fits you."
+    ],
+    [
+      26.629,
+      29.898,
+      "This is education, not investment advice."
+    ],
+    [
+      30.398,
+      32.433,
+      "So what does Lalithaa do?"
+    ],
+    [
+      32.433,
+      36.097,
+      "It's a South-India jewellery retailer — gold,"
+    ],
+    [
+      36.097,
+      41.388,
+      "silver and diamond jewellery sold through large-format showrooms,"
+    ],
+    [
+      41.388,
+      44.563,
+      "and a genuinely trusted regional brand."
+    ],
+    [
+      44.563,
+      48.471,
+      "It has fifty-six stores across forty-six cities,"
+    ],
+    [
+      48.471,
+      51.89,
+      "spread over Tamil Nadu, Andhra, Telangana,"
+    ],
+    [
+      51.89,
+      53.925,
+      "Karnataka and Puducherry,"
+    ],
+    [
+      53.925,
+      58.321,
+      "with real strength in smaller Tier-2 and Tier-3 towns."
+    ],
+    [
+      58.321,
+      61.17,
+      "And its store economics stand out —"
+    ],
+    [
+      61.17,
+      68.253,
+      "it claims the highest revenue and profit per store among the major organised jewellers."
+    ],
+    [
+      68.253,
+      71.672,
+      "That efficiency is the heart of its story."
+    ],
+    [
+      72.172,
+      75.349,
+      "Now the financials — and they're strong."
+    ],
+    [
+      75.349,
+      81.703,
+      "Total income jumped to about twenty-five thousand crore in FY twenty twenty-six,"
+    ],
+    [
+      81.703,
+      85.754,
+      "up from around sixteen thousand nine hundred crore."
+    ],
+    [
+      85.754,
+      88.216,
+      "And net profit nearly tripled —"
+    ],
+    [
+      88.216,
+      91.87,
+      "up about a hundred and seventy-seven percent —"
+    ],
+    [
+      91.87,
+      94.253,
+      "to one thousand and ten crore."
+    ],
+    [
+      94.253,
+      97.351,
+      "Most striking is the return on equity —"
+    ],
+    [
+      97.351,
+      99.972,
+      "forty-one point six zero percent,"
+    ],
+    [
+      99.972,
+      104.737,
+      "roughly double the peer average of about twenty-two percent."
+    ],
+    [
+      104.737,
+      108.55,
+      "This is a highly profitable, efficient retailer."
+    ],
+    [
+      109.05,
+      112.186,
+      "Let's put all three statements together."
+    ],
+    [
+      112.186,
+      114.93,
+      "The income statement is excellent —"
+    ],
+    [
+      114.93,
+      120.262,
+      "twenty-five thousand crore of income and a thousand crore of profit."
+    ],
+    [
+      120.262,
+      122.771,
+      "The balance sheet is solid too —"
+    ],
+    [
+      122.771,
+      125.907,
+      "net worth of about three thousand crore,"
+    ],
+    [
+      125.907,
+      129.043,
+      "total assets near eleven thousand crore,"
+    ],
+    [
+      129.043,
+      132.885,
+      "and moderate borrowings of sixteen hundred crore,"
+    ],
+    [
+      132.885,
+      136.57,
+      "a debt-to-equity of just zero point five three."
+    ],
+    [
+      136.57,
+      140.568,
+      "On cash flow, the fresh money will fund new stores,"
+    ],
+    [
+      140.568,
+      144.88,
+      "working capital for inventory, and some debt repayment."
+    ],
+    [
+      144.88,
+      150.212,
+      "The public summaries don't print the full operating cash-flow line —"
+    ],
+    [
+      150.212,
+      152.172,
+      "for that, read the R-H-P."
+    ],
+    [
+      152.672,
+      154.515,
+      "Where does your money go?"
+    ],
+    [
+      154.515,
+      157.907,
+      "Of the one thousand seven hundred crore issue,"
+    ],
+    [
+      157.907,
+      160.708,
+      "about one thousand two hundred crore —"
+    ],
+    [
+      160.708,
+      162.846,
+      "roughly seventy-one percent —"
+    ],
+    [
+      162.846,
+      166.09,
+      "is a fresh issue that goes into the company."
+    ],
+    [
+      166.09,
+      170.072,
+      "The remaining five hundred crore is an Offer for Sale,"
+    ],
+    [
+      170.072,
+      173.39,
+      "where the promoters sell part of their stake,"
+    ],
+    [
+      173.39,
+      179.214,
+      "trimming their holding from about ninety-eight percent to eighty-three percent."
+    ],
+    [
+      179.214,
+      182.384,
+      "So it's a healthy, mostly-fresh structure —"
+    ],
+    [
+      182.384,
+      185.186,
+      "most of your money funds the business."
+    ],
+    [
+      185.686,
+      188.424,
+      "What does the fresh money fund?"
+    ],
+    [
+      188.424,
+      189.572,
+      "Three things."
+    ],
+    [
+      189.572,
+      191.868,
+      "First, new retail stores —"
+    ],
+    [
+      191.868,
+      196.107,
+      "the core growth engine for a store-led jeweller."
+    ],
+    [
+      196.107,
+      200.965,
+      "Second, repaying borrowings, which cuts interest costs."
+    ],
+    [
+      200.965,
+      203.438,
+      "And third, working capital —"
+    ],
+    [
+      203.438,
+      210.15,
+      "because gold inventory is a jeweller's single biggest working-capital need —"
+    ],
+    [
+      210.15,
+      212.976,
+      "plus general corporate purposes."
+    ],
+    [
+      212.976,
+      217.48,
+      "So the money genuinely goes to work funding growth."
+    ],
+    [
+      217.98,
+      220.931,
+      "So how is it priced against rivals?"
+    ],
+    [
+      220.931,
+      223.545,
+      "This is the number to sit with."
+    ],
+    [
+      223.545,
+      225.484,
+      "At the top of the band,"
+    ],
+    [
+      225.484,
+      230.038,
+      "Lalithaa is valued at about eleven times its earnings."
+    ],
+    [
+      230.038,
+      236.108,
+      "Compare that with listed peers: Kalyan Jewellers near forty-seven times,"
+    ],
+    [
+      236.108,
+      240.999,
+      "Thangamayil about forty-six, P-N Gadgil around twenty-two,"
+    ],
+    [
+      240.999,
+      244.287,
+      "and Senco Gold about eleven and a half."
+    ],
+    [
+      244.287,
+      248.082,
+      "The peer average is roughly forty-four times."
+    ],
+    [
+      248.082,
+      249.346,
+      "In other words,"
+    ],
+    [
+      249.346,
+      253.647,
+      "Lalithaa is asking far LESS than most of the pack —"
+    ],
+    [
+      253.647,
+      256.682,
+      "cheaper than Kalyan or Thangamayil —"
+    ],
+    [
+      256.682,
+      261.404,
+      "even though it has the best return on equity of the lot."
+    ],
+    [
+      261.404,
+      263.849,
+      "That's a genuine value angle,"
+    ],
+    [
+      263.849,
+      266.716,
+      "and it's rare in a hot IPO market."
+    ],
+    [
+      267.216,
+      269.231,
+      "So — should you subscribe?"
+    ],
+    [
+      269.231,
+      271.557,
+      "The strengths are compelling —"
+    ],
+    [
+      271.557,
+      274.89,
+      "it's priced at about eleven times earnings,"
+    ],
+    [
+      274.89,
+      286.518,
+      "well below the peer average of forty-four; profit nearly tripled; it has the best return on equity in the group; and most of the issue is fresh money."
+    ],
+    [
+      286.518,
+      291.246,
+      "The watch-outs matter too — it's concentrated in South India,"
+    ],
+    [
+      291.246,
+      300.316,
+      "so there's regional risk; margins are thin at about four percent and swing with gold prices; and like every jeweller,"
+    ],
+    [
+      300.316,
+      304.347,
+      "it's inventory-heavy and hungry for working capital."
+    ],
+    [
+      304.347,
+      306.517,
+      "The takeaway — a profitable,"
+    ],
+    [
+      306.517,
+      310.16,
+      "efficient retailer at a genuinely modest price,"
+    ],
+    [
+      310.16,
+      313.804,
+      "with regional concentration as the main caveat."
+    ],
+    [
+      313.804,
+      315.354,
+      "Only you can decide."
+    ],
+    [
+      315.854,
+      319.403,
+      "Finally — how do you apply, and how much?"
+    ],
+    [
+      319.403,
+      325.289,
+      "Retail investors bid up to two lakh for a thirty-five percent quota,"
+    ],
+    [
+      325.289,
+      329.097,
+      "with allotment by lottery if oversubscribed."
+    ],
+    [
+      329.097,
+      333.771,
+      "H-N-Is bid above two lakh for a fifteen percent quota."
+    ],
+    [
+      333.771,
+      337.753,
+      "For Lalithaa, one lot is seventy-four shares —"
+    ],
+    [
+      337.753,
+      343.206,
+      "about fourteen thousand eight hundred and seventy-four rupees —"
+    ],
+    [
+      343.206,
+      344.331,
+      "your minimum."
+    ],
+    [
+      344.331,
+      349.784,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      349.784,
+      353.766,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      354.266,
+      357.187,
+      "Let's recap Lalithaa Jewellery Mart."
+    ],
+    [
+      357.187,
+      364.896,
+      "A trusted South-India jewellery chain with the best per-store economics in the organised pack —"
+    ],
+    [
+      364.896,
+      366.681,
+      "profit nearly tripled,"
+    ],
+    [
+      366.681,
+      370.007,
+      "and a forty-one percent return on equity."
+    ],
+    [
+      370.007,
+      373.659,
+      "The issue is about seventy-one percent fresh,"
+    ],
+    [
+      373.659,
+      378.04,
+      "funding new stores, inventory and some debt repayment."
+    ],
+    [
+      378.04,
+      382.909,
+      "And the headline is valuation — about eleven times earnings,"
+    ],
+    [
+      382.909,
+      386.236,
+      "far below the peer average of forty-four."
+    ],
+    [
+      386.236,
+      390.455,
+      "The main caveat is its concentration in South India."
+    ],
+    [
+      390.455,
+      396.784,
+      "The retail minimum is fourteen thousand eight hundred and seventy-four rupees."
+    ],
+    [
+      396.784,
+      400.679,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      400.679,
+      402.951,
+      "it is not investment advice,"
+    ],
+    [
+      402.951,
+      405.629,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      405.629,
+      408.712,
+      "and not a prediction of listing gains."
+    ],
+    [
+      408.712,
+      413.012,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      413.012,
+      418.611,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      418.611,
+      420.234,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/lalithaa.wav",
+      "volume": 1.0
+    }
+  }
+}

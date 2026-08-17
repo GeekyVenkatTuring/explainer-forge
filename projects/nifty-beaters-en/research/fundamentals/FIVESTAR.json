@@ -1,0 +1,53 @@
+{
+ "ticker": "FIVESTAR",
+ "scraped_at": "2026-08-14T15:27:47",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 16182.0,
+ "current_price": 548.0,
+ "pe": 103.0,
+ "book_value": null,
+ "dividend_yield_pct": 0.37,
+ "roce_pct": 17.0,
+ "roe_pct": 16.0,
+ "face_value": 1.0,
+ "high": 666.0,
+ "sales_growth": {
+  "3 Years": 125.0,
+  "TTM": 193.0
+ },
+ "profit_growth": {
+  "3 Years": -12.0,
+  "1 Year": -7.0
+ },
+ "roe_hist": {
+  "Equity Capital": 10.0,
+  "Reserves": 61.0,
+  "Borrowing": 88.0,
+  "Other Liabilities&nbsp; +": 6.0,
+  "Total Liabilities": 165.0,
+  "Fixed Assets&nbsp; +": 1.0,
+  "CWIP": 0.0,
+  "Investments": 0.0,
+  "Other Assets&nbsp; +": 164.0,
+  "Total Assets": 165.0
+ },
+ "price_cagr": {
+  "5 Years": 15.0,
+  "3 Years": 15.0,
+  "Last Year": 16.0
+ },
+ "quarters": {
+  "periods": [],
+  "sales": [],
+  "net_profit": [],
+  "opm": [],
+  "eps": []
+ },
+ "pros": [],
+ "cons": [
+  "Promoter holding is low: 18.6%",
+  "Promoter holding has decreased over last 3 years: -15.8%"
+ ]
+}

@@ -1,0 +1,789 @@
+{
+ "cuts": [
+  {
+   "id": "sml-ch01-the-problem_title",
+   "type": "sml_title",
+   "in_seconds": 0.0,
+   "out_seconds": 50.933,
+   "props": {
+    "kicker": "A GROUNDED, ANTI-HALLUCINATION STOCK AGENT",
+    "sub": "ontology \u00b7 knowledge graph \u00b7 digital twin \u00b7 agentic \u2014 strictly factual, India NSE/BSE",
+    "dur": 51.433
+   }
+  },
+  {
+   "id": "sml-ch01-the-problem_silos",
+   "type": "sml_silos",
+   "in_seconds": 51.433,
+   "out_seconds": 96.103,
+   "props": {
+    "dur": 45.17
+   }
+  },
+  {
+   "id": "sml-ch01-the-problem_whynow",
+   "type": "sml_cards",
+   "in_seconds": 96.603,
+   "out_seconds": 142.671,
+   "props": {
+    "kicker": "WHY THIS IS NOW POSSIBLE",
+    "title": "Three things make a factual stock agent buildable today",
+    "color": "#2DD4BF",
+    "cards": [
+     {
+      "head": "Open data + free APIs",
+      "emoji": "\ud83d\udd0c",
+      "body": "yfinance, jugaad-data, screener, RSS feeds, and free broker APIs put NSE/BSE data within reach of one developer.",
+      "tag": "access"
+     },
+     {
+      "head": "Graphs ground LLMs",
+      "emoji": "\ud83c\udfaf",
+      "body": "A knowledge graph gives the model verified facts to stand on \u2014 the fix for hallucination.",
+      "tag": "grounding"
+     },
+     {
+      "head": "The tooling landed",
+      "emoji": "\ud83d\udccf",
+      "body": "GraphRAG, MCP, SHACL and Neo4j are production-ready \u2014 not research toys.",
+      "tag": "mature"
+     }
+    ],
+    "foot": "You can build a personal version of this on free tiers. We'll list every source.",
+    "dur": 46.568
+   }
+  },
+  {
+   "id": "sml-ch01-the-problem_hook",
+   "type": "sml_hook",
+   "in_seconds": 143.171,
+   "out_seconds": 193.343,
+   "props": {
+    "dur": 50.672
+   }
+  },
+  {
+   "id": "sml-ch01-the-problem_stack",
+   "type": "sml_stack",
+   "in_seconds": 193.843,
+   "out_seconds": 249.793,
+   "props": {
+    "foot": "Meaning \u2192 memory \u2192 live prices \u2192 the plumbing \u2192 a cited answer. Build it bottom-up.",
+    "dur": 56.45
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.831,
+   "You want to ask a simple question \u2014"
+  ],
+  [
+   2.831,
+   5.308,
+   "how is a company doing right now?"
+  ],
+  [
+   5.308,
+   7.078,
+   "\u2014 and get a straight,"
+  ],
+  [
+   7.078,
+   7.786,
+   "factual answer."
+  ],
+  [
+   8.417,
+   9.479,
+   "Not a guess."
+  ],
+  [
+   9.479,
+   12.31,
+   "Not a vibe from a chatbot that read"
+  ],
+  [
+   12.31,
+   13.372,
+   "half a webpage."
+  ],
+  [
+   13.372,
+   14.433,
+   "A real answer,"
+  ],
+  [
+   14.433,
+   17.264,
+   "where every number comes with a source and"
+  ],
+  [
+   17.264,
+   17.972,
+   "a timestamp."
+  ],
+  [
+   18.604,
+   21.435,
+   "Over this course we will build exactly that:"
+  ],
+  [
+   21.435,
+   24.266,
+   "an agent for the Indian stock market that"
+  ],
+  [
+   24.266,
+   27.097,
+   "answers questions about any company \u2014 its price,"
+  ],
+  [
+   27.097,
+   27.805,
+   "its P/E,"
+  ],
+  [
+   27.805,
+   28.513,
+   "its earnings,"
+  ],
+  [
+   28.513,
+   29.574,
+   "the latest news,"
+  ],
+  [
+   29.574,
+   32.405,
+   "its roadmap \u2014 by reasoning over a knowledge"
+  ],
+  [
+   32.405,
+   32.759,
+   "graph."
+  ],
+  [
+   33.391,
+   34.099,
+   "And critically,"
+  ],
+  [
+   34.099,
+   36.576,
+   "an agent that cannot make numbers up."
+  ],
+  [
+   37.208,
+   38.977,
+   "One thing before we start,"
+  ],
+  [
+   38.977,
+   40.746,
+   "and I will repeat it."
+  ],
+  [
+   40.746,
+   42.516,
+   "This is an educational architecture,"
+  ],
+  [
+   42.516,
+   43.578,
+   "not investment advice."
+  ],
+  [
+   43.578,
+   45.701,
+   "Every figure you see is illustrative."
+  ],
+  [
+   45.701,
+   47.47,
+   "Always consult a SEBI-registered advisor."
+  ],
+  [
+   48.102,
+   50.933,
+   "Now \u2014 why is this so hard today?"
+  ],
+  [
+   51.433,
+   54.174,
+   "Here is the reality of researching one stock."
+  ],
+  [
+   54.806,
+   57.547,
+   "The live price is on your broker or"
+  ],
+  [
+   57.547,
+   57.889,
+   "NSE."
+  ],
+  [
+   57.889,
+   60.63,
+   "The P/E and fundamentals are on screener dot"
+  ],
+  [
+   60.63,
+   60.973,
+   "in."
+  ],
+  [
+   60.973,
+   63.714,
+   "The quarterly results are a PDF on the"
+  ],
+  [
+   63.714,
+   64.742,
+   "BSE filings page."
+  ],
+  [
+   64.742,
+   67.483,
+   "The news is scattered across a dozen sites."
+  ],
+  [
+   67.483,
+   70.224,
+   "The company's roadmap is buried in an\nearnings-call"
+  ],
+  [
+   70.224,
+   70.567,
+   "transcript."
+  ],
+  [
+   70.567,
+   73.308,
+   "And real-time ticks only come from a broker"
+  ],
+  [
+   73.308,
+   73.65,
+   "API."
+  ],
+  [
+   74.282,
+   74.967,
+   "Six sources."
+  ],
+  [
+   74.967,
+   77.708,
+   "To answer \u2018how is TCS doing right now?\u2019"
+  ],
+  [
+   77.708,
+   79.079,
+   "you open six tabs,"
+  ],
+  [
+   79.079,
+   80.107,
+   "spend twenty minutes,"
+  ],
+  [
+   80.107,
+   82.848,
+   "and you are still not sure the numbers"
+  ],
+  [
+   82.848,
+   85.589,
+   "agree \u2014 or whether any of them is"
+  ],
+  [
+   85.589,
+   85.931,
+   "current."
+  ],
+  [
+   86.563,
+   88.619,
+   "The facts existed the whole time."
+  ],
+  [
+   88.619,
+   89.989,
+   "They were just scattered,"
+  ],
+  [
+   89.989,
+   90.675,
+   "and disconnected,"
+  ],
+  [
+   90.675,
+   92.388,
+   "with no guarantee of freshness."
+  ],
+  [
+   93.019,
+   95.76,
+   "That gap is what we are going to"
+  ],
+  [
+   95.76,
+   96.103,
+   "close."
+  ],
+  [
+   96.603,
+   99.799,
+   "You might ask \u2014 if this is so"
+  ],
+  [
+   99.799,
+   100.198,
+   "useful,"
+  ],
+  [
+   100.198,
+   101.796,
+   "why isn't it everywhere?"
+  ],
+  [
+   101.796,
+   103.394,
+   "Three things just changed."
+  ],
+  [
+   104.025,
+   104.425,
+   "First,"
+  ],
+  [
+   104.425,
+   104.824,
+   "access."
+  ],
+  [
+   104.824,
+   107.221,
+   "Free and low-cost tools \u2014 yfinance,"
+  ],
+  [
+   107.221,
+   107.621,
+   "jugaad-data,"
+  ],
+  [
+   107.621,
+   108.02,
+   "screener,"
+  ],
+  [
+   108.02,
+   109.219,
+   "RSS news feeds,"
+  ],
+  [
+   109.219,
+   112.414,
+   "and free broker APIs like Angel One's SmartAPI"
+  ],
+  [
+   112.414,
+   115.61,
+   "\u2014 put Indian market data within reach of"
+  ],
+  [
+   115.61,
+   116.808,
+   "a single developer."
+  ],
+  [
+   117.44,
+   117.839,
+   "Second,"
+  ],
+  [
+   117.839,
+   118.239,
+   "grounding."
+  ],
+  [
+   118.239,
+   121.035,
+   "Language models on their own hallucinate numbers."
+  ],
+  [
+   121.035,
+   124.231,
+   "A knowledge graph gives them verified facts to"
+  ],
+  [
+   124.231,
+   127.027,
+   "stand on \u2014 that is the fix."
+  ],
+  [
+   127.659,
+   128.058,
+   "Third,"
+  ],
+  [
+   128.058,
+   129.257,
+   "the tooling landed."
+  ],
+  [
+   129.257,
+   129.656,
+   "GraphRAG,"
+  ],
+  [
+   129.656,
+   131.254,
+   "the Model Context Protocol,"
+  ],
+  [
+   131.254,
+   133.651,
+   "and graph databases are production-ready today."
+  ],
+  [
+   134.282,
+   135.481,
+   "So a personal,"
+  ],
+  [
+   135.481,
+   138.676,
+   "factual stock agent is genuinely buildable now \u2014"
+  ],
+  [
+   138.676,
+   139.875,
+   "on free tiers."
+  ],
+  [
+   139.875,
+   142.671,
+   "We will list every source you need."
+  ],
+  [
+   143.171,
+   145.765,
+   "Here is the core idea the whole system"
+  ],
+  [
+   145.765,
+   146.413,
+   "turns on."
+  ],
+  [
+   147.045,
+   147.693,
+   "A price,"
+  ],
+  [
+   147.693,
+   148.666,
+   "on its own,"
+  ],
+  [
+   148.666,
+   149.963,
+   "is just a number."
+  ],
+  [
+   149.963,
+   152.557,
+   "Is TCS at four thousand a good price?"
+  ],
+  [
+   152.557,
+   155.151,
+   "You cannot say \u2014 not without its earnings,"
+  ],
+  [
+   155.151,
+   155.799,
+   "its P/E,"
+  ],
+  [
+   155.799,
+   156.448,
+   "its peers,"
+  ],
+  [
+   156.448,
+   157.42,
+   "the latest news,"
+  ],
+  [
+   157.42,
+   159.042,
+   "and what management just guided."
+  ],
+  [
+   159.673,
+   162.267,
+   "The meaning of any single fact lives in"
+  ],
+  [
+   162.267,
+   164.213,
+   "how it connects to the others."
+  ],
+  [
+   164.844,
+   166.789,
+   "So instead of six disconnected tabs,"
+  ],
+  [
+   166.789,
+   167.762,
+   "we link everything:"
+  ],
+  [
+   167.762,
+   169.383,
+   "the company to its price,"
+  ],
+  [
+   169.383,
+   171.005,
+   "its price to its P/E,"
+  ],
+  [
+   171.005,
+   172.626,
+   "its P/E to its earnings,"
+  ],
+  [
+   172.626,
+   174.247,
+   "its earnings to the concall,"
+  ],
+  [
+   174.247,
+   175.868,
+   "the news to the company."
+  ],
+  [
+   176.5,
+   178.769,
+   "Write those connections down as a graph,"
+  ],
+  [
+   178.769,
+   181.363,
+   "and a machine can finally reason across all"
+  ],
+  [
+   181.363,
+   183.957,
+   "of it at once \u2014 the way a"
+  ],
+  [
+   183.957,
+   184.93,
+   "good analyst does."
+  ],
+  [
+   185.561,
+   188.155,
+   "That graph is the heart of the system."
+  ],
+  [
+   188.155,
+   190.749,
+   "But a graph alone isn't enough to be"
+  ],
+  [
+   190.749,
+   191.073,
+   "trustworthy."
+  ],
+  [
+   191.073,
+   191.722,
+   "For that,"
+  ],
+  [
+   191.722,
+   193.343,
+   "we need a full stack."
+  ],
+  [
+   193.843,
+   194.534,
+   "Five layers,"
+  ],
+  [
+   194.534,
+   196.606,
+   "and each one does a job."
+  ],
+  [
+   197.238,
+   198.274,
+   "At the bottom,"
+  ],
+  [
+   198.274,
+   199.656,
+   "the ontology \u2014 meaning."
+  ],
+  [
+   199.656,
+   201.729,
+   "It defines what a Company is,"
+  ],
+  [
+   201.729,
+   203.11,
+   "what a P/E is,"
+  ],
+  [
+   203.11,
+   204.492,
+   "what a QuarterlyResult is,"
+  ],
+  [
+   204.492,
+   206.565,
+   "and the rules that connect them."
+  ],
+  [
+   207.196,
+   207.887,
+   "On top,"
+  ],
+  [
+   207.887,
+   209.614,
+   "the knowledge graph \u2014 memory."
+  ],
+  [
+   209.614,
+   212.378,
+   "The ontology filled with real companies and their"
+  ],
+  [
+   212.378,
+   212.723,
+   "facts,"
+  ],
+  [
+   212.723,
+   215.487,
+   "every fact stamped with its source and time."
+  ],
+  [
+   216.118,
+   218.536,
+   "Then the digital twin \u2014 live senses."
+  ],
+  [
+   218.536,
+   221.3,
+   "The graph kept current by price feeds and"
+  ],
+  [
+   221.3,
+   221.645,
+   "news,"
+  ],
+  [
+   221.645,
+   223.718,
+   "so it reflects the market now,"
+  ],
+  [
+   223.718,
+   224.754,
+   "not last week."
+  ],
+  [
+   225.386,
+   228.149,
+   "Then graph engineering \u2014 the plumbing that keeps"
+  ],
+  [
+   228.149,
+   228.84,
+   "it built,"
+  ],
+  [
+   228.84,
+   229.186,
+   "valid,"
+  ],
+  [
+   229.186,
+   229.876,
+   "and fast."
+  ],
+  [
+   230.508,
+   231.89,
+   "And at the top,"
+  ],
+  [
+   231.89,
+   234.653,
+   "agentic engineering \u2014 the mind that answers your"
+  ],
+  [
+   234.653,
+   234.999,
+   "questions."
+  ],
+  [
+   235.63,
+   238.394,
+   "Here is the punchline for the whole course."
+  ],
+  [
+   238.394,
+   240.812,
+   "An agent without this stack invents numbers."
+  ],
+  [
+   240.812,
+   243.575,
+   "An agent with it can only speak facts"
+  ],
+  [
+   243.575,
+   246.339,
+   "that are in the graph \u2014 each with"
+  ],
+  [
+   246.339,
+   247.03,
+   "a citation."
+  ],
+  [
+   247.03,
+   248.757,
+   "That is the anti-hallucination kit."
+  ],
+  [
+   248.757,
+   249.448,
+   "Part one:"
+  ],
+  [
+   249.448,
+   249.793,
+   "meaning."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "sml/sml-ch01-the-problem.wav",
+   "volume": 1.0
+  }
+ }
+}

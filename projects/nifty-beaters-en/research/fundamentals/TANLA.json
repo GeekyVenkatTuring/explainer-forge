@@ -1,0 +1,108 @@
+{
+ "ticker": "TANLA",
+ "scraped_at": "2026-08-14T15:28:56",
+ "source": "screener.in",
+ "ok": true,
+ "error": "<HTTPError 429: 'Too Many Requests'>",
+ "variant": "standalone",
+ "market_cap_cr": 7729.0,
+ "current_price": 583.0,
+ "pe": 46.4,
+ "book_value": 38.8,
+ "dividend_yield_pct": 2.07,
+ "roce_pct": 21.6,
+ "roe_pct": 22.4,
+ "face_value": 1.0,
+ "high": 766.0,
+ "sales_growth": {
+  "10 Years": 44.0,
+  "5 Years": 2.0,
+  "3 Years": -7.0,
+  "TTM": -52.0
+ },
+ "profit_growth": {
+  "10 Years": 33.0,
+  "5 Years": -9.0,
+  "3 Years": -19.0,
+  "1 Year": -4.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 247.0,
+  "Expenses&nbsp; +": 233.0,
+  "Operating Profit": 14.0,
+  "OPM %": 6.0,
+  "Other Income&nbsp; +": 2.0,
+  "Interest": 0.0,
+  "Depreciation": 2.0,
+  "Profit before tax": 14.0,
+  "Tax %": 26.0,
+  "Net Profit&nbsp; +": 10.0,
+  "EPS in Rs": 0.78
+ },
+ "price_cagr": {
+  "10 Years": 14.0,
+  "5 Years": 28.0,
+  "3 Years": 33.0,
+  "Last Year": 22.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "6%",
+   "4.3%",
+   "4.1%",
+   "8%",
+   "9%",
+   "8%",
+   "4.8%",
+   "1.3%",
+   "4.0%",
+   "2.1%",
+   "1.6%",
+   "0.4%",
+   "0.2%"
+  ],
+  "eps": [
+   "0.78",
+   "4.22",
+   "0.33",
+   "6.02",
+   "1.27",
+   "6.93",
+   "0.38",
+   "14.78",
+   "3.88",
+   "0.24",
+   "6.00",
+   "0.29",
+   "6.05"
+  ]
+ },
+ "pros": [
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 32.5%",
+  "Company has been maintaining a healthy dividend payout of 90.6%",
+  "Debtor days have improved from 78.7 to 31.1 days."
+ ],
+ "cons": [
+  "Stock is trading at 14.9 times its book value",
+  "The company has delivered a poor sales growth of -3.55% over past five years.",
+  "Tax rate seems low",
+  "Earnings include an other income of Rs.187 Cr."
+ ]
+}

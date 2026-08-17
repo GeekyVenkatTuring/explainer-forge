@@ -1,0 +1,742 @@
+{
+  "cuts": [
+    {
+      "id": "s00_title",
+      "type": "au_title",
+      "in_seconds": 0.0,
+      "out_seconds": 29.517,
+      "props": {
+        "kicker": "AUTO & AUTO-COMPONENTS \u00b7 PART 1 OF 6",
+        "title": "Indian Auto Stocks\nThe Vehicle Makers",
+        "sub": "18 companies \u00b7 what they do \u00b7 latest quarter \u00b7 P/E \u00b7 their moat",
+        "dur": 30.017
+      }
+    },
+    {
+      "id": "d1",
+      "type": "au_divider",
+      "in_seconds": 30.017,
+      "out_seconds": 40.271,
+      "props": {
+        "part": "PART ONE",
+        "title": "The Four-Wheelers",
+        "sub": "Cars, SUVs, vans \u2014 and the electric shift",
+        "color": "#38BDF8",
+        "pips": 4,
+        "at": 1,
+        "dur": 10.754
+      }
+    },
+    {
+      "id": "c01_maruti",
+      "type": "au_company",
+      "in_seconds": 40.771,
+      "out_seconds": 77.206,
+      "props": {
+        "idx": "01 / 18",
+        "kicker": "FOUR-WHEELERS",
+        "name": "Maruti Suzuki",
+        "ticker": "MARUTI",
+        "price": "\u20b914,037",
+        "pe": "30.8\u00d7",
+        "seg": "Passenger cars",
+        "biz": [
+          "India's number-one carmaker \u2014 Suzuki small cars to SUVs like Swift, Brezza and Grand Vitara",
+          "The widest sales and service network in the country",
+          "A leading exporter of cars made in India"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Apr\u2013Jun 2026 (standalone)",
+          "rev": {
+            "to": 52456,
+            "yoy": "+37%",
+            "up": true
+          },
+          "pat": {
+            "to": 3352,
+            "yoy": "\u221211%",
+            "up": false
+          },
+          "note": "Volumes up ~29%, but margins squeezed by raw-material costs and model mix."
+        },
+        "moat": "Unmatched distribution \u2014 around 4,000 outlets, scale-driven low costs and resale value nobody can match.",
+        "moatStrength": "WIDE",
+        "dur": 36.935
+      }
+    },
+    {
+      "id": "c02_hyundai",
+      "type": "au_company",
+      "in_seconds": 77.706,
+      "out_seconds": 112.088,
+      "props": {
+        "idx": "02 / 18",
+        "kicker": "FOUR-WHEELERS",
+        "name": "Hyundai Motor India",
+        "ticker": "HYUNDAI",
+        "price": "\u20b92,200",
+        "pe": "36.1\u00d7",
+        "seg": "Passenger cars",
+        "biz": [
+          "India's number-two carmaker \u2014 SUV-led, with Creta, Venue, i20 and Verna",
+          "Builds locally and exports across dozens of markets",
+          "The India arm of Korea's Hyundai Motor"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 (consolidated)",
+          "rev": {
+            "to": 16335,
+            "yoy": "\u22120.5%",
+            "up": false
+          },
+          "pat": {
+            "to": 889,
+            "yoy": "\u221235%",
+            "up": false
+          },
+          "note": "Hit by a plant fire and West-Asia export disruption; rural mix at an all-time high."
+        },
+        "moat": "Brand pull and SUV-design leadership, plus a large export base that softens India's ups and downs.",
+        "moatStrength": "NARROW",
+        "dur": 34.882
+      }
+    },
+    {
+      "id": "c03_tmpv",
+      "type": "au_company",
+      "in_seconds": 112.588,
+      "out_seconds": 150.974,
+      "props": {
+        "idx": "03 / 18",
+        "kicker": "FOUR-WHEELERS",
+        "name": "Tata Motors Passenger Vehicles",
+        "ticker": "TMPV",
+        "price": "\u20b9347",
+        "pe": "n.m.",
+        "seg": "PV \u00b7 EV \u00b7 JLR",
+        "biz": [
+          "Tata's demerged passenger-vehicle and EV business",
+          "Home to Nexon, Punch and Harrier \u2014 and India's best-selling electric cars",
+          "Also owns Jaguar Land Rover, the global luxury brands"
+        ],
+        "fin": {
+          "pending": true,
+          "qlabel": "Q1 FY27 due 13-Aug (not out)",
+          "note": "Q1 India PV sales up 46%, EV volumes up 112%. Earnings swing with Jaguar Land Rover."
+        },
+        "moat": "India's EV-car first-mover with a charging ecosystem, plus JLR's global brands \u2014 offset by JLR's cyclicality.",
+        "moatStrength": "NARROW",
+        "dur": 38.886
+      }
+    },
+    {
+      "id": "c04_mm",
+      "type": "au_company",
+      "in_seconds": 151.474,
+      "out_seconds": 187.201,
+      "props": {
+        "idx": "04 / 18",
+        "kicker": "FOUR-WHEELERS",
+        "name": "Mahindra & Mahindra",
+        "ticker": "M&M",
+        "price": "\u20b93,502",
+        "pe": "22.7\u00d7",
+        "seg": "SUVs + tractors",
+        "biz": [
+          "India's SUV powerhouse \u2014 Thar, Scorpio, XUV and BE electric SUVs",
+          "The country's number-one tractor maker, by a wide margin",
+          "Plus finance, IT and mobility arms"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 (consolidated)",
+          "rev": {
+            "to": 57533,
+            "yoy": "+27%",
+            "up": true
+          },
+          "pat": {
+            "to": 5455,
+            "yoy": "+34%",
+            "up": true
+          },
+          "note": "Broad-based: autos, farm equipment and services all grew."
+        },
+        "moat": "Tractor-market leadership plus a red-hot SUV franchise \u2014 deep rural distribution few rivals can match.",
+        "moatStrength": "WIDE",
+        "dur": 36.227
+      }
+    },
+    {
+      "id": "c05_force",
+      "type": "au_company",
+      "in_seconds": 187.701,
+      "out_seconds": 219.692,
+      "props": {
+        "idx": "05 / 18",
+        "kicker": "FOUR-WHEELERS",
+        "name": "Force Motors",
+        "ticker": "FORCEMOT",
+        "price": "\u20b918,500",
+        "pe": "22.2\u00d7",
+        "seg": "Vans \u00b7 UVs \u00b7 engines",
+        "biz": [
+          "Makes the Traveller vans, plus Urbania and Gurkha utility vehicles",
+          "Assembles engines and axles for BMW and Mercedes-Benz in India",
+          "Also builds tractors and small commercial vehicles"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 (consolidated)",
+          "rev": {
+            "to": 2440,
+            "yoy": "+6%",
+            "up": true
+          },
+          "pat": {
+            "to": 217,
+            "yoy": "+23%",
+            "up": true
+          },
+          "note": "Profit grew strongly on a modest revenue rise."
+        },
+        "moat": "Near-monopoly in shared-mobility vans, plus sticky, high-trust engine-assembly contracts with BMW and Mercedes.",
+        "moatStrength": "NARROW",
+        "dur": 32.491
+      }
+    },
+    {
+      "id": "d2",
+      "type": "au_divider",
+      "in_seconds": 220.192,
+      "out_seconds": 231.917,
+      "props": {
+        "part": "PART TWO",
+        "title": "Two & Three-Wheelers",
+        "sub": "India's bikes, scooters and autorickshaws",
+        "color": "#34D399",
+        "pips": 4,
+        "at": 2,
+        "dur": 12.225
+      }
+    },
+    {
+      "id": "c06_hero",
+      "type": "au_company",
+      "in_seconds": 232.417,
+      "out_seconds": 266.328,
+      "props": {
+        "idx": "06 / 18",
+        "kicker": "TWO & THREE-WHEELERS",
+        "name": "Hero MotoCorp",
+        "ticker": "HEROMOTOCO",
+        "price": "\u20b95,725",
+        "pe": "20.7\u00d7",
+        "seg": "Two-wheelers",
+        "biz": [
+          "The world's largest two-wheeler maker by volume",
+          "Commuter king \u2014 Splendor and HF Deluxe dominate the mass market",
+          "Now pushing scooters, premium bikes and Vida electric"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 (consolidated)",
+          "rev": {
+            "to": 13126,
+            "yoy": "+35%",
+            "up": true
+          },
+          "pat": {
+            "to": 1418,
+            "yoy": "\u221217%",
+            "up": false
+          },
+          "note": "Profit dip is a high base \u2014 last year had a one-off gain."
+        },
+        "moat": "Unrivalled scale and the deepest rural dealer network \u2014 the lowest cost per bike. Watch the EV transition.",
+        "moatStrength": "WIDE",
+        "dur": 34.411
+      }
+    },
+    {
+      "id": "c07_bajaj",
+      "type": "au_company",
+      "in_seconds": 266.828,
+      "out_seconds": 298.607,
+      "props": {
+        "idx": "07 / 18",
+        "kicker": "TWO & THREE-WHEELERS",
+        "name": "Bajaj Auto",
+        "ticker": "BAJAJ-AUTO",
+        "price": "\u20b911,662",
+        "pe": "27.2\u00d7",
+        "seg": "2W \u00b7 3W \u00b7 exports",
+        "biz": [
+          "Pulsar and Dominar bikes, plus Chetak electric scooters",
+          "Dominates three-wheelers and exports heavily",
+          "Owns stakes in KTM and Husqvarna"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 (standalone)",
+          "rev": {
+            "to": 17244,
+            "yoy": "+37%",
+            "up": true
+          },
+          "pat": {
+            "to": 2983,
+            "yoy": "+42%",
+            "up": true
+          },
+          "note": "Consolidated numbers jump further after folding in its KTM holding."
+        },
+        "moat": "A world-class export franchise, near-duopoly in three-wheelers, and premium bikes powered by KTM tech.",
+        "moatStrength": "WIDE",
+        "dur": 32.279
+      }
+    },
+    {
+      "id": "c08_tvs",
+      "type": "au_company",
+      "in_seconds": 299.107,
+      "out_seconds": 331.334,
+      "props": {
+        "idx": "08 / 18",
+        "kicker": "TWO & THREE-WHEELERS",
+        "name": "TVS Motor",
+        "ticker": "TVSMOTOR",
+        "price": "\u20b94,441",
+        "pe": "61.0\u00d7",
+        "seg": "Two & three-wheelers",
+        "biz": [
+          "Apache bikes, Jupiter scooters and the iQube electric",
+          "Strong exports, and owns the Norton brand",
+          "A relentless premiumisation push"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 (consolidated)",
+          "rev": {
+            "to": 16296,
+            "yoy": "+34%",
+            "up": true
+          },
+          "pat": {
+            "to": 1058,
+            "yoy": "+65%",
+            "up": true
+          },
+          "note": "Electric two-wheeler sales nearly doubled."
+        },
+        "moat": "Design and premiumisation, plus fast-growing iQube EV leadership \u2014 a rich P/E prices this optimism in.",
+        "moatStrength": "NARROW",
+        "dur": 32.727
+      }
+    },
+    {
+      "id": "c09_eicher",
+      "type": "au_company",
+      "in_seconds": 331.834,
+      "out_seconds": 361.953,
+      "props": {
+        "idx": "09 / 18",
+        "kicker": "TWO & THREE-WHEELERS",
+        "name": "Eicher Motors",
+        "ticker": "EICHERMOT",
+        "price": "\u20b98,020",
+        "pe": "37.8\u00d7",
+        "seg": "Royal Enfield + trucks",
+        "biz": [
+          "Owns Royal Enfield \u2014 India's iconic mid-size motorcycle brand",
+          "A near-monopoly from 250 to 750cc",
+          "Half-owns the VECV truck and bus joint venture with Volvo"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 (consolidated)",
+          "rev": {
+            "to": 6632,
+            "yoy": "+32%",
+            "up": true
+          },
+          "pat": {
+            "to": 1463,
+            "yoy": "+21%",
+            "up": true
+          },
+          "note": "Royal Enfield sold a record 332,940 motorcycles."
+        },
+        "moat": "One of Indian autos' strongest brand moats \u2014 cult loyalty and pricing power around Royal Enfield.",
+        "moatStrength": "WIDE",
+        "dur": 30.619
+      }
+    },
+    {
+      "id": "c10_atul",
+      "type": "au_company",
+      "in_seconds": 362.453,
+      "out_seconds": 392.782,
+      "props": {
+        "idx": "10 / 18",
+        "kicker": "TWO & THREE-WHEELERS",
+        "name": "Atul Auto",
+        "ticker": "ATULAUTO",
+        "price": "\u20b9577",
+        "pe": "33.2\u00d7",
+        "seg": "Three-wheelers",
+        "biz": [
+          "Gujarat maker of Atul Gem and Shakti three-wheelers",
+          "Diesel, CNG, petrol and electric last-mile autos",
+          "A small player trying to turn the corner"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27",
+          "rev": {
+            "to": 215,
+            "yoy": "+42%",
+            "up": true
+          },
+          "pat": {
+            "to": 8,
+            "yoy": "+169%",
+            "up": true
+          },
+          "note": "Fast growth \u2014 but off a small base; profit is only about \u20b98 crore."
+        },
+        "moat": "Modest \u2014 a regional three-wheeler brand chasing an EV turnaround, not a structural edge.",
+        "moatStrength": "WEAK",
+        "dur": 30.829
+      }
+    },
+    {
+      "id": "d3",
+      "type": "au_divider",
+      "in_seconds": 393.282,
+      "out_seconds": 404.564,
+      "props": {
+        "part": "PART THREE",
+        "title": "The Electric Upstarts",
+        "sub": "EV scooters, buses and hopefuls",
+        "color": "#A78BFA",
+        "pips": 4,
+        "at": 3,
+        "dur": 11.782
+      }
+    },
+    {
+      "id": "c11_ather",
+      "type": "au_company",
+      "in_seconds": 405.064,
+      "out_seconds": 437.894,
+      "props": {
+        "idx": "11 / 18",
+        "kicker": "ELECTRIC",
+        "name": "Ather Energy",
+        "ticker": "ATHERENERG",
+        "price": "\u20b91,482",
+        "pe": "N/A",
+        "seg": "Electric scooters",
+        "biz": [
+          "Premium 450-series electric scooters",
+          "In-house Atherstack software and the Ather Grid charging network",
+          "Designs its own vehicles and batteries"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27",
+          "rev": {
+            "to": 1217,
+            "yoy": "+89%",
+            "up": true
+          },
+          "pat": {
+            "to": 51,
+            "yoy": "71% narrower",
+            "up": true,
+            "loss": true,
+            "label": "Net loss"
+          },
+          "note": "Loss narrowed sharply and \u2014 importantly \u2014 EBITDA turned positive."
+        },
+        "moat": "An emerging tech moat \u2014 its own software and fast-charging network \u2014 but it's still loss-making.",
+        "moatStrength": "EMERGING",
+        "dur": 33.33
+      }
+    },
+    {
+      "id": "c12_ola",
+      "type": "au_company",
+      "in_seconds": 438.394,
+      "out_seconds": 471.461,
+      "props": {
+        "idx": "12 / 18",
+        "kicker": "ELECTRIC",
+        "name": "Ola Electric",
+        "ticker": "OLAELEC",
+        "price": "\u20b941",
+        "pe": "N/A",
+        "seg": "Electric scooters",
+        "biz": [
+          "S1-series electric scooters \u2014 once the clear market leader",
+          "Vertically integrated, with its own battery-cell gigafactory plan",
+          "Now entering electric motorcycles"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27",
+          "rev": {
+            "to": 455,
+            "yoy": "\u221245%",
+            "up": false
+          },
+          "pat": {
+            "to": 336,
+            "yoy": "22% narrower",
+            "up": true,
+            "loss": true,
+            "label": "Net loss"
+          },
+          "note": "Revenue slid and share slipped; it raised \u20b9780 crore to keep funding operations."
+        },
+        "moat": "Contested and weak \u2014 scale on paper, but falling share, heavy cash burn and trust issues.",
+        "moatStrength": "WEAK",
+        "dur": 33.567
+      }
+    },
+    {
+      "id": "c13_olectra",
+      "type": "au_company",
+      "in_seconds": 471.961,
+      "out_seconds": 507.579,
+      "props": {
+        "idx": "13 / 18",
+        "kicker": "ELECTRIC",
+        "name": "Olectra Greentech",
+        "ticker": "OLECTRA",
+        "price": "\u20b91,385",
+        "pe": "64.0\u00d7",
+        "seg": "Electric buses",
+        "biz": [
+          "India's largest electric-bus maker",
+          "Built on a BYD technology tie-up",
+          "Also makes composite insulators for the power grid"
+        ],
+        "fin": {
+          "pending": true,
+          "qlabel": "Latest reported \u00b7 Q1 FY26 (Jun-2025)",
+          "rev": {
+            "to": 347,
+            "yoy": "+11%",
+            "up": true
+          },
+          "pat": {
+            "to": 26,
+            "yoy": "+8%",
+            "up": true
+          },
+          "note": "Fresh Q1 FY27 results land 13-Aug; figures shown are the prior June quarter."
+        },
+        "moat": "First-mover leadership in e-buses, with BYD tech and its MEIL parent's order access \u2014 but working-capital heavy.",
+        "moatStrength": "EMERGING",
+        "dur": 36.118
+      }
+    },
+    {
+      "id": "c14_mercury",
+      "type": "au_company",
+      "in_seconds": 508.079,
+      "out_seconds": 537.618,
+      "props": {
+        "idx": "14 / 18",
+        "kicker": "ELECTRIC",
+        "name": "Mercury EV-Tech",
+        "ticker": "MERCURYEV",
+        "price": "\u20b935",
+        "pe": "159\u00d7",
+        "seg": "EV micro-cap",
+        "biz": [
+          "A micro-cap in electric two- and three-wheelers",
+          "Makes e-rickshaws, EV parts and battery tech",
+          "Very small scale and weak returns"
+        ],
+        "fin": {
+          "pending": true,
+          "qlabel": "Latest reported \u00b7 Q4 FY26",
+          "rev": {
+            "to": 25,
+            "up": false
+          },
+          "note": "Q1 FY27 due 13-Aug; sales are trending down toward \u20b920 crore. Return on equity ~1.5%."
+        },
+        "moat": "Effectively none \u2014 sub-scale, low returns, and earnings that lean on other income. Speculative.",
+        "moatStrength": "NONE",
+        "dur": 30.039
+      }
+    },
+    {
+      "id": "d4",
+      "type": "au_divider",
+      "in_seconds": 538.118,
+      "out_seconds": 548.054,
+      "props": {
+        "part": "PART FOUR",
+        "title": "Tractors & Legacy",
+        "sub": "Farm power, engines and old names",
+        "color": "#FBBF24",
+        "pips": 4,
+        "at": 4,
+        "dur": 10.436
+      }
+    },
+    {
+      "id": "c15_swaraj",
+      "type": "au_company",
+      "in_seconds": 548.554,
+      "out_seconds": 581.039,
+      "props": {
+        "idx": "15 / 18",
+        "kicker": "TRACTORS & LEGACY",
+        "name": "Swaraj Engines",
+        "ticker": "SWARAJENG",
+        "price": "\u20b93,600",
+        "pe": "21.4\u00d7",
+        "seg": "Tractor engines",
+        "biz": [
+          "Makes diesel engines for Swaraj-brand tractors",
+          "The sole engine supplier to Mahindra's Swaraj line",
+          "Just crossed 2 million engines made"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 (standalone)",
+          "rev": {
+            "to": 588,
+            "yoy": "+22%",
+            "up": true
+          },
+          "pat": {
+            "to": 56,
+            "yoy": "+11%",
+            "up": true
+          },
+          "note": "Record engine volumes; the business is cash-rich and high-return."
+        },
+        "moat": "A deep captive moat \u2014 the sole, sticky engine supplier to Mahindra's Swaraj tractors. That's also its dependency.",
+        "moatStrength": "DEEP",
+        "dur": 32.985
+      }
+    },
+    {
+      "id": "c16_vst",
+      "type": "au_company",
+      "in_seconds": 581.539,
+      "out_seconds": 613.79,
+      "props": {
+        "idx": "16 / 18",
+        "kicker": "TRACTORS & LEGACY",
+        "name": "VST Tillers Tractors",
+        "ticker": "VSTTILLERS",
+        "price": "\u20b94,487",
+        "pe": "37.1\u00d7",
+        "seg": "Power tillers & tractors",
+        "biz": [
+          "India's leading power-tiller maker",
+          "Also small tractors, weeders and farm machinery",
+          "Serves small-farm mechanisation"
+        ],
+        "fin": {
+          "pending": true,
+          "qlabel": "Q1 FY27 due 13-Aug (not out)",
+          "note": "Q1 volumes rose about 22%. Full results and the earnings call are on 13-Aug."
+        },
+        "moat": "Category leadership in power tillers \u2014 dominant share and dealer reach across the small-farm belt.",
+        "moatStrength": "NARROW",
+        "dur": 32.751
+      }
+    },
+    {
+      "id": "c17_tube",
+      "type": "au_company",
+      "in_seconds": 614.29,
+      "out_seconds": 646.227,
+      "props": {
+        "idx": "17 / 18",
+        "kicker": "TRACTORS & LEGACY",
+        "name": "Tube Investments",
+        "ticker": "TIINDIA",
+        "price": "\u20b92,772",
+        "pe": "81.2\u00d7",
+        "seg": "Diversified engineering",
+        "biz": [
+          "Murugappa-group engineering \u2014 precision steel tubes and chains",
+          "Bicycles \u2014 Hercules and BSA",
+          "Building an EV arm: TI Clean Mobility, with e-3Ws, tractors and trucks"
+        ],
+        "fin": {
+          "pending": true,
+          "qlabel": "Q1 FY27 due 14-Aug (not out)",
+          "note": "Diversified: tubes, chains, cycles \u2014 plus a fast-scaling clean-mobility EV business."
+        },
+        "moat": "Murugappa's disciplined capital allocation and a diversified engineering platform, with real EV optionality.",
+        "moatStrength": "NARROW",
+        "dur": 32.437
+      }
+    },
+    {
+      "id": "c18_atlas",
+      "type": "au_company",
+      "in_seconds": 646.727,
+      "out_seconds": 674.951,
+      "props": {
+        "idx": "18 / 18",
+        "kicker": "TRACTORS & LEGACY",
+        "name": "Atlas Cycles (Haryana)",
+        "ticker": "ATLASCYCLE",
+        "price": "\u20b999.7",
+        "pe": "N/A",
+        "seg": "Legacy bicycles",
+        "biz": [
+          "Once India's largest bicycle brand",
+          "Cycle operations are now largely dormant",
+          "The story today is legacy real-estate assets"
+        ],
+        "fin": {
+          "qlabel": "FY26 (annual)",
+          "rev": {
+            "to": 7,
+            "up": false
+          },
+          "pat": {
+            "to": 8,
+            "up": false,
+            "loss": true,
+            "label": "Net loss"
+          },
+          "note": "Sales collapsed to about \u20b97 crore; the stock trades well below its book value."
+        },
+        "moat": "None operationally \u2014 the value case is legacy land, not the business.",
+        "moatStrength": "NONE",
+        "dur": 28.724
+      }
+    },
+    {
+      "id": "s99_recap",
+      "type": "au_recap",
+      "in_seconds": 675.451,
+      "out_seconds": 724.075,
+      "props": {
+        "title": "Vehicle Makers \u2014 in one breath",
+        "color": "#38BDF8",
+        "items": [
+          "Maruti & Hyundai: scale, service and SUVs rule the car market",
+          "M&M: SUV heat plus India's tractor throne \u2014 a wide moat",
+          "Hero, Bajaj, TVS: two-wheeler giants, each with its own edge",
+          "Eicher: Royal Enfield \u2014 the strongest brand moat here",
+          "Ather, Ola, Olectra: the electric bet \u2014 still mostly loss-making",
+          "Swaraj & VST: quiet, cash-rich farm-power niches",
+          "Valuations range wildly \u2014 from ~20\u00d7 to over 80\u00d7 earnings"
+        ],
+        "closer": "Moats last longer than momentum \u2014 and the price you pay still matters.",
+        "dur": 49.124
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "au/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

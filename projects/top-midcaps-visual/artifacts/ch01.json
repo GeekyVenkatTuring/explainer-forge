@@ -1,0 +1,2609 @@
+{
+  "cuts": [
+    {
+      "id": "s00_title",
+      "type": "nb_title",
+      "in_seconds": 0.0,
+      "out_seconds": 17.76,
+      "props": {
+        "big": "Top Midcaps",
+        "big2": "by Sector",
+        "sub": "Business portfolios \u00b7 income statements \u00b7 balance sheets \u00b7 cash flows",
+        "kick": "78 INDIAN COMPANIES \u00b7 VISUAL FUNDAMENTAL DEEP DIVE",
+        "dur": 18.26
+      }
+    },
+    {
+      "id": "s01_divider",
+      "type": "fa_divider",
+      "in_seconds": 18.26,
+      "out_seconds": 34.436,
+      "props": {
+        "n": 1,
+        "total": 6,
+        "title": "Mobility and Infrastructure",
+        "sub": "Auto components \u00b7 capital goods \u00b7 railway construction",
+        "color": "#34D399",
+        "dur": 16.676
+      }
+    },
+    {
+      "id": "c01_heromotoco_business",
+      "type": "fa_roadmap",
+      "in_seconds": 34.936,
+      "out_seconds": 107.704,
+      "props": {
+        "kicker": "HEROMOTOCO \u00b7 BUSINESS AND PORTFOLIO",
+        "parts": [
+          {
+            "n": 1,
+            "title": "Commuter motorcycles",
+            "sub": "product / service line",
+            "c": "#34D399"
+          },
+          {
+            "n": 2,
+            "title": "Premium motorcycles",
+            "sub": "product / service line",
+            "c": "#38BDF8"
+          },
+          {
+            "n": 3,
+            "title": "Scooters",
+            "sub": "product / service line",
+            "c": "#FBBF24"
+          },
+          {
+            "n": 4,
+            "title": "VIDA electric vehicles",
+            "sub": "product / service line",
+            "c": "#A78BFA"
+          },
+          {
+            "n": 5,
+            "title": "Parts and accessories",
+            "sub": "product / service line",
+            "c": "#FB7185"
+          },
+          {
+            "n": 6,
+            "title": "Service and ownership plans",
+            "sub": "product / service line",
+            "c": "#60A5FA"
+          }
+        ],
+        "dur": 73.268
+      }
+    },
+    {
+      "id": "c01_heromotoco_score",
+      "type": "nb_stock",
+      "in_seconds": 108.204,
+      "out_seconds": 152.7,
+      "props": {
+        "idx": 1,
+        "total": 11,
+        "tier": "1",
+        "name": "Hero MotoCorp Limited",
+        "ticker": "HEROMOTOCO",
+        "sector": "Automobile and Auto Co",
+        "cap": "Midcap workbook",
+        "metrics": [
+          {
+            "k": "Market cap",
+            "v": "116,582.00 Cr"
+          },
+          {
+            "k": "P / E",
+            "v": "20.50x"
+          },
+          {
+            "k": "Latest revenue",
+            "v": "50,810.00 Cr"
+          },
+          {
+            "k": "Operating margin",
+            "v": "14.00%"
+          },
+          {
+            "k": "5Y sales CAGR",
+            "v": "12.55%",
+            "hero": true
+          },
+          {
+            "k": "5Y profit CAGR",
+            "v": "25.49%"
+          }
+        ],
+        "thesis": [
+          "Portfolio spans 6 visible product or service groups.",
+          "Latest public revenue table shows 50,810.00 crore rupees in TTM.",
+          "The decision hinges on margins, capital intensity and cash conversion."
+        ],
+        "growth": 12.545136808383317,
+        "take": "Public-source snapshot; verify the latest filing",
+        "dur": 44.996
+      }
+    },
+    {
+      "id": "c01_heromotoco_pnl",
+      "type": "fa_waterfall",
+      "in_seconds": 153.2,
+      "out_seconds": 204.344,
+      "props": {
+        "kicker": "HEROMOTOCO \u00b7 INCOME STATEMENT",
+        "title": "Hero MotoCorp Limited: revenue to net profit",
+        "unit": "rupees Cr",
+        "segs": [
+          {
+            "label": "Revenue",
+            "value": 50810.0,
+            "c": "#38BDF8",
+            "subtotal": true
+          },
+          {
+            "label": "Operating costs",
+            "delta": -43720.0,
+            "c": "#FB7185"
+          },
+          {
+            "label": "Operating profit",
+            "value": 7090.0,
+            "c": "#34D399",
+            "subtotal": true
+          },
+          {
+            "label": "Interest",
+            "delta": -79.0,
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Depreciation",
+            "delta": -869.0,
+            "c": "#A78BFA"
+          },
+          {
+            "label": "Net profit",
+            "value": 5488.0,
+            "c": "#34D399",
+            "subtotal": true
+          }
+        ],
+        "note": "Consolidated public table \u00b7 TTM \u00b7 values shown to two decimals",
+        "color": "#38BDF8",
+        "decimals": 2,
+        "dur": 51.644
+      }
+    },
+    {
+      "id": "c01_heromotoco_balance",
+      "type": "fa_ledger",
+      "in_seconds": 204.844,
+      "out_seconds": 259.684,
+      "props": {
+        "kicker": "HEROMOTOCO \u00b7 BALANCE SHEET",
+        "title": "Hero MotoCorp Limited: what the capital is funding",
+        "rows": [
+          {
+            "label": "Total assets",
+            "val": "33,453.00 Cr",
+            "c": "#38BDF8",
+            "bold": true
+          },
+          {
+            "label": "Fixed assets",
+            "val": "6,374.00 Cr"
+          },
+          {
+            "label": "Investments",
+            "val": "19,286.00 Cr"
+          },
+          {
+            "label": "Reserves",
+            "val": "21,571.00 Cr",
+            "c": "#34D399"
+          },
+          {
+            "label": "Borrowings",
+            "val": "779.00 Cr",
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Other liabilities",
+            "val": "11,063.00 Cr",
+            "c": "#FB7185"
+          }
+        ],
+        "caption": "Consolidated snapshot \u00b7 Mar 2026 \u00b7 compare leverage with cash generation",
+        "color": "#A78BFA",
+        "dur": 55.34
+      }
+    },
+    {
+      "id": "c01_heromotoco_cash",
+      "type": "fa_stack",
+      "in_seconds": 260.184,
+      "out_seconds": 308.856,
+      "props": {
+        "kicker": "HEROMOTOCO \u00b7 CASH FLOW",
+        "title": "Hero MotoCorp Limited: operating, investing and financing cash",
+        "unit": "Cr",
+        "segs": [
+          {
+            "label": "Operating cash flow",
+            "val": 8315.0,
+            "c": "#34D399",
+            "op": "+"
+          },
+          {
+            "label": "Investing cash flow",
+            "val": -4478.0,
+            "c": "#38BDF8",
+            "op": "\u2212"
+          },
+          {
+            "label": "Financing cash flow",
+            "val": -3534.0,
+            "c": "#FBBF24",
+            "op": "\u2212"
+          }
+        ],
+        "result": {
+          "label": "Net cash movement",
+          "val": 303.0,
+          "c": "#34D399"
+        },
+        "note": "Consolidated cash-flow table \u00b7 Mar 2026 \u00b7 profit is not the same as cash",
+        "color": "#34D399",
+        "decimals": 2,
+        "dur": 49.172
+      }
+    },
+    {
+      "id": "c02_bharatforg_business",
+      "type": "fa_roadmap",
+      "in_seconds": 309.356,
+      "out_seconds": 357.956,
+      "props": {
+        "kicker": "BHARATFORG \u00b7 BUSINESS AND PORTFOLIO",
+        "parts": [
+          {
+            "n": 1,
+            "title": "Automotive forgings",
+            "sub": "product / service line",
+            "c": "#34D399"
+          },
+          {
+            "n": 2,
+            "title": "Industrial forgings",
+            "sub": "product / service line",
+            "c": "#38BDF8"
+          },
+          {
+            "n": 3,
+            "title": "Aerospace components",
+            "sub": "product / service line",
+            "c": "#FBBF24"
+          },
+          {
+            "n": 4,
+            "title": "Defence systems",
+            "sub": "product / service line",
+            "c": "#A78BFA"
+          },
+          {
+            "n": 5,
+            "title": "Power and energy",
+            "sub": "product / service line",
+            "c": "#FB7185"
+          },
+          {
+            "n": 6,
+            "title": "Marine and rail components",
+            "sub": "product / service line",
+            "c": "#60A5FA"
+          }
+        ],
+        "dur": 49.1
+      }
+    },
+    {
+      "id": "c02_bharatforg_score",
+      "type": "nb_stock",
+      "in_seconds": 358.456,
+      "out_seconds": 401.536,
+      "props": {
+        "idx": 2,
+        "total": 11,
+        "tier": "1",
+        "name": "Bharat Forge Limited",
+        "ticker": "BHARATFORG",
+        "sector": "Automobile and Auto Co",
+        "cap": "Midcap workbook",
+        "metrics": [
+          {
+            "k": "Market cap",
+            "v": "99,600.00 Cr"
+          },
+          {
+            "k": "P / E",
+            "v": "80.72x"
+          },
+          {
+            "k": "Latest revenue",
+            "v": "17,543.00 Cr"
+          },
+          {
+            "k": "Operating margin",
+            "v": "17.00%"
+          },
+          {
+            "k": "5Y sales CAGR",
+            "v": "12.59%",
+            "hero": true
+          },
+          {
+            "k": "5Y profit CAGR",
+            "v": "0.28%"
+          }
+        ],
+        "thesis": [
+          "Portfolio spans 6 visible product or service groups.",
+          "Latest public revenue table shows 17,543.00 crore rupees in TTM.",
+          "The decision hinges on margins, capital intensity and cash conversion."
+        ],
+        "growth": 12.593039899921576,
+        "take": "Public-source snapshot; verify the latest filing",
+        "dur": 43.58
+      }
+    },
+    {
+      "id": "c02_bharatforg_pnl",
+      "type": "fa_waterfall",
+      "in_seconds": 402.036,
+      "out_seconds": 454.116,
+      "props": {
+        "kicker": "BHARATFORG \u00b7 INCOME STATEMENT",
+        "title": "Bharat Forge Limited: revenue to net profit",
+        "unit": "rupees Cr",
+        "segs": [
+          {
+            "label": "Revenue",
+            "value": 17543.0,
+            "c": "#38BDF8",
+            "subtotal": true
+          },
+          {
+            "label": "Operating costs",
+            "delta": -14597.0,
+            "c": "#FB7185"
+          },
+          {
+            "label": "Operating profit",
+            "value": 2946.0,
+            "c": "#34D399",
+            "subtotal": true
+          },
+          {
+            "label": "Interest",
+            "delta": -331.0,
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Depreciation",
+            "delta": -1008.0,
+            "c": "#A78BFA"
+          },
+          {
+            "label": "Net profit",
+            "value": 716.0,
+            "c": "#34D399",
+            "subtotal": true
+          }
+        ],
+        "note": "Consolidated public table \u00b7 TTM \u00b7 values shown to two decimals",
+        "color": "#38BDF8",
+        "decimals": 2,
+        "dur": 52.58
+      }
+    },
+    {
+      "id": "c02_bharatforg_balance",
+      "type": "fa_ledger",
+      "in_seconds": 454.616,
+      "out_seconds": 509.456,
+      "props": {
+        "kicker": "BHARATFORG \u00b7 BALANCE SHEET",
+        "title": "Bharat Forge Limited: what the capital is funding",
+        "rows": [
+          {
+            "label": "Total assets",
+            "val": "22,238.00 Cr",
+            "c": "#38BDF8",
+            "bold": true
+          },
+          {
+            "label": "Fixed assets",
+            "val": "8,215.00 Cr"
+          },
+          {
+            "label": "Investments",
+            "val": "1,738.00 Cr"
+          },
+          {
+            "label": "Reserves",
+            "val": "9,484.00 Cr",
+            "c": "#34D399"
+          },
+          {
+            "label": "Borrowings",
+            "val": "7,309.00 Cr",
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Other liabilities",
+            "val": "5,350.00 Cr",
+            "c": "#FB7185"
+          }
+        ],
+        "caption": "Consolidated snapshot \u00b7 Mar 2026 \u00b7 compare leverage with cash generation",
+        "color": "#A78BFA",
+        "dur": 55.34
+      }
+    },
+    {
+      "id": "c02_bharatforg_cash",
+      "type": "fa_stack",
+      "in_seconds": 509.956,
+      "out_seconds": 556.036,
+      "props": {
+        "kicker": "BHARATFORG \u00b7 CASH FLOW",
+        "title": "Bharat Forge Limited: operating, investing and financing cash",
+        "unit": "Cr",
+        "segs": [
+          {
+            "label": "Operating cash flow",
+            "val": 1487.0,
+            "c": "#34D399",
+            "op": "+"
+          },
+          {
+            "label": "Investing cash flow",
+            "val": -1038.0,
+            "c": "#38BDF8",
+            "op": "\u2212"
+          },
+          {
+            "label": "Financing cash flow",
+            "val": -442.0,
+            "c": "#FBBF24",
+            "op": "\u2212"
+          }
+        ],
+        "result": {
+          "label": "Net cash movement",
+          "val": 6.0,
+          "c": "#34D399"
+        },
+        "note": "Consolidated cash-flow table \u00b7 Mar 2026 \u00b7 profit is not the same as cash",
+        "color": "#34D399",
+        "decimals": 2,
+        "dur": 46.58
+      }
+    },
+    {
+      "id": "c03_unominda_business",
+      "type": "fa_roadmap",
+      "in_seconds": 556.536,
+      "out_seconds": 602.28,
+      "props": {
+        "kicker": "UNOMINDA \u00b7 BUSINESS AND PORTFOLIO",
+        "parts": [
+          {
+            "n": 1,
+            "title": "Switching systems",
+            "sub": "product / service line",
+            "c": "#34D399"
+          },
+          {
+            "n": 2,
+            "title": "Automotive lighting",
+            "sub": "product / service line",
+            "c": "#38BDF8"
+          },
+          {
+            "n": 3,
+            "title": "Acoustic systems",
+            "sub": "product / service line",
+            "c": "#FBBF24"
+          },
+          {
+            "n": 4,
+            "title": "Alloy wheels",
+            "sub": "product / service line",
+            "c": "#A78BFA"
+          },
+          {
+            "n": 5,
+            "title": "Seating systems",
+            "sub": "product / service line",
+            "c": "#FB7185"
+          },
+          {
+            "n": 6,
+            "title": "EV and electronic systems",
+            "sub": "product / service line",
+            "c": "#60A5FA"
+          }
+        ],
+        "dur": 46.244
+      }
+    },
+    {
+      "id": "c03_unominda_score",
+      "type": "nb_stock",
+      "in_seconds": 602.78,
+      "out_seconds": 647.108,
+      "props": {
+        "idx": 3,
+        "total": 11,
+        "tier": "1",
+        "name": "UNO Minda Limited",
+        "ticker": "UNOMINDA",
+        "sector": "Automobile and Auto Co",
+        "cap": "Midcap workbook",
+        "metrics": [
+          {
+            "k": "Market cap",
+            "v": "71,779.00 Cr"
+          },
+          {
+            "k": "P / E",
+            "v": "74.03x"
+          },
+          {
+            "k": "Latest revenue",
+            "v": "20,725.00 Cr"
+          },
+          {
+            "k": "Operating margin",
+            "v": "11.00%"
+          },
+          {
+            "k": "5Y sales CAGR",
+            "v": "24.01%",
+            "hero": true
+          },
+          {
+            "k": "5Y profit CAGR",
+            "v": "32.79%"
+          }
+        ],
+        "thesis": [
+          "Portfolio spans 6 visible product or service groups.",
+          "Latest public revenue table shows 20,725.00 crore rupees in TTM.",
+          "The decision hinges on margins, capital intensity and cash conversion."
+        ],
+        "growth": 24.006767705636967,
+        "take": "Public-source snapshot; verify the latest filing",
+        "dur": 44.828
+      }
+    },
+    {
+      "id": "c03_unominda_pnl",
+      "type": "fa_waterfall",
+      "in_seconds": 647.608,
+      "out_seconds": 700.024,
+      "props": {
+        "kicker": "UNOMINDA \u00b7 INCOME STATEMENT",
+        "title": "UNO Minda Limited: revenue to net profit",
+        "unit": "rupees Cr",
+        "segs": [
+          {
+            "label": "Revenue",
+            "value": 20725.0,
+            "c": "#38BDF8",
+            "subtotal": true
+          },
+          {
+            "label": "Operating costs",
+            "delta": -18445.0,
+            "c": "#FB7185"
+          },
+          {
+            "label": "Operating profit",
+            "value": 2280.0,
+            "c": "#34D399",
+            "subtotal": true
+          },
+          {
+            "label": "Interest",
+            "delta": -189.0,
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Depreciation",
+            "delta": -721.0,
+            "c": "#A78BFA"
+          },
+          {
+            "label": "Net profit",
+            "value": 1291.0,
+            "c": "#34D399",
+            "subtotal": true
+          }
+        ],
+        "note": "Consolidated public table \u00b7 TTM \u00b7 values shown to two decimals",
+        "color": "#38BDF8",
+        "decimals": 2,
+        "dur": 52.916
+      }
+    },
+    {
+      "id": "c03_unominda_balance",
+      "type": "fa_ledger",
+      "in_seconds": 700.524,
+      "out_seconds": 754.476,
+      "props": {
+        "kicker": "UNOMINDA \u00b7 BALANCE SHEET",
+        "title": "UNO Minda Limited: what the capital is funding",
+        "rows": [
+          {
+            "label": "Total assets",
+            "val": "13,698.00 Cr",
+            "c": "#38BDF8",
+            "bold": true
+          },
+          {
+            "label": "Fixed assets",
+            "val": "5,658.00 Cr"
+          },
+          {
+            "label": "Investments",
+            "val": "951.00 Cr"
+          },
+          {
+            "label": "Reserves",
+            "val": "6,714.00 Cr",
+            "c": "#34D399"
+          },
+          {
+            "label": "Borrowings",
+            "val": "2,740.00 Cr",
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Other liabilities",
+            "val": "4,129.00 Cr",
+            "c": "#FB7185"
+          }
+        ],
+        "caption": "Consolidated snapshot \u00b7 Mar 2026 \u00b7 compare leverage with cash generation",
+        "color": "#A78BFA",
+        "dur": 54.452
+      }
+    },
+    {
+      "id": "c03_unominda_cash",
+      "type": "fa_stack",
+      "in_seconds": 754.976,
+      "out_seconds": 800.168,
+      "props": {
+        "kicker": "UNOMINDA \u00b7 CASH FLOW",
+        "title": "UNO Minda Limited: operating, investing and financing cash",
+        "unit": "Cr",
+        "segs": [
+          {
+            "label": "Operating cash flow",
+            "val": 1720.0,
+            "c": "#34D399",
+            "op": "+"
+          },
+          {
+            "label": "Investing cash flow",
+            "val": -1651.0,
+            "c": "#38BDF8",
+            "op": "\u2212"
+          },
+          {
+            "label": "Financing cash flow",
+            "val": 10.0,
+            "c": "#FBBF24",
+            "op": "+"
+          }
+        ],
+        "result": {
+          "label": "Net cash movement",
+          "val": 79.0,
+          "c": "#34D399"
+        },
+        "note": "Consolidated cash-flow table \u00b7 Mar 2026 \u00b7 profit is not the same as cash",
+        "color": "#34D399",
+        "decimals": 2,
+        "dur": 45.692
+      }
+    },
+    {
+      "id": "c04_schaeffler_business",
+      "type": "fa_roadmap",
+      "in_seconds": 800.668,
+      "out_seconds": 854.428,
+      "props": {
+        "kicker": "SCHAEFFLER \u00b7 BUSINESS AND PORTFOLIO",
+        "parts": [
+          {
+            "n": 1,
+            "title": "Ball and roller bearings",
+            "sub": "product / service line",
+            "c": "#34D399"
+          },
+          {
+            "n": 2,
+            "title": "Engine systems",
+            "sub": "product / service line",
+            "c": "#38BDF8"
+          },
+          {
+            "n": 3,
+            "title": "Transmission components",
+            "sub": "product / service line",
+            "c": "#FBBF24"
+          },
+          {
+            "n": 4,
+            "title": "Chassis applications",
+            "sub": "product / service line",
+            "c": "#A78BFA"
+          },
+          {
+            "n": 5,
+            "title": "Clutch systems",
+            "sub": "product / service line",
+            "c": "#FB7185"
+          },
+          {
+            "n": 6,
+            "title": "Industrial lifecycle services",
+            "sub": "product / service line",
+            "c": "#60A5FA"
+          }
+        ],
+        "dur": 54.26
+      }
+    },
+    {
+      "id": "c04_schaeffler_score",
+      "type": "nb_stock",
+      "in_seconds": 854.928,
+      "out_seconds": 898.752,
+      "props": {
+        "idx": 4,
+        "total": 11,
+        "tier": "1",
+        "name": "Schaeffler India Limited",
+        "ticker": "SCHAEFFLER",
+        "sector": "Automobile and Auto Co",
+        "cap": "Midcap workbook",
+        "metrics": [
+          {
+            "k": "Market cap",
+            "v": "64,239.00 Cr"
+          },
+          {
+            "k": "P / E",
+            "v": "49.76x"
+          },
+          {
+            "k": "Latest revenue",
+            "v": "10,505.00 Cr"
+          },
+          {
+            "k": "Operating margin",
+            "v": "18.00%",
+            "hero": true
+          },
+          {
+            "k": "5Y sales CAGR",
+            "v": "N/A"
+          },
+          {
+            "k": "5Y profit CAGR",
+            "v": "N/A"
+          }
+        ],
+        "thesis": [
+          "Portfolio spans 6 visible product or service groups.",
+          "Latest public revenue table shows 10,505.00 crore rupees in TTM.",
+          "The decision hinges on margins, capital intensity and cash conversion."
+        ],
+        "growth": 12.0,
+        "take": "Public-source snapshot; verify the latest filing",
+        "dur": 44.324
+      }
+    },
+    {
+      "id": "c04_schaeffler_pnl",
+      "type": "fa_waterfall",
+      "in_seconds": 899.252,
+      "out_seconds": 950.492,
+      "props": {
+        "kicker": "SCHAEFFLER \u00b7 INCOME STATEMENT",
+        "title": "Schaeffler India Limited: revenue to net profit",
+        "unit": "rupees Cr",
+        "segs": [
+          {
+            "label": "Revenue",
+            "value": 10505.0,
+            "c": "#38BDF8",
+            "subtotal": true
+          },
+          {
+            "label": "Operating costs",
+            "delta": -8588.0,
+            "c": "#FB7185"
+          },
+          {
+            "label": "Operating profit",
+            "value": 1917.0,
+            "c": "#34D399",
+            "subtotal": true
+          },
+          {
+            "label": "Interest",
+            "delta": -5.0,
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Depreciation",
+            "delta": -361.0,
+            "c": "#A78BFA"
+          },
+          {
+            "label": "Net profit",
+            "value": 1253.0,
+            "c": "#34D399",
+            "subtotal": true
+          }
+        ],
+        "note": "Consolidated public table \u00b7 TTM \u00b7 values shown to two decimals",
+        "color": "#38BDF8",
+        "decimals": 2,
+        "dur": 51.74
+      }
+    },
+    {
+      "id": "c04_schaeffler_balance",
+      "type": "fa_ledger",
+      "in_seconds": 950.992,
+      "out_seconds": 992.08,
+      "props": {
+        "kicker": "SCHAEFFLER \u00b7 BALANCE SHEET",
+        "title": "Schaeffler India Limited: what the capital is funding",
+        "rows": [
+          {
+            "label": "Total assets",
+            "val": "0.00 Cr",
+            "c": "#38BDF8",
+            "bold": true
+          },
+          {
+            "label": "Fixed assets",
+            "val": "0.00 Cr"
+          },
+          {
+            "label": "Investments",
+            "val": "0.00 Cr"
+          },
+          {
+            "label": "Reserves",
+            "val": "0.00 Cr",
+            "c": "#34D399"
+          },
+          {
+            "label": "Borrowings",
+            "val": "0.00 Cr",
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Other liabilities",
+            "val": "0.00 Cr",
+            "c": "#FB7185"
+          }
+        ],
+        "caption": "Consolidated snapshot \u00b7 not reported \u00b7 compare leverage with cash generation",
+        "color": "#A78BFA",
+        "dur": 41.588
+      }
+    },
+    {
+      "id": "c04_schaeffler_cash",
+      "type": "fa_stack",
+      "in_seconds": 992.58,
+      "out_seconds": 1032.444,
+      "props": {
+        "kicker": "SCHAEFFLER \u00b7 CASH FLOW",
+        "title": "Schaeffler India Limited: operating, investing and financing cash",
+        "unit": "Cr",
+        "segs": [
+          {
+            "label": "Operating cash flow",
+            "val": 0.0,
+            "c": "#34D399",
+            "op": "+"
+          },
+          {
+            "label": "Investing cash flow",
+            "val": 0.0,
+            "c": "#38BDF8",
+            "op": "+"
+          },
+          {
+            "label": "Financing cash flow",
+            "val": 0.0,
+            "c": "#FBBF24",
+            "op": "+"
+          }
+        ],
+        "result": {
+          "label": "Net cash movement",
+          "val": 0.0,
+          "c": "#34D399"
+        },
+        "note": "Consolidated cash-flow table \u00b7 not reported \u00b7 profit is not the same as cash",
+        "color": "#34D399",
+        "decimals": 2,
+        "dur": 40.364
+      }
+    },
+    {
+      "id": "c05_mrf_business",
+      "type": "fa_roadmap",
+      "in_seconds": 1032.944,
+      "out_seconds": 1078.64,
+      "props": {
+        "kicker": "MRF \u00b7 BUSINESS AND PORTFOLIO",
+        "parts": [
+          {
+            "n": 1,
+            "title": "Passenger-car tyres",
+            "sub": "product / service line",
+            "c": "#34D399"
+          },
+          {
+            "n": 2,
+            "title": "Two-wheeler tyres",
+            "sub": "product / service line",
+            "c": "#38BDF8"
+          },
+          {
+            "n": 3,
+            "title": "Truck and bus tyres",
+            "sub": "product / service line",
+            "c": "#FBBF24"
+          },
+          {
+            "n": 4,
+            "title": "Farm and off-road tyres",
+            "sub": "product / service line",
+            "c": "#A78BFA"
+          },
+          {
+            "n": 5,
+            "title": "Motorsport products",
+            "sub": "product / service line",
+            "c": "#FB7185"
+          },
+          {
+            "n": 6,
+            "title": "Tyre service and retreading",
+            "sub": "product / service line",
+            "c": "#60A5FA"
+          }
+        ],
+        "dur": 46.196
+      }
+    },
+    {
+      "id": "c05_mrf_score",
+      "type": "nb_stock",
+      "in_seconds": 1079.14,
+      "out_seconds": 1123.636,
+      "props": {
+        "idx": 5,
+        "total": 11,
+        "tier": "1",
+        "name": "MRF Limited",
+        "ticker": "MRF",
+        "sector": "Automobile and Auto Co",
+        "cap": "Midcap workbook",
+        "metrics": [
+          {
+            "k": "Market cap",
+            "v": "55,557.00 Cr"
+          },
+          {
+            "k": "P / E",
+            "v": "23.23x"
+          },
+          {
+            "k": "Latest revenue",
+            "v": "31,889.00 Cr"
+          },
+          {
+            "k": "Operating margin",
+            "v": "15.00%"
+          },
+          {
+            "k": "5Y sales CAGR",
+            "v": "12.69%",
+            "hero": true
+          },
+          {
+            "k": "5Y profit CAGR",
+            "v": "38.00%"
+          }
+        ],
+        "thesis": [
+          "Portfolio spans 6 visible product or service groups.",
+          "Latest public revenue table shows 31,889.00 crore rupees in TTM.",
+          "The decision hinges on margins, capital intensity and cash conversion."
+        ],
+        "growth": 12.687594231115584,
+        "take": "Public-source snapshot; verify the latest filing",
+        "dur": 44.996
+      }
+    },
+    {
+      "id": "c05_mrf_pnl",
+      "type": "fa_waterfall",
+      "in_seconds": 1124.136,
+      "out_seconds": 1177.128,
+      "props": {
+        "kicker": "MRF \u00b7 INCOME STATEMENT",
+        "title": "MRF Limited: revenue to net profit",
+        "unit": "rupees Cr",
+        "segs": [
+          {
+            "label": "Revenue",
+            "value": 31889.0,
+            "c": "#38BDF8",
+            "subtotal": true
+          },
+          {
+            "label": "Operating costs",
+            "delta": -27068.0,
+            "c": "#FB7185"
+          },
+          {
+            "label": "Operating profit",
+            "value": 4821.0,
+            "c": "#34D399",
+            "subtotal": true
+          },
+          {
+            "label": "Interest",
+            "delta": -356.0,
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Depreciation",
+            "delta": -1773.0,
+            "c": "#A78BFA"
+          },
+          {
+            "label": "Net profit",
+            "value": 2418.0,
+            "c": "#34D399",
+            "subtotal": true
+          }
+        ],
+        "note": "Consolidated public table \u00b7 TTM \u00b7 values shown to two decimals",
+        "color": "#38BDF8",
+        "decimals": 2,
+        "dur": 53.492
+      }
+    },
+    {
+      "id": "c05_mrf_balance",
+      "type": "fa_ledger",
+      "in_seconds": 1177.628,
+      "out_seconds": 1232.756,
+      "props": {
+        "kicker": "MRF \u00b7 BALANCE SHEET",
+        "title": "MRF Limited: what the capital is funding",
+        "rows": [
+          {
+            "label": "Total assets",
+            "val": "31,954.00 Cr",
+            "c": "#38BDF8",
+            "bold": true
+          },
+          {
+            "label": "Fixed assets",
+            "val": "12,966.00 Cr"
+          },
+          {
+            "label": "Investments",
+            "val": "3,398.00 Cr"
+          },
+          {
+            "label": "Reserves",
+            "val": "20,970.00 Cr",
+            "c": "#34D399"
+          },
+          {
+            "label": "Borrowings",
+            "val": "3,207.00 Cr",
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Other liabilities",
+            "val": "7,772.00 Cr",
+            "c": "#FB7185"
+          }
+        ],
+        "caption": "Consolidated snapshot \u00b7 Mar 2026 \u00b7 compare leverage with cash generation",
+        "color": "#A78BFA",
+        "dur": 55.628
+      }
+    },
+    {
+      "id": "c05_mrf_cash",
+      "type": "fa_stack",
+      "in_seconds": 1233.256,
+      "out_seconds": 1281.088,
+      "props": {
+        "kicker": "MRF \u00b7 CASH FLOW",
+        "title": "MRF Limited: operating, investing and financing cash",
+        "unit": "Cr",
+        "segs": [
+          {
+            "label": "Operating cash flow",
+            "val": 4590.0,
+            "c": "#34D399",
+            "op": "+"
+          },
+          {
+            "label": "Investing cash flow",
+            "val": -3539.0,
+            "c": "#38BDF8",
+            "op": "\u2212"
+          },
+          {
+            "label": "Financing cash flow",
+            "val": -1120.0,
+            "c": "#FBBF24",
+            "op": "\u2212"
+          }
+        ],
+        "result": {
+          "label": "Net cash movement",
+          "val": -69.0,
+          "c": "#FB7185"
+        },
+        "note": "Consolidated cash-flow table \u00b7 Mar 2026 \u00b7 profit is not the same as cash",
+        "color": "#34D399",
+        "decimals": 2,
+        "dur": 48.332
+      }
+    },
+    {
+      "id": "c06_powerindia_business",
+      "type": "fa_roadmap",
+      "in_seconds": 1281.588,
+      "out_seconds": 1344.396,
+      "props": {
+        "kicker": "POWERINDIA \u00b7 BUSINESS AND PORTFOLIO",
+        "parts": [
+          {
+            "n": 1,
+            "title": "Power transformers",
+            "sub": "product / service line",
+            "c": "#34D399"
+          },
+          {
+            "n": 2,
+            "title": "High-voltage products",
+            "sub": "product / service line",
+            "c": "#38BDF8"
+          },
+          {
+            "n": 3,
+            "title": "Grid automation",
+            "sub": "product / service line",
+            "c": "#FBBF24"
+          },
+          {
+            "n": 4,
+            "title": "Power quality systems",
+            "sub": "product / service line",
+            "c": "#A78BFA"
+          },
+          {
+            "n": 5,
+            "title": "Energy storage integration",
+            "sub": "product / service line",
+            "c": "#FB7185"
+          },
+          {
+            "n": 6,
+            "title": "Digital and lifecycle services",
+            "sub": "product / service line",
+            "c": "#60A5FA"
+          }
+        ],
+        "dur": 63.308
+      }
+    },
+    {
+      "id": "c06_powerindia_score",
+      "type": "nb_stock",
+      "in_seconds": 1344.896,
+      "out_seconds": 1388.36,
+      "props": {
+        "idx": 6,
+        "total": 11,
+        "tier": "1",
+        "name": "Hitachi Energy India Limited",
+        "ticker": "POWERINDIA",
+        "sector": "Capital Goods",
+        "cap": "Midcap workbook",
+        "metrics": [
+          {
+            "k": "Market cap",
+            "v": "158,767.00 Cr"
+          },
+          {
+            "k": "P / E",
+            "v": "133.29x"
+          },
+          {
+            "k": "Latest revenue",
+            "v": "9,162.00 Cr"
+          },
+          {
+            "k": "Operating margin",
+            "v": "16.00%"
+          },
+          {
+            "k": "5Y sales CAGR",
+            "v": "13.65%",
+            "hero": true
+          },
+          {
+            "k": "5Y profit CAGR",
+            "v": "48.53%"
+          }
+        ],
+        "thesis": [
+          "Portfolio spans 6 visible product or service groups.",
+          "Latest public revenue table shows 9,162.00 crore rupees in TTM.",
+          "The decision hinges on margins, capital intensity and cash conversion."
+        ],
+        "growth": 13.649843301597864,
+        "take": "Public-source snapshot; verify the latest filing",
+        "dur": 43.964
+      }
+    },
+    {
+      "id": "c06_powerindia_pnl",
+      "type": "fa_waterfall",
+      "in_seconds": 1388.86,
+      "out_seconds": 1440.364,
+      "props": {
+        "kicker": "POWERINDIA \u00b7 INCOME STATEMENT",
+        "title": "Hitachi Energy India Limited: revenue to net profit",
+        "unit": "rupees Cr",
+        "segs": [
+          {
+            "label": "Revenue",
+            "value": 9162.0,
+            "c": "#38BDF8",
+            "subtotal": true
+          },
+          {
+            "label": "Operating costs",
+            "delta": -7738.0,
+            "c": "#FB7185"
+          },
+          {
+            "label": "Operating profit",
+            "value": 1424.0,
+            "c": "#34D399",
+            "subtotal": true
+          },
+          {
+            "label": "Interest",
+            "delta": -12.0,
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Depreciation",
+            "delta": -108.0,
+            "c": "#A78BFA"
+          },
+          {
+            "label": "Net profit",
+            "value": 1150.0,
+            "c": "#34D399",
+            "subtotal": true
+          }
+        ],
+        "note": "Consolidated public table \u00b7 TTM \u00b7 values shown to two decimals",
+        "color": "#38BDF8",
+        "decimals": 2,
+        "dur": 52.004
+      }
+    },
+    {
+      "id": "c06_powerindia_balance",
+      "type": "fa_ledger",
+      "in_seconds": 1440.864,
+      "out_seconds": 1490.808,
+      "props": {
+        "kicker": "POWERINDIA \u00b7 BALANCE SHEET",
+        "title": "Hitachi Energy India Limited: what the capital is funding",
+        "rows": [
+          {
+            "label": "Total assets",
+            "val": "12,044.00 Cr",
+            "c": "#38BDF8",
+            "bold": true
+          },
+          {
+            "label": "Fixed assets",
+            "val": "845.00 Cr"
+          },
+          {
+            "label": "Investments",
+            "val": "0.00 Cr"
+          },
+          {
+            "label": "Reserves",
+            "val": "5,167.00 Cr",
+            "c": "#34D399"
+          },
+          {
+            "label": "Borrowings",
+            "val": "86.00 Cr",
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Other liabilities",
+            "val": "6,782.00 Cr",
+            "c": "#FB7185"
+          }
+        ],
+        "caption": "Consolidated snapshot \u00b7 Mar 2026 \u00b7 compare leverage with cash generation",
+        "color": "#A78BFA",
+        "dur": 50.444
+      }
+    },
+    {
+      "id": "c06_powerindia_cash",
+      "type": "fa_stack",
+      "in_seconds": 1491.308,
+      "out_seconds": 1538.3,
+      "props": {
+        "kicker": "POWERINDIA \u00b7 CASH FLOW",
+        "title": "Hitachi Energy India Limited: operating, investing and financing cash",
+        "unit": "Cr",
+        "segs": [
+          {
+            "label": "Operating cash flow",
+            "val": 1245.0,
+            "c": "#34D399",
+            "op": "+"
+          },
+          {
+            "label": "Investing cash flow",
+            "val": -271.0,
+            "c": "#38BDF8",
+            "op": "\u2212"
+          },
+          {
+            "label": "Financing cash flow",
+            "val": -91.0,
+            "c": "#FBBF24",
+            "op": "\u2212"
+          }
+        ],
+        "result": {
+          "label": "Net cash movement",
+          "val": 883.0,
+          "c": "#34D399"
+        },
+        "note": "Consolidated cash-flow table \u00b7 Mar 2026 \u00b7 profit is not the same as cash",
+        "color": "#34D399",
+        "decimals": 2,
+        "dur": 47.492
+      }
+    },
+    {
+      "id": "c07_bhel_business",
+      "type": "fa_roadmap",
+      "in_seconds": 1538.8,
+      "out_seconds": 1609.768,
+      "props": {
+        "kicker": "BHEL \u00b7 BUSINESS AND PORTFOLIO",
+        "parts": [
+          {
+            "n": 1,
+            "title": "Thermal power equipment",
+            "sub": "product / service line",
+            "c": "#34D399"
+          },
+          {
+            "n": 2,
+            "title": "Hydro and gas systems",
+            "sub": "product / service line",
+            "c": "#38BDF8"
+          },
+          {
+            "n": 3,
+            "title": "Nuclear equipment",
+            "sub": "product / service line",
+            "c": "#FBBF24"
+          },
+          {
+            "n": 4,
+            "title": "Rail and transportation",
+            "sub": "product / service line",
+            "c": "#A78BFA"
+          },
+          {
+            "n": 5,
+            "title": "Defence and aerospace",
+            "sub": "product / service line",
+            "c": "#FB7185"
+          },
+          {
+            "n": 6,
+            "title": "Renewables and industrial services",
+            "sub": "product / service line",
+            "c": "#60A5FA"
+          }
+        ],
+        "dur": 71.468
+      }
+    },
+    {
+      "id": "c07_bhel_score",
+      "type": "nb_stock",
+      "in_seconds": 1610.268,
+      "out_seconds": 1656.036,
+      "props": {
+        "idx": 7,
+        "total": 11,
+        "tier": "1",
+        "name": "Bharat Heavy Electricals Limited",
+        "ticker": "BHEL",
+        "sector": "Capital Goods",
+        "cap": "Midcap workbook",
+        "metrics": [
+          {
+            "k": "Market cap",
+            "v": "146,160.00 Cr"
+          },
+          {
+            "k": "P / E",
+            "v": "60.57x"
+          },
+          {
+            "k": "Latest revenue",
+            "v": "35,993.00 Cr"
+          },
+          {
+            "k": "Operating margin",
+            "v": "9.00%"
+          },
+          {
+            "k": "5Y sales CAGR",
+            "v": "12.34%",
+            "hero": true
+          },
+          {
+            "k": "5Y profit CAGR",
+            "v": "37.70%"
+          }
+        ],
+        "thesis": [
+          "Portfolio spans 6 visible product or service groups.",
+          "Latest public revenue table shows 35,993.00 crore rupees in TTM.",
+          "The decision hinges on margins, capital intensity and cash conversion."
+        ],
+        "growth": 12.339129277274896,
+        "take": "Public-source snapshot; verify the latest filing",
+        "dur": 46.268
+      }
+    },
+    {
+      "id": "c07_bhel_pnl",
+      "type": "fa_waterfall",
+      "in_seconds": 1656.536,
+      "out_seconds": 1709.72,
+      "props": {
+        "kicker": "BHEL \u00b7 INCOME STATEMENT",
+        "title": "Bharat Heavy Electricals Limited: revenue to net profit",
+        "unit": "rupees Cr",
+        "segs": [
+          {
+            "label": "Revenue",
+            "value": 35993.0,
+            "c": "#38BDF8",
+            "subtotal": true
+          },
+          {
+            "label": "Operating costs",
+            "delta": -32610.0,
+            "c": "#FB7185"
+          },
+          {
+            "label": "Operating profit",
+            "value": 3383.0,
+            "c": "#34D399",
+            "subtotal": true
+          },
+          {
+            "label": "Interest",
+            "delta": -715.0,
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Depreciation",
+            "delta": -323.0,
+            "c": "#A78BFA"
+          },
+          {
+            "label": "Net profit",
+            "value": 2432.0,
+            "c": "#34D399",
+            "subtotal": true
+          }
+        ],
+        "note": "Consolidated public table \u00b7 TTM \u00b7 values shown to two decimals",
+        "color": "#38BDF8",
+        "decimals": 2,
+        "dur": 53.684
+      }
+    },
+    {
+      "id": "c07_bhel_balance",
+      "type": "fa_ledger",
+      "in_seconds": 1710.22,
+      "out_seconds": 1764.772,
+      "props": {
+        "kicker": "BHEL \u00b7 BALANCE SHEET",
+        "title": "Bharat Heavy Electricals Limited: what the capital is funding",
+        "rows": [
+          {
+            "label": "Total assets",
+            "val": "76,888.00 Cr",
+            "c": "#38BDF8",
+            "bold": true
+          },
+          {
+            "label": "Fixed assets",
+            "val": "2,999.00 Cr"
+          },
+          {
+            "label": "Investments",
+            "val": "302.00 Cr"
+          },
+          {
+            "label": "Reserves",
+            "val": "25,450.00 Cr",
+            "c": "#34D399"
+          },
+          {
+            "label": "Borrowings",
+            "val": "8,187.00 Cr",
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Other liabilities",
+            "val": "42,554.00 Cr",
+            "c": "#FB7185"
+          }
+        ],
+        "caption": "Consolidated snapshot \u00b7 Mar 2026 \u00b7 compare leverage with cash generation",
+        "color": "#A78BFA",
+        "dur": 55.052
+      }
+    },
+    {
+      "id": "c07_bhel_cash",
+      "type": "fa_stack",
+      "in_seconds": 1765.272,
+      "out_seconds": 1813.968,
+      "props": {
+        "kicker": "BHEL \u00b7 CASH FLOW",
+        "title": "Bharat Heavy Electricals Limited: operating, investing and financing cash",
+        "unit": "Cr",
+        "segs": [
+          {
+            "label": "Operating cash flow",
+            "val": 5837.0,
+            "c": "#34D399",
+            "op": "+"
+          },
+          {
+            "label": "Investing cash flow",
+            "val": -3035.0,
+            "c": "#38BDF8",
+            "op": "\u2212"
+          },
+          {
+            "label": "Financing cash flow",
+            "val": -1806.0,
+            "c": "#FBBF24",
+            "op": "\u2212"
+          }
+        ],
+        "result": {
+          "label": "Net cash movement",
+          "val": 996.0,
+          "c": "#34D399"
+        },
+        "note": "Consolidated cash-flow table \u00b7 Mar 2026 \u00b7 profit is not the same as cash",
+        "color": "#34D399",
+        "decimals": 2,
+        "dur": 49.196
+      }
+    },
+    {
+      "id": "c08_polycab_business",
+      "type": "fa_roadmap",
+      "in_seconds": 1814.468,
+      "out_seconds": 1879.388,
+      "props": {
+        "kicker": "POLYCAB \u00b7 BUSINESS AND PORTFOLIO",
+        "parts": [
+          {
+            "n": 1,
+            "title": "Wires and cables",
+            "sub": "product / service line",
+            "c": "#34D399"
+          },
+          {
+            "n": 2,
+            "title": "Fans and lighting",
+            "sub": "product / service line",
+            "c": "#38BDF8"
+          },
+          {
+            "n": 3,
+            "title": "Switches and switchgear",
+            "sub": "product / service line",
+            "c": "#FBBF24"
+          },
+          {
+            "n": 4,
+            "title": "Conduits and fittings",
+            "sub": "product / service line",
+            "c": "#A78BFA"
+          },
+          {
+            "n": 5,
+            "title": "Solar products",
+            "sub": "product / service line",
+            "c": "#FB7185"
+          },
+          {
+            "n": 6,
+            "title": "EPC and project solutions",
+            "sub": "product / service line",
+            "c": "#60A5FA"
+          }
+        ],
+        "dur": 65.42
+      }
+    },
+    {
+      "id": "c08_polycab_score",
+      "type": "nb_stock",
+      "in_seconds": 1879.888,
+      "out_seconds": 1925.872,
+      "props": {
+        "idx": 8,
+        "total": 11,
+        "tier": "1",
+        "name": "Polycab India Limited",
+        "ticker": "POLYCAB",
+        "sector": "Capital Goods",
+        "cap": "Midcap workbook",
+        "metrics": [
+          {
+            "k": "Market cap",
+            "v": "139,194.00 Cr"
+          },
+          {
+            "k": "P / E",
+            "v": "49.60x"
+          },
+          {
+            "k": "Latest revenue",
+            "v": "31,188.00 Cr"
+          },
+          {
+            "k": "Operating margin",
+            "v": "14.00%"
+          },
+          {
+            "k": "5Y sales CAGR",
+            "v": "24.03%",
+            "hero": true
+          },
+          {
+            "k": "5Y profit CAGR",
+            "v": "31.09%"
+          }
+        ],
+        "thesis": [
+          "Portfolio spans 6 visible product or service groups.",
+          "Latest public revenue table shows 31,188.00 crore rupees in TTM.",
+          "The decision hinges on margins, capital intensity and cash conversion."
+        ],
+        "growth": 24.033438729121958,
+        "take": "Public-source snapshot; verify the latest filing",
+        "dur": 46.484
+      }
+    },
+    {
+      "id": "c08_polycab_pnl",
+      "type": "fa_waterfall",
+      "in_seconds": 1926.372,
+      "out_seconds": 1978.5,
+      "props": {
+        "kicker": "POLYCAB \u00b7 INCOME STATEMENT",
+        "title": "Polycab India Limited: revenue to net profit",
+        "unit": "rupees Cr",
+        "segs": [
+          {
+            "label": "Revenue",
+            "value": 31188.0,
+            "c": "#38BDF8",
+            "subtotal": true
+          },
+          {
+            "label": "Operating costs",
+            "delta": -26904.0,
+            "c": "#FB7185"
+          },
+          {
+            "label": "Operating profit",
+            "value": 4284.0,
+            "c": "#34D399",
+            "subtotal": true
+          },
+          {
+            "label": "Interest",
+            "delta": -272.0,
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Depreciation",
+            "delta": -403.0,
+            "c": "#A78BFA"
+          },
+          {
+            "label": "Net profit",
+            "value": 2905.0,
+            "c": "#34D399",
+            "subtotal": true
+          }
+        ],
+        "note": "Consolidated public table \u00b7 TTM \u00b7 values shown to two decimals",
+        "color": "#38BDF8",
+        "decimals": 2,
+        "dur": 52.628
+      }
+    },
+    {
+      "id": "c08_polycab_balance",
+      "type": "fa_ledger",
+      "in_seconds": 1979.0,
+      "out_seconds": 2032.52,
+      "props": {
+        "kicker": "POLYCAB \u00b7 BALANCE SHEET",
+        "title": "Polycab India Limited: what the capital is funding",
+        "rows": [
+          {
+            "label": "Total assets",
+            "val": "20,465.00 Cr",
+            "c": "#38BDF8",
+            "bold": true
+          },
+          {
+            "label": "Fixed assets",
+            "val": "3,740.00 Cr"
+          },
+          {
+            "label": "Investments",
+            "val": "3,405.00 Cr"
+          },
+          {
+            "label": "Reserves",
+            "val": "11,858.00 Cr",
+            "c": "#34D399"
+          },
+          {
+            "label": "Borrowings",
+            "val": "236.00 Cr",
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Other liabilities",
+            "val": "8,220.00 Cr",
+            "c": "#FB7185"
+          }
+        ],
+        "caption": "Consolidated snapshot \u00b7 Mar 2026 \u00b7 compare leverage with cash generation",
+        "color": "#A78BFA",
+        "dur": 54.02
+      }
+    },
+    {
+      "id": "c08_polycab_cash",
+      "type": "fa_stack",
+      "in_seconds": 2033.02,
+      "out_seconds": 2080.756,
+      "props": {
+        "kicker": "POLYCAB \u00b7 CASH FLOW",
+        "title": "Polycab India Limited: operating, investing and financing cash",
+        "unit": "Cr",
+        "segs": [
+          {
+            "label": "Operating cash flow",
+            "val": 3811.0,
+            "c": "#34D399",
+            "op": "+"
+          },
+          {
+            "label": "Investing cash flow",
+            "val": -2850.0,
+            "c": "#38BDF8",
+            "op": "\u2212"
+          },
+          {
+            "label": "Financing cash flow",
+            "val": -799.0,
+            "c": "#FBBF24",
+            "op": "\u2212"
+          }
+        ],
+        "result": {
+          "label": "Net cash movement",
+          "val": 162.0,
+          "c": "#34D399"
+        },
+        "note": "Consolidated cash-flow table \u00b7 Mar 2026 \u00b7 profit is not the same as cash",
+        "color": "#34D399",
+        "decimals": 2,
+        "dur": 48.236
+      }
+    },
+    {
+      "id": "c09_gvtd_business",
+      "type": "fa_roadmap",
+      "in_seconds": 2081.256,
+      "out_seconds": 2139.024,
+      "props": {
+        "kicker": "GVT&D \u00b7 BUSINESS AND PORTFOLIO",
+        "parts": [
+          {
+            "n": 1,
+            "title": "Substation solutions",
+            "sub": "product / service line",
+            "c": "#34D399"
+          },
+          {
+            "n": 2,
+            "title": "High-voltage switchgear",
+            "sub": "product / service line",
+            "c": "#38BDF8"
+          },
+          {
+            "n": 3,
+            "title": "Grid automation",
+            "sub": "product / service line",
+            "c": "#FBBF24"
+          },
+          {
+            "n": 4,
+            "title": "Protection and control",
+            "sub": "product / service line",
+            "c": "#A78BFA"
+          },
+          {
+            "n": 5,
+            "title": "Power transformers",
+            "sub": "product / service line",
+            "c": "#FB7185"
+          },
+          {
+            "n": 6,
+            "title": "Consulting and lifecycle services",
+            "sub": "product / service line",
+            "c": "#60A5FA"
+          }
+        ],
+        "dur": 58.268
+      }
+    },
+    {
+      "id": "c09_gvtd_score",
+      "type": "nb_stock",
+      "in_seconds": 2139.524,
+      "out_seconds": 2180.396,
+      "props": {
+        "idx": 9,
+        "total": 11,
+        "tier": "1",
+        "name": "GE Vernova TandD India Limited",
+        "ticker": "GVT&D",
+        "sector": "Capital Goods",
+        "cap": "Midcap workbook",
+        "metrics": [
+          {
+            "k": "Market cap",
+            "v": "110,511.00 Cr"
+          },
+          {
+            "k": "P / E",
+            "v": "81.84x"
+          },
+          {
+            "k": "Latest revenue",
+            "v": "4,292.30 Cr"
+          },
+          {
+            "k": "Operating margin",
+            "v": "19.40%",
+            "hero": true
+          },
+          {
+            "k": "5Y sales CAGR",
+            "v": "N/A"
+          },
+          {
+            "k": "5Y profit CAGR",
+            "v": "N/A"
+          }
+        ],
+        "thesis": [
+          "Portfolio spans 6 visible product or service groups.",
+          "Latest public revenue table shows 4,292.30 crore rupees in Mar 2025.",
+          "The decision hinges on margins, capital intensity and cash conversion."
+        ],
+        "growth": 12.0,
+        "take": "Public-source snapshot; verify the latest filing",
+        "dur": 41.372
+      }
+    },
+    {
+      "id": "c09_gvtd_pnl",
+      "type": "fa_waterfall",
+      "in_seconds": 2180.896,
+      "out_seconds": 2231.752,
+      "props": {
+        "kicker": "GVT&D \u00b7 INCOME STATEMENT",
+        "title": "GE Vernova TandD India Limited: revenue to net profit",
+        "unit": "rupees Cr",
+        "segs": [
+          {
+            "label": "Revenue",
+            "value": 4292.3,
+            "c": "#38BDF8",
+            "subtotal": true
+          },
+          {
+            "label": "Operating costs",
+            "delta": -3458.32,
+            "c": "#FB7185"
+          },
+          {
+            "label": "Operating profit",
+            "value": 833.98,
+            "c": "#34D399",
+            "subtotal": true
+          },
+          {
+            "label": "Interest",
+            "delta": -14.31,
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Depreciation",
+            "delta": -47.31,
+            "c": "#A78BFA"
+          },
+          {
+            "label": "Net profit",
+            "value": 608.33,
+            "c": "#34D399",
+            "subtotal": true
+          }
+        ],
+        "note": "Consolidated public table \u00b7 Mar 2025 \u00b7 values shown to two decimals",
+        "color": "#38BDF8",
+        "decimals": 2,
+        "dur": 51.356
+      }
+    },
+    {
+      "id": "c09_gvtd_balance",
+      "type": "fa_ledger",
+      "in_seconds": 2232.252,
+      "out_seconds": 2282.052,
+      "props": {
+        "kicker": "GVT&D \u00b7 BALANCE SHEET",
+        "title": "GE Vernova TandD India Limited: what the capital is funding",
+        "rows": [
+          {
+            "label": "Total assets",
+            "val": "4,661.08 Cr",
+            "c": "#38BDF8",
+            "bold": true
+          },
+          {
+            "label": "Fixed assets",
+            "val": "340.20 Cr"
+          },
+          {
+            "label": "Investments",
+            "val": "0.00 Cr"
+          },
+          {
+            "label": "Reserves",
+            "val": "1,721.90 Cr",
+            "c": "#34D399"
+          },
+          {
+            "label": "Borrowings",
+            "val": "0.00 Cr",
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Other liabilities",
+            "val": "2,887.97 Cr",
+            "c": "#FB7185"
+          }
+        ],
+        "caption": "Consolidated snapshot \u00b7 Mar 2025 \u00b7 compare leverage with cash generation",
+        "color": "#A78BFA",
+        "dur": 50.3
+      }
+    },
+    {
+      "id": "c09_gvtd_cash",
+      "type": "fa_stack",
+      "in_seconds": 2282.552,
+      "out_seconds": 2329.208,
+      "props": {
+        "kicker": "GVT&D \u00b7 CASH FLOW",
+        "title": "GE Vernova TandD India Limited: operating, investing and financing cash",
+        "unit": "Cr",
+        "segs": [
+          {
+            "label": "Operating cash flow",
+            "val": 903.58,
+            "c": "#34D399",
+            "op": "+"
+          },
+          {
+            "label": "Investing cash flow",
+            "val": -495.75,
+            "c": "#38BDF8",
+            "op": "\u2212"
+          },
+          {
+            "label": "Financing cash flow",
+            "val": -69.06,
+            "c": "#FBBF24",
+            "op": "\u2212"
+          }
+        ],
+        "result": {
+          "label": "Net cash movement",
+          "val": 338.78,
+          "c": "#34D399"
+        },
+        "note": "Consolidated cash-flow table \u00b7 Mar 2025 \u00b7 profit is not the same as cash",
+        "color": "#34D399",
+        "decimals": 2,
+        "dur": 47.156
+      }
+    },
+    {
+      "id": "c10_ashokley_business",
+      "type": "fa_roadmap",
+      "in_seconds": 2329.708,
+      "out_seconds": 2395.9,
+      "props": {
+        "kicker": "ASHOKLEY \u00b7 BUSINESS AND PORTFOLIO",
+        "parts": [
+          {
+            "n": 1,
+            "title": "Medium and heavy trucks",
+            "sub": "product / service line",
+            "c": "#34D399"
+          },
+          {
+            "n": 2,
+            "title": "Light commercial vehicles",
+            "sub": "product / service line",
+            "c": "#38BDF8"
+          },
+          {
+            "n": 3,
+            "title": "Buses and coaches",
+            "sub": "product / service line",
+            "c": "#FBBF24"
+          },
+          {
+            "n": 4,
+            "title": "Defence mobility",
+            "sub": "product / service line",
+            "c": "#A78BFA"
+          },
+          {
+            "n": 5,
+            "title": "Power solutions",
+            "sub": "product / service line",
+            "c": "#FB7185"
+          },
+          {
+            "n": 6,
+            "title": "Spares, service and digital fleet ",
+            "sub": "product / service line",
+            "c": "#60A5FA"
+          }
+        ],
+        "dur": 66.692
+      }
+    },
+    {
+      "id": "c10_ashokley_score",
+      "type": "nb_stock",
+      "in_seconds": 2396.4,
+      "out_seconds": 2442.0,
+      "props": {
+        "idx": 10,
+        "total": 11,
+        "tier": "1",
+        "name": "Ashok Leyland Limited",
+        "ticker": "ASHOKLEY",
+        "sector": "Capital Goods",
+        "cap": "Midcap workbook",
+        "metrics": [
+          {
+            "k": "Market cap",
+            "v": "103,967.00 Cr"
+          },
+          {
+            "k": "P / E",
+            "v": "27.92x"
+          },
+          {
+            "k": "Latest revenue",
+            "v": "57,723.00 Cr"
+          },
+          {
+            "k": "Operating margin",
+            "v": "19.00%"
+          },
+          {
+            "k": "5Y sales CAGR",
+            "v": "16.49%",
+            "hero": true
+          },
+          {
+            "k": "5Y profit CAGR",
+            "v": "41.68%"
+          }
+        ],
+        "thesis": [
+          "Portfolio spans 6 visible product or service groups.",
+          "Latest public revenue table shows 57,723.00 crore rupees in TTM.",
+          "The decision hinges on margins, capital intensity and cash conversion."
+        ],
+        "growth": 16.490284229109985,
+        "take": "Public-source snapshot; verify the latest filing",
+        "dur": 46.1
+      }
+    },
+    {
+      "id": "c10_ashokley_pnl",
+      "type": "fa_waterfall",
+      "in_seconds": 2442.5,
+      "out_seconds": 2497.556,
+      "props": {
+        "kicker": "ASHOKLEY \u00b7 INCOME STATEMENT",
+        "title": "Ashok Leyland Limited: revenue to net profit",
+        "unit": "rupees Cr",
+        "segs": [
+          {
+            "label": "Revenue",
+            "value": 57723.0,
+            "c": "#38BDF8",
+            "subtotal": true
+          },
+          {
+            "label": "Operating costs",
+            "delta": -46741.0,
+            "c": "#FB7185"
+          },
+          {
+            "label": "Operating profit",
+            "value": 10982.0,
+            "c": "#34D399",
+            "subtotal": true
+          },
+          {
+            "label": "Interest",
+            "delta": -4933.0,
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Depreciation",
+            "delta": -1179.0,
+            "c": "#A78BFA"
+          },
+          {
+            "label": "Net profit",
+            "value": 3731.0,
+            "c": "#34D399",
+            "subtotal": true
+          }
+        ],
+        "note": "Consolidated public table \u00b7 TTM \u00b7 values shown to two decimals",
+        "color": "#38BDF8",
+        "decimals": 2,
+        "dur": 55.556
+      }
+    },
+    {
+      "id": "c10_ashokley_balance",
+      "type": "fa_ledger",
+      "in_seconds": 2498.056,
+      "out_seconds": 2553.712,
+      "props": {
+        "kicker": "ASHOKLEY \u00b7 BALANCE SHEET",
+        "title": "Ashok Leyland Limited: what the capital is funding",
+        "rows": [
+          {
+            "label": "Total assets",
+            "val": "100,704.00 Cr",
+            "c": "#38BDF8",
+            "bold": true
+          },
+          {
+            "label": "Fixed assets",
+            "val": "10,435.00 Cr"
+          },
+          {
+            "label": "Investments",
+            "val": "7,467.00 Cr"
+          },
+          {
+            "label": "Reserves",
+            "val": "13,654.00 Cr",
+            "c": "#34D399"
+          },
+          {
+            "label": "Borrowings",
+            "val": "63,936.00 Cr",
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Other liabilities",
+            "val": "22,527.00 Cr",
+            "c": "#FB7185"
+          }
+        ],
+        "caption": "Consolidated snapshot \u00b7 Mar 2026 \u00b7 compare leverage with cash generation",
+        "color": "#A78BFA",
+        "dur": 56.156
+      }
+    },
+    {
+      "id": "c10_ashokley_cash",
+      "type": "fa_stack",
+      "in_seconds": 2554.212,
+      "out_seconds": 2604.012,
+      "props": {
+        "kicker": "ASHOKLEY \u00b7 CASH FLOW",
+        "title": "Ashok Leyland Limited: operating, investing and financing cash",
+        "unit": "Cr",
+        "segs": [
+          {
+            "label": "Operating cash flow",
+            "val": -4895.0,
+            "c": "#34D399",
+            "op": "+"
+          },
+          {
+            "label": "Investing cash flow",
+            "val": -6986.0,
+            "c": "#38BDF8",
+            "op": "\u2212"
+          },
+          {
+            "label": "Financing cash flow",
+            "val": 11617.0,
+            "c": "#FBBF24",
+            "op": "+"
+          }
+        ],
+        "result": {
+          "label": "Net cash movement",
+          "val": -264.0,
+          "c": "#FB7185"
+        },
+        "note": "Consolidated cash-flow table \u00b7 Mar 2026 \u00b7 profit is not the same as cash",
+        "color": "#34D399",
+        "decimals": 2,
+        "dur": 50.3
+      }
+    },
+    {
+      "id": "c11_rvnl_business",
+      "type": "fa_roadmap",
+      "in_seconds": 2604.512,
+      "out_seconds": 2671.544,
+      "props": {
+        "kicker": "RVNL \u00b7 BUSINESS AND PORTFOLIO",
+        "parts": [
+          {
+            "n": 1,
+            "title": "New railway lines",
+            "sub": "product / service line",
+            "c": "#34D399"
+          },
+          {
+            "n": 2,
+            "title": "Track doubling",
+            "sub": "product / service line",
+            "c": "#38BDF8"
+          },
+          {
+            "n": 3,
+            "title": "Gauge conversion",
+            "sub": "product / service line",
+            "c": "#FBBF24"
+          },
+          {
+            "n": 4,
+            "title": "Rail electrification",
+            "sub": "product / service line",
+            "c": "#A78BFA"
+          },
+          {
+            "n": 5,
+            "title": "Metro and urban transport",
+            "sub": "product / service line",
+            "c": "#FB7185"
+          },
+          {
+            "n": 6,
+            "title": "Bridges, workshops and project dev",
+            "sub": "product / service line",
+            "c": "#60A5FA"
+          }
+        ],
+        "dur": 67.532
+      }
+    },
+    {
+      "id": "c11_rvnl_score",
+      "type": "nb_stock",
+      "in_seconds": 2672.044,
+      "out_seconds": 2716.636,
+      "props": {
+        "idx": 11,
+        "total": 11,
+        "tier": "1",
+        "name": "Rail Vikas Nigam Limited",
+        "ticker": "RVNL",
+        "sector": "Construction",
+        "cap": "Midcap workbook",
+        "metrics": [
+          {
+            "k": "Market cap",
+            "v": "47,538.00 Cr"
+          },
+          {
+            "k": "P / E",
+            "v": "57.43x"
+          },
+          {
+            "k": "Latest revenue",
+            "v": "20,825.00 Cr"
+          },
+          {
+            "k": "Operating margin",
+            "v": "4.30%"
+          },
+          {
+            "k": "5Y sales CAGR",
+            "v": "1.30%",
+            "hero": true
+          },
+          {
+            "k": "5Y profit CAGR",
+            "v": "-5.88%"
+          }
+        ],
+        "thesis": [
+          "Portfolio spans 6 visible product or service groups.",
+          "Latest public revenue table shows 20,825.00 crore rupees in TTM.",
+          "The decision hinges on margins, capital intensity and cash conversion."
+        ],
+        "growth": 1.3028683962818421,
+        "take": "Public-source snapshot; verify the latest filing",
+        "dur": 45.092
+      }
+    },
+    {
+      "id": "c11_rvnl_pnl",
+      "type": "fa_waterfall",
+      "in_seconds": 2717.136,
+      "out_seconds": 2767.104,
+      "props": {
+        "kicker": "RVNL \u00b7 INCOME STATEMENT",
+        "title": "Rail Vikas Nigam Limited: revenue to net profit",
+        "unit": "rupees Cr",
+        "segs": [
+          {
+            "label": "Revenue",
+            "value": 20825.0,
+            "c": "#38BDF8",
+            "subtotal": true
+          },
+          {
+            "label": "Operating costs",
+            "delta": -19934.0,
+            "c": "#FB7185"
+          },
+          {
+            "label": "Operating profit",
+            "value": 891.0,
+            "c": "#34D399",
+            "subtotal": true
+          },
+          {
+            "label": "Interest",
+            "delta": -400.0,
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Depreciation",
+            "delta": -38.0,
+            "c": "#A78BFA"
+          },
+          {
+            "label": "Net profit",
+            "value": 896.0,
+            "c": "#34D399",
+            "subtotal": true
+          }
+        ],
+        "note": "Consolidated public table \u00b7 TTM \u00b7 values shown to two decimals",
+        "color": "#38BDF8",
+        "decimals": 2,
+        "dur": 50.468
+      }
+    },
+    {
+      "id": "c11_rvnl_balance",
+      "type": "fa_ledger",
+      "in_seconds": 2767.604,
+      "out_seconds": 2820.764,
+      "props": {
+        "kicker": "RVNL \u00b7 BALANCE SHEET",
+        "title": "Rail Vikas Nigam Limited: what the capital is funding",
+        "rows": [
+          {
+            "label": "Total assets",
+            "val": "21,702.00 Cr",
+            "c": "#38BDF8",
+            "bold": true
+          },
+          {
+            "label": "Fixed assets",
+            "val": "1,025.00 Cr"
+          },
+          {
+            "label": "Investments",
+            "val": "2,645.00 Cr"
+          },
+          {
+            "label": "Reserves",
+            "val": "7,737.00 Cr",
+            "c": "#34D399"
+          },
+          {
+            "label": "Borrowings",
+            "val": "4,818.00 Cr",
+            "c": "#FBBF24"
+          },
+          {
+            "label": "Other liabilities",
+            "val": "7,062.00 Cr",
+            "c": "#FB7185"
+          }
+        ],
+        "caption": "Consolidated snapshot \u00b7 Mar 2026 \u00b7 compare leverage with cash generation",
+        "color": "#A78BFA",
+        "dur": 53.66
+      }
+    },
+    {
+      "id": "c11_rvnl_cash",
+      "type": "fa_stack",
+      "in_seconds": 2821.264,
+      "out_seconds": 2870.872,
+      "props": {
+        "kicker": "RVNL \u00b7 CASH FLOW",
+        "title": "Rail Vikas Nigam Limited: operating, investing and financing cash",
+        "unit": "Cr",
+        "segs": [
+          {
+            "label": "Operating cash flow",
+            "val": -1889.0,
+            "c": "#34D399",
+            "op": "+"
+          },
+          {
+            "label": "Investing cash flow",
+            "val": 942.0,
+            "c": "#38BDF8",
+            "op": "+"
+          },
+          {
+            "label": "Financing cash flow",
+            "val": -1624.0,
+            "c": "#FBBF24",
+            "op": "\u2212"
+          }
+        ],
+        "result": {
+          "label": "Net cash movement",
+          "val": -2571.0,
+          "c": "#FB7185"
+        },
+        "note": "Consolidated cash-flow table \u00b7 Mar 2026 \u00b7 profit is not the same as cash",
+        "color": "#34D399",
+        "decimals": 2,
+        "dur": 50.108
+      }
+    },
+    {
+      "id": "s99_recap",
+      "type": "fa_recap",
+      "in_seconds": 2871.372,
+      "out_seconds": 2898.012,
+      "props": {
+        "kicker": "CHAPTER 01 \u00b7 RECAP",
+        "title": "Five questions for every company",
+        "items": [
+          "What products and services create revenue?",
+          "Are sales and operating profit compounding together?",
+          "What assets and borrowings fund that growth?",
+          "Does accounting profit convert into operating cash?",
+          "Which cycle, regulation or execution risk can break the thesis?"
+        ],
+        "closer": "Read the three statements as one connected system, then verify the notes.",
+        "dur": 27.14
+      }
+    }
+  ],
+  "captions": [],
+  "audio": {
+    "narration": {
+      "src": "mc/ch01.wav",
+      "volume": 1.0
+    }
+  }
+}

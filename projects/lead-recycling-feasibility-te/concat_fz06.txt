@@ -1,0 +1,5 @@
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-feasibility-te/assets/v06_players.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-feasibility-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-feasibility-te/assets/v06_feedmath.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-feasibility-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/lead-recycling-feasibility-te/assets/v06_win.wav'

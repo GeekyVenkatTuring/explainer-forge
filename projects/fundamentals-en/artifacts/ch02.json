@@ -1,0 +1,1099 @@
+{
+ "cuts": [
+  {
+   "id": "ch02_s01_divider",
+   "type": "fa_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 20.542,
+   "props": {
+    "n": 2,
+    "title": "Margins",
+    "sub": "how much of each rupee you actually keep",
+    "color": "#34D399",
+    "total": 7,
+    "dur": 21.042
+   }
+  },
+  {
+   "id": "ch02_s02_analogy",
+   "type": "fa_analogy",
+   "in_seconds": 21.042,
+   "out_seconds": 56.124,
+   "props": {
+    "kicker": "ANALOGY \u00b7 THE KEEP-RATE",
+    "title": "A margin is your keep-rate",
+    "left": {
+     "emoji": "\ud83d\udcb5",
+     "label": "\u20b9100 comes in",
+     "cap": "Every sale brings money through the door.",
+     "c": "#38BDF8"
+    },
+    "right": {
+     "emoji": "\ud83e\ude99",
+     "label": "\u20b97 you keep",
+     "cap": "After every cost, this is what stays with you.",
+     "c": "#34D399"
+    },
+    "note": "Net margin is just that keep-rate as a percentage. For Ardee, about seven rupees in every hundred.",
+    "color": "#34D399",
+    "dur": 35.582
+   }
+  },
+  {
+   "id": "ch02_s03_what",
+   "type": "fa_keyidea",
+   "in_seconds": 56.624,
+   "out_seconds": 91.37,
+   "props": {
+    "kicker": "WHAT A MARGIN IS",
+    "color": "#34D399",
+    "big": "A margin is a profit line, divided by revenue \u2014 shown as a percentage.",
+    "sub": "It turns a rupee figure into a rate you can compare across companies of any size.",
+    "dur": 35.246
+   }
+  },
+  {
+   "id": "ch02_s04_net",
+   "type": "fa_formula",
+   "in_seconds": 91.87,
+   "out_seconds": 127.746,
+   "props": {
+    "kicker": "MARGIN 1 \u00b7 NET MARGIN",
+    "title": "The keep-rate, as a formula",
+    "name": "Net margin  =  Net profit  \u00f7  Revenue",
+    "num": [
+     {
+      "label": "Net profit (PAT)",
+      "val": 85,
+      "c": "#34D399"
+     }
+    ],
+    "den": [
+     {
+      "label": "Revenue",
+      "val": 1168,
+      "c": "#38BDF8"
+     }
+    ],
+    "op": "\u00f7",
+    "result": {
+     "label": "Net margin \u2014 rupees kept per \u20b9100 of sales",
+     "val": 7.3,
+     "unit": "%",
+     "decimals": 1,
+     "c": "#34D399"
+    },
+    "note": "Ardee FY26 (approx). \u20b985 profit on \u20b91,168 revenue.",
+    "color": "#34D399",
+    "dur": 36.376
+   }
+  },
+  {
+   "id": "ch02_s05_ladder",
+   "type": "fa_bars",
+   "in_seconds": 128.246,
+   "out_seconds": 167.648,
+   "props": {
+    "kicker": "THE LADDER OF MARGINS",
+    "title": "Each layer of cost keeps a little less",
+    "unit": "%",
+    "decimals": 1,
+    "bars": [
+     {
+      "label": "EBITDA margin",
+      "val": 12.6,
+      "c": "#34D399",
+      "note": "core engine"
+     },
+     {
+      "label": "Operating margin",
+      "val": 10.9,
+      "c": "#2DD4BF",
+      "note": "after depreciation"
+     },
+     {
+      "label": "Net margin",
+      "val": 7.3,
+      "c": "#38BDF8",
+      "note": "after interest & tax"
+     }
+    ],
+    "note": "Same company, three margins. Each step down is another layer of cost.",
+    "color": "#34D399",
+    "dur": 39.902
+   }
+  },
+  {
+   "id": "ch02_s06_ebitda_m",
+   "type": "fa_formula",
+   "in_seconds": 168.148,
+   "out_seconds": 199.776,
+   "props": {
+    "kicker": "MARGIN 2 \u00b7 EBITDA MARGIN",
+    "title": "The margin analysts quote most",
+    "name": "EBITDA margin  =  EBITDA  \u00f7  Revenue",
+    "num": [
+     {
+      "label": "EBITDA",
+      "val": 147,
+      "c": "#34D399"
+     }
+    ],
+    "den": [
+     {
+      "label": "Revenue",
+      "val": 1168,
+      "c": "#38BDF8"
+     }
+    ],
+    "op": "\u00f7",
+    "result": {
+     "label": "EBITDA margin \u2014 profitability of the core operation",
+     "val": 12.6,
+     "unit": "%",
+     "decimals": 1,
+     "c": "#34D399"
+    },
+    "note": "The cleanest margin for comparing two companies' core operations.",
+    "color": "#34D399",
+    "dur": 32.128
+   }
+  },
+  {
+   "id": "ch02_s07_gauge",
+   "type": "fa_gauge",
+   "in_seconds": 200.276,
+   "out_seconds": 235.288,
+   "props": {
+    "kicker": "READING THE NEEDLE",
+    "title": "Is a 7% net margin good?",
+    "value": 7.3,
+    "min": 0,
+    "max": 30,
+    "unit": "%",
+    "zones": [
+     {
+      "to": 6,
+      "c": "#F87171",
+      "label": "thin"
+     },
+     {
+      "to": 15,
+      "c": "#FBBF24",
+      "label": "typical"
+     },
+     {
+      "to": 30,
+      "c": "#34D399",
+      "label": "fat"
+     }
+    ],
+    "caption": "Thin margins are normal for commodity businesses. Brands and software sit far to the right.",
+    "note": "Judge a margin against its industry, never in isolation.",
+    "color": "#34D399",
+    "dur": 35.512
+   }
+  },
+  {
+   "id": "ch02_s08_compare",
+   "type": "fa_bars",
+   "in_seconds": 235.788,
+   "out_seconds": 272.72,
+   "props": {
+    "kicker": "SAME BUSINESS \u00b7 THREE RIVALS",
+    "title": "EBITDA margin: Ardee vs Gravita vs Pondy",
+    "unit": "%",
+    "decimals": 1,
+    "bars": [
+     {
+      "label": "Ardee",
+      "val": 12.6,
+      "c": "#2DD4BF",
+      "note": "highest keep-rate"
+     },
+     {
+      "label": "Gravita",
+      "val": 10.6,
+      "c": "#818CF8",
+      "note": "the scaled leader"
+     },
+     {
+      "label": "Pondy",
+      "val": 7.4,
+      "c": "#FB923C",
+      "note": "thinnest"
+     }
+    ],
+    "note": "All three recycle lead. Ardee keeps the most per rupee \u2014 its operating edge.",
+    "color": "#2DD4BF",
+    "dur": 37.432
+   }
+  },
+  {
+   "id": "ch02_s09_type",
+   "type": "fa_keyidea",
+   "in_seconds": 273.22,
+   "out_seconds": 309.936,
+   "props": {
+    "kicker": "WHAT MARGINS REVEAL",
+    "color": "#A78BFA",
+    "big": "Margin is a fingerprint of the business model.",
+    "sub": "Fat margins hint at pricing power or a brand. Thin margins mean price is set by the market.",
+    "dur": 37.216
+   }
+  },
+  {
+   "id": "ch02_s10_trap",
+   "type": "fa_keyidea",
+   "in_seconds": 310.436,
+   "out_seconds": 351.04,
+   "props": {
+    "kicker": "THE TRAP \u00b7 MARGIN ISN'T EVERYTHING",
+    "color": "#2DD4BF",
+    "big": "A thin margin can still be a great business \u2014 if the money turns over fast enough.",
+    "sub": "A supermarket keeps \u20b93 per \u20b9100, but sells its entire stock many times a year.",
+    "dur": 41.104
+   }
+  },
+  {
+   "id": "ch02_s11_recap",
+   "type": "fa_recap",
+   "in_seconds": 351.54,
+   "out_seconds": 400.542,
+   "props": {
+    "kicker": "RECAP \u00b7 CHAPTER 2",
+    "title": "Margins in one breath",
+    "items": [
+     "A margin = a profit line \u00f7 revenue, shown as a %",
+     "It turns rupees into a rate you can compare at any size",
+     "The ladder: EBITDA margin \u2192 operating \u2192 net (each keeps less)",
+     "Ardee net margin \u2248 7.3%, EBITDA margin \u2248 12.6%",
+     "Ardee's EBITDA margin beats Gravita and Pondy \u2014 an operating edge",
+     "Judge a margin by its industry, never alone",
+     "Thin margin + fast turnover can still be a great business"
+    ],
+    "closer": "Margins show the keep-rate. Next: how hard the money works.",
+    "color": "#34D399",
+    "dur": 49.502
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.025,
+   "Chapter two."
+  ],
+  [
+   1.025,
+   1.538,
+   "Margins."
+  ],
+  [
+   2.088,
+   3.626,
+   "In chapter one,"
+  ],
+  [
+   3.626,
+   5.676,
+   "we watched revenue fall,"
+  ],
+  [
+   5.676,
+   7.214,
+   "step by step,"
+  ],
+  [
+   7.214,
+   8.752,
+   "down to profit."
+  ],
+  [
+   8.752,
+   12.853,
+   "A margin simply measures how big each of"
+  ],
+  [
+   12.853,
+   14.391,
+   "those steps is."
+  ],
+  [
+   14.391,
+   18.492,
+   "It's the single fastest way to judge the"
+  ],
+  [
+   18.492,
+   20.542,
+   "quality of a business."
+  ],
+  [
+   21.042,
+   24.338,
+   "Here's the whole idea in one picture."
+  ],
+  [
+   24.888,
+   28.655,
+   "Imagine one hundred rupees walks in the door"
+  ],
+  [
+   28.655,
+   29.597,
+   "as revenue."
+  ],
+  [
+   29.597,
+   33.364,
+   "By the time all the costs are paid,"
+  ],
+  [
+   33.364,
+   37.131,
+   "only a few rupees stay in your pocket."
+  ],
+  [
+   37.681,
+   40.035,
+   "That keep-rate is the margin."
+  ],
+  [
+   40.035,
+   40.977,
+   "For Ardee,"
+  ],
+  [
+   40.977,
+   44.273,
+   "out of every hundred rupees of sales,"
+  ],
+  [
+   44.273,
+   47.569,
+   "only about seven rupees survive as profit."
+  ],
+  [
+   47.569,
+   51.336,
+   "So its net margin is roughly seven percent."
+  ],
+  [
+   51.886,
+   54.711,
+   "A higher keep-rate means a stronger,"
+  ],
+  [
+   54.711,
+   56.124,
+   "more valuable business."
+  ],
+  [
+   56.624,
+   58.463,
+   "Let's define it properly."
+  ],
+  [
+   59.013,
+   61.771,
+   "A margin is any profit line,"
+  ],
+  [
+   61.771,
+   63.15,
+   "divided by revenue."
+  ],
+  [
+   63.15,
+   65.908,
+   "We write it as a percentage."
+  ],
+  [
+   66.458,
+   69.675,
+   "Why bother turning rupees into a percentage?"
+  ],
+  [
+   69.675,
+   73.353,
+   "Because it lets you compare a tiny company"
+  ],
+  [
+   73.353,
+   74.732,
+   "with a giant."
+  ],
+  [
+   74.732,
+   77.49,
+   "Profit in rupees depends on size."
+  ],
+  [
+   77.49,
+   78.869,
+   "Margin does not."
+  ],
+  [
+   79.419,
+   83.096,
+   "A small shop and a huge factory can"
+  ],
+  [
+   83.096,
+   85.854,
+   "both have a twenty percent margin,"
+  ],
+  [
+   85.854,
+   89.531,
+   "and that tells you they keep the same"
+  ],
+  [
+   89.531,
+   91.37,
+   "share of every sale."
+  ],
+  [
+   91.87,
+   95.299,
+   "Start with the margin you already understand."
+  ],
+  [
+   95.299,
+   96.278,
+   "Net margin."
+  ],
+  [
+   96.828,
+   98.298,
+   "Take net profit,"
+  ],
+  [
+   98.298,
+   100.747,
+   "and divide it by revenue."
+  ],
+  [
+   100.747,
+   103.685,
+   "Ardee's eighty five crore of profit,"
+  ],
+  [
+   103.685,
+   107.114,
+   "divided by eleven sixty eight of revenue,"
+  ],
+  [
+   107.114,
+   110.053,
+   "is about seven point three percent."
+  ],
+  [
+   110.603,
+   112.562,
+   "That's the final keep-rate,"
+  ],
+  [
+   112.562,
+   114.521,
+   "after every single cost."
+  ],
+  [
+   114.521,
+   118.44,
+   "For a business that just buys and melts"
+  ],
+  [
+   118.44,
+   118.93,
+   "metal,"
+  ],
+  [
+   118.93,
+   121.379,
+   "seven percent is actually decent."
+  ],
+  [
+   121.379,
+   124.807,
+   "Now let's climb back up the ladder,"
+  ],
+  [
+   124.807,
+   127.746,
+   "and meet the margins above it."
+  ],
+  [
+   128.246,
+   130.88,
+   "A company doesn't have one margin."
+  ],
+  [
+   130.88,
+   133.953,
+   "It has a whole ladder of them."
+  ],
+  [
+   134.503,
+   137.576,
+   "At the top sits the EBITDA margin,"
+  ],
+  [
+   137.576,
+   138.892,
+   "the core engine,"
+  ],
+  [
+   138.892,
+   140.648,
+   "twelve point six percent."
+  ],
+  [
+   140.648,
+   141.965,
+   "Take out depreciation,"
+  ],
+  [
+   141.965,
+   144.599,
+   "and you get the operating margin,"
+  ],
+  [
+   144.599,
+   145.916,
+   "about eleven percent."
+  ],
+  [
+   146.466,
+   148.661,
+   "Take out interest and tax,"
+  ],
+  [
+   148.661,
+   151.734,
+   "and you drop to the net margin,"
+  ],
+  [
+   151.734,
+   153.051,
+   "seven point three."
+  ],
+  [
+   153.051,
+   154.368,
+   "Notice the pattern."
+  ],
+  [
+   154.368,
+   157.879,
+   "Each step down the ladder is another layer"
+  ],
+  [
+   157.879,
+   159.635,
+   "of cost being paid."
+  ],
+  [
+   160.185,
+   163.697,
+   "The gap between the top and the bottom"
+  ],
+  [
+   163.697,
+   167.209,
+   "tells you where a company's money is really"
+  ],
+  [
+   167.209,
+   167.648,
+   "going."
+  ],
+  [
+   168.148,
+   172.025,
+   "The margin you'll hear quoted most is the"
+  ],
+  [
+   172.025,
+   172.994,
+   "EBITDA margin."
+  ],
+  [
+   173.544,
+   174.513,
+   "It's EBITDA,"
+  ],
+  [
+   174.513,
+   175.967,
+   "divided by revenue."
+  ],
+  [
+   175.967,
+   176.936,
+   "For Ardee,"
+  ],
+  [
+   176.936,
+   180.812,
+   "that's one forty seven over eleven sixty eight,"
+  ],
+  [
+   180.812,
+   182.751,
+   "twelve point six percent."
+  ],
+  [
+   183.301,
+   187.177,
+   "Analysts love it because it strips out how"
+  ],
+  [
+   187.177,
+   190.085,
+   "a company is financed and taxed."
+  ],
+  [
+   190.085,
+   193.961,
+   "So it compares two businesses on their operations"
+  ],
+  [
+   193.961,
+   194.446,
+   "alone."
+  ],
+  [
+   194.446,
+   197.353,
+   "It's the fairest way to ask,"
+  ],
+  [
+   197.353,
+   199.776,
+   "whose core engine is stronger?"
+  ],
+  [
+   200.276,
+   200.754,
+   "So,"
+  ],
+  [
+   200.754,
+   203.619,
+   "is seven percent good or bad?"
+  ],
+  [
+   204.169,
+   206.08,
+   "The honest answer is,"
+  ],
+  [
+   206.08,
+   208.468,
+   "it depends on the industry."
+  ],
+  [
+   208.468,
+   212.289,
+   "A business that buys and sells a commodity,"
+  ],
+  [
+   212.289,
+   213.244,
+   "like metal,"
+  ],
+  [
+   213.244,
+   216.11,
+   "will always run on thin margins."
+  ],
+  [
+   216.11,
+   218.976,
+   "That's the nature of the game."
+  ],
+  [
+   219.526,
+   223.347,
+   "A strong consumer brand might keep twenty or"
+  ],
+  [
+   223.347,
+   224.302,
+   "thirty percent."
+  ],
+  [
+   224.302,
+   225.735,
+   "A software company,"
+  ],
+  [
+   225.735,
+   226.691,
+   "even more."
+  ],
+  [
+   226.691,
+   229.556,
+   "So never judge a margin alone."
+  ],
+  [
+   229.556,
+   232.9,
+   "Always compare it to its own industry,"
+  ],
+  [
+   232.9,
+   235.288,
+   "and to its own past."
+  ],
+  [
+   235.788,
+   238.693,
+   "Now watch margins do real work."
+  ],
+  [
+   239.243,
+   241.664,
+   "Here are our three recyclers,"
+  ],
+  [
+   241.664,
+   244.085,
+   "all in the same business."
+  ],
+  [
+   244.085,
+   247.959,
+   "Ardee's EBITDA margin is twelve point six percent."
+  ],
+  [
+   247.959,
+   248.443,
+   "Gravita,"
+  ],
+  [
+   248.443,
+   250.864,
+   "the largest and most respected,"
+  ],
+  [
+   250.864,
+   252.801,
+   "is ten point six."
+  ],
+  [
+   252.801,
+   255.222,
+   "And Pondy is the thinnest,"
+  ],
+  [
+   255.222,
+   257.159,
+   "at seven point four."
+  ],
+  [
+   257.709,
+   260.615,
+   "This one chart says a lot."
+  ],
+  [
+   260.615,
+   264.488,
+   "Ardee squeezes the most profit out of every"
+  ],
+  [
+   264.488,
+   265.941,
+   "rupee of sales."
+  ],
+  [
+   265.941,
+   269.815,
+   "That operating edge is the first real clue"
+  ],
+  [
+   269.815,
+   272.72,
+   "that its business is running well."
+  ],
+  [
+   273.22,
+   274.157,
+   "Step back,"
+  ],
+  [
+   274.157,
+   277.906,
+   "and margins tell you what kind of business"
+  ],
+  [
+   277.906,
+   279.312,
+   "you're looking at."
+  ],
+  [
+   279.862,
+   283.143,
+   "Fat margins are a signal of power."
+  ],
+  [
+   283.143,
+   285.017,
+   "Maybe a strong brand,"
+  ],
+  [
+   285.017,
+   285.954,
+   "a patent,"
+  ],
+  [
+   285.954,
+   289.235,
+   "or a product customers can't easily replace."
+  ],
+  [
+   289.235,
+   292.047,
+   "The company sets its own price."
+  ],
+  [
+   292.597,
+   294.94,
+   "Thin margins mean the opposite."
+  ],
+  [
+   294.94,
+   297.283,
+   "The market sets the price,"
+  ],
+  [
+   297.283,
+   301.032,
+   "and the company just has to accept it."
+  ],
+  [
+   301.032,
+   302.438,
+   "That's why steel,"
+  ],
+  [
+   302.438,
+   305.25,
+   "cement and metals all run thin."
+  ],
+  [
+   305.25,
+   308.999,
+   "The margin is a fingerprint of the business"
+  ],
+  [
+   308.999,
+   309.936,
+   "model itself."
+  ],
+  [
+   310.436,
+   312.411,
+   "But here's the trap."
+  ],
+  [
+   312.411,
+   316.362,
+   "A thin margin is not automatically a bad"
+  ],
+  [
+   316.362,
+   316.855,
+   "business."
+  ],
+  [
+   317.405,
+   319.381,
+   "Think of a supermarket."
+  ],
+  [
+   319.381,
+   323.331,
+   "It might keep only three rupees on every"
+  ],
+  [
+   323.331,
+   323.825,
+   "hundred."
+  ],
+  [
+   323.825,
+   325.306,
+   "That sounds terrible."
+  ],
+  [
+   325.856,
+   329.807,
+   "But it sells its entire stock over and"
+  ],
+  [
+   329.807,
+   330.3,
+   "over,"
+  ],
+  [
+   330.3,
+   332.276,
+   "many times a year."
+  ],
+  [
+   332.276,
+   333.263,
+   "Small margin,"
+  ],
+  [
+   333.263,
+   334.251,
+   "huge volume,"
+  ],
+  [
+   334.251,
+   336.72,
+   "and the profits add up."
+  ],
+  [
+   336.72,
+   340.67,
+   "So margin alone is only half the story."
+  ],
+  [
+   340.67,
+   344.621,
+   "The other half is how fast the money"
+  ],
+  [
+   344.621,
+   345.608,
+   "turns over."
+  ],
+  [
+   345.608,
+   349.065,
+   "And that is exactly what returns measure."
+  ],
+  [
+   349.065,
+   351.04,
+   "Which is chapter three."
+  ],
+  [
+   351.54,
+   353.908,
+   "Let's lock in chapter two."
+  ],
+  [
+   354.458,
+   358.246,
+   "A margin is a profit line divided by"
+  ],
+  [
+   358.246,
+   358.719,
+   "revenue,"
+  ],
+  [
+   358.719,
+   360.613,
+   "written as a percentage."
+  ],
+  [
+   360.613,
+   363.454,
+   "It turns rupees into a rate,"
+  ],
+  [
+   363.454,
+   366.769,
+   "so you can compare any two companies."
+  ],
+  [
+   366.769,
+   369.137,
+   "There's a ladder of them,"
+  ],
+  [
+   369.137,
+   371.978,
+   "from EBITDA margin at the top,"
+  ],
+  [
+   371.978,
+   373.872,
+   "down to net margin."
+  ],
+  [
+   374.422,
+   378.21,
+   "Ardee keeps about seven rupees in every hundred,"
+  ],
+  [
+   378.21,
+   381.998,
+   "and its EBITDA margin beats both Gravita and"
+  ],
+  [
+   381.998,
+   382.472,
+   "Pondy."
+  ],
+  [
+   382.472,
+   385.786,
+   "Always judge a margin against its industry."
+  ],
+  [
+   386.336,
+   387.283,
+   "And remember,"
+  ],
+  [
+   387.283,
+   391.072,
+   "a thin margin with fast turnover can still"
+  ],
+  [
+   391.072,
+   392.019,
+   "be excellent."
+  ],
+  [
+   392.019,
+   392.966,
+   "That link,"
+  ],
+  [
+   392.966,
+   394.86,
+   "between margin and speed,"
+  ],
+  [
+   394.86,
+   396.754,
+   "is where returns begin."
+  ],
+  [
+   396.754,
+   399.121,
+   "See you in chapter three."
+  ],
+  [
+   399.121,
+   400.542,
+   "Thanks for watching."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "fa/ch02.wav",
+   "volume": 1.0
+  }
+ }
+}

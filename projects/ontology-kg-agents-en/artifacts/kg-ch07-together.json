@@ -1,0 +1,1713 @@
+{
+ "cuts": [
+  {
+   "id": "kg-ch07-together_divider",
+   "type": "kg_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 9.543,
+   "props": {
+    "n": 6,
+    "title": "Put It Together",
+    "sub": "the full architecture, an adoption path, and how to start Monday",
+    "color": "#818CF8",
+    "layer": -1,
+    "dur": 10.043
+   }
+  },
+  {
+   "id": "kg-ch07-together_architecture",
+   "type": "kg_architecture",
+   "in_seconds": 10.043,
+   "out_seconds": 73.58,
+   "props": {
+    "foot": "One coherent stack \u2014 every layer earns its place, and the agent sees all of it.",
+    "dur": 64.037
+   }
+  },
+  {
+   "id": "kg-ch07-together_dayinlife",
+   "type": "kg_cards",
+   "in_seconds": 74.08,
+   "out_seconds": 123.541,
+   "props": {
+    "kicker": "A DAY IN THE LIFE",
+    "title": "Three questions the living map answers for you",
+    "color": "#818CF8",
+    "cards": [
+     {
+      "head": "\u201cWhat breaks if\u2026?\u201d",
+      "emoji": "\ud83d\udca5",
+      "body": "Impact analysis before any change \u2014 the cascade simulation from part three.",
+      "tag": "change"
+     },
+     {
+      "head": "\u201cWhy is this wrong?\u201d",
+      "emoji": "\ud83d\udd0e",
+      "body": "Autonomous root cause across data, code, and logs \u2014 the traversal from part five.",
+      "tag": "incident"
+     },
+     {
+      "head": "\u201cHow does this work?\u201d",
+      "emoji": "\ud83e\udded",
+      "body": "A new hire asks the graph and gets the real architecture, not tribal knowledge.",
+      "tag": "onboard"
+     }
+    ],
+    "foot": "This is the \u2018use it every day\u2019 payoff: three threads of Slack become three answered questions.",
+    "dur": 49.961
+   }
+  },
+  {
+   "id": "kg-ch07-together_adopt",
+   "type": "kg_timeline",
+   "in_seconds": 124.041,
+   "out_seconds": 189.214,
+   "props": {
+    "kicker": "START MONDAY \u00b7 THE ADOPTION PATH",
+    "title": "You build one layer at a time \u2014 each is useful on its own",
+    "color": "#818CF8",
+    "steps": [
+     {
+      "label": "Model the ontology",
+      "sub": "20 core entities and their links \u2014 the shared words for your domain"
+     },
+     {
+      "label": "Build the graph",
+      "sub": "wire 2\u20133 sources, resolve entities, ship one multi-hop query"
+     },
+     {
+      "label": "Make it live",
+      "sub": "stream telemetry into node state \u2014 now it's a twin"
+     },
+     {
+      "label": "Add the agent",
+      "sub": "GraphRAG + typed actions + SHACL guardrails"
+     }
+    ],
+    "foot": "Each step ships value before the next one starts. Never a two-year moonshot.",
+    "dur": 65.673
+   }
+  },
+  {
+   "id": "kg-ch07-together_buildbuy",
+   "type": "kg_compare",
+   "in_seconds": 189.714,
+   "out_seconds": 247.756,
+   "props": {
+    "kicker": "BUILD vs BUY",
+    "title": "A quick decision guide for the whole stack",
+    "color": "#818CF8",
+    "left": {
+     "head": "Assemble open-source",
+     "sub": "control",
+     "c": "#34D399",
+     "rows": [
+      "Neo4j or RDF + GraphRAG + LangGraph + MCP.",
+      "Maximum control, low license cost.",
+      "You own the integration work.",
+      "Best for custom or unusual domains."
+     ]
+    },
+    "right": {
+     "head": "Adopt a platform",
+     "sub": "speed",
+     "c": "#A78BFA",
+     "rows": [
+      "Palantir Foundry or Azure Digital Twins.",
+      "Faster to value, governance built in.",
+      "Less glue code, more opinions.",
+      "Best when speed beats fine control."
+     ]
+    },
+    "foot": "Most teams start open-source on one use case, then buy where scale and governance demand it.",
+    "dur": 58.542
+   }
+  },
+  {
+   "id": "kg-ch07-together_pitfalls",
+   "type": "kg_cards",
+   "in_seconds": 248.256,
+   "out_seconds": 305.273,
+   "props": {
+    "kicker": "WHAT GOES WRONG",
+    "title": "The four failure modes to design against",
+    "color": "#F87171",
+    "cards": [
+     {
+      "head": "Over-modeling",
+      "emoji": "\ud83d\udc18",
+      "body": "A perfect 500-class ontology no one finishes. Start with 20 that earn their keep.",
+      "tag": "ontology"
+     },
+     {
+      "head": "The stale twin",
+      "emoji": "\ud83d\udd70\ufe0f",
+      "body": "Telemetry drifts and the model lies. An out-of-date twin is worse than none.",
+      "tag": "twin"
+     },
+     {
+      "head": "Skipping resolution",
+      "emoji": "\ud83d\udc65",
+      "body": "No entity resolution \u2192 duplicate nodes \u2192 quietly wrong answers everywhere.",
+      "tag": "graph"
+     },
+     {
+      "head": "Ungoverned agents",
+      "emoji": "\ud83d\udd25",
+      "body": "Untyped actions and no SHACL gate \u2192 a confident agent doing real damage.",
+      "tag": "agent"
+     }
+    ],
+    "foot": "Every one of these is a discipline problem, not a technology problem.",
+    "dur": 57.517
+   }
+  },
+  {
+   "id": "kg-ch07-together_metrics",
+   "type": "kg_cards",
+   "in_seconds": 305.773,
+   "out_seconds": 356.475,
+   "props": {
+    "kicker": "PROVE IT'S WORKING",
+    "title": "The numbers that show the map is earning its keep",
+    "color": "#818CF8",
+    "cards": [
+     {
+      "head": "MTTR down",
+      "emoji": "\u23f1\ufe0f",
+      "body": "Mean time to resolve incidents \u2014 the clearest before-and-after number you have.",
+      "tag": "incidents"
+     },
+     {
+      "head": "Self-served answers",
+      "emoji": "\ud83d\udcac",
+      "body": "Questions answered by the graph instead of by a senior engineer's DMs.",
+      "tag": "leverage"
+     },
+     {
+      "head": "Coverage",
+      "emoji": "\ud83d\udcca",
+      "body": "The share of your systems and sources actually modeled and kept live.",
+      "tag": "growth"
+     }
+    ],
+    "foot": "Pick one, baseline it before you start, and let the graph earn the next round of investment.",
+    "dur": 51.202
+   }
+  },
+  {
+   "id": "kg-ch07-together_roles",
+   "type": "kg_cards",
+   "in_seconds": 356.975,
+   "out_seconds": 414.911,
+   "props": {
+    "kicker": "WHO BUILDS THE LIVING MAP",
+    "title": "Three hats \u2014 sometimes worn by two people",
+    "color": "#818CF8",
+    "cards": [
+     {
+      "head": "Ontologist / domain expert",
+      "emoji": "\ud83e\udd89",
+      "body": "Owns the shared meaning. Usually a senior engineer who knows the domain \u2014 not a PhD in logic.",
+      "tag": "meaning"
+     },
+     {
+      "head": "Graph / data engineer",
+      "emoji": "\ud83c\udfd7\ufe0f",
+      "body": "Owns construction, entity resolution, validation, and performance \u2014 the whole substrate.",
+      "tag": "substrate"
+     },
+     {
+      "head": "Agent engineer",
+      "emoji": "\ud83e\udd16",
+      "body": "Owns retrieval, tools, guardrails, and evaluation \u2014 the acting mind on top.",
+      "tag": "agents"
+     }
+    ],
+    "foot": "Add a graph-ML specialist when GNNs enter the picture. You don't need a big team to start.",
+    "dur": 58.436
+   }
+  },
+  {
+   "id": "kg-ch07-together_future",
+   "type": "kg_cards",
+   "in_seconds": 415.411,
+   "out_seconds": 479.109,
+   "props": {
+    "kicker": "WHERE THIS IS GOING",
+    "title": "The 2026 convergence \u2014 and why it matters now",
+    "color": "#818CF8",
+    "cards": [
+     {
+      "head": "Ontology \u2a1d Agents",
+      "emoji": "\ud83e\udd1d",
+      "body": "Ontology-to-agent pipelines like Neo4j Aura Agent and Palantir + NVIDIA are becoming products.",
+      "tag": "convergence"
+     },
+     {
+      "head": "Physical-AI twins",
+      "emoji": "\ud83e\udd16",
+      "body": "Omniverse & OpenUSD extend this exact stack to robots, factories, and cities.",
+      "tag": "frontier"
+     },
+     {
+      "head": "Neuro-symbolic default",
+      "emoji": "\u2696\ufe0f",
+      "body": "LLM-proposes / graph-verifies is becoming the standard pattern for trustworthy AI.",
+      "tag": "standard"
+     }
+    ],
+    "foot": "The five topics are collapsing into one discipline \u2014 and the teams that see it early win.",
+    "dur": 64.198
+   }
+  },
+  {
+   "id": "kg-ch07-together_recap",
+   "type": "kg_recap",
+   "in_seconds": 479.609,
+   "out_seconds": 537.043,
+   "props": {
+    "kicker": "RECAP \u00b7 THE WHOLE MAP",
+    "title": "The living map in one breath",
+    "closer": "Give your machines a world \u2014 and they'll stop guessing, and start knowing.",
+    "items": [
+     "Ontology = meaning: the shared grammar of entities, relations, and rules.",
+     "Knowledge graph = memory: the ontology filled with resolved, real instances.",
+     "Digital twin = live senses: the graph synced to reality, able to simulate.",
+     "Graph engineering = the body: building, validating, querying, learning at scale.",
+     "Agentic engineering = the mind: retrieve, reason, and act \u2014 grounded and governed.",
+     "Build bottom-up on your own sources; each layer ships value before the next."
+    ],
+    "dur": 57.934
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.713,
+   "Part six."
+  ],
+  [
+   0.713,
+   1.782,
+   "Putting it together."
+  ],
+  [
+   2.414,
+   4.553,
+   "Let's zoom all the way out,"
+  ],
+  [
+   4.553,
+   6.691,
+   "see the whole machine at once,"
+  ],
+  [
+   6.691,
+   9.543,
+   "and then figure out how you actually start."
+  ],
+  [
+   10.043,
+   13.029,
+   "Here is the entire architecture on one screen."
+  ],
+  [
+   13.661,
+   14.78,
+   "At the bottom,"
+  ],
+  [
+   14.78,
+   16.646,
+   "your six sources \u2014 wiki,"
+  ],
+  [
+   16.646,
+   17.02,
+   "repo,"
+  ],
+  [
+   17.02,
+   17.393,
+   "SQL,"
+  ],
+  [
+   17.393,
+   17.766,
+   "Cosmos,"
+  ],
+  [
+   17.766,
+   18.139,
+   "Blob,"
+  ],
+  [
+   18.139,
+   20.006,
+   "and logs \u2014 flow upward."
+  ],
+  [
+   20.637,
+   22.13,
+   "They feed the ontology,"
+  ],
+  [
+   22.13,
+   23.996,
+   "which gives them shared meaning."
+  ],
+  [
+   24.628,
+   25.375,
+   "The ontology,"
+  ],
+  [
+   25.375,
+   26.867,
+   "filled with resolved data,"
+  ],
+  [
+   26.867,
+   29.48,
+   "becomes the knowledge graph \u2014 the memory."
+  ],
+  [
+   30.112,
+   33.098,
+   "Telemetry turns that graph into a live digital"
+  ],
+  [
+   33.098,
+   34.591,
+   "twin \u2014 the senses."
+  ],
+  [
+   35.222,
+   35.969,
+   "Graph engineering,"
+  ],
+  [
+   35.969,
+   37.088,
+   "all around it,"
+  ],
+  [
+   37.088,
+   38.208,
+   "keeps it built,"
+  ],
+  [
+   38.208,
+   38.581,
+   "valid,"
+  ],
+  [
+   38.581,
+   40.448,
+   "and fast \u2014 the body."
+  ],
+  [
+   41.079,
+   42.572,
+   "And at the top,"
+  ],
+  [
+   42.572,
+   43.319,
+   "the agent,"
+  ],
+  [
+   43.319,
+   46.305,
+   "reasoning across every layer and acting for you"
+  ],
+  [
+   46.305,
+   47.424,
+   "\u2014 the mind."
+  ],
+  [
+   48.056,
+   50.669,
+   "Follow the flow rising up the spine:"
+  ],
+  [
+   50.669,
+   52.908,
+   "raw data enters at the bottom,"
+  ],
+  [
+   52.908,
+   53.655,
+   "and grounded,"
+  ],
+  [
+   53.655,
+   55.894,
+   "governed action comes out the top."
+  ],
+  [
+   56.526,
+   59.512,
+   "Every layer we spent the last hour on"
+  ],
+  [
+   59.512,
+   60.258,
+   "is here,"
+  ],
+  [
+   60.258,
+   63.244,
+   "and each one makes the next one possible."
+  ],
+  [
+   63.244,
+   66.23,
+   "This is the coherent whole those five separate"
+  ],
+  [
+   66.23,
+   68.843,
+   "blog-post topics were always trying to be."
+  ],
+  [
+   69.474,
+   72.46,
+   "Now \u2014 how do you get here without"
+  ],
+  [
+   72.46,
+   73.58,
+   "boiling the ocean?"
+  ],
+  [
+   74.08,
+   76.185,
+   "Let's make the day-to-day payoff concrete,"
+  ],
+  [
+   76.185,
+   78.991,
+   "because that's the whole point of building this."
+  ],
+  [
+   78.991,
+   81.096,
+   "Three questions you'll ask it constantly."
+  ],
+  [
+   81.727,
+   82.078,
+   "One:"
+  ],
+  [
+   82.078,
+   84.183,
+   "what breaks if I change this?"
+  ],
+  [
+   84.183,
+   86.989,
+   "That's impact analysis \u2014 the cascade simulation\nfrom"
+  ],
+  [
+   86.989,
+   89.444,
+   "part three \u2014 run before you ship,"
+  ],
+  [
+   89.444,
+   90.146,
+   "not after."
+  ],
+  [
+   90.778,
+   91.128,
+   "Two:"
+  ],
+  [
+   91.128,
+   92.531,
+   "why is this wrong?"
+  ],
+  [
+   92.531,
+   95.338,
+   "That's the autonomous root cause from part five,"
+  ],
+  [
+   95.338,
+   96.741,
+   "walking across your data,"
+  ],
+  [
+   96.741,
+   97.092,
+   "code,"
+  ],
+  [
+   97.092,
+   99.196,
+   "and logs to the real answer."
+  ],
+  [
+   99.828,
+   100.179,
+   "Three:"
+  ],
+  [
+   100.179,
+   101.933,
+   "how does this even work?"
+  ],
+  [
+   101.933,
+   104.739,
+   "A new engineer asks the graph and gets"
+  ],
+  [
+   104.739,
+   105.44,
+   "the actual,"
+  ],
+  [
+   105.44,
+   108.247,
+   "current architecture \u2014 not half-remembered tribal\nknowledge from"
+  ],
+  [
+   108.247,
+   109.65,
+   "whoever is still around."
+  ],
+  [
+   110.281,
+   113.088,
+   "Every one of these used to be a"
+  ],
+  [
+   113.088,
+   115.894,
+   "thread of Slack messages and a lost afternoon."
+  ],
+  [
+   116.525,
+   117.929,
+   "With the living map,"
+  ],
+  [
+   117.929,
+   119.682,
+   "they're just questions with answers."
+  ],
+  [
+   119.682,
+   122.489,
+   "That is what it means to use this"
+  ],
+  [
+   122.489,
+   123.541,
+   "every single day."
+  ],
+  [
+   124.041,
+   126.831,
+   "The trap is thinking this is a two-year"
+  ],
+  [
+   126.831,
+   127.18,
+   "moonshot."
+  ],
+  [
+   127.18,
+   127.877,
+   "It isn't."
+  ],
+  [
+   127.877,
+   130.668,
+   "You build it one layer at a time,"
+  ],
+  [
+   130.668,
+   133.458,
+   "and each layer is useful before the next"
+  ],
+  [
+   133.458,
+   134.155,
+   "one exists."
+  ],
+  [
+   134.787,
+   135.484,
+   "Step one:"
+  ],
+  [
+   135.484,
+   136.88,
+   "model a small ontology."
+  ],
+  [
+   136.88,
+   139.67,
+   "Twenty core entities for your domain \u2014 Report,"
+  ],
+  [
+   139.67,
+   140.018,
+   "Query,"
+  ],
+  [
+   140.018,
+   140.367,
+   "Table,"
+  ],
+  [
+   140.367,
+   140.716,
+   "Service,"
+  ],
+  [
+   140.716,
+   143.506,
+   "and so on \u2014 plus the key relationships."
+  ],
+  [
+   143.506,
+   144.552,
+   "A whiteboard afternoon,"
+  ],
+  [
+   144.552,
+   145.599,
+   "not a committee."
+  ],
+  [
+   146.23,
+   146.928,
+   "Step two:"
+  ],
+  [
+   146.928,
+   149.718,
+   "build the graph from just two or three"
+  ],
+  [
+   149.718,
+   150.067,
+   "sources,"
+  ],
+  [
+   150.067,
+   151.113,
+   "resolve the entities,"
+  ],
+  [
+   151.113,
+   153.903,
+   "and ship a single multi-hop query that used"
+  ],
+  [
+   153.903,
+   155.996,
+   "to take a human an hour."
+  ],
+  [
+   155.996,
+   158.089,
+   "That alone will win people over."
+  ],
+  [
+   158.72,
+   159.418,
+   "Step three:"
+  ],
+  [
+   159.418,
+   162.208,
+   "stream in telemetry so the graph reflects the"
+  ],
+  [
+   162.208,
+   164.998,
+   "live system \u2014 now you have a twin."
+  ],
+  [
+   165.63,
+   166.327,
+   "Step four:"
+  ],
+  [
+   166.327,
+   169.117,
+   "put an agent on top \u2014 GraphRAG for"
+  ],
+  [
+   169.117,
+   169.466,
+   "grounding,"
+  ],
+  [
+   169.466,
+   170.861,
+   "typed actions for safety,"
+  ],
+  [
+   170.861,
+   172.256,
+   "SHACL as the guardrail."
+  ],
+  [
+   172.888,
+   173.934,
+   "Notice the order."
+  ],
+  [
+   173.934,
+   174.632,
+   "Meaning first,"
+  ],
+  [
+   174.632,
+   175.329,
+   "then memory,"
+  ],
+  [
+   175.329,
+   176.027,
+   "then senses,"
+  ],
+  [
+   176.027,
+   177.073,
+   "then the mind."
+  ],
+  [
+   177.705,
+   180.495,
+   "Skip ahead \u2014 bolt an agent onto raw"
+  ],
+  [
+   180.495,
+   183.285,
+   "data with no graph \u2014 and you get"
+  ],
+  [
+   183.285,
+   184.331,
+   "exactly the confident,"
+  ],
+  [
+   184.331,
+   186.075,
+   "wrong chatbot everyone's tired of."
+  ],
+  [
+   186.075,
+   187.121,
+   "Build in order,"
+  ],
+  [
+   187.121,
+   189.214,
+   "and each step earns the next."
+  ],
+  [
+   189.714,
+   191.863,
+   "You'll face one big decision early:"
+  ],
+  [
+   191.863,
+   193.654,
+   "build it from open-source parts,"
+  ],
+  [
+   193.654,
+   195.086,
+   "or buy a platform?"
+  ],
+  [
+   195.086,
+   197.952,
+   "Here's a clean way to think about it."
+  ],
+  [
+   198.583,
+   201.449,
+   "Assembling open-source gives you maximum control\nand almost"
+  ],
+  [
+   201.449,
+   202.523,
+   "no license cost."
+  ],
+  [
+   202.523,
+   204.314,
+   "Neo4j or an RDF store,"
+  ],
+  [
+   204.314,
+   205.389,
+   "GraphRAG for retrieval,"
+  ],
+  [
+   205.389,
+   206.463,
+   "LangGraph for orchestration,"
+  ],
+  [
+   206.463,
+   207.538,
+   "MCP for tools."
+  ],
+  [
+   207.538,
+   210.403,
+   "The trade is that you own the integration"
+  ],
+  [
+   210.403,
+   210.761,
+   "work."
+  ],
+  [
+   210.761,
+   213.626,
+   "It's the right call for a custom or"
+  ],
+  [
+   213.626,
+   214.343,
+   "unusual domain."
+  ],
+  [
+   214.974,
+   217.123,
+   "Adopting a platform \u2014 Palantir Foundry,"
+  ],
+  [
+   217.123,
+   219.989,
+   "or Azure Digital Twins for our stack \u2014"
+  ],
+  [
+   219.989,
+   221.779,
+   "gets you to value faster,"
+  ],
+  [
+   221.779,
+   223.928,
+   "with governance and security built in."
+  ],
+  [
+   223.928,
+   226.794,
+   "The trade is less flexibility and more opinions"
+  ],
+  [
+   226.794,
+   227.51,
+   "baked in."
+  ],
+  [
+   227.51,
+   230.375,
+   "It's the right call when speed matters more"
+  ],
+  [
+   230.375,
+   231.45,
+   "than fine control."
+  ],
+  [
+   232.081,
+   232.798,
+   "And honestly,"
+  ],
+  [
+   232.798,
+   233.872,
+   "it's rarely all-or-nothing."
+  ],
+  [
+   233.872,
+   236.738,
+   "Most teams start open-source to prove one use"
+  ],
+  [
+   236.738,
+   237.454,
+   "case cheaply,"
+  ],
+  [
+   237.454,
+   240.319,
+   "then buy a platform for the parts where"
+  ],
+  [
+   240.319,
+   242.826,
+   "scale and governance become the hard problem."
+  ],
+  [
+   243.458,
+   244.891,
+   "Whichever way you go,"
+  ],
+  [
+   244.891,
+   247.756,
+   "someone has to build it \u2014 so who?"
+  ],
+  [
+   248.256,
+   250.537,
+   "Let me save you some scars."
+  ],
+  [
+   250.537,
+   251.678,
+   "Four failure modes,"
+  ],
+  [
+   251.678,
+   252.818,
+   "one per layer."
+  ],
+  [
+   253.45,
+   254.971,
+   "At the ontology layer:"
+  ],
+  [
+   254.971,
+   255.351,
+   "over-modeling."
+  ],
+  [
+   255.351,
+   258.392,
+   "Teams try to build the perfect five-hundred-class\nontology"
+  ],
+  [
+   258.392,
+   259.533,
+   "and never ship."
+  ],
+  [
+   259.533,
+   262.575,
+   "Start with twenty classes that earn their keep,"
+  ],
+  [
+   262.575,
+   263.335,
+   "and grow."
+  ],
+  [
+   263.967,
+   265.487,
+   "At the twin layer:"
+  ],
+  [
+   265.487,
+   265.868,
+   "staleness."
+  ],
+  [
+   265.868,
+   267.388,
+   "If your telemetry drifts,"
+  ],
+  [
+   267.388,
+   270.43,
+   "the model quietly starts lying \u2014 and an"
+  ],
+  [
+   270.43,
+   273.091,
+   "out-of-date twin is worse than no twin,"
+  ],
+  [
+   273.091,
+   274.612,
+   "because people trust it."
+  ],
+  [
+   275.244,
+   276.764,
+   "At the graph layer:"
+  ],
+  [
+   276.764,
+   277.905,
+   "skipping entity resolution."
+  ],
+  [
+   277.905,
+   280.947,
+   "We saw it \u2014 duplicate nodes give you"
+  ],
+  [
+   280.947,
+   282.467,
+   "confidently wrong answers everywhere."
+  ],
+  [
+   283.099,
+   285.0,
+   "And at the agent layer:"
+  ],
+  [
+   285.0,
+   285.76,
+   "no governance."
+  ],
+  [
+   285.76,
+   288.802,
+   "Untyped actions and no validation gate mean a"
+  ],
+  [
+   288.802,
+   291.083,
+   "confident agent can do real damage,"
+  ],
+  [
+   291.083,
+   291.463,
+   "fast."
+  ],
+  [
+   292.095,
+   292.855,
+   "Notice something."
+  ],
+  [
+   292.855,
+   295.897,
+   "Not one of these is a technology problem."
+  ],
+  [
+   295.897,
+   298.938,
+   "Every single one is a discipline problem \u2014"
+  ],
+  [
+   298.938,
+   301.98,
+   "which means every one is in your control."
+  ],
+  [
+   302.612,
+   305.273,
+   "So where is all of this heading?"
+  ],
+  [
+   305.773,
+   306.156,
+   "Finally,"
+  ],
+  [
+   306.156,
+   309.224,
+   "how do you prove it's working \u2014 so"
+  ],
+  [
+   309.224,
+   311.524,
+   "you get to keep building it?"
+  ],
+  [
+   311.524,
+   312.675,
+   "Track three numbers."
+  ],
+  [
+   313.306,
+   315.223,
+   "Mean time to resolve incidents."
+  ],
+  [
+   315.223,
+   317.524,
+   "This is the clearest before-and-after story:"
+  ],
+  [
+   317.524,
+   320.591,
+   "an afternoon of investigation becomes a two-minute\nanswer."
+  ],
+  [
+   320.591,
+   322.508,
+   "Baseline it before you start."
+  ],
+  [
+   323.14,
+   323.907,
+   "Self-served answers:"
+  ],
+  [
+   323.907,
+   326.974,
+   "how many questions the graph handles that used"
+  ],
+  [
+   326.974,
+   330.041,
+   "to land in a senior engineer's direct messages."
+  ],
+  [
+   330.041,
+   331.192,
+   "That's pure leverage,"
+  ],
+  [
+   331.192,
+   333.109,
+   "and people notice it fast."
+  ],
+  [
+   333.74,
+   334.507,
+   "And coverage:"
+  ],
+  [
+   334.507,
+   337.575,
+   "what share of your systems and sources are"
+  ],
+  [
+   337.575,
+   339.492,
+   "actually modeled and kept live."
+  ],
+  [
+   339.492,
+   341.025,
+   "That's your growth metric."
+  ],
+  [
+   341.657,
+   344.341,
+   "The move is simple \u2014 pick one,"
+  ],
+  [
+   344.341,
+   345.491,
+   "baseline it honestly,"
+  ],
+  [
+   345.491,
+   348.558,
+   "and let the results earn the next round"
+  ],
+  [
+   348.558,
+   349.325,
+   "of investment."
+  ],
+  [
+   349.957,
+   353.024,
+   "A living map that can't show its value"
+  ],
+  [
+   353.024,
+   354.941,
+   "won't survive next quarter's priorities."
+  ],
+  [
+   354.941,
+   356.475,
+   "Make it prove itself."
+  ],
+  [
+   356.975,
+   358.895,
+   "So who actually builds this?"
+  ],
+  [
+   358.895,
+   360.047,
+   "Reassuringly few people."
+  ],
+  [
+   360.047,
+   360.815,
+   "Three hats,"
+  ],
+  [
+   360.815,
+   363.503,
+   "and often just two humans wearing them."
+  ],
+  [
+   364.135,
+   364.903,
+   "The ontologist,"
+  ],
+  [
+   364.903,
+   366.055,
+   "or domain expert,"
+  ],
+  [
+   366.055,
+   367.591,
+   "owns the shared meaning."
+  ],
+  [
+   367.591,
+   370.663,
+   "And here's the myth to kill \u2014 this"
+  ],
+  [
+   370.663,
+   373.735,
+   "is usually a senior engineer who deeply knows"
+  ],
+  [
+   373.735,
+   374.503,
+   "the domain,"
+  ],
+  [
+   374.503,
+   377.576,
+   "not a philosopher with a PhD in logic."
+  ],
+  [
+   378.207,
+   381.279,
+   "The graph or data engineer owns the substrate:"
+  ],
+  [
+   381.279,
+   382.431,
+   "the construction pipelines,"
+  ],
+  [
+   382.431,
+   383.199,
+   "entity resolution,"
+  ],
+  [
+   383.199,
+   383.583,
+   "validation,"
+  ],
+  [
+   383.583,
+   384.351,
+   "and performance."
+  ],
+  [
+   384.351,
+   386.271,
+   "If you have data engineers,"
+  ],
+  [
+   386.271,
+   388.96,
+   "they already have most of these skills."
+  ],
+  [
+   389.591,
+   392.663,
+   "And the agent engineer owns the acting mind"
+  ],
+  [
+   392.663,
+   393.431,
+   "\u2014 retrieval,"
+  ],
+  [
+   393.431,
+   393.815,
+   "tools,"
+  ],
+  [
+   393.815,
+   394.199,
+   "guardrails,"
+  ],
+  [
+   394.199,
+   394.967,
+   "and evaluation."
+  ],
+  [
+   395.599,
+   398.671,
+   "Add a graph-ML specialist only when GNNs enter"
+  ],
+  [
+   398.671,
+   399.439,
+   "the picture."
+  ],
+  [
+   400.071,
+   401.223,
+   "The point is,"
+  ],
+  [
+   401.223,
+   404.295,
+   "you do not need a moonshot team to"
+  ],
+  [
+   404.295,
+   404.679,
+   "begin."
+  ],
+  [
+   404.679,
+   407.751,
+   "A couple of capable engineers and a clear"
+  ],
+  [
+   407.751,
+   410.823,
+   "domain can ship the first useful layer in"
+  ],
+  [
+   410.823,
+   411.207,
+   "weeks."
+  ],
+  [
+   411.839,
+   414.911,
+   "So where is all of this heading next?"
+  ],
+  [
+   415.411,
+   417.817,
+   "Three currents are converging right now,"
+  ],
+  [
+   417.817,
+   420.623,
+   "and they're the reason this matters today,"
+  ],
+  [
+   420.623,
+   421.425,
+   "not someday."
+  ],
+  [
+   422.056,
+   422.457,
+   "First,"
+  ],
+  [
+   422.457,
+   425.665,
+   "ontology and agents are merging into single\nproducts."
+  ],
+  [
+   425.665,
+   428.872,
+   "Neo4j's Aura Agent turns an ontology straight into"
+  ],
+  [
+   428.872,
+   430.075,
+   "a hosted agent."
+  ],
+  [
+   430.075,
+   433.282,
+   "Palantir and NVIDIA are building an operational-AI\nstack"
+  ],
+  [
+   433.282,
+   434.886,
+   "on exactly this pattern."
+  ],
+  [
+   435.518,
+   435.919,
+   "Second,"
+  ],
+  [
+   435.919,
+   437.121,
+   "the physical frontier."
+  ],
+  [
+   437.121,
+   440.329,
+   "Omniverse and OpenUSD are extending this same\nstack"
+  ],
+  [
+   440.329,
+   441.131,
+   "\u2014 meaning,"
+  ],
+  [
+   441.131,
+   441.532,
+   "graph,"
+  ],
+  [
+   441.532,
+   441.933,
+   "twin,"
+  ],
+  [
+   441.933,
+   443.536,
+   "agent \u2014 to robots,"
+  ],
+  [
+   443.536,
+   443.937,
+   "factories,"
+  ],
+  [
+   443.937,
+   445.14,
+   "and whole cities."
+  ],
+  [
+   445.772,
+   446.173,
+   "Third,"
+  ],
+  [
+   446.173,
+   448.177,
+   "neuro-symbolic is becoming the default."
+  ],
+  [
+   448.177,
+   451.385,
+   "The pattern of an LLM proposing and a"
+  ],
+  [
+   451.385,
+   454.592,
+   "graph verifying is quietly becoming the standard\nfor"
+  ],
+  [
+   454.592,
+   456.998,
+   "any AI you're willing to trust."
+  ],
+  [
+   457.629,
+   460.837,
+   "Step back and you can see it clearly:"
+  ],
+  [
+   460.837,
+   464.044,
+   "the five separate topics we started with \u2014"
+  ],
+  [
+   464.044,
+   464.445,
+   "ontology,"
+  ],
+  [
+   464.445,
+   465.247,
+   "knowledge graph,"
+  ],
+  [
+   465.247,
+   466.049,
+   "digital twin,"
+  ],
+  [
+   466.049,
+   466.851,
+   "graph engineering,"
+  ],
+  [
+   466.851,
+   470.058,
+   "agentic engineering \u2014 are collapsing into one\ndiscipline."
+  ],
+  [
+   470.69,
+   473.897,
+   "The teams that see that early are the"
+  ],
+  [
+   473.897,
+   477.104,
+   "ones who'll build the systems everyone else\ncopies."
+  ],
+  [
+   477.104,
+   479.109,
+   "Let's tie it all off."
+  ],
+  [
+   479.609,
+   482.676,
+   "Let's hold the whole map in one breath."
+  ],
+  [
+   483.307,
+   486.374,
+   "Ontology is meaning \u2014 the shared grammar of"
+  ],
+  [
+   486.374,
+   487.141,
+   "your world."
+  ],
+  [
+   487.772,
+   490.839,
+   "The knowledge graph is memory \u2014 that grammar"
+  ],
+  [
+   490.839,
+   492.372,
+   "filled with your real,"
+  ],
+  [
+   492.372,
+   493.139,
+   "resolved data."
+  ],
+  [
+   493.77,
+   496.837,
+   "The digital twin is live senses \u2014 the"
+  ],
+  [
+   496.837,
+   499.137,
+   "graph kept in sync with reality,"
+  ],
+  [
+   499.137,
+   500.67,
+   "and able to simulate."
+  ],
+  [
+   501.302,
+   504.369,
+   "Graph engineering is the body \u2014 the craft"
+  ],
+  [
+   504.369,
+   505.902,
+   "that keeps it built,"
+  ],
+  [
+   505.902,
+   506.285,
+   "valid,"
+  ],
+  [
+   506.285,
+   506.669,
+   "fast,"
+  ],
+  [
+   506.669,
+   507.435,
+   "and learning."
+  ],
+  [
+   508.067,
+   511.133,
+   "And agentic engineering is the mind \u2014 an"
+  ],
+  [
+   511.133,
+   512.283,
+   "AI that retrieves,"
+  ],
+  [
+   512.283,
+   512.667,
+   "reasons,"
+  ],
+  [
+   512.667,
+   513.433,
+   "and acts,"
+  ],
+  [
+   513.433,
+   516.117,
+   "grounded and governed by everything beneath it."
+  ],
+  [
+   516.748,
+   517.515,
+   "Five ideas,"
+  ],
+  [
+   517.515,
+   518.282,
+   "one stack,"
+  ],
+  [
+   518.282,
+   521.348,
+   "built bottom-up on your own six sources \u2014"
+  ],
+  [
+   521.348,
+   524.415,
+   "and every layer pays for itself before the"
+  ],
+  [
+   524.415,
+   525.565,
+   "next one begins."
+  ],
+  [
+   526.197,
+   528.113,
+   "That report that was wrong?"
+  ],
+  [
+   528.113,
+   529.647,
+   "Now it answers itself."
+  ],
+  [
+   530.278,
+   532.195,
+   "Give your machines a world,"
+  ],
+  [
+   532.195,
+   535.261,
+   "and they'll stop guessing \u2014 and start knowing."
+  ],
+  [
+   535.893,
+   537.043,
+   "Thanks for watching."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "kg/kg-ch07-together.wav",
+   "volume": 1.0
+  }
+ }
+}

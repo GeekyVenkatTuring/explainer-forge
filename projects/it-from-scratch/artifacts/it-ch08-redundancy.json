@@ -1,0 +1,251 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch08-redundancy_redundancy",
+   "type": "it_redundancy",
+   "in_seconds": 0.0,
+   "out_seconds": 100.18,
+   "props": {
+    "dur": 100.68
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.764,
+   "Let's use these ideas to catch something\nsurprising"
+  ],
+  [
+   2.764,
+   4.146,
+   "about your own language."
+  ],
+  [
+   4.778,
+   6.851,
+   "Shannon ran a famous little experiment,"
+  ],
+  [
+   6.851,
+   9.615,
+   "and you can run it in your head"
+  ],
+  [
+   9.615,
+   10.306,
+   "right now."
+  ],
+  [
+   10.938,
+   12.666,
+   "Take an ordinary English sentence,"
+  ],
+  [
+   12.666,
+   14.393,
+   "cover up the next letter,"
+  ],
+  [
+   14.393,
+   17.157,
+   "and try to guess it before you look."
+  ],
+  [
+   17.789,
+   19.171,
+   "The quick brown f..."
+  ],
+  [
+   19.171,
+   21.59,
+   "You already know it is an o,"
+  ],
+  [
+   21.59,
+   22.626,
+   "then an x."
+  ],
+  [
+   22.626,
+   24.354,
+   "You barely had to think."
+  ],
+  [
+   24.986,
+   26.368,
+   "That is the game,"
+  ],
+  [
+   26.368,
+   29.132,
+   "and in English you win it astonishingly often."
+  ],
+  [
+   29.132,
+   30.168,
+   "After a q,"
+  ],
+  [
+   30.168,
+   32.242,
+   "you know a u is coming."
+  ],
+  [
+   32.242,
+   34.315,
+   "At the end of many words,"
+  ],
+  [
+   34.315,
+   37.079,
+   "you can feel the letters before you read"
+  ],
+  [
+   37.079,
+   37.424,
+   "them."
+  ],
+  [
+   38.056,
+   39.784,
+   "Now connect that to entropy."
+  ],
+  [
+   39.784,
+   42.548,
+   "A letter looked at completely alone carries about"
+  ],
+  [
+   42.548,
+   43.93,
+   "four point two bits,"
+  ],
+  [
+   43.93,
+   45.312,
+   "as we just computed."
+  ],
+  [
+   45.944,
+   48.708,
+   "But a letter seen in the context of"
+  ],
+  [
+   48.708,
+   49.744,
+   "everything before it?"
+  ],
+  [
+   49.744,
+   52.163,
+   "Once you have the sentence so far,"
+  ],
+  [
+   52.163,
+   54.927,
+   "the next letter is often nearly certain \u2014"
+  ],
+  [
+   54.927,
+   57.346,
+   "so it carries far less new information."
+  ],
+  [
+   57.978,
+   60.742,
+   "Watch the meter fall as context builds \u2014"
+  ],
+  [
+   60.742,
+   62.469,
+   "from four point two bits,"
+  ],
+  [
+   62.469,
+   64.888,
+   "down toward roughly one bit per letter,"
+  ],
+  [
+   64.888,
+   66.961,
+   "and by some estimates even less."
+  ],
+  [
+   67.593,
+   69.666,
+   "Which leads to a striking headline."
+  ],
+  [
+   69.666,
+   72.085,
+   "Written English is about seventy-five percent\nredundant."
+  ],
+  [
+   72.716,
+   74.789,
+   "Three out of every four letters,"
+  ],
+  [
+   74.789,
+   75.826,
+   "in a sense,"
+  ],
+  [
+   75.826,
+   78.245,
+   "you could have guessed from the rest."
+  ],
+  [
+   78.876,
+   81.295,
+   "And that redundancy is not a flaw."
+  ],
+  [
+   81.295,
+   82.677,
+   "It is a feature,"
+  ],
+  [
+   82.677,
+   84.405,
+   "working two jobs at once."
+  ],
+  [
+   85.036,
+   87.801,
+   "It is exactly what lets you read straight"
+  ],
+  [
+   87.801,
+   90.565,
+   "through typos and autocorrect disasters without\nslowing down."
+  ],
+  [
+   91.196,
+   93.961,
+   "And it is exactly what a compression program"
+  ],
+  [
+   93.961,
+   95.343,
+   "hunts down and deletes."
+  ],
+  [
+   95.343,
+   98.107,
+   "Redundancy is predictable structure \u2014 and\npredictable structure"
+  ],
+  [
+   98.107,
+   100.18,
+   "is entropy you are not using."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch08-redundancy.wav",
+   "volume": 1.0
+  }
+ }
+}

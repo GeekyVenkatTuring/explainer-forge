@@ -1,0 +1,80 @@
+{
+ "cuts": [
+  {
+   "id": "ch3-the-landscape_s01_title",
+   "type": "gpu_title",
+   "in_seconds": 0.0,
+   "out_seconds": 18.828,
+   "props": {
+    "kicker": "A DEEP-DIVE COURSE \u00b7 CHAPTER 3",
+    "line1": "The GPU",
+    "line2": "Landscape",
+    "sub": "NVIDIA \u00b7 AMD \u00b7 Google \u00b7 Amazon \u00b7 the challengers",
+    "color": "#76B900",
+    "dur": 19.328
+   }
+  },
+  {
+   "id": "ch3-the-landscape_s02_nvidia",
+   "type": "gpu_nvidia",
+   "in_seconds": 19.328,
+   "out_seconds": 70.342,
+   "props": {
+    "dur": 51.514
+   }
+  },
+  {
+   "id": "ch3-the-landscape_s03_gb200",
+   "type": "gpu_gb200",
+   "in_seconds": 70.842,
+   "out_seconds": 117.303,
+   "props": {
+    "dur": 46.961
+   }
+  },
+  {
+   "id": "ch3-the-landscape_s04_speccompare",
+   "type": "gpu_speccompare",
+   "in_seconds": 117.803,
+   "out_seconds": 165.763,
+   "props": {
+    "dur": 48.46
+   }
+  },
+  {
+   "id": "ch3-the-landscape_s05_others",
+   "type": "gpu_others",
+   "in_seconds": 166.263,
+   "out_seconds": 215.541,
+   "props": {
+    "dur": 49.778
+   }
+  },
+  {
+   "id": "ch3-the-landscape_s06_recap",
+   "type": "gpu_recap",
+   "in_seconds": 216.041,
+   "out_seconds": 238.585,
+   "props": {
+    "kicker": "CHAPTER 3 \u00b7 RECAP",
+    "title": "The landscape, in one breath",
+    "color": "#76B900",
+    "items": [
+     "NVIDIA leads: A100 to H100 to H200 to B200, doubling each generation",
+     "The GB200 NVL72 rack acts as one giant 72-GPU accelerator",
+     "AMD leads on memory \u2014 the MI355X reaches 288GB",
+     "Google TPU and AWS Trainium serve their own clouds at scale",
+     "Cerebras and Groq chase radically different chip designs"
+    ],
+    "closer": "The hardware race is fierce \u2014 but CUDA keeps NVIDIA's lead intact, for now.",
+    "dur": 23.044
+   }
+  }
+ ],
+ "audio": {
+  "narration": {
+   "src": "gpu/ch3-the-landscape.wav",
+   "volume": 1.0
+  }
+ }
+}

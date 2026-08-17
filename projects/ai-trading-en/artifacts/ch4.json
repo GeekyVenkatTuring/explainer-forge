@@ -1,0 +1,425 @@
+{
+  "cuts": [
+    {
+      "id": "s40_divider",
+      "type": "ait_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 11.41,
+      "props": {
+        "n": 4,
+        "title": "Where To Do It",
+        "sub": "Trusted platforms and the rules",
+        "color": "money",
+        "parts": 6,
+        "dur": 11.91
+      }
+    },
+    {
+      "id": "s41_tiers",
+      "type": "ait_tiers",
+      "in_seconds": 11.91,
+      "out_seconds": 53.899,
+      "props": {
+        "kicker": "THE THREE TIERS",
+        "title": "Three levels of platform, by how much you code",
+        "tiers": [
+          {
+            "level": "T1",
+            "effort": "no code",
+            "name": "Strategy builders",
+            "desc": "Point and click to build, backtest, and deploy \u2014 zero programming.",
+            "tools": [
+              "Streak",
+              "Tradetron",
+              "AlgoTest"
+            ],
+            "c": "data"
+          },
+          {
+            "level": "T2",
+            "effort": "some code",
+            "name": "Broker APIs",
+            "desc": "You write the logic; the broker gives you data and execution.",
+            "tools": [
+              "Kite Connect",
+              "SmartAPI",
+              "Dhan",
+              "Fyers"
+            ],
+            "c": "ai"
+          },
+          {
+            "level": "T3",
+            "effort": "full code",
+            "name": "Cloud quant labs",
+            "desc": "Data, backtesting, and paper trading, all in one environment.",
+            "tools": [
+              "QuantConnect",
+              "Alpaca",
+              "IBKR"
+            ],
+            "c": "money"
+          }
+        ],
+        "caption": "Start at Tier 1 to learn the loop. Graduate to Tier 3 to control everything.",
+        "dur": 42.489
+      }
+    },
+    {
+      "id": "s42_nocode",
+      "type": "ait_cards",
+      "in_seconds": 54.399,
+      "out_seconds": 97.699,
+      "props": {
+        "kicker": "TIER ONE \u00b7 NO-CODE",
+        "title": "The click-and-build platforms",
+        "color": "data",
+        "cards": [
+          {
+            "emoji": "\ud83d\udfe2",
+            "title": "Streak",
+            "body": "Zerodha's own no-code tool. The gentlest place to start for beginners.",
+            "tag": "beginner-friendly",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83d\udd35",
+            "title": "Tradetron",
+            "body": "A marketplace where you can build, or subscribe to others' strategies.",
+            "tag": "multi-broker",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83d\udfe0",
+            "title": "AlgoTest",
+            "body": "Strong for options backtesting. Free tier, then paid plans.",
+            "tag": "options focus",
+            "c": "edge"
+          }
+        ],
+        "dur": 43.8
+      }
+    },
+    {
+      "id": "s43_brokerapi",
+      "type": "ait_cards",
+      "in_seconds": 98.199,
+      "out_seconds": 142.286,
+      "props": {
+        "kicker": "TIER TWO \u00b7 BROKER APIs",
+        "title": "The rails your own code plugs into",
+        "color": "ai",
+        "cards": [
+          {
+            "emoji": "\u2699\ufe0f",
+            "title": "Kite Connect",
+            "body": "Zerodha's API. Rock-solid and popular; around \u20b92,000 a month.",
+            "tag": "the standard",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83c\udd93",
+            "title": "Angel SmartAPI",
+            "body": "A full-featured API that is free to use. Great for learning.",
+            "tag": "free",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83d\ude80",
+            "title": "Dhan & Fyers",
+            "body": "Modern, developer-first APIs; free order placement, paid data add-ons.",
+            "tag": "developer-first",
+            "c": "edge"
+          },
+          {
+            "emoji": "\ud83d\udd0e",
+            "title": "How to choose",
+            "body": "Match the API to the broker you already trust with your money.",
+            "tag": "key rule",
+            "c": "ai"
+          }
+        ],
+        "dur": 44.587
+      }
+    },
+    {
+      "id": "s44_cloud",
+      "type": "ait_cards",
+      "in_seconds": 142.786,
+      "out_seconds": 185.933,
+      "props": {
+        "kicker": "TIER THREE \u00b7 CLOUD QUANT",
+        "title": "Full-code labs, mostly global",
+        "color": "money",
+        "cards": [
+          {
+            "emoji": "\ud83e\uddea",
+            "title": "QuantConnect",
+            "body": "Free historical data, a cloud backtester, and paper trading in one place.",
+            "tag": "best free lab",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83e\udd99",
+            "title": "Alpaca",
+            "body": "Clean US-market API with free, unlimited paper trading. A joy to learn on.",
+            "tag": "US markets",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83c\udf10",
+            "title": "Interactive Brokers",
+            "body": "Global access and deep instruments; heavier to set up.",
+            "tag": "advanced",
+            "c": "edge"
+          }
+        ],
+        "dur": 43.647
+      }
+    },
+    {
+      "id": "s45_sebi",
+      "type": "ait_list",
+      "in_seconds": 186.433,
+      "out_seconds": 240.12,
+      "props": {
+        "kicker": "THE RULES \u00b7 SEBI",
+        "title": "India's new algo-trading rules, in plain words",
+        "tone": "neutral",
+        "color": "risk",
+        "items": [
+          {
+            "h": "Under 10 orders per second? You're fine",
+            "sub": "Normal personal automation stays light-touch \u2014 no heavy registration.",
+            "c": "money"
+          },
+          {
+            "h": "Your API key must use a whitelisted static IP",
+            "sub": "A security step to stop anyone else using your access.",
+            "c": "data"
+          },
+          {
+            "h": "Faster or shared strategies get an \u201cAlgo ID\u201d",
+            "sub": "Every real algo order becomes traceable to its source.",
+            "c": "edge"
+          },
+          {
+            "h": "White-box is open; black-box needs a licence",
+            "sub": "Selling a hidden-logic strategy requires SEBI Research Analyst status.",
+            "c": "risk"
+          }
+        ],
+        "caption": "The broker is now the responsible principal for every algo on its platform.",
+        "dur": 54.187
+      }
+    },
+    {
+      "id": "s46_sebidates",
+      "type": "ait_list",
+      "in_seconds": 240.62,
+      "out_seconds": 283.913,
+      "props": {
+        "kicker": "THE TIMELINE",
+        "title": "The dates worth knowing",
+        "tone": "neutral",
+        "color": "edge",
+        "items": [
+          {
+            "h": "Late 2025 \u2014 brokers register with exchanges",
+            "sub": "The framework is switched on across the industry."
+          },
+          {
+            "h": "Early 2026 \u2014 non-compliant brokers restricted",
+            "sub": "Brokers who aren't ready get cut off from new API clients."
+          },
+          {
+            "h": "April 2026 \u2014 full framework mandatory",
+            "sub": "Algo-ID tagging and the complete rulebook apply to everyone."
+          }
+        ],
+        "caption": "Rules evolve \u2014 always confirm the current position on the SEBI and exchange sites.",
+        "dur": 43.793
+      }
+    },
+    {
+      "id": "s44b_data",
+      "type": "ait_cards",
+      "in_seconds": 284.413,
+      "out_seconds": 330.402,
+      "props": {
+        "kicker": "DON'T FORGET DATA",
+        "title": "Where your bot's data comes from",
+        "color": "data",
+        "cards": [
+          {
+            "emoji": "\ud83c\udd93",
+            "title": "Free & fine to learn",
+            "body": "yfinance and NSE's own site \u2014 great for building and backtesting.",
+            "tag": "start here",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83d\udd0c",
+            "title": "Broker live feed",
+            "body": "Real-time ticks via your broker's API, often a small monthly add-on.",
+            "tag": "for live",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83c\udfdb\ufe0f",
+            "title": "Paid vendors",
+            "body": "Clean, deep history and fundamentals \u2014 for when you're serious.",
+            "tag": "later",
+            "c": "edge"
+          },
+          {
+            "emoji": "\u26a0\ufe0f",
+            "title": "Quality > quantity",
+            "body": "Bad data quietly produces confident, wrong backtests.",
+            "tag": "the rule",
+            "c": "risk"
+          }
+        ],
+        "dur": 46.489
+      }
+    },
+    {
+      "id": "s46b_setup",
+      "type": "ait_list",
+      "in_seconds": 330.902,
+      "out_seconds": 380.315,
+      "props": {
+        "kicker": "A REAL SETUP, STEP BY STEP",
+        "title": "From zero to a live-ready account",
+        "tone": "neutral",
+        "color": "money",
+        "items": [
+          {
+            "h": "1 \u2014 Open a demat account with a compliant broker",
+            "sub": "Zerodha, Angel, Dhan, Upstox, Fyers \u2014 all SEBI-registered."
+          },
+          {
+            "h": "2 \u2014 Subscribe to their API and get your keys",
+            "sub": "Bind the key to a static IP, as SEBI now requires."
+          },
+          {
+            "h": "3 \u2014 Connect in paper / sandbox mode first",
+            "sub": "Every serious API has a test mode. Live there for weeks."
+          },
+          {
+            "h": "4 \u2014 Flip to live only when the ladder says so",
+            "sub": "Backtest, walk-forward, paper \u2014 then tiny real size."
+          }
+        ],
+        "caption": "The credentials change from paper to live. Your discipline should not.",
+        "dur": 49.913
+      }
+    },
+    {
+      "id": "s46c_copytrade",
+      "type": "ait_callout",
+      "in_seconds": 380.815,
+      "out_seconds": 425.538,
+      "props": {
+        "kicker": "A WORD ON COPY TRADING",
+        "color": "risk",
+        "text": "Copying a trader means inheriting their risk \u2014 without their reasons.",
+        "sub": "You feel their drawdowns in full, and you can't see when they change their mind.",
+        "dur": 45.223
+      }
+    },
+    {
+      "id": "s46d_cost",
+      "type": "ait_bars",
+      "in_seconds": 426.038,
+      "out_seconds": 471.34,
+      "props": {
+        "kicker": "WHAT IT COSTS TO RUN",
+        "title": "Rough monthly cost, by tier",
+        "color": "money",
+        "unit": "",
+        "max": 3000,
+        "bars": [
+          {
+            "label": "no-code free tier",
+            "v": 0,
+            "c": "money"
+          },
+          {
+            "label": "free broker API",
+            "v": 0,
+            "c": "money"
+          },
+          {
+            "label": "no-code paid",
+            "v": 1500,
+            "c": "edge"
+          },
+          {
+            "label": "Kite Connect",
+            "v": 2000,
+            "c": "ai"
+          },
+          {
+            "label": "+ live data add-on",
+            "v": 2500,
+            "c": "risk"
+          }
+        ],
+        "note": "Figures in \u20b9 per month, approximate \u2014 always confirm on the provider's own page.",
+        "dur": 45.802
+      }
+    },
+    {
+      "id": "s47_choose",
+      "type": "ait_list",
+      "in_seconds": 471.84,
+      "out_seconds": 518.046,
+      "props": {
+        "kicker": "HOW TO CHOOSE",
+        "title": "Pick your platform in four questions",
+        "tone": "ok",
+        "color": "money",
+        "items": [
+          {
+            "h": "Can I paper trade for free? If not, skip it",
+            "sub": "This is non-negotiable. No sandbox, no deal."
+          },
+          {
+            "h": "Is it my existing, trusted, compliant broker?",
+            "sub": "Keep your money where it already lives, under SEBI's rules."
+          },
+          {
+            "h": "Does the cost fit how often I'll trade?",
+            "sub": "A monthly API fee only makes sense past a certain activity."
+          },
+          {
+            "h": "Can I grow here \u2014 from clicks to full code?",
+            "sub": "Choose a place you won't outgrow in three months."
+          }
+        ],
+        "caption": "The best platform is the boring, compliant one you'll actually stick with.",
+        "dur": 46.706
+      }
+    },
+    {
+      "id": "s48_micro",
+      "type": "ait_callout",
+      "in_seconds": 518.546,
+      "out_seconds": 545.504,
+      "props": {
+        "kicker": "PART FOUR IN ONE LINE",
+        "color": "money",
+        "text": "Start no-code, keep your money in your own broker, follow the rules.",
+        "sub": "Now the fun part \u2014 building your own from scratch.",
+        "dur": 27.458
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "ait/ch4.wav",
+      "volume": 1.0
+    }
+  }
+}

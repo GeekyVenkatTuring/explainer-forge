@@ -1,0 +1,101 @@
+{
+ "ticker": "POLYCAB",
+ "scraped_at": "2026-08-14T15:28:24",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 138999.0,
+ "current_price": 9225.0,
+ "pe": 48.5,
+ "book_value": 798.0,
+ "dividend_yield_pct": 0.51,
+ "roce_pct": 33.2,
+ "roe_pct": 23.0,
+ "face_value": 10.0,
+ "high": 10129.0,
+ "sales_growth": {
+  "10 Years": 30.0,
+  "5 Years": 24.0,
+  "3 Years": 28.0,
+  "TTM": 29.0
+ },
+ "profit_growth": {
+  "5 Years": 37.0,
+  "3 Years": 25.0,
+  "1 Year": 33.0
+ },
+ "roe_hist": {
+  "Equity Capital": 141.0,
+  "Borrowings&nbsp; +": 546.0,
+  "Fixed Assets&nbsp; +": 822.0,
+  "CWIP": 179.0,
+  "Investments": 0.0
+ },
+ "price_cagr": {
+  "10 Years": 21.0,
+  "5 Years": 21.0,
+  "3 Years": 23.0,
+  "Last Year": 23.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "14%",
+   "14%",
+   "13%",
+   "14%",
+   "12%",
+   "11%",
+   "14%",
+   "15%",
+   "15%",
+   "16%",
+   "13%",
+   "13%",
+   "14%"
+  ],
+  "eps": [
+   "26.67",
+   "28.37",
+   "27.49",
+   "36.34",
+   "26.34",
+   "29.24",
+   "30.42",
+   "48.31",
+   "39.34",
+   "45.54",
+   "41.30",
+   "51.33",
+   "52.07"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company is expected to give good quarter",
+  "Company has delivered good profit growth of 23.7% CAGR over last 5 years",
+  "Company has been maintaining a healthy dividend payout of 25.9%",
+  "Company&#x27;s median sales growth is 20.5% of last 10 years",
+  "Company&#x27;s working capital requirements have reduced from 47.5 days to 30.4 days"
+ ],
+ "cons": [
+  "Stock is trading at 11.5 times its book value",
+  "Promoter holding has decreased over last 3 years: -4.53%"
+ ]
+}

@@ -1,0 +1,377 @@
+{
+  "cuts": [
+    {
+      "id": "s01_title",
+      "type": "em_titlex",
+      "in_seconds": 0.0,
+      "out_seconds": 20.994,
+      "props": {
+        "kicker": "ENGINEERING LEADERSHIP \u00b7 PART TWO",
+        "line1": "Operating &",
+        "line2": "Scaling a Team",
+        "sub": "four more behavioral questions \u00b7 with full worked answers \u00b7 Senior EM",
+        "dur": 21.494
+      }
+    },
+    {
+      "id": "s02_star",
+      "type": "em_star",
+      "in_seconds": 21.494,
+      "out_seconds": 40.166,
+      "props": {
+        "dur": 19.172
+      }
+    },
+    {
+      "id": "s03_measure",
+      "type": "em_q",
+      "in_seconds": 40.666,
+      "out_seconds": 77.506,
+      "props": {
+        "cat": "OPERATING \u00b7 METRICS",
+        "title": "Measuring team performance",
+        "q": "How do you measure your team's performance?",
+        "color": "#34D399",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Reject vanity metrics",
+            "desc": "Velocity and lines of code measure motion, not impact. Don't lead with them."
+          },
+          {
+            "node": "A",
+            "title": "Measure outcomes",
+            "desc": "Tie the team to business and user outcomes \u2014 did the work move the needle?"
+          },
+          {
+            "node": "A",
+            "title": "Track delivery health",
+            "desc": "The DORA metrics: deploy frequency, lead time, change-fail rate, time to restore."
+          },
+          {
+            "node": "L",
+            "title": "Watch the humans",
+            "desc": "Retention, on-call load, and eNPS. Hitting numbers while burning out is failing."
+          }
+        ],
+        "trap": "\u201cWe track story points and velocity.\u201d That rewards busywork, not value.",
+        "signal": "You manage outcomes and team health, not activity theater.",
+        "foot": "Great managers measure whether the work mattered \u2014 and whether the team can keep doing it.",
+        "dur": 37.34
+      }
+    },
+    {
+      "id": "s03s_measure",
+      "type": "em_story",
+      "in_seconds": 78.006,
+      "out_seconds": 199.206,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 METRICS",
+        "title": "When the velocity chart lied",
+        "color": "#34D399",
+        "situation": "I inherited a team whose velocity chart looked fantastic \u2014 story points up and to the right. But leadership was frustrated, features weren't really landing, and two engineers were quietly interviewing elsewhere.",
+        "task": "My mandate: figure out why a supposedly high-performing team wasn't actually delivering.",
+        "actions": [
+          {
+            "d": "Ignored the vanity metrics and instrumented what mattered \u2014 the DORA metrics and real feature outcomes."
+          },
+          {
+            "d": "Found the truth: lead time was three weeks, change-fail rate was 30%, and on-call was brutal."
+          },
+          {
+            "d": "Refocused the team on outcomes and reliability, and made lead time and deploy frequency the visible goals."
+          },
+          {
+            "d": "Added a lightweight team-health pulse, so morale was a number I watched, not a surprise."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "3 wks \u2192 2 days",
+            "l": "lead time"
+          },
+          {
+            "v": "30% \u2192 4%",
+            "l": "change-fail rate"
+          },
+          {
+            "v": "0 regretted",
+            "l": "attrition after"
+          }
+        ],
+        "learning": "Velocity measures motion. Outcomes, reliability, and team health measure performance.",
+        "foot": "You looked past the flattering chart to what the team actually produced. That's judgment.",
+        "dur": 121.7
+      }
+    },
+    {
+      "id": "s04_motivate",
+      "type": "em_q",
+      "in_seconds": 199.706,
+      "out_seconds": 235.433,
+      "props": {
+        "cat": "OPERATING \u00b7 MORALE",
+        "title": "Re-energizing a demoralized team",
+        "q": "How do you motivate a team that has lost its motivation?",
+        "color": "#F5A524",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Find the real cause",
+            "desc": "Burnout, a failed launch, no autonomy, unclear purpose? Diagnose, don't cheerlead."
+          },
+          {
+            "node": "A",
+            "title": "Restore meaning and wins",
+            "desc": "Reconnect the work to real impact, and engineer a few early, visible wins."
+          },
+          {
+            "node": "A",
+            "title": "Give autonomy back",
+            "desc": "Remove the blockers and the thrash; let them own decisions again."
+          },
+          {
+            "node": "L",
+            "title": "Fix the system",
+            "desc": "Repair whatever burned them out, or morale just slides back to zero."
+          }
+        ],
+        "trap": "You threw a pizza party or a speech at a structural problem.",
+        "signal": "You treat morale as a system to diagnose and fix, not a mood to hype.",
+        "foot": "Motivation is a symptom. You fix the cause \u2014 purpose, autonomy, and a sane pace.",
+        "dur": 36.227
+      }
+    },
+    {
+      "id": "s04s_motivate",
+      "type": "em_story",
+      "in_seconds": 235.933,
+      "out_seconds": 363.449,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 MORALE",
+        "title": "The team that survived a death march",
+        "color": "#F5A524",
+        "situation": "I took over a team right after a brutal six-month death march \u2014 nights and weekends \u2014 to ship a launch that then got cancelled. Morale was on the floor, velocity had collapsed, and cynicism was everywhere.",
+        "task": "My mandate: rebuild the team's energy and output, without another forced march.",
+        "actions": [
+          {
+            "d": "Started by listening \u2014 one-on-ones with everyone, no agenda, just what's broken and what they'd change."
+          },
+          {
+            "d": "Reconnected them to impact \u2014 killed the low-value work and picked a project with real, visible user value."
+          },
+          {
+            "d": "Engineered early wins \u2014 shipped something small but real in two weeks to rebuild belief."
+          },
+          {
+            "d": "Fixed the cause \u2014 capped the hours, protected focus time, and gave decisions back to the team."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "6 weeks",
+            "l": "to real momentum"
+          },
+          {
+            "v": "+31",
+            "l": "team eNPS"
+          },
+          {
+            "v": "0",
+            "l": "attrition that year"
+          }
+        ],
+        "learning": "You can't pep-talk your way out of burnout. Remove the cause, then rebuild belief with wins.",
+        "foot": "You diagnosed the cause and rebuilt trust with action, not slogans. That's leadership.",
+        "dur": 128.016
+      }
+    },
+    {
+      "id": "s05_retain",
+      "type": "em_q",
+      "in_seconds": 363.949,
+      "out_seconds": 400.54,
+      "props": {
+        "cat": "PEOPLE \u00b7 RETENTION",
+        "title": "Retaining a key engineer",
+        "q": "A key engineer says they're thinking of leaving. Now what?",
+        "color": "#38BDF8",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Understand the real reason",
+            "desc": "Money, growth, manager, boredom, burnout? The stated reason is rarely the whole one."
+          },
+          {
+            "node": "A",
+            "title": "Act on what you can",
+            "desc": "Fix growth, scope, or recognition fast; be honest about what you can't change."
+          },
+          {
+            "node": "A",
+            "title": "Make a genuine case",
+            "desc": "A specific future here \u2014 not a panic counter-offer that resets in six months."
+          },
+          {
+            "node": "L",
+            "title": "Learn from every exit",
+            "desc": "If they still go, run an honest retro and fix the pattern for the rest."
+          }
+        ],
+        "trap": "You only reacted with a counter-offer once they'd already mentally quit.",
+        "signal": "You retain people through growth and trust, and handle regretted attrition with grace.",
+        "foot": "The best retention happens months before the resignation \u2014 but you can still save some.",
+        "dur": 37.091
+      }
+    },
+    {
+      "id": "s05s_retain",
+      "type": "em_story",
+      "in_seconds": 401.04,
+      "out_seconds": 523.528,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 RETENTION",
+        "title": "The star engineer with one foot out the door",
+        "color": "#38BDF8",
+        "situation": "My strongest engineer, Ana \u2014 the one who owned our core service \u2014 asked for a private one-on-one and told me she'd started interviewing. Losing her would have set the team back a year.",
+        "task": "My mandate: understand why, and keep her \u2014 but only if staying was genuinely right for her.",
+        "actions": [
+          {
+            "d": "Listened first, didn't panic \u2014 and the real reason wasn't pay. She felt stuck and unchallenged."
+          },
+          {
+            "d": "Acted fast on what I could \u2014 carved out a new architecture charter that stretched her, within two weeks."
+          },
+          {
+            "d": "Made a specific, honest case for her future here, instead of a desperate counter-offer."
+          },
+          {
+            "d": "Fixed the root cause for others too \u2014 I'd under-invested in growth across all my senior engineers."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "stayed 2+ yrs",
+            "l": "and re-engaged"
+          },
+          {
+            "v": "promoted",
+            "l": "to Principal"
+          },
+          {
+            "v": "growth plans",
+            "l": "for every senior"
+          }
+        ],
+        "learning": "Retention is built months early through growth. A counter-offer alone just delays the exit.",
+        "foot": "You addressed the real cause, not the symptom \u2014 and fixed it for the whole team.",
+        "dur": 122.988
+      }
+    },
+    {
+      "id": "s06_managers",
+      "type": "em_q",
+      "in_seconds": 524.028,
+      "out_seconds": 562.621,
+      "props": {
+        "cat": "SCALE \u00b7 LEADING LEADERS",
+        "title": "Managing managers, and scaling yourself",
+        "q": "How do you lead when you're managing managers, not engineers?",
+        "color": "#A78BFA",
+        "moves": [
+          {
+            "node": "S",
+            "title": "Change what you optimize",
+            "desc": "You no longer ship features. You ship healthy teams and good managers."
+          },
+          {
+            "node": "A",
+            "title": "Delegate outcomes, not tasks",
+            "desc": "Set the what and the why; let them own the how, and the mistakes."
+          },
+          {
+            "node": "A",
+            "title": "Use skip-levels and signals",
+            "desc": "Skip-level one-on-ones and team-health metrics \u2014 lead through, not around, your managers."
+          },
+          {
+            "node": "L",
+            "title": "Grow your managers",
+            "desc": "Coach them like you once coached engineers. Your leverage is their growth."
+          }
+        ],
+        "trap": "You kept operating like a lead \u2014 in the code, in the details, undermining your managers.",
+        "signal": "You lead through others and scale your impact past what you could do alone.",
+        "foot": "The job stops being about your output, and starts being about your leaders' output.",
+        "dur": 39.093
+      }
+    },
+    {
+      "id": "s06s_managers",
+      "type": "em_story",
+      "in_seconds": 563.121,
+      "out_seconds": 699.652,
+      "props": {
+        "cat": "WORKED EXAMPLE \u00b7 LEADING LEADERS",
+        "title": "Turning a great engineer into a first-time manager",
+        "color": "#A78BFA",
+        "situation": "As my org grew past twenty people, I had to split it into teams. My strongest tech lead, Ravi, was the obvious choice to run one \u2014 but he'd never managed, and great engineers often make miserable managers.",
+        "task": "My mandate: grow Ravi into a real manager, without losing him or breaking his team.",
+        "actions": [
+          {
+            "d": "Set the new bar explicitly \u2014 his job was now his team's output and growth, not his own commits."
+          },
+          {
+            "d": "Delegated outcomes, not tasks \u2014 I gave him the goals and let him own the how, including early mistakes."
+          },
+          {
+            "d": "Coached him weekly on the craft \u2014 feedback, prioritization, one-on-ones \u2014 and used skip-levels to sense the team without going around him."
+          },
+          {
+            "d": "Protected his authority \u2014 I let his team see him as the decision-maker, and backed his calls in public."
+          }
+        ],
+        "metrics": [
+          {
+            "v": "6 months",
+            "l": "to a self-sufficient manager"
+          },
+          {
+            "v": "first launch",
+            "l": "shipped under him"
+          },
+          {
+            "v": "0",
+            "l": "attrition on his team"
+          }
+        ],
+        "learning": "Managing managers means coaching the craft and leading through them, never around them.",
+        "foot": "You scaled yourself by growing a leader, not by staying the hero engineer. The senior bar.",
+        "dur": 137.031
+      }
+    },
+    {
+      "id": "s07_recap",
+      "type": "em_recap",
+      "in_seconds": 700.152,
+      "out_seconds": 734.247,
+      "props": {
+        "items": [
+          "Measure outcomes and team health, never just velocity.",
+          "Motivation is a system \u2014 fix the cause, don't throw a party.",
+          "Retain people through growth, months before they quit.",
+          "Managing managers means leading through them, not around.",
+          "Same spine every time: STAR, plus what you learned."
+        ],
+        "closer": "Lead the team, grow the leaders, and the output takes care of itself.",
+        "dur": 34.595
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "em2/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

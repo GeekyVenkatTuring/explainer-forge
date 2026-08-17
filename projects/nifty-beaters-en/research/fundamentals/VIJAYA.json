@@ -1,0 +1,96 @@
+{
+ "ticker": "VIJAYA",
+ "scraped_at": "2026-08-14T15:29:15",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 15184.0,
+ "current_price": 1474.0,
+ "pe": 81.0,
+ "book_value": 93.0,
+ "dividend_yield_pct": 0.13,
+ "roce_pct": 21.3,
+ "roe_pct": 19.7,
+ "face_value": 1.0,
+ "high": 1573.0,
+ "sales_growth": {
+  "5 Years": 15.0,
+  "3 Years": 27.0,
+  "TTM": 24.0
+ },
+ "profit_growth": {
+  "3 Years": 47.0,
+  "1 Year": 41.0
+ },
+ "roe_hist": {
+  "Equity Capital": 5.0,
+  "Reserves": 157.0,
+  "Borrowings&nbsp; +": 33.0,
+  "Other Liabilities&nbsp; +": 39.0,
+  "Total Liabilities": 234.0,
+  "Fixed Assets&nbsp; +": 119.0,
+  "CWIP": 3.0,
+  "Investments": 73.0,
+  "Other Assets&nbsp; +": 39.0,
+  "Total Assets": 234.0
+ },
+ "price_cagr": {
+  "5 Years": 20.0,
+  "3 Years": 19.0,
+  "Last Year": 20.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "40%",
+   "41%",
+   "39%",
+   "41%",
+   "39%",
+   "42%",
+   "40%",
+   "40%",
+   "39%",
+   "41%",
+   "42%",
+   "44%",
+   "43%"
+  ],
+  "eps": [
+   "2.57",
+   "3.26",
+   "2.53",
+   "3.27",
+   "3.06",
+   "4.10",
+   "3.43",
+   "3.40",
+   "3.76",
+   "4.21",
+   "4.20",
+   "4.66",
+   "5.16"
+  ]
+ },
+ "pros": [],
+ "cons": [
+  "Stock is trading at 16.1 times its book value",
+  "Working capital days have increased from -3.87 days to 65.1 days"
+ ]
+}

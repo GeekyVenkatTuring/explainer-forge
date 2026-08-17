@@ -1,0 +1,876 @@
+{
+  "cuts": [
+    {
+      "id": "dhoot_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 28.82,
+      "props": {
+        "title": "Dhoot Transmission IPO",
+        "sub": "Auto wiring & EV connectors · ₹3,067 Cr · 10–12 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 29.32
+      }
+    },
+    {
+      "id": "dhoot_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 29.32,
+      "out_seconds": 71.122,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Dhoot Transmission",
+        "color": "#38BDF8",
+        "items": [
+          {
+            "emoji": "🔌",
+            "k": "Auto wiring harnesses",
+            "v": "Makes the wiring harnesses and connectors — the electrical nervous system of a vehicle — for two-wheelers, cars and commercial vehicles",
+            "chip": "WIRING"
+          },
+          {
+            "emoji": "🔋",
+            "k": "An EV & premiumisation play",
+            "v": "Modern and electric vehicles pack in far more wiring and electronics, so the value of parts per vehicle keeps rising",
+            "chip": "EV TAILWIND"
+          },
+          {
+            "emoji": "🌍",
+            "k": "Scale & exports",
+            "v": "Supplies large vehicle makers in India and abroad — a diversified customer base across segments",
+            "chip": "OEM SUPPLIER"
+          }
+        ],
+        "dur": 42.302
+      }
+    },
+    {
+      "id": "dhoot_clients",
+      "type": "sm_iconcards",
+      "in_seconds": 71.622,
+      "out_seconds": 121.44,
+      "props": {
+        "kicker": "BUSINESS DEEP-DIVE · CLIENTS & ORDER BOOK",
+        "title": "Who Buys From Dhoot",
+        "color": "#38BDF8",
+        "items": [
+          {
+            "emoji": "🤝",
+            "k": "Marquee auto-OEM clients",
+            "v": "Bajaj Auto is its biggest customer at ~32% of FY26 revenue, then TVS (~20%), Honda (~11%), Royal Enfield and Suzuki",
+            "chip": "BAJAJ ~32%"
+          },
+          {
+            "emoji": "🏭",
+            "k": "A global, full-stack supplier",
+            "v": "Beyond harnesses it makes battery packs, sensors, switches and EV electronics — from 22 plants across India, the UK, Slovakia and Thailand",
+            "chip": "22 PLANTS · 4 COUNTRIES"
+          },
+          {
+            "emoji": "⚠️",
+            "k": "No order book, but concentrated",
+            "v": "Auto-parts run on long-term OEM supply programs, not a quoted order book — and the top 5 customers are ~71.6% of revenue, a real concentration risk",
+            "chip": "TOP-5 = 71.6%"
+          }
+        ],
+        "dur": 50.318
+      }
+    },
+    {
+      "id": "dhoot_fin",
+      "type": "sm_stats",
+      "in_seconds": 121.94,
+      "out_seconds": 158.248,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 4564,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+31.33% YoY (≈ ₹4,563.70 Cr)"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 397,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+12.14% YoY (≈ ₹396.84 Cr)"
+          },
+          {
+            "label": "Grey-mkt premium",
+            "to": 28,
+            "prefix": "~",
+            "suffix": "%",
+            "color": "#FBBF24",
+            "sub": "unofficial · ~₹247 over ₹871"
+          }
+        ],
+        "note": "Strong growth — revenue up over 31%. Note profit grew slower, up 12%, so margins are under some pressure as it scales.",
+        "dur": 36.808
+      }
+    },
+    {
+      "id": "dhoot_issue",
+      "type": "sm_stats",
+      "in_seconds": 158.748,
+      "out_seconds": 194.478,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 3067,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#38BDF8",
+            "sub": "₹3,066.89 Cr · band ₹829–871"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 1400,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "~46% funds the business"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 1667,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "~54% — existing owners exit"
+          }
+        ],
+        "note": "A roughly even split — a little over half is an Offer-for-Sale going to existing shareholders; the rest is fresh money.",
+        "dur": 36.23
+      }
+    },
+    {
+      "id": "dhoot_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 194.978,
+      "out_seconds": 225.788,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the Fresh Money Funds",
+        "color": "#38BDF8",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "Repay borrowings",
+            "v": "A large part of the fresh issue pays down debt — cutting interest costs and strengthening the balance sheet",
+            "chip": "DEBT"
+          },
+          {
+            "emoji": "🏭",
+            "k": "Capacity & growth",
+            "v": "The balance supports capital spending and working capital to serve rising EV and premium-vehicle demand",
+            "chip": "GROWTH"
+          },
+          {
+            "emoji": "🧰",
+            "k": "General corporate",
+            "v": "A portion is kept for general corporate purposes, the standard catch-all bucket",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 31.31
+      }
+    },
+    {
+      "id": "dhoot_peers",
+      "type": "sm_peers",
+      "in_seconds": 226.288,
+      "out_seconds": 268.452,
+      "props": {
+        "kicker": "COMPETITORS · VALUATION",
+        "title": "Cheaper Than Its Auto-Parts Rivals",
+        "color": "#38BDF8",
+        "peLabel": "P/E (×) · lower = cheaper",
+        "rows": [
+          {
+            "name": "Dhoot Transmission (this IPO)",
+            "pe": 44.9,
+            "hi": true,
+            "note": "₹4,564 Cr rev · ROE 16.3%"
+          },
+          {
+            "name": "Sona BLW Precision Forgings",
+            "pe": 74.6,
+            "note": "EV driveline · ~₹4,475 Cr rev · priciest"
+          },
+          {
+            "name": "Uno Minda",
+            "pe": 56.9,
+            "note": "diversified parts · ~₹19,658 Cr rev"
+          },
+          {
+            "name": "Motherson Sumi Wiring",
+            "pe": 43.2,
+            "note": "harness pure-play · ~₹11,478 Cr rev"
+          }
+        ],
+        "verdict": "Dhoot's ~45× sits below the ~57× peer average — and it earns a higher return on equity (16.3% vs ~11.8%). On the numbers, a cheaper, higher-quality name.",
+        "dur": 42.664
+      }
+    },
+    {
+      "id": "dhoot_verdict",
+      "type": "sm_myths",
+      "in_seconds": 268.952,
+      "out_seconds": 308.378,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "~54% is OFS — over half is a sell-down",
+            "f": "Revenue +31%; priced below the peer average"
+          },
+          {
+            "m": "Profit grew slower than sales — margin squeeze",
+            "f": "Higher ROE (~16.3%) than its rivals"
+          },
+          {
+            "m": "Auto demand is cyclical",
+            "f": "EV & premiumisation lift parts per vehicle; GMP ~28%"
+          }
+        ],
+        "dur": 39.926
+      }
+    },
+    {
+      "id": "dhoot_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 308.878,
+      "out_seconds": 351.374,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#38BDF8",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,807 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 42.996
+      }
+    },
+    {
+      "id": "dhoot_recap",
+      "type": "sm_recap",
+      "in_seconds": 351.874,
+      "out_seconds": 418.994,
+      "props": {
+        "title": "Dhoot Transmission IPO — at a Glance",
+        "items": [
+          "Business: auto wiring harnesses & EV connectors",
+          "FY26: revenue ₹4,563.70 Cr (+31.33%), profit ₹396.84 Cr (+12.14%)",
+          "₹3,066.89 Cr issue — ~46% fresh, ~54% OFS",
+          "Priced ~44.9× vs ~57× peers — cheaper, higher ROE",
+          "Retail min ~₹14,807 · GMP ~28% (unofficial)"
+        ],
+        "closer": "A cyclical but cheaply-priced, higher-quality auto-parts play. Read the RHP; decide for yourself.",
+        "dur": 67.62
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.752,
+      "Let's break down the Dhoot Transmission I-P-O —"
+    ],
+    [
+      3.752,
+      7.265,
+      "one of the largest issues opening next week,"
+    ],
+    [
+      7.265,
+      11.017,
+      "at three thousand and sixty-seven crore rupees."
+    ],
+    [
+      11.017,
+      15.009,
+      "We'll cover what the company does, its financials,"
+    ],
+    [
+      15.009,
+      17.404,
+      "where the money actually goes,"
+    ],
+    [
+      17.404,
+      20.198,
+      "how it's priced against its rivals,"
+    ],
+    [
+      20.198,
+      22.832,
+      "and how much you'd need to apply."
+    ],
+    [
+      22.832,
+      27.143,
+      "Quick note — this is education, not investment advice,"
+    ],
+    [
+      27.143,
+      28.82,
+      "and not a tip to buy."
+    ],
+    [
+      29.32,
+      32.161,
+      "So what does Dhoot Transmission do?"
+    ],
+    [
+      32.161,
+      35.57,
+      "It makes wiring harnesses and connectors —"
+    ],
+    [
+      35.57,
+      40.44,
+      "think of them as the electrical nervous system of a vehicle,"
+    ],
+    [
+      40.44,
+      43.768,
+      "carrying power and signals to every part."
+    ],
+    [
+      43.768,
+      47.34,
+      "It supplies these to makers of two-wheelers,"
+    ],
+    [
+      47.34,
+      49.693,
+      "cars and commercial vehicles."
+    ],
+    [
+      49.693,
+      58.541,
+      "It's riding a strong theme: modern and electric vehicles use far more wiring and electronics than older ones,"
+    ],
+    [
+      58.541,
+      62.924,
+      "so the value of components per vehicle keeps climbing."
+    ],
+    [
+      62.924,
+      68.2,
+      "And it sells to large vehicle makers both in India and overseas —"
+    ],
+    [
+      68.2,
+      71.122,
+      "a diversified, sticky customer base."
+    ],
+    [
+      71.622,
+      74.338,
+      "Let's go deeper on the business."
+    ],
+    [
+      74.338,
+      76.799,
+      "Who actually buys from Dhoot?"
+    ],
+    [
+      76.799,
+      79.685,
+      "Its biggest client is Bajaj Auto —"
+    ],
+    [
+      79.685,
+      82.825,
+      "about thirty-two percent of revenue —"
+    ],
+    [
+      82.825,
+      86.729,
+      "then T-V-S at twenty percent, Honda at eleven,"
+    ],
+    [
+      86.729,
+      89.275,
+      "plus Royal Enfield and Suzuki."
+    ],
+    [
+      89.275,
+      94.452,
+      "Beyond wiring harnesses it also makes battery packs, sensors,"
+    ],
+    [
+      94.452,
+      96.913,
+      "switches and E-V electronics,"
+    ],
+    [
+      96.913,
+      100.732,
+      "from twenty-two plants across India, the U-K,"
+    ],
+    [
+      100.732,
+      102.599,
+      "Slovakia and Thailand."
+    ],
+    [
+      102.599,
+      103.872,
+      "On order book —"
+    ],
+    [
+      103.872,
+      110.831,
+      "auto-parts don't quote one; they run on long-term supply programs with these OEMs."
+    ],
+    [
+      110.831,
+      119.318,
+      "But the flip side is concentration: the top five customers are about seventy-two percent of revenue,"
+    ],
+    [
+      119.318,
+      121.44,
+      "so losing one would hurt."
+    ],
+    [
+      121.94,
+      124.909,
+      "Now the financials — and they're solid."
+    ],
+    [
+      124.909,
+      133.205,
+      "Revenue for the year ended March twenty twenty-six was about four thousand five hundred and sixty-four crore,"
+    ],
+    [
+      133.205,
+      136.935,
+      "up a strong thirty-one point three three percent."
+    ],
+    [
+      136.935,
+      140.893,
+      "Net profit was three hundred and ninety-seven crore,"
+    ],
+    [
+      140.893,
+      143.405,
+      "up twelve point one four percent."
+    ],
+    [
+      143.405,
+      146.45,
+      "Notice profit grew slower than revenue —"
+    ],
+    [
+      146.45,
+      150.484,
+      "a sign of some margin pressure as the company scales."
+    ],
+    [
+      150.484,
+      155.279,
+      "The grey market is pricing a premium near twenty-eight percent,"
+    ],
+    [
+      155.279,
+      158.248,
+      "but that's unofficial and drifts daily."
+    ],
+    [
+      158.748,
+      162.297,
+      "Here's the most important part of any I-P-O —"
+    ],
+    [
+      162.297,
+      164.269,
+      "where does your money go?"
+    ],
+    [
+      164.269,
+      167.74,
+      "Of the three thousand and sixty-seven crore,"
+    ],
+    [
+      167.74,
+      172.078,
+      "about fourteen hundred crore — some forty-six percent —"
+    ],
+    [
+      172.078,
+      175.548,
+      "is a fresh issue that goes into the company."
+    ],
+    [
+      175.548,
+      176.81,
+      "The larger part,"
+    ],
+    [
+      176.81,
+      180.991,
+      "about one thousand six hundred and sixty-seven crore,"
+    ],
+    [
+      180.991,
+      182.726,
+      "is an Offer for Sale —"
+    ],
+    [
+      182.726,
+      186.985,
+      "existing shareholders selling and pocketing that cash."
+    ],
+    [
+      186.985,
+      191.954,
+      "So it's a fairly even split: a little over half is a sell-down,"
+    ],
+    [
+      191.954,
+      194.478,
+      "and the rest funds the business."
+    ],
+    [
+      194.978,
+      197.446,
+      "What does the fresh money fund?"
+    ],
+    [
+      197.446,
+      200.71,
+      "A large part goes to repaying borrowings,"
+    ],
+    [
+      200.71,
+      205.487,
+      "which cuts interest costs and strengthens the balance sheet."
+    ],
+    [
+      205.487,
+      209.866,
+      "The rest supports capital spending and working capital,"
+    ],
+    [
+      209.866,
+      215.757,
+      "so the company can serve rising demand from electric and premium vehicles."
+    ],
+    [
+      215.757,
+      219.976,
+      "And a portion is kept for general corporate purposes."
+    ],
+    [
+      219.976,
+      225.788,
+      "So the fresh money both de-risks the balance sheet and funds some growth."
+    ],
+    [
+      226.288,
+      229.367,
+      "So how is it priced against its rivals?"
+    ],
+    [
+      229.367,
+      232.131,
+      "At about forty-five times earnings,"
+    ],
+    [
+      232.131,
+      237.816,
+      "Dhoot is asking LESS than the peer average of roughly fifty-seven times."
+    ],
+    [
+      237.816,
+      240.659,
+      "Sona B-L-W trades near seventy-five,"
+    ],
+    [
+      240.659,
+      242.948,
+      "Uno Minda around fifty-seven,"
+    ],
+    [
+      242.948,
+      246.422,
+      "and Motherson Sumi Wiring about forty-three."
+    ],
+    [
+      246.422,
+      250.055,
+      "So Dhoot sits at the cheaper end of the pack —"
+    ],
+    [
+      250.055,
+      253.134,
+      "and it earns a higher return on equity,"
+    ],
+    [
+      253.134,
+      257.635,
+      "above sixteen percent versus around twelve for the group."
+    ],
+    [
+      257.635,
+      261.346,
+      "On the numbers, it looks like the better-value,"
+    ],
+    [
+      261.346,
+      264.346,
+      "higher-quality name — though remember,"
+    ],
+    [
+      264.346,
+      268.452,
+      "these peer multiples move with the market every day."
+    ],
+    [
+      268.952,
+      271.11,
+      "So — should you subscribe?"
+    ],
+    [
+      271.11,
+      273.102,
+      "Let's weigh it honestly."
+    ],
+    [
+      273.102,
+      277.833,
+      "On the strengths side — revenue is up thirty-one percent,"
+    ],
+    [
+      277.833,
+      280.738,
+      "it's priced below the peer average,"
+    ],
+    [
+      280.738,
+      285.303,
+      "and it earns a higher return on equity than its rivals."
+    ],
+    [
+      285.303,
+      290.201,
+      "On the watch-out side — over half the issue is a sell-down,"
+    ],
+    [
+      290.201,
+      295.347,
+      "profit grew slower than revenue so margins are under pressure,"
+    ],
+    [
+      295.347,
+      297.671,
+      "and auto demand is cyclical."
+    ],
+    [
+      297.671,
+      302.402,
+      "The takeaway — a cyclical business, but a cheaply-priced,"
+    ],
+    [
+      302.402,
+      303.979,
+      "higher-quality one."
+    ],
+    [
+      303.979,
+      308.378,
+      "Go in understanding half your money buys out sellers."
+    ],
+    [
+      308.878,
+      313.303,
+      "Finally — how do you apply, and how much do you need?"
+    ],
+    [
+      313.303,
+      320.566,
+      "As a retail investor you can bid up to two lakh rupees for a thirty-five percent quota."
+    ],
+    [
+      320.566,
+      325.242,
+      "If it's oversubscribed, shares are given out by lottery,"
+    ],
+    [
+      325.242,
+      328.665,
+      "so a bigger cheque does not get you more."
+    ],
+    [
+      328.665,
+      333.173,
+      "H-N-Is bid above two lakh for a fifteen percent quota."
+    ],
+    [
+      333.173,
+      336.513,
+      "For Dhoot, one lot is seventeen shares —"
+    ],
+    [
+      336.513,
+      341.188,
+      "about fourteen thousand eight hundred and seven rupees —"
+    ],
+    [
+      341.188,
+      342.274,
+      "your minimum."
+    ],
+    [
+      342.274,
+      347.533,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      347.533,
+      351.374,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      351.874,
+      354.381,
+      "Let's recap Dhoot Transmission."
+    ],
+    [
+      354.381,
+      359.961,
+      "An auto wiring-harness maker riding the E-V and premiumisation theme,"
+    ],
+    [
+      359.961,
+      362.791,
+      "with revenue up thirty-one percent."
+    ],
+    [
+      362.791,
+      367.643,
+      "The issue is a roughly even split — forty-six percent fresh,"
+    ],
+    [
+      367.643,
+      369.341,
+      "the rest a sell-down."
+    ],
+    [
+      369.341,
+      373.87,
+      "Crucially, it's priced around forty-five times earnings,"
+    ],
+    [
+      373.87,
+      377.186,
+      "below the fifty-seven times peer average,"
+    ],
+    [
+      377.186,
+      380.097,
+      "and with a higher return on equity —"
+    ],
+    [
+      380.097,
+      383.574,
+      "cheaper and better-quality than its rivals."
+    ],
+    [
+      383.574,
+      388.992,
+      "The retail minimum is about fourteen thousand eight hundred rupees,"
+    ],
+    [
+      388.992,
+      393.602,
+      "and the grey-market premium is near twenty-eight percent,"
+    ],
+    [
+      393.602,
+      395.623,
+      "though that's unofficial."
+    ],
+    [
+      395.623,
+      399.505,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      399.505,
+      401.769,
+      "it is not investment advice,"
+    ],
+    [
+      401.769,
+      404.438,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      404.438,
+      407.511,
+      "and not a prediction of listing gains."
+    ],
+    [
+      407.511,
+      411.797,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      411.797,
+      417.377,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      417.377,
+      418.994,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/dhoot.wav",
+      "volume": 1.0
+    }
+  }
+}

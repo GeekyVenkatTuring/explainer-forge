@@ -1,0 +1,311 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch19b-separation_separation",
+   "type": "it_separation",
+   "in_seconds": 0.0,
+   "out_seconds": 133.425,
+   "props": {
+    "dur": 133.925
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   3.039,
+   "Now watch two halves of this course click"
+  ],
+  [
+   3.039,
+   4.938,
+   "together into a single machine."
+  ],
+  [
+   5.569,
+   7.848,
+   "We have learned two opposite skills."
+  ],
+  [
+   8.48,
+   11.518,
+   "Source coding \u2014 compression \u2014 whose whole job"
+  ],
+  [
+   11.518,
+   14.557,
+   "is to remove redundancy and shrink a message"
+  ],
+  [
+   14.557,
+   16.076,
+   "down toward its entropy."
+  ],
+  [
+   16.708,
+   19.747,
+   "And channel coding \u2014 error correction \u2014 whose"
+  ],
+  [
+   19.747,
+   22.026,
+   "whole job is to add redundancy,"
+  ],
+  [
+   22.026,
+   24.304,
+   "to protect a message against noise."
+  ],
+  [
+   24.936,
+   26.835,
+   "Put them in a line,"
+  ],
+  [
+   26.835,
+   28.734,
+   "and it looks completely insane."
+  ],
+  [
+   28.734,
+   31.773,
+   "First you painstakingly strip out every redundant\nbit."
+  ],
+  [
+   31.773,
+   32.153,
+   "Then,"
+  ],
+  [
+   32.153,
+   32.533,
+   "immediately,"
+  ],
+  [
+   32.533,
+   35.191,
+   "you add redundant bits right back in."
+  ],
+  [
+   35.191,
+   37.47,
+   "Why not just leave them there?"
+  ],
+  [
+   38.102,
+   41.14,
+   "Because the two kinds of redundancy are utterly"
+  ],
+  [
+   41.14,
+   41.52,
+   "different."
+  ],
+  [
+   42.152,
+   45.19,
+   "The redundancy in raw data is accidental and"
+  ],
+  [
+   45.19,
+   47.469,
+   "messy \u2014 the lopsided letter frequencies,"
+  ],
+  [
+   47.469,
+   48.609,
+   "the repeated patterns."
+  ],
+  [
+   48.609,
+   51.648,
+   "It does nothing to protect you against noise."
+  ],
+  [
+   52.279,
+   55.318,
+   "The redundancy that channel coding adds is\ndeliberate"
+  ],
+  [
+   55.318,
+   58.356,
+   "and precisely structured \u2014 engineered so that any"
+  ],
+  [
+   58.356,
+   61.015,
+   "error lights up and points to itself."
+  ],
+  [
+   61.647,
+   64.305,
+   "And here is Shannon's remarkable separation\ntheorem."
+  ],
+  [
+   64.937,
+   67.976,
+   "You lose absolutely nothing by doing these two"
+  ],
+  [
+   67.976,
+   68.735,
+   "jobs separately,"
+  ],
+  [
+   68.735,
+   70.255,
+   "one after the other."
+  ],
+  [
+   70.886,
+   73.925,
+   "The best possible system can always be built"
+  ],
+  [
+   73.925,
+   75.064,
+   "as a compressor,"
+  ],
+  [
+   75.064,
+   77.343,
+   "followed by an independent error-correcting code."
+  ],
+  [
+   77.343,
+   80.002,
+   "You never need to tangle them together."
+  ],
+  [
+   80.634,
+   83.672,
+   "And this is not just a theoretical nicety."
+  ],
+  [
+   83.672,
+   86.711,
+   "It is why the entire engineering world is"
+  ],
+  [
+   86.711,
+   88.23,
+   "built in clean layers."
+  ],
+  [
+   88.862,
+   91.141,
+   "The team designing a compression format,"
+  ],
+  [
+   91.141,
+   92.66,
+   "like JPEG or ZIP,"
+  ],
+  [
+   92.66,
+   95.319,
+   "never has to think about wi-fi static."
+  ],
+  [
+   95.319,
+   98.357,
+   "The team designing the error-correction for that\nwi-fi"
+  ],
+  [
+   98.357,
+   101.396,
+   "never has to know what is being sent."
+  ],
+  [
+   102.028,
+   102.787,
+   "Compress first."
+  ],
+  [
+   102.787,
+   103.547,
+   "Then protect."
+  ],
+  [
+   103.547,
+   104.306,
+   "Two clean,"
+  ],
+  [
+   104.306,
+   107.345,
+   "independent layers \u2014 blessed by a theorem \u2014"
+  ],
+  [
+   107.345,
+   110.384,
+   "and the whole tower of modern communication rests"
+  ],
+  [
+   110.384,
+   111.523,
+   "on that promise."
+  ],
+  [
+   112.155,
+   113.294,
+   "One honest caveat."
+  ],
+  [
+   113.294,
+   116.333,
+   "The theorem assumes unlimited time and arbitrarily\nlong"
+  ],
+  [
+   116.333,
+   116.713,
+   "codes."
+  ],
+  [
+   116.713,
+   118.232,
+   "In the real world,"
+  ],
+  [
+   118.232,
+   119.371,
+   "with tight delays,"
+  ],
+  [
+   119.371,
+   122.41,
+   "engineers sometimes do blend the two layers for"
+  ],
+  [
+   122.41,
+   123.929,
+   "a little extra performance."
+  ],
+  [
+   123.929,
+   125.828,
+   "But as a guiding principle,"
+  ],
+  [
+   125.828,
+   128.867,
+   "separation is why the internet can be built"
+  ],
+  [
+   128.867,
+   131.906,
+   "by thousands of teams who never have to"
+  ],
+  [
+   131.906,
+   133.425,
+   "talk to one another."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch19b-separation.wav",
+   "volume": 1.0
+  }
+ }
+}

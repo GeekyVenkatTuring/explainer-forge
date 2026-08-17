@@ -1,0 +1,667 @@
+{
+  "cuts": [
+    {
+      "id": "anawil_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 28.724,
+      "props": {
+        "title": "Anawil Wire & Engineering IPO",
+        "sub": "Telecom & transmission towers · ₹177.81 Cr · NSE SME · 3–5 Aug 2026",
+        "kicker": "SME IPO ANALYSIS · NSE SME",
+        "dur": 29.224
+      }
+    },
+    {
+      "id": "anawil_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 29.224,
+      "out_seconds": 68.29,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Anawil Wire & Engineering",
+        "color": "#FB923C",
+        "items": [
+          {
+            "emoji": "🗼",
+            "k": "Makes transmission & telecom towers",
+            "v": "Manufactures and fabricates steel towers for power transmission and telecom — its core business",
+            "chip": "TOWERS"
+          },
+          {
+            "emoji": "🔩",
+            "k": "Fabrication & engineering",
+            "v": "Heavy steel fabrication and galvanising — tower manufacturing was ~99.95% of FY25 revenue",
+            "chip": "STEEL"
+          },
+          {
+            "emoji": "⚡",
+            "k": "A power-infra capex play",
+            "v": "Rides India's heavy spend on the power grid and telecom rollout — but it's a single-product business",
+            "chip": "GRID CAPEX"
+          }
+        ],
+        "dur": 39.566
+      }
+    },
+    {
+      "id": "anawil_fin",
+      "type": "sm_stats",
+      "in_seconds": 68.79,
+      "out_seconds": 110.712,
+      "props": {
+        "kicker": "FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 143,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+82% YoY (₹78.59 → ₹143.27 Cr)"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 37,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+198% YoY (₹12.30 → ₹36.63 Cr)"
+          },
+          {
+            "label": "Grey-mkt premium",
+            "to": 21,
+            "prefix": "~",
+            "suffix": "%",
+            "color": "#FB923C",
+            "sub": "unofficial · drifts daily"
+          }
+        ],
+        "note": "Explosive growth — revenue up 82% and profit nearly tripling. Three-year path: revenue ₹54.07 → ₹78.59 → ₹143.27 Cr; profit ₹4.39 → ₹12.30 → ₹36.63 Cr.",
+        "dur": 42.422
+      }
+    },
+    {
+      "id": "anawil_issue",
+      "type": "sm_stats",
+      "in_seconds": 111.212,
+      "out_seconds": 141.638,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 178,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#FB923C",
+            "sub": "₹177.81 Cr · band ₹257–270"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 143,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "₹142.69 Cr · ~80% funds the business"
+          },
+          {
+            "label": "OFS (to promoters)",
+            "to": 35,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "₹35.12 Cr — promoters part-sell"
+          }
+        ],
+        "note": "A healthy mix: about 80% is a fresh issue that funds the company; only about 20% is a promoter sell-down.",
+        "dur": 30.926
+      }
+    },
+    {
+      "id": "anawil_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 142.138,
+      "out_seconds": 169.636,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the Fresh Money Funds",
+        "color": "#FB923C",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "Mainly — repay debt",
+            "v": "The primary aim is to cut borrowings, which lowers finance costs and strengthens the balance sheet",
+            "chip": "DEBT"
+          },
+          {
+            "emoji": "💵",
+            "k": "Better cash flows",
+            "v": "Lower interest frees up cash — useful for a fast-growing, fabrication-heavy business",
+            "chip": "CASH FLOW"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Balance — general corporate",
+            "v": "The remainder goes to general corporate purposes",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 27.998
+      }
+    },
+    {
+      "id": "anawil_verdict",
+      "type": "sm_myths",
+      "in_seconds": 170.136,
+      "out_seconds": 215.058,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "Single-product — nearly all revenue is towers",
+            "f": "Explosive growth — revenue +82%, profit +198%"
+          },
+          {
+            "m": "Tiny SME — volatile, thinly traded",
+            "f": "80% fresh — mostly funds the business, cuts debt"
+          },
+          {
+            "m": "Customer & sector concentration risk",
+            "f": "Rides power-grid & telecom capex; GMP ~21%"
+          }
+        ],
+        "dur": 45.422
+      }
+    },
+    {
+      "id": "anawil_apply",
+      "type": "sm_iconcards",
+      "in_seconds": 215.558,
+      "out_seconds": 264.678,
+      "props": {
+        "kicker": "HOW TO APPLY · SME IPO",
+        "title": "Platform & Money Needed",
+        "color": "#FB923C",
+        "items": [
+          {
+            "emoji": "🏢",
+            "k": "Lists on NSE SME",
+            "v": "A separate platform for small companies — NOT the mainboard. Lot sizes, liquidity and risk all differ",
+            "chip": "SME"
+          },
+          {
+            "emoji": "💰",
+            "k": "A large minimum bid",
+            "v": "One lot is 400 shares. The minimum you need is about ₹1.08 lakh — far above a mainboard IPO's ~₹15,000",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "⚠️",
+            "k": "Higher risk, thin liquidity",
+            "v": "SME stocks are volatile and lightly traded, with lighter disclosure — invest only money you can afford to lock up",
+            "chip": "RISK"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE/BSE SME IPO pages, Chittorgarh or your broker app; allotment is by lottery if oversubscribed",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 49.62
+      }
+    },
+    {
+      "id": "anawil_recap",
+      "type": "sm_recap",
+      "in_seconds": 265.178,
+      "out_seconds": 323.01,
+      "props": {
+        "title": "Anawil Wire & Engineering IPO — at a Glance",
+        "items": [
+          "Business: transmission & telecom tower maker (single-product)",
+          "FY26: revenue ₹143.27 Cr (+82%), profit ₹36.63 Cr (+198%)",
+          "₹177.81 Cr issue — ~80% fresh; NSE SME",
+          "Fresh money mainly repays debt",
+          "SME min ~₹1.08 lakh · GMP ~21% (unofficial)"
+        ],
+        "closer": "Explosive growth and a clean, debt-cutting structure — but a single-product, small-cap SME. Read the RHP; decide for yourself.",
+        "dur": 58.332
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.468,
+      "Let's break down the Anawil Wire and Engineering I-P-O —"
+    ],
+    [
+      4.468,
+      9.096,
+      "an S-M-E issue of about a hundred and seventy-eight crore,"
+    ],
+    [
+      9.096,
+      13.963,
+      "and one of the fastest-growing small companies of this batch."
+    ],
+    [
+      13.963,
+      17.234,
+      "We'll cover what it does, its financials,"
+    ],
+    [
+      17.234,
+      21.304,
+      "where the money goes, and how S-M-E I-P-Os differ —"
+    ],
+    [
+      21.304,
+      25.453,
+      "including the much bigger minimum you need to apply."
+    ],
+    [
+      25.453,
+      28.724,
+      "This is education, not investment advice."
+    ],
+    [
+      29.224,
+      31.096,
+      "So what does Anawil do?"
+    ],
+    [
+      31.096,
+      34.758,
+      "It manufactures and fabricates steel towers —"
+    ],
+    [
+      34.758,
+      41.758,
+      "the tall lattice structures that carry power transmission lines and telecom equipment."
+    ],
+    [
+      41.758,
+      53.559,
+      "This is its core: tower manufacturing and fabrication made up almost ninety-nine point nine five percent of its revenue in FY twenty twenty-five."
+    ],
+    [
+      53.559,
+      55.594,
+      "It rides a strong theme —"
+    ],
+    [
+      55.594,
+      59.907,
+      "India's heavy spending on the power grid and telecom."
+    ],
+    [
+      59.907,
+      65.197,
+      "But be clear-eyed: this is essentially a single-product business,"
+    ],
+    [
+      65.197,
+      68.29,
+      "so its fortunes ride on that one line."
+    ],
+    [
+      68.79,
+      72.377,
+      "Now the financials — and the growth is striking."
+    ],
+    [
+      72.377,
+      75.366,
+      "Revenue jumped about eighty-two percent,"
+    ],
+    [
+      75.366,
+      84.034,
+      "from seventy-eight point five nine crore to a hundred and forty-three point two seven crore in FY twenty twenty-six."
+    ],
+    [
+      84.034,
+      86.351,
+      "And net profit nearly tripled —"
+    ],
+    [
+      86.351,
+      89.265,
+      "up a hundred and ninety-eight percent —"
+    ],
+    [
+      89.265,
+      94.571,
+      "from twelve point three zero crore to thirty-six point six three crore."
+    ],
+    [
+      94.571,
+      98.307,
+      "Over three years, revenue has run from fifty-four,"
+    ],
+    [
+      98.307,
+      102.193,
+      "to seventy-nine, to a hundred and forty-three crore."
+    ],
+    [
+      102.193,
+      107.2,
+      "The grey market is pricing a premium of around twenty-one percent —"
+    ],
+    [
+      107.2,
+      110.712,
+      "but that's unofficial, and it drifts every day."
+    ],
+    [
+      111.212,
+      113.178,
+      "Where does your money go?"
+    ],
+    [
+      113.178,
+      117.659,
+      "Of the roughly one hundred and seventy-eight crore issue,"
+    ],
+    [
+      117.659,
+      122.455,
+      "about a hundred and forty-three crore — some eighty percent —"
+    ],
+    [
+      122.455,
+      126.15,
+      "is a fresh issue, money going into the company."
+    ],
+    [
+      126.15,
+      130.317,
+      "The remaining thirty-five crore is an offer for sale,"
+    ],
+    [
+      130.317,
+      134.484,
+      "where the promoters sell a small part of their stake."
+    ],
+    [
+      134.484,
+      137.078,
+      "So this is a mostly-fresh issue —"
+    ],
+    [
+      137.078,
+      139.515,
+      "four-fifths funds the business."
+    ],
+    [
+      139.515,
+      141.638,
+      "That's a healthy structure."
+    ],
+    [
+      142.138,
+      144.87,
+      "What does the fresh money fund?"
+    ],
+    [
+      144.87,
+      150.158,
+      "The main objective is to reduce debt by repaying borrowings."
+    ],
+    [
+      150.158,
+      154.212,
+      "That lowers finance costs, improves cash flow,"
+    ],
+    [
+      154.212,
+      157.297,
+      "and strengthens the balance sheet —"
+    ],
+    [
+      157.297,
+      161.616,
+      "genuinely useful for a company growing this fast."
+    ],
+    [
+      161.616,
+      165.494,
+      "The rest goes to general corporate purposes."
+    ],
+    [
+      165.494,
+      169.636,
+      "It's a sensible, deleveraging use of the money."
+    ],
+    [
+      170.136,
+      171.806,
+      "Should you subscribe?"
+    ],
+    [
+      171.806,
+      174.35,
+      "The strengths are eye-catching —"
+    ],
+    [
+      174.35,
+      176.735,
+      "revenue up eighty-two percent,"
+    ],
+    [
+      176.735,
+      179.677,
+      "profit up nearly two hundred percent,"
+    ],
+    [
+      179.677,
+      183.891,
+      "most of the issue is fresh money that also cuts debt,"
+    ],
+    [
+      183.891,
+      187.866,
+      "and it rides real power-grid and telecom spending."
+    ],
+    [
+      187.866,
+      190.888,
+      "The watch-outs are just as important —"
+    ],
+    [
+      190.888,
+      195.181,
+      "almost all its revenue comes from one product, towers,"
+    ],
+    [
+      195.181,
+      198.361,
+      "so it's concentrated; it's a tiny S-M-E,"
+    ],
+    [
+      198.361,
+      205.915,
+      "which means volatility and thin trading; and it carries customer and sector concentration risk."
+    ],
+    [
+      205.915,
+      210.129,
+      "The takeaway — terrific growth and a clean structure,"
+    ],
+    [
+      210.129,
+      212.832,
+      "but a concentrated, small-cap bet."
+    ],
+    [
+      212.832,
+      215.058,
+      "Know that before you decide."
+    ],
+    [
+      215.558,
+      220.625,
+      "Now — how do you apply, and how does an S-M-E I-P-O differ?"
+    ],
+    [
+      220.625,
+      223.974,
+      "This lists on the N-S-E S-M-E platform,"
+    ],
+    [
+      223.974,
+      227.151,
+      "which is separate from the mainboard,"
+    ],
+    [
+      227.151,
+      229.641,
+      "with its own rules and risks."
+    ],
+    [
+      229.641,
+      232.561,
+      "The big difference is the minimum."
+    ],
+    [
+      232.561,
+      235.738,
+      "One lot here is four hundred shares —"
+    ],
+    [
+      235.738,
+      238.916,
+      "about one lakh eight thousand rupees."
+    ],
+    [
+      238.916,
+      242.265,
+      "That's far more than a mainboard I-P-O,"
+    ],
+    [
+      242.265,
+      245.27,
+      "where fifteen thousand gets you in."
+    ],
+    [
+      245.27,
+      249.392,
+      "And S-M-E stocks are volatile and thinly traded,"
+    ],
+    [
+      249.392,
+      253.343,
+      "so invest only what you can afford to lock up."
+    ],
+    [
+      253.343,
+      257.808,
+      "Track the live subscription on the N-S-E S-M-E page,"
+    ],
+    [
+      257.808,
+      260.642,
+      "Chittorgarh, or your broker app —"
+    ],
+    [
+      260.642,
+      264.678,
+      "allotment is by lottery if it's oversubscribed."
+    ],
+    [
+      265.178,
+      268.478,
+      "Let's recap Anawil Wire and Engineering."
+    ],
+    [
+      268.478,
+      273.758,
+      "A transmission and telecom tower maker on the power-capex theme,"
+    ],
+    [
+      273.758,
+      276.81,
+      "and one of the fastest growers here —"
+    ],
+    [
+      276.81,
+      281.76,
+      "revenue up eighty-two percent, profit up nearly two hundred."
+    ],
+    [
+      281.76,
+      285.06,
+      "The issue is about eighty percent fresh,"
+    ],
+    [
+      285.06,
+      287.865,
+      "and that money mainly repays debt."
+    ],
+    [
+      287.865,
+      291.413,
+      "But remember — it's a single-product S-M-E,"
+    ],
+    [
+      291.413,
+      294.218,
+      "so it's concentrated and volatile,"
+    ],
+    [
+      294.218,
+      299.168,
+      "and the minimum bid is about one lakh eight thousand rupees."
+    ],
+    [
+      299.168,
+      303.128,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      303.128,
+      305.438,
+      "it is not investment advice,"
+    ],
+    [
+      305.438,
+      308.16,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      308.16,
+      311.295,
+      "and not a prediction of listing gains."
+    ],
+    [
+      311.295,
+      315.668,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      315.668,
+      321.36,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      321.36,
+      323.01,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/anawil.wav",
+      "volume": 1.0
+    }
+  }
+}

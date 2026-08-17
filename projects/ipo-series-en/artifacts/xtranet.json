@@ -1,0 +1,667 @@
+{
+  "cuts": [
+    {
+      "id": "xtranet_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 25.532,
+      "props": {
+        "title": "Xtranet Technologies IPO",
+        "sub": "Enterprise IT & data centres · ₹167 Cr · 100% Fresh · 23–27 Jul 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 26.032
+      }
+    },
+    {
+      "id": "xtranet_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 26.032,
+      "out_seconds": 67.306,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Xtranet",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🖥️",
+            "k": "Enterprise IT & data centres",
+            "v": "Builds and manages IT infrastructure, data-centre solutions and managed services for businesses and government",
+            "chip": "IT INFRA"
+          },
+          {
+            "emoji": "☁️",
+            "k": "Software & integration",
+            "v": "ERP, system integration, cloud, analytics — plus digital-signature and PKI security platforms",
+            "chip": "SaaS + INTEGRATION"
+          },
+          {
+            "emoji": "📈",
+            "k": "Riding a hot theme",
+            "v": "Data centres and digital transformation are among the fastest-growing IT spends in India",
+            "chip": "TAILWIND"
+          }
+        ],
+        "dur": 41.774
+      }
+    },
+    {
+      "id": "xtranet_fin",
+      "type": "sm_stats",
+      "in_seconds": 67.806,
+      "out_seconds": 100.322,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 366,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+32% YoY"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 41,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+36% YoY (₹30 Cr → ₹41 Cr)"
+          },
+          {
+            "label": "Issue size",
+            "to": 167,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#22D3EE",
+            "sub": "price band ₹120–127"
+          }
+        ],
+        "note": "Small but fast-growing — revenue up 32% and profit up 36%. This is a genuinely profitable small-cap, not a story stock.",
+        "dur": 33.016
+      }
+    },
+    {
+      "id": "xtranet_issue",
+      "type": "sm_stats",
+      "in_seconds": 100.822,
+      "out_seconds": 142.12,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 167,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "price band ₹120–127"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 167,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "100% — all into the firm"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 0,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "ZERO — no promoter exit"
+          }
+        ],
+        "note": "THE GOOD KIND: this is a 100% fresh issue. Every rupee goes INTO the company to fund growth — no promoters are cashing out.",
+        "dur": 41.798
+      }
+    },
+    {
+      "id": "xtranet_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 142.62,
+      "out_seconds": 180.462,
+      "props": {
+        "kicker": "USE OF PROCEEDS",
+        "title": "What the ₹167 Cr Funds",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🔄",
+            "k": "~₹102 Cr — working capital",
+            "v": "The bulk funds day-to-day working capital, which an IT-services business needs to take on bigger contracts",
+            "chip": "GROWTH"
+          },
+          {
+            "emoji": "🏦",
+            "k": "~₹22 Cr — repay debt",
+            "v": "Cuts borrowings and interest cost, strengthening the balance sheet",
+            "chip": "DEBT"
+          },
+          {
+            "emoji": "🖧",
+            "k": "~₹7 Cr — capex",
+            "v": "New systems and hardware; the rest is general corporate purposes",
+            "chip": "CAPEX"
+          }
+        ],
+        "dur": 38.342
+      }
+    },
+    {
+      "id": "xtranet_verdict",
+      "type": "sm_myths",
+      "in_seconds": 180.962,
+      "out_seconds": 224.876,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "Small-cap — more volatile, less proven",
+            "f": "100% fresh issue — money funds growth"
+          },
+          {
+            "m": "Working-capital heavy — always needs cash",
+            "f": "Profitable & fast-growing (rev +32%, PAT +36%)"
+          },
+          {
+            "m": "Crowded, competitive IT-services market",
+            "f": "On the hot data-centre / digital theme"
+          }
+        ],
+        "dur": 44.414
+      }
+    },
+    {
+      "id": "xtranet_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 225.376,
+      "out_seconds": 263.048,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹13,970 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 38.172
+      }
+    },
+    {
+      "id": "xtranet_recap",
+      "type": "sm_recap",
+      "in_seconds": 263.548,
+      "out_seconds": 319.868,
+      "props": {
+        "title": "Xtranet Technologies IPO — at a Glance",
+        "items": [
+          "Business: enterprise IT, data centres & managed services",
+          "FY26: revenue ₹366 Cr (+32%), profit ₹41 Cr (+36%)",
+          "₹167 Cr issue — 100% FRESH, all into the company",
+          "Money funds working capital, debt & capex",
+          "Retail min ~₹13,970 · small-cap risk"
+        ],
+        "closer": "The cleanest structure of the four — but a small, working-capital-hungry bet. Read the RHP.",
+        "dur": 56.82
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.776,
+      "Let's look at the Xtranet Technologies I-P-O —"
+    ],
+    [
+      3.776,
+      8.128,
+      "a smaller issue at one hundred and sixty-seven crore,"
+    ],
+    [
+      8.128,
+      13.71,
+      "but with a structure that's the opposite of the big names this week."
+    ],
+    [
+      13.71,
+      17.076,
+      "We'll cover what it does, its financials,"
+    ],
+    [
+      17.076,
+      19.457,
+      "exactly where the money goes,"
+    ],
+    [
+      19.457,
+      22.166,
+      "and how much you'd need to apply."
+    ],
+    [
+      22.166,
+      25.532,
+      "This is education, not investment advice."
+    ],
+    [
+      26.032,
+      28.033,
+      "So what does Xtranet do?"
+    ],
+    [
+      28.033,
+      30.618,
+      "It's an enterprise I-T company."
+    ],
+    [
+      30.618,
+      34.037,
+      "It builds and manages I-T infrastructure,"
+    ],
+    [
+      34.037,
+      35.871,
+      "data-centre solutions,"
+    ],
+    [
+      35.871,
+      41.124,
+      "and managed services for businesses and government departments."
+    ],
+    [
+      41.124,
+      44.876,
+      "On top of that it does software work — E-R-P,"
+    ],
+    [
+      44.876,
+      48.045,
+      "system integration, cloud, analytics —"
+    ],
+    [
+      48.045,
+      54.965,
+      "and it has security platforms for digital signatures and public-key infrastructure."
+    ],
+    [
+      54.965,
+      58.051,
+      "Importantly, it sits on a hot theme —"
+    ],
+    [
+      58.051,
+      67.306,
+      "data centres and digital transformation are among the fastest-growing areas of I-T spending in India right now."
+    ],
+    [
+      67.806,
+      71.353,
+      "The financials are small but growing fast."
+    ],
+    [
+      71.353,
+      77.35,
+      "Revenue for FY twenty twenty-six was three hundred and sixty-six crore,"
+    ],
+    [
+      77.35,
+      79.208,
+      "up thirty-two percent."
+    ],
+    [
+      79.208,
+      82.164,
+      "Net profit rose thirty-six percent,"
+    ],
+    [
+      82.164,
+      85.795,
+      "from thirty crore to about forty-one crore."
+    ],
+    [
+      85.795,
+      90.863,
+      "So this is a profitable small-cap that's genuinely scaling —"
+    ],
+    [
+      90.863,
+      93.397,
+      "not a loss-making story stock."
+    ],
+    [
+      93.397,
+      94.579,
+      "Just remember,"
+    ],
+    [
+      94.579,
+      100.322,
+      "small companies are naturally more volatile than the big blue-chips."
+    ],
+    [
+      100.822,
+      104.515,
+      "Now the key point — where does the money go?"
+    ],
+    [
+      104.515,
+      109.468,
+      "And here Xtranet is the mirror image of Lohia and Indo-MIM."
+    ],
+    [
+      109.468,
+      112.993,
+      "This is a one hundred percent fresh issue."
+    ],
+    [
+      112.993,
+      118.029,
+      "Every single rupee — all one hundred and sixty-seven crore —"
+    ],
+    [
+      118.029,
+      120.464,
+      "goes into the company itself."
+    ],
+    [
+      120.464,
+      124.493,
+      "No promoters are selling, no one is cashing out."
+    ],
+    [
+      124.493,
+      128.858,
+      "This is what people mean by the good kind of I-P-O —"
+    ],
+    [
+      128.858,
+      131.963,
+      "you're funding the business's growth,"
+    ],
+    [
+      131.963,
+      134.146,
+      "not buying someone's exit."
+    ],
+    [
+      134.146,
+      134.985,
+      "Of course,"
+    ],
+    [
+      134.985,
+      139.35,
+      "that also means the promoters keep their full stake,"
+    ],
+    [
+      139.35,
+      142.12,
+      "which many investors like to see."
+    ],
+    [
+      142.62,
+      145.116,
+      "Where does that fresh money go?"
+    ],
+    [
+      145.116,
+      148.659,
+      "The bulk — about one hundred and two crore —"
+    ],
+    [
+      148.659,
+      150.43,
+      "funds working capital."
+    ],
+    [
+      150.43,
+      151.477,
+      "That matters,"
+    ],
+    [
+      151.477,
+      157.596,
+      "because an I-T services firm needs cash on hand to take on bigger contracts."
+    ],
+    [
+      157.596,
+      162.427,
+      "Around twenty-two crore repays debt, cutting interest costs,"
+    ],
+    [
+      162.427,
+      166.855,
+      "and about seven crore goes to new systems and hardware,"
+    ],
+    [
+      166.855,
+      169.673,
+      "with the rest for general purposes."
+    ],
+    [
+      169.673,
+      171.605,
+      "But note the flip side —"
+    ],
+    [
+      171.605,
+      178.047,
+      "a working-capital-hungry model means the business constantly needs cash to grow,"
+    ],
+    [
+      178.047,
+      180.462,
+      "which is a real risk to watch."
+    ],
+    [
+      180.962,
+      182.627,
+      "Should you subscribe?"
+    ],
+    [
+      182.627,
+      185.005,
+      "The strengths are attractive —"
+    ],
+    [
+      185.005,
+      187.779,
+      "it's a hundred-percent fresh issue,"
+    ],
+    [
+      187.779,
+      198.242,
+      "so your money actually funds growth; it's profitable and growing fast; and it rides the data-centre and digital-transformation wave."
+    ],
+    [
+      198.242,
+      202.998,
+      "But the watch-outs are just as important — it's a small-cap,"
+    ],
+    [
+      202.998,
+      208.943,
+      "so it's more volatile and less proven; its model is working-capital hungry,"
+    ],
+    [
+      208.943,
+      214.016,
+      "meaning it constantly needs cash; and I-T services is a crowded,"
+    ],
+    [
+      214.016,
+      215.522,
+      "competitive market."
+    ],
+    [
+      215.522,
+      219.486,
+      "The takeaway — the cleanest structure of the four,"
+    ],
+    [
+      219.486,
+      222.894,
+      "but a higher-risk, higher-reward small-cap."
+    ],
+    [
+      222.894,
+      224.876,
+      "Size any bet accordingly."
+    ],
+    [
+      225.376,
+      229.024,
+      "How much do you need, and how do you apply?"
+    ],
+    [
+      229.024,
+      234.794,
+      "Retail investors bid up to two lakh for a thirty-five percent quota,"
+    ],
+    [
+      234.794,
+      238.951,
+      "with allotment by lottery if it's oversubscribed."
+    ],
+    [
+      238.951,
+      243.448,
+      "H-N-Is go above two lakh for a fifteen percent quota."
+    ],
+    [
+      243.448,
+      247.86,
+      "For Xtranet, one lot is one hundred and ten shares —"
+    ],
+    [
+      247.86,
+      252.697,
+      "about thirteen thousand nine hundred and seventy rupees —"
+    ],
+    [
+      252.697,
+      253.8,
+      "your minimum."
+    ],
+    [
+      253.8,
+      259.145,
+      "Watch the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      259.145,
+      263.048,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      263.548,
+      265.244,
+      "Let's recap Xtranet."
+    ],
+    [
+      265.244,
+      268.807,
+      "An enterprise I-T and data-centre company,"
+    ],
+    [
+      268.807,
+      272.454,
+      "profitable and growing over thirty percent."
+    ],
+    [
+      272.454,
+      277.374,
+      "Its stand-out feature — a one hundred percent fresh issue,"
+    ],
+    [
+      277.374,
+      282.293,
+      "so every rupee funds the business, mainly working capital."
+    ],
+    [
+      282.293,
+      286.704,
+      "It's a small-cap though, and working-capital hungry,"
+    ],
+    [
+      286.704,
+      288.739,
+      "so it carries more risk."
+    ],
+    [
+      288.739,
+      295.355,
+      "The retail minimum is about thirteen thousand nine hundred and seventy rupees."
+    ],
+    [
+      295.355,
+      299.427,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      299.427,
+      301.801,
+      "it is not investment advice,"
+    ],
+    [
+      301.801,
+      304.601,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      304.601,
+      307.824,
+      "and not a prediction of listing gains."
+    ],
+    [
+      307.824,
+      312.319,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      312.319,
+      318.172,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      318.172,
+      319.868,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/xtranet.wav",
+      "volume": 1.0
+    }
+  }
+}

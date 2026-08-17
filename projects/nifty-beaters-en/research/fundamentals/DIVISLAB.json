@@ -1,0 +1,98 @@
+{
+ "ticker": "DIVISLAB",
+ "scraped_at": "2026-08-14T15:29:00",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 224772.0,
+ "current_price": 8467.0,
+ "pe": 75.5,
+ "book_value": 631.0,
+ "dividend_yield_pct": 0.35,
+ "roce_pct": 22.0,
+ "roe_pct": 16.5,
+ "face_value": 2.0,
+ "high": 8674.0,
+ "sales_growth": {
+  "10 Years": 9.0,
+  "5 Years": 6.0,
+  "3 Years": 13.0,
+  "TTM": 29.0
+ },
+ "profit_growth": {
+  "10 Years": 21.0,
+  "5 Years": 11.0,
+  "3 Years": 32.0,
+  "1 Year": 39.0
+ },
+ "roe_hist": {
+  "Equity Capital": 27.0,
+  "Borrowings&nbsp; +": 27.0,
+  "Other Liabilities&nbsp; +": 883.0,
+  "CWIP": 218.0,
+  "Investments": 733.0
+ },
+ "price_cagr": {
+  "10 Years": 18.0,
+  "5 Years": 17.0,
+  "3 Years": 15.0,
+  "Last Year": 17.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "28%",
+   "25%",
+   "26%",
+   "32%",
+   "29%",
+   "31%",
+   "32%",
+   "34%",
+   "30%",
+   "33%",
+   "34%",
+   "33%",
+   "41%"
+  ],
+  "eps": [
+   "13.41",
+   "13.11",
+   "13.49",
+   "20.27",
+   "16.20",
+   "19.21",
+   "22.19",
+   "24.94",
+   "20.53",
+   "25.95",
+   "21.96",
+   "28.29",
+   "33.98"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has been maintaining a healthy dividend payout of 39.0%"
+ ],
+ "cons": [
+  "Stock is trading at 13.5 times its book value",
+  "The company has delivered a poor sales growth of 8.67% over past five years."
+ ]
+}

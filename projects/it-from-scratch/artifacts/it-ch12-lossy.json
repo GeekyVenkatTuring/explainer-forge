@@ -1,0 +1,276 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch12-lossy_lossy",
+   "type": "it_lossy",
+   "in_seconds": 0.0,
+   "out_seconds": 99.963,
+   "props": {
+    "dur": 100.463
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.02,
+   "Everything so far has been lossless."
+  ],
+  [
+   2.02,
+   3.03,
+   "Every bit recovered,"
+  ],
+  [
+   3.03,
+   3.367,
+   "perfectly,"
+  ],
+  [
+   3.367,
+   5.051,
+   "down to the last one."
+  ],
+  [
+   5.051,
+   7.744,
+   "That is what you need for a text"
+  ],
+  [
+   7.744,
+   9.428,
+   "file or a bank statement."
+  ],
+  [
+   10.059,
+   11.743,
+   "But think about a photograph,"
+  ],
+  [
+   11.743,
+   12.753,
+   "or a song,"
+  ],
+  [
+   12.753,
+   13.763,
+   "or a movie."
+  ],
+  [
+   13.763,
+   16.12,
+   "Do you truly need every bit back,"
+  ],
+  [
+   16.12,
+   16.457,
+   "exactly?"
+  ],
+  [
+   16.457,
+   19.151,
+   "Or just something your eyes and ears cannot"
+  ],
+  [
+   19.151,
+   20.834,
+   "tell apart from the original?"
+  ],
+  [
+   21.466,
+   24.159,
+   "The moment you are willing to accept a"
+  ],
+  [
+   24.159,
+   24.833,
+   "little error,"
+  ],
+  [
+   24.833,
+   27.527,
+   "a whole new door opens \u2014 lossy compression."
+  ],
+  [
+   27.527,
+   29.884,
+   "And with it comes a fundamental trade-off."
+  ],
+  [
+   30.515,
+   31.862,
+   "Look at this curve."
+  ],
+  [
+   31.862,
+   34.556,
+   "Along the bottom is distortion \u2014 how much"
+  ],
+  [
+   34.556,
+   35.902,
+   "error you will tolerate."
+  ],
+  [
+   35.902,
+   38.596,
+   "Up the side is the rate \u2014 how"
+  ],
+  [
+   38.596,
+   40.28,
+   "many bits you must spend."
+  ],
+  [
+   40.911,
+   42.258,
+   "At the top left,"
+  ],
+  [
+   42.258,
+   43.942,
+   "you insist on near-perfect fidelity,"
+  ],
+  [
+   43.942,
+   46.635,
+   "and you pay for it with a big,"
+  ],
+  [
+   46.635,
+   47.309,
+   "heavy file."
+  ],
+  [
+   47.94,
+   49.961,
+   "Slide down and to the right,"
+  ],
+  [
+   49.961,
+   51.644,
+   "and you accept more blur,"
+  ],
+  [
+   51.644,
+   54.338,
+   "more noise \u2014 and the file shrinks dramatically."
+  ],
+  [
+   54.969,
+   57.663,
+   "This curve is not a guess or a"
+  ],
+  [
+   57.663,
+   58.673,
+   "rule of thumb."
+  ],
+  [
+   58.673,
+   61.367,
+   "Its exact shape is fixed by a branch"
+  ],
+  [
+   61.367,
+   63.387,
+   "of the theory that Shannon founded,"
+  ],
+  [
+   63.387,
+   64.397,
+   "called rate-distortion theory."
+  ],
+  [
+   64.397,
+   66.754,
+   "For a given amount of acceptable error,"
+  ],
+  [
+   66.754,
+   69.448,
+   "it names the smallest possible number of bits."
+  ],
+  [
+   70.079,
+   72.773,
+   "And this is the theory living inside your"
+  ],
+  [
+   72.773,
+   73.447,
+   "daily life."
+  ],
+  [
+   73.447,
+   74.457,
+   "JPEG for images."
+  ],
+  [
+   74.457,
+   75.467,
+   "MP3 for music."
+  ],
+  [
+   75.467,
+   78.161,
+   "Every video codec that streams to your screen."
+  ],
+  [
+   78.792,
+   81.149,
+   "They all do the same clever thing."
+  ],
+  [
+   81.149,
+   83.843,
+   "They spend precious bits only where your\nperception"
+  ],
+  [
+   83.843,
+   86.2,
+   "can actually notice \u2014 the sharp edges,"
+  ],
+  [
+   86.2,
+   88.893,
+   "the loud notes \u2014 and they quietly throw"
+  ],
+  [
+   88.893,
+   91.587,
+   "away the fine detail you were never going"
+  ],
+  [
+   91.587,
+   92.261,
+   "to miss."
+  ],
+  [
+   92.892,
+   94.912,
+   "Lossless compression removes what is redundant."
+  ],
+  [
+   94.912,
+   96.933,
+   "Lossy compression removes what is imperceptible."
+  ],
+  [
+   96.933,
+   98.616,
+   "Both are just information theory,"
+  ],
+  [
+   98.616,
+   99.963,
+   "deciding what truly matters."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch12-lossy.wav",
+   "volume": 1.0
+  }
+ }
+}

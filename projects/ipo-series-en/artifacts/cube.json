@@ -1,0 +1,672 @@
+{
+  "cuts": [
+    {
+      "id": "cube_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 26.564,
+      "props": {
+        "title": "Cube Highways Trust",
+        "sub": "Toll-road income trust · ₹5,000 Cr · ~9% yield · 22–24 Jul 2026",
+        "kicker": "IPO ANALYSIS · InvIT (NOT A STOCK)",
+        "dur": 27.064
+      }
+    },
+    {
+      "id": "cube_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 27.064,
+      "out_seconds": 76.738,
+      "props": {
+        "kicker": "WHAT IS AN InvIT?",
+        "title": "A Toll-Road Income Trust",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🛣️",
+            "k": "It owns highways",
+            "v": "A trust that owns operating toll roads and passes the toll income to you as regular payouts — like a REIT, but for roads",
+            "chip": "NOT A STOCK"
+          },
+          {
+            "emoji": "🗺️",
+            "k": "The portfolio",
+            "v": "27 highway assets · 8,754 lane-kilometres · across 12 states and 1 UT — large and diversified",
+            "chip": "27 ROADS"
+          },
+          {
+            "emoji": "💵",
+            "k": "You buy income, not growth",
+            "v": "You're buying a stream of distributions, not betting on a share price multiplying",
+            "chip": "INCOME"
+          }
+        ],
+        "dur": 50.174
+      }
+    },
+    {
+      "id": "cube_fin",
+      "type": "sm_stats",
+      "in_seconds": 77.238,
+      "out_seconds": 117.672,
+      "props": {
+        "kicker": "THE INCOME MATH",
+        "title": "Yield & Terms",
+        "stats": [
+          {
+            "label": "Distribution yield",
+            "to": 9,
+            "prefix": "~",
+            "suffix": "%",
+            "color": "#34D399",
+            "sub": "FY26 payout ₹13.77 per unit"
+          },
+          {
+            "label": "Price per unit",
+            "to": 152,
+            "prefix": "₹",
+            "suffix": "",
+            "color": "#A78BFA",
+            "sub": "band ₹151–152"
+          },
+          {
+            "label": "Issue size",
+            "to": 5000,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#22D3EE",
+            "sub": "32.89 Cr units"
+          }
+        ],
+        "note": "The headline is the ~9% yield — well above a bank FD. But a yield is not a guaranteed return; toll traffic and interest rates can move it.",
+        "dur": 40.934
+      }
+    },
+    {
+      "id": "cube_issue",
+      "type": "sm_stats",
+      "in_seconds": 118.172,
+      "out_seconds": 156.182,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "It's a 100% Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 5000,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#A78BFA",
+            "sub": "price ₹151–152 per unit"
+          },
+          {
+            "label": "Fresh (into trust)",
+            "to": 0,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "no fresh units issued"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 5000,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "existing unitholders sell"
+          }
+        ],
+        "note": "This is a 100% OFS — existing unitholders are selling down. For an InvIT that's normal, but the trust isn't raising new money here.",
+        "dur": 38.51
+      }
+    },
+    {
+      "id": "cube_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 156.682,
+      "out_seconds": 197.716,
+      "props": {
+        "kicker": "WHO SHOULD LOOK AT THIS?",
+        "title": "Right Fit vs Wrong Fit",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "✅",
+            "k": "Good fit — income seekers",
+            "v": "If you want regular, FD-plus payouts and can hold long-term, a ~9% yielding road portfolio can suit you",
+            "chip": "INCOME"
+          },
+          {
+            "emoji": "❌",
+            "k": "Wrong fit — quick gains",
+            "v": "If you're chasing a fast listing pop or a multibagger, an InvIT is NOT that — it's a slow, steady instrument",
+            "chip": "NOT A PUNT"
+          },
+          {
+            "emoji": "⚖️",
+            "k": "Key risks",
+            "v": "Toll-traffic dips, interest-rate rises (which hurt yield instruments), and it's a long-dated hold",
+            "chip": "RISKS"
+          }
+        ],
+        "dur": 41.534
+      }
+    },
+    {
+      "id": "cube_verdict",
+      "type": "sm_myths",
+      "in_seconds": 198.216,
+      "out_seconds": 240.906,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "It's a yield product, not a multibagger",
+            "f": "~9% distribution yield — beats an FD"
+          },
+          {
+            "m": "Traffic & interest-rate sensitive",
+            "f": "Diversified 27-road, 12-state portfolio"
+          },
+          {
+            "m": "100% OFS; long-dated commitment",
+            "f": "Stable, regulated, real-asset cash flows"
+          }
+        ],
+        "dur": 43.19
+      }
+    },
+    {
+      "id": "cube_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 241.406,
+      "out_seconds": 282.752,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,440 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 41.846
+      }
+    },
+    {
+      "id": "cube_recap",
+      "type": "sm_recap",
+      "in_seconds": 283.252,
+      "out_seconds": 340.964,
+      "props": {
+        "title": "Cube Highways InvIT — at a Glance",
+        "items": [
+          "An InvIT — a toll-road income trust, NOT a stock",
+          "27 roads · 8,754 lane-km · 12 states + 1 UT",
+          "~9% distribution yield (FY26 ₹13.77/unit)",
+          "₹5,000 Cr issue — 100% OFS, price ₹151–152",
+          "Min ~₹14,440 · for income, not quick gains"
+        ],
+        "closer": "An FD-plus income instrument, not a growth punt. Match it to your goal, read the offer document.",
+        "dur": 58.212
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      2.876,
+      "Let's decode Cube Highways Trust —"
+    ],
+    [
+      2.876,
+      8.883,
+      "a five thousand crore issue that is NOT a normal I-P-O and NOT a stock."
+    ],
+    [
+      8.883,
+      13.282,
+      "It's an InvIT — an Infrastructure Investment Trust —"
+    ],
+    [
+      13.282,
+      17.766,
+      "and it behaves very differently from a company share."
+    ],
+    [
+      17.766,
+      23.095,
+      "Understanding that difference is the whole point of this video."
+    ],
+    [
+      23.095,
+      26.564,
+      "This is education, not investment advice."
+    ],
+    [
+      27.064,
+      29.071,
+      "So what exactly is this?"
+    ],
+    [
+      29.071,
+      31.329,
+      "Cube Highways is an InvIT —"
+    ],
+    [
+      31.329,
+      34.256,
+      "an Infrastructure Investment Trust."
+    ],
+    [
+      34.256,
+      37.685,
+      "Think of it as a landlord for toll roads."
+    ],
+    [
+      37.685,
+      42.618,
+      "The trust owns operating highways, collects the toll money,"
+    ],
+    [
+      42.618,
+      47.385,
+      "and passes most of that income to you as regular payouts."
+    ],
+    [
+      47.385,
+      51.566,
+      "It works much like a R-E-I-T does for real estate."
+    ],
+    [
+      51.566,
+      54.912,
+      "Its portfolio is large and diversified —"
+    ],
+    [
+      54.912,
+      57.253,
+      "twenty-seven highway assets,"
+    ],
+    [
+      57.253,
+      61.434,
+      "over eight thousand seven hundred lane-kilometres,"
+    ],
+    [
+      61.434,
+      65.783,
+      "spread across twelve states and one union territory."
+    ],
+    [
+      65.783,
+      69.964,
+      "The mindset is completely different from a stock —"
+    ],
+    [
+      69.964,
+      73.309,
+      "you're buying a steady stream of income,"
+    ],
+    [
+      73.309,
+      76.738,
+      "not betting on a share price multiplying."
+    ],
+    [
+      77.238,
+      81.55,
+      "Now the number that matters for an InvIT — the yield."
+    ],
+    [
+      81.55,
+      87.245,
+      "Based on last year's payout of thirteen rupees seventy-seven per unit,"
+    ],
+    [
+      87.245,
+      90.662,
+      "at the price of one hundred and fifty-two,"
+    ],
+    [
+      90.662,
+      95.299,
+      "the distribution yield works out to roughly nine percent."
+    ],
+    [
+      95.299,
+      99.611,
+      "That's meaningfully higher than a bank fixed deposit."
+    ],
+    [
+      99.611,
+      102.947,
+      "The issue is large — five thousand crore,"
+    ],
+    [
+      102.947,
+      105.55,
+      "nearly thirty-three crore units."
+    ],
+    [
+      105.55,
+      110.35,
+      "But a word of caution — a yield is not a guaranteed return."
+    ],
+    [
+      110.35,
+      114.092,
+      "If toll traffic dips or interest rates change,"
+    ],
+    [
+      114.092,
+      117.672,
+      "both the payout and the unit price can move."
+    ],
+    [
+      118.172,
+      120.041,
+      "Where does the money go?"
+    ],
+    [
+      120.041,
+      124.247,
+      "Like Lohia, this is a hundred-percent Offer for Sale —"
+    ],
+    [
+      124.247,
+      128.531,
+      "existing unitholders are selling part of their holding,"
+    ],
+    [
+      128.531,
+      133.283,
+      "and the trust itself isn't raising fresh money in this issue."
+    ],
+    [
+      133.283,
+      137.489,
+      "For an InvIT, a sell-down like this is fairly normal —"
+    ],
+    [
+      137.489,
+      140.448,
+      "early sponsors monetising their stake."
+    ],
+    [
+      140.448,
+      143.642,
+      "Interestingly, ahead of the public issue,"
+    ],
+    [
+      143.642,
+      151.742,
+      "five strategic investors already bought around one thousand two hundred and fifty crore worth of units —"
+    ],
+    [
+      151.742,
+      156.182,
+      "a vote of confidence, though not a guarantee of anything."
+    ],
+    [
+      156.682,
+      158.887,
+      "So who is this actually for?"
+    ],
+    [
+      158.887,
+      162.353,
+      "It's a good fit if you want regular income —"
+    ],
+    [
+      162.353,
+      165.424,
+      "payouts a notch above a fixed deposit —"
+    ],
+    [
+      165.424,
+      168.181,
+      "and you can hold for the long term."
+    ],
+    [
+      168.181,
+      174.639,
+      "A diversified toll-road portfolio yielding around nine percent can suit that goal."
+    ],
+    [
+      174.639,
+      180.546,
+      "It's the wrong fit if you're chasing a quick listing pop or a multibagger —"
+    ],
+    [
+      180.546,
+      185.036,
+      "an InvIT is a slow, steady income instrument, not a punt."
+    ],
+    [
+      185.036,
+      189.367,
+      "And the key risks — toll traffic can dip in a slowdown,"
+    ],
+    [
+      189.367,
+      193.936,
+      "rising interest rates tend to pull down yield instruments,"
+    ],
+    [
+      193.936,
+      197.716,
+      "and your capital is committed for the long haul."
+    ],
+    [
+      198.216,
+      199.885,
+      "Should you subscribe?"
+    ],
+    [
+      199.885,
+      201.078,
+      "The strengths —"
+    ],
+    [
+      201.078,
+      206.484,
+      "a roughly nine-percent yield that comfortably beats a fixed deposit,"
+    ],
+    [
+      206.484,
+      212.287,
+      "a large diversified portfolio of twenty-seven roads across twelve states,"
+    ],
+    [
+      212.287,
+      216.262,
+      "and stable, regulated cash flows from real assets."
+    ],
+    [
+      216.262,
+      219.442,
+      "The watch-outs — it's an income product,"
+    ],
+    [
+      219.442,
+      231.207,
+      "not a multibagger; its payout is sensitive to toll traffic and interest rates; and it's a hundred-percent sell-down that you hold for the long term."
+    ],
+    [
+      231.207,
+      235.818,
+      "The takeaway — judge it like a bond or an F-D alternative,"
+    ],
+    [
+      235.818,
+      237.726,
+      "not like a growth stock."
+    ],
+    [
+      237.726,
+      240.906,
+      "Right tool, but only for the right goal."
+    ],
+    [
+      241.406,
+      243.949,
+      "How do you apply, and how much?"
+    ],
+    [
+      243.949,
+      248.379,
+      "For an InvIT the categories work a little differently,"
+    ],
+    [
+      248.379,
+      253.219,
+      "but broadly — retail investors apply in the smaller bucket,"
+    ],
+    [
+      253.219,
+      261.587,
+      "and larger investors above the retail limit sit in the institutional and non-institutional categories,"
+    ],
+    [
+      261.587,
+      263.884,
+      "which dominate InvIT demand."
+    ],
+    [
+      263.884,
+      267.904,
+      "For Cube Highways, one lot is ninety-five units —"
+    ],
+    [
+      267.904,
+      272.415,
+      "about fourteen thousand four hundred and forty rupees —"
+    ],
+    [
+      272.415,
+      273.482,
+      "your minimum."
+    ],
+    [
+      273.482,
+      278.978,
+      "And check the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      278.978,
+      282.752,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      283.252,
+      285.446,
+      "Let's recap Cube Highways."
+    ],
+    [
+      285.446,
+      290.086,
+      "It's an InvIT — a toll-road income trust, not a stock —"
+    ],
+    [
+      290.086,
+      294.305,
+      "owning twenty-seven highways across twelve states."
+    ],
+    [
+      294.305,
+      297.933,
+      "Its appeal is a roughly nine-percent yield,"
+    ],
+    [
+      297.933,
+      300.211,
+      "well above a fixed deposit."
+    ],
+    [
+      300.211,
+      303.417,
+      "It's a hundred-percent Offer for Sale,"
+    ],
+    [
+      303.417,
+      307.383,
+      "priced near one hundred and fifty-two per unit,"
+    ],
+    [
+      307.383,
+      313.458,
+      "with a minimum of about fourteen thousand four hundred and forty rupees."
+    ],
+    [
+      313.458,
+      316.58,
+      "Treat it as income, not a quick gain."
+    ],
+    [
+      316.58,
+      320.63,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      320.63,
+      322.992,
+      "it is not investment advice,"
+    ],
+    [
+      322.992,
+      325.777,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      325.777,
+      328.983,
+      "and not a prediction of listing gains."
+    ],
+    [
+      328.983,
+      333.455,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      333.455,
+      339.277,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      339.277,
+      340.964,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/cube.wav",
+      "volume": 1.0
+    }
+  }
+}

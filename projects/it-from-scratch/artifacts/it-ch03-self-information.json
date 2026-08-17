@@ -1,0 +1,301 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch03-self-information_selfinfo",
+   "type": "it_selfinfo",
+   "in_seconds": 0.0,
+   "out_seconds": 106.768,
+   "props": {
+    "dur": 107.268
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.496,
+   "But hold on \u2014 why the logarithm,"
+  ],
+  [
+   2.496,
+   2.852,
+   "exactly?"
+  ],
+  [
+   2.852,
+   5.704,
+   "Why not just use one over p directly"
+  ],
+  [
+   5.704,
+   7.487,
+   "as our measure of surprise?"
+  ],
+  [
+   8.118,
+   9.901,
+   "The reason is genuinely beautiful,"
+  ],
+  [
+   9.901,
+   12.753,
+   "and it comes from one simple thing we"
+  ],
+  [
+   12.753,
+   13.822,
+   "demand of information."
+  ],
+  [
+   14.454,
+   17.306,
+   "Flip a fair coin and it lands heads."
+  ],
+  [
+   17.306,
+   19.445,
+   "That is one bit of surprise."
+  ],
+  [
+   20.076,
+   21.502,
+   "Now flip it again,"
+  ],
+  [
+   21.502,
+   22.215,
+   "completely independently,"
+  ],
+  [
+   22.215,
+   24.354,
+   "and it lands heads once more."
+  ],
+  [
+   24.354,
+   25.424,
+   "Another one bit."
+  ],
+  [
+   26.055,
+   27.481,
+   "Here is the question."
+  ],
+  [
+   27.481,
+   30.333,
+   "How surprising is it to get both heads"
+  ],
+  [
+   30.333,
+   30.69,
+   "together,"
+  ],
+  [
+   30.69,
+   32.473,
+   "as a single joint event?"
+  ],
+  [
+   33.104,
+   35.243,
+   "Your intuition is firm about this."
+  ],
+  [
+   35.243,
+   37.026,
+   "It should be two bits."
+  ],
+  [
+   37.026,
+   38.095,
+   "One plus one."
+  ],
+  [
+   38.095,
+   40.947,
+   "The surprises of independent events ought to\nsimply"
+  ],
+  [
+   40.947,
+   41.66,
+   "add up."
+  ],
+  [
+   41.66,
+   42.73,
+   "That feels non-negotiable."
+  ],
+  [
+   43.361,
+   45.5,
+   "But now look at the probabilities."
+  ],
+  [
+   45.5,
+   47.639,
+   "Each flip has probability one half,"
+  ],
+  [
+   47.639,
+   50.491,
+   "and independent probabilities do not add \u2014 they"
+  ],
+  [
+   50.491,
+   50.848,
+   "multiply."
+  ],
+  [
+   50.848,
+   53.7,
+   "One half times one half is one quarter."
+  ],
+  [
+   54.331,
+   57.183,
+   "So we are asking for a function with"
+  ],
+  [
+   57.183,
+   58.966,
+   "a very specific magic property."
+  ],
+  [
+   58.966,
+   60.392,
+   "When the inputs multiply,"
+  ],
+  [
+   60.392,
+   61.818,
+   "the outputs must add."
+  ],
+  [
+   62.449,
+   65.302,
+   "And there is exactly one family of functions"
+  ],
+  [
+   65.302,
+   67.797,
+   "on Earth that turns multiplication into addition."
+  ],
+  [
+   67.797,
+   68.51,
+   "The logarithm."
+  ],
+  [
+   69.142,
+   69.855,
+   "Check it."
+  ],
+  [
+   69.855,
+   72.707,
+   "The probability of both heads is one quarter."
+  ],
+  [
+   72.707,
+   73.42,
+   "The log,"
+  ],
+  [
+   73.42,
+   74.133,
+   "base two,"
+  ],
+  [
+   74.133,
+   75.915,
+   "of one over one quarter,"
+  ],
+  [
+   75.915,
+   77.698,
+   "is the log of four,"
+  ],
+  [
+   77.698,
+   78.767,
+   "which is two."
+  ],
+  [
+   78.767,
+   79.48,
+   "Two bits."
+  ],
+  [
+   79.48,
+   80.55,
+   "It adds up,"
+  ],
+  [
+   80.55,
+   80.906,
+   "perfectly."
+  ],
+  [
+   81.538,
+   84.39,
+   "So the logarithm is not a clever choice"
+  ],
+  [
+   84.39,
+   85.459,
+   "we reached for."
+  ],
+  [
+   85.459,
+   87.242,
+   "It is forced on us."
+  ],
+  [
+   87.242,
+   90.094,
+   "We insisted that independent surprises add\ntogether \u2014"
+  ],
+  [
+   90.094,
+   92.946,
+   "and that one demand leaves the logarithm as"
+  ],
+  [
+   92.946,
+   94.015,
+   "the only possibility."
+  ],
+  [
+   94.647,
+   97.499,
+   "This is a theme you will see again"
+  ],
+  [
+   97.499,
+   99.281,
+   "and again in Shannon's work."
+  ],
+  [
+   99.281,
+   101.064,
+   "He does not pick formulas."
+  ],
+  [
+   101.064,
+   103.916,
+   "He states what a good measure must do,"
+  ],
+  [
+   103.916,
+   106.768,
+   "and the mathematics hands him the only answer."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch03-self-information.wav",
+   "volume": 1.0
+  }
+ }
+}

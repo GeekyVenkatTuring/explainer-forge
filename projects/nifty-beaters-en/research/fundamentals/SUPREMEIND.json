@@ -1,0 +1,97 @@
+{
+ "ticker": "SUPREMEIND",
+ "scraped_at": "2026-08-14T15:29:42",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 45326.0,
+ "current_price": 3568.0,
+ "pe": 43.8,
+ "book_value": 486.0,
+ "dividend_yield_pct": 1.04,
+ "roce_pct": 20.7,
+ "roe_pct": 15.8,
+ "face_value": 2.0,
+ "high": 4665.0,
+ "sales_growth": {
+  "10 Years": 15.0,
+  "5 Years": -1.0,
+  "3 Years": 3.0,
+  "TTM": 16.0
+ },
+ "profit_growth": {
+  "10 Years": 14.0,
+  "5 Years": 11.0,
+  "3 Years": -5.0,
+  "1 Year": -19.0
+ },
+ "roe_hist": {
+  "Equity Capital": 25.0,
+  "Borrowings&nbsp; +": 393.0,
+  "Other Liabilities&nbsp; +": 753.0,
+  "CWIP": 100.0,
+  "Investments": 121.0
+ },
+ "price_cagr": {
+  "10 Years": 22.0,
+  "5 Years": 20.0,
+  "3 Years": 18.0,
+  "Last Year": 16.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "14%",
+   "15%",
+   "15%",
+   "16%",
+   "15%",
+   "14%",
+   "12%",
+   "14%",
+   "12%",
+   "12%",
+   "12%",
+   "18%",
+   "15%"
+  ],
+  "eps": [
+   "16.97",
+   "19.14",
+   "20.17",
+   "27.93",
+   "21.52",
+   "16.26",
+   "14.72",
+   "23.14",
+   "15.93",
+   "12.97",
+   "12.07",
+   "34.13",
+   "22.10"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has been maintaining a healthy dividend payout of 42.8%"
+ ],
+ "cons": [
+  "Stock is trading at 7.19 times its book value"
+ ]
+}

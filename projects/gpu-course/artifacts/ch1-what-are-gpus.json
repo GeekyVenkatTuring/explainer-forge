@@ -1,0 +1,88 @@
+{
+ "cuts": [
+  {
+   "id": "ch1-what-are-gpus_s01_title",
+   "type": "gpu_title",
+   "in_seconds": 0.0,
+   "out_seconds": 25.354,
+   "props": {
+    "kicker": "A DEEP-DIVE COURSE \u00b7 CHAPTER 1",
+    "line1": "GPUs:",
+    "line2": "The Engines of AI",
+    "sub": "what they are \u00b7 how they run models \u00b7 which exist \u00b7 how many you need",
+    "color": "#22D3EE",
+    "dur": 25.854
+   }
+  },
+  {
+   "id": "ch1-what-are-gpus_s02_roadmap",
+   "type": "gpu_roadmap",
+   "in_seconds": 25.854,
+   "out_seconds": 61.029,
+   "props": {
+    "dur": 35.675
+   }
+  },
+  {
+   "id": "ch1-what-are-gpus_s03_cpuvsgpu",
+   "type": "gpu_cpuvsgpu",
+   "in_seconds": 61.529,
+   "out_seconds": 108.333,
+   "props": {
+    "dur": 47.304
+   }
+  },
+  {
+   "id": "ch1-what-are-gpus_s04_parallel",
+   "type": "gpu_parallel",
+   "in_seconds": 108.833,
+   "out_seconds": 156.183,
+   "props": {
+    "dur": 47.85
+   }
+  },
+  {
+   "id": "ch1-what-are-gpus_s05_anatomy",
+   "type": "gpu_anatomy",
+   "in_seconds": 156.683,
+   "out_seconds": 204.204,
+   "props": {
+    "dur": 48.021
+   }
+  },
+  {
+   "id": "ch1-what-are-gpus_s06_bandwidth",
+   "type": "gpu_bandwidth",
+   "in_seconds": 204.704,
+   "out_seconds": 249.988,
+   "props": {
+    "dur": 45.784
+   }
+  },
+  {
+   "id": "ch1-what-are-gpus_s07_recap",
+   "type": "gpu_recap",
+   "in_seconds": 250.488,
+   "out_seconds": 273.819,
+   "props": {
+    "kicker": "CHAPTER 1 \u00b7 RECAP",
+    "title": "What a GPU is, in one breath",
+    "color": "#FBBF24",
+    "items": [
+     "A CPU has a few big cores; a GPU has thousands of small ones",
+     "SIMD: one instruction runs across a flood of numbers at once",
+     "On the die: a sea of cores, ringed by fast HBM memory",
+     "Memory bandwidth \u2014 bytes read per second \u2014 is the number that matters"
+    ],
+    "closer": "A GPU is a machine for doing enormous piles of simple math, all at once.",
+    "dur": 23.831
+   }
+  }
+ ],
+ "audio": {
+  "narration": {
+   "src": "gpu/ch1-what-are-gpus.wav",
+   "volume": 1.0
+  }
+ }
+}

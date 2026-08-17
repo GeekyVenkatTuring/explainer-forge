@@ -1,0 +1,7 @@
+{
+ "ticker": "PAGEIND",
+ "scraped_at": "2026-08-14T15:32:55",
+ "source": "screener.in",
+ "ok": false,
+ "error": "URLError(ConnectionRefusedError(61, 'Connection refused'))"
+}

@@ -1,0 +1,637 @@
+{
+  "cuts": [
+    {
+      "id": "gw01_title",
+      "type": "gw_title",
+      "in_seconds": 0.0,
+      "out_seconds": 18.49,
+      "props": {
+        "dur": 18.99
+      }
+    },
+    {
+      "id": "gw02_routes",
+      "type": "gw_routes",
+      "in_seconds": 18.99,
+      "out_seconds": 54.609,
+      "props": {
+        "kicker": "TWO DOORS",
+        "title": "First \u2014 yes, it's absolutely possible",
+        "left": {
+          "label": "Direct",
+          "sub": "you own the actual US shares",
+          "items": [
+            "Send rupees abroad under LRS",
+            "Buy real US stocks \u2014 even fractions",
+            "Via apps like INDmoney, Vested, IBKR"
+          ]
+        },
+        "right": {
+          "label": "Indirect",
+          "sub": "invest in rupees, from India",
+          "items": [
+            "No dollars leave the country",
+            "India-listed ETFs and mutual funds",
+            "They hold the US stocks for you"
+          ]
+        },
+        "dur": 36.119
+      }
+    },
+    {
+      "id": "gw03_pipe",
+      "type": "gw_pipe",
+      "in_seconds": 55.109,
+      "out_seconds": 105.002,
+      "props": {
+        "dur": 50.393
+      }
+    },
+    {
+      "id": "gw04_stats",
+      "type": "gw_stats",
+      "in_seconds": 105.502,
+      "out_seconds": 146.156,
+      "props": {
+        "kicker": "THE LEGAL FRAME",
+        "title": "The one limit you must know",
+        "color": "#4F86F7",
+        "stats": [
+          {
+            "label": "You can send abroad each year",
+            "to": 250000,
+            "prefix": "$",
+            "color": "#4F86F7",
+            "sub": "the LRS limit \u2014 per person"
+          },
+          {
+            "label": "Minimum to start (many apps)",
+            "to": 1,
+            "prefix": "$",
+            "color": "#34D399",
+            "sub": "fractional shares \u2014 buy a slice"
+          },
+          {
+            "label": "US stocks & ETFs you can buy",
+            "to": 5000,
+            "prefix": "",
+            "suffix": "+",
+            "color": "#F59E0B",
+            "sub": "from your phone, in India"
+          }
+        ],
+        "note": "No special RBI permission is needed \u2014 LRS is automatic up to $250,000 a year, across ALL your foreign spending combined.",
+        "dur": 41.154
+      }
+    },
+    {
+      "id": "gw05_div2",
+      "type": "gw_divider",
+      "in_seconds": 146.656,
+      "out_seconds": 153.776,
+      "props": {
+        "n": 2,
+        "title": "Which Platforms?",
+        "sub": "Where you actually open an account and buy",
+        "color": "#4F86F7",
+        "dur": 7.62
+      }
+    },
+    {
+      "id": "gw06_cards",
+      "type": "gw_cards",
+      "in_seconds": 154.276,
+      "out_seconds": 196.7,
+      "props": {
+        "kicker": "ROUTE A \u00b7 INDIAN APPS",
+        "title": "The easy on-ramp: Indian fintech apps",
+        "color": "#4F86F7",
+        "items": [
+          {
+            "emoji": "\ud83d\udcf1",
+            "k": "INDmoney",
+            "v": "A popular super-app \u2014 US stocks with zero brokerage and fractional investing built in",
+            "chip": "\u20b90 BROKERAGE"
+          },
+          {
+            "emoji": "\ud83e\uddba",
+            "k": "Vested",
+            "v": "A US-stocks specialist; start from about a dollar, with ready-made portfolios",
+            "chip": "FROM ~$1"
+          },
+          {
+            "emoji": "\ud83c\udf31",
+            "k": "Groww",
+            "v": "The familiar Indian investing app now offers US stocks and ETFs too",
+            "chip": "EASY START"
+          },
+          {
+            "emoji": "\ud83e\udd1d",
+            "k": "What they share",
+            "v": "Each partners with a US broker, does the rupee-to-dollar conversion, and allows fractions",
+            "chip": "BEGINNER-FRIENDLY"
+          }
+        ],
+        "dur": 42.924
+      }
+    },
+    {
+      "id": "gw07_cards",
+      "type": "gw_cards",
+      "in_seconds": 197.2,
+      "out_seconds": 240.693,
+      "props": {
+        "kicker": "ROUTE B \u00b7 GLOBAL & FULL-SERVICE",
+        "title": "For bigger or more serious investors",
+        "color": "#4F86F7",
+        "items": [
+          {
+            "emoji": "\ud83c\udf10",
+            "k": "Interactive Brokers",
+            "v": "A global broker you join directly \u2014 the lowest costs and pro tools, best for serious money",
+            "chip": "PRO \u00b7 LOW-COST"
+          },
+          {
+            "emoji": "\ud83c\udfe6",
+            "k": "ICICI Direct Global",
+            "v": "Full-service Indian brokers offer US investing via tie-ups \u2014 also Kotak, HDFC and Axis",
+            "chip": "BANK-BACKED"
+          },
+          {
+            "emoji": "\ud83c\udfd9\ufe0f",
+            "k": "GIFT City route",
+            "v": "Buy select US stocks from India's own GIFT City, or NSE IFSC \u2014 a newer LRS pathway",
+            "chip": "GIFT CITY"
+          },
+          {
+            "emoji": "\ud83e\udded",
+            "k": "Rule of thumb",
+            "v": "New with small sums? Use an Indian app. Large sums or active trading? Go global",
+            "chip": "HOW TO CHOOSE"
+          }
+        ],
+        "dur": 43.993
+      }
+    },
+    {
+      "id": "gw08_compare",
+      "type": "gw_compare",
+      "in_seconds": 241.193,
+      "out_seconds": 282.257,
+      "props": {
+        "kicker": "PLATFORMS \u00b7 SIDE BY SIDE",
+        "title": "How three popular choices compare",
+        "color": "#4F86F7",
+        "cols": [
+          {
+            "name": "INDmoney",
+            "color": "#4F86F7",
+            "emoji": "\ud83d\udcf1",
+            "rows": [
+              {
+                "k": "BROKERAGE",
+                "v": "Zero on US stocks"
+              },
+              {
+                "k": "MINIMUM",
+                "v": "Fractional \u2014 a few $"
+              },
+              {
+                "k": "BEST FOR",
+                "v": "All-in-one beginners"
+              },
+              {
+                "k": "WATCH",
+                "v": "Withdrawal & FX fees"
+              }
+            ]
+          },
+          {
+            "name": "Vested",
+            "color": "#34D399",
+            "emoji": "\ud83e\uddba",
+            "rows": [
+              {
+                "k": "BROKERAGE",
+                "v": "Zero commission"
+              },
+              {
+                "k": "MINIMUM",
+                "v": "From about $1"
+              },
+              {
+                "k": "BEST FOR",
+                "v": "US-stocks focus"
+              },
+              {
+                "k": "WATCH",
+                "v": "Withdrawal fee"
+              }
+            ]
+          },
+          {
+            "name": "Interactive Brokers",
+            "color": "#F59E0B",
+            "emoji": "\ud83c\udf10",
+            "hi": true,
+            "rows": [
+              {
+                "k": "BROKERAGE",
+                "v": "~$0.005 per share"
+              },
+              {
+                "k": "MINIMUM",
+                "v": "Low; fractional too"
+              },
+              {
+                "k": "BEST FOR",
+                "v": "Large / active money"
+              },
+              {
+                "k": "WATCH",
+                "v": "Steeper learning curve"
+              }
+            ]
+          }
+        ],
+        "dur": 41.564
+      }
+    },
+    {
+      "id": "gw09_div3",
+      "type": "gw_divider",
+      "in_seconds": 282.757,
+      "out_seconds": 292.851,
+      "props": {
+        "n": 3,
+        "title": "What Does It Cost?",
+        "sub": "Every charge, from buying to bringing money home",
+        "color": "#FB7185",
+        "dur": 10.594
+      }
+    },
+    {
+      "id": "gw10_fees",
+      "type": "gw_fees",
+      "in_seconds": 293.351,
+      "out_seconds": 338.381,
+      "props": {
+        "dur": 45.53
+      }
+    },
+    {
+      "id": "gw11_cards",
+      "type": "gw_cards",
+      "in_seconds": 338.881,
+      "out_seconds": 378.325,
+      "props": {
+        "kicker": "THE FOUR COSTS",
+        "title": "Every charge, buying and selling",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "\ud83d\udcb1",
+            "k": "Forex markup",
+            "v": "A spread on every rupee-to-dollar conversion \u2014 roughly half to two percent. Your biggest real cost",
+            "chip": "~0.5\u20132%"
+          },
+          {
+            "emoji": "\ud83e\uddfe",
+            "k": "TCS on remittance",
+            "v": "20% on money sent above \u20b910 lakh a year \u2014 but it's fully refundable against your income tax",
+            "chip": "REFUNDABLE"
+          },
+          {
+            "emoji": "\ud83d\udcb8",
+            "k": "Brokerage & fees",
+            "v": "Often zero to buy; tiny US regulatory fees on selling; some apps add a withdrawal fee",
+            "chip": "OFTEN \u20b90"
+          },
+          {
+            "emoji": "\ud83d\udd01",
+            "k": "Bringing money back",
+            "v": "Repatriation means another currency conversion, and sometimes a transfer fee on exit",
+            "chip": "EXIT COST"
+          }
+        ],
+        "dur": 39.944
+      }
+    },
+    {
+      "id": "gw12_stats",
+      "type": "gw_stats",
+      "in_seconds": 378.825,
+      "out_seconds": 418.131,
+      "props": {
+        "kicker": "TCS \u00b7 DECODED",
+        "title": "TCS sounds scary \u2014 it isn't",
+        "color": "#A78BFA",
+        "stats": [
+          {
+            "label": "TCS rate, above the yearly limit",
+            "to": 20,
+            "suffix": "%",
+            "color": "#A78BFA",
+            "sub": "only on the amount over \u20b910 lakh"
+          },
+          {
+            "label": "Send this much with ZERO TCS",
+            "to": 1000000,
+            "prefix": "\u20b9",
+            "color": "#34D399",
+            "sub": "\u20b910 lakh per financial year"
+          },
+          {
+            "label": "Of that TCS, you get back",
+            "to": 100,
+            "suffix": "%",
+            "color": "#34D399",
+            "sub": "adjust or refund it in your ITR"
+          }
+        ],
+        "note": "TCS is not a tax you lose \u2014 it's a prepayment you claim back. For most investors, it's effectively zero.",
+        "dur": 39.806
+      }
+    },
+    {
+      "id": "gw13_div4",
+      "type": "gw_divider",
+      "in_seconds": 418.631,
+      "out_seconds": 428.331,
+      "props": {
+        "n": 4,
+        "title": "Then, The Taxman",
+        "sub": "How your dividends and gains are taxed",
+        "color": "#A78BFA",
+        "dur": 10.2
+      }
+    },
+    {
+      "id": "gw14_compare",
+      "type": "gw_compare",
+      "in_seconds": 428.831,
+      "out_seconds": 470.346,
+      "props": {
+        "kicker": "TAX ON RETURNS",
+        "title": "Dividends vs capital gains",
+        "color": "#A78BFA",
+        "cols": [
+          {
+            "name": "Dividends",
+            "color": "#A78BFA",
+            "emoji": "\ud83d\udcb5",
+            "rows": [
+              {
+                "k": "TAXED FIRST IN",
+                "v": "The USA, at source"
+              },
+              {
+                "k": "RATE",
+                "v": "25% withheld"
+              },
+              {
+                "k": "THEN IN INDIA",
+                "v": "Added to your income"
+              },
+              {
+                "k": "RELIEF",
+                "v": "Foreign Tax Credit (DTAA)"
+              },
+              {
+                "k": "RESULT",
+                "v": "No double taxation"
+              }
+            ]
+          },
+          {
+            "name": "Capital gains",
+            "color": "#34D399",
+            "emoji": "\ud83d\udcc8",
+            "hi": true,
+            "rows": [
+              {
+                "k": "TAXED IN",
+                "v": "Only India"
+              },
+              {
+                "k": "LONG-TERM > 24 mo",
+                "v": "12.5%, no indexation"
+              },
+              {
+                "k": "SHORT-TERM \u2264 24 mo",
+                "v": "Your income-tax slab"
+              },
+              {
+                "k": "US SIDE",
+                "v": "No US gains tax for you"
+              },
+              {
+                "k": "REMEMBER",
+                "v": "Compute it in rupees"
+              }
+            ]
+          }
+        ],
+        "dur": 42.015
+      }
+    },
+    {
+      "id": "gw15_cards",
+      "type": "gw_cards",
+      "in_seconds": 470.846,
+      "out_seconds": 512.203,
+      "props": {
+        "kicker": "STAY ON THE RIGHT SIDE",
+        "title": "The compliance you cannot skip",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "\ud83d\udccb",
+            "k": "Schedule FA is mandatory",
+            "v": "Declare every foreign holding in your ITR \u2014 even one fractional share, even with no gains",
+            "chip": "MUST FILE"
+          },
+          {
+            "emoji": "\ud83e\uddee",
+            "k": "Claim your credits",
+            "v": "Use the India-US treaty to offset that 25% US dividend tax against your Indian tax",
+            "chip": "DTAA \u00b7 FTC"
+          },
+          {
+            "emoji": "\ud83d\uddc2\ufe0f",
+            "k": "Keep every record",
+            "v": "Save trade notes, dividend statements and remittance receipts \u2014 you'll need them at tax time",
+            "chip": "RECORDS"
+          },
+          {
+            "emoji": "\ud83d\udc69\u200d\u2696\ufe0f",
+            "k": "When in doubt, ask a CA",
+            "v": "Cross-border tax gets tricky fast; a chartered accountant usually pays for itself here",
+            "chip": "GET HELP"
+          }
+        ],
+        "dur": 41.857
+      }
+    },
+    {
+      "id": "gw16_div5",
+      "type": "gw_divider",
+      "in_seconds": 512.703,
+      "out_seconds": 521.532,
+      "props": {
+        "n": 5,
+        "title": "Doing It Right",
+        "sub": "The steps, the rupee route, and the real risks",
+        "color": "#34D399",
+        "dur": 9.329
+      }
+    },
+    {
+      "id": "gw17_steps",
+      "type": "gw_steps",
+      "in_seconds": 522.032,
+      "out_seconds": 562.9,
+      "props": {
+        "kicker": "START IN 5 STEPS",
+        "title": "From zero to your first US share",
+        "color": "#4F86F7",
+        "items": [
+          {
+            "emoji": "\ud83d\udd0d",
+            "label": "Pick a platform",
+            "sub": "app or global broker",
+            "c": "#4F86F7"
+          },
+          {
+            "emoji": "\ud83e\udeaa",
+            "label": "Open & KYC",
+            "sub": "PAN, ID, bank link",
+            "c": "#4F86F7"
+          },
+          {
+            "emoji": "\ud83d\udcb0",
+            "label": "Add & convert",
+            "sub": "rupees \u2192 dollars, LRS",
+            "c": "#F59E0B"
+          },
+          {
+            "emoji": "\ud83d\uded2",
+            "label": "Buy shares",
+            "sub": "whole or fractional",
+            "c": "#34D399"
+          },
+          {
+            "emoji": "\ud83d\udcd1",
+            "label": "Track & file",
+            "sub": "Schedule FA at tax time",
+            "c": "#A78BFA"
+          }
+        ],
+        "note": "Start small, automate a fixed monthly amount, and treat it as a long-term global allocation.",
+        "dur": 41.368
+      }
+    },
+    {
+      "id": "gw18_cards",
+      "type": "gw_cards",
+      "in_seconds": 563.4,
+      "out_seconds": 604.784,
+      "props": {
+        "kicker": "THE RUPEE ROUTE",
+        "title": "Don't want the LRS hassle? Go indirect",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "\ud83e\uddfa",
+            "k": "International mutual funds",
+            "v": "Indian funds and fund-of-funds that invest in US or global equities \u2014 bought in rupees, no LRS",
+            "chip": "IN \u20b9, NO LRS"
+          },
+          {
+            "emoji": "\ud83d\udcca",
+            "k": "India-listed ETFs",
+            "v": "ETFs on the NSE that track the S&P 500 or Nasdaq 100 \u2014 one click, in rupees",
+            "chip": "NSE-LISTED"
+          },
+          {
+            "emoji": "\u26d4",
+            "k": "The overseas-limit catch",
+            "v": "SEBI caps how much these funds send abroad; some pause fresh buying when the limit is full",
+            "chip": "WATCH LIMITS"
+          },
+          {
+            "emoji": "\ud83c\udfd9\ufe0f",
+            "k": "GIFT City middle path",
+            "v": "Direct US stocks under LRS, but routed through India's GIFT City \u2014 a hybrid of both routes",
+            "chip": "HYBRID"
+          }
+        ],
+        "dur": 41.884
+      }
+    },
+    {
+      "id": "gw19_cards",
+      "type": "gw_cards",
+      "in_seconds": 605.284,
+      "out_seconds": 644.905,
+      "props": {
+        "kicker": "BEFORE YOU JUMP IN",
+        "title": "The risks nobody advertises",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "\ud83d\udcb1",
+            "k": "Currency cuts both ways",
+            "v": "A weaker rupee lifts your returns; a stronger rupee eats them \u2014 you're taking a dollar bet too",
+            "chip": "\u20b9 vs $"
+          },
+          {
+            "emoji": "\ud83e\uddca",
+            "k": "Costs bite small sums",
+            "v": "Markups and fixed fees hurt tiny transfers \u2014 invest in larger, less frequent chunks",
+            "chip": "GO BIGGER"
+          },
+          {
+            "emoji": "\u23f3",
+            "k": "Access can pause",
+            "v": "Indirect funds can shut fresh inflows, and platforms can change terms \u2014 don't over-rely on one",
+            "chip": "STAY FLEXIBLE"
+          },
+          {
+            "emoji": "\ud83d\udcdc",
+            "k": "Compliance is on you",
+            "v": "Miss Schedule FA and the penalties are steep \u2014 the tax paperwork is simply not optional",
+            "chip": "FILE IT"
+          }
+        ],
+        "dur": 40.121
+      }
+    },
+    {
+      "id": "gw20_recap",
+      "type": "gw_recap",
+      "in_seconds": 645.405,
+      "out_seconds": 709.908,
+      "props": {
+        "title": "Investing abroad, in one breath",
+        "items": [
+          "Yes \u2014 it's legal via RBI's LRS: up to $250,000 a year",
+          "Direct: apps like INDmoney, Vested, Groww, or IBKR",
+          "Indirect: India-listed ETFs & funds \u2014 in rupees, no LRS",
+          "Real cost is the forex markup; brokerage is often \u20b90",
+          "TCS 20% only above \u20b910 lakh \u2014 and it's refundable",
+          "Tax: 25% on US dividends (credited), gains taxed in India",
+          "Always declare foreign holdings in Schedule FA"
+        ],
+        "closer": "The whole world is investable from India \u2014 go in with your eyes open.",
+        "dur": 65.003
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "gw/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

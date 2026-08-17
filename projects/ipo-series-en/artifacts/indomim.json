@@ -1,0 +1,731 @@
+{
+  "cuts": [
+    {
+      "id": "indomim_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 30.26,
+      "props": {
+        "title": "Indo-MIM IPO",
+        "sub": "Precision metal parts · ₹3,811 Cr · Opens 23–27 Jul 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 30.76
+      }
+    },
+    {
+      "id": "indomim_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 30.76,
+      "out_seconds": 79.21,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Indo-MIM",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "⚙️",
+            "k": "Metal Injection Molding (MIM)",
+            "v": "A world leader in tiny, complex, high-precision metal parts made at scale — founded back in 1996",
+            "chip": "GLOBAL LEADER"
+          },
+          {
+            "emoji": "🚗",
+            "k": "Who buys from them",
+            "v": "Automotive, defence, medical, aerospace and consumer companies — diversified, sticky customers",
+            "chip": "5 SECTORS"
+          },
+          {
+            "emoji": "🖨️",
+            "k": "Beyond MIM",
+            "v": "Also does investment casting, precision machining and even 3D metal printing — a full-stack parts maker",
+            "chip": "TECH EDGE"
+          }
+        ],
+        "dur": 48.95
+      }
+    },
+    {
+      "id": "indomim_fin",
+      "type": "sm_stats",
+      "in_seconds": 79.71,
+      "out_seconds": 118.322,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 4193,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+26% YoY — strong growth"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 534,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+26% YoY — highly profitable"
+          },
+          {
+            "label": "Grey-mkt premium",
+            "to": 39,
+            "prefix": "~",
+            "suffix": "%",
+            "color": "#FBBF24",
+            "sub": "unofficial · over ₹485 cap"
+          }
+        ],
+        "note": "A genuinely profitable, growing business — revenue and profit both up 26%. The grey market is signalling a strong listing, but GMP is unofficial and drifts daily.",
+        "dur": 39.112
+      }
+    },
+    {
+      "id": "indomim_issue",
+      "type": "sm_stats",
+      "in_seconds": 118.822,
+      "out_seconds": 164.704,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 3811,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#22D3EE",
+            "sub": "price band ₹461–485"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 500,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "just 13% of the issue"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 3312,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "87% — existing owners exit"
+          }
+        ],
+        "note": "KEY POINT: 87% is an Offer-for-Sale — that money goes to existing shareholders cashing out (incl. Green Meadows and IIT Madras), NOT into the business.",
+        "dur": 46.382
+      }
+    },
+    {
+      "id": "indomim_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 165.204,
+      "out_seconds": 197.936,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹500 Cr Funds",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "₹400 Cr — repay debt",
+            "v": "The bulk of the fresh money simply pays down existing borrowings — it strengthens the balance sheet, but doesn't build new capacity",
+            "chip": "DEBT"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Balance — general corporate",
+            "v": "The rest goes to general corporate purposes, the standard catch-all bucket",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 33.232
+      }
+    },
+    {
+      "id": "indomim_verdict",
+      "type": "sm_myths",
+      "in_seconds": 198.436,
+      "out_seconds": 244.27,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "87% is OFS — mostly a promoter/investor exit",
+            "f": "Profitable, 26% revenue & profit growth"
+          },
+          {
+            "m": "Fresh money repays debt, not growth capex",
+            "f": "Global leader in a niche, sticky business"
+          },
+          {
+            "m": "Premium valuation; GMP can fade by listing",
+            "f": "~39% grey-market premium — strong demand"
+          }
+        ],
+        "dur": 46.334
+      }
+    },
+    {
+      "id": "indomim_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 244.77,
+      "out_seconds": 290.89,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,550 as a retail bid. Retail can bid up to 13 lots, about ₹1.9 lakh. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 46.62
+      }
+    },
+    {
+      "id": "indomim_recap",
+      "type": "sm_recap",
+      "in_seconds": 291.39,
+      "out_seconds": 349.198,
+      "props": {
+        "title": "Indo-MIM IPO — at a Glance",
+        "items": [
+          "Business: global metal-injection-molding parts leader",
+          "FY26: revenue ₹4,193 Cr, profit ₹534 Cr (both +26%)",
+          "₹3,811 Cr issue — but 87% is OFS (owners exiting)",
+          "Fresh ₹500 Cr mainly repays debt",
+          "Retail min ~₹14,550 · GMP ~39% (unofficial)"
+        ],
+        "closer": "A quality company at a full price — mostly a sell-down. Read the RHP; decide for yourself.",
+        "dur": 58.308
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      2.916,
+      "Let's break down the Indo-MIM I-P-O —"
+    ],
+    [
+      2.916,
+      5.595,
+      "one of the biggest of this season,"
+    ],
+    [
+      5.595,
+      10.008,
+      "at three thousand eight hundred and eleven crore rupees."
+    ],
+    [
+      10.008,
+      15.13,
+      "By the end of this video you'll understand what the company does,"
+    ],
+    [
+      15.13,
+      19.07,
+      "its financials, where the money is actually going,"
+    ],
+    [
+      19.07,
+      21.749,
+      "and how much you'd need to apply —"
+    ],
+    [
+      21.749,
+      24.35,
+      "as a retail or an H-N-I investor."
+    ],
+    [
+      24.35,
+      28.605,
+      "Quick note — this is education, not investment advice,"
+    ],
+    [
+      28.605,
+      30.26,
+      "and not a tip to buy."
+    ],
+    [
+      30.76,
+      33.75,
+      "So what does Indo-MIM actually do?"
+    ],
+    [
+      33.75,
+      39.377,
+      "It's a world leader in something called Metal Injection Molding,"
+    ],
+    [
+      39.377,
+      43.422,
+      "or M-I-M — a way of mass-producing very small,"
+    ],
+    [
+      43.422,
+      48.17,
+      "very complex metal parts to extremely fine tolerances."
+    ],
+    [
+      48.17,
+      53.182,
+      "Think of parts you'd find inside a car, a medical device,"
+    ],
+    [
+      53.182,
+      54.941,
+      "or a defence system."
+    ],
+    [
+      54.941,
+      59.689,
+      "Its customers span five sectors — automotive, defence,"
+    ],
+    [
+      59.689,
+      62.591,
+      "medical, aerospace and consumer —"
+    ],
+    [
+      62.591,
+      66.548,
+      "so it isn't dependent on any single industry."
+    ],
+    [
+      66.548,
+      70.857,
+      "And beyond M-I-M it also does investment casting,"
+    ],
+    [
+      70.857,
+      74.638,
+      "precision machining, and 3D metal printing."
+    ],
+    [
+      74.638,
+      79.21,
+      "In short, a diversified, technology-led parts maker."
+    ],
+    [
+      79.71,
+      82.894,
+      "Now the financials — and they're strong."
+    ],
+    [
+      82.894,
+      86.238,
+      "In the year ended March twenty twenty-six,"
+    ],
+    [
+      86.238,
+      92.05,
+      "Indo-MIM did four thousand one hundred and ninety-three crore in revenue,"
+    ],
+    [
+      92.05,
+      93.801,
+      "up twenty-six percent."
+    ],
+    [
+      93.801,
+      97.782,
+      "Net profit was five hundred and thirty-four crore,"
+    ],
+    [
+      97.782,
+      99.932,
+      "also up twenty-six percent."
+    ],
+    [
+      99.932,
+      104.151,
+      "So this is a real, profitable, fast-growing company —"
+    ],
+    [
+      104.151,
+      106.937,
+      "not a loss-maker chasing a listing."
+    ],
+    [
+      106.937,
+      111.236,
+      "The grey market premium is around thirty-nine percent,"
+    ],
+    [
+      111.236,
+      114.501,
+      "hinting at a strong debut — but remember,"
+    ],
+    [
+      114.501,
+      118.322,
+      "that number is unofficial and changes every day."
+    ],
+    [
+      118.822,
+      122.34,
+      "Here's the most important part for any I-P-O —"
+    ],
+    [
+      122.34,
+      124.94,
+      "where does your money actually go?"
+    ],
+    [
+      124.94,
+      128.993,
+      "Of the three thousand eight hundred and eleven crore,"
+    ],
+    [
+      128.993,
+      132.204,
+      "only five hundred crore is a fresh issue —"
+    ],
+    [
+      132.204,
+      135.034,
+      "new money that goes into the company."
+    ],
+    [
+      135.034,
+      137.251,
+      "That's just thirteen percent."
+    ],
+    [
+      137.251,
+      141.61,
+      "The other three thousand three hundred and twelve crore —"
+    ],
+    [
+      141.61,
+      144.975,
+      "eighty-seven percent — is an Offer for Sale."
+    ],
+    [
+      144.975,
+      147.498,
+      "That means existing shareholders,"
+    ],
+    [
+      147.498,
+      152.698,
+      "including a big investor called Green Meadows and even I-I-T Madras,"
+    ],
+    [
+      152.698,
+      156.445,
+      "are selling their stakes and pocketing that cash."
+    ],
+    [
+      156.445,
+      157.822,
+      "So when you apply,"
+    ],
+    [
+      157.822,
+      162.18,
+      "most of your money is buying out people who are exiting —"
+    ],
+    [
+      162.18,
+      164.704,
+      "not funding the company's growth."
+    ],
+    [
+      165.204,
+      170.032,
+      "And that small fresh-issue slice — the five hundred crore —"
+    ],
+    [
+      170.032,
+      171.505,
+      "what does it fund?"
+    ],
+    [
+      171.505,
+      175.678,
+      "Four hundred crore of it just repays existing debt."
+    ],
+    [
+      175.678,
+      177.642,
+      "That's not a bad thing —"
+    ],
+    [
+      177.642,
+      182.143,
+      "it cuts interest costs and de-risks the balance sheet —"
+    ],
+    [
+      182.143,
+      185.907,
+      "but it does not add new factories or capacity."
+    ],
+    [
+      185.907,
+      189.917,
+      "The remainder goes to general corporate purposes,"
+    ],
+    [
+      189.917,
+      191.553,
+      "the usual catch-all."
+    ],
+    [
+      191.553,
+      197.936,
+      "So the fresh money cleans up the balance sheet rather than fuelling expansion."
+    ],
+    [
+      198.436,
+      200.374,
+      "So — should you subscribe?"
+    ],
+    [
+      200.374,
+      202.162,
+      "Let's weigh it honestly."
+    ],
+    [
+      202.162,
+      203.876,
+      "On the strengths side —"
+    ],
+    [
+      203.876,
+      208.87,
+      "it's a genuinely profitable business growing at twenty-six percent,"
+    ],
+    [
+      208.87,
+      212.522,
+      "a global leader in a niche with sticky customers,"
+    ],
+    [
+      212.522,
+      217.962,
+      "and the grey market is pricing a strong listing near thirty-nine percent."
+    ],
+    [
+      217.962,
+      219.676,
+      "On the watch-out side —"
+    ],
+    [
+      219.676,
+      224.52,
+      "eighty-seven percent of the issue is existing owners cashing out,"
+    ],
+    [
+      224.52,
+      228.992,
+      "the fresh money only repays debt rather than funding growth,"
+    ],
+    [
+      228.992,
+      230.93,
+      "and the valuation is rich,"
+    ],
+    [
+      230.93,
+      234.954,
+      "so that grey-market premium can shrink by listing day."
+    ],
+    [
+      234.954,
+      237.786,
+      "The takeaway — a high-quality company,"
+    ],
+    [
+      237.786,
+      242.63,
+      "but go in understanding you're mostly buying shares from sellers,"
+    ],
+    [
+      242.63,
+      244.27,
+      "not funding expansion."
+    ],
+    [
+      244.77,
+      247.698,
+      "Finally — how do you actually apply,"
+    ],
+    [
+      247.698,
+      249.732,
+      "and how much do you need?"
+    ],
+    [
+      249.732,
+      254.45,
+      "As a retail investor you can put in up to two lakh rupees,"
+    ],
+    [
+      254.45,
+      258.11,
+      "and you get thirty-five percent of the issue."
+    ],
+    [
+      258.11,
+      263.072,
+      "But if it's oversubscribed, shares are given out by lottery —"
+    ],
+    [
+      263.072,
+      266.407,
+      "so a bigger cheque does not get you more."
+    ],
+    [
+      266.407,
+      271.287,
+      "H-N-Is bid above two lakh and share a fifteen percent quota."
+    ],
+    [
+      271.287,
+      274.541,
+      "For Indo-MIM, one lot is thirty shares —"
+    ],
+    [
+      274.541,
+      279.014,
+      "about fourteen thousand five hundred and fifty rupees —"
+    ],
+    [
+      279.014,
+      280.966,
+      "and that's your minimum."
+    ],
+    [
+      280.966,
+      284.22,
+      "To watch the subscription build up live,"
+    ],
+    [
+      284.22,
+      288.206,
+      "use the N-S-E and B-S-E I-P-O pages, Chittorgarh,"
+    ],
+    [
+      288.206,
+      290.89,
+      "Moneycontrol, or your broker app."
+    ],
+    [
+      291.39,
+      293.085,
+      "Let's recap Indo-MIM."
+    ],
+    [
+      293.085,
+      295.831,
+      "A world-leading metal-parts maker,"
+    ],
+    [
+      295.831,
+      301.644,
+      "genuinely profitable with revenue and profit both up twenty-six percent."
+    ],
+    [
+      301.644,
+      306.165,
+      "The issue is big at three thousand eight hundred crore —"
+    ],
+    [
+      306.165,
+      310.363,
+      "but eighty-seven percent is existing owners selling,"
+    ],
+    [
+      310.363,
+      313.512,
+      "and the fresh money mostly repays debt."
+    ],
+    [
+      313.512,
+      319.325,
+      "Retail minimum is about fourteen thousand five hundred and fifty rupees,"
+    ],
+    [
+      319.325,
+      323.846,
+      "and the grey market premium is near thirty-nine percent,"
+    ],
+    [
+      323.846,
+      325.865,
+      "though that's unofficial."
+    ],
+    [
+      325.865,
+      329.74,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      329.74,
+      332.001,
+      "it is not investment advice,"
+    ],
+    [
+      332.001,
+      334.665,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      334.665,
+      337.733,
+      "and not a prediction of listing gains."
+    ],
+    [
+      337.733,
+      342.012,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      342.012,
+      347.583,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      347.583,
+      349.198,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/indomim.wav",
+      "volume": 1.0
+    }
+  }
+}

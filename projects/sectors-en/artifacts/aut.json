@@ -1,0 +1,979 @@
+{
+  "cuts": [
+    {
+      "id": "a_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 31.764,
+      "props": {
+        "title": "How to Analyse Auto Stocks",
+        "sub": "Automobile sector · fundamentals · technicals · strategies",
+        "kicker": "SECTOR DEEP-DIVE · AUTO",
+        "dur": 32.264
+      }
+    },
+    {
+      "id": "a_overview",
+      "type": "sm_iconcards",
+      "in_seconds": 32.264,
+      "out_seconds": 93.612,
+      "props": {
+        "kicker": "SUB-SECTORS",
+        "title": "Auto is many segments",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🏍️",
+            "k": "Two-wheelers",
+            "v": "Bikes & scooters — mass-market, rural-sensitive, huge volumes",
+            "chip": "2W"
+          },
+          {
+            "emoji": "🚗",
+            "k": "Passenger vehicles",
+            "v": "Cars & SUVs — urban, discretionary, premiumisation & EV shift",
+            "chip": "PV"
+          },
+          {
+            "emoji": "🚚",
+            "k": "Commercial vehicles",
+            "v": "Trucks & buses — pure economy play; track freight & capex",
+            "chip": "CV"
+          },
+          {
+            "emoji": "🧩",
+            "k": "Ancillaries",
+            "v": "Component makers supplying all of the above — plus global & EV clients",
+            "chip": "Suppliers"
+          }
+        ],
+        "dur": 61.848
+      }
+    },
+    {
+      "id": "a_drivers",
+      "type": "sm_iconcards",
+      "in_seconds": 94.112,
+      "out_seconds": 155.052,
+      "props": {
+        "kicker": "WHAT MOVES AUTO",
+        "title": "The forces that drive the sector",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "📊",
+            "k": "Demand cycle",
+            "v": "Incomes, sentiment & the economy — autos are a discretionary big-ticket buy",
+            "chip": "Economy"
+          },
+          {
+            "emoji": "🏛️",
+            "k": "Interest rates",
+            "v": "Most vehicles are bought on loans — cheaper EMIs lift demand",
+            "chip": "Rates"
+          },
+          {
+            "emoji": "🔩",
+            "k": "Commodity costs",
+            "v": "Steel & aluminium prices drive the margin — links auto to the metals cycle",
+            "chip": "Inputs"
+          },
+          {
+            "emoji": "⚡",
+            "k": "Fuel & EV policy",
+            "v": "Fuel prices, emission norms & EV incentives reshape demand & the winners",
+            "chip": "Policy"
+          }
+        ],
+        "dur": 61.44
+      }
+    },
+    {
+      "id": "a_fund",
+      "type": "sm_iconcards",
+      "in_seconds": 155.552,
+      "out_seconds": 230.608,
+      "props": {
+        "kicker": "FUNDAMENTALS · CORE",
+        "title": "The metrics unique to auto",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🚗",
+            "k": "Monthly sales volumes",
+            "v": "The heartbeat — wholesale & retail unit sales, reported every month. The #1 signal",
+            "chip": "Volumes"
+          },
+          {
+            "emoji": "🏍️",
+            "k": "Segment mix",
+            "v": "2-wheelers, cars, commercial vehicles, tractors — each has its own cycle",
+            "chip": "Mix"
+          },
+          {
+            "emoji": "🔩",
+            "k": "Input costs",
+            "v": "Steel & aluminium are big cost lines — commodity prices squeeze or fatten margins",
+            "chip": "Costs"
+          },
+          {
+            "emoji": "⚡",
+            "k": "EV transition",
+            "v": "Who is winning the shift to electric — and who is being disrupted?",
+            "chip": "EV"
+          }
+        ],
+        "dur": 75.556
+      }
+    },
+    {
+      "id": "a_tech",
+      "type": "sm_iconcards",
+      "in_seconds": 231.108,
+      "out_seconds": 285.116,
+      "props": {
+        "kicker": "TECHNICAL ANALYSIS",
+        "title": "Reading auto on the chart",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "📈",
+            "k": "Nifty Auto",
+            "v": "The sector index. Track its trend and relative strength versus the Nifty",
+            "chip": "Index"
+          },
+          {
+            "emoji": "🗓️",
+            "k": "1st-of-month spike",
+            "v": "Monthly sales numbers land at month-start — the sector's biggest recurring catalyst",
+            "chip": "Sales day"
+          },
+          {
+            "emoji": "🔄",
+            "k": "Cyclical timing",
+            "v": "A classic cyclical — leads in economic recoveries, lags in slowdowns",
+            "chip": "Cyclical"
+          },
+          {
+            "emoji": "🔩",
+            "k": "Inverse to metals",
+            "v": "Rising steel/aluminium often pressures auto margins — watch that link",
+            "chip": "Costs"
+          }
+        ],
+        "dur": 54.508
+      }
+    },
+    {
+      "id": "a_strat",
+      "type": "sm_iconcards",
+      "in_seconds": 285.616,
+      "out_seconds": 361.484,
+      "props": {
+        "kicker": "STRATEGIES",
+        "title": "Strategies for auto",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🔄",
+            "k": "Play the volume cycle",
+            "v": "Buy leaders early in a demand up-cycle; trim as volumes & margins peak",
+            "chip": "Cyclical"
+          },
+          {
+            "emoji": "⚡",
+            "k": "Back the EV winners",
+            "v": "Favour makers gaining EV share; be wary of those most exposed to disruption",
+            "chip": "Future"
+          },
+          {
+            "emoji": "🧩",
+            "k": "Ancillaries too",
+            "v": "Auto-component makers ride the same cycle — and some supply EV & global clients",
+            "chip": "Suppliers"
+          },
+          {
+            "emoji": "🚜",
+            "k": "Segment-specific",
+            "v": "Match your bet to the segment cycle — tractors on a good monsoon, CVs on capex",
+            "chip": "Targeted"
+          }
+        ],
+        "dur": 76.368
+      }
+    },
+    {
+      "id": "a_check",
+      "type": "sm_checklist",
+      "in_seconds": 361.984,
+      "out_seconds": 422.32,
+      "props": {
+        "kicker": "HOW TO EVALUATE",
+        "title": "Evaluating an auto stock — checklist",
+        "color": "#34D399",
+        "icon": "✅",
+        "items": [
+          "Track the multi-month sales-volume trend (not one month)",
+          "Know the segment mix (2W / PV / CV / tractor) & its cycle",
+          "Watch input costs (steel/aluminium) squeezing margins",
+          "Judge the company's EV position — winner or disrupted?",
+          "Time your entry to the demand cycle, not to peak profits"
+        ],
+        "dur": 60.836
+      }
+    },
+    {
+      "id": "a_risk",
+      "type": "sm_myths",
+      "in_seconds": 422.82,
+      "out_seconds": 483.572,
+      "props": {
+        "kicker": "WHAT TO AVOID",
+        "title": "Auto sector — the risks",
+        "mythLabel": "✗ TRAP",
+        "factLabel": "✓ REALITY",
+        "pairs": [
+          {
+            "m": "Record profits — buy the auto stock!",
+            "f": "Cyclicals look cheapest (low P/E) at the TOP, just before margins fall"
+          },
+          {
+            "m": "The market leader can't be disrupted",
+            "f": "EV shifts can dethrone incumbents — yesterday's giant, tomorrow's laggard"
+          },
+          {
+            "m": "Good sales one month = a trend",
+            "f": "One month can be festive/discount-driven — watch the multi-month trend"
+          }
+        ],
+        "dur": 61.252
+      }
+    },
+    {
+      "id": "a_recap",
+      "type": "sm_recap",
+      "in_seconds": 484.072,
+      "out_seconds": 526.004,
+      "props": {
+        "title": "Auto sector — recap",
+        "items": [
+          "Monthly sales volumes are the #1 signal",
+          "Watch segment mix, input costs (steel), the EV shift",
+          "A cyclical — leads recoveries, lags slowdowns",
+          "Strategy: play the volume cycle; back EV winners",
+          "Trap: cyclicals look cheapest at the peak"
+        ],
+        "closer": "Buy autos into a recovery — never at peak margins.",
+        "dur": 42.432
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.06,
+      "The automobile sector — one of the great cyclicals,"
+    ],
+    [
+      4.06,
+      7.324,
+      "and right now, one of the most disrupted."
+    ],
+    [
+      7.324,
+      11.941,
+      "Autos rise and fall with the economy, with interest rates,"
+    ],
+    [
+      11.941,
+      14.17,
+      "and with the price of steel."
+    ],
+    [
+      14.17,
+      18.469,
+      "And layered on top is the biggest shift in a century —"
+    ],
+    [
+      18.469,
+      20.858,
+      "the move to electric vehicles,"
+    ],
+    [
+      20.858,
+      24.281,
+      "which is creating clear winners and losers."
+    ],
+    [
+      24.281,
+      27.863,
+      "Let's learn the fundamentals, the technicals,"
+    ],
+    [
+      27.863,
+      31.764,
+      "and the strategies for this fast-changing sector."
+    ],
+    [
+      32.264,
+      32.761,
+      "First,"
+    ],
+    [
+      32.761,
+      37.736,
+      "understand that auto is not one market but several segments,"
+    ],
+    [
+      37.736,
+      39.725,
+      "each with its own cycle."
+    ],
+    [
+      39.725,
+      42.627,
+      "Two-wheelers — bikes and scooters —"
+    ],
+    [
+      42.627,
+      47.021,
+      "are mass-market and highly sensitive to rural income,"
+    ],
+    [
+      47.021,
+      48.845,
+      "with enormous volumes."
+    ],
+    [
+      48.845,
+      52.99,
+      "Passenger vehicles — cars and SUVs — are an urban,"
+    ],
+    [
+      52.99,
+      54.896,
+      "discretionary purchase,"
+    ],
+    [
+      54.896,
+      60.036,
+      "where premiumisation and the EV shift are playing out fastest."
+    ],
+    [
+      60.036,
+      63.353,
+      "Commercial vehicles — trucks and buses —"
+    ],
+    [
+      63.353,
+      69.073,
+      "are a pure play on the economy; when freight and infrastructure boom,"
+    ],
+    [
+      69.073,
+      69.985,
+      "so do they."
+    ],
+    [
+      69.985,
+      74.544,
+      "And tractors are a rural-and-monsoon play of their own."
+    ],
+    [
+      74.544,
+      78.607,
+      "Sitting beneath all of them are the ancillaries —"
+    ],
+    [
+      78.607,
+      82.42,
+      "the component makers who supply every segment,"
+    ],
+    [
+      82.42,
+      87.063,
+      "and the best of whom also serve global and EV customers."
+    ],
+    [
+      87.063,
+      90.213,
+      "Know which segment a maker depends on,"
+    ],
+    [
+      90.213,
+      93.612,
+      "because their cycles don't move together."
+    ],
+    [
+      94.112,
+      96.603,
+      "What drives the auto sector?"
+    ],
+    [
+      96.603,
+      97.671,
+      "Four forces."
+    ],
+    [
+      97.671,
+      100.339,
+      "The first is the demand cycle."
+    ],
+    [
+      100.339,
+      104.788,
+      "A vehicle is a big-ticket, discretionary purchase,"
+    ],
+    [
+      104.788,
+      109.236,
+      "so demand rises and falls with incomes, sentiment,"
+    ],
+    [
+      109.236,
+      111.371,
+      "and the broader economy."
+    ],
+    [
+      111.371,
+      113.951,
+      "The second is interest rates."
+    ],
+    [
+      113.951,
+      116.976,
+      "Most vehicles are bought on loans,"
+    ],
+    [
+      116.976,
+      121.869,
+      "so cheaper EMIs from lower rates directly lift demand —"
+    ],
+    [
+      121.869,
+      124.982,
+      "a rate-cut cycle is good for autos."
+    ],
+    [
+      124.982,
+      127.562,
+      "The third is commodity costs."
+    ],
+    [
+      127.562,
+      131.833,
+      "Steel and aluminium are the biggest input costs,"
+    ],
+    [
+      131.833,
+      136.548,
+      "so the metals cycle flows straight into auto margins."
+    ],
+    [
+      136.548,
+      140.907,
+      "The fourth is fuel and EV policy — petrol prices,"
+    ],
+    [
+      140.907,
+      142.241,
+      "emission norms,"
+    ],
+    [
+      142.241,
+      148.38,
+      "and electric-vehicle incentives together reshape what people buy and,"
+    ],
+    [
+      148.38,
+      150.871,
+      "crucially, which makers win."
+    ],
+    [
+      150.871,
+      155.052,
+      "Now, the metrics for analysing an auto company."
+    ],
+    [
+      155.552,
+      158.155,
+      "Auto has four defining metrics."
+    ],
+    [
+      158.155,
+      161.765,
+      "The first, and the heartbeat of the sector,"
+    ],
+    [
+      161.765,
+      165.291,
+      "is monthly sales volumes — the units sold,"
+    ],
+    [
+      165.291,
+      167.642,
+      "reported every single month."
+    ],
+    [
+      167.642,
+      170.916,
+      "No other sector gives you such a clear,"
+    ],
+    [
+      170.916,
+      173.351,
+      "high-frequency demand signal."
+    ],
+    [
+      173.351,
+      176.289,
+      "When volumes turn, the stocks turn."
+    ],
+    [
+      176.289,
+      178.808,
+      "The second is the segment mix."
+    ],
+    [
+      178.808,
+      183.005,
+      "Two-wheelers, passenger cars, commercial vehicles,"
+    ],
+    [
+      183.005,
+      186.615,
+      "and tractors each move on their own cycle —"
+    ],
+    [
+      186.615,
+      189.806,
+      "commercial vehicles track the economy,"
+    ],
+    [
+      189.806,
+      193.5,
+      "tractors track the monsoon and rural income."
+    ],
+    [
+      193.5,
+      196.858,
+      "Know which segment a company depends on."
+    ],
+    [
+      196.858,
+      198.957,
+      "The third is input costs."
+    ],
+    [
+      198.957,
+      203.658,
+      "Steel and aluminium are huge cost lines for a car-maker,"
+    ],
+    [
+      203.658,
+      206.681,
+      "so when those commodity prices rise,"
+    ],
+    [
+      206.681,
+      211.13,
+      "margins get squeezed; when they fall, margins fatten."
+    ],
+    [
+      211.13,
+      214.908,
+      "This links auto directly to the metals cycle."
+    ],
+    [
+      214.908,
+      218.854,
+      "The fourth is the electric-vehicle transition —"
+    ],
+    [
+      218.854,
+      221.877,
+      "the defining question of the decade."
+    ],
+    [
+      221.877,
+      225.739,
+      "Watch closely who is winning the shift to EVs,"
+    ],
+    [
+      225.739,
+      230.608,
+      "and whose traditional business is being quietly disrupted."
+    ],
+    [
+      231.108,
+      235.711,
+      "On the chart, auto has a wonderfully predictable rhythm."
+    ],
+    [
+      235.711,
+      241.795,
+      "Track the Nifty Auto index for the sector trend and its relative strength."
+    ],
+    [
+      241.795,
+      247.056,
+      "The single biggest recurring catalyst is the monthly sales data,"
+    ],
+    [
+      247.056,
+      250.344,
+      "which lands at the start of every month."
+    ],
+    [
+      250.344,
+      255.112,
+      "The whole sector reacts to whether volumes beat or missed."
+    ],
+    [
+      255.112,
+      257.413,
+      "Mark the first of the month."
+    ],
+    [
+      257.413,
+      260.208,
+      "Treat auto as a classic cyclical —"
+    ],
+    [
+      260.208,
+      263.579,
+      "it tends to lead in an economic recovery,"
+    ],
+    [
+      263.579,
+      268.757,
+      "when people finally buy that new car, and to lag in a slowdown."
+    ],
+    [
+      268.757,
+      271.388,
+      "Time it with the economic cycle."
+    ],
+    [
+      271.388,
+      275.334,
+      "And watch its inverse relationship with metals —"
+    ],
+    [
+      275.334,
+      281.252,
+      "a sharp rise in steel and aluminium prices often pressures auto margins,"
+    ],
+    [
+      281.252,
+      285.116,
+      "so the two sectors can move against each other."
+    ],
+    [
+      285.616,
+      287.487,
+      "How do you play autos?"
+    ],
+    [
+      287.487,
+      288.848,
+      "Four strategies."
+    ],
+    [
+      288.848,
+      291.315,
+      "First, play the volume cycle."
+    ],
+    [
+      291.315,
+      294.972,
+      "Buy the leaders early in a demand up-cycle,"
+    ],
+    [
+      294.972,
+      297.609,
+      "when sales are just recovering,"
+    ],
+    [
+      297.609,
+      301.436,
+      "and trim as volumes and margins reach a peak."
+    ],
+    [
+      301.436,
+      303.732,
+      "Cyclicals are about timing."
+    ],
+    [
+      303.732,
+      306.114,
+      "Second, back the EV winners."
+    ],
+    [
+      306.114,
+      311.302,
+      "Favour the makers who are gaining share in electric vehicles,"
+    ],
+    [
+      311.302,
+      318.277,
+      "and be cautious with those whose bread-and-butter models face the most disruption."
+    ],
+    [
+      318.277,
+      322.189,
+      "This is a structural, not just cyclical, call."
+    ],
+    [
+      322.189,
+      325.336,
+      "Third, don't forget the ancillaries —"
+    ],
+    [
+      325.336,
+      329.674,
+      "the auto-component makers ride the very same cycle,"
+    ],
+    [
+      329.674,
+      334.182,
+      "and the best of them supply EVs and global customers,"
+    ],
+    [
+      334.182,
+      336.648,
+      "giving an extra growth angle."
+    ],
+    [
+      336.648,
+      339.03,
+      "Fourth, be segment-specific."
+    ],
+    [
+      339.03,
+      351.618,
+      "Bet on tractor-makers when the monsoon is good and rural income is rising; on commercial-vehicle makers when infrastructure and freight are booming."
+    ],
+    [
+      351.618,
+      355.105,
+      "Match the bet to the segment's own cycle."
+    ],
+    [
+      355.105,
+      355.87,
+      "In autos,"
+    ],
+    [
+      355.87,
+      361.484,
+      "timing the cycle and picking the EV side correctly are everything."
+    ],
+    [
+      361.984,
+      366.053,
+      "Let's make that a checklist for any auto stock."
+    ],
+    [
+      366.053,
+      367.005,
+      "Five steps."
+    ],
+    [
+      367.005,
+      371.852,
+      "Step one — track the multi-month trend in sales volumes,"
+    ],
+    [
+      371.852,
+      377.046,
+      "not a single month that could be festive or discount-driven."
+    ],
+    [
+      377.046,
+      382.24,
+      "Step two — know the segment mix and its cycle: two-wheelers,"
+    ],
+    [
+      382.24,
+      385.616,
+      "cars, commercial vehicles, or tractors,"
+    ],
+    [
+      385.616,
+      388.386,
+      "each moving to a different beat."
+    ],
+    [
+      388.386,
+      393.84,
+      "Step three — watch input costs, especially steel and aluminium,"
+    ],
+    [
+      393.84,
+      396.61,
+      "which squeeze or fatten margins."
+    ],
+    [
+      396.61,
+      397.562,
+      "Step four —"
+    ],
+    [
+      397.562,
+      405.267,
+      "judge the company's electric-vehicle position honestly: is it a winner in the transition,"
+    ],
+    [
+      405.267,
+      407.604,
+      "or the one being disrupted?"
+    ],
+    [
+      407.604,
+      413.058,
+      "Step five — and crucially, time your entry to the demand cycle,"
+    ],
+    [
+      413.058,
+      420.242,
+      "buying into a recovery rather than at peak profits when the stock only looks cheap."
+    ],
+    [
+      420.242,
+      422.32,
+      "Now, the cyclical traps."
+    ],
+    [
+      422.82,
+      425.443,
+      "Now the cyclical traps in auto."
+    ],
+    [
+      425.443,
+      428.997,
+      "The first, and the classic cyclical trap —"
+    ],
+    [
+      428.997,
+      435.343,
+      "buying because profits are at a record and the price-to-earnings looks low."
+    ],
+    [
+      435.343,
+      438.812,
+      "Cyclicals look cheapest right at the top,"
+    ],
+    [
+      438.812,
+      441.35,
+      "just before margins roll over."
+    ],
+    [
+      441.35,
+      445.242,
+      "Low P E at a peak is a warning, not a bargain."
+    ],
+    [
+      445.242,
+      446.258,
+      "The second —"
+    ],
+    [
+      446.258,
+      451.165,
+      "assuming the current market leader can never be disrupted."
+    ],
+    [
+      451.165,
+      461.996,
+      "The EV shift can dethrone incumbents; a dominant maker of petrol cars can become tomorrow's laggard if it misses the transition."
+    ],
+    [
+      461.996,
+      466.565,
+      "The third — reading one strong sales month as a trend."
+    ],
+    [
+      466.565,
+      472.318,
+      "A single month can be inflated by festive demand or heavy discounts."
+    ],
+    [
+      472.318,
+      476.041,
+      "Always look at the multi-month volume trend,"
+    ],
+    [
+      476.041,
+      477.649,
+      "not one data point."
+    ],
+    [
+      477.649,
+      480.864,
+      "Respect the cycle, watch the EV shift,"
+    ],
+    [
+      480.864,
+      483.572,
+      "and autos can be very rewarding."
+    ],
+    [
+      484.072,
+      485.8,
+      "Autos, gathered up."
+    ],
+    [
+      485.8,
+      492.622,
+      "Monthly sales volumes are the sector's heartbeat and its number-one signal."
+    ],
+    [
+      492.622,
+      496.806,
+      "Watch the segment mix, input costs like steel,"
+    ],
+    [
+      496.806,
+      500.99,
+      "and above all the electric-vehicle transition."
+    ],
+    [
+      500.99,
+      503.264,
+      "It's a classic cyclical —"
+    ],
+    [
+      503.264,
+      506.903,
+      "it leads recoveries and lags slowdowns —"
+    ],
+    [
+      506.903,
+      509.45,
+      "so time it with the economy."
+    ],
+    [
+      509.45,
+      514.816,
+      "In strategy, play the volume cycle and back the EV winners,"
+    ],
+    [
+      514.816,
+      520.819,
+      "and never forget that cyclicals look cheapest exactly at the peak."
+    ],
+    [
+      520.819,
+      526.004,
+      "Next, the ultimate defensive — consumer staples, or FMCG."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sx/aut.wav",
+      "volume": 1.0
+    }
+  }
+}

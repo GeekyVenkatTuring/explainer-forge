@@ -1,0 +1,74 @@
+{
+ "ticker": "TIMKEN",
+ "scraped_at": "2026-08-14T15:28:27",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 24648.0,
+ "current_price": 3277.0,
+ "pe": 57.8,
+ "book_value": 387.0,
+ "dividend_yield_pct": 0.08,
+ "roce_pct": 19.0,
+ "roe_pct": 14.3,
+ "face_value": 10.0,
+ "high": 3925.0,
+ "sales_growth": {
+  "TTM": -10.0
+ },
+ "profit_growth": {
+  "10 Years": 20.0,
+  "5 Years": 16.0,
+  "3 Years": 0.0,
+  "1 Year": 15.0
+ },
+ "roe_hist": {
+  "Equity Capital": 75.0,
+  "Borrowings&nbsp; +": 18.0,
+  "Other Liabilities&nbsp; +": 571.0,
+  "Fixed Assets&nbsp; +": 810.0,
+  "CWIP": 592.0,
+  "Investments": 117.0
+ },
+ "price_cagr": {
+  "Last Year": 14.0
+ },
+ "quarters": {
+  "periods": [
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "16%",
+   "23%",
+   "18%",
+   "18%",
+   "13%",
+   "22%",
+   "19%"
+  ],
+  "eps": [
+   "10.40",
+   "25.30",
+   "14.42",
+   "12.44",
+   "7.25",
+   "21.05",
+   "15.91"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free."
+ ],
+ "cons": [
+  "Stock is trading at 8.42 times its book value",
+  "Promoter holding has decreased over last 3 years: -6.65%"
+ ]
+}

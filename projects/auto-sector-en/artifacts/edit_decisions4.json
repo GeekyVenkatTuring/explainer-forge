@@ -1,0 +1,871 @@
+{
+  "cuts": [
+    {
+      "id": "v4_title",
+      "type": "au_title",
+      "in_seconds": 0.0,
+      "out_seconds": 28.7,
+      "props": {
+        "kicker": "AUTO & AUTO-COMPONENTS \u00b7 PART 4 OF 6",
+        "title": "Indian Auto Stocks\nChassis, Braking & Body",
+        "sub": "24 companies \u00b7 suspension \u00b7 brakes \u00b7 wheels \u00b7 seats \u00b7 glass \u00b7 P/E \u00b7 moat",
+        "dur": 29.2
+      }
+    },
+    {
+      "id": "a_d1",
+      "type": "au_divider",
+      "in_seconds": 29.2,
+      "out_seconds": 39.555,
+      "props": {
+        "part": "PART ONE",
+        "title": "Ride & Suspension",
+        "sub": "Shock absorbers, springs and wheels",
+        "color": "#38BDF8",
+        "pips": 3,
+        "at": 1,
+        "dur": 10.855
+      }
+    },
+    {
+      "id": "a01_endurance",
+      "type": "au_company",
+      "in_seconds": 40.055,
+      "out_seconds": 70.858,
+      "props": {
+        "idx": "01 / 24",
+        "kicker": "RIDE & SUSPENSION",
+        "name": "Endurance Technologies",
+        "ticker": "ENDURANCE",
+        "price": "\u20b92,904",
+        "pe": "43.8\u00d7",
+        "seg": "2W components",
+        "biz": [
+          "India's largest two-wheeler component maker",
+          "Aluminium castings, suspension, braking and clutches",
+          "Operations across India and Europe"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 4086
+          },
+          "pat": {
+            "to": 276
+          },
+          "note": "Broad, diversified and steadily scaling across products and geographies."
+        },
+        "moat": "India's biggest 2W component supplier \u2014 diversified across products and Europe, and hard for OEMs to replace.",
+        "moatStrength": "WIDE",
+        "dur": 31.303
+      }
+    },
+    {
+      "id": "a02_gabriel",
+      "type": "au_company",
+      "in_seconds": 71.358,
+      "out_seconds": 100.902,
+      "props": {
+        "idx": "02 / 24",
+        "kicker": "RIDE & SUSPENSION",
+        "name": "Gabriel India",
+        "ticker": "GABRIEL",
+        "price": "\u20b91,500",
+        "pe": "59.8\u00d7",
+        "seg": "Ride control",
+        "biz": [
+          "Shock absorbers, struts and front forks",
+          "Around 88% share of commercial-vehicle dampers",
+          "Serves every vehicle segment, plus railways"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1426
+          },
+          "pat": {
+            "to": 108
+          },
+          "note": "An Anand-group restructuring widened its product base."
+        },
+        "moat": "A near-monopoly \u2014 roughly 88% of CV dampers \u2014 and the ride-control leader across segments.",
+        "moatStrength": "WIDE",
+        "dur": 30.044
+      }
+    },
+    {
+      "id": "a03_munjalshowa",
+      "type": "au_company",
+      "in_seconds": 101.402,
+      "out_seconds": 129.257,
+      "props": {
+        "idx": "03 / 24",
+        "kicker": "RIDE & SUSPENSION",
+        "name": "Munjal Showa",
+        "ticker": "MUNJALSHOW",
+        "price": "\u20b9134",
+        "pe": "20.3\u00d7",
+        "seg": "Shock absorbers",
+        "biz": [
+          "A Hero-group and Showa-of-Japan joint venture",
+          "Shock absorbers, struts and front forks",
+          "Mainly for two-wheelers"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 348
+          },
+          "pat": {
+            "to": 11
+          },
+          "note": "Reliant on a few big customers like Hero and Honda."
+        },
+        "moat": "Solid ride-control tech via a Japanese JV \u2014 but heavily dependent on a couple of two-wheeler customers.",
+        "moatStrength": "NARROW",
+        "dur": 28.355
+      }
+    },
+    {
+      "id": "a04_jamna",
+      "type": "au_company",
+      "in_seconds": 129.757,
+      "out_seconds": 156.8,
+      "props": {
+        "idx": "04 / 24",
+        "kicker": "RIDE & SUSPENSION",
+        "name": "Jamna Auto Industries",
+        "ticker": "JAMNAAUTO",
+        "price": "\u20b9145",
+        "pe": "23.9\u00d7",
+        "seg": "Leaf springs",
+        "biz": [
+          "India's largest maker of leaf and parabolic springs",
+          "Suspension systems for commercial vehicles",
+          "Among the world's top spring makers"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 611
+          },
+          "pat": {
+            "to": 49
+          },
+          "note": "A dominant domestic share in CV suspension springs."
+        },
+        "moat": "A dominant share of India's CV suspension springs \u2014 scale, OEM ties and a global top-three position.",
+        "moatStrength": "WIDE",
+        "dur": 27.543
+      }
+    },
+    {
+      "id": "a05_belrise",
+      "type": "au_company",
+      "in_seconds": 157.3,
+      "out_seconds": 187.058,
+      "props": {
+        "idx": "05 / 24",
+        "kicker": "RIDE & SUSPENSION",
+        "name": "Belrise Industries",
+        "ticker": "BELRISE",
+        "price": "\u20b9248",
+        "pe": "48.0\u00d7",
+        "seg": "Chassis & metal parts",
+        "biz": [
+          "Metal chassis, body and suspension parts",
+          "For two-wheelers and four-wheelers",
+          "A large, diversified tier-1 supplier"
+        ],
+        "fin": {
+          "qlabel": "FY26 \u00b7 full year",
+          "rev": {
+            "to": 9509
+          },
+          "pat": {
+            "to": 497
+          },
+          "note": "Newly listed in 2025; quarterly revenue runs around \u20b92,400 cr."
+        },
+        "moat": "A big, diversified metal-parts tier-1 with scale \u2014 but relatively low margins and a fresh listing to prove out.",
+        "moatStrength": "NARROW",
+        "dur": 30.258
+      }
+    },
+    {
+      "id": "a06_ssw",
+      "type": "au_company",
+      "in_seconds": 187.558,
+      "out_seconds": 214.575,
+      "props": {
+        "idx": "06 / 24",
+        "kicker": "RIDE & SUSPENSION",
+        "name": "Steel Strips Wheels",
+        "ticker": "SSWL",
+        "price": "\u20b9308",
+        "pe": "22.8\u00d7",
+        "seg": "Wheel rims",
+        "biz": [
+          "India's largest maker of steel and alloy wheel rims",
+          "Supplies every vehicle segment",
+          "Exports wheels and is growing alloy & EV rims"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1510
+          },
+          "pat": {
+            "to": 69
+          },
+          "note": "Record monthly turnover in July; alloy and EV wheels are the growth."
+        },
+        "moat": "India's largest wheel-rim maker across every segment \u2014 scale plus a growing alloy/EV wheel mix.",
+        "moatStrength": "WIDE",
+        "dur": 27.517
+      }
+    },
+    {
+      "id": "a07_wheels",
+      "type": "au_company",
+      "in_seconds": 215.075,
+      "out_seconds": 245.089,
+      "props": {
+        "idx": "07 / 24",
+        "kicker": "RIDE & SUSPENSION",
+        "name": "Wheels India",
+        "ticker": "WHEELS",
+        "price": "\u20b91,387",
+        "pe": "20.7\u00d7",
+        "seg": "Wheels & suspension",
+        "biz": [
+          "TVS-group maker of steel wheels",
+          "For cars, trucks, tractors and construction",
+          "Plus air-suspension and hydraulic parts"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1491
+          },
+          "pat": {
+            "to": 39
+          },
+          "note": "Large revenue, but thin margins typical of wheels."
+        },
+        "moat": "A TVS-group wheel leader broadening into air-suspension \u2014 but wheels are low-margin and CV-cyclical.",
+        "moatStrength": "NARROW",
+        "dur": 30.514
+      }
+    },
+    {
+      "id": "a08_uniparts",
+      "type": "au_company",
+      "in_seconds": 245.589,
+      "out_seconds": 275.735,
+      "props": {
+        "idx": "08 / 24",
+        "kicker": "RIDE & SUSPENSION",
+        "name": "Uniparts India",
+        "ticker": "UNIPARTS",
+        "price": "\u20b9815",
+        "pe": "20.1\u00d7",
+        "seg": "Off-highway parts",
+        "biz": [
+          "Three-point-linkage parts and hydraulic cylinders",
+          "For off-highway farm and construction equipment",
+          "Largely for export"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 347
+          },
+          "pat": {
+            "to": 57
+          },
+          "note": "High margins from a specialised global export niche."
+        },
+        "moat": "A global leader in three-point-linkage off-highway parts \u2014 a high-margin export niche with sticky customers.",
+        "moatStrength": "NARROW",
+        "dur": 30.646
+      }
+    },
+    {
+      "id": "b_d2",
+      "type": "au_divider",
+      "in_seconds": 276.235,
+      "out_seconds": 288.829,
+      "props": {
+        "part": "PART TWO",
+        "title": "Brakes, Emissions & Heat",
+        "sub": "Stopping, cleaning and cooling",
+        "color": "#34D399",
+        "pips": 3,
+        "at": 2,
+        "dur": 13.094
+      }
+    },
+    {
+      "id": "b09_ask",
+      "type": "au_company",
+      "in_seconds": 289.329,
+      "out_seconds": 318.581,
+      "props": {
+        "idx": "09 / 24",
+        "kicker": "BRAKES \u00b7 EMISSIONS",
+        "name": "ASK Automotive",
+        "ticker": "ASKAUTOLTD",
+        "price": "\u20b9635",
+        "pe": "39.6\u00d7",
+        "seg": "2W braking",
+        "biz": [
+          "India's largest maker of 2-wheeler braking systems",
+          "Around 50% market share",
+          "Also aluminium lightweighting and EV drivetrain parts"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1358
+          },
+          "pat": {
+            "to": 85
+          },
+          "note": "EV drivetrain parts open a new growth lane."
+        },
+        "moat": "Roughly half of India's 2-wheeler brakes \u2014 a dominant share, with EV-drivetrain optionality on top.",
+        "moatStrength": "WIDE",
+        "dur": 29.752
+      }
+    },
+    {
+      "id": "b10_sharda",
+      "type": "au_company",
+      "in_seconds": 319.081,
+      "out_seconds": 348.28,
+      "props": {
+        "idx": "10 / 24",
+        "kicker": "BRAKES \u00b7 EMISSIONS",
+        "name": "Sharda Motor Industries",
+        "ticker": "SHARDAMOTR",
+        "price": "\u20b9941",
+        "pe": "16.3\u00d7",
+        "seg": "Exhaust & emissions",
+        "biz": [
+          "Exhaust systems and emission-control products",
+          "Catalytic converters and after-treatment",
+          "Plus suspension and roof systems"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q1 FY26 (Jun-25)",
+          "rev": {
+            "to": 756
+          },
+          "pat": {
+            "to": 100
+          },
+          "note": "Cheap and cash-rich \u2014 but EVs don't need exhausts."
+        },
+        "moat": "A strong, cheap emission-control specialist \u2014 but its core product fades if EVs win big.",
+        "moatStrength": "NARROW",
+        "dur": 29.699
+      }
+    },
+    {
+      "id": "b11_tenneco",
+      "type": "au_company",
+      "in_seconds": 348.78,
+      "out_seconds": 377.795,
+      "props": {
+        "idx": "11 / 24",
+        "kicker": "BRAKES \u00b7 EMISSIONS",
+        "name": "Tenneco Clean Air India",
+        "ticker": "TENNIND",
+        "price": "\u20b9563",
+        "pe": "36.6\u00d7",
+        "seg": "Clean-air systems",
+        "biz": [
+          "Part of the global Tenneco group",
+          "Exhaust, catalytic converters, after-treatment",
+          "Emission-control for auto OEMs"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1545
+          },
+          "pat": {
+            "to": 165
+          },
+          "note": "Global technology, but the same EV-transition question."
+        },
+        "moat": "A global-tech emission-control specialist with strong OEM ties \u2014 facing the same long-term EV headwind.",
+        "moatStrength": "NARROW",
+        "dur": 29.515
+      }
+    },
+    {
+      "id": "b12_sundrmbrak",
+      "type": "au_company",
+      "in_seconds": 378.295,
+      "out_seconds": 404.891,
+      "props": {
+        "idx": "12 / 24",
+        "kicker": "BRAKES \u00b7 EMISSIONS",
+        "name": "Sundaram Brake Linings",
+        "ticker": "SUNDRMBRAK",
+        "price": "\u20b9787",
+        "pe": "86.2\u00d7",
+        "seg": "Friction",
+        "biz": [
+          "TVS-group maker of brake linings and pads",
+          "Clutch facings and friction materials",
+          "For CVs, cars and railways"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 91
+          },
+          "note": "Barely profitable \u2014 under \u20b91 crore of profit, on a very high P/E."
+        },
+        "moat": "A niche friction-materials maker in the TVS group \u2014 but tiny profits make the high valuation hard to justify.",
+        "moatStrength": "WEAK",
+        "dur": 27.096
+      }
+    },
+    {
+      "id": "b13_hindcomp",
+      "type": "au_company",
+      "in_seconds": 405.391,
+      "out_seconds": 435.852,
+      "props": {
+        "idx": "13 / 24",
+        "kicker": "BRAKES \u00b7 EMISSIONS",
+        "name": "Hindustan Composites",
+        "ticker": "HINDCOMPOS",
+        "price": "\u20b9424",
+        "pe": "35.8\u00d7",
+        "seg": "Friction (exiting)",
+        "biz": [
+          "Historically a friction-materials maker",
+          "Just sold its friction business to Rane (Madras)",
+          "Now largely an investment company"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 20
+          },
+          "pat": {
+            "to": 9
+          },
+          "note": "Friction business sold to Rane for \u20b9370 cr; profit now comes mostly from investments."
+        },
+        "moat": "Its operating moat is gone \u2014 it has sold its friction business and is becoming an investment holding company.",
+        "moatStrength": "WEAK",
+        "dur": 30.961
+      }
+    },
+    {
+      "id": "b14_setco",
+      "type": "au_company",
+      "in_seconds": 436.352,
+      "out_seconds": 465.235,
+      "props": {
+        "idx": "14 / 24",
+        "kicker": "BRAKES \u00b7 EMISSIONS",
+        "name": "Setco Automotive",
+        "ticker": "SETCO",
+        "price": "\u20b917.8",
+        "pe": "N/A",
+        "seg": "CV clutches",
+        "biz": [
+          "A leading maker of clutches for heavy trucks",
+          "Sold under the Lipe brand",
+          "Supplies OEMs and the aftermarket"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q3 FY26 (Dec-25)",
+          "rev": {
+            "to": 197
+          },
+          "pat": {
+            "to": 57,
+            "loss": true,
+            "label": "Net loss"
+          },
+          "note": "Deeply loss-making \u2014 trailing losses of about \u20b9163 crore."
+        },
+        "moat": "A leading truck-clutch brand on paper \u2014 but deep, persistent losses make it a distressed situation.",
+        "moatStrength": "WEAK",
+        "dur": 29.383
+      }
+    },
+    {
+      "id": "b15_banco",
+      "type": "au_company",
+      "in_seconds": 465.735,
+      "out_seconds": 495.041,
+      "props": {
+        "idx": "15 / 24",
+        "kicker": "BRAKES \u00b7 EMISSIONS",
+        "name": "Banco Products",
+        "ticker": "BANCOINDIA",
+        "price": "\u20b9687",
+        "pe": "20.4\u00d7",
+        "seg": "Cooling systems",
+        "biz": [
+          "Engine-cooling systems \u2014 radiators and oil coolers",
+          "Sealing gaskets for auto and industrial use",
+          "Europe via its NRF subsidiary"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1184
+          },
+          "pat": {
+            "to": 122
+          },
+          "note": "Healthy margins and a solid European business."
+        },
+        "moat": "A cooling-systems specialist with a European arm (NRF) and healthy margins \u2014 a durable, unglamorous niche.",
+        "moatStrength": "NARROW",
+        "dur": 29.806
+      }
+    },
+    {
+      "id": "b16_talbros",
+      "type": "au_company",
+      "in_seconds": 495.541,
+      "out_seconds": 522.348,
+      "props": {
+        "idx": "16 / 24",
+        "kicker": "BRAKES \u00b7 EMISSIONS",
+        "name": "Talbros Automotive",
+        "ticker": "TALBROAUTO",
+        "price": "\u20b9439",
+        "pe": "26.0\u00d7",
+        "seg": "Gaskets & chassis",
+        "biz": [
+          "Gaskets, heat shields and chassis systems",
+          "Forgings and anti-vibration rubber parts",
+          "Through its own plants and several JVs"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 207
+          },
+          "pat": {
+            "to": 22
+          },
+          "note": "A diversified small tier-1 spread across sealing and chassis."
+        },
+        "moat": "A diversified small tier-1 across gaskets, chassis and rubber \u2014 steady, but no single dominant product.",
+        "moatStrength": "NARROW",
+        "dur": 27.307
+      }
+    },
+    {
+      "id": "c_d3",
+      "type": "au_divider",
+      "in_seconds": 522.848,
+      "out_seconds": 533.466,
+      "props": {
+        "part": "PART THREE",
+        "title": "Body, Seats & Glass",
+        "sub": "The parts you see and touch",
+        "color": "#FBBF24",
+        "pips": 3,
+        "at": 3,
+        "dur": 11.118
+      }
+    },
+    {
+      "id": "c17_bharatseats",
+      "type": "au_company",
+      "in_seconds": 533.966,
+      "out_seconds": 563.061,
+      "props": {
+        "idx": "17 / 24",
+        "kicker": "BODY \u00b7 SEATS \u00b7 GLASS",
+        "name": "Bharat Seats",
+        "ticker": "BHARATSE",
+        "price": "\u20b9241",
+        "pe": "32.0\u00d7",
+        "seg": "Seating",
+        "biz": [
+          "Complete seating systems and interiors",
+          "A Suzuki\u2013Maruti joint venture",
+          "Works closely with the Maruti supply chain"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 578
+          },
+          "pat": {
+            "to": 13
+          },
+          "note": "Captive to Maruti \u2014 steady volumes, but thin margins."
+        },
+        "moat": "A captive Maruti-Suzuki seating supplier \u2014 reliable volumes, but low margins and one dominant customer.",
+        "moatStrength": "NARROW",
+        "dur": 29.595
+      }
+    },
+    {
+      "id": "c18_ndr",
+      "type": "au_company",
+      "in_seconds": 563.561,
+      "out_seconds": 589.627,
+      "props": {
+        "idx": "18 / 24",
+        "kicker": "BODY \u00b7 SEATS \u00b7 GLASS",
+        "name": "NDR Auto Components",
+        "ticker": "NDRAUTO",
+        "price": "\u20b9829",
+        "pe": "31.5\u00d7",
+        "seg": "Seating",
+        "biz": [
+          "Seating systems, frames and interior trim",
+          "Carved out of the Bharat Seats/NDR group",
+          "A tier-1 interior and seating supplier"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q1 FY26 (Jun-25)",
+          "rev": {
+            "to": 185
+          },
+          "pat": {
+            "to": 14
+          },
+          "note": "A small, focused seating and interiors maker."
+        },
+        "moat": "A small seating specialist spun out of the NDR group \u2014 focused, but sub-scale next to global seat majors.",
+        "moatStrength": "NARROW",
+        "dur": 26.566
+      }
+    },
+    {
+      "id": "c19_jbm",
+      "type": "au_company",
+      "in_seconds": 590.127,
+      "out_seconds": 618.825,
+      "props": {
+        "idx": "19 / 24",
+        "kicker": "BODY \u00b7 SEATS \u00b7 GLASS",
+        "name": "Jay Bharat Maruti",
+        "ticker": "JAYBARMARU",
+        "price": "\u20b9139",
+        "pe": "10.9\u00d7",
+        "seg": "Sheet metal",
+        "biz": [
+          "Sheet-metal parts, welded assemblies and exhausts",
+          "A joint venture with Maruti Suzuki",
+          "A dedicated tier-1 to the Maruti ecosystem"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 627
+          },
+          "pat": {
+            "to": 22
+          },
+          "note": "Cheap at 11\u00d7 \u2014 but its fortunes track Maruti's volumes."
+        },
+        "moat": "A captive Maruti sheet-metal supplier \u2014 cheap and steady, but entirely tied to one customer's volumes.",
+        "moatStrength": "NARROW",
+        "dur": 29.198
+      }
+    },
+    {
+      "id": "c20_asal",
+      "type": "au_company",
+      "in_seconds": 619.325,
+      "out_seconds": 642.816,
+      "props": {
+        "idx": "20 / 24",
+        "kicker": "BODY \u00b7 SEATS \u00b7 GLASS",
+        "name": "Automotive Stampings",
+        "ticker": "ASAL",
+        "price": "\u20b9506",
+        "pe": "N/A",
+        "seg": "Stampings",
+        "biz": [
+          "Sheet-metal stampings and welded assemblies",
+          "Body-in-white and structural pressed parts",
+          "A tier-1 supplier to vehicle OEMs"
+        ],
+        "fin": {
+          "pending": true,
+          "qlabel": "Q1 FY27 \u00b7 figures thin",
+          "note": "A small stamping supplier in the JBM / Tata AutoComp orbit; results are modest."
+        },
+        "moat": "A small structural-stampings supplier \u2014 commoditised pressed parts with little pricing power.",
+        "moatStrength": "WEAK",
+        "dur": 23.991
+      }
+    },
+    {
+      "id": "c21_munjalauto",
+      "type": "au_company",
+      "in_seconds": 643.316,
+      "out_seconds": 669.675,
+      "props": {
+        "idx": "21 / 24",
+        "kicker": "BODY \u00b7 SEATS \u00b7 GLASS",
+        "name": "Munjal Auto Industries",
+        "ticker": "MUNJALAU",
+        "price": "\u20b9102",
+        "pe": "29.0\u00d7",
+        "seg": "Exhausts & rims",
+        "biz": [
+          "Exhaust systems, wheel rims and fuel tanks",
+          "Sheet-metal parts, mainly for two-wheelers",
+          "A Hero-group tier-1 supplier"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q4 FY26 (Mar-26)",
+          "rev": {
+            "to": 614
+          },
+          "note": "Slipped to a small loss last quarter; heavily reliant on Hero."
+        },
+        "moat": "A Hero-linked two-wheeler parts maker \u2014 but customer-concentrated and recently unprofitable.",
+        "moatStrength": "WEAK",
+        "dur": 26.859
+      }
+    },
+    {
+      "id": "c22_asahi",
+      "type": "au_company",
+      "in_seconds": 670.175,
+      "out_seconds": 699.694,
+      "props": {
+        "idx": "22 / 24",
+        "kicker": "BODY \u00b7 SEATS \u00b7 GLASS",
+        "name": "Asahi India Glass",
+        "ticker": "ASAHIINDIA",
+        "price": "\u20b9899",
+        "pe": "51.3\u00d7",
+        "seg": "Auto glass",
+        "biz": [
+          "India's largest automotive glass maker",
+          "Windshields and windows for most carmakers",
+          "Also architectural glass for buildings"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1413
+          },
+          "pat": {
+            "to": 149
+          },
+          "note": "A near-monopoly in OEM auto glass, part-owned by Asahi and Maruti."
+        },
+        "moat": "A near-monopoly in Indian auto glass \u2014 high entry barriers, OEM lock-in, plus an architectural-glass arm.",
+        "moatStrength": "WIDE",
+        "dur": 30.019
+      }
+    },
+    {
+      "id": "c23_studds",
+      "type": "au_company",
+      "in_seconds": 700.194,
+      "out_seconds": 728.867,
+      "props": {
+        "idx": "23 / 24",
+        "kicker": "BODY \u00b7 SEATS \u00b7 GLASS",
+        "name": "Studds Accessories",
+        "ticker": "STUDDS",
+        "price": "\u20b9439",
+        "pe": "23.1\u00d7",
+        "seg": "Helmets",
+        "biz": [
+          "The world's largest maker of two-wheeler helmets",
+          "Sold under the Studds and SMK brands",
+          "Market leader in India, with exports"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 170
+          },
+          "pat": {
+            "to": 12
+          },
+          "note": "Revenue up ~14%, but profit dipped this quarter."
+        },
+        "moat": "The world's largest helmet maker \u2014 a trusted safety brand, scale, and tightening helmet rules as a tailwind.",
+        "moatStrength": "WIDE",
+        "dur": 29.173
+      }
+    },
+    {
+      "id": "c24_sjs",
+      "type": "au_company",
+      "in_seconds": 729.367,
+      "out_seconds": 758.726,
+      "props": {
+        "idx": "24 / 24",
+        "kicker": "BODY \u00b7 SEATS \u00b7 GLASS",
+        "name": "SJS Enterprises",
+        "ticker": "SJS",
+        "price": "\u20b92,446",
+        "pe": "41.1\u00d7",
+        "seg": "Aesthetics",
+        "biz": [
+          "Decorative and functional aesthetic parts",
+          "Logos, dials, overlays, chrome and in-mould parts",
+          "For two-wheelers, cars and appliances"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 261
+          },
+          "pat": {
+            "to": 74
+          },
+          "note": "Remarkable margins for a parts maker \u2014 design commands a premium."
+        },
+        "moat": "A design-led aesthetics specialist with premium margins \u2014 content-per-vehicle keeps rising as cars get fancier.",
+        "moatStrength": "NARROW",
+        "dur": 29.859
+      }
+    },
+    {
+      "id": "v4_recap",
+      "type": "au_recap",
+      "in_seconds": 759.226,
+      "out_seconds": 806.533,
+      "props": {
+        "title": "Chassis, Braking & Body \u2014 in one breath",
+        "color": "#38BDF8",
+        "items": [
+          "Gabriel (~88% CV dampers) and Jamna own their niches",
+          "ASK Automotive: ~50% of India's 2-wheeler brakes",
+          "Asahi Glass & Studds: near-monopoly and world #1 helmets",
+          "Exhaust makers (Sharda, Tenneco) face the EV question",
+          "Setco is distressed; Hindustan Composites exited friction",
+          "Captive Maruti suppliers are cheap but customer-tied",
+          "Aesthetics (SJS) and cooling (Banco) are quiet high-margin niches"
+        ],
+        "closer": "Dominant share is the real moat here \u2014 and the EV shift is quietly re-drawing the map.",
+        "dur": 47.807
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "au/narration4.wav",
+      "volume": 1.0
+    }
+  }
+}

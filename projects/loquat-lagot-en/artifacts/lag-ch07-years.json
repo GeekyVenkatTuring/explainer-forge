@@ -1,0 +1,967 @@
+{
+ "cuts": [
+  {
+   "id": "lag-ch07-years_div",
+   "type": "lag_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 15.596,
+   "props": {
+    "n": 7,
+    "title": "Years until fruit",
+    "sub": "year three \u2014 peak near fifteen",
+    "color": "#F4A261",
+    "dur": 16.096
+   }
+  },
+  {
+   "id": "lag-ch07-years_time",
+   "type": "lag_time",
+   "in_seconds": 16.096,
+   "out_seconds": 60.75,
+   "props": {
+    "kicker": "TIME TO MONEY",
+    "title": "Not one year. Not two. Plan three.",
+    "foot": "Seedlings can add years. That is another reason not to use them.",
+    "steps": [
+     {
+      "y": "Y0",
+      "label": "Plant",
+      "sub": "Monsoon grafts",
+      "c": "leaf"
+     },
+     {
+      "y": "Y1\u20132",
+      "label": "Wood",
+      "sub": "Train + intercrop",
+      "c": "cool"
+     },
+     {
+      "y": "Y3",
+      "label": "First crop",
+      "sub": "Grafted trees",
+      "c": "fruit"
+     },
+     {
+      "y": "Y7\u201310",
+      "label": "Commercial",
+      "sub": "Volume arrives",
+      "c": "leaf"
+     },
+     {
+      "y": "Y15",
+      "label": "Peak",
+      "sub": "Leaflet maximum",
+      "c": "fruit"
+     }
+    ],
+    "dur": 45.154
+   }
+  },
+  {
+   "id": "lag-ch07-years_y12",
+   "type": "lag_cards",
+   "in_seconds": 61.25,
+   "out_seconds": 107.272,
+   "props": {
+    "kicker": "YEARS ONE AND TWO",
+    "title": "Build the skeleton, steal no fruit",
+    "cols": 2,
+    "foot": "A bent year-two tree is a bent year-twelve tree.",
+    "items": [
+     {
+      "label": "Train",
+      "sub": "Leader or open centre. Low branches off. Stakes still on.",
+      "c": "leaf"
+     },
+     {
+      "label": "Light feed",
+      "sub": "FYM plus modest N P K. Not a mango dose on a baby.",
+      "c": "cool"
+     },
+     {
+      "label": "Water",
+      "sub": "Establishment irrigations beat a dramatic drip later.",
+      "c": "cool"
+     },
+     {
+      "label": "Thin flowers",
+      "sub": "If they appear early, take them off. Wood first.",
+      "c": "risk"
+     }
+    ],
+    "dur": 46.522
+   }
+  },
+  {
+   "id": "lag-ch07-years_y3",
+   "type": "lag_cards",
+   "in_seconds": 107.772,
+   "out_seconds": 149.162,
+   "props": {
+    "kicker": "YEAR THREE",
+    "title": "First fruit is a rehearsal, not retirement",
+    "cols": 3,
+    "foot": "Use year three to test the market path.",
+    "items": [
+     {
+      "label": "Small crop",
+      "sub": "Learn clip, grade, and the mandi clock.",
+      "c": "fruit"
+     },
+     {
+      "label": "Still train",
+      "sub": "Do not let fruit bend the leader forever.",
+      "c": "leaf"
+     },
+     {
+      "label": "Zero crop?",
+      "sub": "Once: diagnose. Year five still zero: exit.",
+      "c": "risk"
+     }
+    ],
+    "dur": 41.89
+   }
+  },
+  {
+   "id": "lag-ch07-years_feed",
+   "type": "lag_table",
+   "in_seconds": 149.662,
+   "out_seconds": 200.892,
+   "props": {
+    "kicker": "FERTILISER BY AGE",
+    "title": "September organics. Split urea.",
+    "cols": [
+     "Age",
+     "FYM / tree",
+     "Urea band"
+    ],
+    "rows": [
+     [
+      "1\u20132 years",
+      "10\u201320 kg",
+      "150\u2013500 g"
+     ],
+     [
+      "3\u20136 years",
+      "25\u201340 kg",
+      "600\u2013750 g"
+     ],
+     [
+      "7\u201310 years",
+      "40\u201350 kg",
+      "800\u20131000 g"
+     ],
+     [
+      "10+ years",
+      "about 50 kg",
+      "about 1000 g"
+     ]
+    ],
+    "foot": "Confirm current K V K rates. Leaflets age. Your soil test does not.",
+    "dur": 51.73
+   }
+  },
+  {
+   "id": "lag-ch07-years_y47",
+   "type": "lag_time",
+   "in_seconds": 201.392,
+   "out_seconds": 232.75,
+   "props": {
+    "kicker": "THE MIDDLE YEARS",
+    "title": "Year seven is when it starts to look real",
+    "foot": "Lifestyle creep in year four is how orchards get sold.",
+    "steps": [
+     {
+      "y": "Y3",
+      "label": "Rehearsal",
+      "sub": "Small crop",
+      "c": "cool"
+     },
+     {
+      "y": "Y4\u20136",
+      "label": "Build",
+      "sub": "If you keep feeding",
+      "c": "leaf"
+     },
+     {
+      "y": "Y7\u201310",
+      "label": "Business",
+      "sub": "Volume + skill",
+      "c": "fruit"
+     },
+     {
+      "y": "Y11\u201314",
+      "label": "Climb",
+      "sub": "Toward peak",
+      "c": "leaf"
+     },
+     {
+      "y": "Y15+",
+      "label": "Plateau",
+      "sub": "Maintain, don\u2019t neglect",
+      "c": "fruit"
+     }
+    ],
+    "dur": 31.858
+   }
+  },
+  {
+   "id": "lag-ch07-years_train2",
+   "type": "lag_cards",
+   "in_seconds": 233.25,
+   "out_seconds": 269.048,
+   "props": {
+    "kicker": "FRAME",
+    "title": "Leader or vase \u2014 pick once",
+    "cols": 2,
+    "foot": "Picking safety is a yield practice.",
+    "items": [
+     {
+      "label": "Central leader",
+      "sub": "Orderly grid. Needs consistent heading.",
+      "c": "leaf"
+     },
+     {
+      "label": "Open centre",
+      "sub": "Light in the vase. Watch for split crotches.",
+      "c": "cool"
+     },
+     {
+      "label": "Reach",
+      "sub": "If you need a tall ladder for every bunch, the frame failed.",
+      "c": "fruit"
+     },
+     {
+      "label": "Rubbing wood",
+      "sub": "Wounds are disease doors. Cut them.",
+      "c": "risk"
+     }
+    ],
+    "dur": 36.298
+   }
+  },
+  {
+   "id": "lag-ch07-years_record",
+   "type": "lag_cards",
+   "in_seconds": 269.548,
+   "out_seconds": 305.562,
+   "props": {
+    "kicker": "RECORDS",
+    "title": "A notebook is part of the orchard",
+    "cols": 3,
+    "foot": "Memory is not agronomy.",
+    "items": [
+     {
+      "label": "Plant log",
+      "sub": "Date, name, source nursery.",
+      "c": "leaf"
+     },
+     {
+      "label": "Harvest log",
+      "sub": "Kilos, grade, price, wastage.",
+      "c": "fruit"
+     },
+     {
+      "label": "Photo union",
+      "sub": "Day one. Disputes end.",
+      "c": "cool"
+     }
+    ],
+    "dur": 36.514
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.318,
+   "Part seven."
+  ],
+  [
+   1.318,
+   1.977,
+   "Time."
+  ],
+  [
+   2.527,
+   5.162,
+   "The question everyone asks:"
+  ],
+  [
+   5.162,
+   6.48,
+   "one year,"
+  ],
+  [
+   6.48,
+   7.139,
+   "two,"
+  ],
+  [
+   7.139,
+   8.457,
+   "or three?"
+  ],
+  [
+   9.007,
+   10.984,
+   "For grafted plants,"
+  ],
+  [
+   10.984,
+   13.619,
+   "plan on year three."
+  ],
+  [
+   13.619,
+   15.596,
+   "Not year one."
+  ],
+  [
+   16.096,
+   18.817,
+   "Here is the honest timeline."
+  ],
+  [
+   19.367,
+   20.455,
+   "Year zero:"
+  ],
+  [
+   20.455,
+   22.088,
+   "plant in monsoon."
+  ],
+  [
+   22.088,
+   22.632,
+   "Survive."
+  ],
+  [
+   23.182,
+   25.359,
+   "Year one and two:"
+  ],
+  [
+   25.359,
+   25.903,
+   "wood,"
+  ],
+  [
+   25.903,
+   26.448,
+   "training,"
+  ],
+  [
+   26.448,
+   26.992,
+   "intercrop."
+  ],
+  [
+   26.992,
+   29.169,
+   "Maybe a stray fruit."
+  ],
+  [
+   29.169,
+   30.257,
+   "Ignore it."
+  ],
+  [
+   30.807,
+   31.895,
+   "Year three:"
+  ],
+  [
+   31.895,
+   35.161,
+   "first real crop on grafted trees,"
+  ],
+  [
+   35.161,
+   38.426,
+   "if you did not starve them."
+  ],
+  [
+   38.976,
+   43.33,
+   "Some guides say four years to a proper"
+  ],
+  [
+   43.33,
+   43.874,
+   "bloom."
+  ],
+  [
+   43.874,
+   47.683,
+   "Believe the slower number when you budget."
+  ],
+  [
+   48.233,
+   50.41,
+   "Year seven to ten:"
+  ],
+  [
+   50.41,
+   51.498,
+   "commercial volume."
+  ],
+  [
+   51.498,
+   52.587,
+   "Year fifteen:"
+  ],
+  [
+   52.587,
+   55.308,
+   "typical maximum in the leaflets."
+  ],
+  [
+   55.308,
+   59.662,
+   "Then a long plateau if you keep feeding"
+  ],
+  [
+   59.662,
+   60.75,
+   "the tree."
+  ],
+  [
+   61.25,
+   64.933,
+   "What you actually do in year one and"
+  ],
+  [
+   64.933,
+   65.393,
+   "two."
+  ],
+  [
+   65.943,
+   67.784,
+   "Water through dry spells."
+  ],
+  [
+   67.784,
+   71.467,
+   "A young loquat is not a cactus in"
+  ],
+  [
+   71.467,
+   71.927,
+   "June."
+  ],
+  [
+   72.477,
+   76.16,
+   "Train a central leader or an open centre."
+  ],
+  [
+   76.16,
+   79.843,
+   "Remove low shoots up to about sixty centimetres"
+  ],
+  [
+   79.843,
+   81.224,
+   "to a metre."
+  ],
+  [
+   81.774,
+   82.695,
+   "Fertilize lightly."
+  ],
+  [
+   82.695,
+   86.377,
+   "Punjab-style tables start around ten to twenty\nkilos"
+  ],
+  [
+   86.377,
+   88.679,
+   "F Y M per tree,"
+  ],
+  [
+   88.679,
+   90.06,
+   "plus small urea,"
+  ],
+  [
+   90.06,
+   91.441,
+   "S S P,"
+  ],
+  [
+   91.441,
+   93.282,
+   "and M O P."
+  ],
+  [
+   93.832,
+   95.674,
+   "Do not chase fruit."
+  ],
+  [
+   95.674,
+   99.357,
+   "Chase a framework you can pick from in"
+  ],
+  [
+   99.357,
+   100.277,
+   "year eight."
+  ],
+  [
+   100.827,
+   104.05,
+   "If a tree flowers in year two,"
+  ],
+  [
+   104.05,
+   105.891,
+   "thin most of it."
+  ],
+  [
+   105.891,
+   107.272,
+   "Let wood win."
+  ],
+  [
+   107.772,
+   111.24,
+   "Year three is not a lottery ticket."
+  ],
+  [
+   111.24,
+   115.203,
+   "It is a small crop if the tree"
+  ],
+  [
+   115.203,
+   116.194,
+   "is ready."
+  ],
+  [
+   116.744,
+   117.734,
+   "Expect kilograms,"
+  ],
+  [
+   117.734,
+   118.725,
+   "not quintals,"
+  ],
+  [
+   118.725,
+   119.716,
+   "per tree."
+  ],
+  [
+   120.266,
+   124.229,
+   "This is when you learn your harvest crew,"
+  ],
+  [
+   124.229,
+   124.724,
+   "crates,"
+  ],
+  [
+   124.724,
+   125.715,
+   "and buyer."
+  ],
+  [
+   126.265,
+   130.228,
+   "Better a small sold crop than a dumped"
+  ],
+  [
+   130.228,
+   130.724,
+   "experiment."
+  ],
+  [
+   131.274,
+   133.75,
+   "If year three is zero,"
+  ],
+  [
+   133.75,
+   135.732,
+   "do not panic once."
+  ],
+  [
+   135.732,
+   136.723,
+   "Check union,"
+  ],
+  [
+   136.723,
+   137.218,
+   "water,"
+  ],
+  [
+   137.218,
+   137.714,
+   "frost,"
+  ],
+  [
+   137.714,
+   140.686,
+   "and whether you actually planted loquat."
+  ],
+  [
+   141.236,
+   144.208,
+   "If year five is still zero,"
+  ],
+  [
+   144.208,
+   148.171,
+   "the climate or the plant type is wrong."
+  ],
+  [
+   148.171,
+   149.162,
+   "Cut losses."
+  ],
+  [
+   149.662,
+   150.137,
+   "Feeding,"
+  ],
+  [
+   150.137,
+   152.038,
+   "as leaflets state it,"
+  ],
+  [
+   152.038,
+   153.464,
+   "scales with age."
+  ],
+  [
+   154.014,
+   155.916,
+   "Years one and two:"
+  ],
+  [
+   155.916,
+   159.243,
+   "ten to twenty kilos F Y M,"
+  ],
+  [
+   159.243,
+   163.045,
+   "and a few hundred grams of fertiliser each."
+  ],
+  [
+   163.595,
+   165.496,
+   "Years three to six:"
+  ],
+  [
+   165.496,
+   168.823,
+   "twenty-five to forty kilos F Y M,"
+  ],
+  [
+   168.823,
+   171.675,
+   "and the N P K jumps."
+  ],
+  [
+   172.225,
+   173.176,
+   "Older trees:"
+  ],
+  [
+   173.176,
+   176.027,
+   "around fifty kilos F Y M,"
+  ],
+  [
+   176.027,
+   179.83,
+   "plus about a kilo of urea and larger"
+  ],
+  [
+   179.83,
+   183.157,
+   "S S P and M O P."
+  ],
+  [
+   183.707,
+   185.608,
+   "Put F Y M,"
+  ],
+  [
+   185.608,
+   186.083,
+   "phosphorus,"
+  ],
+  [
+   186.083,
+   187.984,
+   "and potash in September."
+  ],
+  [
+   187.984,
+   188.935,
+   "Split urea:"
+  ],
+  [
+   188.935,
+   189.41,
+   "October,"
+  ],
+  [
+   189.41,
+   192.737,
+   "then January or February after fruit set."
+  ],
+  [
+   193.287,
+   197.09,
+   "Those grams are per tree in the Punjab"
+  ],
+  [
+   197.09,
+   197.565,
+   "table,"
+  ],
+  [
+   197.565,
+   198.991,
+   "not per acre."
+  ],
+  [
+   198.991,
+   200.892,
+   "Do not multiply wrong."
+  ],
+  [
+   201.392,
+   205.025,
+   "Between first fruit and peak there is a"
+  ],
+  [
+   205.025,
+   205.933,
+   "long middle."
+  ],
+  [
+   206.483,
+   208.299,
+   "Year four to six:"
+  ],
+  [
+   208.299,
+   211.932,
+   "crop grows if water and feed stay honest."
+  ],
+  [
+   212.482,
+   214.298,
+   "Year seven to ten:"
+  ],
+  [
+   214.298,
+   217.931,
+   "this is when a well-run acre starts to"
+  ],
+  [
+   217.931,
+   219.748,
+   "look like a business."
+  ],
+  [
+   220.298,
+   223.93,
+   "Do not raise household spend in year four"
+  ],
+  [
+   223.93,
+   226.201,
+   "because one good crate happened."
+  ],
+  [
+   226.751,
+   230.384,
+   "Biennial hints can appear if you overbear and"
+  ],
+  [
+   230.384,
+   230.838,
+   "underfeed."
+  ],
+  [
+   231.388,
+   232.75,
+   "Steady beats heroic."
+  ],
+  [
+   233.25,
+   234.222,
+   "Training systems,"
+  ],
+  [
+   234.222,
+   235.194,
+   "in practice."
+  ],
+  [
+   235.744,
+   236.716,
+   "Central leader:"
+  ],
+  [
+   236.716,
+   237.688,
+   "one trunk,"
+  ],
+  [
+   237.688,
+   239.146,
+   "tiers of branches,"
+  ],
+  [
+   239.146,
+   241.09,
+   "good for a grid."
+  ],
+  [
+   241.64,
+   242.612,
+   "Open centre:"
+  ],
+  [
+   242.612,
+   243.584,
+   "a vase,"
+  ],
+  [
+   243.584,
+   245.528,
+   "light into the middle,"
+  ],
+  [
+   245.528,
+   246.5,
+   "easy picking."
+  ],
+  [
+   247.05,
+   249.48,
+   "Pick one in year one."
+  ],
+  [
+   249.48,
+   253.368,
+   "Switching in year eight is a wood tax."
+  ],
+  [
+   253.918,
+   255.862,
+   "Remove forks that rub."
+  ],
+  [
+   255.862,
+   259.75,
+   "Remove branches that shoot straight up after a"
+  ],
+  [
+   259.75,
+   260.722,
+   "savage cut."
+  ],
+  [
+   261.272,
+   265.16,
+   "The goal is a person with a clipper"
+  ],
+  [
+   265.16,
+   269.048,
+   "who can reach clusters without a death ladder."
+  ],
+  [
+   269.548,
+   271.362,
+   "Write things down."
+  ],
+  [
+   271.912,
+   273.122,
+   "Plant date."
+  ],
+  [
+   273.122,
+   273.727,
+   "Scion."
+  ],
+  [
+   273.727,
+   274.936,
+   "Dead stations."
+  ],
+  [
+   274.936,
+   276.751,
+   "First bloom date."
+  ],
+  [
+   276.751,
+   278.565,
+   "First crate weight."
+  ],
+  [
+   278.565,
+   280.984,
+   "Mandi price that week."
+  ],
+  [
+   281.534,
+   282.744,
+   "Without notes,"
+  ],
+  [
+   282.744,
+   286.978,
+   "year six you will argue with yourself."
+  ],
+  [
+   287.528,
+   292.366,
+   "A cheap notebook beats a myth about 'the"
+  ],
+  [
+   292.366,
+   295.39,
+   "trees that used to bear'."
+  ],
+  [
+   295.94,
+   299.569,
+   "Photo the union on day one."
+  ],
+  [
+   300.119,
+   303.748,
+   "Future you is a different farmer."
+  ],
+  [
+   303.748,
+   305.562,
+   "Leave them evidence."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "lag/lag-ch07-years.wav",
+   "volume": 1.0
+  }
+ }
+}

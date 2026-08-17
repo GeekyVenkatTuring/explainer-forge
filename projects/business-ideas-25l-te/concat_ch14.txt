@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/business-ideas-25l-te/assets/d14_div.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/business-ideas-25l-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/business-ideas-25l-te/assets/d14_mtx1.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/business-ideas-25l-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/business-ideas-25l-te/assets/d14_mtx2.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/business-ideas-25l-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/business-ideas-25l-te/assets/d14_choose.wav'

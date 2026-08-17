@@ -1,0 +1,470 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch19-clip-vlm_clip",
+   "type": "cv_clip",
+   "in_seconds": 0.0,
+   "out_seconds": 99.119,
+   "props": {
+    "dur": 99.619
+   }
+  },
+  {
+   "id": "cv-ch19-clip-vlm_vlm",
+   "type": "cv_vlm",
+   "in_seconds": 99.619,
+   "out_seconds": 188.111,
+   "props": {
+    "dur": 88.992
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.96,
+   "This is where vision and language finally\nmeet,"
+  ],
+  [
+   2.96,
+   5.18,
+   "in a landmark model called CLIP."
+  ],
+  [
+   5.811,
+   8.771,
+   "CLIP has two encoders working side by\nside."
+  ],
+  [
+   9.403,
+   12.363,
+   "One is an image encoder \u2014 it turns"
+  ],
+  [
+   12.363,
+   14.213,
+   "a picture into a vector."
+  ],
+  [
+   14.844,
+   17.804,
+   "The other is a text encoder \u2014 it"
+  ],
+  [
+   17.804,
+   20.024,
+   "turns a sentence into a vector."
+  ],
+  [
+   20.656,
+   22.506,
+   "Now here is the magic."
+  ],
+  [
+   22.506,
+   25.466,
+   "Both encoders are trained to write into\nthe"
+  ],
+  [
+   25.466,
+   26.575,
+   "same shared space."
+  ],
+  [
+   27.207,
+   29.057,
+   "A picture of a cat,"
+  ],
+  [
+   29.057,
+   32.017,
+   "and the words a photo of a cat,"
+  ],
+  [
+   32.017,
+   34.977,
+   "are pushed to land in nearly the same"
+  ],
+  [
+   34.977,
+   35.347,
+   "spot."
+  ],
+  [
+   35.978,
+   36.348,
+   "How?"
+  ],
+  [
+   36.348,
+   39.308,
+   "CLIP was trained on four hundred million\nimage"
+  ],
+  [
+   39.308,
+   40.418,
+   "and caption pairs,"
+  ],
+  [
+   40.418,
+   42.268,
+   "scraped from across the internet."
+  ],
+  [
+   42.9,
+   43.64,
+   "Its goal,"
+  ],
+  [
+   43.64,
+   44.75,
+   "on every pair,"
+  ],
+  [
+   44.75,
+   45.49,
+   "was simple."
+  ],
+  [
+   45.49,
+   48.45,
+   "Pull the matching image and caption close\ntogether,"
+  ],
+  [
+   48.45,
+   50.299,
+   "and push mismatched ones apart."
+  ],
+  [
+   50.931,
+   53.891,
+   "Watch the pictures and their captions\ndrift together"
+  ],
+  [
+   53.891,
+   55.371,
+   "in that shared space."
+  ],
+  [
+   56.002,
+   57.852,
+   "And once you have this,"
+  ],
+  [
+   57.852,
+   60.812,
+   "you unlock a genuine superpower \u2014\nzero-shot classification."
+  ],
+  [
+   61.444,
+   64.404,
+   "Suppose you want to know if an image"
+  ],
+  [
+   64.404,
+   65.514,
+   "is a cat."
+  ],
+  [
+   66.145,
+   68.735,
+   "You do not train a cat detector."
+  ],
+  [
+   68.735,
+   71.695,
+   "You simply write the sentence a photo of"
+  ],
+  [
+   71.695,
+   72.435,
+   "a cat,"
+  ],
+  [
+   72.435,
+   73.175,
+   "embed it,"
+  ],
+  [
+   73.175,
+   74.285,
+   "embed the image,"
+  ],
+  [
+   74.285,
+   76.505,
+   "and check whether they land close."
+  ],
+  [
+   77.137,
+   77.877,
+   "With this,"
+  ],
+  [
+   77.877,
+   80.836,
+   "you can classify things the model was\nnever"
+  ],
+  [
+   80.836,
+   82.316,
+   "explicitly taught to recognize,"
+  ],
+  [
+   82.316,
+   84.536,
+   "just by describing them in words."
+  ],
+  [
+   85.168,
+   88.128,
+   "This shared space also powers text-based\nimage search,"
+  ],
+  [
+   88.128,
+   91.088,
+   "and it acts as the eyes inside modern"
+  ],
+  [
+   91.088,
+   91.828,
+   "image generators."
+  ],
+  [
+   92.459,
+   95.419,
+   "One space for pictures and words together\n\u2014"
+  ],
+  [
+   95.419,
+   98.379,
+   "it is the bridge that every multimodal\nmodel"
+  ],
+  [
+   98.379,
+   99.119,
+   "walks across."
+  ],
+  [
+   99.619,
+   102.634,
+   "And that bridge leads directly to where\nvision"
+  ],
+  [
+   102.634,
+   104.896,
+   "has arrived today \u2014 vision-language\nmodels,"
+  ],
+  [
+   104.896,
+   106.403,
+   "or V L Ms."
+  ],
+  [
+   107.035,
+   108.919,
+   "The recipe is surprisingly elegant,"
+  ],
+  [
+   108.919,
+   111.558,
+   "and it reuses everything we have built."
+  ],
+  [
+   112.189,
+   113.697,
+   "Take a vision encoder,"
+  ],
+  [
+   113.697,
+   115.582,
+   "the kind CLIP gave us,"
+  ],
+  [
+   115.582,
+   118.597,
+   "and use it to turn an image into"
+  ],
+  [
+   118.597,
+   120.481,
+   "a small handful of tokens."
+  ],
+  [
+   121.113,
+   124.128,
+   "Then feed those image tokens straight into\na"
+  ],
+  [
+   124.128,
+   125.259,
+   "large language model,"
+  ],
+  [
+   125.259,
+   127.897,
+   "right alongside the words of your\nquestion."
+  ],
+  [
+   128.529,
+   131.544,
+   "The model now reads one single sequence \u2014"
+  ],
+  [
+   131.544,
+   132.298,
+   "part picture,"
+  ],
+  [
+   132.298,
+   133.052,
+   "part text,"
+  ],
+  [
+   133.052,
+   133.806,
+   "mixed together."
+  ],
+  [
+   134.437,
+   137.076,
+   "The language model processes both at once,"
+  ],
+  [
+   137.076,
+   138.96,
+   "and answers back in fluent,"
+  ],
+  [
+   138.96,
+   139.714,
+   "natural words."
+  ],
+  [
+   140.345,
+   143.361,
+   "This is exactly what happens when you show"
+  ],
+  [
+   143.361,
+   144.868,
+   "a photo to GPT-4V,"
+  ],
+  [
+   144.868,
+   145.622,
+   "or Gemini,"
+  ],
+  [
+   145.622,
+   146.376,
+   "or Claude."
+  ],
+  [
+   147.008,
+   147.761,
+   "Ask it,"
+  ],
+  [
+   147.761,
+   149.646,
+   "what happened on my desk?"
+  ],
+  [
+   149.646,
+   152.284,
+   "And it does not just say cat."
+  ],
+  [
+   152.916,
+   154.8,
+   "It describes the whole scene,"
+  ],
+  [
+   154.8,
+   157.816,
+   "reasons about the coffee spilled on the\nlaptop,"
+  ],
+  [
+   157.816,
+   160.831,
+   "and even suggests what you should do about"
+  ],
+  [
+   160.831,
+   161.208,
+   "it."
+  ],
+  [
+   161.839,
+   162.216,
+   "Now,"
+  ],
+  [
+   162.216,
+   165.232,
+   "step back and look at how far we"
+  ],
+  [
+   165.232,
+   165.985,
+   "have traveled."
+  ],
+  [
+   166.617,
+   169.632,
+   "We started this course with a grid of"
+  ],
+  [
+   169.632,
+   171.517,
+   "numbers that meant absolutely nothing."
+  ],
+  [
+   172.148,
+   175.164,
+   "And we have arrived at a model that"
+  ],
+  [
+   175.164,
+   177.048,
+   "can look at the world,"
+  ],
+  [
+   177.048,
+   177.802,
+   "understand it,"
+  ],
+  [
+   177.802,
+   180.44,
+   "and talk about it in plain language."
+  ],
+  [
+   181.072,
+   182.957,
+   "Vision stopped being a separate,"
+  ],
+  [
+   182.957,
+   183.71,
+   "walled-off field."
+  ],
+  [
+   184.342,
+   187.357,
+   "It quietly became something bigger \u2014\nperception for"
+  ],
+  [
+   187.357,
+   188.111,
+   "general intelligence."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch19-clip-vlm.wav",
+   "volume": 1.0
+  }
+ }
+}

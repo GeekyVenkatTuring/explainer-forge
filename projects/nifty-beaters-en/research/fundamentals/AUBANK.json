@@ -1,0 +1,49 @@
+{
+ "ticker": "AUBANK",
+ "scraped_at": "2026-08-14T15:27:42",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 81068.0,
+ "current_price": 1081.0,
+ "pe": 238.0,
+ "book_value": null,
+ "dividend_yield_pct": 0.09,
+ "roce_pct": 12.4,
+ "roe_pct": 22.3,
+ "face_value": 10.0,
+ "high": 1106.0,
+ "sales_growth": {
+  "3 Years": 49.0,
+  "TTM": 38.0
+ },
+ "profit_growth": {
+  "5 Years": 11.0,
+  "3 Years": 16.0,
+  "1 Year": 46.0
+ },
+ "roe_hist": {
+  "Equity Capital": 43.0,
+  "Reserves": 606.0,
+  "Other Liabilities&nbsp; +": 249.0,
+  "Fixed Assets&nbsp; +": 23.0,
+  "CWIP": 0.0,
+  "Investments": 65.0
+ },
+ "price_cagr": {
+  "3 Years": 23.0,
+  "Last Year": 22.0
+ },
+ "quarters": {
+  "periods": [],
+  "sales": [],
+  "net_profit": [],
+  "opm": [],
+  "eps": []
+ },
+ "pros": [],
+ "cons": [
+  "Company has low interest coverage ratio.",
+  "Earnings include an other income of Rs.612 Cr."
+ ]
+}

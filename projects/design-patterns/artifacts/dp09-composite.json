@@ -1,0 +1,1966 @@
+{
+ "cuts": [
+  {
+   "id": "dp09-composite_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 23.592,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 09",
+    "line1": "Is it one thing,",
+    "line2": "or a bag of things?",
+    "sub": "a folder holds files and folders \u2014 and your code keeps asking which",
+    "dur": 24.092
+   }
+  },
+  {
+   "id": "dp09-composite_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 24.092,
+   "out_seconds": 49.921,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Total the size of a folder",
+    "situation": "You need the total size of a folder. But a folder contains files \u2014 and sub-folders, which contain more files and more sub-folders, nested as deep as you like.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udcc4",
+      "label": "A file"
+     },
+     {
+      "emoji": "\ud83d\udcc1",
+      "label": "A folder"
+     },
+     {
+      "emoji": "\ud83c\udf32",
+      "label": "\u2026a whole tree"
+     }
+    ],
+    "ask": "A leaf has a size. A group's size is its parts. How do you total the tree?",
+    "dur": 26.329
+   }
+  },
+  {
+   "id": "dp09-composite_naive",
+   "type": "dp_code",
+   "in_seconds": 50.421,
+   "out_seconds": 80.119,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "Ask what kind it is.",
+    "file": "SizeCalculator.java",
+    "lines": [
+     {
+      "t": "long totalSize(Node node) {"
+     },
+     {
+      "t": "  if (node.isFolder()) {              // which kind?",
+      "s": "hi"
+     },
+     {
+      "t": "    long sum = 0;"
+     },
+     {
+      "t": "    for (Node child : node.children())",
+      "s": "hi"
+     },
+     {
+      "t": "      sum += totalSize(child);        // recurse by hand",
+      "s": "hi"
+     },
+     {
+      "t": "    return sum;"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "  return node.bytes();                 // it's a file"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Check the type, branch, recurse yourself. It works.",
+    "dur": 30.198
+   }
+  },
+  {
+   "id": "dp09-composite_pain",
+   "type": "dp_pain",
+   "in_seconds": 80.619,
+   "out_seconds": 116.738,
+   "props": {
+    "title": "\"Now count files. And print the tree.\"",
+    "file": "everywhere.java",
+    "lines": [
+     {
+      "t": "long count(Node n)  { if (n.isFolder()) {...recurse...} }",
+      "s": "hi"
+     },
+     {
+      "t": "void print(Node n)  { if (n.isFolder()) {...recurse...} }",
+      "s": "hi"
+     },
+     {
+      "t": "Node find(Node n..) { if (n.isFolder()) {...recurse...} }",
+      "s": "hi"
+     },
+     {
+      "t": "// the SAME isFolder + recurse dance, every time"
+     },
+     {
+      "t": "if (n.isSymlink()) { /* now handle a THIRD kind */ }",
+      "s": "hi"
+     }
+    ],
+    "smell": "Type checks + manual recursion, copied per operation",
+    "touched": [
+     "size() \u2014 isFolder branch",
+     "count() \u2014 isFolder branch",
+     "print(), find() \u2014 same branch",
+     "add Symlink \u2192 every method"
+    ],
+    "dur": 36.619
+   }
+  },
+  {
+   "id": "dp09-composite_insight",
+   "type": "dp_insight",
+   "in_seconds": 117.238,
+   "out_seconds": 154.609,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "Every node has a size",
+     "A file and a folder are both 'nodes'",
+     "The operation you want: a total"
+    ],
+    "varies": [
+     "Whether it's a leaf or a group",
+     "How each one computes its size",
+     "How deep the nesting goes"
+    ],
+    "principle": "Give leaf and group the SAME interface, and let each compute its own size \u2014 a group by asking its children.",
+    "dur": 37.871
+   }
+  },
+  {
+   "id": "dp09-composite_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 155.109,
+   "out_seconds": 199.992,
+   "props": {
+    "title": "Think of a box of boxes",
+    "emoji": "\ud83d\udce6",
+    "analogy": "To weigh a box, weigh everything inside \u2014 boxes included.",
+    "map": [
+     {
+      "from": "A single item",
+      "to": "a leaf node (a file)"
+     },
+     {
+      "from": "A box of items",
+      "to": "a composite (a folder)"
+     },
+     {
+      "from": "\"What do you weigh?\"",
+      "to": "the shared size() method"
+     },
+     {
+      "from": "A box asks its contents",
+      "to": "a folder asks its children"
+     }
+    ],
+    "breaks": "you can lift a real box to weigh it whole \u2014 code has to walk the contents; the uniformity is in the interface, not the physics.",
+    "dur": 45.383
+   }
+  },
+  {
+   "id": "dp09-composite_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 200.492,
+   "out_seconds": 222.848,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "One interface for both",
+    "file": "FileNode.java",
+    "lines": [
+     {
+      "t": "// a file AND a folder are both just this:"
+     },
+     {
+      "t": "interface FileNode {",
+      "s": "add"
+     },
+     {
+      "t": "  long size();",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": ""
+     },
+     {
+      "t": "class FileLeaf implements FileNode {",
+      "s": "add"
+     },
+     {
+      "t": "  public long size() { return bytes; }   // a leaf",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "note": "The leaf is trivial \u2014 it already knows its own size.",
+    "dur": 22.856
+   }
+  },
+  {
+   "id": "dp09-composite_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 223.348,
+   "out_seconds": 255.943,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "The group is a node too",
+    "file": "Folder.java",
+    "lines": [
+     {
+      "t": "class Folder implements FileNode {   // also a FileNode!",
+      "s": "add"
+     },
+     {
+      "t": "  private final List<FileNode> children = new ArrayList<>();",
+      "s": "add"
+     },
+     {
+      "t": "  void add(FileNode n) { children.add(n); }",
+      "s": "add"
+     },
+     {
+      "t": "  public long size() {",
+      "s": "add"
+     },
+     {
+      "t": "    return children.stream()",
+      "s": "add"
+     },
+     {
+      "t": "        .mapToLong(FileNode::size).sum();   // ask each child",
+      "s": "add"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "A folder holds FileNodes \u2014 and IS a FileNode. That's the whole trick.",
+    "dur": 33.095
+   }
+  },
+  {
+   "id": "dp09-composite_try",
+   "type": "dp_try",
+   "in_seconds": 256.443,
+   "out_seconds": 285.879,
+   "props": {
+    "title": "Add count() to Folder",
+    "file": "Folder.java",
+    "lines": [
+     {
+      "t": "// FileLeaf.count() returns 1. And a folder?"
+     },
+     {
+      "t": "public long count() {"
+     },
+     {
+      "t": "  // \u25af sum count() over the children",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "A leaf counts as 1. Write a Folder's count() \u2014 sum of its children.",
+    "hint": "return children.stream().mapToLong(FileNode::count).sum();",
+    "dur": 29.936
+   }
+  },
+  {
+   "id": "dp09-composite_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 286.379,
+   "out_seconds": 315.602,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "The client stops asking",
+    "file": "Client.java",
+    "lines": [
+     {
+      "t": "// build a tree of files and folders:"
+     },
+     {
+      "t": "Folder root = new Folder();",
+      "s": "add"
+     },
+     {
+      "t": "root.add(new FileLeaf(2_000));",
+      "s": "add"
+     },
+     {
+      "t": "Folder sub = new Folder();",
+      "s": "add"
+     },
+     {
+      "t": "sub.add(new FileLeaf(500));",
+      "s": "add"
+     },
+     {
+      "t": "root.add(sub);",
+      "s": "add"
+     },
+     {
+      "t": ""
+     },
+     {
+      "t": "long total = root.size();   // no isFolder, no recursion",
+      "s": "hi"
+     }
+    ],
+    "note": "One call on the root. The recursion is inside the objects now.",
+    "dur": 29.723
+   }
+  },
+  {
+   "id": "dp09-composite_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 316.102,
+   "out_seconds": 350.948,
+   "props": {
+    "requirement": "\"Add symlink nodes\" \u2014 a third kind of node",
+    "naiveLabel": "Before",
+    "naiveCost": "An isSymlink branch in every operation.",
+    "naiveSteps": [
+     "add a branch to size()",
+     "and count, print, find\u2026",
+     "one miss \u2192 wrong total"
+    ],
+    "patLabel": "Now",
+    "patCost": "One class. It just works in any tree.",
+    "patFile": "SymlinkNode.java",
+    "patLines": [
+     {
+      "t": "class SymlinkNode",
+      "s": "add"
+     },
+     {
+      "t": "    implements FileNode {",
+      "s": "add"
+     },
+     {
+      "t": "  private final FileNode target;",
+      "s": "add"
+     },
+     {
+      "t": "  public long size() {",
+      "s": "add"
+     },
+     {
+      "t": "    return 0;   // a link adds nothing",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "dur": 35.346
+   }
+  },
+  {
+   "id": "dp09-composite_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 351.448,
+   "out_seconds": 388.411,
+   "props": {
+    "name": "The Composite Pattern",
+    "plain": "Give leaves and groups one interface; a group holds children of that same interface and delegates the work down the tree.",
+    "nodes": [
+     {
+      "id": "comp",
+      "title": "FileNode",
+      "stereo": "interface",
+      "members": [
+       "+ size(): long"
+      ],
+      "x": 760,
+      "y": 210,
+      "w": 400,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "leaf",
+      "title": "FileLeaf",
+      "stereo": "leaf",
+      "members": [
+       "+ size()"
+      ],
+      "x": 150,
+      "y": 430,
+      "w": 360,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "folder",
+      "title": "Folder",
+      "stereo": "composite",
+      "members": [
+       "- children: List",
+       "+ add(n) / size()"
+      ],
+      "x": 1410,
+      "y": 430,
+      "w": 380,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "sym",
+      "title": "SymlinkNode",
+      "members": [
+       "+ size()"
+      ],
+      "x": 760,
+      "y": 660,
+      "w": 400,
+      "color": "#34D399"
+     }
+    ],
+    "edges": [
+     {
+      "from": "leaf",
+      "to": "comp",
+      "kind": "impl"
+     },
+     {
+      "from": "folder",
+      "to": "comp",
+      "kind": "impl"
+     },
+     {
+      "from": "sym",
+      "to": "comp",
+      "kind": "impl"
+     },
+     {
+      "from": "folder",
+      "to": "comp",
+      "kind": "has"
+     }
+    ],
+    "dur": 37.463
+   }
+  },
+  {
+   "id": "dp09-composite_map",
+   "type": "dp_map",
+   "in_seconds": 388.911,
+   "out_seconds": 428.716,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Component",
+      "your": "interface FileNode"
+     },
+     {
+      "role": "Leaf",
+      "your": "FileLeaf, SymlinkNode"
+     },
+     {
+      "role": "Composite",
+      "your": "Folder (holds FileNodes)"
+     },
+     {
+      "role": "Client",
+      "your": "just calls size() on the root"
+     }
+    ],
+    "plain": "A composite holds children of the component type and forwards each operation to them; a leaf just answers directly.",
+    "gof": "Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions uniformly.",
+    "dur": 40.305
+   }
+  },
+  {
+   "id": "dp09-composite_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 429.216,
+   "out_seconds": 471.731,
+   "props": {
+    "title": "Uniformity has a price",
+    "costs": [
+     "Leaf must answer methods that fit groups",
+     "The type system gets more permissive",
+     "Deep trees can recurse expensively"
+    ],
+    "dont": [
+     "The data isn't really a tree",
+     "Leaves and groups behave very differently",
+     "A flat list is all you have"
+    ],
+    "signal": "you have a part-whole hierarchy, and you keep writing 'if it's a group, recurse; else, handle the leaf.'",
+    "dur": 43.015
+   }
+  },
+  {
+   "id": "dp09-composite_recap",
+   "type": "dp_recap",
+   "in_seconds": 472.231,
+   "out_seconds": 526.403,
+   "props": {
+    "title": "Composite, in one breath",
+    "items": [
+     "Every operation on the tree repeated the same 'is it a folder? then recurse' dance \u2014 copied, and fragile.",
+     "A file and a folder are both nodes with a size \u2014 so give them one interface and let each compute its own.",
+     "Composite: a group holds children of the same type and forwards work down; a leaf answers directly. New node, new class."
+    ],
+    "challenge": "A drawing app has shapes \u2014 circles, rectangles \u2014 and groups of shapes, which can hold other groups. You must move, and draw, any selection.",
+    "question": "Does Composite fit? What's the component, the leaf, and the composite?",
+    "dur": 54.672
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.4,
+   "Some structures are trees."
+  ],
+  [
+   2.031,
+   4.831,
+   "A folder holds files \u2014 and other folders,"
+  ],
+  [
+   4.831,
+   6.231,
+   "which hold more files,"
+  ],
+  [
+   6.231,
+   7.281,
+   "and more folders,"
+  ],
+  [
+   7.281,
+   8.681,
+   "all the way down."
+  ],
+  [
+   9.312,
+   12.112,
+   "And when your code has to keep asking,"
+  ],
+  [
+   12.112,
+   13.162,
+   "at every step,"
+  ],
+  [
+   13.162,
+   15.961,
+   "is this a single thing or a group"
+  ],
+  [
+   15.961,
+   18.761,
+   "of things \u2014 it drowns in that question."
+  ],
+  [
+   19.393,
+   22.192,
+   "There is a way to stop asking entirely."
+  ],
+  [
+   22.192,
+   23.592,
+   "Let's measure a folder."
+  ],
+  [
+   24.092,
+   25.5,
+   "The task sounds trivial."
+  ],
+  [
+   25.5,
+   27.964,
+   "Get the total size of a folder."
+  ],
+  [
+   28.595,
+   30.707,
+   "But a folder is not flat."
+  ],
+  [
+   30.707,
+   31.763,
+   "It holds files,"
+  ],
+  [
+   31.763,
+   34.227,
+   "which have a size \u2014 and sub-folders,"
+  ],
+  [
+   34.227,
+   36.691,
+   "which hold more files and more sub-folders,"
+  ],
+  [
+   36.691,
+   37.747,
+   "nested however deep."
+  ],
+  [
+   38.378,
+   41.194,
+   "A single file has a size you can"
+  ],
+  [
+   41.194,
+   41.898,
+   "just read."
+  ],
+  [
+   41.898,
+   44.714,
+   "A folder's size is the sum of everything"
+  ],
+  [
+   44.714,
+   45.418,
+   "inside it."
+  ],
+  [
+   46.049,
+   48.865,
+   "So how do you total up a whole"
+  ],
+  [
+   48.865,
+   49.921,
+   "tree like that?"
+  ],
+  [
+   50.421,
+   51.415,
+   "The obvious approach:"
+  ],
+  [
+   51.415,
+   54.066,
+   "ask what kind of thing you are looking"
+  ],
+  [
+   54.066,
+   54.397,
+   "at."
+  ],
+  [
+   55.029,
+   56.686,
+   "If it is a folder,"
+  ],
+  [
+   56.686,
+   59.337,
+   "loop its children and add up each one"
+  ],
+  [
+   59.337,
+   60.331,
+   "\u2014 calling yourself,"
+  ],
+  [
+   60.331,
+   60.662,
+   "recursively,"
+  ],
+  [
+   60.662,
+   61.988,
+   "to handle the nesting."
+  ],
+  [
+   62.619,
+   64.276,
+   "If it is a file,"
+  ],
+  [
+   64.276,
+   65.601,
+   "just return its bytes."
+  ],
+  [
+   66.233,
+   67.227,
+   "And it works."
+  ],
+  [
+   67.227,
+   68.884,
+   "It correctly totals the tree."
+  ],
+  [
+   69.515,
+   71.835,
+   "But look at the shape of it."
+  ],
+  [
+   71.835,
+   74.486,
+   "The client \u2014 your code \u2014 is doing"
+  ],
+  [
+   74.486,
+   75.811,
+   "all the structural work."
+  ],
+  [
+   75.811,
+   76.805,
+   "Checking the type."
+  ],
+  [
+   76.805,
+   77.799,
+   "Doing the recursion."
+  ],
+  [
+   77.799,
+   80.119,
+   "Holding the whole tree in its head."
+  ],
+  [
+   80.619,
+   82.068,
+   "Then more operations arrive."
+  ],
+  [
+   82.068,
+   83.154,
+   "Count the files."
+  ],
+  [
+   83.154,
+   84.241,
+   "Print the tree."
+  ],
+  [
+   84.241,
+   86.052,
+   "Find a file by name."
+  ],
+  [
+   86.684,
+   89.581,
+   "And every one of them repeats the exact"
+  ],
+  [
+   89.581,
+   92.479,
+   "same dance \u2014 check if it is a"
+  ],
+  [
+   92.479,
+   92.841,
+   "folder,"
+  ],
+  [
+   92.841,
+   93.928,
+   "loop the children,"
+  ],
+  [
+   93.928,
+   95.015,
+   "recurse by hand."
+  ],
+  [
+   95.646,
+   98.544,
+   "The structural logic is copied into operation\nafter"
+  ],
+  [
+   98.544,
+   98.906,
+   "operation."
+  ],
+  [
+   99.538,
+   102.435,
+   "Then someone adds a third kind of node"
+  ],
+  [
+   102.435,
+   103.522,
+   "\u2014 a symlink."
+  ],
+  [
+   104.153,
+   107.051,
+   "Now every one of those methods needs a"
+  ],
+  [
+   107.051,
+   108.862,
+   "new branch to handle it."
+  ],
+  [
+   109.494,
+   112.391,
+   "The client is buried in bookkeeping about the"
+  ],
+  [
+   112.391,
+   113.84,
+   "shape of the tree,"
+  ],
+  [
+   113.84,
+   116.738,
+   "when all it ever wanted was a total."
+  ],
+  [
+   117.238,
+   117.902,
+   "What changes,"
+  ],
+  [
+   117.902,
+   119.229,
+   "and what stays fixed?"
+  ],
+  [
+   119.861,
+   120.193,
+   "Fixed:"
+  ],
+  [
+   120.193,
+   122.847,
+   "every node \u2014 file or folder \u2014 has"
+  ],
+  [
+   122.847,
+   123.511,
+   "a size."
+  ],
+  [
+   123.511,
+   124.175,
+   "Both are,"
+  ],
+  [
+   124.175,
+   124.839,
+   "at heart,"
+  ],
+  [
+   124.839,
+   125.502,
+   "just nodes."
+  ],
+  [
+   125.502,
+   128.157,
+   "And the thing you want is always the"
+  ],
+  [
+   128.157,
+   128.489,
+   "same:"
+  ],
+  [
+   128.489,
+   129.153,
+   "a total."
+  ],
+  [
+   129.784,
+   132.439,
+   "What varies is only whether a node is"
+  ],
+  [
+   132.439,
+   134.43,
+   "a single leaf or a group,"
+  ],
+  [
+   134.43,
+   136.089,
+   "how it computes its size,"
+  ],
+  [
+   136.089,
+   138.081,
+   "and how deep it all nests."
+  ],
+  [
+   138.712,
+   140.371,
+   "So here is the move."
+  ],
+  [
+   141.003,
+   143.658,
+   "Give a file and a folder the exact"
+  ],
+  [
+   143.658,
+   144.322,
+   "same interface."
+  ],
+  [
+   144.322,
+   146.645,
+   "Let each one compute its own size."
+  ],
+  [
+   146.645,
+   148.304,
+   "A file knows its bytes."
+  ],
+  [
+   148.304,
+   150.959,
+   "A folder just asks its children \u2014 and"
+  ],
+  [
+   150.959,
+   151.954,
+   "they ask theirs."
+  ],
+  [
+   151.954,
+   153.945,
+   "The recursion becomes the tree's job,"
+  ],
+  [
+   153.945,
+   154.609,
+   "not yours."
+  ],
+  [
+   155.109,
+   157.657,
+   "Picture a box that can contain other boxes."
+  ],
+  [
+   158.289,
+   160.837,
+   "You want to know what the whole thing"
+  ],
+  [
+   160.837,
+   161.155,
+   "weighs."
+  ],
+  [
+   161.787,
+   163.379,
+   "You ask the outer box."
+  ],
+  [
+   163.379,
+   165.291,
+   "If it holds a single item,"
+  ],
+  [
+   165.291,
+   167.52,
+   "it just tells you that item's weight."
+  ],
+  [
+   167.52,
+   169.113,
+   "If it holds more boxes,"
+  ],
+  [
+   169.113,
+   171.661,
+   "it asks each of them \u2014 and they"
+  ],
+  [
+   171.661,
+   172.616,
+   "ask their contents."
+  ],
+  [
+   173.248,
+   174.203,
+   "The beautiful part:"
+  ],
+  [
+   174.203,
+   176.433,
+   "you ask every box the same question."
+  ],
+  [
+   176.433,
+   177.707,
+   "What do you weigh?"
+  ],
+  [
+   177.707,
+   180.255,
+   "You never care whether it is a single"
+  ],
+  [
+   180.255,
+   181.848,
+   "item or a nested stack."
+  ],
+  [
+   182.479,
+   183.753,
+   "That is the fix."
+  ],
+  [
+   183.753,
+   185.664,
+   "A file is a single item."
+  ],
+  [
+   185.664,
+   187.257,
+   "A folder is a box."
+  ],
+  [
+   187.257,
+   189.487,
+   "Both answer the same question \u2014 size."
+  ],
+  [
+   190.118,
+   191.074,
+   "Where it breaks:"
+  ],
+  [
+   191.074,
+   193.622,
+   "you can lift a real box to weigh"
+  ],
+  [
+   193.622,
+   194.896,
+   "it in one go."
+  ],
+  [
+   194.896,
+   197.125,
+   "Code still has to walk the contents."
+  ],
+  [
+   197.125,
+   199.036,
+   "The uniformity lives in the interface,"
+  ],
+  [
+   199.036,
+   199.992,
+   "not the physics."
+  ],
+  [
+   200.492,
+   201.236,
+   "Move one."
+  ],
+  [
+   201.236,
+   204.212,
+   "We give a file and a folder one"
+  ],
+  [
+   204.212,
+   204.956,
+   "shared interface."
+  ],
+  [
+   205.588,
+   206.704,
+   "A file node,"
+  ],
+  [
+   206.704,
+   208.936,
+   "with a single method \u2014 size."
+  ],
+  [
+   209.568,
+   211.8,
+   "Then the file leaf implements it."
+  ],
+  [
+   211.8,
+   212.544,
+   "Its size?"
+  ],
+  [
+   212.544,
+   213.66,
+   "Just its bytes."
+  ],
+  [
+   213.66,
+   214.776,
+   "It already knows."
+  ],
+  [
+   215.408,
+   217.268,
+   "This is the simple half."
+  ],
+  [
+   217.268,
+   220.244,
+   "A leaf is a node that has no"
+  ],
+  [
+   220.244,
+   220.616,
+   "children,"
+  ],
+  [
+   220.616,
+   222.848,
+   "and answers the size question directly."
+  ],
+  [
+   223.348,
+   225.74,
+   "Move two \u2014 the heart of it."
+  ],
+  [
+   226.371,
+   228.422,
+   "A folder also implements file node."
+  ],
+  [
+   228.422,
+   230.813,
+   "So a folder is a file node,"
+  ],
+  [
+   230.813,
+   233.547,
+   "and it holds a list of file nodes."
+  ],
+  [
+   234.178,
+   235.204,
+   "Read that twice."
+  ],
+  [
+   235.204,
+   236.57,
+   "It is a node,"
+  ],
+  [
+   236.57,
+   237.937,
+   "and it contains nodes."
+  ],
+  [
+   237.937,
+   239.987,
+   "That self-reference is the entire pattern."
+  ],
+  [
+   240.619,
+   241.644,
+   "And its size?"
+  ],
+  [
+   241.644,
+   244.377,
+   "It simply asks each child for its size,"
+  ],
+  [
+   244.377,
+   245.402,
+   "and sums them."
+  ],
+  [
+   246.034,
+   248.768,
+   "It does not know or care whether a"
+  ],
+  [
+   248.768,
+   251.501,
+   "child is a plain file or another folder"
+  ],
+  [
+   251.501,
+   252.526,
+   "full of folders."
+  ],
+  [
+   252.526,
+   255.26,
+   "It just asks size \u2014 and the tree"
+  ],
+  [
+   255.26,
+   255.943,
+   "answers itself."
+  ],
+  [
+   256.443,
+   257.212,
+   "Your turn."
+  ],
+  [
+   257.843,
+   260.919,
+   "Say we add a count operation \u2014 how"
+  ],
+  [
+   260.919,
+   262.841,
+   "many files are in here?"
+  ],
+  [
+   262.841,
+   265.147,
+   "A single file counts as one."
+  ],
+  [
+   265.779,
+   267.317,
+   "Write the folder's version."
+  ],
+  [
+   267.948,
+   271.024,
+   "It is the same shape as size \u2014"
+  ],
+  [
+   271.024,
+   272.946,
+   "ask each child to count,"
+  ],
+  [
+   272.946,
+   274.484,
+   "and sum the results."
+  ],
+  [
+   274.484,
+   274.868,
+   "Pause,"
+  ],
+  [
+   274.868,
+   276.021,
+   "and write it."
+  ],
+  [
+   276.653,
+   278.959,
+   "Notice how mechanical it has become."
+  ],
+  [
+   278.959,
+   281.65,
+   "Any whole-tree question follows the same pattern:"
+  ],
+  [
+   281.65,
+   283.188,
+   "a leaf answers directly,"
+  ],
+  [
+   283.188,
+   285.879,
+   "a folder asks its children and combines."
+  ],
+  [
+   286.379,
+   287.055,
+   "Move three."
+  ],
+  [
+   287.055,
+   288.407,
+   "Now watch the client."
+  ],
+  [
+   289.038,
+   291.742,
+   "You build a tree \u2014 a root folder,"
+  ],
+  [
+   291.742,
+   293.093,
+   "a file in it,"
+  ],
+  [
+   293.093,
+   295.121,
+   "a sub-folder with its own file,"
+  ],
+  [
+   295.121,
+   296.473,
+   "nested however you like."
+  ],
+  [
+   297.104,
+   298.794,
+   "And to get the total?"
+  ],
+  [
+   298.794,
+   299.808,
+   "You call size,"
+  ],
+  [
+   299.808,
+   300.146,
+   "once,"
+  ],
+  [
+   300.146,
+   301.159,
+   "on the root."
+  ],
+  [
+   301.791,
+   302.805,
+   "That is it."
+  ],
+  [
+   302.805,
+   303.819,
+   "No is-folder check."
+  ],
+  [
+   303.819,
+   304.832,
+   "No manual loop."
+  ],
+  [
+   304.832,
+   307.198,
+   "No recursion in your code at all."
+  ],
+  [
+   307.83,
+   309.519,
+   "The root asks its children,"
+  ],
+  [
+   309.519,
+   310.533,
+   "they ask theirs,"
+  ],
+  [
+   310.533,
+   312.561,
+   "and the answer bubbles back up."
+  ],
+  [
+   312.561,
+   315.264,
+   "The client finally gets to just ask its"
+  ],
+  [
+   315.264,
+   315.602,
+   "question."
+  ],
+  [
+   316.102,
+   318.165,
+   "Now a third kind of node."
+  ],
+  [
+   318.165,
+   318.853,
+   "Add symlinks."
+  ],
+  [
+   319.484,
+   319.828,
+   "Before,"
+  ],
+  [
+   319.828,
+   322.235,
+   "that meant a new branch in size,"
+  ],
+  [
+   322.235,
+   323.266,
+   "and in count,"
+  ],
+  [
+   323.266,
+   324.298,
+   "and in print,"
+  ],
+  [
+   324.298,
+   327.048,
+   "and in find \u2014 with a wrong total"
+  ],
+  [
+   327.048,
+   329.111,
+   "waiting for the one you forgot."
+  ],
+  [
+   329.743,
+   330.087,
+   "Now?"
+  ],
+  [
+   330.087,
+   330.774,
+   "One class."
+  ],
+  [
+   330.774,
+   332.494,
+   "Symlink node implements file node,"
+  ],
+  [
+   332.494,
+   334.556,
+   "and decides its size is zero."
+  ],
+  [
+   335.188,
+   336.563,
+   "And that is all."
+  ],
+  [
+   337.195,
+   339.258,
+   "Because it is a file node,"
+  ],
+  [
+   339.258,
+   341.321,
+   "it drops straight into any tree,"
+  ],
+  [
+   341.321,
+   343.04,
+   "and every operation \u2014 size,"
+  ],
+  [
+   343.04,
+   343.384,
+   "count,"
+  ],
+  [
+   343.384,
+   345.103,
+   "print \u2014 handles it automatically."
+  ],
+  [
+   345.103,
+   347.854,
+   "Nothing that walks the tree had to change."
+  ],
+  [
+   347.854,
+   350.604,
+   "A new node type became a single new"
+  ],
+  [
+   350.604,
+   350.948,
+   "class."
+  ],
+  [
+   351.448,
+   352.89,
+   "Now we name it."
+  ],
+  [
+   353.522,
+   355.325,
+   "This is the Composite pattern."
+  ],
+  [
+   355.956,
+   357.038,
+   "At the top,"
+  ],
+  [
+   357.038,
+   359.202,
+   "the shared interface \u2014 file node."
+  ],
+  [
+   359.833,
+   360.915,
+   "On the left,"
+  ],
+  [
+   360.915,
+   363.078,
+   "the leaf \u2014 a single file."
+  ],
+  [
+   363.71,
+   364.792,
+   "On the right,"
+  ],
+  [
+   364.792,
+   365.513,
+   "the folder,"
+  ],
+  [
+   365.513,
+   366.234,
+   "the composite."
+  ],
+  [
+   366.234,
+   368.037,
+   "Look at its two arrows."
+  ],
+  [
+   368.037,
+   369.479,
+   "It implements file node,"
+  ],
+  [
+   369.479,
+   372.364,
+   "and it holds a list of file nodes."
+  ],
+  [
+   372.996,
+   375.88,
+   "That loop \u2014 a node that contains nodes"
+  ],
+  [
+   375.88,
+   377.323,
+   "\u2014 is the signature."
+  ],
+  [
+   377.323,
+   379.486,
+   "It lets a folder hold files,"
+  ],
+  [
+   379.486,
+   380.568,
+   "or other folders,"
+  ],
+  [
+   380.568,
+   380.928,
+   "forever."
+  ],
+  [
+   381.56,
+   384.445,
+   "And the green symlink you just added is"
+  ],
+  [
+   384.445,
+   387.329,
+   "simply one more node the whole tree treats"
+  ],
+  [
+   387.329,
+   388.411,
+   "like any other."
+  ],
+  [
+   388.911,
+   389.72,
+   "The roles,"
+  ],
+  [
+   389.72,
+   391.339,
+   "mapped to your code."
+  ],
+  [
+   391.971,
+   394.803,
+   "The Component is your file node interface."
+  ],
+  [
+   395.435,
+   398.672,
+   "The Leaf is the plain file \u2014 and"
+  ],
+  [
+   398.672,
+   399.482,
+   "the symlink."
+  ],
+  [
+   400.113,
+   402.136,
+   "The Composite is the folder,"
+  ],
+  [
+   402.136,
+   404.969,
+   "which holds children of the component type."
+  ],
+  [
+   405.601,
+   408.838,
+   "And the Client just calls size on the"
+  ],
+  [
+   408.838,
+   409.243,
+   "root,"
+  ],
+  [
+   409.243,
+   412.48,
+   "treating one file and a huge tree exactly"
+  ],
+  [
+   412.48,
+   413.289,
+   "the same."
+  ],
+  [
+   413.921,
+   417.158,
+   "In plain terms \u2014 a composite forwards each"
+  ],
+  [
+   417.158,
+   418.777,
+   "operation to its children,"
+  ],
+  [
+   418.777,
+   420.8,
+   "while a leaf answers directly."
+  ],
+  [
+   421.432,
+   423.051,
+   "The Gang of Four:"
+  ],
+  [
+   423.051,
+   425.074,
+   "compose objects into tree structures,"
+  ],
+  [
+   425.074,
+   428.311,
+   "and let clients treat individual objects and\ncompositions"
+  ],
+  [
+   428.311,
+   428.716,
+   "uniformly."
+  ],
+  [
+   429.216,
+   430.278,
+   "The honest costs."
+  ],
+  [
+   430.909,
+   431.971,
+   "For true uniformity,"
+  ],
+  [
+   431.971,
+   434.802,
+   "the leaf has to offer methods that only"
+  ],
+  [
+   434.802,
+   437.633,
+   "make sense for groups \u2014 a file with"
+  ],
+  [
+   437.633,
+   439.756,
+   "an add-child method it must reject."
+  ],
+  [
+   439.756,
+   442.233,
+   "So the interface gets a little permissive,"
+  ],
+  [
+   442.233,
+   445.065,
+   "and the type system stops protecting you there."
+  ],
+  [
+   445.696,
+   448.527,
+   "And a very deep tree means deep recursion,"
+  ],
+  [
+   448.527,
+   451.004,
+   "which can be slow or even overflow."
+  ],
+  [
+   451.636,
+   454.467,
+   "So skip it when your data is not"
+  ],
+  [
+   454.467,
+   455.529,
+   "really a tree,"
+  ],
+  [
+   455.529,
+   458.36,
+   "or when leaves and groups behave so differently"
+  ],
+  [
+   458.36,
+   460.129,
+   "that forcing one interface hurts."
+  ],
+  [
+   460.761,
+   462.176,
+   "The signal is unmistakable."
+  ],
+  [
+   462.176,
+   463.946,
+   "You have a part-whole hierarchy,"
+  ],
+  [
+   463.946,
+   465.361,
+   "and you keep writing:"
+  ],
+  [
+   465.361,
+   467.131,
+   "if it is a group,"
+  ],
+  [
+   467.131,
+   467.484,
+   "recurse;"
+  ],
+  [
+   467.484,
+   467.838,
+   "otherwise,"
+  ],
+  [
+   467.838,
+   468.9,
+   "handle the leaf."
+  ],
+  [
+   468.9,
+   470.315,
+   "That if is Composite,"
+  ],
+  [
+   470.315,
+   471.731,
+   "waiting to be born."
+  ],
+  [
+   472.231,
+   474.008,
+   "The journey in three beats."
+  ],
+  [
+   474.639,
+   475.35,
+   "The problem:"
+  ],
+  [
+   475.35,
+   478.193,
+   "every operation on the tree repeated the same"
+  ],
+  [
+   478.193,
+   478.904,
+   "is-it-a-folder-then-recurse dance,"
+  ],
+  [
+   478.904,
+   481.036,
+   "copied everywhere and easy to break."
+  ],
+  [
+   481.668,
+   482.378,
+   "The insight:"
+  ],
+  [
+   482.378,
+   485.221,
+   "a file and a folder are both nodes"
+  ],
+  [
+   485.221,
+   486.287,
+   "with a size,"
+  ],
+  [
+   486.287,
+   489.13,
+   "so give them one interface and let each"
+  ],
+  [
+   489.13,
+   490.196,
+   "compute its own."
+  ],
+  [
+   490.828,
+   491.539,
+   "The pattern:"
+  ],
+  [
+   491.539,
+   491.894,
+   "Composite."
+  ],
+  [
+   491.894,
+   494.737,
+   "A group holds children of the same type"
+  ],
+  [
+   494.737,
+   496.514,
+   "and forwards the work down;"
+  ],
+  [
+   496.514,
+   499.357,
+   "a leaf answers directly \u2014 so a new"
+  ],
+  [
+   499.357,
+   501.844,
+   "node type is just a new class."
+  ],
+  [
+   502.476,
+   502.831,
+   "Now,"
+  ],
+  [
+   502.831,
+   503.542,
+   "for you,"
+  ],
+  [
+   503.542,
+   504.963,
+   "before the next episode."
+  ],
+  [
+   505.595,
+   508.082,
+   "A drawing app has shapes \u2014 circles,"
+  ],
+  [
+   508.082,
+   510.215,
+   "rectangles \u2014 and groups of shapes,"
+  ],
+  [
+   510.215,
+   512.702,
+   "and a group can hold other groups."
+  ],
+  [
+   512.702,
+   514.124,
+   "You need to move,"
+  ],
+  [
+   514.124,
+   515.19,
+   "and to draw,"
+  ],
+  [
+   515.19,
+   516.611,
+   "any selection at all."
+  ],
+  [
+   517.243,
+   518.309,
+   "Does Composite fit?"
+  ],
+  [
+   518.309,
+   519.73,
+   "What is the component,"
+  ],
+  [
+   519.73,
+   521.152,
+   "what is the leaf,"
+  ],
+  [
+   521.152,
+   522.929,
+   "and what is the composite?"
+  ],
+  [
+   523.56,
+   523.915,
+   "Pause,"
+  ],
+  [
+   523.915,
+   526.403,
+   "and sketch it before you press play."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp09-composite.wav",
+   "volume": 1.0
+  }
+ }
+}

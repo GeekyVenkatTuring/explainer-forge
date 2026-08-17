@@ -1,0 +1,1981 @@
+{
+  "cuts": [
+    {
+      "id": "tt_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 51.042,
+      "props": {
+        "title": "The Trader's Toolkit",
+        "sub": "Screener.in · Sensibull · TradingView · Streak & more — the platforms that do the homework",
+        "kicker": "TOOLS GUIDE · 2026",
+        "dur": 51.542
+      }
+    },
+    {
+      "id": "tt_map",
+      "type": "sm_steps",
+      "in_seconds": 51.542,
+      "out_seconds": 102.992,
+      "props": {
+        "kicker": "THE MAP",
+        "title": "A Trade Has Six Jobs — Each Has a Tool",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🔍",
+            "label": "Screen",
+            "sub": "Filter 5,000 stocks to 20",
+            "c": "#34D399"
+          },
+          {
+            "emoji": "📚",
+            "label": "Research",
+            "sub": "Read the company's numbers",
+            "c": "#34D399"
+          },
+          {
+            "emoji": "📈",
+            "label": "Chart",
+            "sub": "Time the entry & exit",
+            "c": "#22D3EE"
+          },
+          {
+            "emoji": "🎯",
+            "label": "Strategise",
+            "sub": "Build the F&O position",
+            "c": "#A78BFA"
+          },
+          {
+            "emoji": "🧪",
+            "label": "Backtest",
+            "sub": "Test the rule on history",
+            "c": "#FBBF24"
+          }
+        ],
+        "note": "…and job #6 underneath them all: 🎓 LEARN. The broker app only EXECUTES — these jobs before the order are where trades are won.",
+        "dur": 51.95
+      }
+    },
+    {
+      "id": "tt_div1",
+      "type": "sm_divider",
+      "in_seconds": 103.492,
+      "out_seconds": 112.06,
+      "props": {
+        "n": 1,
+        "title": "Screeners & Fundamentals",
+        "sub": "Screener.in · Trendlyne · Tickertape · StockEdge",
+        "color": "#34D399",
+        "dur": 9.068
+      }
+    },
+    {
+      "id": "tt_screener2",
+      "type": "tt_screener",
+      "in_seconds": 112.56,
+      "out_seconds": 176.728,
+      "props": {
+        "dur": 64.668
+      }
+    },
+    {
+      "id": "tt_trio2",
+      "type": "tt_trio",
+      "in_seconds": 177.228,
+      "out_seconds": 244.012,
+      "props": {
+        "dur": 67.284
+      }
+    },
+    {
+      "id": "tt_div2",
+      "type": "sm_divider",
+      "in_seconds": 244.512,
+      "out_seconds": 252.792,
+      "props": {
+        "n": 2,
+        "title": "Charting & Technicals",
+        "sub": "TradingView · Chartink",
+        "color": "#22D3EE",
+        "dur": 8.78
+      }
+    },
+    {
+      "id": "tt_tv2",
+      "type": "tt_tv",
+      "in_seconds": 253.292,
+      "out_seconds": 317.626,
+      "props": {
+        "dur": 64.834
+      }
+    },
+    {
+      "id": "tt_chartink2",
+      "type": "tt_chartink",
+      "in_seconds": 318.126,
+      "out_seconds": 382.006,
+      "props": {
+        "dur": 64.38
+      }
+    },
+    {
+      "id": "tt_div3",
+      "type": "sm_divider",
+      "in_seconds": 382.506,
+      "out_seconds": 390.426,
+      "props": {
+        "n": 3,
+        "title": "Options & F&O Analytics",
+        "sub": "Sensibull · Opstra · Quantsapp",
+        "color": "#A78BFA",
+        "dur": 8.42
+      }
+    },
+    {
+      "id": "tt_sensibull2",
+      "type": "tt_sensibull",
+      "in_seconds": 390.926,
+      "out_seconds": 469.66,
+      "props": {
+        "dur": 79.234
+      }
+    },
+    {
+      "id": "tt_optools",
+      "type": "sm_iconcards",
+      "in_seconds": 470.16,
+      "out_seconds": 528.448,
+      "props": {
+        "kicker": "THE DEEPER BENCH",
+        "title": "Opstra · Quantsapp · NiftyTrader",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🔬",
+            "k": "Opstra (Definedge)",
+            "v": "Deeper strategy analytics — IV charts, futures OI, strategy simulation for serious F&O students",
+            "chip": "ANALYSIS"
+          },
+          {
+            "emoji": "🧠",
+            "k": "Quantsapp",
+            "v": "Pro-grade options data platform — treats options as a data problem; premium pricing",
+            "chip": "PRO"
+          },
+          {
+            "emoji": "🆓",
+            "k": "NiftyTrader",
+            "v": "Free option chain, max-pain, PCR and FII/DII pages — a solid zero-cost daily reference",
+            "chip": "FREE"
+          },
+          {
+            "emoji": "⚖️",
+            "k": "How to choose",
+            "v": "Start Sensibull/NiftyTrader free → graduate to Opstra/Quantsapp only when strategies get complex",
+            "chip": "LADDER"
+          }
+        ],
+        "dur": 58.788
+      }
+    },
+    {
+      "id": "tt_div4",
+      "type": "sm_divider",
+      "in_seconds": 528.948,
+      "out_seconds": 538.644,
+      "props": {
+        "n": 4,
+        "title": "Backtesting & Algos",
+        "sub": "Streak · AlgoTest · Stockmock · Tradetron",
+        "color": "#FBBF24",
+        "dur": 10.196
+      }
+    },
+    {
+      "id": "tt_backtest2",
+      "type": "tt_backtest",
+      "in_seconds": 539.144,
+      "out_seconds": 618.382,
+      "props": {
+        "dur": 79.738
+      }
+    },
+    {
+      "id": "tt_btmyths",
+      "type": "sm_myths",
+      "in_seconds": 618.882,
+      "out_seconds": 674.314,
+      "props": {
+        "kicker": "BACKTEST HONESTLY",
+        "title": "What a Backtest Says vs What It Doesn't",
+        "mythLabel": "😍 THE BACKTEST SAYS",
+        "factLabel": "⚠️ REALITY CHECK",
+        "pairs": [
+          {
+            "m": "This rule made 40% a year for 10 years",
+            "f": "Past patterns can stop working — a backtest is evidence, not a guarantee"
+          },
+          {
+            "m": "I tweaked it until the curve looked perfect",
+            "f": "That's overfitting — you optimised for history, not the future"
+          },
+          {
+            "m": "The backtest ignores costs",
+            "f": "Brokerage, slippage & taxes eat thin edges — always include them"
+          }
+        ],
+        "dur": 55.932
+      }
+    },
+    {
+      "id": "tt_div5",
+      "type": "sm_divider",
+      "in_seconds": 674.814,
+      "out_seconds": 684.078,
+      "props": {
+        "n": 5,
+        "title": "Research, News & Portfolio",
+        "sub": "Moneycontrol · Value Research · Chittorgarh · smallcase",
+        "color": "#34D399",
+        "dur": 9.764
+      }
+    },
+    {
+      "id": "tt_infowall2",
+      "type": "tt_infowall",
+      "in_seconds": 684.578,
+      "out_seconds": 751.122,
+      "props": {
+        "dur": 67.044
+      }
+    },
+    {
+      "id": "tt_smallcase2",
+      "type": "tt_smallcase",
+      "in_seconds": 751.622,
+      "out_seconds": 821.238,
+      "props": {
+        "dur": 70.116
+      }
+    },
+    {
+      "id": "tt_div6",
+      "type": "sm_divider",
+      "in_seconds": 821.738,
+      "out_seconds": 831.05,
+      "props": {
+        "n": 6,
+        "title": "Learning Platforms",
+        "sub": "Zerodha Varsity · SEBI Investor Education",
+        "color": "#FB7185",
+        "dur": 9.812
+      }
+    },
+    {
+      "id": "tt_learn2",
+      "type": "tt_learn",
+      "in_seconds": 831.55,
+      "out_seconds": 901.646,
+      "props": {
+        "dur": 70.596
+      }
+    },
+    {
+      "id": "tt_stack",
+      "type": "sm_compare3",
+      "in_seconds": 902.146,
+      "out_seconds": 955.874,
+      "props": {
+        "kicker": "PICK YOUR STACK",
+        "title": "Three Trader Types, Three Toolkits",
+        "cols": [
+          {
+            "name": "Long-term Investor",
+            "color": "#34D399",
+            "emoji": "🌱",
+            "rows": [
+              {
+                "k": "Screen",
+                "v": "Screener.in"
+              },
+              {
+                "k": "Research",
+                "v": "Value Research · NSE"
+              },
+              {
+                "k": "Portfolio",
+                "v": "smallcase / Coin"
+              },
+              {
+                "k": "Learn",
+                "v": "Varsity basics"
+              }
+            ]
+          },
+          {
+            "name": "Swing Trader",
+            "color": "#22D3EE",
+            "emoji": "📈",
+            "hi": true,
+            "rows": [
+              {
+                "k": "Screen",
+                "v": "Chartink scans"
+              },
+              {
+                "k": "Chart",
+                "v": "TradingView"
+              },
+              {
+                "k": "Backtest",
+                "v": "Streak"
+              },
+              {
+                "k": "News",
+                "v": "Moneycontrol"
+              }
+            ]
+          },
+          {
+            "name": "Options Trader",
+            "color": "#A78BFA",
+            "emoji": "🎯",
+            "rows": [
+              {
+                "k": "Strategy",
+                "v": "Sensibull"
+              },
+              {
+                "k": "Data",
+                "v": "NiftyTrader · Opstra"
+              },
+              {
+                "k": "Backtest",
+                "v": "AlgoTest"
+              },
+              {
+                "k": "Learn",
+                "v": "Varsity F&O module"
+              }
+            ]
+          }
+        ],
+        "dur": 54.228
+      }
+    },
+    {
+      "id": "tt_toolmyths",
+      "type": "sm_myths",
+      "in_seconds": 956.374,
+      "out_seconds": 1006.528,
+      "props": {
+        "kicker": "TOOL TRAPS",
+        "title": "Myths About Trading Tools",
+        "mythLabel": "🧨 THE MYTH",
+        "factLabel": "✅ THE TRUTH",
+        "pairs": [
+          {
+            "m": "A paid tool will make me profitable",
+            "f": "Tools improve decisions — they don't create an edge you don't have"
+          },
+          {
+            "m": "More tools = better trading",
+            "f": "Tool-hopping is procrastination; masters use 3–4 tools deeply"
+          },
+          {
+            "m": "The screener's output is a buy list",
+            "f": "A screen is a SHORTLIST — research each name before buying"
+          }
+        ],
+        "dur": 50.654
+      }
+    },
+    {
+      "id": "tt_choose",
+      "type": "sm_checklist",
+      "in_seconds": 1007.028,
+      "out_seconds": 1068.218,
+      "props": {
+        "kicker": "BEFORE YOU PAY",
+        "title": "The 5-Point Tool Checklist",
+        "color": "#FBBF24",
+        "icon": "🧰",
+        "items": [
+          "Start with FREE tiers — they cover 80% of a beginner's needs",
+          "One tool per job — screen, chart, options, backtest; skip overlap",
+          "Verify pricing on the official site — plans change, videos age",
+          "Pay for a tool only when its free tier is the thing limiting you",
+          "No tool replaces learning — Varsity before any paid subscription"
+        ],
+        "dur": 61.69
+      }
+    },
+    {
+      "id": "tt_recap",
+      "type": "sm_recap",
+      "in_seconds": 1068.718,
+      "out_seconds": 1146.538,
+      "props": {
+        "title": "The Trader's Toolkit — At a Glance",
+        "items": [
+          "Screen: Screener.in (free · ₹4,999/yr) · Trendlyne · Tickertape · StockEdge",
+          "Chart: TradingView (global standard) + Chartink (free NSE scans)",
+          "Options: Sensibull (payoff first!) · Opstra · NiftyTrader (free)",
+          "Backtest: Streak · AlgoTest · Stockmock — mind overfitting & costs",
+          "Info & learning: Moneycontrol · Value Research · Chittorgarh · VARSITY"
+        ],
+        "closer": "Every stack starts free. Three or four tools, used deeply — and learning underneath it all.",
+        "dur": 78.32
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.391,
+      "Your broker app can place a trade in one second."
+    ],
+    [
+      4.391,
+      7.501,
+      "But it can't tell you WHICH trade."
+    ],
+    [
+      7.501,
+      13.721,
+      "That's why serious traders quietly use a second layer of platforms —"
+    ],
+    [
+      13.721,
+      19.026,
+      "screeners, options analysers, charting tools, backtesters."
+    ],
+    [
+      19.026,
+      21.771,
+      "Most have generous free plans."
+    ],
+    [
+      21.771,
+      25.43,
+      "Most beginners have never heard of them."
+    ],
+    [
+      25.43,
+      30.735,
+      "In this video: the full toolkit — what each platform does,"
+    ],
+    [
+      30.735,
+      35.583,
+      "what's free, and how to combine them into a workflow."
+    ],
+    [
+      35.583,
+      37.87,
+      "One note before we start."
+    ],
+    [
+      37.87,
+      41.895,
+      "This video is not sponsored by any platform,"
+    ],
+    [
+      41.895,
+      44.822,
+      "and it is not investment advice."
+    ],
+    [
+      44.822,
+      47.383,
+      "Prices are as of July 2026 —"
+    ],
+    [
+      47.383,
+      51.042,
+      "always check the site for current plans."
+    ],
+    [
+      51.542,
+      55.083,
+      "Here's the map for this whole video."
+    ],
+    [
+      55.083,
+      57.543,
+      "Every trade has six jobs."
+    ],
+    [
+      57.543,
+      58.33,
+      "Screen —"
+    ],
+    [
+      58.33,
+      64.823,
+      "filter five thousand listed stocks down to twenty worth your time."
+    ],
+    [
+      64.823,
+      69.249,
+      "Research — read the company's actual numbers."
+    ],
+    [
+      69.249,
+      72.496,
+      "Chart — time your entry and exit."
+    ],
+    [
+      72.496,
+      76.332,
+      "Then, for F and O traders — strategise,"
+    ],
+    [
+      76.332,
+      79.185,
+      "building the option position."
+    ],
+    [
+      79.185,
+      80.169,
+      "Backtest —"
+    ],
+    [
+      80.169,
+      85.678,
+      "test your rule on years of history BEFORE risking money."
+    ],
+    [
+      85.678,
+      88.629,
+      "And underneath it all — learn."
+    ],
+    [
+      88.629,
+      92.072,
+      "Your broker app does none of these."
+    ],
+    [
+      92.072,
+      93.745,
+      "It only executes."
+    ],
+    [
+      93.745,
+      97.483,
+      "So we'll take the six jobs one by one,"
+    ],
+    [
+      97.483,
+      101.123,
+      "and meet the best platforms for each."
+    ],
+    [
+      101.123,
+      102.107,
+      "Six parts."
+    ],
+    [
+      102.107,
+      102.992,
+      "Let's go."
+    ],
+    [
+      103.492,
+      104.304,
+      "Part one."
+    ],
+    [
+      104.304,
+      106.829,
+      "Screeners and fundamentals —"
+    ],
+    [
+      106.829,
+      112.06,
+      "the tools that turn five thousand stocks into a shortlist."
+    ],
+    [
+      112.56,
+      116.648,
+      "The workhorse of Indian fundamental research —"
+    ],
+    [
+      116.648,
+      118.07,
+      "Screener dot in."
+    ],
+    [
+      118.07,
+      121.003,
+      "Let me show you, live, on screen."
+    ],
+    [
+      121.003,
+      122.781,
+      "Watch the query box."
+    ],
+    [
+      122.781,
+      125.891,
+      "I type a filter in plain language —"
+    ],
+    [
+      125.891,
+      128.646,
+      "return on capital above twenty,"
+    ],
+    [
+      128.646,
+      132.024,
+      "debt to equity below zero point three."
+    ],
+    [
+      132.024,
+      133.09,
+      "And hit run."
+    ],
+    [
+      133.09,
+      134.868,
+      "Now watch the table."
+    ],
+    [
+      134.868,
+      139.934,
+      "The weak companies get struck out one by one — high debt,"
+    ],
+    [
+      139.934,
+      141.533,
+      "low returns, gone."
+    ],
+    [
+      141.533,
+      147.399,
+      "Five thousand listed stocks collapse to just twenty-three matches."
+    ],
+    [
+      147.399,
+      150.865,
+      "Every survivor gets a green PASS badge,"
+    ],
+    [
+      150.865,
+      156.109,
+      "and each one links to a clean page with ten years of sales,"
+    ],
+    [
+      156.109,
+      159.131,
+      "profits, margins and shareholding."
+    ],
+    [
+      159.131,
+      163.13,
+      "The free plan covers everything you just saw."
+    ],
+    [
+      163.13,
+      171.395,
+      "Premium is four thousand nine hundred ninety-nine rupees a year for alerts and Excel exports."
+    ],
+    [
+      171.395,
+      176.728,
+      "If you bookmark one site from this video — make it this one."
+    ],
+    [
+      177.228,
+      181.027,
+      "Three modern screeners build on that base —"
+    ],
+    [
+      181.027,
+      183.853,
+      "and each has a signature visual."
+    ],
+    [
+      183.853,
+      184.383,
+      "Watch."
+    ],
+    [
+      184.383,
+      187.652,
+      "On the left, Trendlyne's D-V-M score."
+    ],
+    [
+      187.652,
+      191.892,
+      "Three rings filling up — Durability seventy-two,"
+    ],
+    [
+      191.892,
+      195.337,
+      "Value fifty-eight, Momentum eighty-one."
+    ],
+    [
+      195.337,
+      197.546,
+      "Quality, price and trend,"
+    ],
+    [
+      197.546,
+      200.991,
+      "each compressed into one honest number."
+    ],
+    [
+      200.991,
+      205.055,
+      "In the middle, Tickertape's Market Mood Index."
+    ],
+    [
+      205.055,
+      208.147,
+      "Watch the needle swing — past fear,"
+    ],
+    [
+      208.147,
+      211.062,
+      "into the greed zone at sixty-two."
+    ],
+    [
+      211.062,
+      216.892,
+      "One glance tells you if the whole market is euphoric or terrified."
+    ],
+    [
+      216.892,
+      219.454,
+      "And on the right, StockEdge —"
+    ],
+    [
+      219.454,
+      225.726,
+      "a phone-first app whose daily scans light up: fifty-two week breakouts,"
+    ],
+    [
+      225.726,
+      228.199,
+      "volume spikes, F-I-I buying."
+    ],
+    [
+      228.199,
+      230.408,
+      "Analytics in your pocket."
+    ],
+    [
+      230.408,
+      235.531,
+      "Trendlyne from around one hundred nineteen rupees a month,"
+    ],
+    [
+      235.531,
+      240.478,
+      "Tickertape from around two forty-nine — as of July 2026,"
+    ],
+    [
+      240.478,
+      241.892,
+      "check the sites."
+    ],
+    [
+      241.892,
+      244.012,
+      "Start free on all three."
+    ],
+    [
+      244.512,
+      245.305,
+      "Part two."
+    ],
+    [
+      245.305,
+      246.186,
+      "Charting —"
+    ],
+    [
+      246.186,
+      252.792,
+      "because even a great stock bought at the wrong time feels like a bad stock."
+    ],
+    [
+      253.292,
+      257.796,
+      "For charts, one platform became the global standard —"
+    ],
+    [
+      257.796,
+      258.816,
+      "TradingView."
+    ],
+    [
+      258.816,
+      260.941,
+      "Watch a chart come alive."
+    ],
+    [
+      260.941,
+      264.85,
+      "First the candles draw in — green for up days,"
+    ],
+    [
+      264.85,
+      266.465,
+      "red for down days —"
+    ],
+    [
+      266.465,
+      270.799,
+      "each one a day's battle between buyers and sellers."
+    ],
+    [
+      270.799,
+      275.643,
+      "Then the yellow line glides over them — a moving average,"
+    ],
+    [
+      275.643,
+      280.232,
+      "smoothing the noise into a trend you can actually see."
+    ],
+    [
+      280.232,
+      283.547,
+      "Next, a trendline snaps onto the lows —"
+    ],
+    [
+      283.547,
+      286.861,
+      "that's the drawing toolbar on the left,"
+    ],
+    [
+      286.861,
+      288.731,
+      "every tool a pro uses."
+    ],
+    [
+      288.731,
+      291.96,
+      "And below, a second pane — the R-S-I —"
+    ],
+    [
+      291.96,
+      297.484,
+      "oscillating between overbought at seventy and oversold at thirty."
+    ],
+    [
+      297.484,
+      302.244,
+      "Price above, momentum below: one screen, the full story."
+    ],
+    [
+      302.244,
+      306.833,
+      "Indian brokers like Zerodha and Dhan connect directly,"
+    ],
+    [
+      306.833,
+      309.892,
+      "so the trade happens from the chart."
+    ],
+    [
+      309.892,
+      312.867,
+      "The free plan is genuinely usable —"
+    ],
+    [
+      312.867,
+      317.626,
+      "learn here before paying anyone for a special indicator."
+    ],
+    [
+      318.126,
+      321.911,
+      "TradingView charts one stock beautifully."
+    ],
+    [
+      321.911,
+      325.326,
+      "But which stock should you even open?"
+    ],
+    [
+      325.326,
+      329.111,
+      "That's Chartink — watch a scan get built."
+    ],
+    [
+      329.111,
+      333.819,
+      "Condition one slides in: R-S-I crossed above sixty."
+    ],
+    [
+      333.819,
+      338.896,
+      "Condition two: price above the two-hundred-day average."
+    ],
+    [
+      338.896,
+      342.773,
+      "Condition three: volume double its normal."
+    ],
+    [
+      342.773,
+      346.281,
+      "All picked from dropdowns — zero code."
+    ],
+    [
+      346.281,
+      347.666,
+      "Now — run scan."
+    ],
+    [
+      347.666,
+      356.528,
+      "The results populate in real time: five stocks out of the whole N-S-E pass all three conditions,"
+    ],
+    [
+      356.528,
+      360.036,
+      "each with today's move drawn as a bar."
+    ],
+    [
+      360.036,
+      364.928,
+      "That's your day's watchlist, built in thirty seconds,"
+    ],
+    [
+      364.928,
+      365.759,
+      "for free."
+    ],
+    [
+      365.759,
+      373.698,
+      "So parts one and two combine into a funnel: a fundamental screen finds good companies."
+    ],
+    [
+      373.698,
+      377.021,
+      "Chartink finds which are moving now."
+    ],
+    [
+      377.021,
+      379.606,
+      "TradingView times the entry."
+    ],
+    [
+      379.606,
+      382.006,
+      "Shortlist, signal, timing."
+    ],
+    [
+      382.506,
+      383.453,
+      "Part three."
+    ],
+    [
+      383.453,
+      384.228,
+      "Options —"
+    ],
+    [
+      384.228,
+      390.426,
+      "where trading without an analytics tool is like flying blind in a storm."
+    ],
+    [
+      390.926,
+      395.704,
+      "Now, Sensibull — India's largest options platform."
+    ],
+    [
+      395.704,
+      399.239,
+      "Watch it build a real strategy, live."
+    ],
+    [
+      399.239,
+      401.437,
+      "Step one — pick a view."
+    ],
+    [
+      401.437,
+      402.87,
+      "We tap bullish."
+    ],
+    [
+      402.87,
+      405.832,
+      "It suggests a bull call spread."
+    ],
+    [
+      405.832,
+      408.412,
+      "Step two — the legs appear."
+    ],
+    [
+      408.412,
+      415.865,
+      "Buy the twenty-three thousand eight hundred call for one hundred fifty rupees."
+    ],
+    [
+      415.865,
+      421.407,
+      "Sell the twenty-four thousand call, collecting sixty back."
+    ],
+    [
+      421.407,
+      423.7,
+      "Net cost: ninety points."
+    ],
+    [
+      423.7,
+      427.426,
+      "And now — the part that saves accounts."
+    ],
+    [
+      427.426,
+      430.293,
+      "The payoff graph draws itself."
+    ],
+    [
+      430.293,
+      434.879,
+      "Look at the numbers popping in: maximum profit —"
+    ],
+    [
+      434.879,
+      436.408,
+      "one hundred ten."
+    ],
+    [
+      436.408,
+      439.466,
+      "Maximum loss — capped at ninety."
+    ],
+    [
+      439.466,
+      443.957,
+      "Breakeven — twenty-three thousand eight ninety,"
+    ],
+    [
+      443.957,
+      445.581,
+      "marked in yellow."
+    ],
+    [
+      445.581,
+      450.836,
+      "Every rupee of risk visible BEFORE the order is placed."
+    ],
+    [
+      450.836,
+      458.481,
+      "Most option losses come from traders who discovered their real risk after entry."
+    ],
+    [
+      458.481,
+      462.971,
+      "This graph is how you never become one of them."
+    ],
+    [
+      462.971,
+      468.131,
+      "Pro is free for Zerodha users, paid on other brokers —"
+    ],
+    [
+      468.131,
+      469.66,
+      "as of July 2026."
+    ],
+    [
+      470.16,
+      473.988,
+      "Three more names complete the options bench."
+    ],
+    [
+      473.988,
+      478.338,
+      "Opstra, from Definedge, goes deeper on analytics —"
+    ],
+    [
+      478.338,
+      482.601,
+      "implied-volatility charts, futures open interest,"
+    ],
+    [
+      482.601,
+      484.689,
+      "and strategy simulation."
+    ],
+    [
+      484.689,
+      488.342,
+      "Traders who study their positions love it."
+    ],
+    [
+      488.342,
+      491.387,
+      "Quantsapp is the professional end —"
+    ],
+    [
+      491.387,
+      497.738,
+      "a data-heavy platform for traders who treat options as a numbers problem,"
+    ],
+    [
+      497.738,
+      499.304,
+      "at premium prices."
+    ],
+    [
+      499.304,
+      503.828,
+      "And NiftyTrader dot in is the free daily reference —"
+    ],
+    [
+      503.828,
+      508.613,
+      "option chain, max pain, put-call ratio, and F-I-I data,"
+    ],
+    [
+      508.613,
+      509.744,
+      "at zero cost."
+    ],
+    [
+      509.744,
+      515.311,
+      "The ladder is simple: start free with Sensibull and NiftyTrader."
+    ],
+    [
+      515.311,
+      522.271,
+      "Graduate to Opstra or Quantsapp only when your strategies genuinely get complex."
+    ],
+    [
+      522.271,
+      523.75,
+      "Part three done —"
+    ],
+    [
+      523.75,
+      528.448,
+      "never trade an option without seeing its payoff first."
+    ],
+    [
+      528.948,
+      529.846,
+      "Part four."
+    ],
+    [
+      529.846,
+      531.013,
+      "Backtesting —"
+    ],
+    [
+      531.013,
+      538.644,
+      "the difference between 'I think this works' and 'I tested this on ten years of data'."
+    ],
+    [
+      539.144,
+      541.487,
+      "So you have a trading rule."
+    ],
+    [
+      541.487,
+      543.397,
+      "Does it actually work?"
+    ],
+    [
+      543.397,
+      546.868,
+      "Watch a backtest answer that in seconds."
+    ],
+    [
+      546.868,
+      550.34,
+      "The rule types itself in plain English —"
+    ],
+    [
+      550.34,
+      554.072,
+      "buy when price crosses the twenty-day high,"
+    ],
+    [
+      554.072,
+      557.022,
+      "stop loss one percent, target two."
+    ],
+    [
+      557.022,
+      562.056,
+      "That's Streak, from the Zerodha stable — no code anywhere."
+    ],
+    [
+      562.056,
+      563.184,
+      "Hit backtest."
+    ],
+    [
+      563.184,
+      566.048,
+      "And here comes the equity curve —"
+    ],
+    [
+      566.048,
+      569.346,
+      "sixty trades compressed into one line."
+    ],
+    [
+      569.346,
+      570.822,
+      "Watch it climb..."
+    ],
+    [
+      570.822,
+      571.69,
+      "stumble..."
+    ],
+    [
+      571.69,
+      573.078,
+      "and climb again."
+    ],
+    [
+      573.078,
+      576.029,
+      "See that red valley in the middle?"
+    ],
+    [
+      576.029,
+      580.803,
+      "That's the max drawdown — the deepest fall from a peak."
+    ],
+    [
+      580.803,
+      589.134,
+      "The backtest is asking you an honest question: could you have sat through that without quitting?"
+    ],
+    [
+      589.134,
+      592.953,
+      "The stats land at the bottom — sixty trades,"
+    ],
+    [
+      592.953,
+      598.073,
+      "a fifty-something percent win rate, two-to-one average win."
+    ],
+    [
+      598.073,
+      600.59,
+      "A real edge, but a bumpy one."
+    ],
+    [
+      600.59,
+      612.22,
+      "AlgoTest does this for F and O strategies with free core backtests; Stockmock for intraday options; Tradetron deploys strategies live."
+    ],
+    [
+      612.22,
+      617.427,
+      "One honest warning before you fall in love with a backtest —"
+    ],
+    [
+      617.427,
+      618.382,
+      "next scene."
+    ],
+    [
+      618.882,
+      623.577,
+      "Here's what a backtest says, versus what it doesn't."
+    ],
+    [
+      623.577,
+      629.806,
+      "The backtest says: this rule made forty percent a year for ten years."
+    ],
+    [
+      629.806,
+      633.417,
+      "Reality: past patterns can stop working."
+    ],
+    [
+      633.417,
+      637.299,
+      "A backtest is evidence — never a guarantee."
+    ],
+    [
+      637.299,
+      642.174,
+      "You tweaked parameters until the curve looked perfect?"
+    ],
+    [
+      642.174,
+      647.049,
+      "That's called overfitting — you optimised for history,"
+    ],
+    [
+      647.049,
+      650.029,
+      "and history won't repeat exactly."
+    ],
+    [
+      650.029,
+      653.369,
+      "Test on data the rule has never seen."
+    ],
+    [
+      653.369,
+      657.341,
+      "And most backtests quietly ignore brokerage,"
+    ],
+    [
+      657.341,
+      661.675,
+      "slippage and taxes — which eat thin edges alive."
+    ],
+    [
+      661.675,
+      663.571,
+      "Always include costs."
+    ],
+    [
+      663.571,
+      664.835,
+      "Used honestly,"
+    ],
+    [
+      664.835,
+      672.779,
+      "backtesting is the single best filter between a real edge and a story you told yourself."
+    ],
+    [
+      672.779,
+      674.314,
+      "That's part four."
+    ],
+    [
+      674.814,
+      675.904,
+      "Part five."
+    ],
+    [
+      675.904,
+      681.244,
+      "The information layer — news, mutual funds, IPOs,"
+    ],
+    [
+      681.244,
+      684.078,
+      "and ready-made portfolios."
+    ],
+    [
+      684.578,
+      687.168,
+      "Next, the information layer —"
+    ],
+    [
+      687.168,
+      691.813,
+      "four dashboards where you check facts, not opinions."
+    ],
+    [
+      691.813,
+      696.904,
+      "Top left, Moneycontrol — watch the headlines stream past."
+    ],
+    [
+      696.904,
+      698.155,
+      "News, results,"
+    ],
+    [
+      698.155,
+      702.889,
+      "and the portfolio tracker most of India already uses."
+    ],
+    [
+      702.889,
+      707.533,
+      "Top right, Value Research — the mutual fund referee."
+    ],
+    [
+      707.533,
+      714.947,
+      "Watch the stars fill in: independent ratings that cut through fund-house marketing."
+    ],
+    [
+      714.947,
+      718.967,
+      "Bottom left, Chittorgarh — the I-P-O tracker."
+    ],
+    [
+      718.967,
+      724.326,
+      "Those bars filling up are subscription numbers by category —"
+    ],
+    [
+      724.326,
+      726.201,
+      "Q-I-B, N-I-I, retail."
+    ],
+    [
+      726.201,
+      733.079,
+      "And note the warning: the grey-market premium shown there is unofficial data,"
+    ],
+    [
+      733.079,
+      735.491,
+      "never a listing prediction."
+    ],
+    [
+      735.491,
+      737.099,
+      "And bottom right —"
+    ],
+    [
+      737.099,
+      741.565,
+      "the N-S-E and B-S-E official sites: announcements,"
+    ],
+    [
+      741.565,
+      743.619,
+      "F-I-I flows, circulars."
+    ],
+    [
+      743.619,
+      749.514,
+      "Remember the pulsing line: when two websites disagree on a number,"
+    ],
+    [
+      749.514,
+      751.122,
+      "the exchange wins."
+    ],
+    [
+      751.622,
+      757.648,
+      "One more platform sits between doing it yourself and mutual funds —"
+    ],
+    [
+      757.648,
+      758.548,
+      "smallcase."
+    ],
+    [
+      758.548,
+      761.606,
+      "Watch how a basket comes together."
+    ],
+    [
+      761.606,
+      766.373,
+      "Five stocks fly in, one by one — a bank, an I-T name,"
+    ],
+    [
+      766.373,
+      770.24,
+      "a jeweller, an engineer, a pharma company —"
+    ],
+    [
+      770.24,
+      771.949,
+      "each with a weight."
+    ],
+    [
+      771.949,
+      775.907,
+      "Twenty-two percent, twenty-four, eighteen..."
+    ],
+    [
+      775.907,
+      779.954,
+      "until the total locks at exactly one hundred."
+    ],
+    [
+      779.954,
+      784.631,
+      "That's a smallcase: a curated basket around a theme,"
+    ],
+    [
+      784.631,
+      789.128,
+      "built and rebalanced by a SEBI-registered manager."
+    ],
+    [
+      789.128,
+      791.017,
+      "And the clever part —"
+    ],
+    [
+      791.017,
+      794.795,
+      "follow the particles flowing to the right."
+    ],
+    [
+      794.795,
+      798.752,
+      "The basket executes through your own broker,"
+    ],
+    [
+      798.752,
+      803.699,
+      "so every share lands in YOUR demat, under your control."
+    ],
+    [
+      803.699,
+      809.276,
+      "Free smallcases exist; managed ones charge subscription fees —"
+    ],
+    [
+      809.276,
+      811.434,
+      "read the fee page first."
+    ],
+    [
+      811.434,
+      815.392,
+      "And remember: structure and discipline, yes."
+    ],
+    [
+      815.392,
+      819.709,
+      "A shortcut past understanding what you own — no."
+    ],
+    [
+      819.709,
+      821.238,
+      "That's part five."
+    ],
+    [
+      821.738,
+      826.09,
+      "Part six — the layer under everything else."
+    ],
+    [
+      826.09,
+      827.001,
+      "Learning."
+    ],
+    [
+      827.001,
+      831.05,
+      "Because no tool can outperform its user."
+    ],
+    [
+      831.55,
+      835.704,
+      "Every platform so far amplifies your decisions."
+    ],
+    [
+      835.704,
+      838.975,
+      "This part makes the decisions better."
+    ],
+    [
+      838.975,
+      841.362,
+      "Watch the bookshelf build —"
+    ],
+    [
+      841.362,
+      846.842,
+      "Zerodha Varsity's modules rising one by one: intro to markets,"
+    ],
+    [
+      846.842,
+      851.969,
+      "technical analysis, fundamentals, futures, options theory,"
+    ],
+    [
+      851.969,
+      852.764,
+      "taxation."
+    ],
+    [
+      852.764,
+      854.709,
+      "Every single one free."
+    ],
+    [
+      854.709,
+      860.013,
+      "Watch the progress bars fill — that's you, module by module,"
+    ],
+    [
+      860.013,
+      861.515,
+      "at your own pace."
+    ],
+    [
+      861.515,
+      866.819,
+      "If you read nothing else in this entire video, read Varsity."
+    ],
+    [
+      866.819,
+      871.769,
+      "SEBI and the exchanges add official investor education —"
+    ],
+    [
+      871.769,
+      876.719,
+      "your rights and scam warnings from the regulator itself."
+    ],
+    [
+      876.719,
+      879.194,
+      "TradingQnA, Zerodha's forum,"
+    ],
+    [
+      879.194,
+      883.525,
+      "answers the practical questions no course covers."
+    ],
+    [
+      883.525,
+      889.801,
+      "And the red panel on the right is what to run from: guaranteed returns,"
+    ],
+    [
+      889.801,
+      893.602,
+      "sure-shot paid tips, unregistered advisors,"
+    ],
+    [
+      893.602,
+      895.989,
+      "profit-screenshot bragging."
+    ],
+    [
+      895.989,
+      899.348,
+      "If returns are guaranteed — walk away."
+    ],
+    [
+      899.348,
+      901.646,
+      "Learn before you leverage."
+    ],
+    [
+      902.146,
+      904.568,
+      "So which tools do YOU need?"
+    ],
+    [
+      904.568,
+      906.003,
+      "Not all of them."
+    ],
+    [
+      906.003,
+      909.501,
+      "Pick the stack that matches your style."
+    ],
+    [
+      909.501,
+      915.242,
+      "A long-term investor needs just four: Screener dot in to filter,"
+    ],
+    [
+      915.242,
+      917.484,
+      "Value Research for funds,"
+    ],
+    [
+      917.484,
+      922.686,
+      "smallcase or Coin for the portfolio, and Varsity's basics."
+    ],
+    [
+      922.686,
+      929.234,
+      "A swing trader lives in a different stack: Chartink scans to find movers,"
+    ],
+    [
+      929.234,
+      934.078,
+      "TradingView to time entries, Streak to test the rules,"
+    ],
+    [
+      934.078,
+      936.051,
+      "Moneycontrol for news."
+    ],
+    [
+      936.051,
+      940.805,
+      "An options trader: Sensibull for strategy and payoff,"
+    ],
+    [
+      940.805,
+      945.828,
+      "NiftyTrader and Opstra for data, AlgoTest for backtests,"
+    ],
+    [
+      945.828,
+      949.147,
+      "and Varsity's F and O module — twice."
+    ],
+    [
+      949.147,
+      952.914,
+      "Notice something: every stack starts free."
+    ],
+    [
+      952.914,
+      955.874,
+      "Three or four tools, not fifteen."
+    ],
+    [
+      956.374,
+      961.407,
+      "Before the checklist, three myths about tools themselves."
+    ],
+    [
+      961.407,
+      965.469,
+      "Myth one: a paid tool will make me profitable."
+    ],
+    [
+      965.469,
+      968.736,
+      "Truth: tools improve your decisions —"
+    ],
+    [
+      968.736,
+      972.444,
+      "they cannot create an edge you don't have."
+    ],
+    [
+      972.444,
+      977.036,
+      "A payoff graph shows the risk; it doesn't remove it."
+    ],
+    [
+      977.036,
+      980.745,
+      "Myth two: more tools means better trading."
+    ],
+    [
+      980.745,
+      986.307,
+      "Truth: tool-hopping is a sophisticated form of procrastination."
+    ],
+    [
+      986.307,
+      990.634,
+      "The best traders use three or four tools, deeply."
+    ],
+    [
+      990.634,
+      994.872,
+      "Myth three: the screener's output is a buy list."
+    ],
+    [
+      994.872,
+      997.61,
+      "Truth: a screen is a shortlist."
+    ],
+    [
+      997.61,
+      1002.466,
+      "Twenty names out of five thousand still need research —"
+    ],
+    [
+      1002.466,
+      1006.528,
+      "that's the next tool's job, and finally yours."
+    ],
+    [
+      1007.028,
+      1014.421,
+      "So here's the five-point checklist before you spend a rupee on any platform."
+    ],
+    [
+      1014.421,
+      1017.145,
+      "One — start with free tiers."
+    ],
+    [
+      1017.145,
+      1022.398,
+      "Screener, Chartink, TradingView, Sensibull on Zerodha,"
+    ],
+    [
+      1022.398,
+      1024.539,
+      "NiftyTrader, Varsity —"
+    ],
+    [
+      1024.539,
+      1029.305,
+      "free covers eighty percent of a beginner's needs."
+    ],
+    [
+      1029.305,
+      1031.543,
+      "Two — one tool per job."
+    ],
+    [
+      1031.543,
+      1036.504,
+      "A screener, a chart, an options tool, a backtester."
+    ],
+    [
+      1036.504,
+      1040.687,
+      "Overlapping subscriptions are wasted money."
+    ],
+    [
+      1040.687,
+      1044.968,
+      "Three — verify pricing on the official site."
+    ],
+    [
+      1044.968,
+      1048.762,
+      "Plans change; videos like this one age."
+    ],
+    [
+      1048.762,
+      1049.345,
+      "Four —"
+    ],
+    [
+      1049.345,
+      1055.571,
+      "pay only when the free tier is genuinely the thing limiting you."
+    ],
+    [
+      1055.571,
+      1056.642,
+      "Not before."
+    ],
+    [
+      1056.642,
+      1060.241,
+      "And five — no tool replaces learning."
+    ],
+    [
+      1060.241,
+      1066.467,
+      "Finish the relevant Varsity module before any paid subscription."
+    ],
+    [
+      1066.467,
+      1068.218,
+      "The order matters."
+    ],
+    [
+      1068.718,
+      1071.491,
+      "The full toolkit, at a glance."
+    ],
+    [
+      1071.491,
+      1074.633,
+      "To screen: Screener dot in — free,"
+    ],
+    [
+      1074.633,
+      1079.254,
+      "or four thousand nine hundred ninety-nine a year —"
+    ],
+    [
+      1079.254,
+      1083.044,
+      "plus Trendlyne, Tickertape and StockEdge."
+    ],
+    [
+      1083.044,
+      1087.018,
+      "To chart: TradingView, the global standard,"
+    ],
+    [
+      1087.018,
+      1090.253,
+      "with Chartink for free N-S-E scans."
+    ],
+    [
+      1090.253,
+      1095.613,
+      "For options: Sensibull — payoff graph before every trade —"
+    ],
+    [
+      1095.613,
+      1098.201,
+      "with Opstra and NiftyTrader."
+    ],
+    [
+      1098.201,
+      1103.007,
+      "To backtest: Streak, AlgoTest, Stockmock — honestly,"
+    ],
+    [
+      1103.007,
+      1104.486,
+      "including costs."
+    ],
+    [
+      1104.486,
+      1109.661,
+      "And the information layer: Moneycontrol, Value Research,"
+    ],
+    [
+      1109.661,
+      1111.879,
+      "Chittorgarh for I-P-Os —"
+    ],
+    [
+      1111.879,
+      1116.038,
+      "with Zerodha Varsity underneath it all, free."
+    ],
+    [
+      1116.038,
+      1120.29,
+      "Remember the pattern: every stack starts free,"
+    ],
+    [
+      1120.29,
+      1126.205,
+      "and three or four tools used deeply beat fifteen used shallowly."
+    ],
+    [
+      1126.205,
+      1130.272,
+      "This video is not sponsored by any platform."
+    ],
+    [
+      1130.272,
+      1134.431,
+      "Prices are as of July 2026 — check each site."
+    ],
+    [
+      1134.431,
+      1142.749,
+      "And none of this is investment advice; consult a SEBI-registered advisor before investing."
+    ],
+    [
+      1142.749,
+      1146.538,
+      "Thanks for watching — and happy building."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/tte.wav",
+      "volume": 1.0
+    }
+  }
+}

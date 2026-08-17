@@ -1,0 +1,890 @@
+{
+ "cuts": [
+  {
+   "id": "sml-ch07-together_divider",
+   "type": "sml_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 8.939,
+   "props": {
+    "n": 6,
+    "title": "Put It Together",
+    "sub": "the full architecture, an adoption path, and how to start",
+    "color": "#2DD4BF",
+    "layer": -1,
+    "dur": 9.439
+   }
+  },
+  {
+   "id": "sml-ch07-together_architecture",
+   "type": "sml_architecture",
+   "in_seconds": 9.439,
+   "out_seconds": 61.484,
+   "props": {
+    "dur": 52.545
+   }
+  },
+  {
+   "id": "sml-ch07-together_adopt",
+   "type": "sml_timeline",
+   "in_seconds": 61.984,
+   "out_seconds": 116.038,
+   "props": {
+    "kicker": "START THIS WEEKEND",
+    "title": "Build one layer at a time \u2014 each is useful on its own",
+    "color": "#2DD4BF",
+    "steps": [
+     {
+      "label": "Ontology + Neo4j",
+      "sub": "12 classes, SHACL freshness rule, symbol+ISIN backbone"
+     },
+     {
+      "label": "3 free connectors",
+      "sub": "yfinance price, screener fundamentals, Google-News RSS"
+     },
+     {
+      "label": "Make it live",
+      "sub": "poll every 15 min; add stale flags \u2192 a twin"
+     },
+     {
+      "label": "The agent",
+      "sub": "text-to-Cypher + calc tool + cite-source + guardrails"
+     }
+    ],
+    "foot": "Each step ships value before the next. A single engineer can reach step 4 in weeks.",
+    "dur": 54.554
+   }
+  },
+  {
+   "id": "sml-ch07-together_pitfalls",
+   "type": "sml_cards",
+   "in_seconds": 116.538,
+   "out_seconds": 164.921,
+   "props": {
+    "kicker": "WHAT GOES WRONG",
+    "title": "The four traps to design against",
+    "color": "#F87171",
+    "cards": [
+     {
+      "head": "Trusting a scraped number",
+      "emoji": "\ud83d\udd73\ufe0f",
+      "body": "Web-scraped figures go stale and wrong. Prefer structured APIs; always store source + time.",
+      "tag": "data"
+     },
+     {
+      "head": "No entity resolution",
+      "emoji": "\ud83d\udc65",
+      "body": "Skip the ISIN merge and you double-count and contradict yourself.",
+      "tag": "graph"
+     },
+     {
+      "head": "The stale twin",
+      "emoji": "\ud83d\udd70\ufe0f",
+      "body": "A feed dies, the graph keeps the old price, the agent quotes it. Freshness flags prevent this.",
+      "tag": "twin"
+     },
+     {
+      "head": "Drifting into advice",
+      "emoji": "\u26a0\ufe0f",
+      "body": "The moment it says \u2018buy\u2019, you have a compliance problem. Inform, cite, disclaim \u2014 never advise.",
+      "tag": "legal"
+     }
+    ],
+    "foot": "Every one of these is a discipline choice, not a technology limit.",
+    "dur": 48.883
+   }
+  },
+  {
+   "id": "sml-ch07-together_buildbuy",
+   "type": "sml_compare",
+   "in_seconds": 165.421,
+   "out_seconds": 214.548,
+   "props": {
+    "kicker": "FREE-FIRST, CHEAP-PAID",
+    "title": "Where free is enough, and where a little money helps",
+    "color": "#2DD4BF",
+    "left": {
+     "head": "Free tier (start here)",
+     "sub": "\u20b90",
+     "c": "#34D399",
+     "rows": [
+      "yfinance / jugaad-data \u2014 delayed prices.",
+      "screener / Tickertape \u2014 fundamentals.",
+      "Google News + Moneycontrol RSS \u2014 news.",
+      "Neo4j Community + Ollama \u2014 graph + model."
+     ]
+    },
+    "right": {
+     "head": "Small paid upgrades",
+     "sub": "~\u20b9500\u20131000/mo",
+     "c": "#F472B6",
+     "rows": [
+      "Angel SmartAPI (free) / Kite \u20b9500 \u2014 real-time.",
+      "indianapi.in \u2014 clean fundamentals API.",
+      "Marketaux / EODHD \u2014 news + sentiment.",
+      "A hosted LLM API \u2014 better answers."
+     ]
+    },
+    "foot": "Prototype for free; pay only for real-time ticks and cleaner data when you need them.",
+    "dur": 49.627
+   }
+  },
+  {
+   "id": "sml-ch07-together_recap",
+   "type": "sml_recap",
+   "in_seconds": 215.048,
+   "out_seconds": 280.535,
+   "props": {
+    "kicker": "RECAP \u00b7 THE WHOLE MAP",
+    "title": "The factual stock agent in one breath",
+    "closer": "Give the machine only facts that can prove themselves \u2014 and it stops guessing.",
+    "items": [
+     "Ontology = meaning: the vocabulary, and the rule that every fact needs a source + time.",
+     "Knowledge graph = memory: companies and factors, each fact sourced and timestamped.",
+     "Digital twin = live senses: prices kept current (real-time or 15-min), honest about staleness.",
+     "Graph engineering = the plumbing: pipelines, the freshness gate, entity resolution, graph ML.",
+     "Agentic engineering = the mind: retrieve, reason over five factors, answer with citations.",
+     "Anti-hallucination kit: graph-only answers, cited, math in code \u2014 and never investment advice."
+    ],
+    "dur": 65.987
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.791,
+   "Part six."
+  ],
+  [
+   0.791,
+   1.978,
+   "Putting it together."
+  ],
+  [
+   2.61,
+   3.796,
+   "Let's zoom out,"
+  ],
+  [
+   3.796,
+   5.379,
+   "see the whole machine,"
+  ],
+  [
+   5.379,
+   8.543,
+   "and figure out how you actually start building"
+  ],
+  [
+   8.543,
+   8.939,
+   "it."
+  ],
+  [
+   9.439,
+   12.708,
+   "Here is the entire architecture on one screen."
+  ],
+  [
+   13.34,
+   14.566,
+   "At the bottom,"
+  ],
+  [
+   14.566,
+   16.609,
+   "your six sources \u2014 prices,"
+  ],
+  [
+   16.609,
+   17.017,
+   "fundamentals,"
+  ],
+  [
+   17.017,
+   17.426,
+   "filings,"
+  ],
+  [
+   17.426,
+   17.835,
+   "news,"
+  ],
+  [
+   17.835,
+   18.243,
+   "concalls,"
+  ],
+  [
+   18.243,
+   21.104,
+   "and the broker feed \u2014 flow upward."
+  ],
+  [
+   21.735,
+   23.37,
+   "They feed the ontology,"
+  ],
+  [
+   23.37,
+   25.413,
+   "which gives them shared meaning."
+  ],
+  [
+   26.044,
+   26.862,
+   "The ontology,"
+  ],
+  [
+   26.862,
+   29.313,
+   "filled with resolved and sourced data,"
+  ],
+  [
+   29.313,
+   30.948,
+   "becomes the knowledge graph."
+  ],
+  [
+   31.58,
+   34.849,
+   "Live feeds turn it into a digital twin."
+  ],
+  [
+   35.48,
+   37.523,
+   "Graph engineering keeps it built,"
+  ],
+  [
+   37.523,
+   37.932,
+   "valid,"
+  ],
+  [
+   37.932,
+   38.749,
+   "and fresh."
+  ],
+  [
+   39.381,
+   41.015,
+   "And at the top,"
+  ],
+  [
+   41.015,
+   44.284,
+   "the agent reasons across every layer and answers"
+  ],
+  [
+   44.284,
+   45.919,
+   "you \u2014 with citations."
+  ],
+  [
+   46.55,
+   49.002,
+   "Follow the flow up the spine:"
+  ],
+  [
+   49.002,
+   49.411,
+   "raw,"
+  ],
+  [
+   49.411,
+   51.863,
+   "scattered data enters at the bottom,"
+  ],
+  [
+   51.863,
+   53.497,
+   "and a single grounded,"
+  ],
+  [
+   53.497,
+   55.949,
+   "cited answer comes out the top."
+  ],
+  [
+   56.58,
+   58.624,
+   "Every layer earns its place,"
+  ],
+  [
+   58.624,
+   61.484,
+   "and each makes the next one possible."
+  ],
+  [
+   61.984,
+   63.815,
+   "This is not a moonshot."
+  ],
+  [
+   63.815,
+   66.744,
+   "You build it one layer at a time,"
+  ],
+  [
+   66.744,
+   69.673,
+   "and each layer is useful before the next"
+  ],
+  [
+   69.673,
+   70.039,
+   "exists."
+  ],
+  [
+   70.671,
+   71.403,
+   "Step one:"
+  ],
+  [
+   71.403,
+   74.333,
+   "a small ontology \u2014 twelve classes \u2014 with"
+  ],
+  [
+   74.333,
+   75.431,
+   "the freshness rule,"
+  ],
+  [
+   75.431,
+   76.53,
+   "on Neo4j Community,"
+  ],
+  [
+   76.53,
+   79.459,
+   "seeded with the NSE symbol list and ISINs."
+  ],
+  [
+   80.09,
+   80.823,
+   "Step two:"
+  ],
+  [
+   80.823,
+   83.752,
+   "wire three free connectors \u2014 yfinance for price,"
+  ],
+  [
+   83.752,
+   84.851,
+   "screener for fundamentals,"
+  ],
+  [
+   84.851,
+   86.315,
+   "Google News for headlines."
+  ],
+  [
+   86.315,
+   88.146,
+   "Each writes facts with provenance."
+  ],
+  [
+   88.778,
+   89.51,
+   "Step three:"
+  ],
+  [
+   89.51,
+   92.439,
+   "poll every fifteen minutes and add stale flags"
+  ],
+  [
+   92.439,
+   94.636,
+   "\u2014 now you have a twin."
+  ],
+  [
+   95.268,
+   96.0,
+   "Step four:"
+  ],
+  [
+   96.0,
+   97.465,
+   "the agent \u2014 text-to-Cypher,"
+  ],
+  [
+   97.465,
+   98.563,
+   "a calc tool,"
+  ],
+  [
+   98.563,
+   98.929,
+   "cite-your-source,"
+  ],
+  [
+   98.929,
+   100.394,
+   "and the no-advice guardrails."
+  ],
+  [
+   101.025,
+   101.758,
+   "Meaning first,"
+  ],
+  [
+   101.758,
+   102.49,
+   "then memory,"
+  ],
+  [
+   102.49,
+   103.589,
+   "then live senses,"
+  ],
+  [
+   103.589,
+   104.687,
+   "then the mind."
+  ],
+  [
+   104.687,
+   107.616,
+   "Skip ahead and bolt a chatbot onto raw"
+  ],
+  [
+   107.616,
+   107.983,
+   "data,"
+  ],
+  [
+   107.983,
+   110.179,
+   "and you get exactly the confident,"
+  ],
+  [
+   110.179,
+   112.743,
+   "wrong answers we set out to avoid."
+  ],
+  [
+   112.743,
+   113.841,
+   "Build in order,"
+  ],
+  [
+   113.841,
+   116.038,
+   "and each step earns the next."
+  ],
+  [
+   116.538,
+   118.877,
+   "Let me save you some pain."
+  ],
+  [
+   118.877,
+   119.657,
+   "Four traps."
+  ],
+  [
+   120.289,
+   120.678,
+   "One:"
+  ],
+  [
+   120.678,
+   122.238,
+   "trusting a scraped number."
+  ],
+  [
+   122.238,
+   124.577,
+   "Web-scraped figures go stale and wrong;"
+  ],
+  [
+   124.577,
+   125.747,
+   "prefer structured APIs,"
+  ],
+  [
+   125.747,
+   128.476,
+   "and always store the source and time."
+  ],
+  [
+   129.107,
+   129.497,
+   "Two:"
+  ],
+  [
+   129.497,
+   130.667,
+   "skipping entity resolution."
+  ],
+  [
+   130.667,
+   132.226,
+   "Without the ISIN merge,"
+  ],
+  [
+   132.226,
+   134.956,
+   "you double-count and the agent contradicts itself."
+  ],
+  [
+   135.587,
+   135.977,
+   "Three:"
+  ],
+  [
+   135.977,
+   137.147,
+   "the stale twin."
+  ],
+  [
+   137.147,
+   138.316,
+   "A feed dies,"
+  ],
+  [
+   138.316,
+   140.655,
+   "the graph holds the old price,"
+  ],
+  [
+   140.655,
+   143.774,
+   "and the agent quotes it as current \u2014"
+  ],
+  [
+   143.774,
+   146.893,
+   "which is why the freshness flag is non-negotiable."
+  ],
+  [
+   147.525,
+   147.915,
+   "Four:"
+  ],
+  [
+   147.915,
+   149.084,
+   "drifting into advice."
+  ],
+  [
+   149.084,
+   151.424,
+   "The moment your system says \u2018buy\u2019,"
+  ],
+  [
+   151.424,
+   153.373,
+   "you have a regulatory problem."
+  ],
+  [
+   153.373,
+   153.763,
+   "Inform,"
+  ],
+  [
+   153.763,
+   154.153,
+   "cite,"
+  ],
+  [
+   154.153,
+   156.102,
+   "and disclaim \u2014 never advise."
+  ],
+  [
+   156.734,
+   157.124,
+   "Notice:"
+  ],
+  [
+   157.124,
+   160.243,
+   "every one of these is a discipline choice,"
+  ],
+  [
+   160.243,
+   161.802,
+   "not a technology limit."
+  ],
+  [
+   161.802,
+   164.921,
+   "Which means every one is in your control."
+  ],
+  [
+   165.421,
+   168.623,
+   "On cost \u2014 because you asked for free-first."
+  ],
+  [
+   169.255,
+   172.457,
+   "You can prototype the entire system for zero"
+  ],
+  [
+   172.457,
+   172.857,
+   "rupees."
+  ],
+  [
+   172.857,
+   175.259,
+   "yfinance and jugaad-data for delayed prices."
+  ],
+  [
+   175.259,
+   177.26,
+   "Screener and Tickertape for fundamentals."
+  ],
+  [
+   177.26,
+   180.062,
+   "Google News and Moneycontrol RSS for news."
+  ],
+  [
+   180.062,
+   182.064,
+   "Neo4j Community for the graph,"
+  ],
+  [
+   182.064,
+   184.465,
+   "and a local model through Ollama."
+  ],
+  [
+   185.097,
+   185.497,
+   "Then,"
+  ],
+  [
+   185.497,
+   188.299,
+   "small paid upgrades where they earn it."
+  ],
+  [
+   188.299,
+   191.101,
+   "Angel One's SmartAPI is free for real-time;"
+  ],
+  [
+   191.101,
+   194.303,
+   "Zerodha's Kite is five hundred rupees a month."
+  ],
+  [
+   194.303,
+   197.105,
+   "indianapi.in gives cleaner fundamentals through\none API."
+  ],
+  [
+   197.105,
+   199.507,
+   "Marketaux or EODHD add scored news."
+  ],
+  [
+   199.507,
+   202.308,
+   "And a hosted model gives better answers."
+  ],
+  [
+   202.94,
+   203.741,
+   "The rule:"
+  ],
+  [
+   203.741,
+   204.941,
+   "prototype for free,"
+  ],
+  [
+   204.941,
+   208.144,
+   "and pay only for real-time ticks and cleaner"
+  ],
+  [
+   208.144,
+   210.545,
+   "data once you actually need them."
+  ],
+  [
+   210.545,
+   213.747,
+   "Every source is in the plan doc alongside"
+  ],
+  [
+   213.747,
+   214.548,
+   "this video."
+  ],
+  [
+   215.048,
+   218.359,
+   "Let's hold the whole map in one breath."
+  ],
+  [
+   218.991,
+   221.475,
+   "Ontology is meaning \u2014 the vocabulary,"
+  ],
+  [
+   221.475,
+   224.786,
+   "and the rule that every fact needs a"
+  ],
+  [
+   224.786,
+   226.442,
+   "source and a time."
+  ],
+  [
+   227.073,
+   230.385,
+   "The knowledge graph is memory \u2014 companies and"
+  ],
+  [
+   230.385,
+   231.213,
+   "their factors,"
+  ],
+  [
+   231.213,
+   233.282,
+   "each fact sourced and timestamped."
+  ],
+  [
+   233.914,
+   237.226,
+   "The digital twin is live senses \u2014 prices"
+  ],
+  [
+   237.226,
+   238.053,
+   "kept current,"
+  ],
+  [
+   238.053,
+   239.295,
+   "real-time or delayed,"
+  ],
+  [
+   239.295,
+   240.951,
+   "and honest about staleness."
+  ],
+  [
+   241.582,
+   244.894,
+   "Graph engineering is the plumbing \u2014 the pipelines,"
+  ],
+  [
+   244.894,
+   246.136,
+   "the freshness gate,"
+  ],
+  [
+   246.136,
+   246.964,
+   "entity resolution,"
+  ],
+  [
+   246.964,
+   248.205,
+   "and graph learning."
+  ],
+  [
+   248.837,
+   252.148,
+   "And agentic engineering is the mind \u2014 retrieve,"
+  ],
+  [
+   252.148,
+   254.218,
+   "reason over the five factors,"
+  ],
+  [
+   254.218,
+   255.874,
+   "and answer with citations."
+  ],
+  [
+   256.505,
+   259.817,
+   "The thread through all of it is the"
+  ],
+  [
+   259.817,
+   260.645,
+   "anti-hallucination kit:"
+  ],
+  [
+   260.645,
+   261.473,
+   "graph-only answers,"
+  ],
+  [
+   261.473,
+   262.714,
+   "every number cited,"
+  ],
+  [
+   262.714,
+   265.198,
+   "arithmetic in code \u2014 and never,"
+  ],
+  [
+   265.198,
+   265.612,
+   "ever,"
+  ],
+  [
+   265.612,
+   266.44,
+   "investment advice."
+  ],
+  [
+   267.071,
+   268.313,
+   "One last time:"
+  ],
+  [
+   268.313,
+   270.383,
+   "this is an educational architecture,"
+  ],
+  [
+   270.383,
+   271.211,
+   "not advice;"
+  ],
+  [
+   271.211,
+   272.867,
+   "consult a SEBI-registered advisor."
+  ],
+  [
+   273.498,
+   276.81,
+   "Give the machine only facts that can prove"
+  ],
+  [
+   276.81,
+   279.293,
+   "themselves \u2014 and it stops guessing."
+  ],
+  [
+   279.293,
+   280.535,
+   "Thanks for watching."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "sml/sml-ch07-together.wav",
+   "volume": 1.0
+  }
+ }
+}

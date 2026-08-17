@@ -1,0 +1,785 @@
+{
+ "cuts": [
+  {
+   "id": "lag-ch05-plants_div",
+   "type": "lag_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 14.9,
+   "props": {
+    "n": 5,
+    "title": "Varieties and plants",
+    "sub": "grafts, not seeds",
+    "color": "#7CB518",
+    "dur": 15.4
+   }
+  },
+  {
+   "id": "lag-ch05-plants_seed",
+   "type": "lag_compare",
+   "in_seconds": 15.4,
+   "out_seconds": 53.382,
+   "props": {
+    "kicker": "PROPAGATION",
+    "title": "Grafted plants, or do not plant",
+    "leftTitle": "Graft / bud",
+    "leftBody": "True to type. Earlier bearing, often year three. This is the commercial path.",
+    "rightTitle": "Seedling",
+    "rightBody": "Slow. Off-type. Late to fruit. Fine for a curiosity tree, fatal for an acre plan.",
+    "vs": "YEAR THREE VS NEVER QUITE",
+    "leftC": "leaf",
+    "rightC": "risk",
+    "foot": "Papers flag missing true-type nursery plants as the adoption brake.",
+    "dur": 38.482
+   }
+  },
+  {
+   "id": "lag-ch05-plants_vars",
+   "type": "lag_table",
+   "in_seconds": 53.882,
+   "out_seconds": 92.008,
+   "props": {
+    "kicker": "CULTIVAR MIX",
+    "title": "Early, mid, late \u2014 on purpose",
+    "cols": [
+     "Slot",
+     "Examples",
+     "Why mix"
+    ],
+    "rows": [
+     [
+      "Early",
+      "Golden Yellow, Pale Yellow",
+      "First rupees in March"
+     ],
+     [
+      "Mid",
+      "Fire Ball, Safeda, Matchless",
+      "Fill the stall"
+     ],
+     [
+      "Late",
+      "California Advance, Tanaka",
+      "April buyers still hungry"
+     ],
+     [
+      "Pollinizer",
+      "Plant two or three types",
+      "Shy types need neighbours"
+     ]
+    ],
+    "foot": "One clone across ten acres is a pollination and price-risk bet.",
+    "dur": 38.626
+   }
+  },
+  {
+   "id": "lag-ch05-plants_nursery",
+   "type": "lag_cards",
+   "in_seconds": 92.508,
+   "out_seconds": 130.634,
+   "props": {
+    "kicker": "NURSERY DISCIPLINE",
+    "title": "True-to-type or walk away",
+    "cols": 2,
+    "foot": "Count plants for the grid you designed, not a denser fantasy.",
+    "items": [
+     {
+      "label": "~96 / acre",
+      "sub": "Six to seven metre spacing. Do not crowd for 'more trees'.",
+      "c": "leaf"
+     },
+     {
+      "label": "Named scion",
+      "sub": "Write Golden Yellow, not 'desi loquat'.",
+      "c": "fruit"
+     },
+     {
+      "label": "Union visible",
+      "sub": "If you cannot see the graft, you cannot trust the tree.",
+      "c": "risk"
+     },
+     {
+      "label": "K V K / univ.",
+      "sub": "Start there. Random roadside plants are how orchards fail.",
+      "c": "cool"
+     }
+    ],
+    "dur": 38.626
+   }
+  },
+  {
+   "id": "lag-ch05-plants_poll",
+   "type": "lag_orbit",
+   "in_seconds": 131.134,
+   "out_seconds": 169.692,
+   "props": {
+    "kicker": "POLLINATION",
+    "title": "Mix types so flowers become fruit",
+    "hub": "POLLEN",
+    "foot": "A pretty monoculture can be a barren one.",
+    "items": [
+     {
+      "label": "Golden Yellow",
+      "c": "fruit"
+     },
+     {
+      "label": "Pale Yellow",
+      "c": "leaf"
+     },
+     {
+      "label": "Cal. Advance",
+      "c": "cool"
+     },
+     {
+      "label": "Tanaka",
+      "c": "fruit"
+     },
+     {
+      "label": "Bees",
+      "c": "leaf"
+     },
+     {
+      "label": "No bloom spray",
+      "c": "risk"
+     }
+    ],
+    "dur": 39.058
+   }
+  },
+  {
+   "id": "lag-ch05-plants_graft",
+   "type": "lag_pipe",
+   "in_seconds": 170.192,
+   "out_seconds": 209.926,
+   "props": {
+    "kicker": "GRAFT BRIEF",
+    "title": "Union, scion name, date \u2014 or no deal",
+    "foot": "Pay for a healed union, not for soil in a bag.",
+    "nodes": [
+     {
+      "label": "Rootstock",
+      "sub": "Healthy base",
+      "c": "leaf"
+     },
+     {
+      "label": "Named scion",
+      "sub": "Written",
+      "c": "fruit"
+     },
+     {
+      "label": "Union",
+      "sub": "Callused",
+      "c": "cool"
+     },
+     {
+      "label": "Harden",
+      "sub": "Then sell",
+      "c": "leaf"
+     },
+     {
+      "label": "Your check",
+      "sub": "See it",
+      "c": "risk"
+     }
+    ],
+    "dur": 40.234
+   }
+  },
+  {
+   "id": "lag-ch05-plants_tanaka",
+   "type": "lag_cards",
+   "in_seconds": 210.426,
+   "out_seconds": 244.784,
+   "props": {
+    "kicker": "TANAKA NOTE",
+    "title": "Trial winner. Still taste it locally.",
+    "cols": 3,
+    "foot": "A paper is not a tree in your soil.",
+    "items": [
+     {
+      "label": "Size",
+      "sub": "Heavier fruit in the Punjab study window.",
+      "c": "fruit"
+     },
+     {
+      "label": "Cluster",
+      "sub": "More fruit per bunch in that trial.",
+      "c": "leaf"
+     },
+     {
+      "label": "Taste score",
+      "sub": "Higher acceptance. Confirm with your mouth.",
+      "c": "cool"
+     }
+    ],
+    "dur": 34.858
+   }
+  },
+  {
+   "id": "lag-ch05-plants_mixmap",
+   "type": "lag_orchard",
+   "in_seconds": 245.284,
+   "out_seconds": 278.634,
+   "props": {
+    "dur": 33.85
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.15,
+   "Part five."
+  ],
+  [
+   1.15,
+   4.6,
+   "What you put in the ground."
+  ],
+  [
+   5.15,
+   7.45,
+   "Seedlings are a trap."
+  ],
+  [
+   7.45,
+   9.75,
+   "True-to-type plants are scarce."
+  ],
+  [
+   10.3,
+   14.9,
+   "This is the bottleneck Indian papers actually\nname."
+  ],
+  [
+   15.4,
+   19.37,
+   "Do not raise a commercial orchard from seed."
+  ],
+  [
+   19.92,
+   21.408,
+   "Seedlings grow slow,"
+  ],
+  [
+   21.408,
+   22.401,
+   "fruit late,"
+  ],
+  [
+   22.401,
+   25.875,
+   "and do not copy the mother tree."
+  ],
+  [
+   26.425,
+   28.409,
+   "You wanted Golden Yellow."
+  ],
+  [
+   28.409,
+   30.394,
+   "You get a lottery."
+  ],
+  [
+   30.944,
+   33.425,
+   "Buy grafted or budded plants."
+  ],
+  [
+   33.425,
+   34.914,
+   "Air-layering is used,"
+  ],
+  [
+   34.914,
+   38.884,
+   "but success is often lower than a good"
+  ],
+  [
+   38.884,
+   39.38,
+   "graft."
+  ],
+  [
+   39.93,
+   43.9,
+   "Inarching is timed in July and August in"
+  ],
+  [
+   43.9,
+   44.892,
+   "some guides."
+  ],
+  [
+   45.442,
+   48.916,
+   "The constraint in India is not Wikipedia."
+  ],
+  [
+   48.916,
+   52.886,
+   "It is finding a nursery that sells true"
+  ],
+  [
+   52.886,
+   53.382,
+   "plants."
+  ],
+  [
+   53.882,
+   55.466,
+   "Build a mix,"
+  ],
+  [
+   55.466,
+   59.162,
+   "not a monoculture of one pretty name."
+  ],
+  [
+   59.712,
+   60.24,
+   "Early,"
+  ],
+  [
+   60.24,
+   60.768,
+   "mid,"
+  ],
+  [
+   60.768,
+   64.464,
+   "and late types spread harvest and pollination."
+  ],
+  [
+   65.014,
+   69.238,
+   "Golden Yellow and Pale Yellow are the old"
+  ],
+  [
+   69.238,
+   70.294,
+   "Punjab pair."
+  ],
+  [
+   70.844,
+   75.068,
+   "Improved Golden Yellow and Thames Pride show up"
+  ],
+  [
+   75.068,
+   76.652,
+   "on early lists."
+  ],
+  [
+   77.202,
+   79.842,
+   "Mid lists include Fire Ball,"
+  ],
+  [
+   79.842,
+   80.37,
+   "Safeda,"
+  ],
+  [
+   80.37,
+   80.898,
+   "Matchless,"
+  ],
+  [
+   80.898,
+   81.954,
+   "Large Agra."
+  ],
+  [
+   82.504,
+   83.032,
+   "Late:"
+  ],
+  [
+   83.032,
+   85.144,
+   "California Advance and Tanaka."
+  ],
+  [
+   85.144,
+   89.368,
+   "Ask P A U or your university which"
+  ],
+  [
+   89.368,
+   92.008,
+   "are still in their plots."
+  ],
+  [
+   92.508,
+   96.232,
+   "How do you buy plants without getting cheated?"
+  ],
+  [
+   96.782,
+   99.109,
+   "Go to a university farm,"
+  ],
+  [
+   99.109,
+   100.971,
+   "a registered horticulture nursery,"
+  ],
+  [
+   100.971,
+   103.764,
+   "or a K V K demo."
+  ],
+  [
+   104.314,
+   106.176,
+   "Ask for the rootstock,"
+  ],
+  [
+   106.176,
+   107.572,
+   "the scion name,"
+  ],
+  [
+   107.572,
+   109.434,
+   "and the graft date."
+  ],
+  [
+   109.984,
+   112.777,
+   "Reject plants with a buried union,"
+  ],
+  [
+   112.777,
+   113.242,
+   "scale,"
+  ],
+  [
+   113.242,
+   115.104,
+   "or a bent graft."
+  ],
+  [
+   115.654,
+   119.378,
+   "Expect on the order of ninety-five plants per"
+  ],
+  [
+   119.378,
+   122.636,
+   "acre at six to seven metre spacing."
+  ],
+  [
+   123.186,
+   125.048,
+   "Price the plant last."
+  ],
+  [
+   125.048,
+   128.772,
+   "A cheap off-type is the most expensive tree"
+  ],
+  [
+   128.772,
+   130.634,
+   "you will ever own."
+  ],
+  [
+   131.134,
+   135.169,
+   "Pollination is easy to skip on paper and"
+  ],
+  [
+   135.169,
+   137.186,
+   "expensive in year five."
+  ],
+  [
+   137.736,
+   140.258,
+   "Some cultivars are self fertile."
+  ],
+  [
+   140.258,
+   142.779,
+   "Some are only weakly so."
+  ],
+  [
+   143.329,
+   144.338,
+   "Extension advice:"
+  ],
+  [
+   144.338,
+   148.373,
+   "mix California Advance with Golden Yellow and Pale"
+  ],
+  [
+   148.373,
+   148.877,
+   "Yellow."
+  ],
+  [
+   149.427,
+   151.949,
+   "Keep bees if you can."
+  ],
+  [
+   151.949,
+   155.479,
+   "Do not spray insecticides in open bloom."
+  ],
+  [
+   156.029,
+   159.055,
+   "Wind and insects both move pollen,"
+  ],
+  [
+   159.055,
+   163.09,
+   "but a solid block of one shy type"
+  ],
+  [
+   163.09,
+   164.099,
+   "still under-sets."
+  ],
+  [
+   164.649,
+   168.683,
+   "Design the mix on the map before the"
+  ],
+  [
+   168.683,
+   169.692,
+   "tractor arrives."
+  ],
+  [
+   170.192,
+   170.692,
+   "Grafting,"
+  ],
+  [
+   170.692,
+   174.69,
+   "at the level you need to brief a"
+  ],
+  [
+   174.69,
+   175.19,
+   "nursery."
+  ],
+  [
+   175.74,
+   179.238,
+   "A rootstock seedling or a strong plant."
+  ],
+  [
+   179.238,
+   181.237,
+   "A named scion stick."
+  ],
+  [
+   181.237,
+   183.237,
+   "A union that heals."
+  ],
+  [
+   183.787,
+   187.285,
+   "Inarching in July-August appears in Indian notes."
+  ],
+  [
+   187.285,
+   191.283,
+   "Budding and grafting are preferred for early\nbearing."
+  ],
+  [
+   191.833,
+   192.833,
+   "Air-layers root,"
+  ],
+  [
+   192.833,
+   196.331,
+   "but many growers still see more failures."
+  ],
+  [
+   196.881,
+   200.88,
+   "You do not need to be the grafter."
+  ],
+  [
+   200.88,
+   203.379,
+   "You need to inspect unions."
+  ],
+  [
+   203.929,
+   207.927,
+   "A tape mummy with no callus is a"
+  ],
+  [
+   207.927,
+   208.427,
+   "stick,"
+  ],
+  [
+   208.427,
+   209.926,
+   "not a tree."
+  ],
+  [
+   210.426,
+   210.859,
+   "Tanaka,"
+  ],
+  [
+   210.859,
+   212.591,
+   "in that Punjab comparison,"
+  ],
+  [
+   212.591,
+   216.055,
+   "carried more fruit weight and a better eating"
+  ],
+  [
+   216.055,
+   216.488,
+   "score."
+  ],
+  [
+   217.038,
+   220.502,
+   "That does not mean Tanaka is legal magic"
+  ],
+  [
+   220.502,
+   221.801,
+   "in your tehsil."
+  ],
+  [
+   222.351,
+   225.815,
+   "It means you should ask whether anyone nearby"
+  ],
+  [
+   225.815,
+   229.278,
+   "has Tanaka fruit you can taste in April."
+  ],
+  [
+   229.828,
+   231.127,
+   "If they do,"
+  ],
+  [
+   231.127,
+   233.292,
+   "prefer it in the mix."
+  ],
+  [
+   233.842,
+   235.574,
+   "If they do not,"
+  ],
+  [
+   235.574,
+   239.038,
+   "Golden Yellow plus Pale Yellow is still a"
+  ],
+  [
+   239.038,
+   239.904,
+   "documented pair."
+  ],
+  [
+   240.454,
+   243.918,
+   "Never plant a name you have not seen"
+  ],
+  [
+   243.918,
+   244.784,
+   "as fruit."
+  ],
+  [
+   245.284,
+   248.109,
+   "On the same ninety-six station grid,"
+  ],
+  [
+   248.109,
+   249.05,
+   "mix types."
+  ],
+  [
+   249.6,
+   253.366,
+   "Do not put all Golden Yellow on the"
+  ],
+  [
+   253.366,
+   254.779,
+   "west hot edge."
+  ],
+  [
+   255.329,
+   257.682,
+   "Scatter pollinizers every few trees,"
+  ],
+  [
+   257.682,
+   259.095,
+   "like a chessboard,"
+  ],
+  [
+   259.095,
+   260.978,
+   "not a ghetto block."
+  ],
+  [
+   261.528,
+   265.294,
+   "Mark them with paint on the stake the"
+  ],
+  [
+   265.294,
+   266.706,
+   "day you plant."
+  ],
+  [
+   266.706,
+   268.119,
+   "You will forget."
+  ],
+  [
+   268.669,
+   272.435,
+   "A map in a notebook beats memory in"
+  ],
+  [
+   272.435,
+   273.376,
+   "year six."
+  ],
+  [
+   273.926,
+   276.751,
+   "When you replant a dead station,"
+  ],
+  [
+   276.751,
+   278.634,
+   "write the name again."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "lag/lag-ch05-plants.wav",
+   "volume": 1.0
+  }
+ }
+}

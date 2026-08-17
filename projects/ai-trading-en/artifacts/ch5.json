@@ -1,0 +1,865 @@
+{
+  "cuts": [
+    {
+      "id": "s50_divider",
+      "type": "ait_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 10.777,
+      "props": {
+        "n": 5,
+        "title": "Build Your Own",
+        "sub": "From a first strategy to an AI agent",
+        "color": "ai",
+        "parts": 6,
+        "dur": 11.277
+      }
+    },
+    {
+      "id": "s51_arch",
+      "type": "ait_pipeline",
+      "in_seconds": 11.277,
+      "out_seconds": 46.917,
+      "props": {
+        "kicker": "THE BLUEPRINT",
+        "title": "Your bot is the six boxes, in code",
+        "stages": [
+          {
+            "label": "Data",
+            "sub": "yfinance / broker",
+            "c": "data"
+          },
+          {
+            "label": "Features",
+            "sub": "pandas-ta",
+            "c": "data"
+          },
+          {
+            "label": "Model",
+            "sub": "a rule, then ML",
+            "c": "ai"
+          },
+          {
+            "label": "Signal",
+            "sub": "buy / sell / hold",
+            "c": "edge"
+          },
+          {
+            "label": "Risk",
+            "sub": "position sizing",
+            "c": "risk"
+          },
+          {
+            "label": "Order",
+            "sub": "broker API",
+            "c": "money"
+          }
+        ],
+        "caption": "Same six boxes as part one \u2014 now each becomes a small, testable function.",
+        "dur": 36.14
+      }
+    },
+    {
+      "id": "s52_data",
+      "type": "ait_code",
+      "in_seconds": 47.417,
+      "out_seconds": 90.014,
+      "props": {
+        "kicker": "BOX 1 \u00b7 DATA",
+        "title": "Get clean price data \u2014 for free",
+        "file": "data.py",
+        "color": "data",
+        "lines": [
+          "import yfinance as yf",
+          "",
+          "def get_data(symbol, period='5y'):",
+          "    df = yf.download(symbol, period=period)",
+          "    df = df.dropna()                 # remove gaps",
+          "    return df",
+          "",
+          "# Indian stocks use the .NS suffix on NSE",
+          "df = get_data('RELIANCE.NS')",
+          "print(df.shape, df.index[-1])"
+        ],
+        "side": {
+          "title": "The rules of data",
+          "points": [
+            "Garbage in, garbage out \u2014 clean it first",
+            "Use enough history: 3\u20135 years minimum",
+            "Watch for splits and survivorship bias",
+            "For live trading, use your broker's feed"
+          ]
+        },
+        "caption": "yfinance is free and perfect for learning; upgrade to your broker's data later.",
+        "dur": 43.097
+      }
+    },
+    {
+      "id": "s52b_clean",
+      "type": "ait_code",
+      "in_seconds": 90.514,
+      "out_seconds": 136.395,
+      "props": {
+        "kicker": "BOX 1, DONE RIGHT",
+        "title": "Clean data before you trust it",
+        "file": "clean.py",
+        "color": "data",
+        "lines": [
+          "def clean(df):",
+          "    df = df[~df.index.duplicated()]   # drop dupes",
+          "    df = df.sort_index()              # time order",
+          "    df = df.ffill(limit=2)            # small gaps only",
+          "    df = df.dropna()                  # then drop rest",
+          "    # sanity: no zero or negative prices",
+          "    df = df[df['Close'] > 0]",
+          "    return df"
+        ],
+        "side": {
+          "title": "Cleaning checklist",
+          "points": [
+            "Remove duplicate timestamps",
+            "Sort strictly by time",
+            "Fill only tiny gaps \u2014 never invent data",
+            "Reject impossible prices (0 or negative)"
+          ]
+        },
+        "caption": "Ninety percent of 'my bot is broken' turns out to be dirty data.",
+        "dur": 46.381
+      }
+    },
+    {
+      "id": "s53_features",
+      "type": "ait_code",
+      "in_seconds": 136.895,
+      "out_seconds": 179.621,
+      "props": {
+        "kicker": "BOX 2 \u00b7 FEATURES",
+        "title": "Turn raw prices into signals",
+        "file": "features.py",
+        "color": "data",
+        "lines": [
+          "import pandas_ta as ta",
+          "",
+          "def add_features(df):",
+          "    df['rsi'] = ta.rsi(df['Close'], length=14)",
+          "    df['sma_fast'] = ta.sma(df['Close'], 20)",
+          "    df['sma_slow'] = ta.sma(df['Close'], 50)",
+          "    df['ret'] = df['Close'].pct_change()",
+          "    df['vol'] = df['ret'].rolling(20).std()",
+          "    return df.dropna()"
+        ],
+        "side": {
+          "title": "What a feature is",
+          "points": [
+            "A number that describes the market now",
+            "RSI: is it over-bought or over-sold?",
+            "Two averages: is the trend up or down?",
+            "Volatility: how wild is it right now?"
+          ]
+        },
+        "caption": "Features are how the market speaks to your model \u2014 choose them thoughtfully.",
+        "dur": 43.226
+      }
+    },
+    {
+      "id": "s53b_lookahead",
+      "type": "ait_code",
+      "in_seconds": 180.121,
+      "out_seconds": 229.836,
+      "props": {
+        "kicker": "THE DEADLIEST BUG",
+        "title": "Look-ahead bias: using the future by accident",
+        "file": "danger.py",
+        "color": "risk",
+        "lines": [
+          "# WRONG \u2014 this peeks at the future:",
+          "df['sig'] = (df['Close'] > df['Close'].mean())",
+          "#            ^ mean() uses ALL rows, incl. tomorrow",
+          "",
+          "# RIGHT \u2014 only use data available at that moment:",
+          "roll = df['Close'].rolling(50).mean()",
+          "df['sig'] = df['Close'] > roll   # past 50 days only",
+          "",
+          "# rule: at row t, touch nothing after row t"
+        ],
+        "side": {
+          "title": "Why it's deadly",
+          "points": [
+            "It makes any backtest look brilliant",
+            "It passes tests, then fails live",
+            "Rolling/expanding windows fix it",
+            "Suspiciously perfect? Check for this first"
+          ]
+        },
+        "caption": "If a backtest looks too good, you almost certainly peeked at the future.",
+        "dur": 50.215
+      }
+    },
+    {
+      "id": "s54_signal",
+      "type": "ait_code",
+      "in_seconds": 230.336,
+      "out_seconds": 274.852,
+      "props": {
+        "kicker": "BOX 3 & 4 \u00b7 MODEL \u2192 SIGNAL",
+        "title": "The model, as a plain rule first",
+        "file": "strategy.py",
+        "color": "edge",
+        "lines": [
+          "def signal(df):",
+          "    # start transparent: a moving-average crossover",
+          "    long = df['sma_fast'] > df['sma_slow']",
+          "    # +1 = enter long, -1 = exit, 0 = hold",
+          "    return long.astype(int).diff().fillna(0)",
+          "",
+          "df['signal'] = signal(df)",
+          "print(df['signal'].value_counts())"
+        ],
+        "side": {
+          "title": "Why start with a rule",
+          "points": [
+            "You can read and explain every trade",
+            "It's a fair baseline to beat later",
+            "SEBI calls this a white-box strategy",
+            "Most 'AI bots' still end in a line like this"
+          ]
+        },
+        "caption": "Get a transparent rule working end-to-end before you add any AI.",
+        "dur": 45.016
+      }
+    },
+    {
+      "id": "s55_backtest",
+      "type": "ait_code",
+      "in_seconds": 275.352,
+      "out_seconds": 318.039,
+      "props": {
+        "kicker": "BOX 5 \u00b7 THE BACKTEST",
+        "title": "Test it on history \u2014 honestly",
+        "file": "backtest.py",
+        "color": "money",
+        "lines": [
+          "from backtesting import Backtest, Strategy",
+          "",
+          "class Cross(Strategy):",
+          "    def next(self):",
+          "        if self.data.signal[-1] == 1:",
+          "            self.buy()",
+          "        elif self.data.signal[-1] == -1:",
+          "            self.position.close()",
+          "",
+          "bt = Backtest(df, Cross, commission=0.002)",
+          "print(bt.run())   # returns, Sharpe, drawdown"
+        ],
+        "side": {
+          "title": "Backtest honestly",
+          "points": [
+            "Always include commission + slippage",
+            "No peeking at future bars \u2014 ever",
+            "A perfect equity curve is a red flag",
+            "It's a hypothesis, not a guarantee"
+          ]
+        },
+        "caption": "Set commission realistically \u2014 a costless backtest is a fairy tale.",
+        "dur": 43.187
+      }
+    },
+    {
+      "id": "s55b_read",
+      "type": "ait_code",
+      "in_seconds": 318.539,
+      "out_seconds": 364.343,
+      "props": {
+        "kicker": "READING THE REPORT",
+        "title": "What the backtest is actually telling you",
+        "file": "report.py",
+        "color": "money",
+        "lines": [
+          "stats = bt.run()",
+          "print(stats['Return [%]'])        # total return",
+          "print(stats['Sharpe Ratio'])      # return per risk",
+          "print(stats['Max. Drawdown [%]']) # worst fall",
+          "print(stats['# Trades'])          # sample size",
+          "print(stats['Win Rate [%]'])      # % winners",
+          "",
+          "# few trades = luck. Thousands = costs matter."
+        ],
+        "side": {
+          "title": "Read it like a pro",
+          "points": [
+            "Ignore return; read risk first",
+            "Under ~30 trades? It's noise, not signal",
+            "High win rate can still lose to big losers",
+            "One number never tells the story"
+          ]
+        },
+        "caption": "A beginner reads the return. A professional reads the drawdown and the trade count.",
+        "dur": 46.304
+      }
+    },
+    {
+      "id": "s56_overfit_trap",
+      "type": "ait_callout",
+      "in_seconds": 364.843,
+      "out_seconds": 406.438,
+      "props": {
+        "kicker": "THE TRAP, AGAIN",
+        "color": "risk",
+        "text": "Tuning until the backtest looks perfect is how you guarantee it fails live.",
+        "sub": "Every knob you twist to fit the past is a promise the future won't keep.",
+        "dur": 42.095
+      }
+    },
+    {
+      "id": "s57_walkforward",
+      "type": "ait_loop",
+      "in_seconds": 406.938,
+      "out_seconds": 450.1,
+      "props": {
+        "kicker": "THE ANTIDOTE",
+        "title": "Walk-forward: prove it on data it hasn't seen",
+        "steps": [
+          {
+            "label": "Train window",
+            "sub": "fit on months 1\u201312",
+            "c": "data"
+          },
+          {
+            "label": "Test window",
+            "sub": "check months 13\u201315",
+            "c": "edge"
+          },
+          {
+            "label": "Record result",
+            "sub": "unseen performance",
+            "c": "ai"
+          },
+          {
+            "label": "Roll forward",
+            "sub": "shift the window",
+            "c": "money"
+          },
+          {
+            "label": "Repeat",
+            "sub": "across all history",
+            "c": "money"
+          },
+          {
+            "label": "Judge honestly",
+            "sub": "most ideas die here",
+            "c": "risk"
+          }
+        ],
+        "caption": "If it survives many unseen windows, you may \u2014 may \u2014 have something real.",
+        "dur": 43.662
+      }
+    },
+    {
+      "id": "s57b_wfcode",
+      "type": "ait_code",
+      "in_seconds": 450.6,
+      "out_seconds": 498.973,
+      "props": {
+        "kicker": "WALK-FORWARD IN CODE",
+        "title": "The honesty test, as a loop",
+        "file": "walkforward.py",
+        "color": "ai",
+        "lines": [
+          "results = []",
+          "for start in range(0, len(df) - WIN - TEST, TEST):",
+          "    train = df[start : start + WIN]",
+          "    test  = df[start + WIN : start + WIN + TEST]",
+          "    params = optimise(train)      # fit on train",
+          "    r = run(test, params)         # judge on UNSEEN",
+          "    results.append(r)",
+          "",
+          "print('median out-of-sample:', median(results))"
+        ],
+        "side": {
+          "title": "The one honest number",
+          "points": [
+            "Optimise on train, score on test \u2014 never mix",
+            "Roll the window across all history",
+            "The median test result is your reality",
+            "In-sample numbers are for the bin"
+          ]
+        },
+        "caption": "This tiny loop is the difference between fooling yourself and knowing the truth.",
+        "dur": 48.873
+      }
+    },
+    {
+      "id": "s58_metrics",
+      "type": "ait_stat",
+      "in_seconds": 499.473,
+      "out_seconds": 543.309,
+      "props": {
+        "kicker": "WHAT \u201cGOOD\u201d LOOKS LIKE",
+        "title": "Judge a strategy by these, not by returns",
+        "color": "money",
+        "stats": [
+          {
+            "value": 1.5,
+            "prefix": "~",
+            "decimals": 1,
+            "label": "a realistic, durable Sharpe ratio",
+            "src": "1 to 2 is genuinely good",
+            "c": "money"
+          },
+          {
+            "value": 20,
+            "prefix": "< ",
+            "suffix": "%",
+            "label": "max drawdown you can stomach",
+            "src": "size positions for the worst case",
+            "c": "risk"
+          },
+          {
+            "value": 1.5,
+            "prefix": "> ",
+            "decimals": 1,
+            "label": "profit factor: gains over losses",
+            "src": "above 1.5 is meaningful",
+            "c": "edge"
+          }
+        ],
+        "note": "Anyone quoting a Sharpe of 8 is overfit, lying, or high-frequency \u2014 not you.",
+        "dur": 44.336
+      }
+    },
+    {
+      "id": "s58b_robust",
+      "type": "ait_cards",
+      "in_seconds": 543.809,
+      "out_seconds": 591.272,
+      "props": {
+        "kicker": "STRESS-TEST IT",
+        "title": "Four checks before you trust a strategy",
+        "color": "money",
+        "cards": [
+          {
+            "emoji": "\ud83c\udf9a\ufe0f",
+            "title": "Parameter stability",
+            "body": "Values near your best should work almost as well. A lone spike is luck.",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83c\udfb2",
+            "title": "Trade shuffling",
+            "body": "Reorder the trades randomly; if the worst case ruins you, size smaller.",
+            "c": "risk"
+          },
+          {
+            "emoji": "\ud83d\udcc6",
+            "title": "Different periods",
+            "body": "Test bull, bear, and sideways markets separately.",
+            "c": "edge"
+          },
+          {
+            "emoji": "\ud83d\udcb8",
+            "title": "Double the costs",
+            "body": "If it dies when costs rise a little, the edge was never real.",
+            "c": "money"
+          }
+        ],
+        "dur": 47.963
+      }
+    },
+    {
+      "id": "s59_risk",
+      "type": "ait_code",
+      "in_seconds": 591.772,
+      "out_seconds": 636.378,
+      "props": {
+        "kicker": "BOX 6 \u00b7 RISK",
+        "title": "The box that keeps you alive",
+        "file": "risk.py",
+        "color": "risk",
+        "lines": [
+          "def position_size(capital, price, stop_pct):",
+          "    # risk only 1% of capital per trade",
+          "    risk_rupees = capital * 0.01",
+          "    risk_per_share = price * stop_pct",
+          "    qty = risk_rupees / risk_per_share",
+          "    return int(qty)",
+          "",
+          "# \u20b95,00,000 capital, \u20b92,500 price, 3% stop",
+          "print(position_size(500000, 2500, 0.03))  # -> 66"
+        ],
+        "side": {
+          "title": "Why this box wins",
+          "points": [
+            "Caps the damage of any single trade",
+            "Turns a stop-loss into a share count",
+            "Survival first \u2014 returns are secondary",
+            "This is what pros obsess over"
+          ]
+        },
+        "caption": "You can be wrong most of the time and still win \u2014 if this box is right.",
+        "dur": 45.106
+      }
+    },
+    {
+      "id": "s5a_execution",
+      "type": "ait_code",
+      "in_seconds": 636.878,
+      "out_seconds": 681.055,
+      "props": {
+        "kicker": "GOING LIVE \u00b7 CAREFULLY",
+        "title": "The order box \u2014 paper first, always",
+        "file": "execute.py",
+        "color": "money",
+        "lines": [
+          "# same code path for paper AND live \u2014",
+          "# only the credentials change",
+          "def place(kite, symbol, qty, side):",
+          "    return kite.place_order(",
+          "        tradingsymbol=symbol,",
+          "        transaction_type=side,   # BUY / SELL",
+          "        quantity=qty,",
+          "        product='CNC', order_type='MARKET')",
+          "",
+          "# run for WEEKS on paper before this touches money"
+        ],
+        "side": {
+          "title": "The going-live ladder",
+          "points": [
+            "1 \u2014 Backtest passes walk-forward",
+            "2 \u2014 Paper trade for weeks",
+            "3 \u2014 Go live with tiny size",
+            "4 \u2014 Scale only what survives"
+          ]
+        },
+        "caption": "The jump from paper to live is where discipline, not code, decides your fate.",
+        "dur": 44.677
+      }
+    },
+    {
+      "id": "s5a2_monitor",
+      "type": "ait_code",
+      "in_seconds": 681.555,
+      "out_seconds": 729.015,
+      "props": {
+        "kicker": "KEEPING IT ALIVE",
+        "title": "A live bot needs a babysitter",
+        "file": "run_live.py",
+        "color": "data",
+        "lines": [
+          "import schedule, logging",
+          "logging.basicConfig(filename='bot.log', level=20)",
+          "",
+          "def tick():",
+          "    df = get_live_data()",
+          "    sig = signal(add_features(df))",
+          "    if sig.iloc[-1] != 0:",
+          "        place_order(sig.iloc[-1])",
+          "    logging.info(f'checked {df.index[-1]}')",
+          "",
+          "schedule.every().day.at('09:20').do(tick)"
+        ],
+        "side": {
+          "title": "Non-negotiables for live",
+          "points": [
+            "Log every decision \u2014 you'll need the trail",
+            "A kill-switch you can hit instantly",
+            "Alerts when it errors or loses too much",
+            "Handle a dropped connection gracefully"
+          ]
+        },
+        "caption": "A live strategy that no one is watching is an accident waiting to happen.",
+        "dur": 47.96
+      }
+    },
+    {
+      "id": "s5b_ml",
+      "type": "ait_code",
+      "in_seconds": 729.515,
+      "out_seconds": 775.101,
+      "props": {
+        "kicker": "NOW ADD THE AI",
+        "title": "Swap the rule for a machine-learning model",
+        "file": "ml_model.py",
+        "color": "ai",
+        "lines": [
+          "from xgboost import XGBClassifier",
+          "",
+          "feats = ['rsi', 'sma_fast', 'sma_slow', 'vol']",
+          "# target: did price rise over the next 5 days?",
+          "y = (df['Close'].shift(-5) > df['Close']).astype(int)",
+          "",
+          "model = XGBClassifier(max_depth=3)   # keep it simple",
+          "model.fit(df[feats][:-5], y[:-5])",
+          "df['ml_signal'] = model.predict(df[feats])"
+        ],
+        "side": {
+          "title": "The AI upgrade",
+          "points": [
+            "The model now sets the rule, from data",
+            "Same six boxes \u2014 only box 3 changed",
+            "Shallow models beat deep ones here",
+            "More power = more ways to overfit"
+          ]
+        },
+        "caption": "AI doesn't replace the pipeline \u2014 it just makes the model box smarter, and riskier.",
+        "dur": 46.086
+      }
+    },
+    {
+      "id": "s5b2_leakage",
+      "type": "ait_code",
+      "in_seconds": 775.601,
+      "out_seconds": 823.326,
+      "props": {
+        "kicker": "THE ML TRAP",
+        "title": "How machine learning fools you",
+        "file": "validate_ml.py",
+        "color": "risk",
+        "lines": [
+          "# WRONG \u2014 shuffling time series leaks the future",
+          "# train_test_split(X, y, shuffle=True)   # never!",
+          "",
+          "# RIGHT \u2014 split by TIME, train on the past only",
+          "cut = int(len(df) * 0.7)",
+          "X_tr, X_te = X[:cut], X[cut:]",
+          "y_tr, y_te = y[:cut], y[cut:]",
+          "model.fit(X_tr, y_tr)",
+          "print('honest accuracy:', model.score(X_te, y_te))"
+        ],
+        "side": {
+          "title": "ML-specific dangers",
+          "points": [
+            "Never shuffle a time series when splitting",
+            "Scale features using train stats only",
+            "55% accuracy can be great; 99% is a bug",
+            "Predicting price is hard; predicting cost isn't"
+          ]
+        },
+        "caption": "Most ML trading tutorials leak the future. Split by time, or you're lying to yourself.",
+        "dur": 48.225
+      }
+    },
+    {
+      "id": "s5b3_sentiment",
+      "type": "ait_code",
+      "in_seconds": 823.826,
+      "out_seconds": 871.278,
+      "props": {
+        "kicker": "LLMs, PRACTICALLY",
+        "title": "Use an LLM to read the news",
+        "file": "sentiment.py",
+        "color": "ai",
+        "lines": [
+          "# ask an LLM to score a headline, -1 to +1",
+          "prompt = f'''Rate the market sentiment of this",
+          "headline from -1 (very bearish) to +1 (very",
+          "bullish). Reply with only a number.",
+          "Headline: {headline}'''",
+          "",
+          "score = float(llm(prompt).strip())",
+          "df.loc[date, 'news_score'] = score",
+          "# now news_score is just another feature"
+        ],
+        "side": {
+          "title": "The realistic LLM job",
+          "points": [
+            "Great at reading tone at scale",
+            "Feed the score in as one more feature",
+            "Watch for look-ahead: use the publish time",
+            "It's an analyst, not an oracle"
+          ]
+        },
+        "caption": "The honest LLM use isn't 'predict the price' \u2014 it's 'read 10,000 headlines for me'.",
+        "dur": 47.952
+      }
+    },
+    {
+      "id": "s5c_agents",
+      "type": "ait_orbit",
+      "in_seconds": 871.778,
+      "out_seconds": 919.085,
+      "props": {
+        "kicker": "THE FRONTIER \u00b7 AGENTS",
+        "title": "Where LLM agents fit \u2014 honestly",
+        "hub": {
+          "emoji": "\ud83e\udde0",
+          "label": "Agent systems",
+          "c": "ai"
+        },
+        "items": [
+          {
+            "emoji": "\ud83d\udd2c",
+            "label": "FinRL",
+            "sub": "reinforcement learning",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83d\udcac",
+            "label": "FinGPT",
+            "sub": "finance-tuned LLM",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83d\udde3\ufe0f",
+            "label": "TradingAgents",
+            "sub": "a team of LLMs debating",
+            "c": "edge"
+          },
+          {
+            "emoji": "\ud83d\udcf0",
+            "label": "LLM sentiment",
+            "sub": "read news at scale",
+            "c": "ai"
+          },
+          {
+            "emoji": "\u26a0\ufe0f",
+            "label": "Reality",
+            "sub": "research-grade, not ATMs",
+            "c": "risk"
+          }
+        ],
+        "dur": 47.807
+      }
+    },
+    {
+      "id": "s5e_portfolio",
+      "type": "ait_cards",
+      "in_seconds": 919.585,
+      "out_seconds": 969.551,
+      "props": {
+        "kicker": "DON'T BET ON ONE HORSE",
+        "title": "Run a portfolio of strategies",
+        "color": "money",
+        "cards": [
+          {
+            "emoji": "\ud83c\udfaf",
+            "title": "One bot is fragile",
+            "body": "When its single edge fades, your whole account fades with it.",
+            "c": "risk"
+          },
+          {
+            "emoji": "\ud83e\uddfa",
+            "title": "Several uncorrelated bots",
+            "body": "When one struggles, another may thrive \u2014 smoother overall.",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83d\udd00",
+            "title": "Different ideas, not copies",
+            "body": "Momentum, mean-reversion, and trend behave differently.",
+            "c": "data"
+          },
+          {
+            "emoji": "\u2696\ufe0f",
+            "title": "Allocate by conviction",
+            "body": "More capital to the proven ones; keep the rest small.",
+            "c": "edge"
+          }
+        ],
+        "dur": 50.466
+      }
+    },
+    {
+      "id": "s5f_retire",
+      "type": "ait_callout",
+      "in_seconds": 970.051,
+      "out_seconds": 1015.249,
+      "props": {
+        "kicker": "KNOW WHEN TO STOP",
+        "color": "risk",
+        "text": "Every strategy dies. The skill is retiring it before it takes your capital with it.",
+        "sub": "Decide the shutdown rule in advance, when you're calm \u2014 not mid-drawdown.",
+        "dur": 45.698
+      }
+    },
+    {
+      "id": "s5c2_project",
+      "type": "ait_list",
+      "in_seconds": 1015.749,
+      "out_seconds": 1067.93,
+      "props": {
+        "kicker": "YOUR FIRST REAL PROJECT",
+        "title": "Build exactly this, this month",
+        "tone": "ok",
+        "color": "money",
+        "items": [
+          {
+            "h": "Pick 20 large, liquid stocks",
+            "sub": "Nifty names. Liquid enough that slippage stays small."
+          },
+          {
+            "h": "Code one white-box rule you understand",
+            "sub": "A moving-average crossover, or the momentum idea from part one."
+          },
+          {
+            "h": "Backtest with realistic costs, then walk-forward",
+            "sub": "Judge only the out-of-sample result. Expect to be humbled."
+          },
+          {
+            "h": "Add 1% risk sizing and a hard stop-loss",
+            "sub": "Survival first. The risk box is not optional."
+          },
+          {
+            "h": "Paper trade it for a month and journal daily",
+            "sub": "Then, and only then, discuss real money with yourself."
+          }
+        ],
+        "caption": "Finish this one project and you'll be ahead of 95% of people who 'do AI trading'.",
+        "dur": 52.681
+      }
+    },
+    {
+      "id": "s5c3_pitfalls",
+      "type": "ait_list",
+      "in_seconds": 1068.43,
+      "out_seconds": 1120.446,
+      "props": {
+        "kicker": "THE BUG CHECKLIST",
+        "title": "The mistakes that quietly kill bots",
+        "tone": "bad",
+        "color": "risk",
+        "items": [
+          {
+            "h": "Look-ahead bias \u2014 using future data",
+            "sub": "The number one cause of fake, beautiful backtests."
+          },
+          {
+            "h": "Ignoring costs and slippage",
+            "sub": "The number two cause. A costless test is fiction."
+          },
+          {
+            "h": "Overfitting by over-tuning",
+            "sub": "Every extra knob is another way to memorise noise."
+          },
+          {
+            "h": "Too few trades to mean anything",
+            "sub": "Twenty trades is a story, not statistical evidence."
+          },
+          {
+            "h": "Skipping paper trading",
+            "sub": "Going live on faith is how accounts die young."
+          }
+        ],
+        "caption": "Print this list. Check every strategy against it before it ever sees a rupee.",
+        "dur": 52.516
+      }
+    },
+    {
+      "id": "s5d_micro",
+      "type": "ait_callout",
+      "in_seconds": 1120.946,
+      "out_seconds": 1153.171,
+      "props": {
+        "kicker": "PART FIVE IN ONE LINE",
+        "color": "ai",
+        "text": "Build the boring pipeline first. The AI is the last upgrade, not the plan.",
+        "sub": "A working simple bot beats a broken clever one, every single time.",
+        "dur": 32.725
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "ait/ch5.wav",
+      "volume": 1.0
+    }
+  }
+}

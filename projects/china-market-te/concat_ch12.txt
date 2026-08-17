@@ -1,0 +1,5 @@
+file '/Users/appuram/Developer/explainer-forge/projects/china-market-te/assets/synth_m1.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-market-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-market-te/assets/synth_m2.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-market-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-market-te/assets/synth_india.wav'

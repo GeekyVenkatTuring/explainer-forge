@@ -1,0 +1,771 @@
+{
+  "cuts": [
+    {
+      "id": "er_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 31.508,
+      "props": {
+        "title": "Today's Q1 Results",
+        "sub": "July 21, 2026 · ~45 companies reported Q1 · Analysis",
+        "kicker": "EARNINGS DAY · 21 JUL 2026",
+        "dur": 32.008
+      }
+    },
+    {
+      "id": "er_score",
+      "type": "sm_stats",
+      "in_seconds": 32.008,
+      "out_seconds": 81.008,
+      "props": {
+        "kicker": "TOP BEATS · NET PROFIT (YoY)",
+        "title": "Today's Top 3 — Net Profit",
+        "stats": [
+          {
+            "label": "Bajaj Auto",
+            "to": 3226,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+46% YoY*"
+          },
+          {
+            "label": "TVS Motor",
+            "to": 1058,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+65% · all-time Q1 high"
+          },
+          {
+            "label": "M&M Financial",
+            "to": 927,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+75% YoY"
+          }
+        ],
+        "note": "Autos and financials shone today. *But there's a reason behind Bajaj Auto's number — we'll get to it.",
+        "dur": 49.5
+      }
+    },
+    {
+      "id": "er_beats",
+      "type": "sm_iconcards",
+      "in_seconds": 81.508,
+      "out_seconds": 151.724,
+      "props": {
+        "kicker": "THE BIG BEATS",
+        "title": "Strong Results — 4 Companies",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏍️",
+            "k": "Bajaj Auto",
+            "v": "Profit ₹3,226 Cr (+46%), revenue ₹21,689 Cr (+65%) — but boosted by a consolidation change",
+            "chip": "*OPTICAL"
+          },
+          {
+            "emoji": "🛵",
+            "k": "TVS Motor",
+            "v": "Profit ₹1,058 Cr (+65%) — all-time Q1 high; EV sales +86%; stock rose +6%",
+            "chip": "BIG BEAT"
+          },
+          {
+            "emoji": "🚜",
+            "k": "M&M Financial",
+            "v": "Profit ₹927 Cr (+75%); disbursements ₹15,560 Cr (+21%); AUM ₹1.37 lakh Cr (+12%)",
+            "chip": "+75%"
+          },
+          {
+            "emoji": "🏦",
+            "k": "Bandhan Bank",
+            "v": "Profit ₹502 Cr (+35%) — lower provisions; NII ₹2,921 Cr (+6%); NIM 6.2%",
+            "chip": "+35%"
+          }
+        ],
+        "dur": 70.716
+      }
+    },
+    {
+      "id": "er_more",
+      "type": "sm_iconcards",
+      "in_seconds": 152.224,
+      "out_seconds": 209.312,
+      "props": {
+        "kicker": "MORE RESULTS",
+        "title": "More Company Results",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "📞",
+            "k": "Sagility",
+            "v": "Revenue ₹2,024 Cr (+27.6%); net profit +73.5% — healthcare BPO strong",
+            "chip": "+73.5%"
+          },
+          {
+            "emoji": "💻",
+            "k": "NIIT",
+            "v": "Revenue +14%; net profit +85% — skilling and training demand",
+            "chip": "+85%"
+          },
+          {
+            "emoji": "🛒",
+            "k": "IndiaMART",
+            "v": "Revenue ₹414 Cr (+11.4%); profit ₹172 Cr (+12%) — steady B2B growth",
+            "chip": "+12%"
+          },
+          {
+            "emoji": "🧪",
+            "k": "Anthem Biosciences",
+            "v": "Profit ₹120 Cr; revenue ₹418 Cr — pharma services / CDMO",
+            "chip": "NEW LISTING"
+          }
+        ],
+        "dur": 57.588
+      }
+    },
+    {
+      "id": "er_lesson",
+      "type": "sm_myths",
+      "in_seconds": 209.812,
+      "out_seconds": 280.27,
+      "props": {
+        "kicker": "READ BEYOND THE HEADLINE",
+        "title": "Numbers Aren't as Simple as They Look",
+        "pairs": [
+          {
+            "m": "Bajaj Auto revenue +65% — amazing growth!",
+            "f": "No — it's from a consolidation change; the numbers aren't comparable to last year. Organic growth is far lower"
+          },
+          {
+            "m": "JSW Infra profit fell 10% = a bad result",
+            "f": "Profit ₹347 Cr — but funds were diverted to future-growth capex, plus higher tax. It's not a demand problem"
+          },
+          {
+            "m": "Comparing QoQ (vs last quarter) is enough",
+            "f": "Seasonality makes QoQ misleading — YoY, versus the same quarter last year, is the right comparison"
+          }
+        ],
+        "dur": 70.958
+      }
+    },
+    {
+      "id": "er_take",
+      "type": "sm_checklist",
+      "in_seconds": 280.77,
+      "out_seconds": 329.144,
+      "props": {
+        "kicker": "HOW TO READ ANY RESULT",
+        "title": "How to Read Any Result",
+        "color": "#34D399",
+        "icon": "💡",
+        "items": [
+          "Four numbers: revenue, net profit, margin, management guidance",
+          "Always compare year-on-year (same quarter last year) — not QoQ",
+          "Check if the headline % hides a one-time or consolidation effect",
+          "A good result can still fall short of expectations — stock may drop",
+          "One quarter isn't the story — the trend and consistency matter"
+        ],
+        "dur": 48.874
+      }
+    },
+    {
+      "id": "er_recap",
+      "type": "sm_recap",
+      "in_seconds": 329.644,
+      "out_seconds": 395.774,
+      "props": {
+        "title": "Today's Results — At a Glance",
+        "items": [
+          "Strong: TVS (+65%), M&M Fin (+75%), Bandhan (+35%)",
+          "Bajaj Auto +46% — but a consolidation effect*",
+          "More: Sagility +73.5%, NIIT +85%, IndiaMART +12%",
+          "Fell: JSW Infra −10% (due to capex)",
+          "Lesson: read YoY, and the story behind the headline"
+        ],
+        "closer": "It's not the numbers — it's the story behind them that's the real analysis.",
+        "dur": 66.63
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.501,
+      "July twenty-first — a huge earnings day."
+    ],
+    [
+      3.501,
+      9.19,
+      "Around forty-five companies reported their first-quarter results."
+    ],
+    [
+      9.19,
+      11.991,
+      "Whose profit jumped, whose fell,"
+    ],
+    [
+      11.991,
+      15.579,
+      "and what's the story behind each number —"
+    ],
+    [
+      15.579,
+      17.679,
+      "let's break it all down."
+    ],
+    [
+      17.679,
+      18.992,
+      "One key point —"
+    ],
+    [
+      18.992,
+      24.506,
+      "all these results are compared with the same quarter last year,"
+    ],
+    [
+      24.506,
+      26.432,
+      "that is, year-on-year."
+    ],
+    [
+      26.432,
+      31.508,
+      "This is information analysis only — not investment advice."
+    ],
+    [
+      32.008,
+      35.025,
+      "First, today's top three profits."
+    ],
+    [
+      35.025,
+      37.219,
+      "Number one — Bajaj Auto."
+    ],
+    [
+      37.219,
+      42.612,
+      "Net profit of three thousand two hundred twenty-six crore —"
+    ],
+    [
+      42.612,
+      45.904,
+      "up forty-six percent from last year."
+    ],
+    [
+      45.904,
+      48.006,
+      "Number two — TVS Motor."
+    ],
+    [
+      48.006,
+      51.846,
+      "Profit of one thousand fifty-eight crore —"
+    ],
+    [
+      51.846,
+      53.857,
+      "up sixty-five percent."
+    ],
+    [
+      53.857,
+      59.525,
+      "This is the highest quarterly profit in the company's history."
+    ],
+    [
+      59.525,
+      63.821,
+      "Number three — Mahindra and Mahindra Financial."
+    ],
+    [
+      63.821,
+      67.752,
+      "Profit of nine hundred twenty-seven crore —"
+    ],
+    [
+      67.752,
+      70.404,
+      "surging seventy-five percent."
+    ],
+    [
+      70.404,
+      73.237,
+      "Autos and financials led today."
+    ],
+    [
+      73.237,
+      78.723,
+      "But there's an important reason behind Bajaj Auto's number —"
+    ],
+    [
+      78.723,
+      81.008,
+      "we'll look at it shortly."
+    ],
+    [
+      81.508,
+      84.898,
+      "Now the four strong results in detail."
+    ],
+    [
+      84.898,
+      86.594,
+      "First — Bajaj Auto."
+    ],
+    [
+      86.594,
+      91.501,
+      "Net profit three thousand two hundred twenty-six crore,"
+    ],
+    [
+      91.501,
+      96.765,
+      "revenue twenty-one thousand six hundred eighty-nine crore —"
+    ],
+    [
+      96.765,
+      98.727,
+      "up sixty-five percent."
+    ],
+    [
+      98.727,
+      103.367,
+      "But this big jump came from a consolidation change —"
+    ],
+    [
+      103.367,
+      104.973,
+      "more on that soon."
+    ],
+    [
+      104.973,
+      106.668,
+      "Second — TVS Motor."
+    ],
+    [
+      106.668,
+      110.058,
+      "Profit one thousand fifty-eight crore,"
+    ],
+    [
+      110.058,
+      113.984,
+      "up sixty-five percent — an all-time Q1 high."
+    ],
+    [
+      113.984,
+      118.177,
+      "Electric vehicle sales rose eighty-six percent."
+    ],
+    [
+      118.177,
+      122.46,
+      "After the results, the stock jumped six percent."
+    ],
+    [
+      122.46,
+      124.423,
+      "Third — M&M Financial."
+    ],
+    [
+      124.423,
+      127.902,
+      "Profit nine hundred twenty-seven crore,"
+    ],
+    [
+      127.902,
+      130.044,
+      "up seventy-five percent."
+    ],
+    [
+      130.044,
+      135.754,
+      "Disbursements rose twenty-one percent and assets twelve percent."
+    ],
+    [
+      135.754,
+      137.716,
+      "Fourth — Bandhan Bank."
+    ],
+    [
+      137.716,
+      142.624,
+      "Profit five hundred two crore, up thirty-five percent —"
+    ],
+    [
+      142.624,
+      147.263,
+      "driven by lower provisions and better asset quality."
+    ],
+    [
+      147.263,
+      151.724,
+      "Its net interest margin was six point two percent."
+    ],
+    [
+      152.224,
+      155.191,
+      "Many more companies reported too."
+    ],
+    [
+      155.191,
+      158.247,
+      "Let's look at four important ones."
+    ],
+    [
+      158.247,
+      162.113,
+      "First — Sagility, a healthcare BPO company."
+    ],
+    [
+      162.113,
+      165.619,
+      "Revenue two thousand twenty-four crore,"
+    ],
+    [
+      165.619,
+      168.406,
+      "up nearly twenty-eight percent."
+    ],
+    [
+      168.406,
+      172.452,
+      "Profit rose seventy-three point five percent."
+    ],
+    [
+      172.452,
+      173.711,
+      "Second — NIIT."
+    ],
+    [
+      173.711,
+      176.408,
+      "Revenue rose fourteen percent,"
+    ],
+    [
+      176.408,
+      179.824,
+      "but profit surged eighty-five percent,"
+    ],
+    [
+      179.824,
+      183.33,
+      "driven by skilling and training demand."
+    ],
+    [
+      183.33,
+      187.466,
+      "Third — IndiaMART, the B2B online marketplace."
+    ],
+    [
+      187.466,
+      190.702,
+      "Revenue four hundred fourteen crore,"
+    ],
+    [
+      190.702,
+      194.119,
+      "profit one hundred seventy-two crore —"
+    ],
+    [
+      194.119,
+      196.905,
+      "a steady twelve percent growth."
+    ],
+    [
+      196.905,
+      199.423,
+      "Fourth — Anthem Biosciences,"
+    ],
+    [
+      199.423,
+      203.199,
+      "a recently listed pharma services company."
+    ],
+    [
+      203.199,
+      206.076,
+      "Profit one hundred twenty crore,"
+    ],
+    [
+      206.076,
+      209.312,
+      "revenue four hundred eighteen crore."
+    ],
+    [
+      209.812,
+      213.18,
+      "Here's today's most important lesson —"
+    ],
+    [
+      213.18,
+      216.813,
+      "numbers are never as simple as they look."
+    ],
+    [
+      216.813,
+      221.954,
+      "First myth — Bajaj Auto's revenue rose sixty-five percent,"
+    ],
+    [
+      221.954,
+      223.372,
+      "so it's amazing."
+    ],
+    [
+      223.372,
+      223.638,
+      "No."
+    ],
+    [
+      223.638,
+      228.867,
+      "The company folded a foreign subsidiary into its accounts —"
+    ],
+    [
+      228.867,
+      230.905,
+      "a consolidation change."
+    ],
+    [
+      230.905,
+      235.957,
+      "So the numbers can't be compared directly with last year."
+    ],
+    [
+      235.957,
+      239.325,
+      "The real organic growth is much lower."
+    ],
+    [
+      239.325,
+      244.554,
+      "Second myth — JSW Infrastructure's profit fell ten percent,"
+    ],
+    [
+      244.554,
+      246.503,
+      "so it's a bad company."
+    ],
+    [
+      246.503,
+      246.769,
+      "No."
+    ],
+    [
+      246.769,
+      254.923,
+      "The profit fell because it diverted surplus cash to building new projects for future growth,"
+    ],
+    [
+      254.923,
+      256.518,
+      "and paid more tax."
+    ],
+    [
+      256.518,
+      261.747,
+      "This isn't a demand problem — it's a deliberate investment."
+    ],
+    [
+      261.747,
+      266.533,
+      "Third myth — comparing with last quarter, that is QoQ,"
+    ],
+    [
+      266.533,
+      267.419,
+      "is enough."
+    ],
+    [
+      267.419,
+      272.294,
+      "But most businesses have a seasonal effect — festivals,"
+    ],
+    [
+      272.294,
+      272.914,
+      "summer."
+    ],
+    [
+      272.914,
+      278.143,
+      "So comparing with the same quarter last year, year-on-year,"
+    ],
+    [
+      278.143,
+      280.27,
+      "is the correct analysis."
+    ],
+    [
+      280.77,
+      283.821,
+      "So how should you read any result?"
+    ],
+    [
+      283.821,
+      284.809,
+      "Five rules."
+    ],
+    [
+      284.809,
+      289.835,
+      "One — look at four numbers: revenue, net profit, margin,"
+    ],
+    [
+      289.835,
+      291.988,
+      "and management guidance."
+    ],
+    [
+      291.988,
+      296.745,
+      "Two — always compare with the same quarter last year,"
+    ],
+    [
+      296.745,
+      301.412,
+      "that is year-on-year, not with the previous quarter."
+    ],
+    [
+      301.412,
+      302.04,
+      "Three —"
+    ],
+    [
+      302.04,
+      309.848,
+      "check whether the headline percentage hides a one-time gain or a consolidation change —"
+    ],
+    [
+      309.848,
+      311.284,
+      "like Bajaj Auto."
+    ],
+    [
+      311.284,
+      311.823,
+      "Four —"
+    ],
+    [
+      311.823,
+      316.938,
+      "even a good result can fall short of market expectations,"
+    ],
+    [
+      316.938,
+      319.003,
+      "and the stock may drop."
+    ],
+    [
+      319.003,
+      322.682,
+      "Five — one quarter isn't the whole story."
+    ],
+    [
+      322.682,
+      329.144,
+      "It's the trend and consistency over several quarters that really matter."
+    ],
+    [
+      329.644,
+      332.326,
+      "Today's results, at a glance."
+    ],
+    [
+      332.326,
+      336.951,
+      "The strong ones — TVS Motor up sixty-five percent,"
+    ],
+    [
+      336.951,
+      340.188,
+      "M&M Financial seventy-five percent,"
+    ],
+    [
+      340.188,
+      343.24,
+      "Bandhan Bank thirty-five percent."
+    ],
+    [
+      343.24,
+      346.477,
+      "Bajaj Auto rose forty-six percent —"
+    ],
+    [
+      346.477,
+      350.269,
+      "but that was from a consolidation change."
+    ],
+    [
+      350.269,
+      355.726,
+      "More — Sagility seventy-three point five, NIIT eighty-five,"
+    ],
+    [
+      355.726,
+      358.038,
+      "IndiaMART twelve percent."
+    ],
+    [
+      358.038,
+      363.31,
+      "The one that fell — JSW Infrastructure, down ten percent,"
+    ],
+    [
+      363.31,
+      365.252,
+      "but because of capex."
+    ],
+    [
+      365.252,
+      368.767,
+      "The lesson — always look year-on-year,"
+    ],
+    [
+      368.767,
+      373.854,
+      "and read the real story behind the headline percentage."
+    ],
+    [
+      373.854,
+      375.889,
+      "It's not the numbers —"
+    ],
+    [
+      375.889,
+      380.791,
+      "it's the story behind them that is the real analysis."
+    ],
+    [
+      380.791,
+      385.6,
+      "This information is aggregated from public sources —"
+    ],
+    [
+      385.6,
+      389.392,
+      "for analysis only, not investment advice."
+    ],
+    [
+      389.392,
+      393.924,
+      "Please consult an expert before making decisions."
+    ],
+    [
+      393.924,
+      395.774,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/er21e.wav",
+      "volume": 1.0
+    }
+  }
+}

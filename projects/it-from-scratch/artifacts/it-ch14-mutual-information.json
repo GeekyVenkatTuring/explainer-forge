@@ -1,0 +1,301 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch14-mutual-information_mutualinfo",
+   "type": "it_mutualinfo",
+   "in_seconds": 0.0,
+   "out_seconds": 110.356,
+   "props": {
+    "dur": 110.856
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.785,
+   "Let's return to that shared middle block from"
+  ],
+  [
+   2.785,
+   5.571,
+   "the chain rule and give it the spotlight"
+  ],
+  [
+   5.571,
+   6.267,
+   "it deserves."
+  ],
+  [
+   6.899,
+   8.988,
+   "Here is the question it answers."
+  ],
+  [
+   8.988,
+   11.773,
+   "If I tell you the value of X,"
+  ],
+  [
+   11.773,
+   14.559,
+   "how much does that shrink your uncertainty about"
+  ],
+  [
+   14.559,
+   14.907,
+   "Y?"
+  ],
+  [
+   15.538,
+   16.583,
+   "Picture two circles."
+  ],
+  [
+   16.583,
+   19.368,
+   "The left circle is the entropy of X"
+  ],
+  [
+   19.368,
+   22.154,
+   "\u2014 the total uncertainty you have about it."
+  ],
+  [
+   22.154,
+   24.939,
+   "The right circle is the entropy of Y."
+  ],
+  [
+   25.571,
+   25.919,
+   "Now,"
+  ],
+  [
+   25.919,
+   28.704,
+   "if X and Y are related in any"
+  ],
+  [
+   28.704,
+   29.053,
+   "way,"
+  ],
+  [
+   29.053,
+   30.445,
+   "the two circles overlap."
+  ],
+  [
+   30.445,
+   33.231,
+   "And that overlap is the whole point of"
+  ],
+  [
+   33.231,
+   33.927,
+   "this beat."
+  ],
+  [
+   34.559,
+   37.344,
+   "It is called the mutual information between X"
+  ],
+  [
+   37.344,
+   40.129,
+   "and Y \u2014 the uncertainty the two variables"
+  ],
+  [
+   40.129,
+   40.478,
+   "share."
+  ],
+  [
+   41.109,
+   42.85,
+   "Put as plainly as possible:"
+  ],
+  [
+   42.85,
+   45.636,
+   "it is the number of bits you learn"
+  ],
+  [
+   45.636,
+   46.332,
+   "about X,"
+  ],
+  [
+   46.332,
+   47.028,
+   "for free,"
+  ],
+  [
+   47.028,
+   48.421,
+   "just by observing Y."
+  ],
+  [
+   49.053,
+   50.445,
+   "Written as an equation,"
+  ],
+  [
+   50.445,
+   53.231,
+   "the mutual information equals the entropy of X,"
+  ],
+  [
+   53.231,
+   56.016,
+   "minus the entropy of X once you already"
+  ],
+  [
+   56.016,
+   56.712,
+   "know Y."
+  ],
+  [
+   56.712,
+   58.453,
+   "It is your uncertainty before,"
+  ],
+  [
+   58.453,
+   59.846,
+   "minus your uncertainty after."
+  ],
+  [
+   59.846,
+   61.239,
+   "Whatever the observation removed,"
+  ],
+  [
+   61.239,
+   63.676,
+   "that is the information it gave you."
+  ],
+  [
+   64.308,
+   67.093,
+   "The left crescent \u2014 the part of X"
+  ],
+  [
+   67.093,
+   69.878,
+   "that the overlap does not cover \u2014 is"
+  ],
+  [
+   69.878,
+   72.664,
+   "what stays uncertain even after you have seen"
+  ],
+  [
+   72.664,
+   73.012,
+   "Y."
+  ],
+  [
+   73.644,
+   76.429,
+   "And what about two variables that have nothing"
+  ],
+  [
+   76.429,
+   78.17,
+   "to do with each other?"
+  ],
+  [
+   78.17,
+   78.518,
+   "Watch."
+  ],
+  [
+   78.518,
+   79.911,
+   "The circles drift apart,"
+  ],
+  [
+   79.911,
+   80.955,
+   "the overlap vanishes,"
+  ],
+  [
+   80.955,
+   83.393,
+   "and the mutual information drops to zero."
+  ],
+  [
+   84.024,
+   86.81,
+   "Independence means knowing one tells you exactly\nnothing"
+  ],
+  [
+   86.81,
+   87.854,
+   "about the other."
+  ],
+  [
+   88.486,
+   91.271,
+   "This single number is quietly everywhere in modern"
+  ],
+  [
+   91.271,
+   91.619,
+   "science."
+  ],
+  [
+   91.619,
+   94.405,
+   "It measures how much a feature reveals about"
+  ],
+  [
+   94.405,
+   96.146,
+   "a label in machine learning."
+  ],
+  [
+   96.146,
+   98.235,
+   "How strongly two genes are linked."
+  ],
+  [
+   98.235,
+   101.02,
+   "How well two signals correlate \u2014 capturing curved"
+  ],
+  [
+   101.02,
+   103.109,
+   "relationships that ordinary correlation completely\nmisses."
+  ],
+  [
+   103.741,
+   104.089,
+   "And,"
+  ],
+  [
+   104.089,
+   106.178,
+   "as we are about to see,"
+  ],
+  [
+   106.178,
+   108.963,
+   "it measures exactly how much of your message"
+  ],
+  [
+   108.963,
+   110.356,
+   "survives a noisy channel."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch14-mutual-information.wav",
+   "volume": 1.0
+  }
+ }
+}

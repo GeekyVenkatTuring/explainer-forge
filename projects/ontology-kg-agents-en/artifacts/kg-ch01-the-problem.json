@@ -1,0 +1,892 @@
+{
+ "cuts": [
+  {
+   "id": "kg-ch01-the-problem_title",
+   "type": "kg_title",
+   "in_seconds": 0.0,
+   "out_seconds": 42.017,
+   "props": {
+    "dur": 42.517
+   }
+  },
+  {
+   "id": "kg-ch01-the-problem_silos",
+   "type": "kg_silos",
+   "in_seconds": 42.517,
+   "out_seconds": 100.924,
+   "props": {
+    "dur": 58.907
+   }
+  },
+  {
+   "id": "kg-ch01-the-problem_whynow",
+   "type": "kg_cards",
+   "in_seconds": 101.424,
+   "out_seconds": 161.336,
+   "props": {
+    "kicker": "WHY THIS, WHY NOW",
+    "title": "Three walls just fell \u2014 that's why this is worth your hour",
+    "color": "#818CF8",
+    "cards": [
+     {
+      "head": "Construction got cheap",
+      "emoji": "\ud83e\udd16",
+      "body": "Building a graph from messy wikis and code used to need a team of analysts. A language model now extracts the entities and links in an afternoon.",
+      "tag": "2023 \u2192"
+     },
+     {
+      "head": "Agents hit a wall",
+      "emoji": "\ud83c\udfaf",
+      "body": "Everyone shipped chatbots; everyone learned a model with no world just makes things up. A graph is the grounding that fixes it.",
+      "tag": "the wall"
+     },
+     {
+      "head": "The standards landed",
+      "emoji": "\ud83d\udccf",
+      "body": "GQL became an ISO standard in 2024. GraphRAG, MCP and SHACL are production-ready today \u2014 not research toys.",
+      "tag": "mature"
+     }
+    ],
+    "foot": "For a decade this was a rich-company secret. The tooling finally reached the rest of us.",
+    "dur": 60.412
+   }
+  },
+  {
+   "id": "kg-ch01-the-problem_hook",
+   "type": "kg_hook",
+   "in_seconds": 161.836,
+   "out_seconds": 220.851,
+   "props": {
+    "dur": 59.515
+   }
+  },
+  {
+   "id": "kg-ch01-the-problem_stack",
+   "type": "kg_stack",
+   "in_seconds": 221.351,
+   "out_seconds": 294.102,
+   "props": {
+    "foot": "Meaning \u2192 memory \u2192 live senses \u2192 the body \u2192 the acting mind. Build it bottom-up.",
+    "dur": 73.251
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.7,
+   "Every serious software team has the same quiet"
+  ],
+  [
+   2.7,
+   3.038,
+   "problem."
+  ],
+  [
+   3.669,
+   6.37,
+   "Not a lack of data \u2014 the opposite."
+  ],
+  [
+   6.37,
+   7.72,
+   "Too much of it,"
+  ],
+  [
+   7.72,
+   8.395,
+   "scattered everywhere,"
+  ],
+  [
+   8.395,
+   11.095,
+   "and none of it talking to each other."
+  ],
+  [
+   11.727,
+   14.427,
+   "Over the next hour we are going to"
+  ],
+  [
+   14.427,
+   15.102,
+   "fix that,"
+  ],
+  [
+   15.102,
+   15.777,
+   "for real."
+  ],
+  [
+   15.777,
+   18.477,
+   "We will connect five ideas that are usually"
+  ],
+  [
+   18.477,
+   21.177,
+   "taught in separate corners of the internet \u2014"
+  ],
+  [
+   21.177,
+   21.515,
+   "ontologies,"
+  ],
+  [
+   21.515,
+   22.19,
+   "knowledge graphs,"
+  ],
+  [
+   22.19,
+   22.865,
+   "digital twins,"
+  ],
+  [
+   22.865,
+   23.54,
+   "graph engineering,"
+  ],
+  [
+   23.54,
+   24.553,
+   "and agentic engineering."
+  ],
+  [
+   25.184,
+   27.884,
+   "And we will build them into one thing"
+  ],
+  [
+   27.884,
+   30.247,
+   "you can use on a normal Tuesday:"
+  ],
+  [
+   30.247,
+   32.947,
+   "a living map of your own system that"
+  ],
+  [
+   32.947,
+   34.635,
+   "an AI agent can read,"
+  ],
+  [
+   34.635,
+   35.31,
+   "reason over,"
+  ],
+  [
+   35.31,
+   36.66,
+   "and safely act on."
+  ],
+  [
+   37.292,
+   38.979,
+   "This is not a glossary."
+  ],
+  [
+   38.979,
+   40.329,
+   "It is an architecture."
+  ],
+  [
+   40.329,
+   42.017,
+   "Let's start with the pain."
+  ],
+  [
+   42.517,
+   45.588,
+   "Here is a real project \u2014 maybe yours."
+  ],
+  [
+   46.219,
+   49.29,
+   "The architecture and design decisions live in an"
+  ],
+  [
+   49.29,
+   50.442,
+   "Azure DevOps wiki."
+  ],
+  [
+   51.073,
+   54.144,
+   "The report definitions and SQL live in a"
+  ],
+  [
+   54.144,
+   54.912,
+   "DevOps repo."
+  ],
+  [
+   55.543,
+   58.614,
+   "The business data is split across Azure SQL"
+  ],
+  [
+   58.614,
+   59.766,
+   "and Cosmos DB."
+  ],
+  [
+   60.397,
+   63.084,
+   "Images and assets sit in Blob storage."
+  ],
+  [
+   63.084,
+   66.155,
+   "And the runtime logs stream out of your"
+  ],
+  [
+   66.155,
+   66.922,
+   "Kubernetes cluster."
+  ],
+  [
+   67.554,
+   68.322,
+   "Six systems."
+  ],
+  [
+   68.322,
+   71.009,
+   "Each one perfectly good on its own."
+  ],
+  [
+   71.64,
+   74.327,
+   "Now a stakeholder asks a simple question:"
+  ],
+  [
+   74.327,
+   77.398,
+   "report X is showing wrong numbers \u2014 why?"
+  ],
+  [
+   78.029,
+   78.797,
+   "To answer,"
+  ],
+  [
+   78.797,
+   80.333,
+   "you open six tabs."
+  ],
+  [
+   80.333,
+   81.868,
+   "You read the wiki,"
+  ],
+  [
+   81.868,
+   83.019,
+   "grep the logs,"
+  ],
+  [
+   83.019,
+   84.171,
+   "check the schema,"
+  ],
+  [
+   84.171,
+   85.322,
+   "skim the repo,"
+  ],
+  [
+   85.322,
+   87.626,
+   "and ping three colleagues on Slack."
+  ],
+  [
+   88.257,
+   91.328,
+   "The knowledge to answer existed the whole time."
+  ],
+  [
+   91.328,
+   93.247,
+   "It was just never connected."
+  ],
+  [
+   93.247,
+   96.318,
+   "That gap \u2014 between data you have and"
+  ],
+  [
+   96.318,
+   99.389,
+   "meaning you can use \u2014 is what this"
+  ],
+  [
+   99.389,
+   100.924,
+   "entire video is about."
+  ],
+  [
+   101.424,
+   104.392,
+   "You might reasonably ask \u2014 if these ideas"
+  ],
+  [
+   104.392,
+   105.504,
+   "are so powerful,"
+  ],
+  [
+   105.504,
+   107.359,
+   "why aren't they everywhere already?"
+  ],
+  [
+   107.991,
+   108.733,
+   "They were,"
+  ],
+  [
+   108.733,
+   109.103,
+   "quietly,"
+  ],
+  [
+   109.103,
+   110.958,
+   "inside a few giant companies."
+  ],
+  [
+   110.958,
+   113.926,
+   "What changed is that three walls just fell."
+  ],
+  [
+   114.557,
+   114.928,
+   "First,"
+  ],
+  [
+   114.928,
+   116.041,
+   "construction got cheap."
+  ],
+  [
+   116.041,
+   119.009,
+   "Building a graph from messy wikis and code"
+  ],
+  [
+   119.009,
+   121.976,
+   "used to take a team of analysts a"
+  ],
+  [
+   121.976,
+   122.347,
+   "year."
+  ],
+  [
+   122.347,
+   125.315,
+   "Now a language model extracts the entities and"
+  ],
+  [
+   125.315,
+   126.427,
+   "relationships for you,"
+  ],
+  [
+   126.427,
+   127.54,
+   "in an afternoon."
+  ],
+  [
+   128.172,
+   128.543,
+   "Second,"
+  ],
+  [
+   128.543,
+   130.768,
+   "the agent boom hit a wall."
+  ],
+  [
+   130.768,
+   132.252,
+   "Everyone shipped a chatbot,"
+  ],
+  [
+   132.252,
+   135.22,
+   "and everyone discovered the same thing \u2014 a"
+  ],
+  [
+   135.22,
+   138.187,
+   "model with no grounded world just makes things"
+  ],
+  [
+   138.187,
+   138.558,
+   "up."
+  ],
+  [
+   138.558,
+   141.526,
+   "A knowledge graph is the grounding that fixes"
+  ],
+  [
+   141.526,
+   141.897,
+   "it."
+  ],
+  [
+   142.528,
+   143.27,
+   "And third,"
+  ],
+  [
+   143.27,
+   144.383,
+   "the standards landed."
+  ],
+  [
+   144.383,
+   147.351,
+   "GQL became an ISO standard in twenty twenty-four."
+  ],
+  [
+   147.351,
+   147.721,
+   "GraphRAG,"
+  ],
+  [
+   147.721,
+   149.205,
+   "the Model Context Protocol,"
+  ],
+  [
+   149.205,
+   151.06,
+   "and SHACL are production-ready today."
+  ],
+  [
+   151.692,
+   154.659,
+   "For a decade this was a rich-company secret."
+  ],
+  [
+   154.659,
+   157.627,
+   "The tooling finally reached the rest of us"
+  ],
+  [
+   157.627,
+   160.594,
+   "\u2014 which is exactly why it's worth the"
+  ],
+  [
+   160.594,
+   161.336,
+   "next hour."
+  ],
+  [
+   161.836,
+   164.566,
+   "So here is the hinge the whole field"
+  ],
+  [
+   164.566,
+   165.248,
+   "turns on."
+  ],
+  [
+   165.88,
+   167.927,
+   "Raw data answers the question \u2018what\u2019."
+  ],
+  [
+   167.927,
+   168.609,
+   "What rows,"
+  ],
+  [
+   168.609,
+   169.292,
+   "what files,"
+  ],
+  [
+   169.292,
+   170.315,
+   "what log lines."
+  ],
+  [
+   170.947,
+   173.677,
+   "But almost every real question is a \u2018so"
+  ],
+  [
+   173.677,
+   174.018,
+   "what\u2019."
+  ],
+  [
+   174.018,
+   175.383,
+   "Why did this break,"
+  ],
+  [
+   175.383,
+   176.748,
+   "what depends on that,"
+  ],
+  [
+   176.748,
+   177.771,
+   "who owns this."
+  ],
+  [
+   178.403,
+   181.133,
+   "And \u2018so what\u2019 does not live inside any"
+  ],
+  [
+   181.133,
+   181.815,
+   "single table."
+  ],
+  [
+   181.815,
+   184.203,
+   "It lives in the connections between them."
+  ],
+  [
+   184.835,
+   186.541,
+   "A report USES a query."
+  ],
+  [
+   186.541,
+   188.247,
+   "A query READS a table."
+  ],
+  [
+   188.247,
+   190.636,
+   "A table was CHANGED by a migration."
+  ],
+  [
+   190.636,
+   192.342,
+   "A pod EMITTED an error."
+  ],
+  [
+   192.973,
+   194.338,
+   "Write those connections down,"
+  ],
+  [
+   194.338,
+   194.679,
+   "explicitly,"
+  ],
+  [
+   194.679,
+   197.409,
+   "as nodes and edges \u2014 and something remarkable"
+  ],
+  [
+   197.409,
+   197.75,
+   "happens."
+  ],
+  [
+   197.75,
+   200.48,
+   "A machine can now follow the trail the"
+  ],
+  [
+   200.48,
+   202.186,
+   "way a senior engineer would."
+  ],
+  [
+   202.818,
+   204.524,
+   "That is a knowledge graph."
+  ],
+  [
+   204.524,
+   207.253,
+   "And it is the beating heart of everything"
+  ],
+  [
+   207.253,
+   207.595,
+   "ahead."
+  ],
+  [
+   208.226,
+   210.615,
+   "But a graph alone is not enough."
+  ],
+  [
+   210.615,
+   211.979,
+   "To make it trustworthy,"
+  ],
+  [
+   211.979,
+   213.344,
+   "to make it live,"
+  ],
+  [
+   213.344,
+   216.074,
+   "and to let an agent act on it"
+  ],
+  [
+   216.074,
+   218.121,
+   "\u2014 we need a full stack."
+  ],
+  [
+   218.121,
+   220.851,
+   "Let me show you the shape of it."
+  ],
+  [
+   221.351,
+   222.048,
+   "Five layers,"
+  ],
+  [
+   222.048,
+   224.14,
+   "and each one earns its place."
+  ],
+  [
+   224.772,
+   225.817,
+   "At the bottom,"
+  ],
+  [
+   225.817,
+   226.515,
+   "the ontology."
+  ],
+  [
+   226.515,
+   228.955,
+   "This is meaning \u2014 the shared grammar."
+  ],
+  [
+   228.955,
+   231.047,
+   "It says what a Report is,"
+  ],
+  [
+   231.047,
+   232.441,
+   "what a Table is,"
+  ],
+  [
+   232.441,
+   234.533,
+   "and the rules that connect them."
+  ],
+  [
+   234.533,
+   237.322,
+   "Think of it as the dictionary everything else"
+  ],
+  [
+   237.322,
+   238.019,
+   "agrees on."
+  ],
+  [
+   238.651,
+   240.045,
+   "On top of that,"
+  ],
+  [
+   240.045,
+   241.091,
+   "the knowledge graph."
+  ],
+  [
+   241.091,
+   243.88,
+   "This is memory \u2014 the ontology filled with"
+  ],
+  [
+   243.88,
+   245.972,
+   "your actual instances and their links."
+  ],
+  [
+   245.972,
+   247.018,
+   "The living map."
+  ],
+  [
+   247.649,
+   247.998,
+   "Next,"
+  ],
+  [
+   247.998,
+   249.044,
+   "the digital twin."
+  ],
+  [
+   249.044,
+   251.833,
+   "This is live senses \u2014 the graph kept"
+  ],
+  [
+   251.833,
+   253.924,
+   "in sync with reality by telemetry,"
+  ],
+  [
+   253.924,
+   256.713,
+   "so it reflects the system as it is"
+  ],
+  [
+   256.713,
+   257.411,
+   "right now,"
+  ],
+  [
+   257.411,
+   259.154,
+   "and can even simulate what-if."
+  ],
+  [
+   259.785,
+   261.877,
+   "Then graph engineering \u2014 the body."
+  ],
+  [
+   261.877,
+   264.666,
+   "The unglamorous craft of building and running all"
+  ],
+  [
+   264.666,
+   265.712,
+   "this at scale:"
+  ],
+  [
+   265.712,
+   266.061,
+   "pipelines,"
+  ],
+  [
+   266.061,
+   266.409,
+   "validation,"
+  ],
+  [
+   266.409,
+   266.758,
+   "queries,"
+  ],
+  [
+   266.758,
+   267.804,
+   "graph machine learning."
+  ],
+  [
+   268.435,
+   269.83,
+   "And at the top,"
+  ],
+  [
+   269.83,
+   271.922,
+   "agentic engineering \u2014 the acting mind."
+  ],
+  [
+   271.922,
+   274.013,
+   "AI agents that read the graph,"
+  ],
+  [
+   274.013,
+   275.059,
+   "reason across it,"
+  ],
+  [
+   275.059,
+   276.105,
+   "and take safe,"
+  ],
+  [
+   276.105,
+   276.802,
+   "governed actions."
+  ],
+  [
+   277.434,
+   280.223,
+   "Here is the punchline for the whole hour."
+  ],
+  [
+   280.223,
+   282.315,
+   "An agent without this stack hallucinates,"
+  ],
+  [
+   282.315,
+   284.058,
+   "because it has no world."
+  ],
+  [
+   284.058,
+   286.847,
+   "An agent with it has a governable world"
+  ],
+  [
+   286.847,
+   287.195,
+   "model."
+  ],
+  [
+   287.827,
+   290.616,
+   "We will build these layers one at a"
+  ],
+  [
+   290.616,
+   290.964,
+   "time,"
+  ],
+  [
+   290.964,
+   293.056,
+   "always on the same six-source project."
+  ],
+  [
+   293.056,
+   293.753,
+   "Part one:"
+  ],
+  [
+   293.753,
+   294.102,
+   "meaning."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "kg/kg-ch01-the-problem.wav",
+   "volume": 1.0
+  }
+ }
+}

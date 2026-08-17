@@ -1,0 +1,277 @@
+{
+  "cuts": [
+    {
+      "id": "s01_title",
+      "type": "in_title",
+      "in_seconds": 0.0,
+      "out_seconds": 39.162,
+      "props": {
+        "dur": 39.662
+      }
+    },
+    {
+      "id": "s02_div1",
+      "type": "in_div",
+      "in_seconds": 39.662,
+      "out_seconds": 50.342,
+      "props": {
+        "n": 1,
+        "title": "What Intraday Really Is",
+        "sub": "Mechanics \u00b7 Costs \u00b7 Leverage \u00b7 The honest odds",
+        "color": "#FBBF24",
+        "dur": 11.18
+      }
+    },
+    {
+      "id": "s03_hook",
+      "type": "in_hook",
+      "in_seconds": 50.842,
+      "out_seconds": 102.914,
+      "props": {
+        "dur": 52.572
+      }
+    },
+    {
+      "id": "s04_whatis",
+      "type": "in_whatis",
+      "in_seconds": 103.414,
+      "out_seconds": 151.55,
+      "props": {
+        "dur": 48.636
+      }
+    },
+    {
+      "id": "s05_vsdelivery",
+      "type": "in_vsdelivery",
+      "in_seconds": 152.05,
+      "out_seconds": 201.746,
+      "props": {
+        "dur": 50.196
+      }
+    },
+    {
+      "id": "s06_session",
+      "type": "in_session",
+      "in_seconds": 202.246,
+      "out_seconds": 253.694,
+      "props": {
+        "dur": 51.948
+      }
+    },
+    {
+      "id": "s07_leverage",
+      "type": "in_leverage",
+      "in_seconds": 254.194,
+      "out_seconds": 307.802,
+      "props": {
+        "dur": 54.108
+      }
+    },
+    {
+      "id": "s08_costs",
+      "type": "in_costs",
+      "in_seconds": 308.302,
+      "out_seconds": 366.59,
+      "props": {
+        "dur": 58.788
+      }
+    },
+    {
+      "id": "s09_edge",
+      "type": "in_edge",
+      "in_seconds": 367.09,
+      "out_seconds": 416.044,
+      "props": {
+        "dur": 49.454
+      }
+    },
+    {
+      "id": "s10_div2",
+      "type": "in_div",
+      "in_seconds": 416.544,
+      "out_seconds": 428.088,
+      "props": {
+        "n": 2,
+        "title": "The Framework",
+        "sub": "Bias \u00b7 Levels \u00b7 VWAP \u00b7 Setups \u00b7 Stops \u00b7 Sizing \u00b7 Psychology",
+        "color": "#22D3EE",
+        "dur": 12.044
+      }
+    },
+    {
+      "id": "s11_bias",
+      "type": "in_bias",
+      "in_seconds": 428.588,
+      "out_seconds": 476.964,
+      "props": {
+        "dur": 48.876
+      }
+    },
+    {
+      "id": "s12_levels",
+      "type": "in_levels",
+      "in_seconds": 477.464,
+      "out_seconds": 525.864,
+      "props": {
+        "dur": 48.9
+      }
+    },
+    {
+      "id": "s13_vwap",
+      "type": "in_vwap",
+      "in_seconds": 526.364,
+      "out_seconds": 575.988,
+      "props": {
+        "dur": 50.124
+      }
+    },
+    {
+      "id": "s14_orb",
+      "type": "in_orb",
+      "in_seconds": 576.488,
+      "out_seconds": 624.912,
+      "props": {
+        "dur": 48.924
+      }
+    },
+    {
+      "id": "s15_pullback",
+      "type": "in_pullback",
+      "in_seconds": 625.412,
+      "out_seconds": 673.044,
+      "props": {
+        "dur": 48.132
+      }
+    },
+    {
+      "id": "s16_volume",
+      "type": "in_volume",
+      "in_seconds": 673.544,
+      "out_seconds": 719.328,
+      "props": {
+        "dur": 46.284
+      }
+    },
+    {
+      "id": "s17_stop",
+      "type": "in_stop",
+      "in_seconds": 719.828,
+      "out_seconds": 777.348,
+      "props": {
+        "dur": 58.02
+      }
+    },
+    {
+      "id": "s18_rr",
+      "type": "in_rr",
+      "in_seconds": 777.848,
+      "out_seconds": 827.998,
+      "props": {
+        "dur": 50.65
+      }
+    },
+    {
+      "id": "s19_sizing",
+      "type": "in_sizing",
+      "in_seconds": 828.498,
+      "out_seconds": 888.992,
+      "props": {
+        "dur": 60.994
+      }
+    },
+    {
+      "id": "s20_timeofday",
+      "type": "in_timeofday",
+      "in_seconds": 889.492,
+      "out_seconds": 936.068,
+      "props": {
+        "dur": 47.076
+      }
+    },
+    {
+      "id": "s21_psych",
+      "type": "in_psych",
+      "in_seconds": 936.568,
+      "out_seconds": 992.502,
+      "props": {
+        "dur": 56.434
+      }
+    },
+    {
+      "id": "s22_mistakes",
+      "type": "in_mistakes",
+      "in_seconds": 993.002,
+      "out_seconds": 1035.572,
+      "props": {
+        "dur": 43.07
+      }
+    },
+    {
+      "id": "s23_div3",
+      "type": "in_div",
+      "in_seconds": 1036.072,
+      "out_seconds": 1046.008,
+      "props": {
+        "n": 3,
+        "title": "Putting It Together",
+        "sub": "One clean trade \u00b7 The pre-trade checklist",
+        "color": "#34D399",
+        "dur": 10.436
+      }
+    },
+    {
+      "id": "s24_walkthrough",
+      "type": "in_walkthrough",
+      "in_seconds": 1046.508,
+      "out_seconds": 1103.834,
+      "props": {
+        "dur": 57.826
+      }
+    },
+    {
+      "id": "s25_checklist",
+      "type": "in_checklist",
+      "in_seconds": 1104.334,
+      "out_seconds": 1149.878,
+      "props": {
+        "items": [
+          "Bias: am I trading WITH the trend, and is price on the right side of VWAP?",
+          "Level: what exact level is this trade based on \u2014 breakout, retest, or S/R?",
+          "Volume: is it confirming the move, or is it suspiciously thin?",
+          "Stop: is it at a level that proves me wrong \u2014 not a random number?",
+          "Reward: is my target at least twice my risk (2R minimum)?",
+          "Size: does a stop-out cost at most 1% of my capital?",
+          "Timing: is it a prime hour \u2014 not the dead mid-day chop?",
+          "Mindset: am I calm and following my plan \u2014 not chasing or bored?"
+        ],
+        "dur": 46.044
+      }
+    },
+    {
+      "id": "s26_recap",
+      "type": "in_recap",
+      "in_seconds": 1150.378,
+      "out_seconds": 1227.91,
+      "props": {
+        "items": [
+          "Intraday = open AND close the same day; you're flat by 3:30, no overnight risk",
+          "Leverage (~5\u00d7 max) and low per-trade cost cut BOTH ways \u2014 respect them",
+          "Trade WITH the higher-timeframe trend; use VWAP as your intraday anchor",
+          "Mark levels before the open: previous-day high/low and the opening range",
+          "Wait for a setup \u2014 breakout or retest \u2014 confirmed by volume. Don't chase",
+          "Every trade: stop-loss first, target at 2R minimum, size by the 1% rule",
+          "Trade prime hours; avoid the mid-day chop and the first 5 minutes",
+          "Discipline beats prediction \u2014 71% lose by breaking rules they already know"
+        ],
+        "closer": "You can't control the market \u2014 only your risk, your rules, and your patience. Master those, and you're ahead of most.",
+        "dur": 78.032
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "in/narration.wav",
+      "volume": 1.0
+    }
+  }
+}

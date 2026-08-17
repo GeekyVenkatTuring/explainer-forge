@@ -1,0 +1,99 @@
+{
+ "ticker": "RADICO",
+ "scraped_at": "2026-08-14T15:29:25",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 62262.0,
+ "current_price": 4647.0,
+ "pe": 87.6,
+ "book_value": 248.0,
+ "dividend_yield_pct": 0.19,
+ "roce_pct": 24.2,
+ "roe_pct": 20.3,
+ "face_value": 2.0,
+ "high": 4678.0,
+ "sales_growth": {
+  "10 Years": 23.0,
+  "5 Years": 17.0,
+  "3 Years": 41.0,
+  "TTM": 76.0
+ },
+ "profit_growth": {
+  "10 Years": 48.0,
+  "5 Years": 38.0,
+  "3 Years": 52.0,
+  "1 Year": 64.0
+ },
+ "roe_hist": {
+  "Equity Capital": 19.0,
+  "Reserves": 166.0,
+  "Borrowings&nbsp; +": 690.0,
+  "Other Liabilities&nbsp; +": 133.0,
+  "Fixed Assets&nbsp; +": 285.0,
+  "CWIP": 44.0,
+  "Investments": 10.0,
+  "Other Assets&nbsp; +": 668.0
+ },
+ "price_cagr": {
+  "10 Years": 14.0,
+  "5 Years": 14.0,
+  "3 Years": 15.0,
+  "Last Year": 20.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "13%",
+   "13%",
+   "12%",
+   "11%",
+   "13%",
+   "14%",
+   "14%",
+   "14%",
+   "15%",
+   "16%",
+   "17%",
+   "19%",
+   "21%"
+  ],
+  "eps": [
+   "5.11",
+   "4.85",
+   "5.62",
+   "4.03",
+   "5.64",
+   "6.03",
+   "7.14",
+   "6.88",
+   "9.75",
+   "10.42",
+   "11.57",
+   "13.40",
+   "17.14"
+  ]
+ },
+ "pros": [
+  "Company has reduced debt."
+ ],
+ "cons": [
+  "Stock is trading at 18.6 times its book value"
+ ]
+}

@@ -1,0 +1,279 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch04-filters_div",
+   "type": "cv_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 23.251,
+   "props": {
+    "n": 2,
+    "title": "Classical Vision",
+    "sub": "hand-built filters \u2014 before the networks",
+    "color": "#FBBF24",
+    "dur": 23.751
+   }
+  },
+  {
+   "id": "cv-ch04-filters_filters",
+   "type": "cv_filters",
+   "in_seconds": 23.751,
+   "out_seconds": 117.451,
+   "props": {
+    "dur": 94.2
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.872,
+   "Part two."
+  ],
+  [
+   0.872,
+   1.743,
+   "Classical vision."
+  ],
+  [
+   2.375,
+   4.554,
+   "Long before neural networks existed,"
+  ],
+  [
+   4.554,
+   8.041,
+   "engineers crossed the semantic gap by hand\n\u2014"
+  ],
+  [
+   8.041,
+   9.784,
+   "with clever mathematical filters."
+  ],
+  [
+   10.416,
+   13.031,
+   "These old ideas are not obsolete."
+  ],
+  [
+   13.031,
+   16.518,
+   "They are the bedrock that everything\nmodern is"
+  ],
+  [
+   16.518,
+   17.389,
+   "built on."
+  ],
+  [
+   18.021,
+   21.508,
+   "So let's roll up our sleeves and see"
+  ],
+  [
+   21.508,
+   23.251,
+   "how they actually work."
+  ],
+  [
+   23.751,
+   26.9,
+   "The most basic operation in all of vision"
+  ],
+  [
+   26.9,
+   28.08,
+   "is the filter."
+  ],
+  [
+   28.712,
+   31.861,
+   "A filter takes an image and transforms its"
+  ],
+  [
+   31.861,
+   33.829,
+   "numbers to reveal something useful."
+  ],
+  [
+   34.46,
+   37.609,
+   "Some filters are simple and work one pixel"
+  ],
+  [
+   37.609,
+   38.789,
+   "at a time."
+  ],
+  [
+   39.421,
+   41.389,
+   "To make an image brighter,"
+  ],
+  [
+   41.389,
+   44.538,
+   "just add a fixed value to every pixel."
+  ],
+  [
+   44.538,
+   47.686,
+   "Watch the numbers on the grid climb\ntogether."
+  ],
+  [
+   48.318,
+   49.499,
+   "To increase contrast,"
+  ],
+  [
+   49.499,
+   52.647,
+   "push the bright pixels brighter and the\ndark"
+  ],
+  [
+   52.647,
+   53.434,
+   "pixels darker,"
+  ],
+  [
+   53.434,
+   54.615,
+   "pulling them apart."
+  ],
+  [
+   55.247,
+   58.395,
+   "But the truly interesting filters do\nsomething different."
+  ],
+  [
+   58.395,
+   60.757,
+   "They look at a pixel's neighborhood,"
+  ],
+  [
+   60.757,
+   62.725,
+   "not just the pixel itself."
+  ],
+  [
+   63.356,
+   64.143,
+   "Take blur."
+  ],
+  [
+   64.775,
+   66.349,
+   "To blur a pixel,"
+  ],
+  [
+   66.349,
+   69.498,
+   "you replace it with the average of the"
+  ],
+  [
+   69.498,
+   71.072,
+   "pixels immediately around it."
+  ],
+  [
+   71.704,
+   73.672,
+   "Do that for every pixel,"
+  ],
+  [
+   73.672,
+   75.246,
+   "and sharp edges soften."
+  ],
+  [
+   75.878,
+   76.271,
+   "Now,"
+  ],
+  [
+   76.271,
+   79.026,
+   "why would anyone want a blurry image?"
+  ],
+  [
+   79.658,
+   82.807,
+   "Because blur removes noise \u2014 those tiny\nrandom"
+  ],
+  [
+   82.807,
+   85.955,
+   "speckles a camera sensor adds in low\nlight."
+  ],
+  [
+   86.587,
+   89.736,
+   "Averaging a neighborhood cancels the\nrandom flecks while"
+  ],
+  [
+   89.736,
+   91.31,
+   "keeping the real shapes."
+  ],
+  [
+   91.941,
+   95.09,
+   "And here is the insight that this whole"
+  ],
+  [
+   95.09,
+   96.271,
+   "course turns on."
+  ],
+  [
+   96.902,
+   100.051,
+   "This one little move \u2014 slide a small"
+  ],
+  [
+   100.051,
+   101.625,
+   "window across the image,"
+  ],
+  [
+   101.625,
+   104.774,
+   "and combine each neighborhood into a new\nvalue"
+  ],
+  [
+   104.774,
+   107.923,
+   "\u2014 is the single most important idea in"
+  ],
+  [
+   107.923,
+   108.71,
+   "computer vision."
+  ],
+  [
+   109.341,
+   111.309,
+   "It has a formal name."
+  ],
+  [
+   111.309,
+   111.703,
+   "Convolution."
+  ],
+  [
+   112.334,
+   115.483,
+   "And it is so important that it deserves"
+  ],
+  [
+   115.483,
+   117.451,
+   "a chapter entirely to itself."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch04-filters.wav",
+   "volume": 1.0
+  }
+ }
+}

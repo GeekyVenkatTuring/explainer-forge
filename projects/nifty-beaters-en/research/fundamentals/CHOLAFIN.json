@@ -1,0 +1,84 @@
+{
+ "ticker": "CHOLAFIN",
+ "scraped_at": "2026-08-14T15:27:44",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 160730.0,
+ "current_price": 1885.0,
+ "pe": 28.0,
+ "book_value": 357.0,
+ "dividend_yield_pct": 0.1,
+ "roce_pct": 9.71,
+ "roe_pct": 19.4,
+ "face_value": 2.0,
+ "high": 1952.0,
+ "sales_growth": {
+  "10 Years": 25.0,
+  "5 Years": 28.0,
+  "3 Years": 25.0,
+  "TTM": 29.0
+ },
+ "profit_growth": {
+  "10 Years": 24.0,
+  "5 Years": 31.0,
+  "3 Years": 23.0,
+  "1 Year": 32.0
+ },
+ "roe_hist": {
+  "Equity Capital": 144.0,
+  "Fixed Assets&nbsp; +": 69.0,
+  "CWIP": 0.0,
+  "Investments": 25.0
+ },
+ "price_cagr": {
+  "10 Years": 19.0,
+  "5 Years": 20.0,
+  "3 Years": 20.0,
+  "Last Year": 19.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [],
+  "eps": [
+   "8.64",
+   "9.40",
+   "10.39",
+   "12.68",
+   "11.27",
+   "11.52",
+   "12.94",
+   "14.98",
+   "13.53",
+   "13.78",
+   "15.28",
+   "19.31",
+   "19.43"
+  ]
+ },
+ "pros": [
+  "Company has delivered good profit growth of 28.0% CAGR over last 5 years",
+  "Company&#x27;s median sales growth is 21.4% of last 10 years"
+ ],
+ "cons": [
+  "Stock is trading at 5.34 times its book value",
+  "Company has low interest coverage ratio.",
+  "Company might be capitalizing the interest cost"
+ ]
+}

@@ -1,0 +1,756 @@
+{
+  "cuts": [
+    {
+      "id": "po_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 34.124,
+      "props": {
+        "title": "Post-Market Recap",
+        "sub": "July 22, 2026 · we expected a recovery — the market crashed",
+        "kicker": "POST-MARKET · 22 JUL 2026",
+        "dur": 34.624
+      }
+    },
+    {
+      "id": "po_snap",
+      "type": "sm_stats",
+      "in_seconds": 34.624,
+      "out_seconds": 76.952,
+      "props": {
+        "kicker": "INDEX SNAPSHOT",
+        "title": "Closing Numbers — 22 July",
+        "stats": [
+          {
+            "label": "SENSEX",
+            "to": 76755,
+            "prefix": "",
+            "suffix": "",
+            "color": "#FB7185",
+            "sub": "−715 pts · −0.92%"
+          },
+          {
+            "label": "NIFTY 50",
+            "to": 23996,
+            "prefix": "",
+            "suffix": "",
+            "color": "#FB7185",
+            "sub": "−191 · below 24,000"
+          },
+          {
+            "label": "BANK NIFTY",
+            "to": 57127,
+            "prefix": "",
+            "suffix": "",
+            "color": "#FB7185",
+            "sub": "−709 · −1.23%"
+          }
+        ],
+        "note": "Third straight down day — the steepest fall in nearly two weeks. And this time it was broad-based: no midcap cushion.",
+        "dur": 42.828
+      }
+    },
+    {
+      "id": "po_why",
+      "type": "sm_iconcards",
+      "in_seconds": 77.452,
+      "out_seconds": 140.636,
+      "props": {
+        "kicker": "WHY IT CRASHED",
+        "title": "Four Reasons for the Fall",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "🛢️",
+            "k": "Crude spiked to $95",
+            "v": "Brent jumped 4.68% to $95.27 — a 5-week high on an escalating West Asia conflict. THE trigger",
+            "chip": "MAIN CAUSE"
+          },
+          {
+            "emoji": "🏦",
+            "k": "Bank selloff",
+            "v": "Bank Nifty −1.23%; SBI, ICICI, Axis dragged — financials led the fall for a 3rd day",
+            "chip": "−1.23%"
+          },
+          {
+            "emoji": "📉",
+            "k": "Broad-based selling",
+            "v": "IT, pharma and realty all bled — no sector was spared, no cushion this time",
+            "chip": "NO CUSHION"
+          },
+          {
+            "emoji": "🌍",
+            "k": "Middle East + tariffs",
+            "v": "Fresh regional escalation plus US tariff fears kept global sentiment risk-off",
+            "chip": "RISK-OFF"
+          }
+        ],
+        "dur": 63.684
+      }
+    },
+    {
+      "id": "po_losers",
+      "type": "sm_iconcards",
+      "in_seconds": 141.136,
+      "out_seconds": 192.056,
+      "props": {
+        "kicker": "TOP LOSERS",
+        "title": "The Biggest Losers",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "✈️",
+            "k": "InterGlobe (IndiGo)",
+            "v": "Top Nifty loser — airlines are hit hardest by a crude spike; fuel is their single biggest cost",
+            "chip": "CRUDE HIT"
+          },
+          {
+            "emoji": "🏦",
+            "k": "SBI · ICICI · Axis",
+            "v": "The banking selloff — the single biggest drag on the index",
+            "chip": "BANKS"
+          },
+          {
+            "emoji": "💻",
+            "k": "Infosys · Jio Financial",
+            "v": "IT fell despite a strong Nasdaq overnight — crude and geopolitics overrode the tech tailwind",
+            "chip": "IT"
+          },
+          {
+            "emoji": "💊",
+            "k": "Dr Reddy's · UltraTech",
+            "v": "Pharma weak for a 2nd day; cement also among the laggards",
+            "chip": "LAGGARDS"
+          }
+        ],
+        "dur": 51.42
+      }
+    },
+    {
+      "id": "po_gainers",
+      "type": "sm_iconcards",
+      "in_seconds": 192.556,
+      "out_seconds": 239.948,
+      "props": {
+        "kicker": "THE FEW WINNERS",
+        "title": "What Held Up",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏍️",
+            "k": "Bajaj Auto · TVS Motor",
+            "v": "Rose on strong Q1 results, defying the selloff — exactly the earnings reaction we flagged this morning",
+            "chip": "EARNINGS"
+          },
+          {
+            "emoji": "🧼",
+            "k": "HUL · Titan",
+            "v": "Defensive consumer names — money rotated to safety in a falling market",
+            "chip": "DEFENSIVE"
+          },
+          {
+            "emoji": "⚡",
+            "k": "NTPC · Power Grid",
+            "v": "Utilities held up — steady, rate-insensitive, and shielded from crude",
+            "chip": "UTILITIES"
+          },
+          {
+            "emoji": "🛡️",
+            "k": "The pattern",
+            "v": "In a crude-driven crash, money hides in defensives, utilities and genuine earnings beats",
+            "chip": "ROTATION"
+          }
+        ],
+        "dur": 47.892
+      }
+    },
+    {
+      "id": "po_lesson",
+      "type": "sm_myths",
+      "in_seconds": 240.448,
+      "out_seconds": 299.624,
+      "props": {
+        "kicker": "THE HONEST REVIEW",
+        "title": "What We Expected vs What Happened",
+        "mythLabel": "🔮 PRE-MARKET EXPECTED",
+        "factLabel": "💥 WHAT ACTUALLY HAPPENED",
+        "pairs": [
+          {
+            "m": "Strong US lead → a firm, positive open",
+            "f": "Crude spiked to $95 → a 3rd-day crash instead"
+          },
+          {
+            "m": "Nasdaq +1.3% would lift Indian IT",
+            "f": "Infosys and IT fell — crude overrode the tailwind"
+          },
+          {
+            "m": "…but we flagged crude as THE key risk",
+            "f": "That exact risk is what dominated the whole day"
+          }
+        ],
+        "dur": 59.676
+      }
+    },
+    {
+      "id": "po_take",
+      "type": "sm_checklist",
+      "in_seconds": 300.124,
+      "out_seconds": 352.146,
+      "props": {
+        "kicker": "TAKEAWAYS",
+        "title": "5 Lessons from Today",
+        "color": "#34D399",
+        "icon": "💡",
+        "items": [
+          "A pre-market is a SETUP, not a forecast — the flagged risk can win",
+          "Geopolitical shocks (crude) override overnight cues in minutes",
+          "Crude near $95 hurts airlines, paints & OMCs the most",
+          "In a broad selloff, defensives & real earnings-beats hold up",
+          "For SIP investors, a 3-day dip is still noise — don't panic-sell"
+        ],
+        "dur": 52.522
+      }
+    },
+    {
+      "id": "po_recap",
+      "type": "sm_recap",
+      "in_seconds": 352.646,
+      "out_seconds": 416.956,
+      "props": {
+        "title": "22 July — At a Glance",
+        "items": [
+          "Sensex −715 (76,755) · Nifty −191 (23,996) — 3rd day down",
+          "Cause: crude +4.68% to $95 + bank selloff + Middle East",
+          "Losers: IndiGo, SBI, ICICI, Infosys, Dr Reddy's",
+          "Gainers: Bajaj Auto, TVS, HUL, NTPC (defensives)",
+          "Lesson: the risk we flagged (crude) is exactly what hit"
+        ],
+        "closer": "A pre-market is a setup, not a promise — and today, the flagged risk won.",
+        "dur": 64.81
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.47,
+      "This morning, our pre-market brief leaned positive —"
+    ],
+    [
+      4.47,
+      8.338,
+      "a firm-to-positive open, on a strong US lead."
+    ],
+    [
+      8.338,
+      11.088,
+      "But the market did the opposite."
+    ],
+    [
+      11.088,
+      14.183,
+      "It crashed for a third straight day."
+    ],
+    [
+      14.183,
+      15.816,
+      "So let's be honest,"
+    ],
+    [
+      15.816,
+      19.598,
+      "and analyse exactly what went wrong and why."
+    ],
+    [
+      19.598,
+      21.145,
+      "Here's the twist —"
+    ],
+    [
+      21.145,
+      29.654,
+      "the one thing our pre-market brief flagged as the key risk is exactly what brought the market down."
+    ],
+    [
+      29.654,
+      34.124,
+      "This is information analysis, not investment advice."
+    ],
+    [
+      34.624,
+      36.056,
+      "First, the damage."
+    ],
+    [
+      36.056,
+      44.569,
+      "The Sensex crashed seven hundred fifteen points to close at seventy-six thousand seven hundred fifty-five —"
+    ],
+    [
+      44.569,
+      46.32,
+      "down almost a percent."
+    ],
+    [
+      46.32,
+      53.878,
+      "The Nifty fell one hundred ninety-one points to twenty-three thousand nine hundred ninety-six —"
+    ],
+    [
+      53.878,
+      57.698,
+      "closing below the key twenty-four thousand mark."
+    ],
+    [
+      57.698,
+      60.641,
+      "And the Bank Nifty was the worst hit,"
+    ],
+    [
+      60.641,
+      63.267,
+      "down one point two three percent."
+    ],
+    [
+      63.267,
+      66.211,
+      "This was the third straight down day,"
+    ],
+    [
+      66.211,
+      69.553,
+      "and the steepest fall in nearly two weeks."
+    ],
+    [
+      69.553,
+      73.292,
+      "Unlike yesterday, there was no midcap cushion —"
+    ],
+    [
+      73.292,
+      76.952,
+      "the selling was broad-based across the market."
+    ],
+    [
+      77.452,
+      79.27,
+      "So why did it crash?"
+    ],
+    [
+      79.27,
+      83.998,
+      "Four reasons — and the first one is the whole story."
+    ],
+    [
+      83.998,
+      86.089,
+      "Number one — crude oil."
+    ],
+    [
+      86.089,
+      93.998,
+      "Brent crude jumped four point six eight percent to ninety-five point two seven dollars,"
+    ],
+    [
+      93.998,
+      98.907,
+      "a five-week high, as the West Asia conflict escalated."
+    ],
+    [
+      98.907,
+      101.635,
+      "India imports most of its oil,"
+    ],
+    [
+      101.635,
+      105.544,
+      "so this is the trigger that hit everything."
+    ],
+    [
+      105.544,
+      108.089,
+      "Number two — a bank selloff."
+    ],
+    [
+      108.089,
+      113.544,
+      "The Bank Nifty fell one point two three percent, with S-B-I,"
+    ],
+    [
+      113.544,
+      119.817,
+      "I-C-I-C-I and Axis dragging financials down for a third straight day."
+    ],
+    [
+      119.817,
+      123.726,
+      "Number three — the selling was broad-based."
+    ],
+    [
+      123.726,
+      126.636,
+      "I-T, pharma and realty all bled."
+    ],
+    [
+      126.636,
+      130.181,
+      "Unlike yesterday, no sector was spared."
+    ],
+    [
+      130.181,
+      132.636,
+      "Number four — the backdrop."
+    ],
+    [
+      132.636,
+      140.636,
+      "Fresh Middle East escalation and US tariff fears kept global markets in a risk-off mood."
+    ],
+    [
+      141.136,
+      143.227,
+      "Now the biggest losers."
+    ],
+    [
+      143.227,
+      147.501,
+      "The top loser was InterGlobe Aviation — IndiGo."
+    ],
+    [
+      147.501,
+      153.684,
+      "This makes perfect sense: airlines are hit hardest by a crude spike,"
+    ],
+    [
+      153.684,
+      157.867,
+      "because jet fuel is their single biggest cost."
+    ],
+    [
+      157.867,
+      161.868,
+      "Next, the banks — S-B-I, I-C-I-C-I and Axis."
+    ],
+    [
+      161.868,
+      167.414,
+      "The banking selloff was the single biggest drag on the index."
+    ],
+    [
+      167.414,
+      170.233,
+      "Then Infosys and Jio Financial."
+    ],
+    [
+      170.233,
+      172.143,
+      "Note this carefully —"
+    ],
+    [
+      172.143,
+      176.962,
+      "I-T fell even though the Nasdaq was strong overnight."
+    ],
+    [
+      176.962,
+      183.509,
+      "Crude and geopolitics completely overrode the tech tailwind we expected."
+    ],
+    [
+      183.509,
+      187.873,
+      "And Doctor Reddy's stayed weak for a second day,"
+    ],
+    [
+      187.873,
+      192.056,
+      "with UltraTech Cement also among the laggards."
+    ],
+    [
+      192.556,
+      194.127,
+      "It wasn't all red."
+    ],
+    [
+      194.127,
+      199.364,
+      "A few names held up — and the pattern is a lesson in itself."
+    ],
+    [
+      199.364,
+      204.6,
+      "Bajaj Auto and TVS Motor actually rose, defying the selloff,"
+    ],
+    [
+      204.6,
+      207.655,
+      "on their strong quarterly results —"
+    ],
+    [
+      207.655,
+      212.368,
+      "exactly the earnings reaction we flagged this morning."
+    ],
+    [
+      212.368,
+      218.216,
+      "Defensive consumer names like Hindustan Unilever and Titan held up,"
+    ],
+    [
+      218.216,
+      220.572,
+      "as money rotated to safety."
+    ],
+    [
+      220.572,
+      225.373,
+      "And utilities — N-T-P-C and Power Grid — stayed steady,"
+    ],
+    [
+      225.373,
+      230.347,
+      "because they're rate-insensitive and shielded from crude."
+    ],
+    [
+      230.347,
+      234.362,
+      "The pattern is clear: in a crude-driven crash,"
+    ],
+    [
+      234.362,
+      237.591,
+      "money hides in defensives, utilities,"
+    ],
+    [
+      237.591,
+      239.948,
+      "and genuine earnings beats."
+    ],
+    [
+      240.448,
+      244.917,
+      "Now the honest review — what we expected this morning,"
+    ],
+    [
+      244.917,
+      247.4,
+      "versus what actually happened."
+    ],
+    [
+      247.4,
+      251.869,
+      "We expected a firm, positive open on a strong US lead."
+    ],
+    [
+      251.869,
+      256.918,
+      "Instead, crude spiked and the market crashed for a third day."
+    ],
+    [
+      256.918,
+      263.125,
+      "We thought the Nasdaq's one point three percent jump would lift Indian I-T."
+    ],
+    [
+      263.125,
+      265.691,
+      "Instead, Infosys and I-T fell —"
+    ],
+    [
+      265.691,
+      270.326,
+      "crude and geopolitics overrode that tailwind completely."
+    ],
+    [
+      270.326,
+      272.478,
+      "But here's the key point —"
+    ],
+    [
+      272.478,
+      279.43,
+      "this morning we explicitly flagged crude near ninety dollars as the number-one risk."
+    ],
+    [
+      279.43,
+      283.816,
+      "And that exact risk is what dominated the entire day."
+    ],
+    [
+      283.816,
+      288.285,
+      "That's the real lesson: a pre-market brief is a setup,"
+    ],
+    [
+      288.285,
+      289.527,
+      "not a forecast."
+    ],
+    [
+      289.527,
+      294.824,
+      "Overnight cues can be wiped out by a single geopolitical shock —"
+    ],
+    [
+      294.824,
+      299.624,
+      "and the risk you flag can be the one that decides the day."
+    ],
+    [
+      300.124,
+      302.716,
+      "So, five lessons from today."
+    ],
+    [
+      302.716,
+      307.529,
+      "One — a pre-market brief is a setup, not a forecast."
+    ],
+    [
+      307.529,
+      312.898,
+      "The risk you flag can be the very thing that wins the day."
+    ],
+    [
+      312.898,
+      317.156,
+      "Two — geopolitical shocks, like a crude spike,"
+    ],
+    [
+      317.156,
+      322.247,
+      "can override overnight cues within minutes of the open."
+    ],
+    [
+      322.247,
+      327.246,
+      "Three — crude near ninety-five dollars hurts airlines,"
+    ],
+    [
+      327.246,
+      331.226,
+      "paint companies and oil marketers the most."
+    ],
+    [
+      331.226,
+      332.337,
+      "Watch those."
+    ],
+    [
+      332.337,
+      335.854,
+      "Four — in a broad selloff, defensives,"
+    ],
+    [
+      335.854,
+      341.316,
+      "utilities and genuine earnings-beats are where money hides."
+    ],
+    [
+      341.316,
+      344.833,
+      "Five — for a long-term S-I-P investor,"
+    ],
+    [
+      344.833,
+      348.166,
+      "a three-day dip is still just noise."
+    ],
+    [
+      348.166,
+      352.146,
+      "Don't panic-sell into a geopolitical scare."
+    ],
+    [
+      352.646,
+      355.557,
+      "July twenty-second, at a glance."
+    ],
+    [
+      355.557,
+      364.016,
+      "The Sensex fell seven hundred fifteen points and the Nifty broke below twenty-four thousand —"
+    ],
+    [
+      364.016,
+      366.563,
+      "the third straight down day."
+    ],
+    [
+      366.563,
+      367.564,
+      "The cause —"
+    ],
+    [
+      367.564,
+      372.749,
+      "crude jumping almost five percent to ninety-five dollars,"
+    ],
+    [
+      372.749,
+      376.66,
+      "a bank selloff, and Middle East escalation."
+    ],
+    [
+      376.66,
+      380.935,
+      "The losers — IndiGo, S-B-I, I-C-I-C-I, Infosys,"
+    ],
+    [
+      380.935,
+      382.663,
+      "and Doctor Reddy's."
+    ],
+    [
+      382.663,
+      385.574,
+      "The winners — Bajaj Auto, T-V-S,"
+    ],
+    [
+      385.574,
+      390.213,
+      "and defensives like Hindustan Unilever and N-T-P-C."
+    ],
+    [
+      390.213,
+      395.398,
+      "And the lesson — the risk we flagged this morning, crude,"
+    ],
+    [
+      395.398,
+      397.217,
+      "is exactly what hit."
+    ],
+    [
+      397.217,
+      401.856,
+      "A pre-market is a setup, not a promise — and today,"
+    ],
+    [
+      401.856,
+      403.767,
+      "the flagged risk won."
+    ],
+    [
+      403.767,
+      408.497,
+      "This information is aggregated from public sources —"
+    ],
+    [
+      408.497,
+      412.226,
+      "for analysis only, not investment advice."
+    ],
+    [
+      412.226,
+      416.956,
+      "Thanks for watching, and see you at tomorrow's open."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/po22e.wav",
+      "volume": 1.0
+    }
+  }
+}

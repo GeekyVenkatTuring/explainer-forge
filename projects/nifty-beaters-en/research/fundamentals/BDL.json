@@ -1,0 +1,108 @@
+{
+ "ticker": "BDL",
+ "scraped_at": "2026-08-14T15:28:11",
+ "source": "screener.in",
+ "ok": true,
+ "error": "<HTTPError 429: 'Too Many Requests'>",
+ "variant": "standalone",
+ "market_cap_cr": 51280.0,
+ "current_price": 1396.0,
+ "pe": 98.5,
+ "book_value": 116.0,
+ "dividend_yield_pct": 0.32,
+ "roce_pct": 13.8,
+ "roe_pct": 10.2,
+ "face_value": 5.0,
+ "high": 1655.0,
+ "sales_growth": {
+  "10 Years": -3.0,
+  "5 Years": 10.0,
+  "3 Years": 6.0,
+  "TTM": -7.0
+ },
+ "profit_growth": {
+  "5 Years": 49.0,
+  "3 Years": 36.0,
+  "1 Year": -11.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 298.0,
+  "Expenses&nbsp; +": 330.0,
+  "Operating Profit": -33.0,
+  "OPM %": -11.0,
+  "Other Income&nbsp; +": 107.0,
+  "Interest": 1.0,
+  "Depreciation": 17.0,
+  "Profit before tax": 57.0,
+  "Tax %": 27.0,
+  "Net Profit&nbsp; +": 42.0,
+  "EPS in Rs": 1.14
+ },
+ "price_cagr": {
+  "10 Years": 17.0,
+  "5 Years": 14.0,
+  "3 Years": 14.0,
+  "Last Year": 10.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "-11%",
+   "22%",
+   "20%",
+   "37%",
+   "-27%",
+   "18%",
+   "15%",
+   "17%",
+   "-18%",
+   "16%",
+   "4.6%",
+   "12%",
+   "15%"
+  ],
+  "eps": [
+   "1.14",
+   "4.01",
+   "3.68",
+   "7.88",
+   "0.20",
+   "3.34",
+   "4.01",
+   "7.44",
+   "0.50",
+   "5.89",
+   "1.99",
+   "3.09",
+   "3.24"
+  ]
+ },
+ "pros": [
+  "Company has reduced debt.",
+  "Company is almost debt free.",
+  "Company is expected to give good quarter",
+  "Company has been maintaining a healthy dividend payout of 35.1%"
+ ],
+ "cons": [
+  "Stock is trading at 12.1 times its book value",
+  "The company has delivered a poor sales growth of 4.99% over past five years.",
+  "Company has a low return on equity of 13.9% over last 3 years.",
+  "Earnings include an other income of Rs.440 Cr."
+ ]
+}

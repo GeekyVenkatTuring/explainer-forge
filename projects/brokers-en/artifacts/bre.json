@@ -1,0 +1,764 @@
+{
+  "cuts": [
+    {
+      "id": "br_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 36.356,
+      "props": {
+        "title": "Which Broker App Is Best?",
+        "sub": "Zerodha · Groww · Angel One · Dhan · Upstox — 2026 Comparison",
+        "kicker": "BROKER COMPARISON · 2026",
+        "dur": 36.856
+      }
+    },
+    {
+      "id": "br_players",
+      "type": "sm_iconcards",
+      "in_seconds": 36.856,
+      "out_seconds": 109.352,
+      "props": {
+        "kicker": "THE PLAYERS + CHARGES",
+        "title": "The Major Brokers — Users & Charges",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🟢",
+            "k": "Groww",
+            "v": "1.3 Cr users (#1) · delivery ₹20*, F&O ₹20, AMC ₹0 · *others give delivery free",
+            "chip": "SIMPLEST"
+          },
+          {
+            "emoji": "🔵",
+            "k": "Zerodha",
+            "v": "79.5 lakh · delivery ₹0, F&O ₹20, AMC ₹300 · Kite, Coin, Varsity",
+            "chip": "ECOSYSTEM"
+          },
+          {
+            "emoji": "🟠",
+            "k": "Angel One",
+            "v": "76.4 lakh · delivery ₹0, F&O ₹20, AMC ₹240 · strong research",
+            "chip": "RESEARCH"
+          },
+          {
+            "emoji": "🟣",
+            "k": "Dhan",
+            "v": "New-age · delivery ₹0, F&O ₹20, AMC ₹0 · the #1 options app",
+            "chip": "F&O FOCUS"
+          }
+        ],
+        "dur": 72.996
+      }
+    },
+    {
+      "id": "br_apps",
+      "type": "sm_iconcards",
+      "in_seconds": 109.852,
+      "out_seconds": 172.532,
+      "props": {
+        "kicker": "THE APPS",
+        "title": "The Apps — Where Each One Wins",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🛠️",
+            "k": "Zerodha",
+            "v": "Kite (pro trading), Coin (2000+ direct MF, XIRR), Console, Varsity free education, Sensibull options",
+            "chip": "ALL-ROUNDER"
+          },
+          {
+            "emoji": "👶",
+            "k": "Groww",
+            "v": "The simplest interface; MF needs no demat; best for beginners — but limited for power users",
+            "chip": "BEGINNERS"
+          },
+          {
+            "emoji": "📊",
+            "k": "Dhan",
+            "v": "TradingView charts, option chain, strategy tools, speed — built for F&O traders",
+            "chip": "OPTIONS"
+          },
+          {
+            "emoji": "🔍",
+            "k": "Angel One",
+            "v": "Strong research reports and smart suggestions — but users complain of heavy notifications",
+            "chip": "RESEARCH"
+          }
+        ],
+        "dur": 63.18
+      }
+    },
+    {
+      "id": "br_issues",
+      "type": "sm_iconcards",
+      "in_seconds": 173.032,
+      "out_seconds": 248.31,
+      "props": {
+        "kicker": "RECENT USER-REPORTED ISSUES",
+        "title": "Recent Issues — User Complaints",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "🌐",
+            "k": "Cloudflare outage (Dec 5, 2025)",
+            "v": "Zerodha, Angel, Upstox, Groww all down ~12 min — login, order failures. But a third-party issue, not the brokers' fault",
+            "chip": "GLOBAL"
+          },
+          {
+            "emoji": "⏳",
+            "k": "Zerodha — Kite slowdowns",
+            "v": "Historic slowdowns on expiry / high-volume days (#KiteDown) — much improved now; WhatsApp backup added",
+            "chip": "IMPROVED"
+          },
+          {
+            "emoji": "💸",
+            "k": "Groww — delivery charge",
+            "v": "Charges ₹20 on delivery that peers give free; occasional charge / statement complaints",
+            "chip": "CHARGES"
+          },
+          {
+            "emoji": "🔔",
+            "k": "Angel One — square-off",
+            "v": "Intraday auto square-off at 3:15 PM + heavy notifications, mis-selling complaints",
+            "chip": "COMPLAINTS"
+          }
+        ],
+        "dur": 75.778
+      }
+    },
+    {
+      "id": "br_best",
+      "type": "sm_iconcards",
+      "in_seconds": 248.81,
+      "out_seconds": 310.17,
+      "props": {
+        "kicker": "BEST FOR EACH NEED",
+        "title": "Which App Is Best for What?",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "📈",
+            "k": "Mutual Funds",
+            "v": "Groww (simple, ₹0, no demat) for beginners; or Zerodha Coin (XIRR, ecosystem) if you also trade",
+            "chip": "MF"
+          },
+          {
+            "emoji": "🏦",
+            "k": "Stocks / Delivery",
+            "v": "Zerodha or Dhan (₹0 delivery + good tools + low AMC). Groww is costly for large delivery",
+            "chip": "STOCKS"
+          },
+          {
+            "emoji": "⚡",
+            "k": "Futures & Options",
+            "v": "Dhan (#1 options app, TradingView, speed) or Zerodha (Kite + Sensibull, reliability)",
+            "chip": "F&O"
+          },
+          {
+            "emoji": "🎯",
+            "k": "All in One Place",
+            "v": "Zerodha — full ecosystem, education, reliability; Dhan — a modern, fast alternative",
+            "chip": "ALL-IN-ONE"
+          }
+        ],
+        "dur": 61.86
+      }
+    },
+    {
+      "id": "br_take",
+      "type": "sm_checklist",
+      "in_seconds": 310.67,
+      "out_seconds": 362.764,
+      "props": {
+        "kicker": "HOW TO CHOOSE",
+        "title": "How to Choose — 5 Rules",
+        "color": "#34D399",
+        "icon": "💡",
+        "items": [
+          "Define your need: only MF, or stocks, or F&O too?",
+          "Add AMC + delivery charge together — not just the F&O rate",
+          "Charges change often — verify current rates in the app",
+          "All are SEBI-registered — shares are safe in NSDL/CDSL",
+          "This is not advice or promotion — the best is what fits you"
+        ],
+        "dur": 52.594
+      }
+    },
+    {
+      "id": "br_recap",
+      "type": "sm_recap",
+      "in_seconds": 363.264,
+      "out_seconds": 418.284,
+      "props": {
+        "title": "Brokers — At a Glance",
+        "items": [
+          "Groww: simple, MF, beginners — but delivery costs",
+          "Zerodha: best all-rounder, ecosystem, F&O",
+          "Dhan: fast app for F&O/options, ₹0 AMC",
+          "Angel One: research; Upstox/Fyers: active/algo",
+          "Verify charges · SEBI protection applies"
+        ],
+        "closer": "No app is 'the best' — the one that fits your need is best.",
+        "dur": 55.52
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.61,
+      "To invest in stocks, mutual funds, or F&O,"
+    ],
+    [
+      3.61,
+      6.274,
+      "the first step is a broker app."
+    ],
+    [
+      6.274,
+      9.798,
+      "But with so many apps, which one is best?"
+    ],
+    [
+      9.798,
+      14.869,
+      "In this video — the major brokers' commissions, their apps,"
+    ],
+    [
+      14.869,
+      18.049,
+      "the issues users have faced recently,"
+    ],
+    [
+      18.049,
+      22.518,
+      "and which app is best for what — we'll cover it all."
+    ],
+    [
+      22.518,
+      27.675,
+      "One important note — this is not a promotion for any broker,"
+    ],
+    [
+      27.675,
+      29.91,
+      "and not investment advice."
+    ],
+    [
+      29.91,
+      31.801,
+      "Charges change often —"
+    ],
+    [
+      31.801,
+      36.356,
+      "check the current rates in the app before you choose."
+    ],
+    [
+      36.856,
+      42.819,
+      "First, the major brokers, their users, and their charges."
+    ],
+    [
+      42.819,
+      44.283,
+      "First — Groww."
+    ],
+    [
+      44.283,
+      47.317,
+      "Now the country's number one,"
+    ],
+    [
+      47.317,
+      50.769,
+      "with one point three crore users."
+    ],
+    [
+      50.769,
+      52.548,
+      "The simplest app."
+    ],
+    [
+      52.548,
+      54.64,
+      "But one difference —"
+    ],
+    [
+      54.64,
+      62.067,
+      "it charges twenty rupees on delivery; the other brokers give this free."
+    ],
+    [
+      62.067,
+      63.741,
+      "Its AMC is zero."
+    ],
+    [
+      63.741,
+      65.52,
+      "Second — Zerodha."
+    ],
+    [
+      65.52,
+      69.181,
+      "Seventy-nine and a half lakh users."
+    ],
+    [
+      69.181,
+      75.249,
+      "Delivery is free, F&O is twenty rupees, AMC three hundred."
+    ],
+    [
+      75.249,
+      80.688,
+      "It has a strong ecosystem — Kite, Coin, and Varsity."
+    ],
+    [
+      80.688,
+      82.571,
+      "Third — Angel One."
+    ],
+    [
+      82.571,
+      86.128,
+      "Seventy-six point four lakh users."
+    ],
+    [
+      86.128,
+      89.999,
+      "Delivery free, AMC two hundred forty."
+    ],
+    [
+      89.999,
+      93.556,
+      "Known for strong research reports."
+    ],
+    [
+      93.556,
+      95.02,
+      "Fourth — Dhan."
+    ],
+    [
+      95.02,
+      96.799,
+      "A new-age broker."
+    ],
+    [
+      96.799,
+      99.309,
+      "Delivery free, AMC zero."
+    ],
+    [
+      99.309,
+      104.435,
+      "Currently the number one app for options traders."
+    ],
+    [
+      104.435,
+      109.352,
+      "Upstox and Fyers are also good options for F&O."
+    ],
+    [
+      109.852,
+      113.887,
+      "Now the apps — where each one is strongest."
+    ],
+    [
+      113.887,
+      117.734,
+      "Zerodha — Kite is a pro trading platform,"
+    ],
+    [
+      117.734,
+      122.144,
+      "Coin has over two thousand direct mutual funds,"
+    ],
+    [
+      122.144,
+      126.554,
+      "and a single XIRR view across funds and stocks."
+    ],
+    [
+      126.554,
+      132.278,
+      "Varsity is free education, Sensibull is for options analysis."
+    ],
+    [
+      132.278,
+      134.53,
+      "Everything in one place."
+    ],
+    [
+      134.53,
+      136.876,
+      "Groww — the simplest app."
+    ],
+    [
+      136.876,
+      141.849,
+      "For mutual funds you don't even need a demat account,"
+    ],
+    [
+      141.849,
+      142.693,
+      "just KYC."
+    ],
+    [
+      142.693,
+      144.476,
+      "Best for beginners."
+    ],
+    [
+      144.476,
+      149.168,
+      "But experienced traders find the features limited."
+    ],
+    [
+      149.168,
+      154.422,
+      "Dhan — TradingView charts, option chain, strategy tools,"
+    ],
+    [
+      154.422,
+      155.924,
+      "and great speed."
+    ],
+    [
+      155.924,
+      160.991,
+      "An app built specifically for F&O and options traders."
+    ],
+    [
+      160.991,
+      166.433,
+      "Angel One — strong research reports and smart suggestions."
+    ],
+    [
+      166.433,
+      172.532,
+      "But some users complain about heavy notifications and promotions."
+    ],
+    [
+      173.032,
+      175.111,
+      "Now the important part —"
+    ],
+    [
+      175.111,
+      178.316,
+      "the issues users have faced recently."
+    ],
+    [
+      178.316,
+      182.821,
+      "The biggest — on December fifth, twenty twenty-five,"
+    ],
+    [
+      182.821,
+      187.845,
+      "a global service called Cloudflare went down, and Zerodha,"
+    ],
+    [
+      187.845,
+      190.444,
+      "Angel One, Upstox, and Groww —"
+    ],
+    [
+      190.444,
+      195.122,
+      "all the apps stopped working for about twelve minutes."
+    ],
+    [
+      195.122,
+      197.634,
+      "Logins and orders were stuck."
+    ],
+    [
+      197.634,
+      202.831,
+      "But this was no broker's fault — it was a third-party issue."
+    ],
+    [
+      202.831,
+      204.737,
+      "Zerodha — in the past,"
+    ],
+    [
+      204.737,
+      209.242,
+      "Kite would slow down on expiry and high-volume days."
+    ],
+    [
+      209.242,
+      214.439,
+      "It's much improved now, and they've added a WhatsApp backup."
+    ],
+    [
+      214.439,
+      215.046,
+      "Groww —"
+    ],
+    [
+      215.046,
+      221.109,
+      "it charges twenty rupees on delivery that other brokers give for free."
+    ],
+    [
+      221.109,
+      226.394,
+      "There are occasional complaints about charges and statements."
+    ],
+    [
+      226.394,
+      227.347,
+      "Angel One —"
+    ],
+    [
+      227.347,
+      232.371,
+      "automatically closing intraday positions at three fifteen,"
+    ],
+    [
+      232.371,
+      236.529,
+      "and heavy notifications — these draw complaints."
+    ],
+    [
+      236.529,
+      241.38,
+      "One reassurance — all these brokers are SEBI-registered."
+    ],
+    [
+      241.38,
+      248.31,
+      "Your shares are not with the broker; they're safe in your name at NSDL and CDSL."
+    ],
+    [
+      248.81,
+      253.707,
+      "Now the real question — which app is best for what?"
+    ],
+    [
+      253.707,
+      255.34,
+      "Let's go by need."
+    ],
+    [
+      255.34,
+      258.509,
+      "For mutual funds — Groww is best."
+    ],
+    [
+      258.509,
+      263.214,
+      "Simple, no cost, and you don't even need a demat."
+    ],
+    [
+      263.214,
+      266.767,
+      "If you also trade, then Zerodha Coin,"
+    ],
+    [
+      266.767,
+      270.8,
+      "because funds and stocks sit in one place."
+    ],
+    [
+      270.8,
+      274.833,
+      "For stocks and delivery — Zerodha or Dhan."
+    ],
+    [
+      274.833,
+      278.194,
+      "Free delivery, good tools, low AMC."
+    ],
+    [
+      278.194,
+      284.051,
+      "If you do large delivery volumes, Groww becomes a bit costly."
+    ],
+    [
+      284.051,
+      287.028,
+      "For futures and options — Dhan."
+    ],
+    [
+      287.028,
+      290.677,
+      "With its speed and TradingView charts,"
+    ],
+    [
+      290.677,
+      293.366,
+      "it's number one for options."
+    ],
+    [
+      293.366,
+      298.263,
+      "Or Zerodha — with Kite, Sensibull, and reliability."
+    ],
+    [
+      298.263,
+      302.68,
+      "If you want everything in one place — Zerodha,"
+    ],
+    [
+      302.68,
+      306.809,
+      "the best all-rounder with a full ecosystem."
+    ],
+    [
+      306.809,
+      310.17,
+      "Dhan is a modern, fast alternative."
+    ],
+    [
+      310.67,
+      313.886,
+      "So how do you choose a broker?"
+    ],
+    [
+      313.886,
+      315.065,
+      "Five rules."
+    ],
+    [
+      315.065,
+      318.28,
+      "One — first, define your need."
+    ],
+    [
+      318.28,
+      322.675,
+      "Only mutual funds, or stocks, or F&O too?"
+    ],
+    [
+      322.675,
+      326.748,
+      "Two — don't look at just the F&O rate."
+    ],
+    [
+      326.748,
+      332.965,
+      "Add up the total cost, including AMC and delivery charges."
+    ],
+    [
+      332.965,
+      336.074,
+      "Three — charges change often."
+    ],
+    [
+      336.074,
+      341.862,
+      "Verify the current rates in the app before you choose."
+    ],
+    [
+      341.862,
+      346.686,
+      "Four — all these brokers are SEBI-registered."
+    ],
+    [
+      346.686,
+      350.759,
+      "Your shares are safe at NSDL and CDSL."
+    ],
+    [
+      350.759,
+      355.69,
+      "Five — this is not a promotion for any broker,"
+    ],
+    [
+      355.69,
+      357.297,
+      "and not advice."
+    ],
+    [
+      357.297,
+      362.764,
+      "The best one is simply the one that fits your need."
+    ],
+    [
+      363.264,
+      365.461,
+      "Brokers, at a glance."
+    ],
+    [
+      365.461,
+      371.004,
+      "Groww — simple, great for mutual funds and beginners."
+    ],
+    [
+      371.004,
+      374.038,
+      "But delivery is a bit costly."
+    ],
+    [
+      374.038,
+      377.281,
+      "Zerodha — the best all-rounder."
+    ],
+    [
+      377.281,
+      381.151,
+      "Strong ecosystem, education, and F&O."
+    ],
+    [
+      381.151,
+      386.695,
+      "Dhan — a fast app for F&O and options, with zero AMC."
+    ],
+    [
+      386.695,
+      391.297,
+      "Angel One — for research; Upstox and Fyers —"
+    ],
+    [
+      391.297,
+      394.226,
+      "for active and algo traders."
+    ],
+    [
+      394.226,
+      397.259,
+      "No app is best for everyone —"
+    ],
+    [
+      397.259,
+      401.862,
+      "the one that fits your need is best for you."
+    ],
+    [
+      401.862,
+      404.267,
+      "And verify the charges."
+    ],
+    [
+      404.267,
+      409.707,
+      "This information is aggregated from public sources —"
+    ],
+    [
+      409.707,
+      413.472,
+      "it's not a promotion for any broker,"
+    ],
+    [
+      413.472,
+      416.192,
+      "and not investment advice."
+    ],
+    [
+      416.192,
+      418.284,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/bre.wav",
+      "volume": 1.0
+    }
+  }
+}

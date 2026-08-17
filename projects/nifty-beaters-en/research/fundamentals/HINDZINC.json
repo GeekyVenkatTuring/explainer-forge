@@ -1,0 +1,98 @@
+{
+ "ticker": "HINDZINC",
+ "scraped_at": "2026-08-14T15:30:05",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 236829.0,
+ "current_price": 560.0,
+ "pe": 13.8,
+ "book_value": 53.6,
+ "dividend_yield_pct": 1.95,
+ "roce_pct": 69.5,
+ "roe_pct": 76.6,
+ "face_value": 2.0,
+ "high": 733.0,
+ "sales_growth": {
+  "5 Years": 12.0,
+  "3 Years": 10.0,
+  "TTM": 65.0
+ },
+ "profit_growth": {
+  "10 Years": 10.0,
+  "5 Years": 13.0,
+  "3 Years": 22.0,
+  "1 Year": 36.0
+ },
+ "roe_hist": {
+  "OPM %": 46.0,
+  "Other Income&nbsp; +": 282.0,
+  "Interest": 218.0,
+  "Depreciation": 801.0,
+  "Tax %": 25.0,
+  "EPS in Rs": 4.65
+ },
+ "price_cagr": {
+  "5 Years": 50.0,
+  "3 Years": 69.0,
+  "Last Year": 77.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "46%",
+   "46%",
+   "48%",
+   "48%",
+   "49%",
+   "50%",
+   "52%",
+   "53%",
+   "50%",
+   "52%",
+   "55%",
+   "57%",
+   "59%"
+  ],
+  "eps": [
+   "4.65",
+   "4.09",
+   "4.80",
+   "4.82",
+   "5.55",
+   "5.51",
+   "6.34",
+   "7.11",
+   "5.29",
+   "6.27",
+   "9.27",
+   "11.91",
+   "12.94"
+  ]
+ },
+ "pros": [
+  "Company has reduced debt.",
+  "Company is expected to give good quarter",
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 69.0%"
+ ],
+ "cons": [
+  "Stock is trading at 10.5 times its book value",
+  "Promoter holding has decreased over last 3 years: -4.21%"
+ ]
+}

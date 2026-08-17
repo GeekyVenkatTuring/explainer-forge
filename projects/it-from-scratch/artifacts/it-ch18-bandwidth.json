@@ -1,0 +1,281 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch18-bandwidth_bandwidth",
+   "type": "it_bandwidth",
+   "in_seconds": 0.0,
+   "out_seconds": 110.72,
+   "props": {
+    "dur": 111.22
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.955,
+   "Our coin-flipping channel sent clean,"
+  ],
+  [
+   1.955,
+   2.737,
+   "discrete bits."
+  ],
+  [
+   2.737,
+   5.865,
+   "But a real radio wave or copper wire"
+  ],
+  [
+   5.865,
+   7.821,
+   "is analog \u2014 a continuous,"
+  ],
+  [
+   7.821,
+   8.603,
+   "wobbling voltage,"
+  ],
+  [
+   8.603,
+   10.167,
+   "smeared by continuous noise."
+  ],
+  [
+   10.167,
+   12.904,
+   "Does capacity still have something to say?"
+  ],
+  [
+   13.535,
+   14.318,
+   "It does,"
+  ],
+  [
+   14.318,
+   17.446,
+   "and the result is one of the most"
+  ],
+  [
+   17.446,
+   20.574,
+   "famous equations in all of engineering \u2014 the"
+  ],
+  [
+   20.574,
+   21.356,
+   "Shannon-Hartley theorem."
+  ],
+  [
+   21.988,
+   25.116,
+   "It says the capacity C equals the bandwidth"
+  ],
+  [
+   25.116,
+   25.507,
+   "B,"
+  ],
+  [
+   25.507,
+   28.635,
+   "times the logarithm of one plus the\nsignal-to-noise"
+  ],
+  [
+   28.635,
+   29.026,
+   "ratio."
+  ],
+  [
+   29.658,
+   32.786,
+   "Let's unpack the two knobs it hands you."
+  ],
+  [
+   33.417,
+   36.546,
+   "The first is bandwidth \u2014 the width of"
+  ],
+  [
+   36.546,
+   39.674,
+   "the band of frequencies you are allowed to"
+  ],
+  [
+   39.674,
+   40.065,
+   "use."
+  ],
+  [
+   40.065,
+   41.238,
+   "Widen the pipe,"
+  ],
+  [
+   41.238,
+   43.584,
+   "and capacity rises in direct proportion."
+  ],
+  [
+   43.584,
+   46.712,
+   "This is why fifth-generation cellular reaches for\never-higher"
+  ],
+  [
+   46.712,
+   47.494,
+   "frequency bands:"
+  ],
+  [
+   47.494,
+   48.276,
+   "more bandwidth,"
+  ],
+  [
+   48.276,
+   49.059,
+   "more capacity."
+  ],
+  [
+   49.69,
+   52.818,
+   "The second knob is the signal-to-noise ratio \u2014"
+  ],
+  [
+   52.818,
+   55.947,
+   "how loud your signal is compared to the"
+  ],
+  [
+   55.947,
+   56.729,
+   "noise floor."
+  ],
+  [
+   56.729,
+   58.293,
+   "Turn up the power,"
+  ],
+  [
+   58.293,
+   59.857,
+   "and capacity rises too."
+  ],
+  [
+   60.488,
+   62.835,
+   "But look carefully at the curve,"
+  ],
+  [
+   62.835,
+   65.572,
+   "because here the logarithm plays the tyrant."
+  ],
+  [
+   66.203,
+   69.332,
+   "Because capacity grows only with the log of"
+  ],
+  [
+   69.332,
+   70.505,
+   "the signal power,"
+  ],
+  [
+   70.505,
+   72.46,
+   "you face brutally diminishing returns."
+  ],
+  [
+   72.46,
+   75.588,
+   "To merely double the capacity through power alone,"
+  ],
+  [
+   75.588,
+   78.325,
+   "you must roughly square the signal strength."
+  ],
+  [
+   78.957,
+   80.912,
+   "Bandwidth is cheap and linear."
+  ],
+  [
+   80.912,
+   82.867,
+   "Power is expensive and logarithmic."
+  ],
+  [
+   82.867,
+   85.995,
+   "That single asymmetry quietly shapes the entire\ndesign"
+  ],
+  [
+   85.995,
+   87.168,
+   "of modern communication."
+  ],
+  [
+   87.8,
+   90.537,
+   "This one formula sizes your home wi-fi,"
+  ],
+  [
+   90.537,
+   92.492,
+   "the modem in your wall,"
+  ],
+  [
+   92.492,
+   94.838,
+   "every cell tower on the skyline,"
+  ],
+  [
+   94.838,
+   97.967,
+   "and the fibre threads carrying the internet under"
+  ],
+  [
+   97.967,
+   98.749,
+   "the oceans."
+  ],
+  [
+   99.38,
+   102.508,
+   "It is the same capacity idea as before"
+  ],
+  [
+   102.508,
+   103.682,
+   "\u2014 a hard,"
+  ],
+  [
+   103.682,
+   106.81,
+   "unbreakable limit on communication \u2014 now\ntranslated into"
+  ],
+  [
+   106.81,
+   107.592,
+   "the messy,"
+  ],
+  [
+   107.592,
+   107.983,
+   "continuous,"
+  ],
+  [
+   107.983,
+   110.72,
+   "analog world where our signals actually live."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch18-bandwidth.wav",
+   "volume": 1.0
+  }
+ }
+}

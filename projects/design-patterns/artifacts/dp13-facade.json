@@ -1,0 +1,2103 @@
+{
+ "cuts": [
+  {
+   "id": "dp13-facade_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 28.541,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 13",
+    "line1": "One call,",
+    "line2": "not seven",
+    "sub": "a single front door to a whole subsystem of moving parts",
+    "dur": 29.041
+   }
+  },
+  {
+   "id": "dp13-facade_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 29.041,
+   "out_seconds": 61.9,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Placing an order",
+    "situation": "Placing an order means coordinating four subsystems \u2014 inventory, payments, shipping, and email \u2014 in a specific sequence, each with its own API and its own failure modes.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udce6",
+      "label": "Inventory"
+     },
+     {
+      "emoji": "\ud83d\udcb3",
+      "label": "Payments"
+     },
+     {
+      "emoji": "\ud83d\ude9a",
+      "label": "Shipping + email"
+     }
+    ],
+    "ask": "How do you let a caller place an order without wiring up all four themselves?",
+    "dur": 33.359
+   }
+  },
+  {
+   "id": "dp13-facade_naive",
+   "type": "dp_code",
+   "in_seconds": 62.4,
+   "out_seconds": 101.521,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "The controller does it all.",
+    "file": "OrderController.java",
+    "lines": [
+     {
+      "t": "void checkout(Cart cart) {"
+     },
+     {
+      "t": "  inventory.reserve(cart.items());",
+      "s": "hi"
+     },
+     {
+      "t": "  payment.charge(cart.total());",
+      "s": "hi"
+     },
+     {
+      "t": "  shipping.schedule(cart.address());",
+      "s": "hi"
+     },
+     {
+      "t": "  email.sendConfirmation(cart.user());",
+      "s": "hi"
+     },
+     {
+      "t": "  // ...and undo it all if any step throws"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "The controller knows all 4 subsystems, their order, their rollback.",
+    "dur": 39.621
+   }
+  },
+  {
+   "id": "dp13-facade_pain",
+   "type": "dp_pain",
+   "in_seconds": 102.021,
+   "out_seconds": 141.546,
+   "props": {
+    "title": "\"The mobile app needs to order too. And the admin. And a cron job.\"",
+    "file": "everywhere.java",
+    "lines": [
+     {
+      "t": "class WebController   { /* the same 4 steps */ }",
+      "s": "hi"
+     },
+     {
+      "t": "class MobileApi       { /* the same 4 steps */ }",
+      "s": "hi"
+     },
+     {
+      "t": "class AdminPanel      { /* the same 4 steps */ }",
+      "s": "hi"
+     },
+     {
+      "t": "class ReorderCronJob  { /* the same 4 steps */ }",
+      "s": "hi"
+     },
+     {
+      "t": "// change the flow \u2192 change all four. miss one \u2192 a bug."
+     }
+    ],
+    "smell": "The orchestration copied into every entry point",
+    "touched": [
+     "4 callers, one 4-step dance each",
+     "add a step \u2192 edit all four",
+     "each re-implements rollback",
+     "every caller coupled to every subsystem"
+    ],
+    "dur": 40.025
+   }
+  },
+  {
+   "id": "dp13-facade_insight",
+   "type": "dp_insight",
+   "in_seconds": 142.046,
+   "out_seconds": 181.529,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "Callers all want one thing: place an order",
+     "The four subsystems and their order",
+     "Rollback belongs with the sequence"
+    ],
+    "varies": [
+     "Which caller asks (web, mobile, cron)",
+     "Occasionally, the steps in the flow"
+    ],
+    "principle": "Wrap the whole subsystem behind one simple entry point \u2014 callers ask it, not the parts.",
+    "dur": 39.983
+   }
+  },
+  {
+   "id": "dp13-facade_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 182.029,
+   "out_seconds": 222.822,
+   "props": {
+    "title": "A hotel concierge",
+    "emoji": "\ud83d\udece\ufe0f",
+    "analogy": "You make one request; the concierge coordinates housekeeping, the kitchen, and the car \u2014 you never call them yourself.",
+    "map": [
+     {
+      "from": "The concierge",
+      "to": "the facade object"
+     },
+     {
+      "from": "Housekeeping, kitchen, valet",
+      "to": "the subsystem classes"
+     },
+     {
+      "from": "\"Arrange my evening\"",
+      "to": "one method, placeOrder()"
+     },
+     {
+      "from": "You can still call the kitchen",
+      "to": "subsystems stay usable directly"
+     }
+    ],
+    "breaks": "a concierge can improvise; a facade only does the orchestration you coded into it.",
+    "dur": 41.293
+   }
+  },
+  {
+   "id": "dp13-facade_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 223.322,
+   "out_seconds": 249.518,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "One object in front of the subsystem",
+    "file": "OrderService.java",
+    "lines": [
+     {
+      "t": "public class OrderService {         // the facade",
+      "s": "add"
+     },
+     {
+      "t": "  private final Inventory inventory;",
+      "s": "add"
+     },
+     {
+      "t": "  private final Payment payment;",
+      "s": "add"
+     },
+     {
+      "t": "  private final Shipping shipping;",
+      "s": "add"
+     },
+     {
+      "t": "  private final Email email;         // holds them all",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "The facade owns a reference to every subsystem it will coordinate.",
+    "dur": 26.696
+   }
+  },
+  {
+   "id": "dp13-facade_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 250.018,
+   "out_seconds": 286.821,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "One method that runs the whole flow",
+    "file": "OrderService.java",
+    "lines": [
+     {
+      "t": "public void placeOrder(Cart cart) {",
+      "s": "hi"
+     },
+     {
+      "t": "  inventory.reserve(cart.items());"
+     },
+     {
+      "t": "  try { payment.charge(cart.total()); }",
+      "s": "hi"
+     },
+     {
+      "t": "  catch (Exception e) { inventory.release(); throw e; }",
+      "s": "hi"
+     },
+     {
+      "t": "  shipping.schedule(cart.address());"
+     },
+     {
+      "t": "  email.sendConfirmation(cart.user());"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "The sequence \u2014 and its rollback \u2014 now lives in exactly one place.",
+    "dur": 37.303
+   }
+  },
+  {
+   "id": "dp13-facade_try",
+   "type": "dp_try",
+   "in_seconds": 287.321,
+   "out_seconds": 319.81,
+   "props": {
+    "title": "Where does a fraud check go?",
+    "file": "OrderService.java",
+    "lines": [
+     {
+      "t": "public void placeOrder(Cart cart) {"
+     },
+     {
+      "t": "  // a new rule: screen for fraud BEFORE charging"
+     },
+     {
+      "t": "  // \u25af where does this step belong?",
+      "s": "ghost"
+     },
+     {
+      "t": "  payment.charge(cart.total());"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "A fraud-screening step must run before payment. Which code changes \u2014 and which doesn't?",
+    "hint": "Add fraud.screen(cart) inside placeOrder. Zero callers change.",
+    "dur": 32.989
+   }
+  },
+  {
+   "id": "dp13-facade_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 320.31,
+   "out_seconds": 354.116,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "Every caller shrinks to one line",
+    "file": "callers.java",
+    "lines": [
+     {
+      "t": "class WebController {",
+      "s": "add"
+     },
+     {
+      "t": "  void checkout(Cart c) { orders.placeOrder(c); }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "// mobile, admin, cron \u2014 all identical:"
+     },
+     {
+      "t": "orders.placeOrder(cart);   // that's the whole flow",
+      "s": "hi"
+     }
+    ],
+    "note": "Callers know one method. The subsystems, and their order, are hidden.",
+    "dur": 34.306
+   }
+  },
+  {
+   "id": "dp13-facade_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 354.616,
+   "out_seconds": 390.672,
+   "props": {
+    "requirement": "\"Add loyalty points and an SMS on every order\"",
+    "naiveLabel": "Before",
+    "naiveCost": "Edit all 4 callers, hope you match.",
+    "naiveSteps": [
+     "find every place that orders",
+     "add 2 steps to each, in order",
+     "one inconsistent copy \u2192 a bug"
+    ],
+    "patLabel": "Now",
+    "patCost": "Two lines in placeOrder(). Everyone benefits.",
+    "patFile": "OrderService.java",
+    "patLines": [
+     {
+      "t": "  loyalty.award(cart.user(), cart.total());",
+      "s": "add"
+     },
+     {
+      "t": "  sms.notify(cart.user());",
+      "s": "add"
+     },
+     {
+      "t": "  // every caller gets this, unchanged",
+      "s": "add"
+     }
+    ],
+    "dur": 36.556
+   }
+  },
+  {
+   "id": "dp13-facade_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 391.172,
+   "out_seconds": 428.266,
+   "props": {
+    "name": "The Facade Pattern",
+    "plain": "One simplified object stands in front of a complex subsystem, giving clients a single entry point while the parts stay usable underneath.",
+    "nodes": [
+     {
+      "id": "client",
+      "title": "Client",
+      "members": [
+       "placeOrder(cart)"
+      ],
+      "x": 120,
+      "y": 440,
+      "w": 340,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "facade",
+      "title": "OrderService",
+      "stereo": "facade",
+      "members": [
+       "+ placeOrder(cart)",
+       "coordinates all 4"
+      ],
+      "x": 620,
+      "y": 415,
+      "w": 460,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "inv",
+      "title": "Inventory",
+      "members": [
+       "reserve()"
+      ],
+      "x": 1360,
+      "y": 190,
+      "w": 440,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "pay",
+      "title": "Payment",
+      "members": [
+       "charge()"
+      ],
+      "x": 1360,
+      "y": 360,
+      "w": 440,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "shp",
+      "title": "Shipping",
+      "members": [
+       "schedule()"
+      ],
+      "x": 1360,
+      "y": 530,
+      "w": 440,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "eml",
+      "title": "Email",
+      "members": [
+       "send()"
+      ],
+      "x": 1360,
+      "y": 700,
+      "w": 440,
+      "color": "#22D3EE"
+     }
+    ],
+    "edges": [
+     {
+      "from": "client",
+      "to": "facade",
+      "kind": "assoc"
+     },
+     {
+      "from": "facade",
+      "to": "inv",
+      "kind": "has"
+     },
+     {
+      "from": "facade",
+      "to": "pay",
+      "kind": "has"
+     },
+     {
+      "from": "facade",
+      "to": "shp",
+      "kind": "has"
+     },
+     {
+      "from": "facade",
+      "to": "eml",
+      "kind": "has"
+     }
+    ],
+    "dur": 37.594
+   }
+  },
+  {
+   "id": "dp13-facade_map",
+   "type": "dp_map",
+   "in_seconds": 428.766,
+   "out_seconds": 470.634,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Facade",
+      "your": "OrderService.placeOrder()"
+     },
+     {
+      "role": "Subsystems",
+      "your": "Inventory, Payment, Shipping, Email"
+     },
+     {
+      "role": "Client",
+      "your": "controllers, cron \u2014 call the facade"
+     },
+     {
+      "role": "(Not hidden)",
+      "your": "subsystems still usable directly"
+     }
+    ],
+    "plain": "The facade offers a simple, unified method over a set of subsystems, without preventing direct access to them when needed.",
+    "gof": "Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.",
+    "dur": 42.368
+   }
+  },
+  {
+   "id": "dp13-facade_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 471.134,
+   "out_seconds": 520.711,
+   "props": {
+    "title": "A front door can grow too big",
+    "costs": [
+     "The facade can swell into a god object",
+     "It doesn't remove complexity \u2014 it relocates it",
+     "One more layer between caller and work"
+    ],
+    "dont": [
+     "The subsystem is already one simple call",
+     "Callers genuinely need fine-grained control",
+     "You'd just be forwarding a single method"
+    ],
+    "signal": "several clients repeat the same multi-step dance across the same set of subsystems.",
+    "dur": 50.077
+   }
+  },
+  {
+   "id": "dp13-facade_recap",
+   "type": "dp_recap",
+   "in_seconds": 521.211,
+   "out_seconds": 578.016,
+   "props": {
+    "title": "Facade, in one breath",
+    "items": [
+     "Every caller re-implemented the same multi-step subsystem dance \u2014 coupled to every part, and easy to get subtly wrong.",
+     "Callers all want one thing, and the subsystems and their order are fixed \u2014 so wrap them behind one simple entry point.",
+     "Facade: a single object that coordinates the subsystems, so clients ask it, not the parts \u2014 while the parts stay reachable."
+    ],
+    "challenge": "A video pipeline must probe, decode, filter, encode, and mux a file \u2014 five libraries, one correct order \u2014 and three tools all need to 'just convert this.'",
+    "question": "Does Facade fit? What's the facade, the subsystems, and what stays directly accessible?",
+    "dur": 57.305
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.221,
+   "Some jobs are one idea to you,"
+  ],
+  [
+   2.221,
+   4.124,
+   "but many steps to your code."
+  ],
+  [
+   4.755,
+   5.707,
+   "Place an order."
+  ],
+  [
+   5.707,
+   6.341,
+   "To you,"
+  ],
+  [
+   6.341,
+   7.928,
+   "that is a single intent."
+  ],
+  [
+   7.928,
+   8.879,
+   "To the machine,"
+  ],
+  [
+   8.879,
+   10.465,
+   "it is reserve the inventory,"
+  ],
+  [
+   10.465,
+   11.417,
+   "charge the card,"
+  ],
+  [
+   11.417,
+   12.369,
+   "schedule the shipment,"
+  ],
+  [
+   12.369,
+   14.906,
+   "send the email \u2014 in the right order,"
+  ],
+  [
+   14.906,
+   17.127,
+   "with the right rollback when something fails."
+  ],
+  [
+   17.758,
+   20.296,
+   "And every caller that wants to place an"
+  ],
+  [
+   20.296,
+   22.517,
+   "order has to know that whole dance."
+  ],
+  [
+   23.148,
+   25.369,
+   "What if there were one front door,"
+  ],
+  [
+   25.369,
+   26.32,
+   "and behind it,"
+  ],
+  [
+   26.32,
+   27.272,
+   "all the mess?"
+  ],
+  [
+   27.272,
+   28.541,
+   "Let's place an order."
+  ],
+  [
+   29.041,
+   30.465,
+   "Here is the situation:"
+  ],
+  [
+   30.465,
+   31.532,
+   "placing an order."
+  ],
+  [
+   32.164,
+   33.944,
+   "It sounds like one action,"
+  ],
+  [
+   33.944,
+   36.079,
+   "but it touches four separate subsystems."
+  ],
+  [
+   36.079,
+   36.435,
+   "Inventory,"
+  ],
+  [
+   36.435,
+   37.859,
+   "to reserve the items."
+  ],
+  [
+   37.859,
+   38.214,
+   "Payments,"
+  ],
+  [
+   38.214,
+   39.638,
+   "to charge the card."
+  ],
+  [
+   39.638,
+   39.994,
+   "Shipping,"
+  ],
+  [
+   39.994,
+   41.062,
+   "to schedule delivery."
+  ],
+  [
+   41.062,
+   41.774,
+   "And email,"
+  ],
+  [
+   41.774,
+   42.485,
+   "to confirm."
+  ],
+  [
+   43.117,
+   45.964,
+   "They must run in a particular order \u2014"
+  ],
+  [
+   45.964,
+   48.812,
+   "you do not ship before the payment clears"
+  ],
+  [
+   48.812,
+   51.659,
+   "\u2014 and each one can fail in its"
+  ],
+  [
+   51.659,
+   52.371,
+   "own way."
+  ],
+  [
+   53.002,
+   54.426,
+   "So the question is:"
+  ],
+  [
+   54.426,
+   57.273,
+   "how do you let a caller simply place"
+  ],
+  [
+   57.273,
+   57.985,
+   "an order,"
+  ],
+  [
+   57.985,
+   60.832,
+   "without making it wire up and babysit all"
+  ],
+  [
+   60.832,
+   61.9,
+   "four subsystems itself?"
+  ],
+  [
+   62.4,
+   63.476,
+   "The direct approach:"
+  ],
+  [
+   63.476,
+   65.629,
+   "the controller just does every step."
+  ],
+  [
+   66.261,
+   67.337,
+   "Reserve the inventory."
+  ],
+  [
+   67.337,
+   68.413,
+   "Charge the payment."
+  ],
+  [
+   68.413,
+   69.489,
+   "Schedule the shipment."
+  ],
+  [
+   69.489,
+   70.925,
+   "Send the confirmation email."
+  ],
+  [
+   71.556,
+   73.35,
+   "It works \u2014 and honestly,"
+  ],
+  [
+   73.35,
+   74.785,
+   "it reads clearly enough,"
+  ],
+  [
+   74.785,
+   75.503,
+   "right here."
+  ],
+  [
+   76.134,
+   79.004,
+   "But look at what this one method now"
+  ],
+  [
+   79.004,
+   79.363,
+   "knows."
+  ],
+  [
+   79.363,
+   81.157,
+   "It knows all four subsystems,"
+  ],
+  [
+   81.157,
+   82.951,
+   "and each of their APIs."
+  ],
+  [
+   82.951,
+   85.821,
+   "It knows the exact order they must run"
+  ],
+  [
+   85.821,
+   86.18,
+   "in."
+  ],
+  [
+   86.18,
+   89.05,
+   "And it owns the rollback if step three"
+  ],
+  [
+   89.05,
+   91.92,
+   "fails after step two already charged the card."
+  ],
+  [
+   92.552,
+   95.422,
+   "All of that \u2014 the orchestration of a"
+  ],
+  [
+   95.422,
+   98.292,
+   "whole subsystem \u2014 living inside a controller whose"
+  ],
+  [
+   98.292,
+   101.162,
+   "real job was just to handle a web"
+  ],
+  [
+   101.162,
+   101.521,
+   "request."
+  ],
+  [
+   102.021,
+   104.916,
+   "Then the same order has to be placeable"
+  ],
+  [
+   104.916,
+   106.001,
+   "from somewhere else."
+  ],
+  [
+   106.001,
+   107.087,
+   "The mobile API."
+  ],
+  [
+   107.087,
+   108.534,
+   "An internal admin panel."
+  ],
+  [
+   108.534,
+   110.705,
+   "A cron job that reorders staples."
+  ],
+  [
+   111.336,
+   114.231,
+   "And each of them copies the same four-step"
+  ],
+  [
+   114.231,
+   114.593,
+   "sequence,"
+  ],
+  [
+   114.593,
+   115.678,
+   "the same ordering,"
+  ],
+  [
+   115.678,
+   116.764,
+   "the same rollback."
+  ],
+  [
+   117.396,
+   120.29,
+   "Now change the flow \u2014 say you must"
+  ],
+  [
+   120.29,
+   123.185,
+   "reserve inventory only after payment clears \u2014 and"
+  ],
+  [
+   123.185,
+   126.079,
+   "you have to find and fix that logic"
+  ],
+  [
+   126.079,
+   127.527,
+   "in four different places."
+  ],
+  [
+   127.527,
+   128.25,
+   "Miss one,"
+  ],
+  [
+   128.25,
+   130.06,
+   "and you have a subtle,"
+  ],
+  [
+   130.06,
+   130.783,
+   "expensive bug."
+  ],
+  [
+   131.415,
+   131.777,
+   "Worse,"
+  ],
+  [
+   131.777,
+   134.671,
+   "every one of these callers is now welded"
+  ],
+  [
+   134.671,
+   136.119,
+   "to all four subsystems."
+  ],
+  [
+   136.119,
+   139.013,
+   "A change to the payment API ripples into"
+  ],
+  [
+   139.013,
+   140.099,
+   "the admin panel,"
+  ],
+  [
+   140.099,
+   141.184,
+   "the cron job,"
+  ],
+  [
+   141.184,
+   141.546,
+   "everywhere."
+  ],
+  [
+   142.046,
+   143.415,
+   "So what is fixed,"
+  ],
+  [
+   143.415,
+   144.441,
+   "and what varies?"
+  ],
+  [
+   145.073,
+   145.415,
+   "Fixed:"
+  ],
+  [
+   145.415,
+   148.153,
+   "every caller wants the exact same thing \u2014"
+  ],
+  [
+   148.153,
+   149.179,
+   "place this order."
+  ],
+  [
+   149.179,
+   150.206,
+   "The four subsystems,"
+  ],
+  [
+   150.206,
+   152.259,
+   "and the sequence they run in,"
+  ],
+  [
+   152.259,
+   153.97,
+   "are the same each time."
+  ],
+  [
+   153.97,
+   156.707,
+   "And the rollback logic belongs with that sequence,"
+  ],
+  [
+   156.707,
+   157.392,
+   "not scattered."
+  ],
+  [
+   158.023,
+   160.761,
+   "What varies is only who is asking \u2014"
+  ],
+  [
+   160.761,
+   161.445,
+   "the web,"
+  ],
+  [
+   161.445,
+   162.472,
+   "the mobile app,"
+  ],
+  [
+   162.472,
+   164.183,
+   "a cron job \u2014 and,"
+  ],
+  [
+   164.183,
+   165.552,
+   "once in a while,"
+  ],
+  [
+   165.552,
+   167.605,
+   "a tweak to the steps themselves."
+  ],
+  [
+   168.236,
+   169.605,
+   "Here is the move."
+  ],
+  [
+   170.237,
+   172.632,
+   "Wrap the entire subsystem behind a single,"
+  ],
+  [
+   172.632,
+   173.659,
+   "simple entry point."
+  ],
+  [
+   173.659,
+   174.343,
+   "One object,"
+  ],
+  [
+   174.343,
+   177.081,
+   "with one method that means place an order."
+  ],
+  [
+   177.081,
+   179.818,
+   "Callers talk to it \u2014 and never touch"
+  ],
+  [
+   179.818,
+   181.529,
+   "the four parts directly again."
+  ],
+  [
+   182.029,
+   183.722,
+   "Think of a hotel concierge."
+  ],
+  [
+   184.354,
+   185.37,
+   "You want dinner,"
+  ],
+  [
+   185.37,
+   186.386,
+   "a pressed shirt,"
+  ],
+  [
+   186.386,
+   188.079,
+   "and a car at eight."
+  ],
+  [
+   188.71,
+   190.404,
+   "You do not call housekeeping,"
+  ],
+  [
+   190.404,
+   191.42,
+   "then the kitchen,"
+  ],
+  [
+   191.42,
+   192.436,
+   "then the valet,"
+  ],
+  [
+   192.436,
+   193.79,
+   "in the right order,"
+  ],
+  [
+   193.79,
+   194.129,
+   "yourself."
+  ],
+  [
+   194.129,
+   196.499,
+   "You make one request to the concierge,"
+  ],
+  [
+   196.499,
+   199.208,
+   "and they coordinate all of it behind the"
+  ],
+  [
+   199.208,
+   199.547,
+   "desk."
+  ],
+  [
+   200.179,
+   201.872,
+   "The concierge is the facade."
+  ],
+  [
+   201.872,
+   202.21,
+   "Housekeeping,"
+  ],
+  [
+   202.21,
+   202.888,
+   "the kitchen,"
+  ],
+  [
+   202.888,
+   204.581,
+   "the valet are the subsystems."
+  ],
+  [
+   204.581,
+   206.951,
+   "Your single request is the one method."
+  ],
+  [
+   207.583,
+   210.292,
+   "And crucially \u2014 you can still walk down"
+  ],
+  [
+   210.292,
+   213.001,
+   "to the kitchen and talk to them directly"
+  ],
+  [
+   213.001,
+   214.695,
+   "if you ever need to."
+  ],
+  [
+   214.695,
+   216.388,
+   "The concierge is a convenience,"
+  ],
+  [
+   216.388,
+   217.404,
+   "not a wall."
+  ],
+  [
+   217.404,
+   219.436,
+   "A facade works the same way:"
+  ],
+  [
+   219.436,
+   220.113,
+   "it simplifies,"
+  ],
+  [
+   220.113,
+   222.822,
+   "but it does not lock the subsystems away."
+  ],
+  [
+   223.322,
+   224.016,
+   "The refactor,"
+  ],
+  [
+   224.016,
+   224.711,
+   "step one."
+  ],
+  [
+   225.342,
+   227.772,
+   "We create one new class \u2014 OrderService,"
+  ],
+  [
+   227.772,
+   228.467,
+   "the facade."
+  ],
+  [
+   229.098,
+   231.876,
+   "Its job is not to do the work"
+  ],
+  [
+   231.876,
+   233.611,
+   "of inventory or payment itself."
+  ],
+  [
+   233.611,
+   236.389,
+   "Its job is to hold a reference to"
+  ],
+  [
+   236.389,
+   238.124,
+   "each of the four subsystems,"
+  ],
+  [
+   238.124,
+   239.513,
+   "and to coordinate them."
+  ],
+  [
+   240.145,
+   241.186,
+   "Nothing clever yet."
+  ],
+  [
+   241.186,
+   243.963,
+   "It is simply the one place that gets"
+  ],
+  [
+   243.963,
+   246.741,
+   "to know about all four parts at once"
+  ],
+  [
+   246.741,
+   249.518,
+   "\u2014 so that no one else has to."
+  ],
+  [
+   250.018,
+   250.732,
+   "Step two:"
+  ],
+  [
+   250.732,
+   252.517,
+   "the one method that matters."
+  ],
+  [
+   253.149,
+   254.577,
+   "placeOrder takes a cart,"
+  ],
+  [
+   254.577,
+   255.648,
+   "and inside it,"
+  ],
+  [
+   255.648,
+   258.505,
+   "the whole dance finally lives in a single"
+  ],
+  [
+   258.505,
+   258.862,
+   "place."
+  ],
+  [
+   259.493,
+   260.564,
+   "Reserve the inventory."
+  ],
+  [
+   260.564,
+   263.421,
+   "Try to charge the card \u2014 and if"
+  ],
+  [
+   263.421,
+   264.135,
+   "that fails,"
+  ],
+  [
+   264.135,
+   266.991,
+   "release the inventory you just reserved and stop."
+  ],
+  [
+   266.991,
+   268.419,
+   "Then schedule the shipment,"
+  ],
+  [
+   268.419,
+   269.848,
+   "and send the confirmation."
+  ],
+  [
+   270.479,
+   273.336,
+   "Every subtle thing the callers used to get"
+  ],
+  [
+   273.336,
+   274.764,
+   "wrong \u2014 the ordering,"
+  ],
+  [
+   274.764,
+   277.62,
+   "the rollback when a later step fails \u2014"
+  ],
+  [
+   277.62,
+   279.048,
+   "is now written once,"
+  ],
+  [
+   279.048,
+   279.405,
+   "correctly,"
+  ],
+  [
+   279.405,
+   280.12,
+   "right here."
+  ],
+  [
+   280.751,
+   283.251,
+   "This is the heart of the facade:"
+  ],
+  [
+   283.251,
+   284.679,
+   "not hiding the subsystems,"
+  ],
+  [
+   284.679,
+   286.821,
+   "but owning the choreography between them."
+  ],
+  [
+   287.321,
+   289.004,
+   "Your turn \u2014 pause here."
+  ],
+  [
+   289.636,
+   290.983,
+   "A new requirement lands:"
+  ],
+  [
+   290.983,
+   293.676,
+   "every order must be screened for fraud before"
+  ],
+  [
+   293.676,
+   295.022,
+   "the card is charged."
+  ],
+  [
+   295.654,
+   298.347,
+   "The question is not how to write the"
+  ],
+  [
+   298.347,
+   298.684,
+   "check."
+  ],
+  [
+   298.684,
+   301.041,
+   "It is where it goes \u2014 and,"
+  ],
+  [
+   301.041,
+   302.051,
+   "just as important,"
+  ],
+  [
+   302.051,
+   304.07,
+   "what does not have to change."
+  ],
+  [
+   304.702,
+   306.385,
+   "Think about the web controller,"
+  ],
+  [
+   306.385,
+   307.395,
+   "the mobile API,"
+  ],
+  [
+   307.395,
+   308.405,
+   "the admin panel,"
+  ],
+  [
+   308.405,
+   309.415,
+   "the cron job."
+  ],
+  [
+   309.415,
+   312.109,
+   "How many of them need to be touched"
+  ],
+  [
+   312.109,
+   314.802,
+   "to add a fraud check to every order?"
+  ],
+  [
+   315.433,
+   316.78,
+   "Sit with that answer,"
+  ],
+  [
+   316.78,
+   319.473,
+   "because it is the entire payoff of this"
+  ],
+  [
+   319.473,
+   319.81,
+   "pattern."
+  ],
+  [
+   320.31,
+   321.021,
+   "Step three,"
+  ],
+  [
+   321.021,
+   322.798,
+   "and watch every caller collapse."
+  ],
+  [
+   323.43,
+   326.273,
+   "The web controller's checkout method is now a"
+  ],
+  [
+   326.273,
+   329.117,
+   "single line \u2014 ask the order service to"
+  ],
+  [
+   329.117,
+   330.183,
+   "place the order."
+  ],
+  [
+   330.815,
+   331.881,
+   "The mobile API,"
+  ],
+  [
+   331.881,
+   332.948,
+   "the admin panel,"
+  ],
+  [
+   332.948,
+   335.791,
+   "the cron job \u2014 every one of them"
+  ],
+  [
+   335.791,
+   337.568,
+   "becomes that same single call."
+  ],
+  [
+   338.2,
+   341.044,
+   "None of them knows there are four subsystems."
+  ],
+  [
+   341.044,
+   343.176,
+   "None of them knows the order,"
+  ],
+  [
+   343.176,
+   344.243,
+   "or the rollback,"
+  ],
+  [
+   344.243,
+   347.086,
+   "or that a fraud check was just added."
+  ],
+  [
+   347.718,
+   349.14,
+   "They know one thing:"
+  ],
+  [
+   349.14,
+   350.206,
+   "place an order."
+  ],
+  [
+   350.206,
+   351.983,
+   "That is the front door,"
+  ],
+  [
+   351.983,
+   354.116,
+   "and everything complicated is behind it."
+  ],
+  [
+   354.616,
+   357.405,
+   "Now the requirement that used to mean touching"
+  ],
+  [
+   357.405,
+   357.753,
+   "everything."
+  ],
+  [
+   357.753,
+   360.542,
+   "Award loyalty points and send an SMS on"
+  ],
+  [
+   360.542,
+   361.239,
+   "every order."
+  ],
+  [
+   361.871,
+   362.916,
+   "Before the facade,"
+  ],
+  [
+   362.916,
+   365.705,
+   "that meant hunting down all four callers and"
+  ],
+  [
+   365.705,
+   368.494,
+   "adding two more steps to each \u2014 in"
+  ],
+  [
+   368.494,
+   369.54,
+   "the right spot,"
+  ],
+  [
+   369.54,
+   369.888,
+   "consistently,"
+  ],
+  [
+   369.888,
+   370.934,
+   "without missing one."
+  ],
+  [
+   371.565,
+   371.914,
+   "Now?"
+  ],
+  [
+   371.914,
+   374.006,
+   "You add two lines inside placeOrder."
+  ],
+  [
+   374.637,
+   376.031,
+   "And instantly the web,"
+  ],
+  [
+   376.031,
+   377.077,
+   "the mobile app,"
+  ],
+  [
+   377.077,
+   378.123,
+   "the admin panel,"
+  ],
+  [
+   378.123,
+   380.912,
+   "and the cron job all award points and"
+  ],
+  [
+   380.912,
+   383.7,
+   "send the SMS \u2014 every one of them,"
+  ],
+  [
+   383.7,
+   386.489,
+   "without a single line changing in any caller."
+  ],
+  [
+   386.489,
+   388.58,
+   "The behavior lives in one place,"
+  ],
+  [
+   388.58,
+   390.672,
+   "so it improves in one place."
+  ],
+  [
+   391.172,
+   393.122,
+   "This is the Facade pattern."
+  ],
+  [
+   393.754,
+   394.924,
+   "On the left,"
+  ],
+  [
+   394.924,
+   396.874,
+   "the client \u2014 every caller,"
+  ],
+  [
+   396.874,
+   397.655,
+   "now identical."
+  ],
+  [
+   398.286,
+   399.456,
+   "In the middle,"
+  ],
+  [
+   399.456,
+   400.237,
+   "the facade,"
+  ],
+  [
+   400.237,
+   400.627,
+   "OrderService:"
+  ],
+  [
+   400.627,
+   402.187,
+   "the single front door."
+  ],
+  [
+   402.818,
+   404.379,
+   "And on the right,"
+  ],
+  [
+   404.379,
+   406.719,
+   "the subsystems it coordinates \u2014 inventory,"
+  ],
+  [
+   406.719,
+   407.109,
+   "payment,"
+  ],
+  [
+   407.109,
+   407.499,
+   "shipping,"
+  ],
+  [
+   407.499,
+   410.62,
+   "email \u2014 each with its own real work"
+  ],
+  [
+   410.62,
+   411.4,
+   "to do."
+  ],
+  [
+   412.032,
+   413.592,
+   "Look at the shape."
+  ],
+  [
+   413.592,
+   416.322,
+   "The client talks only to the facade."
+  ],
+  [
+   416.322,
+   419.443,
+   "The facade fans out to all four subsystems,"
+  ],
+  [
+   419.443,
+   421.003,
+   "in the right order,"
+  ],
+  [
+   421.003,
+   422.564,
+   "with the right recovery."
+  ],
+  [
+   423.195,
+   425.536,
+   "One simple entry point in front;"
+  ],
+  [
+   425.536,
+   427.096,
+   "all the genuine complexity,"
+  ],
+  [
+   427.096,
+   427.486,
+   "organized,"
+  ],
+  [
+   427.486,
+   428.266,
+   "behind it."
+  ],
+  [
+   428.766,
+   429.525,
+   "The names,"
+  ],
+  [
+   429.525,
+   431.043,
+   "mapped to your code."
+  ],
+  [
+   431.675,
+   433.193,
+   "The Facade is OrderService,"
+  ],
+  [
+   433.193,
+   434.711,
+   "and its placeOrder method."
+  ],
+  [
+   435.342,
+   436.86,
+   "The Subsystems are inventory,"
+  ],
+  [
+   436.86,
+   437.24,
+   "payment,"
+  ],
+  [
+   437.24,
+   437.619,
+   "shipping,"
+  ],
+  [
+   437.619,
+   440.655,
+   "and email \u2014 the classes doing the real"
+  ],
+  [
+   440.655,
+   441.035,
+   "work."
+  ],
+  [
+   441.667,
+   444.703,
+   "The Client is any controller or job that"
+  ],
+  [
+   444.703,
+   446.6,
+   "now just calls the facade."
+  ],
+  [
+   447.232,
+   449.129,
+   "And note the fourth row,"
+  ],
+  [
+   449.129,
+   452.165,
+   "because it separates a facade from a wall"
+  ],
+  [
+   452.165,
+   454.442,
+   "\u2014 the subsystems are not hidden."
+  ],
+  [
+   454.442,
+   457.479,
+   "If some special caller genuinely needs to talk"
+  ],
+  [
+   457.479,
+   458.617,
+   "to payment directly,"
+  ],
+  [
+   458.617,
+   459.756,
+   "it still can."
+  ],
+  [
+   460.387,
+   461.905,
+   "The Gang of Four:"
+  ],
+  [
+   461.905,
+   464.941,
+   "provide a unified interface to a set of"
+  ],
+  [
+   464.941,
+   467.977,
+   "interfaces in a subsystem \u2014 a higher-level\ninterface"
+  ],
+  [
+   467.977,
+   470.634,
+   "that makes the subsystem easier to use."
+  ],
+  [
+   471.134,
+   473.547,
+   "Facade has its own failure mode."
+  ],
+  [
+   474.178,
+   475.787,
+   "The most common one:"
+  ],
+  [
+   475.787,
+   478.2,
+   "the facade becomes a dumping ground."
+  ],
+  [
+   478.2,
+   481.015,
+   "Every new cross-subsystem operation gets bolted\non,"
+  ],
+  [
+   481.015,
+   484.232,
+   "until OrderService is a two-thousand-line god\nobject that"
+  ],
+  [
+   484.232,
+   485.036,
+   "knows everything."
+  ],
+  [
+   485.668,
+   488.885,
+   "And remember \u2014 a facade does not remove"
+  ],
+  [
+   488.885,
+   489.689,
+   "the complexity."
+  ],
+  [
+   489.689,
+   492.102,
+   "The four subsystems are still there,"
+  ],
+  [
+   492.102,
+   492.906,
+   "still complicated."
+  ],
+  [
+   492.906,
+   496.124,
+   "The facade just relocates the mess into one"
+  ],
+  [
+   496.124,
+   496.928,
+   "managed place,"
+  ],
+  [
+   496.928,
+   499.743,
+   "and adds a layer to pass through."
+  ],
+  [
+   500.374,
+   503.592,
+   "So skip it when the subsystem is already"
+  ],
+  [
+   503.592,
+   505.2,
+   "a single simple call,"
+  ],
+  [
+   505.2,
+   508.417,
+   "or when your callers genuinely need fine-grained\ncontrol"
+  ],
+  [
+   508.417,
+   509.624,
+   "over the parts."
+  ],
+  [
+   510.255,
+   513.472,
+   "Reach for it when several clients keep repeating"
+  ],
+  [
+   513.472,
+   516.69,
+   "the same multi-step dance across the same set"
+  ],
+  [
+   516.69,
+   517.494,
+   "of subsystems."
+  ],
+  [
+   517.494,
+   519.505,
+   "That repetition is the facade,"
+  ],
+  [
+   519.505,
+   520.711,
+   "asking to exist."
+  ],
+  [
+   521.211,
+   521.58,
+   "Facade,"
+  ],
+  [
+   521.58,
+   522.687,
+   "in one breath."
+  ],
+  [
+   523.318,
+   526.269,
+   "Every caller re-implemented the same multi-step\nsubsystem dance,"
+  ],
+  [
+   526.269,
+   527.745,
+   "coupled to every part,"
+  ],
+  [
+   527.745,
+   529.958,
+   "and easy to get subtly wrong."
+  ],
+  [
+   530.59,
+   533.541,
+   "But they all want the same one thing,"
+  ],
+  [
+   533.541,
+   536.492,
+   "and the subsystems and their order are fixed"
+  ],
+  [
+   536.492,
+   539.444,
+   "\u2014 so you wrap them behind a single"
+  ],
+  [
+   539.444,
+   540.55,
+   "simple entry point."
+  ],
+  [
+   541.182,
+   541.551,
+   "Facade:"
+  ],
+  [
+   541.551,
+   543.764,
+   "one object that coordinates the subsystems,"
+  ],
+  [
+   543.764,
+   546.715,
+   "so clients ask it instead of the parts"
+  ],
+  [
+   546.715,
+   549.667,
+   "\u2014 while the parts stay reachable for anyone"
+  ],
+  [
+   549.667,
+   551.142,
+   "who truly needs them."
+  ],
+  [
+   551.774,
+   553.987,
+   "Here is one to carry out."
+  ],
+  [
+   554.619,
+   557.201,
+   "A video pipeline must probe a file,"
+  ],
+  [
+   557.201,
+   557.939,
+   "decode it,"
+  ],
+  [
+   557.939,
+   559.046,
+   "apply a filter,"
+  ],
+  [
+   559.046,
+   559.783,
+   "encode it,"
+  ],
+  [
+   559.783,
+   562.366,
+   "and mux the result \u2014 five libraries,"
+  ],
+  [
+   562.366,
+   565.317,
+   "one correct order \u2014 and three different tools"
+  ],
+  [
+   565.317,
+   567.53,
+   "all just want to convert this."
+  ],
+  [
+   568.162,
+   569.269,
+   "Does Facade fit?"
+  ],
+  [
+   569.269,
+   570.744,
+   "What is the facade,"
+  ],
+  [
+   570.744,
+   572.22,
+   "what are the subsystems,"
+  ],
+  [
+   572.22,
+   574.433,
+   "and what should stay directly accessible?"
+  ],
+  [
+   575.065,
+   575.434,
+   "Pause,"
+  ],
+  [
+   575.434,
+   578.016,
+   "and sketch it before the next episode."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp13-facade.wav",
+   "volume": 1.0
+  }
+ }
+}

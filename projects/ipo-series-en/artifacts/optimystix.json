@@ -1,0 +1,663 @@
+{
+  "cuts": [
+    {
+      "id": "optimystix_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 24.428,
+      "props": {
+        "title": "Optimystix Entertainment IPO",
+        "sub": "TV content — Comedy Circus, Crime Patrol · ₹107.88 Cr · NSE SME · 7–11 Aug 2026",
+        "kicker": "SME IPO ANALYSIS · NSE SME",
+        "dur": 24.928
+      }
+    },
+    {
+      "id": "optimystix_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 24.928,
+      "out_seconds": 57.154,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Optimystix Entertainment",
+        "color": "#F472B6",
+        "items": [
+          {
+            "emoji": "📺",
+            "k": "A TV & content producer",
+            "v": "Makes television shows and content — behind popular titles like Comedy Circus and Crime Patrol",
+            "chip": "CONTENT"
+          },
+          {
+            "emoji": "🎬",
+            "k": "A deep back-catalogue",
+            "v": "150+ TV shows and 7,500+ hours of original programming across television and films",
+            "chip": "150+ SHOWS"
+          },
+          {
+            "emoji": "⭐",
+            "k": "First-ever IPO",
+            "v": "Led by veterans Vipul D. Shah and Rajesh Bahl; this is the company's debut on the market",
+            "chip": "DEBUT"
+          }
+        ],
+        "dur": 32.726
+      }
+    },
+    {
+      "id": "optimystix_fin",
+      "type": "sm_stats",
+      "in_seconds": 57.654,
+      "out_seconds": 97.32,
+      "props": {
+        "kicker": "FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 136,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+8.6% YoY (₹125.07 → ₹135.89 Cr)"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 24,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+39% YoY (₹17.24 → ₹24.04 Cr)"
+          },
+          {
+            "label": "Valuation P/E",
+            "to": 16.8,
+            "decimals": 1,
+            "prefix": "~",
+            "suffix": "×",
+            "color": "#F472B6",
+            "sub": "est. ~₹405 Cr value ÷ ₹24.04 Cr PAT"
+          }
+        ],
+        "note": "Steady revenue but strong profit growth — profit up 39% while sales rose 9%, so margins jumped. Valued at ~17× earnings.",
+        "dur": 40.166
+      }
+    },
+    {
+      "id": "optimystix_issue",
+      "type": "sm_stats",
+      "in_seconds": 97.82,
+      "out_seconds": 126.95,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 108,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F472B6",
+            "sub": "₹107.88 Cr · band ₹165–174"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 87,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "~₹87 Cr · ~81% funds the business"
+          },
+          {
+            "label": "OFS (to promoter)",
+            "to": 21,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "₹20.88 Cr — promoter part-sells"
+          }
+        ],
+        "note": "A healthy mix: about 81% is a fresh issue funding the business; ~19% is promoter Vipul D. Shah selling part of his stake.",
+        "dur": 29.63
+      }
+    },
+    {
+      "id": "optimystix_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 127.45,
+      "out_seconds": 158.788,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹87 Cr Funds",
+        "color": "#F472B6",
+        "items": [
+          {
+            "emoji": "🔄",
+            "k": "₹55.88 Cr — working capital",
+            "v": "The bulk funds working capital — content production ties up cash long before a show earns revenue",
+            "chip": "WC"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Balance — general corporate",
+            "v": "The remainder goes to general corporate purposes",
+            "chip": "GCP"
+          },
+          {
+            "emoji": "🎥",
+            "k": "Why so much working capital",
+            "v": "Producing shows means paying crews and costs upfront, then collecting later — growth needs funding",
+            "chip": "CONTENT"
+          }
+        ],
+        "dur": 31.838
+      }
+    },
+    {
+      "id": "optimystix_verdict",
+      "type": "sm_myths",
+      "in_seconds": 159.288,
+      "out_seconds": 203.754,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "Content is hit-driven — revenue can be lumpy",
+            "f": "Profitable & known titles; margins jumped"
+          },
+          {
+            "m": "Revenue growth is modest (~9%)",
+            "f": "~81% fresh; reasonable ~17× valuation"
+          },
+          {
+            "m": "Small SME — volatile & thinly traded",
+            "f": "Deep library; experienced promoters"
+          }
+        ],
+        "dur": 44.966
+      }
+    },
+    {
+      "id": "optimystix_apply",
+      "type": "sm_iconcards",
+      "in_seconds": 204.254,
+      "out_seconds": 252.75,
+      "props": {
+        "kicker": "HOW TO APPLY · SME IPO",
+        "title": "Platform & Money Needed",
+        "color": "#F472B6",
+        "items": [
+          {
+            "emoji": "🏢",
+            "k": "Lists on NSE SME",
+            "v": "A separate platform for small companies — NOT the mainboard. Lot sizes, liquidity and risk all differ",
+            "chip": "SME"
+          },
+          {
+            "emoji": "💰",
+            "k": "A large minimum bid",
+            "v": "One lot is ~₹1 lakh per lot. The minimum you need is about ₹1 lakh+ (lot TBA) — far above a mainboard IPO's ~₹15,000",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "⚠️",
+            "k": "Higher risk, thin liquidity",
+            "v": "SME stocks are volatile and lightly traded, with lighter disclosure — invest only money you can afford to lock up",
+            "chip": "RISK"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE/BSE SME IPO pages, Chittorgarh or your broker app; allotment is by lottery if oversubscribed",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 48.996
+      }
+    },
+    {
+      "id": "optimystix_recap",
+      "type": "sm_recap",
+      "in_seconds": 253.25,
+      "out_seconds": 310.482,
+      "props": {
+        "title": "Optimystix Entertainment IPO — at a Glance",
+        "items": [
+          "Business: TV content producer (Comedy Circus, Crime Patrol)",
+          "FY26: revenue ₹135.89 Cr (+9%), profit ₹24.04 Cr (+39%)",
+          "₹107.88 Cr issue — ~81% fresh; NSE SME",
+          "Fresh money mainly funds working capital",
+          "Valued ~17× · SME min ~₹1 lakh+"
+        ],
+        "closer": "A profitable, recognisable content house at a fair price — but a hit-driven, small-cap SME. Read the RHP; decide for yourself.",
+        "dur": 57.732
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.359,
+      "Let's break down the Optimystix Entertainment I-P-O —"
+    ],
+    [
+      4.359,
+      13.653,
+      "a hundred and eight crore S-M-E issue from the production house behind shows like Comedy Circus and Crime Patrol."
+    ],
+    [
+      13.653,
+      17.026,
+      "We'll cover what it does, its financials,"
+    ],
+    [
+      17.026,
+      21.056,
+      "where the money goes, and what it takes to apply."
+    ],
+    [
+      21.056,
+      24.428,
+      "This is education, not investment advice."
+    ],
+    [
+      24.928,
+      27.098,
+      "So what does Optimystix do?"
+    ],
+    [
+      27.098,
+      30.955,
+      "It's a television and content production house —"
+    ],
+    [
+      30.955,
+      36.5,
+      "the team behind well-known shows like Comedy Circus and Crime Patrol."
+    ],
+    [
+      36.5,
+      46.948,
+      "It has a deep library: over a hundred and fifty T-V shows and more than seven thousand five hundred hours of original programming,"
+    ],
+    [
+      46.948,
+      49.198,
+      "across television and films."
+    ],
+    [
+      49.198,
+      52.252,
+      "It's led by industry veterans Vipul D."
+    ],
+    [
+      52.252,
+      53.939,
+      "Shah and Rajesh Bahl,"
+    ],
+    [
+      53.939,
+      57.154,
+      "and this is its first-ever public issue."
+    ],
+    [
+      57.654,
+      59.149,
+      "Now the financials."
+    ],
+    [
+      59.149,
+      63.084,
+      "Revenue was fairly steady — up about nine percent,"
+    ],
+    [
+      63.084,
+      71.427,
+      "from a hundred and twenty-five point zero seven crore to a hundred and thirty-five point eight nine crore."
+    ],
+    [
+      71.427,
+      75.598,
+      "But profit grew much faster — up thirty-nine percent,"
+    ],
+    [
+      75.598,
+      81.343,
+      "from seventeen point two four crore to twenty-four point zero four crore."
+    ],
+    [
+      81.343,
+      83.547,
+      "So margins improved sharply."
+    ],
+    [
+      83.547,
+      84.806,
+      "On our estimate,"
+    ],
+    [
+      84.806,
+      89.607,
+      "from a post-issue value of about four hundred and five crore,"
+    ],
+    [
+      89.607,
+      92.834,
+      "that's roughly seventeen times earnings —"
+    ],
+    [
+      92.834,
+      97.32,
+      "a reasonable valuation for a profitable content business."
+    ],
+    [
+      97.82,
+      99.877,
+      "Where does your money go?"
+    ],
+    [
+      99.877,
+      103.909,
+      "Of the roughly one hundred and eight crore issue,"
+    ],
+    [
+      103.909,
+      108.188,
+      "about eighty-seven crore — some eighty-one percent —"
+    ],
+    [
+      108.188,
+      111.48,
+      "is a fresh issue going into the company."
+    ],
+    [
+      111.48,
+      115.759,
+      "The remaining twenty-one crore is an offer for sale,"
+    ],
+    [
+      115.759,
+      117.651,
+      "where promoter Vipul D."
+    ],
+    [
+      117.651,
+      120.038,
+      "Shah sells part of his stake."
+    ],
+    [
+      120.038,
+      122.753,
+      "So this is a mostly-fresh issue —"
+    ],
+    [
+      122.753,
+      125.304,
+      "four-fifths funds the business."
+    ],
+    [
+      125.304,
+      126.95,
+      "A healthy structure."
+    ],
+    [
+      127.45,
+      130.134,
+      "What does the fresh money fund?"
+    ],
+    [
+      130.134,
+      134.722,
+      "The bulk — about fifty-five point eight eight crore —"
+    ],
+    [
+      134.722,
+      136.973,
+      "goes into working capital."
+    ],
+    [
+      136.973,
+      141.734,
+      "That makes sense for a content producer: you pay crews,"
+    ],
+    [
+      141.734,
+      144.677,
+      "cast and production costs upfront,"
+    ],
+    [
+      144.677,
+      147.361,
+      "and only collect revenue later,"
+    ],
+    [
+      147.361,
+      150.131,
+      "so growth ties up a lot of cash."
+    ],
+    [
+      150.131,
+      153.854,
+      "The rest is for general corporate purposes."
+    ],
+    [
+      153.854,
+      158.788,
+      "It's a straightforward, growth-oriented use of the money."
+    ],
+    [
+      159.288,
+      160.964,
+      "Should you subscribe?"
+    ],
+    [
+      160.964,
+      164.317,
+      "The strengths — it's genuinely profitable,"
+    ],
+    [
+      164.317,
+      176.132,
+      "with recognisable titles and a sharp jump in margins; about eighty-one percent of the issue is fresh money; and at roughly seventeen times earnings,"
+    ],
+    [
+      176.132,
+      178.368,
+      "the valuation is reasonable."
+    ],
+    [
+      178.368,
+      182.359,
+      "The watch-outs — content is a hit-driven business,"
+    ],
+    [
+      182.359,
+      187.947,
+      "so revenue can be lumpy year to year; top-line growth here was modest,"
+    ],
+    [
+      187.947,
+      191.3,
+      "under ten percent; and it's a small S-M-E,"
+    ],
+    [
+      191.3,
+      193.695,
+      "so volatile and thinly traded."
+    ],
+    [
+      193.695,
+      195.931,
+      "The takeaway — a profitable,"
+    ],
+    [
+      195.931,
+      200.641,
+      "well-known content house at a fair price, but a hit-driven,"
+    ],
+    [
+      200.641,
+      201.758,
+      "small-cap bet."
+    ],
+    [
+      201.758,
+      203.754,
+      "Decide with that in mind."
+    ],
+    [
+      204.254,
+      205.948,
+      "Now — how to apply."
+    ],
+    [
+      205.948,
+      209.959,
+      "Optimystix lists on the N-S-E S-M-E platform,"
+    ],
+    [
+      209.959,
+      212.456,
+      "separate from the mainboard."
+    ],
+    [
+      212.456,
+      216.2,
+      "As with all S-M-Es, the minimum is large —"
+    ],
+    [
+      216.2,
+      220.479,
+      "around one lakh rupees or more for a single lot,"
+    ],
+    [
+      220.479,
+      222.975,
+      "far above a mainboard I-P-O."
+    ],
+    [
+      222.975,
+      228.324,
+      "The exact lot size is confirmed just before the issue opens,"
+    ],
+    [
+      228.324,
+      230.374,
+      "so check it on the day."
+    ],
+    [
+      230.374,
+      235.545,
+      "And remember, S-M-E stocks are volatile and thinly traded,"
+    ],
+    [
+      235.545,
+      239.824,
+      "so invest only what you can afford to lock away."
+    ],
+    [
+      239.824,
+      246.064,
+      "Track the live subscription and the final lot on the N-S-E S-M-E page,"
+    ],
+    [
+      246.064,
+      249.006,
+      "Chittorgarh, or your broker app —"
+    ],
+    [
+      249.006,
+      252.75,
+      "allotment is by lottery if oversubscribed."
+    ],
+    [
+      253.25,
+      256.319,
+      "Let's recap Optimystix Entertainment."
+    ],
+    [
+      256.319,
+      261.213,
+      "The production house behind Comedy Circus and Crime Patrol,"
+    ],
+    [
+      261.213,
+      265.277,
+      "with a deep library and a sharp jump in margins —"
+    ],
+    [
+      265.277,
+      267.765,
+      "profit up thirty-nine percent."
+    ],
+    [
+      267.765,
+      271.415,
+      "The issue is about eighty-one percent fresh,"
+    ],
+    [
+      271.415,
+      273.986,
+      "mainly funding working capital,"
+    ],
+    [
+      273.986,
+      277.387,
+      "at a reasonable seventeen times earnings."
+    ],
+    [
+      277.387,
+      282.032,
+      "But content is hit-driven and lumpy, it's a small S-M-E,"
+    ],
+    [
+      282.032,
+      286.511,
+      "and the minimum bid is around one lakh rupees or more."
+    ],
+    [
+      286.511,
+      290.492,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      290.492,
+      292.815,
+      "it is not investment advice,"
+    ],
+    [
+      292.815,
+      295.552,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      295.552,
+      298.704,
+      "and not a prediction of listing gains."
+    ],
+    [
+      298.704,
+      303.1,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      303.1,
+      308.823,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      308.823,
+      310.482,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/optimystix.wav",
+      "volume": 1.0
+    }
+  }
+}

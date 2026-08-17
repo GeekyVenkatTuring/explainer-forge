@@ -1,0 +1,477 @@
+{
+  "cuts": [
+    {
+      "id": "s20_divider",
+      "type": "ait_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 11.28,
+      "props": {
+        "n": 2,
+        "title": "The Reality Check",
+        "sub": "Why most bots quietly lose money",
+        "color": "risk",
+        "parts": 6,
+        "dur": 11.78
+      }
+    },
+    {
+      "id": "s21_numbers",
+      "type": "ait_stat",
+      "in_seconds": 11.78,
+      "out_seconds": 52.09,
+      "props": {
+        "kicker": "THE UNCOMFORTABLE NUMBERS",
+        "title": "What the studies actually show",
+        "color": "risk",
+        "stats": [
+          {
+            "value": 80,
+            "suffix": "%+",
+            "label": "of retail bot users end up losing money",
+            "src": "multiple industry studies",
+            "c": "risk"
+          },
+          {
+            "value": 0.025,
+            "prefix": "R\u00b2 < ",
+            "decimals": 3,
+            "label": "how well a backtest predicts live results",
+            "src": "study of 888 strategies",
+            "c": "edge"
+          },
+          {
+            "value": 90,
+            "prefix": "~",
+            "suffix": " days",
+            "label": "how fast many bots blow up",
+            "src": "reported bot lifetimes",
+            "c": "ai"
+          }
+        ],
+        "note": "Treat scary stats as directional, not gospel \u2014 but the direction is clear.",
+        "dur": 40.81
+      }
+    },
+    {
+      "id": "s21b_biases",
+      "type": "ait_cards",
+      "in_seconds": 52.59,
+      "out_seconds": 102.212,
+      "props": {
+        "kicker": "FOUR WAYS BACKTESTS LIE",
+        "title": "The biases that fake a great result",
+        "color": "risk",
+        "cards": [
+          {
+            "emoji": "\ud83d\udd2e",
+            "title": "Look-ahead",
+            "body": "Using data that didn't exist yet at that moment.",
+            "tag": "the classic",
+            "c": "risk"
+          },
+          {
+            "emoji": "\u26b0\ufe0f",
+            "title": "Survivorship",
+            "body": "Testing only on companies that didn't go bust.",
+            "tag": "silent",
+            "c": "edge"
+          },
+          {
+            "emoji": "\ud83c\udfa3",
+            "title": "Data snooping",
+            "body": "Trying 1,000 ideas and keeping the one that 'worked'.",
+            "tag": "sneaky",
+            "c": "ai"
+          },
+          {
+            "emoji": "\ud83e\uddf4",
+            "title": "Cherry-picking",
+            "body": "Choosing the one period where your bot shines.",
+            "tag": "human",
+            "c": "data"
+          }
+        ],
+        "dur": 50.122
+      }
+    },
+    {
+      "id": "s22_overfitting",
+      "type": "ait_callout",
+      "in_seconds": 102.712,
+      "out_seconds": 143.884,
+      "props": {
+        "kicker": "THE NUMBER ONE KILLER",
+        "color": "risk",
+        "text": "Overfitting: your bot memorised the past instead of learning.",
+        "sub": "A 70% win rate on old data can flip to a loss the day it goes live.",
+        "dur": 41.672
+      }
+    },
+    {
+      "id": "s23_whyfail",
+      "type": "ait_cards",
+      "in_seconds": 144.384,
+      "out_seconds": 183.893,
+      "props": {
+        "kicker": "THE FIVE HORSEMEN",
+        "title": "Five ways a bot quietly bleeds out",
+        "color": "risk",
+        "cards": [
+          {
+            "emoji": "\ud83e\uddec",
+            "title": "Overfitting",
+            "body": "It learned noise, not a real edge.",
+            "tag": "the big one",
+            "c": "risk"
+          },
+          {
+            "emoji": "\ud83d\udcb8",
+            "title": "Costs",
+            "body": "Fees, taxes and slippage eat a thin edge alive.",
+            "tag": "silent killer",
+            "c": "edge"
+          },
+          {
+            "emoji": "\ud83d\udc22",
+            "title": "Latency",
+            "body": "You fill seconds after the pros \u2014 at worse prices.",
+            "tag": "structural",
+            "c": "ai"
+          },
+          {
+            "emoji": "\ud83c\udf0a",
+            "title": "Regime change",
+            "body": "The market that fit your bot is already gone.",
+            "tag": "inevitable",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83d\ude30",
+            "title": "You",
+            "body": "Panic, overrides and greed break the best system.",
+            "tag": "human",
+            "c": "money"
+          }
+        ],
+        "dur": 40.009
+      }
+    },
+    {
+      "id": "s24_costs",
+      "type": "ait_gauge",
+      "in_seconds": 184.393,
+      "out_seconds": 225.729,
+      "props": {
+        "kicker": "THE SILENT KILLER",
+        "title": "In India, costs are brutal for frequent trading",
+        "color": "risk",
+        "segs": [
+          {
+            "label": "brokerage \u00b7 ~\u20b920 / order",
+            "h": 130,
+            "c": "edge",
+            "note": "Flat per order. It grows with how often you trade, not with profit."
+          },
+          {
+            "label": "S T T \u00b7 the big one",
+            "h": 250,
+            "c": "risk",
+            "note": "On a delivery round-trip, tax can be the bulk of your cost."
+          },
+          {
+            "label": "slippage + GST + stamp",
+            "h": 170,
+            "c": "ai",
+            "note": "The gap between the backtest price and the price you truly get."
+          }
+        ],
+        "counter": {
+          "value": 22,
+          "suffix": "%",
+          "label": "annual drag at just ~100 trades",
+          "c": "risk"
+        },
+        "caption": "The more your bot trades, the more it must beat just to break even.",
+        "dur": 41.836
+      }
+    },
+    {
+      "id": "s25_costbars",
+      "type": "ait_bars",
+      "in_seconds": 226.229,
+      "out_seconds": 270.232,
+      "props": {
+        "kicker": "FOLLOW ONE RUPEE",
+        "title": "Watch costs eat a \u20b9100 gross profit",
+        "color": "risk",
+        "unit": "",
+        "max": 100,
+        "bars": [
+          {
+            "label": "gross edge",
+            "v": 100,
+            "c": "money"
+          },
+          {
+            "label": "after brokerage",
+            "v": 82,
+            "c": "edge"
+          },
+          {
+            "label": "after taxes",
+            "v": 55,
+            "c": "risk"
+          },
+          {
+            "label": "after slippage",
+            "v": 34,
+            "c": "ai"
+          },
+          {
+            "label": "net you keep",
+            "v": 22,
+            "c": "data"
+          }
+        ],
+        "note": "Illustrative \u2014 but this shape is exactly why over-trading turns edges negative.",
+        "dur": 44.503
+      }
+    },
+    {
+      "id": "s26_regime",
+      "type": "ait_callout",
+      "in_seconds": 270.732,
+      "out_seconds": 310.235,
+      "props": {
+        "kicker": "A MOVING TARGET",
+        "color": "ai",
+        "text": "The market you perfectly fit yesterday no longer exists.",
+        "sub": "Edges decay. A live strategy is a garden, not a statue.",
+        "dur": 40.003
+      }
+    },
+    {
+      "id": "s27_scams",
+      "type": "ait_list",
+      "in_seconds": 310.735,
+      "out_seconds": 361.12,
+      "props": {
+        "kicker": "PROTECT YOURSELF",
+        "title": "How to spot an AI-trading scam",
+        "tone": "bad",
+        "color": "risk",
+        "items": [
+          {
+            "h": "It promises guaranteed or \u201cassured\u201d returns",
+            "sub": "No real strategy can promise profit in a volatile market. None."
+          },
+          {
+            "h": "It asks you to deposit into their account",
+            "sub": "Your money must always stay in your own broker account."
+          },
+          {
+            "h": "It claims to be \u201cSEBI approved\u201d",
+            "sub": "Check the registration number on the SEBI site. Most are fake."
+          },
+          {
+            "h": "Influencers and Telegram groups push urgency",
+            "sub": "\u201cAct now, seats closing\u201d is the oldest trick in the book."
+          }
+        ],
+        "caption": "Reported losses to such scams in India ran into tens of thousands of crores in 2024.",
+        "dur": 50.885
+      }
+    },
+    {
+      "id": "s28_verify",
+      "type": "ait_list",
+      "in_seconds": 361.62,
+      "out_seconds": 403.797,
+      "props": {
+        "kicker": "THREE RULES THAT KEEP YOU SAFE",
+        "title": "Your permanent scam shield",
+        "tone": "ok",
+        "color": "money",
+        "items": [
+          {
+            "h": "Money never leaves your own broker account",
+            "sub": "Legit tools connect via API. They never hold your cash."
+          },
+          {
+            "h": "Verify every claim on the official SEBI site",
+            "sub": "Type the name yourself. Never trust a forwarded link."
+          },
+          {
+            "h": "\u201cGuaranteed\u201d means walk away \u2014 every time",
+            "sub": "Risk is the price of return. Anyone hiding it is lying."
+          }
+        ],
+        "caption": "These three habits alone stop the vast majority of investment fraud.",
+        "dur": 42.677
+      }
+    },
+    {
+      "id": "s23b_overfit_demo",
+      "type": "ait_bars",
+      "in_seconds": 404.297,
+      "out_seconds": 452.205,
+      "props": {
+        "kicker": "SEE OVERFITTING HAPPEN",
+        "title": "\u20b9100 in the backtest vs the real world",
+        "color": "risk",
+        "unit": "",
+        "max": 220,
+        "bars": [
+          {
+            "label": "backtest says",
+            "v": 218,
+            "c": "money"
+          },
+          {
+            "label": "you expect",
+            "v": 218,
+            "c": "money"
+          },
+          {
+            "label": "first month",
+            "v": 112,
+            "c": "edge"
+          },
+          {
+            "label": "after 3 months",
+            "v": 91,
+            "c": "risk"
+          },
+          {
+            "label": "after costs",
+            "v": 79,
+            "c": "risk"
+          }
+        ],
+        "note": "Illustrative \u20b9 value of a \u20b9100 stake \u2014 but this cliff is retail's most common shape.",
+        "dur": 48.408
+      }
+    },
+    {
+      "id": "s25b_marketplace",
+      "type": "ait_list",
+      "in_seconds": 452.705,
+      "out_seconds": 502.855,
+      "props": {
+        "kicker": "A SPECIFIC TRAP",
+        "title": "Why marketplace strategies look too good",
+        "tone": "bad",
+        "color": "risk",
+        "items": [
+          {
+            "h": "Survivorship on display",
+            "sub": "You see the strategies that happened to work \u2014 not the thousands that died."
+          },
+          {
+            "h": "Backtests are marketing, not proof",
+            "sub": "A curve tuned to the past is designed to make you subscribe."
+          },
+          {
+            "h": "Crowding kills the edge",
+            "sub": "The moment a strategy is popular, too many people trade it and it fades."
+          },
+          {
+            "h": "Their incentive is subscriptions, not your profit",
+            "sub": "They earn whether you win or lose. Remember that."
+          }
+        ],
+        "caption": "Use marketplaces to learn the mechanics \u2014 never to blindly copy an edge.",
+        "dur": 50.65
+      }
+    },
+    {
+      "id": "s26b_psychology",
+      "type": "ait_cards",
+      "in_seconds": 503.355,
+      "out_seconds": 550.18,
+      "props": {
+        "kicker": "THE ENEMY IN THE MIRROR",
+        "title": "Four emotions that break good bots",
+        "color": "risk",
+        "cards": [
+          {
+            "emoji": "\ud83d\ude31",
+            "title": "Fear",
+            "body": "You kill the bot during a drawdown \u2014 right before it recovers.",
+            "c": "risk"
+          },
+          {
+            "emoji": "\ud83e\udd11",
+            "title": "Greed",
+            "body": "You override its size limits after a winning streak.",
+            "c": "edge"
+          },
+          {
+            "emoji": "\ud83c\udfb0",
+            "title": "Revenge",
+            "body": "You force trades to win back a loss. The account bleeds faster.",
+            "c": "ai"
+          },
+          {
+            "emoji": "\ud83d\ude48",
+            "title": "Hope",
+            "body": "You cancel the stop-loss, praying a loser turns around.",
+            "c": "data"
+          }
+        ],
+        "dur": 47.325
+      }
+    },
+    {
+      "id": "s28b_case",
+      "type": "ait_list",
+      "in_seconds": 550.68,
+      "out_seconds": 597.961,
+      "props": {
+        "kicker": "ANATOMY OF A SCAM",
+        "title": "How a fake AI-bot pitch actually unfolds",
+        "tone": "bad",
+        "color": "risk",
+        "items": [
+          {
+            "h": "1 \u2014 The hook: a screenshot of huge profits",
+            "sub": "Faked or cherry-picked. Anyone can photoshop a P&L."
+          },
+          {
+            "h": "2 \u2014 The proof: a paid influencer vouches",
+            "sub": "Borrowed trust. They're an actor, not a client."
+          },
+          {
+            "h": "3 \u2014 The ask: \u201cdeposit to activate the AI\u201d",
+            "sub": "The instant money leaves your account, it's gone."
+          },
+          {
+            "h": "4 \u2014 The trap: small fake \u201cprofits\u201d to lure more",
+            "sub": "You see gains on their dashboard \u2014 until you try to withdraw."
+          }
+        ],
+        "caption": "The dashboard is a puppet show. Real profit you can't withdraw isn't profit.",
+        "dur": 47.781
+      }
+    },
+    {
+      "id": "s29_micro",
+      "type": "ait_callout",
+      "in_seconds": 598.461,
+      "out_seconds": 625.027,
+      "props": {
+        "kicker": "PART TWO IN ONE LINE",
+        "color": "risk",
+        "text": "If it's guaranteed, it's a lie. If it's easy, it's already gone.",
+        "sub": "Now that you're protected, let's build real skill.",
+        "dur": 27.066
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "ait/ch2.wav",
+      "volume": 1.0
+    }
+  }
+}

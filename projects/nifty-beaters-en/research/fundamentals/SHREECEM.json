@@ -1,0 +1,103 @@
+{
+ "ticker": "SHREECEM",
+ "scraped_at": "2026-08-14T15:30:07",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 89138.0,
+ "current_price": 24705.0,
+ "pe": 54.7,
+ "book_value": 6449.0,
+ "dividend_yield_pct": 0.59,
+ "roce_pct": 10.3,
+ "roe_pct": 7.51,
+ "face_value": 10.0,
+ "high": 31920.0,
+ "sales_growth": {
+  "10 Years": 4.0,
+  "5 Years": -6.0,
+  "3 Years": 10.0,
+  "TTM": 10.0
+ },
+ "profit_growth": {
+  "10 Years": 4.0,
+  "5 Years": -1.0,
+  "3 Years": 2.0,
+  "1 Year": -17.0
+ },
+ "roe_hist": {
+  "Operating Profit": 945.0,
+  "OPM %": 19.0,
+  "Other Income&nbsp; +": 169.0,
+  "Interest": 74.0,
+  "Depreciation": 339.0,
+  "Profit before tax": 700.0,
+  "Tax %": 18.0,
+  "Net Profit&nbsp; +": 572.0,
+  "EPS in Rs": 158.62
+ },
+ "price_cagr": {
+  "10 Years": 11.0,
+  "5 Years": 9.0,
+  "3 Years": 8.0,
+  "Last Year": 8.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "19%",
+   "19%",
+   "24%",
+   "26%",
+   "18%",
+   "15%",
+   "21%",
+   "26%",
+   "25%",
+   "20%",
+   "20%",
+   "23%",
+   "20%"
+  ],
+  "eps": [
+   "158.62",
+   "123.79",
+   "194.53",
+   "187.05",
+   "77.22",
+   "21.19",
+   "53.60",
+   "159.18",
+   "178.12",
+   "85.51",
+   "73.92",
+   "145.70",
+   "146.67"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has been maintaining a healthy dividend payout of 27.4%"
+ ],
+ "cons": [
+  "Stock is trading at 3.79 times its book value",
+  "The company has delivered a poor sales growth of 9.08% over past five years.",
+  "Company has a low return on equity of 8.23% over last 3 years."
+ ]
+}

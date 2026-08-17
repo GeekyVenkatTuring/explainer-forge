@@ -1,0 +1,102 @@
+{
+ "ticker": "COFORGE",
+ "scraped_at": "2026-08-14T15:28:47",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 80235.0,
+ "current_price": 1812.0,
+ "pe": 41.9,
+ "book_value": 284.0,
+ "dividend_yield_pct": 0.66,
+ "roce_pct": 23.5,
+ "roe_pct": 21.4,
+ "face_value": 2.0,
+ "high": 1990.0,
+ "sales_growth": {
+  "10 Years": 20.0,
+  "5 Years": 29.0,
+  "3 Years": 33.0,
+  "TTM": 98.0
+ },
+ "profit_growth": {
+  "10 Years": 36.0,
+  "5 Years": 14.0,
+  "3 Years": 20.0,
+  "1 Year": 11.0
+ },
+ "roe_hist": {
+  "Equity Capital": 61.0,
+  "Borrowings&nbsp; +": 9.0,
+  "Other Liabilities&nbsp; +": 611.0,
+  "Fixed Assets&nbsp; +": 558.0,
+  "CWIP": 120.0,
+  "Investments": 55.0
+ },
+ "price_cagr": {
+  "10 Years": 21.0,
+  "5 Years": 22.0,
+  "3 Years": 20.0,
+  "Last Year": 21.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "14%",
+   "15%",
+   "17%",
+   "17%",
+   "13%",
+   "14%",
+   "13%",
+   "15%",
+   "16%",
+   "18%",
+   "17%",
+   "20%",
+   "19%"
+  ],
+  "eps": [
+   "5.41",
+   "5.88",
+   "7.71",
+   "7.24",
+   "3.99",
+   "6.06",
+   "6.45",
+   "7.81",
+   "9.49",
+   "11.23",
+   "7.47",
+   "18.23",
+   "11.71"
+  ]
+ },
+ "pros": [
+  "Company has reduced debt.",
+  "Company is almost debt free.",
+  "Company is expected to give good quarter",
+  "Company has delivered good profit growth of 29.4% CAGR over last 5 years",
+  "Company has been maintaining a healthy dividend payout of 36.0%",
+  "Company&#x27;s median sales growth is 18.4% of last 10 years"
+ ],
+ "cons": [
+  "Tax rate seems low"
+ ]
+}

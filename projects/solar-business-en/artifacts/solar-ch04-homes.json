@@ -1,0 +1,700 @@
+{
+ "cuts": [
+  {
+   "id": "solar-ch04-homes_divider",
+   "type": "sol_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 12.353,
+   "props": {
+    "n": 4,
+    "title": "Installing on Homes",
+    "sub": "sizing, savings, subsidy",
+    "color": "#FDB813",
+    "dur": 12.853
+   }
+  },
+  {
+   "id": "solar-ch04-homes_sizing",
+   "type": "sol_sizing",
+   "in_seconds": 12.853,
+   "out_seconds": 59.87,
+   "props": {
+    "dur": 47.517
+   }
+  },
+  {
+   "id": "solar-ch04-homes_rooftop",
+   "type": "sol_rooftop",
+   "in_seconds": 60.37,
+   "out_seconds": 108.568,
+   "props": {
+    "dur": 48.698
+   }
+  },
+  {
+   "id": "solar-ch04-homes_install",
+   "type": "sol_install",
+   "in_seconds": 109.068,
+   "out_seconds": 157.558,
+   "props": {
+    "dur": 48.99
+   }
+  },
+  {
+   "id": "solar-ch04-homes_savings",
+   "type": "sol_savings",
+   "in_seconds": 158.058,
+   "out_seconds": 205.943,
+   "props": {
+    "dur": 48.385
+   }
+  },
+  {
+   "id": "solar-ch04-homes_subsidy",
+   "type": "sol_subsidy",
+   "in_seconds": 206.443,
+   "out_seconds": 257.71,
+   "props": {
+    "dur": 51.767
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.781,
+   "Part four."
+  ],
+  [
+   0.781,
+   1.954,
+   "Installing on homes."
+  ],
+  [
+   2.585,
+   5.711,
+   "This is where a customer becomes a project"
+  ],
+  [
+   5.711,
+   8.055,
+   "\u2014 and a project becomes money."
+  ],
+  [
+   8.055,
+   11.181,
+   "Let's walk through it exactly the way a"
+  ],
+  [
+   11.181,
+   12.353,
+   "good installer does."
+  ],
+  [
+   12.853,
+   15.941,
+   "The very first thing you do is size"
+  ],
+  [
+   15.941,
+   19.028,
+   "the system \u2014 and it's just one small"
+  ],
+  [
+   19.028,
+   19.414,
+   "sum."
+  ],
+  [
+   20.046,
+   21.59,
+   "Take the electricity bill,"
+  ],
+  [
+   21.59,
+   23.52,
+   "and read the monthly units."
+  ],
+  [
+   23.52,
+   26.607,
+   "Say this home uses six hundred units a"
+  ],
+  [
+   26.607,
+   26.993,
+   "month."
+  ],
+  [
+   27.625,
+   29.169,
+   "Now recall our rule:"
+  ],
+  [
+   29.169,
+   32.256,
+   "each kilowatt of panels makes about a hundred"
+  ],
+  [
+   32.256,
+   34.186,
+   "and twenty units a month."
+  ],
+  [
+   34.818,
+   35.976,
+   "So you divide."
+  ],
+  [
+   35.976,
+   36.747,
+   "Six hundred,"
+  ],
+  [
+   36.747,
+   39.063,
+   "divided by a hundred and twenty,"
+  ],
+  [
+   39.063,
+   39.835,
+   "is five."
+  ],
+  [
+   40.467,
+   43.168,
+   "This home needs a five kilowatt system."
+  ],
+  [
+   43.8,
+   45.344,
+   "Then check the roof."
+  ],
+  [
+   45.344,
+   48.432,
+   "A system needs roughly a hundred square feet"
+  ],
+  [
+   48.432,
+   51.519,
+   "of shade-free space per kilowatt \u2014 so five"
+  ],
+  [
+   51.519,
+   54.221,
+   "kilowatts wants about five hundred square feet."
+  ],
+  [
+   54.853,
+   55.624,
+   "That's it."
+  ],
+  [
+   55.624,
+   58.712,
+   "This one back-of-envelope calculation is how every\nsingle"
+  ],
+  [
+   58.712,
+   59.87,
+   "sales conversation begins."
+  ],
+  [
+   60.37,
+   63.167,
+   "But not every roof is a good roof,"
+  ],
+  [
+   63.167,
+   65.965,
+   "and knowing the difference saves you from bad"
+  ],
+  [
+   65.965,
+   66.314,
+   "projects."
+  ],
+  [
+   66.946,
+   67.995,
+   "Four things matter."
+  ],
+  [
+   68.627,
+   69.676,
+   "One \u2014 direction."
+  ],
+  [
+   69.676,
+   70.375,
+   "In India,"
+  ],
+  [
+   70.375,
+   71.774,
+   "panels should face south,"
+  ],
+  [
+   71.774,
+   74.571,
+   "to catch the most sun across the day."
+  ],
+  [
+   75.203,
+   76.252,
+   "Two \u2014 tilt."
+  ],
+  [
+   76.252,
+   79.049,
+   "Panels lie at about fifteen to twenty-five\ndegrees,"
+  ],
+  [
+   79.049,
+   81.846,
+   "so they face the sun's average height through"
+  ],
+  [
+   81.846,
+   82.546,
+   "the year."
+  ],
+  [
+   83.177,
+   84.226,
+   "Three \u2014 shade."
+  ],
+  [
+   84.226,
+   85.625,
+   "This one is sneaky."
+  ],
+  [
+   85.625,
+   87.024,
+   "Even a single shadow,"
+  ],
+  [
+   87.024,
+   89.471,
+   "from one tree or one water tank,"
+  ],
+  [
+   89.471,
+   92.269,
+   "can drag down a whole connected string of"
+  ],
+  [
+   92.269,
+   92.619,
+   "panels."
+  ],
+  [
+   92.619,
+   95.416,
+   "So the roof must stay clear from about"
+  ],
+  [
+   95.416,
+   98.213,
+   "nine in the morning to three in the"
+  ],
+  [
+   98.213,
+   98.563,
+   "afternoon."
+  ],
+  [
+   99.195,
+   100.593,
+   "And four \u2014 strength."
+  ],
+  [
+   100.593,
+   103.391,
+   "The roof has to safely carry the weight"
+  ],
+  [
+   103.391,
+   104.44,
+   "for twenty-five years."
+  ],
+  [
+   105.071,
+   106.47,
+   "Get the survey right,"
+  ],
+  [
+   106.47,
+   108.568,
+   "and everything after it gets easier."
+  ],
+  [
+   109.068,
+   111.852,
+   "So how does the install actually happen?"
+  ],
+  [
+   111.852,
+   112.647,
+   "Seven steps."
+  ],
+  [
+   113.278,
+   113.676,
+   "One,"
+  ],
+  [
+   113.676,
+   115.267,
+   "the survey and design."
+  ],
+  [
+   115.267,
+   115.664,
+   "Two,"
+  ],
+  [
+   115.664,
+   118.846,
+   "the application to the electricity company \u2014 the"
+  ],
+  [
+   118.846,
+   120.436,
+   "DISCOM \u2014 for permission."
+  ],
+  [
+   121.068,
+   121.465,
+   "Three,"
+  ],
+  [
+   121.465,
+   124.249,
+   "fixing the mounting structure to the roof."
+  ],
+  [
+   124.249,
+   124.647,
+   "Four,"
+  ],
+  [
+   124.647,
+   126.237,
+   "bolting the panels on."
+  ],
+  [
+   126.237,
+   126.635,
+   "Five,"
+  ],
+  [
+   126.635,
+   128.623,
+   "wiring everything into the inverter."
+  ],
+  [
+   129.255,
+   129.652,
+   "Six,"
+  ],
+  [
+   129.652,
+   132.833,
+   "installing the special net meter and getting it"
+  ],
+  [
+   132.833,
+   133.231,
+   "inspected."
+  ],
+  [
+   133.231,
+   134.026,
+   "And seven,"
+  ],
+  [
+   134.026,
+   134.822,
+   "switching on,"
+  ],
+  [
+   134.822,
+   136.412,
+   "and claiming the subsidy."
+  ],
+  [
+   137.044,
+   139.43,
+   "Here's the surprise for most beginners."
+  ],
+  [
+   139.43,
+   142.611,
+   "The physical work \u2014 the part that feels"
+  ],
+  [
+   142.611,
+   145.792,
+   "big \u2014 is usually just one to three"
+  ],
+  [
+   145.792,
+   146.19,
+   "days."
+  ],
+  [
+   146.821,
+   148.014,
+   "It's the paperwork,"
+  ],
+  [
+   148.014,
+   150.798,
+   "the DISCOM approvals and the meter inspection,"
+  ],
+  [
+   150.798,
+   153.581,
+   "that stretches the whole thing into weeks."
+  ],
+  [
+   153.581,
+   156.763,
+   "Managing that patiently is a real part of"
+  ],
+  [
+   156.763,
+   157.558,
+   "the job."
+  ],
+  [
+   158.058,
+   161.022,
+   "Now the moment every customer waits for \u2014"
+  ],
+  [
+   161.022,
+   161.764,
+   "the payback."
+  ],
+  [
+   161.764,
+   163.987,
+   "When does this pay for itself?"
+  ],
+  [
+   164.618,
+   166.842,
+   "Take a three kilowatt home system."
+  ],
+  [
+   166.842,
+   168.324,
+   "After the government subsidy,"
+  ],
+  [
+   168.324,
+   171.288,
+   "the net cost is around one lakh rupees."
+  ],
+  [
+   171.92,
+   174.884,
+   "That system saves roughly twenty-eight thousand\nrupees a"
+  ],
+  [
+   174.884,
+   176.366,
+   "year in avoided bills."
+  ],
+  [
+   176.998,
+   178.851,
+   "So watch the two lines."
+  ],
+  [
+   178.851,
+   180.333,
+   "Your savings pile up,"
+  ],
+  [
+   180.333,
+   181.445,
+   "year after year,"
+  ],
+  [
+   181.445,
+   184.409,
+   "until they cross what you paid \u2014 at"
+  ],
+  [
+   184.409,
+   186.632,
+   "around year three and a half."
+  ],
+  [
+   187.264,
+   189.487,
+   "That crossing point is the payback."
+  ],
+  [
+   190.119,
+   191.972,
+   "And here's the beautiful part."
+  ],
+  [
+   191.972,
+   194.565,
+   "The panels are warrantied for twenty-five years."
+  ],
+  [
+   194.565,
+   196.048,
+   "So after the payback,"
+  ],
+  [
+   196.048,
+   199.012,
+   "you get two more decades of power that"
+  ],
+  [
+   199.012,
+   200.124,
+   "is essentially free."
+  ],
+  [
+   200.755,
+   202.608,
+   "Pay for about four years,"
+  ],
+  [
+   202.608,
+   204.461,
+   "then enjoy twenty for nothing."
+  ],
+  [
+   204.461,
+   205.943,
+   "That is the pitch."
+  ],
+  [
+   206.443,
+   209.033,
+   "And that subsidy deserves its own moment,"
+  ],
+  [
+   209.033,
+   211.624,
+   "because it is your strongest closing argument."
+  ],
+  [
+   212.256,
+   214.846,
+   "Under the P M Surya Ghar scheme,"
+  ],
+  [
+   214.846,
+   217.807,
+   "the government pays part of a home's system."
+  ],
+  [
+   218.438,
+   220.289,
+   "The slab works like this."
+  ],
+  [
+   220.289,
+   223.249,
+   "Thirty thousand rupees per kilowatt for the first"
+  ],
+  [
+   223.249,
+   223.989,
+   "two kilowatts."
+  ],
+  [
+   223.989,
+   226.21,
+   "So one kilowatt gets thirty thousand,"
+  ],
+  [
+   226.21,
+   228.43,
+   "and two kilowatts gets sixty thousand."
+  ],
+  [
+   229.062,
+   230.542,
+   "For the third kilowatt,"
+  ],
+  [
+   230.542,
+   233.502,
+   "you get another eighteen thousand \u2014 bringing a"
+  ],
+  [
+   233.502,
+   236.093,
+   "three kilowatt system to seventy-eight thousand\nrupees."
+  ],
+  [
+   236.725,
+   238.575,
+   "And that is the cap."
+  ],
+  [
+   238.575,
+   240.425,
+   "Go bigger \u2014 five kilowatts,"
+  ],
+  [
+   240.425,
+   243.386,
+   "ten kilowatts \u2014 and the subsidy stays at"
+  ],
+  [
+   243.386,
+   244.126,
+   "seventy-eight thousand."
+  ],
+  [
+   244.758,
+   247.718,
+   "The money lands directly in the customer's bank"
+  ],
+  [
+   247.718,
+   248.828,
+   "account after inspection,"
+  ],
+  [
+   248.828,
+   251.789,
+   "and many states add a top-up on top."
+  ],
+  [
+   251.789,
+   252.899,
+   "For a salesperson,"
+  ],
+  [
+   252.899,
+   255.86,
+   "that number cuts the price by a third"
+  ],
+  [
+   255.86,
+   257.71,
+   "\u2014 and closes the deal."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "sol/solar-ch04-homes.wav",
+   "volume": 1.0
+  }
+ }
+}

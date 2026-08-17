@@ -1,0 +1,102 @@
+{
+ "ticker": "BRITANNIA",
+ "scraped_at": "2026-08-14T15:29:18",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 134071.0,
+ "current_price": 5566.0,
+ "pe": 51.4,
+ "book_value": 212.0,
+ "dividend_yield_pct": 1.62,
+ "roce_pct": 56.0,
+ "roe_pct": 53.5,
+ "face_value": 1.0,
+ "high": 6337.0,
+ "sales_growth": {
+  "10 Years": 12.0,
+  "5 Years": 6.0,
+  "3 Years": 8.0,
+  "TTM": 19.0
+ },
+ "profit_growth": {
+  "10 Years": 13.0,
+  "5 Years": 9.0,
+  "3 Years": 8.0,
+  "1 Year": 6.0
+ },
+ "roe_hist": {
+  "Operating Profit": 689.0,
+  "OPM %": 17.0,
+  "Other Income&nbsp; +": 57.0,
+  "Interest": 53.0,
+  "Depreciation": 71.0,
+  "Profit before tax": 622.0,
+  "Tax %": 27.0,
+  "Net Profit&nbsp; +": 455.0,
+  "EPS in Rs": 19.0
+ },
+ "price_cagr": {
+  "10 Years": 46.0,
+  "5 Years": 56.0,
+  "3 Years": 54.0,
+  "Last Year": 54.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "17%",
+   "20%",
+   "19%",
+   "19%",
+   "18%",
+   "17%",
+   "18%",
+   "18%",
+   "16%",
+   "20%",
+   "20%",
+   "18%",
+   "17%"
+  ],
+  "eps": [
+   "19.00",
+   "24.39",
+   "23.10",
+   "22.35",
+   "20.99",
+   "22.06",
+   "24.15",
+   "23.25",
+   "21.62",
+   "27.17",
+   "28.23",
+   "28.16",
+   "24.55"
+  ]
+ },
+ "pros": [
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 54.4%",
+  "Company has been maintaining a healthy dividend payout of 83.9%"
+ ],
+ "cons": [
+  "Stock is trading at 26.3 times its book value",
+  "The company has delivered a poor sales growth of 7.83% over past five years."
+ ]
+}

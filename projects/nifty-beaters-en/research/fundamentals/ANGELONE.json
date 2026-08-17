@@ -1,0 +1,103 @@
+{
+ "ticker": "ANGELONE",
+ "scraped_at": "2026-08-14T15:27:51",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 26182.0,
+ "current_price": 287.0,
+ "pe": 25.4,
+ "book_value": 67.2,
+ "dividend_yield_pct": 1.38,
+ "roce_pct": 14.8,
+ "roe_pct": 15.6,
+ "face_value": 1.0,
+ "high": 360.0,
+ "sales_growth": {
+  "10 Years": 40.0,
+  "5 Years": 25.0,
+  "3 Years": 1.0,
+  "TTM": 4.0
+ },
+ "profit_growth": {
+  "5 Years": 19.0,
+  "3 Years": 18.0,
+  "1 Year": 11.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 808.0,
+  "Expenses&nbsp; +": 487.0,
+  "Operating Profit": 320.0,
+  "OPM %": 40.0,
+  "Other Income&nbsp; +": 4.0,
+  "Interest": 18.0,
+  "Depreciation": 9.0,
+  "Profit before tax": 297.0,
+  "Tax %": 26.0,
+  "Net Profit&nbsp; +": 221.0,
+  "EPS in Rs": 2.63
+ },
+ "price_cagr": {
+  "10 Years": 28.0,
+  "5 Years": 29.0,
+  "3 Years": 25.0,
+  "Last Year": 16.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "40%",
+   "42%",
+   "38%",
+   "39%",
+   "33%",
+   "44%",
+   "39%",
+   "32%",
+   "24%",
+   "35%",
+   "40%",
+   "41%",
+   "34%"
+  ],
+  "eps": [
+   "2.63",
+   "3.63",
+   "3.10",
+   "4.05",
+   "3.25",
+   "4.70",
+   "3.12",
+   "1.93",
+   "1.26",
+   "2.33",
+   "2.96",
+   "3.52",
+   "2.53"
+  ]
+ },
+ "pros": [
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 25.1%",
+  "Company has been maintaining a healthy dividend payout of 103%",
+  "Company&#x27;s median sales growth is 26.8% of last 10 years"
+ ],
+ "cons": [
+  "Promoter holding has decreased over last 3 years: -9.71%"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "ticker": "TTKPRESTIG",
+ "scraped_at": "2026-08-14T15:29:39",
+ "source": "screener.in",
+ "ok": true,
+ "error": "<HTTPError 429: 'Too Many Requests'>",
+ "variant": "standalone",
+ "market_cap_cr": 8149.0,
+ "current_price": 595.0,
+ "pe": 35.4,
+ "book_value": 146.0,
+ "dividend_yield_pct": 1.25,
+ "roce_pct": 13.7,
+ "roe_pct": 10.2,
+ "face_value": 1.0,
+ "high": 773.0,
+ "sales_growth": {
+  "10 Years": 5.0,
+  "5 Years": -2.0,
+  "3 Years": -8.0,
+  "TTM": 38.0
+ },
+ "profit_growth": {
+  "10 Years": 4.0,
+  "5 Years": -8.0,
+  "3 Years": -8.0,
+  "1 Year": -5.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 550.0,
+  "Expenses&nbsp; +": 485.0,
+  "Operating Profit": 65.0,
+  "OPM %": 12.0,
+  "Other Income&nbsp; +": 18.0,
+  "Interest": 2.0,
+  "Depreciation": 13.0,
+  "Profit before tax": 68.0,
+  "Tax %": 26.0,
+  "Net Profit&nbsp; +": 50.0,
+  "EPS in Rs": 3.64
+ },
+ "price_cagr": {
+  "10 Years": 14.0,
+  "5 Years": 12.0,
+  "3 Years": 10.0,
+  "Last Year": 10.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "12%",
+   "12%",
+   "12%",
+   "14%",
+   "11%",
+   "11%",
+   "11%",
+   "9%",
+   "9%",
+   "13%",
+   "9%",
+   "12%",
+   "11%"
+  ],
+  "eps": [
+   "3.64",
+   "4.49",
+   "4.55",
+   "4.55",
+   "3.38",
+   "4.21",
+   "3.96",
+   "0.29",
+   "2.57",
+   "5.12",
+   "2.15",
+   "3.71",
+   "4.85"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has been maintaining a healthy dividend payout of 46.9%"
+ ],
+ "cons": [
+  "Stock is trading at 4.13 times its book value",
+  "The company has delivered a poor sales growth of 6.40% over past five years.",
+  "Company has a low return on equity of 10.2% over last 3 years."
+ ]
+}

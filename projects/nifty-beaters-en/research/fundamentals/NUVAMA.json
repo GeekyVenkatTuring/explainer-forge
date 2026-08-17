@@ -1,0 +1,100 @@
+{
+ "ticker": "NUVAMA",
+ "scraped_at": "2026-08-14T15:27:52",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 30910.0,
+ "current_price": 1683.0,
+ "pe": 28.5,
+ "book_value": 226.0,
+ "dividend_yield_pct": 1.62,
+ "roce_pct": 17.5,
+ "roe_pct": 27.4,
+ "face_value": 2.0,
+ "high": 2067.0,
+ "sales_growth": {
+  "5 Years": 59.0,
+  "3 Years": 51.0,
+  "TTM": 5.0
+ },
+ "profit_growth": {
+  "1 Year": 23.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 648.0,
+  "Expenses&nbsp; +": 357.0,
+  "Operating Profit": 290.0,
+  "OPM %": 45.0,
+  "Other Income&nbsp; +": 4.0,
+  "Interest": 119.0,
+  "Depreciation": 22.0,
+  "Profit before tax": 153.0,
+  "Tax %": 19.0,
+  "Net Profit&nbsp; +": 123.0,
+  "EPS in Rs": 7.02
+ },
+ "price_cagr": {
+  "5 Years": 24.0,
+  "3 Years": 28.0,
+  "Last Year": 27.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "45%",
+   "49%",
+   "53%",
+   "50%",
+   "52%",
+   "54%",
+   "56%",
+   "51%",
+   "54%",
+   "52%",
+   "55%",
+   "50%",
+   "53%"
+  ],
+  "eps": [
+   "7.02",
+   "8.28",
+   "10.01",
+   "10.24",
+   "12.49",
+   "14.43",
+   "14.05",
+   "14.20",
+   "14.66",
+   "14.09",
+   "13.96",
+   "14.79",
+   "16.75"
+  ]
+ },
+ "pros": [
+  "Company has delivered good profit growth of 58.7% CAGR over last 5 years",
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 27.7%",
+  "Company has been maintaining a healthy dividend payout of 25.7%"
+ ],
+ "cons": [
+  "Stock is trading at 7.52 times its book value",
+  "Promoters have pledged 62.8% of their holding."
+ ]
+}

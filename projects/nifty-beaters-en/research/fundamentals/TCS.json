@@ -1,0 +1,97 @@
+{
+ "ticker": "TCS",
+ "scraped_at": "2026-08-14T15:27:21",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 853507.0,
+ "current_price": 2359.0,
+ "pe": 15.9,
+ "book_value": 296.0,
+ "dividend_yield_pct": 2.7,
+ "roce_pct": 63.0,
+ "roe_pct": 51.8,
+ "face_value": 1.0,
+ "high": 3350.0,
+ "sales_growth": {
+  "10 Years": 8.0,
+  "5 Years": 9.0,
+  "3 Years": 8.0,
+  "TTM": 9.0
+ },
+ "profit_growth": {
+  "10 Years": 6.0,
+  "5 Years": -7.0,
+  "3 Years": -12.0,
+  "1 Year": -21.0
+ },
+ "roe_hist": {
+  "OPM %": 25.0,
+  "Interest": 163.0,
+  "Tax %": 26.0,
+  "EPS in Rs": 30.26
+ },
+ "price_cagr": {
+  "10 Years": 43.0,
+  "5 Years": 49.0,
+  "3 Years": 52.0,
+  "Last Year": 52.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "25%",
+   "26%",
+   "27%",
+   "28%",
+   "27%",
+   "26%",
+   "27%",
+   "26%",
+   "27%",
+   "27%",
+   "27%",
+   "27%",
+   "26%"
+  ],
+  "eps": [
+   "30.26",
+   "31.00",
+   "30.56",
+   "34.37",
+   "33.28",
+   "32.92",
+   "34.22",
+   "33.79",
+   "35.27",
+   "33.37",
+   "29.45",
+   "37.92",
+   "36.90"
+  ]
+ },
+ "pros": [
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 51.9%",
+  "Company has been maintaining a healthy dividend payout of 77.5%"
+ ],
+ "cons": [
+  "Stock is trading at 7.92 times its book value",
+  "The company has delivered a poor sales growth of 10.2% over past five years."
+ ]
+}

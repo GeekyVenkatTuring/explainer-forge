@@ -1,0 +1,105 @@
+{
+ "ticker": "BEML",
+ "scraped_at": "2026-08-14T15:28:17",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 15618.0,
+ "current_price": 1875.0,
+ "pe": 87.5,
+ "book_value": 352.0,
+ "dividend_yield_pct": 0.25,
+ "roce_pct": 7.71,
+ "roe_pct": 4.86,
+ "face_value": 5.0,
+ "high": 2277.0,
+ "sales_growth": {
+  "10 Years": 8.0,
+  "5 Years": 16.0,
+  "3 Years": -2.0,
+  "TTM": -40.0
+ },
+ "profit_growth": {
+  "10 Years": 17.0,
+  "5 Years": 29.0,
+  "3 Years": 25.0,
+  "1 Year": -6.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 577.0,
+  "Expenses&nbsp; +": 627.0,
+  "Operating Profit": -51.0,
+  "OPM %": -9.0,
+  "Other Income&nbsp; +": 1.0,
+  "Interest": 10.0,
+  "Depreciation": 16.0,
+  "Profit before tax": -75.0,
+  "Tax %": 0.0,
+  "Net Profit&nbsp; +": -75.0,
+  "EPS in Rs": -9.0
+ },
+ "price_cagr": {
+  "10 Years": 6.0,
+  "5 Years": 8.0,
+  "3 Years": 9.0,
+  "Last Year": 5.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "-9%",
+   "6%",
+   "5%",
+   "24%",
+   "-8%",
+   "8%",
+   "7%",
+   "26%",
+   "-8%",
+   "9%",
+   "0.3%",
+   "15%",
+   "0.2%"
+  ],
+  "eps": [
+   "-9.00",
+   "6.22",
+   "5.79",
+   "30.83",
+   "-8.46",
+   "6.13",
+   "2.93",
+   "34.52",
+   "-7.70",
+   "5.77",
+   "-2.69",
+   "21.59",
+   "-3.24"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 30.2%"
+ ],
+ "cons": [
+  "Stock is trading at 5.36 times its book value",
+  "The company has delivered a poor sales growth of 4.11% over past five years.",
+  "Company has a low return on equity of 8.66% over last 3 years.",
+  "Company has high debtors of 191 days."
+ ]
+}

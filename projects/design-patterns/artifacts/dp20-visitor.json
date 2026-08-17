@@ -1,0 +1,2132 @@
+{
+ "cuts": [
+  {
+   "id": "dp20-visitor_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 33.251,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 20",
+    "line1": "New operation,",
+    "line2": "don't touch the classes",
+    "sub": "add behavior across a fixed set of types without editing a single one",
+    "dur": 33.751
+   }
+  },
+  {
+   "id": "dp20-visitor_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 33.751,
+   "out_seconds": 72.394,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Operations over a document",
+    "situation": "A document is a tree of elements \u2014 text, images, tables. The element types are stable. But you keep needing new operations: render HTML, export Markdown, count words, check accessibility.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udcc4",
+      "label": "Stable element types"
+     },
+     {
+      "emoji": "\u2699\ufe0f",
+      "label": "Growing operations"
+     },
+     {
+      "emoji": "\u2795",
+      "label": "\u2026added constantly"
+     }
+    ],
+    "ask": "How do you add a new operation over every element type without editing each one?",
+    "dur": 39.143
+   }
+  },
+  {
+   "id": "dp20-visitor_naive",
+   "type": "dp_code",
+   "in_seconds": 72.894,
+   "out_seconds": 115.196,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "A method per operation, on each class.",
+    "file": "elements.java",
+    "lines": [
+     {
+      "t": "class Text  { String toHtml(); String toMarkdown();",
+      "s": "hi"
+     },
+     {
+      "t": "              int wordCount(); ... }",
+      "s": "hi"
+     },
+     {
+      "t": "class Image { String toHtml(); String toMarkdown();",
+      "s": "hi"
+     },
+     {
+      "t": "              int wordCount(); ... }"
+     },
+     {
+      "t": "class Table { String toHtml(); ... }   // same list",
+      "s": "hi"
+     },
+     {
+      "t": "// add 'toPdf()' \u2192 edit Text, Image, Table, ..."
+     }
+    ],
+    "note": "Every operation is smeared across every element. New op = edit them all.",
+    "dur": 42.802
+   }
+  },
+  {
+   "id": "dp20-visitor_pain",
+   "type": "dp_pain",
+   "in_seconds": 115.696,
+   "out_seconds": 155.078,
+   "props": {
+    "title": "\"Add PDF export. And a spell-checker. And search indexing.\"",
+    "file": "bloat.java",
+    "lines": [
+     {
+      "t": "// each new operation = a new method in EVERY element",
+      "s": "hi"
+     },
+     {
+      "t": "class Text  { ... toPdf(); spellCheck(); index(); }",
+      "s": "hi"
+     },
+     {
+      "t": "class Image { ... toPdf(); spellCheck(); index(); }",
+      "s": "hi"
+     },
+     {
+      "t": "class Table { ... toPdf(); spellCheck(); index(); }",
+      "s": "hi"
+     },
+     {
+      "t": "// the HTML logic for all 3 lives in 3 different files"
+     }
+    ],
+    "smell": "Operations scattered across the data classes",
+    "touched": [
+     "new operation \u2192 edit every element",
+     "one operation split across N files",
+     "element classes bloat endlessly",
+     "related logic can't be read together"
+    ],
+    "dur": 39.882
+   }
+  },
+  {
+   "id": "dp20-visitor_insight",
+   "type": "dp_insight",
+   "in_seconds": 155.578,
+   "out_seconds": 198.95,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "The set of element types is stable",
+     "Each operation must handle every type",
+     "One operation is really one idea"
+    ],
+    "varies": [
+     "The operations \u2014 HTML, PDF, word-count",
+     "And new operations arrive constantly"
+    ],
+    "principle": "Move each operation OUT into its own object that knows how to visit every element type.",
+    "dur": 43.872
+   }
+  },
+  {
+   "id": "dp20-visitor_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 199.45,
+   "out_seconds": 245.121,
+   "props": {
+    "title": "A building inspector",
+    "emoji": "\ud83c\udfe2",
+    "analogy": "The rooms don't change; a fire inspector, an electrician, an appraiser each walk the same rooms and do their own job.",
+    "map": [
+     {
+      "from": "The rooms",
+      "to": "the element types (stable)"
+     },
+     {
+      "from": "Each visiting inspector",
+      "to": "a concrete visitor"
+     },
+     {
+      "from": "What it does per room",
+      "to": "visitText(), visitImage()\u2026"
+     },
+     {
+      "from": "Sending in a new inspector",
+      "to": "adding one new visitor class"
+     }
+    ],
+    "breaks": "an inspector can just walk in; a visitor needs the element to 'accept' it \u2014 the double-dispatch handshake.",
+    "dur": 46.171
+   }
+  },
+  {
+   "id": "dp20-visitor_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 245.621,
+   "out_seconds": 278.273,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "A Visitor interface; elements just accept",
+    "file": "Visitor.java",
+    "lines": [
+     {
+      "t": "interface Visitor {              // one visit per type",
+      "s": "add"
+     },
+     {
+      "t": "  void visitText(Text t);",
+      "s": "add"
+     },
+     {
+      "t": "  void visitImage(Image i);",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "interface Element { void accept(Visitor v); }",
+      "s": "hi"
+     },
+     {
+      "t": "// each element implements ONE method: accept"
+     }
+    ],
+    "note": "Elements gain a single method \u2014 accept \u2014 forever. Operations live in visitors.",
+    "dur": 33.152
+   }
+  },
+  {
+   "id": "dp20-visitor_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 278.773,
+   "out_seconds": 319.408,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "One visitor = one operation, all types",
+    "file": "HtmlVisitor.java",
+    "lines": [
+     {
+      "t": "class HtmlVisitor implements Visitor {",
+      "s": "hi"
+     },
+     {
+      "t": "  public void visitText(Text t)  { out += \"<p>\"+t.body+\"</p>\"; }",
+      "s": "hi"
+     },
+     {
+      "t": "  public void visitImage(Image i){ out += \"<img src=\"+i.url+\">\"; }",
+      "s": "hi"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "// and Text.accept simply calls back:"
+     },
+     {
+      "t": "void accept(Visitor v) { v.visitText(this); }  // double dispatch",
+      "s": "hi"
+     }
+    ],
+    "note": "All the HTML logic, every element, in ONE class. accept picks the visit.",
+    "dur": 41.135
+   }
+  },
+  {
+   "id": "dp20-visitor_try",
+   "type": "dp_try",
+   "in_seconds": 319.908,
+   "out_seconds": 351.238,
+   "props": {
+    "title": "Wire up double dispatch",
+    "file": "Image.java",
+    "lines": [
+     {
+      "t": "class Image implements Element {"
+     },
+     {
+      "t": "  void accept(Visitor v) {"
+     },
+     {
+      "t": "    // \u25af call the visitor's method for THIS type",
+      "s": "ghost"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "An Image must route an incoming visitor to the correct visit method. Which one?",
+    "hint": "v.visitImage(this);",
+    "dur": 31.83
+   }
+  },
+  {
+   "id": "dp20-visitor_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 351.738,
+   "out_seconds": 389.649,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "Run a visitor; add another for free",
+    "file": "app.java",
+    "lines": [
+     {
+      "t": "HtmlVisitor html = new HtmlVisitor();"
+     },
+     {
+      "t": "for (Element e : document) e.accept(html);   // render all",
+      "s": "add"
+     },
+     {
+      "t": "// want word count instead? a whole new operation:"
+     },
+     {
+      "t": "WordCountVisitor wc = new WordCountVisitor();",
+      "s": "add"
+     },
+     {
+      "t": "for (Element e : document) e.accept(wc);   // ZERO element edits",
+      "s": "hi"
+     }
+    ],
+    "note": "Swap the visitor, get a whole new operation. Elements never changed.",
+    "dur": 38.411
+   }
+  },
+  {
+   "id": "dp20-visitor_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 390.149,
+   "out_seconds": 427.611,
+   "props": {
+    "requirement": "\"Add Markdown export\"",
+    "naiveLabel": "Scattered",
+    "naiveCost": "A new method in every element class.",
+    "naiveSteps": [
+     "edit Text, Image, Table\u2026",
+     "the logic split across all of them",
+     "recompile every element"
+    ],
+    "patLabel": "Visitor",
+    "patCost": "One new class. Elements untouched.",
+    "patFile": "MarkdownVisitor.java",
+    "patLines": [
+     {
+      "t": "class MarkdownVisitor implements Visitor {",
+      "s": "add"
+     },
+     {
+      "t": "  public void visitText(Text t)  { out += t.body + \"\\n\"; }",
+      "s": "add"
+     },
+     {
+      "t": "  public void visitImage(Image i){ out += \"![\"+i.alt+\"]\"; }",
+      "s": "add"
+     },
+     {
+      "t": "}   // all Markdown logic, one file, zero element edits",
+      "s": "add"
+     }
+    ],
+    "dur": 37.962
+   }
+  },
+  {
+   "id": "dp20-visitor_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 428.111,
+   "out_seconds": 471.045,
+   "props": {
+    "name": "The Visitor Pattern",
+    "plain": "Move operations into visitor objects; each element accepts a visitor and calls back the method for its own type \u2014 double dispatch.",
+    "nodes": [
+     {
+      "id": "vis",
+      "title": "Visitor",
+      "stereo": "visitor",
+      "members": [
+       "+ visitText(t)",
+       "+ visitImage(i)"
+      ],
+      "x": 160,
+      "y": 210,
+      "w": 400,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "html",
+      "title": "HtmlVisitor",
+      "members": [
+       "renders HTML"
+      ],
+      "x": 60,
+      "y": 470,
+      "w": 300,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "wc",
+      "title": "WordCount",
+      "members": [
+       "counts words"
+      ],
+      "x": 400,
+      "y": 470,
+      "w": 300,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "elem",
+      "title": "Element",
+      "stereo": "element",
+      "members": [
+       "+ accept(Visitor)"
+      ],
+      "x": 1360,
+      "y": 210,
+      "w": 400,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "text",
+      "title": "Text",
+      "members": [
+       "accept \u2192 visitText"
+      ],
+      "x": 1260,
+      "y": 470,
+      "w": 300,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "image",
+      "title": "Image",
+      "members": [
+       "accept \u2192 visitImage"
+      ],
+      "x": 1600,
+      "y": 470,
+      "w": 300,
+      "color": "#8B93B0"
+     }
+    ],
+    "edges": [
+     {
+      "from": "html",
+      "to": "vis",
+      "kind": "impl"
+     },
+     {
+      "from": "wc",
+      "to": "vis",
+      "kind": "impl"
+     },
+     {
+      "from": "text",
+      "to": "elem",
+      "kind": "impl"
+     },
+     {
+      "from": "image",
+      "to": "elem",
+      "kind": "impl"
+     },
+     {
+      "from": "elem",
+      "to": "vis",
+      "kind": "has"
+     }
+    ],
+    "dur": 43.434
+   }
+  },
+  {
+   "id": "dp20-visitor_map",
+   "type": "dp_map",
+   "in_seconds": 471.545,
+   "out_seconds": 518.175,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Visitor",
+      "your": "interface Visitor (visitText\u2026)"
+     },
+     {
+      "role": "ConcreteVisitor",
+      "your": "HtmlVisitor, WordCountVisitor"
+     },
+     {
+      "role": "Element",
+      "your": "interface Element (accept)"
+     },
+     {
+      "role": "ConcreteElement",
+      "your": "Text, Image, Table"
+     }
+    ],
+    "plain": "Each element's accept() calls back the matching visit method; a visitor gathers one operation across all element types.",
+    "gof": "Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements.",
+    "dur": 47.13
+   }
+  },
+  {
+   "id": "dp20-visitor_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 518.675,
+   "out_seconds": 571.742,
+   "props": {
+    "title": "Easy new operations, hard new elements",
+    "costs": [
+     "A new ELEMENT type edits every visitor",
+     "Visitors often need the elements' internals",
+     "Double dispatch takes a beat to grasp"
+    ],
+    "dont": [
+     "The element types change often",
+     "There's really only one operation",
+     "The operations barely differ by type"
+    ],
+    "signal": "a stable set of types, a growing set of operations over them, and you're tired of editing every class.",
+    "dur": 53.567
+   }
+  },
+  {
+   "id": "dp20-visitor_recap",
+   "type": "dp_recap",
+   "in_seconds": 572.242,
+   "out_seconds": 631.677,
+   "props": {
+    "title": "Visitor, in one breath",
+    "items": [
+     "Piling every operation onto every element bloated the data classes and split each operation across many files.",
+     "The types are stable; the operations grow \u2014 so move each operation into a visitor that handles every type in one place.",
+     "Visitor: elements accept a visitor and call back their own visit method (double dispatch). New operation, one new class."
+    ],
+    "challenge": "A compiler has a stable AST \u2014 literals, binary ops, calls \u2014 and growing passes: type-check, optimize, generate code.",
+    "question": "Does Visitor fit? What are the elements, what's a visitor, and what's the cost if the AST grows a new node?",
+    "dur": 59.935
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.951,
+   "Here is a tension every growing codebase hits."
+  ],
+  [
+   3.583,
+   6.534,
+   "You have a stable set of types \u2014"
+  ],
+  [
+   6.534,
+   8.378,
+   "the elements of a document,"
+  ],
+  [
+   8.378,
+   10.592,
+   "the nodes of a syntax tree."
+  ],
+  [
+   10.592,
+   11.698,
+   "They rarely change."
+  ],
+  [
+   12.33,
+   15.281,
+   "But the operations you want to run over"
+  ],
+  [
+   15.281,
+   16.388,
+   "them keep multiplying."
+  ],
+  [
+   16.388,
+   17.126,
+   "Render them."
+  ],
+  [
+   17.126,
+   17.864,
+   "Export them."
+  ],
+  [
+   17.864,
+   18.601,
+   "Count words."
+  ],
+  [
+   18.601,
+   19.339,
+   "Check accessibility."
+  ],
+  [
+   19.971,
+   22.922,
+   "The obvious way piles every new operation onto"
+  ],
+  [
+   22.922,
+   24.766,
+   "every one of those classes,"
+  ],
+  [
+   24.766,
+   27.718,
+   "until the data types are buried in behavior."
+  ],
+  [
+   27.718,
+   30.669,
+   "There is a way to add operations from"
+  ],
+  [
+   30.669,
+   31.407,
+   "the outside."
+  ],
+  [
+   31.407,
+   33.251,
+   "Let's build a document model."
+  ],
+  [
+   33.751,
+   35.321,
+   "Here is the model:"
+  ],
+  [
+   35.321,
+   36.106,
+   "a document,"
+  ],
+  [
+   36.106,
+   37.284,
+   "made of elements."
+  ],
+  [
+   37.284,
+   38.069,
+   "Text blocks,"
+  ],
+  [
+   38.069,
+   38.462,
+   "images,"
+  ],
+  [
+   38.462,
+   38.854,
+   "tables."
+  ],
+  [
+   39.486,
+   42.627,
+   "That set of element types is stable \u2014"
+  ],
+  [
+   42.627,
+   45.767,
+   "you are not inventing new kinds of element"
+  ],
+  [
+   45.767,
+   46.552,
+   "every week."
+  ],
+  [
+   47.184,
+   50.324,
+   "But the operations you run over them never"
+  ],
+  [
+   50.324,
+   51.11,
+   "stop growing."
+  ],
+  [
+   51.11,
+   53.072,
+   "Render the document to HTML."
+  ],
+  [
+   53.072,
+   54.643,
+   "Export it to Markdown."
+  ],
+  [
+   54.643,
+   55.821,
+   "Count its words."
+  ],
+  [
+   55.821,
+   57.391,
+   "Run an accessibility check."
+  ],
+  [
+   58.022,
+   59.985,
+   "Each is a different operation,"
+  ],
+  [
+   59.985,
+   62.733,
+   "over the same handful of element types."
+  ],
+  [
+   63.365,
+   66.505,
+   "So how do you add a brand-new operation"
+  ],
+  [
+   66.505,
+   69.646,
+   "across every element \u2014 without cracking open and"
+  ],
+  [
+   69.646,
+   72.394,
+   "editing each element class every single time?"
+  ],
+  [
+   72.894,
+   74.075,
+   "The obvious approach:"
+  ],
+  [
+   74.075,
+   77.226,
+   "give every element a method for every operation."
+  ],
+  [
+   77.858,
+   79.039,
+   "Text gets to-HTML,"
+  ],
+  [
+   79.039,
+   79.433,
+   "to-Markdown,"
+  ],
+  [
+   79.433,
+   79.827,
+   "word-count."
+  ],
+  [
+   79.827,
+   81.796,
+   "Image gets the same three."
+  ],
+  [
+   81.796,
+   82.19,
+   "Table,"
+  ],
+  [
+   82.19,
+   82.977,
+   "the same."
+  ],
+  [
+   83.609,
+   84.396,
+   "It works."
+  ],
+  [
+   85.028,
+   87.785,
+   "But watch what happens to the classes."
+  ],
+  [
+   87.785,
+   90.935,
+   "Each element is now stuffed with operations that"
+  ],
+  [
+   90.935,
+   94.086,
+   "have nothing to do with what it fundamentally"
+  ],
+  [
+   94.086,
+   94.48,
+   "is."
+  ],
+  [
+   94.48,
+   96.843,
+   "The Image class knows about HTML,"
+  ],
+  [
+   96.843,
+   97.63,
+   "and Markdown,"
+  ],
+  [
+   97.63,
+   98.418,
+   "and word-counting,"
+  ],
+  [
+   98.418,
+   99.205,
+   "and PDF."
+  ],
+  [
+   99.837,
+   102.988,
+   "And the moment you want a new operation"
+  ],
+  [
+   102.988,
+   106.138,
+   "\u2014 export to PDF \u2014 you have to"
+  ],
+  [
+   106.138,
+   109.289,
+   "open and edit every single element class to"
+  ],
+  [
+   109.289,
+   110.076,
+   "add it."
+  ],
+  [
+   110.076,
+   112.833,
+   "The operations are scattered across the data,"
+  ],
+  [
+   112.833,
+   115.196,
+   "and every new one touches everything."
+  ],
+  [
+   115.696,
+   117.636,
+   "Then the operations keep coming."
+  ],
+  [
+   117.636,
+   118.412,
+   "PDF export."
+  ],
+  [
+   118.412,
+   119.188,
+   "A spell-checker."
+  ],
+  [
+   119.188,
+   119.964,
+   "Search indexing."
+  ],
+  [
+   120.595,
+   123.699,
+   "Every one of them means a new method"
+  ],
+  [
+   123.699,
+   124.863,
+   "added to Text,"
+  ],
+  [
+   124.863,
+   126.026,
+   "and to Image,"
+  ],
+  [
+   126.026,
+   127.19,
+   "and to Table,"
+  ],
+  [
+   127.19,
+   129.906,
+   "and to every element type there is."
+  ],
+  [
+   130.538,
+   132.477,
+   "The classes swell without bound."
+  ],
+  [
+   133.109,
+   134.661,
+   "And notice something subtler:"
+  ],
+  [
+   134.661,
+   136.601,
+   "a single operation \u2014 say,"
+  ],
+  [
+   136.601,
+   139.704,
+   "rendering to HTML \u2014 is now split across"
+  ],
+  [
+   139.704,
+   140.868,
+   "three different files,"
+  ],
+  [
+   140.868,
+   142.808,
+   "one fragment in each element."
+  ],
+  [
+   142.808,
+   145.911,
+   "You cannot read the whole HTML-rendering logic in"
+  ],
+  [
+   145.911,
+   146.687,
+   "one place,"
+  ],
+  [
+   146.687,
+   149.791,
+   "because it does not live in one place."
+  ],
+  [
+   150.423,
+   153.526,
+   "The data types and the operations over them"
+  ],
+  [
+   153.526,
+   155.078,
+   "have become hopelessly tangled."
+  ],
+  [
+   155.578,
+   156.723,
+   "What is fixed,"
+  ],
+  [
+   156.723,
+   157.868,
+   "and what varies?"
+  ],
+  [
+   158.5,
+   158.882,
+   "Fixed:"
+  ],
+  [
+   158.882,
+   161.936,
+   "the set of element types barely changes \u2014"
+  ],
+  [
+   161.936,
+   162.317,
+   "text,"
+  ],
+  [
+   162.317,
+   162.699,
+   "image,"
+  ],
+  [
+   162.699,
+   163.081,
+   "table."
+  ],
+  [
+   163.081,
+   166.135,
+   "Each operation has to handle every one of"
+  ],
+  [
+   166.135,
+   166.898,
+   "those types."
+  ],
+  [
+   166.898,
+   168.425,
+   "And any single operation,"
+  ],
+  [
+   168.425,
+   169.57,
+   "like rendering HTML,"
+  ],
+  [
+   169.57,
+   171.479,
+   "is really one coherent idea."
+  ],
+  [
+   172.111,
+   175.164,
+   "What varies is the operations themselves \u2014 and"
+  ],
+  [
+   175.164,
+   176.31,
+   "they arrive constantly."
+  ],
+  [
+   176.941,
+   178.468,
+   "Here is the move."
+  ],
+  [
+   179.1,
+   181.772,
+   "Stop scattering each operation across the\nelements."
+  ],
+  [
+   181.772,
+   184.826,
+   "Pull each operation out into its own object"
+  ],
+  [
+   184.826,
+   187.88,
+   "\u2014 a visitor \u2014 that knows how to"
+  ],
+  [
+   187.88,
+   190.552,
+   "handle every element type in one place."
+  ],
+  [
+   190.552,
+   190.934,
+   "Then,"
+  ],
+  [
+   190.934,
+   193.606,
+   "instead of the element containing the operation,"
+  ],
+  [
+   193.606,
+   195.514,
+   "the operation visits the element."
+  ],
+  [
+   195.514,
+   197.041,
+   "The data stays put;"
+  ],
+  [
+   197.041,
+   198.95,
+   "the behavior comes to it."
+  ],
+  [
+   199.45,
+   200.842,
+   "Think of a building,"
+  ],
+  [
+   200.842,
+   202.929,
+   "and the inspectors who visit it."
+  ],
+  [
+   203.561,
+   206.345,
+   "The rooms do not change \u2014 the kitchen"
+  ],
+  [
+   206.345,
+   207.388,
+   "is the kitchen,"
+  ],
+  [
+   207.388,
+   209.128,
+   "the wiring is the wiring."
+  ],
+  [
+   209.76,
+   212.195,
+   "But all kinds of specialists come through."
+  ],
+  [
+   212.195,
+   213.239,
+   "A fire inspector,"
+  ],
+  [
+   213.239,
+   215.327,
+   "walking every room doing fire checks."
+  ],
+  [
+   215.327,
+   216.023,
+   "An electrician,"
+  ],
+  [
+   216.023,
+   218.458,
+   "walking the same rooms doing electrical checks."
+  ],
+  [
+   218.458,
+   219.154,
+   "An appraiser,"
+  ],
+  [
+   219.154,
+   220.198,
+   "valuing each one."
+  ],
+  [
+   220.829,
+   223.265,
+   "The rooms are the stable element types."
+  ],
+  [
+   223.265,
+   225.005,
+   "Each inspector is a visitor."
+  ],
+  [
+   225.005,
+   227.788,
+   "What an inspector does in each kind of"
+  ],
+  [
+   227.788,
+   229.528,
+   "room is its visit methods."
+  ],
+  [
+   229.528,
+   232.311,
+   "And adding a whole new inspection is just"
+  ],
+  [
+   232.311,
+   234.051,
+   "sending in one new inspector."
+  ],
+  [
+   234.683,
+   235.727,
+   "Where it strains:"
+  ],
+  [
+   235.727,
+   238.162,
+   "a real inspector can just walk in."
+  ],
+  [
+   238.162,
+   240.946,
+   "A software visitor needs the element to formally"
+  ],
+  [
+   240.946,
+   243.729,
+   "accept it \u2014 a small handshake we will"
+  ],
+  [
+   243.729,
+   245.121,
+   "see in a moment."
+  ],
+  [
+   245.621,
+   246.43,
+   "The refactor,"
+  ],
+  [
+   246.43,
+   247.24,
+   "step one."
+  ],
+  [
+   247.871,
+   251.109,
+   "Define a Visitor interface with one method per"
+  ],
+  [
+   251.109,
+   252.728,
+   "element type \u2014 visit-text,"
+  ],
+  [
+   252.728,
+   253.132,
+   "visit-image,"
+  ],
+  [
+   253.132,
+   253.537,
+   "visit-table."
+  ],
+  [
+   253.537,
+   256.775,
+   "Each represents what some operation does for that"
+  ],
+  [
+   256.775,
+   257.18,
+   "type."
+  ],
+  [
+   257.811,
+   259.025,
+   "And the elements?"
+  ],
+  [
+   259.025,
+   262.263,
+   "They give up their pile of operation methods,"
+  ],
+  [
+   262.263,
+   264.286,
+   "and gain exactly one method,"
+  ],
+  [
+   264.286,
+   264.691,
+   "forever:"
+  ],
+  [
+   264.691,
+   265.096,
+   "accept,"
+  ],
+  [
+   265.096,
+   266.714,
+   "which takes a visitor."
+  ],
+  [
+   267.346,
+   268.965,
+   "That is the trade."
+  ],
+  [
+   268.965,
+   271.798,
+   "Instead of every element carrying every operation,"
+  ],
+  [
+   271.798,
+   275.035,
+   "every element carries a single door \u2014 accept"
+  ],
+  [
+   275.035,
+   278.273,
+   "\u2014 through which any operation can walk in."
+  ],
+  [
+   278.773,
+   279.533,
+   "Step two:"
+  ],
+  [
+   279.533,
+   282.191,
+   "a concrete visitor is one whole operation."
+  ],
+  [
+   282.823,
+   284.722,
+   "The HTML visitor implements visit-text,"
+  ],
+  [
+   284.722,
+   285.102,
+   "visit-image,"
+  ],
+  [
+   285.102,
+   288.14,
+   "visit-table \u2014 the complete HTML-rendering logic\nfor every"
+  ],
+  [
+   288.14,
+   288.9,
+   "element type,"
+  ],
+  [
+   288.9,
+   291.179,
+   "finally gathered in a single class."
+  ],
+  [
+   291.81,
+   294.849,
+   "But how does the right method get called?"
+  ],
+  [
+   294.849,
+   295.988,
+   "Look at accept."
+  ],
+  [
+   295.988,
+   298.647,
+   "When you call accept on a Text,"
+  ],
+  [
+   298.647,
+   301.685,
+   "it turns around and calls visit-text on the"
+  ],
+  [
+   301.685,
+   302.065,
+   "visitor,"
+  ],
+  [
+   302.065,
+   302.825,
+   "passing itself."
+  ],
+  [
+   303.456,
+   306.495,
+   "That little two-step \u2014 the element calling back"
+  ],
+  [
+   306.495,
+   309.533,
+   "into the visitor \u2014 is called double dispatch."
+  ],
+  [
+   309.533,
+   311.812,
+   "The element knows its own type,"
+  ],
+  [
+   311.812,
+   314.471,
+   "so it picks the correct visit method."
+  ],
+  [
+   314.471,
+   316.37,
+   "The visitor knows the operation."
+  ],
+  [
+   316.37,
+   316.749,
+   "Together,"
+  ],
+  [
+   316.749,
+   319.408,
+   "they land on exactly the right behavior."
+  ],
+  [
+   319.908,
+   321.563,
+   "Your turn \u2014 pause here."
+  ],
+  [
+   322.195,
+   324.513,
+   "This is the heart of the pattern,"
+  ],
+  [
+   324.513,
+   325.506,
+   "in one line."
+  ],
+  [
+   326.137,
+   328.786,
+   "An image has just been handed a visitor"
+  ],
+  [
+   328.786,
+   329.779,
+   "\u2014 any visitor,"
+  ],
+  [
+   329.779,
+   331.766,
+   "it does not know which operation."
+  ],
+  [
+   332.397,
+   335.046,
+   "Its job in accept is to call back"
+  ],
+  [
+   335.046,
+   337.694,
+   "the one visit method that matches its own"
+  ],
+  [
+   337.694,
+   338.026,
+   "type,"
+  ],
+  [
+   338.026,
+   339.35,
+   "and pass itself along."
+  ],
+  [
+   339.981,
+   341.968,
+   "Which method does an Image call?"
+  ],
+  [
+   341.968,
+   342.63,
+   "Write it."
+  ],
+  [
+   342.63,
+   343.292,
+   "And notice:"
+  ],
+  [
+   343.292,
+   345.941,
+   "the image does not know or care what"
+  ],
+  [
+   345.941,
+   348.589,
+   "the visitor does \u2014 only that it is"
+  ],
+  [
+   348.589,
+   349.252,
+   "an image,"
+  ],
+  [
+   349.252,
+   351.238,
+   "so it calls the image method."
+  ],
+  [
+   351.738,
+   352.533,
+   "Step three,"
+  ],
+  [
+   352.533,
+   354.123,
+   "and the payoff arrives."
+  ],
+  [
+   354.755,
+   357.141,
+   "To render the document to HTML,"
+  ],
+  [
+   357.141,
+   360.321,
+   "you make an HTML visitor and let every"
+  ],
+  [
+   360.321,
+   361.514,
+   "element accept it."
+  ],
+  [
+   361.514,
+   364.695,
+   "Each element routes itself to the right visit"
+  ],
+  [
+   364.695,
+   365.092,
+   "method,"
+  ],
+  [
+   365.092,
+   366.682,
+   "and the HTML assembles."
+  ],
+  [
+   367.314,
+   370.495,
+   "Now you want word count instead \u2014 a"
+  ],
+  [
+   370.495,
+   371.687,
+   "completely different operation."
+  ],
+  [
+   372.319,
+   374.307,
+   "You write a WordCount visitor,"
+  ],
+  [
+   374.307,
+   377.488,
+   "and run the exact same loop with it."
+  ],
+  [
+   378.119,
+   380.107,
+   "Not one element class changed."
+  ],
+  [
+   380.107,
+   382.095,
+   "The document did not change."
+  ],
+  [
+   382.095,
+   385.276,
+   "You added an entire new operation over the"
+  ],
+  [
+   385.276,
+   386.468,
+   "whole element hierarchy,"
+  ],
+  [
+   386.468,
+   389.649,
+   "purely by adding one class from the outside."
+  ],
+  [
+   390.149,
+   393.254,
+   "Now the change that used to touch everything."
+  ],
+  [
+   393.254,
+   394.419,
+   "Add Markdown export."
+  ],
+  [
+   395.05,
+   396.603,
+   "In the scattered design,"
+  ],
+  [
+   396.603,
+   399.709,
+   "that meant a new to-Markdown method in Text,"
+  ],
+  [
+   399.709,
+   400.485,
+   "and Image,"
+  ],
+  [
+   400.485,
+   401.261,
+   "and Table,"
+  ],
+  [
+   401.261,
+   403.979,
+   "with the logic split across all three."
+  ],
+  [
+   404.61,
+   405.386,
+   "With visitors?"
+  ],
+  [
+   405.386,
+   408.492,
+   "One new class \u2014 a Markdown visitor \u2014"
+  ],
+  [
+   408.492,
+   411.597,
+   "holding the complete Markdown logic for every\nelement"
+  ],
+  [
+   411.597,
+   411.985,
+   "type,"
+  ],
+  [
+   411.985,
+   413.538,
+   "in one readable place."
+  ],
+  [
+   414.17,
+   415.334,
+   "And every element?"
+  ],
+  [
+   415.334,
+   415.722,
+   "Untouched."
+  ],
+  [
+   415.722,
+   418.828,
+   "They already know how to accept any visitor."
+  ],
+  [
+   419.459,
+   422.177,
+   "A new operation is now purely additive:"
+  ],
+  [
+   422.177,
+   422.953,
+   "one class,"
+  ],
+  [
+   422.953,
+   424.117,
+   "from the outside,"
+  ],
+  [
+   424.117,
+   427.223,
+   "and the whole document can be exported to"
+  ],
+  [
+   427.223,
+   427.611,
+   "Markdown."
+  ],
+  [
+   428.111,
+   430.005,
+   "This is the Visitor pattern."
+  ],
+  [
+   430.637,
+   431.394,
+   "Two hierarchies."
+  ],
+  [
+   432.026,
+   433.162,
+   "On the left,"
+  ],
+  [
+   433.162,
+   436.193,
+   "the Visitor \u2014 one method per element type"
+  ],
+  [
+   436.193,
+   438.466,
+   "\u2014 with concrete visitors beneath it:"
+  ],
+  [
+   438.466,
+   439.602,
+   "an HTML renderer,"
+  ],
+  [
+   439.602,
+   440.739,
+   "a word counter."
+  ],
+  [
+   440.739,
+   442.254,
+   "Each is one operation."
+  ],
+  [
+   442.886,
+   444.022,
+   "On the right,"
+  ],
+  [
+   444.022,
+   447.053,
+   "the Element \u2014 with its single accept method"
+  ],
+  [
+   447.053,
+   449.704,
+   "\u2014 and the concrete elements beneath it:"
+  ],
+  [
+   449.704,
+   450.083,
+   "Text,"
+  ],
+  [
+   450.083,
+   450.462,
+   "Image."
+  ],
+  [
+   450.462,
+   452.735,
+   "Each knows only how to accept."
+  ],
+  [
+   453.367,
+   456.397,
+   "And the arrow across the middle is the"
+  ],
+  [
+   456.397,
+   457.155,
+   "double dispatch:"
+  ],
+  [
+   457.155,
+   460.185,
+   "an element's accept calls back into the visitor,"
+  ],
+  [
+   460.185,
+   463.216,
+   "choosing the method that matches its own type."
+  ],
+  [
+   463.847,
+   466.878,
+   "Adding a visitor on the left adds an"
+  ],
+  [
+   466.878,
+   467.257,
+   "operation,"
+  ],
+  [
+   467.257,
+   467.636,
+   "cheaply."
+  ],
+  [
+   467.636,
+   470.666,
+   "Everything on the right stays exactly as it"
+  ],
+  [
+   470.666,
+   471.045,
+   "is."
+  ],
+  [
+   471.545,
+   472.353,
+   "The names,"
+  ],
+  [
+   472.353,
+   473.97,
+   "mapped to your code."
+  ],
+  [
+   474.602,
+   477.026,
+   "The Visitor is the Visitor interface,"
+  ],
+  [
+   477.026,
+   479.856,
+   "with a visit method per element type."
+  ],
+  [
+   480.487,
+   483.72,
+   "The ConcreteVisitors are the operations \u2014 HTML\nrenderer,"
+  ],
+  [
+   483.72,
+   484.529,
+   "word counter."
+  ],
+  [
+   485.16,
+   487.989,
+   "The Element is the interface with accept."
+  ],
+  [
+   488.621,
+   491.854,
+   "And the ConcreteElements are the data types \u2014"
+  ],
+  [
+   491.854,
+   492.258,
+   "text,"
+  ],
+  [
+   492.258,
+   492.662,
+   "image,"
+  ],
+  [
+   492.662,
+   493.067,
+   "table."
+  ],
+  [
+   493.698,
+   496.931,
+   "Each element's accept calls back the matching\nvisit"
+  ],
+  [
+   496.931,
+   500.165,
+   "method \u2014 that is the double dispatch \u2014"
+  ],
+  [
+   500.165,
+   503.398,
+   "and each visitor gathers one whole operation\nacross"
+  ],
+  [
+   503.398,
+   504.61,
+   "every element type."
+  ],
+  [
+   505.242,
+   506.859,
+   "The Gang of Four:"
+  ],
+  [
+   506.859,
+   510.092,
+   "represent an operation to be performed on the"
+  ],
+  [
+   510.092,
+   513.325,
+   "elements of an object structure \u2014 Visitor lets"
+  ],
+  [
+   513.325,
+   516.558,
+   "you define a new operation without changing the"
+  ],
+  [
+   516.558,
+   518.175,
+   "classes of the elements."
+  ],
+  [
+   518.675,
+   520.384,
+   "Visitor makes a sharp trade,"
+  ],
+  [
+   520.384,
+   523.119,
+   "and you must know which way it cuts."
+  ],
+  [
+   523.751,
+   526.485,
+   "It makes adding a new operation trivial \u2014"
+  ],
+  [
+   526.485,
+   527.511,
+   "one new visitor."
+  ],
+  [
+   527.511,
+   530.246,
+   "But it makes adding a new element type"
+  ],
+  [
+   530.246,
+   530.587,
+   "painful:"
+  ],
+  [
+   530.587,
+   533.322,
+   "a new element means a new visit method"
+  ],
+  [
+   533.322,
+   534.69,
+   "on the Visitor interface,"
+  ],
+  [
+   534.69,
+   537.424,
+   "and therefore an edit to every single visitor"
+  ],
+  [
+   537.424,
+   538.45,
+   "you have written."
+  ],
+  [
+   539.081,
+   541.816,
+   "It is the exact mirror of the naive"
+  ],
+  [
+   541.816,
+   544.551,
+   "approach \u2014 and the opposite of most patterns,"
+  ],
+  [
+   544.551,
+   546.944,
+   "which favor new types over new operations."
+  ],
+  [
+   547.575,
+   550.31,
+   "Visitors also often need access to the elements'"
+  ],
+  [
+   550.31,
+   550.652,
+   "internals,"
+  ],
+  [
+   550.652,
+   552.019,
+   "which can strain encapsulation."
+  ],
+  [
+   552.019,
+   554.754,
+   "And the double-dispatch dance takes a moment to"
+  ],
+  [
+   554.754,
+   555.78,
+   "get used to."
+  ],
+  [
+   556.411,
+   559.146,
+   "So skip it when your element types change"
+  ],
+  [
+   559.146,
+   559.488,
+   "often,"
+  ],
+  [
+   559.488,
+   562.222,
+   "or when there is really only one operation."
+  ],
+  [
+   562.854,
+   565.589,
+   "Reach for it when the set of types"
+  ],
+  [
+   565.589,
+   566.273,
+   "is stable,"
+  ],
+  [
+   566.273,
+   568.324,
+   "the operations over them keep growing,"
+  ],
+  [
+   568.324,
+   571.058,
+   "and you are tired of editing every class"
+  ],
+  [
+   571.058,
+   571.742,
+   "each time."
+  ],
+  [
+   572.242,
+   572.619,
+   "Visitor,"
+  ],
+  [
+   572.619,
+   573.749,
+   "in one breath."
+  ],
+  [
+   574.381,
+   577.395,
+   "Piling every operation onto every element bloated\nthe"
+  ],
+  [
+   577.395,
+   578.149,
+   "data classes,"
+  ],
+  [
+   578.149,
+   581.163,
+   "and split each single operation across many files."
+  ],
+  [
+   581.795,
+   584.809,
+   "But the types are stable while the operations"
+  ],
+  [
+   584.809,
+   587.824,
+   "grow \u2014 so you move each operation into"
+  ],
+  [
+   587.824,
+   590.838,
+   "its own visitor that handles every type in"
+  ],
+  [
+   590.838,
+   591.592,
+   "one place."
+  ],
+  [
+   592.224,
+   592.6,
+   "Visitor:"
+  ],
+  [
+   592.6,
+   595.615,
+   "elements accept a visitor and call back their"
+  ],
+  [
+   595.615,
+   598.629,
+   "own visit method \u2014 the double dispatch \u2014"
+  ],
+  [
+   598.629,
+   601.644,
+   "so a new operation is just one new"
+  ],
+  [
+   601.644,
+   602.021,
+   "class,"
+  ],
+  [
+   602.021,
+   603.905,
+   "and no element ever changes."
+  ],
+  [
+   604.536,
+   606.797,
+   "Here is one to carry out."
+  ],
+  [
+   607.429,
+   610.443,
+   "A compiler has a stable syntax tree \u2014"
+  ],
+  [
+   610.443,
+   610.82,
+   "literals,"
+  ],
+  [
+   610.82,
+   611.573,
+   "binary operations,"
+  ],
+  [
+   611.573,
+   614.588,
+   "function calls \u2014 and a growing set of"
+  ],
+  [
+   614.588,
+   615.718,
+   "passes over it:"
+  ],
+  [
+   615.718,
+   616.095,
+   "type-checking,"
+  ],
+  [
+   616.095,
+   616.472,
+   "optimization,"
+  ],
+  [
+   616.472,
+   617.226,
+   "code generation."
+  ],
+  [
+   617.857,
+   618.988,
+   "Does Visitor fit?"
+  ],
+  [
+   618.988,
+   620.495,
+   "What are the elements,"
+  ],
+  [
+   620.495,
+   622.002,
+   "what is a visitor,"
+  ],
+  [
+   622.002,
+   625.016,
+   "and what does it cost you the day"
+  ],
+  [
+   625.016,
+   628.031,
+   "the syntax tree grows a brand-new node type?"
+  ],
+  [
+   628.663,
+   629.039,
+   "Pause,"
+  ],
+  [
+   629.039,
+   631.677,
+   "and sketch it before the next episode."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp20-visitor.wav",
+   "volume": 1.0
+  }
+ }
+}

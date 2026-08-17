@@ -1,0 +1,369 @@
+{
+  "cuts": [
+    {
+      "id": "s30_divider",
+      "type": "ait_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 10.515,
+      "props": {
+        "n": 3,
+        "title": "Before You Start",
+        "sub": "The skills, the money, the mindset",
+        "color": "edge",
+        "parts": 6,
+        "dur": 11.015
+      }
+    },
+    {
+      "id": "s31_prereq",
+      "type": "ait_orbit",
+      "in_seconds": 11.015,
+      "out_seconds": 49.739,
+      "props": {
+        "kicker": "THE FOUR PILLARS",
+        "title": "Four skills hold up every AI trader",
+        "hub": {
+          "emoji": "\ud83c\udfaf",
+          "label": "A working trader",
+          "c": "edge"
+        },
+        "items": [
+          {
+            "emoji": "\ud83d\udcda",
+            "label": "Market basics",
+            "sub": "how trading works",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83d\udcca",
+            "label": "A little statistics",
+            "sub": "probability, not calculus",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83d\udc0d",
+            "label": "Basic Python",
+            "sub": "enough to glue tools",
+            "c": "ai"
+          },
+          {
+            "emoji": "\ud83d\udee1\ufe0f",
+            "label": "Risk discipline",
+            "sub": "the one that matters most",
+            "c": "risk"
+          }
+        ],
+        "dur": 39.224
+      }
+    },
+    {
+      "id": "s32_markets",
+      "type": "ait_cards",
+      "in_seconds": 50.239,
+      "out_seconds": 92.018,
+      "props": {
+        "kicker": "PILLAR ONE \u00b7 MARKETS",
+        "title": "The market basics you can't skip",
+        "color": "data",
+        "cards": [
+          {
+            "emoji": "\ud83d\udcd7",
+            "title": "Orders & spreads",
+            "body": "Market vs limit orders, and the bid-ask gap you pay.",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83d\udd52",
+            "title": "Liquidity & timing",
+            "body": "Why thin stocks and open/close are dangerous for bots.",
+            "c": "edge"
+          },
+          {
+            "emoji": "\u2696\ufe0f",
+            "title": "Leverage & margin",
+            "body": "How borrowed money multiplies losses, not just gains.",
+            "c": "risk"
+          },
+          {
+            "emoji": "\ud83e\uddfe",
+            "title": "Settlement & taxes",
+            "body": "T-plus-one settlement, STT, and how gains are taxed.",
+            "c": "money"
+          }
+        ],
+        "dur": 42.279
+      }
+    },
+    {
+      "id": "s33_math",
+      "type": "ait_cards",
+      "in_seconds": 92.518,
+      "out_seconds": 136.482,
+      "props": {
+        "kicker": "PILLAR TWO \u00b7 STATISTICS",
+        "title": "The tiny bit of math that matters",
+        "color": "money",
+        "cards": [
+          {
+            "emoji": "\ud83c\udfb2",
+            "title": "Expectancy",
+            "body": "Win rate times average win, minus loss rate times average loss.",
+            "tag": "the core idea",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83d\udd17",
+            "title": "Correlation \u2260 cause",
+            "body": "Two things moving together doesn't mean one drives the other.",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83d\udcc9",
+            "title": "Distributions & fat tails",
+            "body": "Markets have rare, violent moves that averages hide.",
+            "c": "risk"
+          },
+          {
+            "emoji": "\ud83e\uddea",
+            "title": "In-sample vs out-of-sample",
+            "body": "Only results on unseen data are worth trusting.",
+            "c": "ai"
+          }
+        ],
+        "dur": 44.464
+      }
+    },
+    {
+      "id": "s34_python",
+      "type": "ait_code",
+      "in_seconds": 136.982,
+      "out_seconds": 177.426,
+      "props": {
+        "kicker": "PILLAR THREE \u00b7 PYTHON",
+        "title": "You need less code than you think",
+        "file": "first_look.py",
+        "color": "ai",
+        "lines": [
+          "# the entire beginner toolkit is about 5 lines",
+          "import yfinance as yf",
+          "import pandas as pd",
+          "",
+          "# download two years of daily prices for one stock",
+          "df = yf.download('RELIANCE.NS', period='2y')",
+          "",
+          "# a 'feature': the 20-day average price",
+          "df['sma20'] = df['Close'].rolling(20).mean()",
+          "print(df.tail())   # look at your data \u2014 always"
+        ],
+        "side": {
+          "title": "What to actually learn",
+          "points": [
+            "Variables, loops, functions",
+            "The pandas DataFrame \u2014 your data table",
+            "How to read a library's docs",
+            "That's genuinely enough to begin"
+          ]
+        },
+        "caption": "If you can read these lines, you already know enough Python to start.",
+        "dur": 40.944
+      }
+    },
+    {
+      "id": "s35_capital",
+      "type": "ait_stat",
+      "in_seconds": 177.926,
+      "out_seconds": 218.287,
+      "props": {
+        "kicker": "PILLAR FOUR \u00b7 THE MONEY",
+        "title": "Set expectations before you set up an account",
+        "color": "risk",
+        "stats": [
+          {
+            "value": 0,
+            "prefix": "\u20b9",
+            "label": "the money you should risk that you can't lose",
+            "src": "the only safe amount at first",
+            "c": "risk"
+          },
+          {
+            "value": 6,
+            "prefix": "",
+            "suffix": "+ mo",
+            "label": "learning before real money is normal",
+            "src": "paper trading is free",
+            "c": "edge"
+          },
+          {
+            "value": 2,
+            "prefix": "1\u2013",
+            "suffix": "%",
+            "label": "of capital risked per trade, at most",
+            "src": "the survivor's rule",
+            "c": "money"
+          }
+        ],
+        "note": "The goal at the start is not profit. It is to not blow up while you learn.",
+        "dur": 40.861
+      }
+    },
+    {
+      "id": "s35c_time",
+      "type": "ait_callout",
+      "in_seconds": 218.787,
+      "out_seconds": 264.988,
+      "props": {
+        "kicker": "THE HONEST TIME COST",
+        "color": "risk",
+        "text": "Expect months of unpaid learning before your first sensible live trade.",
+        "sub": "This is a skill you earn slowly \u2014 not a switch you flip.",
+        "dur": 46.701
+      }
+    },
+    {
+      "id": "s36_paper",
+      "type": "ait_callout",
+      "in_seconds": 265.488,
+      "out_seconds": 305.528,
+      "props": {
+        "kicker": "THE ONE NON-NEGOTIABLE",
+        "color": "money",
+        "text": "Paper trade first. Every strategy. No exceptions.",
+        "sub": "Fake money, real prices, real feelings \u2014 for weeks, before a rupee is at risk.",
+        "dur": 40.54
+      }
+    },
+    {
+      "id": "s33b_risk_rules",
+      "type": "ait_list",
+      "in_seconds": 306.028,
+      "out_seconds": 358.515,
+      "props": {
+        "kicker": "PILLAR FOUR, DEEPER",
+        "title": "The risk commandments",
+        "tone": "ok",
+        "color": "risk",
+        "items": [
+          {
+            "h": "Risk \u2264 1\u20132% of capital per trade",
+            "sub": "So no single trade can seriously hurt you. This is the master rule."
+          },
+          {
+            "h": "Every position has a stop-loss, set in advance",
+            "sub": "Decide where you're wrong before you enter, not after."
+          },
+          {
+            "h": "Cap your total loss for a single day",
+            "sub": "If you hit it, the bot stops. Live to trade tomorrow."
+          },
+          {
+            "h": "Don't put all your risk in one bet",
+            "sub": "Correlated positions are secretly one big position."
+          },
+          {
+            "h": "Size down when volatility spikes",
+            "sub": "Wild markets deserve smaller bets, not braver ones."
+          }
+        ],
+        "caption": "Returns are what you hope for. Risk is what you actually control.",
+        "dur": 52.987
+      }
+    },
+    {
+      "id": "s34b_toolstack",
+      "type": "ait_cards",
+      "in_seconds": 359.015,
+      "out_seconds": 407.19,
+      "props": {
+        "kicker": "SET UP YOUR BENCH",
+        "title": "The free tools to install today",
+        "color": "ai",
+        "cards": [
+          {
+            "emoji": "\ud83d\udc0d",
+            "title": "Python + venv",
+            "body": "Install Python, and use a virtual environment for each project.",
+            "tag": "the base",
+            "c": "ai"
+          },
+          {
+            "emoji": "\ud83d\udcd3",
+            "title": "Jupyter / VS Code",
+            "body": "A notebook to explore data, an editor to write real bots.",
+            "tag": "your workbench",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83d\udce6",
+            "title": "pandas \u00b7 yfinance \u00b7 pandas-ta",
+            "body": "Data table, free prices, and technical indicators.",
+            "tag": "the core three",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83e\uddea",
+            "title": "backtesting.py",
+            "body": "A clean, beginner-friendly engine to test strategies.",
+            "tag": "validate",
+            "c": "edge"
+          }
+        ],
+        "dur": 48.675
+      }
+    },
+    {
+      "id": "s36b_mindset",
+      "type": "ait_callout",
+      "in_seconds": 407.69,
+      "out_seconds": 451.757,
+      "props": {
+        "kicker": "THE RIGHT MINDSET",
+        "color": "edge",
+        "text": "You're not gambling. You're running a small, data-driven business.",
+        "sub": "Boring consistency beats brilliant, occasional bets \u2014 every year.",
+        "dur": 44.567
+      }
+    },
+    {
+      "id": "s37_path",
+      "type": "ait_list",
+      "in_seconds": 452.257,
+      "out_seconds": 499.205,
+      "props": {
+        "kicker": "THE ORDER TO LEARN",
+        "title": "A sane path from zero to your first bot",
+        "tone": "neutral",
+        "color": "edge",
+        "items": [
+          {
+            "h": "Learn market basics on Zerodha Varsity",
+            "sub": "Free, India-specific, and genuinely excellent."
+          },
+          {
+            "h": "Do a short beginner Python course",
+            "sub": "Focus on pandas and reading data \u2014 skip the rest for now."
+          },
+          {
+            "h": "Build one rule-based strategy by hand",
+            "sub": "No AI yet. Just prove you can go idea to code to backtest."
+          },
+          {
+            "h": "Paper trade it for a month, and journal",
+            "sub": "Write down what happened and what you felt. Every day."
+          },
+          {
+            "h": "Only then add machine learning",
+            "sub": "AI is step five, not step one. Walk before you run."
+          }
+        ],
+        "caption": "Most people fail by starting at step five. Start at step one.",
+        "dur": 47.448
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "ait/ch3.wav",
+      "volume": 1.0
+    }
+  }
+}

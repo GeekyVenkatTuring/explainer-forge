@@ -1,0 +1,85 @@
+{
+ "cuts": [
+  {
+   "id": "sml_title",
+   "type": "sml_title",
+   "in_seconds": 0.0,
+   "out_seconds": 30.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sml_silos",
+   "type": "sml_silos",
+   "in_seconds": 30.0,
+   "out_seconds": 60.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sml_hook",
+   "type": "sml_hook",
+   "in_seconds": 60.0,
+   "out_seconds": 90.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sml_ingest",
+   "type": "sml_ingest",
+   "in_seconds": 90.0,
+   "out_seconds": 120.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sml_merge",
+   "type": "sml_merge",
+   "in_seconds": 120.0,
+   "out_seconds": 150.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sml_telemetry",
+   "type": "sml_telemetry",
+   "in_seconds": 150.0,
+   "out_seconds": 180.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sml_cascade",
+   "type": "sml_cascade",
+   "in_seconds": 180.0,
+   "out_seconds": 210.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sml_traverse",
+   "type": "sml_traverse",
+   "in_seconds": 210.0,
+   "out_seconds": 240.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "sml_architecture",
+   "type": "sml_architecture",
+   "in_seconds": 240.0,
+   "out_seconds": 270.0,
+   "props": {
+    "dur": 30.0
+   }
+  }
+ ]
+}

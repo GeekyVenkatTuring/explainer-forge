@@ -1,0 +1,93 @@
+{
+ "ticker": "LICI",
+ "scraped_at": "2026-08-14T15:28:00",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 521180.0,
+ "current_price": 412.0,
+ "pe": 8.65,
+ "book_value": 0.0,
+ "dividend_yield_pct": 2.48,
+ "roce_pct": 35.1,
+ "roe_pct": 37.8,
+ "face_value": 10.0,
+ "high": 468.0,
+ "sales_growth": {
+  "5 Years": 81.0,
+  "3 Years": 17.0,
+  "TTM": 23.0
+ },
+ "profit_growth": {
+  "3 Years": 8.0,
+  "1 Year": -7.0
+ },
+ "roe_hist": {
+  "OPM %": 5.0,
+  "Other Income&nbsp; +": 117.0,
+  "Interest": 0.0,
+  "Depreciation": 0.0,
+  "Tax %": 14.0,
+  "EPS in Rs": 7.62
+ },
+ "price_cagr": {
+  "5 Years": 52.0,
+  "3 Years": 46.0,
+  "Last Year": 38.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "5%",
+   "4.2%",
+   "4.3%",
+   "0.7%",
+   "4.6%",
+   "2.9%",
+   "6%",
+   "9%",
+   "4.7%",
+   "3.9%",
+   "5%",
+   "4.1%",
+   "6%"
+  ],
+  "eps": [
+   "7.62",
+   "6.35",
+   "7.49",
+   "10.94",
+   "8.34",
+   "6.11",
+   "8.70",
+   "15.05",
+   "8.66",
+   "7.98",
+   "10.22",
+   "18.55",
+   "10.74"
+  ]
+ },
+ "pros": [
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 45.6%"
+ ],
+ "cons": [
+  "The company has delivered a poor sales growth of 7.19% over past five years."
+ ]
+}

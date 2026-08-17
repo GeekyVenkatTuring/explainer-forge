@@ -1,0 +1,5 @@
+file '/Users/appuram/Developer/explainer-forge/projects/business-ideas-25l-te/assets/d15_ptitle.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/business-ideas-25l-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/business-ideas-25l-te/assets/d15_plan.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/business-ideas-25l-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/business-ideas-25l-te/assets/d15_mistakes.wav'

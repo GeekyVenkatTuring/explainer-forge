@@ -1,0 +1,98 @@
+{
+ "ticker": "MOTILALOFS",
+ "scraped_at": "2026-08-14T15:27:54",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 54209.0,
+ "current_price": 900.0,
+ "pe": 27.4,
+ "book_value": 214.0,
+ "dividend_yield_pct": 0.65,
+ "roce_pct": 12.7,
+ "roe_pct": 15.5,
+ "face_value": 1.0,
+ "high": 1097.0,
+ "sales_growth": {
+  "10 Years": 27.0,
+  "5 Years": 7.0,
+  "3 Years": 26.0,
+  "TTM": -29.0
+ },
+ "profit_growth": {
+  "10 Years": 22.0,
+  "5 Years": 34.0,
+  "3 Years": 56.0,
+  "1 Year": -3.0
+ },
+ "roe_hist": {
+  "Equity Capital": 14.0,
+  "Borrowings&nbsp; +": 795.0,
+  "Other Liabilities&nbsp; +": 855.0,
+  "Fixed Assets&nbsp; +": 300.0,
+  "CWIP": 0.0,
+  "Investments": 814.0
+ },
+ "price_cagr": {
+  "10 Years": 22.0,
+  "5 Years": 22.0,
+  "3 Years": 23.0,
+  "Last Year": 16.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "56%",
+   "55%",
+   "61%",
+   "57%",
+   "60%",
+   "64%",
+   "53%",
+   "24%",
+   "63%",
+   "45%",
+   "52%",
+   "8%",
+   "57%"
+  ],
+  "eps": [
+   "8.90",
+   "8.96",
+   "11.11",
+   "12.13",
+   "14.77",
+   "18.71",
+   "9.42",
+   "-1.08",
+   "19.38",
+   "6.04",
+   "9.42",
+   "-3.68",
+   "21.14"
+  ]
+ },
+ "pros": [
+  "Company is expected to give good quarter",
+  "Company&#x27;s median sales growth is 18.2% of last 10 years"
+ ],
+ "cons": [
+  "Company has high debtors of 158 days."
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "ticker": "360ONE",
+ "scraped_at": "2026-08-14T15:27:53",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 47447.0,
+ "current_price": 1166.0,
+ "pe": 37.6,
+ "book_value": 242.0,
+ "dividend_yield_pct": 1.03,
+ "roce_pct": 12.1,
+ "roe_pct": 14.4,
+ "face_value": 1.0,
+ "high": 1236.0,
+ "sales_growth": {
+  "5 Years": 27.0,
+  "3 Years": 23.0,
+  "TTM": 19.0
+ },
+ "profit_growth": {
+  "5 Years": 25.0,
+  "3 Years": 32.0,
+  "1 Year": 14.0
+ },
+ "roe_hist": {
+  "Equity Capital": 16.0,
+  "Other Liabilities&nbsp; +": 737.0,
+  "Fixed Assets&nbsp; +": 31.0,
+  "CWIP": 22.0
+ },
+ "price_cagr": {
+  "5 Years": 19.0,
+  "3 Years": 18.0,
+  "Last Year": 14.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "62%",
+   "57%",
+   "60%",
+   "36%",
+   "68%",
+   "63%",
+   "57%",
+   "56%",
+   "62%",
+   "63%",
+   "61%",
+   "59%",
+   "63%"
+  ],
+  "eps": [
+   "5.15",
+   "5.20",
+   "5.36",
+   "6.76",
+   "6.72",
+   "6.73",
+   "7.12",
+   "6.35",
+   "7.04",
+   "7.79",
+   "8.08",
+   "7.11",
+   "8.13"
+  ]
+ },
+ "pros": [
+  "Company is expected to give good quarter",
+  "Company has delivered good profit growth of 26.8% CAGR over last 5 years",
+  "Company has been maintaining a healthy dividend payout of 45.6%"
+ ],
+ "cons": [
+  "Stock is trading at 4.86 times its book value",
+  "Promoter holding is low: 6.20%",
+  "Promoter holding has decreased over last 3 years: -15.3%"
+ ]
+}

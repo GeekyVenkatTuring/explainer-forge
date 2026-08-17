@@ -1,0 +1,105 @@
+{
+ "ticker": "NAUKRI",
+ "scraped_at": "2026-08-14T15:28:53",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 86888.0,
+ "current_price": 1340.0,
+ "pe": 58.9,
+ "book_value": 585.0,
+ "dividend_yield_pct": 0.62,
+ "roce_pct": 3.45,
+ "roe_pct": 1.81,
+ "face_value": 2.0,
+ "high": 1440.0,
+ "sales_growth": {
+  "10 Years": 16.0,
+  "5 Years": 39.0,
+  "3 Years": 62.0,
+  "TTM": 43.0
+ },
+ "profit_growth": {
+  "10 Years": 23.0,
+  "5 Years": 5.0,
+  "3 Years": 16.0,
+  "1 Year": -1.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 626.0,
+  "Expenses&nbsp; +": 445.0,
+  "Operating Profit": 181.0,
+  "OPM %": 29.0,
+  "Other Income&nbsp; +": 64.0,
+  "Interest": 4.0,
+  "Depreciation": 24.0,
+  "Profit before tax": 217.0,
+  "Tax %": 32.0,
+  "Net Profit&nbsp; +": 147.0,
+  "EPS in Rs": 2.46
+ },
+ "price_cagr": {
+  "10 Years": 3.0,
+  "5 Years": 3.0,
+  "3 Years": 1.0,
+  "Last Year": 2.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "29%",
+   "21%",
+   "29%",
+   "31%",
+   "31%",
+   "22%",
+   "37%",
+   "31%",
+   "33%",
+   "35%",
+   "36%",
+   "38%",
+   "39%"
+  ],
+  "eps": [
+   "2.46",
+   "3.18",
+   "2.34",
+   "0.93",
+   "3.60",
+   "0.36",
+   "3.74",
+   "7.15",
+   "4.57",
+   "4.88",
+   "4.19",
+   "8.73",
+   "6.87"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has delivered good profit growth of 38.6% CAGR over last 5 years",
+  "Company has been maintaining a healthy dividend payout of 42.4%"
+ ],
+ "cons": [
+  "Company has a low return on equity of 1.48% over last 3 years.",
+  "Earnings include an other income of Rs.1,227 Cr."
+ ]
+}

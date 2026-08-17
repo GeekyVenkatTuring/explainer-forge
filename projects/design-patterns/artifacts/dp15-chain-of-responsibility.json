@@ -1,0 +1,2084 @@
+{
+ "cuts": [
+  {
+   "id": "dp15-chain-of-responsibility_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 28.831,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 15",
+    "line1": "Who can",
+    "line2": "approve this?",
+    "sub": "a request travels a line of handlers until one of them can say yes",
+    "dur": 29.331
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 29.331,
+   "out_seconds": 62.002,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Approve an expense report",
+    "situation": "Expenses are approved by limit: a team lead up to $500, a manager up to $5,000, a director up to $50,000, the CFO beyond. Each request needs exactly one approver who can cover it.",
+    "actors": [
+     {
+      "emoji": "\ud83e\uddfe",
+      "label": "An expense"
+     },
+     {
+      "emoji": "\ud83e\ude9c",
+      "label": "Tiered approvers"
+     },
+     {
+      "emoji": "\u2705",
+      "label": "\u2026exactly one approves"
+     }
+    ],
+    "ask": "How does a request reach the right approver without the submitter knowing the whole hierarchy?",
+    "dur": 33.171
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_naive",
+   "type": "dp_code",
+   "in_seconds": 62.502,
+   "out_seconds": 97.596,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "One big if-else ladder.",
+    "file": "ExpenseService.java",
+    "lines": [
+     {
+      "t": "void approve(Expense e) {"
+     },
+     {
+      "t": "  if (e.amount() <= 500)",
+      "s": "hi"
+     },
+     {
+      "t": "    teamLead.sign(e);"
+     },
+     {
+      "t": "  else if (e.amount() <= 5_000)",
+      "s": "hi"
+     },
+     {
+      "t": "    manager.sign(e);"
+     },
+     {
+      "t": "  else if (e.amount() <= 50_000)",
+      "s": "hi"
+     },
+     {
+      "t": "    director.sign(e);"
+     },
+     {
+      "t": "  else cfo.sign(e);"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "The submitter's code hard-codes every tier, every limit, every order.",
+    "dur": 35.594
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_pain",
+   "type": "dp_pain",
+   "in_seconds": 98.096,
+   "out_seconds": 135.768,
+   "props": {
+    "title": "\"Add a VP tier. And Finance submits expenses too. And Procurement.\"",
+    "file": "ladders.java",
+    "lines": [
+     {
+      "t": "class ExpenseService { /* the if-else ladder */ }",
+      "s": "hi"
+     },
+     {
+      "t": "class TravelPortal   { /* the SAME ladder */ }",
+      "s": "hi"
+     },
+     {
+      "t": "class ProcurementApp { /* the SAME ladder */ }",
+      "s": "hi"
+     },
+     {
+      "t": "// insert a VP tier between manager & director:"
+     },
+     {
+      "t": "// ...find and edit EVERY ladder. change a limit? same.",
+      "s": "hi"
+     }
+    ],
+    "smell": "The approval hierarchy copied into every submitter",
+    "touched": [
+     "3 submitters, one ladder each",
+     "new VP tier \u2192 edit all three",
+     "change a limit \u2192 edit all three",
+     "miss one \u2192 the wrong approver signs"
+    ],
+    "dur": 38.172
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_insight",
+   "type": "dp_insight",
+   "in_seconds": 136.268,
+   "out_seconds": 174.009,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "A request needs exactly one approver",
+     "Each approver can cover up to a limit",
+     "If they can't, it escalates upward"
+    ],
+    "varies": [
+     "The set of approvers and their limits",
+     "Their order in the chain"
+    ],
+    "principle": "Give each approver a limit and a 'next'; let the request walk the line until one handles it.",
+    "dur": 38.241
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 174.509,
+   "out_seconds": 220.051,
+   "props": {
+    "title": "Escalating a support call",
+    "emoji": "\u260e\ufe0f",
+    "analogy": "The front-line rep helps if they can; if not, they transfer you up \u2014 you called once, the call travels.",
+    "map": [
+     {
+      "from": "You, calling once",
+      "to": "submitting the request"
+     },
+     {
+      "from": "The front-line rep",
+      "to": "the first handler"
+     },
+     {
+      "from": "\"Beyond me \u2014 transferring you\"",
+      "to": "passing to the next"
+     },
+     {
+      "from": "Whoever finally helps",
+      "to": "the handler that handles it"
+     }
+    ],
+    "breaks": "a phone tree can dead-end in hold music; a good chain ends in someone \u2014 or an explicit 'no one can.'",
+    "dur": 46.042
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 220.551,
+   "out_seconds": 252.801,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "Each approver: a limit, a next, a handle()",
+    "file": "Approver.java",
+    "lines": [
+     {
+      "t": "abstract class Approver {",
+      "s": "add"
+     },
+     {
+      "t": "  protected Approver next;          // the one above",
+      "s": "add"
+     },
+     {
+      "t": "  protected final long limit;",
+      "s": "add"
+     },
+     {
+      "t": "  void handle(Expense e) {",
+      "s": "add"
+     },
+     {
+      "t": "    if (e.amount() <= limit) sign(e);       // I can",
+      "s": "add"
+     },
+     {
+      "t": "    else if (next != null) next.handle(e);  // escalate",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "The escalation logic is written ONCE, in the base handler.",
+    "dur": 32.75
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 253.301,
+   "out_seconds": 286.982,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "Concrete approvers, then wire the chain",
+    "file": "setup.java",
+    "lines": [
+     {
+      "t": "class TeamLead extends Approver { TeamLead(){ super(500); } }",
+      "s": "hi"
+     },
+     {
+      "t": "class Manager  extends Approver { Manager(){ super(5_000); } }",
+      "s": "hi"
+     },
+     {
+      "t": "class Director extends Approver { Director(){ super(50_000); } }"
+     },
+     {
+      "t": "// link them into a chain, low to high:"
+     },
+     {
+      "t": "lead.next = manager;  manager.next = director;",
+      "s": "hi"
+     },
+     {
+      "t": "director.next = cfo;   // the order lives here, once"
+     }
+    ],
+    "note": "Each subclass just declares its limit. The chain order is one wiring step.",
+    "dur": 34.181
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_try",
+   "type": "dp_try",
+   "in_seconds": 287.482,
+   "out_seconds": 319.262,
+   "props": {
+    "title": "Write handle() for one approver",
+    "file": "Approver.java",
+    "lines": [
+     {
+      "t": "void handle(Expense e) {"
+     },
+     {
+      "t": "  if (e.amount() <= limit) { sign(e); return; }"
+     },
+     {
+      "t": "  // \u25af otherwise, send it up the chain",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "If this approver can't cover it, what happens \u2014 and what if there's no one above?",
+    "hint": "if (next != null) next.handle(e);  else reject(e);",
+    "dur": 32.28
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 319.762,
+   "out_seconds": 351.697,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "The submitter just hands it to the chain",
+    "file": "callers.java",
+    "lines": [
+     {
+      "t": "// every submitter, now identical:"
+     },
+     {
+      "t": "chain.handle(expense);   // starts at the team lead",
+      "s": "add"
+     },
+     {
+      "t": "// travel portal, procurement \u2014 same one line"
+     },
+     {
+      "t": "// they know NOTHING about limits or tiers",
+      "s": "hi"
+     }
+    ],
+    "note": "Submitters hold one reference: the front of the chain. That's all.",
+    "dur": 32.435
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 352.197,
+   "out_seconds": 388.845,
+   "props": {
+    "requirement": "\"Insert a VP tier: limit $20,000, above Director\"",
+    "naiveLabel": "Before",
+    "naiveCost": "Edit every if-else ladder, get boundaries right.",
+    "naiveSteps": [
+     "find every ladder, everywhere",
+     "add an else-if in the right spot",
+     "one wrong boundary \u2192 misrouted"
+    ],
+    "patLabel": "Now",
+    "patCost": "One class, spliced into the chain once.",
+    "patFile": "setup.java",
+    "patLines": [
+     {
+      "t": "class VP extends Approver { VP(){ super(20_000); } }",
+      "s": "add"
+     },
+     {
+      "t": "director.next = vp;   // splice VP in...",
+      "s": "add"
+     },
+     {
+      "t": "vp.next = cfo;        // ...between director and CFO",
+      "s": "add"
+     },
+     {
+      "t": "// every submitter: unchanged",
+      "s": "add"
+     }
+    ],
+    "dur": 37.148
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 389.345,
+   "out_seconds": 429.572,
+   "props": {
+    "name": "The Chain of Responsibility Pattern",
+    "plain": "Give each handler a limit and a link to the next; a request travels the chain until a handler takes it.",
+    "nodes": [
+     {
+      "id": "base",
+      "title": "Approver",
+      "stereo": "abstract",
+      "members": [
+       "# limit",
+       "- next: Approver",
+       "+ handle(req)"
+      ],
+      "x": 760,
+      "y": 190,
+      "w": 400,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "lead",
+      "title": "TeamLead",
+      "members": [
+       "\u2264 $500"
+      ],
+      "x": 120,
+      "y": 480,
+      "w": 320,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "mgr",
+      "title": "Manager",
+      "members": [
+       "\u2264 $5,000"
+      ],
+      "x": 570,
+      "y": 480,
+      "w": 320,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "dir",
+      "title": "Director",
+      "members": [
+       "\u2264 $50,000"
+      ],
+      "x": 1020,
+      "y": 480,
+      "w": 320,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "cfo",
+      "title": "CFO",
+      "members": [
+       "any amount"
+      ],
+      "x": 1470,
+      "y": 480,
+      "w": 320,
+      "color": "#8B93B0"
+     }
+    ],
+    "edges": [
+     {
+      "from": "lead",
+      "to": "base",
+      "kind": "impl"
+     },
+     {
+      "from": "mgr",
+      "to": "base",
+      "kind": "impl"
+     },
+     {
+      "from": "dir",
+      "to": "base",
+      "kind": "impl"
+     },
+     {
+      "from": "cfo",
+      "to": "base",
+      "kind": "impl"
+     },
+     {
+      "from": "lead",
+      "to": "mgr",
+      "kind": "assoc"
+     },
+     {
+      "from": "mgr",
+      "to": "dir",
+      "kind": "assoc"
+     },
+     {
+      "from": "dir",
+      "to": "cfo",
+      "kind": "assoc"
+     }
+    ],
+    "dur": 40.727
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_map",
+   "type": "dp_map",
+   "in_seconds": 430.072,
+   "out_seconds": 470.904,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Handler",
+      "your": "abstract Approver (limit + next)"
+     },
+     {
+      "role": "ConcreteHandlers",
+      "your": "TeamLead, Manager, Director, CFO"
+     },
+     {
+      "role": "The link",
+      "your": "each handler's next Approver"
+     },
+     {
+      "role": "Client",
+      "your": "chain.handle(expense) \u2014 head only"
+     }
+    ],
+    "plain": "Each handler decides to handle the request or pass it to its successor; the client only knows the head of the chain.",
+    "gof": "Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle it. Chain the receivers and pass the request along until one handles it.",
+    "dur": 41.332
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 471.404,
+   "out_seconds": 522.086,
+   "props": {
+    "title": "A request can fall off the end",
+    "costs": [
+     "No guarantee anyone handles it",
+     "Debugging: which handler took it?",
+     "A long chain adds latency per request"
+    ],
+    "dont": [
+     "There's exactly one known receiver",
+     "Every request needs every handler",
+     "The order would never change"
+    ],
+    "signal": "several handlers could process a request, the right one depends on the request, and the set or order may change.",
+    "dur": 51.182
+   }
+  },
+  {
+   "id": "dp15-chain-of-responsibility_recap",
+   "type": "dp_recap",
+   "in_seconds": 522.586,
+   "out_seconds": 581.496,
+   "props": {
+    "title": "Chain of Responsibility, in one breath",
+    "items": [
+     "An if-else ladder hard-coded every handler, limit, and order into the sender \u2014 copied everywhere, and fragile.",
+     "A request just needs the first handler that can cover it \u2014 so give each a limit and a 'next', and let it walk the line.",
+     "Chain of Responsibility: handlers linked in order; each handles or passes on. New handler, splice it in \u2014 senders unchanged."
+    ],
+    "challenge": "An HTTP server runs each request through auth, then rate-limiting, then logging, then the route handler \u2014 and you want to reorder or insert steps freely.",
+    "question": "Does the chain fit? What's the handler, the link, and where can a request fall off the end?",
+    "dur": 59.41
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.314,
+   "A request comes in,"
+  ],
+  [
+   1.314,
+   2.628,
+   "and the question is:"
+  ],
+  [
+   2.628,
+   3.942,
+   "who deals with it?"
+  ],
+  [
+   4.573,
+   6.216,
+   "Not always the same person."
+  ],
+  [
+   6.216,
+   7.201,
+   "A small expense,"
+  ],
+  [
+   7.201,
+   8.844,
+   "a team lead can approve."
+  ],
+  [
+   8.844,
+   11.472,
+   "A big one has to climb to a"
+  ],
+  [
+   11.472,
+   11.8,
+   "manager,"
+  ],
+  [
+   11.8,
+   12.457,
+   "a director,"
+  ],
+  [
+   12.457,
+   13.114,
+   "the CFO."
+  ],
+  [
+   13.746,
+   16.374,
+   "The wrong instinct is to make the sender"
+  ],
+  [
+   16.374,
+   19.002,
+   "figure out who \u2014 to bake the whole"
+  ],
+  [
+   19.002,
+   21.63,
+   "org chart into the code that just wanted"
+  ],
+  [
+   21.63,
+   22.944,
+   "to submit an expense."
+  ],
+  [
+   23.575,
+   26.203,
+   "There is a way to let the request"
+  ],
+  [
+   26.203,
+   27.517,
+   "find its own approver."
+  ],
+  [
+   27.517,
+   28.831,
+   "Let's approve an expense."
+  ],
+  [
+   29.331,
+   30.746,
+   "Here is the request:"
+  ],
+  [
+   30.746,
+   33.222,
+   "an expense report that needs a sign-off."
+  ],
+  [
+   33.854,
+   35.269,
+   "Approval runs by limit."
+  ],
+  [
+   35.269,
+   38.099,
+   "A team lead can approve up to five"
+  ],
+  [
+   38.099,
+   38.806,
+   "hundred dollars."
+  ],
+  [
+   38.806,
+   40.929,
+   "A manager up to five thousand."
+  ],
+  [
+   40.929,
+   43.051,
+   "A director up to fifty thousand."
+  ],
+  [
+   43.051,
+   43.759,
+   "Above that,"
+  ],
+  [
+   43.759,
+   45.174,
+   "it is the CFO."
+  ],
+  [
+   45.805,
+   48.635,
+   "Every expense needs exactly one approver \u2014 the"
+  ],
+  [
+   48.635,
+   51.465,
+   "first one whose limit is high enough to"
+  ],
+  [
+   51.465,
+   52.173,
+   "cover it."
+  ],
+  [
+   52.804,
+   55.634,
+   "So how does a submitted expense reach the"
+  ],
+  [
+   55.634,
+   56.342,
+   "right approver,"
+  ],
+  [
+   56.342,
+   59.172,
+   "without the person submitting it having to know"
+  ],
+  [
+   59.172,
+   62.002,
+   "the entire hierarchy and every threshold in it?"
+  ],
+  [
+   62.502,
+   63.723,
+   "The direct approach:"
+  ],
+  [
+   63.723,
+   64.945,
+   "an if-else ladder."
+  ],
+  [
+   65.576,
+   68.426,
+   "If the amount is under five hundred,"
+  ],
+  [
+   68.426,
+   70.054,
+   "the team lead signs."
+  ],
+  [
+   70.054,
+   71.275,
+   "Under five thousand,"
+  ],
+  [
+   71.276,
+   72.09,
+   "the manager."
+  ],
+  [
+   72.09,
+   73.311,
+   "Under fifty thousand,"
+  ],
+  [
+   73.311,
+   74.125,
+   "the director."
+  ],
+  [
+   74.125,
+   74.532,
+   "Otherwise,"
+  ],
+  [
+   74.532,
+   75.346,
+   "the CFO."
+  ],
+  [
+   75.978,
+   76.792,
+   "It works,"
+  ],
+  [
+   76.792,
+   78.828,
+   "and it even reads clearly."
+  ],
+  [
+   79.459,
+   82.716,
+   "But look at what this method now contains."
+  ],
+  [
+   82.716,
+   84.344,
+   "It knows every approver."
+  ],
+  [
+   84.344,
+   85.973,
+   "It knows every limit."
+  ],
+  [
+   85.973,
+   89.23,
+   "It knows the exact order they escalate in."
+  ],
+  [
+   89.861,
+   93.118,
+   "The organization's entire approval policy is\nhard-coded into"
+  ],
+  [
+   93.118,
+   96.375,
+   "a method whose only real job was to"
+  ],
+  [
+   96.375,
+   97.596,
+   "submit one expense."
+  ],
+  [
+   98.096,
+   99.183,
+   "Then it spreads."
+  ],
+  [
+   99.183,
+   101.357,
+   "The travel portal submits expenses too,"
+  ],
+  [
+   101.357,
+   104.256,
+   "and so does procurement \u2014 and each copies"
+  ],
+  [
+   104.256,
+   105.705,
+   "the same if-else ladder."
+  ],
+  [
+   106.336,
+   109.235,
+   "Now the company inserts a VP tier between"
+  ],
+  [
+   109.235,
+   110.322,
+   "manager and director."
+  ],
+  [
+   110.954,
+   113.852,
+   "You have to find and edit every ladder,"
+  ],
+  [
+   113.852,
+   114.939,
+   "in every submitter,"
+  ],
+  [
+   114.939,
+   117.838,
+   "and get the new boundaries exactly right in"
+  ],
+  [
+   117.838,
+   118.925,
+   "all of them."
+  ],
+  [
+   119.556,
+   122.455,
+   "Change a single limit \u2014 say the manager's"
+  ],
+  [
+   122.455,
+   125.354,
+   "cap rises to eight thousand \u2014 and again,"
+  ],
+  [
+   125.354,
+   126.078,
+   "every copy."
+  ],
+  [
+   126.71,
+   127.434,
+   "Miss one,"
+  ],
+  [
+   127.434,
+   130.333,
+   "and an expense quietly goes to the wrong"
+  ],
+  [
+   130.333,
+   130.695,
+   "approver."
+  ],
+  [
+   130.695,
+   133.232,
+   "The policy lives in a dozen places,"
+  ],
+  [
+   133.232,
+   135.768,
+   "when it should live in exactly one."
+  ],
+  [
+   136.268,
+   137.284,
+   "What is fixed,"
+  ],
+  [
+   137.284,
+   138.3,
+   "and what varies?"
+  ],
+  [
+   138.931,
+   139.27,
+   "Fixed:"
+  ],
+  [
+   139.27,
+   141.301,
+   "a request needs exactly one approver."
+  ],
+  [
+   141.301,
+   144.01,
+   "Each approver can handle amounts up to some"
+  ],
+  [
+   144.01,
+   144.349,
+   "limit."
+  ],
+  [
+   144.349,
+   145.703,
+   "And if they cannot,"
+  ],
+  [
+   145.703,
+   148.073,
+   "it escalates to whoever is above them."
+  ],
+  [
+   148.073,
+   149.428,
+   "That shape never changes."
+  ],
+  [
+   150.059,
+   152.768,
+   "What varies is only the set of approvers,"
+  ],
+  [
+   152.768,
+   153.445,
+   "their limits,"
+  ],
+  [
+   153.445,
+   155.477,
+   "and the order they sit in."
+  ],
+  [
+   156.109,
+   157.463,
+   "Here is the move."
+  ],
+  [
+   158.095,
+   159.788,
+   "Give each approver two things:"
+  ],
+  [
+   159.788,
+   160.465,
+   "a limit,"
+  ],
+  [
+   160.465,
+   163.174,
+   "and a reference to the next approver up."
+  ],
+  [
+   163.174,
+   165.883,
+   "Then hand the request to the first one,"
+  ],
+  [
+   165.883,
+   168.591,
+   "and let it walk the line by itself"
+  ],
+  [
+   168.591,
+   171.3,
+   "\u2014 each approver either handles it or passes"
+  ],
+  [
+   171.3,
+   174.009,
+   "it along \u2014 until one can say yes."
+  ],
+  [
+   174.509,
+   176.29,
+   "Think about calling customer support."
+  ],
+  [
+   176.921,
+   178.702,
+   "You explain your problem once,"
+  ],
+  [
+   178.702,
+   180.127,
+   "to whoever picks up."
+  ],
+  [
+   180.759,
+   183.608,
+   "The front-line rep either solves it \u2014 or"
+  ],
+  [
+   183.608,
+   183.964,
+   "says,"
+  ],
+  [
+   183.964,
+   186.457,
+   "that is beyond what I can do,"
+  ],
+  [
+   186.457,
+   187.882,
+   "let me transfer you."
+  ],
+  [
+   187.882,
+   189.307,
+   "And up you go,"
+  ],
+  [
+   189.307,
+   190.375,
+   "to a supervisor,"
+  ],
+  [
+   190.375,
+   191.444,
+   "maybe a manager,"
+  ],
+  [
+   191.444,
+   194.293,
+   "until you reach someone who can actually help."
+  ],
+  [
+   194.925,
+   196.705,
+   "You only made one call."
+  ],
+  [
+   196.705,
+   197.774,
+   "The call traveled."
+  ],
+  [
+   198.405,
+   200.542,
+   "Calling once is submitting the request."
+  ],
+  [
+   200.542,
+   203.036,
+   "The front-line rep is the first handler."
+  ],
+  [
+   203.036,
+   205.529,
+   "Each transfer is passing to the next."
+  ],
+  [
+   205.529,
+   208.378,
+   "And whoever finally helps is the handler that"
+  ],
+  [
+   208.378,
+   209.091,
+   "handles it."
+  ],
+  [
+   209.722,
+   210.791,
+   "Where it breaks:"
+  ],
+  [
+   210.791,
+   213.64,
+   "a real phone tree can dead-end in hold"
+  ],
+  [
+   213.64,
+   213.996,
+   "music."
+  ],
+  [
+   213.996,
+   216.845,
+   "A well-built chain should always end in someone"
+  ],
+  [
+   216.845,
+   219.695,
+   "\u2014 or in an explicit nobody can approve"
+  ],
+  [
+   219.695,
+   220.051,
+   "this."
+  ],
+  [
+   220.551,
+   221.265,
+   "The refactor,"
+  ],
+  [
+   221.265,
+   221.979,
+   "step one."
+  ],
+  [
+   222.611,
+   224.397,
+   "We define an abstract Approver."
+  ],
+  [
+   224.397,
+   226.182,
+   "Every approver has a limit,"
+  ],
+  [
+   226.182,
+   229.039,
+   "and a reference to the next approver above"
+  ],
+  [
+   229.039,
+   229.396,
+   "them."
+  ],
+  [
+   230.028,
+   232.528,
+   "And the handle method \u2014 written once,"
+  ],
+  [
+   232.528,
+   235.385,
+   "here in the base class \u2014 captures the"
+  ],
+  [
+   235.385,
+   236.099,
+   "entire policy."
+  ],
+  [
+   236.099,
+   238.599,
+   "If the amount is within my limit,"
+  ],
+  [
+   238.599,
+   239.67,
+   "I sign it."
+  ],
+  [
+   239.67,
+   240.027,
+   "Otherwise,"
+  ],
+  [
+   240.027,
+   242.17,
+   "if there is someone above me,"
+  ],
+  [
+   242.17,
+   243.599,
+   "I pass it up."
+  ],
+  [
+   244.23,
+   246.016,
+   "That is the whole mechanism."
+  ],
+  [
+   246.016,
+   248.516,
+   "Every concrete approver inherits this exact\nbehavior."
+  ],
+  [
+   248.516,
+   251.373,
+   "The escalation rule now lives in one place,"
+  ],
+  [
+   251.373,
+   252.801,
+   "and one place only."
+  ],
+  [
+   253.301,
+   254.032,
+   "Step two:"
+  ],
+  [
+   254.032,
+   255.128,
+   "the concrete approvers,"
+  ],
+  [
+   255.128,
+   256.589,
+   "and wiring them together."
+  ],
+  [
+   257.221,
+   260.144,
+   "Each subclass does almost nothing \u2014 it just"
+  ],
+  [
+   260.144,
+   261.24,
+   "declares its limit."
+  ],
+  [
+   261.24,
+   261.97,
+   "Team lead,"
+  ],
+  [
+   261.97,
+   262.701,
+   "five hundred."
+  ],
+  [
+   262.701,
+   263.067,
+   "Manager,"
+  ],
+  [
+   263.067,
+   263.797,
+   "five thousand."
+  ],
+  [
+   263.797,
+   264.163,
+   "Director,"
+  ],
+  [
+   264.163,
+   264.893,
+   "fifty thousand."
+  ],
+  [
+   265.525,
+   265.89,
+   "Then,"
+  ],
+  [
+   265.89,
+   266.986,
+   "in one place,"
+  ],
+  [
+   266.986,
+   269.909,
+   "you link them into a chain from low"
+  ],
+  [
+   269.909,
+   270.64,
+   "to high."
+  ],
+  [
+   270.64,
+   272.832,
+   "Team lead's next is the manager."
+  ],
+  [
+   272.832,
+   275.024,
+   "The manager's next is the director."
+  ],
+  [
+   275.024,
+   277.216,
+   "The director's next is the CFO."
+  ],
+  [
+   277.848,
+   280.771,
+   "That single wiring step is where the order"
+  ],
+  [
+   280.771,
+   281.502,
+   "now lives."
+  ],
+  [
+   281.502,
+   282.963,
+   "Change the escalation order,"
+  ],
+  [
+   282.963,
+   284.059,
+   "or the limits,"
+  ],
+  [
+   284.059,
+   286.982,
+   "and you change it here \u2014 nowhere else."
+  ],
+  [
+   287.482,
+   289.107,
+   "Your turn \u2014 pause here."
+  ],
+  [
+   289.739,
+   291.364,
+   "The first half is done:"
+  ],
+  [
+   291.364,
+   293.639,
+   "if the expense is within my limit,"
+  ],
+  [
+   293.639,
+   294.614,
+   "I sign it,"
+  ],
+  [
+   294.614,
+   295.915,
+   "and we are finished."
+  ],
+  [
+   296.546,
+   298.171,
+   "Now write the other half."
+  ],
+  [
+   298.171,
+   300.122,
+   "If it is beyond my limit,"
+  ],
+  [
+   300.122,
+   302.072,
+   "the request has to keep moving."
+  ],
+  [
+   302.703,
+   305.304,
+   "But think carefully about the edge \u2014 what"
+  ],
+  [
+   305.304,
+   307.904,
+   "happens if I am the last approver in"
+  ],
+  [
+   307.904,
+   308.554,
+   "the chain,"
+  ],
+  [
+   308.554,
+   309.204,
+   "the CFO,"
+  ],
+  [
+   309.204,
+   311.154,
+   "and even I have no next?"
+  ],
+  [
+   311.154,
+   312.78,
+   "The request cannot just vanish."
+  ],
+  [
+   313.411,
+   314.061,
+   "Handle both:"
+  ],
+  [
+   314.061,
+   316.662,
+   "pass it up if there is someone above,"
+  ],
+  [
+   316.662,
+   319.262,
+   "and do something explicit if there is not."
+  ],
+  [
+   319.762,
+   320.438,
+   "Step three,"
+  ],
+  [
+   320.438,
+   321.79,
+   "and every submitter collapses."
+  ],
+  [
+   322.422,
+   323.774,
+   "To approve an expense,"
+  ],
+  [
+   323.774,
+   326.478,
+   "you hand it to the front of the"
+  ],
+  [
+   326.478,
+   329.182,
+   "chain \u2014 the team lead \u2014 and call"
+  ],
+  [
+   329.182,
+   329.52,
+   "handle."
+  ],
+  [
+   329.52,
+   331.211,
+   "That is the entire submission."
+  ],
+  [
+   331.842,
+   332.856,
+   "The travel portal,"
+  ],
+  [
+   332.856,
+   333.194,
+   "procurement,"
+  ],
+  [
+   333.194,
+   335.899,
+   "the expense service \u2014 all of them become"
+  ],
+  [
+   335.899,
+   337.251,
+   "that same single line."
+  ],
+  [
+   337.882,
+   339.91,
+   "None of them knows the limits."
+  ],
+  [
+   339.91,
+   341.939,
+   "None of them knows the tiers,"
+  ],
+  [
+   341.939,
+   342.953,
+   "or the order,"
+  ],
+  [
+   342.953,
+   345.319,
+   "or that a VP was just added."
+  ],
+  [
+   345.95,
+   347.303,
+   "They know one thing:"
+  ],
+  [
+   347.303,
+   349.331,
+   "give the request to the chain,"
+  ],
+  [
+   349.331,
+   351.697,
+   "and it will find its own approver."
+  ],
+  [
+   352.197,
+   355.093,
+   "Now the change that used to touch everything."
+  ],
+  [
+   355.093,
+   357.989,
+   "Insert a VP tier \u2014 limit twenty thousand"
+  ],
+  [
+   357.989,
+   359.437,
+   "\u2014 above the director."
+  ],
+  [
+   360.069,
+   360.431,
+   "Before,"
+  ],
+  [
+   360.431,
+   363.327,
+   "that meant finding every if-else ladder and\ninserting"
+  ],
+  [
+   363.327,
+   366.223,
+   "a new branch in exactly the right spot,"
+  ],
+  [
+   366.223,
+   368.033,
+   "with exactly the right boundaries,"
+  ],
+  [
+   368.033,
+   368.395,
+   "everywhere."
+  ],
+  [
+   369.027,
+   369.389,
+   "Now?"
+  ],
+  [
+   369.389,
+   371.923,
+   "One new class that declares its limit."
+  ],
+  [
+   371.923,
+   374.819,
+   "Then two lines of wiring to splice it"
+  ],
+  [
+   374.819,
+   375.905,
+   "into the chain,"
+  ],
+  [
+   375.905,
+   378.077,
+   "between the director and the CFO."
+  ],
+  [
+   378.709,
+   380.881,
+   "And every submitter \u2014 the portal,"
+  ],
+  [
+   380.881,
+   381.243,
+   "procurement,"
+  ],
+  [
+   381.243,
+   383.777,
+   "all of them \u2014 is completely unchanged."
+  ],
+  [
+   383.777,
+   385.949,
+   "The policy moved into the chain,"
+  ],
+  [
+   385.949,
+   388.845,
+   "so the policy changes only in the chain."
+  ],
+  [
+   389.345,
+   391.439,
+   "This is the Chain of Responsibility."
+  ],
+  [
+   392.071,
+   393.118,
+   "At the top,"
+  ],
+  [
+   393.118,
+   395.213,
+   "the abstract Approver \u2014 a limit,"
+  ],
+  [
+   395.213,
+   396.958,
+   "a link to the next,"
+  ],
+  [
+   396.958,
+   399.751,
+   "and the handle method that either signs or"
+  ],
+  [
+   399.751,
+   400.1,
+   "escalates."
+  ],
+  [
+   400.731,
+   401.43,
+   "Below it,"
+  ],
+  [
+   401.43,
+   402.477,
+   "the concrete approvers,"
+  ],
+  [
+   402.477,
+   404.222,
+   "each declaring only its limit:"
+  ],
+  [
+   404.222,
+   404.92,
+   "five hundred,"
+  ],
+  [
+   404.92,
+   405.619,
+   "five thousand,"
+  ],
+  [
+   405.619,
+   406.317,
+   "fifty thousand,"
+  ],
+  [
+   406.317,
+   408.411,
+   "and the CFO for anything larger."
+  ],
+  [
+   409.043,
+   411.486,
+   "Look at the two kinds of arrows."
+  ],
+  [
+   411.486,
+   414.279,
+   "Each approver is an Approver \u2014 that is"
+  ],
+  [
+   414.279,
+   414.977,
+   "the inheritance,"
+  ],
+  [
+   414.977,
+   416.723,
+   "running up to the top."
+  ],
+  [
+   416.723,
+   419.515,
+   "And each points to the next along the"
+  ],
+  [
+   419.515,
+   421.959,
+   "row \u2014 that is the chain itself."
+  ],
+  [
+   422.59,
+   425.383,
+   "A request enters at the left and travels"
+  ],
+  [
+   425.383,
+   425.732,
+   "right,"
+  ],
+  [
+   425.732,
+   426.779,
+   "approver by approver,"
+  ],
+  [
+   426.779,
+   429.572,
+   "until one whose limit covers it says yes."
+  ],
+  [
+   430.072,
+   430.804,
+   "The names,"
+  ],
+  [
+   430.804,
+   432.267,
+   "mapped to your code."
+  ],
+  [
+   432.898,
+   435.093,
+   "The Handler is the abstract Approver,"
+  ],
+  [
+   435.093,
+   437.287,
+   "with its limit and its next."
+  ],
+  [
+   437.919,
+   440.845,
+   "The ConcreteHandlers are the individual approvers\n\u2014 team"
+  ],
+  [
+   440.845,
+   441.211,
+   "lead,"
+  ],
+  [
+   441.211,
+   441.577,
+   "manager,"
+  ],
+  [
+   441.577,
+   441.942,
+   "director,"
+  ],
+  [
+   441.942,
+   442.308,
+   "CFO."
+  ],
+  [
+   442.94,
+   445.866,
+   "The link is simply each handler's reference to"
+  ],
+  [
+   445.866,
+   448.792,
+   "its successor \u2014 the thread that makes it"
+  ],
+  [
+   448.792,
+   449.524,
+   "a chain."
+  ],
+  [
+   450.155,
+   452.35,
+   "And the Client is any submitter,"
+  ],
+  [
+   452.35,
+   455.276,
+   "which knows only the head of the chain"
+  ],
+  [
+   455.276,
+   456.373,
+   "and calls handle."
+  ],
+  [
+   457.005,
+   458.468,
+   "The Gang of Four:"
+  ],
+  [
+   458.468,
+   461.394,
+   "avoid coupling the sender of a request to"
+  ],
+  [
+   461.394,
+   464.32,
+   "its receiver by giving more than one object"
+  ],
+  [
+   464.32,
+   467.246,
+   "a chance to handle it \u2014 chain the"
+  ],
+  [
+   467.246,
+   467.612,
+   "receivers,"
+  ],
+  [
+   467.612,
+   470.538,
+   "and pass the request along until one handles"
+  ],
+  [
+   470.538,
+   470.904,
+   "it."
+  ],
+  [
+   471.404,
+   473.37,
+   "Chain of Responsibility has real risks."
+  ],
+  [
+   474.001,
+   474.656,
+   "The biggest:"
+  ],
+  [
+   474.656,
+   477.277,
+   "a request can travel the entire chain and"
+  ],
+  [
+   477.277,
+   479.898,
+   "be handled by no one \u2014 if you"
+  ],
+  [
+   479.898,
+   481.208,
+   "forget the end case,"
+  ],
+  [
+   481.208,
+   482.518,
+   "it silently falls off."
+  ],
+  [
+   482.518,
+   485.139,
+   "A robust chain must always terminate in a"
+  ],
+  [
+   485.139,
+   487.432,
+   "handler that either acts or explicitly refuses."
+  ],
+  [
+   488.064,
+   490.685,
+   "It can also be harder to debug \u2014"
+  ],
+  [
+   490.685,
+   491.995,
+   "when something is handled,"
+  ],
+  [
+   491.995,
+   494.616,
+   "you may have to trace the chain to"
+  ],
+  [
+   494.616,
+   496.254,
+   "see who actually took it."
+  ],
+  [
+   496.254,
+   498.874,
+   "And a very long chain adds a little"
+  ],
+  [
+   498.874,
+   501.167,
+   "latency to every request that walks it."
+  ],
+  [
+   501.799,
+   504.42,
+   "So skip it when there is exactly one"
+  ],
+  [
+   504.42,
+   507.04,
+   "known receiver \u2014 just call it directly \u2014"
+  ],
+  [
+   507.04,
+   509.661,
+   "or when every handler must run on every"
+  ],
+  [
+   509.661,
+   509.989,
+   "request,"
+  ],
+  [
+   509.989,
+   511.627,
+   "which is a different pattern."
+  ],
+  [
+   512.258,
+   514.879,
+   "Reach for it when several handlers could process"
+  ],
+  [
+   514.879,
+   515.534,
+   "a request,"
+  ],
+  [
+   515.534,
+   518.155,
+   "the right one depends on the request itself,"
+  ],
+  [
+   518.155,
+   520.776,
+   "and the set or the order of handlers"
+  ],
+  [
+   520.776,
+   522.086,
+   "is likely to change."
+  ],
+  [
+   522.586,
+   523.669,
+   "Chain of Responsibility,"
+  ],
+  [
+   523.669,
+   524.751,
+   "in one breath."
+  ],
+  [
+   525.383,
+   527.548,
+   "An if-else ladder hard-coded every handler,"
+  ],
+  [
+   527.548,
+   528.27,
+   "every limit,"
+  ],
+  [
+   528.27,
+   531.156,
+   "and their order into the sender \u2014 copied"
+  ],
+  [
+   531.156,
+   531.517,
+   "everywhere,"
+  ],
+  [
+   531.517,
+   532.239,
+   "and fragile."
+  ],
+  [
+   532.871,
+   535.757,
+   "But a request just needs the first handler"
+  ],
+  [
+   535.757,
+   538.644,
+   "that can cover it \u2014 so give each"
+  ],
+  [
+   538.644,
+   541.531,
+   "one a limit and a link to the"
+  ],
+  [
+   541.531,
+   541.892,
+   "next,"
+  ],
+  [
+   541.892,
+   544.779,
+   "and let the request walk the line until"
+  ],
+  [
+   544.779,
+   545.861,
+   "someone takes it."
+  ],
+  [
+   546.493,
+   547.575,
+   "Chain of Responsibility:"
+  ],
+  [
+   547.575,
+   549.019,
+   "handlers linked in order,"
+  ],
+  [
+   549.019,
+   551.545,
+   "each choosing to handle or pass on."
+  ],
+  [
+   551.545,
+   553.71,
+   "A new handler is spliced in,"
+  ],
+  [
+   553.71,
+   555.514,
+   "and the senders never change."
+  ],
+  [
+   556.146,
+   558.311,
+   "Here is one to carry out."
+  ],
+  [
+   558.942,
+   561.829,
+   "An HTTP server runs each request through\nauthentication,"
+  ],
+  [
+   561.829,
+   562.551,
+   "then rate-limiting,"
+  ],
+  [
+   562.551,
+   563.273,
+   "then logging,"
+  ],
+  [
+   563.273,
+   566.16,
+   "then the route handler \u2014 and you want"
+  ],
+  [
+   566.16,
+   568.686,
+   "to reorder or insert those steps freely."
+  ],
+  [
+   569.317,
+   570.761,
+   "Does the chain fit?"
+  ],
+  [
+   570.761,
+   572.204,
+   "What is the handler,"
+  ],
+  [
+   572.204,
+   574.369,
+   "what is the link between them,"
+  ],
+  [
+   574.369,
+   577.256,
+   "and where could a request fall off the"
+  ],
+  [
+   577.256,
+   577.978,
+   "end unhandled?"
+  ],
+  [
+   578.609,
+   578.97,
+   "Pause,"
+  ],
+  [
+   578.97,
+   581.496,
+   "and sketch it before the next episode."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp15-chain-of-responsibility.wav",
+   "volume": 1.0
+  }
+ }
+}

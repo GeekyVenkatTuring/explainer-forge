@@ -1,0 +1,459 @@
+{
+  "cuts": [
+    {
+      "id": "s10_divider",
+      "type": "ait_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 9.782,
+      "props": {
+        "n": 1,
+        "title": "What It Really Is",
+        "sub": "The mechanics behind the buzzword",
+        "color": "data",
+        "parts": 6,
+        "dur": 10.282
+      }
+    },
+    {
+      "id": "s11_pipeline",
+      "type": "ait_pipeline",
+      "in_seconds": 10.282,
+      "out_seconds": 51.953,
+      "props": {
+        "kicker": "THE SIGNAL STACK",
+        "title": "Every trading system is one pipeline",
+        "stages": [
+          {
+            "label": "Data",
+            "sub": "prices, news, fundamentals",
+            "c": "data"
+          },
+          {
+            "label": "Features",
+            "sub": "turn data into numbers",
+            "c": "data"
+          },
+          {
+            "label": "Model",
+            "sub": "the decision maker",
+            "c": "ai"
+          },
+          {
+            "label": "Signal",
+            "sub": "buy, sell, or hold",
+            "c": "edge"
+          },
+          {
+            "label": "Risk",
+            "sub": "how much to bet",
+            "c": "risk"
+          },
+          {
+            "label": "Order",
+            "sub": "sent to the broker",
+            "c": "money"
+          }
+        ],
+        "caption": "Remember these six boxes. Every bot in this course is a version of them.",
+        "dur": 42.171
+      }
+    },
+    {
+      "id": "s12_notmagic",
+      "type": "ait_compare",
+      "in_seconds": 52.453,
+      "out_seconds": 89.423,
+      "props": {
+        "kicker": "CLEAR THE MYTH",
+        "title": "So where does the \u201cAI\u201d fit in?",
+        "left": {
+          "emoji": "\ud83d\udd2e",
+          "title": "What people imagine",
+          "c": "risk",
+          "mark": "\u2715",
+          "items": [
+            "A crystal ball that predicts prices",
+            "It \u201cknows\u201d the market will go up",
+            "Set it and get rich while you sleep"
+          ]
+        },
+        "right": {
+          "emoji": "\ud83e\udde9",
+          "title": "What it really is",
+          "c": "money",
+          "mark": "\u2713",
+          "items": [
+            "A pattern finder, only in the model box",
+            "It estimates odds, and is often wrong",
+            "A tool that still needs your judgement"
+          ]
+        },
+        "caption": "AI replaces the model box. The other five boxes are still your job.",
+        "dur": 37.47
+      }
+    },
+    {
+      "id": "s13_spectrum",
+      "type": "ait_spectrum",
+      "in_seconds": 89.923,
+      "out_seconds": 134.104,
+      "props": {
+        "kicker": "THE SPECTRUM",
+        "title": "From simple rules to full AI agents",
+        "axis": [
+          "simpler, transparent",
+          "more autonomous, opaque"
+        ],
+        "levels": [
+          {
+            "label": "Rules",
+            "sub": "if this, then that",
+            "tag": "1",
+            "c": "data"
+          },
+          {
+            "label": "Classic ML",
+            "sub": "trees, regression",
+            "tag": "2",
+            "c": "money"
+          },
+          {
+            "label": "Deep RL",
+            "sub": "learns by trial",
+            "tag": "3",
+            "c": "edge"
+          },
+          {
+            "label": "LLM agents",
+            "sub": "reason and act",
+            "tag": "4",
+            "c": "ai"
+          }
+        ],
+        "caption": "More autonomy is not more profit \u2014 it is more ways to be wrong.",
+        "dur": 44.681
+      }
+    },
+    {
+      "id": "s14_fiveways",
+      "type": "ait_cards",
+      "in_seconds": 134.604,
+      "out_seconds": 178.75,
+      "props": {
+        "kicker": "HOW PEOPLE USE IT",
+        "title": "Five real jobs AI does in markets",
+        "color": "ai",
+        "cards": [
+          {
+            "emoji": "\u26a1",
+            "title": "Execution",
+            "body": "Slice a huge order so it doesn't move the price.",
+            "tag": "biggest real use",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83d\udcc8",
+            "title": "Prediction",
+            "body": "Forecast the next move from historical patterns.",
+            "tag": "quant",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83d\udcf0",
+            "title": "Reading text",
+            "body": "Scan news and filings for tone and surprise.",
+            "tag": "NLP",
+            "c": "edge"
+          },
+          {
+            "emoji": "\ud83e\udd16",
+            "title": "Learning agents",
+            "body": "Reinforcement learners that discover a strategy.",
+            "tag": "research",
+            "c": "ai"
+          },
+          {
+            "emoji": "\ud83e\udded",
+            "title": "Copilots",
+            "body": "Assistants that help you research and code faster.",
+            "tag": "you, today",
+            "c": "data"
+          }
+        ],
+        "dur": 44.646
+      }
+    },
+    {
+      "id": "s15_institutions",
+      "type": "ait_stat",
+      "in_seconds": 179.25,
+      "out_seconds": 217.687,
+      "props": {
+        "kicker": "HOW THE BIG PLAYERS USE IT",
+        "title": "AI is already the market's plumbing",
+        "color": "money",
+        "stats": [
+          {
+            "value": 75,
+            "suffix": "%",
+            "label": "of institutional desks use AI or ML",
+            "src": "industry survey, 2025",
+            "c": "money"
+          },
+          {
+            "value": 1978,
+            "label": "a top broker's roots in automated trading",
+            "src": "decades of head start",
+            "c": "data",
+            "comma": false
+          },
+          {
+            "value": 100,
+            "prefix": "up to ",
+            "suffix": "x",
+            "label": "faster order speed than a home setup",
+            "src": "co-located servers",
+            "c": "risk"
+          }
+        ],
+        "note": "Example: JP Morgan's execution engine uses reinforcement learning to hide big orders.",
+        "dur": 38.937
+      }
+    },
+    {
+      "id": "s16_speed",
+      "type": "ait_compare",
+      "in_seconds": 218.187,
+      "out_seconds": 258.779,
+      "props": {
+        "kicker": "THE SPEED GAME",
+        "title": "Two very different games under one word",
+        "left": {
+          "emoji": "\ud83c\udfce\ufe0f",
+          "title": "High-frequency",
+          "c": "ai",
+          "mark": "\u25b8",
+          "items": [
+            "Wins by being microseconds faster",
+            "Needs co-located servers and huge capital",
+            "You cannot compete here \u2014 don't try"
+          ]
+        },
+        "right": {
+          "emoji": "\ud83e\udde0",
+          "title": "Slower, smarter",
+          "c": "money",
+          "mark": "\u25b8",
+          "items": [
+            "Wins by a better idea, over days or weeks",
+            "Runs fine on a laptop and cheap data",
+            "This is the only game open to you"
+          ]
+        },
+        "caption": "Forget speed. Your only hope is a smarter, slower idea.",
+        "dur": 41.092
+      }
+    },
+    {
+      "id": "s17_retail",
+      "type": "ait_orbit",
+      "in_seconds": 259.279,
+      "out_seconds": 300.423,
+      "props": {
+        "kicker": "HOW PEOPLE LIKE YOU USE IT",
+        "title": "The retail AI-trading toolkit today",
+        "hub": {
+          "emoji": "\ud83d\ude4b",
+          "label": "Retail trader",
+          "c": "data"
+        },
+        "items": [
+          {
+            "emoji": "\ud83d\uddb1\ufe0f",
+            "label": "No-code builders",
+            "sub": "click a strategy",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83d\udd14",
+            "label": "Signal services",
+            "sub": "someone else's calls",
+            "c": "edge"
+          },
+          {
+            "emoji": "\ud83e\udd1d",
+            "label": "Copy trading",
+            "sub": "mirror a trader",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83d\udcac",
+            "label": "LLM copilots",
+            "sub": "research helpers",
+            "c": "ai"
+          },
+          {
+            "emoji": "\ud83d\udc0d",
+            "label": "Custom bots",
+            "sub": "your own code",
+            "c": "risk"
+          }
+        ],
+        "caption": "The gap between a click-built bot and a real edge is enormous \u2014 mind it.",
+        "dur": 41.644
+      }
+    },
+    {
+      "id": "s14b_data",
+      "type": "ait_cards",
+      "in_seconds": 300.923,
+      "out_seconds": 350.624,
+      "props": {
+        "kicker": "WHAT FEEDS THE MODEL",
+        "title": "The four kinds of data people trade on",
+        "color": "data",
+        "cards": [
+          {
+            "emoji": "\ud83d\udcb9",
+            "title": "Price & volume",
+            "body": "The classic. Open, high, low, close, and how much traded.",
+            "tag": "everyone has this",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83d\udcd1",
+            "title": "Fundamentals",
+            "body": "Earnings, debt, growth \u2014 the health of the business itself.",
+            "tag": "slower signals",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83d\udcf0",
+            "title": "News & text",
+            "body": "Headlines, filings, transcripts \u2014 where language models shine.",
+            "tag": "NLP territory",
+            "c": "edge"
+          },
+          {
+            "emoji": "\ud83d\udef0\ufe0f",
+            "title": "Alternative data",
+            "body": "Satellite images, app downloads, card spending \u2014 the edge hunt.",
+            "tag": "expensive & niche",
+            "c": "ai"
+          }
+        ],
+        "dur": 50.201
+      }
+    },
+    {
+      "id": "s15c_example",
+      "type": "ait_cards",
+      "in_seconds": 351.124,
+      "out_seconds": 399.18,
+      "props": {
+        "kicker": "A CONCRETE EXAMPLE",
+        "title": "A simple momentum bot, in five sentences",
+        "color": "edge",
+        "cards": [
+          {
+            "emoji": "1\ufe0f\u20e3",
+            "title": "Watch",
+            "body": "Every day, scan the 50 biggest stocks.",
+            "c": "data"
+          },
+          {
+            "emoji": "2\ufe0f\u20e3",
+            "title": "Rank",
+            "body": "Sort them by their return over the last 3 months.",
+            "c": "data"
+          },
+          {
+            "emoji": "3\ufe0f\u20e3",
+            "title": "Buy",
+            "body": "Hold the top few. Winners tend to keep winning, briefly.",
+            "c": "money"
+          },
+          {
+            "emoji": "4\ufe0f\u20e3",
+            "title": "Protect",
+            "body": "Set a stop-loss on each; never bet the whole account.",
+            "c": "risk"
+          },
+          {
+            "emoji": "5\ufe0f\u20e3",
+            "title": "Rotate",
+            "body": "Each month, drop laggards and add new leaders.",
+            "c": "edge"
+          }
+        ],
+        "dur": 48.556
+      }
+    },
+    {
+      "id": "s16c_crypto",
+      "type": "ait_compare",
+      "in_seconds": 399.68,
+      "out_seconds": 446.394,
+      "props": {
+        "kicker": "TWO ARENAS",
+        "title": "AI trading: stocks vs crypto",
+        "left": {
+          "emoji": "\ud83d\udcc8",
+          "title": "Stocks (India)",
+          "c": "money",
+          "mark": "\u25b8",
+          "items": [
+            "Regulated by SEBI, with real protections",
+            "Fixed market hours \u2014 your bot sleeps",
+            "Deep, liquid, and relatively stable"
+          ]
+        },
+        "right": {
+          "emoji": "\ud83e\ude99",
+          "title": "Crypto",
+          "c": "risk",
+          "mark": "\u25b8",
+          "items": [
+            "Lightly regulated \u2014 you're on your own",
+            "Trades 24/7 \u2014 great for bots, brutal on you",
+            "Wildly volatile; scams are everywhere"
+          ]
+        },
+        "caption": "Bots love crypto's 24/7 markets \u2014 but that's also where most fraud lives.",
+        "dur": 47.214
+      }
+    },
+    {
+      "id": "s17c_efficient",
+      "type": "ait_callout",
+      "in_seconds": 446.894,
+      "out_seconds": 496.646,
+      "props": {
+        "kicker": "WHY THIS IS GENUINELY HARD",
+        "color": "risk",
+        "text": "You're not fighting the market. You're fighting everyone else trying to beat it.",
+        "sub": "Every obvious edge is already traded away by someone smarter and faster.",
+        "dur": 50.252
+      }
+    },
+    {
+      "id": "s18_homogenization",
+      "type": "ait_callout",
+      "in_seconds": 497.146,
+      "out_seconds": 536.702,
+      "props": {
+        "kicker": "THE MODERN CATCH",
+        "color": "edge",
+        "text": "When everyone uses the same AI, the edge disappears.",
+        "sub": "Same models, same data, same trades \u2014 arbitraged away in seconds.",
+        "dur": 40.056
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "ait/ch1.wav",
+      "volume": 1.0
+    }
+  }
+}

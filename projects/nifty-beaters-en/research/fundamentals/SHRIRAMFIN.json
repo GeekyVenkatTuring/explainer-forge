@@ -1,0 +1,83 @@
+{
+ "ticker": "SHRIRAMFIN",
+ "scraped_at": "2026-08-14T15:27:45",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 264499.0,
+ "current_price": 1124.0,
+ "pe": 23.4,
+ "book_value": 350.0,
+ "dividend_yield_pct": 0.95,
+ "roce_pct": 11.5,
+ "roe_pct": 16.4,
+ "face_value": 2.0,
+ "high": 1154.0,
+ "sales_growth": {
+  "10 Years": 24.0,
+  "5 Years": 32.0,
+  "3 Years": 19.0,
+  "TTM": 33.0
+ },
+ "profit_growth": {
+  "10 Years": 16.0,
+  "5 Years": 34.0,
+  "3 Years": 46.0,
+  "1 Year": 84.0
+ },
+ "roe_hist": {
+  "Equity Capital": 227.0,
+  "Fixed Assets&nbsp; +": 154.0,
+  "CWIP": 0.0
+ },
+ "price_cagr": {
+  "10 Years": 16.0,
+  "5 Years": 16.0,
+  "3 Years": 16.0,
+  "Last Year": 16.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [],
+  "eps": [
+   "9.10",
+   "9.52",
+   "9.94",
+   "10.69",
+   "10.76",
+   "11.39",
+   "17.27",
+   "11.40",
+   "11.48",
+   "12.30",
+   "13.45",
+   "16.06",
+   "14.67"
+  ]
+ },
+ "pros": [
+  "Company has delivered good profit growth of 32.0% CAGR over last 5 years",
+  "Company has been maintaining a healthy dividend payout of 20.9%"
+ ],
+ "cons": [
+  "Stock is trading at 3.22 times its book value",
+  "Company has low interest coverage ratio.",
+  "Promoter holding has decreased over last quarter: -5.08%"
+ ]
+}

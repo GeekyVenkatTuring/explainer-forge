@@ -1,0 +1,604 @@
+{
+  "cuts": [
+    {
+      "id": "g7_div",
+      "type": "sm_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 17.42,
+      "props": {
+        "n": 7,
+        "title": "Options — The Basics",
+        "sub": "Calls · puts · premium · payoff",
+        "color": "#A78BFA",
+        "dur": 17.92
+      }
+    },
+    {
+      "id": "g7_insurance",
+      "type": "sm_steps",
+      "in_seconds": 17.92,
+      "out_seconds": 79.748,
+      "props": {
+        "kicker": "THE ANALOGY",
+        "title": "An option is like insurance",
+        "color": "#22D3EE",
+        "note": "Premium payer gets a RIGHT; premium taker takes on an OBLIGATION.",
+        "items": [
+          {
+            "emoji": "🚗",
+            "label": "Car insurance",
+            "sub": "pay a yearly premium"
+          },
+          {
+            "emoji": "💥",
+            "label": "If accident",
+            "sub": "insurer pays big"
+          },
+          {
+            "emoji": "😊",
+            "label": "If nothing",
+            "sub": "premium is gone — that's all"
+          },
+          {
+            "emoji": "📜",
+            "label": "This is an option",
+            "sub": "small premium, big right"
+          }
+        ],
+        "dur": 62.328
+      }
+    },
+    {
+      "id": "g7_callput",
+      "type": "sm_iconcards",
+      "in_seconds": 80.248,
+      "out_seconds": 140.972,
+      "props": {
+        "kicker": "CALL & PUT",
+        "title": "Just two building blocks",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "📈",
+            "k": "Call option",
+            "v": "The RIGHT to BUY at the strike. Buy a call if you expect the price to RISE",
+            "chip": "Bullish"
+          },
+          {
+            "emoji": "📉",
+            "k": "Put option",
+            "v": "The RIGHT to SELL at the strike. Buy a put if you expect the price to FALL",
+            "chip": "Bearish"
+          },
+          {
+            "emoji": "🎯",
+            "k": "Strike price",
+            "v": "The fixed price at which you may buy (call) or sell (put)",
+            "chip": "Strike"
+          },
+          {
+            "emoji": "⏳",
+            "k": "Expiry & premium",
+            "v": "The last valid day; the premium is the price of the right",
+            "chip": "Expiry"
+          }
+        ],
+        "dur": 61.224
+      }
+    },
+    {
+      "id": "g7_value",
+      "type": "sm_iconcards",
+      "in_seconds": 141.472,
+      "out_seconds": 214.2,
+      "props": {
+        "kicker": "WHAT DRIVES PREMIUM",
+        "title": "Intrinsic value + time value",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "💠",
+            "k": "Intrinsic value",
+            "v": "Real value now. Call = spot − strike (if positive); put = strike − spot",
+            "chip": "Now"
+          },
+          {
+            "emoji": "⏳",
+            "k": "Time value",
+            "v": "Extra paid for the hope the option moves your way before expiry",
+            "chip": "Hope"
+          },
+          {
+            "emoji": "🎯",
+            "k": "ITM / ATM / OTM",
+            "v": "In / at / out of the money — is the strike favourable vs the spot?",
+            "chip": "Moneyness"
+          },
+          {
+            "emoji": "📉",
+            "k": "Decay",
+            "v": "Time value melts as expiry nears — fast in the final days",
+            "chip": "Melts"
+          }
+        ],
+        "dur": 73.228
+      }
+    },
+    {
+      "id": "g7_payoffs",
+      "type": "eq_payoff",
+      "in_seconds": 214.7,
+      "out_seconds": 277.464,
+      "props": {
+        "kind": "call",
+        "side": "buy",
+        "strike": 100,
+        "premium": 5,
+        "cur": "$",
+        "note": "Long call: loss capped at the premium ($5); profit is unlimited above break-even.",
+        "dur": 63.264
+      }
+    },
+    {
+      "id": "g7_recap",
+      "type": "sm_recap",
+      "in_seconds": 277.964,
+      "out_seconds": 318.192,
+      "props": {
+        "title": "Chapter 7 — options basics",
+        "items": [
+          "Option = the RIGHT (not obligation) — like insurance",
+          "Call = right to buy; Put = right to sell",
+          "Strike, expiry, premium — the core terms",
+          "Premium = intrinsic value + time value",
+          "Buyer: limited loss (premium), large upside"
+        ],
+        "closer": "Two atoms — call and put — build every strategy.",
+        "dur": 40.728
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      2.986,
+      "Chapter seven — options, the basics."
+    ],
+    [
+      2.986,
+      7.88,
+      "Options are the most flexible instrument in all of finance,"
+    ],
+    [
+      7.88,
+      10.12,
+      "and the most misunderstood."
+    ],
+    [
+      10.12,
+      12.36,
+      "Master the foundation here,"
+    ],
+    [
+      12.36,
+      17.42,
+      "and the strategies in the next chapter will click into place."
+    ],
+    [
+      17.92,
+      22.381,
+      "To truly get options, think of your car insurance."
+    ],
+    [
+      22.381,
+      25.414,
+      "You pay a small premium each year."
+    ],
+    [
+      25.414,
+      30.589,
+      "If you have an accident, the insurer pays out a large sum."
+    ],
+    [
+      30.589,
+      34.961,
+      "If nothing happens, your premium is simply gone —"
+    ],
+    [
+      34.961,
+      37.548,
+      "and that is your entire loss."
+    ],
+    [
+      37.548,
+      39.422,
+      "Small, known, capped."
+    ],
+    [
+      39.422,
+      42.455,
+      "An option works exactly like this."
+    ],
+    [
+      42.455,
+      46.024,
+      "You pay a small premium to buy a right —"
+    ],
+    [
+      46.024,
+      50.395,
+      "the right to buy or sell an asset at a set price."
+    ],
+    [
+      50.395,
+      55.659,
+      "If it works in your favour, you exercise it for a big gain."
+    ],
+    [
+      55.659,
+      60.12,
+      "If not, you let it lapse, losing only the premium."
+    ],
+    [
+      60.12,
+      72.521,
+      "And here is the key symmetry: the person who pays the premium gets the right; the person who receives the premium takes on the obligation —"
+    ],
+    [
+      72.521,
+      74.93,
+      "like the insurance company."
+    ],
+    [
+      74.93,
+      78.142,
+      "Buyer has rights; seller has duties."
+    ],
+    [
+      78.142,
+      79.748,
+      "Hold that thought."
+    ],
+    [
+      80.248,
+      86.412,
+      "Everything in options is built from just two blocks: the call and the put."
+    ],
+    [
+      86.412,
+      90.66,
+      "A call option is the right to buy at a fixed price."
+    ],
+    [
+      90.66,
+      94.742,
+      "You buy a call when you expect the price to rise."
+    ],
+    [
+      94.742,
+      95.741,
+      "If it soars,"
+    ],
+    [
+      95.741,
+      100.073,
+      "you can still buy cheaply at your strike and profit."
+    ],
+    [
+      100.073,
+      104.321,
+      "A put option is the right to sell at a fixed price."
+    ],
+    [
+      104.321,
+      108.403,
+      "You buy a put when you expect the price to fall —"
+    ],
+    [
+      108.403,
+      111.485,
+      "or to protect shares you already own,"
+    ],
+    [
+      111.485,
+      114.15,
+      "like insurance on your holdings."
+    ],
+    [
+      114.15,
+      119.065,
+      "That fixed price — the price at which you may buy or sell —"
+    ],
+    [
+      119.065,
+      121.314,
+      "is called the strike price."
+    ],
+    [
+      121.314,
+      126.395,
+      "And two more terms: expiry, the last day the option is valid,"
+    ],
+    [
+      126.395,
+      131.06,
+      "and the premium, the price you pay for the right itself."
+    ],
+    [
+      131.06,
+      134.391,
+      "Just remember: call is the right to buy,"
+    ],
+    [
+      134.391,
+      136.474,
+      "put is the right to sell."
+    ],
+    [
+      136.474,
+      140.972,
+      "From these two atoms, every options strategy is built."
+    ],
+    [
+      141.472,
+      144.591,
+      "Why does a premium cost what it costs?"
+    ],
+    [
+      144.591,
+      145.987,
+      "It has two parts."
+    ],
+    [
+      145.987,
+      150.009,
+      "The first is intrinsic value — the option's real,"
+    ],
+    [
+      150.009,
+      152.307,
+      "exercise-it-right-now worth."
+    ],
+    [
+      152.307,
+      156.494,
+      "For a call, that's the spot price minus the strike,"
+    ],
+    [
+      156.494,
+      157.479,
+      "if positive."
+    ],
+    [
+      157.479,
+      160.516,
+      "For a put, the strike minus the spot."
+    ],
+    [
+      160.516,
+      164.374,
+      "If the option isn't yet profitable to exercise,"
+    ],
+    [
+      164.374,
+      166.672,
+      "its intrinsic value is zero."
+    ],
+    [
+      166.672,
+      168.807,
+      "The second is time value —"
+    ],
+    [
+      168.807,
+      175.373,
+      "the extra you pay for the hope that the option moves your way before it expires."
+    ],
+    [
+      175.373,
+      179.478,
+      "The more time left, and the more the stock swings,"
+    ],
+    [
+      179.478,
+      181.858,
+      "the higher this hope premium."
+    ],
+    [
+      181.858,
+      187.03,
+      "This gives us three words you'll hear constantly: in-the-money,"
+    ],
+    [
+      187.03,
+      189.985,
+      "at-the-money, and out-of-the-money —"
+    ],
+    [
+      189.985,
+      194.253,
+      "simply whether the strike is favourable, level with,"
+    ],
+    [
+      194.253,
+      197.619,
+      "or unfavourable versus the current price."
+    ],
+    [
+      197.619,
+      202.954,
+      "And the crucial fact: time value melts away as expiry approaches,"
+    ],
+    [
+      202.954,
+      205.909,
+      "faster and faster in the final days."
+    ],
+    [
+      205.909,
+      210.834,
+      "That melting is the single most important force in options —"
+    ],
+    [
+      210.834,
+      214.2,
+      "and it's the subject of the next chapter."
+    ],
+    [
+      214.7,
+      218.872,
+      "Let's make this visual with a payoff diagram —"
+    ],
+    [
+      218.872,
+      222.591,
+      "the picture of profit and loss at expiry."
+    ],
+    [
+      222.591,
+      224.405,
+      "Here is a long call."
+    ],
+    [
+      224.405,
+      227.307,
+      "Say the stock is at one hundred,"
+    ],
+    [
+      227.307,
+      232.568,
+      "and you buy the hundred-strike call for a premium of five."
+    ],
+    [
+      232.568,
+      234.563,
+      "Look at the left side."
+    ],
+    [
+      234.563,
+      239.28,
+      "If the stock falls, you simply let the option lapse."
+    ],
+    [
+      239.28,
+      243.633,
+      "Your loss is flat — capped at the five you paid,"
+    ],
+    [
+      243.633,
+      246.082,
+      "no matter how far it drops."
+    ],
+    [
+      246.082,
+      247.805,
+      "Now the right side."
+    ],
+    [
+      247.805,
+      253.157,
+      "Above one hundred and five — your strike plus your premium,"
+    ],
+    [
+      253.157,
+      257.419,
+      "the break-even — every further rupee is profit,"
+    ],
+    [
+      257.419,
+      259.596,
+      "and there is no ceiling."
+    ],
+    [
+      259.596,
+      265.038,
+      "That is the buyer's dream shape: limited, known loss; large,"
+    ],
+    [
+      265.038,
+      266.489,
+      "open-ended gain."
+    ],
+    [
+      266.489,
+      268.848,
+      "It sounds like free money."
+    ],
+    [
+      268.848,
+      271.931,
+      "So why do most option buyers lose?"
+    ],
+    [
+      271.931,
+      275.106,
+      "Because of that melting time value."
+    ],
+    [
+      275.106,
+      277.464,
+      "Let's confront it head-on."
+    ],
+    [
+      277.964,
+      280.568,
+      "Chapter seven, in one breath."
+    ],
+    [
+      280.568,
+      285.237,
+      "An option is the right, not the obligation, to act —"
+    ],
+    [
+      285.237,
+      287.931,
+      "just like an insurance policy."
+    ],
+    [
+      287.931,
+      293.947,
+      "A call is the right to buy; a put is the right to sell; and strike,"
+    ],
+    [
+      293.947,
+      297.449,
+      "expiry, and premium are the core terms."
+    ],
+    [
+      297.449,
+      302.388,
+      "The premium is made of intrinsic value plus time value,"
+    ],
+    [
+      302.388,
+      305.711,
+      "and time value melts as expiry nears."
+    ],
+    [
+      305.711,
+      306.968,
+      "For the buyer,"
+    ],
+    [
+      306.968,
+      312.445,
+      "the loss is limited to the premium while the upside is large."
+    ],
+    [
+      312.445,
+      316.037,
+      "Now, the deeper mechanics — the Greeks —"
+    ],
+    [
+      316.037,
+      318.192,
+      "and the real strategies."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "eq/eq07.wav",
+      "volume": 1.0
+    }
+  }
+}

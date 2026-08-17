@@ -1,0 +1,470 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch21-frontier_selfsup",
+   "type": "cv_selfsup",
+   "in_seconds": 0.0,
+   "out_seconds": 95.356,
+   "props": {
+    "dur": 95.856
+   }
+  },
+  {
+   "id": "cv-ch21-frontier_3d",
+   "type": "cv_3d",
+   "in_seconds": 95.856,
+   "out_seconds": 181.398,
+   "props": {
+    "dur": 86.042
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   3.155,
+   "Let's touch two frontiers that are\nactively shaping"
+  ],
+  [
+   3.155,
+   4.338,
+   "what comes next."
+  ],
+  [
+   4.969,
+   6.941,
+   "First \u2014 learning without labels."
+  ],
+  [
+   7.572,
+   10.727,
+   "Every model we have trained so far needed"
+  ],
+  [
+   10.727,
+   11.516,
+   "labeled images."
+  ],
+  [
+   11.516,
+   11.91,
+   "Someone,"
+  ],
+  [
+   11.91,
+   12.304,
+   "somewhere,"
+  ],
+  [
+   12.304,
+   15.064,
+   "had to sit down and tag them."
+  ],
+  [
+   15.064,
+   15.459,
+   "Cat."
+  ],
+  [
+   15.459,
+   15.853,
+   "Dog."
+  ],
+  [
+   15.853,
+   16.247,
+   "Car."
+  ],
+  [
+   16.879,
+   18.456,
+   "And labels are slow,"
+  ],
+  [
+   18.456,
+   19.245,
+   "and expensive,"
+  ],
+  [
+   19.245,
+   22.005,
+   "and there are never enough of them."
+  ],
+  [
+   22.637,
+   23.425,
+   "But raw,"
+  ],
+  [
+   23.425,
+   24.214,
+   "unlabeled images?"
+  ],
+  [
+   24.214,
+   25.791,
+   "Those are almost free."
+  ],
+  [
+   25.791,
+   28.552,
+   "There are billions upon billions of them,"
+  ],
+  [
+   28.552,
+   30.129,
+   "all over the internet."
+  ],
+  [
+   30.761,
+   33.915,
+   "Self-supervised learning finds a way to\nturn those"
+  ],
+  [
+   33.915,
+   36.281,
+   "unlabeled images into their own teacher."
+  ],
+  [
+   36.913,
+   38.884,
+   "Here is one beautiful example."
+  ],
+  [
+   38.884,
+   40.067,
+   "Take an image,"
+  ],
+  [
+   40.067,
+   42.827,
+   "and hide forty percent of its patches,"
+  ],
+  [
+   42.827,
+   43.616,
+   "at random."
+  ],
+  [
+   44.248,
+   47.402,
+   "Now ask the network to reconstruct the\nmissing"
+  ],
+  [
+   47.402,
+   47.797,
+   "parts,"
+  ],
+  [
+   47.797,
+   50.557,
+   "from the parts it can still see."
+  ],
+  [
+   51.188,
+   53.554,
+   "To fill in those gaps convincingly,"
+  ],
+  [
+   53.554,
+   56.709,
+   "the network is forced to genuinely learn\nhow"
+  ],
+  [
+   56.709,
+   59.075,
+   "objects and the world actually look."
+  ],
+  [
+   59.707,
+   62.861,
+   "There was no human label anywhere in that"
+  ],
+  [
+   62.861,
+   63.255,
+   "process."
+  ],
+  [
+   63.255,
+   66.41,
+   "Yet the network comes out having learned\nrich,"
+  ],
+  [
+   66.41,
+   67.199,
+   "general-purpose features."
+  ],
+  [
+   67.83,
+   70.985,
+   "This is the idea behind methods like\nmasked"
+  ],
+  [
+   70.985,
+   71.379,
+   "autoencoders,"
+  ],
+  [
+   71.379,
+   72.168,
+   "and DINO."
+  ],
+  [
+   72.799,
+   73.194,
+   "Then,"
+  ],
+  [
+   73.194,
+   75.56,
+   "once it has that head start,"
+  ],
+  [
+   75.56,
+   78.714,
+   "you fine-tune it on a tiny labeled set"
+  ],
+  [
+   78.714,
+   80.292,
+   "for your specific task."
+  ],
+  [
+   80.923,
+   83.683,
+   "And here is the connection worth savoring."
+  ],
+  [
+   83.683,
+   86.838,
+   "This is the exact same principle behind\nlarge"
+  ],
+  [
+   86.838,
+   89.598,
+   "language models \u2014 predict the hidden part."
+  ],
+  [
+   90.23,
+   91.807,
+   "The same deep idea,"
+  ],
+  [
+   91.807,
+   94.962,
+   "now quietly pretraining the vision\nbackbones of the"
+  ],
+  [
+   94.962,
+   95.356,
+   "future."
+  ],
+  [
+   95.856,
+   99.071,
+   "The second frontier \u2014 escaping the flat\nimage"
+  ],
+  [
+   99.071,
+   99.473,
+   "entirely."
+  ],
+  [
+   100.104,
+   102.114,
+   "The world is three dimensional,"
+  ],
+  [
+   102.114,
+   104.525,
+   "but a photograph is stubbornly flat."
+  ],
+  [
+   104.525,
+   106.936,
+   "It has thrown the depth away."
+  ],
+  [
+   106.936,
+   109.749,
+   "So how do we get it back?"
+  ],
+  [
+   110.381,
+   113.596,
+   "Modern models can estimate depth from just\na"
+  ],
+  [
+   113.596,
+   114.4,
+   "single picture."
+  ],
+  [
+   115.031,
+   118.246,
+   "Look at the depth map on the left."
+  ],
+  [
+   118.246,
+   119.452,
+   "Bright means near,"
+  ],
+  [
+   119.452,
+   120.657,
+   "dark means far."
+  ],
+  [
+   120.657,
+   123.872,
+   "The model has guessed a distance for every"
+  ],
+  [
+   123.872,
+   124.676,
+   "single pixel,"
+  ],
+  [
+   124.676,
+   126.284,
+   "from one flat image."
+  ],
+  [
+   126.915,
+   130.13,
+   "Methods like Depth Anything do this\nastonishingly well."
+  ],
+  [
+   130.762,
+   131.164,
+   "Next,"
+  ],
+  [
+   131.164,
+   131.565,
+   "motion."
+  ],
+  [
+   131.565,
+   134.78,
+   "Optical flow measures how each pixel moved\nbetween"
+  ],
+  [
+   134.78,
+   136.79,
+   "two frames of a video."
+  ],
+  [
+   137.421,
+   140.636,
+   "See the little arrows in the middle \u2014"
+  ],
+  [
+   140.636,
+   143.851,
+   "each one shows the direction and speed\nthat"
+  ],
+  [
+   143.851,
+   146.263,
+   "part of the scene is traveling."
+  ],
+  [
+   146.894,
+   149.305,
+   "That is how models understand action,"
+  ],
+  [
+   149.305,
+   151.717,
+   "and follow objects as they move."
+  ],
+  [
+   152.348,
+   153.152,
+   "And finally,"
+  ],
+  [
+   153.152,
+   154.759,
+   "full three dimensional reconstruction."
+  ],
+  [
+   155.391,
+   156.597,
+   "Techniques called NeRF,"
+  ],
+  [
+   156.597,
+   157.802,
+   "and Gaussian splatting,"
+  ],
+  [
+   157.802,
+   161.017,
+   "take just a handful of ordinary photos and"
+  ],
+  [
+   161.017,
+   163.027,
+   "build a complete 3D scene."
+  ],
+  [
+   163.658,
+   166.873,
+   "Then you can fly a virtual camera through"
+  ],
+  [
+   166.873,
+   167.275,
+   "it,"
+  ],
+  [
+   167.275,
+   170.49,
+   "to brand-new viewpoints the camera never\nactually visited."
+  ],
+  [
+   171.122,
+   171.523,
+   "Robots,"
+  ],
+  [
+   171.523,
+   172.729,
+   "augmented reality headsets,"
+  ],
+  [
+   172.729,
+   175.944,
+   "and self-driving cars all depend on this\nthird"
+  ],
+  [
+   175.944,
+   176.346,
+   "dimension."
+  ],
+  [
+   176.977,
+   178.183,
+   "All of it,"
+  ],
+  [
+   178.183,
+   180.192,
+   "rebuilt from nothing but flat,"
+  ],
+  [
+   180.192,
+   181.398,
+   "two dimensional frames."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch21-frontier.wav",
+   "volume": 1.0
+  }
+ }
+}

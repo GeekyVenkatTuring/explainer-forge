@@ -1,0 +1,1119 @@
+{
+  "cuts": [
+    {
+      "id": "mt_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 36.468,
+      "props": {
+        "title": "How to Analyse Telecom & Media",
+        "sub": "Telecom, media & digital · fundamentals · technicals · strategies",
+        "kicker": "SECTOR DEEP-DIVE · TELECOM & MEDIA",
+        "dur": 36.968
+      }
+    },
+    {
+      "id": "mt_overview",
+      "type": "sm_iconcards",
+      "in_seconds": 36.968,
+      "out_seconds": 107.316,
+      "props": {
+        "kicker": "SUB-SECTORS",
+        "title": "Telecom, media & digital",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "📶",
+            "k": "Telecom operators",
+            "v": "A 3-player market — the network businesses selling data & voice",
+            "chip": "Networks"
+          },
+          {
+            "emoji": "🗼",
+            "k": "Telecom infra",
+            "v": "Tower & fibre companies renting infrastructure to the operators",
+            "chip": "Infra"
+          },
+          {
+            "emoji": "📺",
+            "k": "Media & broadcasting",
+            "v": "TV, print & film — ad-revenue businesses facing digital disruption",
+            "chip": "Legacy"
+          },
+          {
+            "emoji": "🎬",
+            "k": "Digital / OTT / platforms",
+            "v": "Streaming & internet platforms — the fast-growing new-age winners",
+            "chip": "New-age"
+          }
+        ],
+        "dur": 70.848
+      }
+    },
+    {
+      "id": "mt_drivers",
+      "type": "sm_iconcards",
+      "in_seconds": 107.816,
+      "out_seconds": 183.16,
+      "props": {
+        "kicker": "WHAT MOVES THE SECTOR",
+        "title": "The forces at work",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "💵",
+            "k": "ARPU",
+            "v": "Average Revenue Per User — the master telecom metric; tariff hikes lift it",
+            "chip": "Telecom #1"
+          },
+          {
+            "emoji": "📈",
+            "k": "Data & 5G",
+            "v": "Rising data use and 5G monetisation drive future telecom revenue",
+            "chip": "Growth"
+          },
+          {
+            "emoji": "🤝",
+            "k": "Consolidation",
+            "v": "Fewer players = more pricing power = a healthier, more profitable market",
+            "chip": "Structure"
+          },
+          {
+            "emoji": "📱",
+            "k": "The digital shift",
+            "v": "Advertising & viewers moving from TV to streaming — reshapes media",
+            "chip": "Disruption"
+          }
+        ],
+        "dur": 75.844
+      }
+    },
+    {
+      "id": "mt_fund",
+      "type": "sm_iconcards",
+      "in_seconds": 183.66,
+      "out_seconds": 260.18,
+      "props": {
+        "kicker": "FUNDAMENTALS · TELECOM",
+        "title": "The metrics for telecom",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "💵",
+            "k": "ARPU",
+            "v": "The #1 metric — revenue per subscriber; rising ARPU is the whole bull case",
+            "chip": "Revenue"
+          },
+          {
+            "emoji": "👥",
+            "k": "Subscriber trends",
+            "v": "Net adds and, crucially, share of high-value data users",
+            "chip": "Users"
+          },
+          {
+            "emoji": "🏋️",
+            "k": "Debt",
+            "v": "Telecom is brutally capital-intensive — spectrum & networks pile on debt",
+            "chip": "Leverage"
+          },
+          {
+            "emoji": "📶",
+            "k": "Network capex",
+            "v": "Ongoing 5G & fibre spend — necessary, but it must eventually earn a return",
+            "chip": "Capex"
+          }
+        ],
+        "dur": 77.02
+      }
+    },
+    {
+      "id": "mt_fund_med",
+      "type": "sm_iconcards",
+      "in_seconds": 260.68,
+      "out_seconds": 342.192,
+      "props": {
+        "kicker": "FUNDAMENTALS · MEDIA",
+        "title": "The metrics for media",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "📺",
+            "k": "Ad vs subscription",
+            "v": "The revenue mix — ad-dependent media is more cyclical than subscription",
+            "chip": "Mix"
+          },
+          {
+            "emoji": "👀",
+            "k": "Viewership / reach",
+            "v": "Audience share drives ad rates — but it's shifting to digital",
+            "chip": "Eyeballs"
+          },
+          {
+            "emoji": "🎬",
+            "k": "Content cost",
+            "v": "Streaming's arms race in content can burn cash — watch profitability, not just growth",
+            "chip": "Costs"
+          },
+          {
+            "emoji": "📉",
+            "k": "Disruption risk",
+            "v": "Legacy TV & print face structural decline as audiences go digital",
+            "chip": "Decline"
+          }
+        ],
+        "dur": 82.012
+      }
+    },
+    {
+      "id": "mt_check",
+      "type": "sm_checklist",
+      "in_seconds": 342.692,
+      "out_seconds": 422.996,
+      "props": {
+        "kicker": "HOW TO EVALUATE",
+        "title": "Evaluating a telecom/media stock — checklist",
+        "color": "#34D399",
+        "icon": "✅",
+        "items": [
+          "Telecom: is ARPU rising, and is debt under control?",
+          "Judge subscriber QUALITY (data users), not just quantity",
+          "Media: growing subscription revenue vs shrinking ad/legacy?",
+          "For streaming: is there a real path to PROFIT, not just growth?",
+          "Ask: is this a disruptor or the one being disrupted?"
+        ],
+        "dur": 80.804
+      }
+    },
+    {
+      "id": "mt_strat",
+      "type": "sm_iconcards",
+      "in_seconds": 423.496,
+      "out_seconds": 499.388,
+      "props": {
+        "kicker": "STRATEGIES",
+        "title": "Strategies for telecom & media",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "📶",
+            "k": "Ride the ARPU cycle",
+            "v": "In a 3-player market, rising tariffs & ARPU reward the leading operators",
+            "chip": "Telecom"
+          },
+          {
+            "emoji": "🗼",
+            "k": "Tower/infra for stability",
+            "v": "Rental-style infra players offer steadier, less-competitive cash flows",
+            "chip": "Steady"
+          },
+          {
+            "emoji": "🎬",
+            "k": "Back the digital winners",
+            "v": "Favour profitable digital & OTT platforms over declining legacy media",
+            "chip": "Growth"
+          },
+          {
+            "emoji": "⚠️",
+            "k": "Avoid the debt trap",
+            "v": "Steer clear of weak, over-indebted operators that can't fund 5G",
+            "chip": "Caution"
+          }
+        ],
+        "dur": 76.392
+      }
+    },
+    {
+      "id": "mt_risk",
+      "type": "sm_myths",
+      "in_seconds": 499.888,
+      "out_seconds": 564.672,
+      "props": {
+        "kicker": "WHAT TO AVOID",
+        "title": "Telecom & media — the risks",
+        "mythLabel": "✗ TRAP",
+        "factLabel": "✓ REALITY",
+        "pairs": [
+          {
+            "m": "Millions of subscribers = a great stock",
+            "f": "ARPU & debt matter more; huge users with low ARPU & high debt can bleed"
+          },
+          {
+            "m": "Cheap legacy TV/print stock = bargain",
+            "f": "It may be in structural decline — a classic value trap"
+          },
+          {
+            "m": "A growing OTT platform must be a winner",
+            "f": "Subscriber growth that never turns a profit destroys value"
+          }
+        ],
+        "dur": 65.284
+      }
+    },
+    {
+      "id": "mt_recap",
+      "type": "sm_recap",
+      "in_seconds": 565.172,
+      "out_seconds": 635.424,
+      "props": {
+        "title": "Telecom & media — recap",
+        "items": [
+          "Telecom: ARPU is the #1 metric; watch debt & data share",
+          "A 3-player market = restored pricing power",
+          "Media: subscription > ads; beware legacy decline",
+          "Streaming: demand a path to PROFIT, not just growth",
+          "Strategy: strong operators, infra, digital winners; avoid debt"
+        ],
+        "closer": "Back the disruptor — never the disrupted.",
+        "dur": 70.752
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.053,
+      "Our final sector — telecom and media,"
+    ],
+    [
+      3.053,
+      8.498,
+      "the business of connecting and entertaining a billion-plus people."
+    ],
+    [
+      8.498,
+      13.614,
+      "Telecom has transformed from a brutal price war into a stable,"
+    ],
+    [
+      13.614,
+      17.904,
+      "few-player market with real pricing power returning."
+    ],
+    [
+      17.904,
+      22.937,
+      "Media, meanwhile, is being reshaped by streaming and digital,"
+    ],
+    [
+      22.937,
+      26.32,
+      "creating both disruption and opportunity."
+    ],
+    [
+      26.32,
+      31.435,
+      "We'll cover the sub-sectors, the fundamentals, the technicals,"
+    ],
+    [
+      31.435,
+      33.828,
+      "and the strategies in detail."
+    ],
+    [
+      33.828,
+      36.468,
+      "Company names are examples only."
+    ],
+    [
+      36.968,
+      40.574,
+      "Let's split this final sector into its parts."
+    ],
+    [
+      40.574,
+      42.977,
+      "First, the telecom operators —"
+    ],
+    [
+      42.977,
+      46.583,
+      "the network companies selling data and voice."
+    ],
+    [
+      46.583,
+      49.467,
+      "After years of bruising competition,"
+    ],
+    [
+      49.467,
+      54.435,
+      "India has consolidated into essentially a three-player market,"
+    ],
+    [
+      54.435,
+      58.04,
+      "which changes everything about the economics."
+    ],
+    [
+      58.04,
+      60.604,
+      "Second, telecom infrastructure —"
+    ],
+    [
+      60.604,
+      67.014,
+      "the tower and fibre companies that rent their infrastructure to those operators,"
+    ],
+    [
+      67.014,
+      69.738,
+      "a steadier, rental-style business."
+    ],
+    [
+      69.738,
+      74.706,
+      "Third, traditional media and broadcasting — television, print,"
+    ],
+    [
+      74.706,
+      75.427,
+      "and film."
+    ],
+    [
+      75.427,
+      78.712,
+      "These are advertising-revenue businesses,"
+    ],
+    [
+      78.712,
+      83.119,
+      "and they're squarely in the path of digital disruption."
+    ],
+    [
+      83.119,
+      86.244,
+      "Fourth, the digital and OTT platforms —"
+    ],
+    [
+      86.244,
+      89.689,
+      "streaming services and internet platforms —"
+    ],
+    [
+      89.689,
+      94.897,
+      "the fast-growing new-age winners taking share from the old media."
+    ],
+    [
+      94.897,
+      98.182,
+      "So within one sector you have a maturing,"
+    ],
+    [
+      98.182,
+      101.868,
+      "cash-generating telecom oligopoly on one side,"
+    ],
+    [
+      101.868,
+      103.23,
+      "and a disruptive,"
+    ],
+    [
+      103.23,
+      107.316,
+      "fast-changing media-and-digital world on the other."
+    ],
+    [
+      107.816,
+      110.241,
+      "What drives telecom and media?"
+    ],
+    [
+      110.241,
+      111.211,
+      "Four forces."
+    ],
+    [
+      111.211,
+      114.445,
+      "For telecom, the master metric is ARPU —"
+    ],
+    [
+      114.445,
+      116.466,
+      "Average Revenue Per User,"
+    ],
+    [
+      116.466,
+      121.074,
+      "the monthly revenue a company earns from each subscriber."
+    ],
+    [
+      121.074,
+      124.146,
+      "After years of destructive price wars,"
+    ],
+    [
+      124.146,
+      127.218,
+      "tariff hikes are finally lifting ARPU,"
+    ],
+    [
+      127.218,
+      132.715,
+      "and that is the single most important number to watch in the sector."
+    ],
+    [
+      132.715,
+      135.383,
+      "The second driver is data and 5G."
+    ],
+    [
+      135.383,
+      140.233,
+      "Indians consume enormous and growing amounts of mobile data,"
+    ],
+    [
+      140.233,
+      145.892,
+      "and the monetisation of 5G networks is the next leg of revenue growth."
+    ],
+    [
+      145.892,
+      148.075,
+      "The third is consolidation."
+    ],
+    [
+      148.075,
+      150.743,
+      "With only three big players left,"
+    ],
+    [
+      150.743,
+      154.057,
+      "the market has real pricing power again —"
+    ],
+    [
+      154.057,
+      159.069,
+      "fewer competitors means a healthier, more profitable industry,"
+    ],
+    [
+      159.069,
+      164.405,
+      "which is why telecom is far more investable now than a decade ago."
+    ],
+    [
+      164.405,
+      168.689,
+      "The fourth, on the media side, is the digital shift —"
+    ],
+    [
+      168.689,
+      174.753,
+      "advertising money and viewers steadily moving from television to streaming."
+    ],
+    [
+      174.753,
+      177.744,
+      "That reshapes who wins and who fades,"
+    ],
+    [
+      177.744,
+      183.16,
+      "rewarding the digital platforms and pressuring legacy broadcasters."
+    ],
+    [
+      183.66,
+      187.111,
+      "Let's take telecom's fundamentals first."
+    ],
+    [
+      187.111,
+      188.232,
+      "Four metrics."
+    ],
+    [
+      188.232,
+      192.632,
+      "The first, again, is ARPU — revenue per subscriber."
+    ],
+    [
+      192.632,
+      197.808,
+      "Rising ARPU is essentially the entire bull case for telecom,"
+    ],
+    [
+      197.808,
+      201.0,
+      "because with a fixed subscriber base,"
+    ],
+    [
+      201.0,
+      205.658,
+      "every rupee of higher ARPU flows powerfully to profit."
+    ],
+    [
+      205.658,
+      207.298,
+      "Watch it above all."
+    ],
+    [
+      207.298,
+      211.87,
+      "The second is subscriber trends — net additions, and,"
+    ],
+    [
+      211.87,
+      213.336,
+      "more importantly,"
+    ],
+    [
+      213.336,
+      219.03,
+      "the share of high-value data users a company is gaining or losing."
+    ],
+    [
+      219.03,
+      222.308,
+      "Quality of subscribers beats quantity."
+    ],
+    [
+      222.308,
+      226.794,
+      "The third, and the sector's great weakness, is debt."
+    ],
+    [
+      226.794,
+      235.335,
+      "Telecom is brutally capital-intensive: buying spectrum and building networks costs staggering sums,"
+    ],
+    [
+      235.335,
+      237.923,
+      "so operators carry heavy debt."
+    ],
+    [
+      237.923,
+      242.581,
+      "A stretched balance sheet is the number-one risk here."
+    ],
+    [
+      242.581,
+      245.083,
+      "The fourth is network capex —"
+    ],
+    [
+      245.083,
+      248.275,
+      "the ongoing spending on 5G and fibre."
+    ],
+    [
+      248.275,
+      251.294,
+      "It's necessary to stay competitive,"
+    ],
+    [
+      251.294,
+      258.627,
+      "but you must judge whether that huge investment will eventually earn a proper return,"
+    ],
+    [
+      258.627,
+      260.18,
+      "or just burn cash."
+    ],
+    [
+      260.68,
+      264.961,
+      "Now media's fundamentals, which are quite different."
+    ],
+    [
+      264.961,
+      266.69,
+      "Four things to watch."
+    ],
+    [
+      266.69,
+      271.878,
+      "The first is the revenue mix — advertising versus subscription."
+    ],
+    [
+      271.878,
+      274.512,
+      "Advertising revenue is cyclical,"
+    ],
+    [
+      274.512,
+      277.476,
+      "rising and falling with the economy,"
+    ],
+    [
+      277.476,
+      282.417,
+      "while subscription revenue is steadier and more predictable."
+    ],
+    [
+      282.417,
+      287.604,
+      "A media company leaning on ads is a riskier, more cyclical bet."
+    ],
+    [
+      287.604,
+      290.485,
+      "The second is viewership and reach."
+    ],
+    [
+      290.485,
+      295.508,
+      "Audience share is what sets advertising rates — but remember,"
+    ],
+    [
+      295.508,
+      300.777,
+      "those eyeballs are steadily shifting from television to digital,"
+    ],
+    [
+      300.777,
+      303.412,
+      "so today's viewership can erode."
+    ],
+    [
+      303.412,
+      305.553,
+      "The third is content cost."
+    ],
+    [
+      305.553,
+      307.282,
+      "In the streaming era,"
+    ],
+    [
+      307.282,
+      311.399,
+      "there's an expensive arms race to produce content,"
+    ],
+    [
+      311.399,
+      313.786,
+      "which can burn enormous cash."
+    ],
+    [
+      313.786,
+      319.385,
+      "So judge a streaming or media business on its path to profitability,"
+    ],
+    [
+      319.385,
+      321.938,
+      "not just its subscriber growth."
+    ],
+    [
+      321.938,
+      325.478,
+      "Growth that never turns a profit is a trap."
+    ],
+    [
+      325.478,
+      327.948,
+      "The fourth is disruption risk."
+    ],
+    [
+      327.948,
+      331.735,
+      "Legacy television and print face a structural,"
+    ],
+    [
+      331.735,
+      335.276,
+      "long-term decline as audiences move online."
+    ],
+    [
+      335.276,
+      342.192,
+      "Be very careful buying a cheap-looking legacy media stock that is quietly shrinking."
+    ],
+    [
+      342.692,
+      345.383,
+      "Let's turn it into a checklist."
+    ],
+    [
+      345.383,
+      346.338,
+      "Five steps."
+    ],
+    [
+      346.338,
+      349.29,
+      "Step one — for a telecom operator,"
+    ],
+    [
+      349.29,
+      354.065,
+      "ask the two questions that matter most: is ARPU rising,"
+    ],
+    [
+      354.065,
+      356.669,
+      "and is the debt under control?"
+    ],
+    [
+      356.669,
+      361.097,
+      "A rising ARPU with falling debt is the ideal setup."
+    ],
+    [
+      361.097,
+      365.872,
+      "Step two — judge subscriber quality, not just quantity."
+    ],
+    [
+      365.872,
+      371.601,
+      "Gaining high-value data users is worth far more than adding cheap,"
+    ],
+    [
+      371.601,
+      372.904,
+      "low-usage ones."
+    ],
+    [
+      372.904,
+      375.769,
+      "Step three — for a media company,"
+    ],
+    [
+      375.769,
+      384.971,
+      "check whether steady subscription revenue is growing while cyclical advertising and legacy formats shrink."
+    ],
+    [
+      384.971,
+      388.27,
+      "You want the mix moving the right way."
+    ],
+    [
+      388.27,
+      392.611,
+      "Step four — for any streaming or digital business,"
+    ],
+    [
+      392.611,
+      395.736,
+      "insist on a credible path to profit,"
+    ],
+    [
+      395.736,
+      400.771,
+      "not just endless subscriber growth funded by burning cash."
+    ],
+    [
+      400.771,
+      404.244,
+      "Step five — and this frames everything —"
+    ],
+    [
+      404.244,
+      408.845,
+      "ask the simple question: is this company a disruptor,"
+    ],
+    [
+      408.845,
+      411.189,
+      "or the one being disrupted?"
+    ],
+    [
+      411.189,
+      413.707,
+      "In this fast-changing sector,"
+    ],
+    [
+      413.707,
+      418.134,
+      "that single distinction often decides your returns."
+    ],
+    [
+      418.134,
+      422.996,
+      "Run that, and you can size up any telecom or media name."
+    ],
+    [
+      423.496,
+      426.506,
+      "So how do you play telecom and media?"
+    ],
+    [
+      426.506,
+      427.807,
+      "Four strategies."
+    ],
+    [
+      427.807,
+      430.898,
+      "First, ride the ARPU cycle in telecom."
+    ],
+    [
+      430.898,
+      433.582,
+      "In a healthy three-player market,"
+    ],
+    [
+      433.582,
+      438.219,
+      "rising tariffs and ARPU flow straight to the bottom line,"
+    ],
+    [
+      438.219,
+      442.042,
+      "richly rewarding the strong, leading operators."
+    ],
+    [
+      442.042,
+      445.865,
+      "This is the core telecom investment case today."
+    ],
+    [
+      445.865,
+      448.305,
+      "Second, for steadier exposure,"
+    ],
+    [
+      448.305,
+      452.616,
+      "consider the tower and fibre infrastructure players —"
+    ],
+    [
+      452.616,
+      460.263,
+      "their rental-style cash flows are calmer and less exposed to the operators' price competition."
+    ],
+    [
+      460.263,
+      464.492,
+      "Third, on the media side, back the digital winners —"
+    ],
+    [
+      464.492,
+      469.536,
+      "the profitable streaming and internet platforms taking share —"
+    ],
+    [
+      469.536,
+      473.765,
+      "over the structurally declining legacy broadcasters."
+    ],
+    [
+      473.765,
+      475.555,
+      "Go with the disruptor."
+    ],
+    [
+      475.555,
+      479.297,
+      "Fourth, and defensively, avoid the debt trap —"
+    ],
+    [
+      479.297,
+      481.33,
+      "steer well clear of weak,"
+    ],
+    [
+      481.33,
+      486.455,
+      "heavily indebted operators that can't afford the 5G investment,"
+    ],
+    [
+      486.455,
+      489.546,
+      "because in this capital-hungry sector,"
+    ],
+    [
+      489.546,
+      491.579,
+      "they can spiral downward."
+    ],
+    [
+      491.579,
+      496.053,
+      "Favour the strong, the profitable, and the disruptors —"
+    ],
+    [
+      496.053,
+      499.388,
+      "and avoid the indebted and the disrupted."
+    ],
+    [
+      499.888,
+      503.227,
+      "Finally, the traps in telecom and media."
+    ],
+    [
+      503.227,
+      507.652,
+      "The first — being dazzled by a huge subscriber count."
+    ],
+    [
+      507.652,
+      517.67,
+      "Millions of users mean little if the ARPU is low and the debt is high; such an operator can bleed cash despite its size."
+    ],
+    [
+      517.67,
+      523.598,
+      "ARPU and the balance sheet matter far more than raw subscriber numbers."
+    ],
+    [
+      523.598,
+      524.599,
+      "The second —"
+    ],
+    [
+      524.599,
+      530.36,
+      "buying a cheap-looking legacy television or print stock as a bargain."
+    ],
+    [
+      530.36,
+      534.785,
+      "If its audience is structurally migrating to digital,"
+    ],
+    [
+      534.785,
+      537.373,
+      "that low price is a value trap,"
+    ],
+    [
+      537.373,
+      540.962,
+      "and the business may simply keep shrinking."
+    ],
+    [
+      540.962,
+      541.881,
+      "The third —"
+    ],
+    [
+      541.881,
+      546.639,
+      "assuming any fast-growing streaming platform is a winner."
+    ],
+    [
+      546.639,
+      549.895,
+      "Subscriber growth funded by an endless,"
+    ],
+    [
+      549.895,
+      555.739,
+      "unprofitable content arms race destroys value rather than creating it."
+    ],
+    [
+      555.739,
+      557.743,
+      "Demand a path to profit."
+    ],
+    [
+      557.743,
+      561.75,
+      "Focus on ARPU, debt, and profitable disruption —"
+    ],
+    [
+      561.75,
+      564.672,
+      "and this modern sector rewards you."
+    ],
+    [
+      565.172,
+      568.9,
+      "Telecom and media, gathered up — and with it,"
+    ],
+    [
+      568.9,
+      570.391,
+      "our sector series."
+    ],
+    [
+      570.391,
+      573.871,
+      "In telecom, ARPU is the number-one metric,"
+    ],
+    [
+      573.871,
+      578.344,
+      "alongside debt and the share of high-value data users,"
+    ],
+    [
+      578.344,
+      583.646,
+      "and the new three-player market has restored real pricing power."
+    ],
+    [
+      583.646,
+      588.203,
+      "In media, favour subscription revenue over advertising,"
+    ],
+    [
+      588.203,
+      592.511,
+      "and beware the structural decline of legacy formats."
+    ],
+    [
+      592.511,
+      596.984,
+      "For streaming, always demand a genuine path to profit,"
+    ],
+    [
+      596.984,
+      599.221,
+      "not just subscriber growth."
+    ],
+    [
+      599.221,
+      603.612,
+      "Back the strong operators, the steady infrastructure,"
+    ],
+    [
+      603.612,
+      606.843,
+      "and the profitable digital disruptors —"
+    ],
+    [
+      606.843,
+      610.239,
+      "and avoid the indebted and the disrupted."
+    ],
+    [
+      610.239,
+      614.547,
+      "And that completes our tour of the market's sectors."
+    ],
+    [
+      614.547,
+      617.612,
+      "Apply this same method — sub-sectors,"
+    ],
+    [
+      617.612,
+      622.252,
+      "sector-specific fundamentals, technicals, and strategy —"
+    ],
+    [
+      622.252,
+      624.654,
+      "to any sector you ever study."
+    ],
+    [
+      624.654,
+      626.145,
+      "This is education,"
+    ],
+    [
+      626.145,
+      633.519,
+      "not investment advice; always do your own research and consult a SEBI-registered adviser."
+    ],
+    [
+      633.519,
+      635.424,
+      "Thank you for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sx/mtl.wav",
+      "volume": 1.0
+    }
+  }
+}

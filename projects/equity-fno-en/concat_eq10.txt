@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/equity-fno-en/assets/j10_div.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/equity-fno-en/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/equity-fno-en/assets/j10_rules.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/equity-fno-en/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/equity-fno-en/assets/j10_fit.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/equity-fno-en/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/equity-fno-en/assets/j10_master.wav'

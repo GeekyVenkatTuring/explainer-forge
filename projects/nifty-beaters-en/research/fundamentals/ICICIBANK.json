@@ -1,0 +1,80 @@
+{
+ "ticker": "ICICIBANK",
+ "scraped_at": "2026-08-14T15:27:37",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 1015604.0,
+ "current_price": 1415.0,
+ "pe": 18.1,
+ "book_value": 527.0,
+ "dividend_yield_pct": 0.85,
+ "roce_pct": 7.18,
+ "roe_pct": 15.9,
+ "face_value": 2.0,
+ "high": 1480.0,
+ "sales_growth": {
+  "10 Years": 18.0,
+  "5 Years": 24.0,
+  "3 Years": 17.0,
+  "TTM": 6.0
+ },
+ "profit_growth": {
+  "10 Years": 20.0,
+  "5 Years": 15.0,
+  "3 Years": 14.0,
+  "1 Year": -1.0
+ },
+ "roe_hist": {
+  "CWIP": 0.0
+ },
+ "price_cagr": {
+  "10 Years": 14.0,
+  "5 Years": 17.0,
+  "3 Years": 17.0,
+  "Last Year": 16.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [],
+  "eps": [
+   "15.20",
+   "15.56",
+   "15.76",
+   "16.62",
+   "16.62",
+   "18.38",
+   "18.25",
+   "18.96",
+   "19.00",
+   "18.70",
+   "17.53",
+   "20.61",
+   "21.52"
+  ]
+ },
+ "pros": [],
+ "cons": [
+  "Stock is trading at 2.69 times its book value",
+  "Company has low interest coverage ratio.",
+  "Contingent liabilities of Rs.65,46,110 Cr.",
+  "Earnings include an other income of Rs.1,18,852 Cr.",
+  "Working capital days have increased from 70.0 days to 118 days"
+ ]
+}

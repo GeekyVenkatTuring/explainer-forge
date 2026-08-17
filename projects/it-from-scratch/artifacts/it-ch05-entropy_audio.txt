@@ -1,0 +1,5 @@
+file '/Users/appuram/Developer/explainer-forge/projects/it-from-scratch/assets/it-ch05-entropy_div.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/it-from-scratch/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/it-from-scratch/assets/it-ch05-entropy_entropy.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/it-from-scratch/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/it-from-scratch/assets/it-ch05-entropy_formula.wav'

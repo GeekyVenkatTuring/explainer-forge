@@ -1,0 +1,456 @@
+{
+ "cuts": [
+  {
+   "id": "title",
+   "type": "kg_title",
+   "in_seconds": 0.0,
+   "out_seconds": 30.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "silos",
+   "type": "kg_silos",
+   "in_seconds": 30.0,
+   "out_seconds": 60.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "whynow",
+   "type": "kg_cards",
+   "in_seconds": 60.0,
+   "out_seconds": 90.0,
+   "props": {
+    "kicker": "WHY THIS, WHY NOW",
+    "title": "Three walls just fell \u2014 that's why this is worth your hour",
+    "color": "#818CF8",
+    "cards": [
+     {
+      "head": "Construction got cheap",
+      "emoji": "\ud83e\udd16",
+      "body": "Building a graph from messy wikis and code used to need a team of analysts. A language model now extracts the entities and links in an afternoon.",
+      "tag": "2023 \u2192"
+     },
+     {
+      "head": "Agents hit a wall",
+      "emoji": "\ud83c\udfaf",
+      "body": "Everyone shipped chatbots; everyone learned a model with no world just makes things up. A graph is the grounding that fixes it.",
+      "tag": "the wall"
+     },
+     {
+      "head": "The standards landed",
+      "emoji": "\ud83d\udccf",
+      "body": "GQL became an ISO standard in 2024. GraphRAG, MCP and SHACL are production-ready today \u2014 not research toys.",
+      "tag": "mature"
+     }
+    ],
+    "foot": "For a decade this was a rich-company secret. The tooling finally reached the rest of us.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "hook",
+   "type": "kg_hook",
+   "in_seconds": 90.0,
+   "out_seconds": 120.0,
+   "props": {
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "stack",
+   "type": "kg_stack",
+   "in_seconds": 120.0,
+   "out_seconds": 150.0,
+   "props": {
+    "foot": "Meaning \u2192 memory \u2192 live senses \u2192 the body \u2192 the acting mind. Build it bottom-up.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "divider",
+   "type": "kg_divider",
+   "in_seconds": 150.0,
+   "out_seconds": 180.0,
+   "props": {
+    "n": 1,
+    "title": "Ontology",
+    "sub": "the layer of meaning \u2014 a shared grammar machines can agree on",
+    "color": "#FBBF24",
+    "layer": 0,
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "vs",
+   "type": "kg_compare",
+   "in_seconds": 180.0,
+   "out_seconds": 210.0,
+   "props": {
+    "kicker": "WHAT AN ONTOLOGY ACTUALLY IS",
+    "title": "Not a schema. Not a taxonomy. A model of meaning.",
+    "color": "#FBBF24",
+    "left": {
+     "head": "Schema / taxonomy",
+     "sub": "structure only",
+     "c": "#8B93B0",
+     "rows": [
+      "A database schema says how bytes are stored.",
+      "A taxonomy is just a tree of categories.",
+      "Neither one tells a machine what a thing MEANS.",
+      "Change the storage, and the meaning is lost."
+     ]
+    },
+    "right": {
+     "head": "Ontology",
+     "sub": "shared, explicit meaning",
+     "c": "#FBBF24",
+     "rows": [
+      "Defines entities: Report, Query, Table, Service.",
+      "Defines relationships: USES, READS, DEPLOYED_AS.",
+      "Defines rules: every Report must use \u22651 Query.",
+      "Independent of any one database or vendor."
+     ]
+    },
+    "foot": "The ontology is the contract every source, every query, and every agent shares.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "triple",
+   "type": "kg_triple",
+   "in_seconds": 210.0,
+   "out_seconds": 240.0,
+   "props": {
+    "kicker": "THE ATOM OF MEANING",
+    "title": "Everything reduces to a triple: subject \u2192 predicate \u2192 object",
+    "subj": "Report",
+    "pred": "USES",
+    "obj": "Query",
+    "examples": [
+     "Query READS Table",
+     "Service DEPLOYED_AS Pod",
+     "Wiki DOCUMENTS Service",
+     "Pod EMITS LogEvent"
+    ],
+    "foot": "Millions of triples, sharing one vocabulary, become a graph of meaning.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "code",
+   "type": "kg_code",
+   "in_seconds": 240.0,
+   "out_seconds": 270.0,
+   "props": {
+    "kicker": "OWL SAYS WHAT IS \u00b7 SHACL SAYS WHAT MUST BE",
+    "title": "Meaning you can reason on, and rules you can enforce",
+    "color": "#FBBF24",
+    "lang": "turtle",
+    "lines": [
+     ":Report  a owl:Class .",
+     ":Query   a owl:Class .",
+     ":uses    a owl:ObjectProperty ;",
+     "         rdfs:domain :Report ;",
+     "         rdfs:range  :Query .",
+     "",
+     "sh:ReportShape a sh:NodeShape ;",
+     "  sh:targetClass :Report ;",
+     "  sh:property [ sh:path :uses ;",
+     "               sh:minCount 1 ] ."
+    ],
+    "caption": "OWL declares the concepts \u00b7 SHACL validates every instance against the rules",
+    "foot": "Machine-checkable meaning: the ontology can catch a broken model before an agent ever sees it.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "inference",
+   "type": "kg_pipeline",
+   "in_seconds": 270.0,
+   "out_seconds": 300.0,
+   "props": {
+    "kicker": "REASONING \u00b7 FACTS YOU NEVER WROTE DOWN",
+    "title": "OWL lets the machine derive new truths from stated ones",
+    "color": "#FBBF24",
+    "nodes": [
+     {
+      "emoji": "\u270d\ufe0f",
+      "label": "Stated",
+      "sub": "Report uses Query",
+      "c": "#FBBF24"
+     },
+     {
+      "emoji": "\ud83e\udd89",
+      "label": "Reasoner",
+      "sub": "applies OWL rules",
+      "c": "#818CF8"
+     },
+     {
+      "emoji": "\ud83d\udca1",
+      "label": "Inferred",
+      "sub": "Report DEPENDS_ON Table",
+      "c": "#22D3EE"
+     },
+     {
+      "emoji": "\ud83e\uddf9",
+      "label": "Less to maintain",
+      "sub": "derive, don't duplicate",
+      "c": "#34D399"
+     }
+    ],
+    "foot": "Declare the rules once; the reasoner keeps the derived facts correct for free.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "standards",
+   "type": "kg_orbit",
+   "in_seconds": 300.0,
+   "out_seconds": 330.0,
+   "props": {
+    "kicker": "THE ONTOLOGY TOOLBOX",
+    "title": "The standards and tools you'll actually reach for",
+    "color": "#FBBF24",
+    "hub": "Ontology\nstack",
+    "items": [
+     {
+      "emoji": "\ud83d\udd17",
+      "label": "RDF \u2014 triples, global IDs"
+     },
+     {
+      "emoji": "\ud83e\udd89",
+      "label": "OWL \u2014 classes + inference"
+     },
+     {
+      "emoji": "\u2696\ufe0f",
+      "label": "SHACL \u2014 validation"
+     },
+     {
+      "emoji": "\ud83c\udff7\ufe0f",
+      "label": "SKOS \u2014 vocabularies"
+     },
+     {
+      "emoji": "\ud83d\udee0\ufe0f",
+      "label": "Prot\u00e9g\u00e9 \u2014 the editor"
+     },
+     {
+      "emoji": "\u2601\ufe0f",
+      "label": "DTDL \u2014 Azure twins"
+     },
+     {
+      "emoji": "\ud83c\udfdb\ufe0f",
+      "label": "Palantir \u2014 enterprise"
+     }
+    ],
+    "foot": "Standards for portability; a good editor for the humans; a platform when you scale.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "ingest",
+   "type": "kg_ingest",
+   "in_seconds": 330.0,
+   "out_seconds": 360.0,
+   "props": {
+    "foot": "Each silo keeps its home; the graph just adds the connective tissue between them.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "merge",
+   "type": "kg_merge",
+   "in_seconds": 360.0,
+   "out_seconds": 390.0,
+   "props": {
+    "foot": "Match on keys and context, collapse the duplicates \u2014 meaning stays consistent everywhere.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "graphrag",
+   "type": "kg_chart",
+   "in_seconds": 390.0,
+   "out_seconds": 420.0,
+   "props": {
+    "kicker": "GRAPHRAG vs PLAIN VECTOR SEARCH",
+    "title": "Why grounding an LLM on a graph beats grounding it on text chunks",
+    "color": "#22D3EE",
+    "bars": [
+     {
+      "label": "Vector RAG",
+      "v": 32,
+      "c": "#F87171"
+     },
+     {
+      "label": "GraphRAG (multi-hop)",
+      "v": 86,
+      "c": "#22D3EE"
+     }
+    ],
+    "note": "Microsoft Research \u2014 accuracy on multi-hop enterprise questions",
+    "foot": "Structured retrieval finds the PATH, not just similar-sounding paragraphs.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "telemetry",
+   "type": "kg_telemetry",
+   "in_seconds": 420.0,
+   "out_seconds": 450.0,
+   "props": {
+    "foot": "A model that mirrors reality now \u2014 not a diagram someone drew last quarter.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "maturity",
+   "type": "kg_tower",
+   "in_seconds": 450.0,
+   "out_seconds": 480.0,
+   "props": {
+    "kicker": "THE MATURITY LADDER",
+    "title": "Twins climb from \u2018what is\u2019 to \u2018act on its own\u2019",
+    "color": "#A78BFA",
+    "levels": [
+     {
+      "label": "Descriptive",
+      "sub": "mirrors the current state"
+     },
+     {
+      "label": "Informational",
+      "sub": "adds history and context"
+     },
+     {
+      "label": "Predictive",
+      "sub": "forecasts what happens next"
+     },
+     {
+      "label": "Prescriptive",
+      "sub": "recommends the best fix"
+     },
+     {
+      "label": "Autonomous",
+      "sub": "acts within guardrails"
+     }
+    ],
+    "foot": "Most teams live on rungs one and two. The top rung is where agents plug in.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "cascade",
+   "type": "kg_cascade",
+   "in_seconds": 480.0,
+   "out_seconds": 510.0,
+   "props": {
+    "foot": "Simulate the blast radius on the twin, instead of discovering it in production at 2 a.m.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "gnn",
+   "type": "kg_gnn",
+   "in_seconds": 510.0,
+   "out_seconds": 540.0,
+   "props": {
+    "foot": "Uber ETAs, Pinterest recs, fraud rings, drug discovery \u2014 all learned on graph structure.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "loop",
+   "type": "kg_agentloop",
+   "in_seconds": 540.0,
+   "out_seconds": 570.0,
+   "props": {
+    "foot": "The graph is the agent's memory, its senses, and its list of safe things to do.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "twobrain",
+   "type": "kg_twobrain",
+   "in_seconds": 570.0,
+   "out_seconds": 600.0,
+   "props": {
+    "foot": "Creativity from the model, guarantees from the graph \u2014 together, that's trustworthy AI.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "traverse",
+   "type": "kg_traverse",
+   "in_seconds": 600.0,
+   "out_seconds": 630.0,
+   "props": {
+    "foot": "Retrieve on the graph, reason over the path, act through a governed tool. That's the whole video.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "architecture",
+   "type": "kg_architecture",
+   "in_seconds": 630.0,
+   "out_seconds": 660.0,
+   "props": {
+    "foot": "One coherent stack \u2014 every layer earns its place, and the agent sees all of it.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "adopt",
+   "type": "kg_timeline",
+   "in_seconds": 660.0,
+   "out_seconds": 690.0,
+   "props": {
+    "kicker": "START MONDAY \u00b7 THE ADOPTION PATH",
+    "title": "You build one layer at a time \u2014 each is useful on its own",
+    "color": "#818CF8",
+    "steps": [
+     {
+      "label": "Model the ontology",
+      "sub": "20 core entities and their links \u2014 the shared words for your domain"
+     },
+     {
+      "label": "Build the graph",
+      "sub": "wire 2\u20133 sources, resolve entities, ship one multi-hop query"
+     },
+     {
+      "label": "Make it live",
+      "sub": "stream telemetry into node state \u2014 now it's a twin"
+     },
+     {
+      "label": "Add the agent",
+      "sub": "GraphRAG + typed actions + SHACL guardrails"
+     }
+    ],
+    "foot": "Each step ships value before the next one starts. Never a two-year moonshot.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "recap",
+   "type": "kg_recap",
+   "in_seconds": 690.0,
+   "out_seconds": 720.0,
+   "props": {
+    "kicker": "RECAP \u00b7 THE WHOLE MAP",
+    "title": "The living map in one breath",
+    "closer": "Give your machines a world \u2014 and they'll stop guessing, and start knowing.",
+    "items": [
+     "Ontology = meaning: the shared grammar of entities, relations, and rules.",
+     "Knowledge graph = memory: the ontology filled with resolved, real instances.",
+     "Digital twin = live senses: the graph synced to reality, able to simulate.",
+     "Graph engineering = the body: building, validating, querying, learning at scale.",
+     "Agentic engineering = the mind: retrieve, reason, and act \u2014 grounded and governed.",
+     "Build bottom-up on your own sources; each layer ships value before the next."
+    ],
+    "dur": 30.0
+   }
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+file '/Users/appuram/Developer/explainer-forge/projects/china-founders-te/assets/cx_matrix.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-founders-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-founders-te/assets/cx_choose.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-founders-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/china-founders-te/assets/cx_mistakes.wav'

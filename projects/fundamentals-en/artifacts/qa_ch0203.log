@@ -1,0 +1,23 @@
+  QA ch02_s01_divider @f308
+  QA ch02_s02_analogy @f1157
+  QA ch02_s03_what @f2220
+  QA ch02_s04_net @f3294
+  QA ch02_s05_ladder @f4438
+  QA ch02_s06_ebitda_m @f5519
+  QA ch02_s07_gauge @f6533
+  QA ch02_s08_compare @f7628
+  QA ch02_s09_type @f8747
+  QA ch02_s10_trap @f9922
+  QA ch02_s11_recap @f11281
+  QA ch03_s01_divider @f275
+  QA ch03_s02_analogy @f1097
+  QA ch03_s03_what @f2110
+  QA ch03_s04_roe @f3174
+  QA ch03_s05_roce @f4378
+  QA ch03_s06_roe_vs @f5600
+  QA ch03_s07_ladder @f6850
+  QA ch03_s08_dupont @f8267
+  QA ch03_s09_value @f9631
+  QA ch03_s10_recap @f10975
+
+LOOK at every png in /Users/appuram/Developer/explainer-forge/projects/fundamentals-en/qa-stills/ (skills/06 checklist) before render

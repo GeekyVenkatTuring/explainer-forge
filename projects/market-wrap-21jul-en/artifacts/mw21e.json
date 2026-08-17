@@ -1,0 +1,733 @@
+{
+  "cuts": [
+    {
+      "id": "mw_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 27.74,
+      "props": {
+        "title": "Why Did the Market Fall?",
+        "sub": "July 21, 2026 · Tuesday · Post-Market Analysis",
+        "kicker": "MARKET WRAP · 21 JUL 2026",
+        "dur": 28.24
+      }
+    },
+    {
+      "id": "mw_snap",
+      "type": "sm_stats",
+      "in_seconds": 28.24,
+      "out_seconds": 73.4,
+      "props": {
+        "kicker": "INDEX SNAPSHOT",
+        "title": "Closing Numbers — 21 July",
+        "stats": [
+          {
+            "label": "SENSEX",
+            "to": 77470,
+            "prefix": "",
+            "suffix": "",
+            "color": "#FB7185",
+            "sub": "−238 pts · −0.31%"
+          },
+          {
+            "label": "NIFTY 50",
+            "to": 24188,
+            "prefix": "",
+            "suffix": "",
+            "color": "#FB7185",
+            "sub": "−51 pts · −0.21%"
+          },
+          {
+            "label": "BRENT CRUDE",
+            "to": 88,
+            "prefix": "$",
+            "suffix": "+",
+            "color": "#FBBF24",
+            "sub": "Middle East · Hormuz fears"
+          }
+        ],
+        "note": "Headline indices fell, but Midcap rose +0.3% and Smallcap +0.53% — breadth was positive. A narrow, large-cap-led dip, not a broad sell-off.",
+        "dur": 45.66
+      }
+    },
+    {
+      "id": "mw_why",
+      "type": "sm_iconcards",
+      "in_seconds": 73.9,
+      "out_seconds": 131.442,
+      "props": {
+        "kicker": "WHY IT FELL",
+        "title": "Four Reasons for the Fall",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "🛢️",
+            "k": "Crude + Middle East",
+            "v": "Houthis threatened a naval blockade on Saudi Arabia; Strait of Hormuz supply fears pushed Brent to ~$88–90",
+            "chip": "MAIN CAUSE"
+          },
+          {
+            "emoji": "💻",
+            "k": "IT Weakness",
+            "v": "TCS and Infosys each fell about 1% — Nifty IT was among the worst-hit sectors",
+            "chip": "IT DRAG"
+          },
+          {
+            "emoji": "🏦",
+            "k": "PSU Banks + HDFC",
+            "v": "Nifty PSU Bank fell the most; HDFC Bank and SBI weakness dragged the index",
+            "chip": "WEIGHTAGE"
+          },
+          {
+            "emoji": "📤",
+            "k": "FII Selling",
+            "v": "Foreign investors stayed net sellers; risk-off sentiment across global markets",
+            "chip": "NET SELLERS"
+          }
+        ],
+        "dur": 58.042
+      }
+    },
+    {
+      "id": "mw_losers",
+      "type": "sm_iconcards",
+      "in_seconds": 131.942,
+      "out_seconds": 179.214,
+      "props": {
+        "kicker": "TOP LOSERS",
+        "title": "The Biggest Losers Today",
+        "color": "#FB7185",
+        "items": [
+          {
+            "emoji": "💊",
+            "k": "Cipla",
+            "v": "Worst Nifty performer — down about 2%; pharma and healthcare were weak today",
+            "chip": "−2%"
+          },
+          {
+            "emoji": "🏥",
+            "k": "Dr Reddy's · Max Healthcare",
+            "v": "Both fell more than 1% — healthcare sector under pressure",
+            "chip": "−1%+"
+          },
+          {
+            "emoji": "💻",
+            "k": "TCS · Infosys",
+            "v": "IT giants down ~1% each — weak global tech sentiment and the rupee",
+            "chip": "−1%"
+          },
+          {
+            "emoji": "🏦",
+            "k": "HDFC Bank · SBI",
+            "v": "High-weightage bank stocks — the losers that dragged the index most",
+            "chip": "DRAG"
+          }
+        ],
+        "dur": 47.772
+      }
+    },
+    {
+      "id": "mw_sectors",
+      "type": "sm_myths",
+      "in_seconds": 179.714,
+      "out_seconds": 224.084,
+      "props": {
+        "kicker": "SECTOR SCOREBOARD",
+        "title": "Sectors — Who Fell, Who Rose?",
+        "mythLabel": "🔻 SECTORS THAT FELL",
+        "factLabel": "🟢 SECTORS THAT ROSE",
+        "pairs": [
+          {
+            "m": "Nifty PSU Bank — the worst-hit sector",
+            "f": "Nifty Chemical — the top-gaining sector"
+          },
+          {
+            "m": "Nifty IT — pressured by TCS, Infosys",
+            "f": "Nifty Cement — defensive buying"
+          },
+          {
+            "m": "FMCG — afternoon selling pressure",
+            "f": "Midcap & Smallcap — in the green"
+          }
+        ],
+        "dur": 44.87
+      }
+    },
+    {
+      "id": "mw_lesson",
+      "type": "sm_myths",
+      "in_seconds": 224.584,
+      "out_seconds": 279.802,
+      "props": {
+        "kicker": "THE KEY LESSON · CRUDE",
+        "title": "Why Does Crude Oil Move the Market?",
+        "pairs": [
+          {
+            "m": "Crude prices don't affect us",
+            "f": "India imports ~85% of its oil — higher crude means a bigger import bill and inflation"
+          },
+          {
+            "m": "Crude drags all stocks equally",
+            "f": "No — bad for paints, airlines, autos; GOOD for oil producers like ONGC"
+          },
+          {
+            "m": "This is India's own problem",
+            "f": "No — it's driven by a global geopolitical event: Houthis and the Strait of Hormuz"
+          }
+        ],
+        "dur": 55.718
+      }
+    },
+    {
+      "id": "mw_take",
+      "type": "sm_checklist",
+      "in_seconds": 280.302,
+      "out_seconds": 332.756,
+      "props": {
+        "kicker": "TAKEAWAYS",
+        "title": "5 Lessons from Today",
+        "color": "#34D399",
+        "icon": "💡",
+        "items": [
+          "Second down day, but breadth positive — a narrow, large-cap fall",
+          "Crude near $90 = inflation and rupee pressure — keep watching it",
+          "IT and banks fell while chemicals and cement rose — sector rotation",
+          "Global news (Houthis, Hormuz) directly moves our market",
+          "For SIP investors, a red day like this is noise — not a trend"
+        ],
+        "dur": 52.954
+      }
+    },
+    {
+      "id": "mw_recap",
+      "type": "sm_recap",
+      "in_seconds": 333.256,
+      "out_seconds": 398.356,
+      "props": {
+        "title": "21 July — At a Glance",
+        "items": [
+          "Sensex −238 (77,470) · Nifty −51 (24,188) — 2nd day down",
+          "Cause: crude $90+ (Houthi/Hormuz) + IT + PSU Bank + FII selling",
+          "Losers: Cipla, Dr Reddy's, TCS, Infosys, HDFC Bank, SBI",
+          "Gainers: Chemical, Cement, Midcap, Smallcap",
+          "Breadth positive — a narrow large-cap shock, not a market crash"
+        ],
+        "closer": "One red day isn't the whole story — long-term discipline wins.",
+        "dur": 65.6
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.303,
+      "July twenty-first, twenty twenty-six — Tuesday."
+    ],
+    [
+      4.303,
+      7.416,
+      "The market has closed for the day."
+    ],
+    [
+      7.416,
+      12.359,
+      "For the second day running, the Nifty and Sensex fell."
+    ],
+    [
+      12.359,
+      14.648,
+      "So what moved them today?"
+    ],
+    [
+      14.648,
+      20.05,
+      "We'll break down the closing numbers, the stocks that fell,"
+    ],
+    [
+      20.05,
+      22.43,
+      "and the sectors that rose."
+    ],
+    [
+      22.43,
+      27.74,
+      "This is information analysis only — not investment advice."
+    ],
+    [
+      28.24,
+      30.759,
+      "First, the closing numbers."
+    ],
+    [
+      30.759,
+      37.104,
+      "The Sensex fell two hundred thirty-eight points to close at 77,470 —"
+    ],
+    [
+      37.104,
+      40.09,
+      "down about a third of a percent."
+    ],
+    [
+      40.09,
+      45.222,
+      "The Nifty 50 lost fifty-one points to settle at 24,188."
+    ],
+    [
+      45.222,
+      49.327,
+      "This was its second straight losing session."
+    ],
+    [
+      49.327,
+      52.126,
+      "But here's the crucial point —"
+    ],
+    [
+      52.126,
+      56.138,
+      "the Midcap index rose a third of a percent,"
+    ],
+    [
+      56.138,
+      61.27,
+      "and the Smallcap index gained more than half a percent."
+    ],
+    [
+      61.27,
+      65.936,
+      "That means most stocks were actually in the green."
+    ],
+    [
+      65.936,
+      70.787,
+      "This fall was limited to a handful of large stocks —"
+    ],
+    [
+      70.787,
+      73.4,
+      "it was not a broad sell-off."
+    ],
+    [
+      73.9,
+      75.71,
+      "So why did it fall?"
+    ],
+    [
+      75.71,
+      76.949,
+      "Four reasons."
+    ],
+    [
+      76.949,
+      82.188,
+      "The most important — crude oil and Middle East tension."
+    ],
+    [
+      82.188,
+      87.904,
+      "Yemen's Houthis threatened a naval blockade on Saudi Arabia."
+    ],
+    [
+      87.904,
+      93.906,
+      "That raised fears over oil supply through the Strait of Hormuz,"
+    ],
+    [
+      93.906,
+      99.908,
+      "pushing Brent crude to between eighty-eight and ninety dollars."
+    ],
+    [
+      99.908,
+      103.338,
+      "Since India imports most of its oil,"
+    ],
+    [
+      103.338,
+      107.053,
+      "this pressures inflation and the rupee."
+    ],
+    [
+      107.053,
+      110.007,
+      "Second — weakness in IT stocks."
+    ],
+    [
+      110.007,
+      114.198,
+      "TCS and Infosys each fell about one percent."
+    ],
+    [
+      114.198,
+      117.819,
+      "Third — PSU banks, HDFC Bank, and SBI."
+    ],
+    [
+      117.819,
+      122.677,
+      "These high-weightage stocks dragged the Nifty down."
+    ],
+    [
+      122.677,
+      127.345,
+      "Fourth — foreign institutions stayed net sellers,"
+    ],
+    [
+      127.345,
+      131.442,
+      "amid a risk-off mood across global markets."
+    ],
+    [
+      131.942,
+      137.361,
+      "Now the biggest losers today, and the reasons behind them."
+    ],
+    [
+      137.361,
+      138.668,
+      "First — Cipla."
+    ],
+    [
+      138.668,
+      143.34,
+      "The worst Nifty performer, down about two percent."
+    ],
+    [
+      143.34,
+      149.132,
+      "Pharma and healthcare stocks were weak across the board today."
+    ],
+    [
+      149.132,
+      153.149,
+      "Second — Doctor Reddy's and Max Healthcare,"
+    ],
+    [
+      153.149,
+      156.139,
+      "both down more than one percent."
+    ],
+    [
+      156.139,
+      158.381,
+      "Third — TCS and Infosys."
+    ],
+    [
+      158.381,
+      162.491,
+      "These IT giants each fell about one percent,"
+    ],
+    [
+      162.491,
+      166.789,
+      "on weak global tech sentiment and rupee moves."
+    ],
+    [
+      166.789,
+      169.311,
+      "Fourth — HDFC Bank and SBI."
+    ],
+    [
+      169.311,
+      174.449,
+      "Because these carry the highest weightage in the index,"
+    ],
+    [
+      174.449,
+      179.214,
+      "even a small fall pulled the Nifty down noticeably."
+    ],
+    [
+      179.714,
+      184.313,
+      "Let's look at today's sector scoreboard — who fell,"
+    ],
+    [
+      184.313,
+      185.486,
+      "and who rose?"
+    ],
+    [
+      185.486,
+      189.995,
+      "On the losing side — Nifty PSU Bank fell the most,"
+    ],
+    [
+      189.995,
+      195.135,
+      "followed by Nifty IT under pressure from TCS and Infosys."
+    ],
+    [
+      195.135,
+      199.284,
+      "FMCG stocks also saw selling in the afternoon."
+    ],
+    [
+      199.284,
+      204.785,
+      "On the winning side — the Nifty Chemical index rose the most,"
+    ],
+    [
+      204.785,
+      206.498,
+      "followed by Cement."
+    ],
+    [
+      206.498,
+      208.753,
+      "When there's uncertainty,"
+    ],
+    [
+      208.753,
+      212.901,
+      "investors rotate into these defensive sectors."
+    ],
+    [
+      212.901,
+      217.05,
+      "So while IT and banks fell, chemicals, cement,"
+    ],
+    [
+      217.05,
+      218.583,
+      "and midcaps rose."
+    ],
+    [
+      218.583,
+      224.084,
+      "This is sector rotation — not a collapse of the whole market."
+    ],
+    [
+      224.584,
+      228.516,
+      "Here's the most important lesson from today —"
+    ],
+    [
+      228.516,
+      231.574,
+      "why does crude oil move the market?"
+    ],
+    [
+      231.574,
+      235.855,
+      "Many people think crude prices don't affect them."
+    ],
+    [
+      235.855,
+      240.66,
+      "But India imports about eighty-five percent of its oil."
+    ],
+    [
+      240.66,
+      244.592,
+      "When crude rises, the import bill, inflation,"
+    ],
+    [
+      244.592,
+      247.737,
+      "and pressure on the rupee all go up."
+    ],
+    [
+      247.737,
+      251.494,
+      "But crude doesn't drag every stock equally."
+    ],
+    [
+      251.494,
+      256.387,
+      "For paints, airlines, and auto companies it's bad news —"
+    ],
+    [
+      256.387,
+      258.833,
+      "crude is their raw material."
+    ],
+    [
+      258.833,
+      263.813,
+      "But for oil producers like ONGC, it's actually good news."
+    ],
+    [
+      263.813,
+      268.706,
+      "And one more key point — this isn't India's own problem."
+    ],
+    [
+      268.706,
+      271.24,
+      "A global geopolitical event —"
+    ],
+    [
+      271.24,
+      276.132,
+      "the Houthis and the Strait of Hormuz — moved our market."
+    ],
+    [
+      276.132,
+      279.802,
+      "Markets are always connected to the world."
+    ],
+    [
+      280.302,
+      282.659,
+      "Five lessons from today."
+    ],
+    [
+      282.659,
+      287.571,
+      "One — even on a second down day, most stocks rose."
+    ],
+    [
+      287.571,
+      291.304,
+      "This was a narrow, large-cap-led fall."
+    ],
+    [
+      291.304,
+      291.795,
+      "Two —"
+    ],
+    [
+      291.795,
+      297.885,
+      "crude near ninety dollars raises inflation and rupee pressure."
+    ],
+    [
+      297.885,
+      299.653,
+      "Keep an eye on it."
+    ],
+    [
+      299.653,
+      305.448,
+      "Three — while IT and banks fell, chemicals and cement rose."
+    ],
+    [
+      305.448,
+      307.904,
+      "This is sector rotation —"
+    ],
+    [
+      307.904,
+      311.833,
+      "money moving from one sector to another."
+    ],
+    [
+      311.833,
+      312.423,
+      "Four —"
+    ],
+    [
+      312.423,
+      318.906,
+      "global news like the Houthis and Hormuz directly moves our market."
+    ],
+    [
+      318.906,
+      322.049,
+      "Watch the world, not just India."
+    ],
+    [
+      322.049,
+      325.291,
+      "Five — for regular SIP investors,"
+    ],
+    [
+      325.291,
+      331.086,
+      "one red day like this is just noise, not a long-term trend."
+    ],
+    [
+      331.086,
+      332.756,
+      "Don't panic-sell."
+    ],
+    [
+      333.256,
+      336.237,
+      "July twenty-first, at a glance."
+    ],
+    [
+      336.237,
+      343.257,
+      "The Sensex fell two hundred thirty-eight points and the Nifty fifty-one —"
+    ],
+    [
+      343.257,
+      345.18,
+      "the second day down."
+    ],
+    [
+      345.18,
+      346.238,
+      "The cause —"
+    ],
+    [
+      346.238,
+      351.719,
+      "crude crossing ninety dollars on Houthi and Hormuz fears,"
+    ],
+    [
+      351.719,
+      357.392,
+      "weakness in IT and PSU banks, and foreign investor selling."
+    ],
+    [
+      357.392,
+      363.258,
+      "Cipla, Doctor Reddy's, TCS, Infosys, HDFC Bank, and SBI fell."
+    ],
+    [
+      363.258,
+      367.777,
+      "Chemicals, cement, midcaps, and smallcaps rose."
+    ],
+    [
+      367.777,
+      373.643,
+      "But breadth was positive — this was a narrow large-cap shock,"
+    ],
+    [
+      373.643,
+      375.47,
+      "not a market crash."
+    ],
+    [
+      375.47,
+      378.836,
+      "One red day isn't the whole story —"
+    ],
+    [
+      378.836,
+      382.778,
+      "long-term discipline is what really wins."
+    ],
+    [
+      382.778,
+      387.778,
+      "This information is aggregated from public sources —"
+    ],
+    [
+      387.778,
+      391.721,
+      "for analysis only, not investment advice."
+    ],
+    [
+      391.721,
+      396.433,
+      "Please consult an expert before making decisions."
+    ],
+    [
+      396.433,
+      398.356,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/mw21e.wav",
+      "volume": 1.0
+    }
+  }
+}

@@ -1,0 +1,409 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch14-classification_div",
+   "type": "cv_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 18.488,
+   "props": {
+    "n": 5,
+    "title": "The Core Tasks",
+    "sub": "classify \u00b7 detect \u00b7 segment \u00b7 recognize",
+    "color": "#34D399",
+    "dur": 18.988
+   }
+  },
+  {
+   "id": "cv-ch14-classification_classify",
+   "type": "cv_classify",
+   "in_seconds": 18.988,
+   "out_seconds": 151.137,
+   "props": {
+    "dur": 132.649
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.718,
+   "Part five."
+  ],
+  [
+   0.718,
+   1.794,
+   "The core tasks."
+  ],
+  [
+   2.426,
+   5.297,
+   "We have built an engine \u2014 a network"
+  ],
+  [
+   5.297,
+   7.091,
+   "that turns pixels into meaning."
+  ],
+  [
+   7.091,
+   9.962,
+   "Now let's point it at the real jobs"
+  ],
+  [
+   9.962,
+   11.038,
+   "of computer vision."
+  ],
+  [
+   11.67,
+   13.823,
+   "Finding what is in an image,"
+  ],
+  [
+   13.823,
+   14.899,
+   "and exactly where."
+  ],
+  [
+   14.899,
+   17.77,
+   "It all begins with the simplest task of"
+  ],
+  [
+   17.77,
+   18.488,
+   "them all."
+  ],
+  [
+   18.988,
+   19.372,
+   "Classification."
+  ],
+  [
+   19.372,
+   20.525,
+   "One image in,"
+  ],
+  [
+   20.525,
+   21.678,
+   "one answer out."
+  ],
+  [
+   21.678,
+   24.751,
+   "It is the task we already solved in"
+  ],
+  [
+   24.751,
+   25.135,
+   "code,"
+  ],
+  [
+   25.135,
+   28.209,
+   "so let's look at what is really happening."
+  ],
+  [
+   28.841,
+   31.914,
+   "The picture flows into the backbone \u2014 the"
+  ],
+  [
+   31.914,
+   33.067,
+   "C N N,"
+  ],
+  [
+   33.067,
+   36.141,
+   "or a transformer \u2014 the very engine we"
+  ],
+  [
+   36.141,
+   37.294,
+   "just built together."
+  ],
+  [
+   37.925,
+   40.999,
+   "The backbone's job is to turn raw pixels"
+  ],
+  [
+   40.999,
+   42.151,
+   "into a compact,"
+  ],
+  [
+   42.151,
+   45.225,
+   "rich set of features that capture what the"
+  ],
+  [
+   45.225,
+   45.994,
+   "image contains."
+  ],
+  [
+   46.625,
+   48.162,
+   "Then a final step,"
+  ],
+  [
+   48.162,
+   48.93,
+   "called softmax,"
+  ],
+  [
+   48.93,
+   52.004,
+   "converts those features into a probability\nfor every"
+  ],
+  [
+   52.004,
+   52.773,
+   "possible class."
+  ],
+  [
+   53.404,
+   56.094,
+   "Look at the bars on the right."
+  ],
+  [
+   56.094,
+   56.478,
+   "Cat,"
+  ],
+  [
+   56.478,
+   57.246,
+   "ninety-one percent."
+  ],
+  [
+   57.246,
+   57.631,
+   "Dog,"
+  ],
+  [
+   57.631,
+   58.015,
+   "six."
+  ],
+  [
+   58.015,
+   58.399,
+   "Fox,"
+  ],
+  [
+   58.399,
+   58.783,
+   "two."
+  ],
+  [
+   58.783,
+   59.167,
+   "Rabbit,"
+  ],
+  [
+   59.167,
+   59.552,
+   "one."
+  ],
+  [
+   60.183,
+   63.257,
+   "Notice they always add up to one hundred"
+  ],
+  [
+   63.257,
+   63.641,
+   "percent."
+  ],
+  [
+   64.273,
+   67.346,
+   "The model is not certain \u2014 it is"
+  ],
+  [
+   67.346,
+   69.652,
+   "spreading its confidence across the\noptions,"
+  ],
+  [
+   69.652,
+   72.726,
+   "and here it is putting almost all of"
+  ],
+  [
+   72.726,
+   73.878,
+   "it on cat."
+  ],
+  [
+   74.51,
+   76.431,
+   "We take the top one,"
+  ],
+  [
+   76.431,
+   78.352,
+   "and that is our prediction."
+  ],
+  [
+   78.983,
+   79.368,
+   "Now,"
+  ],
+  [
+   79.368,
+   82.441,
+   "a subtle but important point about how we"
+  ],
+  [
+   82.441,
+   83.21,
+   "grade this."
+  ],
+  [
+   83.841,
+   86.915,
+   "Sometimes we use top-one accuracy \u2014 was\nthe"
+  ],
+  [
+   86.915,
+   88.836,
+   "single best guess exactly right?"
+  ],
+  [
+   89.468,
+   92.542,
+   "But often we use top-five accuracy \u2014 was"
+  ],
+  [
+   92.542,
+   95.615,
+   "the correct answer anywhere in the model's\ntop"
+  ],
+  [
+   95.615,
+   96.384,
+   "five guesses?"
+  ],
+  [
+   97.015,
+   98.552,
+   "Why be so lenient?"
+  ],
+  [
+   98.552,
+   100.857,
+   "Because ImageNet has a thousand classes,"
+  ],
+  [
+   100.857,
+   103.931,
+   "including a hundred breeds of dog that\neven"
+  ],
+  [
+   103.931,
+   106.621,
+   "a human would struggle to tell apart."
+  ],
+  [
+   107.252,
+   110.326,
+   "Top-five is a fairer test of whether the"
+  ],
+  [
+   110.326,
+   112.247,
+   "model basically understood the image."
+  ],
+  [
+   112.879,
+   115.952,
+   "And that spread of confidence across\nclasses is"
+  ],
+  [
+   115.952,
+   119.026,
+   "genuinely useful \u2014 a model that says\nfifty-one"
+  ],
+  [
+   119.026,
+   122.1,
+   "percent should be trusted very differently\nfrom one"
+  ],
+  [
+   122.1,
+   123.252,
+   "that says ninety-nine."
+  ],
+  [
+   123.884,
+   125.037,
+   "This looks humble,"
+  ],
+  [
+   125.037,
+   126.958,
+   "but do not underestimate it."
+  ],
+  [
+   126.958,
+   129.647,
+   "It is the foundation for everything else."
+  ],
+  [
+   130.279,
+   133.353,
+   "Quality control on a factory line is\nclassification."
+  ],
+  [
+   133.353,
+   134.889,
+   "Content moderation is classification."
+  ],
+  [
+   134.889,
+   137.579,
+   "Sorting medical images for triage is\nclassification."
+  ],
+  [
+   138.211,
+   141.284,
+   "And most importantly of all \u2014 that same"
+  ],
+  [
+   141.284,
+   144.358,
+   "backbone lives inside every harder task we\nare"
+  ],
+  [
+   144.358,
+   145.511,
+   "about to meet."
+  ],
+  [
+   146.142,
+   146.911,
+   "Master classification,"
+  ],
+  [
+   146.911,
+   149.984,
+   "and you have mastered the engine that\ndrives"
+  ],
+  [
+   149.984,
+   151.137,
+   "the whole field."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch14-classification.wav",
+   "volume": 1.0
+  }
+ }
+}

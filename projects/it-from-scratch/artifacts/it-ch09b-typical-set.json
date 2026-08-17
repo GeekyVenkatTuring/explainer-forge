@@ -1,0 +1,351 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch09b-typical-set_aep",
+   "type": "it_aep",
+   "in_seconds": 0.0,
+   "out_seconds": 137.45,
+   "props": {
+    "dur": 137.95
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.882,
+   "Let's answer a question we have been circling."
+  ],
+  [
+   2.882,
+   5.404,
+   "Why is the entropy the compression limit?"
+  ],
+  [
+   5.404,
+   7.565,
+   "What is really going on underneath?"
+  ],
+  [
+   8.197,
+   11.079,
+   "The answer is one of the most beautiful"
+  ],
+  [
+   11.079,
+   13.961,
+   "ideas in the whole theory \u2014 the typical"
+  ],
+  [
+   13.961,
+   14.321,
+   "set."
+  ],
+  [
+   14.953,
+   17.834,
+   "Imagine flipping a biased coin \u2014 eighty percent"
+  ],
+  [
+   17.834,
+   20.716,
+   "heads \u2014 one hundred times in a row."
+  ],
+  [
+   21.348,
+   24.23,
+   "How many different sequences could you possibly\nget?"
+  ],
+  [
+   24.23,
+   24.59,
+   "Two,"
+  ],
+  [
+   24.59,
+   26.391,
+   "raised to the hundredth power."
+  ],
+  [
+   26.391,
+   29.273,
+   "An astronomical number \u2014 far more than the"
+  ],
+  [
+   29.273,
+   30.714,
+   "atoms in your body."
+  ],
+  [
+   31.346,
+   33.147,
+   "But here is the thing."
+  ],
+  [
+   33.147,
+   36.029,
+   "You will almost never see the vast majority"
+  ],
+  [
+   36.029,
+   36.75,
+   "of them."
+  ],
+  [
+   36.75,
+   39.632,
+   "A run of a hundred straight tails is"
+  ],
+  [
+   39.632,
+   40.352,
+   "technically possible,"
+  ],
+  [
+   40.352,
+   43.234,
+   "but you would wait longer than the age"
+  ],
+  [
+   43.234,
+   45.396,
+   "of the universe to witness it."
+  ],
+  [
+   46.027,
+   48.549,
+   "The sequences you actually get all look,"
+  ],
+  [
+   48.549,
+   49.63,
+   "in a sense,"
+  ],
+  [
+   49.63,
+   49.99,
+   "alike."
+  ],
+  [
+   49.99,
+   52.872,
+   "They have roughly eighty heads and twenty tails,"
+  ],
+  [
+   52.872,
+   53.953,
+   "in some order."
+  ],
+  [
+   54.584,
+   56.746,
+   "These are called the typical sequences."
+  ],
+  [
+   56.746,
+   59.628,
+   "And there is a stunning fact about them."
+  ],
+  [
+   60.259,
+   63.141,
+   "The number of typical sequences is not two"
+  ],
+  [
+   63.141,
+   64.222,
+   "to the hundred."
+  ],
+  [
+   64.222,
+   65.663,
+   "It is roughly two,"
+  ],
+  [
+   65.663,
+   68.545,
+   "raised to the power of n times the"
+  ],
+  [
+   68.545,
+   69.626,
+   "entropy \u2014 here,"
+  ],
+  [
+   69.626,
+   71.427,
+   "about two to the seventy-second."
+  ],
+  [
+   72.058,
+   74.94,
+   "That is a vanishingly tiny fraction of all"
+  ],
+  [
+   74.94,
+   75.661,
+   "the possibilities."
+  ],
+  [
+   76.292,
+   79.174,
+   "And yet \u2014 this is the magic \u2014"
+  ],
+  [
+   79.174,
+   82.056,
+   "those few typical sequences together hold\nessentially all"
+  ],
+  [
+   82.056,
+   83.137,
+   "of the probability."
+  ],
+  [
+   83.137,
+   86.019,
+   "Almost every sequence reality will ever hand you"
+  ],
+  [
+   86.019,
+   87.82,
+   "lives inside that small set."
+  ],
+  [
+   88.452,
+   90.613,
+   "This is the asymptotic equipartition property,"
+  ],
+  [
+   90.613,
+   93.135,
+   "and it delivers compression on a plate."
+  ],
+  [
+   93.767,
+   96.649,
+   "We do not need codes for all two-to-the-hundred"
+  ],
+  [
+   96.649,
+   97.009,
+   "sequences."
+  ],
+  [
+   97.009,
+   99.891,
+   "We can simply ignore the atypical ones \u2014"
+  ],
+  [
+   99.891,
+   101.332,
+   "they practically never happen."
+  ],
+  [
+   101.963,
+   104.125,
+   "We just number the typical set."
+  ],
+  [
+   104.125,
+   107.007,
+   "And labelling two-to-the-n-times-H items takes\nexactly n times"
+  ],
+  [
+   107.007,
+   107.727,
+   "H bits."
+  ],
+  [
+   108.359,
+   109.44,
+   "There it is."
+  ],
+  [
+   109.44,
+   110.16,
+   "The entropy,"
+  ],
+  [
+   110.16,
+   110.881,
+   "made concrete."
+  ],
+  [
+   110.881,
+   113.763,
+   "Shannon's compression limit is really a statement\nabout"
+  ],
+  [
+   113.763,
+   116.645,
+   "which sequences the world actually bothers to\nproduce."
+  ],
+  [
+   117.276,
+   120.158,
+   "And this is why compression only truly pays"
+  ],
+  [
+   120.158,
+   121.599,
+   "off over long messages."
+  ],
+  [
+   121.599,
+   123.04,
+   "For a single flip,"
+  ],
+  [
+   123.04,
+   124.841,
+   "there is nothing to exploit."
+  ],
+  [
+   124.841,
+   127.003,
+   "But stretch to thousands of symbols,"
+  ],
+  [
+   127.003,
+   128.804,
+   "and the typical set sharpens,"
+  ],
+  [
+   128.804,
+   130.245,
+   "the atypical fades away,"
+  ],
+  [
+   130.245,
+   133.127,
+   "and real files collapse toward their entropy \u2014"
+  ],
+  [
+   133.127,
+   133.487,
+   "reliably,"
+  ],
+  [
+   133.487,
+   134.208,
+   "every time."
+  ],
+  [
+   134.208,
+   136.009,
+   "The law of large numbers,"
+  ],
+  [
+   136.009,
+   137.45,
+   "quietly doing the work."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch09b-typical-set.wav",
+   "volume": 1.0
+  }
+ }
+}

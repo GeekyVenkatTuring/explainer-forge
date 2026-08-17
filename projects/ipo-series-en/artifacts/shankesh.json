@@ -1,0 +1,914 @@
+{
+  "cuts": [
+    {
+      "id": "shankesh_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 27.476,
+      "props": {
+        "title": "Shankesh Jewellers IPO",
+        "sub": "B2B handcrafted gold jewellery · ₹367.18 Cr · 18–20 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 27.976
+      }
+    },
+    {
+      "id": "shankesh_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 27.976,
+      "out_seconds": 71.05,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Shankesh Jewellers",
+        "color": "#FB923C",
+        "items": [
+          {
+            "emoji": "💛",
+            "k": "B2B handcrafted gold jewellery",
+            "v": "Designs, sources and supplies customised, handcrafted 22- and 18-karat gold jewellery — mainly to other businesses",
+            "chip": "WHOLESALE"
+          },
+          {
+            "emoji": "🪶",
+            "k": "Asset-light — no in-house factory",
+            "v": "Doesn't manufacture itself; works through a network of 72 skilled karigars/jobworkers while controlling design & quality",
+            "chip": "ASSET-LIGHT"
+          },
+          {
+            "emoji": "🏙️",
+            "k": "Mumbai-based, since 2005",
+            "v": "Retains control over design, sourcing, quality checks, finishing and delivery — a design-and-supply model",
+            "chip": "MUMBAI"
+          }
+        ],
+        "dur": 43.574
+      }
+    },
+    {
+      "id": "shankesh_fin",
+      "type": "sm_stats",
+      "in_seconds": 71.55,
+      "out_seconds": 109.872,
+      "props": {
+        "kicker": "FINANCIALS",
+        "title": "The Headline Numbers",
+        "stats": [
+          {
+            "label": "Total income FY26",
+            "to": 1631,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "₹1,630.93 Cr (FY25 ₹1,403.94 Cr)"
+          },
+          {
+            "label": "Net profit FY26",
+            "to": 107,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "₹106.68 Cr · +164.6% YoY"
+          },
+          {
+            "label": "Return on equity",
+            "to": 50.9,
+            "prefix": "",
+            "suffix": "%",
+            "decimals": 1,
+            "color": "#FB923C",
+            "sub": "exceptional · ROCE 41.57%"
+          }
+        ],
+        "note": "Profit exploded — up 164.6% to ₹106.68 Cr — with a striking 50.94% ROE, helped by the asset-light model.",
+        "dur": 38.822
+      }
+    },
+    {
+      "id": "shankesh_threestmt",
+      "type": "sm_financials",
+      "in_seconds": 110.372,
+      "out_seconds": 154.718,
+      "props": {
+        "kicker": "FINANCIALS · 3 STATEMENTS",
+        "title": "Income, Balance Sheet & Cash Flow",
+        "color": "#FB923C",
+        "cols": [
+          {
+            "name": "Income Statement",
+            "icon": "📊",
+            "accent": "#34D399",
+            "rows": [
+              {
+                "label": "Total income FY26",
+                "val": "₹1,630.93 Cr",
+                "sub": "FY24→26 ₹1,061.91 → ₹1,630.93"
+              },
+              {
+                "label": "Net profit FY26",
+                "val": "₹106.68 Cr",
+                "hi": true,
+                "sub": "FY25 ₹40.31 Cr · +164.6%"
+              },
+              {
+                "label": "PAT margin",
+                "val": "6.54%",
+                "sub": "better than most jewellers"
+              }
+            ]
+          },
+          {
+            "name": "Balance Sheet",
+            "icon": "🏦",
+            "accent": "#FB923C",
+            "rows": [
+              {
+                "label": "ROE / ROCE",
+                "val": "50.9% / 41.6%",
+                "hi": true,
+                "sub": "asset-light → high returns"
+              },
+              {
+                "label": "Total borrowings",
+                "val": "₹167.30 Cr",
+                "sub": "₹242.57 Cr by Dec-25"
+              },
+              {
+                "label": "Model",
+                "val": "Asset-light",
+                "sub": "no in-house factory"
+              }
+            ]
+          },
+          {
+            "name": "Cash Flow",
+            "icon": "💵",
+            "accent": "#38BDF8",
+            "rows": [
+              {
+                "label": "Fresh issue inflow",
+                "val": "₹274.18 Cr",
+                "sub": "into the company"
+              },
+              {
+                "label": "→ Repay borrowings",
+                "val": "₹158 Cr",
+                "hi": true,
+                "sub": "cuts interest cost"
+              },
+              {
+                "label": "→ Working capital",
+                "val": "₹38 Cr",
+                "sub": "CFO not disclosed; read RHP"
+              }
+            ]
+          }
+        ],
+        "note": "Strong income statement & high returns; the full cash-flow statement isn't in public summaries — read the RHP.",
+        "dur": 44.846
+      }
+    },
+    {
+      "id": "shankesh_issue",
+      "type": "sm_stats",
+      "in_seconds": 155.218,
+      "out_seconds": 185.668,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 367,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#FB923C",
+            "sub": "₹367.18 Cr · band ₹88–93"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 274,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "₹274.18 Cr · ~75% funds the business"
+          },
+          {
+            "label": "OFS (to promoters)",
+            "to": 93,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "₹93 Cr — Jain promoters part-sell"
+          }
+        ],
+        "note": "A healthy mix: about 75% is fresh money that funds the company; ~25% is a promoter sell-down.",
+        "dur": 30.95
+      }
+    },
+    {
+      "id": "shankesh_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 186.168,
+      "out_seconds": 217.53,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹274 Cr Funds",
+        "color": "#FB923C",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "₹158 Cr — repay borrowings",
+            "v": "The largest use cuts debt, lowering finance costs and de-risking a fast-growing business",
+            "chip": "DEBT"
+          },
+          {
+            "emoji": "💎",
+            "k": "₹38 Cr — working capital",
+            "v": "Funds gold inventory and order flow — the lifeblood of a design-and-supply jeweller",
+            "chip": "WC"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Balance — general corporate",
+            "v": "The remainder goes to general corporate purposes",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 31.862
+      }
+    },
+    {
+      "id": "shankesh_peers",
+      "type": "sm_iconcards",
+      "in_seconds": 218.03,
+      "out_seconds": 270.464,
+      "props": {
+        "kicker": "COMPETITORS · VALUATION",
+        "title": "How Is It Priced? A Wholesale Niche",
+        "color": "#FB923C",
+        "items": [
+          {
+            "emoji": "⚖️",
+            "k": "No clean listed twin",
+            "v": "Listed jewellers like Kalyan or Titan are consumer RETAIL brands; Shankesh is B2B, asset-light wholesale — a different model",
+            "chip": "NO PEER"
+          },
+          {
+            "emoji": "📈",
+            "k": "Growth & returns justify some premium",
+            "v": "+164.6% profit and a ~51% ROE are far above sector norms — but such explosive growth can be hard to repeat",
+            "chip": "HOT GROWTH"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Judge on margin & durability",
+            "v": "Ask whether a wholesale, jobworker-based model can sustain these margins as it scales — that's the real question",
+            "chip": "DURABILITY"
+          }
+        ],
+        "dur": 52.934
+      }
+    },
+    {
+      "id": "shankesh_verdict",
+      "type": "sm_myths",
+      "in_seconds": 270.964,
+      "out_seconds": 319.102,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "No clean listed peer to benchmark against",
+            "f": "Profit exploded +164.6%; ROE ~51%"
+          },
+          {
+            "m": "B2B/wholesale — lower margins, key-customer risk",
+            "f": "~75% fresh; asset-light, capital-efficient"
+          },
+          {
+            "m": "Can such fast growth be sustained?",
+            "f": "Fresh money cuts debt; ROCE ~42%"
+          }
+        ],
+        "dur": 48.638
+      }
+    },
+    {
+      "id": "shankesh_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 319.602,
+      "out_seconds": 358.018,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#FB923C",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = about ₹15,000 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 38.916
+      }
+    },
+    {
+      "id": "shankesh_recap",
+      "type": "sm_recap",
+      "in_seconds": 358.518,
+      "out_seconds": 419.782,
+      "props": {
+        "title": "Shankesh Jewellers IPO — at a Glance",
+        "items": [
+          "Business: B2B, asset-light handcrafted gold jewellery (Mumbai)",
+          "FY26: income ₹1,630.93 Cr, profit ₹106.68 Cr (+164.6%), ROE ~51%",
+          "₹367.18 Cr issue — ~75% fresh; mainly repays debt",
+          "No clean listed peer — judge on margin durability",
+          "Retail min ~₹15,000 · lists 25 Aug"
+        ],
+        "closer": "A capital-efficient, fast-growing wholesale jeweller — but with no clean peer and a model whose margins must prove durable. Read the RHP; decide for yourself.",
+        "dur": 61.764
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.743,
+      "Let's break down the Shankesh Jewellers I-P-O —"
+    ],
+    [
+      3.743,
+      9.318,
+      "a three hundred and sixty-seven crore mainboard issue with an unusual,"
+    ],
+    [
+      9.318,
+      14.256,
+      "asset-light business model and explosive recent profit growth."
+    ],
+    [
+      14.256,
+      17.919,
+      "We'll cover what it does, its full financials,"
+    ],
+    [
+      17.919,
+      22.299,
+      "where the money goes, how to think about its valuation,"
+    ],
+    [
+      22.299,
+      24.211,
+      "and whether it fits you."
+    ],
+    [
+      24.211,
+      27.476,
+      "This is education, not investment advice."
+    ],
+    [
+      27.976,
+      30.079,
+      "So what does Shankesh do?"
+    ],
+    [
+      30.079,
+      33.781,
+      "It designs, sources and supplies customised,"
+    ],
+    [
+      33.781,
+      38.66,
+      "handcrafted twenty-two and eighteen-karat gold jewellery —"
+    ],
+    [
+      38.66,
+      42.699,
+      "largely a business-to-business, wholesale model."
+    ],
+    [
+      42.699,
+      46.568,
+      "And here's the unusual part: it's asset-light."
+    ],
+    [
+      46.568,
+      49.261,
+      "It does not run its own factory."
+    ],
+    [
+      49.261,
+      55.402,
+      "Instead it works through a network of about seventy-two skilled karigars,"
+    ],
+    [
+      55.402,
+      60.197,
+      "or jobworkers, while keeping control of design, sourcing,"
+    ],
+    [
+      60.197,
+      62.048,
+      "quality and finishing."
+    ],
+    [
+      62.048,
+      66.086,
+      "It's Mumbai-based, founded in two thousand five."
+    ],
+    [
+      66.086,
+      71.05,
+      "So think of it as a design-and-supply house, not a factory."
+    ],
+    [
+      71.55,
+      75.843,
+      "Now the financials — and the profit growth is striking."
+    ],
+    [
+      75.843,
+      83.413,
+      "Total income rose to about one thousand six hundred and thirty-one crore in FY twenty twenty-six."
+    ],
+    [
+      83.413,
+      88.799,
+      "But look at profit: it surged over a hundred and sixty-four percent —"
+    ],
+    [
+      88.799,
+      92.857,
+      "from about forty crore to a hundred and seven crore."
+    ],
+    [
+      92.857,
+      95.433,
+      "And the returns are exceptional —"
+    ],
+    [
+      95.433,
+      98.711,
+      "a return on equity near fifty-one percent,"
+    ],
+    [
+      98.711,
+      102.379,
+      "and return on capital around forty-two percent."
+    ],
+    [
+      102.379,
+      105.345,
+      "That's the asset-light model at work —"
+    ],
+    [
+      105.345,
+      109.872,
+      "high returns because it doesn't tie up money in factories."
+    ],
+    [
+      110.372,
+      113.404,
+      "Let's put all three statements together."
+    ],
+    [
+      113.404,
+      121.364,
+      "The income statement shows income of about sixteen hundred crore and profit of a hundred and seven crore,"
+    ],
+    [
+      121.364,
+      124.623,
+      "on a healthy six and a half percent margin."
+    ],
+    [
+      124.623,
+      128.035,
+      "The balance sheet is where the model shines —"
+    ],
+    [
+      128.035,
+      131.067,
+      "return on equity near fifty-one percent,"
+    ],
+    [
+      131.067,
+      138.723,
+      "because it carries little more than about a hundred and sixty-seven crore of debt and no big factory."
+    ],
+    [
+      138.723,
+      141.073,
+      "On cash flow, the fresh money —"
+    ],
+    [
+      141.073,
+      145.015,
+      "about a hundred and fifty-eight crore — repays debt,"
+    ],
+    [
+      145.015,
+      148.426,
+      "and thirty-eight crore funds working capital."
+    ],
+    [
+      148.426,
+      153.581,
+      "The full operating cash-flow line isn't published in the summaries —"
+    ],
+    [
+      153.581,
+      154.718,
+      "read the R-H-P."
+    ],
+    [
+      155.218,
+      157.18,
+      "Where does your money go?"
+    ],
+    [
+      157.18,
+      161.025,
+      "Of the three hundred and sixty-seven crore issue,"
+    ],
+    [
+      161.025,
+      164.322,
+      "about two hundred and seventy-four crore —"
+    ],
+    [
+      164.322,
+      168.089,
+      "roughly seventy-five percent — is a fresh issue,"
+    ],
+    [
+      168.089,
+      170.365,
+      "money going into the company."
+    ],
+    [
+      170.365,
+      174.602,
+      "The remaining ninety-three crore is an Offer for Sale,"
+    ],
+    [
+      174.602,
+      178.526,
+      "where the Jain promoters sell part of their stake."
+    ],
+    [
+      178.526,
+      180.881,
+      "So it's a mostly-fresh issue —"
+    ],
+    [
+      180.881,
+      183.549,
+      "three-quarters funds the business."
+    ],
+    [
+      183.549,
+      185.668,
+      "That's a healthy structure."
+    ],
+    [
+      186.168,
+      188.706,
+      "What does the fresh money fund?"
+    ],
+    [
+      188.706,
+      193.374,
+      "The largest use — about a hundred and fifty-eight crore —"
+    ],
+    [
+      193.374,
+      194.848,
+      "repays borrowings,"
+    ],
+    [
+      194.848,
+      199.843,
+      "cutting finance costs and de-risking a fast-growing business."
+    ],
+    [
+      199.843,
+      203.937,
+      "Another thirty-eight crore funds working capital —"
+    ],
+    [
+      203.937,
+      206.394,
+      "gold inventory and order flow,"
+    ],
+    [
+      206.394,
+      210.16,
+      "the lifeblood of a design-and-supply jeweller."
+    ],
+    [
+      210.16,
+      214.091,
+      "And the rest goes to general corporate purposes."
+    ],
+    [
+      214.091,
+      217.53,
+      "A sensible, deleveraging use of the money."
+    ],
+    [
+      218.03,
+      220.819,
+      "So how is it priced against rivals?"
+    ],
+    [
+      220.819,
+      225.68,
+      "Here's the honest complication: there's no clean listed twin."
+    ],
+    [
+      225.68,
+      234.924,
+      "Big names like Kalyan or Titan are consumer retail brands with their own stores; Shankesh is a business-to-business,"
+    ],
+    [
+      234.924,
+      239.147,
+      "asset-light wholesaler — a genuinely different model,"
+    ],
+    [
+      239.147,
+      242.255,
+      "so a simple P/E comparison can mislead."
+    ],
+    [
+      242.255,
+      246.159,
+      "What you can say is that its growth and returns —"
+    ],
+    [
+      246.159,
+      249.586,
+      "profit up a hundred and sixty-four percent,"
+    ],
+    [
+      249.586,
+      252.614,
+      "a fifty-one percent return on equity —"
+    ],
+    [
+      252.614,
+      257.156,
+      "are far above sector norms, which justifies some premium."
+    ],
+    [
+      257.156,
+      261.061,
+      "But explosive growth like that is hard to repeat."
+    ],
+    [
+      261.061,
+      264.328,
+      "The real question is whether a wholesale,"
+    ],
+    [
+      264.328,
+      269.109,
+      "jobworker-based model can sustain these margins as it grows."
+    ],
+    [
+      269.109,
+      270.464,
+      "Judge it on that."
+    ],
+    [
+      270.964,
+      272.89,
+      "So — should you subscribe?"
+    ],
+    [
+      272.89,
+      275.259,
+      "The strengths are eye-catching —"
+    ],
+    [
+      275.259,
+      278.444,
+      "profit up a hundred and sixty-four percent,"
+    ],
+    [
+      278.444,
+      281.184,
+      "a fifty-one percent return on equity,"
+    ],
+    [
+      281.184,
+      284.369,
+      "an asset-light and capital-efficient model,"
+    ],
+    [
+      284.369,
+      289.33,
+      "and three-quarters of the issue is fresh money that also cuts debt."
+    ],
+    [
+      289.33,
+      292.145,
+      "The watch-outs are just as important —"
+    ],
+    [
+      292.145,
+      299.551,
+      "there's no clean listed peer to benchmark the price against; it's a business-to-business wholesaler,"
+    ],
+    [
+      299.551,
+      308.364,
+      "which brings thinner margins and key-customer risk; and you have to ask whether such explosive growth can be sustained."
+    ],
+    [
+      308.364,
+      310.585,
+      "The takeaway — a fast-growing,"
+    ],
+    [
+      310.585,
+      314.214,
+      "efficient niche business at a fair-looking price,"
+    ],
+    [
+      314.214,
+      317.621,
+      "but one that's harder to value and to predict."
+    ],
+    [
+      317.621,
+      319.102,
+      "Only you can decide."
+    ],
+    [
+      319.602,
+      323.174,
+      "Finally — how do you apply, and how much?"
+    ],
+    [
+      323.174,
+      329.097,
+      "Retail investors bid up to two lakh for a thirty-five percent quota,"
+    ],
+    [
+      329.097,
+      332.93,
+      "with allotment by lottery if oversubscribed."
+    ],
+    [
+      332.93,
+      337.634,
+      "H-N-Is bid above two lakh for a fifteen percent quota."
+    ],
+    [
+      337.634,
+      342.861,
+      "For Shankesh, at an eighty-eight to ninety-three rupee band,"
+    ],
+    [
+      342.861,
+      347.39,
+      "one lot works out to about fifteen thousand rupees —"
+    ],
+    [
+      347.39,
+      348.523,
+      "your minimum."
+    ],
+    [
+      348.523,
+      354.011,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      354.011,
+      358.018,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      358.518,
+      361.054,
+      "Let's recap Shankesh Jewellers."
+    ],
+    [
+      361.054,
+      362.281,
+      "An asset-light,"
+    ],
+    [
+      362.281,
+      367.761,
+      "business-to-business handcrafted-gold-jewellery house from Mumbai —"
+    ],
+    [
+      367.761,
+      371.769,
+      "profit exploded a hundred and sixty-four percent,"
+    ],
+    [
+      371.769,
+      375.204,
+      "with a fifty-one percent return on equity."
+    ],
+    [
+      375.204,
+      378.967,
+      "The issue is about seventy-five percent fresh,"
+    ],
+    [
+      378.967,
+      380.684,
+      "mainly repaying debt."
+    ],
+    [
+      380.684,
+      383.874,
+      "The catch is valuation and durability —"
+    ],
+    [
+      383.874,
+      386.246,
+      "there's no clean listed peer,"
+    ],
+    [
+      386.246,
+      391.89,
+      "and you must ask whether a wholesale model can sustain these margins."
+    ],
+    [
+      391.89,
+      396.143,
+      "The retail minimum is about fifteen thousand rupees."
+    ],
+    [
+      396.143,
+      400.07,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      400.07,
+      402.36,
+      "it is not investment advice,"
+    ],
+    [
+      402.36,
+      405.059,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      405.059,
+      408.167,
+      "and not a prediction of listing gains."
+    ],
+    [
+      408.167,
+      412.502,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      412.502,
+      418.146,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      418.146,
+      419.782,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/shankesh.wav",
+      "volume": 1.0
+    }
+  }
+}

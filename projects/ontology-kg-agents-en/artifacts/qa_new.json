@@ -1,0 +1,216 @@
+{
+ "cuts": [
+  {
+   "id": "roi",
+   "type": "kg_cards",
+   "in_seconds": 0.0,
+   "out_seconds": 30.0,
+   "props": {
+    "kicker": "WHAT THE TWIN IS WORTH",
+    "title": "Four payoffs that justify the build",
+    "color": "#A78BFA",
+    "cards": [
+     {
+      "head": "Faster incidents",
+      "emoji": "\u26a1",
+      "body": "Root cause in minutes, not hours \u2014 the RCA agent we build in part five.",
+      "tag": "MTTR"
+     },
+     {
+      "head": "Safer changes",
+      "emoji": "\ud83d\udee1\ufe0f",
+      "body": "Simulate blast radius before shipping \u2014 no more 2 a.m. surprises.",
+      "tag": "risk"
+     },
+     {
+      "head": "Instant onboarding",
+      "emoji": "\ud83e\udded",
+      "body": "New engineers ask the graph how the system fits together \u2014 and get a real answer.",
+      "tag": "ramp"
+     },
+     {
+      "head": "Trustworthy AI",
+      "emoji": "\ud83e\udd16",
+      "body": "A grounded world model is what lets an agent act without hallucinating.",
+      "tag": "agents"
+     }
+    ],
+    "foot": "Every payoff here is something a stakeholder can feel \u2014 that's how the project gets funded.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "decision",
+   "type": "kg_cards",
+   "in_seconds": 30.0,
+   "out_seconds": 60.0,
+   "props": {
+    "kicker": "WHY AGENTS NEED THIS \u00b7 THE DECISION-CENTRIC ONTOLOGY",
+    "title": "Palantir's insight: meaning isn't enough \u2014 model the action too",
+    "color": "#FBBF24",
+    "cards": [
+     {
+      "head": "Data",
+      "emoji": "\ud83d\udce6",
+      "body": "The objects and links \u2014 your report, query, table, and how they relate.",
+      "tag": "semantic"
+     },
+     {
+      "head": "Logic",
+      "emoji": "\ud83e\uddee",
+      "body": "Derived facts and business rules computed over the objects.",
+      "tag": "semantic"
+     },
+     {
+      "head": "Action",
+      "emoji": "\u26a1",
+      "body": "The typed, allowed operations \u2014 \u2018open a work item\u2019, \u2018page the owner\u2019.",
+      "tag": "kinetic"
+     },
+     {
+      "head": "Security",
+      "emoji": "\ud83d\udd12",
+      "body": "Who \u2014 human or agent \u2014 may see and do what, enforced at the meaning layer.",
+      "tag": "kinetic"
+     }
+    ],
+    "foot": "So: an ontology is the shared grammar \u2014 and it defines the safe verbs an agent is allowed to use.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "joins",
+   "type": "kg_compare",
+   "in_seconds": 60.0,
+   "out_seconds": 90.0,
+   "props": {
+    "kicker": "WHY NOT JUST SQL?",
+    "title": "Relationships are where relational databases hurt",
+    "color": "#22D3EE",
+    "left": {
+     "head": "SQL, many joins",
+     "sub": "relational",
+     "c": "#F87171",
+     "rows": [
+      "Every hop is another JOIN.",
+      "A 6-hop question = a 6-table join.",
+      "Queries get slow and unreadable fast.",
+      "Rigid schema changes ripple everywhere."
+     ]
+    },
+    "right": {
+     "head": "Graph traversal",
+     "sub": "native",
+     "c": "#22D3EE",
+     "rows": [
+      "A hop is just following an edge.",
+      "6 hops = a short, fast walk.",
+      "The query reads like the question.",
+      "New relationships just add edges."
+     ]
+    },
+    "foot": "Relational is great for rows. Graphs win the moment the question is about connections.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "context",
+   "type": "kg_cards",
+   "in_seconds": 90.0,
+   "out_seconds": 120.0,
+   "props": {
+    "kicker": "CONTEXT ENGINEERING",
+    "title": "The real skill: what you put in front of the model",
+    "color": "#F472B6",
+    "cards": [
+     {
+      "head": "The subgraph",
+      "emoji": "\ud83d\udd78\ufe0f",
+      "body": "Retrieve the small, relevant slice of the graph \u2014 not the whole thing, not random text.",
+      "tag": "retrieve"
+     },
+     {
+      "head": "The schema",
+      "emoji": "\ud83d\udcd0",
+      "body": "Give the model the ontology so it grounds its terms and writes valid queries.",
+      "tag": "ground"
+     },
+     {
+      "head": "Tools & memory",
+      "emoji": "\ud83e\uddf0",
+      "body": "Expose exactly the right MCP tools and recall past context \u2014 no more, no less.",
+      "tag": "scope"
+     }
+    ],
+    "foot": "Prompt engineering grew up into context engineering \u2014 and the graph is your best context source.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "patterns",
+   "type": "kg_cards",
+   "in_seconds": 120.0,
+   "out_seconds": 150.0,
+   "props": {
+    "kicker": "AGENT DESIGN PATTERNS",
+    "title": "Three loops worth knowing by name",
+    "color": "#F472B6",
+    "cards": [
+     {
+      "head": "ReAct",
+      "emoji": "\ud83d\udd01",
+      "body": "Reason, then act with a tool, then observe \u2014 and repeat. The workhorse loop.",
+      "tag": "reason+act"
+     },
+     {
+      "head": "Plan-and-execute",
+      "emoji": "\ud83d\uddfa\ufe0f",
+      "body": "Draft a full plan first, then run the steps \u2014 better for complex, multi-tool tasks.",
+      "tag": "plan"
+     },
+     {
+      "head": "Reflection",
+      "emoji": "\ud83d\udd0d",
+      "body": "The agent critiques its own output and retries \u2014 catching mistakes before you see them.",
+      "tag": "self-check"
+     }
+    ],
+    "foot": "LangGraph makes all three explicit as graphs of steps \u2014 pick the shape per task.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "dayinlife",
+   "type": "kg_cards",
+   "in_seconds": 150.0,
+   "out_seconds": 180.0,
+   "props": {
+    "kicker": "A DAY IN THE LIFE",
+    "title": "Three questions the living map answers for you",
+    "color": "#818CF8",
+    "cards": [
+     {
+      "head": "\u201cWhat breaks if\u2026?\u201d",
+      "emoji": "\ud83d\udca5",
+      "body": "Impact analysis before any change \u2014 the cascade simulation from part three.",
+      "tag": "change"
+     },
+     {
+      "head": "\u201cWhy is this wrong?\u201d",
+      "emoji": "\ud83d\udd0e",
+      "body": "Autonomous root cause across data, code, and logs \u2014 the traversal from part five.",
+      "tag": "incident"
+     },
+     {
+      "head": "\u201cHow does this work?\u201d",
+      "emoji": "\ud83e\udded",
+      "body": "A new hire asks the graph and gets the real architecture, not tribal knowledge.",
+      "tag": "onboard"
+     }
+    ],
+    "foot": "This is the \u2018use it every day\u2019 payoff: three threads of Slack become three answered questions.",
+    "dur": 30.0
+   }
+  }
+ ]
+}

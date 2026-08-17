@@ -1,0 +1,621 @@
+{
+ "cuts": [
+  {
+   "id": "sml-ch05-graph-engineering_divider",
+   "type": "sml_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 10.884,
+   "props": {
+    "n": 4,
+    "title": "Graph Engineering",
+    "sub": "the plumbing \u2014 building, validating and querying the graph at scale",
+    "color": "#34D399",
+    "layer": 3,
+    "dur": 11.384
+   }
+  },
+  {
+   "id": "sml-ch05-graph-engineering_disciplines",
+   "type": "sml_orbit",
+   "in_seconds": 11.384,
+   "out_seconds": 59.871,
+   "props": {
+    "kicker": "THE CRAFT",
+    "title": "What keeps a market graph trustworthy",
+    "color": "#34D399",
+    "hub": "Graph\nEngineering",
+    "items": [
+     {
+      "emoji": "\ud83d\udcd0",
+      "label": "Ontology & schema design"
+     },
+     {
+      "emoji": "\ud83c\udfd7\ufe0f",
+      "label": "Ingestion pipelines"
+     },
+     {
+      "emoji": "\ud83d\udd17",
+      "label": "Entity resolution (ISIN)"
+     },
+     {
+      "emoji": "\u2696\ufe0f",
+      "label": "Validation & freshness"
+     },
+     {
+      "emoji": "\ud83d\uddc2\ufe0f",
+      "label": "Provenance & versioning"
+     },
+     {
+      "emoji": "\ud83e\udde0",
+      "label": "Graph ML (peers, sectors)"
+     }
+    ],
+    "foot": "It's data engineering \u2014 but the product is trustworthy facts, and they must stay true.",
+    "dur": 48.987
+   }
+  },
+  {
+   "id": "sml-ch05-graph-engineering_validation",
+   "type": "sml_code",
+   "in_seconds": 60.371,
+   "out_seconds": 107.755,
+   "props": {
+    "kicker": "THE FRESHNESS GATE",
+    "title": "Stale or source-less data fails the load \u2014 automatically",
+    "color": "#34D399",
+    "lang": "shacl / ci",
+    "lines": [
+     "# on every ingest, before publish:",
+     "validate(candidate_graph, shapes)",
+     "",
+     "\u2717 PriceQuote(TCS) rejected",
+     "  \u2192 :asOf is 41 min old (limit 15)",
+     "\u2717 Metric(P/E) rejected",
+     "  \u2192 :source missing",
+     "LOAD BLOCKED \u00b7 bad facts never enter"
+    ],
+    "result": [
+     "1,842 facts",
+     "checked",
+     "2 rejected",
+     "graph stays clean"
+    ],
+    "caption": "the SHACL rules from part one, now guarding every single load",
+    "foot": "This gate is the anti-hallucination kit in code: the agent can only see facts that passed.",
+    "dur": 47.884
+   }
+  },
+  {
+   "id": "sml-ch05-graph-engineering_text2cypher",
+   "type": "sml_code",
+   "in_seconds": 108.255,
+   "out_seconds": 155.325,
+   "props": {
+    "kicker": "TEXT-TO-CYPHER",
+    "title": "The user asks in English; the ontology keeps the query honest",
+    "color": "#34D399",
+    "lang": "python + cypher",
+    "lines": [
+     "# user: \u201cwhat's Infosys P/E and last quarter?\u201d",
+     "cypher = llm.to_cypher(question, schema=ONTOLOGY)",
+     "",
+     "MATCH (c:Company {name:'Infosys'})",
+     "  -[:HAS_METRIC]->(pe:Metric {kind:'P/E'})",
+     "MATCH (c)-[:REPORTED]->(q:Quarter)",
+     "RETURN pe.value, pe.asOf, q  // validated"
+    ],
+    "result": [
+     "P/E 24.1",
+     "asOf 15:29",
+     "Q3 shown"
+    ],
+    "caption": "the ontology is the schema that stops the model inventing fields",
+    "foot": "Anyone can ask in plain English \u2014 and only valid, grounded queries ever run.",
+    "dur": 47.57
+   }
+  },
+  {
+   "id": "sml-ch05-graph-engineering_gnn",
+   "type": "sml_gnn",
+   "in_seconds": 155.825,
+   "out_seconds": 201.128,
+   "props": {
+    "foot": "Learn peer groups, sector clusters, and anomalies from the graph's own structure.",
+    "dur": 45.803
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.82,
+   "Part four."
+  ],
+  [
+   0.82,
+   2.871,
+   "Graph engineering \u2014 the plumbing."
+  ],
+  [
+   3.502,
+   6.783,
+   "Everything so far assumed the graph is correct"
+  ],
+  [
+   6.783,
+   7.603,
+   "and current."
+  ],
+  [
+   7.603,
+   9.654,
+   "That doesn't happen by accident."
+  ],
+  [
+   9.654,
+   10.884,
+   "It's a craft."
+  ],
+  [
+   11.384,
+   14.726,
+   "So what does keeping this graph trustworthy\nactually"
+  ],
+  [
+   14.726,
+   15.144,
+   "involve?"
+  ],
+  [
+   15.144,
+   15.979,
+   "Six things."
+  ],
+  [
+   16.611,
+   17.864,
+   "Designing the ontology."
+  ],
+  [
+   17.864,
+   20.788,
+   "Building the ingestion pipelines from every\nsource."
+  ],
+  [
+   21.42,
+   24.761,
+   "Entity resolution \u2014 keeping duplicates out with\nthe"
+  ],
+  [
+   24.761,
+   25.179,
+   "ISIN."
+  ],
+  [
+   25.811,
+   29.153,
+   "Validation and freshness \u2014 the SHACL rules that"
+  ],
+  [
+   29.153,
+   31.241,
+   "reject bad or stale data."
+  ],
+  [
+   31.873,
+   35.215,
+   "Provenance and versioning \u2014 so you can prove"
+  ],
+  [
+   35.215,
+   37.303,
+   "where every number came from,"
+  ],
+  [
+   37.303,
+   40.645,
+   "and what the graph believed at any point"
+  ],
+  [
+   40.645,
+   41.481,
+   "in time."
+  ],
+  [
+   42.112,
+   45.454,
+   "And graph machine learning \u2014 finding peers and"
+  ],
+  [
+   45.454,
+   47.961,
+   "sector relationships from the structure itself."
+  ],
+  [
+   48.592,
+   49.845,
+   "It's data engineering,"
+  ],
+  [
+   49.845,
+   53.187,
+   "but the product isn't a dashboard \u2014 it's"
+  ],
+  [
+   53.187,
+   54.023,
+   "trustworthy facts."
+  ],
+  [
+   54.023,
+   56.529,
+   "And they have to stay true,"
+  ],
+  [
+   56.529,
+   56.947,
+   "continuously."
+  ],
+  [
+   56.947,
+   59.871,
+   "Two of these deserve a closer look."
+  ],
+  [
+   60.371,
+   63.344,
+   "Remember the SHACL rule from part one \u2014"
+  ],
+  [
+   63.344,
+   66.317,
+   "every price needs a source and a fresh"
+  ],
+  [
+   66.317,
+   66.689,
+   "timestamp?"
+  ],
+  [
+   66.689,
+   69.291,
+   "Here is where it earns its keep."
+  ],
+  [
+   69.922,
+   71.409,
+   "On every single load,"
+  ],
+  [
+   71.409,
+   72.895,
+   "before anything is published,"
+  ],
+  [
+   72.895,
+   74.754,
+   "the candidate facts are checked."
+  ],
+  [
+   75.385,
+   75.757,
+   "Look:"
+  ],
+  [
+   75.757,
+   78.73,
+   "a TCS price is rejected because its timestamp"
+  ],
+  [
+   78.73,
+   80.217,
+   "is forty-one minutes old,"
+  ],
+  [
+   80.217,
+   81.703,
+   "past the fifteen-minute limit."
+  ],
+  [
+   81.703,
+   84.676,
+   "A P/E is rejected because it has no"
+  ],
+  [
+   84.676,
+   85.048,
+   "source."
+  ],
+  [
+   85.68,
+   87.538,
+   "Neither one enters the graph."
+  ],
+  [
+   88.169,
+   90.028,
+   "This is the anti-hallucination kit,"
+  ],
+  [
+   90.028,
+   91.886,
+   "but now in running code."
+  ],
+  [
+   91.886,
+   94.859,
+   "The agent can only ever see facts that"
+  ],
+  [
+   94.859,
+   97.832,
+   "passed this gate \u2014 so it is structurally"
+  ],
+  [
+   97.832,
+   100.805,
+   "incapable of quoting a stale or source-less\nnumber."
+  ],
+  [
+   101.437,
+   104.41,
+   "You don't ask the model to be careful."
+  ],
+  [
+   104.41,
+   107.383,
+   "You make it impossible for it to be"
+  ],
+  [
+   107.383,
+   107.755,
+   "careless."
+  ],
+  [
+   108.255,
+   111.258,
+   "How does a non-programmer ask the graph anything?"
+  ],
+  [
+   111.258,
+   111.633,
+   "Text-to-Cypher."
+  ],
+  [
+   112.264,
+   115.267,
+   "The user types in plain English \u2014 what's"
+  ],
+  [
+   115.267,
+   117.144,
+   "Infosys's P/E and last quarter?"
+  ],
+  [
+   117.775,
+   120.778,
+   "A language model translates it into a graph"
+  ],
+  [
+   120.778,
+   121.153,
+   "query,"
+  ],
+  [
+   121.153,
+   124.156,
+   "but \u2014 and this is the key \u2014"
+  ],
+  [
+   124.156,
+   127.158,
+   "it is handed the ontology as the schema."
+  ],
+  [
+   127.158,
+   129.41,
+   "So it knows the real fields:"
+  ],
+  [
+   129.41,
+   131.287,
+   "a company has a metric,"
+  ],
+  [
+   131.287,
+   133.163,
+   "a company reported a quarter."
+  ],
+  [
+   133.795,
+   135.671,
+   "It writes a correct query,"
+  ],
+  [
+   135.671,
+   138.674,
+   "which is validated against the ontology before it"
+  ],
+  [
+   138.674,
+   139.049,
+   "runs."
+  ],
+  [
+   139.049,
+   141.301,
+   "A hallucinated field name simply fails."
+  ],
+  [
+   141.933,
+   143.434,
+   "Back come the P/E,"
+  ],
+  [
+   143.434,
+   144.56,
+   "its as-of time,"
+  ],
+  [
+   144.56,
+   145.686,
+   "and the quarter."
+  ],
+  [
+   146.317,
+   149.32,
+   "Anyone can ask in plain language \u2014 and"
+  ],
+  [
+   149.32,
+   150.071,
+   "only valid,"
+  ],
+  [
+   150.071,
+   152.322,
+   "grounded queries ever touch the data."
+  ],
+  [
+   152.322,
+   155.325,
+   "This is the agent's single most important tool."
+  ],
+  [
+   155.825,
+   156.877,
+   "One more capability:"
+  ],
+  [
+   156.877,
+   158.63,
+   "learning from the graph's shape,"
+  ],
+  [
+   158.63,
+   160.033,
+   "using graph neural networks."
+  ],
+  [
+   160.664,
+   163.469,
+   "The idea is simple \u2014 each company learns"
+  ],
+  [
+   163.469,
+   164.521,
+   "from its neighbours:"
+  ],
+  [
+   164.521,
+   165.924,
+   "the sector it's in,"
+  ],
+  [
+   165.924,
+   167.677,
+   "the peers it trades with,"
+  ],
+  [
+   167.677,
+   169.43,
+   "the funds that hold it."
+  ],
+  [
+   170.061,
+   171.815,
+   "Watch the signal spread outward,"
+  ],
+  [
+   171.815,
+   173.568,
+   "one ring at a time."
+  ],
+  [
+   173.568,
+   174.97,
+   "After a few hops,"
+  ],
+  [
+   174.97,
+   177.775,
+   "each company holds a rich summary of its"
+  ],
+  [
+   177.775,
+   178.476,
+   "whole neighbourhood."
+  ],
+  [
+   179.108,
+   181.212,
+   "Why does that matter for stocks?"
+  ],
+  [
+   181.212,
+   184.017,
+   "It finds true peer groups \u2014 not just"
+  ],
+  [
+   184.017,
+   186.822,
+   "the obvious ones \u2014 spots companies behaving unlike"
+  ],
+  [
+   186.822,
+   187.523,
+   "their sector,"
+  ],
+  [
+   187.523,
+   189.978,
+   "and surfaces hidden links through shared\nownership."
+  ],
+  [
+   190.609,
+   190.96,
+   "So,"
+  ],
+  [
+   190.96,
+   192.362,
+   "to recap part four:"
+  ],
+  [
+   192.362,
+   193.414,
+   "graph engineering builds,"
+  ],
+  [
+   193.414,
+   193.765,
+   "validates,"
+  ],
+  [
+   193.765,
+   194.115,
+   "queries,"
+  ],
+  [
+   194.115,
+   195.869,
+   "and learns from the graph,"
+  ],
+  [
+   195.869,
+   198.674,
+   "so every layer above it can trust it."
+  ],
+  [
+   198.674,
+   201.128,
+   "Which brings us to the agent itself."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "sml/sml-ch05-graph-engineering.wav",
+   "volume": 1.0
+  }
+ }
+}

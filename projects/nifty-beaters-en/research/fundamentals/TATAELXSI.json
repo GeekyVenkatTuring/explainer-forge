@@ -1,0 +1,102 @@
+{
+ "ticker": "TATAELXSI",
+ "scraped_at": "2026-08-14T15:28:49",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 23484.0,
+ "current_price": 3770.0,
+ "pe": 230.0,
+ "book_value": 45.5,
+ "dividend_yield_pct": 1.99,
+ "roce_pct": 60.0,
+ "roe_pct": 39.3,
+ "face_value": 10.0,
+ "high": 5950.0,
+ "sales_growth": {
+  "5 Years": 16.0,
+  "3 Years": 43.0,
+  "TTM": 41.0
+ },
+ "profit_growth": {
+  "10 Years": 17.0,
+  "5 Years": -3.0,
+  "3 Years": -19.0,
+  "1 Year": -34.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 146.0,
+  "Expenses&nbsp; +": 123.0,
+  "Operating Profit": 22.0,
+  "OPM %": 15.0,
+  "Other Income&nbsp; +": -2.0,
+  "Interest": 1.0,
+  "Depreciation": 5.0,
+  "Profit before tax": 14.0,
+  "Tax %": 25.0,
+  "Net Profit&nbsp; +": 8.0,
+  "EPS in Rs": 1.33
+ },
+ "price_cagr": {
+  "5 Years": 26.0,
+  "3 Years": 31.0,
+  "Last Year": 39.0
+ },
+ "quarters": {
+  "periods": [
+   "Mar 2012",
+   "Jun 2012",
+   "Sep 2012",
+   "Dec 2012",
+   "Mar 2013",
+   "Jun 2013",
+   "Sep 2013",
+   "Dec 2013",
+   "Mar 2014",
+   "Jun 2014",
+   "Sep 2014",
+   "Dec 2014",
+   "Mar 2015"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "15%",
+   "9%",
+   "13%",
+   "11%",
+   "14%",
+   "8%",
+   "17%",
+   "22%",
+   "22%",
+   "20%",
+   "20%",
+   "23%",
+   "20%"
+  ],
+  "eps": [
+   "1.33",
+   "0.42",
+   "0.29",
+   "1.40",
+   "1.31",
+   "1.43",
+   "3.20",
+   "3.46",
+   "3.51",
+   "3.34",
+   "3.79",
+   "4.46",
+   "4.79"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 30.8%",
+  "Company has been maintaining a healthy dividend payout of 48.5%"
+ ],
+ "cons": [
+  "Stock is trading at 82.7 times its book value"
+ ]
+}

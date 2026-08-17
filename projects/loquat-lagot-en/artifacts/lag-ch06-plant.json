@@ -1,0 +1,743 @@
+{
+ "cuts": [
+  {
+   "id": "lag-ch06-plant_div",
+   "type": "lag_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 13.748,
+   "props": {
+    "n": 6,
+    "title": "Planting the orchard",
+    "sub": "six to seven metres, or regret",
+    "color": "#4ECDC4",
+    "dur": 14.248
+   }
+  },
+  {
+   "id": "lag-ch06-plant_space",
+   "type": "lag_orchard",
+   "in_seconds": 14.248,
+   "out_seconds": 50.958,
+   "props": {
+    "dur": 37.21
+   }
+  },
+  {
+   "id": "lag-ch06-plant_pits",
+   "type": "lag_pipe",
+   "in_seconds": 51.458,
+   "out_seconds": 93.544,
+   "props": {
+    "kicker": "ESTABLISHMENT PIPE",
+    "title": "Plough, pit, plant, stake, water",
+    "foot": "A metre pit is cheaper than a dead graft.",
+    "nodes": [
+     {
+      "label": "Plough",
+      "sub": "Fine tilth, level",
+      "c": "leaf"
+     },
+     {
+      "label": "Pit 1 m",
+      "sub": "FYM + topsoil",
+      "c": "cool"
+     },
+     {
+      "label": "Plant",
+      "sub": "Union above soil",
+      "c": "fruit"
+     },
+     {
+      "label": "Stake",
+      "sub": "Wind insurance",
+      "c": "risk"
+     },
+     {
+      "label": "Water",
+      "sub": "Then mulch",
+      "c": "cool"
+     }
+    ],
+    "dur": 42.586
+   }
+  },
+  {
+   "id": "lag-ch06-plant_soil",
+   "type": "lag_cards",
+   "in_seconds": 94.044,
+   "out_seconds": 134.234,
+   "props": {
+    "kicker": "SOIL",
+    "title": "Drainage first, texture second",
+    "cols": 3,
+    "foot": "Waterlogged loquat is a short story.",
+    "items": [
+     {
+      "label": "Sandy loam",
+      "sub": "The textbook home. Roots breathe.",
+      "c": "leaf"
+     },
+     {
+      "label": "Never stagnant",
+      "sub": "Raise beds or skip the crop.",
+      "c": "risk"
+     },
+     {
+      "label": "FYM every year",
+      "sub": "Especially once bearing starts. Leaves and fruit both demand it.",
+      "c": "fruit"
+     }
+    ],
+    "dur": 40.69
+   }
+  },
+  {
+   "id": "lag-ch06-plant_inter",
+   "type": "lag_cards",
+   "in_seconds": 134.734,
+   "out_seconds": 168.612,
+   "props": {
+    "kicker": "YEARS ONE AND TWO CASH",
+    "title": "Intercrop the alley \u2014 not another orchard",
+    "cols": 2,
+    "foot": "The tree is the business. The alley is a bridge.",
+    "items": [
+     {
+      "label": "Veg / pulse",
+      "sub": "Short, shallow, and out of the basin.",
+      "c": "leaf"
+     },
+     {
+      "label": "Not a second tree",
+      "sub": "No mango filler in the same grid. You will regret the shade.",
+      "c": "risk"
+     },
+     {
+      "label": "Clean basin",
+      "sub": "Weeds at the trunk steal water from a baby graft.",
+      "c": "cool"
+     },
+     {
+      "label": "Stop when shade",
+      "sub": "Closed canopy means the intercrop idea is over.",
+      "c": "fruit"
+     }
+    ],
+    "dur": 34.378
+   }
+  },
+  {
+   "id": "lag-ch06-plant_rowdir",
+   "type": "lag_cards",
+   "in_seconds": 169.112,
+   "out_seconds": 200.302,
+   "props": {
+    "kicker": "ROWS AND ROADS",
+    "title": "Light, contour, and a harvest road",
+    "cols": 2,
+    "foot": "Design the April tempo path on day zero.",
+    "items": [
+     {
+      "label": "N\u2013S on flat",
+      "sub": "Even light on both sides of the tree.",
+      "c": "leaf"
+     },
+     {
+      "label": "Contour on slope",
+      "sub": "Soil stays. Water leaves slowly, not as a cut.",
+      "c": "cool"
+     },
+     {
+      "label": "Harvest road",
+      "sub": "Centre lane. No dead ends of mud.",
+      "c": "fruit"
+     },
+     {
+      "label": "Overhang",
+      "sub": "Clusters occupy the aisle. Measure real trees.",
+      "c": "risk"
+     }
+    ],
+    "dur": 31.69
+   }
+  },
+  {
+   "id": "lag-ch06-plant_fence",
+   "type": "lag_cards",
+   "in_seconds": 200.802,
+   "out_seconds": 230.432,
+   "props": {
+    "kicker": "FENCE AND THEFT",
+    "title": "A crop you cannot protect is not a crop",
+    "cols": 3,
+    "foot": "Year-three fruit is a beacon. Plan for that.",
+    "items": [
+     {
+      "label": "Browse",
+      "sub": "Young grafts disappear into goats.",
+      "c": "risk"
+     },
+     {
+      "label": "Fence",
+      "sub": "Ugly. Effective. Price it in year zero.",
+      "c": "leaf"
+     },
+     {
+      "label": "April watch",
+      "sub": "Visible fruit is a magnet.",
+      "c": "fruit"
+     }
+    ],
+    "dur": 30.13
+   }
+  },
+  {
+   "id": "lag-ch06-plant_replant",
+   "type": "lag_cards",
+   "in_seconds": 230.932,
+   "out_seconds": 260.346,
+   "props": {
+    "kicker": "REPLANT",
+    "title": "Same name in the gap, or leave it",
+    "cols": 2,
+    "foot": "A seedling gap-fill is how orchards become chaos.",
+    "items": [
+     {
+      "label": "Expect deaths",
+      "sub": "Unions fail. Floods happen. Plan spares.",
+      "c": "risk"
+     },
+     {
+      "label": "Next monsoon",
+      "sub": "Replant named. Same grid point.",
+      "c": "leaf"
+     },
+     {
+      "label": "Corner nursery",
+      "sub": "Five extra grafts save a year of hunting.",
+      "c": "cool"
+     },
+     {
+      "label": "No random fill",
+      "sub": "Off-type trees steal space forever.",
+      "c": "fruit"
+     }
+    ],
+    "dur": 29.914
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.1,
+   "Part six."
+  ],
+  [
+   1.1,
+   1.65,
+   "Layout."
+  ],
+  [
+   2.2,
+   6.599,
+   "This is the last cheap moment to get"
+  ],
+  [
+   6.599,
+   7.699,
+   "spacing right."
+  ],
+  [
+   8.249,
+   9.899,
+   "After year five,"
+  ],
+  [
+   9.899,
+   13.748,
+   "a crowded orchard is a saw problem."
+  ],
+  [
+   14.248,
+   16.161,
+   "Here is the acre,"
+  ],
+  [
+   16.161,
+   16.64,
+   "computed."
+  ],
+  [
+   17.19,
+   21.016,
+   "Twelve by eight is ninety-six stations at a"
+  ],
+  [
+   21.016,
+   23.408,
+   "six to seven metre grid."
+  ],
+  [
+   23.958,
+   27.784,
+   "That matches the ninety-five to ninety-six plants\nper"
+  ],
+  [
+   27.784,
+   29.697,
+   "acre in Punjab leaflets."
+  ],
+  [
+   30.247,
+   33.117,
+   "Watch the grid as years pass."
+  ],
+  [
+   33.117,
+   36.944,
+   "Until year three the dots stay green wood."
+  ],
+  [
+   37.494,
+   39.885,
+   "Then they switch to bearing."
+  ],
+  [
+   39.885,
+   42.755,
+   "The layout does not magically tighten."
+  ],
+  [
+   43.305,
+   47.132,
+   "If you plant at four metres because plants"
+  ],
+  [
+   47.132,
+   48.088,
+   "were cheap,"
+  ],
+  [
+   48.088,
+   50.958,
+   "you will prune for light forever."
+  ],
+  [
+   51.458,
+   55.711,
+   "Land work is boring and it decides roots."
+  ],
+  [
+   56.261,
+   56.792,
+   "Level."
+  ],
+  [
+   56.792,
+   59.45,
+   "Two or three deep ploughings."
+  ],
+  [
+   59.45,
+   60.513,
+   "Then pits,"
+  ],
+  [
+   60.513,
+   62.639,
+   "about a metre class,"
+  ],
+  [
+   62.639,
+   64.766,
+   "not a dibble hole."
+  ],
+  [
+   65.316,
+   69.568,
+   "Mix topsoil with farmyard manure in the fill."
+  ],
+  [
+   69.568,
+   73.821,
+   "Plant on a slight mound if drainage is"
+  ],
+  [
+   73.821,
+   74.352,
+   "shy."
+  ],
+  [
+   74.902,
+   75.965,
+   "Water in."
+  ],
+  [
+   75.965,
+   76.497,
+   "Mulch."
+  ],
+  [
+   76.497,
+   77.029,
+   "Stake."
+  ],
+  [
+   77.579,
+   80.236,
+   "Do not bury the union."
+  ],
+  [
+   80.236,
+   84.489,
+   "Do not leave an air pocket under the"
+  ],
+  [
+   84.489,
+   85.552,
+   "root ball."
+  ],
+  [
+   86.102,
+   88.76,
+   "The first month is establishment."
+  ],
+  [
+   88.76,
+   90.355,
+   "Miss water then,"
+  ],
+  [
+   90.355,
+   93.544,
+   "and you replant in year two."
+  ],
+  [
+   94.044,
+   94.55,
+   "Soil:"
+  ],
+  [
+   94.55,
+   95.562,
+   "sandy loam,"
+  ],
+  [
+   95.562,
+   96.574,
+   "organic matter,"
+  ],
+  [
+   96.574,
+   97.08,
+   "drainage."
+  ],
+  [
+   97.63,
+   99.653,
+   "Loquat hates wet feet."
+  ],
+  [
+   99.653,
+   103.701,
+   "A pretty monsoon clay pan is a grave."
+  ],
+  [
+   104.251,
+   108.299,
+   "pH in a comfortable horticultural range matters\nless"
+  ],
+  [
+   108.299,
+   110.828,
+   "than oxygen at the root."
+  ],
+  [
+   111.378,
+   115.426,
+   "Hill benches and light alluvium in the\nPunjab-Himachal"
+  ],
+  [
+   115.426,
+   117.956,
+   "story work because water leaves."
+  ],
+  [
+   118.506,
+   122.553,
+   "If your field ponds for a week after"
+  ],
+  [
+   122.553,
+   123.059,
+   "rain,"
+  ],
+  [
+   123.059,
+   126.095,
+   "fix drainage or pick another fruit."
+  ],
+  [
+   126.645,
+   129.68,
+   "Organic matter is the other half:"
+  ],
+  [
+   129.68,
+   132.716,
+   "young trees want a living topsoil,"
+  ],
+  [
+   132.716,
+   134.234,
+   "not a crust."
+  ],
+  [
+   134.734,
+   136.71,
+   "Years one and two,"
+  ],
+  [
+   136.71,
+   138.687,
+   "the alley is cash."
+  ],
+  [
+   139.237,
+   143.19,
+   "Intercrop short vegetables or pulses that do not"
+  ],
+  [
+   143.19,
+   144.672,
+   "swamp the graft."
+  ],
+  [
+   145.222,
+   149.175,
+   "Do not plant another tree in the row."
+  ],
+  [
+   149.175,
+   153.127,
+   "Do not run sugarcane that owns the water."
+  ],
+  [
+   153.677,
+   157.136,
+   "Keep a clean basin around each loquat."
+  ],
+  [
+   157.686,
+   161.639,
+   "The intercrop pays labour while you wait for"
+  ],
+  [
+   161.639,
+   162.627,
+   "year three."
+  ],
+  [
+   163.177,
+   165.153,
+   "When the canopy closes,"
+  ],
+  [
+   165.153,
+   166.636,
+   "the alley ends."
+  ],
+  [
+   166.636,
+   168.612,
+   "Plan that grief now."
+  ],
+  [
+   169.112,
+   170.06,
+   "Row direction."
+  ],
+  [
+   170.61,
+   174.402,
+   "North-south rows often share light more evenly on"
+  ],
+  [
+   174.402,
+   175.824,
+   "a flat field."
+  ],
+  [
+   176.374,
+   177.796,
+   "On a slope,"
+  ],
+  [
+   177.796,
+   178.744,
+   "contour wins,"
+  ],
+  [
+   178.744,
+   181.114,
+   "because erosion and drainage win."
+  ],
+  [
+   181.664,
+   185.456,
+   "Leave a road down the middle you can"
+  ],
+  [
+   185.456,
+   187.826,
+   "drive a tempo in April."
+  ],
+  [
+   188.376,
+   192.168,
+   "If a crate cannot leave the row without"
+  ],
+  [
+   192.168,
+   193.116,
+   "a circus,"
+  ],
+  [
+   193.116,
+   195.012,
+   "you designed a museum."
+  ],
+  [
+   195.562,
+   199.354,
+   "Tractor width plus cluster overhang is wider than"
+  ],
+  [
+   199.354,
+   200.302,
+   "you think."
+  ],
+  [
+   200.802,
+   201.309,
+   "Animals."
+  ],
+  [
+   201.859,
+   202.366,
+   "Nilgai,"
+  ],
+  [
+   202.366,
+   202.874,
+   "goats,"
+  ],
+  [
+   202.874,
+   206.931,
+   "and stray cattle will browse a young graft"
+  ],
+  [
+   206.931,
+   207.945,
+   "like salad."
+  ],
+  [
+   208.495,
+   212.553,
+   "A fruit year invites theft in peri-urban belts."
+  ],
+  [
+   213.103,
+   217.16,
+   "Fence is ugly and it is often the"
+  ],
+  [
+   217.16,
+   220.71,
+   "difference between an orchard and a story."
+  ],
+  [
+   221.26,
+   225.317,
+   "Guard in April if the block is visible"
+  ],
+  [
+   225.317,
+   226.839,
+   "from a road."
+  ],
+  [
+   227.389,
+   228.91,
+   "Budget pride last."
+  ],
+  [
+   228.91,
+   230.432,
+   "Budget wire first."
+  ],
+  [
+   230.932,
+   232.71,
+   "Some plants will die."
+  ],
+  [
+   233.26,
+   236.815,
+   "Replant in the next monsoon with the same"
+  ],
+  [
+   236.815,
+   237.704,
+   "named scion."
+  ],
+  [
+   238.254,
+   241.809,
+   "Do not fill gaps with random seedlings 'just"
+  ],
+  [
+   241.809,
+   242.698,
+   "to occupy'."
+  ],
+  [
+   243.248,
+   246.803,
+   "A gap is better than a genetic hole"
+  ],
+  [
+   246.803,
+   249.025,
+   "that never matches the row."
+  ],
+  [
+   249.575,
+   253.13,
+   "Keep five spare grafts in a corner nursery"
+  ],
+  [
+   253.13,
+   254.463,
+   "if you can."
+  ],
+  [
+   255.013,
+   258.568,
+   "The grid you saw computed only works if"
+  ],
+  [
+   258.568,
+   260.346,
+   "the stations stay true."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "lag/lag-ch06-plant.wav",
+   "volume": 1.0
+  }
+ }
+}

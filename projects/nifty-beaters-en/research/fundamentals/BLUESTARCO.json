@@ -1,0 +1,98 @@
+{
+ "ticker": "BLUESTARCO",
+ "scraped_at": "2026-08-14T15:29:35",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 31009.0,
+ "current_price": 1508.0,
+ "pe": 58.7,
+ "book_value": 167.0,
+ "dividend_yield_pct": 0.55,
+ "roce_pct": 21.2,
+ "roe_pct": 17.2,
+ "face_value": 2.0,
+ "high": 2050.0,
+ "sales_growth": {
+  "10 Years": 18.0,
+  "5 Years": 50.0,
+  "3 Years": 26.0,
+  "TTM": -1.0
+ },
+ "profit_growth": {
+  "10 Years": 20.0,
+  "5 Years": 30.0,
+  "3 Years": 27.0,
+  "1 Year": -15.0
+ },
+ "roe_hist": {
+  "Equity Capital": 18.0,
+  "Reserves": 438.0,
+  "Borrowings&nbsp; +": 398.0,
+  "Fixed Assets&nbsp; +": 257.0,
+  "CWIP": 22.0,
+  "Investments": 36.0
+ },
+ "price_cagr": {
+  "10 Years": 19.0,
+  "5 Years": 20.0,
+  "3 Years": 19.0,
+  "Last Year": 17.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "7%",
+   "6%",
+   "7%",
+   "7%",
+   "8%",
+   "7%",
+   "7%",
+   "7%",
+   "7%",
+   "8%",
+   "8%",
+   "8%",
+   "5%"
+  ],
+  "eps": [
+   "4.33",
+   "3.44",
+   "4.88",
+   "7.81",
+   "8.21",
+   "4.68",
+   "6.45",
+   "9.42",
+   "5.88",
+   "4.82",
+   "3.92",
+   "11.04",
+   "4.99"
+  ]
+ },
+ "pros": [
+  "Company has delivered good profit growth of 49.6% CAGR over last 5 years",
+  "Company has been maintaining a healthy dividend payout of 33.0%"
+ ],
+ "cons": [
+  "Stock is trading at 9.06 times its book value"
+ ]
+}

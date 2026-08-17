@@ -1,0 +1,7 @@
+{
+ "ticker": "HGINFRA",
+ "scraped_at": "2026-08-14T15:33:30",
+ "source": "screener.in",
+ "ok": false,
+ "error": "URLError(ConnectionRefusedError(61, 'Connection refused'))"
+}

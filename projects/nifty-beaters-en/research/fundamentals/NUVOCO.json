@@ -1,0 +1,97 @@
+{
+ "ticker": "NUVOCO",
+ "scraped_at": "2026-08-14T15:30:10",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 11824.0,
+ "current_price": 331.0,
+ "pe": 28.4,
+ "book_value": 262.0,
+ "dividend_yield_pct": 0.0,
+ "roce_pct": 6.99,
+ "roe_pct": 4.17,
+ "face_value": 10.0,
+ "high": 478.0,
+ "sales_growth": {
+  "5 Years": 101.0,
+  "3 Years": -3.0,
+  "TTM": 173.0
+ },
+ "profit_growth": {
+  "3 Years": 0.0,
+  "1 Year": -25.0
+ },
+ "roe_hist": {
+  "Operating Profit": 393.0,
+  "OPM %": 14.0,
+  "Other Income&nbsp; +": 9.0,
+  "Interest": 135.0,
+  "Depreciation": 244.0,
+  "Profit before tax": 24.0,
+  "Tax %": 39.0,
+  "Net Profit&nbsp; +": 14.0,
+  "EPS in Rs": 0.4
+ },
+ "price_cagr": {
+  "10 Years": 2.0,
+  "5 Years": 2.0,
+  "3 Years": 2.0,
+  "Last Year": 4.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "14%",
+   "13%",
+   "17%",
+   "17%",
+   "13%",
+   "10%",
+   "11%",
+   "18%",
+   "18%",
+   "15%",
+   "14%",
+   "18%",
+   "18%"
+  ],
+  "eps": [
+   "0.40",
+   "0.04",
+   "0.87",
+   "2.81",
+   "0.08",
+   "-2.38",
+   "-1.72",
+   "4.63",
+   "3.73",
+   "1.02",
+   "1.37",
+   "3.94",
+   "4.47"
+  ]
+ },
+ "pros": [],
+ "cons": [
+  "Though the company is reporting repeated profits, it is not paying out dividend",
+  "The company has delivered a poor sales growth of 8.65% over past five years.",
+  "Company has a low return on equity of 2.00% over last 3 years."
+ ]
+}

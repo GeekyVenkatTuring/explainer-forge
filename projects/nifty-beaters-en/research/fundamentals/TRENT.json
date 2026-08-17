@@ -1,0 +1,102 @@
+{
+ "ticker": "TRENT",
+ "scraped_at": "2026-08-14T15:29:27",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 159436.0,
+ "current_price": 2990.0,
+ "pe": 87.1,
+ "book_value": 131.0,
+ "dividend_yield_pct": 0.13,
+ "roce_pct": 28.3,
+ "roe_pct": 27.7,
+ "face_value": 1.0,
+ "high": 3783.0,
+ "sales_growth": {
+  "10 Years": 43.0,
+  "5 Years": 69.0,
+  "3 Years": 71.0,
+  "TTM": 15.0
+ },
+ "profit_growth": {
+  "10 Years": 37.0,
+  "5 Years": 38.0,
+  "3 Years": 32.0,
+  "1 Year": -16.0
+ },
+ "roe_hist": {
+  "Operating Profit": 367.0,
+  "OPM %": 14.0,
+  "Other Income&nbsp; +": 79.0,
+  "Interest": 92.0,
+  "Depreciation": 141.0,
+  "Profit before tax": 212.0,
+  "Tax %": 21.0,
+  "Net Profit&nbsp; +": 167.0,
+  "EPS in Rs": 3.25
+ },
+ "price_cagr": {
+  "10 Years": 17.0,
+  "5 Years": 24.0,
+  "3 Years": 29.0,
+  "Last Year": 28.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "14%",
+   "15%",
+   "18%",
+   "14%",
+   "15%",
+   "16%",
+   "18%",
+   "15%",
+   "17%",
+   "17%",
+   "20%",
+   "18%",
+   "19%"
+  ],
+  "eps": [
+   "3.25",
+   "4.40",
+   "7.02",
+   "13.21",
+   "7.36",
+   "6.35",
+   "9.33",
+   "5.97",
+   "8.06",
+   "7.07",
+   "9.62",
+   "7.51",
+   "9.73"
+  ]
+ },
+ "pros": [
+  "Company has delivered good profit growth of 68.7% CAGR over last 5 years",
+  "Company has a good return on equity (ROE) track record: 3 Years ROE 28.6%",
+  "Company&#x27;s median sales growth is 27.2% of last 10 years"
+ ],
+ "cons": [
+  "Stock is trading at 22.9 times its book value"
+ ]
+}

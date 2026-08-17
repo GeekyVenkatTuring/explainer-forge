@@ -1,0 +1,1059 @@
+{
+  "cuts": [
+    {
+      "id": "re_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 40.86,
+      "props": {
+        "title": "How to Analyse Realty & Infra Stocks",
+        "sub": "Real estate & infrastructure · fundamentals · technicals · strategies",
+        "kicker": "SECTOR DEEP-DIVE · REALTY",
+        "dur": 41.36
+      }
+    },
+    {
+      "id": "re_overview",
+      "type": "sm_iconcards",
+      "in_seconds": 41.36,
+      "out_seconds": 118.092,
+      "props": {
+        "kicker": "SUB-SECTORS",
+        "title": "Realty & infra — the pieces",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🏠",
+            "k": "Residential developers",
+            "v": "Build & sell homes — driven by affordability, rates & the property cycle",
+            "chip": "Homes"
+          },
+          {
+            "emoji": "🏢",
+            "k": "Commercial / REITs",
+            "v": "Offices & malls; REITs let you own rent-yielding property for income",
+            "chip": "Rent"
+          },
+          {
+            "emoji": "🏗️",
+            "k": "Infra / construction (EPC)",
+            "v": "Roads, bridges, projects — order-book businesses driven by govt capex",
+            "chip": "Capex"
+          },
+          {
+            "emoji": "🧱",
+            "k": "Building materials",
+            "v": "Cement, tiles, pipes, paints — the 'picks & shovels' of the whole boom",
+            "chip": "Suppliers"
+          }
+        ],
+        "dur": 77.232
+      }
+    },
+    {
+      "id": "re_drivers",
+      "type": "sm_iconcards",
+      "in_seconds": 118.592,
+      "out_seconds": 191.512,
+      "props": {
+        "kicker": "WHAT MOVES REALTY",
+        "title": "The forces that drive the sector",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "🏛️",
+            "k": "Interest rates",
+            "v": "The master driver — cheap loans fuel home demand; rate cuts light the fuse",
+            "chip": "Rates"
+          },
+          {
+            "emoji": "💼",
+            "k": "Income & jobs",
+            "v": "Rising incomes and IT/urban job growth power housing demand",
+            "chip": "Demand"
+          },
+          {
+            "emoji": "🏗️",
+            "k": "Govt capex",
+            "v": "Budget spending on roads & infrastructure drives the EPC & materials side",
+            "chip": "Policy"
+          },
+          {
+            "emoji": "🔄",
+            "k": "The long cycle",
+            "v": "Property runs in multi-year up-and-down cycles — timing matters enormously",
+            "chip": "Cyclical"
+          }
+        ],
+        "dur": 73.42
+      }
+    },
+    {
+      "id": "re_fund",
+      "type": "sm_iconcards",
+      "in_seconds": 192.012,
+      "out_seconds": 268.316,
+      "props": {
+        "kicker": "FUNDAMENTALS · CORE",
+        "title": "The metrics unique to realty",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "📈",
+            "k": "Pre-sales / bookings",
+            "v": "The #1 metric — the value of homes SOLD this period. Better than reported revenue",
+            "chip": "Demand"
+          },
+          {
+            "emoji": "💵",
+            "k": "Collections",
+            "v": "Cash actually received from buyers — the real cash engine of a developer",
+            "chip": "Cash"
+          },
+          {
+            "emoji": "🏋️",
+            "k": "Net debt",
+            "v": "Developers can carry heavy debt — deadly in a downturn. Lower is far safer",
+            "chip": "Safety"
+          },
+          {
+            "emoji": "🏬",
+            "k": "Launches & inventory",
+            "v": "New project pipeline (future sales) and unsold inventory (overhang risk)",
+            "chip": "Pipeline"
+          }
+        ],
+        "dur": 76.804
+      }
+    },
+    {
+      "id": "re_check",
+      "type": "sm_checklist",
+      "in_seconds": 268.816,
+      "out_seconds": 346.888,
+      "props": {
+        "kicker": "HOW TO EVALUATE",
+        "title": "Evaluating a realty stock — checklist",
+        "color": "#34D399",
+        "icon": "✅",
+        "items": [
+          "Watch pre-sales/bookings growth — not just reported revenue",
+          "Confirm collections are strong (real cash coming in)",
+          "Demand low net debt — survivors of the last downturn",
+          "Judge the developer's execution & delivery reputation",
+          "Read the interest-rate cycle — the sector's master switch"
+        ],
+        "dur": 78.572
+      }
+    },
+    {
+      "id": "re_tech",
+      "type": "sm_iconcards",
+      "in_seconds": 347.388,
+      "out_seconds": 406.748,
+      "props": {
+        "kicker": "TECHNICAL ANALYSIS",
+        "title": "Reading realty on the chart",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "📈",
+            "k": "Nifty Realty",
+            "v": "A very high-beta index — huge cyclical swings, big rallies and deep falls",
+            "chip": "Index"
+          },
+          {
+            "emoji": "🏛️",
+            "k": "Rate-cut catalyst",
+            "v": "RBI rate cuts are the classic spark for a realty rally — watch policy",
+            "chip": "RBI"
+          },
+          {
+            "emoji": "🔄",
+            "k": "Cyclical leadership",
+            "v": "Realty leads early in a rate-cut / recovery cycle, then fades",
+            "chip": "Cycle"
+          },
+          {
+            "emoji": "🌊",
+            "k": "Boom-bust waves",
+            "v": "Trends in long waves — reward cycle-timers, punish those who chase the top",
+            "chip": "Volatile"
+          }
+        ],
+        "dur": 59.86
+      }
+    },
+    {
+      "id": "re_strat",
+      "type": "sm_iconcards",
+      "in_seconds": 407.248,
+      "out_seconds": 482.636,
+      "props": {
+        "kicker": "STRATEGIES",
+        "title": "Strategies for realty & infra",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🔄",
+            "k": "Play the property cycle",
+            "v": "Buy quality developers early in a rate-cut cycle; trim as the boom matures",
+            "chip": "Cyclical"
+          },
+          {
+            "emoji": "👑",
+            "k": "Own low-debt leaders",
+            "v": "The strongest, low-debt branded developers gain share every cycle",
+            "chip": "Quality"
+          },
+          {
+            "emoji": "🏢",
+            "k": "REITs for income",
+            "v": "Prefer steady rental income over developer risk? REITs pay regular yield",
+            "chip": "Income"
+          },
+          {
+            "emoji": "🧱",
+            "k": "Picks & shovels",
+            "v": "Cement, pipes, tiles & EPC ride the whole boom with less single-project risk",
+            "chip": "Suppliers"
+          }
+        ],
+        "dur": 75.888
+      }
+    },
+    {
+      "id": "re_risk",
+      "type": "sm_myths",
+      "in_seconds": 483.136,
+      "out_seconds": 553.944,
+      "props": {
+        "kicker": "WHAT TO AVOID",
+        "title": "Realty sector — the risks",
+        "mythLabel": "✗ TRAP",
+        "factLabel": "✓ REALITY",
+        "pairs": [
+          {
+            "m": "Reported profit is strong — it's healthy",
+            "f": "Accounting lags reality — check pre-sales & CASH, not just profit"
+          },
+          {
+            "m": "Property only ever goes up",
+            "f": "Realty has brutal multi-year busts — high debt developers can go bust"
+          },
+          {
+            "m": "Cheap builder stock = bargain",
+            "f": "Heavy debt + unsold inventory can make 'cheap' a value trap"
+          }
+        ],
+        "dur": 71.308
+      }
+    },
+    {
+      "id": "re_recap",
+      "type": "sm_recap",
+      "in_seconds": 554.444,
+      "out_seconds": 606.984,
+      "props": {
+        "title": "Realty & infra — recap",
+        "items": [
+          "Sub-sectors: residential, commercial/REITs, EPC infra, materials",
+          "Interest rates are the master driver — rate cuts spark rallies",
+          "Watch pre-sales, collections & net debt — NOT just profit",
+          "High-beta cyclical — leads recoveries, brutal busts",
+          "Strategy: low-debt leaders, cycle timing, REITs for income"
+        ],
+        "closer": "In realty, watch the cash and fear the debt.",
+        "dur": 53.04
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      2.636,
+      "Real estate and infrastructure —"
+    ],
+    [
+      2.636,
+      5.437,
+      "the sector that builds the nation,"
+    ],
+    [
+      5.437,
+      8.403,
+      "and one of the most cyclical of all."
+    ],
+    [
+      8.403,
+      11.78,
+      "Property moves in long, powerful cycles —"
+    ],
+    [
+      11.78,
+      15.158,
+      "years of boom followed by years of bust —"
+    ],
+    [
+      15.158,
+      19.03,
+      "driven above all by interest rates and incomes."
+    ],
+    [
+      19.03,
+      24.549,
+      "It's also a sector where the reported profit can badly mislead you,"
+    ],
+    [
+      24.549,
+      28.421,
+      "because of the way long projects are accounted."
+    ],
+    [
+      28.421,
+      30.727,
+      "So you need special metrics."
+    ],
+    [
+      30.727,
+      35.835,
+      "We'll cover the sub-sectors, the fundamentals, the technicals,"
+    ],
+    [
+      35.835,
+      38.224,
+      "and the strategies in detail."
+    ],
+    [
+      38.224,
+      40.86,
+      "Company names are examples only."
+    ],
+    [
+      41.36,
+      46.217,
+      "Let's start by splitting this broad sector into its pieces."
+    ],
+    [
+      46.217,
+      50.828,
+      "First, residential developers, who build and sell homes."
+    ],
+    [
+      50.828,
+      54.78,
+      "They're driven by affordability, interest rates,"
+    ],
+    [
+      54.78,
+      59.967,
+      "and the property cycle — this is the classic real-estate stock."
+    ],
+    [
+      59.967,
+      63.342,
+      "Second, commercial real estate and REITs."
+    ],
+    [
+      63.342,
+      67.047,
+      "Offices and malls generate rent, and a REIT —"
+    ],
+    [
+      67.047,
+      69.682,
+      "a Real Estate Investment Trust —"
+    ],
+    [
+      69.682,
+      75.527,
+      "lets you own a slice of that rent-yielding property for regular income,"
+    ],
+    [
+      75.527,
+      77.668,
+      "without buying a building."
+    ],
+    [
+      77.668,
+      80.961,
+      "Third, infrastructure and construction —"
+    ],
+    [
+      80.961,
+      84.583,
+      "the EPC companies that build roads, bridges,"
+    ],
+    [
+      84.583,
+      86.148,
+      "and large projects."
+    ],
+    [
+      86.148,
+      88.782,
+      "These are order-book businesses,"
+    ],
+    [
+      88.782,
+      91.911,
+      "driven by government capital spending,"
+    ],
+    [
+      91.911,
+      96.933,
+      "and they resemble the defence sector in how you analyse them."
+    ],
+    [
+      96.933,
+      102.038,
+      "Fourth, building materials — cement, tiles, pipes, and paints."
+    ],
+    [
+      102.038,
+      110.435,
+      "These are the picks-and-shovels of the whole construction boom; they profit whoever wins the projects."
+    ],
+    [
+      110.435,
+      114.799,
+      "Four quite different businesses under one roof — and,"
+    ],
+    [
+      114.799,
+      118.092,
+      "as always, you analyse each differently."
+    ],
+    [
+      118.592,
+      120.569,
+      "What drives real estate?"
+    ],
+    [
+      120.569,
+      124.524,
+      "Four forces, and the first towers over the rest."
+    ],
+    [
+      124.524,
+      127.573,
+      "Interest rates are the master driver."
+    ],
+    [
+      127.573,
+      132.27,
+      "A home is usually bought with a loan, so when rates fall,"
+    ],
+    [
+      132.27,
+      137.296,
+      "monthly instalments drop and demand ignites; when rates rise,"
+    ],
+    [
+      137.296,
+      138.367,
+      "demand cools."
+    ],
+    [
+      138.367,
+      143.558,
+      "A rate-cut cycle is often the fuse that lights a property boom."
+    ],
+    [
+      143.558,
+      145.618,
+      "Second, incomes and jobs."
+    ],
+    [
+      145.618,
+      154.846,
+      "Rising salaries and strong urban and IT-sector employment give people the confidence and the means to buy homes."
+    ],
+    [
+      154.846,
+      157.73,
+      "Third, government capital spending."
+    ],
+    [
+      157.73,
+      161.273,
+      "The Budget's allocation to roads, railways,"
+    ],
+    [
+      161.273,
+      169.018,
+      "and infrastructure directly drives the construction and building-materials side of the sector."
+    ],
+    [
+      169.018,
+      173.22,
+      "Fourth, and never to be forgotten — the long cycle."
+    ],
+    [
+      173.22,
+      178.905,
+      "Property doesn't drift; it runs in multi-year waves of boom and bust."
+    ],
+    [
+      178.905,
+      188.958,
+      "Buying near the bottom of that cycle versus near the top can be the difference between doubling your money and halving it."
+    ],
+    [
+      188.958,
+      191.512,
+      "Timing matters enormously here."
+    ],
+    [
+      192.012,
+      196.557,
+      "Now the metrics that make real estate special — and here,"
+    ],
+    [
+      196.557,
+      199.985,
+      "reported profit lies, so we look elsewhere."
+    ],
+    [
+      199.985,
+      204.61,
+      "The number-one metric is pre-sales, also called bookings —"
+    ],
+    [
+      204.61,
+      210.111,
+      "the total value of homes a developer has actually sold in the period."
+    ],
+    [
+      210.111,
+      212.344,
+      "Because of accounting rules,"
+    ],
+    [
+      212.344,
+      216.171,
+      "sold homes may not show up as revenue for years,"
+    ],
+    [
+      216.171,
+      218.403,
+      "so pre-sales is a far truer,"
+    ],
+    [
+      218.403,
+      223.028,
+      "more current measure of demand than the reported top line."
+    ],
+    [
+      223.028,
+      225.26,
+      "This is the number to watch."
+    ],
+    [
+      225.26,
+      227.413,
+      "The second is collections —"
+    ],
+    [
+      227.413,
+      230.921,
+      "the cash actually received from home-buyers."
+    ],
+    [
+      230.921,
+      239.214,
+      "This is the real cash engine of a developer; strong collections fund the next project without more debt."
+    ],
+    [
+      239.214,
+      240.968,
+      "The third is net debt."
+    ],
+    [
+      240.968,
+      244.237,
+      "Property developers can carry heavy debt,"
+    ],
+    [
+      244.237,
+      247.506,
+      "and in a downturn that debt turns deadly,"
+    ],
+    [
+      247.506,
+      249.818,
+      "exactly as it does in metals."
+    ],
+    [
+      249.818,
+      253.884,
+      "Lower debt is dramatically safer through the cycle."
+    ],
+    [
+      253.884,
+      258.349,
+      "The fourth is the launch pipeline and unsold inventory —"
+    ],
+    [
+      258.349,
+      260.981,
+      "new launches signal future sales,"
+    ],
+    [
+      260.981,
+      268.316,
+      "while a big pile of unsold inventory signals an overhang that will weigh on prices and cash."
+    ],
+    [
+      268.816,
+      274.684,
+      "Let's make that practical with a checklist for any real-estate stock."
+    ],
+    [
+      274.684,
+      275.62,
+      "Five steps."
+    ],
+    [
+      275.62,
+      280.807,
+      "Step one — look at pre-sales, the bookings, and their growth,"
+    ],
+    [
+      280.807,
+      285.4,
+      "not the reported revenue, which lags reality by years."
+    ],
+    [
+      285.4,
+      288.377,
+      "Rising bookings mean rising demand."
+    ],
+    [
+      288.377,
+      291.948,
+      "Step two — confirm collections are strong,"
+    ],
+    [
+      291.948,
+      297.051,
+      "so real cash is flowing in from buyers to fund the business."
+    ],
+    [
+      297.051,
+      299.858,
+      "Step three — demand low net debt."
+    ],
+    [
+      299.858,
+      311.509,
+      "Favour the developers who survived the last property downturn with clean balance sheets; they'll survive the next one too and gain share."
+    ],
+    [
+      311.509,
+      313.89,
+      "Step four — judge execution."
+    ],
+    [
+      313.89,
+      315.166,
+      "In real estate,"
+    ],
+    [
+      315.166,
+      322.48,
+      "a developer's reputation for delivering projects on time and on quality is priceless —"
+    ],
+    [
+      322.48,
+      327.413,
+      "buyers pay a premium for trusted names, and so should you."
+    ],
+    [
+      327.413,
+      330.899,
+      "Step five — read the interest-rate cycle,"
+    ],
+    [
+      330.899,
+      334.216,
+      "the master switch for the whole sector."
+    ],
+    [
+      334.216,
+      336.597,
+      "Are rates rising or falling?"
+    ],
+    [
+      336.597,
+      341.275,
+      "That single question frames every real-estate decision."
+    ],
+    [
+      341.275,
+      346.888,
+      "That checklist keeps you on the safe side of a treacherous sector."
+    ],
+    [
+      347.388,
+      348.431,
+      "On the chart,"
+    ],
+    [
+      348.431,
+      353.003,
+      "real estate is one of the most dramatic sectors there is."
+    ],
+    [
+      353.003,
+      355.329,
+      "Track the Nifty Realty index,"
+    ],
+    [
+      355.329,
+      358.378,
+      "but respect that it's very high-beta —"
+    ],
+    [
+      358.378,
+      362.549,
+      "it delivers enormous rallies and equally deep falls,"
+    ],
+    [
+      362.549,
+      365.677,
+      "far more violent than the broad market."
+    ],
+    [
+      365.677,
+      368.886,
+      "The classic catalyst is an RBI rate cut,"
+    ],
+    [
+      368.886,
+      375.303,
+      "which lowers home-loan costs and is often the spark that ignites a realty rally."
+    ],
+    [
+      375.303,
+      380.277,
+      "So watch the interest-rate policy calendar as your key signal."
+    ],
+    [
+      380.277,
+      381.961,
+      "In terms of rotation,"
+    ],
+    [
+      381.961,
+      387.416,
+      "realty tends to lead early in a rate-cut or economic-recovery cycle,"
+    ],
+    [
+      387.416,
+      390.384,
+      "when cheap money and optimism return,"
+    ],
+    [
+      390.384,
+      393.432,
+      "and then to fade as the cycle matures."
+    ],
+    [
+      393.432,
+      397.764,
+      "And like metals, it moves in long boom-and-bust waves."
+    ],
+    [
+      397.764,
+      402.497,
+      "That rewards the patient cycle-timer who buys in the gloom,"
+    ],
+    [
+      402.497,
+      406.748,
+      "and punishes the latecomer who chases a euphoric top."
+    ],
+    [
+      407.248,
+      411.27,
+      "How do you play real estate and infrastructure?"
+    ],
+    [
+      411.27,
+      412.639,
+      "Four strategies."
+    ],
+    [
+      412.639,
+      415.292,
+      "First, play the property cycle."
+    ],
+    [
+      415.292,
+      419.827,
+      "Buy the quality developers early in a rate-cut cycle,"
+    ],
+    [
+      419.827,
+      422.308,
+      "when demand is just reviving,"
+    ],
+    [
+      422.308,
+      426.673,
+      "and trim as the boom matures and everyone piles in."
+    ],
+    [
+      426.673,
+      428.726,
+      "Cyclicals reward timing."
+    ],
+    [
+      428.726,
+      431.55,
+      "Second, own the low-debt leaders."
+    ],
+    [
+      431.55,
+      434.288,
+      "The strongest, best-capitalised,"
+    ],
+    [
+      434.288,
+      438.824,
+      "branded developers gain market share in every cycle —"
+    ],
+    [
+      438.824,
+      442.76,
+      "especially after downturns clear out the weak."
+    ],
+    [
+      442.76,
+      444.728,
+      "Quality compounds here."
+    ],
+    [
+      444.728,
+      450.033,
+      "Third, if you'd rather have steady income than developer risk,"
+    ],
+    [
+      450.033,
+      450.889,
+      "use REITs."
+    ],
+    [
+      450.889,
+      456.195,
+      "They hand you a regular rental yield from commercial property,"
+    ],
+    [
+      456.195,
+      459.446,
+      "a calmer way to invest in real estate."
+    ],
+    [
+      459.446,
+      462.869,
+      "Fourth, the picks-and-shovels approach —"
+    ],
+    [
+      462.869,
+      467.918,
+      "building-materials companies like cement, pipes, and tiles,"
+    ],
+    [
+      467.918,
+      470.57,
+      "and the EPC construction firms,"
+    ],
+    [
+      470.57,
+      476.903,
+      "ride the entire boom with less exposure to any single project going wrong."
+    ],
+    [
+      476.903,
+      478.186,
+      "In this sector,"
+    ],
+    [
+      478.186,
+      482.636,
+      "low debt and cycle timing are your two best friends."
+    ],
+    [
+      483.136,
+      485.603,
+      "Now the traps in real estate —"
+    ],
+    [
+      485.603,
+      489.057,
+      "and this sector has buried many investors."
+    ],
+    [
+      489.057,
+      494.238,
+      "The first — trusting strong reported profit as proof of health."
+    ],
+    [
+      494.238,
+      499.09,
+      "Accounting rules make property profit lag reality by years,"
+    ],
+    [
+      499.09,
+      505.916,
+      "so a company can report healthy profits from old projects even as new sales dry up."
+    ],
+    [
+      505.916,
+      510.193,
+      "Always check current pre-sales and cash collections,"
+    ],
+    [
+      510.193,
+      512.249,
+      "not just the profit line."
+    ],
+    [
+      512.249,
+      513.236,
+      "The second —"
+    ],
+    [
+      513.236,
+      517.594,
+      "the dangerous belief that property only ever goes up."
+    ],
+    [
+      517.594,
+      521.706,
+      "Real estate has suffered brutal, multi-year busts,"
+    ],
+    [
+      521.706,
+      523.269,
+      "and in those busts,"
+    ],
+    [
+      523.269,
+      527.134,
+      "heavily indebted developers have gone bankrupt."
+    ],
+    [
+      527.134,
+      530.259,
+      "This is a cyclical, not a one-way bet."
+    ],
+    [
+      530.259,
+      531.164,
+      "The third —"
+    ],
+    [
+      531.164,
+      535.44,
+      "buying a builder just because the stock looks cheap."
+    ],
+    [
+      535.44,
+      545.062,
+      "Heavy debt plus a pile of unsold inventory can make a cheap-looking developer a classic value trap that gets cheaper."
+    ],
+    [
+      545.062,
+      549.174,
+      "Watch the cash, fear the debt, respect the cycle —"
+    ],
+    [
+      549.174,
+      553.944,
+      "and real estate can be hugely rewarding at the right time."
+    ],
+    [
+      554.444,
+      558.278,
+      "Real estate and infrastructure, gathered up."
+    ],
+    [
+      558.278,
+      562.983,
+      "It spans residential developers, commercial and REITs,"
+    ],
+    [
+      562.983,
+      567.601,
+      "infrastructure construction, and building materials —"
+    ],
+    [
+      567.601,
+      569.866,
+      "each analysed differently."
+    ],
+    [
+      569.866,
+      573.09,
+      "Interest rates are the master driver,"
+    ],
+    [
+      573.09,
+      577.795,
+      "and a rate-cut cycle is the classic spark for a rally."
+    ],
+    [
+      577.795,
+      582.849,
+      "The key metrics are pre-sales, collections, and net debt —"
+    ],
+    [
+      582.849,
+      585.811,
+      "never trust reported profit alone,"
+    ],
+    [
+      585.811,
+      588.599,
+      "because accounting lags reality."
+    ],
+    [
+      588.599,
+      592.433,
+      "It's a high-beta cyclical with brutal busts,"
+    ],
+    [
+      592.433,
+      596.18,
+      "so favour low-debt leaders, time the cycle,"
+    ],
+    [
+      596.18,
+      598.358,
+      "and use REITs for income."
+    ],
+    [
+      598.358,
+      601.233,
+      "Watch the cash and fear the debt."
+    ],
+    [
+      601.233,
+      605.241,
+      "Next, one of India's best structural stories —"
+    ],
+    [
+      605.241,
+      606.984,
+      "specialty chemicals."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sx/rea.wav",
+      "volume": 1.0
+    }
+  }
+}

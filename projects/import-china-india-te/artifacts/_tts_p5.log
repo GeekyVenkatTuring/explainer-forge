@@ -1,0 +1,25 @@
+  a19_div         19.17s
+  a19_bis         38.20s
+  a19_need        35.05s
+  a19_recap       34.67s
+ch19: total 128.59s (2.14 min), 4 scenes, 32 cues
+  a20_ptitle      12.09s
+  a20_flow        44.63s
+  a20_cost        35.08s
+  a20_recap       33.71s
+ch20: total 127.01s (2.12 min), 4 scenes, 36 cues
+  a21_ptitle      13.36s
+  a21_label       40.98s
+  a21_lmpc        33.93s
+  a21_recap       31.77s
+ch21: total 121.54s (2.03 min), 4 scenes, 33 cues
+  a22_ptitle      12.33s
+  a22_toy         40.96s
+  a22_lesson      40.36s
+  a22_recap       31.93s
+ch22: total 127.08s (2.12 min), 4 scenes, 33 cues
+  a23_ptitle      11.52s
+  a23_traps       45.13s
+  a23_right       32.68s
+  a23_recap       31.89s
+ch23: total 122.71s (2.05 min), 4 scenes, 33 cues

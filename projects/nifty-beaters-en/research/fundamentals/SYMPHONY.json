@@ -1,0 +1,102 @@
+{
+ "ticker": "SYMPHONY",
+ "scraped_at": "2026-08-14T15:29:39",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 4276.0,
+ "current_price": 623.0,
+ "pe": 1099.0,
+ "book_value": 79.4,
+ "dividend_yield_pct": 1.46,
+ "roce_pct": 20.6,
+ "roe_pct": 2.96,
+ "face_value": 2.0,
+ "high": 992.0,
+ "sales_growth": {
+  "10 Years": -16.0,
+  "5 Years": -30.0,
+  "3 Years": -45.0,
+  "TTM": -98.0
+ },
+ "profit_growth": {
+  "10 Years": -6.0,
+  "5 Years": -7.0,
+  "3 Years": -11.0,
+  "1 Year": -33.0
+ },
+ "roe_hist": {
+  "Equity Capital": 7.0,
+  "Reserves": 299.0,
+  "Borrowings&nbsp; +": 0.0,
+  "Other Liabilities&nbsp; +": 116.0,
+  "Total Liabilities": 423.0,
+  "Fixed Assets&nbsp; +": 68.0,
+  "CWIP": 0.0,
+  "Investments": 242.0,
+  "Other Assets&nbsp; +": 112.0,
+  "Total Assets": 423.0
+ },
+ "price_cagr": {
+  "10 Years": 21.0,
+  "5 Years": 17.0,
+  "3 Years": 18.0,
+  "Last Year": 3.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "9%",
+   "15%",
+   "18%",
+   "17%",
+   "22%",
+   "27%",
+   "12%",
+   "22%",
+   "10%",
+   "15%",
+   "10%",
+   "15%",
+   "12%"
+  ],
+  "eps": [
+   "3.48",
+   "5.08",
+   "5.95",
+   "6.96",
+   "12.76",
+   "8.15",
+   "-1.46",
+   "11.50",
+   "6.12",
+   "2.77",
+   "2.77",
+   "-31.75",
+   "5.82"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 19.6%"
+ ],
+ "cons": [
+  "Stock is trading at 7.88 times its book value",
+  "The company has delivered a poor sales growth of 4.67% over past five years."
+ ]
+}

@@ -1,0 +1,670 @@
+{
+ "cuts": [
+  {
+   "id": "solar-ch02-science_divider",
+   "type": "sol_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 11.962,
+   "props": {
+    "n": 2,
+    "title": "The Science",
+    "sub": "how a panel turns light into power",
+    "color": "#38BDF8",
+    "dur": 12.462
+   }
+  },
+  {
+   "id": "solar-ch02-science_spectrum",
+   "type": "sol_spectrum",
+   "in_seconds": 12.462,
+   "out_seconds": 51.322,
+   "props": {
+    "dur": 39.36
+   }
+  },
+  {
+   "id": "solar-ch02-science_cell",
+   "type": "sol_cell",
+   "in_seconds": 51.822,
+   "out_seconds": 108.783,
+   "props": {
+    "dur": 57.461
+   }
+  },
+  {
+   "id": "solar-ch02-science_panel",
+   "type": "sol_panel",
+   "in_seconds": 109.283,
+   "out_seconds": 151.967,
+   "props": {
+    "dur": 43.184
+   }
+  },
+  {
+   "id": "solar-ch02-science_efficiency",
+   "type": "sol_efficiency",
+   "in_seconds": 152.467,
+   "out_seconds": 199.911,
+   "props": {
+    "dur": 47.944
+   }
+  },
+  {
+   "id": "solar-ch02-science_types",
+   "type": "sol_types",
+   "in_seconds": 200.411,
+   "out_seconds": 238.558,
+   "props": {
+    "dur": 38.647
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.809,
+   "Part two."
+  ],
+  [
+   0.809,
+   1.619,
+   "The science."
+  ],
+  [
+   2.25,
+   4.274,
+   "To sell something with confidence,"
+  ],
+  [
+   4.274,
+   6.297,
+   "you have to understand it."
+  ],
+  [
+   6.297,
+   9.534,
+   "So let's open up a solar panel and"
+  ],
+  [
+   9.534,
+   11.962,
+   "see exactly how light becomes electricity."
+  ],
+  [
+   12.462,
+   14.604,
+   "It starts with the sunlight itself."
+  ],
+  [
+   15.236,
+   18.092,
+   "Light does not arrive as a smooth stream."
+  ],
+  [
+   18.092,
+   20.591,
+   "It arrives in tiny packets of energy."
+  ],
+  [
+   20.591,
+   22.733,
+   "Each packet is called a photon."
+  ],
+  [
+   23.365,
+   26.221,
+   "Think of sunlight as a constant rain of"
+  ],
+  [
+   26.221,
+   27.292,
+   "these energy packets,"
+  ],
+  [
+   27.292,
+   28.363,
+   "falling on everything."
+  ],
+  [
+   28.995,
+   30.423,
+   "On a bright day,"
+  ],
+  [
+   30.423,
+   33.279,
+   "about one thousand watts of sunlight lands on"
+  ],
+  [
+   33.279,
+   35.421,
+   "every single square metre of ground."
+  ],
+  [
+   36.053,
+   38.552,
+   "That is a lot of free energy,"
+  ],
+  [
+   38.552,
+   39.266,
+   "spread thin."
+  ],
+  [
+   39.266,
+   42.122,
+   "A solar panel's whole job is to stand"
+  ],
+  [
+   42.122,
+   44.264,
+   "in that rain and catch it."
+  ],
+  [
+   44.896,
+   47.752,
+   "So the question becomes \u2014 how do you"
+  ],
+  [
+   47.752,
+   50.608,
+   "turn a packet of light into a flow"
+  ],
+  [
+   50.608,
+   51.322,
+   "of electricity?"
+  ],
+  [
+   51.822,
+   54.741,
+   "This is the heart of everything \u2014 the"
+  ],
+  [
+   54.741,
+   55.471,
+   "photovoltaic effect."
+  ],
+  [
+   55.471,
+   56.565,
+   "It sounds complex;"
+  ],
+  [
+   56.565,
+   57.66,
+   "it really isn't."
+  ],
+  [
+   58.291,
+   61.21,
+   "A solar cell is a thin slice of"
+  ],
+  [
+   61.21,
+   61.575,
+   "silicon,"
+  ],
+  [
+   61.575,
+   63.035,
+   "built in two layers."
+  ],
+  [
+   63.666,
+   66.585,
+   "The top layer is treated to have spare"
+  ],
+  [
+   66.585,
+   66.95,
+   "electrons,"
+  ],
+  [
+   66.95,
+   68.409,
+   "which carry negative charge."
+  ],
+  [
+   68.409,
+   71.328,
+   "The bottom layer is treated to have empty"
+  ],
+  [
+   71.328,
+   71.693,
+   "spaces,"
+  ],
+  [
+   71.693,
+   72.423,
+   "called holes,"
+  ],
+  [
+   72.423,
+   73.517,
+   "which act positive."
+  ],
+  [
+   74.149,
+   77.068,
+   "Where the two layers meet \u2014 the junction"
+  ],
+  [
+   77.068,
+   79.257,
+   "\u2014 nature sets up a built-in,"
+  ],
+  [
+   79.257,
+   79.987,
+   "one-way push."
+  ],
+  [
+   80.618,
+   80.983,
+   "Now,"
+  ],
+  [
+   80.983,
+   83.902,
+   "a photon strikes the silicon and knocks an"
+  ],
+  [
+   83.902,
+   84.632,
+   "electron loose."
+  ],
+  [
+   85.263,
+   88.182,
+   "That freed electron gets pushed by the junction"
+  ],
+  [
+   88.182,
+   89.642,
+   "out through the top."
+  ],
+  [
+   89.642,
+   92.561,
+   "It has nowhere to go but through your"
+  ],
+  [
+   92.561,
+   94.75,
+   "wire \u2014 so it travels along,"
+  ],
+  [
+   94.75,
+   95.844,
+   "lights the bulb,"
+  ],
+  [
+   95.844,
+   96.939,
+   "does real work,"
+  ],
+  [
+   96.939,
+   98.763,
+   "and returns to the bottom."
+  ],
+  [
+   99.395,
+   102.314,
+   "That steady flow of electrons through the wire"
+  ],
+  [
+   102.314,
+   103.408,
+   "is electric current."
+  ],
+  [
+   104.04,
+   104.77,
+   "No fuel,"
+  ],
+  [
+   104.77,
+   105.864,
+   "no moving parts,"
+  ],
+  [
+   105.864,
+   106.594,
+   "no noise."
+  ],
+  [
+   106.594,
+   107.688,
+   "Just light in,"
+  ],
+  [
+   107.688,
+   108.783,
+   "and electrons out."
+  ],
+  [
+   109.283,
+   110.71,
+   "One cell is tiny."
+  ],
+  [
+   111.342,
+   113.84,
+   "It makes only about half a volt,"
+  ],
+  [
+   113.84,
+   116.694,
+   "and just a few watts \u2014 not enough"
+  ],
+  [
+   116.694,
+   117.765,
+   "to do much."
+  ],
+  [
+   118.396,
+   120.537,
+   "So we wire many cells together."
+  ],
+  [
+   120.537,
+   123.035,
+   "Sixty to a hundred and forty-four cells,"
+  ],
+  [
+   123.035,
+   125.533,
+   "sealed under glass in an aluminium frame,"
+  ],
+  [
+   125.533,
+   128.388,
+   "make one panel \u2014 the rectangle you see"
+  ],
+  [
+   128.388,
+   129.101,
+   "on roofs."
+  ],
+  [
+   129.733,
+   132.588,
+   "A single modern panel produces around four to"
+  ],
+  [
+   132.588,
+   133.658,
+   "six hundred watts."
+  ],
+  [
+   134.29,
+   137.144,
+   "Then we connect many panels together into an"
+  ],
+  [
+   137.144,
+   137.501,
+   "array."
+  ],
+  [
+   138.133,
+   140.987,
+   "And an array is measured in kilowatts \u2014"
+  ],
+  [
+   140.987,
+   143.128,
+   "enough to run a whole home."
+  ],
+  [
+   143.76,
+   145.544,
+   "So the ladder is simple:"
+  ],
+  [
+   145.544,
+   146.971,
+   "cells make a panel,"
+  ],
+  [
+   146.971,
+   148.399,
+   "panels make an array,"
+  ],
+  [
+   148.399,
+   151.253,
+   "and the array is sized to match the"
+  ],
+  [
+   151.253,
+   151.967,
+   "electricity bill."
+  ],
+  [
+   152.467,
+   152.837,
+   "Now,"
+  ],
+  [
+   152.837,
+   153.947,
+   "a fair question."
+  ],
+  [
+   153.947,
+   155.427,
+   "Of all that sunlight,"
+  ],
+  [
+   155.427,
+   157.276,
+   "how much actually becomes electricity?"
+  ],
+  [
+   157.908,
+   160.868,
+   "Of the one thousand watts landing on a"
+  ],
+  [
+   160.868,
+   161.608,
+   "square metre,"
+  ],
+  [
+   161.608,
+   164.567,
+   "a good modern panel converts only about two"
+  ],
+  [
+   164.567,
+   164.937,
+   "hundred."
+  ],
+  [
+   165.569,
+   168.528,
+   "That is an efficiency of roughly twenty-one\npercent."
+  ],
+  [
+   169.16,
+   171.38,
+   "The rest mostly leaves as heat."
+  ],
+  [
+   172.011,
+   174.231,
+   "And that number is the ceiling,"
+  ],
+  [
+   174.231,
+   175.341,
+   "not the promise."
+  ],
+  [
+   175.341,
+   175.711,
+   "Heat,"
+  ],
+  [
+   175.711,
+   176.081,
+   "dust,"
+  ],
+  [
+   176.081,
+   179.04,
+   "and even a little shade all pull it"
+  ],
+  [
+   179.04,
+   179.41,
+   "down."
+  ],
+  [
+   180.042,
+   183.001,
+   "This is why a panel is rated at"
+  ],
+  [
+   183.001,
+   185.961,
+   "strong noon sun \u2014 real output rises and"
+  ],
+  [
+   185.961,
+   187.441,
+   "falls with the weather."
+  ],
+  [
+   188.072,
+   190.662,
+   "A useful rule of thumb for India:"
+  ],
+  [
+   190.662,
+   193.622,
+   "every one kilowatt of panels makes about four"
+  ],
+  [
+   193.622,
+   195.472,
+   "units of electricity per day."
+  ],
+  [
+   195.472,
+   198.431,
+   "Remember that number \u2014 you will use it"
+  ],
+  [
+   198.431,
+   199.911,
+   "on every sales call."
+  ],
+  [
+   200.411,
+   203.379,
+   "Walk into the market and you'll meet three"
+  ],
+  [
+   203.379,
+   204.493,
+   "kinds of panel."
+  ],
+  [
+   205.124,
+   208.093,
+   "Monocrystalline \u2014 sleek and black \u2014 is the"
+  ],
+  [
+   208.093,
+   208.835,
+   "most efficient,"
+  ],
+  [
+   208.835,
+   209.948,
+   "around twenty-one percent,"
+  ],
+  [
+   209.948,
+   211.803,
+   "and it's today's default choice."
+  ],
+  [
+   212.435,
+   214.29,
+   "Polycrystalline \u2014 the older blue,"
+  ],
+  [
+   214.29,
+   217.258,
+   "speckled panel \u2014 is cheaper but less efficient,"
+  ],
+  [
+   217.258,
+   218.371,
+   "around seventeen percent,"
+  ],
+  [
+   218.371,
+   220.227,
+   "and it's slowly fading out."
+  ],
+  [
+   220.858,
+   223.827,
+   "And thin-film \u2014 light and even bendable \u2014"
+  ],
+  [
+   223.827,
+   225.311,
+   "is the least efficient,"
+  ],
+  [
+   225.311,
+   228.279,
+   "but useful where you have lots of area"
+  ],
+  [
+   228.279,
+   229.392,
+   "and odd shapes."
+  ],
+  [
+   230.024,
+   231.508,
+   "For a normal rooftop,"
+  ],
+  [
+   231.508,
+   232.992,
+   "where space is limited,"
+  ],
+  [
+   232.992,
+   234.476,
+   "monocrystalline almost always wins,"
+  ],
+  [
+   234.476,
+   237.445,
+   "because it squeezes the most watts out of"
+  ],
+  [
+   237.445,
+   238.558,
+   "every square foot."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "sol/solar-ch02-science.wav",
+   "volume": 1.0
+  }
+ }
+}

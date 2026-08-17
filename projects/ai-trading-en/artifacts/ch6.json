@@ -1,0 +1,251 @@
+{
+  "cuts": [
+    {
+      "id": "s60_divider",
+      "type": "ait_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 11.226,
+      "props": {
+        "n": 6,
+        "title": "Your Plan",
+        "sub": "A realistic path, and an honest verdict",
+        "color": "data",
+        "parts": 6,
+        "dur": 11.726
+      }
+    },
+    {
+      "id": "s61_plan",
+      "type": "ait_list",
+      "in_seconds": 11.726,
+      "out_seconds": 54.927,
+      "props": {
+        "kicker": "THE FIRST 90 DAYS",
+        "title": "A month-by-month starting plan",
+        "tone": "neutral",
+        "color": "edge",
+        "items": [
+          {
+            "h": "Month 1 \u2014 Learn the ground",
+            "sub": "Varsity for markets, a short Python course, and read part two again."
+          },
+          {
+            "h": "Month 2 \u2014 Build one white-box bot",
+            "sub": "Idea to code to backtest to walk-forward. No AI yet."
+          },
+          {
+            "h": "Month 3 \u2014 Paper trade and journal",
+            "sub": "Run it live with fake money. Write down every trade and feeling."
+          },
+          {
+            "h": "Only after that \u2014 go live, tiny",
+            "sub": "Real money so small a total loss wouldn't sting. Then decide."
+          }
+        ],
+        "caption": "Notice AI isn't in the first ninety days. Skill comes before intelligence.",
+        "dur": 43.701
+      }
+    },
+    {
+      "id": "s61b_whyquit",
+      "type": "ait_list",
+      "in_seconds": 55.427,
+      "out_seconds": 110.945,
+      "props": {
+        "kicker": "WHY MOST PEOPLE QUIT",
+        "title": "The five exits \u2014 and how to avoid them",
+        "tone": "bad",
+        "color": "risk",
+        "items": [
+          {
+            "h": "They expected fast money",
+            "sub": "Fix: expect a multi-year craft, and the disappointment never comes."
+          },
+          {
+            "h": "They blew up by skipping risk rules",
+            "sub": "Fix: 1% per trade, always. You can't quit if you're still standing."
+          },
+          {
+            "h": "They chased a new strategy every week",
+            "sub": "Fix: master one simple edge before touching a second."
+          },
+          {
+            "h": "They couldn't sit through a drawdown",
+            "sub": "Fix: paper trading builds the stomach before real money does."
+          },
+          {
+            "h": "They traded alone, in the dark",
+            "sub": "Fix: journal, and learn beside honest people building in the open."
+          }
+        ],
+        "caption": "Almost nobody quits because the math was too hard. They quit for these five reasons.",
+        "dur": 56.018
+      }
+    },
+    {
+      "id": "s62_good",
+      "type": "ait_stat",
+      "in_seconds": 111.445,
+      "out_seconds": 155.869,
+      "props": {
+        "kicker": "REALISTIC EXPECTATIONS",
+        "title": "What success actually looks like",
+        "color": "money",
+        "stats": [
+          {
+            "value": 90,
+            "suffix": "%",
+            "label": "of your effort is process, not prediction",
+            "src": "the unglamorous truth",
+            "c": "data"
+          },
+          {
+            "value": 1,
+            "suffix": "",
+            "label": "one small, durable edge is a real career",
+            "src": "you don't need ten",
+            "c": "money"
+          },
+          {
+            "value": 0,
+            "suffix": "",
+            "label": "shortcuts that actually work",
+            "src": "it's a craft, not a jackpot",
+            "c": "risk"
+          }
+        ],
+        "note": "The realistic win is a modest, repeatable edge you defend for years \u2014 not a jackpot.",
+        "dur": 44.924
+      }
+    },
+    {
+      "id": "s63_verdict",
+      "type": "ait_compare",
+      "in_seconds": 156.369,
+      "out_seconds": 199.413,
+      "props": {
+        "kicker": "THE HONEST VERDICT",
+        "title": "Should you actually do this?",
+        "left": {
+          "emoji": "\u2705",
+          "title": "Do it if\u2026",
+          "c": "money",
+          "mark": "\u2713",
+          "items": [
+            "You love the process, not just profit",
+            "You'll treat it as a multi-year craft",
+            "You can risk money you won't miss",
+            "You enjoy coding and data puzzles"
+          ]
+        },
+        "right": {
+          "emoji": "\ud83d\uded1",
+          "title": "Skip it if\u2026",
+          "c": "risk",
+          "mark": "\u2715",
+          "items": [
+            "You need this money to grow safely",
+            "You want passive, hands-off income",
+            "A guaranteed-returns ad pulled you in",
+            "You won't paper trade patiently first"
+          ]
+        },
+        "caption": "For most people, low-cost index investing beats a home-made bot. That's okay.",
+        "dur": 43.544
+      }
+    },
+    {
+      "id": "s62b_weekly",
+      "type": "ait_list",
+      "in_seconds": 199.913,
+      "out_seconds": 246.537,
+      "props": {
+        "kicker": "ONCE YOU'RE RUNNING",
+        "title": "A simple weekly routine",
+        "tone": "neutral",
+        "color": "edge",
+        "items": [
+          {
+            "h": "Check the logs \u2014 did the bot behave?",
+            "sub": "Every trade should match a rule you can point to."
+          },
+          {
+            "h": "Compare live results to the backtest",
+            "sub": "Drifting apart is your early warning of edge decay."
+          },
+          {
+            "h": "Review your journal, not just your P&L",
+            "sub": "Did you override the bot? Why? Be honest with yourself."
+          },
+          {
+            "h": "Research one improvement \u2014 test it offline",
+            "sub": "Never edit a live bot on a whim. Change it deliberately."
+          }
+        ],
+        "caption": "The work is never 'set and forget'. It's a calm, weekly loop of checking and improving.",
+        "dur": 47.124
+      }
+    },
+    {
+      "id": "s63b_learn",
+      "type": "ait_cards",
+      "in_seconds": 247.037,
+      "out_seconds": 292.685,
+      "props": {
+        "kicker": "KEEP GOING",
+        "title": "Where to keep learning",
+        "color": "ai",
+        "cards": [
+          {
+            "emoji": "\ud83d\udcda",
+            "title": "Zerodha Varsity",
+            "body": "Free, deep, India-specific market and F&O education.",
+            "tag": "foundations",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83e\uddea",
+            "title": "QuantConnect docs & bootcamp",
+            "body": "Learn real backtesting on a professional engine, free.",
+            "tag": "hands-on",
+            "c": "data"
+          },
+          {
+            "emoji": "\ud83d\udcc4",
+            "title": "Open-source & papers",
+            "body": "Read FinRL and TradingAgents; skim quant finance papers.",
+            "tag": "frontier",
+            "c": "edge"
+          },
+          {
+            "emoji": "\ud83e\uddd1\u200d\ud83e\udd1d\u200d\ud83e\uddd1",
+            "title": "Serious communities",
+            "body": "Learn in the open. Avoid any group promising signals.",
+            "tag": "careful",
+            "c": "risk"
+          }
+        ],
+        "dur": 46.148
+      }
+    },
+    {
+      "id": "s64_final",
+      "type": "ait_callout",
+      "in_seconds": 293.185,
+      "out_seconds": 327.253,
+      "props": {
+        "kicker": "THE WHOLE COURSE IN ONE THOUGHT",
+        "color": "edge",
+        "text": "AI trading is real \u2014 but the edge is a process you build, not a product you buy.",
+        "sub": "Master the pipeline, respect the risk, and the AI becomes a tool, not a gamble.",
+        "dur": 34.568
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "ait/ch6.wav",
+      "volume": 1.0
+    }
+  }
+}

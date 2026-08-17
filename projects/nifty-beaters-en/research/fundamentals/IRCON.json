@@ -1,0 +1,103 @@
+{
+ "ticker": "IRCON",
+ "scraped_at": "2026-08-14T15:28:21",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 11738.0,
+ "current_price": 125.0,
+ "pe": 22.4,
+ "book_value": 70.6,
+ "dividend_yield_pct": 0.95,
+ "roce_pct": 9.69,
+ "roe_pct": 9.19,
+ "face_value": 2.0,
+ "high": 190.0,
+ "sales_growth": {
+  "10 Years": 4.0,
+  "5 Years": 9.0,
+  "3 Years": -8.0,
+  "TTM": -22.0
+ },
+ "profit_growth": {
+  "5 Years": 23.0,
+  "3 Years": 7.0,
+  "1 Year": -24.0
+ },
+ "roe_hist": {
+  "Operating Profit": 251.0,
+  "OPM %": 9.0,
+  "Other Income&nbsp; +": 64.0,
+  "Interest": 33.0,
+  "Depreciation": 19.0,
+  "Profit before tax": 263.0,
+  "Tax %": 29.0,
+  "Net Profit&nbsp; +": 187.0,
+  "EPS in Rs": 1.99
+ },
+ "price_cagr": {
+  "10 Years": 12.0,
+  "5 Years": 13.0,
+  "3 Years": 12.0,
+  "Last Year": 9.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "9%",
+   "7%",
+   "9%",
+   "8%",
+   "11%",
+   "8%",
+   "5%",
+   "7%",
+   "11%",
+   "7%",
+   "7%",
+   "8%",
+   "10%"
+  ],
+  "eps": [
+   "1.99",
+   "2.67",
+   "2.60",
+   "2.62",
+   "2.38",
+   "2.19",
+   "0.92",
+   "2.24",
+   "1.75",
+   "1.47",
+   "1.07",
+   "2.04",
+   "0.99"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 31.9%"
+ ],
+ "cons": [
+  "The company has delivered a poor sales growth of 11.2% over past five years.",
+  "Company has a low return on equity of 12.1% over last 3 years.",
+  "Earnings include an other income of Rs.476 Cr.",
+  "Debtor days have increased from 41.6 to 56.3 days.",
+  "Promoter holding has decreased over last 3 years: -8.01%"
+ ]
+}

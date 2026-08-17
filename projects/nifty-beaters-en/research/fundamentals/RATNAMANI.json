@@ -1,0 +1,97 @@
+{
+ "ticker": "RATNAMANI",
+ "scraped_at": "2026-08-14T15:30:03",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 16451.0,
+ "current_price": 2347.0,
+ "pe": 37.5,
+ "book_value": 586.0,
+ "dividend_yield_pct": 0.44,
+ "roce_pct": 17.9,
+ "roe_pct": 12.6,
+ "face_value": 2.0,
+ "high": 3345.0,
+ "sales_growth": {
+  "10 Years": 11.0,
+  "5 Years": 12.0,
+  "3 Years": -1.0,
+  "TTM": -23.0
+ },
+ "profit_growth": {
+  "10 Years": 20.0,
+  "5 Years": 10.0,
+  "3 Years": -5.0,
+  "1 Year": -2.0
+ },
+ "roe_hist": {
+  "Equity Capital": 9.0,
+  "Reserves": 900.0,
+  "Borrowings&nbsp; +": 39.0,
+  "Other Liabilities&nbsp; +": 279.0,
+  "Fixed Assets&nbsp; +": 425.0,
+  "CWIP": 42.0,
+  "Investments": 20.0,
+  "Other Assets&nbsp; +": 740.0
+ },
+ "price_cagr": {
+  "10 Years": 17.0,
+  "5 Years": 17.0,
+  "3 Years": 16.0,
+  "Last Year": 13.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "18%",
+   "22%",
+   "16%",
+   "16%",
+   "14%",
+   "16%",
+   "15%",
+   "18%",
+   "16%",
+   "18%",
+   "19%",
+   "14%",
+   "17%"
+  ],
+  "eps": [
+   "19.10",
+   "23.38",
+   "18.96",
+   "27.42",
+   "15.00",
+   "14.32",
+   "18.73",
+   "29.55",
+   "18.81",
+   "19.43",
+   "15.67",
+   "14.93",
+   "11.72"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free."
+ ],
+ "cons": []
+}

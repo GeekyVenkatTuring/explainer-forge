@@ -1,0 +1,851 @@
+{
+  "cuts": [
+    {
+      "id": "pramodini_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 29.204,
+      "props": {
+        "title": "Pramodini Medicare IPO",
+        "sub": "Diagnostics chain · ₹69 Cr · 12–14 Aug 2026",
+        "kicker": "SME IPO ANALYSIS · SME",
+        "dur": 29.704
+      }
+    },
+    {
+      "id": "pramodini_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 29.704,
+      "out_seconds": 66.586,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Pramodini Medicare",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🩻",
+            "k": "Diagnostics services",
+            "v": "Provides technology-enabled radiology, pathology and nuclear-medicine diagnostics",
+            "chip": "DIAGNOSTICS"
+          },
+          {
+            "emoji": "🏥",
+            "k": "Hospital & PPP model",
+            "v": "Runs services through hospitals, public-private-partnership projects, PSUs and standalone centres — contract-driven",
+            "chip": "PPP · CONTRACTS"
+          },
+          {
+            "emoji": "📈",
+            "k": "Small but growing",
+            "v": "A regional player scaling its diagnostics footprint on India's rising healthcare demand",
+            "chip": "GROWTH"
+          }
+        ],
+        "dur": 37.382
+      }
+    },
+    {
+      "id": "pramodini_clients",
+      "type": "sm_iconcards",
+      "in_seconds": 67.086,
+      "out_seconds": 114.528,
+      "props": {
+        "kicker": "BUSINESS DEEP-DIVE · CLIENTS & CONTRACTS",
+        "title": "Clients & Contracts",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏥",
+            "k": "Hospitals, PSUs & med colleges",
+            "v": "Serves public and private hospitals, PSUs, medical colleges and standalone centres across Tier 1, 2 and 3 cities",
+            "chip": "MULTI-CLIENT"
+          },
+          {
+            "emoji": "📘",
+            "k": "16 centres on long-term contracts",
+            "v": "Runs 16 diagnostic centres across 7 states via PPP, PSU and private partnerships — those long-term contracts are its order-book equivalent",
+            "chip": "16 CENTRES · 7 STATES"
+          },
+          {
+            "emoji": "🩻",
+            "k": "Serious diagnostic hardware",
+            "v": "Operates 8 CT, 7 MRI, 20 X-ray and a PET-CT, plus a 24×7 teleradiology hub and central lab in Vijayawada",
+            "chip": "MRI · CT · PET-CT"
+          }
+        ],
+        "dur": 47.942
+      }
+    },
+    {
+      "id": "pramodini_fin",
+      "type": "sm_stats",
+      "in_seconds": 115.028,
+      "out_seconds": 149.414,
+      "props": {
+        "kicker": "FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY25",
+            "to": 39,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "≈ ₹38.55 Cr (from ₹35.79 Cr)"
+          },
+          {
+            "label": "Net Profit FY25",
+            "to": 10,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "≈ ₹10.04 Cr (+74% YoY)"
+          },
+          {
+            "label": "Issue size",
+            "to": 69,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#22D3EE",
+            "sub": "₹69.04 Cr · band ₹110–118"
+          }
+        ],
+        "note": "Modest revenue but a strong ~26% net margin, and profit up 74% — unusually profitable for a company this size.",
+        "dur": 34.886
+      }
+    },
+    {
+      "id": "pramodini_issue",
+      "type": "sm_stats",
+      "in_seconds": 149.914,
+      "out_seconds": 180.676,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 69,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "₹69.04 Cr"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 63,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "~91% funds the business"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 6,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "~9% — ~5.0 lakh shares"
+          }
+        ],
+        "note": "Mostly fresh — about nine-tenths funds the company; a healthy structure.",
+        "dur": 31.262
+      }
+    },
+    {
+      "id": "pramodini_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 181.176,
+      "out_seconds": 210.282,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the Fresh Money Funds",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏭",
+            "k": "Equipment & centres",
+            "v": "Fresh money funds diagnostic equipment and expands its centres and contracts",
+            "chip": "CAPEX"
+          },
+          {
+            "emoji": "🔄",
+            "k": "Working capital",
+            "v": "Supports working capital for its contract and PPP operations",
+            "chip": "WC"
+          },
+          {
+            "emoji": "🧰",
+            "k": "General corporate",
+            "v": "The balance is for general corporate purposes",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 29.606
+      }
+    },
+    {
+      "id": "pramodini_peers",
+      "type": "sm_iconcards",
+      "in_seconds": 210.782,
+      "out_seconds": 259.472,
+      "props": {
+        "kicker": "COMPETITORS · VALUATION",
+        "title": "Big Diagnostics Names — For Scale Only",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🧪",
+            "k": "Dr Lal PathLabs & Metropolis",
+            "v": "The large LISTED diagnostics chains. They trade richly — often around 50–60× — but are national brands many times Pramodini's size: a reference, not a direct peer",
+            "chip": "REFERENCE ~50–60×"
+          },
+          {
+            "emoji": "🏥",
+            "k": "A regional, PPP-led player",
+            "v": "Pramodini is smaller and more contract-driven than the branded chains, so its economics differ",
+            "chip": "DIFFERENT MODEL"
+          },
+          {
+            "emoji": "📈",
+            "k": "Strong margins, tiny scale",
+            "v": "A ~26% net margin and +74% profit are impressive — but at SME size, judge it on contract renewals, not a peer P/E",
+            "chip": "SME SCALE"
+          }
+        ],
+        "dur": 49.19
+      }
+    },
+    {
+      "id": "pramodini_verdict",
+      "type": "sm_myths",
+      "in_seconds": 259.972,
+      "out_seconds": 299.23,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "Tiny SME; contract/PPP concentration",
+            "f": "Strong ~26% net margin; profit +74%"
+          },
+          {
+            "m": "Modest revenue growth (~8%)",
+            "f": "~91% fresh — funds the business"
+          },
+          {
+            "m": "Big ~₹1.4 lakh minimum bid; thin liquidity",
+            "f": "Rides rising healthcare demand"
+          }
+        ],
+        "dur": 39.758
+      }
+    },
+    {
+      "id": "pramodini_apply",
+      "type": "sm_iconcards",
+      "in_seconds": 299.73,
+      "out_seconds": 345.106,
+      "props": {
+        "kicker": "HOW TO APPLY · SME IPO",
+        "title": "Platform & Money Needed",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "🏢",
+            "k": "Lists on the SME platform",
+            "v": "A separate platform for small companies — NOT the mainboard. Lot sizes, liquidity and risk all differ",
+            "chip": "SME"
+          },
+          {
+            "emoji": "💰",
+            "k": "A large minimum bid",
+            "v": "One lot is 1,200 shares. The minimum you need is about ₹1.42 lakh — far above a mainboard IPO's ~₹15,000",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "⚠️",
+            "k": "Higher risk, thin liquidity",
+            "v": "SME stocks are volatile and lightly traded, with lighter disclosure — invest only money you can afford to lock up",
+            "chip": "RISK"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE/BSE SME IPO pages, Chittorgarh or your broker app; allotment is by lottery if oversubscribed",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 45.876
+      }
+    },
+    {
+      "id": "pramodini_recap",
+      "type": "sm_recap",
+      "in_seconds": 345.606,
+      "out_seconds": 407.566,
+      "props": {
+        "title": "Pramodini Medicare IPO — at a Glance",
+        "items": [
+          "Business: radiology/pathology diagnostics (hospital & PPP)",
+          "FY25: revenue ₹38.55 Cr, profit ₹10.04 Cr (+74%)",
+          "₹69.04 Cr issue — ~91% fresh",
+          "Big chains (Dr Lal/Metropolis) are references, not peers",
+          "SME min ~₹1.42 lakh · GMP flat at open (unofficial)"
+        ],
+        "closer": "Unusually profitable for its size with a clean structure — but a tiny, contract-driven SME. Read the RHP; decide for yourself.",
+        "dur": 62.46
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.002,
+      "Let's break down the Pramodini Medicare I-P-O —"
+    ],
+    [
+      4.002,
+      8.94,
+      "a sixty-nine crore S-M-E issue from a diagnostics company."
+    ],
+    [
+      8.94,
+      12.261,
+      "It's unusually profitable for its size,"
+    ],
+    [
+      12.261,
+      17.88,
+      "and we'll see how it compares to the big listed diagnostics names."
+    ],
+    [
+      17.88,
+      22.818,
+      "We'll cover the business, the financials, the money trail,"
+    ],
+    [
+      22.818,
+      25.713,
+      "the competitors, and how to apply."
+    ],
+    [
+      25.713,
+      29.204,
+      "This is education, not investment advice."
+    ],
+    [
+      29.704,
+      31.903,
+      "So what does Pramodini do?"
+    ],
+    [
+      31.903,
+      35.71,
+      "It provides diagnostics services — radiology,"
+    ],
+    [
+      35.71,
+      38.417,
+      "pathology and nuclear medicine —"
+    ],
+    [
+      38.417,
+      41.208,
+      "using technology-enabled systems."
+    ],
+    [
+      41.208,
+      45.015,
+      "Importantly, it runs these through hospitals,"
+    ],
+    [
+      45.015,
+      48.06,
+      "public-private-partnership projects,"
+    ],
+    [
+      48.06,
+      52.036,
+      "government PSUs and its own standalone centres."
+    ],
+    [
+      52.036,
+      54.997,
+      "So it's a contract-driven business,"
+    ],
+    [
+      54.997,
+      58.042,
+      "not a chain of branded walk-in labs."
+    ],
+    [
+      58.042,
+      66.586,
+      "It's a regional player scaling its footprint on India's rising demand for healthcare and diagnostics."
+    ],
+    [
+      67.086,
+      68.42,
+      "Let's go deeper."
+    ],
+    [
+      68.42,
+      70.088,
+      "Who are its clients?"
+    ],
+    [
+      70.088,
+      73.923,
+      "Pramodini serves public and private hospitals,"
+    ],
+    [
+      73.923,
+      78.842,
+      "government P-S-Us, medical colleges and standalone centres,"
+    ],
+    [
+      78.842,
+      82.011,
+      "across Tier one, two and three cities."
+    ],
+    [
+      82.011,
+      92.183,
+      "Its order-book equivalent is its contracts: it runs sixteen diagnostic centres across seven states through public-private,"
+    ],
+    [
+      92.183,
+      94.851,
+      "P-S-U and private partnerships —"
+    ],
+    [
+      94.851,
+      98.936,
+      "long-term deals that give steady, recurring work."
+    ],
+    [
+      98.936,
+      103.689,
+      "And it's backed by serious hardware — eight C-T scanners,"
+    ],
+    [
+      103.689,
+      108.275,
+      "seven M-R-I machines, twenty X-ray units and a PET-C-T,"
+    ],
+    [
+      108.275,
+      114.528,
+      "plus a twenty-four-seven teleradiology hub and a central lab in Vijayawada."
+    ],
+    [
+      115.028,
+      118.229,
+      "Now the financials, and they stand out."
+    ],
+    [
+      118.229,
+      119.87,
+      "Revenue was modest —"
+    ],
+    [
+      119.87,
+      123.235,
+      "about thirty-eight point five five crore,"
+    ],
+    [
+      123.235,
+      127.912,
+      "up from thirty-six — but net profit was around ten crore,"
+    ],
+    [
+      127.912,
+      130.539,
+      "up a sharp seventy-four percent."
+    ],
+    [
+      130.539,
+      135.545,
+      "Do the maths and that's a net margin near twenty-six percent,"
+    ],
+    [
+      135.545,
+      139.566,
+      "which is genuinely high for a company this small."
+    ],
+    [
+      139.566,
+      142.931,
+      "So it's small, but unusually profitable —"
+    ],
+    [
+      142.931,
+      149.414,
+      "the key question is whether those contract-driven margins can hold as it grows."
+    ],
+    [
+      149.914,
+      151.998,
+      "Where does your money go?"
+    ],
+    [
+      151.998,
+      156.833,
+      "Of the sixty-nine crore issue, roughly sixty-three crore —"
+    ],
+    [
+      156.833,
+      159.001,
+      "about ninety-one percent —"
+    ],
+    [
+      159.001,
+      162.669,
+      "is a fresh issue that goes into the company."
+    ],
+    [
+      162.669,
+      164.253,
+      "Only a small slice,"
+    ],
+    [
+      164.253,
+      168.004,
+      "around six crore from about five lakh shares,"
+    ],
+    [
+      168.004,
+      171.422,
+      "is an Offer for Sale by existing holders."
+    ],
+    [
+      171.422,
+      174.173,
+      "So this is a mostly-fresh issue —"
+    ],
+    [
+      174.173,
+      177.925,
+      "nine-tenths of your money funds the business,"
+    ],
+    [
+      177.925,
+      180.676,
+      "which is the healthier structure."
+    ],
+    [
+      181.176,
+      183.747,
+      "What does the fresh money fund?"
+    ],
+    [
+      183.747,
+      188.888,
+      "Diagnostic equipment and expanding its centres and contracts —"
+    ],
+    [
+      188.888,
+      192.951,
+      "the capital a diagnostics business needs to grow."
+    ],
+    [
+      192.951,
+      198.839,
+      "It also supports working capital for its contract and P-P-P operations,"
+    ],
+    [
+      198.839,
+      202.404,
+      "and the rest is general corporate purposes."
+    ],
+    [
+      202.404,
+      205.721,
+      "So the money goes to genuine expansion —"
+    ],
+    [
+      205.721,
+      210.282,
+      "the right use for a small, profitable, growing company."
+    ],
+    [
+      210.782,
+      212.582,
+      "Now — the competitors."
+    ],
+    [
+      212.582,
+      218.392,
+      "The big listed names in diagnostics are Dr Lal PathLabs and Metropolis."
+    ],
+    [
+      218.392,
+      220.847,
+      "They command rich valuations —"
+    ],
+    [
+      220.847,
+      224.448,
+      "often around fifty to sixty times earnings —"
+    ],
+    [
+      224.448,
+      229.031,
+      "but they're national brands many times Pramodini's size,"
+    ],
+    [
+      229.031,
+      233.368,
+      "so they're a reference for what the sector can fetch,"
+    ],
+    [
+      233.368,
+      234.759,
+      "not direct peers."
+    ],
+    [
+      234.759,
+      239.423,
+      "Pramodini is a smaller, contract-and-P-P-P-driven player,"
+    ],
+    [
+      239.423,
+      241.387,
+      "so its economics differ."
+    ],
+    [
+      241.387,
+      245.07,
+      "What really stands out is its profitability —"
+    ],
+    [
+      245.07,
+      250.961,
+      "a net margin near twenty-six percent and profit up seventy-four percent."
+    ],
+    [
+      250.961,
+      253.907,
+      "Impressive — but at this tiny scale,"
+    ],
+    [
+      253.907,
+      257.344,
+      "judge it on whether those contracts renew,"
+    ],
+    [
+      257.344,
+      259.472,
+      "rather than on a peer P-E."
+    ],
+    [
+      259.972,
+      261.614,
+      "Should you subscribe?"
+    ],
+    [
+      261.614,
+      265.915,
+      "The strengths — it's unusually profitable for its size,"
+    ],
+    [
+      265.915,
+      271.937,
+      "with a net margin near twenty-six percent and profit up seventy-four percent,"
+    ],
+    [
+      271.937,
+      276.707,
+      "and about ninety percent is fresh money funding the business."
+    ],
+    [
+      276.707,
+      277.959,
+      "The watch-outs —"
+    ],
+    [
+      277.959,
+      282.338,
+      "it's a tiny S-M-E with contract and P-P-P concentration,"
+    ],
+    [
+      282.338,
+      284.293,
+      "revenue growth is modest,"
+    ],
+    [
+      284.293,
+      288.047,
+      "and there's a big minimum bid with thin trading."
+    ],
+    [
+      288.047,
+      291.097,
+      "The takeaway — an unusually profitable,"
+    ],
+    [
+      291.097,
+      293.365,
+      "cleanly-structured micro-cap,"
+    ],
+    [
+      293.365,
+      295.945,
+      "but small and contract-dependent."
+    ],
+    [
+      295.945,
+      299.23,
+      "Judge it on whether those contracts renew."
+    ],
+    [
+      299.73,
+      304.077,
+      "Now — how to apply, and how S-M-E I-P-Os differ."
+    ],
+    [
+      304.077,
+      307.519,
+      "Pramodini lists on the S-M-E platform,"
+    ],
+    [
+      307.519,
+      312.772,
+      "separate from the mainboard, with its own rules and risks."
+    ],
+    [
+      312.772,
+      314.674,
+      "The minimum is large."
+    ],
+    [
+      314.674,
+      317.754,
+      "One lot is twelve hundred shares —"
+    ],
+    [
+      317.754,
+      321.558,
+      "about one lakh forty-two thousand rupees —"
+    ],
+    [
+      321.558,
+      324.094,
+      "far above a mainboard I-P-O."
+    ],
+    [
+      324.094,
+      328.441,
+      "And S-M-E stocks are volatile and thinly traded,"
+    ],
+    [
+      328.441,
+      332.607,
+      "so invest only what you can afford to lock up."
+    ],
+    [
+      332.607,
+      338.313,
+      "Track the live subscription on the N-S-E and B-S-E S-M-E pages,"
+    ],
+    [
+      338.313,
+      341.302,
+      "Chittorgarh, or your broker app —"
+    ],
+    [
+      341.302,
+      345.106,
+      "allotment is by lottery if oversubscribed."
+    ],
+    [
+      345.606,
+      348.223,
+      "Let's recap Pramodini Medicare."
+    ],
+    [
+      348.223,
+      348.898,
+      "A small,"
+    ],
+    [
+      348.898,
+      355.229,
+      "contract-and-P-P-P-driven diagnostics company that's unusually profitable —"
+    ],
+    [
+      355.229,
+      361.307,
+      "a net margin near twenty-six percent and profit up seventy-four percent."
+    ],
+    [
+      361.307,
+      364.684,
+      "The issue is about ninety percent fresh,"
+    ],
+    [
+      364.684,
+      367.385,
+      "funding equipment and expansion."
+    ],
+    [
+      367.385,
+      373.632,
+      "The big listed chains like Dr Lal and Metropolis are references for scale,"
+    ],
+    [
+      373.632,
+      377.937,
+      "not direct peers, so judge it on its own contracts."
+    ],
+    [
+      377.937,
+      383.17,
+      "The S-M-E minimum is about one lakh forty-two thousand rupees."
+    ],
+    [
+      383.17,
+      387.222,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      387.222,
+      389.586,
+      "it is not investment advice,"
+    ],
+    [
+      389.586,
+      392.371,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      392.371,
+      395.579,
+      "and not a prediction of listing gains."
+    ],
+    [
+      395.579,
+      400.053,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      400.053,
+      405.878,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      405.878,
+      407.566,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/pramodini.wav",
+      "volume": 1.0
+    }
+  }
+}

@@ -1,0 +1,836 @@
+{
+  "cuts": [
+    {
+      "id": "v3_title",
+      "type": "au_title",
+      "in_seconds": 0.0,
+      "out_seconds": 32.121,
+      "props": {
+        "kicker": "AUTO & AUTO-COMPONENTS \u00b7 PART 3 OF 6",
+        "title": "Indian Auto Stocks\nForged, Cast & Machined",
+        "sub": "23 companies \u00b7 the metal backbone \u00b7 what they do \u00b7 P/E \u00b7 moat",
+        "dur": 32.621
+      }
+    },
+    {
+      "id": "f_d1",
+      "type": "au_divider",
+      "in_seconds": 32.621,
+      "out_seconds": 43.847,
+      "props": {
+        "part": "PART ONE",
+        "title": "Forging & Machining",
+        "sub": "Crankshafts, beams and complex precision parts",
+        "color": "#38BDF8",
+        "pips": 3,
+        "at": 1,
+        "dur": 11.726
+      }
+    },
+    {
+      "id": "f01_bhforge",
+      "type": "au_company",
+      "in_seconds": 44.347,
+      "out_seconds": 76.083,
+      "props": {
+        "idx": "01 / 23",
+        "kicker": "FORGING & MACHINING",
+        "name": "Bharat Forge",
+        "ticker": "BHARATFORG",
+        "price": "\u20b92,265",
+        "pe": "96.0\u00d7",
+        "seg": "Forgings",
+        "biz": [
+          "The Kalyani group's flagship \u2014 a global forging leader",
+          "Crankshafts, axles and structural forgings",
+          "Also defence, aerospace, oil & gas and industrial"
+        ],
+        "fin": {
+          "pending": true,
+          "qlabel": "Q1 FY27 due 10-Aug (not out)",
+          "note": "One of the world's largest forging companies; defence is a fast-growing new leg."
+        },
+        "moat": "A global forging leader with deep engineering and a fast-growing defence arm \u2014 but cyclical, and richly valued.",
+        "moatStrength": "WIDE",
+        "dur": 32.236
+      }
+    },
+    {
+      "id": "f02_rkforge",
+      "type": "au_company",
+      "in_seconds": 76.583,
+      "out_seconds": 107.281,
+      "props": {
+        "idx": "02 / 23",
+        "kicker": "FORGING & MACHINING",
+        "name": "Ramkrishna Forgings",
+        "ticker": "RKFORGE",
+        "price": "\u20b9727",
+        "pe": "115\u00d7",
+        "seg": "Forgings",
+        "biz": [
+          "India's second-largest forging company",
+          "Crankshafts, axle beams and gears, mainly for trucks",
+          "Expanding into railways and defence"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1217
+          },
+          "pat": {
+            "to": 47
+          },
+          "note": "Exports and railways are diversifying it beyond the truck cycle."
+        },
+        "moat": "India's number-two forger, diversifying into railways and exports \u2014 but leveraged, and priced at a very rich P/E.",
+        "moatStrength": "NARROW",
+        "dur": 31.198
+      }
+    },
+    {
+      "id": "f03_mmfl",
+      "type": "au_company",
+      "in_seconds": 107.781,
+      "out_seconds": 133.663,
+      "props": {
+        "idx": "03 / 23",
+        "kicker": "FORGING & MACHINING",
+        "name": "MM Forgings",
+        "ticker": "MMFL",
+        "price": "\u20b9629",
+        "pe": "31.0\u00d7",
+        "seg": "Forgings",
+        "biz": [
+          "A Chennai-based steel-forging maker",
+          "Crankshafts, front axle beams and castings",
+          "A significant exporter of forged components"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Jun 2025",
+          "rev": {
+            "to": 362
+          },
+          "pat": {
+            "to": 19
+          },
+          "note": "A mid-size exporter, sensitive to the global truck cycle."
+        },
+        "moat": "A capable mid-size forging exporter \u2014 but small and cyclical, with no dominant edge.",
+        "moatStrength": "NARROW",
+        "dur": 26.382
+      }
+    },
+    {
+      "id": "f04_sansera",
+      "type": "au_company",
+      "in_seconds": 134.163,
+      "out_seconds": 165.229,
+      "props": {
+        "idx": "04 / 23",
+        "kicker": "FORGING & MACHINING",
+        "name": "Sansera Engineering",
+        "ticker": "SANSERA",
+        "price": "\u20b93,864",
+        "pe": "71.7\u00d7",
+        "seg": "Precision parts",
+        "biz": [
+          "Precision forging and machining of complex parts",
+          "Connecting rods, rocker arms, crankshafts, gear-shift forks",
+          "Diversifying into aerospace and EV-neutral parts"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 999,
+            "yoy": "+28%",
+            "up": true
+          },
+          "pat": {
+            "to": 62
+          },
+          "note": "Profit before tax nearly doubled \u2014 a strong quarter."
+        },
+        "moat": "An engineering moat in complex precision parts, spreading into aerospace and EV-agnostic products.",
+        "moatStrength": "NARROW",
+        "dur": 31.566
+      }
+    },
+    {
+      "id": "f05_craftsman",
+      "type": "au_company",
+      "in_seconds": 165.729,
+      "out_seconds": 194.825,
+      "props": {
+        "idx": "05 / 23",
+        "kicker": "FORGING & MACHINING",
+        "name": "Craftsman Automation",
+        "ticker": "CRAFTSMAN",
+        "price": "\u20b910,483",
+        "pe": "58.5\u00d7",
+        "seg": "Machining",
+        "biz": [
+          "Precision machining of powertrain and engine parts",
+          "Aluminium die-cast products",
+          "Plus an industrial and storage-solutions arm"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 2432
+          },
+          "pat": {
+            "to": 151
+          },
+          "note": "A key machining supplier to commercial-vehicle and off-highway makers."
+        },
+        "moat": "A leading precision-machining partner for CV and off-highway makers \u2014 capital-heavy, and richly valued.",
+        "moatStrength": "NARROW",
+        "dur": 29.596
+      }
+    },
+    {
+      "id": "f06_cie",
+      "type": "au_company",
+      "in_seconds": 195.325,
+      "out_seconds": 226.549,
+      "props": {
+        "idx": "06 / 23",
+        "kicker": "FORGING & MACHINING",
+        "name": "CIE Automotive India",
+        "ticker": "CIEINDIA",
+        "price": "\u20b9410",
+        "pe": "17.4\u00d7",
+        "seg": "Multi-tech parts",
+        "biz": [
+          "Formerly Mahindra CIE \u2014 a diversified parts maker",
+          "Forgings, castings, stampings, gears and magnetics",
+          "Owned by Spain's CIE Automotive group"
+        ],
+        "fin": {
+          "qlabel": "Q2 CY26 \u00b7 Jun 2026",
+          "rev": {
+            "to": 2621
+          },
+          "pat": {
+            "to": 236
+          },
+          "note": "Almost debt-free and EV-agnostic \u2014 and one of the cheapest here."
+        },
+        "moat": "A diversified, multi-technology parts platform with a global parent \u2014 cheap, debt-free and EV-neutral.",
+        "moatStrength": "NARROW",
+        "dur": 31.724
+      }
+    },
+    {
+      "id": "f07_kalyanifrg",
+      "type": "au_company",
+      "in_seconds": 227.049,
+      "out_seconds": 253.589,
+      "props": {
+        "idx": "07 / 23",
+        "kicker": "FORGING & MACHINING",
+        "name": "Kalyani Forge",
+        "ticker": "KALYANIFRG",
+        "price": "\u20b9635",
+        "pe": "24.8\u00d7",
+        "seg": "Precision forgings",
+        "biz": [
+          "A smaller Kalyani-family forging company",
+          "Connecting rods, rocker arms, hubs and gears",
+          "Supplies auto OEMs and engineering customers"
+        ],
+        "fin": {
+          "pending": true,
+          "qlabel": "Q1 FY27 due 11-Aug (not out)",
+          "note": "A niche precision forger \u2014 small next to the flagship Bharat Forge."
+        },
+        "moat": "A small niche forger in the Kalyani family \u2014 capable, but sub-scale against far bigger rivals.",
+        "moatStrength": "WEAK",
+        "dur": 27.04
+      }
+    },
+    {
+      "id": "c_d2",
+      "type": "au_divider",
+      "in_seconds": 254.089,
+      "out_seconds": 266.759,
+      "props": {
+        "part": "PART TWO",
+        "title": "Castings & Axles",
+        "sub": "Iron, aluminium and the parts that carry the load",
+        "color": "#34D399",
+        "pips": 3,
+        "at": 2,
+        "dur": 13.17
+      }
+    },
+    {
+      "id": "c08_alicon",
+      "type": "au_company",
+      "in_seconds": 267.259,
+      "out_seconds": 298.748,
+      "props": {
+        "idx": "08 / 23",
+        "kicker": "CASTINGS & AXLES",
+        "name": "Alicon Castalloy",
+        "ticker": "ALICON",
+        "price": "\u20b9743",
+        "pe": "31.1\u00d7",
+        "seg": "Aluminium castings",
+        "biz": [
+          "India's largest integrated aluminium-casting maker",
+          "Cylinder heads, manifolds and structural parts",
+          "Expanding into EV and defence castings"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q4 FY26 (Mar-26)",
+          "rev": {
+            "to": 495
+          },
+          "pat": {
+            "to": 8
+          },
+          "note": "Lightweighting and EV parts are the growth story; margins are thin."
+        },
+        "moat": "India's largest aluminium caster, with lightweighting and EV/defence optionality \u2014 but wafer-thin margins.",
+        "moatStrength": "NARROW",
+        "dur": 31.989
+      }
+    },
+    {
+      "id": "c09_nelcast",
+      "type": "au_company",
+      "in_seconds": 299.248,
+      "out_seconds": 327.028,
+      "props": {
+        "idx": "09 / 23",
+        "kicker": "CASTINGS & AXLES",
+        "name": "Nelcast",
+        "ticker": "NELCAST",
+        "price": "\u20b9126",
+        "pe": "26.6\u00d7",
+        "seg": "Iron castings",
+        "biz": [
+          "One of India's largest iron-castings foundries",
+          "Axle housings, brackets, differential cases, hubs",
+          "For commercial vehicles, tractors and off-highway"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 341
+          },
+          "pat": {
+            "to": 5
+          },
+          "note": "High volumes, but low-margin jobbing-foundry economics."
+        },
+        "moat": "A large jobbing foundry with scale \u2014 but low-margin, commoditised, and tied to the CV cycle.",
+        "moatStrength": "WEAK",
+        "dur": 28.28
+      }
+    },
+    {
+      "id": "c10_pritika",
+      "type": "au_company",
+      "in_seconds": 327.528,
+      "out_seconds": 354.283,
+      "props": {
+        "idx": "10 / 23",
+        "kicker": "CASTINGS & AXLES",
+        "name": "Pritika Auto Industries",
+        "ticker": "PRITIKAUTO",
+        "price": "\u20b918.2",
+        "pe": "13.9\u00d7",
+        "seg": "Tractor castings",
+        "biz": [
+          "Machined castings for tractors and vehicles",
+          "Transmission housings, axle and hydraulic parts",
+          "A tier-1 casting and machining supplier"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 145
+          },
+          "pat": {
+            "to": 7
+          },
+          "note": "A small penny-stock supplier to the tractor industry."
+        },
+        "moat": "A small tractor-parts caster \u2014 low-margin and sub-scale, with limited pricing power.",
+        "moatStrength": "WEAK",
+        "dur": 27.255
+      }
+    },
+    {
+      "id": "c11_rolex",
+      "type": "au_company",
+      "in_seconds": 354.783,
+      "out_seconds": 383.194,
+      "props": {
+        "idx": "11 / 23",
+        "kicker": "CASTINGS & AXLES",
+        "name": "Rolex Rings",
+        "ticker": "ROLEXRINGS",
+        "price": "\u20b9157",
+        "pe": "21.2\u00d7",
+        "seg": "Bearing rings",
+        "biz": [
+          "A top-five forged bearing-ring maker",
+          "Supplies global bearing companies and auto OEMs",
+          "A large share of revenue is exports"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 304
+          },
+          "pat": {
+            "to": 60
+          },
+          "note": "Healthy margins for a forger \u2014 bearing rings are a specialised niche."
+        },
+        "moat": "A top-five forged bearing-ring maker with a big export share to global bearing giants \u2014 a real niche.",
+        "moatStrength": "NARROW",
+        "dur": 28.911
+      }
+    },
+    {
+      "id": "c12_gna",
+      "type": "au_company",
+      "in_seconds": 383.694,
+      "out_seconds": 410.893,
+      "props": {
+        "idx": "12 / 23",
+        "kicker": "CASTINGS & AXLES",
+        "name": "GNA Axles",
+        "ticker": "GNA",
+        "price": "\u20b9527",
+        "pe": "17.1\u00d7",
+        "seg": "Axle shafts",
+        "biz": [
+          "Makes rear axle shafts and driveline parts",
+          "For commercial vehicles, tractors and off-highway",
+          "A significant exporter to global OEMs"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 470
+          },
+          "pat": {
+            "to": 38
+          },
+          "note": "Strong export franchise keeps margins healthy."
+        },
+        "moat": "A focused axle-shaft exporter to global CV and tractor makers \u2014 a durable niche, reasonably priced.",
+        "moatStrength": "NARROW",
+        "dur": 27.699
+      }
+    },
+    {
+      "id": "c13_autoaxles",
+      "type": "au_company",
+      "in_seconds": 411.393,
+      "out_seconds": 441.699,
+      "props": {
+        "idx": "13 / 23",
+        "kicker": "CASTINGS & AXLES",
+        "name": "Automotive Axles",
+        "ticker": "AUTOAXLES",
+        "price": "\u20b91,828",
+        "pe": "15.1\u00d7",
+        "seg": "CV axles & brakes",
+        "biz": [
+          "A Kalyani\u2013Meritor joint venture",
+          "Drive and non-drive axles, plus brakes",
+          "Mainly for truck and bus makers"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 517
+          },
+          "pat": {
+            "to": 46
+          },
+          "note": "Its fortunes ride the commercial-vehicle cycle closely."
+        },
+        "moat": "A leading CV axle maker via a strong JV \u2014 but its earnings rise and fall with the truck cycle.",
+        "moatStrength": "NARROW",
+        "dur": 30.806
+      }
+    },
+    {
+      "id": "c14_carraro",
+      "type": "au_company",
+      "in_seconds": 442.199,
+      "out_seconds": 472.555,
+      "props": {
+        "idx": "14 / 23",
+        "kicker": "CASTINGS & AXLES",
+        "name": "Carraro India",
+        "ticker": "CARRARO",
+        "price": "\u20b9502",
+        "pe": "20.4\u00d7",
+        "seg": "Axles & transmissions",
+        "biz": [
+          "Indian arm of Italy's Carraro group",
+          "Axles, transmissions and driveline systems",
+          "For tractors and construction equipment"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 545
+          },
+          "pat": {
+            "to": 31
+          },
+          "note": "Off-highway focused; recently listed, sensitive to farm-equipment demand."
+        },
+        "moat": "A driveline specialist for tractors and construction gear, backed by an Italian parent \u2014 but off-highway cyclical.",
+        "moatStrength": "NARROW",
+        "dur": 30.856
+      }
+    },
+    {
+      "id": "c15_kross",
+      "type": "au_company",
+      "in_seconds": 473.055,
+      "out_seconds": 501.462,
+      "props": {
+        "idx": "15 / 23",
+        "kicker": "CASTINGS & AXLES",
+        "name": "Kross",
+        "ticker": "KROSS",
+        "price": "\u20b9203",
+        "pe": "22.6\u00d7",
+        "seg": "Trailer axles",
+        "biz": [
+          "Forged and machined parts, plus trailer axles",
+          "Suspension products for heavy commercial vehicles",
+          "A tier-1 maker of safety-critical driveline parts"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 184
+          },
+          "pat": {
+            "to": 13
+          },
+          "note": "A recently-listed, fast-growing CV-parts specialist."
+        },
+        "moat": "A newer specialist in safety-critical trailer axles and suspension for heavy trucks \u2014 an emerging niche.",
+        "moatStrength": "EMERGING",
+        "dur": 28.907
+      }
+    },
+    {
+      "id": "g_d3",
+      "type": "au_divider",
+      "in_seconds": 501.962,
+      "out_seconds": 514.988,
+      "props": {
+        "part": "PART THREE",
+        "title": "Fasteners, Gears & Belts",
+        "sub": "The small parts that hold it all together",
+        "color": "#FBBF24",
+        "pips": 3,
+        "at": 3,
+        "dur": 13.526
+      }
+    },
+    {
+      "id": "g16_sundram",
+      "type": "au_company",
+      "in_seconds": 515.488,
+      "out_seconds": 547.397,
+      "props": {
+        "idx": "16 / 23",
+        "kicker": "FASTENERS \u00b7 GEARS",
+        "name": "Sundram Fasteners",
+        "ticker": "SUNDRMFAST",
+        "price": "\u20b91,091",
+        "pe": "36.9\u00d7",
+        "seg": "Fasteners",
+        "biz": [
+          "TVS-group maker of high-tensile fasteners",
+          "Plus powder-metal parts, pumps, gears and hubs",
+          "A major exporter, expanding into EV parts"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1846
+          },
+          "pat": {
+            "to": 169
+          },
+          "note": "High-quality, export-heavy and EV-agnostic \u2014 a franchise business."
+        },
+        "moat": "A quality-and-relationships moat \u2014 a trusted global fastener supplier, EV-agnostic, with strong margins.",
+        "moatStrength": "WIDE",
+        "dur": 32.409
+      }
+    },
+    {
+      "id": "g17_sterling",
+      "type": "au_company",
+      "in_seconds": 547.897,
+      "out_seconds": 577.651,
+      "props": {
+        "idx": "17 / 23",
+        "kicker": "FASTENERS \u00b7 GEARS",
+        "name": "Sterling Tools",
+        "ticker": "STERTOOLS",
+        "price": "\u20b9244",
+        "pe": "46.1\u00d7",
+        "seg": "Fasteners",
+        "biz": [
+          "A leading cold-forged fastener maker",
+          "Supplies most major auto OEMs",
+          "Building EV components through joint ventures"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 214
+          },
+          "pat": {
+            "to": 6
+          },
+          "note": "The number-two fastener maker, betting on EV parts for growth."
+        },
+        "moat": "A solid number-two in fasteners with OEM relationships and an EV-parts push \u2014 but a step below the leader.",
+        "moatStrength": "NARROW",
+        "dur": 30.254
+      }
+    },
+    {
+      "id": "g18_sintercom",
+      "type": "au_company",
+      "in_seconds": 578.151,
+      "out_seconds": 606.639,
+      "props": {
+        "idx": "18 / 23",
+        "kicker": "FASTENERS \u00b7 GEARS",
+        "name": "Sintercom India",
+        "ticker": "SINTERCOM",
+        "price": "\u20b983.7",
+        "pe": "161\u00d7",
+        "seg": "Sintered parts",
+        "biz": [
+          "Makes sintered, powder-metallurgy parts",
+          "Net-shape components for engines and transmissions",
+          "Lightweight parts for OEMs and tier-1s"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q4 FY26 (Mar-26)",
+          "rev": {
+            "to": 101
+          },
+          "pat": {
+            "to": 1
+          },
+          "note": "Tiny earnings and an extreme valuation \u2014 priced for perfection."
+        },
+        "moat": "A niche in sintered net-shape parts \u2014 but tiny, with barely any profit and an extreme P/E.",
+        "moatStrength": "WEAK",
+        "dur": 28.988
+      }
+    },
+    {
+      "id": "g19_hitech",
+      "type": "au_company",
+      "in_seconds": 607.139,
+      "out_seconds": 634.126,
+      "props": {
+        "idx": "19 / 23",
+        "kicker": "FASTENERS \u00b7 GEARS",
+        "name": "The Hi-Tech Gears",
+        "ticker": "HITECHGEAR",
+        "price": "\u20b9560",
+        "pe": "53.4\u00d7",
+        "seg": "Gears",
+        "biz": [
+          "Makes precision gears, shafts and transmission parts",
+          "For two-wheelers, off-highway and commercial vehicles",
+          "Supplies OEMs in India and abroad"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 238
+          },
+          "pat": {
+            "to": 5
+          },
+          "note": "A capable gear specialist, but small and modestly profitable."
+        },
+        "moat": "A tier-1 gear specialist with global customers \u2014 but small, with thin current profits.",
+        "moatStrength": "NARROW",
+        "dur": 27.487
+      }
+    },
+    {
+      "id": "g20_racl",
+      "type": "au_company",
+      "in_seconds": 634.626,
+      "out_seconds": 664.663,
+      "props": {
+        "idx": "20 / 23",
+        "kicker": "FASTENERS \u00b7 GEARS",
+        "name": "RACL Geartech",
+        "ticker": "RACLGEAR",
+        "price": "\u20b91,483",
+        "pe": "35.1\u00d7",
+        "seg": "Precision gears",
+        "biz": [
+          "Makes high-precision automotive gears",
+          "Exports to premium European OEMs like BMW and KTM",
+          "A niche precision-gear specialist"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 132
+          },
+          "pat": {
+            "to": 9
+          },
+          "note": "Small but premium \u2014 its customers are top European names."
+        },
+        "moat": "A precision-and-trust moat \u2014 a small Indian firm that supplies gears to demanding premium European brands.",
+        "moatStrength": "EMERGING",
+        "dur": 30.537
+      }
+    },
+    {
+      "id": "g21_bhgear",
+      "type": "au_company",
+      "in_seconds": 665.163,
+      "out_seconds": 693.809,
+      "props": {
+        "idx": "21 / 23",
+        "kicker": "FASTENERS \u00b7 GEARS",
+        "name": "Bharat Gears",
+        "ticker": "BHARATGEAR",
+        "price": "\u20b9106",
+        "pe": "10.9\u00d7",
+        "seg": "Ring gears",
+        "biz": [
+          "One of India's largest makers of ring gears",
+          "Crown wheels and pinions for CVs and tractors",
+          "Also runs a heat-treatment business"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 216
+          },
+          "note": "Revenue is fine, but it barely broke even \u2014 net profit just \u20b90.15 crore."
+        },
+        "moat": "A long-standing gear maker with scale \u2014 but wafer-thin profits keep it a value trap risk, despite a cheap P/E.",
+        "moatStrength": "WEAK",
+        "dur": 29.146
+      }
+    },
+    {
+      "id": "g22_lgb",
+      "type": "au_company",
+      "in_seconds": 694.309,
+      "out_seconds": 723.772,
+      "props": {
+        "idx": "22 / 23",
+        "kicker": "FASTENERS \u00b7 GEARS",
+        "name": "LG Balakrishnan (Rolon)",
+        "ticker": "LGBBROSLTD",
+        "price": "\u20b91,524",
+        "pe": "15.2\u00d7",
+        "seg": "Chains & sprockets",
+        "biz": [
+          "The dominant maker of two-wheeler chains and sprockets",
+          "Sold under the Rolon brand",
+          "OEM, aftermarket and exports"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 799
+          },
+          "pat": {
+            "to": 67
+          },
+          "note": "A strong franchise trading at a surprisingly cheap valuation."
+        },
+        "moat": "A dominant, trusted brand in two-wheeler chains (Rolon) \u2014 a wide franchise, and cheap at 15\u00d7 earnings.",
+        "moatStrength": "WIDE",
+        "dur": 29.963
+      }
+    },
+    {
+      "id": "g23_pix",
+      "type": "au_company",
+      "in_seconds": 724.272,
+      "out_seconds": 752.999,
+      "props": {
+        "idx": "23 / 23",
+        "kicker": "FASTENERS \u00b7 GEARS",
+        "name": "Pix Transmissions",
+        "ticker": "PIXTRANS",
+        "price": "\u20b91,717",
+        "pe": "17.8\u00d7",
+        "seg": "Power-transmission belts",
+        "biz": [
+          "A leading maker of V-belts and timing belts",
+          "For automotive, agricultural and industrial use",
+          "A big exporter across the world"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 149
+          },
+          "pat": {
+            "to": 53
+          },
+          "note": "Remarkable margins \u2014 over a third of revenue drops to profit."
+        },
+        "moat": "A high-margin, export-heavy belt specialist \u2014 a focused niche with pricing power few components makers enjoy.",
+        "moatStrength": "NARROW",
+        "dur": 29.227
+      }
+    },
+    {
+      "id": "v3_recap",
+      "type": "au_recap",
+      "in_seconds": 753.499,
+      "out_seconds": 807.33,
+      "props": {
+        "title": "The Metal Backbone \u2014 in one breath",
+        "color": "#38BDF8",
+        "items": [
+          "Forging & machining: Bharat Forge, Sansera, Craftsman lead",
+          "Export niches shine \u2014 GNA, Rolex Rings, RACL, Pix",
+          "Sundram Fasteners & LG Balakrishnan: quiet quality franchises",
+          "Castings are low-margin; axles ride the truck cycle",
+          "Valuations are all over \u2014 from 11\u00d7 to 161\u00d7 earnings",
+          "Cheap isn't always good \u2014 Bharat Gears barely earns",
+          "EV-agnostic parts makers are the safest bet on the shift"
+        ],
+        "closer": "The backbone is unglamorous \u2014 but quality, niches and exports quietly compound.",
+        "dur": 54.331
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "au/narration3.wav",
+      "volume": 1.0
+    }
+  }
+}

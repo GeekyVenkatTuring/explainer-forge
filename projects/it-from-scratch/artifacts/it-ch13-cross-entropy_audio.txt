@@ -1,0 +1,5 @@
+file '/Users/appuram/Developer/explainer-forge/projects/it-from-scratch/assets/it-ch13-cross-entropy_div.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/it-from-scratch/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/it-from-scratch/assets/it-ch13-cross-entropy_crossentropy.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/it-from-scratch/assets/_gap.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/it-from-scratch/assets/it-ch13-cross-entropy_kl.wav'

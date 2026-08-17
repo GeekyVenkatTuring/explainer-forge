@@ -1,0 +1,2074 @@
+{
+ "cuts": [
+  {
+   "id": "dp21-prototype_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 27.277,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 21",
+    "line1": "Copy,",
+    "line2": "don't rebuild",
+    "sub": "make new objects by cloning a ready-made one instead of constructing from scratch",
+    "dur": 27.777
+   }
+  },
+  {
+   "id": "dp21-prototype_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 27.777,
+   "out_seconds": 65.662,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Spawning a wave of enemies",
+    "situation": "A game spawns waves of enemies. Each enemy is expensive to create \u2014 load a mesh, set stats, wire up AI \u2014 and a wave needs dozens of nearly identical ones.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udc79",
+      "label": "Expensive to build"
+     },
+     {
+      "emoji": "\ud83c\udf0a",
+      "label": "\u2026dozens per wave"
+     },
+     {
+      "emoji": "\u26a1",
+      "label": "\u2026nearly identical"
+     }
+    ],
+    "ask": "How do you produce many configured copies without rebuilding each from scratch?",
+    "dur": 38.385
+   }
+  },
+  {
+   "id": "dp21-prototype_naive",
+   "type": "dp_code",
+   "in_seconds": 66.162,
+   "out_seconds": 103.935,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "New one up, then configure. Again.",
+    "file": "Spawner.java",
+    "lines": [
+     {
+      "t": "Orc spawnOrc() {"
+     },
+     {
+      "t": "  Orc o = new Orc();",
+      "s": "hi"
+     },
+     {
+      "t": "  o.mesh = load(\"orc.mesh\");   // expensive!",
+      "s": "hi"
+     },
+     {
+      "t": "  o.hp = 100; o.speed = 3; o.ai = new PatrolAI();",
+      "s": "hi"
+     },
+     {
+      "t": "  o.loot = ...; o.sounds = ...;   // 12 more fields",
+      "s": "hi"
+     },
+     {
+      "t": "  return o;                    // ...every single time"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Every spawn reloads assets and re-sets every field. The spawner knows it all.",
+    "dur": 38.273
+   }
+  },
+  {
+   "id": "dp21-prototype_pain",
+   "type": "dp_pain",
+   "in_seconds": 104.435,
+   "out_seconds": 145.344,
+   "props": {
+    "title": "\"Add a FireOrc variant. Let designers make new ones.\"",
+    "file": "factory-bloat.java",
+    "lines": [
+     {
+      "t": "Orc     spawnOrc()     { ...15 lines of setup... }",
+      "s": "hi"
+     },
+     {
+      "t": "Dragon  spawnDragon()  { ...20 lines of setup... }",
+      "s": "hi"
+     },
+     {
+      "t": "FireOrc spawnFireOrc() { ...an Orc, 2 fields differ... }",
+      "s": "hi"
+     },
+     {
+      "t": "// a near-duplicate method per variant"
+     },
+     {
+      "t": "// designers can't add a variant without new CODE",
+      "s": "hi"
+     }
+    ],
+    "smell": "The full construction recipe, duplicated per type and variant",
+    "touched": [
+     "a build method per enemy type",
+     "a variant = a near-duplicate method",
+     "designers need code for a new enemy",
+     "asset loading repeated everywhere"
+    ],
+    "dur": 41.409
+   }
+  },
+  {
+   "id": "dp21-prototype_insight",
+   "type": "dp_insight",
+   "in_seconds": 145.844,
+   "out_seconds": 188.374,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "You need many configured copies",
+     "The costly setup was already done once",
+     "A variant is a small tweak of an existing one"
+    ],
+    "varies": [
+     "Which base object you start from",
+     "A few fields, here and there"
+    ],
+    "principle": "Build one fully-configured object, then CLONE it \u2014 let the object copy itself.",
+    "dur": 43.03
+   }
+  },
+  {
+   "id": "dp21-prototype_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 188.874,
+   "out_seconds": 234.535,
+   "props": {
+    "title": "A photocopier",
+    "emoji": "\ud83d\udda8\ufe0f",
+    "analogy": "You set up the original once; after that, every copy is a press of a button \u2014 no re-typing.",
+    "map": [
+     {
+      "from": "The original document",
+      "to": "the prototype"
+     },
+     {
+      "from": "Pressing 'copy'",
+      "to": "clone()"
+     },
+     {
+      "from": "Edits on a copy",
+      "to": "tweaking a cloned object"
+     },
+     {
+      "from": "The stack of copies",
+      "to": "your spawned instances"
+     }
+    ],
+    "breaks": "a photocopy is flat; a cloned object may share references \u2014 deep vs shallow copy is the catch.",
+    "dur": 46.161
+   }
+  },
+  {
+   "id": "dp21-prototype_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 235.035,
+   "out_seconds": 271.492,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "The object clones itself",
+    "file": "Enemy.java",
+    "lines": [
+     {
+      "t": "interface Enemy { Enemy clone(); }",
+      "s": "add"
+     },
+     {
+      "t": "class Orc implements Enemy {"
+     },
+     {
+      "t": "  Mesh mesh; int hp; AI ai; ...;"
+     },
+     {
+      "t": "  public Orc clone() {              // copy myself",
+      "s": "add"
+     },
+     {
+      "t": "    Orc c = new Orc();",
+      "s": "add"
+     },
+     {
+      "t": "    c.mesh = this.mesh; c.hp = this.hp;   // share/copy",
+      "s": "add"
+     },
+     {
+      "t": "    c.ai = this.ai.clone();   // deep-copy mutable bits",
+      "s": "add"
+     },
+     {
+      "t": "    return c;",
+      "s": "add"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "The Orc knows how to copy itself \u2014 including which parts to deep-copy.",
+    "dur": 36.957
+   }
+  },
+  {
+   "id": "dp21-prototype_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 271.992,
+   "out_seconds": 308.244,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "A registry of ready-made prototypes",
+    "file": "Bestiary.java",
+    "lines": [
+     {
+      "t": "class Bestiary {",
+      "s": "hi"
+     },
+     {
+      "t": "  private Map<String,Enemy> prototypes = new HashMap<>();",
+      "s": "hi"
+     },
+     {
+      "t": "  void register(String key, Enemy p) { prototypes.put(key, p); }",
+      "s": "hi"
+     },
+     {
+      "t": "  Enemy spawn(String key) {",
+      "s": "hi"
+     },
+     {
+      "t": "    return prototypes.get(key).clone();   // copy, don't build",
+      "s": "hi"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Configure each prototype ONCE, register it. Spawning is just clone().",
+    "dur": 36.752
+   }
+  },
+  {
+   "id": "dp21-prototype_try",
+   "type": "dp_try",
+   "in_seconds": 308.744,
+   "out_seconds": 340.05,
+   "props": {
+    "title": "Write Orc.clone()",
+    "file": "Orc.java",
+    "lines": [
+     {
+      "t": "class Orc implements Enemy {"
+     },
+     {
+      "t": "  Mesh mesh; int hp;  AI ai;   // ai is mutable!"
+     },
+     {
+      "t": "  public Orc clone() {"
+     },
+     {
+      "t": "    // \u25af copy fields \u2014 but the AI needs its OWN copy",
+      "s": "ghost"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Copy the orc. The mesh can be shared, but the mutable AI must be deep-copied. Why?",
+    "hint": "new Orc(mesh, hp, ai.clone())",
+    "dur": 31.806
+   }
+  },
+  {
+   "id": "dp21-prototype_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 340.55,
+   "out_seconds": 376.816,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "Spawn by cloning; register variants at runtime",
+    "file": "game.java",
+    "lines": [
+     {
+      "t": "bestiary.register(\"orc\", configuredOrc);   // once",
+      "s": "add"
+     },
+     {
+      "t": "for (int i=0;i<30;i++) wave.add(bestiary.spawn(\"orc\"));",
+      "s": "add"
+     },
+     {
+      "t": "// a designer's tweak, at RUNTIME \u2014 no new class:"
+     },
+     {
+      "t": "Orc fireOrc = bestiary.spawn(\"orc\"); fireOrc.hp = 200;",
+      "s": "add"
+     },
+     {
+      "t": "bestiary.register(\"fireOrc\", fireOrc);   // a new \"type\"!",
+      "s": "hi"
+     }
+    ],
+    "note": "New enemy types are registered live \u2014 no new class, no spawner change.",
+    "dur": 36.766
+   }
+  },
+  {
+   "id": "dp21-prototype_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 377.316,
+   "out_seconds": 418.699,
+   "props": {
+    "requirement": "\"Designers invent a boss variant at runtime\"",
+    "naiveLabel": "Factory",
+    "naiveCost": "A programmer writes a new build method.",
+    "naiveSteps": [
+     "new spawnBoss() in code",
+     "near-duplicate of spawnDragon()",
+     "recompile, redeploy to test"
+    ],
+    "patLabel": "Prototype",
+    "patCost": "Clone a dragon, tweak, register. Live.",
+    "patFile": "designer tool",
+    "patLines": [
+     {
+      "t": "Enemy boss = bestiary.spawn(\"dragon\").clone();",
+      "s": "add"
+     },
+     {
+      "t": "boss.hp *= 5;  boss.scale = 2.0;  // buff it",
+      "s": "add"
+     },
+     {
+      "t": "bestiary.register(\"dragonBoss\", boss);  // no code!",
+      "s": "add"
+     },
+     {
+      "t": "// spawner spawns it, never knowing its class",
+      "s": "add"
+     }
+    ],
+    "dur": 41.883
+   }
+  },
+  {
+   "id": "dp21-prototype_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 419.199,
+   "out_seconds": 464.492,
+   "props": {
+    "name": "The Prototype Pattern",
+    "plain": "Create new objects by cloning a fully-configured prototype, so the client copies instead of constructing \u2014 and can even add types at runtime.",
+    "nodes": [
+     {
+      "id": "proto",
+      "title": "Enemy",
+      "stereo": "prototype",
+      "members": [
+       "+ clone(): Enemy"
+      ],
+      "x": 720,
+      "y": 210,
+      "w": 440,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "orc",
+      "title": "Orc",
+      "members": [
+       "+ clone()"
+      ],
+      "x": 240,
+      "y": 470,
+      "w": 340,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "dragon",
+      "title": "Dragon",
+      "members": [
+       "+ clone()"
+      ],
+      "x": 800,
+      "y": 470,
+      "w": 340,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "client",
+      "title": "Bestiary",
+      "stereo": "client",
+      "members": [
+       "- prototypes: Map",
+       "+ spawn(k) = clone"
+      ],
+      "x": 1400,
+      "y": 360,
+      "w": 380,
+      "color": "#A78BFA"
+     }
+    ],
+    "edges": [
+     {
+      "from": "orc",
+      "to": "proto",
+      "kind": "impl"
+     },
+     {
+      "from": "dragon",
+      "to": "proto",
+      "kind": "impl"
+     },
+     {
+      "from": "client",
+      "to": "proto",
+      "kind": "assoc"
+     }
+    ],
+    "dur": 45.793
+   }
+  },
+  {
+   "id": "dp21-prototype_map",
+   "type": "dp_map",
+   "in_seconds": 464.992,
+   "out_seconds": 507.811,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Prototype",
+      "your": "interface Enemy (clone)"
+     },
+     {
+      "role": "ConcretePrototype",
+      "your": "Orc, Dragon (clone themselves)"
+     },
+     {
+      "role": "Client",
+      "your": "Bestiary \u2014 spawns via clone()"
+     },
+     {
+      "role": "The catch",
+      "your": "deep vs shallow copy in clone()"
+     }
+    ],
+    "plain": "Each prototype returns a copy of itself; the client builds new objects by cloning registered prototypes.",
+    "gof": "Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.",
+    "dur": 43.319
+   }
+  },
+  {
+   "id": "dp21-prototype_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 508.311,
+   "out_seconds": 553.984,
+   "props": {
+    "title": "Cloning is deceptively tricky",
+    "costs": [
+     "Deep vs shallow copy is easy to get wrong",
+     "Shared mutable state leaks between copies",
+     "Circular references make cloning hard"
+    ],
+    "dont": [
+     "Objects are cheap to just construct",
+     "Each instance is genuinely unique",
+     "There's no costly setup to reuse"
+    ],
+    "signal": "creating a configured object is expensive, and you need many copies \u2014 or new types added at runtime.",
+    "dur": 46.173
+   }
+  },
+  {
+   "id": "dp21-prototype_recap",
+   "type": "dp_recap",
+   "in_seconds": 554.484,
+   "out_seconds": 611.498,
+   "props": {
+    "title": "Prototype, in one breath",
+    "items": [
+     "Rebuilding each object from scratch repeated expensive setup and trapped every type's recipe inside the spawner.",
+     "You already have one configured, and a variant is a small tweak \u2014 so build one prototype and CLONE it.",
+     "Prototype: the object copies itself (deep where needed); the client spawns by cloning. New type, registered live."
+    ],
+    "challenge": "A graphics editor lets users duplicate any shape \u2014 even a complex group with nested styling \u2014 and drag the copy away, fully independent.",
+    "question": "Does Prototype fit? What's the prototype, what must clone() deep-copy, and where's the shallow-copy trap?",
+    "dur": 57.514
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   3.031,
+   "Some objects are expensive to bring into\nexistence."
+  ],
+  [
+   3.662,
+   4.42,
+   "Loading assets,"
+  ],
+  [
+   4.42,
+   5.178,
+   "running setup,"
+  ],
+  [
+   5.178,
+   8.208,
+   "configuring a dozen fields \u2014 and then you"
+  ],
+  [
+   8.208,
+   9.724,
+   "need fifty of them,"
+  ],
+  [
+   9.724,
+   10.481,
+   "nearly identical."
+  ],
+  [
+   11.113,
+   14.144,
+   "Building each one from scratch repeats all that"
+  ],
+  [
+   14.144,
+   14.523,
+   "cost,"
+  ],
+  [
+   14.523,
+   17.553,
+   "and forces whoever is spawning them to know"
+  ],
+  [
+   17.553,
+   20.205,
+   "every detail of how they are assembled."
+  ],
+  [
+   20.837,
+   23.11,
+   "But if you already have one,"
+  ],
+  [
+   23.11,
+   23.867,
+   "fully built..."
+  ],
+  [
+   23.867,
+   25.762,
+   "why not just copy it?"
+  ],
+  [
+   25.762,
+   27.277,
+   "Let's spawn some enemies."
+  ],
+  [
+   27.777,
+   29.282,
+   "Here is the situation:"
+  ],
+  [
+   29.282,
+   31.539,
+   "a game spawning waves of enemies."
+  ],
+  [
+   32.17,
+   34.803,
+   "Creating a single enemy is not cheap."
+  ],
+  [
+   34.803,
+   36.308,
+   "You load its mesh,"
+  ],
+  [
+   36.308,
+   37.436,
+   "set its stats,"
+  ],
+  [
+   37.436,
+   39.317,
+   "wire up its AI behavior,"
+  ],
+  [
+   39.317,
+   40.822,
+   "tune a dozen parameters."
+  ],
+  [
+   41.453,
+   44.463,
+   "And a wave is not one enemy \u2014"
+  ],
+  [
+   44.463,
+   45.967,
+   "it is thirty orcs,"
+  ],
+  [
+   45.967,
+   47.096,
+   "all nearly identical."
+  ],
+  [
+   47.727,
+   50.736,
+   "Building each one from the ground up repeats"
+  ],
+  [
+   50.736,
+   52.241,
+   "that whole expensive setup,"
+  ],
+  [
+   52.241,
+   52.993,
+   "thirty times."
+  ],
+  [
+   52.993,
+   55.25,
+   "And the spawner has to know,"
+  ],
+  [
+   55.25,
+   56.003,
+   "in full,"
+  ],
+  [
+   56.003,
+   59.012,
+   "how to construct and configure every kind of"
+  ],
+  [
+   59.012,
+   59.388,
+   "enemy."
+  ],
+  [
+   60.02,
+   63.029,
+   "So how do you produce many configured copies,"
+  ],
+  [
+   63.029,
+   63.405,
+   "fast,"
+  ],
+  [
+   63.405,
+   65.662,
+   "without rebuilding each one from scratch?"
+  ],
+  [
+   66.162,
+   67.263,
+   "The direct approach:"
+  ],
+  [
+   67.263,
+   68.732,
+   "new up an orc,"
+  ],
+  [
+   68.732,
+   69.834,
+   "then configure it."
+  ],
+  [
+   70.465,
+   71.567,
+   "Create the object,"
+  ],
+  [
+   71.567,
+   74.504,
+   "load its mesh from disk \u2014 which is"
+  ],
+  [
+   74.504,
+   77.441,
+   "the expensive part \u2014 set its hit points,"
+  ],
+  [
+   77.441,
+   78.175,
+   "its speed,"
+  ],
+  [
+   78.175,
+   78.91,
+   "its AI,"
+  ],
+  [
+   78.91,
+   80.011,
+   "its loot table,"
+  ],
+  [
+   80.011,
+   80.745,
+   "its sounds,"
+  ],
+  [
+   80.745,
+   81.847,
+   "a dozen fields."
+  ],
+  [
+   82.478,
+   85.416,
+   "And then do all of that again for"
+  ],
+  [
+   85.416,
+   86.517,
+   "the next orc."
+  ],
+  [
+   86.517,
+   87.619,
+   "And the next."
+  ],
+  [
+   88.25,
+   90.086,
+   "Every spawn re-runs the full,"
+  ],
+  [
+   90.086,
+   90.82,
+   "costly construction."
+  ],
+  [
+   91.452,
+   91.819,
+   "Worse,"
+  ],
+  [
+   91.819,
+   94.756,
+   "the spawner now contains the complete recipe for"
+  ],
+  [
+   94.756,
+   96.959,
+   "building every enemy \u2014 every field,"
+  ],
+  [
+   96.959,
+   98.061,
+   "every asset path."
+  ],
+  [
+   98.061,
+   100.998,
+   "It is not spawning enemies so much as"
+  ],
+  [
+   100.998,
+   102.834,
+   "manufacturing them from raw materials,"
+  ],
+  [
+   102.834,
+   103.935,
+   "over and over."
+  ],
+  [
+   104.435,
+   105.831,
+   "Then the variants multiply."
+  ],
+  [
+   105.831,
+   108.622,
+   "Add a fire orc \u2014 which is just"
+  ],
+  [
+   108.622,
+   110.716,
+   "an orc with two different fields."
+  ],
+  [
+   111.347,
+   112.743,
+   "But to build it,"
+  ],
+  [
+   112.743,
+   115.186,
+   "you write a whole new spawn method,"
+  ],
+  [
+   115.186,
+   117.279,
+   "a near-duplicate of the orc one."
+  ],
+  [
+   117.911,
+   118.958,
+   "Every enemy type,"
+  ],
+  [
+   118.958,
+   119.655,
+   "every variant,"
+  ],
+  [
+   119.655,
+   122.447,
+   "gets its own construction method inside the\nspawner,"
+  ],
+  [
+   122.447,
+   124.89,
+   "most of them copies of each other."
+  ],
+  [
+   125.521,
+   127.615,
+   "And here is the real wall:"
+  ],
+  [
+   127.615,
+   130.406,
+   "a level designer wants to invent a new"
+  ],
+  [
+   130.406,
+   132.151,
+   "enemy \u2014 a tougher orc,"
+  ],
+  [
+   132.151,
+   134.593,
+   "a faster dragon \u2014 at design time,"
+  ],
+  [
+   134.593,
+   136.338,
+   "by tweaking an existing one."
+  ],
+  [
+   136.97,
+   139.761,
+   "But every enemy's construction lives in compiled\ncode."
+  ],
+  [
+   139.761,
+   142.553,
+   "They cannot create a new variant without a"
+  ],
+  [
+   142.553,
+   142.901,
+   "programmer."
+  ],
+  [
+   142.901,
+   145.344,
+   "The recipe is trapped in the factory."
+  ],
+  [
+   145.844,
+   146.925,
+   "What is fixed,"
+  ],
+  [
+   146.925,
+   148.006,
+   "and what varies?"
+  ],
+  [
+   148.638,
+   148.998,
+   "Fixed:"
+  ],
+  [
+   148.998,
+   151.161,
+   "you need lots of configured copies."
+  ],
+  [
+   151.161,
+   152.242,
+   "The expensive setup,"
+  ],
+  [
+   152.242,
+   153.683,
+   "for any given type,"
+  ],
+  [
+   153.683,
+   155.846,
+   "only truly needs to happen once."
+  ],
+  [
+   155.846,
+   158.729,
+   "And a new variant is almost always a"
+  ],
+  [
+   158.729,
+   161.252,
+   "small tweak of one that already exists."
+  ],
+  [
+   161.883,
+   164.766,
+   "What varies is which object you start from,"
+  ],
+  [
+   164.766,
+   167.289,
+   "and a few fields here and there."
+  ],
+  [
+   167.921,
+   169.362,
+   "Here is the move."
+  ],
+  [
+   169.994,
+   171.075,
+   "Build one object,"
+  ],
+  [
+   171.075,
+   172.877,
+   "fully configured \u2014 a prototype."
+  ],
+  [
+   172.877,
+   173.237,
+   "Then,"
+  ],
+  [
+   173.237,
+   175.76,
+   "instead of constructing new ones from scratch,"
+  ],
+  [
+   175.76,
+   177.923,
+   "ask that prototype to clone itself."
+  ],
+  [
+   177.923,
+   180.806,
+   "Copying an existing object skips all the setup,"
+  ],
+  [
+   180.806,
+   182.247,
+   "and a variant becomes:"
+  ],
+  [
+   182.247,
+   182.968,
+   "clone one,"
+  ],
+  [
+   182.968,
+   184.049,
+   "change two fields."
+  ],
+  [
+   184.049,
+   186.572,
+   "The object knows how to copy itself;"
+  ],
+  [
+   186.572,
+   188.374,
+   "the spawner just says clone."
+  ],
+  [
+   188.874,
+   190.201,
+   "Think of a photocopier."
+  ],
+  [
+   190.833,
+   193.487,
+   "You type up a document once \u2014 carefully,"
+  ],
+  [
+   193.487,
+   194.814,
+   "with all its formatting."
+  ],
+  [
+   194.814,
+   196.473,
+   "That is the expensive part."
+  ],
+  [
+   197.105,
+   197.769,
+   "After that,"
+  ],
+  [
+   197.769,
+   199.096,
+   "you never retype it."
+  ],
+  [
+   199.096,
+   201.75,
+   "You lay the original on the glass and"
+  ],
+  [
+   201.75,
+   202.414,
+   "press copy,"
+  ],
+  [
+   202.414,
+   205.068,
+   "and out come as many as you want,"
+  ],
+  [
+   205.068,
+   205.4,
+   "instantly."
+  ],
+  [
+   205.4,
+   206.396,
+   "Want a variant?"
+  ],
+  [
+   206.396,
+   207.059,
+   "Copy it,"
+  ],
+  [
+   207.059,
+   209.382,
+   "then mark up that copy by hand."
+  ],
+  [
+   210.013,
+   211.672,
+   "The original is the prototype."
+  ],
+  [
+   211.672,
+   213.0,
+   "Pressing copy is clone."
+  ],
+  [
+   213.0,
+   215.654,
+   "Marking up a copy is tweaking a cloned"
+  ],
+  [
+   215.654,
+   215.986,
+   "object."
+  ],
+  [
+   215.986,
+   218.64,
+   "And the stack of copies is your spawned"
+  ],
+  [
+   218.64,
+   218.972,
+   "instances."
+  ],
+  [
+   219.604,
+   222.258,
+   "Where it breaks \u2014 and this is the"
+  ],
+  [
+   222.258,
+   223.917,
+   "real catch of the pattern:"
+  ],
+  [
+   223.917,
+   226.24,
+   "a photocopy is completely flat and separate."
+  ],
+  [
+   226.24,
+   228.894,
+   "A cloned object might still share references with"
+  ],
+  [
+   228.894,
+   229.558,
+   "its original."
+  ],
+  [
+   229.558,
+   232.212,
+   "Whether a copy is shallow or deep is"
+  ],
+  [
+   232.212,
+   234.535,
+   "the one thing you must get right."
+  ],
+  [
+   235.035,
+   235.72,
+   "The refactor,"
+  ],
+  [
+   235.72,
+   236.406,
+   "step one."
+  ],
+  [
+   237.038,
+   239.779,
+   "Give every enemy a clone method \u2014 the"
+  ],
+  [
+   239.779,
+   242.179,
+   "ability to produce a copy of itself."
+  ],
+  [
+   242.81,
+   244.181,
+   "Inside the orc's clone,"
+  ],
+  [
+   244.181,
+   246.923,
+   "it makes a new orc and copies its"
+  ],
+  [
+   246.923,
+   247.608,
+   "fields across."
+  ],
+  [
+   248.24,
+   249.954,
+   "But watch the AI line."
+  ],
+  [
+   249.954,
+   252.696,
+   "The mesh can be shared \u2014 it is"
+  ],
+  [
+   252.696,
+   253.038,
+   "read-only."
+  ],
+  [
+   253.038,
+   255.095,
+   "But the AI has mutable state,"
+  ],
+  [
+   255.095,
+   257.151,
+   "so a copy needs its own;"
+  ],
+  [
+   257.151,
+   258.522,
+   "the orc deep-copies it."
+  ],
+  [
+   259.154,
+   260.525,
+   "This is the crux:"
+  ],
+  [
+   260.525,
+   263.266,
+   "the object itself decides what to copy shallowly"
+  ],
+  [
+   263.266,
+   264.98,
+   "and what to copy deeply,"
+  ],
+  [
+   264.98,
+   267.722,
+   "because only it knows which of its parts"
+  ],
+  [
+   267.722,
+   269.093,
+   "are safe to share."
+  ],
+  [
+   269.093,
+   271.492,
+   "No outside code could get that right."
+  ],
+  [
+   271.992,
+   272.758,
+   "Step two:"
+  ],
+  [
+   272.758,
+   275.824,
+   "a registry of prototypes \u2014 call it the"
+  ],
+  [
+   275.824,
+   276.208,
+   "bestiary."
+  ],
+  [
+   276.839,
+   279.905,
+   "It holds a map from a name to"
+  ],
+  [
+   279.905,
+   282.205,
+   "one fully-configured example of each enemy."
+  ],
+  [
+   282.205,
+   284.504,
+   "You build the orc prototype once,"
+  ],
+  [
+   284.504,
+   286.42,
+   "with all its expensive setup,"
+  ],
+  [
+   286.42,
+   288.337,
+   "and register it under orc."
+  ],
+  [
+   288.968,
+   290.501,
+   "Now spawning is trivial."
+  ],
+  [
+   290.501,
+   293.184,
+   "Ask the bestiary to spawn an orc,"
+  ],
+  [
+   293.184,
+   296.25,
+   "and it looks up the orc prototype and"
+  ],
+  [
+   296.25,
+   297.4,
+   "returns a clone."
+  ],
+  [
+   298.031,
+   298.798,
+   "No construction."
+  ],
+  [
+   298.798,
+   299.947,
+   "No asset loading."
+  ],
+  [
+   299.947,
+   300.714,
+   "No field-setting."
+  ],
+  [
+   300.714,
+   303.397,
+   "Just a copy of something already built."
+  ],
+  [
+   304.028,
+   306.328,
+   "The costly work happened exactly once,"
+  ],
+  [
+   306.328,
+   308.244,
+   "when the prototype was registered."
+  ],
+  [
+   308.744,
+   310.589,
+   "Your turn \u2014 pause here."
+  ],
+  [
+   311.22,
+   312.696,
+   "Write the orc's clone."
+  ],
+  [
+   313.328,
+   316.28,
+   "Copy its fields into a new orc \u2014"
+  ],
+  [
+   316.28,
+   318.493,
+   "but think hard about one distinction."
+  ],
+  [
+   318.493,
+   319.969,
+   "The mesh is read-only,"
+  ],
+  [
+   319.969,
+   322.921,
+   "so every clone can safely share the same"
+  ],
+  [
+   322.921,
+   323.29,
+   "one."
+  ],
+  [
+   323.922,
+   324.66,
+   "The AI,"
+  ],
+  [
+   324.66,
+   325.029,
+   "though,"
+  ],
+  [
+   325.029,
+   326.135,
+   "has mutable state."
+  ],
+  [
+   326.135,
+   328.718,
+   "If two orcs shared one AI object,"
+  ],
+  [
+   328.718,
+   330.932,
+   "moving one would move the other."
+  ],
+  [
+   331.564,
+   334.515,
+   "So the AI must be deep-copied \u2014 each"
+  ],
+  [
+   334.515,
+   335.991,
+   "clone gets its own."
+  ],
+  [
+   335.991,
+   337.836,
+   "Get that shallow-versus-deep line right,"
+  ],
+  [
+   337.836,
+   340.05,
+   "and you understand the whole pattern."
+  ],
+  [
+   340.55,
+   341.26,
+   "Step three,"
+  ],
+  [
+   341.26,
+   342.326,
+   "and the payoff."
+  ],
+  [
+   342.957,
+   344.733,
+   "Register the configured orc once."
+  ],
+  [
+   344.733,
+   347.574,
+   "Then spawn a wave of thirty by cloning"
+  ],
+  [
+   347.574,
+   348.64,
+   "it \u2014 fast,"
+  ],
+  [
+   348.64,
+   349.705,
+   "no repeated setup."
+  ],
+  [
+   350.337,
+   353.178,
+   "But here is the part that was impossible"
+  ],
+  [
+   353.178,
+   353.533,
+   "before."
+  ],
+  [
+   354.165,
+   357.006,
+   "A designer takes a clone of the orc,"
+  ],
+  [
+   357.006,
+   359.492,
+   "bumps its hit points to two hundred,"
+  ],
+  [
+   359.492,
+   361.623,
+   "and registers it as a fire-orc."
+  ],
+  [
+   362.255,
+   365.096,
+   "They just created a new enemy type \u2014"
+  ],
+  [
+   365.096,
+   365.806,
+   "at runtime,"
+  ],
+  [
+   365.806,
+   367.227,
+   "with no new class,"
+  ],
+  [
+   367.227,
+   369.358,
+   "and no change to the spawner."
+  ],
+  [
+   369.358,
+   370.423,
+   "From now on,"
+  ],
+  [
+   370.423,
+   372.554,
+   "spawn fire-orc clones that new prototype."
+  ],
+  [
+   372.554,
+   375.395,
+   "New types are born by copying and tweaking,"
+  ],
+  [
+   375.395,
+   376.816,
+   "not by writing code."
+  ],
+  [
+   377.316,
+   380.305,
+   "Now the change that used to require an"
+  ],
+  [
+   380.305,
+   380.679,
+   "engineer."
+  ],
+  [
+   380.679,
+   383.668,
+   "Designers want to invent a boss \u2014 a"
+  ],
+  [
+   383.668,
+   386.657,
+   "beefed-up dragon \u2014 while the game is running."
+  ],
+  [
+   387.288,
+   388.783,
+   "In the factory world,"
+  ],
+  [
+   388.783,
+   391.772,
+   "that meant a programmer writing a new build"
+  ],
+  [
+   391.772,
+   392.145,
+   "method,"
+  ],
+  [
+   392.145,
+   394.387,
+   "a near-duplicate of the dragon one,"
+  ],
+  [
+   394.387,
+   397.376,
+   "then recompiling and redeploying just to test it."
+  ],
+  [
+   398.007,
+   398.755,
+   "With prototypes?"
+  ],
+  [
+   398.755,
+   400.623,
+   "A designer clones the dragon,"
+  ],
+  [
+   400.623,
+   401.744,
+   "multiplies its health,"
+  ],
+  [
+   401.744,
+   402.865,
+   "doubles its size,"
+  ],
+  [
+   402.865,
+   405.106,
+   "and registers it as a dragon-boss."
+  ],
+  [
+   405.738,
+   406.859,
+   "No new class."
+  ],
+  [
+   406.859,
+   407.606,
+   "No recompile."
+  ],
+  [
+   407.606,
+   408.353,
+   "No engineer."
+  ],
+  [
+   408.985,
+   411.974,
+   "And the spawner spawns that boss exactly like"
+  ],
+  [
+   411.974,
+   414.963,
+   "anything else \u2014 by cloning a prototype it"
+  ],
+  [
+   414.963,
+   416.457,
+   "has never heard of."
+  ],
+  [
+   416.457,
+   417.205,
+   "New content,"
+  ],
+  [
+   417.205,
+   417.952,
+   "created live,"
+  ],
+  [
+   417.952,
+   418.699,
+   "by copying."
+  ],
+  [
+   419.199,
+   421.031,
+   "This is the Prototype pattern."
+  ],
+  [
+   421.663,
+   422.762,
+   "At the top,"
+  ],
+  [
+   422.762,
+   425.693,
+   "the prototype interface \u2014 Enemy \u2014 whose defining"
+  ],
+  [
+   425.693,
+   427.525,
+   "ability is to clone itself."
+  ],
+  [
+   428.156,
+   428.889,
+   "Below it,"
+  ],
+  [
+   428.889,
+   430.721,
+   "the concrete prototypes \u2014 Orc,"
+  ],
+  [
+   430.721,
+   433.652,
+   "Dragon \u2014 each knowing how to copy itself"
+  ],
+  [
+   433.652,
+   434.019,
+   "correctly,"
+  ],
+  [
+   434.019,
+   435.851,
+   "deep where it must be."
+  ],
+  [
+   436.482,
+   437.581,
+   "On the right,"
+  ],
+  [
+   437.581,
+   440.513,
+   "the client \u2014 the Bestiary \u2014 which holds"
+  ],
+  [
+   440.513,
+   443.444,
+   "configured prototypes and spawns new objects by\ncloning"
+  ],
+  [
+   443.444,
+   443.81,
+   "them."
+  ],
+  [
+   444.442,
+   446.64,
+   "Notice what the client never does:"
+  ],
+  [
+   446.64,
+   449.571,
+   "it never calls new on a concrete enemy."
+  ],
+  [
+   449.571,
+   451.037,
+   "It only ever clones."
+  ],
+  [
+   451.668,
+   454.233,
+   "Because creation is just copying an example,"
+  ],
+  [
+   454.233,
+   456.798,
+   "you can hand the bestiary a brand-new,"
+  ],
+  [
+   456.798,
+   459.729,
+   "pre-configured prototype at runtime \u2014 and it will"
+  ],
+  [
+   459.729,
+   462.66,
+   "happily spawn a type that did not exist"
+  ],
+  [
+   462.66,
+   464.492,
+   "when the code was written."
+  ],
+  [
+   464.992,
+   465.818,
+   "The names,"
+  ],
+  [
+   465.818,
+   467.471,
+   "mapped to your code."
+  ],
+  [
+   468.102,
+   470.581,
+   "The Prototype is the Enemy interface,"
+  ],
+  [
+   470.581,
+   472.234,
+   "with its clone method."
+  ],
+  [
+   472.865,
+   476.17,
+   "The ConcretePrototypes are the orc and the dragon,"
+  ],
+  [
+   476.17,
+   478.236,
+   "each able to copy itself."
+  ],
+  [
+   478.868,
+   480.933,
+   "The Client is the bestiary,"
+  ],
+  [
+   480.933,
+   482.586,
+   "which spawns by cloning."
+  ],
+  [
+   483.218,
+   484.457,
+   "And the catch,"
+  ],
+  [
+   484.457,
+   484.87,
+   "always:"
+  ],
+  [
+   484.87,
+   487.349,
+   "getting deep-versus-shallow copy right inside\nclone."
+  ],
+  [
+   487.98,
+   489.633,
+   "The Gang of Four:"
+  ],
+  [
+   489.633,
+   492.938,
+   "specify the kinds of objects to create using"
+  ],
+  [
+   492.938,
+   494.177,
+   "a prototypical instance,"
+  ],
+  [
+   494.177,
+   497.483,
+   "and create new objects by copying this prototype."
+  ],
+  [
+   497.483,
+   498.309,
+   "In Java,"
+  ],
+  [
+   498.309,
+   501.614,
+   "this is exactly why the copy constructor and"
+  ],
+  [
+   501.614,
+   504.919,
+   "Cloneable exist \u2014 though most teams prefer a"
+  ],
+  [
+   504.919,
+   507.811,
+   "plain copy constructor to Java's built-in clone."
+  ],
+  [
+   508.311,
+   510.451,
+   "Prototype's danger lives entirely inside clone."
+  ],
+  [
+   511.082,
+   513.935,
+   "The moment an object holds another mutable object,"
+  ],
+  [
+   513.935,
+   515.361,
+   "you have to decide:"
+  ],
+  [
+   515.361,
+   516.431,
+   "copy the reference,"
+  ],
+  [
+   516.431,
+   517.857,
+   "or copy the thing?"
+  ],
+  [
+   517.857,
+   520.71,
+   "Get it wrong \u2014 a shallow copy where"
+  ],
+  [
+   520.71,
+   523.563,
+   "you needed a deep one \u2014 and two"
+  ],
+  [
+   523.563,
+   524.989,
+   "clones silently share state,"
+  ],
+  [
+   524.989,
+   527.128,
+   "and mutating one corrupts the other."
+  ],
+  [
+   527.128,
+   529.268,
+   "It is one of the classic,"
+  ],
+  [
+   529.268,
+   529.981,
+   "maddening bugs."
+  ],
+  [
+   530.613,
+   532.752,
+   "Circular references make it harder still."
+  ],
+  [
+   533.384,
+   536.236,
+   "So skip the pattern when objects are cheap"
+  ],
+  [
+   536.236,
+   537.306,
+   "to just build,"
+  ],
+  [
+   537.306,
+   539.446,
+   "when every instance is genuinely one-of-a-kind,"
+  ],
+  [
+   539.446,
+   542.298,
+   "or when there is no expensive setup worth"
+  ],
+  [
+   542.298,
+   542.655,
+   "reusing."
+  ],
+  [
+   543.286,
+   546.139,
+   "Reach for it when constructing a configured object"
+  ],
+  [
+   546.139,
+   548.992,
+   "is costly and you need many copies \u2014"
+  ],
+  [
+   548.992,
+   551.844,
+   "or when you want to add whole new"
+  ],
+  [
+   551.844,
+   553.271,
+   "object types at runtime,"
+  ],
+  [
+   553.271,
+   553.984,
+   "by example."
+  ],
+  [
+   554.484,
+   554.876,
+   "Prototype,"
+  ],
+  [
+   554.876,
+   556.054,
+   "in one breath."
+  ],
+  [
+   556.686,
+   559.825,
+   "Rebuilding each object from scratch repeated the\nexpensive"
+  ],
+  [
+   559.825,
+   561.003,
+   "setup every time,"
+  ],
+  [
+   561.003,
+   564.143,
+   "and trapped every type's construction recipe\ninside the"
+  ],
+  [
+   564.143,
+   564.535,
+   "spawner."
+  ],
+  [
+   565.167,
+   567.522,
+   "But you already have one configured,"
+  ],
+  [
+   567.522,
+   570.662,
+   "and a variant is just a small tweak"
+  ],
+  [
+   570.662,
+   573.801,
+   "\u2014 so you build a single prototype and"
+  ],
+  [
+   573.801,
+   574.586,
+   "clone it."
+  ],
+  [
+   575.218,
+   575.61,
+   "Prototype:"
+  ],
+  [
+   575.61,
+   577.18,
+   "the object copies itself,"
+  ],
+  [
+   577.18,
+   579.143,
+   "deep where it must be,"
+  ],
+  [
+   579.143,
+   582.283,
+   "and the client spawns new objects by cloning"
+  ],
+  [
+   582.283,
+   584.245,
+   "\u2014 even types registered live,"
+  ],
+  [
+   584.245,
+   585.03,
+   "at runtime."
+  ],
+  [
+   585.662,
+   588.017,
+   "Here is one to carry out."
+  ],
+  [
+   588.648,
+   591.788,
+   "A graphics editor lets a user duplicate any"
+  ],
+  [
+   591.788,
+   594.928,
+   "shape \u2014 even a complex group with nested"
+  ],
+  [
+   594.928,
+   597.675,
+   "styling \u2014 and drag the copy away,"
+  ],
+  [
+   597.675,
+   599.638,
+   "fully independent of the original."
+  ],
+  [
+   600.269,
+   601.447,
+   "Does Prototype fit?"
+  ],
+  [
+   601.447,
+   603.017,
+   "What is the prototype,"
+  ],
+  [
+   603.017,
+   604.979,
+   "what exactly must clone deep-copy,"
+  ],
+  [
+   604.979,
+   607.727,
+   "and where is the shallow-copy trap waiting?"
+  ],
+  [
+   608.358,
+   608.751,
+   "Pause,"
+  ],
+  [
+   608.751,
+   611.498,
+   "and sketch it before the final episode."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp21-prototype.wav",
+   "volume": 1.0
+  }
+ }
+}

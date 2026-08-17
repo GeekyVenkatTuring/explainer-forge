@@ -1,0 +1,810 @@
+{
+ "cuts": [
+  {
+   "id": "sml-ch02-ontology_divider",
+   "type": "sml_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 11.331,
+   "props": {
+    "n": 1,
+    "title": "Ontology",
+    "sub": "the layer of meaning \u2014 a shared vocabulary for companies, prices, and results",
+    "color": "#FBBF24",
+    "layer": 0,
+    "dur": 11.831
+   }
+  },
+  {
+   "id": "sml-ch02-ontology_vs",
+   "type": "sml_compare",
+   "in_seconds": 11.831,
+   "out_seconds": 62.087,
+   "props": {
+    "kicker": "WHAT AN ONTOLOGY IS",
+    "title": "Not a spreadsheet \u2014 a model of financial meaning",
+    "color": "#FBBF24",
+    "left": {
+     "head": "A table / spreadsheet",
+     "sub": "structure only",
+     "c": "#8B93B0",
+     "rows": [
+      "Rows and columns of numbers.",
+      "No idea a P/E links a price to an EPS.",
+      "No rule that a price needs a timestamp.",
+      "Meaning lives only in your head."
+     ]
+    },
+    "right": {
+     "head": "An ontology",
+     "sub": "explicit meaning + rules",
+     "c": "#FBBF24",
+     "rows": [
+      "Entities: Company, Security, PriceQuote, P/E.",
+      "Relations: Company REPORTED Result.",
+      "Rules: every price MUST carry a source + time.",
+      "Independent of any one data vendor."
+     ]
+    },
+    "foot": "The ontology is the contract every source, query, and the agent all share.",
+    "dur": 50.756
+   }
+  },
+  {
+   "id": "sml-ch02-ontology_triple",
+   "type": "sml_triple",
+   "in_seconds": 62.587,
+   "out_seconds": 104.287,
+   "props": {
+    "kicker": "THE ATOM OF MEANING",
+    "title": "Everything is a triple: subject \u2192 predicate \u2192 object",
+    "subj": "Company",
+    "pred": "REPORTED",
+    "obj": "Q-Result",
+    "examples": [
+     "Company HAS_METRIC P/E",
+     "PriceQuote OF Security",
+     "NewsEvent ABOUT Company",
+     "Filing DISCLOSES Guidance"
+    ],
+    "foot": "Millions of these, sharing one vocabulary, become a company knowledge graph.",
+    "dur": 42.2
+   }
+  },
+  {
+   "id": "sml-ch02-ontology_fibo",
+   "type": "sml_cards",
+   "in_seconds": 104.787,
+   "out_seconds": 146.328,
+   "props": {
+    "kicker": "DON'T INVENT THE VOCABULARY",
+    "title": "Finance already has a standard ontology",
+    "color": "#FBBF24",
+    "cards": [
+     {
+      "head": "FIBO",
+      "emoji": "\ud83c\udfe6",
+      "body": "The Financial Industry Business Ontology \u2014 2,400+ classes for instruments, entities and holdings. Reuse it.",
+      "tag": "standard"
+     },
+     {
+      "head": "Your extension",
+      "emoji": "\ud83e\udde9",
+      "body": "Add only what's India-specific: NSE symbol, BSE scrip code, sector index membership.",
+      "tag": "local"
+     },
+     {
+      "head": "Definitions",
+      "emoji": "\ud83d\udcd6",
+      "body": "Anchor terms (P/E, EPS, ROE) to Investopedia/Varsity definitions so the meaning is unambiguous.",
+      "tag": "clarity"
+     }
+    ],
+    "foot": "Import a standard, extend for India \u2014 months of committee argument avoided.",
+    "dur": 42.041
+   }
+  },
+  {
+   "id": "sml-ch02-ontology_code",
+   "type": "sml_code",
+   "in_seconds": 146.828,
+   "out_seconds": 189.121,
+   "props": {
+    "kicker": "THE FACTUAL RULE, IN SHACL",
+    "title": "Every price must carry a source and a time \u2014 enforced",
+    "color": "#FBBF24",
+    "lang": "turtle",
+    "lines": [
+     ":PriceQuote a owl:Class .",
+     ":source  a owl:DatatypeProperty .",
+     ":asOf    a owl:DatatypeProperty .",
+     "",
+     "sh:PriceShape a sh:NodeShape ;",
+     "  sh:targetClass :PriceQuote ;",
+     "  sh:property [ sh:path :source ; sh:minCount 1 ] ;",
+     "  sh:property [ sh:path :asOf   ; sh:minCount 1 ] ."
+    ],
+    "caption": "OWL declares the concept \u00b7 SHACL forbids a price with no source or time",
+    "foot": "This shape is the anti-hallucination kit's foundation: a fact with no provenance can't enter.",
+    "dur": 42.793
+   }
+  },
+  {
+   "id": "sml-ch02-ontology_standards",
+   "type": "sml_orbit",
+   "in_seconds": 189.621,
+   "out_seconds": 240.4,
+   "props": {
+    "kicker": "THE ONTOLOGY TOOLBOX",
+    "title": "The standards and tools you'll reach for",
+    "color": "#FBBF24",
+    "hub": "Ontology\nstack",
+    "items": [
+     {
+      "emoji": "\ud83d\udd17",
+      "label": "RDF \u2014 triples, global IDs"
+     },
+     {
+      "emoji": "\ud83e\udd89",
+      "label": "OWL \u2014 classes + inference"
+     },
+     {
+      "emoji": "\u2696\ufe0f",
+      "label": "SHACL \u2014 validation"
+     },
+     {
+      "emoji": "\ud83c\udfe6",
+      "label": "FIBO \u2014 finance vocabulary"
+     },
+     {
+      "emoji": "\ud83d\udee0\ufe0f",
+      "label": "Prot\u00e9g\u00e9 \u2014 the editor"
+     },
+     {
+      "emoji": "\ud83d\udcd6",
+      "label": "Varsity \u2014 definitions"
+     }
+    ],
+    "foot": "Standards for portability; FIBO for the domain; a good editor for the humans.",
+    "dur": 51.279
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.713,
+   "Part one."
+  ],
+  [
+   0.713,
+   2.853,
+   "Ontology \u2014 the layer of meaning."
+  ],
+  [
+   3.485,
+   4.911,
+   "Before we connect anything,"
+  ],
+  [
+   4.911,
+   7.765,
+   "we have to agree on what the words"
+  ],
+  [
+   7.765,
+   8.121,
+   "mean:"
+  ],
+  [
+   8.121,
+   9.191,
+   "what a company,"
+  ],
+  [
+   9.191,
+   9.904,
+   "a price,"
+  ],
+  [
+   9.904,
+   11.331,
+   "a result actually are."
+  ],
+  [
+   11.831,
+   12.199,
+   "First,"
+  ],
+  [
+   12.199,
+   15.143,
+   "what an ontology actually is \u2014 because it"
+  ],
+  [
+   15.143,
+   16.982,
+   "is not just a spreadsheet."
+  ],
+  [
+   17.614,
+   19.822,
+   "A table is rows and columns."
+  ],
+  [
+   19.822,
+   22.765,
+   "It has no idea that a P/E ratio"
+  ],
+  [
+   22.765,
+   25.341,
+   "links a price to an earnings figure,"
+  ],
+  [
+   25.341,
+   28.285,
+   "or that a price is meaningless without a"
+  ],
+  [
+   28.285,
+   28.653,
+   "timestamp."
+  ],
+  [
+   29.284,
+   31.124,
+   "An ontology captures exactly that."
+  ],
+  [
+   31.124,
+   33.332,
+   "It names the entities \u2014 Company,"
+  ],
+  [
+   33.332,
+   33.7,
+   "Security,"
+  ],
+  [
+   33.7,
+   34.068,
+   "PriceQuote,"
+  ],
+  [
+   34.068,
+   34.803,
+   "financial metric."
+  ],
+  [
+   35.435,
+   38.379,
+   "It names the relationships \u2014 a company issues"
+  ],
+  [
+   38.379,
+   39.115,
+   "a security,"
+  ],
+  [
+   39.115,
+   41.322,
+   "a company reported a quarterly result."
+  ],
+  [
+   41.954,
+   44.897,
+   "And it names the rules \u2014 for example,"
+  ],
+  [
+   44.897,
+   47.841,
+   "every price node must carry a source and"
+  ],
+  [
+   47.841,
+   48.945,
+   "an as-of time."
+  ],
+  [
+   48.945,
+   51.889,
+   "That single rule is the seed of our"
+  ],
+  [
+   51.889,
+   52.625,
+   "anti-hallucination guarantee."
+  ],
+  [
+   53.256,
+   54.36,
+   "Best of all,"
+  ],
+  [
+   54.36,
+   57.304,
+   "it is independent of any one vendor \u2014"
+  ],
+  [
+   57.304,
+   58.04,
+   "so screener,"
+  ],
+  [
+   58.04,
+   58.407,
+   "NSE,"
+  ],
+  [
+   58.407,
+   61.351,
+   "and your broker all map to the same"
+  ],
+  [
+   61.351,
+   62.087,
+   "shared meaning."
+  ],
+  [
+   62.587,
+   65.08,
+   "No matter how complex the market is,"
+  ],
+  [
+   65.08,
+   67.573,
+   "it is built from one tiny atom:"
+  ],
+  [
+   67.573,
+   68.285,
+   "the triple."
+  ],
+  [
+   68.285,
+   68.641,
+   "Subject,"
+  ],
+  [
+   68.641,
+   68.997,
+   "predicate,"
+  ],
+  [
+   68.997,
+   69.353,
+   "object."
+  ],
+  [
+   69.985,
+   72.122,
+   "Company \u2014 reported \u2014 quarterly result."
+  ],
+  [
+   72.122,
+   73.546,
+   "That is a complete,"
+  ],
+  [
+   73.546,
+   74.258,
+   "machine-readable fact."
+  ],
+  [
+   74.89,
+   76.671,
+   "And you keep adding them."
+  ],
+  [
+   76.671,
+   79.164,
+   "A company has a metric called P/E."
+  ],
+  [
+   79.164,
+   81.656,
+   "A price quote is of a security."
+  ],
+  [
+   81.656,
+   84.149,
+   "A news event is about a company."
+  ],
+  [
+   84.149,
+   85.574,
+   "A filing discloses guidance."
+  ],
+  [
+   86.205,
+   87.986,
+   "Each triple is trivial alone,"
+  ],
+  [
+   87.986,
+   90.835,
+   "but because they all draw from the same"
+  ],
+  [
+   90.835,
+   91.547,
+   "shared vocabulary,"
+  ],
+  [
+   91.547,
+   93.684,
+   "they snap together into a fabric."
+  ],
+  [
+   94.316,
+   97.165,
+   "String enough of them together and you no"
+  ],
+  [
+   97.165,
+   100.014,
+   "longer have scattered facts \u2014 you have a"
+  ],
+  [
+   100.014,
+   102.863,
+   "graph you can walk from any company to"
+  ],
+  [
+   102.863,
+   104.287,
+   "any fact about it."
+  ],
+  [
+   104.787,
+   106.465,
+   "Here is a shortcut:"
+  ],
+  [
+   106.465,
+   108.982,
+   "you do not invent the vocabulary."
+  ],
+  [
+   108.982,
+   110.66,
+   "Finance already standardized it."
+  ],
+  [
+   111.292,
+   114.648,
+   "FIBO \u2014 the Financial Industry Business Ontology \u2014"
+  ],
+  [
+   114.648,
+   118.004,
+   "has over two thousand four hundred classes for"
+  ],
+  [
+   118.004,
+   118.423,
+   "instruments,"
+  ],
+  [
+   118.423,
+   118.843,
+   "companies,"
+  ],
+  [
+   118.843,
+   119.682,
+   "and holdings."
+  ],
+  [
+   119.682,
+   120.941,
+   "You import it."
+  ],
+  [
+   121.572,
+   124.928,
+   "Then you extend it with only what is"
+  ],
+  [
+   124.928,
+   125.348,
+   "India-specific:"
+  ],
+  [
+   125.348,
+   126.606,
+   "the NSE symbol,"
+  ],
+  [
+   126.606,
+   128.284,
+   "the BSE scrip code,"
+  ],
+  [
+   128.284,
+   129.123,
+   "sector-index membership."
+  ],
+  [
+   129.755,
+   132.692,
+   "And you anchor each term \u2014 P/E,"
+  ],
+  [
+   132.692,
+   133.111,
+   "EPS,"
+  ],
+  [
+   133.111,
+   136.467,
+   "return on equity \u2014 to a clear definition,"
+  ],
+  [
+   136.467,
+   138.565,
+   "from Investopedia or Zerodha Varsity,"
+  ],
+  [
+   138.565,
+   141.501,
+   "so nobody argues about what it means."
+  ],
+  [
+   142.133,
+   143.391,
+   "Reuse a standard,"
+  ],
+  [
+   143.391,
+   144.65,
+   "extend for India."
+  ],
+  [
+   144.65,
+   146.328,
+   "That alone saves months."
+  ],
+  [
+   146.828,
+   149.619,
+   "Let me show you the single most important"
+  ],
+  [
+   149.619,
+   149.967,
+   "rule,"
+  ],
+  [
+   149.967,
+   150.665,
+   "written down."
+  ],
+  [
+   151.297,
+   153.041,
+   "Two standards do the work."
+  ],
+  [
+   153.041,
+   155.134,
+   "OWL declares the concepts \u2014 here,"
+  ],
+  [
+   155.134,
+   157.924,
+   "a price quote has a source and an"
+  ],
+  [
+   157.924,
+   158.622,
+   "as-of time."
+  ],
+  [
+   159.254,
+   159.951,
+   "Then SHACL,"
+  ],
+  [
+   159.951,
+   161.347,
+   "the shapes constraint language,"
+  ],
+  [
+   161.347,
+   162.044,
+   "enforces it."
+  ],
+  [
+   162.044,
+   163.091,
+   "This shape says:"
+  ],
+  [
+   163.091,
+   165.882,
+   "every price quote must have at least one"
+  ],
+  [
+   165.882,
+   167.975,
+   "source and at least one timestamp."
+  ],
+  [
+   168.606,
+   171.048,
+   "Feed in a price with no provenance,"
+  ],
+  [
+   171.048,
+   173.839,
+   "and SHACL rejects it \u2014 it never enters"
+  ],
+  [
+   173.839,
+   174.536,
+   "the graph."
+  ],
+  [
+   175.168,
+   176.214,
+   "Hold onto this."
+  ],
+  [
+   176.214,
+   179.005,
+   "That exact rule is the foundation of the"
+  ],
+  [
+   179.005,
+   180.051,
+   "whole anti-hallucination kit:"
+  ],
+  [
+   180.051,
+   182.842,
+   "if a number cannot say where it came"
+  ],
+  [
+   182.842,
+   183.889,
+   "from and when,"
+  ],
+  [
+   183.889,
+   186.679,
+   "the system refuses to store it \u2014 and"
+  ],
+  [
+   186.679,
+   189.121,
+   "therefore the agent can never quote it."
+  ],
+  [
+   189.621,
+   190.786,
+   "The concrete toolbox."
+  ],
+  [
+   191.418,
+   194.524,
+   "RDF is the data model \u2014 the triple,"
+  ],
+  [
+   194.524,
+   197.631,
+   "with global identifiers so two sources point at"
+  ],
+  [
+   197.631,
+   199.184,
+   "the exact same concept."
+  ],
+  [
+   199.816,
+   201.758,
+   "OWL adds classes and inference;"
+  ],
+  [
+   201.758,
+   204.476,
+   "SHACL adds the validation we just saw."
+  ],
+  [
+   205.108,
+   208.214,
+   "FIBO gives you the finance vocabulary out of"
+  ],
+  [
+   208.214,
+   208.991,
+   "the box."
+  ],
+  [
+   209.623,
+   211.176,
+   "To edit it all,"
+  ],
+  [
+   211.176,
+   213.506,
+   "the classic free tool is Prot\u00e9g\u00e9."
+  ],
+  [
+   213.506,
+   215.06,
+   "And for India-specific definitions,"
+  ],
+  [
+   215.06,
+   217.001,
+   "Zerodha Varsity is the reference."
+  ],
+  [
+   217.633,
+   220.74,
+   "You do not need all of these on"
+  ],
+  [
+   220.74,
+   221.516,
+   "day one."
+  ],
+  [
+   221.516,
+   223.846,
+   "You need the idea \u2014 shared,"
+  ],
+  [
+   223.846,
+   226.953,
+   "enforceable meaning \u2014 and one place to write"
+  ],
+  [
+   226.953,
+   227.73,
+   "it down."
+  ],
+  [
+   228.361,
+   228.75,
+   "So,"
+  ],
+  [
+   228.75,
+   230.303,
+   "to recap part one:"
+  ],
+  [
+   230.303,
+   233.41,
+   "an ontology is the agreed vocabulary of your"
+  ],
+  [
+   233.41,
+   233.798,
+   "market,"
+  ],
+  [
+   233.798,
+   236.905,
+   "and its rules are what will keep the"
+  ],
+  [
+   236.905,
+   237.682,
+   "agent honest."
+  ],
+  [
+   237.682,
+   240.4,
+   "Now let's fill it with real data."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "sml/sml-ch02-ontology.wav",
+   "volume": 1.0
+  }
+ }
+}

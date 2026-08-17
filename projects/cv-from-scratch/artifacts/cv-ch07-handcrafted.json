@@ -1,0 +1,291 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch07-handcrafted_classic",
+   "type": "cv_classic",
+   "in_seconds": 0.0,
+   "out_seconds": 124.171,
+   "props": {
+    "dur": 124.671
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.244,
+   "So for decades,"
+  ],
+  [
+   1.244,
+   3.318,
+   "this was the master plan."
+  ],
+  [
+   3.318,
+   4.977,
+   "Chain clever filters together,"
+  ],
+  [
+   4.977,
+   5.806,
+   "by hand,"
+  ],
+  [
+   5.806,
+   7.05,
+   "into a pipeline."
+  ],
+  [
+   7.682,
+   9.341,
+   "First find the edges."
+  ],
+  [
+   9.972,
+   13.29,
+   "Then group nearby edges into corners and\nblobs."
+  ],
+  [
+   13.921,
+   17.239,
+   "Then describe the pattern of those corners\naround"
+  ],
+  [
+   17.239,
+   18.483,
+   "each interesting point,"
+  ],
+  [
+   18.483,
+   21.386,
+   "and turn it into a compact signature."
+  ],
+  [
+   22.018,
+   22.433,
+   "Famous,"
+  ],
+  [
+   22.433,
+   24.506,
+   "brilliant methods did exactly this."
+  ],
+  [
+   24.506,
+   27.409,
+   "You may hear their names \u2014 SIFT,"
+  ],
+  [
+   27.409,
+   28.239,
+   "and HOG."
+  ],
+  [
+   28.87,
+   30.944,
+   "They were carefully engineered features,"
+  ],
+  [
+   30.944,
+   34.262,
+   "designed by very smart people over many\nyears."
+  ],
+  [
+   34.893,
+   36.552,
+   "And for a while,"
+  ],
+  [
+   36.552,
+   37.796,
+   "they genuinely worked."
+  ],
+  [
+   38.428,
+   41.745,
+   "They gave us panorama stitching on our\ncameras."
+  ],
+  [
+   41.745,
+   44.648,
+   "The first face detectors in\npoint-and-shoot cameras."
+  ],
+  [
+   44.648,
+   45.893,
+   "Early object recognition."
+  ],
+  [
+   46.524,
+   46.939,
+   "SIFT,"
+  ],
+  [
+   46.939,
+   47.768,
+   "for instance,"
+  ],
+  [
+   47.768,
+   51.086,
+   "was genuinely clever \u2014 it found keypoints\nthat"
+  ],
+  [
+   51.086,
+   52.745,
+   "survived zooming and rotation,"
+  ],
+  [
+   52.745,
+   56.063,
+   "so you could match the same object across"
+  ],
+  [
+   56.063,
+   56.892,
+   "different photos."
+  ],
+  [
+   57.524,
+   60.841,
+   "People even built early image search this\nway,"
+  ],
+  [
+   60.841,
+   64.159,
+   "by collecting an image's features into a\nbag"
+  ],
+  [
+   64.159,
+   65.403,
+   "of visual words."
+  ],
+  [
+   66.035,
+   69.353,
+   "But this whole approach slammed into a\nhard"
+  ],
+  [
+   69.353,
+   69.767,
+   "ceiling."
+  ],
+  [
+   70.399,
+   73.717,
+   "A feature hand-tuned to recognize a cat in"
+  ],
+  [
+   73.717,
+   76.62,
+   "bright daylight would simply fail at\nnight."
+  ],
+  [
+   77.251,
+   78.91,
+   "Change the camera angle."
+  ],
+  [
+   78.91,
+   80.154,
+   "Change the lighting."
+  ],
+  [
+   80.154,
+   81.813,
+   "Add a cluttered background,"
+  ],
+  [
+   81.813,
+   83.887,
+   "or a partly hidden object."
+  ],
+  [
+   83.887,
+   86.375,
+   "And the careful pipeline would crumble."
+  ],
+  [
+   87.006,
+   88.665,
+   "The problem was fundamental."
+  ],
+  [
+   88.665,
+   91.983,
+   "The real world has far too much variety"
+  ],
+  [
+   91.983,
+   94.471,
+   "to ever cover with hand-written rules."
+  ],
+  [
+   95.103,
+   98.421,
+   "Engineers would spend years crafting\nfeatures for one"
+  ],
+  [
+   98.421,
+   99.25,
+   "narrow problem,"
+  ],
+  [
+   99.25,
+   102.568,
+   "and end up with something brittle that\nbroke"
+  ],
+  [
+   102.568,
+   104.227,
+   "the moment conditions shifted."
+  ],
+  [
+   104.858,
+   108.176,
+   "It was clear the field needed a completely"
+  ],
+  [
+   108.176,
+   109.005,
+   "different idea."
+  ],
+  [
+   109.637,
+   111.711,
+   "Not humans painstakingly designing\nfeatures."
+  ],
+  [
+   112.342,
+   115.66,
+   "But a system that could learn the right"
+  ],
+  [
+   115.66,
+   116.904,
+   "features by itself,"
+  ],
+  [
+   116.904,
+   118.148,
+   "directly from examples."
+  ],
+  [
+   118.78,
+   122.097,
+   "That idea is the deep learning revolution\n\u2014"
+  ],
+  [
+   122.097,
+   124.171,
+   "and it begins right now."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch07-handcrafted.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "ticker": "KOTAKBANK",
+ "scraped_at": "2026-08-14T15:27:39",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 389440.0,
+ "current_price": 392.0,
+ "pe": 19.5,
+ "book_value": 182.0,
+ "dividend_yield_pct": 0.17,
+ "roce_pct": 6.98,
+ "roe_pct": 11.4,
+ "face_value": 1.0,
+ "high": 453.0,
+ "sales_growth": {
+  "10 Years": 19.0,
+  "5 Years": 14.0,
+  "3 Years": 9.0,
+  "TTM": 5.0
+ },
+ "profit_growth": {
+  "10 Years": 10.0,
+  "5 Years": 2.0,
+  "3 Years": 3.0,
+  "1 Year": -1.0
+ },
+ "roe_hist": {
+  "Financing Margin %": -18.0,
+  "Depreciation": 0.0,
+  "Tax %": 26.0,
+  "EPS in Rs": 4.18,
+  "Gross NPA %": 1.75,
+  "Net NPA %": 0.43
+ },
+ "price_cagr": {
+  "10 Years": 14.0,
+  "5 Years": 14.0,
+  "3 Years": 14.0,
+  "Last Year": 11.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [],
+  "eps": [
+   "4.18",
+   "4.49",
+   "4.29",
+   "5.37",
+   "7.49",
+   "5.07",
+   "4.73",
+   "4.96",
+   "4.50",
+   "4.49",
+   "4.95",
+   "5.45",
+   "5.51"
+  ]
+ },
+ "pros": [],
+ "cons": [
+  "Company has low interest coverage ratio.",
+  "Company has a low return on equity of 13.7% over last 3 years.",
+  "Contingent liabilities of Rs.10,54,268 Cr.",
+  "Earnings include an other income of Rs.40,409 Cr.",
+  "Dividend payout has been low at 2.59% of profits over last 3 years",
+  "Working capital days have increased from 108 days to 154 days"
+ ]
+}

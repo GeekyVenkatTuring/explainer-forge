@@ -1,0 +1,881 @@
+{
+  "cuts": [
+    {
+      "id": "horizon_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 33.066,
+      "props": {
+        "title": "Horizon Industrial Parks IPO",
+        "sub": "Warehousing & industrial parks · ₹2,600 Cr · 100% Fresh · 17–19 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 33.566
+      }
+    },
+    {
+      "id": "horizon_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 33.566,
+      "out_seconds": 74.312,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Horizon Industrial Parks",
+        "color": "#38BDF8",
+        "items": [
+          {
+            "emoji": "🏭",
+            "k": "Owns warehousing & industrial parks",
+            "v": "A platform of grade-A logistics and industrial assets it leases to e-commerce, manufacturing and 3PL tenants",
+            "chip": "REAL ESTATE"
+          },
+          {
+            "emoji": "📦",
+            "k": "45 assets · 10 cities · 58 msf",
+            "v": "Around fifty-eight million sq ft of leasable space across ten major Indian cities — a large, national footprint",
+            "chip": "SCALE"
+          },
+          {
+            "emoji": "🏦",
+            "k": "Blackstone-backed (~89%)",
+            "v": "Controlled by global giant Blackstone; rides India's warehousing and supply-chain boom",
+            "chip": "SPONSOR"
+          }
+        ],
+        "dur": 41.246
+      }
+    },
+    {
+      "id": "horizon_fin",
+      "type": "sm_stats",
+      "in_seconds": 74.812,
+      "out_seconds": 111.862,
+      "props": {
+        "kicker": "FINANCIALS",
+        "title": "The Headline Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 691,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+77.1% YoY (₹390.30 → ₹691.38 Cr)"
+          },
+          {
+            "label": "Net loss FY26",
+            "to": 204,
+            "prefix": "−₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "loss WIDENED from ₹178.70 Cr"
+          },
+          {
+            "label": "Total borrowings",
+            "to": 6884,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#FBBF24",
+            "sub": "as of Mar 2026 — heavily leveraged"
+          }
+        ],
+        "note": "Fast-growing rentals — but still deep in the red, and carrying nearly ₹6,884 Cr of debt. Growth story with a leverage problem.",
+        "dur": 37.55
+      }
+    },
+    {
+      "id": "horizon_threestmt",
+      "type": "sm_financials",
+      "in_seconds": 112.362,
+      "out_seconds": 154.762,
+      "props": {
+        "kicker": "FINANCIALS · 3 STATEMENTS",
+        "title": "Income, Balance Sheet & Cash Flow",
+        "color": "#38BDF8",
+        "cols": [
+          {
+            "name": "Income Statement",
+            "icon": "📊",
+            "accent": "#34D399",
+            "rows": [
+              {
+                "label": "Revenue (ops) FY26",
+                "val": "₹691.38 Cr",
+                "sub": "FY25 ₹390.30 Cr · +77.1%"
+              },
+              {
+                "label": "Total income FY26",
+                "val": "₹767.84 Cr"
+              },
+              {
+                "label": "Net loss FY26",
+                "val": "−₹203.65 Cr",
+                "hi": true,
+                "sub": "FY25 −₹178.70 Cr — widening"
+              }
+            ]
+          },
+          {
+            "name": "Balance Sheet",
+            "icon": "🏦",
+            "accent": "#FBBF24",
+            "rows": [
+              {
+                "label": "Total borrowings",
+                "val": "₹6,884 Cr",
+                "hi": true,
+                "sub": "Mar 2026 — heavily geared"
+              },
+              {
+                "label": "Portfolio",
+                "val": "58.01 msf",
+                "sub": "45 assets · 10 cities"
+              },
+              {
+                "label": "Blackstone stake",
+                "val": "~89%"
+              }
+            ]
+          },
+          {
+            "name": "Cash Flow",
+            "icon": "💵",
+            "accent": "#38BDF8",
+            "rows": [
+              {
+                "label": "Fresh issue inflow",
+                "val": "₹2,600 Cr",
+                "sub": "100% fresh — into company"
+              },
+              {
+                "label": "→ Repay borrowings",
+                "val": "₹2,250 Cr",
+                "hi": true,
+                "sub": "~87% of proceeds"
+              },
+              {
+                "label": "Operating cash flow",
+                "val": "Not disclosed",
+                "sub": "rent-led per RHP; read RHP"
+              }
+            ]
+          }
+        ],
+        "note": "Public summaries give the income statement & balance sheet — for the full cash-flow statement, read the RHP.",
+        "dur": 42.9
+      }
+    },
+    {
+      "id": "horizon_issue",
+      "type": "sm_stats",
+      "in_seconds": 155.262,
+      "out_seconds": 189.43,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 2600,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#38BDF8",
+            "sub": "band ₹57–60"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 2600,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "100% — every rupee funds the company"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 0,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "NONE — Blackstone isn't cashing out"
+          }
+        ],
+        "note": "THE GOOD KIND of structure: 100% fresh — the entire ₹2,600 Cr goes INTO the company, mostly to cut its heavy debt.",
+        "dur": 34.668
+      }
+    },
+    {
+      "id": "horizon_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 189.93,
+      "out_seconds": 221.532,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹2,600 Cr Funds",
+        "color": "#38BDF8",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "₹2,250 Cr — repay borrowings",
+            "v": "The overwhelming bulk repays debt, cutting interest costs on a heavily-leveraged balance sheet",
+            "chip": "DEBT"
+          },
+          {
+            "emoji": "⚖️",
+            "k": "Deleveraging, not expansion",
+            "v": "Even after this, sizeable debt remains — the IPO fixes the balance sheet more than it funds new growth",
+            "chip": "CLEAN-UP"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Balance — general corporate",
+            "v": "The remainder goes to general corporate purposes",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 32.102
+      }
+    },
+    {
+      "id": "horizon_peers",
+      "type": "sm_iconcards",
+      "in_seconds": 222.032,
+      "out_seconds": 267.458,
+      "props": {
+        "kicker": "COMPETITORS · VALUATION",
+        "title": "How Is It Priced? No Clean Listed Peer",
+        "color": "#38BDF8",
+        "items": [
+          {
+            "emoji": "🚫",
+            "k": "P/E can't be used — it's loss-making",
+            "v": "With a net loss, there are no earnings to divide by; the P/E ratio simply doesn't apply here",
+            "chip": "P/E n/a"
+          },
+          {
+            "emoji": "📐",
+            "k": "~25× sales at ₹17,298 Cr value",
+            "v": "At the top band the company is valued near ₹17,298 Cr — about 25 times its FY26 revenue. That is a rich price",
+            "chip": "PRICEY"
+          },
+          {
+            "emoji": "🏢",
+            "k": "REIT peers aren't comparable",
+            "v": "Embassy, Nexus and Mindspace are REITs — yield instruments that pay out rent; Horizon is a loss-making operating company",
+            "chip": "NOT A REIT"
+          }
+        ],
+        "dur": 45.926
+      }
+    },
+    {
+      "id": "horizon_verdict",
+      "type": "sm_myths",
+      "in_seconds": 267.958,
+      "out_seconds": 315.616,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "Loss-making — and the loss is widening",
+            "f": "100% fresh — every rupee funds the company"
+          },
+          {
+            "m": "~₹6,884 Cr debt; even post-IPO it's high",
+            "f": "Blackstone-backed; large 58-msf national platform"
+          },
+          {
+            "m": "~25× sales — a rich price for red ink",
+            "f": "Rides India's structural warehousing boom; +77% revenue"
+          }
+        ],
+        "dur": 48.158
+      }
+    },
+    {
+      "id": "horizon_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 316.116,
+      "out_seconds": 327.037,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#38BDF8",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = about ₹15,000 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 11.421
+      }
+    },
+    {
+      "id": "horizon_recap",
+      "type": "sm_recap",
+      "in_seconds": 327.537,
+      "out_seconds": 389.257,
+      "props": {
+        "title": "Horizon Industrial Parks IPO — at a Glance",
+        "items": [
+          "Business: Blackstone-backed warehousing & industrial parks (45 assets, 58 msf)",
+          "FY26: revenue ₹691.38 Cr (+77%), NET LOSS ₹203.65 Cr (widening)",
+          "₹2,600 Cr issue — 100% FRESH; mostly repays ₹6,884 Cr debt",
+          "Loss-making → P/E n/a; ~25× sales at ~₹17,298 Cr value",
+          "Retail min ~₹15,000 · lists 24 Aug"
+        ],
+        "closer": "A large, marquee-backed warehousing platform on a real boom — but loss-making, debt-heavy and richly priced. Read the RHP; decide for yourself.",
+        "dur": 62.22
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      4.306,
+      "Let's break down the Horizon Industrial Parks I-P-O —"
+    ],
+    [
+      4.306,
+      8.287,
+      "a two thousand six hundred crore mainboard issue,"
+    ],
+    [
+      8.287,
+      11.212,
+      "and one of the biggest of this week."
+    ],
+    [
+      11.212,
+      17.061,
+      "It's a Blackstone-backed warehousing and industrial real-estate company."
+    ],
+    [
+      17.061,
+      20.88,
+      "We'll cover what it does, its full financials —"
+    ],
+    [
+      20.88,
+      24.698,
+      "income statement, balance sheet and cash flow —"
+    ],
+    [
+      24.698,
+      27.785,
+      "where the money goes, how it's valued,"
+    ],
+    [
+      27.785,
+      29.735,
+      "and whether it fits you."
+    ],
+    [
+      29.735,
+      33.066,
+      "This is education, not investment advice."
+    ],
+    [
+      33.566,
+      35.522,
+      "So what does Horizon do?"
+    ],
+    [
+      35.522,
+      39.841,
+      "It owns and leases warehousing and industrial parks —"
+    ],
+    [
+      39.841,
+      44.567,
+      "the grade-A sheds and logistics buildings that e-commerce,"
+    ],
+    [
+      44.567,
+      48.724,
+      "manufacturers and third-party logistics firms rent."
+    ],
+    [
+      48.724,
+      53.124,
+      "It's large: about forty-five assets across ten cities,"
+    ],
+    [
+      53.124,
+      57.851,
+      "roughly fifty-eight million square feet of leasable space."
+    ],
+    [
+      57.851,
+      60.621,
+      "And it's controlled by Blackstone,"
+    ],
+    [
+      60.621,
+      62.985,
+      "the global real-estate giant,"
+    ],
+    [
+      62.985,
+      66.244,
+      "with about an eighty-nine percent stake."
+    ],
+    [
+      66.244,
+      70.482,
+      "It rides India's warehousing and supply-chain boom —"
+    ],
+    [
+      70.482,
+      74.312,
+      "but note, it's still loss-making, as we'll see."
+    ],
+    [
+      74.812,
+      78.237,
+      "Now the financials — and here's the tension."
+    ],
+    [
+      78.237,
+      81.739,
+      "Revenue grew fast — up seventy-seven percent,"
+    ],
+    [
+      81.739,
+      85.009,
+      "to about six hundred and ninety-one crore."
+    ],
+    [
+      85.009,
+      93.026,
+      "But the company is loss-making: a net loss of about two hundred and four crore in FY twenty twenty-six,"
+    ],
+    [
+      93.026,
+      99.642,
+      "and that loss actually widened from a hundred and seventy-nine crore the year before."
+    ],
+    [
+      99.642,
+      101.821,
+      "And it's heavily leveraged —"
+    ],
+    [
+      101.821,
+      107.348,
+      "total borrowings near six thousand eight hundred and eighty-four crore."
+    ],
+    [
+      107.348,
+      111.862,
+      "So: strong top-line growth, but red ink and a lot of debt."
+    ],
+    [
+      112.362,
+      115.369,
+      "Let's put all three statements together."
+    ],
+    [
+      115.369,
+      120.857,
+      "The income statement shows revenue near six hundred and ninety-one crore,"
+    ],
+    [
+      120.857,
+      125.894,
+      "but a net loss of about two hundred and four crore that's widening."
+    ],
+    [
+      125.894,
+      128.3,
+      "The balance sheet is the worry —"
+    ],
+    [
+      128.3,
+      136.043,
+      "nearly six thousand nine hundred crore of borrowings against fifty-eight million square feet of assets."
+    ],
+    [
+      136.043,
+      137.697,
+      "On the cash-flow side,"
+    ],
+    [
+      137.697,
+      141.982,
+      "the I-P-O brings in two thousand six hundred crore fresh,"
+    ],
+    [
+      141.982,
+      147.319,
+      "and about two thousand two hundred and fifty crore of that repays debt."
+    ],
+    [
+      147.319,
+      152.582,
+      "The public summaries don't publish the full operating cash-flow line —"
+    ],
+    [
+      152.582,
+      154.762,
+      "for that, you read the R-H-P."
+    ],
+    [
+      155.262,
+      157.441,
+      "Where does your money go?"
+    ],
+    [
+      157.441,
+      160.753,
+      "And on structure, Horizon scores well."
+    ],
+    [
+      160.753,
+      165.983,
+      "The entire two thousand six hundred crore is a fresh issue —"
+    ],
+    [
+      165.983,
+      167.726,
+      "one hundred percent."
+    ],
+    [
+      167.726,
+      170.08,
+      "There is no Offer for Sale,"
+    ],
+    [
+      170.08,
+      178.709,
+      "which means Blackstone and the other owners are not cashing out; every rupee goes into the company."
+    ],
+    [
+      178.709,
+      181.672,
+      "That's the good kind of structure."
+    ],
+    [
+      181.672,
+      185.856,
+      "The catch, of course, is what the money is for —"
+    ],
+    [
+      185.856,
+      189.43,
+      "mostly paying down that big pile of debt."
+    ],
+    [
+      189.93,
+      192.644,
+      "What does the fresh money fund?"
+    ],
+    [
+      192.644,
+      195.445,
+      "Overwhelmingly, debt repayment —"
+    ],
+    [
+      195.445,
+      199.559,
+      "about two thousand two hundred and fifty crore,"
+    ],
+    [
+      199.559,
+      202.711,
+      "the lion's share, repays borrowings."
+    ],
+    [
+      202.711,
+      206.738,
+      "So this is primarily a balance-sheet clean-up,"
+    ],
+    [
+      206.738,
+      209.101,
+      "not an expansion war-chest."
+    ],
+    [
+      209.101,
+      212.953,
+      "It cuts interest costs — genuinely helpful —"
+    ],
+    [
+      212.953,
+      216.717,
+      "but even afterwards, sizeable debt remains."
+    ],
+    [
+      216.717,
+      221.532,
+      "The small remainder goes to general corporate purposes."
+    ],
+    [
+      222.032,
+      224.96,
+      "So how is it priced against rivals?"
+    ],
+    [
+      224.96,
+      227.804,
+      "This is where you must be careful."
+    ],
+    [
+      227.804,
+      232.406,
+      "Because it's loss-making, the P/E ratio can't be used —"
+    ],
+    [
+      232.406,
+      235.334,
+      "there are no earnings to divide by."
+    ],
+    [
+      235.334,
+      238.763,
+      "So look at sales: at the top of the band,"
+    ],
+    [
+      238.763,
+      244.034,
+      "Horizon is valued near seventeen thousand three hundred crore —"
+    ],
+    [
+      244.034,
+      247.046,
+      "about twenty-five times its revenue."
+    ],
+    [
+      247.046,
+      251.396,
+      "That is a rich price for a company still in the red."
+    ],
+    [
+      251.396,
+      257.084,
+      "And don't confuse it with the listed warehousing REITs like Embassy,"
+    ],
+    [
+      257.084,
+      258.758,
+      "Nexus or Mindspace —"
+    ],
+    [
+      258.758,
+      262.606,
+      "those are yield instruments that pay out rent."
+    ],
+    [
+      262.606,
+      267.458,
+      "Horizon is an operating company that isn't yet profitable."
+    ],
+    [
+      267.958,
+      269.903,
+      "So — should you subscribe?"
+    ],
+    [
+      269.903,
+      274.093,
+      "The strengths are real — the whole issue is fresh money,"
+    ],
+    [
+      274.093,
+      276.038,
+      "it's backed by Blackstone,"
+    ],
+    [
+      276.038,
+      280.303,
+      "it owns a large fifty-eight-million-square-foot platform,"
+    ],
+    [
+      280.303,
+      286.288,
+      "and revenue is growing over seventy-seven percent on a genuine warehousing boom."
+    ],
+    [
+      286.288,
+      290.777,
+      "But the watch-outs are serious — the company is loss-making,"
+    ],
+    [
+      290.777,
+      297.062,
+      "and the loss is widening; it carries nearly six thousand nine hundred crore of debt,"
+    ],
+    [
+      297.062,
+      304.468,
+      "still high even after the I-P-O; and it's priced at about twenty-five times sales for that red ink."
+    ],
+    [
+      304.468,
+      308.06,
+      "The takeaway — a marquee-backed growth platform,"
+    ],
+    [
+      308.06,
+      311.8,
+      "but a loss-making, debt-heavy one at a full price."
+    ],
+    [
+      311.8,
+      315.616,
+      "Only you can decide if the story is worth the risk."
+    ],
+    [
+      316.116,
+      317.155,
+      "Finally — how do you apply, and how much?"
+    ],
+    [
+      317.155,
+      318.878,
+      "Retail investors bid up to two lakh for a thirty-five percent quota,"
+    ],
+    [
+      318.878,
+      319.993,
+      "with allotment by lottery if oversubscribed."
+    ],
+    [
+      319.993,
+      321.361,
+      "H-N-Is bid above two lakh for a fifteen percent quota."
+    ],
+    [
+      321.361,
+      322.628,
+      "For Horizon, at a fifty-seven to sixty rupee band,"
+    ],
+    [
+      322.628,
+      323.946,
+      "one lot works out to about fifteen thousand rupees —"
+    ],
+    [
+      323.946,
+      324.275,
+      "your minimum."
+    ],
+    [
+      324.275,
+      325.871,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      325.871,
+      327.037,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      327.537,
+      330.598,
+      "Let's recap Horizon Industrial Parks."
+    ],
+    [
+      330.598,
+      335.728,
+      "A Blackstone-backed warehousing and industrial-parks company —"
+    ],
+    [
+      335.728,
+      337.051,
+      "large, national,"
+    ],
+    [
+      337.051,
+      340.94,
+      "and growing revenue over seventy-seven percent."
+    ],
+    [
+      340.94,
+      345.49,
+      "The issue is one hundred percent fresh, which is good —"
+    ],
+    [
+      345.49,
+      352.357,
+      "but the money mostly repays a heavy debt load near six thousand nine hundred crore."
+    ],
+    [
+      352.357,
+      356.411,
+      "It's still loss-making, so the P/E doesn't apply,"
+    ],
+    [
+      356.411,
+      361.045,
+      "and at about twenty-five times sales it's richly priced."
+    ],
+    [
+      361.045,
+      365.347,
+      "The retail minimum is about fifteen thousand rupees."
+    ],
+    [
+      365.347,
+      369.318,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      369.318,
+      371.635,
+      "it is not investment advice,"
+    ],
+    [
+      371.635,
+      374.365,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      374.365,
+      377.509,
+      "and not a prediction of listing gains."
+    ],
+    [
+      377.509,
+      381.894,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      381.894,
+      387.602,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      387.602,
+      389.257,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/horizon.wav",
+      "volume": 1.0
+    }
+  }
+}

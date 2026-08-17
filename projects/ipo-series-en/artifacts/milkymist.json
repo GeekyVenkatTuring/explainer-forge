@@ -1,0 +1,871 @@
+{
+  "cuts": [
+    {
+      "id": "milkymist_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 30.284,
+      "props": {
+        "title": "Milky Mist IPO",
+        "sub": "Value-added dairy · ₹1,553 Cr · 11–13 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 30.784
+      }
+    },
+    {
+      "id": "milkymist_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 30.784,
+      "out_seconds": 69.058,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Milky Mist",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🧀",
+            "k": "Value-added dairy brand",
+            "v": "Best known for paneer, cheese, curd, ghee and yogurt — higher-margin branded products, not just plain milk",
+            "chip": "BRANDED"
+          },
+          {
+            "emoji": "🐄",
+            "k": "Farm-to-fork chain",
+            "v": "Procures from farmers and runs its own processing and cold-chain — control over quality and supply",
+            "chip": "COLD CHAIN"
+          },
+          {
+            "emoji": "🏆",
+            "k": "Temasek-backed",
+            "v": "Singapore's Temasek is an investor; a strong, trusted brand especially across South India",
+            "chip": "BIG BACKER"
+          }
+        ],
+        "dur": 38.774
+      }
+    },
+    {
+      "id": "milkymist_clients",
+      "type": "sm_iconcards",
+      "in_seconds": 69.558,
+      "out_seconds": 118.44,
+      "props": {
+        "kicker": "BUSINESS DEEP-DIVE · REACH & PRODUCTS",
+        "title": "How Milky Mist Reaches You",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🚚",
+            "k": "A deep distribution network",
+            "v": "~3,000 distributors, 44 depots and 3.5 lakh-plus retail touchpoints across 22 states — this reach is its real moat",
+            "chip": "3.5 LAKH+ OUTLETS"
+          },
+          {
+            "emoji": "🏪",
+            "k": "Many sales channels",
+            "v": "General trade, modern trade, HoReCa, e-commerce and 108 exclusive parlours — plus exports to 15-plus countries",
+            "chip": "5 CHANNELS"
+          },
+          {
+            "emoji": "🧀",
+            "k": "Daily-consumption products",
+            "v": "About 75% of revenue is everyday items — paneer, curd, yogurt, ghee and butter — which repeat far more than occasional treats",
+            "chip": "~75% DAILY-USE"
+          }
+        ],
+        "dur": 49.382
+      }
+    },
+    {
+      "id": "milkymist_fin",
+      "type": "sm_stats",
+      "in_seconds": 118.94,
+      "out_seconds": 154.816,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Total income FY26",
+            "to": 3145,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "≈ ₹3,145.01 Cr"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 127,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+142% YoY (≈ ₹127.01 Cr)"
+          },
+          {
+            "label": "EBITDA FY26",
+            "to": 435,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#FBBF24",
+            "sub": "up from ₹310 Cr in FY25"
+          }
+        ],
+        "note": "Profit more than DOUBLED in a year — genuinely impressive. But hold that thought; the pricing is rich, as we'll see next.",
+        "dur": 36.376
+      }
+    },
+    {
+      "id": "milkymist_issue",
+      "type": "sm_stats",
+      "in_seconds": 155.316,
+      "out_seconds": 191.574,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 1553,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#FBBF24",
+            "sub": "band ₹133–140"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 1428,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "~92% — funds the business"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 125,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "~8% — a small sell-down"
+          }
+        ],
+        "note": "THE GOOD KIND: over 92% is a fresh issue — the money goes INTO the company, not to exiting owners.",
+        "dur": 36.758
+      }
+    },
+    {
+      "id": "milkymist_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 192.074,
+      "out_seconds": 226.34,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹1,428 Cr Funds",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "₹496.8 Cr — repay borrowings",
+            "v": "The largest single use pays down debt, cutting interest costs and strengthening the balance sheet",
+            "chip": "DEBT"
+          },
+          {
+            "emoji": "🏭",
+            "k": "Capex — Perundurai plant",
+            "v": "Expansion and modernisation of its Perundurai manufacturing facility to grow capacity",
+            "chip": "CAPACITY"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Working capital + GCP",
+            "v": "The rest funds working capital and general corporate purposes",
+            "chip": "WC"
+          }
+        ],
+        "dur": 34.766
+      }
+    },
+    {
+      "id": "milkymist_peers",
+      "type": "sm_peers",
+      "in_seconds": 226.84,
+      "out_seconds": 273.442,
+      "props": {
+        "kicker": "COMPETITORS · VALUATION",
+        "title": "Priced Above the Entire Dairy Pack",
+        "color": "#FBBF24",
+        "peLabel": "P/E (×) · higher = pricier",
+        "rows": [
+          {
+            "name": "Milky Mist (this IPO)",
+            "pe": 84.9,
+            "hi": true,
+            "note": "~₹10,778 Cr mcap ÷ ₹127 Cr PAT"
+          },
+          {
+            "name": "Hatsun Agro",
+            "pe": 58.2,
+            "note": "leader · ~₹20,283 Cr mcap"
+          },
+          {
+            "name": "Dodla Dairy",
+            "pe": 24.3,
+            "note": "South-India dairy · branded"
+          },
+          {
+            "name": "Parag Milk Foods",
+            "pe": 21.3,
+            "note": "cheese & value-added · cheapest"
+          }
+        ],
+        "verdict": "At ~85× earnings, Milky Mist is asking MORE than every listed dairy peer — pricier even than market-leader Hatsun (~58×). A steep premium for its growth.",
+        "dur": 47.102
+      }
+    },
+    {
+      "id": "milkymist_verdict",
+      "type": "sm_myths",
+      "in_seconds": 273.942,
+      "out_seconds": 314.712,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "Priced ~85× — above EVERY listed peer",
+            "f": "Profit more than doubled (+142%)"
+          },
+          {
+            "m": "Dairy is milk-cost sensitive; margins swing",
+            "f": "~92% fresh — money funds the business"
+          },
+          {
+            "m": "Listed dairy peers are all down in 2026",
+            "f": "Strong brand; Temasek-backed; cold-chain moat"
+          }
+        ],
+        "dur": 41.27
+      }
+    },
+    {
+      "id": "milkymist_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 315.212,
+      "out_seconds": 353.1,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,980 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 38.388
+      }
+    },
+    {
+      "id": "milkymist_recap",
+      "type": "sm_recap",
+      "in_seconds": 353.6,
+      "out_seconds": 416.616,
+      "props": {
+        "title": "Milky Mist IPO — at a Glance",
+        "items": [
+          "Business: value-added dairy — paneer, cheese, curd, ghee",
+          "FY26: income ₹3,145.01 Cr, profit ₹127.01 Cr (+142%)",
+          "₹1,553 Cr issue — ~92% FRESH (the good kind)",
+          "But priced ~85× — above every listed dairy peer",
+          "Retail min ~₹14,980 · GMP ~19% (unofficial)"
+        ],
+        "closer": "A fast-growing, cleanly-structured dairy brand — at a premium price above all its peers. Read the RHP; decide for yourself.",
+        "dur": 63.516
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.175,
+      "Let's break down the Milky Mist I-P-O —"
+    ],
+    [
+      3.175,
+      10.176,
+      "a one thousand five hundred and fifty-three crore issue from a well-known dairy brand."
+    ],
+    [
+      10.176,
+      14.898,
+      "It has a clean, mostly-fresh structure that sounds great —"
+    ],
+    [
+      14.898,
+      19.619,
+      "but wait until you see how it's priced against its rivals."
+    ],
+    [
+      19.619,
+      24.341,
+      "We'll cover the business, the financials, the money trail,"
+    ],
+    [
+      24.341,
+      26.946,
+      "the valuation, and how to apply."
+    ],
+    [
+      26.946,
+      30.284,
+      "This is education, not investment advice."
+    ],
+    [
+      30.784,
+      32.627,
+      "So what is Milky Mist?"
+    ],
+    [
+      32.627,
+      37.4,
+      "It's a value-added dairy company — best known for paneer,"
+    ],
+    [
+      37.4,
+      39.913,
+      "cheese, curd, ghee and yogurt."
+    ],
+    [
+      39.913,
+      41.002,
+      "That matters,"
+    ],
+    [
+      41.002,
+      46.613,
+      "because these branded products earn higher margins than plain milk."
+    ],
+    [
+      46.613,
+      55.155,
+      "It runs a farm-to-fork chain: it procures from farmers and operates its own processing and cold-chain,"
+    ],
+    [
+      55.155,
+      58.673,
+      "giving it control over quality and supply."
+    ],
+    [
+      58.673,
+      61.102,
+      "And it has a marquee backer —"
+    ],
+    [
+      61.102,
+      65.373,
+      "Singapore's Temasek is an investor — with a strong,"
+    ],
+    [
+      65.373,
+      69.058,
+      "trusted brand especially across South India."
+    ],
+    [
+      69.558,
+      72.085,
+      "Let's go deeper on the business."
+    ],
+    [
+      72.085,
+      75.244,
+      "Milky Mist's real strength is its reach."
+    ],
+    [
+      75.244,
+      79.35,
+      "It sells through around three thousand distributors,"
+    ],
+    [
+      79.35,
+      87.089,
+      "forty-four depots and more than three and a half lakh retail touchpoints across twenty-two states."
+    ],
+    [
+      87.089,
+      91.275,
+      "It reaches you through many channels — general trade,"
+    ],
+    [
+      91.275,
+      95.144,
+      "modern trade, hotels and restaurants, e-commerce,"
+    ],
+    [
+      95.144,
+      98.619,
+      "and a hundred and eight exclusive parlours —"
+    ],
+    [
+      98.619,
+      102.646,
+      "and it even exports to more than fifteen countries."
+    ],
+    [
+      102.646,
+      108.332,
+      "As a food business there's no order book; what matters is repeat demand."
+    ],
+    [
+      108.332,
+      113.544,
+      "And here about seventy-five percent of revenue is everyday items —"
+    ],
+    [
+      113.544,
+      116.624,
+      "paneer, curd, yogurt, ghee and butter —"
+    ],
+    [
+      116.624,
+      118.44,
+      "bought again and again."
+    ],
+    [
+      118.94,
+      120.972,
+      "The financials are strong."
+    ],
+    [
+      120.972,
+      128.476,
+      "Total income for FY twenty twenty-six was about three thousand one hundred and forty-five crore,"
+    ],
+    [
+      128.476,
+      132.618,
+      "and net profit was a hundred and twenty-seven crore —"
+    ],
+    [
+      132.618,
+      136.526,
+      "up a remarkable one hundred and forty-two percent."
+    ],
+    [
+      136.526,
+      138.715,
+      "Operating profit, or EBITDA,"
+    ],
+    [
+      138.715,
+      142.076,
+      "rose to four hundred and thirty-five crore."
+    ],
+    [
+      142.076,
+      145.671,
+      "So profit more than doubled in a single year —"
+    ],
+    [
+      145.671,
+      147.313,
+      "genuinely impressive."
+    ],
+    [
+      147.313,
+      149.032,
+      "But hold that thought,"
+    ],
+    [
+      149.032,
+      152.315,
+      "because how it's priced is the real story,"
+    ],
+    [
+      152.315,
+      154.816,
+      "and we'll get to it in a moment."
+    ],
+    [
+      155.316,
+      157.749,
+      "Now — where does your money go?"
+    ],
+    [
+      157.749,
+      160.26,
+      "And here Milky Mist looks great."
+    ],
+    [
+      160.26,
+      165.048,
+      "Of the one thousand five hundred and fifty-three crore issue,"
+    ],
+    [
+      165.048,
+      169.442,
+      "about one thousand four hundred and twenty-eight crore —"
+    ],
+    [
+      169.442,
+      171.405,
+      "over ninety-two percent —"
+    ],
+    [
+      171.405,
+      174.858,
+      "is a fresh issue that goes into the company."
+    ],
+    [
+      174.858,
+      179.959,
+      "Only about a hundred and twenty-five crore is an Offer for Sale —"
+    ],
+    [
+      179.959,
+      181.372,
+      "a small sell-down."
+    ],
+    [
+      181.372,
+      188.592,
+      "So this is the good kind of I-P-O in structure: your money is funding the business's growth,"
+    ],
+    [
+      188.592,
+      191.574,
+      "not buying out people who are leaving."
+    ],
+    [
+      192.074,
+      194.841,
+      "So what does the fresh money fund?"
+    ],
+    [
+      194.841,
+      196.795,
+      "The largest single use —"
+    ],
+    [
+      196.795,
+      201.353,
+      "about four hundred and ninety-seven crore — repays debt,"
+    ],
+    [
+      201.353,
+      206.155,
+      "cutting interest costs and strengthening the balance sheet."
+    ],
+    [
+      206.155,
+      212.666,
+      "A chunk goes to expanding and modernising its Perundurai manufacturing facility,"
+    ],
+    [
+      212.666,
+      214.375,
+      "adding real capacity."
+    ],
+    [
+      214.375,
+      219.747,
+      "And the rest funds working capital and general corporate purposes."
+    ],
+    [
+      219.747,
+      221.945,
+      "So unlike a pure sell-down,"
+    ],
+    [
+      221.945,
+      226.34,
+      "this money genuinely goes to work inside the business."
+    ],
+    [
+      226.84,
+      229.652,
+      "So how is it priced against rivals?"
+    ],
+    [
+      229.652,
+      232.143,
+      "This is the number to sit with."
+    ],
+    [
+      232.143,
+      233.991,
+      "At the top of the band,"
+    ],
+    [
+      233.991,
+      238.812,
+      "Milky Mist is valued near ten thousand eight hundred crore —"
+    ],
+    [
+      238.812,
+      241.785,
+      "about eighty-five times its earnings."
+    ],
+    [
+      241.785,
+      245.802,
+      "Compare that with listed dairy peers: Hatsun Agro,"
+    ],
+    [
+      245.802,
+      247.248,
+      "the market leader,"
+    ],
+    [
+      247.248,
+      255.364,
+      "trades near fifty-eight times; Dodla Dairy around twenty-four; and Parag Milk Foods about twenty-one."
+    ],
+    [
+      255.364,
+      256.569,
+      "In other words,"
+    ],
+    [
+      256.569,
+      260.586,
+      "Milky Mist is asking MORE than every one of them —"
+    ],
+    [
+      260.586,
+      262.916,
+      "pricier even than the leader."
+    ],
+    [
+      262.916,
+      267.094,
+      "The growth is real, with profit more than doubling —"
+    ],
+    [
+      267.094,
+      270.871,
+      "but you're paying a full, premium price for it,"
+    ],
+    [
+      270.871,
+      273.442,
+      "so the margin for error is thin."
+    ],
+    [
+      273.942,
+      275.953,
+      "So — should you subscribe?"
+    ],
+    [
+      275.953,
+      280.286,
+      "The strengths are attractive — profit more than doubled,"
+    ],
+    [
+      280.286,
+      284.541,
+      "over ninety percent is fresh money funding the company,"
+    ],
+    [
+      284.541,
+      286.011,
+      "and it's a trusted,"
+    ],
+    [
+      286.011,
+      289.801,
+      "Temasek-backed brand with a real cold-chain moat."
+    ],
+    [
+      289.801,
+      292.741,
+      "The watch-outs are just as important —"
+    ],
+    [
+      292.741,
+      296.532,
+      "it's priced above every single listed dairy peer,"
+    ],
+    [
+      296.532,
+      299.317,
+      "dairy margins swing with milk costs,"
+    ],
+    [
+      299.317,
+      302.721,
+      "and the listed peers are all down this year."
+    ],
+    [
+      302.721,
+      306.821,
+      "The takeaway — a lovely, cleanly-structured business,"
+    ],
+    [
+      306.821,
+      311.076,
+      "but you're paying a premium price above the whole pack."
+    ],
+    [
+      311.076,
+      314.712,
+      "Only you can decide if the growth justifies it."
+    ],
+    [
+      315.212,
+      318.742,
+      "Finally — how do you apply, and how much?"
+    ],
+    [
+      318.742,
+      324.598,
+      "Retail investors bid up to two lakh for a thirty-five percent quota,"
+    ],
+    [
+      324.598,
+      328.387,
+      "with allotment by lottery if oversubscribed."
+    ],
+    [
+      328.387,
+      333.037,
+      "H-N-Is bid above two lakh for a fifteen percent quota."
+    ],
+    [
+      333.037,
+      337.773,
+      "For Milky Mist, one lot is a hundred and seven shares —"
+    ],
+    [
+      337.773,
+      342.595,
+      "about fourteen thousand nine hundred and eighty rupees —"
+    ],
+    [
+      342.595,
+      343.714,
+      "your minimum."
+    ],
+    [
+      343.714,
+      349.139,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      349.139,
+      353.1,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      353.6,
+      355.485,
+      "Let's recap Milky Mist."
+    ],
+    [
+      355.485,
+      360.483,
+      "A well-known value-added dairy brand — paneer, cheese, ghee —"
+    ],
+    [
+      360.483,
+      364.908,
+      "that's Temasek-backed, with profit more than doubling."
+    ],
+    [
+      364.908,
+      371.382,
+      "The structure is clean: over ninety percent is fresh money funding the company."
+    ],
+    [
+      371.382,
+      373.677,
+      "But the catch is the price —"
+    ],
+    [
+      373.677,
+      376.381,
+      "about eighty-five times earnings,"
+    ],
+    [
+      376.381,
+      380.806,
+      "above every listed dairy peer, even the market leader."
+    ],
+    [
+      380.806,
+      387.116,
+      "The retail minimum is about fourteen thousand nine hundred and eighty rupees,"
+    ],
+    [
+      387.116,
+      391.459,
+      "and the grey-market premium is near nineteen percent,"
+    ],
+    [
+      391.459,
+      392.934,
+      "though unofficial."
+    ],
+    [
+      392.934,
+      396.867,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      396.867,
+      399.162,
+      "it is not investment advice,"
+    ],
+    [
+      399.162,
+      401.866,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      401.866,
+      404.98,
+      "and not a prediction of listing gains."
+    ],
+    [
+      404.98,
+      409.323,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      409.323,
+      414.977,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      414.977,
+      416.616,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/milkymist.wav",
+      "volume": 1.0
+    }
+  }
+}

@@ -1,0 +1,7 @@
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/c10_div.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/c10_why.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/c10_metrics.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/_sil.wav'
+file '/Users/appuram/Developer/explainer-forge/projects/digital-agency-course-te/assets/c10_tools.wav'

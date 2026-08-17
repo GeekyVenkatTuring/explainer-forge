@@ -1,0 +1,2031 @@
+{
+ "cuts": [
+  {
+   "id": "kg-ch06-agentic_divider",
+   "type": "kg_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 11.435,
+   "props": {
+    "n": 5,
+    "title": "Agentic Engineering",
+    "sub": "the acting mind \u2014 AI agents that retrieve, reason, and act on the graph",
+    "color": "#F472B6",
+    "layer": 4,
+    "dur": 11.935
+   }
+  },
+  {
+   "id": "kg-ch06-agentic_loop",
+   "type": "kg_agentloop",
+   "in_seconds": 11.935,
+   "out_seconds": 74.761,
+   "props": {
+    "foot": "The graph is the agent's memory, its senses, and its list of safe things to do.",
+    "dur": 63.326
+   }
+  },
+  {
+   "id": "kg-ch06-agentic_retrieval",
+   "type": "kg_cards",
+   "in_seconds": 75.261,
+   "out_seconds": 131.198,
+   "props": {
+    "kicker": "GROUNDING & MEMORY",
+    "title": "How the agent stays factual and remembers",
+    "color": "#F472B6",
+    "cards": [
+     {
+      "head": "GraphRAG retrieval",
+      "emoji": "\ud83c\udfaf",
+      "body": "Pull the exact connected subgraph the question needs \u2014 that 86%-vs-32% edge from part two.",
+      "tag": "grounding"
+     },
+     {
+      "head": "Persistent memory",
+      "emoji": "\ud83e\udde0",
+      "body": "Tools like cognee give the agent a graph-shaped memory across sessions \u2014 not a goldfish.",
+      "tag": "cognee"
+     },
+     {
+      "head": "Typed actions",
+      "emoji": "\u26a1",
+      "body": "It can only call the operations the ontology allows \u2014 open a work item, page an owner.",
+      "tag": "governed"
+     }
+    ],
+    "foot": "Grounded retrieval + durable memory + a safe action menu \u2014 the anti-hallucination kit.",
+    "dur": 56.437
+   }
+  },
+  {
+   "id": "kg-ch06-agentic_context",
+   "type": "kg_cards",
+   "in_seconds": 131.698,
+   "out_seconds": 185.531,
+   "props": {
+    "kicker": "CONTEXT ENGINEERING",
+    "title": "The real skill: what you put in front of the model",
+    "color": "#F472B6",
+    "cards": [
+     {
+      "head": "The subgraph",
+      "emoji": "\ud83d\udd78\ufe0f",
+      "body": "Retrieve the small, relevant slice of the graph \u2014 not the whole thing, not random text.",
+      "tag": "retrieve"
+     },
+     {
+      "head": "The schema",
+      "emoji": "\ud83d\udcd0",
+      "body": "Give the model the ontology so it grounds its terms and writes valid queries.",
+      "tag": "ground"
+     },
+     {
+      "head": "Tools & memory",
+      "emoji": "\ud83e\uddf0",
+      "body": "Expose exactly the right MCP tools and recall past context \u2014 no more, no less.",
+      "tag": "scope"
+     }
+    ],
+    "foot": "Prompt engineering grew up into context engineering \u2014 and the graph is your best context source.",
+    "dur": 54.333
+   }
+  },
+  {
+   "id": "kg-ch06-agentic_ragpatterns",
+   "type": "kg_compare",
+   "in_seconds": 186.031,
+   "out_seconds": 242.468,
+   "props": {
+    "kicker": "TWO FLAVORS OF GRAPHRAG",
+    "title": "Pinpoint questions and big-picture questions need different retrieval",
+    "color": "#F472B6",
+    "left": {
+     "head": "Local (entity) search",
+     "sub": "pinpoint",
+     "c": "#22D3EE",
+     "rows": [
+      "Starts at specific entities.",
+      "Follows their local neighborhood.",
+      "Best for \u2018why did THIS break?\u2019",
+      "Precise, fast, and cheap."
+     ]
+    },
+    "right": {
+     "head": "Global (community) search",
+     "sub": "big picture",
+     "c": "#A78BFA",
+     "rows": [
+      "Summarizes graph \u2018communities\u2019.",
+      "Answers broad, thematic questions.",
+      "Best for \u2018what are our top risks?\u2019",
+      "Reasons over the whole corpus."
+     ]
+    },
+    "foot": "Local for a pinpoint question, global for the big picture \u2014 serious systems ship both.",
+    "dur": 56.937
+   }
+  },
+  {
+   "id": "kg-ch06-agentic_twobrain",
+   "type": "kg_twobrain",
+   "in_seconds": 242.968,
+   "out_seconds": 309.454,
+   "props": {
+    "foot": "Creativity from the model, guarantees from the graph \u2014 together, that's trustworthy AI.",
+    "dur": 66.986
+   }
+  },
+  {
+   "id": "kg-ch06-agentic_patterns",
+   "type": "kg_cards",
+   "in_seconds": 309.954,
+   "out_seconds": 362.339,
+   "props": {
+    "kicker": "AGENT DESIGN PATTERNS",
+    "title": "Three loops worth knowing by name",
+    "color": "#F472B6",
+    "cards": [
+     {
+      "head": "ReAct",
+      "emoji": "\ud83d\udd01",
+      "body": "Reason, then act with a tool, then observe \u2014 and repeat. The workhorse loop.",
+      "tag": "reason+act"
+     },
+     {
+      "head": "Plan-and-execute",
+      "emoji": "\ud83d\uddfa\ufe0f",
+      "body": "Draft a full plan first, then run the steps \u2014 better for complex, multi-tool tasks.",
+      "tag": "plan"
+     },
+     {
+      "head": "Reflection",
+      "emoji": "\ud83d\udd0d",
+      "body": "The agent critiques its own output and retries \u2014 catching mistakes before you see them.",
+      "tag": "self-check"
+     }
+    ],
+    "foot": "LangGraph makes all three explicit as graphs of steps \u2014 pick the shape per task.",
+    "dur": 52.885
+   }
+  },
+  {
+   "id": "kg-ch06-agentic_multiagent",
+   "type": "kg_cards",
+   "in_seconds": 362.839,
+   "out_seconds": 423.012,
+   "props": {
+    "kicker": "ONE AGENT, OR A TEAM?",
+    "title": "Split the work when a single prompt gets overloaded",
+    "color": "#F472B6",
+    "cards": [
+     {
+      "head": "Planner",
+      "emoji": "\ud83e\udded",
+      "body": "Breaks the question into steps \u2014 retrieve, correlate, decide \u2014 and delegates each.",
+      "tag": "orchestrate"
+     },
+     {
+      "head": "Specialists",
+      "emoji": "\ud83d\udd2c",
+      "body": "A graph-query agent, a log agent, an action agent \u2014 each an expert at exactly one tool.",
+      "tag": "divide"
+     },
+     {
+      "head": "Orchestrator",
+      "emoji": "\ud83d\udd00",
+      "body": "LangGraph wires them with loops and checks, so the team retries and revises instead of failing.",
+      "tag": "LangGraph"
+     }
+    ],
+    "foot": "Start with one agent. Split into a team only when a single prompt is doing too much.",
+    "dur": 60.673
+   }
+  },
+  {
+   "id": "kg-ch06-agentic_frameworks",
+   "type": "kg_orbit",
+   "in_seconds": 423.512,
+   "out_seconds": 487.976,
+   "props": {
+    "kicker": "THE 2026 TOOLKIT",
+    "title": "The frameworks you'll actually wire together",
+    "color": "#F472B6",
+    "hub": "Agent\n+ graph",
+    "items": [
+     {
+      "emoji": "\ud83d\udd00",
+      "label": "LangGraph \u2014 control flow & loops"
+     },
+     {
+      "emoji": "\ud83d\udcda",
+      "label": "LlamaIndex \u2014 retrieval"
+     },
+     {
+      "emoji": "\ud83d\udd78\ufe0f",
+      "label": "MS GraphRAG \u2014 the index"
+     },
+     {
+      "emoji": "\ud83d\udd0c",
+      "label": "MCP \u2014 the agent's hands"
+     },
+     {
+      "emoji": "\ud83e\udde0",
+      "label": "cognee \u2014 graph memory"
+     },
+     {
+      "emoji": "\u26a1",
+      "label": "Neo4j Aura Agent \u2014 ontology\u2192agent"
+     }
+    ],
+    "foot": "Retrieval + control flow + tools + memory \u2014 composed, not a single magic box.",
+    "dur": 64.964
+   }
+  },
+  {
+   "id": "kg-ch06-agentic_mcptools",
+   "type": "kg_orbit",
+   "in_seconds": 488.476,
+   "out_seconds": 549.018,
+   "props": {
+    "kicker": "MCP \u00b7 THE AGENT'S HANDS",
+    "title": "Every source becomes a typed, permissioned tool",
+    "color": "#F472B6",
+    "hub": "Agent",
+    "items": [
+     {
+      "emoji": "\ud83d\udcd8",
+      "label": "Wiki tool \u2014 read & search"
+     },
+     {
+      "emoji": "\ud83d\uddc2\ufe0f",
+      "label": "Repo tool \u2014 files & PRs"
+     },
+     {
+      "emoji": "\ud83d\uddc4\ufe0f",
+      "label": "SQL tool \u2014 run queries"
+     },
+     {
+      "emoji": "\ud83c\udf10",
+      "label": "Cosmos tool \u2014 documents"
+     },
+     {
+      "emoji": "\ud83d\uddbc\ufe0f",
+      "label": "Blob tool \u2014 assets"
+     },
+     {
+      "emoji": "\ud83d\udcdc",
+      "label": "AKS tool \u2014 logs & health"
+     }
+    ],
+    "foot": "MCP standardizes tools, so one agent reaches every source through typed, permissioned connectors.",
+    "dur": 61.042
+   }
+  },
+  {
+   "id": "kg-ch06-agentic_eval",
+   "type": "kg_cards",
+   "in_seconds": 549.518,
+   "out_seconds": 605.588,
+   "props": {
+    "kicker": "TRUST, BUT VERIFY",
+    "title": "An agent you can't evaluate or audit isn't production-ready",
+    "color": "#F472B6",
+    "cards": [
+     {
+      "head": "Eval sets",
+      "emoji": "\ud83d\udccb",
+      "body": "Known incidents with known root causes \u2014 measure the agent's F1 like a model, on every change.",
+      "tag": "measure"
+     },
+     {
+      "head": "Human-in-the-loop",
+      "emoji": "\u270b",
+      "body": "Read-only actions auto-run; risky writes wait for one click of human approval.",
+      "tag": "gate"
+     },
+     {
+      "head": "Full audit trail",
+      "emoji": "\ud83e\uddfe",
+      "body": "Every hop and action is logged on the graph \u2014 you can always ask \u2018why did it do that?\u2019",
+      "tag": "explain"
+     }
+    ],
+    "foot": "The great demo is easy. Evaluation, approval gates, and audit are what make it shippable.",
+    "dur": 56.57
+   }
+  },
+  {
+   "id": "kg-ch06-agentic_traverse",
+   "type": "kg_traverse",
+   "in_seconds": 606.088,
+   "out_seconds": 682.457,
+   "props": {
+    "foot": "Retrieve on the graph, reason over the path, act through a governed tool. That's the whole video.",
+    "dur": 76.869
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.745,
+   "Part five."
+  ],
+  [
+   0.745,
+   2.98,
+   "Agentic engineering \u2014 the acting mind."
+  ],
+  [
+   3.612,
+   6.592,
+   "Now we put an AI on top of"
+  ],
+  [
+   6.592,
+   7.71,
+   "everything we've built."
+  ],
+  [
+   7.71,
+   10.69,
+   "And this is where the whole stack finally"
+  ],
+  [
+   10.69,
+   11.435,
+   "pays off."
+  ],
+  [
+   11.935,
+   14.556,
+   "An AI agent runs a simple loop:"
+  ],
+  [
+   14.556,
+   14.93,
+   "observe,"
+  ],
+  [
+   14.93,
+   15.305,
+   "reason,"
+  ],
+  [
+   15.305,
+   15.679,
+   "act."
+  ],
+  [
+   16.31,
+   18.931,
+   "What changes everything is what it observes,"
+  ],
+  [
+   18.931,
+   19.68,
+   "reasons over,"
+  ],
+  [
+   19.68,
+   20.803,
+   "and acts through."
+  ],
+  [
+   21.435,
+   24.43,
+   "It observes the knowledge graph and the live"
+  ],
+  [
+   24.43,
+   27.051,
+   "twin \u2014 so it sees the real,"
+  ],
+  [
+   27.051,
+   28.923,
+   "current state of your system,"
+  ],
+  [
+   28.923,
+   30.42,
+   "not a stale snapshot."
+  ],
+  [
+   31.052,
+   34.047,
+   "It reasons by walking multi-hop paths across the"
+  ],
+  [
+   34.047,
+   37.042,
+   "graph \u2014 following relationships the way a senior"
+  ],
+  [
+   37.042,
+   37.791,
+   "engineer would,"
+  ],
+  [
+   37.791,
+   39.663,
+   "not guessing from similar-sounding text."
+  ],
+  [
+   40.294,
+   43.289,
+   "And it acts through the typed actions the"
+  ],
+  [
+   43.289,
+   46.285,
+   "ontology defined back in part one \u2014 a"
+  ],
+  [
+   46.285,
+   48.156,
+   "fixed menu of safe verbs,"
+  ],
+  [
+   48.156,
+   49.28,
+   "not arbitrary commands."
+  ],
+  [
+   49.911,
+   52.158,
+   "Look at the shape of this."
+  ],
+  [
+   52.158,
+   54.778,
+   "The graph is simultaneously the agent's memory,"
+  ],
+  [
+   54.778,
+   55.527,
+   "its senses,"
+  ],
+  [
+   55.527,
+   57.773,
+   "and its list of allowed moves."
+  ],
+  [
+   58.405,
+   61.4,
+   "That's the thesis of the entire hour in"
+  ],
+  [
+   61.4,
+   62.149,
+   "one picture."
+  ],
+  [
+   62.78,
+   65.776,
+   "Strip the graph away and this loop is"
+  ],
+  [
+   65.776,
+   67.648,
+   "just a chatbot spinning stories."
+  ],
+  [
+   67.648,
+   69.52,
+   "Wrap it around the graph,"
+  ],
+  [
+   69.52,
+   72.515,
+   "and it becomes a colleague that actually knows"
+  ],
+  [
+   72.515,
+   73.263,
+   "your system."
+  ],
+  [
+   73.263,
+   74.761,
+   "Let's unpack each piece."
+  ],
+  [
+   75.261,
+   75.658,
+   "First,"
+  ],
+  [
+   75.658,
+   78.039,
+   "how does the agent stay factual?"
+  ],
+  [
+   78.039,
+   78.833,
+   "Three pieces."
+  ],
+  [
+   79.464,
+   79.861,
+   "Grounding,"
+  ],
+  [
+   79.861,
+   80.655,
+   "through GraphRAG."
+  ],
+  [
+   80.655,
+   83.829,
+   "Instead of dumping random text into the prompt,"
+  ],
+  [
+   83.829,
+   87.004,
+   "the agent retrieves the exact connected subgraph\nthe"
+  ],
+  [
+   87.004,
+   87.798,
+   "question needs."
+  ],
+  [
+   87.798,
+   90.972,
+   "That's the eighty-six versus thirty-two advantage\nfrom part"
+  ],
+  [
+   90.972,
+   91.369,
+   "two,"
+  ],
+  [
+   91.369,
+   93.353,
+   "now working for the agent."
+  ],
+  [
+   93.985,
+   94.382,
+   "Memory."
+  ],
+  [
+   94.382,
+   95.572,
+   "On its own,"
+  ],
+  [
+   95.572,
+   98.747,
+   "a model is a goldfish \u2014 it forgets"
+  ],
+  [
+   98.747,
+   99.937,
+   "everything between sessions."
+  ],
+  [
+   99.937,
+   102.715,
+   "Tools like cognee give it a persistent,"
+  ],
+  [
+   102.715,
+   103.509,
+   "graph-shaped memory,"
+  ],
+  [
+   103.509,
+   106.287,
+   "so it remembers your system across conversations."
+  ],
+  [
+   106.918,
+   108.109,
+   "And typed actions."
+  ],
+  [
+   108.109,
+   111.284,
+   "The agent can only invoke the operations the"
+  ],
+  [
+   111.284,
+   114.458,
+   "ontology declared safe \u2014 open a work item,"
+  ],
+  [
+   114.458,
+   115.649,
+   "page an owner."
+  ],
+  [
+   115.649,
+   116.839,
+   "It cannot freelance."
+  ],
+  [
+   117.471,
+   118.265,
+   "Grounded retrieval,"
+  ],
+  [
+   118.265,
+   119.058,
+   "durable memory,"
+  ],
+  [
+   119.058,
+   121.042,
+   "and a bounded action menu."
+  ],
+  [
+   121.042,
+   123.027,
+   "That's the core anti-hallucination kit."
+  ],
+  [
+   123.658,
+   126.833,
+   "But there's one more guarantee we can add"
+  ],
+  [
+   126.833,
+   130.007,
+   "\u2014 a way to verify the agent before"
+  ],
+  [
+   130.007,
+   131.198,
+   "it ever acts."
+  ],
+  [
+   131.698,
+   134.578,
+   "Here's a shift in how good agents get"
+  ],
+  [
+   134.578,
+   137.458,
+   "built \u2014 the field moved from prompt engineering"
+  ],
+  [
+   137.458,
+   138.538,
+   "to context engineering."
+  ],
+  [
+   139.17,
+   142.05,
+   "The insight is that an agent is only"
+  ],
+  [
+   142.05,
+   144.93,
+   "as good as what you put in front"
+  ],
+  [
+   144.93,
+   146.011,
+   "of the model,"
+  ],
+  [
+   146.011,
+   148.891,
+   "and the graph is your best possible context"
+  ],
+  [
+   148.891,
+   149.251,
+   "source."
+  ],
+  [
+   149.882,
+   150.242,
+   "First,"
+  ],
+  [
+   150.242,
+   152.763,
+   "you retrieve the subgraph \u2014 the small,"
+  ],
+  [
+   152.763,
+   154.923,
+   "relevant slice the question actually needs,"
+  ],
+  [
+   154.923,
+   157.803,
+   "not the whole graph and not a pile"
+  ],
+  [
+   157.803,
+   158.883,
+   "of random text."
+  ],
+  [
+   159.515,
+   159.875,
+   "Second,"
+  ],
+  [
+   159.875,
+   162.755,
+   "you hand the model the ontology as schema,"
+  ],
+  [
+   162.755,
+   165.635,
+   "so it grounds its terms and writes valid"
+  ],
+  [
+   165.635,
+   165.995,
+   "queries."
+  ],
+  [
+   166.627,
+   166.987,
+   "Third,"
+  ],
+  [
+   166.987,
+   169.867,
+   "you expose exactly the right tools and the"
+  ],
+  [
+   169.867,
+   171.667,
+   "right memory \u2014 no more,"
+  ],
+  [
+   171.667,
+   172.387,
+   "no less."
+  ],
+  [
+   173.019,
+   173.739,
+   "Done well,"
+  ],
+  [
+   173.739,
+   176.259,
+   "the model spends its intelligence on reasoning,"
+  ],
+  [
+   176.259,
+   178.419,
+   "not on guessing what things mean."
+  ],
+  [
+   179.051,
+   180.851,
+   "That discipline \u2014 curating precise,"
+  ],
+  [
+   180.851,
+   183.731,
+   "grounded context from the graph \u2014 is the"
+  ],
+  [
+   183.731,
+   185.531,
+   "real craft of agentic engineering."
+  ],
+  [
+   186.031,
+   188.676,
+   "A practical detail that trips people up:"
+  ],
+  [
+   188.676,
+   190.188,
+   "GraphRAG isn't one thing."
+  ],
+  [
+   190.188,
+   192.077,
+   "There are two retrieval modes,"
+  ],
+  [
+   192.077,
+   193.966,
+   "and you pick per question."
+  ],
+  [
+   194.598,
+   197.621,
+   "Local search \u2014 sometimes called entity search \u2014"
+  ],
+  [
+   197.621,
+   200.644,
+   "starts at specific nodes and explores their\nneighborhood."
+  ],
+  [
+   200.644,
+   203.667,
+   "It's perfect for a pinpoint question like \u2018why"
+  ],
+  [
+   203.667,
+   205.556,
+   "did this report break?\u2019 Precise,"
+  ],
+  [
+   205.556,
+   205.934,
+   "fast,"
+  ],
+  [
+   205.934,
+   206.312,
+   "cheap."
+  ],
+  [
+   206.943,
+   208.455,
+   "Global search is different."
+  ],
+  [
+   208.455,
+   211.478,
+   "It pre-summarizes clusters of the graph \u2014\ncommunities"
+  ],
+  [
+   211.478,
+   213.745,
+   "\u2014 and reasons over those summaries."
+  ],
+  [
+   213.745,
+   215.256,
+   "It's built for broad,"
+  ],
+  [
+   215.256,
+   218.279,
+   "thematic questions like \u2018what are the biggest\nrisks"
+  ],
+  [
+   218.279,
+   219.791,
+   "across our whole platform?\u2019"
+  ],
+  [
+   220.422,
+   223.445,
+   "Vector RAG simply can't answer that second kind,"
+  ],
+  [
+   223.445,
+   226.468,
+   "because the answer isn't in any single chunk"
+  ],
+  [
+   226.468,
+   229.113,
+   "\u2014 it's spread across the whole corpus."
+  ],
+  [
+   229.745,
+   230.5,
+   "The takeaway:"
+  ],
+  [
+   230.5,
+   232.39,
+   "a pinpoint question wants local;"
+  ],
+  [
+   232.39,
+   234.279,
+   "a big-picture question wants global."
+  ],
+  [
+   234.279,
+   237.302,
+   "Real systems implement both and route between\nthem."
+  ],
+  [
+   237.934,
+   238.311,
+   "Now,"
+  ],
+  [
+   238.311,
+   241.334,
+   "the guarantee that makes any of this safe"
+  ],
+  [
+   241.334,
+   242.468,
+   "to act on."
+  ],
+  [
+   242.968,
+   246.118,
+   "This is the idea I've been promising since"
+  ],
+  [
+   246.118,
+   246.906,
+   "part one:"
+  ],
+  [
+   246.906,
+   247.694,
+   "neuro-symbolic AI."
+  ],
+  [
+   248.325,
+   249.113,
+   "Two brains,"
+  ],
+  [
+   249.113,
+   249.9,
+   "working together."
+  ],
+  [
+   250.532,
+   251.713,
+   "On the left,"
+  ],
+  [
+   251.713,
+   252.895,
+   "the language model."
+  ],
+  [
+   252.895,
+   253.682,
+   "It's flexible,"
+  ],
+  [
+   253.682,
+   254.076,
+   "fluent,"
+  ],
+  [
+   254.076,
+   254.864,
+   "and fast."
+  ],
+  [
+   254.864,
+   256.833,
+   "It reads the messy prose,"
+  ],
+  [
+   256.833,
+   258.014,
+   "spots the pattern,"
+  ],
+  [
+   258.014,
+   260.771,
+   "and proposes an answer or an action."
+  ],
+  [
+   261.402,
+   263.372,
+   "But \u2014 it can hallucinate."
+  ],
+  [
+   263.372,
+   264.553,
+   "On its own,"
+  ],
+  [
+   264.553,
+   266.522,
+   "you can't fully trust it."
+  ],
+  [
+   267.154,
+   268.729,
+   "So on the right,"
+  ],
+  [
+   268.729,
+   269.91,
+   "a symbolic brain:"
+  ],
+  [
+   269.91,
+   272.273,
+   "a reasoner and our SHACL rules."
+  ],
+  [
+   272.273,
+   273.454,
+   "It doesn't guess."
+  ],
+  [
+   273.454,
+   276.605,
+   "It checks the model's proposal against the\nontology"
+  ],
+  [
+   276.605,
+   278.968,
+   "before anything is allowed to happen."
+  ],
+  [
+   279.599,
+   281.962,
+   "The candidate flows from the fast,"
+  ],
+  [
+   281.962,
+   283.931,
+   "creative brain to the strict,"
+  ],
+  [
+   283.931,
+   287.081,
+   "auditable one \u2014 and only a valid proposal"
+  ],
+  [
+   287.081,
+   289.05,
+   "gets stamped and passed through."
+  ],
+  [
+   289.682,
+   292.832,
+   "This is the same validation gate from part"
+  ],
+  [
+   292.832,
+   293.226,
+   "four,"
+  ],
+  [
+   293.226,
+   296.377,
+   "now standing between the agent and the real"
+  ],
+  [
+   296.377,
+   296.771,
+   "world."
+  ],
+  [
+   297.402,
+   298.977,
+   "Creativity from the model,"
+  ],
+  [
+   298.977,
+   300.553,
+   "guarantees from the graph."
+  ],
+  [
+   300.553,
+   302.522,
+   "Neither half is trustworthy alone;"
+  ],
+  [
+   302.522,
+   302.915,
+   "together,"
+  ],
+  [
+   302.915,
+   305.672,
+   "they're the architecture behind serious enterprise\nAI."
+  ],
+  [
+   306.304,
+   306.697,
+   "Now,"
+  ],
+  [
+   306.697,
+   309.454,
+   "the concrete frameworks that build all this."
+  ],
+  [
+   309.954,
+   311.469,
+   "A quick vocabulary upgrade,"
+  ],
+  [
+   311.469,
+   314.119,
+   "because these three patterns come up constantly."
+  ],
+  [
+   314.751,
+   317.023,
+   "The first is ReAct \u2014 reason,"
+  ],
+  [
+   317.023,
+   318.916,
+   "then act with a tool,"
+  ],
+  [
+   318.916,
+   320.431,
+   "then observe the result,"
+  ],
+  [
+   320.431,
+   321.188,
+   "and repeat."
+  ],
+  [
+   321.188,
+   323.839,
+   "It's the workhorse loop behind most agents,"
+  ],
+  [
+   323.839,
+   325.354,
+   "including our root-cause investigator."
+  ],
+  [
+   325.985,
+   327.5,
+   "The second is plan-and-execute."
+  ],
+  [
+   327.5,
+   330.529,
+   "Instead of deciding one step at a time,"
+  ],
+  [
+   330.529,
+   333.559,
+   "the agent drafts a whole plan up front,"
+  ],
+  [
+   333.559,
+   334.695,
+   "then runs it."
+  ],
+  [
+   334.695,
+   337.724,
+   "That's stronger for complex tasks that touch many"
+  ],
+  [
+   337.724,
+   338.103,
+   "tools."
+  ],
+  [
+   338.734,
+   340.249,
+   "The third is reflection:"
+  ],
+  [
+   340.249,
+   343.278,
+   "the agent critiques its own output and tries"
+  ],
+  [
+   343.278,
+   346.308,
+   "again \u2014 a cheap way to catch mistakes"
+  ],
+  [
+   346.308,
+   348.201,
+   "before you ever see them."
+  ],
+  [
+   348.833,
+   350.347,
+   "You don't choose forever;"
+  ],
+  [
+   350.347,
+   353.377,
+   "LangGraph lets you express all three as graphs"
+  ],
+  [
+   353.377,
+   356.406,
+   "of steps and pick the right shape per"
+  ],
+  [
+   356.406,
+   356.785,
+   "task."
+  ],
+  [
+   357.416,
+   360.446,
+   "Knowing their names makes the whole ecosystem of"
+  ],
+  [
+   360.446,
+   362.339,
+   "tutorials and frameworks suddenly legible."
+  ],
+  [
+   362.839,
+   364.346,
+   "As tasks get harder,"
+  ],
+  [
+   364.346,
+   365.853,
+   "one question comes up:"
+  ],
+  [
+   365.853,
+   368.113,
+   "should this be a single agent,"
+  ],
+  [
+   368.113,
+   369.243,
+   "or a team?"
+  ],
+  [
+   369.875,
+   372.135,
+   "The multi-agent pattern splits the work."
+  ],
+  [
+   372.766,
+   375.78,
+   "A planner reads the request and breaks it"
+  ],
+  [
+   375.78,
+   377.663,
+   "into steps \u2014 retrieve this,"
+  ],
+  [
+   377.663,
+   378.417,
+   "correlate that,"
+  ],
+  [
+   378.417,
+   379.17,
+   "then decide."
+  ],
+  [
+   379.802,
+   382.062,
+   "Specialist agents each own one tool:"
+  ],
+  [
+   382.062,
+   383.192,
+   "a graph-query agent,"
+  ],
+  [
+   383.192,
+   384.322,
+   "a log agent,"
+  ],
+  [
+   384.322,
+   385.452,
+   "an action agent."
+  ],
+  [
+   385.452,
+   387.713,
+   "Each one is simple and expert,"
+  ],
+  [
+   387.713,
+   390.726,
+   "instead of one giant prompt trying to do"
+  ],
+  [
+   390.726,
+   391.103,
+   "everything."
+  ],
+  [
+   391.734,
+   394.748,
+   "And an orchestrator \u2014 LangGraph is the common"
+  ],
+  [
+   394.748,
+   397.762,
+   "choice \u2014 wires them together with loops and"
+  ],
+  [
+   397.762,
+   398.138,
+   "checkpoints,"
+  ],
+  [
+   398.138,
+   400.022,
+   "so when a step fails,"
+  ],
+  [
+   400.022,
+   403.036,
+   "the team retries or revises rather than\ncollapsing."
+  ],
+  [
+   403.667,
+   405.174,
+   "A word of caution,"
+  ],
+  [
+   405.174,
+   405.551,
+   "though:"
+  ],
+  [
+   405.551,
+   406.681,
+   "don't start here."
+  ],
+  [
+   406.681,
+   409.694,
+   "A multi-agent system is harder to debug and"
+  ],
+  [
+   409.694,
+   411.201,
+   "more expensive to run."
+  ],
+  [
+   411.833,
+   413.716,
+   "Begin with one well-grounded agent."
+  ],
+  [
+   413.716,
+   416.73,
+   "Split into a team only when a single"
+  ],
+  [
+   416.73,
+   418.99,
+   "prompt is visibly doing too much."
+  ],
+  [
+   419.622,
+   419.998,
+   "Now,"
+  ],
+  [
+   419.998,
+   423.012,
+   "the concrete frameworks that build all of this."
+  ],
+  [
+   423.512,
+   426.652,
+   "You don't build this from scratch \u2014 you"
+  ],
+  [
+   426.652,
+   427.436,
+   "compose it."
+  ],
+  [
+   428.068,
+   430.423,
+   "LangGraph gives you the control flow:"
+  ],
+  [
+   430.423,
+   432.777,
+   "agents as a graph of steps,"
+  ],
+  [
+   432.777,
+   434.347,
+   "with loops and branches,"
+  ],
+  [
+   434.347,
+   437.486,
+   "so the agent can retry and revise instead"
+  ],
+  [
+   437.486,
+   439.841,
+   "of running in a straight line."
+  ],
+  [
+   440.473,
+   443.612,
+   "LlamaIndex and Microsoft's GraphRAG handle\nretrieval and indexing"
+  ],
+  [
+   443.612,
+   446.752,
+   "\u2014 turning your documents and graph into something"
+  ],
+  [
+   446.752,
+   448.321,
+   "the agent can query."
+  ],
+  [
+   448.953,
+   452.092,
+   "MCP \u2014 the Model Context Protocol \u2014 is"
+  ],
+  [
+   452.092,
+   454.055,
+   "how the agent gets hands."
+  ],
+  [
+   454.055,
+   456.802,
+   "It's a standard way to expose tools,"
+  ],
+  [
+   456.802,
+   459.941,
+   "so the agent can reach into your DevOps,"
+  ],
+  [
+   459.941,
+   460.726,
+   "your SQL,"
+  ],
+  [
+   460.726,
+   462.296,
+   "your logs through safe,"
+  ],
+  [
+   462.296,
+   463.081,
+   "typed connectors."
+  ],
+  [
+   463.712,
+   465.675,
+   "cognee supplies that graph-shaped memory."
+  ],
+  [
+   466.306,
+   467.876,
+   "And watch this space:"
+  ],
+  [
+   467.876,
+   469.446,
+   "in February twenty twenty-six,"
+  ],
+  [
+   469.446,
+   471.015,
+   "Neo4j shipped Aura Agent,"
+  ],
+  [
+   471.015,
+   474.155,
+   "which builds an agent directly from your ontology"
+  ],
+  [
+   474.155,
+   476.117,
+   "and hosts it over MCP."
+  ],
+  [
+   476.749,
+   479.496,
+   "The ontology-to-agent pipeline is becoming a\nproduct."
+  ],
+  [
+   480.127,
+   483.267,
+   "Now let me put every one of these"
+  ],
+  [
+   483.267,
+   484.052,
+   "pieces together,"
+  ],
+  [
+   484.052,
+   485.229,
+   "on our project,"
+  ],
+  [
+   485.229,
+   487.976,
+   "to answer the question we started with."
+  ],
+  [
+   488.476,
+   490.855,
+   "Let's make \u2018the agent takes action\u2019 concrete,"
+  ],
+  [
+   490.855,
+   493.234,
+   "because it sounds scarier than it is."
+  ],
+  [
+   493.865,
+   495.564,
+   "The agent's hands are tools,"
+  ],
+  [
+   495.564,
+   498.283,
+   "and the Model Context Protocol \u2014 MCP \u2014"
+  ],
+  [
+   498.283,
+   501.002,
+   "is the standard way to give it those"
+  ],
+  [
+   501.002,
+   501.342,
+   "hands."
+  ],
+  [
+   501.973,
+   504.692,
+   "Each of our six sources becomes an MCP"
+  ],
+  [
+   504.692,
+   505.032,
+   "tool."
+  ],
+  [
+   505.032,
+   507.75,
+   "A wiki tool that can read and search."
+  ],
+  [
+   507.75,
+   510.469,
+   "A repo tool for files and pull requests."
+  ],
+  [
+   510.469,
+   512.508,
+   "A SQL tool that runs queries."
+  ],
+  [
+   512.508,
+   513.528,
+   "Tools for Cosmos,"
+  ],
+  [
+   513.528,
+   514.207,
+   "for Blob,"
+  ],
+  [
+   514.207,
+   516.586,
+   "and for the AKS logs and health."
+  ],
+  [
+   517.218,
+   518.577,
+   "Because it's a standard,"
+  ],
+  [
+   518.577,
+   521.296,
+   "the same agent can reach every system through"
+  ],
+  [
+   521.296,
+   521.636,
+   "clean,"
+  ],
+  [
+   521.636,
+   521.975,
+   "typed,"
+  ],
+  [
+   521.975,
+   524.694,
+   "permissioned connectors \u2014 and you control exactly\nwhat"
+  ],
+  [
+   524.694,
+   526.733,
+   "each tool is allowed to do."
+  ],
+  [
+   527.365,
+   530.083,
+   "This is why MCP took off so fast:"
+  ],
+  [
+   530.083,
+   532.802,
+   "it turns \u2018integrate an agent with my stack\u2019"
+  ],
+  [
+   532.802,
+   535.521,
+   "from a custom project into plugging in a"
+  ],
+  [
+   535.521,
+   536.54,
+   "few standard tools."
+  ],
+  [
+   537.172,
+   539.891,
+   "The graph tells the agent what to do;"
+  ],
+  [
+   539.891,
+   542.609,
+   "MCP is how it actually reaches out and"
+  ],
+  [
+   542.609,
+   543.289,
+   "does it."
+  ],
+  [
+   543.92,
+   546.639,
+   "But before we let it loose \u2014 how"
+  ],
+  [
+   546.639,
+   549.018,
+   "do we know we can trust it?"
+  ],
+  [
+   549.518,
+   551.294,
+   "Before an agent touches production,"
+  ],
+  [
+   551.294,
+   554.134,
+   "three things separate a slick demo from something"
+  ],
+  [
+   554.134,
+   555.555,
+   "you can actually ship."
+  ],
+  [
+   556.187,
+   556.542,
+   "First,"
+  ],
+  [
+   556.542,
+   556.897,
+   "evaluation."
+  ],
+  [
+   556.897,
+   559.738,
+   "Build a set of known incidents with known"
+  ],
+  [
+   559.738,
+   560.448,
+   "root causes,"
+  ],
+  [
+   560.448,
+   563.289,
+   "and measure the agent's accuracy \u2014 its F1"
+  ],
+  [
+   563.289,
+   564.709,
+   "\u2014 on every change,"
+  ],
+  [
+   564.709,
+   566.84,
+   "just like you'd evaluate a model."
+  ],
+  [
+   566.84,
+   569.326,
+   "If a prompt tweak drops the score,"
+  ],
+  [
+   569.326,
+   571.456,
+   "you'll know before your users do."
+  ],
+  [
+   572.088,
+   572.443,
+   "Second,"
+  ],
+  [
+   572.443,
+   572.798,
+   "human-in-the-loop."
+  ],
+  [
+   572.798,
+   574.574,
+   "Let read-only actions run freely,"
+  ],
+  [
+   574.574,
+   576.705,
+   "but make risky writes \u2014 deleting,"
+  ],
+  [
+   576.705,
+   577.06,
+   "deploying,"
+  ],
+  [
+   577.06,
+   579.901,
+   "paging an exec \u2014 wait for one click"
+  ],
+  [
+   579.901,
+   580.611,
+   "of approval."
+  ],
+  [
+   581.242,
+   581.597,
+   "Third,"
+  ],
+  [
+   581.597,
+   583.018,
+   "a full audit trail."
+  ],
+  [
+   583.018,
+   585.859,
+   "Because every hop and every action is logged"
+  ],
+  [
+   585.859,
+   586.924,
+   "on the graph,"
+  ],
+  [
+   586.924,
+   589.765,
+   "you can always answer the question a regulator"
+  ],
+  [
+   589.765,
+   591.541,
+   "or a teammate will ask:"
+  ],
+  [
+   591.541,
+   593.316,
+   "why did it do that?"
+  ],
+  [
+   593.948,
+   596.079,
+   "The demo is the easy part."
+  ],
+  [
+   596.079,
+   596.434,
+   "Evaluation,"
+  ],
+  [
+   596.434,
+   597.144,
+   "approval gates,"
+  ],
+  [
+   597.144,
+   599.985,
+   "and audit are what make an agent trustworthy."
+  ],
+  [
+   600.616,
+   602.392,
+   "Now \u2014 everything we've built,"
+  ],
+  [
+   602.392,
+   603.457,
+   "working as one,"
+  ],
+  [
+   603.457,
+   605.588,
+   "on the question we started with."
+  ],
+  [
+   606.088,
+   607.222,
+   "One hour ago,"
+  ],
+  [
+   607.222,
+   608.734,
+   "\u2018report X is wrong,"
+  ],
+  [
+   608.734,
+   611.758,
+   "why?\u2019 meant six tabs and three Slack pings."
+  ],
+  [
+   611.758,
+   613.648,
+   "Watch what it means now."
+  ],
+  [
+   614.279,
+   616.547,
+   "The agent starts at Report X."
+  ],
+  [
+   616.547,
+   619.571,
+   "It walks the \u2018uses\u2019 edge to the query."
+  ],
+  [
+   620.203,
+   622.849,
+   "It walks \u2018reads\u2019 to the Orders table."
+  ],
+  [
+   623.48,
+   624.614,
+   "From the table,"
+  ],
+  [
+   624.614,
+   627.638,
+   "it finds a schema change from nine-fourteen this"
+  ],
+  [
+   627.638,
+   629.906,
+   "morning \u2014 a column was renamed."
+  ],
+  [
+   630.538,
+   633.562,
+   "It correlates that with a spike of null-region"
+  ],
+  [
+   633.562,
+   635.452,
+   "errors in AKS pod seven-f."
+  ],
+  [
+   636.083,
+   638.729,
+   "And it lands on the root cause:"
+  ],
+  [
+   638.729,
+   639.863,
+   "a breaking migration,"
+  ],
+  [
+   639.863,
+   640.997,
+   "number four eighty-two."
+  ],
+  [
+   641.629,
+   644.653,
+   "Then \u2014 because the ontology gave it a"
+  ],
+  [
+   644.653,
+   647.677,
+   "safe action \u2014 it opens a DevOps work"
+  ],
+  [
+   647.677,
+   649.567,
+   "item and assigns the owner."
+  ],
+  [
+   649.567,
+   651.079,
+   "It doesn't just diagnose;"
+  ],
+  [
+   651.079,
+   651.835,
+   "it acts,"
+  ],
+  [
+   651.835,
+   653.347,
+   "with an audit trail."
+  ],
+  [
+   653.978,
+   655.112,
+   "This isn't hypothetical."
+  ],
+  [
+   655.112,
+   658.136,
+   "Research on graph-guided root-cause agents pushed\naccuracy from"
+  ],
+  [
+   658.136,
+   660.404,
+   "an F-one of point-six-one to point-nine-one,"
+  ],
+  [
+   660.404,
+   663.428,
+   "and turned thirty-minute investigations into about\ntwo minutes."
+  ],
+  [
+   664.06,
+   665.572,
+   "Retrieve on the graph,"
+  ],
+  [
+   665.572,
+   667.084,
+   "reason over the path,"
+  ],
+  [
+   667.084,
+   668.974,
+   "act through a governed tool."
+  ],
+  [
+   668.974,
+   670.486,
+   "Every layer we built,"
+  ],
+  [
+   670.486,
+   671.62,
+   "working as one."
+  ],
+  [
+   672.251,
+   672.629,
+   "So,"
+  ],
+  [
+   672.629,
+   674.141,
+   "to recap part five:"
+  ],
+  [
+   674.141,
+   677.165,
+   "an agent grounded on this stack is trustworthy"
+  ],
+  [
+   677.165,
+   679.433,
+   "because the graph gives it truth,"
+  ],
+  [
+   679.433,
+   679.811,
+   "memory,"
+  ],
+  [
+   679.811,
+   680.567,
+   "and guardrails."
+  ],
+  [
+   680.567,
+   682.457,
+   "Let's assemble the whole picture."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "kg/kg-ch06-agentic.wav",
+   "volume": 1.0
+  }
+ }
+}

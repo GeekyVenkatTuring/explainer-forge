@@ -1,0 +1,15 @@
+rendered it-ch15-perplexity (1.87 min)
+rendered it-ch16-noisy-channel (2.07 min)
+rendered it-ch17-capacity (2.03 min)
+rendered it-ch18-bandwidth (1.86 min)
+rendered it-ch18b-repetition (1.81 min)
+rendered it-ch19-error-correction (1.94 min)
+rendered it-ch19b-separation (2.24 min)
+rendered it-ch20-deepest (2.17 min)
+rendered it-ch20b-landauer (2.21 min)
+rendered it-ch21-everywhere (2.90 min)
+ALL 27 CHAPTERS RENDERED
+building master…
+master: /Users/appuram/Developer/explainer-forge/projects/it-from-scratch/renders/master.mp4 (61.93 min)
+delivered 27 chapters + master → /Users/appuram/Downloads/generated_videos/information-theory-from-scratch
+MASTER BUILT + DELIVERED

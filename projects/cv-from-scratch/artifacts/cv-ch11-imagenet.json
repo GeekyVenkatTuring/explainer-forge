@@ -1,0 +1,381 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch11-imagenet_imagenet",
+   "type": "cv_imagenet",
+   "in_seconds": 0.0,
+   "out_seconds": 154.567,
+   "props": {
+    "dur": 155.067
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   3.23,
+   "Big ideas need a proving ground \u2014 a"
+  ],
+  [
+   3.23,
+   6.056,
+   "place to test who is really best."
+  ],
+  [
+   6.056,
+   7.267,
+   "For computer vision,"
+  ],
+  [
+   7.267,
+   8.882,
+   "that place was ImageNet."
+  ],
+  [
+   9.514,
+   11.532,
+   "ImageNet is a giant dataset."
+  ],
+  [
+   11.532,
+   13.147,
+   "Over fourteen million images,"
+  ],
+  [
+   13.147,
+   15.166,
+   "each one labeled by hand,"
+  ],
+  [
+   15.166,
+   17.588,
+   "spread across a thousand different\ncategories."
+  ],
+  [
+   18.22,
+   20.238,
+   "A thousand kinds of dog,"
+  ],
+  [
+   20.238,
+   20.642,
+   "mushroom,"
+  ],
+  [
+   20.642,
+   21.046,
+   "vehicle,"
+  ],
+  [
+   21.046,
+   22.257,
+   "and everything else."
+  ],
+  [
+   22.888,
+   23.696,
+   "Every year,"
+  ],
+  [
+   23.696,
+   26.522,
+   "research teams competed to classify these\nimages,"
+  ],
+  [
+   26.522,
+   29.752,
+   "and the error rate on that competition\nbecame"
+  ],
+  [
+   29.752,
+   32.578,
+   "the official scoreboard for the whole\nfield."
+  ],
+  [
+   33.209,
+   34.824,
+   "Lower error was better."
+  ],
+  [
+   35.456,
+   36.263,
+   "For years,"
+  ],
+  [
+   36.263,
+   39.493,
+   "the hand-crafted methods from part two\ncrawled along,"
+  ],
+  [
+   39.493,
+   41.916,
+   "stuck at roughly twenty-five percent\nerror."
+  ],
+  [
+   41.916,
+   43.53,
+   "One in four wrong."
+  ],
+  [
+   43.53,
+   45.549,
+   "Progress was slow and grinding."
+  ],
+  [
+   46.181,
+   46.584,
+   "Then,"
+  ],
+  [
+   46.584,
+   47.796,
+   "in twenty twelve,"
+  ],
+  [
+   47.796,
+   50.218,
+   "everything changed in a single afternoon."
+  ],
+  [
+   50.849,
+   52.464,
+   "A deep convolutional network,"
+  ],
+  [
+   52.464,
+   53.272,
+   "called AlexNet,"
+  ],
+  [
+   53.272,
+   56.502,
+   "entered the competition \u2014 and the error\nrate"
+  ],
+  [
+   56.502,
+   56.905,
+   "collapsed."
+  ],
+  [
+   57.537,
+   59.959,
+   "It was not a modest improvement."
+  ],
+  [
+   59.959,
+   61.574,
+   "It was a landslide,"
+  ],
+  [
+   61.574,
+   64.804,
+   "and it converted the entire research\ncommunity almost"
+  ],
+  [
+   64.804,
+   65.208,
+   "overnight."
+  ],
+  [
+   65.839,
+   69.069,
+   "What followed was a furious race to go"
+  ],
+  [
+   69.069,
+   69.473,
+   "deeper."
+  ],
+  [
+   70.104,
+   73.334,
+   "A network called VGG showed the power of"
+  ],
+  [
+   73.334,
+   75.353,
+   "stacking many small three-by-three\nfilters."
+  ],
+  [
+   75.984,
+   78.81,
+   "But let's pause on why twenty twelve,"
+  ],
+  [
+   78.81,
+   80.022,
+   "of all years,"
+  ],
+  [
+   80.022,
+   81.233,
+   "was the moment."
+  ],
+  [
+   81.864,
+   84.69,
+   "Three things finally lined up at once."
+  ],
+  [
+   85.322,
+   88.148,
+   "The core ideas were actually decades old."
+  ],
+  [
+   88.148,
+   91.378,
+   "What was new was data \u2014 ImageNet finally"
+  ],
+  [
+   91.378,
+   94.608,
+   "gave them millions of labeled examples to\nlearn"
+  ],
+  [
+   94.608,
+   95.011,
+   "from."
+  ],
+  [
+   95.643,
+   98.873,
+   "And hardware \u2014 researchers found that\ngraphics cards,"
+  ],
+  [
+   98.873,
+   100.084,
+   "G P Us,"
+  ],
+  [
+   100.084,
+   101.699,
+   "built for video games,"
+  ],
+  [
+   101.699,
+   104.929,
+   "could train these networks tens of times\nfaster."
+  ],
+  [
+   105.56,
+   105.964,
+   "Ideas,"
+  ],
+  [
+   105.964,
+   106.368,
+   "data,"
+  ],
+  [
+   106.368,
+   107.175,
+   "and compute,"
+  ],
+  [
+   107.175,
+   107.983,
+   "arriving together."
+  ],
+  [
+   107.983,
+   111.212,
+   "That is the combination that set off the"
+  ],
+  [
+   111.212,
+   111.616,
+   "explosion."
+  ],
+  [
+   112.248,
+   114.67,
+   "Then ResNet solved a stubborn problem."
+  ],
+  [
+   114.67,
+   117.9,
+   "Very deep networks had become almost\nimpossible to"
+  ],
+  [
+   117.9,
+   118.304,
+   "train."
+  ],
+  [
+   118.935,
+   122.165,
+   "ResNet added a clever shortcut \u2014 a skip"
+  ],
+  [
+   122.165,
+   125.395,
+   "connection that lets the signal jump\nstraight past"
+  ],
+  [
+   125.395,
+   127.01,
+   "a group of layers."
+  ],
+  [
+   127.641,
+   130.871,
+   "That one trick made it possible to train"
+  ],
+  [
+   130.871,
+   133.293,
+   "networks over a hundred layers deep,"
+  ],
+  [
+   133.293,
+   134.908,
+   "without them falling apart."
+  ],
+  [
+   135.54,
+   136.751,
+   "And with that,"
+  ],
+  [
+   136.751,
+   139.577,
+   "accuracy on ImageNet passed the human\nbenchmark."
+  ],
+  [
+   140.209,
+   142.631,
+   "In just a few short years,"
+  ],
+  [
+   142.631,
+   145.861,
+   "machines went from clumsy to genuinely\nsuperhuman at"
+  ],
+  [
+   145.861,
+   148.283,
+   "naming what is in a picture."
+  ],
+  [
+   148.915,
+   149.722,
+   "So next,"
+  ],
+  [
+   149.722,
+   152.952,
+   "the natural question \u2014 how do we actually"
+  ],
+  [
+   152.952,
+   154.567,
+   "train one of these?"
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch11-imagenet.wav",
+   "volume": 1.0
+  }
+ }
+}

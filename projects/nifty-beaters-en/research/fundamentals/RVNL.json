@@ -1,0 +1,105 @@
+{
+ "ticker": "RVNL",
+ "scraped_at": "2026-08-14T15:28:20",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 47351.0,
+ "current_price": 227.0,
+ "pe": 52.7,
+ "book_value": 47.1,
+ "dividend_yield_pct": 0.75,
+ "roce_pct": 10.8,
+ "roe_pct": 9.02,
+ "face_value": 10.0,
+ "high": 401.0,
+ "sales_growth": {
+  "10 Years": 7.0,
+  "5 Years": -2.0,
+  "3 Years": -13.0,
+  "TTM": -24.0
+ },
+ "profit_growth": {
+  "5 Years": 50.0,
+  "3 Years": 22.0,
+  "1 Year": -30.0
+ },
+ "roe_hist": {
+  "Operating Profit": 349.0,
+  "OPM %": 6.0,
+  "Other Income&nbsp; +": 289.0,
+  "Interest": 146.0,
+  "Depreciation": 6.0,
+  "Profit before tax": 487.0,
+  "Tax %": 30.0,
+  "Net Profit&nbsp; +": 343.0,
+  "EPS in Rs": 1.64
+ },
+ "price_cagr": {
+  "10 Years": 16.0,
+  "5 Years": 16.0,
+  "3 Years": 14.0,
+  "Last Year": 9.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "6%",
+   "6%",
+   "5%",
+   "7%",
+   "4.5%",
+   "5%",
+   "5%",
+   "7%",
+   "1.4%",
+   "4.2%",
+   "4.7%",
+   "4.0%",
+   "4.3%"
+  ],
+  "eps": [
+   "1.64",
+   "1.89",
+   "1.72",
+   "2.30",
+   "1.07",
+   "1.38",
+   "1.49",
+   "2.18",
+   "0.65",
+   "1.10",
+   "1.55",
+   "0.90",
+   "0.76"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 32.4%"
+ ],
+ "cons": [
+  "Stock is trading at 4.83 times its book value",
+  "The company has delivered a poor sales growth of 5.79% over past five years.",
+  "Company has a low return on equity of 13.8% over last 3 years.",
+  "Earnings include an other income of Rs.779 Cr.",
+  "Debtor days have increased from 48.8 to 96.0 days.",
+  "Promoter holding has decreased over last 3 years: -5.36%",
+  "Working capital days have increased from 57.1 days to 98.0 days"
+ ]
+}

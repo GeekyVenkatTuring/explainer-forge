@@ -1,0 +1,2034 @@
+{
+ "cuts": [
+  {
+   "id": "dp23-interpreter_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 32.228,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 23",
+    "line1": "A language",
+    "line2": "made of objects",
+    "sub": "turn a little grammar into a tree of classes that evaluates itself",
+    "dur": 32.728
+   }
+  },
+  {
+   "id": "dp23-interpreter_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 32.728,
+   "out_seconds": 71.551,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Evaluating business rules",
+    "situation": "Rules arrive as text \u2014 'amount > 1000 AND country == US' \u2014 they change often, non-programmers author them, and you must evaluate each against live data.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udcdc",
+      "label": "Rules as text"
+     },
+     {
+      "emoji": "\ud83d\udd00",
+      "label": "AND / OR / compare"
+     },
+     {
+      "emoji": "\u2705",
+      "label": "\u2026evaluated on data"
+     }
+    ],
+    "ask": "How do you evaluate an evolving little rule language against real data?",
+    "dur": 39.323
+   }
+  },
+  {
+   "id": "dp23-interpreter_naive",
+   "type": "dp_code",
+   "in_seconds": 72.051,
+   "out_seconds": 110.776,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "One giant evaluate() function.",
+    "file": "RuleEngine.java",
+    "lines": [
+     {
+      "t": "boolean evaluate(String rule, Data d) {"
+     },
+     {
+      "t": "  String[] parts = rule.split(\" \");   // fragile!",
+      "s": "hi"
+     },
+     {
+      "t": "  if (parts[1].equals(\">\"))",
+      "s": "hi"
+     },
+     {
+      "t": "    return d.get(parts[0]) > num(parts[2]);"
+     },
+     {
+      "t": "  else if (parts[1].equals(\"==\"))",
+      "s": "hi"
+     },
+     {
+      "t": "    ... // AND, OR, parens? all tangled in here",
+      "s": "hi"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Parsing and evaluating, tangled in one function. Nesting? Good luck.",
+    "dur": 39.225
+   }
+  },
+  {
+   "id": "dp23-interpreter_pain",
+   "type": "dp_pain",
+   "in_seconds": 111.276,
+   "out_seconds": 153.065,
+   "props": {
+    "title": "\"Support OR, parentheses, and a BETWEEN operator.\"",
+    "file": "monolith.java",
+    "lines": [
+     {
+      "t": "boolean evaluate(String rule, Data d) {",
+      "s": "hi"
+     },
+     {
+      "t": "  // handle >, ==, !=, <, AND, OR, NOT, (), BETWEEN, IN...",
+      "s": "hi"
+     },
+     {
+      "t": "  // ...500 lines of string-parsing and branching",
+      "s": "hi"
+     },
+     {
+      "t": "  // nested rules? re-parse substrings by hand",
+      "s": "hi"
+     },
+     {
+      "t": "}   // one bug here breaks EVERY rule"
+     }
+    ],
+    "smell": "Grammar + parsing + evaluation fused in one function",
+    "touched": [
+     "new operator \u2192 edit the monolith",
+     "nesting handled by ad-hoc string surgery",
+     "can't compose or reuse sub-rules",
+     "one function owns the whole language"
+    ],
+    "dur": 42.289
+   }
+  },
+  {
+   "id": "dp23-interpreter_insight",
+   "type": "dp_insight",
+   "in_seconds": 153.565,
+   "out_seconds": 195.12,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "A rule is a tree of sub-expressions",
+     "Each sub-expression evaluates to a value",
+     "Against the same shared context (data)"
+    ],
+    "varies": [
+     "The kinds of operator and terminal",
+     "And new ones keep being added"
+    ],
+    "principle": "Make each grammar rule a CLASS with interpret(context); compose them into a tree.",
+    "dur": 42.055
+   }
+  },
+  {
+   "id": "dp23-interpreter_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 195.62,
+   "out_seconds": 244.028,
+   "props": {
+    "title": "Reading a formula",
+    "emoji": "\ud83e\uddee",
+    "analogy": "To evaluate 3 + 4 \u00d7 2 you don't read left to right \u2014 you build a tree and let each operation ask its parts.",
+    "map": [
+     {
+      "from": "Each number",
+      "to": "a terminal expression"
+     },
+     {
+      "from": "Each operator (+, \u00d7)",
+      "to": "a nonterminal expression"
+     },
+     {
+      "from": "\"Ask my two parts\"",
+      "to": "interpret() on children"
+     },
+     {
+      "from": "The whole formula",
+      "to": "the expression tree"
+     }
+    ],
+    "breaks": "you evaluate a formula in your head; here the tree is real objects you can inspect, reuse, and extend.",
+    "dur": 48.908
+   }
+  },
+  {
+   "id": "dp23-interpreter_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 244.528,
+   "out_seconds": 279.064,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "Every grammar rule becomes a class",
+    "file": "Expression.java",
+    "lines": [
+     {
+      "t": "interface Expression {                 // one grammar rule",
+      "s": "add"
+     },
+     {
+      "t": "  boolean interpret(Context ctx);",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "class Var implements Expression {      // a terminal",
+      "s": "hi"
+     },
+     {
+      "t": "  String name;"
+     },
+     {
+      "t": "  public boolean interpret(Context c){ return c.flag(name); }",
+      "s": "hi"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Each element of the language \u2014 value, comparison, AND \u2014 is its own class.",
+    "dur": 35.036
+   }
+  },
+  {
+   "id": "dp23-interpreter_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 279.564,
+   "out_seconds": 319.331,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "Nonterminals hold and combine sub-expressions",
+    "file": "And.java",
+    "lines": [
+     {
+      "t": "class And implements Expression {      // a nonterminal",
+      "s": "hi"
+     },
+     {
+      "t": "  Expression left, right;              // two sub-rules",
+      "s": "hi"
+     },
+     {
+      "t": "  public boolean interpret(Context c) {"
+     },
+     {
+      "t": "    return left.interpret(c) && right.interpret(c);",
+      "s": "hi"
+     },
+     {
+      "t": "  }                                    // ...asks its parts"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "A nonterminal holds sub-expressions and combines them. That's the recursion.",
+    "dur": 40.267
+   }
+  },
+  {
+   "id": "dp23-interpreter_try",
+   "type": "dp_try",
+   "in_seconds": 319.831,
+   "out_seconds": 350.214,
+   "props": {
+    "title": "Write GreaterThan.interpret()",
+    "file": "GreaterThan.java",
+    "lines": [
+     {
+      "t": "class GreaterThan implements Expression {"
+     },
+     {
+      "t": "  Expression var; int threshold;"
+     },
+     {
+      "t": "  public boolean interpret(Context c) {"
+     },
+     {
+      "t": "    // \u25af is the variable's value above the threshold?",
+      "s": "ghost"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Evaluate the variable against the context, then compare it to the threshold.",
+    "hint": "return c.value(var) > threshold;",
+    "dur": 30.883
+   }
+  },
+  {
+   "id": "dp23-interpreter_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 350.714,
+   "out_seconds": 388.255,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "Build the tree; interpret walks it",
+    "file": "app.java",
+    "lines": [
+     {
+      "t": "// amount > 1000 AND country == \"US\""
+     },
+     {
+      "t": "Expression rule =",
+      "s": "add"
+     },
+     {
+      "t": "  new And(new GreaterThan(amount, 1000),",
+      "s": "add"
+     },
+     {
+      "t": "          new Equals(country, \"US\"));",
+      "s": "add"
+     },
+     {
+      "t": "boolean ok = rule.interpret(context);   // walks the tree",
+      "s": "hi"
+     }
+    ],
+    "note": "The rule is now a tree of objects. Interpreting it is one recursive call.",
+    "dur": 38.041
+   }
+  },
+  {
+   "id": "dp23-interpreter_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 388.755,
+   "out_seconds": 428.925,
+   "props": {
+    "requirement": "\"Add an OR operator. And BETWEEN.\"",
+    "naiveLabel": "Monolith",
+    "naiveCost": "New branches in the 500-line function.",
+    "naiveSteps": [
+     "edit the one evaluate()",
+     "risk breaking every rule",
+     "re-test the whole language"
+    ],
+    "patLabel": "Interpreter",
+    "patCost": "One new class per operator. Nothing else.",
+    "patFile": "Or.java",
+    "patLines": [
+     {
+      "t": "class Or implements Expression {",
+      "s": "add"
+     },
+     {
+      "t": "  Expression left, right;",
+      "s": "add"
+     },
+     {
+      "t": "  public boolean interpret(Context c) {",
+      "s": "add"
+     },
+     {
+      "t": "    return left.interpret(c) || right.interpret(c);",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}   // plugs into any tree \u2014 others untouched",
+      "s": "add"
+     }
+    ],
+    "dur": 40.67
+   }
+  },
+  {
+   "id": "dp23-interpreter_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 429.425,
+   "out_seconds": 471.684,
+   "props": {
+    "name": "The Interpreter Pattern",
+    "plain": "Represent each rule of a grammar as a class with interpret(); compose them into a tree that evaluates a sentence against a context.",
+    "nodes": [
+     {
+      "id": "expr",
+      "title": "Expression",
+      "stereo": "abstract",
+      "members": [
+       "+ interpret(ctx)"
+      ],
+      "x": 760,
+      "y": 210,
+      "w": 400,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "var",
+      "title": "Variable",
+      "stereo": "terminal",
+      "members": [
+       "reads context"
+      ],
+      "x": 120,
+      "y": 470,
+      "w": 320,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "gt",
+      "title": "GreaterThan",
+      "stereo": "nonterminal",
+      "members": [
+       "- var, threshold"
+      ],
+      "x": 640,
+      "y": 470,
+      "w": 340,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "and",
+      "title": "And",
+      "stereo": "nonterminal",
+      "members": [
+       "- left, right",
+       "+ interpret()"
+      ],
+      "x": 1360,
+      "y": 470,
+      "w": 380,
+      "color": "#A78BFA"
+     }
+    ],
+    "edges": [
+     {
+      "from": "var",
+      "to": "expr",
+      "kind": "impl"
+     },
+     {
+      "from": "gt",
+      "to": "expr",
+      "kind": "impl"
+     },
+     {
+      "from": "and",
+      "to": "expr",
+      "kind": "impl"
+     },
+     {
+      "from": "and",
+      "to": "expr",
+      "kind": "has"
+     }
+    ],
+    "dur": 42.759
+   }
+  },
+  {
+   "id": "dp23-interpreter_map",
+   "type": "dp_map",
+   "in_seconds": 472.184,
+   "out_seconds": 515.464,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "AbstractExpression",
+      "your": "interface Expression (interpret)"
+     },
+     {
+      "role": "TerminalExpression",
+      "your": "Variable, Literal"
+     },
+     {
+      "role": "NonterminalExpression",
+      "your": "And, Or, GreaterThan"
+     },
+     {
+      "role": "Context",
+      "your": "the data a rule evaluates against"
+     }
+    ],
+    "plain": "Terminals interpret directly; nonterminals interpret their children and combine \u2014 the tree evaluates a sentence.",
+    "gof": "Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.",
+    "dur": 43.78
+   }
+  },
+  {
+   "id": "dp23-interpreter_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 515.964,
+   "out_seconds": 564.994,
+   "props": {
+    "title": "For small languages only",
+    "costs": [
+     "One class per grammar rule \u2014 they multiply",
+     "A complex grammar becomes unwieldy fast",
+     "Not built for speed or big inputs"
+    ],
+    "dont": [
+     "The grammar is large or complex",
+     "You need real parsing + performance",
+     "A library or DSL already exists"
+    ],
+    "signal": "a simple, stable little language you evaluate often, and you keep bolting operators onto one big function.",
+    "dur": 49.53
+   }
+  },
+  {
+   "id": "dp23-interpreter_recap",
+   "type": "dp_recap",
+   "in_seconds": 565.494,
+   "out_seconds": 629.903,
+   "props": {
+    "title": "Interpreter, in one breath",
+    "items": [
+     "One giant evaluate() function fused grammar, parsing, and logic \u2014 fragile, and a nightmare to extend.",
+     "A rule is really a tree of sub-expressions \u2014 so give each grammar rule a class with interpret(), and compose them.",
+     "Interpreter: terminals interpret directly, nonterminals interpret their children. Composite over a grammar. New operator, one class."
+    ],
+    "challenge": "A search box supports a mini-query language: field:value, quoted phrases, AND / OR / NOT, and parentheses.",
+    "question": "Does Interpreter fit \u2014 or has the grammar grown big enough that a real parser is the wiser call?",
+    "dur": 64.909
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.889,
+   "This is the twenty-third and final pattern \u2014"
+  ],
+  [
+   2.889,
+   4.333,
+   "and a fitting one,"
+  ],
+  [
+   4.333,
+   6.139,
+   "because it is the others,"
+  ],
+  [
+   6.139,
+   7.583,
+   "combined into a language."
+  ],
+  [
+   8.215,
+   10.743,
+   "You keep receiving little rules as text."
+  ],
+  [
+   10.743,
+   13.632,
+   "A discount applies if amount is over a"
+  ],
+  [
+   13.632,
+   15.437,
+   "thousand and country is US."
+  ],
+  [
+   15.437,
+   18.326,
+   "An alert fires if CPU is over ninety."
+  ],
+  [
+   18.958,
+   20.402,
+   "These rules change constantly,"
+  ],
+  [
+   20.402,
+   23.291,
+   "and the people who write them are not"
+  ],
+  [
+   23.291,
+   24.013,
+   "always programmers."
+  ],
+  [
+   24.645,
+   27.534,
+   "There is a way to turn a small"
+  ],
+  [
+   27.534,
+   30.422,
+   "language like that into objects that evaluate\nthemselves."
+  ],
+  [
+   30.422,
+   32.228,
+   "Let's build a rule engine."
+  ],
+  [
+   32.728,
+   34.195,
+   "Here is the problem:"
+  ],
+  [
+   34.195,
+   34.928,
+   "business rules,"
+  ],
+  [
+   34.928,
+   36.028,
+   "arriving as text."
+  ],
+  [
+   36.659,
+   39.592,
+   "A discount rule \u2014 amount greater than a"
+  ],
+  [
+   39.592,
+   39.959,
+   "thousand,"
+  ],
+  [
+   39.959,
+   41.426,
+   "and country equals US."
+  ],
+  [
+   41.426,
+   44.359,
+   "An alert rule \u2014 CPU greater than ninety,"
+  ],
+  [
+   44.359,
+   46.192,
+   "or memory greater than eighty."
+  ],
+  [
+   46.823,
+   49.023,
+   "These rules are a tiny language,"
+  ],
+  [
+   49.023,
+   49.756,
+   "with values,"
+  ],
+  [
+   49.756,
+   50.123,
+   "comparisons,"
+  ],
+  [
+   50.123,
+   52.323,
+   "and the words AND and OR."
+  ],
+  [
+   52.954,
+   54.788,
+   "They change all the time,"
+  ],
+  [
+   54.788,
+   57.721,
+   "and often the people writing them are analysts,"
+  ],
+  [
+   57.721,
+   58.454,
+   "not engineers."
+  ],
+  [
+   59.085,
+   62.019,
+   "So how do you take an evolving little"
+  ],
+  [
+   62.019,
+   63.118,
+   "language like this,"
+  ],
+  [
+   63.118,
+   66.052,
+   "and evaluate its sentences against your live data"
+  ],
+  [
+   66.052,
+   68.985,
+   "\u2014 cleanly enough that adding a new kind"
+  ],
+  [
+   68.985,
+   71.551,
+   "of rule does not mean rewriting everything?"
+  ],
+  [
+   72.051,
+   73.219,
+   "The obvious approach:"
+  ],
+  [
+   73.219,
+   76.333,
+   "one function that takes the rule string and"
+  ],
+  [
+   76.333,
+   77.111,
+   "evaluates it."
+  ],
+  [
+   77.743,
+   79.689,
+   "Split the text on spaces,"
+  ],
+  [
+   79.689,
+   81.246,
+   "look at the operator,"
+  ],
+  [
+   81.246,
+   83.97,
+   "and branch \u2014 if it is greater-than,"
+  ],
+  [
+   83.97,
+   85.138,
+   "compare these two;"
+  ],
+  [
+   85.138,
+   86.695,
+   "if it is equals,"
+  ],
+  [
+   86.695,
+   87.473,
+   "compare those."
+  ],
+  [
+   88.105,
+   90.83,
+   "It limps along for the simplest rules."
+  ],
+  [
+   91.461,
+   93.797,
+   "But the moment you need AND,"
+  ],
+  [
+   93.797,
+   94.575,
+   "or OR,"
+  ],
+  [
+   94.575,
+   96.521,
+   "or parentheses to group things,"
+  ],
+  [
+   96.521,
+   98.467,
+   "this function becomes a nightmare."
+  ],
+  [
+   98.467,
+   101.581,
+   "Parsing the text and evaluating the logic are"
+  ],
+  [
+   101.581,
+   103.917,
+   "hopelessly tangled together in one place."
+  ],
+  [
+   104.548,
+   107.662,
+   "And every new operator you support means another"
+  ],
+  [
+   107.662,
+   109.998,
+   "branch bolted onto an already fragile,"
+  ],
+  [
+   109.998,
+   110.776,
+   "ever-growing monolith."
+  ],
+  [
+   111.276,
+   112.801,
+   "Then the language grows,"
+  ],
+  [
+   112.801,
+   113.944,
+   "as languages do."
+  ],
+  [
+   113.944,
+   114.707,
+   "Support OR."
+  ],
+  [
+   114.707,
+   116.231,
+   "Support parentheses for grouping."
+  ],
+  [
+   116.231,
+   117.756,
+   "Add a BETWEEN operator,"
+  ],
+  [
+   117.756,
+   118.9,
+   "an IN operator,"
+  ],
+  [
+   118.9,
+   119.281,
+   "negation."
+  ],
+  [
+   119.913,
+   122.962,
+   "Every one of them piles into the same"
+  ],
+  [
+   122.962,
+   123.343,
+   "function,"
+  ],
+  [
+   123.343,
+   126.393,
+   "until it is five hundred lines of string"
+  ],
+  [
+   126.393,
+   127.918,
+   "surgery and nested branching."
+  ],
+  [
+   128.549,
+   131.599,
+   "Nesting \u2014 a rule inside a rule \u2014"
+  ],
+  [
+   131.599,
+   134.267,
+   "is handled by re-parsing substrings by hand,"
+  ],
+  [
+   134.267,
+   137.317,
+   "which is exactly as error-prone as it sounds."
+  ],
+  [
+   137.948,
+   138.711,
+   "The grammar,"
+  ],
+  [
+   138.711,
+   139.473,
+   "the parsing,"
+  ],
+  [
+   139.473,
+   142.522,
+   "and the evaluation are fused into one monolith."
+  ],
+  [
+   143.154,
+   146.204,
+   "And a single bug anywhere in it can"
+  ],
+  [
+   146.204,
+   149.253,
+   "break every rule in the system at once."
+  ],
+  [
+   149.253,
+   151.159,
+   "The language has no structure,"
+  ],
+  [
+   151.159,
+   153.065,
+   "so neither does the code."
+  ],
+  [
+   153.565,
+   154.702,
+   "What is fixed,"
+  ],
+  [
+   154.702,
+   155.839,
+   "and what varies?"
+  ],
+  [
+   156.47,
+   156.849,
+   "Fixed:"
+  ],
+  [
+   156.849,
+   157.607,
+   "a rule,"
+  ],
+  [
+   157.607,
+   158.365,
+   "however complex,"
+  ],
+  [
+   158.365,
+   159.88,
+   "is really a tree."
+  ],
+  [
+   159.88,
+   162.533,
+   "Amount-greater-than-a-thousand AND\ncountry-equals-US is an AND node,"
+  ],
+  [
+   162.533,
+   164.806,
+   "with two comparison nodes under it."
+  ],
+  [
+   164.806,
+   167.08,
+   "Each node evaluates to a value,"
+  ],
+  [
+   167.08,
+   170.111,
+   "against the same shared data \u2014 the context."
+  ],
+  [
+   170.743,
+   173.774,
+   "What varies is the kinds of node \u2014"
+  ],
+  [
+   173.774,
+   176.805,
+   "the operators and the terminals \u2014 and new"
+  ],
+  [
+   176.805,
+   177.942,
+   "ones keep arriving."
+  ],
+  [
+   178.574,
+   180.089,
+   "Here is the move."
+  ],
+  [
+   180.721,
+   183.752,
+   "Give the language a structure by giving each"
+  ],
+  [
+   183.752,
+   185.647,
+   "grammar rule its own class,"
+  ],
+  [
+   185.647,
+   186.784,
+   "with one method:"
+  ],
+  [
+   186.784,
+   187.163,
+   "interpret,"
+  ],
+  [
+   187.163,
+   189.436,
+   "which evaluates it against the context."
+  ],
+  [
+   189.436,
+   192.468,
+   "Then compose those classes into a tree that"
+  ],
+  [
+   192.468,
+   193.604,
+   "mirrors the rule."
+  ],
+  [
+   193.604,
+   195.12,
+   "The tree interprets itself."
+  ],
+  [
+   195.62,
+   198.339,
+   "Think about how you actually evaluate a formula"
+  ],
+  [
+   198.339,
+   200.378,
+   "like three plus four times two."
+  ],
+  [
+   201.01,
+   203.729,
+   "You do not read it strictly left to"
+  ],
+  [
+   203.729,
+   204.068,
+   "right."
+  ],
+  [
+   204.068,
+   206.787,
+   "You understand its structure \u2014 the multiply binds"
+  ],
+  [
+   206.787,
+   207.127,
+   "tighter,"
+  ],
+  [
+   207.127,
+   209.846,
+   "so it sits below the plus \u2014 and"
+  ],
+  [
+   209.846,
+   212.565,
+   "you evaluate the tree from the bottom up."
+  ],
+  [
+   212.565,
+   214.264,
+   "Four times two is eight;"
+  ],
+  [
+   214.264,
+   215.964,
+   "three plus eight is eleven."
+  ],
+  [
+   216.595,
+   219.314,
+   "Each number is a terminal \u2014 a leaf."
+  ],
+  [
+   219.314,
+   222.033,
+   "Each operator is a node that asks its"
+  ],
+  [
+   222.033,
+   223.732,
+   "two parts for their values,"
+  ],
+  [
+   223.732,
+   224.752,
+   "then combines them."
+  ],
+  [
+   225.384,
+   227.083,
+   "The numbers are terminal expressions."
+  ],
+  [
+   227.083,
+   228.782,
+   "The operators are nonterminal expressions."
+  ],
+  [
+   228.782,
+   231.501,
+   "Asking your parts for their values is calling"
+  ],
+  [
+   231.501,
+   232.861,
+   "interpret on the children."
+  ],
+  [
+   232.861,
+   235.58,
+   "And the whole formula is the expression tree."
+  ],
+  [
+   236.211,
+   238.93,
+   "The difference from doing it in your head:"
+  ],
+  [
+   238.93,
+   241.649,
+   "here the tree is made of real objects,"
+  ],
+  [
+   241.649,
+   243.008,
+   "which you can inspect,"
+  ],
+  [
+   243.008,
+   243.348,
+   "reuse,"
+  ],
+  [
+   243.348,
+   244.028,
+   "and extend."
+  ],
+  [
+   244.528,
+   245.318,
+   "The refactor,"
+  ],
+  [
+   245.318,
+   246.109,
+   "step one."
+  ],
+  [
+   246.74,
+   249.902,
+   "Define an Expression interface with a single\nmethod"
+  ],
+  [
+   249.902,
+   253.063,
+   "\u2014 interpret \u2014 that evaluates the expression\nagainst"
+  ],
+  [
+   253.063,
+   255.434,
+   "a context and returns a result."
+  ],
+  [
+   256.066,
+   259.227,
+   "Then every element of the language becomes a"
+  ],
+  [
+   259.227,
+   260.808,
+   "class that implements it."
+  ],
+  [
+   261.44,
+   264.601,
+   "Here is a terminal \u2014 a variable \u2014"
+  ],
+  [
+   264.601,
+   265.787,
+   "the simplest kind."
+  ],
+  [
+   265.787,
+   268.948,
+   "It just looks its name up in the"
+  ],
+  [
+   268.948,
+   269.343,
+   "context."
+  ],
+  [
+   269.975,
+   271.951,
+   "A terminal is a leaf:"
+  ],
+  [
+   271.951,
+   273.531,
+   "it interprets itself directly,"
+  ],
+  [
+   273.531,
+   274.717,
+   "with no sub-parts."
+  ],
+  [
+   274.717,
+   277.878,
+   "The comparisons and the AND-s and OR-s will"
+  ],
+  [
+   277.878,
+   279.064,
+   "be the branches."
+  ],
+  [
+   279.564,
+   280.324,
+   "Step two:"
+  ],
+  [
+   280.324,
+   282.224,
+   "the nonterminals \u2014 the operators."
+  ],
+  [
+   282.856,
+   285.136,
+   "An AND expression holds two sub-expressions,"
+  ],
+  [
+   285.136,
+   287.036,
+   "a left and a right."
+  ],
+  [
+   287.667,
+   289.947,
+   "And its interpret is beautifully simple:"
+  ],
+  [
+   289.947,
+   291.087,
+   "interpret the left,"
+  ],
+  [
+   291.087,
+   292.227,
+   "interpret the right,"
+  ],
+  [
+   292.227,
+   294.887,
+   "and combine them with a logical and."
+  ],
+  [
+   295.519,
+   298.559,
+   "Notice it does not know or care what"
+  ],
+  [
+   298.559,
+   300.079,
+   "its two parts are."
+  ],
+  [
+   300.079,
+   301.599,
+   "They might be comparisons,"
+  ],
+  [
+   301.599,
+   302.739,
+   "or other AND-s,"
+  ],
+  [
+   302.739,
+   304.259,
+   "or deeply nested rules."
+  ],
+  [
+   304.259,
+   306.919,
+   "It just asks each to interpret itself,"
+  ],
+  [
+   306.919,
+   308.439,
+   "and combines the answers."
+  ],
+  [
+   309.071,
+   310.591,
+   "That is the recursion."
+  ],
+  [
+   310.591,
+   312.111,
+   "A nonterminal holds expressions,"
+  ],
+  [
+   312.111,
+   315.151,
+   "and is itself an expression \u2014 the very"
+  ],
+  [
+   315.151,
+   317.431,
+   "same self-reference you saw in Composite,"
+  ],
+  [
+   317.431,
+   319.331,
+   "now applied to a grammar."
+  ],
+  [
+   319.831,
+   321.941,
+   "Your turn \u2014 pause here."
+  ],
+  [
+   322.573,
+   325.105,
+   "Write interpret for a greater-than expression."
+  ],
+  [
+   325.737,
+   329.114,
+   "It holds a variable and a threshold \u2014"
+  ],
+  [
+   329.114,
+   329.536,
+   "say,"
+  ],
+  [
+   329.536,
+   329.958,
+   "amount,"
+  ],
+  [
+   329.958,
+   331.224,
+   "and a thousand."
+  ],
+  [
+   331.855,
+   335.232,
+   "Evaluate the variable against the context to get"
+  ],
+  [
+   335.232,
+   336.498,
+   "its actual value,"
+  ],
+  [
+   336.498,
+   339.875,
+   "then return whether that value is above the"
+  ],
+  [
+   339.875,
+   340.297,
+   "threshold."
+  ],
+  [
+   340.928,
+   341.773,
+   "One line."
+  ],
+  [
+   341.773,
+   345.149,
+   "And with terminals like this and combiners like"
+  ],
+  [
+   345.149,
+   345.571,
+   "AND,"
+  ],
+  [
+   345.571,
+   348.104,
+   "you already have enough to express,"
+  ],
+  [
+   348.104,
+   348.948,
+   "and evaluate,"
+  ],
+  [
+   348.948,
+   350.214,
+   "arbitrarily complex rules."
+  ],
+  [
+   350.714,
+   351.436,
+   "Step three,"
+  ],
+  [
+   351.436,
+   353.241,
+   "and the language comes alive."
+  ],
+  [
+   353.872,
+   356.76,
+   "The rule amount greater than a thousand AND"
+  ],
+  [
+   356.76,
+   359.648,
+   "country equals US becomes a tree of objects"
+  ],
+  [
+   359.648,
+   362.536,
+   "\u2014 an AND node holding a greater-than and"
+  ],
+  [
+   362.536,
+   363.258,
+   "an equals."
+  ],
+  [
+   363.889,
+   366.055,
+   "You built it by nesting constructors,"
+  ],
+  [
+   366.055,
+   368.943,
+   "but a small parser could build the very"
+  ],
+  [
+   368.943,
+   370.748,
+   "same tree from the text."
+  ],
+  [
+   371.379,
+   373.906,
+   "And to evaluate it against your data?"
+  ],
+  [
+   373.906,
+   376.433,
+   "One call \u2014 interpret on the root."
+  ],
+  [
+   377.065,
+   379.231,
+   "The AND asks its two children;"
+  ],
+  [
+   379.231,
+   382.118,
+   "each comparison asks the context for a value"
+  ],
+  [
+   382.118,
+   382.84,
+   "and compares."
+  ],
+  [
+   382.84,
+   385.367,
+   "The answer flows back up the tree."
+  ],
+  [
+   385.367,
+   386.811,
+   "The rule evaluates itself,"
+  ],
+  [
+   386.811,
+   388.255,
+   "no monolith in sight."
+  ],
+  [
+   388.755,
+   391.892,
+   "Now the change that used to endanger everything."
+  ],
+  [
+   391.892,
+   393.46,
+   "Add an OR operator."
+  ],
+  [
+   393.46,
+   394.637,
+   "Then a BETWEEN."
+  ],
+  [
+   395.268,
+   396.445,
+   "In the monolith,"
+  ],
+  [
+   396.445,
+   399.582,
+   "each meant new branches threaded into the\nfive-hundred-line"
+  ],
+  [
+   399.582,
+   402.719,
+   "function \u2014 with the risk of breaking every"
+  ],
+  [
+   402.719,
+   403.503,
+   "existing rule,"
+  ],
+  [
+   403.503,
+   406.64,
+   "and a full re-test of the whole language."
+  ],
+  [
+   407.272,
+   408.448,
+   "With the interpreter,"
+  ],
+  [
+   408.448,
+   410.801,
+   "an OR is one new class."
+  ],
+  [
+   410.801,
+   411.977,
+   "Hold two sub-expressions,"
+  ],
+  [
+   411.977,
+   414.33,
+   "combine them with a logical or."
+  ],
+  [
+   414.961,
+   416.922,
+   "That is the entire change."
+  ],
+  [
+   417.553,
+   419.906,
+   "It plugs into any expression tree,"
+  ],
+  [
+   419.906,
+   421.867,
+   "composes with everything already there,"
+  ],
+  [
+   421.867,
+   425.004,
+   "and not one existing rule class is touched."
+  ],
+  [
+   425.004,
+   426.964,
+   "The language grows one small,"
+  ],
+  [
+   426.964,
+   428.925,
+   "safe class at a time."
+  ],
+  [
+   429.425,
+   432.376,
+   "This is the Interpreter pattern \u2014 and notice"
+  ],
+  [
+   432.376,
+   433.114,
+   "its shape:"
+  ],
+  [
+   433.114,
+   434.22,
+   "it is Composite,"
+  ],
+  [
+   434.22,
+   436.434,
+   "wearing the clothes of a grammar."
+  ],
+  [
+   437.065,
+   438.172,
+   "At the top,"
+  ],
+  [
+   438.172,
+   439.279,
+   "the Expression interface,"
+  ],
+  [
+   439.279,
+   440.754,
+   "with its interpret method."
+  ],
+  [
+   441.386,
+   442.123,
+   "The terminals,"
+  ],
+  [
+   442.123,
+   443.23,
+   "like a Variable,"
+  ],
+  [
+   443.23,
+   446.181,
+   "are the leaves \u2014 they interpret themselves\ndirectly"
+  ],
+  [
+   446.181,
+   447.288,
+   "from the context."
+  ],
+  [
+   447.919,
+   448.657,
+   "The nonterminals,"
+  ],
+  [
+   448.657,
+   450.133,
+   "like greater-than and AND,"
+  ],
+  [
+   450.133,
+   453.084,
+   "are the branches \u2014 and look at AND's"
+  ],
+  [
+   453.084,
+   453.821,
+   "second arrow."
+  ],
+  [
+   453.821,
+   455.297,
+   "It is an expression,"
+  ],
+  [
+   455.297,
+   456.772,
+   "and it holds expressions."
+  ],
+  [
+   457.404,
+   460.355,
+   "That self-reference lets rules nest to any depth."
+  ],
+  [
+   460.987,
+   462.831,
+   "To evaluate a whole rule,"
+  ],
+  [
+   462.831,
+   465.044,
+   "you call interpret on the root,"
+  ],
+  [
+   465.044,
+   466.889,
+   "and the tree walks itself,"
+  ],
+  [
+   466.889,
+   468.733,
+   "each node asking its children,"
+  ],
+  [
+   468.733,
+   471.684,
+   "until an answer flows back to the top."
+  ],
+  [
+   472.184,
+   473.071,
+   "The names,"
+  ],
+  [
+   473.071,
+   474.846,
+   "mapped to your code."
+  ],
+  [
+   475.478,
+   478.14,
+   "The AbstractExpression is the Expression\ninterface,"
+  ],
+  [
+   478.14,
+   479.028,
+   "with interpret."
+  ],
+  [
+   479.659,
+   483.209,
+   "The TerminalExpressions are the leaves \u2014 variables\nand"
+  ],
+  [
+   483.209,
+   483.653,
+   "literals."
+  ],
+  [
+   484.284,
+   487.39,
+   "The NonterminalExpressions are the operators \u2014\nAND,"
+  ],
+  [
+   487.39,
+   487.834,
+   "OR,"
+  ],
+  [
+   487.834,
+   490.94,
+   "greater-than \u2014 which hold and combine\nsub-expressions."
+  ],
+  [
+   491.571,
+   495.121,
+   "And the Context is the data each rule"
+  ],
+  [
+   495.121,
+   496.452,
+   "is evaluated against."
+  ],
+  [
+   497.084,
+   498.859,
+   "The Gang of Four:"
+  ],
+  [
+   498.859,
+   500.19,
+   "given a language,"
+  ],
+  [
+   500.19,
+   502.852,
+   "define a representation for its grammar,"
+  ],
+  [
+   502.852,
+   506.402,
+   "along with an interpreter that uses the\nrepresentation"
+  ],
+  [
+   506.402,
+   509.064,
+   "to interpret sentences in the language."
+  ],
+  [
+   509.696,
+   513.245,
+   "It is the pattern that turns a little"
+  ],
+  [
+   513.245,
+   515.464,
+   "language into an object tree."
+  ],
+  [
+   515.964,
+   517.795,
+   "Interpreter has a narrow home,"
+  ],
+  [
+   517.795,
+   520.724,
+   "and it is important to respect its edges."
+  ],
+  [
+   521.356,
+   524.285,
+   "Every rule of the grammar becomes a class"
+  ],
+  [
+   524.285,
+   526.848,
+   "\u2014 so a small language is elegant,"
+  ],
+  [
+   526.848,
+   529.778,
+   "but a rich one explodes into dozens of"
+  ],
+  [
+   529.778,
+   532.341,
+   "classes and becomes genuinely hard to manage."
+  ],
+  [
+   532.972,
+   535.536,
+   "It is also not built for performance,"
+  ],
+  [
+   535.536,
+   537.0,
+   "or for large inputs."
+  ],
+  [
+   537.632,
+   539.097,
+   "So the honest guidance:"
+  ],
+  [
+   539.097,
+   541.294,
+   "for anything beyond a simple grammar,"
+  ],
+  [
+   541.294,
+   542.758,
+   "do not hand-roll this."
+  ],
+  [
+   542.758,
+   544.955,
+   "Reach for a real parser generator,"
+  ],
+  [
+   544.955,
+   546.786,
+   "or an existing expression library,"
+  ],
+  [
+   546.786,
+   549.349,
+   "which handle the hard parts for you."
+  ],
+  [
+   549.981,
+   552.91,
+   "Reach for Interpreter itself only when you have"
+  ],
+  [
+   552.91,
+   553.643,
+   "a simple,"
+  ],
+  [
+   553.643,
+   556.572,
+   "stable little language that you evaluate often \u2014"
+  ],
+  [
+   556.572,
+   559.501,
+   "and you notice yourself bolting operator after\noperator"
+  ],
+  [
+   559.501,
+   560.966,
+   "onto one ever-growing function."
+  ],
+  [
+   560.966,
+   563.163,
+   "That growing function is a grammar,"
+  ],
+  [
+   563.163,
+   564.994,
+   "asking to become a tree."
+  ],
+  [
+   565.494,
+   565.862,
+   "Interpreter,"
+  ],
+  [
+   565.862,
+   568.438,
+   "in one breath \u2014 and with it,"
+  ],
+  [
+   568.438,
+   569.542,
+   "all twenty-three patterns."
+  ],
+  [
+   570.174,
+   573.118,
+   "A single giant evaluate function fused the\ngrammar,"
+  ],
+  [
+   573.118,
+   573.854,
+   "the parsing,"
+  ],
+  [
+   573.854,
+   576.798,
+   "and the logic into one fragile monolith that"
+  ],
+  [
+   576.798,
+   578.638,
+   "was a nightmare to extend."
+  ],
+  [
+   579.27,
+   582.214,
+   "But a rule is really a tree of"
+  ],
+  [
+   582.214,
+   585.158,
+   "sub-expressions \u2014 so you give each grammar rule"
+  ],
+  [
+   585.158,
+   587.735,
+   "its own class with an interpret method,"
+  ],
+  [
+   587.735,
+   589.943,
+   "and compose them into that tree."
+  ],
+  [
+   590.574,
+   590.942,
+   "Interpreter:"
+  ],
+  [
+   590.942,
+   592.414,
+   "terminals interpret themselves directly,"
+  ],
+  [
+   592.414,
+   595.359,
+   "nonterminals interpret their children and combine\n\u2014 it"
+  ],
+  [
+   595.359,
+   596.095,
+   "is Composite,"
+  ],
+  [
+   596.095,
+   597.567,
+   "applied to a grammar."
+  ],
+  [
+   597.567,
+   600.143,
+   "A new operator is one new class."
+  ],
+  [
+   600.774,
+   603.719,
+   "Here is a last one to carry out."
+  ],
+  [
+   604.35,
+   607.294,
+   "A search box supports a mini-query language \u2014"
+  ],
+  [
+   607.294,
+   607.662,
+   "field-colon-value,"
+  ],
+  [
+   607.662,
+   608.399,
+   "quoted phrases,"
+  ],
+  [
+   608.399,
+   608.767,
+   "AND,"
+  ],
+  [
+   608.767,
+   609.135,
+   "OR,"
+  ],
+  [
+   609.135,
+   609.503,
+   "NOT,"
+  ],
+  [
+   609.503,
+   610.239,
+   "and parentheses."
+  ],
+  [
+   610.87,
+   613.814,
+   "Does Interpreter fit here \u2014 or has the"
+  ],
+  [
+   613.814,
+   616.759,
+   "grammar grown just big enough that a real"
+  ],
+  [
+   616.759,
+   618.599,
+   "parser is the wiser call?"
+  ],
+  [
+   619.23,
+   622.174,
+   "That judgment \u2014 knowing when a pattern fits,"
+  ],
+  [
+   622.174,
+   625.119,
+   "and when it does not \u2014 is what"
+  ],
+  [
+   625.119,
+   627.695,
+   "all twenty-three of these were really about."
+  ],
+  [
+   627.695,
+   629.903,
+   "Thanks for building them with me."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp23-interpreter.wav",
+   "volume": 1.0
+  }
+ }
+}

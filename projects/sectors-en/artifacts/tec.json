@@ -1,0 +1,956 @@
+{
+  "cuts": [
+    {
+      "id": "t_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 39.756,
+      "props": {
+        "title": "How to Analyse IT Stocks",
+        "sub": "Technology sector · fundamentals · technicals · strategies",
+        "kicker": "SECTOR DEEP-DIVE · TECHNOLOGY",
+        "dur": 40.256
+      }
+    },
+    {
+      "id": "t_why",
+      "type": "sm_iconcards",
+      "in_seconds": 40.256,
+      "out_seconds": 117.016,
+      "props": {
+        "kicker": "THE BIG PICTURE",
+        "title": "What drives Indian IT",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🌎",
+            "k": "Export-driven",
+            "v": "Most revenue comes from the US & Europe — global demand is everything",
+            "chip": "Global"
+          },
+          {
+            "emoji": "💵",
+            "k": "Dollar-sensitive",
+            "v": "Earns in dollars — a weaker rupee boosts profits; a stronger rupee hurts",
+            "chip": "USD/INR"
+          },
+          {
+            "emoji": "🏦",
+            "k": "Client cycles",
+            "v": "US client tech budgets & their quarterly results are the key catalyst",
+            "chip": "US spend"
+          },
+          {
+            "emoji": "🤖",
+            "k": "The AI question",
+            "v": "Is AI a threat that automates work, or a huge new deal opportunity? Both",
+            "chip": "AI"
+          }
+        ],
+        "dur": 77.26
+      }
+    },
+    {
+      "id": "t_fund",
+      "type": "sm_iconcards",
+      "in_seconds": 117.516,
+      "out_seconds": 200.416,
+      "props": {
+        "kicker": "FUNDAMENTALS · CORE",
+        "title": "The metrics unique to IT",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "📈",
+            "k": "Constant-currency growth",
+            "v": "Revenue growth stripped of currency swings — the true underlying growth",
+            "chip": "Real growth"
+          },
+          {
+            "emoji": "📜",
+            "k": "Deal TCV / pipeline",
+            "v": "Total Contract Value of new deals — tomorrow's revenue, today's signal",
+            "chip": "Future"
+          },
+          {
+            "emoji": "📊",
+            "k": "EBIT margin",
+            "v": "Profitability & its consistency; ~20%+ for large-caps is the benchmark",
+            "chip": "Margin"
+          },
+          {
+            "emoji": "🚪",
+            "k": "Attrition",
+            "v": "Employee-exit rate. Lower = stable & efficient; a spike raises costs",
+            "chip": "People"
+          }
+        ],
+        "dur": 83.4
+      }
+    },
+    {
+      "id": "t_tech",
+      "type": "sm_iconcards",
+      "in_seconds": 200.916,
+      "out_seconds": 267.14,
+      "props": {
+        "kicker": "TECHNICAL ANALYSIS",
+        "title": "Reading IT on the chart",
+        "color": "#22D3EE",
+        "items": [
+          {
+            "emoji": "📉",
+            "k": "Nifty IT index",
+            "v": "The sector gauge. In 2026 it fell ~25% YTD — a deep correction into a 'value zone'",
+            "chip": "Index"
+          },
+          {
+            "emoji": "💵",
+            "k": "Watch USD/INR",
+            "v": "Overlay the rupee — dollar strength is a tailwind for the whole sector",
+            "chip": "Currency"
+          },
+          {
+            "emoji": "🌙",
+            "k": "US market cues",
+            "v": "US tech (Nasdaq) & US client results guide IT's direction overnight",
+            "chip": "Global"
+          },
+          {
+            "emoji": "💪",
+            "k": "Relative strength",
+            "v": "Defensive in slowdowns; check if IT is leading or lagging the Nifty",
+            "chip": "Rotation"
+          }
+        ],
+        "dur": 66.724
+      }
+    },
+    {
+      "id": "t_strat",
+      "type": "sm_iconcards",
+      "in_seconds": 267.64,
+      "out_seconds": 348.596,
+      "props": {
+        "kicker": "STRATEGIES",
+        "title": "Strategies for the technology sector",
+        "color": "#34D399",
+        "items": [
+          {
+            "emoji": "💎",
+            "k": "Buy quality in the correction",
+            "v": "A 25% fall in strong franchises can be a long-term accumulation zone",
+            "chip": "Value"
+          },
+          {
+            "emoji": "💵",
+            "k": "Cash returners",
+            "v": "IT throws off cash — dividends + buybacks reward patient holders",
+            "chip": "Income"
+          },
+          {
+            "emoji": "⚖️",
+            "k": "Large vs mid-cap",
+            "v": "Large-caps for stability; mid-caps for higher growth (and higher risk)",
+            "chip": "Mix"
+          },
+          {
+            "emoji": "🤖",
+            "k": "Pick AI winners",
+            "v": "Favour firms turning AI into deals over those most exposed to automation",
+            "chip": "Selective"
+          }
+        ],
+        "dur": 81.456
+      }
+    },
+    {
+      "id": "t_check",
+      "type": "sm_checklist",
+      "in_seconds": 349.096,
+      "out_seconds": 409.072,
+      "props": {
+        "kicker": "HOW TO EVALUATE",
+        "title": "Evaluating an IT stock — checklist",
+        "color": "#34D399",
+        "icon": "✅",
+        "items": [
+          "Is constant-currency revenue growth healthy?",
+          "Is the deal pipeline (TCV) strong & growing?",
+          "Are EBIT margins consistent (~20%+ large-cap)?",
+          "Is attrition low & stable (a healthy people business)?",
+          "Is it an AI winner or the one being automated away?"
+        ],
+        "dur": 60.476
+      }
+    },
+    {
+      "id": "t_risk",
+      "type": "sm_myths",
+      "in_seconds": 409.572,
+      "out_seconds": 486.5,
+      "props": {
+        "kicker": "WHAT TO AVOID",
+        "title": "Technology sector — traps to avoid",
+        "mythLabel": "✗ TRAP",
+        "factLabel": "✓ REALITY",
+        "pairs": [
+          {
+            "m": "It fell 25% — it must be cheap now",
+            "f": "Cheap can get cheaper if US demand keeps slowing — check the deal pipeline"
+          },
+          {
+            "m": "AI will lift every IT company",
+            "f": "AI will create winners AND losers — selection is everything"
+          },
+          {
+            "m": "A weak rupee alone makes IT a buy",
+            "f": "Currency helps margins, but demand & deals drive the real story"
+          }
+        ],
+        "dur": 77.428
+      }
+    },
+    {
+      "id": "t_recap",
+      "type": "sm_recap",
+      "in_seconds": 487.0,
+      "out_seconds": 554.564,
+      "props": {
+        "title": "Technology sector — recap",
+        "items": [
+          "Export-driven: US demand, USD/INR, client cycles, AI",
+          "Metrics: constant-currency growth, deal TCV, EBIT margin, attrition",
+          "Technicals: Nifty IT (−25% in 2026), USD & US cues, relative strength",
+          "Strategy: buy quality in the fall; cash returns; pick AI winners",
+          "Selection now matters more than owning the sector"
+        ],
+        "closer": "In IT today, choose the winners — don't just buy the theme.",
+        "dur": 68.064
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.52,
+      "Our third deep-dive — the technology sector,"
+    ],
+    [
+      3.52,
+      6.319,
+      "India's great export success story."
+    ],
+    [
+      6.319,
+      11.279,
+      "Indian I T services companies earn most of their money abroad,"
+    ],
+    [
+      11.279,
+      14.958,
+      "in dollars, serving the world's biggest firms."
+    ],
+    [
+      14.958,
+      21.518,
+      "That makes this sector move to a completely different beat from banks or defence —"
+    ],
+    [
+      21.518,
+      25.437,
+      "it dances to the US economy, the dollar, and now,"
+    ],
+    [
+      25.437,
+      27.597,
+      "to artificial intelligence."
+    ],
+    [
+      27.597,
+      32.637,
+      "We'll cover the fundamentals of an I T company, the technicals,"
+    ],
+    [
+      32.637,
+      34.237,
+      "and the strategies —"
+    ],
+    [
+      34.237,
+      39.756,
+      "including how to think about the big correction of twenty twenty-six."
+    ],
+    [
+      40.256,
+      42.685,
+      "First, what makes I T tick —"
+    ],
+    [
+      42.685,
+      46.848,
+      "because it's unlike anything else we've covered."
+    ],
+    [
+      46.848,
+      47.889,
+      "Four forces."
+    ],
+    [
+      47.889,
+      50.144,
+      "One — it is export-driven."
+    ],
+    [
+      50.144,
+      56.128,
+      "The vast majority of revenue comes from the United States and Europe,"
+    ],
+    [
+      56.128,
+      61.593,
+      "so global demand, not the Indian economy, is what matters most."
+    ],
+    [
+      61.593,
+      64.108,
+      "Two — it is dollar-sensitive."
+    ],
+    [
+      64.108,
+      68.358,
+      "These firms earn in dollars but report in rupees,"
+    ],
+    [
+      68.358,
+      71.741,
+      "so a weaker rupee boosts their profits,"
+    ],
+    [
+      71.741,
+      74.95,
+      "while a stronger rupee is a headwind."
+    ],
+    [
+      74.95,
+      78.853,
+      "Always know which way the currency is moving."
+    ],
+    [
+      78.853,
+      80.761,
+      "Three — client cycles."
+    ],
+    [
+      80.761,
+      83.797,
+      "The tech budgets of big US clients,"
+    ],
+    [
+      83.797,
+      86.572,
+      "and their own quarterly results,"
+    ],
+    [
+      86.572,
+      89.781,
+      "are the single most-watched catalyst."
+    ],
+    [
+      89.781,
+      94.639,
+      "Strong US data lifts Indian I T; a US slowdown hurts it."
+    ],
+    [
+      94.639,
+      99.843,
+      "Four — the big question of our era: artificial intelligence."
+    ],
+    [
+      99.843,
+      104.96,
+      "Is it a threat that automates away the work these firms do,"
+    ],
+    [
+      104.96,
+      109.73,
+      "or a massive new wave of deals to build AI for clients?"
+    ],
+    [
+      109.73,
+      111.638,
+      "Honestly, it is both —"
+    ],
+    [
+      111.638,
+      117.016,
+      "and telling the winners from the losers is now the whole game."
+    ],
+    [
+      117.516,
+      121.127,
+      "Now the metrics that define an I T company —"
+    ],
+    [
+      121.127,
+      123.59,
+      "quite different from a bank's."
+    ],
+    [
+      123.59,
+      127.366,
+      "The first is constant-currency revenue growth."
+    ],
+    [
+      127.366,
+      130.238,
+      "Because the currency swings around,"
+    ],
+    [
+      130.238,
+      134.178,
+      "companies report growth stripped of that effect,"
+    ],
+    [
+      134.178,
+      137.051,
+      "to show the true underlying demand."
+    ],
+    [
+      137.051,
+      140.662,
+      "This is the real growth number to anchor on."
+    ],
+    [
+      140.662,
+      145.669,
+      "The second is deal wins — the Total Contract Value, or T C V,"
+    ],
+    [
+      145.669,
+      150.019,
+      "of new orders, and the strength of the deal pipeline."
+    ],
+    [
+      150.019,
+      158.145,
+      "This is tomorrow's revenue showing up today; a strong pipeline is the best forward signal there is."
+    ],
+    [
+      158.145,
+      161.839,
+      "The third is the EBIT margin — profitability,"
+    ],
+    [
+      161.839,
+      164.301,
+      "and above all its consistency."
+    ],
+    [
+      164.301,
+      165.861,
+      "For the large-caps,"
+    ],
+    [
+      165.861,
+      169.718,
+      "around twenty percent or more is the benchmark."
+    ],
+    [
+      169.718,
+      173.986,
+      "Margin discipline separates the great from the good."
+    ],
+    [
+      173.986,
+      178.173,
+      "The fourth is attrition — how fast employees leave."
+    ],
+    [
+      178.173,
+      181.127,
+      "This is a people business, so a low,"
+    ],
+    [
+      181.127,
+      185.724,
+      "stable attrition rate signals a healthy, efficient firm,"
+    ],
+    [
+      185.724,
+      190.32,
+      "while a sudden spike raises costs and disrupts projects."
+    ],
+    [
+      190.32,
+      194.917,
+      "Together — real growth, a full pipeline, steady margins,"
+    ],
+    [
+      194.917,
+      196.476,
+      "and low attrition —"
+    ],
+    [
+      196.476,
+      200.416,
+      "these paint the picture of a strong I T company."
+    ],
+    [
+      200.916,
+      204.604,
+      "The technicals for I T carry a global flavour."
+    ],
+    [
+      204.604,
+      208.372,
+      "Track the Nifty I T index as your sector gauge."
+    ],
+    [
+      208.372,
+      216.229,
+      "And here's the timely context: through twenty twenty-six it has fallen around twenty-five percent,"
+    ],
+    [
+      216.229,
+      222.884,
+      "a deep correction that has pushed valuations into what many now call a value zone —"
+    ],
+    [
+      222.884,
+      226.171,
+      "even as the companies keep winning deals."
+    ],
+    [
+      226.171,
+      229.618,
+      "Overlay the dollar-rupee rate on the chart."
+    ],
+    [
+      229.618,
+      233.787,
+      "Dollar strength is a tailwind for the entire sector,"
+    ],
+    [
+      233.787,
+      237.796,
+      "so the currency and the index often move together."
+    ],
+    [
+      237.796,
+      242.045,
+      "Watch overnight US cues — the Nasdaq and, especially,"
+    ],
+    [
+      242.045,
+      248.94,
+      "the quarterly results of big US clients guide where Indian I T opens the next morning."
+    ],
+    [
+      248.94,
+      253.19,
+      "This is a sector you analyse with one eye on America."
+    ],
+    [
+      253.19,
+      255.435,
+      "And check relative strength."
+    ],
+    [
+      255.435,
+      257.679,
+      "I T is a partial defensive —"
+    ],
+    [
+      257.679,
+      261.287,
+      "it can hold up when domestic cyclicals fall —"
+    ],
+    [
+      261.287,
+      267.14,
+      "so see whether it's leading or lagging the Nifty in the current rotation."
+    ],
+    [
+      267.64,
+      270.178,
+      "So how do you play technology?"
+    ],
+    [
+      270.178,
+      273.392,
+      "Four strategies, well suited to today."
+    ],
+    [
+      273.392,
+      276.692,
+      "First, buy quality into the correction."
+    ],
+    [
+      276.692,
+      281.852,
+      "A twenty-five-percent fall in a strong, cash-rich franchise —"
+    ],
+    [
+      281.852,
+      283.967,
+      "one still winning deals —"
+    ],
+    [
+      283.967,
+      287.519,
+      "can be a fine long-term accumulation zone."
+    ],
+    [
+      287.519,
+      289.973,
+      "Fear creates the opportunity."
+    ],
+    [
+      289.973,
+      293.103,
+      "Second, treat I T as a cash returner."
+    ],
+    [
+      293.103,
+      302.154,
+      "These companies generate enormous free cash and hand it back through generous dividends and share buybacks,"
+    ],
+    [
+      302.154,
+      306.807,
+      "which rewards patient holders even when growth is slow."
+    ],
+    [
+      306.807,
+      309.852,
+      "Third, balance large versus mid-cap."
+    ],
+    [
+      309.852,
+      317.296,
+      "The large-caps offer stability and those cash returns; the mid-caps offer higher growth,"
+    ],
+    [
+      317.296,
+      318.734,
+      "with higher risk."
+    ],
+    [
+      318.734,
+      319.834,
+      "Mix to taste."
+    ],
+    [
+      319.834,
+      324.402,
+      "Fourth — and this is the defining call of the decade —"
+    ],
+    [
+      324.402,
+      326.094,
+      "pick the AI winners."
+    ],
+    [
+      326.094,
+      332.862,
+      "Favour the firms that are turning artificial intelligence into new client deals,"
+    ],
+    [
+      332.862,
+      338.529,
+      "and be wary of those whose core work is most easily automated away."
+    ],
+    [
+      338.529,
+      339.798,
+      "In this sector,"
+    ],
+    [
+      339.798,
+      344.874,
+      "stock selection now matters far more than simply owning I T."
+    ],
+    [
+      344.874,
+      348.596,
+      "The tide alone will not lift all boats here."
+    ],
+    [
+      349.096,
+      351.775,
+      "Let's turn IT into a checklist."
+    ],
+    [
+      351.775,
+      352.726,
+      "Five steps."
+    ],
+    [
+      352.726,
+      357.824,
+      "Step one — is the constant-currency revenue growth healthy,"
+    ],
+    [
+      357.824,
+      362.837,
+      "showing real underlying demand beneath the currency noise?"
+    ],
+    [
+      362.837,
+      367.849,
+      "Step two — is the deal pipeline, the total contract value,"
+    ],
+    [
+      367.849,
+      372.084,
+      "strong and growing, promising tomorrow's revenue?"
+    ],
+    [
+      372.084,
+      375.973,
+      "Step three — are the EBIT margins consistent,"
+    ],
+    [
+      375.973,
+      379.948,
+      "around twenty percent or more for a large-cap,"
+    ],
+    [
+      379.948,
+      382.454,
+      "showing disciplined delivery?"
+    ],
+    [
+      382.454,
+      385.911,
+      "Step four — is attrition low and stable,"
+    ],
+    [
+      385.911,
+      389.195,
+      "the sign of a healthy people business?"
+    ],
+    [
+      389.195,
+      393.776,
+      "Step five — and the defining question of the decade —"
+    ],
+    [
+      393.776,
+      399.566,
+      "is this company an AI winner turning the technology into new deals,"
+    ],
+    [
+      399.566,
+      403.541,
+      "or the one whose work is being automated away?"
+    ],
+    [
+      403.541,
+      407.862,
+      "Run that checklist, and you can judge any IT name."
+    ],
+    [
+      407.862,
+      409.072,
+      "Now the traps."
+    ],
+    [
+      409.572,
+      412.707,
+      "And the traps in technology — subtle,"
+    ],
+    [
+      412.707,
+      415.503,
+      "because the story sounds so good."
+    ],
+    [
+      415.503,
+      416.858,
+      "The first trap —"
+    ],
+    [
+      416.858,
+      421.179,
+      "assuming that because I T fell twenty-five percent,"
+    ],
+    [
+      421.179,
+      422.619,
+      "it must be cheap."
+    ],
+    [
+      422.619,
+      426.771,
+      "Cheap can get cheaper if US demand keeps slowing."
+    ],
+    [
+      426.771,
+      433.04,
+      "Don't buy the fall blindly; check that the deal pipeline is still healthy."
+    ],
+    [
+      433.04,
+      437.615,
+      "A falling price with a shrinking order book is a trap,"
+    ],
+    [
+      437.615,
+      438.801,
+      "not a bargain."
+    ],
+    [
+      438.801,
+      440.242,
+      "The second trap —"
+    ],
+    [
+      440.242,
+      446.003,
+      "believing artificial intelligence will lift every I T company alike."
+    ],
+    [
+      446.003,
+      446.765,
+      "It won't."
+    ],
+    [
+      446.765,
+      450.662,
+      "AI will create clear winners and clear losers,"
+    ],
+    [
+      450.662,
+      457.949,
+      "and treating the sector as one basket ignores the most important divide of the decade."
+    ],
+    [
+      457.949,
+      459.982,
+      "Selection is everything."
+    ],
+    [
+      459.982,
+      464.98,
+      "The third trap — buying I T just because the rupee is weak."
+    ],
+    [
+      464.98,
+      468.793,
+      "A favourable currency helps the margins, yes,"
+    ],
+    [
+      468.793,
+      472.521,
+      "but it cannot rescue a company losing deals."
+    ],
+    [
+      472.521,
+      478.706,
+      "Demand and deal wins drive the real story; currency is only the tailwind."
+    ],
+    [
+      478.706,
+      483.535,
+      "Read the demand, read the pipeline, pick the AI winners —"
+    ],
+    [
+      483.535,
+      486.5,
+      "that's how you navigate technology."
+    ],
+    [
+      487.0,
+      490.213,
+      "The technology sector, in one breath."
+    ],
+    [
+      490.213,
+      495.684,
+      "It's export-driven, moving to US demand, the dollar-rupee rate,"
+    ],
+    [
+      495.684,
+      499.766,
+      "client cycles, and now artificial intelligence."
+    ],
+    [
+      499.766,
+      504.803,
+      "Analyse it with its own metrics: constant-currency growth,"
+    ],
+    [
+      504.803,
+      508.19,
+      "deal T C V, EBIT margin, and attrition."
+    ],
+    [
+      508.19,
+      511.75,
+      "On the chart, track the Nifty I T index —"
+    ],
+    [
+      511.75,
+      516.353,
+      "down about twenty-five percent in twenty twenty-six —"
+    ],
+    [
+      516.353,
+      519.219,
+      "alongside the dollar and US cues."
+    ],
+    [
+      519.219,
+      523.127,
+      "In strategy, buy quality into the correction,"
+    ],
+    [
+      523.127,
+      525.993,
+      "enjoy the dividends and buybacks,"
+    ],
+    [
+      525.993,
+      529.032,
+      "and above all pick the AI winners —"
+    ],
+    [
+      529.032,
+      534.677,
+      "because selection now matters more than simply owning the sector."
+    ],
+    [
+      534.677,
+      538.411,
+      "That completes our three sector deep-dives."
+    ],
+    [
+      538.411,
+      543.014,
+      "Apply the same method — sector-specific fundamentals,"
+    ],
+    [
+      543.014,
+      547.443,
+      "technicals, and strategy — to any sector you study."
+    ],
+    [
+      547.443,
+      552.567,
+      "This is education, not advice; always do your own research."
+    ],
+    [
+      552.567,
+      554.564,
+      "Thank you for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sx/tec.wav",
+      "volume": 1.0
+    }
+  }
+}

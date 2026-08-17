@@ -1,0 +1,102 @@
+{
+ "ticker": "PHOENIXLTD",
+ "scraped_at": "2026-08-14T15:30:22",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 67452.0,
+ "current_price": 1886.0,
+ "pe": 52.0,
+ "book_value": 307.0,
+ "dividend_yield_pct": 0.13,
+ "roce_pct": 12.8,
+ "roe_pct": 11.6,
+ "face_value": 2.0,
+ "high": 2170.0,
+ "sales_growth": {
+  "10 Years": 24.0,
+  "5 Years": 83.0,
+  "3 Years": 14.0,
+  "TTM": 32.0
+ },
+ "profit_growth": {
+  "10 Years": 26.0,
+  "5 Years": 34.0,
+  "3 Years": 30.0,
+  "1 Year": 33.0
+ },
+ "roe_hist": {
+  "Sales&nbsp; +": 811.0,
+  "Expenses&nbsp; +": 318.0,
+  "Operating Profit": 492.0,
+  "OPM %": 61.0,
+  "Other Income&nbsp; +": 29.0,
+  "Interest": 96.0,
+  "Depreciation": 63.0,
+  "Profit before tax": 363.0,
+  "Tax %": 20.0,
+  "Net Profit&nbsp; +": 291.0,
+  "EPS in Rs": 6.73
+ },
+ "price_cagr": {
+  "10 Years": 9.0,
+  "5 Years": 10.0,
+  "3 Years": 11.0,
+  "Last Year": 12.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "61%",
+   "58%",
+   "56%",
+   "48%",
+   "59%",
+   "56%",
+   "57%",
+   "55%",
+   "59%",
+   "60%",
+   "59%",
+   "61%",
+   "60%"
+  ],
+  "eps": [
+   "6.73",
+   "7.07",
+   "7.82",
+   "9.14",
+   "6.50",
+   "6.10",
+   "7.41",
+   "7.52",
+   "6.73",
+   "8.50",
+   "7.71",
+   "11.28",
+   "8.30"
+  ]
+ },
+ "pros": [],
+ "cons": [
+  "Stock is trading at 6.11 times its book value",
+  "Company has a low return on equity of 11.0% over last 3 years.",
+  "Dividend payout has been low at 8.17% of profits over last 3 years"
+ ]
+}

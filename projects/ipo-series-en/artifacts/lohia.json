@@ -1,0 +1,626 @@
+{
+  "cuts": [
+    {
+      "id": "lohia_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 29.204,
+      "props": {
+        "title": "Lohia Corp IPO",
+        "sub": "Industrial machinery · ₹1,102 Cr · 100% OFS · 23–27 Jul 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 29.704
+      }
+    },
+    {
+      "id": "lohia_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 29.704,
+      "out_seconds": 66.706,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Lohia Corp",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🏭",
+            "k": "Industrial machinery maker",
+            "v": "Builds the heavy machines that produce woven plastics and flexible packaging — an engineering business",
+            "chip": "MACHINERY"
+          },
+          {
+            "emoji": "🌍",
+            "k": "Global supplier",
+            "v": "Sells its technical-textile and packaging machinery to manufacturers around the world",
+            "chip": "EXPORTS"
+          },
+          {
+            "emoji": "🔧",
+            "k": "Niche & specialised",
+            "v": "A leader in its narrow segment — high engineering barriers keep competition limited",
+            "chip": "NICHE LEADER"
+          }
+        ],
+        "dur": 37.502
+      }
+    },
+    {
+      "id": "lohia_fin",
+      "type": "sm_stats",
+      "in_seconds": 67.206,
+      "out_seconds": 98.666,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 1717,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+25% YoY"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 193,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+64% YoY — sharp jump"
+          },
+          {
+            "label": "Valuation",
+            "to": 4500,
+            "prefix": "~₹",
+            "suffix": " Cr",
+            "color": "#FBBF24",
+            "sub": "at the ₹425 upper band"
+          }
+        ],
+        "note": "Financially strong — revenue up 25% and profit up a sharp 64%. The company is valued near ₹4,500 crore at the top of the band.",
+        "dur": 31.96
+      }
+    },
+    {
+      "id": "lohia_issue",
+      "type": "sm_stats",
+      "in_seconds": 99.166,
+      "out_seconds": 138.424,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 1102,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#FBBF24",
+            "sub": "price band ₹404–425"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 0,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "ZERO — no fresh issue"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 1102,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "100% — promoters cash out"
+          }
+        ],
+        "note": "CRITICAL: this is a 100% Offer-for-Sale. The company receives NOTHING. Every rupee goes to the promoters selling their shares.",
+        "dur": 39.758
+      }
+    },
+    {
+      "id": "lohia_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 138.924,
+      "out_seconds": 174.246,
+      "props": {
+        "kicker": "USE OF PROCEEDS",
+        "title": "What the Money Funds",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🚫",
+            "k": "Nothing for the company",
+            "v": "Because there's no fresh issue, none of the money funds capacity, R&D, debt repayment or working capital",
+            "chip": "₹0 TO FIRM"
+          },
+          {
+            "emoji": "👤",
+            "k": "100% to selling promoters",
+            "v": "The entire ₹1,102 Cr goes to existing shareholders monetising part of their holding",
+            "chip": "PROMOTER EXIT"
+          }
+        ],
+        "dur": 35.822
+      }
+    },
+    {
+      "id": "lohia_verdict",
+      "type": "sm_myths",
+      "in_seconds": 174.746,
+      "out_seconds": 214.628,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "100% OFS — company gets nothing",
+            "f": "Profit up a strong 64% in FY26"
+          },
+          {
+            "m": "No growth capital from the issue",
+            "f": "Niche global machinery leader"
+          },
+          {
+            "m": "Machinery demand is capex-cycle sensitive",
+            "f": "Healthy 25% revenue growth"
+          }
+        ],
+        "dur": 40.382
+      }
+    },
+    {
+      "id": "lohia_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 215.128,
+      "out_seconds": 256.544,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#FBBF24",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,875 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 41.916
+      }
+    },
+    {
+      "id": "lohia_recap",
+      "type": "sm_recap",
+      "in_seconds": 257.044,
+      "out_seconds": 310.772,
+      "props": {
+        "title": "Lohia Corp IPO — at a Glance",
+        "items": [
+          "Business: global industrial-machinery maker",
+          "FY26: revenue ₹1,717 Cr (+25%), profit ₹193 Cr (+64%)",
+          "₹1,102 Cr issue — 100% OFS, company gets ₹0",
+          "Every rupee goes to selling promoters",
+          "Retail min ~₹14,875"
+        ],
+        "closer": "Strong business, but a pure cash-out. The IPO funds the owners, not the company.",
+        "dur": 54.228
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      2.929,
+      "Let's analyse the Lohia Corp I-P-O —"
+    ],
+    [
+      2.929,
+      9.599,
+      "a one thousand one hundred and two crore issue from an industrial machinery maker."
+    ],
+    [
+      9.599,
+      16.595,
+      "There's one feature of this I-P-O that every investor must understand before applying,"
+    ],
+    [
+      16.595,
+      18.222,
+      "and we'll get to it."
+    ],
+    [
+      18.222,
+      21.557,
+      "We'll cover the business, the financials,"
+    ],
+    [
+      21.557,
+      25.869,
+      "where the money goes, and how much you need to apply."
+    ],
+    [
+      25.869,
+      29.204,
+      "This is education, not investment advice."
+    ],
+    [
+      29.704,
+      31.975,
+      "So what does Lohia Corp do?"
+    ],
+    [
+      31.975,
+      36.936,
+      "It's an industrial machinery company — it builds the large,"
+    ],
+    [
+      36.936,
+      42.739,
+      "specialised machines that other factories use to make woven plastics,"
+    ],
+    [
+      42.739,
+      46.271,
+      "flexible packaging and technical textiles."
+    ],
+    [
+      46.271,
+      48.205,
+      "It's a global supplier,"
+    ],
+    [
+      48.205,
+      52.578,
+      "exporting this equipment to manufacturers worldwide."
+    ],
+    [
+      52.578,
+      54.596,
+      "It operates in a narrow,"
+    ],
+    [
+      54.596,
+      59.81,
+      "highly-engineered niche where the technical barriers are high,"
+    ],
+    [
+      59.81,
+      62.501,
+      "so it faces limited competition."
+    ],
+    [
+      62.501,
+      66.706,
+      "A quiet, specialised, business-to-business leader."
+    ],
+    [
+      67.206,
+      69.266,
+      "The financials are strong."
+    ],
+    [
+      69.266,
+      77.349,
+      "Revenue for the year ended March twenty twenty-six was one thousand seven hundred and seventeen crore,"
+    ],
+    [
+      77.349,
+      79.172,
+      "up twenty-five percent."
+    ],
+    [
+      79.172,
+      85.511,
+      "And net profit jumped sixty-four percent to one hundred and ninety-three crore —"
+    ],
+    [
+      85.511,
+      86.542,
+      "a sharp rise."
+    ],
+    [
+      86.542,
+      88.84,
+      "At the top of the price band,"
+    ],
+    [
+      88.84,
+      93.832,
+      "the company is valued at around four and a half thousand crore."
+    ],
+    [
+      93.832,
+      98.666,
+      "So on the numbers alone, this is a healthy, growing business."
+    ],
+    [
+      99.166,
+      103.648,
+      "Now, the single most important feature of this I-P-O —"
+    ],
+    [
+      103.648,
+      105.225,
+      "the one I promised."
+    ],
+    [
+      105.225,
+      108.96,
+      "This is a one hundred percent Offer for Sale."
+    ],
+    [
+      108.96,
+      111.118,
+      "There is zero fresh issue."
+    ],
+    [
+      111.118,
+      117.26,
+      "That means the company itself receives absolutely nothing from this I-P-O."
+    ],
+    [
+      117.26,
+      124.729,
+      "Every single rupee you invest goes straight to the promoters who are selling their shares."
+    ],
+    [
+      124.729,
+      128.464,
+      "The business gets no new money for factories,"
+    ],
+    [
+      128.464,
+      132.448,
+      "no debt repayment, no working capital — nothing."
+    ],
+    [
+      132.448,
+      138.424,
+      "You are simply buying the promoters' stake from them at the I-P-O price."
+    ],
+    [
+      138.924,
+      141.142,
+      "So where do the proceeds go?"
+    ],
+    [
+      141.142,
+      143.597,
+      "Because there's no fresh issue,"
+    ],
+    [
+      143.597,
+      147.636,
+      "none of the money funds the company — not capacity,"
+    ],
+    [
+      147.636,
+      151.12,
+      "not research, not debt, not working capital."
+    ],
+    [
+      151.12,
+      156.664,
+      "The full one thousand one hundred crore goes to the selling promoters,"
+    ],
+    [
+      156.664,
+      160.862,
+      "who are converting part of their ownership into cash."
+    ],
+    [
+      160.862,
+      164.267,
+      "Now, a pure O-F-S isn't automatically bad —"
+    ],
+    [
+      164.267,
+      168.148,
+      "it can simply mean early backers want liquidity —"
+    ],
+    [
+      168.148,
+      174.246,
+      "but you should know the growth of the business won't be funded by your money."
+    ],
+    [
+      174.746,
+      176.35,
+      "Should you subscribe?"
+    ],
+    [
+      176.35,
+      180.476,
+      "The strengths are real — profit up sixty-four percent,"
+    ],
+    [
+      180.476,
+      182.233,
+      "revenue up twenty-five,"
+    ],
+    [
+      182.233,
+      186.436,
+      "and a defensible global niche in specialised machinery."
+    ],
+    [
+      186.436,
+      189.262,
+      "But the watch-outs are equally real —"
+    ],
+    [
+      189.262,
+      191.784,
+      "it's a hundred-percent sell-down,"
+    ],
+    [
+      191.784,
+      204.466,
+      "so none of your money strengthens the company; there's no growth capital in the deal; and machinery demand rises and falls with the broader capital-expenditure cycle."
+    ],
+    [
+      204.466,
+      205.765,
+      "The bottom line —"
+    ],
+    [
+      205.765,
+      210.426,
+      "judge it purely as buying into a good business at this price,"
+    ],
+    [
+      210.426,
+      214.628,
+      "because the I-P-O itself adds nothing to that business."
+    ],
+    [
+      215.128,
+      218.74,
+      "How do you apply, and how much do you need?"
+    ],
+    [
+      218.74,
+      225.125,
+      "Retail investors bid up to two lakh rupees for a thirty-five percent quota —"
+    ],
+    [
+      225.125,
+      229.493,
+      "and if it's oversubscribed, allotment is by lottery,"
+    ],
+    [
+      229.493,
+      231.93,
+      "so a larger bid doesn't help."
+    ],
+    [
+      231.93,
+      236.718,
+      "H-N-Is invest above two lakh for a fifteen percent quota."
+    ],
+    [
+      236.718,
+      240.666,
+      "For Lohia Corp, one lot is thirty-five shares —"
+    ],
+    [
+      240.666,
+      245.959,
+      "about fourteen thousand eight hundred and seventy-five rupees —"
+    ],
+    [
+      245.959,
+      247.387,
+      "your minimum bid."
+    ],
+    [
+      247.387,
+      252.68,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      252.68,
+      256.544,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      257.044,
+      258.987,
+      "Let's recap Lohia Corp."
+    ],
+    [
+      258.987,
+      263.295,
+      "A global maker of specialised industrial machinery,"
+    ],
+    [
+      263.295,
+      266.843,
+      "with profit up a sharp sixty-four percent."
+    ],
+    [
+      266.843,
+      269.04,
+      "But the defining feature —"
+    ],
+    [
+      269.04,
+      272.841,
+      "this is a one hundred percent Offer for Sale."
+    ],
+    [
+      272.841,
+      279.262,
+      "The company receives nothing; every rupee goes to the promoters cashing out."
+    ],
+    [
+      279.262,
+      286.358,
+      "The retail minimum is about fourteen thousand eight hundred and seventy-five rupees."
+    ],
+    [
+      286.358,
+      290.413,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      290.413,
+      292.778,
+      "it is not investment advice,"
+    ],
+    [
+      292.778,
+      295.566,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      295.566,
+      298.776,
+      "and not a prediction of listing gains."
+    ],
+    [
+      298.776,
+      303.253,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      303.253,
+      309.082,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      309.082,
+      310.772,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/lohia.wav",
+      "volume": 1.0
+    }
+  }
+}

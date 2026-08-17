@@ -1,0 +1,93 @@
+{
+  "cuts": [
+    {
+      "id": "s00_title",
+      "type": "ait_title",
+      "in_seconds": 0.0,
+      "out_seconds": 13.803,
+      "props": {
+        "dur": 14.303
+      }
+    },
+    {
+      "id": "s01_hook",
+      "type": "ait_hook",
+      "in_seconds": 14.303,
+      "out_seconds": 41.949,
+      "props": {
+        "kicker": "TWO THINGS ARE TRUE",
+        "title": "Start with the honest picture",
+        "left": {
+          "emoji": "\ud83c\udfe6",
+          "h": "Wall Street runs on AI",
+          "body": "Roughly three in four big trading desks already use machine learning.",
+          "c": "money"
+        },
+        "right": {
+          "emoji": "\ud83d\udcc9",
+          "h": "Most retail bots lose",
+          "body": "Studies suggest the large majority of small traders' bots lose money.",
+          "c": "risk"
+        },
+        "closer": "This course takes both seriously \u2014 the real power, and the very real trap.",
+        "dur": 28.146
+      }
+    },
+    {
+      "id": "s02_roadmap",
+      "type": "ait_cards",
+      "in_seconds": 42.449,
+      "out_seconds": 80.333,
+      "props": {
+        "kicker": "THE MAP",
+        "title": "Six parts, one honest goal",
+        "color": "data",
+        "cards": [
+          {
+            "emoji": "\ud83e\udde0",
+            "title": "1 \u00b7 What it is",
+            "body": "The real mechanics behind the buzzword.",
+            "c": "data"
+          },
+          {
+            "emoji": "\u26a0\ufe0f",
+            "title": "2 \u00b7 The reality",
+            "body": "Why most bots quietly lose \u2014 and the scams.",
+            "c": "risk"
+          },
+          {
+            "emoji": "\ud83c\udf92",
+            "title": "3 \u00b7 Before you start",
+            "body": "What to learn, and the honest mindset.",
+            "c": "edge"
+          },
+          {
+            "emoji": "\ud83c\udfdb\ufe0f",
+            "title": "4 \u00b7 Where to do it",
+            "body": "Trustworthy platforms and the SEBI rules.",
+            "c": "money"
+          },
+          {
+            "emoji": "\ud83d\udee0\ufe0f",
+            "title": "5 \u00b7 Build your own",
+            "body": "From a first strategy to an AI agent, in code.",
+            "c": "ai"
+          },
+          {
+            "emoji": "\ud83d\uddfa\ufe0f",
+            "title": "6 \u00b7 Your plan",
+            "body": "A realistic ninety-day path.",
+            "c": "data"
+          }
+        ],
+        "dur": 38.384
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "ait/ch0.wav",
+      "volume": 1.0
+    }
+  }
+}

@@ -1,0 +1,876 @@
+{
+  "cuts": [
+    {
+      "id": "fascinate_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 27.548,
+      "props": {
+        "title": "Fascinate Textiles IPO",
+        "sub": "Readymade garment OEM · ₹67 Cr · NSE SME · 11–13 Aug 2026",
+        "kicker": "SME IPO ANALYSIS · NSE SME",
+        "dur": 28.048
+      }
+    },
+    {
+      "id": "fascinate_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 28.048,
+      "out_seconds": 71.914,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside Fascinate Textiles",
+        "color": "#EC4899",
+        "items": [
+          {
+            "emoji": "👕",
+            "k": "B2B garment manufacturer",
+            "v": "An OEM that makes readymade garments for organised retailers — it supplies brands, it isn't a consumer brand itself",
+            "chip": "OEM · B2B"
+          },
+          {
+            "emoji": "🧒",
+            "k": "Kids, men's & infant wear",
+            "v": "FY26 mix: kids' garments ~38%, men's wear ~29%, infant wear ~22% — a spread across categories",
+            "chip": "MULTI-CATEGORY"
+          },
+          {
+            "emoji": "🏬",
+            "k": "Almost all wholesale",
+            "v": "About 99.75% of revenue is B2B — so it leans on a handful of large retail customers",
+            "chip": "~99.75% B2B"
+          }
+        ],
+        "dur": 44.366
+      }
+    },
+    {
+      "id": "fascinate_clients",
+      "type": "sm_iconcards",
+      "in_seconds": 72.414,
+      "out_seconds": 121.8,
+      "props": {
+        "kicker": "BUSINESS DEEP-DIVE · CLIENTS & ORDERS",
+        "title": "Clients & How It Works",
+        "color": "#EC4899",
+        "items": [
+          {
+            "emoji": "🏬",
+            "k": "Large-format retailers & wholesalers",
+            "v": "Almost all revenue (~99.75%) is B2B — an OEM partner to organised retailers and wholesalers, in India and abroad",
+            "chip": "~99.75% B2B"
+          },
+          {
+            "emoji": "✅",
+            "k": "Made only to confirmed orders",
+            "v": "It manufactures only after sample approval and a confirmed purchase order — demand-driven production is its version of an order book",
+            "chip": "MAKE-TO-ORDER"
+          },
+          {
+            "emoji": "🧵",
+            "k": "Integrated, part-outsourced",
+            "v": "Cutting, printing, finishing, QC and sampling in-house; knitting, dyeing and some stitching outsourced — across infant, kids, men's and women's wear",
+            "chip": "IN-HOUSE + OUTSOURCED"
+          }
+        ],
+        "dur": 49.886
+      }
+    },
+    {
+      "id": "fascinate_fin",
+      "type": "sm_stats",
+      "in_seconds": 122.3,
+      "out_seconds": 154.094,
+      "props": {
+        "kicker": "FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY25",
+            "to": 60,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "≈ ₹60.28 Cr (from ₹28.90 Cr)"
+          },
+          {
+            "label": "Net Profit FY25",
+            "to": 6,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "≈ ₹5.81 Cr (from ₹0.48 Cr)"
+          },
+          {
+            "label": "Issue size",
+            "to": 67,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#22D3EE",
+            "sub": "band ₹148–156 · NSE SME"
+          }
+        ],
+        "note": "Revenue doubled and profit jumped sharply — but off a tiny base, and garment margins are thin.",
+        "dur": 32.294
+      }
+    },
+    {
+      "id": "fascinate_issue",
+      "type": "sm_stats",
+      "in_seconds": 154.594,
+      "out_seconds": 184.276,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 67,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#EC4899",
+            "sub": "~₹67 Cr"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 54,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "₹53.94 Cr · ~80% funds business"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 13,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "~20% — a small sell-down"
+          }
+        ],
+        "note": "Mostly fresh — about four-fifths funds the company; a healthy structure.",
+        "dur": 30.182
+      }
+    },
+    {
+      "id": "fascinate_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 184.776,
+      "out_seconds": 217.746,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the Fresh Money Funds",
+        "color": "#EC4899",
+        "items": [
+          {
+            "emoji": "🔄",
+            "k": "Working capital",
+            "v": "An OEM needs cash to buy fabric and fund orders, so the bulk supports working capital",
+            "chip": "WC"
+          },
+          {
+            "emoji": "🏭",
+            "k": "Capacity & operations",
+            "v": "Part supports capacity and day-to-day operations as it scales",
+            "chip": "CAPACITY"
+          },
+          {
+            "emoji": "🧰",
+            "k": "General corporate",
+            "v": "The balance is for general corporate purposes",
+            "chip": "GCP"
+          }
+        ],
+        "dur": 33.47
+      }
+    },
+    {
+      "id": "fascinate_peers",
+      "type": "sm_iconcards",
+      "in_seconds": 218.246,
+      "out_seconds": 263.408,
+      "props": {
+        "kicker": "COMPETITORS · VALUATION",
+        "title": "Small Garment OEM — Few Direct Peers",
+        "color": "#EC4899",
+        "items": [
+          {
+            "emoji": "👔",
+            "k": "Big listed exporters, not peers",
+            "v": "Gokaldas Exports and Pearl Global are large LISTED garment makers — useful for scale, but far bigger and export-led, not direct peers",
+            "chip": "NOT DIRECT"
+          },
+          {
+            "emoji": "⚖️",
+            "k": "A thin-margin, competitive trade",
+            "v": "Garment OEM is low-margin and crowded; success rides on order visibility and a few large customers",
+            "chip": "LOW MARGIN"
+          },
+          {
+            "emoji": "🧾",
+            "k": "No clean SME P/E",
+            "v": "There's no like-for-like listed twin at this size, so a peer P/E comparison isn't meaningful — weigh the price against its small, young profit base",
+            "chip": "WATCH PRICE"
+          }
+        ],
+        "dur": 45.662
+      }
+    },
+    {
+      "id": "fascinate_verdict",
+      "type": "sm_myths",
+      "in_seconds": 263.908,
+      "out_seconds": 300.574,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "~99.75% B2B — customer concentration risk",
+            "f": "Revenue doubled; profit jumped sharply"
+          },
+          {
+            "m": "Thin garment margins; tiny SME",
+            "f": "~80% fresh — funds the business"
+          },
+          {
+            "m": "Big ~₹2.5 lakh minimum bid; thin liquidity",
+            "f": "Multi-category spread; organised-retail demand"
+          }
+        ],
+        "dur": 37.166
+      }
+    },
+    {
+      "id": "fascinate_apply",
+      "type": "sm_iconcards",
+      "in_seconds": 301.074,
+      "out_seconds": 350.434,
+      "props": {
+        "kicker": "HOW TO APPLY · SME IPO",
+        "title": "Platform & Money Needed",
+        "color": "#EC4899",
+        "items": [
+          {
+            "emoji": "🏢",
+            "k": "Lists on NSE SME",
+            "v": "A separate platform for small companies — NOT the mainboard. Lot sizes, liquidity and risk all differ",
+            "chip": "SME"
+          },
+          {
+            "emoji": "💰",
+            "k": "A large minimum bid",
+            "v": "One lot is 1,600 shares. The minimum you need is about ₹2.5 lakh — far above a mainboard IPO's ~₹15,000",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "⚠️",
+            "k": "Higher risk, thin liquidity",
+            "v": "SME stocks are volatile and lightly traded, with lighter disclosure — invest only money you can afford to lock up",
+            "chip": "RISK"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE/BSE SME IPO pages, Chittorgarh or your broker app; allotment is by lottery if oversubscribed",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 49.86
+      }
+    },
+    {
+      "id": "fascinate_recap",
+      "type": "sm_recap",
+      "in_seconds": 350.934,
+      "out_seconds": 410.35,
+      "props": {
+        "title": "Fascinate Textiles IPO — at a Glance",
+        "items": [
+          "Business: B2B readymade garment OEM (kids/men/infant)",
+          "FY25: revenue ₹60.28 Cr, profit ₹5.81 Cr (both jumped)",
+          "₹67 Cr issue — ~80% fresh; NSE SME",
+          "No direct listed peer — no meaningful P/E",
+          "SME min ~₹2.5 lakh · GMP flat at open (unofficial)"
+        ],
+        "closer": "Fast-growing off a tiny base with a clean structure — but a thin-margin, concentrated SME. Read the RHP; decide for yourself.",
+        "dur": 59.916
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.935,
+      "Let's break down the Fascinate Textiles I-P-O —"
+    ],
+    [
+      3.935,
+      10.048,
+      "an S-M-E issue of about sixty-seven crore from a readymade-garment maker."
+    ],
+    [
+      10.048,
+      13.481,
+      "We'll cover what it does, its financials,"
+    ],
+    [
+      13.481,
+      17.333,
+      "where the money goes, who its competitors are,"
+    ],
+    [
+      17.333,
+      19.761,
+      "and how S-M-E I-P-Os differ —"
+    ],
+    [
+      19.761,
+      24.115,
+      "including the much bigger minimum you need to apply."
+    ],
+    [
+      24.115,
+      27.548,
+      "This is education, not investment advice."
+    ],
+    [
+      28.048,
+      30.145,
+      "So what does Fascinate do?"
+    ],
+    [
+      30.145,
+      34.176,
+      "It's a business-to-business garment manufacturer —"
+    ],
+    [
+      34.176,
+      39.176,
+      "an O-E-M that makes readymade clothes for organised retailers."
+    ],
+    [
+      39.176,
+      44.659,
+      "It supplies other brands; it isn't a consumer brand you'd recognise."
+    ],
+    [
+      44.659,
+      47.159,
+      "Its range spans kids' garments,"
+    ],
+    [
+      47.159,
+      50.223,
+      "about thirty-eight percent of revenue,"
+    ],
+    [
+      50.223,
+      54.819,
+      "men's wear at twenty-nine, and infant wear at twenty-two."
+    ],
+    [
+      54.819,
+      58.045,
+      "But note this: almost all of its sales —"
+    ],
+    [
+      58.045,
+      62.883,
+      "around ninety-nine point seven five percent — are wholesale,"
+    ],
+    [
+      62.883,
+      64.576,
+      "business-to-business."
+    ],
+    [
+      64.576,
+      69.495,
+      "That means it depends on a handful of large retail customers,"
+    ],
+    [
+      69.495,
+      71.914,
+      "which is a concentration risk."
+    ],
+    [
+      72.414,
+      75.035,
+      "Let's go deeper on the business."
+    ],
+    [
+      75.035,
+      76.673,
+      "Who are its clients?"
+    ],
+    [
+      76.673,
+      79.539,
+      "Almost all of Fascinate's revenue —"
+    ],
+    [
+      79.539,
+      83.143,
+      "about ninety-nine point seven five percent —"
+    ],
+    [
+      83.143,
+      85.109,
+      "is business-to-business."
+    ],
+    [
+      85.109,
+      90.35,
+      "It's an O-E-M partner to large-format retailers and wholesalers,"
+    ],
+    [
+      90.35,
+      91.988,
+      "in India and abroad."
+    ],
+    [
+      91.988,
+      94.445,
+      "Instead of a fixed order book,"
+    ],
+    [
+      94.445,
+      103.127,
+      "it works make-to-order: it manufactures only after a sample is approved and a purchase order is confirmed,"
+    ],
+    [
+      103.127,
+      105.666,
+      "so production is demand-driven."
+    ],
+    [
+      105.666,
+      109.843,
+      "It keeps the value-added steps — cutting, printing,"
+    ],
+    [
+      109.843,
+      114.019,
+      "finishing, quality control and sampling — in-house,"
+    ],
+    [
+      114.019,
+      118.196,
+      "and outsources knitting, dyeing and some stitching,"
+    ],
+    [
+      118.196,
+      121.8,
+      "across infant, kids, men's and women's wear."
+    ],
+    [
+      122.3,
+      123.886,
+      "Now the financials."
+    ],
+    [
+      123.886,
+      125.888,
+      "Revenue roughly doubled,"
+    ],
+    [
+      125.888,
+      130.895,
+      "from about twenty-nine crore to sixty point two eight crore,"
+    ],
+    [
+      130.895,
+      137.738,
+      "and net profit jumped from under half a crore to about five point eight one crore."
+    ],
+    [
+      137.738,
+      139.49,
+      "That's rapid growth —"
+    ],
+    [
+      139.49,
+      143.997,
+      "but keep it in proportion: it's off a very small base,"
+    ],
+    [
+      143.997,
+      148.086,
+      "and garment manufacturing is a thin-margin trade."
+    ],
+    [
+      148.086,
+      152.342,
+      "So it's a fast-growing micro-company, not a proven,"
+    ],
+    [
+      152.342,
+      154.094,
+      "large-scale business."
+    ],
+    [
+      154.594,
+      156.661,
+      "Where does your money go?"
+    ],
+    [
+      156.661,
+      159.885,
+      "Of the roughly sixty-seven crore issue,"
+    ],
+    [
+      159.885,
+      163.689,
+      "about fifty-four crore — some eighty percent —"
+    ],
+    [
+      163.689,
+      167.327,
+      "is a fresh issue that goes into the company."
+    ],
+    [
+      167.327,
+      172.039,
+      "The remaining thirteen crore or so is an Offer for Sale —"
+    ],
+    [
+      172.039,
+      175.099,
+      "a small sell-down by existing owners."
+    ],
+    [
+      175.099,
+      177.744,
+      "So this is a mostly-fresh issue,"
+    ],
+    [
+      177.744,
+      180.555,
+      "which is the healthier structure —"
+    ],
+    [
+      180.555,
+      184.276,
+      "four-fifths of your money funds the business."
+    ],
+    [
+      184.776,
+      187.383,
+      "What does the fresh money fund?"
+    ],
+    [
+      187.383,
+      189.318,
+      "Mostly working capital."
+    ],
+    [
+      189.318,
+      190.411,
+      "That matters,"
+    ],
+    [
+      190.411,
+      199.074,
+      "because a garment O-E-M ties up a lot of cash buying fabric and funding big orders before it gets paid."
+    ],
+    [
+      199.074,
+      203.28,
+      "Part supports capacity and operations as it grows,"
+    ],
+    [
+      203.28,
+      206.896,
+      "and the rest is general corporate purposes."
+    ],
+    [
+      206.896,
+      210.092,
+      "It's a sensible, growth-oriented use —"
+    ],
+    [
+      210.092,
+      217.746,
+      "but it also tells you this is a working-capital-hungry business that constantly needs cash."
+    ],
+    [
+      218.246,
+      220.086,
+      "Now — the competitors."
+    ],
+    [
+      220.086,
+      224.853,
+      "Fascinate is a small, business-to-business garment maker,"
+    ],
+    [
+      224.853,
+      228.198,
+      "and it doesn't have a clean listed twin."
+    ],
+    [
+      228.198,
+      232.547,
+      "The big listed names in garments — Gokaldas Exports,"
+    ],
+    [
+      232.547,
+      236.311,
+      "Pearl Global — are far larger and export-led,"
+    ],
+    [
+      236.311,
+      239.907,
+      "so they're useful only as a sense of scale,"
+    ],
+    [
+      239.907,
+      241.58,
+      "not as direct peers."
+    ],
+    [
+      241.58,
+      244.841,
+      "Garment manufacturing is a thin-margin,"
+    ],
+    [
+      244.841,
+      249.358,
+      "competitive trade that leans on a few large customers."
+    ],
+    [
+      249.358,
+      253.623,
+      "And with no comparable listed company at this size,"
+    ],
+    [
+      253.623,
+      256.299,
+      "there's no meaningful peer P-E —"
+    ],
+    [
+      256.299,
+      259.812,
+      "so judge it on its order book and margins,"
+    ],
+    [
+      259.812,
+      263.408,
+      "not on a valuation multiple against rivals."
+    ],
+    [
+      263.908,
+      265.627,
+      "Should you subscribe?"
+    ],
+    [
+      265.627,
+      269.473,
+      "The strengths — revenue doubled, profit jumped,"
+    ],
+    [
+      269.473,
+      277.576,
+      "and about eighty percent is fresh money funding the company across a spread of clothing categories."
+    ],
+    [
+      277.576,
+      278.885,
+      "The watch-outs —"
+    ],
+    [
+      278.885,
+      282.978,
+      "nearly all its sales are to a few large customers,"
+    ],
+    [
+      282.978,
+      285.024,
+      "garment margins are thin,"
+    ],
+    [
+      285.024,
+      290.098,
+      "and it's a tiny S-M-E with a big minimum bid and thin trading."
+    ],
+    [
+      290.098,
+      291.244,
+      "The takeaway —"
+    ],
+    [
+      291.244,
+      295.5,
+      "fast growth off a small base with a clean structure,"
+    ],
+    [
+      295.5,
+      298.937,
+      "but a concentrated, thin-margin micro-cap."
+    ],
+    [
+      298.937,
+      300.574,
+      "Size it accordingly."
+    ],
+    [
+      301.074,
+      306.201,
+      "Now — how do you apply, and how does an S-M-E I-P-O differ?"
+    ],
+    [
+      306.201,
+      310.025,
+      "Fascinate lists on the N-S-E S-M-E platform,"
+    ],
+    [
+      310.025,
+      315.065,
+      "separate from the mainboard, with its own rules and risks."
+    ],
+    [
+      315.065,
+      318.02,
+      "The big difference is the minimum."
+    ],
+    [
+      318.02,
+      321.496,
+      "One lot here is sixteen hundred shares —"
+    ],
+    [
+      321.496,
+      324.364,
+      "about two and a half lakh rupees."
+    ],
+    [
+      324.364,
+      327.753,
+      "That's far more than a mainboard I-P-O,"
+    ],
+    [
+      327.753,
+      330.794,
+      "where fifteen thousand gets you in."
+    ],
+    [
+      330.794,
+      334.966,
+      "And S-M-E stocks are volatile and thinly traded,"
+    ],
+    [
+      334.966,
+      338.963,
+      "so invest only what you can afford to lock up."
+    ],
+    [
+      338.963,
+      343.482,
+      "Track the live subscription on the N-S-E S-M-E page,"
+    ],
+    [
+      343.482,
+      346.35,
+      "Chittorgarh, or your broker app —"
+    ],
+    [
+      346.35,
+      350.434,
+      "allotment is by lottery if it's oversubscribed."
+    ],
+    [
+      350.934,
+      353.588,
+      "Let's recap Fascinate Textiles."
+    ],
+    [
+      353.588,
+      359.324,
+      "A small business-to-business garment maker for organised retailers,"
+    ],
+    [
+      359.324,
+      361.893,
+      "growing fast off a tiny base —"
+    ],
+    [
+      361.893,
+      364.803,
+      "revenue doubled and profit jumped."
+    ],
+    [
+      364.803,
+      368.228,
+      "The issue is about eighty percent fresh,"
+    ],
+    [
+      368.228,
+      370.882,
+      "mainly funding working capital."
+    ],
+    [
+      370.882,
+      375.248,
+      "But nearly all its sales go to a few big customers,"
+    ],
+    [
+      375.248,
+      376.704,
+      "margins are thin,"
+    ],
+    [
+      376.704,
+      380.984,
+      "and there's no listed peer to benchmark the price."
+    ],
+    [
+      380.984,
+      385.608,
+      "The S-M-E minimum is about two and a half lakh rupees."
+    ],
+    [
+      385.608,
+      389.717,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      389.717,
+      392.114,
+      "it is not investment advice,"
+    ],
+    [
+      392.114,
+      394.94,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      394.94,
+      398.193,
+      "and not a prediction of listing gains."
+    ],
+    [
+      398.193,
+      402.73,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      402.73,
+      408.638,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      408.638,
+      410.35,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/fascinate.wav",
+      "volume": 1.0
+    }
+  }
+}

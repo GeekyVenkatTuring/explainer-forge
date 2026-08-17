@@ -1,0 +1,2001 @@
+{
+ "cuts": [
+  {
+   "id": "dp22-flyweight_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 29.436,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 22",
+    "line1": "A million objects,",
+    "line2": "a few megabytes",
+    "sub": "share the heavy, identical parts so millions of instances cost almost nothing",
+    "dur": 29.936
+   }
+  },
+  {
+   "id": "dp22-flyweight_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 29.936,
+   "out_seconds": 62.188,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Rendering a forest",
+    "situation": "A game renders a forest of a million trees. Each tree has a position. But there are only three species \u2014 and each species' mesh and texture is several megabytes.",
+    "actors": [
+     {
+      "emoji": "\ud83c\udf32",
+      "label": "1,000,000 trees"
+     },
+     {
+      "emoji": "\ud83c\udfa8",
+      "label": "3 heavy species"
+     },
+     {
+      "emoji": "\ud83d\udccd",
+      "label": "\u2026each at a position"
+     }
+    ],
+    "ask": "How do you give a million trees their own position without a million copies of the mesh?",
+    "dur": 32.752
+   }
+  },
+  {
+   "id": "dp22-flyweight_naive",
+   "type": "dp_code",
+   "in_seconds": 62.688,
+   "out_seconds": 97.731,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "Each tree carries everything.",
+    "file": "Tree.java",
+    "lines": [
+     {
+      "t": "class Tree {"
+     },
+     {
+      "t": "  int x, y;                     // unique per tree"
+     },
+     {
+      "t": "  Mesh mesh;                    // ~2 MB \u2014 DUPLICATED",
+      "s": "hi"
+     },
+     {
+      "t": "  Texture texture;              // ~2 MB \u2014 DUPLICATED",
+      "s": "hi"
+     },
+     {
+      "t": "  String species;"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "// 1,000,000 trees \u00d7 4 MB = 4 TERABYTES. it won't fit.",
+      "s": "hi"
+     }
+    ],
+    "note": "Every tree stores its own mesh + texture. A million near-identical copies.",
+    "dur": 35.543
+   }
+  },
+  {
+   "id": "dp22-flyweight_pain",
+   "type": "dp_pain",
+   "in_seconds": 98.231,
+   "out_seconds": 137.428,
+   "props": {
+    "title": "\"We need a denser forest. And two more species.\"",
+    "file": "memory.java",
+    "lines": [
+     {
+      "t": "// 1,000,000 trees, each with its own mesh+texture:",
+      "s": "hi"
+     },
+     {
+      "t": "//   4 TB \u2014 impossible",
+      "s": "hi"
+     },
+     {
+      "t": "// push to 5,000,000 for a denser forest:",
+      "s": "hi"
+     },
+     {
+      "t": "//   20 TB \u2014 more impossible",
+      "s": "hi"
+     },
+     {
+      "t": "// the mesh bytes are IDENTICAL across most trees"
+     }
+    ],
+    "smell": "Massive per-object data that is identical across objects",
+    "touched": [
+     "mesh + texture copied per tree",
+     "memory scales with tree COUNT",
+     "denser forest \u2192 linearly worse",
+     "3 real appearances, millions of copies"
+    ],
+    "dur": 39.697
+   }
+  },
+  {
+   "id": "dp22-flyweight_insight",
+   "type": "dp_insight",
+   "in_seconds": 137.928,
+   "out_seconds": 182.043,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "The mesh + texture \u2014 one per species",
+     "Shared, identical across most trees",
+     "Call this the INTRINSIC state"
+    ],
+    "varies": [
+     "Each tree's position (and scale)",
+     "Unique per instance",
+     "Call this the EXTRINSIC state"
+    ],
+    "principle": "Split shared (intrinsic) from unique (extrinsic); store the shared part ONCE and point to it.",
+    "dur": 44.615
+   }
+  },
+  {
+   "id": "dp22-flyweight_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 182.543,
+   "out_seconds": 226.547,
+   "props": {
+    "title": "Movable type",
+    "emoji": "\ud83d\udd24",
+    "analogy": "A press has ONE metal 'e' and stamps it in thousands of places \u2014 it doesn't cast a new 'e' for every word.",
+    "map": [
+     {
+      "from": "The one metal letter",
+      "to": "the shared flyweight"
+     },
+     {
+      "from": "Where it's stamped",
+      "to": "the extrinsic position"
+     },
+     {
+      "from": "The type case (pool)",
+      "to": "the flyweight factory"
+     },
+     {
+      "from": "The printed page",
+      "to": "your million trees"
+     }
+    ],
+    "breaks": "metal type physically moves between spots; a flyweight is referenced from many places at once, never moved.",
+    "dur": 44.504
+   }
+  },
+  {
+   "id": "dp22-flyweight_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 227.047,
+   "out_seconds": 263.534,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "Extract the shared intrinsic state",
+    "file": "TreeType.java",
+    "lines": [
+     {
+      "t": "class TreeType {                  // the flyweight",
+      "s": "add"
+     },
+     {
+      "t": "  final Mesh mesh;                // heavy, SHARED",
+      "s": "add"
+     },
+     {
+      "t": "  final Texture texture;          // heavy, SHARED",
+      "s": "add"
+     },
+     {
+      "t": "  final String species;",
+      "s": "add"
+     },
+     {
+      "t": "  void draw(int x, int y) { ... } // extrinsic passed IN",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "One TreeType per species \u2014 created once, shared by millions. Immutable.",
+    "dur": 36.987
+   }
+  },
+  {
+   "id": "dp22-flyweight_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 264.034,
+   "out_seconds": 299.374,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "A factory that shares, never duplicates",
+    "file": "TreeFactory.java",
+    "lines": [
+     {
+      "t": "class TreeFactory {",
+      "s": "hi"
+     },
+     {
+      "t": "  static Map<String,TreeType> pool = new HashMap<>();",
+      "s": "hi"
+     },
+     {
+      "t": "  static TreeType get(String species, ...) {",
+      "s": "hi"
+     },
+     {
+      "t": "    return pool.computeIfAbsent(species,",
+      "s": "hi"
+     },
+     {
+      "t": "      s -> new TreeType(loadMesh(s), ...));   // once",
+      "s": "hi"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "First request for a species builds it; every request after shares that one.",
+    "dur": 35.84
+   }
+  },
+  {
+   "id": "dp22-flyweight_try",
+   "type": "dp_try",
+   "in_seconds": 299.874,
+   "out_seconds": 326.861,
+   "props": {
+    "title": "Write TreeFactory.get()",
+    "file": "TreeFactory.java",
+    "lines": [
+     {
+      "t": "static Map<String,TreeType> pool = new HashMap<>();"
+     },
+     {
+      "t": "static TreeType get(String species) {"
+     },
+     {
+      "t": "  // \u25af return the shared one, or make it if it's new",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Return the existing TreeType for a species, creating and caching it only the first time.",
+    "hint": "pool.computeIfAbsent(species, s -> new TreeType(load(s)));",
+    "dur": 27.487
+   }
+  },
+  {
+   "id": "dp22-flyweight_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 327.361,
+   "out_seconds": 363.745,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "A million tiny trees, three shared types",
+    "file": "Forest.java",
+    "lines": [
+     {
+      "t": "class Tree {                      // the context",
+      "s": "add"
+     },
+     {
+      "t": "  int x, y;                       // ONLY extrinsic state",
+      "s": "add"
+     },
+     {
+      "t": "  TreeType type;                  // a POINTER, not a copy",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "for (int i=0;i<1_000_000;i++)"
+     },
+     {
+      "t": "  forest.add(new Tree(rx(), ry(), TreeFactory.get(\"oak\")));",
+      "s": "hi"
+     }
+    ],
+    "note": "Each Tree = 2 ints + one shared pointer. The mesh exists once.",
+    "dur": 36.884
+   }
+  },
+  {
+   "id": "dp22-flyweight_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 364.245,
+   "out_seconds": 406.863,
+   "props": {
+    "requirement": "\"Fit a 5,000,000-tree forest in memory\"",
+    "naiveLabel": "Fused",
+    "naiveCost": "Mesh copied into every tree.",
+    "naiveSteps": [
+     "5M \u00d7 ~4 MB each",
+     "\u2248 20 TB \u2014 impossible",
+     "memory scales with COUNT"
+    ],
+    "patLabel": "Flyweight",
+    "patCost": "3 shared types + 5M tiny trees.",
+    "patFile": "the math",
+    "patLines": [
+     {
+      "t": "3 TreeTypes  \u00d7 ~4 MB   = 12 MB   (shared)",
+      "s": "add"
+     },
+     {
+      "t": "5,000,000 Trees \u00d7 ~16 B = 80 MB   (positions)",
+      "s": "add"
+     },
+     {
+      "t": "// total \u2248 92 MB, not 20 TB",
+      "s": "add"
+     },
+     {
+      "t": "// memory scales with SPECIES, not tree count",
+      "s": "add"
+     }
+    ],
+    "dur": 43.118
+   }
+  },
+  {
+   "id": "dp22-flyweight_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 407.363,
+   "out_seconds": 449.719,
+   "props": {
+    "name": "The Flyweight Pattern",
+    "plain": "Split shared intrinsic state from unique extrinsic state; store the intrinsic part once and reference it from every object.",
+    "nodes": [
+     {
+      "id": "fly",
+      "title": "TreeType",
+      "stereo": "flyweight",
+      "members": [
+       "- mesh, texture",
+       "(shared intrinsic)"
+      ],
+      "x": 740,
+      "y": 360,
+      "w": 440,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "fac",
+      "title": "TreeFactory",
+      "stereo": "factory",
+      "members": [
+       "- pool: Map",
+       "+ get(species)"
+      ],
+      "x": 150,
+      "y": 360,
+      "w": 380,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "ctx",
+      "title": "Tree",
+      "stereo": "context",
+      "members": [
+       "- x, y (extrinsic)",
+       "\u2192 shared TreeType"
+      ],
+      "x": 1400,
+      "y": 360,
+      "w": 380,
+      "color": "#A78BFA"
+     }
+    ],
+    "edges": [
+     {
+      "from": "fac",
+      "to": "fly",
+      "kind": "has"
+     },
+     {
+      "from": "ctx",
+      "to": "fly",
+      "kind": "has"
+     }
+    ],
+    "dur": 42.856
+   }
+  },
+  {
+   "id": "dp22-flyweight_map",
+   "type": "dp_map",
+   "in_seconds": 450.219,
+   "out_seconds": 490.253,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Flyweight",
+      "your": "TreeType (intrinsic: mesh\u2026)"
+     },
+     {
+      "role": "FlyweightFactory",
+      "your": "TreeFactory (the shared pool)"
+     },
+     {
+      "role": "Extrinsic state",
+      "your": "Tree's x, y \u2014 passed or stored"
+     },
+     {
+      "role": "Client",
+      "your": "Forest \u2014 a million Trees"
+     }
+    ],
+    "plain": "The factory shares immutable flyweights; each context supplies the extrinsic state the flyweight needs.",
+    "gof": "Use sharing to support large numbers of fine-grained objects efficiently.",
+    "dur": 40.534
+   }
+  },
+  {
+   "id": "dp22-flyweight_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 490.753,
+   "out_seconds": 538.111,
+   "props": {
+    "title": "Only pays at massive scale",
+    "costs": [
+     "Splitting intrinsic vs extrinsic adds complexity",
+     "Flyweights must be immutable and shared",
+     "Extrinsic state must live elsewhere"
+    ],
+    "dont": [
+     "You don't have that many objects",
+     "Little state is actually shared",
+     "The objects are already small"
+    ],
+    "signal": "you have a huge number of objects and most of each object's memory is identical across them.",
+    "dur": 47.858
+   }
+  },
+  {
+   "id": "dp22-flyweight_recap",
+   "type": "dp_recap",
+   "in_seconds": 538.611,
+   "out_seconds": 594.361,
+   "props": {
+    "title": "Flyweight, in one breath",
+    "items": [
+     "Storing heavy, identical data in every one of millions of objects multiplied it into terabytes.",
+     "Most of that state is shared \u2014 so split intrinsic (shared) from extrinsic (unique), and store the shared part once.",
+     "Flyweight: a factory shares one immutable object across millions of contexts. Memory scales with species, not count."
+    ],
+    "challenge": "A text editor renders a document of millions of characters \u2014 each glyph shares a font, but each has a position and color.",
+    "question": "Does Flyweight fit? What's intrinsic, what's extrinsic, and what does the factory share?",
+    "dur": 56.25
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.295,
+   "Sometimes you need not dozens of objects,"
+  ],
+  [
+   2.295,
+   2.951,
+   "but millions."
+  ],
+  [
+   3.582,
+   5.55,
+   "A forest with a million trees."
+  ],
+  [
+   5.55,
+   7.517,
+   "A document with a million characters."
+  ],
+  [
+   7.517,
+   9.484,
+   "A map with a million markers."
+  ],
+  [
+   10.116,
+   12.739,
+   "If each one carries its own copy of"
+  ],
+  [
+   12.739,
+   14.706,
+   "the heavy data \u2014 the mesh,"
+  ],
+  [
+   14.706,
+   15.362,
+   "the glyph,"
+  ],
+  [
+   15.362,
+   17.985,
+   "the icon \u2014 you multiply that weight by"
+  ],
+  [
+   17.985,
+   18.64,
+   "a million,"
+  ],
+  [
+   18.64,
+   21.263,
+   "and you run out of memory before you"
+  ],
+  [
+   21.263,
+   21.591,
+   "begin."
+  ],
+  [
+   22.223,
+   24.846,
+   "But most of that data is identical across"
+  ],
+  [
+   24.846,
+   25.829,
+   "all of them."
+  ],
+  [
+   25.829,
+   28.125,
+   "There is a way to share it."
+  ],
+  [
+   28.125,
+   29.436,
+   "Let's grow a forest."
+  ],
+  [
+   29.936,
+   31.352,
+   "Here is the scene:"
+  ],
+  [
+   31.352,
+   33.475,
+   "a forest of a million trees."
+  ],
+  [
+   34.106,
+   36.937,
+   "Every tree needs its own position in the"
+  ],
+  [
+   36.937,
+   39.768,
+   "world \u2014 that part is genuinely unique to"
+  ],
+  [
+   39.768,
+   40.476,
+   "each one."
+  ],
+  [
+   41.108,
+   43.939,
+   "But there are only three species of tree."
+  ],
+  [
+   43.939,
+   46.77,
+   "And each species carries a mesh and a"
+  ],
+  [
+   46.77,
+   48.539,
+   "texture that weigh several megabytes."
+  ],
+  [
+   49.171,
+   50.232,
+   "A million trees,"
+  ],
+  [
+   50.232,
+   52.002,
+   "but only three actual appearances."
+  ],
+  [
+   52.633,
+   55.464,
+   "So how do you give every tree its"
+  ],
+  [
+   55.464,
+   56.172,
+   "own position,"
+  ],
+  [
+   56.172,
+   59.003,
+   "without storing a million separate copies of a"
+  ],
+  [
+   59.003,
+   61.834,
+   "mesh that is really only one of three"
+  ],
+  [
+   61.834,
+   62.188,
+   "things?"
+  ],
+  [
+   62.688,
+   63.836,
+   "The direct approach:"
+  ],
+  [
+   63.836,
+   66.896,
+   "each tree is a self-contained object with\neverything"
+  ],
+  [
+   66.896,
+   67.661,
+   "it needs."
+  ],
+  [
+   68.293,
+   69.823,
+   "Its position \u2014 fine,"
+  ],
+  [
+   69.823,
+   70.971,
+   "that is unique."
+  ],
+  [
+   71.602,
+   73.515,
+   "But also its own mesh,"
+  ],
+  [
+   73.515,
+   75.045,
+   "and its own texture."
+  ],
+  [
+   75.045,
+   76.193,
+   "Several megabytes each."
+  ],
+  [
+   76.824,
+   77.589,
+   "Now multiply."
+  ],
+  [
+   77.589,
+   78.737,
+   "A million trees,"
+  ],
+  [
+   78.737,
+   81.797,
+   "each holding four megabytes of mesh and texture,"
+  ],
+  [
+   81.797,
+   84.858,
+   "is four terabytes of memory \u2014 for data"
+  ],
+  [
+   84.858,
+   87.536,
+   "that is really just three distinct appearances,"
+  ],
+  [
+   87.536,
+   89.448,
+   "copied a million times over."
+  ],
+  [
+   90.08,
+   92.375,
+   "The program does not run slowly."
+  ],
+  [
+   92.375,
+   94.671,
+   "It does not run at all."
+  ],
+  [
+   94.671,
+   96.201,
+   "It cannot allocate that,"
+  ],
+  [
+   96.201,
+   97.731,
+   "and it never could."
+  ],
+  [
+   98.231,
+   100.326,
+   "And the requirements only push harder."
+  ],
+  [
+   100.326,
+   102.771,
+   "A denser forest \u2014 five million trees."
+  ],
+  [
+   103.403,
+   105.498,
+   "The memory does not just grow;"
+  ],
+  [
+   105.498,
+   108.292,
+   "it grows with the raw count of objects,"
+  ],
+  [
+   108.292,
+   111.086,
+   "because each one drags its own full copy"
+  ],
+  [
+   111.086,
+   112.483,
+   "of the heavy data."
+  ],
+  [
+   113.115,
+   115.909,
+   "Five million times four megabytes is twenty\nterabytes."
+  ],
+  [
+   116.54,
+   119.334,
+   "But step back and look at what is"
+  ],
+  [
+   119.334,
+   120.033,
+   "being stored."
+  ],
+  [
+   120.033,
+   121.779,
+   "Across those millions of trees,"
+  ],
+  [
+   121.779,
+   124.573,
+   "the mesh bytes are identical \u2014 there are"
+  ],
+  [
+   124.573,
+   127.367,
+   "only three distinct meshes in the entire forest."
+  ],
+  [
+   127.998,
+   129.046,
+   "You are paying,"
+  ],
+  [
+   129.046,
+   130.443,
+   "millions of times over,"
+  ],
+  [
+   130.443,
+   132.539,
+   "to store the exact same thing."
+  ],
+  [
+   132.539,
+   134.983,
+   "The waste is not a little overhead;"
+  ],
+  [
+   134.983,
+   137.428,
+   "it is essentially all of the memory."
+  ],
+  [
+   137.928,
+   139.015,
+   "What is fixed,"
+  ],
+  [
+   139.015,
+   140.103,
+   "and what varies?"
+  ],
+  [
+   140.103,
+   141.915,
+   "This is the whole insight,"
+  ],
+  [
+   141.915,
+   143.002,
+   "so look closely."
+  ],
+  [
+   143.634,
+   146.534,
+   "The mesh and texture are fixed per species"
+  ],
+  [
+   146.534,
+   147.983,
+   "\u2014 three of them,"
+  ],
+  [
+   147.983,
+   150.521,
+   "identical across every tree of that kind."
+  ],
+  [
+   150.521,
+   152.333,
+   "Call that the intrinsic state:"
+  ],
+  [
+   152.333,
+   152.695,
+   "shared,"
+  ],
+  [
+   152.695,
+   154.87,
+   "and the same for many objects."
+  ],
+  [
+   155.502,
+   158.039,
+   "The position is unique to each tree."
+  ],
+  [
+   158.039,
+   159.851,
+   "Call that the extrinsic state:"
+  ],
+  [
+   159.851,
+   161.301,
+   "it varies per instance."
+  ],
+  [
+   161.932,
+   164.107,
+   "The naive design fused the two,"
+  ],
+  [
+   164.107,
+   167.007,
+   "so the shared part got copied a million"
+  ],
+  [
+   167.007,
+   167.369,
+   "times."
+  ],
+  [
+   168.001,
+   169.45,
+   "Here is the move."
+  ],
+  [
+   170.082,
+   171.169,
+   "Split them apart."
+  ],
+  [
+   171.169,
+   172.257,
+   "Store the heavy,"
+  ],
+  [
+   172.257,
+   175.156,
+   "shared intrinsic state exactly once \u2014 one object"
+  ],
+  [
+   175.156,
+   178.056,
+   "per species \u2014 and let every tree simply"
+  ],
+  [
+   178.056,
+   179.143,
+   "point to it,"
+  ],
+  [
+   179.143,
+   182.043,
+   "while keeping only its own tiny extrinsic\nposition."
+  ],
+  [
+   182.543,
+   184.518,
+   "Think of an old printing press,"
+  ],
+  [
+   184.518,
+   185.506,
+   "and movable type."
+  ],
+  [
+   186.137,
+   188.771,
+   "To print a page full of the letter"
+  ],
+  [
+   188.771,
+   189.1,
+   "e,"
+  ],
+  [
+   189.1,
+   191.733,
+   "the printer does not cast a new metal"
+  ],
+  [
+   191.733,
+   193.379,
+   "e for every single occurrence."
+  ],
+  [
+   194.011,
+   195.657,
+   "There is one metal e,"
+  ],
+  [
+   195.657,
+   198.29,
+   "and it is inked and stamped at thousands"
+  ],
+  [
+   198.29,
+   198.949,
+   "of positions."
+  ],
+  [
+   198.949,
+   200.266,
+   "The letter is shared;"
+  ],
+  [
+   200.266,
+   201.911,
+   "only where it lands changes."
+  ],
+  [
+   202.543,
+   205.177,
+   "The one metal letter is the shared flyweight"
+  ],
+  [
+   205.177,
+   206.493,
+   "\u2014 our tree type."
+  ],
+  [
+   206.493,
+   209.127,
+   "Where it gets stamped is the extrinsic position."
+  ],
+  [
+   209.127,
+   211.76,
+   "The case that holds the reusable letters is"
+  ],
+  [
+   211.76,
+   212.748,
+   "the flyweight factory."
+  ],
+  [
+   212.748,
+   215.381,
+   "And the finished page is your million trees."
+  ],
+  [
+   216.013,
+   217.001,
+   "Where it strains:"
+  ],
+  [
+   217.001,
+   219.634,
+   "a piece of metal type is physically moved"
+  ],
+  [
+   219.634,
+   220.951,
+   "from spot to spot."
+  ],
+  [
+   220.951,
+   223.584,
+   "A flyweight in memory is not moved \u2014"
+  ],
+  [
+   223.584,
+   226.218,
+   "it is referenced from a million places at"
+  ],
+  [
+   226.218,
+   226.547,
+   "once."
+  ],
+  [
+   227.047,
+   227.77,
+   "The refactor,"
+  ],
+  [
+   227.77,
+   228.492,
+   "step one."
+  ],
+  [
+   229.124,
+   230.208,
+   "Pull the heavy,"
+  ],
+  [
+   230.208,
+   233.098,
+   "shared state into its own class \u2014 the"
+  ],
+  [
+   233.098,
+   233.459,
+   "TreeType."
+  ],
+  [
+   233.459,
+   234.904,
+   "It holds the mesh,"
+  ],
+  [
+   234.904,
+   235.627,
+   "the texture,"
+  ],
+  [
+   235.627,
+   236.349,
+   "the species."
+  ],
+  [
+   236.349,
+   237.433,
+   "The intrinsic state."
+  ],
+  [
+   238.065,
+   240.955,
+   "There will be exactly one of these per"
+  ],
+  [
+   240.955,
+   242.4,
+   "species \u2014 three objects,"
+  ],
+  [
+   242.4,
+   242.762,
+   "total,"
+  ],
+  [
+   242.762,
+   244.207,
+   "for the whole forest."
+  ],
+  [
+   244.838,
+   247.728,
+   "And notice its draw method takes the position"
+  ],
+  [
+   247.728,
+   248.451,
+   "as parameters."
+  ],
+  [
+   248.451,
+   251.341,
+   "The flyweight does not store where it is"
+  ],
+  [
+   251.341,
+   251.703,
+   "drawn;"
+  ],
+  [
+   251.703,
+   254.593,
+   "that extrinsic detail is handed in at draw"
+  ],
+  [
+   254.593,
+   254.954,
+   "time."
+  ],
+  [
+   255.586,
+   255.947,
+   "Crucially,"
+  ],
+  [
+   255.947,
+   257.392,
+   "a TreeType is immutable."
+  ],
+  [
+   257.392,
+   260.282,
+   "Because it is shared by millions of trees,"
+  ],
+  [
+   260.282,
+   263.173,
+   "no single tree can be allowed to change"
+  ],
+  [
+   263.173,
+   263.534,
+   "it."
+  ],
+  [
+   264.034,
+   264.763,
+   "Step two:"
+  ],
+  [
+   264.763,
+   266.586,
+   "a factory that guarantees sharing."
+  ],
+  [
+   267.218,
+   270.135,
+   "The tree factory keeps a pool \u2014 a"
+  ],
+  [
+   270.135,
+   273.051,
+   "map from species name to its one TreeType."
+  ],
+  [
+   273.683,
+   276.6,
+   "The first time anyone asks for an oak,"
+  ],
+  [
+   276.6,
+   278.787,
+   "the factory builds the oak type,"
+  ],
+  [
+   278.787,
+   280.246,
+   "loads its heavy mesh,"
+  ],
+  [
+   280.246,
+   281.339,
+   "and stores it."
+  ],
+  [
+   281.971,
+   284.888,
+   "Every request after that returns the very same"
+  ],
+  [
+   284.888,
+   285.252,
+   "object."
+  ],
+  [
+   285.884,
+   288.801,
+   "So no matter how many million oaks you"
+  ],
+  [
+   288.801,
+   289.165,
+   "plant,"
+  ],
+  [
+   289.165,
+   292.082,
+   "there is exactly one oak TreeType in memory,"
+  ],
+  [
+   292.082,
+   293.905,
+   "handed out over and over."
+  ],
+  [
+   293.905,
+   296.822,
+   "The factory is the single gate that makes"
+  ],
+  [
+   296.822,
+   299.374,
+   "sure the heavy data is never duplicated."
+  ],
+  [
+   299.874,
+   301.673,
+   "Your turn \u2014 pause here."
+  ],
+  [
+   302.304,
+   303.743,
+   "Write the factory's get."
+  ],
+  [
+   304.375,
+   305.454,
+   "Given a species,"
+  ],
+  [
+   305.454,
+   308.331,
+   "it must return the one shared TreeType for"
+  ],
+  [
+   308.331,
+   308.691,
+   "it."
+  ],
+  [
+   309.323,
+   312.2,
+   "If this is the first time anyone has"
+  ],
+  [
+   312.2,
+   313.639,
+   "asked for that species,"
+  ],
+  [
+   313.639,
+   316.517,
+   "build it \u2014 load the heavy mesh \u2014"
+  ],
+  [
+   316.517,
+   318.675,
+   "and cache it in the pool."
+  ],
+  [
+   318.675,
+   319.755,
+   "Every time after,"
+  ],
+  [
+   319.755,
+   321.193,
+   "return the cached one."
+  ],
+  [
+   321.825,
+   324.703,
+   "The whole memory saving hinges on this method"
+  ],
+  [
+   324.703,
+   326.861,
+   "never building the same type twice."
+  ],
+  [
+   327.361,
+   328.074,
+   "Step three,"
+  ],
+  [
+   328.074,
+   329.856,
+   "and the forest comes together."
+  ],
+  [
+   330.487,
+   332.269,
+   "A Tree is now tiny."
+  ],
+  [
+   332.269,
+   335.121,
+   "It holds its position \u2014 its extrinsic state"
+  ],
+  [
+   335.121,
+   337.972,
+   "\u2014 and a pointer to a shared TreeType."
+  ],
+  [
+   337.972,
+   339.041,
+   "That is all."
+  ],
+  [
+   339.041,
+   340.823,
+   "Two integers and a reference."
+  ],
+  [
+   341.454,
+   343.236,
+   "To plant a million trees,"
+  ],
+  [
+   343.236,
+   345.018,
+   "you loop a million times,"
+  ],
+  [
+   345.018,
+   347.87,
+   "each time making a small Tree and pointing"
+  ],
+  [
+   347.87,
+   350.721,
+   "it at a shared type from the factory."
+  ],
+  [
+   351.352,
+   353.491,
+   "The million Tree objects are featherweight."
+  ],
+  [
+   353.491,
+   356.342,
+   "And behind them all sit just three heavy"
+  ],
+  [
+   356.342,
+   357.055,
+   "TreeType objects,"
+  ],
+  [
+   357.055,
+   358.48,
+   "referenced again and again."
+  ],
+  [
+   359.112,
+   361.963,
+   "The mesh that used to exist a million"
+  ],
+  [
+   361.963,
+   363.745,
+   "times now exists exactly three."
+  ],
+  [
+   364.245,
+   366.943,
+   "Now the requirement that was flatly impossible."
+  ],
+  [
+   366.943,
+   369.256,
+   "Fit a five-million-tree forest in memory."
+  ],
+  [
+   369.888,
+   370.274,
+   "Fused,"
+  ],
+  [
+   370.274,
+   373.358,
+   "that was five million times four megabytes \u2014"
+  ],
+  [
+   373.358,
+   374.129,
+   "twenty terabytes."
+  ],
+  [
+   374.129,
+   375.67,
+   "It could never load."
+  ],
+  [
+   376.302,
+   377.073,
+   "With flyweights,"
+  ],
+  [
+   377.073,
+   378.23,
+   "do the math."
+  ],
+  [
+   378.23,
+   379.772,
+   "Three shared tree types,"
+  ],
+  [
+   379.772,
+   381.314,
+   "at four megabytes each,"
+  ],
+  [
+   381.314,
+   382.856,
+   "is twelve megabytes total."
+  ],
+  [
+   382.856,
+   384.012,
+   "Five million trees,"
+  ],
+  [
+   384.012,
+   386.325,
+   "at sixteen bytes of position each,"
+  ],
+  [
+   386.325,
+   387.481,
+   "is eighty megabytes."
+  ],
+  [
+   388.113,
+   391.197,
+   "The whole forest fits in about ninety megabytes,"
+  ],
+  [
+   391.197,
+   392.739,
+   "instead of twenty terabytes."
+  ],
+  [
+   393.371,
+   395.684,
+   "And here is the deep shift:"
+  ],
+  [
+   395.684,
+   398.768,
+   "memory no longer scales with the number of"
+  ],
+  [
+   398.768,
+   399.153,
+   "trees."
+  ],
+  [
+   399.153,
+   401.852,
+   "It scales with the number of species."
+  ],
+  [
+   401.852,
+   404.936,
+   "You could plant fifty million for barely more."
+  ],
+  [
+   404.936,
+   406.863,
+   "The count became almost free."
+  ],
+  [
+   407.363,
+   409.161,
+   "This is the Flyweight pattern."
+  ],
+  [
+   409.793,
+   410.872,
+   "In the center,"
+  ],
+  [
+   410.872,
+   413.748,
+   "the flyweight itself \u2014 the TreeType \u2014 holding"
+  ],
+  [
+   413.748,
+   416.625,
+   "the heavy intrinsic state that is shared by"
+  ],
+  [
+   416.625,
+   417.345,
+   "many objects."
+  ],
+  [
+   417.976,
+   419.055,
+   "On the left,"
+  ],
+  [
+   419.055,
+   419.774,
+   "the factory,"
+  ],
+  [
+   419.774,
+   422.651,
+   "which keeps a pool and guarantees that each"
+  ],
+  [
+   422.651,
+   425.528,
+   "flyweight is created only once and then shared."
+  ],
+  [
+   426.16,
+   427.239,
+   "On the right,"
+  ],
+  [
+   427.239,
+   430.115,
+   "the context \u2014 the Tree \u2014 which holds"
+  ],
+  [
+   430.115,
+   431.554,
+   "only the extrinsic state,"
+  ],
+  [
+   431.554,
+   432.273,
+   "its position,"
+  ],
+  [
+   432.273,
+   434.79,
+   "plus a reference to a shared flyweight."
+  ],
+  [
+   435.422,
+   438.299,
+   "Both arrows point at the flyweight in the"
+  ],
+  [
+   438.299,
+   438.659,
+   "middle:"
+  ],
+  [
+   438.659,
+   440.097,
+   "the factory pools it,"
+  ],
+  [
+   440.097,
+   442.255,
+   "the millions of contexts reference it."
+  ],
+  [
+   442.886,
+   445.044,
+   "One heavy object in the center,"
+  ],
+  [
+   445.044,
+   446.482,
+   "pointed to from everywhere."
+  ],
+  [
+   446.482,
+   449.359,
+   "That is how a million objects cost almost"
+  ],
+  [
+   449.359,
+   449.719,
+   "nothing."
+  ],
+  [
+   450.219,
+   451.004,
+   "The names,"
+  ],
+  [
+   451.004,
+   452.573,
+   "mapped to your code."
+  ],
+  [
+   453.204,
+   455.166,
+   "The Flyweight is the TreeType,"
+  ],
+  [
+   455.166,
+   456.343,
+   "carrying the intrinsic,"
+  ],
+  [
+   456.343,
+   457.127,
+   "shared state."
+  ],
+  [
+   457.759,
+   459.72,
+   "The FlyweightFactory is the TreeFactory,"
+  ],
+  [
+   459.72,
+   462.467,
+   "which owns the pool and enforces sharing."
+  ],
+  [
+   463.098,
+   466.237,
+   "The extrinsic state is each tree's position \u2014"
+  ],
+  [
+   466.237,
+   467.806,
+   "the part that varies,"
+  ],
+  [
+   467.806,
+   470.944,
+   "kept in the context or passed in at"
+  ],
+  [
+   470.944,
+   471.729,
+   "draw time."
+  ],
+  [
+   472.36,
+   475.499,
+   "And the Client is the forest full of"
+  ],
+  [
+   475.499,
+   475.891,
+   "trees."
+  ],
+  [
+   476.523,
+   478.092,
+   "The Gang of Four,"
+  ],
+  [
+   478.092,
+   480.053,
+   "and it is refreshingly short:"
+  ],
+  [
+   480.053,
+   483.192,
+   "use sharing to support large numbers of\nfine-grained"
+  ],
+  [
+   483.192,
+   483.976,
+   "objects efficiently."
+  ],
+  [
+   483.976,
+   487.115,
+   "The entire pattern is that one word \u2014"
+  ],
+  [
+   487.115,
+   489.468,
+   "sharing \u2014 applied to the heavy,"
+  ],
+  [
+   489.468,
+   490.253,
+   "identical parts."
+  ],
+  [
+   490.753,
+   493.149,
+   "Flyweight only earns its complexity at scale."
+  ],
+  [
+   493.78,
+   496.518,
+   "You have to carefully split each object's state"
+  ],
+  [
+   496.518,
+   499.256,
+   "into intrinsic and extrinsic \u2014 what can be"
+  ],
+  [
+   499.256,
+   499.598,
+   "shared,"
+  ],
+  [
+   499.598,
+   502.336,
+   "and what cannot \u2014 and that split is"
+  ],
+  [
+   502.336,
+   503.363,
+   "not always obvious."
+  ],
+  [
+   503.994,
+   505.705,
+   "The flyweights must be immutable,"
+  ],
+  [
+   505.705,
+   507.074,
+   "since they are shared;"
+  ],
+  [
+   507.074,
+   509.812,
+   "and the extrinsic state has to live somewhere"
+  ],
+  [
+   509.812,
+   510.154,
+   "else,"
+  ],
+  [
+   510.154,
+   512.892,
+   "either in a context object or passed in"
+  ],
+  [
+   512.892,
+   513.919,
+   "on every call,"
+  ],
+  [
+   513.919,
+   515.288,
+   "which complicates the code."
+  ],
+  [
+   515.919,
+   518.657,
+   "So skip it entirely when you simply do"
+  ],
+  [
+   518.657,
+   520.368,
+   "not have that many objects,"
+  ],
+  [
+   520.368,
+   523.106,
+   "when little of their state is actually shared,"
+  ],
+  [
+   523.106,
+   525.501,
+   "or when the objects are already small."
+  ],
+  [
+   526.133,
+   528.871,
+   "Reach for it when you have a truly"
+  ],
+  [
+   528.871,
+   530.24,
+   "huge number of objects,"
+  ],
+  [
+   530.24,
+   532.978,
+   "and most of each object's memory is identical"
+  ],
+  [
+   532.978,
+   534.347,
+   "to all the others."
+  ],
+  [
+   534.347,
+   534.689,
+   "Then,"
+  ],
+  [
+   534.689,
+   535.715,
+   "and only then,"
+  ],
+  [
+   535.715,
+   538.111,
+   "sharing turns the impossible into the trivial."
+  ],
+  [
+   538.611,
+   539.0,
+   "Flyweight,"
+  ],
+  [
+   539.0,
+   540.166,
+   "in one breath."
+  ],
+  [
+   540.798,
+   541.576,
+   "Storing heavy,"
+  ],
+  [
+   541.576,
+   544.687,
+   "identical data inside every one of millions of"
+  ],
+  [
+   544.687,
+   547.797,
+   "objects multiplied it into terabytes that could\nnever"
+  ],
+  [
+   547.797,
+   548.186,
+   "fit."
+  ],
+  [
+   548.818,
+   551.929,
+   "But most of that state is shared \u2014"
+  ],
+  [
+   551.929,
+   553.484,
+   "so you split intrinsic,"
+  ],
+  [
+   553.484,
+   554.651,
+   "the shared part,"
+  ],
+  [
+   554.651,
+   555.428,
+   "from extrinsic,"
+  ],
+  [
+   555.428,
+   556.595,
+   "the unique part,"
+  ],
+  [
+   556.595,
+   559.317,
+   "and store the shared part exactly once."
+  ],
+  [
+   559.949,
+   560.337,
+   "Flyweight:"
+  ],
+  [
+   560.337,
+   563.448,
+   "a factory shares one immutable object across\nmillions"
+  ],
+  [
+   563.448,
+   564.226,
+   "of contexts,"
+  ],
+  [
+   564.226,
+   567.337,
+   "so memory scales with the number of distinct"
+  ],
+  [
+   567.337,
+   567.726,
+   "kinds,"
+  ],
+  [
+   567.726,
+   569.67,
+   "not the number of objects."
+  ],
+  [
+   570.301,
+   572.635,
+   "Here is one to carry out."
+  ],
+  [
+   573.266,
+   576.377,
+   "A text editor renders a document of millions"
+  ],
+  [
+   576.377,
+   579.488,
+   "of characters \u2014 each glyph shares a font"
+  ],
+  [
+   579.488,
+   580.266,
+   "and shape,"
+  ],
+  [
+   580.266,
+   583.376,
+   "but each character has its own position and"
+  ],
+  [
+   583.376,
+   583.765,
+   "color."
+  ],
+  [
+   584.397,
+   585.563,
+   "Does Flyweight fit?"
+  ],
+  [
+   585.563,
+   586.73,
+   "What is intrinsic,"
+  ],
+  [
+   586.73,
+   587.897,
+   "what is extrinsic,"
+  ],
+  [
+   587.897,
+   590.619,
+   "and what exactly should the factory share?"
+  ],
+  [
+   591.25,
+   591.639,
+   "Pause,"
+  ],
+  [
+   591.639,
+   594.361,
+   "and sketch it before the final episode."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp22-flyweight.wav",
+   "volume": 1.0
+  }
+ }
+}

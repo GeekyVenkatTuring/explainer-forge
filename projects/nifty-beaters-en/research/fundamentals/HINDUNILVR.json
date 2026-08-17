@@ -1,0 +1,97 @@
+{
+ "ticker": "HINDUNILVR",
+ "scraped_at": "2026-08-14T15:29:16",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 486600.0,
+ "current_price": 2071.0,
+ "pe": 44.1,
+ "book_value": 207.0,
+ "dividend_yield_pct": 1.98,
+ "roce_pct": 28.4,
+ "roe_pct": 31.0,
+ "face_value": 1.0,
+ "high": 2660.0,
+ "sales_growth": {
+  "10 Years": 14.0,
+  "5 Years": 13.0,
+  "3 Years": 14.0,
+  "TTM": 4.0
+ },
+ "profit_growth": {
+  "10 Years": 9.0,
+  "5 Years": -2.0,
+  "3 Years": -5.0,
+  "1 Year": -12.0
+ },
+ "roe_hist": {
+  "Equity Capital": 216.0,
+  "Borrowings&nbsp; +": 43.0,
+  "CWIP": 516.0
+ },
+ "price_cagr": {
+  "10 Years": 28.0,
+  "5 Years": 22.0,
+  "3 Years": 24.0,
+  "Last Year": 31.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "24%",
+   "24%",
+   "24%",
+   "23%",
+   "24%",
+   "24%",
+   "24%",
+   "24%",
+   "23%",
+   "24%",
+   "23%",
+   "23%",
+   "23%"
+  ],
+  "eps": [
+   "10.87",
+   "11.30",
+   "10.68",
+   "10.89",
+   "11.11",
+   "11.03",
+   "12.70",
+   "10.49",
+   "11.73",
+   "11.43",
+   "28.12",
+   "12.73",
+   "11.38"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has been maintaining a healthy dividend payout of 92.4%"
+ ],
+ "cons": [
+  "Stock is trading at 9.99 times its book value",
+  "The company has delivered a poor sales growth of 6.51% over past five years.",
+  "Earnings include an other income of Rs.4,933 Cr."
+ ]
+}

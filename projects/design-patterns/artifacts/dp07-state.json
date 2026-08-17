@@ -1,0 +1,2008 @@
+{
+ "cuts": [
+  {
+   "id": "dp07-state_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 22.606,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 07",
+    "line1": "The same switch,",
+    "line2": "in every method",
+    "sub": "an order that behaves differently depending on where it is in its life",
+    "dur": 23.106
+   }
+  },
+  {
+   "id": "dp07-state_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 23.106,
+   "out_seconds": 54.019,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "An order moves through its life",
+    "situation": "An order is placed, paid, shipped, delivered \u2014 or cancelled. The same actions (pay, ship, cancel) mean different things depending on where the order currently is.",
+    "actors": [
+     {
+      "emoji": "\ud83c\udd95",
+      "label": "New"
+     },
+     {
+      "emoji": "\ud83d\udcb0",
+      "label": "Paid"
+     },
+     {
+      "emoji": "\ud83d\udce6",
+      "label": "Shipped"
+     }
+    ],
+    "ask": "You can't ship an unpaid order, or cancel a delivered one. Who enforces that?",
+    "dur": 31.413
+   }
+  },
+  {
+   "id": "dp07-state_naive",
+   "type": "dp_code",
+   "in_seconds": 54.519,
+   "out_seconds": 83.956,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "A status field and some checks.",
+    "file": "Order.java",
+    "lines": [
+     {
+      "t": "class Order {"
+     },
+     {
+      "t": "  String status = \"NEW\";"
+     },
+     {
+      "t": "  void ship() {"
+     },
+     {
+      "t": "    if (status.equals(\"PAID\")) status = \"SHIPPED\";",
+      "s": "hi"
+     },
+     {
+      "t": "    else throw new IllegalState(\"can't ship: \" + status);",
+      "s": "hi"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "  void pay()    { /* its own switch on status */ }"
+     },
+     {
+      "t": "  void cancel() { /* its own switch on status */ }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Each action checks the status, acts, and sets the next one. Reasonable.",
+    "dur": 29.937
+   }
+  },
+  {
+   "id": "dp07-state_pain",
+   "type": "dp_pain",
+   "in_seconds": 84.456,
+   "out_seconds": 123.947,
+   "props": {
+    "title": "\"Add an 'awaiting stock' state.\"",
+    "file": "Order.java",
+    "lines": [
+     {
+      "t": "  void pay() {    // must handle AWAITING_STOCK now"
+     },
+     {
+      "t": "    if (status.equals(\"NEW\")) status = inStock()",
+      "s": "dim"
+     },
+     {
+      "t": "        ? \"PAID\" : \"AWAITING_STOCK\";",
+      "s": "hi"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "  void ship()   { /* + AWAITING_STOCK case */ }"
+     },
+     {
+      "t": "  void cancel() { /* + AWAITING_STOCK case */ }",
+      "s": "hi"
+     },
+     {
+      "t": "  void restock(){ /* a whole new action, everywhere */ }"
+     }
+    ],
+    "smell": "The state machine is invisible + smeared",
+    "touched": [
+     "pay() \u2014 new branch",
+     "ship() \u2014 new branch",
+     "cancel() \u2014 new branch",
+     "miss one \u2192 illegal transition ships"
+    ],
+    "dur": 39.991
+   }
+  },
+  {
+   "id": "dp07-state_insight",
+   "type": "dp_insight",
+   "in_seconds": 124.447,
+   "out_seconds": 163.621,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "An order responds to pay, ship, cancel",
+     "It is always in exactly one state",
+     "The context just forwards the action"
+    ],
+    "varies": [
+     "What each action DOES right now",
+     "Which transition is allowed",
+     "The set of states itself"
+    ],
+    "principle": "Give each state its own class that knows its own actions and its own next state.",
+    "dur": 39.674
+   }
+  },
+  {
+   "id": "dp07-state_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 164.121,
+   "out_seconds": 203.687,
+   "props": {
+    "title": "Think of a traffic light",
+    "emoji": "\ud83d\udea6",
+    "analogy": "Each colour knows what it allows, and what turns next.",
+    "map": [
+     {
+      "from": "The pole and housing",
+      "to": "the Order (the context)"
+     },
+     {
+      "from": "Red / amber / green",
+      "to": "each State class"
+     },
+     {
+      "from": "\"What comes after me\"",
+      "to": "the state returns the next state"
+     },
+     {
+      "from": "Only the colour changes",
+      "to": "swap the current state object"
+     }
+    ],
+    "breaks": "a traffic light changes itself on a timer \u2014 here an external action, like 'pay', triggers the transition.",
+    "dur": 40.066
+   }
+  },
+  {
+   "id": "dp07-state_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 204.187,
+   "out_seconds": 229.695,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "Each state is a type",
+    "file": "OrderState.java",
+    "lines": [
+     {
+      "t": "// each action returns the state to move to:"
+     },
+     {
+      "t": "interface OrderState {",
+      "s": "add"
+     },
+     {
+      "t": "  OrderState pay();",
+      "s": "add"
+     },
+     {
+      "t": "  OrderState ship();",
+      "s": "add"
+     },
+     {
+      "t": "  OrderState cancel();",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "note": "Return-type is the trick: an action hands back the NEXT state.",
+    "dur": 26.008
+   }
+  },
+  {
+   "id": "dp07-state_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 230.195,
+   "out_seconds": 260.551,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "Each state owns its rules",
+    "file": "states.java",
+    "lines": [
+     {
+      "t": "class NewState implements OrderState {",
+      "s": "add"
+     },
+     {
+      "t": "  public OrderState pay()    { return new PaidState(); }",
+      "s": "add"
+     },
+     {
+      "t": "  public OrderState ship()   { throw new IllegalState(\"unpaid\"); }",
+      "s": "add"
+     },
+     {
+      "t": "  public OrderState cancel() { return new CancelledState(); }",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "class PaidState implements OrderState {",
+      "s": "add"
+     },
+     {
+      "t": "  public OrderState ship() { return new ShippedState(); }",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "From New: paying \u2192 Paid; shipping is illegal. The rules live in one place.",
+    "dur": 30.856
+   }
+  },
+  {
+   "id": "dp07-state_try",
+   "type": "dp_try",
+   "in_seconds": 261.051,
+   "out_seconds": 288.271,
+   "props": {
+    "title": "Write ShippedState",
+    "file": "ShippedState.java",
+    "lines": [
+     {
+      "t": "class ShippedState implements OrderState {"
+     },
+     {
+      "t": "  // \u25af from here: deliver? yes. cancel? no.",
+      "s": "ghost"
+     },
+     {
+      "t": "  public OrderState cancel() {"
+     },
+     {
+      "t": "    // \u25af what should this do?",
+      "s": "ghost"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "In ShippedState, what should cancel() do? (A shipped order is on its way.)",
+    "hint": "throw new IllegalState(\"already shipped \u2014 can't cancel\");",
+    "dur": 27.72
+   }
+  },
+  {
+   "id": "dp07-state_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 288.771,
+   "out_seconds": 319.363,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "The order just delegates and swaps",
+    "file": "Order.java",
+    "lines": [
+     {
+      "t": "class Order {"
+     },
+     {
+      "t": "  private OrderState state = new NewState();",
+      "s": "add"
+     },
+     {
+      "t": "  void pay()    { state = state.pay(); }",
+      "s": "add"
+     },
+     {
+      "t": "  void ship()   { state = state.ship(); }",
+      "s": "add"
+     },
+     {
+      "t": "  void cancel() { state = state.cancel(); }",
+      "s": "add"
+     },
+     {
+      "t": "  // no status string, no switches, anywhere"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Each action asks the current state, then becomes whatever it returns.",
+    "dur": 31.092
+   }
+  },
+  {
+   "id": "dp07-state_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 319.863,
+   "out_seconds": 355.011,
+   "props": {
+    "requirement": "\"Add the 'awaiting stock' state\" \u2014 the same request",
+    "naiveLabel": "Before",
+    "naiveCost": "A new branch in pay, ship, cancel, restock.",
+    "naiveSteps": [
+     "edit every method's switch",
+     "add the new action everywhere",
+     "miss one \u2192 illegal transition"
+    ],
+    "patLabel": "Now",
+    "patCost": "One new state class. Others barely notice.",
+    "patFile": "AwaitingStockState.java",
+    "patLines": [
+     {
+      "t": "class AwaitingStockState",
+      "s": "add"
+     },
+     {
+      "t": "    implements OrderState {",
+      "s": "add"
+     },
+     {
+      "t": "  public OrderState restock() {",
+      "s": "add"
+     },
+     {
+      "t": "    return new PaidState();",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "  public OrderState cancel() {",
+      "s": "add"
+     },
+     {
+      "t": "    return new CancelledState();",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "dur": 35.648
+   }
+  },
+  {
+   "id": "dp07-state_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 355.511,
+   "out_seconds": 390.412,
+   "props": {
+    "name": "The State Pattern",
+    "plain": "Put each state in its own class that handles the actions and returns the next state; the context just delegates to the current one.",
+    "nodes": [
+     {
+      "id": "st",
+      "title": "OrderState",
+      "stereo": "interface",
+      "members": [
+       "+ pay() / ship() / cancel()"
+      ],
+      "x": 740,
+      "y": 215,
+      "w": 440,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "ctx",
+      "title": "Order",
+      "members": [
+       "- state: OrderState",
+       "+ pay() / ship() / cancel()"
+      ],
+      "x": 150,
+      "y": 230,
+      "w": 430,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "new",
+      "title": "NewState",
+      "members": [
+       "+ pay() / ship() / \u2026"
+      ],
+      "x": 250,
+      "y": 650,
+      "w": 340,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "paid",
+      "title": "PaidState",
+      "members": [
+       "+ pay() / ship() / \u2026"
+      ],
+      "x": 720,
+      "y": 650,
+      "w": 340,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "shp",
+      "title": "ShippedState",
+      "members": [
+       "+ pay() / ship() / \u2026"
+      ],
+      "x": 1190,
+      "y": 650,
+      "w": 340,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "awa",
+      "title": "AwaitingStock",
+      "members": [
+       "+ restock() / \u2026"
+      ],
+      "x": 1560,
+      "y": 430,
+      "w": 300,
+      "color": "#34D399"
+     }
+    ],
+    "edges": [
+     {
+      "from": "ctx",
+      "to": "st",
+      "kind": "has"
+     },
+     {
+      "from": "new",
+      "to": "st",
+      "kind": "impl"
+     },
+     {
+      "from": "paid",
+      "to": "st",
+      "kind": "impl"
+     },
+     {
+      "from": "shp",
+      "to": "st",
+      "kind": "impl"
+     },
+     {
+      "from": "awa",
+      "to": "st",
+      "kind": "impl"
+     }
+    ],
+    "dur": 35.401
+   }
+  },
+  {
+   "id": "dp07-state_map",
+   "type": "dp_map",
+   "in_seconds": 390.912,
+   "out_seconds": 429.245,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Context",
+      "your": "Order (holds current state)"
+     },
+     {
+      "role": "State",
+      "your": "interface OrderState"
+     },
+     {
+      "role": "ConcreteState",
+      "your": "NewState, PaidState, \u2026"
+     },
+     {
+      "role": "Transition",
+      "your": "a state returns the next state"
+     }
+    ],
+    "plain": "The context delegates every action to its current state object, which does the work and returns the state to become next.",
+    "gof": "Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.",
+    "dur": 38.833
+   }
+  },
+  {
+   "id": "dp07-state_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 429.745,
+   "out_seconds": 469.822,
+   "props": {
+    "title": "Same shape as Strategy \u2014 different job",
+    "costs": [
+     "A class for every state",
+     "Transitions spread across the states",
+     "States must know some siblings"
+    ],
+    "dont": [
+     "Two or three states, stable forever",
+     "No real per-state behavior, just a label",
+     "A tiny enum switch is clearer"
+    ],
+    "signal": "behavior AND the allowed actions depend on a mode, and that same switch on the mode appears in many methods.",
+    "dur": 40.577
+   }
+  },
+  {
+   "id": "dp07-state_recap",
+   "type": "dp_recap",
+   "in_seconds": 470.322,
+   "out_seconds": 523.232,
+   "props": {
+    "title": "State, in one breath",
+    "items": [
+     "A status field ran a hidden state machine, so the same switch was copied into every method \u2014 and easy to get wrong.",
+     "Behavior and transitions depend on the current state \u2014 so give each state a class that owns its own rules.",
+     "State: the context delegates to its current state object, which acts and returns the next. New state, new class."
+    ],
+    "challenge": "A media player's Play, Pause, and Stop buttons each behave differently when it's playing, paused, or stopped.",
+    "question": "Does State fit? What's the context, and what are the states?",
+    "dur": 53.41
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.627,
+   "Here is a class where one field \u2014"
+  ],
+  [
+   2.627,
+   4.925,
+   "a status string \u2014 secretly controls everything."
+  ],
+  [
+   5.557,
+   6.87,
+   "And because it does,"
+  ],
+  [
+   6.87,
+   9.497,
+   "the exact same switch on that field ends"
+  ],
+  [
+   9.497,
+   11.139,
+   "up copied into every method,"
+  ],
+  [
+   11.139,
+   12.781,
+   "each with slightly different rules."
+  ],
+  [
+   13.412,
+   14.397,
+   "Change the lifecycle,"
+  ],
+  [
+   14.397,
+   17.024,
+   "and you are editing all of them at"
+  ],
+  [
+   17.024,
+   17.352,
+   "once."
+  ],
+  [
+   17.352,
+   19.979,
+   "There is a way to make the states"
+  ],
+  [
+   19.979,
+   21.293,
+   "themselves do the work."
+  ],
+  [
+   21.293,
+   22.606,
+   "Let's follow an order."
+  ],
+  [
+   23.106,
+   25.408,
+   "Every order lives a little life."
+  ],
+  [
+   26.039,
+   27.19,
+   "It is placed,"
+  ],
+  [
+   27.19,
+   27.957,
+   "then paid,"
+  ],
+  [
+   27.957,
+   28.724,
+   "then shipped,"
+  ],
+  [
+   28.724,
+   29.492,
+   "then delivered."
+  ],
+  [
+   29.492,
+   29.875,
+   "Or,"
+  ],
+  [
+   29.875,
+   31.41,
+   "somewhere along the way,"
+  ],
+  [
+   31.41,
+   31.793,
+   "cancelled."
+  ],
+  [
+   32.425,
+   35.11,
+   "And the same three actions \u2014 pay,"
+  ],
+  [
+   35.11,
+   35.494,
+   "ship,"
+  ],
+  [
+   35.494,
+   38.562,
+   "cancel \u2014 mean completely different things\ndepending on"
+  ],
+  [
+   38.562,
+   40.481,
+   "where the order currently is."
+  ],
+  [
+   41.112,
+   44.181,
+   "You cannot ship an order that is not"
+  ],
+  [
+   44.181,
+   44.565,
+   "paid."
+  ],
+  [
+   44.565,
+   47.25,
+   "You cannot cancel one that already arrived."
+  ],
+  [
+   47.881,
+   49.799,
+   "So the real question is:"
+  ],
+  [
+   49.799,
+   52.868,
+   "who enforces all those rules about what is"
+  ],
+  [
+   52.868,
+   53.252,
+   "allowed,"
+  ],
+  [
+   53.252,
+   54.019,
+   "and when?"
+  ],
+  [
+   54.519,
+   55.64,
+   "The obvious approach:"
+  ],
+  [
+   55.64,
+   56.762,
+   "a status string,"
+  ],
+  [
+   56.762,
+   59.004,
+   "and a check in each method."
+  ],
+  [
+   59.636,
+   60.383,
+   "To ship,"
+  ],
+  [
+   60.383,
+   62.626,
+   "make sure the order is paid,"
+  ],
+  [
+   62.626,
+   65.242,
+   "then move it to shipped \u2014 otherwise,"
+  ],
+  [
+   65.242,
+   65.616,
+   "refuse."
+  ],
+  [
+   66.247,
+   69.237,
+   "Pay has its own version of that check."
+  ],
+  [
+   69.237,
+   70.359,
+   "So does cancel."
+  ],
+  [
+   70.99,
+   73.233,
+   "Each action looks at the status,"
+  ],
+  [
+   73.233,
+   75.102,
+   "decides if it is legal,"
+  ],
+  [
+   75.102,
+   76.223,
+   "does the work,"
+  ],
+  [
+   76.223,
+   78.092,
+   "and sets the next status."
+  ],
+  [
+   78.723,
+   80.966,
+   "For four states and three actions,"
+  ],
+  [
+   80.966,
+   82.461,
+   "this is perfectly reasonable."
+  ],
+  [
+   82.461,
+   83.956,
+   "Until the lifecycle grows."
+  ],
+  [
+   84.456,
+   85.776,
+   "Then a new requirement."
+  ],
+  [
+   85.776,
+   88.086,
+   "Some paid orders are out of stock,"
+  ],
+  [
+   88.086,
+   90.397,
+   "so we need an awaiting stock state."
+  ],
+  [
+   91.028,
+   93.669,
+   "Now pay has to decide between paid and"
+  ],
+  [
+   93.669,
+   94.329,
+   "awaiting stock."
+  ],
+  [
+   94.329,
+   96.639,
+   "Ship has to handle the new state."
+  ],
+  [
+   96.639,
+   97.629,
+   "So does cancel."
+  ],
+  [
+   97.629,
+   99.939,
+   "And you add a whole new action,"
+  ],
+  [
+   99.939,
+   100.27,
+   "restock,"
+  ],
+  [
+   100.27,
+   102.25,
+   "which needs its own switch too."
+  ],
+  [
+   102.881,
+   105.522,
+   "The transition rules are scattered across every\nmethod,"
+  ],
+  [
+   105.522,
+   108.162,
+   "and nowhere can you see the state machine"
+  ],
+  [
+   108.162,
+   109.152,
+   "as a whole."
+  ],
+  [
+   109.784,
+   112.424,
+   "Worst of all \u2014 miss a single case,"
+  ],
+  [
+   112.424,
+   115.064,
+   "and an order slips into an illegal state,"
+  ],
+  [
+   115.064,
+   117.375,
+   "and ships when it never should have."
+  ],
+  [
+   118.006,
+   119.656,
+   "The status field looks innocent,"
+  ],
+  [
+   119.656,
+   122.297,
+   "but it is quietly running a state machine"
+  ],
+  [
+   122.297,
+   123.947,
+   "that no one can see."
+  ],
+  [
+   124.447,
+   125.182,
+   "What changes,"
+  ],
+  [
+   125.182,
+   126.652,
+   "and what stays fixed?"
+  ],
+  [
+   127.284,
+   127.651,
+   "Fixed:"
+  ],
+  [
+   127.651,
+   130.591,
+   "an order always responds to the same three"
+  ],
+  [
+   130.591,
+   130.959,
+   "actions,"
+  ],
+  [
+   130.959,
+   133.899,
+   "and it is always in exactly one state."
+  ],
+  [
+   133.899,
+   136.104,
+   "And whatever calls it just says,"
+  ],
+  [
+   136.104,
+   136.471,
+   "pay,"
+  ],
+  [
+   136.471,
+   139.044,
+   "or ship \u2014 it forwards the action."
+  ],
+  [
+   139.676,
+   142.616,
+   "What varies is what each action actually does"
+  ],
+  [
+   142.616,
+   143.351,
+   "right now,"
+  ],
+  [
+   143.351,
+   144.821,
+   "which transitions are legal,"
+  ],
+  [
+   144.821,
+   147.026,
+   "and the set of states itself."
+  ],
+  [
+   147.657,
+   150.597,
+   "All of that depends entirely on the current"
+  ],
+  [
+   150.597,
+   150.965,
+   "state."
+  ],
+  [
+   151.597,
+   153.434,
+   "So here is the move."
+  ],
+  [
+   153.434,
+   155.639,
+   "Stop scattering the rules by action."
+  ],
+  [
+   156.271,
+   156.638,
+   "Instead,"
+  ],
+  [
+   156.638,
+   159.578,
+   "give each state its own class \u2014 one"
+  ],
+  [
+   159.578,
+   161.416,
+   "that knows its own behavior,"
+  ],
+  [
+   161.416,
+   163.621,
+   "and knows which state comes next."
+  ],
+  [
+   164.121,
+   165.519,
+   "Picture a traffic light."
+  ],
+  [
+   166.15,
+   168.946,
+   "The pole does not contain a giant rulebook."
+  ],
+  [
+   168.946,
+   171.042,
+   "Each colour carries its own rules."
+  ],
+  [
+   171.042,
+   172.091,
+   "Red means stop,"
+  ],
+  [
+   172.091,
+   174.537,
+   "and red knows that green comes next."
+  ],
+  [
+   174.537,
+   175.934,
+   "Green knows amber follows."
+  ],
+  [
+   176.566,
+   179.361,
+   "The light itself just holds whichever colour is"
+  ],
+  [
+   179.361,
+   179.711,
+   "active,"
+  ],
+  [
+   179.711,
+   180.759,
+   "and swaps it."
+  ],
+  [
+   181.391,
+   182.788,
+   "That is the fix."
+  ],
+  [
+   182.788,
+   184.536,
+   "The order is the pole."
+  ],
+  [
+   184.536,
+   185.933,
+   "Each state \u2014 new,"
+  ],
+  [
+   185.933,
+   186.283,
+   "paid,"
+  ],
+  [
+   186.283,
+   189.078,
+   "shipped \u2014 is a colour that knows its"
+  ],
+  [
+   189.078,
+   191.524,
+   "own behavior and its own next state."
+  ],
+  [
+   191.524,
+   194.32,
+   "And a transition is just swapping which state"
+  ],
+  [
+   194.32,
+   195.368,
+   "object is current."
+  ],
+  [
+   196.0,
+   197.048,
+   "Where it breaks:"
+  ],
+  [
+   197.048,
+   199.843,
+   "a real light changes itself on a timer."
+  ],
+  [
+   199.843,
+   202.289,
+   "Our order changes when an outside action,"
+  ],
+  [
+   202.289,
+   202.988,
+   "like pay,"
+  ],
+  [
+   202.988,
+   203.687,
+   "triggers it."
+  ],
+  [
+   204.187,
+   204.937,
+   "Move one."
+  ],
+  [
+   204.937,
+   206.811,
+   "Every state becomes a type."
+  ],
+  [
+   207.442,
+   208.192,
+   "An interface,"
+  ],
+  [
+   208.192,
+   208.942,
+   "order state,"
+  ],
+  [
+   208.942,
+   211.19,
+   "with the three actions \u2014 pay,"
+  ],
+  [
+   211.19,
+   211.565,
+   "ship,"
+  ],
+  [
+   211.565,
+   211.94,
+   "cancel."
+  ],
+  [
+   212.572,
+   214.446,
+   "But notice the return type."
+  ],
+  [
+   214.446,
+   216.695,
+   "Each action returns an order state."
+  ],
+  [
+   217.326,
+   219.2,
+   "That is the whole trick."
+  ],
+  [
+   219.2,
+   222.199,
+   "Performing an action does not just do work"
+  ],
+  [
+   222.199,
+   225.197,
+   "\u2014 it hands back the state you should"
+  ],
+  [
+   225.197,
+   226.322,
+   "move to next."
+  ],
+  [
+   226.322,
+   229.32,
+   "The transition is baked right into the return"
+  ],
+  [
+   229.32,
+   229.695,
+   "value."
+  ],
+  [
+   230.195,
+   230.934,
+   "Move two."
+  ],
+  [
+   230.934,
+   233.152,
+   "Each state owns its own rules,"
+  ],
+  [
+   233.152,
+   233.522,
+   "completely."
+  ],
+  [
+   234.153,
+   236.001,
+   "Look at the new state."
+  ],
+  [
+   236.001,
+   238.219,
+   "Paying it returns a paid state."
+  ],
+  [
+   238.219,
+   240.067,
+   "Cancelling returns a cancelled state."
+  ],
+  [
+   240.067,
+   240.807,
+   "And shipping?"
+  ],
+  [
+   240.807,
+   243.764,
+   "Shipping throws \u2014 you cannot ship an unpaid"
+  ],
+  [
+   243.764,
+   244.133,
+   "order,"
+  ],
+  [
+   244.133,
+   246.351,
+   "and that rule lives right here,"
+  ],
+  [
+   246.351,
+   247.46,
+   "where it belongs."
+  ],
+  [
+   248.091,
+   249.939,
+   "The paid state is different."
+  ],
+  [
+   249.939,
+   250.679,
+   "From paid,"
+  ],
+  [
+   250.679,
+   252.157,
+   "shipping is now legal,"
+  ],
+  [
+   252.157,
+   254.005,
+   "and returns a shipped state."
+  ],
+  [
+   254.637,
+   257.594,
+   "Every transition rule sits inside the one state"
+  ],
+  [
+   257.594,
+   258.703,
+   "it applies to."
+  ],
+  [
+   258.703,
+   260.551,
+   "No more hunting across methods."
+  ],
+  [
+   261.051,
+   261.788,
+   "Your turn."
+  ],
+  [
+   262.42,
+   264.263,
+   "Here is the shipped state."
+  ],
+  [
+   264.263,
+   267.211,
+   "Think about what cancel should do from here."
+  ],
+  [
+   267.843,
+   270.423,
+   "The order is already on a truck."
+  ],
+  [
+   270.423,
+   272.265,
+   "You cannot cancel it anymore."
+  ],
+  [
+   272.897,
+   273.265,
+   "Pause,"
+  ],
+  [
+   273.265,
+   275.108,
+   "and write that cancel method."
+  ],
+  [
+   275.74,
+   277.583,
+   "It should refuse \u2014 throw,"
+  ],
+  [
+   277.583,
+   280.163,
+   "because a shipped order cannot be cancelled."
+  ],
+  [
+   280.163,
+   280.9,
+   "And notice:"
+  ],
+  [
+   280.9,
+   283.848,
+   "you did not have to touch any other"
+  ],
+  [
+   283.848,
+   285.691,
+   "state to add that rule."
+  ],
+  [
+   285.691,
+   287.165,
+   "It belongs to shipped,"
+  ],
+  [
+   287.165,
+   288.271,
+   "and only shipped."
+  ],
+  [
+   288.771,
+   289.519,
+   "Move three."
+  ],
+  [
+   289.519,
+   291.765,
+   "Now the order becomes wonderfully thin."
+  ],
+  [
+   292.396,
+   295.39,
+   "It holds a current state \u2014 starting as"
+  ],
+  [
+   295.39,
+   295.764,
+   "new."
+  ],
+  [
+   296.396,
+   297.144,
+   "To pay,"
+  ],
+  [
+   297.144,
+   299.764,
+   "it asks the current state to pay,"
+  ],
+  [
+   299.764,
+   302.383,
+   "and then becomes whatever state that returns."
+  ],
+  [
+   302.383,
+   304.628,
+   "Ship and cancel do the same."
+  ],
+  [
+   305.26,
+   307.505,
+   "There is no status string left."
+  ],
+  [
+   307.505,
+   309.002,
+   "No switch statements anywhere."
+  ],
+  [
+   309.634,
+   312.627,
+   "The order just delegates to its current state,"
+  ],
+  [
+   312.627,
+   315.621,
+   "and swaps itself for the one that comes"
+  ],
+  [
+   315.621,
+   315.995,
+   "back."
+  ],
+  [
+   315.995,
+   318.989,
+   "The whole state machine now lives in the"
+  ],
+  [
+   318.989,
+   319.363,
+   "states."
+  ],
+  [
+   319.863,
+   322.292,
+   "Now the request that caused the pain."
+  ],
+  [
+   322.292,
+   324.027,
+   "Add the awaiting stock state."
+  ],
+  [
+   324.659,
+   325.006,
+   "Before,"
+  ],
+  [
+   325.006,
+   327.435,
+   "that meant a new branch in pay,"
+  ],
+  [
+   327.435,
+   328.129,
+   "in ship,"
+  ],
+  [
+   328.129,
+   328.824,
+   "in cancel,"
+  ],
+  [
+   328.824,
+   331.6,
+   "and in restock \u2014 with the ever-present risk"
+  ],
+  [
+   331.6,
+   334.376,
+   "of missing one and letting an order do"
+  ],
+  [
+   334.376,
+   335.07,
+   "something illegal."
+  ],
+  [
+   335.702,
+   336.049,
+   "Now?"
+  ],
+  [
+   336.049,
+   337.437,
+   "One new state class."
+  ],
+  [
+   337.437,
+   338.131,
+   "Awaiting stock."
+  ],
+  [
+   338.131,
+   340.213,
+   "It says restock leads to paid,"
+  ],
+  [
+   340.213,
+   342.99,
+   "and cancel leads to cancelled \u2014 its own"
+  ],
+  [
+   342.99,
+   343.337,
+   "rules,"
+  ],
+  [
+   343.337,
+   344.725,
+   "all in one place."
+  ],
+  [
+   345.356,
+   347.439,
+   "The order class does not change."
+  ],
+  [
+   347.439,
+   350.215,
+   "The states that do not transition into it"
+  ],
+  [
+   350.215,
+   351.256,
+   "do not change."
+  ],
+  [
+   351.888,
+   354.664,
+   "A new stage of life became a new"
+  ],
+  [
+   354.664,
+   355.011,
+   "class."
+  ],
+  [
+   355.511,
+   356.919,
+   "Now we name it."
+  ],
+  [
+   357.55,
+   359.31,
+   "This is the State pattern."
+  ],
+  [
+   359.941,
+   362.756,
+   "And notice \u2014 it looks almost exactly like"
+  ],
+  [
+   362.756,
+   364.516,
+   "a pattern you have seen."
+  ],
+  [
+   364.516,
+   365.572,
+   "In the middle,"
+  ],
+  [
+   365.572,
+   366.627,
+   "the state interface."
+  ],
+  [
+   366.627,
+   367.683,
+   "On the left,"
+  ],
+  [
+   367.683,
+   368.387,
+   "the order,"
+  ],
+  [
+   368.387,
+   371.202,
+   "holding one current state and delegating to it."
+  ],
+  [
+   371.834,
+   372.185,
+   "Underneath,"
+  ],
+  [
+   372.185,
+   374.297,
+   "a class per state \u2014 new,"
+  ],
+  [
+   374.297,
+   374.649,
+   "paid,"
+  ],
+  [
+   374.649,
+   375.001,
+   "shipped,"
+  ],
+  [
+   375.001,
+   377.816,
+   "and the green awaiting stock you just added."
+  ],
+  [
+   378.447,
+   380.559,
+   "The difference from strategy is intent."
+  ],
+  [
+   380.559,
+   383.374,
+   "These states are not interchangeable algorithms a\ncaller"
+  ],
+  [
+   383.374,
+   383.726,
+   "picks."
+  ],
+  [
+   383.726,
+   385.485,
+   "They know about each other,"
+  ],
+  [
+   385.485,
+   388.301,
+   "and they hand control from one to the"
+  ],
+  [
+   388.301,
+   388.653,
+   "next."
+  ],
+  [
+   388.653,
+   390.412,
+   "This is a state machine."
+  ],
+  [
+   390.912,
+   391.663,
+   "The roles,"
+  ],
+  [
+   391.663,
+   393.165,
+   "mapped to your code."
+  ],
+  [
+   393.796,
+   395.674,
+   "The Context is the order,"
+  ],
+  [
+   395.674,
+   397.176,
+   "holding the current state."
+  ],
+  [
+   397.807,
+   399.685,
+   "The State is your interface."
+  ],
+  [
+   400.316,
+   402.194,
+   "The concrete states are new,"
+  ],
+  [
+   402.194,
+   402.569,
+   "paid,"
+  ],
+  [
+   402.569,
+   402.945,
+   "shipped,"
+  ],
+  [
+   402.945,
+   404.071,
+   "and the rest."
+  ],
+  [
+   404.703,
+   407.706,
+   "And the transitions are not a separate table"
+  ],
+  [
+   407.706,
+   410.71,
+   "\u2014 they are simply the state each action"
+  ],
+  [
+   410.71,
+   411.086,
+   "returns."
+  ],
+  [
+   411.717,
+   414.721,
+   "In plain terms \u2014 the context delegates to"
+  ],
+  [
+   414.721,
+   415.847,
+   "its current state,"
+  ],
+  [
+   415.847,
+   418.851,
+   "which does the work and hands back the"
+  ],
+  [
+   418.851,
+   419.602,
+   "next state."
+  ],
+  [
+   420.234,
+   421.736,
+   "The Gang of Four:"
+  ],
+  [
+   421.736,
+   424.739,
+   "allow an object to alter its behavior when"
+  ],
+  [
+   424.739,
+   427.743,
+   "its internal state changes \u2014 it will appear"
+  ],
+  [
+   427.743,
+   429.245,
+   "to change its class."
+  ],
+  [
+   429.745,
+   430.708,
+   "The honest costs."
+  ],
+  [
+   431.339,
+   433.585,
+   "State means a class for every state,"
+  ],
+  [
+   433.585,
+   436.152,
+   "and the transition logic is now spread across"
+  ],
+  [
+   436.152,
+   438.719,
+   "those classes rather than sitting in one table"
+  ],
+  [
+   438.719,
+   440.644,
+   "you can read top to bottom."
+  ],
+  [
+   440.644,
+   443.211,
+   "And states end up knowing about a few"
+  ],
+  [
+   443.211,
+   444.174,
+   "of their neighbors."
+  ],
+  [
+   444.805,
+   447.372,
+   "So skip it when you have two or"
+  ],
+  [
+   447.372,
+   449.297,
+   "three states that will never change,"
+  ],
+  [
+   449.297,
+   451.864,
+   "or when the status is really just a"
+  ],
+  [
+   451.864,
+   453.789,
+   "label with no behavior behind it."
+  ],
+  [
+   453.789,
+   456.035,
+   "A small enum switch is clearer then."
+  ],
+  [
+   456.667,
+   458.592,
+   "The signal to reach for it:"
+  ],
+  [
+   458.592,
+   461.159,
+   "both the behavior and the allowed actions depend"
+  ],
+  [
+   461.159,
+   462.121,
+   "on a mode,"
+  ],
+  [
+   462.121,
+   464.688,
+   "and you notice that same switch on the"
+  ],
+  [
+   464.688,
+   466.934,
+   "mode showing up in method after method."
+  ],
+  [
+   466.934,
+   469.501,
+   "That is a state machine asking to be"
+  ],
+  [
+   469.501,
+   469.822,
+   "born."
+  ],
+  [
+   470.322,
+   472.131,
+   "The journey in three beats."
+  ],
+  [
+   472.763,
+   473.487,
+   "The problem:"
+  ],
+  [
+   473.487,
+   476.381,
+   "a status field was secretly running a state"
+  ],
+  [
+   476.381,
+   476.743,
+   "machine,"
+  ],
+  [
+   476.743,
+   479.638,
+   "so the same switch got copied into every"
+  ],
+  [
+   479.638,
+   480.0,
+   "method,"
+  ],
+  [
+   480.0,
+   482.533,
+   "and was dangerously easy to get wrong."
+  ],
+  [
+   483.165,
+   483.888,
+   "The insight:"
+  ],
+  [
+   483.888,
+   486.783,
+   "behavior and transitions both depend on the\ncurrent"
+  ],
+  [
+   486.783,
+   487.145,
+   "state,"
+  ],
+  [
+   487.145,
+   490.04,
+   "so give each state its own class that"
+  ],
+  [
+   490.04,
+   491.125,
+   "owns its rules."
+  ],
+  [
+   491.757,
+   492.481,
+   "The pattern:"
+  ],
+  [
+   492.481,
+   492.843,
+   "State."
+  ],
+  [
+   492.843,
+   495.737,
+   "The context delegates to its current state object,"
+  ],
+  [
+   495.737,
+   498.632,
+   "which acts and returns the next one \u2014"
+  ],
+  [
+   498.632,
+   501.527,
+   "so a new state is just a new"
+  ],
+  [
+   501.527,
+   501.889,
+   "class."
+  ],
+  [
+   502.521,
+   502.883,
+   "Now,"
+  ],
+  [
+   502.883,
+   503.606,
+   "for you,"
+  ],
+  [
+   503.606,
+   505.054,
+   "before the next episode."
+  ],
+  [
+   505.685,
+   507.495,
+   "A media player has play,"
+  ],
+  [
+   507.495,
+   507.856,
+   "pause,"
+  ],
+  [
+   507.856,
+   510.751,
+   "and stop buttons \u2014 and each one behaves"
+  ],
+  [
+   510.751,
+   513.284,
+   "differently depending on whether it is playing,"
+  ],
+  [
+   513.284,
+   513.646,
+   "paused,"
+  ],
+  [
+   513.646,
+   514.37,
+   "or stopped."
+  ],
+  [
+   515.001,
+   516.087,
+   "Does State fit?"
+  ],
+  [
+   516.087,
+   517.896,
+   "What is the context here,"
+  ],
+  [
+   517.896,
+   519.706,
+   "and what are the states?"
+  ],
+  [
+   520.337,
+   520.699,
+   "Pause,"
+  ],
+  [
+   520.699,
+   523.232,
+   "and sketch it before you press play."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp07-state.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,1477 @@
+{
+ "cuts": [
+  {
+   "id": "kg-ch05-graph-engineering_divider",
+   "type": "kg_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 12.093,
+   "props": {
+    "n": 4,
+    "title": "Graph Engineering",
+    "sub": "the substrate \u2014 the craft of building and running graphs at scale",
+    "color": "#34D399",
+    "layer": 3,
+    "dur": 12.593
+   }
+  },
+  {
+   "id": "kg-ch05-graph-engineering_disciplines",
+   "type": "kg_orbit",
+   "in_seconds": 12.593,
+   "out_seconds": 73.712,
+   "props": {
+    "kicker": "THE CRAFT",
+    "title": "What a graph engineer actually owns",
+    "color": "#34D399",
+    "hub": "Graph\nEngineering",
+    "items": [
+     {
+      "emoji": "\ud83d\udcd0",
+      "label": "Ontology & schema design"
+     },
+     {
+      "emoji": "\ud83c\udfd7\ufe0f",
+      "label": "Construction pipelines"
+     },
+     {
+      "emoji": "\ud83d\udd17",
+      "label": "Entity resolution"
+     },
+     {
+      "emoji": "\u2696\ufe0f",
+      "label": "Validation (SHACL)"
+     },
+     {
+      "emoji": "\ud83d\uddc2\ufe0f",
+      "label": "Versioning & governance"
+     },
+     {
+      "emoji": "\ud83e\udde0",
+      "label": "Graph ML / GNNs"
+     }
+    ],
+    "foot": "It's data engineering \u2014 but the product is meaning, and meaning has to stay true.",
+    "dur": 61.619
+   }
+  },
+  {
+   "id": "kg-ch05-graph-engineering_construction",
+   "type": "kg_pipeline",
+   "in_seconds": 74.212,
+   "out_seconds": 136.859,
+   "props": {
+    "kicker": "THE CONSTRUCTION PIPELINE",
+    "title": "Building the graph is an ETL job whose output is meaning",
+    "color": "#34D399",
+    "nodes": [
+     {
+      "emoji": "\ud83d\udce5",
+      "label": "Extract",
+      "sub": "connector / source",
+      "c": "#818CF8"
+     },
+     {
+      "emoji": "\ud83d\udd27",
+      "label": "Transform",
+      "sub": "map to ontology",
+      "c": "#FBBF24"
+     },
+     {
+      "emoji": "\ud83d\udd17",
+      "label": "Resolve",
+      "sub": "dedupe entities",
+      "c": "#22D3EE"
+     },
+     {
+      "emoji": "\u2696\ufe0f",
+      "label": "Validate",
+      "sub": "SHACL gate",
+      "c": "#34D399"
+     },
+     {
+      "emoji": "\ud83d\udd78\ufe0f",
+      "label": "Load",
+      "sub": "publish graph",
+      "c": "#A78BFA"
+     }
+    ],
+    "foot": "Batch the wikis, stream the logs, do it incrementally \u2014 classic data engineering, new product.",
+    "dur": 63.147
+   }
+  },
+  {
+   "id": "kg-ch05-graph-engineering_querylangs",
+   "type": "kg_compare",
+   "in_seconds": 137.359,
+   "out_seconds": 198.635,
+   "props": {
+    "kicker": "SPEAKING TO THE GRAPH",
+    "title": "The query languages \u2014 and the standard that's unifying them",
+    "color": "#34D399",
+    "left": {
+     "head": "Cypher & GQL",
+     "sub": "property graphs",
+     "c": "#22D3EE",
+     "rows": [
+      "Cypher: readable ASCII-art patterns.",
+      "\u2018(a)-[:USES]->(b)\u2019 says what you mean.",
+      "GQL: the 2024 ISO standard \u2014 SQL for graphs.",
+      "The default for operational graph apps."
+     ]
+    },
+    "right": {
+     "head": "SPARQL",
+     "sub": "RDF triplestores",
+     "c": "#FBBF24",
+     "rows": [
+      "The W3C standard for querying triples.",
+      "Federates across many endpoints at once.",
+      "Pairs with OWL inference and SHACL.",
+      "The default when meaning must be portable."
+     ]
+    },
+    "foot": "GQL is doing for graphs what SQL did for tables \u2014 one standard everyone can target.",
+    "dur": 61.776
+   }
+  },
+  {
+   "id": "kg-ch05-graph-engineering_text2cypher",
+   "type": "kg_code",
+   "in_seconds": 199.135,
+   "out_seconds": 260.244,
+   "props": {
+    "kicker": "TEXT-TO-CYPHER",
+    "title": "Let the model write the query \u2014 the ontology keeps it honest",
+    "color": "#34D399",
+    "lang": "python + cypher",
+    "lines": [
+     "# user: \u201cwhat breaks if we drop orders.region?\u201d",
+     "cypher = llm.to_cypher(question, schema=ONTOLOGY)",
+     "",
+     "MATCH (c:Column {name:'orders.region'})",
+     "  <-[:HAS_COLUMN]-(:Table)<-[:READS]-(:Query)",
+     "  <-[:USES]-(r:Report)",
+     "RETURN r.name    // validated before it runs"
+    ],
+    "result": [
+     "Regional Sales",
+     "Exec Dashboard",
+     "Ops Heatmap"
+    ],
+    "caption": "the ontology is the schema that keeps a generated query valid and safe",
+    "foot": "This is the bridge to part six: the agent's main tool is \u2018turn a question into a graph query\u2019.",
+    "dur": 61.609
+   }
+  },
+  {
+   "id": "kg-ch05-graph-engineering_shaclgate",
+   "type": "kg_code",
+   "in_seconds": 260.744,
+   "out_seconds": 325.55,
+   "props": {
+    "kicker": "VALIDATION AS A GATE",
+    "title": "Bad meaning should fail the build, like bad code does",
+    "color": "#34D399",
+    "lang": "shacl / ci",
+    "lines": [
+     "# every ingest run, before load:",
+     "shacl validate \\",
+     "  --shapes  ontology/shapes.ttl \\",
+     "  --data    build/candidate-graph.ttl",
+     "",
+     "\u2717 Report \u2018Exec Dashboard\u2019 violates ReportShape",
+     "  \u2192 sh:minCount 1 on :uses  (found 0)",
+     "BUILD FAILED \u00b7 graph not published"
+    ],
+    "result": [
+     "12,481 nodes",
+     "checked",
+     "1 violation",
+     "load blocked \u2713"
+    ],
+    "caption": "the same SHACL shapes from part one, now running in CI on every rebuild",
+    "foot": "Neuro-symbolic in miniature: the rules are the symbolic guard on everything that enters.",
+    "dur": 65.306
+   }
+  },
+  {
+   "id": "kg-ch05-graph-engineering_governance",
+   "type": "kg_cards",
+   "in_seconds": 326.05,
+   "out_seconds": 379.818,
+   "props": {
+    "kicker": "SECURITY & GOVERNANCE",
+    "title": "Who can see and do what \u2014 enforced on the graph",
+    "color": "#34D399",
+    "cards": [
+     {
+      "head": "Relationship-level access",
+      "emoji": "\ud83d\udd12",
+      "body": "Hide sensitive nodes and edges per role \u2014 the ontology's security dimension, made real.",
+      "tag": "access"
+     },
+     {
+      "head": "PII & compliance",
+      "emoji": "\ud83d\udee1\ufe0f",
+      "body": "Tag sensitive nodes; lineage proves exactly where regulated data flows, for audits.",
+      "tag": "compliance"
+     },
+     {
+      "head": "Change control",
+      "emoji": "\ud83d\udcdd",
+      "body": "Version the ontology and review changes to meaning like you review changes to code.",
+      "tag": "governance"
+     }
+    ],
+    "foot": "Once agents act on the graph, governance is the line between a system that helps and one that harms.",
+    "dur": 54.268
+   }
+  },
+  {
+   "id": "kg-ch05-graph-engineering_observability",
+   "type": "kg_cards",
+   "in_seconds": 380.318,
+   "out_seconds": 441.204,
+   "props": {
+    "kicker": "GRAPH DATA QUALITY",
+    "title": "Monitor the graph like a production service",
+    "color": "#34D399",
+    "cards": [
+     {
+      "head": "Quality metrics",
+      "emoji": "\ud83d\udcca",
+      "body": "Track orphan nodes, duplicate rate, and constraint violations over time \u2014 a dashboard for the graph itself.",
+      "tag": "metrics"
+     },
+     {
+      "head": "Drift alerts",
+      "emoji": "\ud83d\udea8",
+      "body": "If extraction quality drops, page someone. The graph is a product with an SLA, not a side project.",
+      "tag": "SLO"
+     },
+     {
+      "head": "Golden queries",
+      "emoji": "\ud83c\udfaf",
+      "body": "A suite of known-answer queries runs on every build \u2014 integration tests, but for meaning.",
+      "tag": "tests"
+     }
+    ],
+    "foot": "You already monitor your services. Monitor the graph the same way \u2014 everything now leans on it.",
+    "dur": 61.386
+   }
+  },
+  {
+   "id": "kg-ch05-graph-engineering_gnn",
+   "type": "kg_gnn",
+   "in_seconds": 441.704,
+   "out_seconds": 513.14,
+   "props": {
+    "foot": "Uber ETAs, Pinterest recs, fraud rings, drug discovery \u2014 all learned on graph structure.",
+    "dur": 71.936
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.882,
+   "Part four."
+  ],
+  [
+   0.882,
+   3.086,
+   "Graph engineering \u2014 the substrate."
+  ],
+  [
+   3.717,
+   6.803,
+   "Everything so far assumed the graph exists,"
+  ],
+  [
+   6.803,
+   7.685,
+   "stays correct,"
+  ],
+  [
+   7.685,
+   8.566,
+   "and performs."
+  ],
+  [
+   8.566,
+   10.771,
+   "That doesn't happen by accident."
+  ],
+  [
+   10.771,
+   12.093,
+   "It's a discipline."
+  ],
+  [
+   12.593,
+   15.686,
+   "So what does a graph engineer actually do"
+  ],
+  [
+   15.686,
+   16.46,
+   "all day?"
+  ],
+  [
+   16.46,
+   17.233,
+   "Six things,"
+  ],
+  [
+   17.233,
+   19.94,
+   "and you've met most of them already."
+  ],
+  [
+   20.571,
+   23.665,
+   "They design the ontology and schema \u2014 the"
+  ],
+  [
+   23.665,
+   24.438,
+   "shared meaning."
+  ],
+  [
+   25.069,
+   28.163,
+   "They build the construction pipelines that pull\nfrom"
+  ],
+  [
+   28.163,
+   28.936,
+   "every source,"
+  ],
+  [
+   28.936,
+   30.483,
+   "like our six connectors."
+  ],
+  [
+   31.114,
+   32.661,
+   "They own entity resolution,"
+  ],
+  [
+   32.661,
+   33.821,
+   "keeping duplicates out."
+  ],
+  [
+   34.453,
+   36.773,
+   "They wire in validation with SHACL,"
+  ],
+  [
+   36.773,
+   39.093,
+   "so bad data can't silently enter."
+  ],
+  [
+   39.724,
+   42.817,
+   "They handle versioning and governance \u2014 because\nmeaning"
+  ],
+  [
+   42.817,
+   43.977,
+   "changes over time,"
+  ],
+  [
+   43.977,
+   47.071,
+   "and you need to know what the graph"
+  ],
+  [
+   47.071,
+   48.231,
+   "believed last Tuesday."
+  ],
+  [
+   48.862,
+   51.182,
+   "And they apply graph machine learning,"
+  ],
+  [
+   51.182,
+   53.889,
+   "which we'll get to in a minute."
+  ],
+  [
+   54.521,
+   56.067,
+   "Here's the mindset shift:"
+  ],
+  [
+   56.067,
+   57.614,
+   "this is data engineering,"
+  ],
+  [
+   57.614,
+   60.707,
+   "but the product isn't a table or a"
+  ],
+  [
+   60.707,
+   62.254,
+   "dashboard \u2014 it's meaning."
+  ],
+  [
+   62.254,
+   64.574,
+   "And meaning has to stay true,"
+  ],
+  [
+   64.574,
+   64.96,
+   "continuously,"
+  ],
+  [
+   64.96,
+   66.894,
+   "or everything above it rots."
+  ],
+  [
+   67.525,
+   70.232,
+   "Two of these deserve a closer look."
+  ],
+  [
+   70.232,
+   73.325,
+   "Let's start with how you actually query at"
+  ],
+  [
+   73.325,
+   73.712,
+   "scale."
+  ],
+  [
+   74.212,
+   76.166,
+   "Let's make \u2018construction pipeline\u2019 concrete,"
+  ],
+  [
+   76.166,
+   79.292,
+   "because this is where a graph engineer spends"
+  ],
+  [
+   79.292,
+   80.855,
+   "most of their time."
+  ],
+  [
+   80.855,
+   83.2,
+   "It's an ETL job \u2014 extract,"
+  ],
+  [
+   83.2,
+   83.591,
+   "transform,"
+  ],
+  [
+   83.591,
+   86.326,
+   "load \u2014 but the output is meaning."
+  ],
+  [
+   86.958,
+   87.348,
+   "Extract:"
+  ],
+  [
+   87.348,
+   90.475,
+   "a connector per source pulls the raw data."
+  ],
+  [
+   91.106,
+   91.497,
+   "Transform:"
+  ],
+  [
+   91.497,
+   94.623,
+   "map each record onto the ontology \u2014 this"
+  ],
+  [
+   94.623,
+   97.75,
+   "SQL table becomes a Table node with these"
+  ],
+  [
+   97.75,
+   98.14,
+   "properties."
+  ],
+  [
+   98.772,
+   99.163,
+   "Resolve:"
+  ],
+  [
+   99.163,
+   101.898,
+   "run entity resolution to collapse the duplicates,"
+  ],
+  [
+   101.898,
+   104.634,
+   "like we saw with the Orders table."
+  ],
+  [
+   105.265,
+   105.656,
+   "Validate:"
+  ],
+  [
+   105.656,
+   108.782,
+   "the SHACL gate checks the candidate graph before"
+  ],
+  [
+   108.782,
+   109.954,
+   "anything is published."
+  ],
+  [
+   110.586,
+   110.977,
+   "Load:"
+  ],
+  [
+   110.977,
+   112.54,
+   "publish the new version."
+  ],
+  [
+   113.172,
+   115.516,
+   "And the cadence differs per source."
+  ],
+  [
+   115.516,
+   118.642,
+   "The wiki and repo you can batch nightly."
+  ],
+  [
+   118.642,
+   120.987,
+   "The AKS logs you stream continuously."
+  ],
+  [
+   120.987,
+   123.723,
+   "Everything runs incrementally \u2014 only what changed."
+  ],
+  [
+   124.354,
+   127.48,
+   "It's the same shape as any data pipeline"
+  ],
+  [
+   127.48,
+   128.262,
+   "you've built."
+  ],
+  [
+   128.262,
+   131.388,
+   "The twist is that the product isn't a"
+  ],
+  [
+   131.388,
+   134.514,
+   "table \u2014 it's a validated model of meaning."
+  ],
+  [
+   134.514,
+   134.905,
+   "Now,"
+  ],
+  [
+   134.905,
+   136.859,
+   "how you talk to it."
+  ],
+  [
+   137.359,
+   140.575,
+   "You talk to graphs in one of two"
+  ],
+  [
+   140.575,
+   140.977,
+   "dialects."
+  ],
+  [
+   141.609,
+   142.815,
+   "For property graphs,"
+  ],
+  [
+   142.815,
+   146.031,
+   "it's Cypher \u2014 and its patterns are almost"
+  ],
+  [
+   146.031,
+   146.433,
+   "pictures."
+  ],
+  [
+   146.433,
+   148.041,
+   "You literally write parentheses-a,"
+  ],
+  [
+   148.041,
+   148.443,
+   "arrow-uses,"
+  ],
+  [
+   148.443,
+   148.845,
+   "parentheses-b,"
+  ],
+  [
+   148.845,
+   151.257,
+   "and it reads like the diagram."
+  ],
+  [
+   151.888,
+   155.104,
+   "The big news is GQL \u2014 the Graph"
+  ],
+  [
+   155.104,
+   158.32,
+   "Query Language \u2014 which became an official ISO"
+  ],
+  [
+   158.32,
+   159.928,
+   "standard in twenty twenty-four."
+  ],
+  [
+   160.56,
+   163.776,
+   "GQL is doing for graphs exactly what SQL"
+  ],
+  [
+   163.776,
+   165.786,
+   "did for tables decades ago:"
+  ],
+  [
+   165.786,
+   168.198,
+   "giving everyone one standard to target."
+  ],
+  [
+   168.198,
+   171.414,
+   "That's a signal this whole field is maturing."
+  ],
+  [
+   172.046,
+   173.252,
+   "For RDF triplestores,"
+  ],
+  [
+   173.252,
+   176.468,
+   "the language is SPARQL \u2014 a W3C standard"
+  ],
+  [
+   176.468,
+   179.684,
+   "that can federate a query across many databases"
+  ],
+  [
+   179.684,
+   180.488,
+   "at once,"
+  ],
+  [
+   180.488,
+   183.704,
+   "and pairs naturally with OWL inference and SHACL."
+  ],
+  [
+   184.335,
+   185.943,
+   "The rule of thumb:"
+  ],
+  [
+   185.943,
+   189.159,
+   "Cypher or GQL when you're building an operational"
+  ],
+  [
+   189.159,
+   189.561,
+   "app;"
+  ],
+  [
+   189.561,
+   192.777,
+   "SPARQL when meaning has to travel across teams"
+  ],
+  [
+   192.777,
+   193.581,
+   "and vendors."
+  ],
+  [
+   194.213,
+   194.615,
+   "Now,"
+  ],
+  [
+   194.615,
+   197.831,
+   "the step that keeps the whole thing trustworthy"
+  ],
+  [
+   197.831,
+   198.635,
+   "\u2014 validation."
+  ],
+  [
+   199.135,
+   201.724,
+   "Here's a technique that quietly changed\neverything:"
+  ],
+  [
+   201.724,
+   202.093,
+   "text-to-Cypher."
+  ],
+  [
+   202.725,
+   205.683,
+   "A user asks in plain English \u2014 \u2018what"
+  ],
+  [
+   205.683,
+   208.272,
+   "breaks if we drop orders dot region?\u2019"
+  ],
+  [
+   208.904,
+   211.862,
+   "A language model translates that into a graph"
+  ],
+  [
+   211.862,
+   212.232,
+   "query."
+  ],
+  [
+   212.232,
+   215.19,
+   "But \u2014 and this is the key \u2014"
+  ],
+  [
+   215.19,
+   217.779,
+   "it's given the ontology as the schema."
+  ],
+  [
+   217.779,
+   220.737,
+   "So it knows a Column has-column a Table,"
+  ],
+  [
+   220.737,
+   222.586,
+   "which is read-by a Query,"
+  ],
+  [
+   222.586,
+   224.435,
+   "which is used-by a Report."
+  ],
+  [
+   225.067,
+   227.286,
+   "It writes a correct multi-hop query,"
+  ],
+  [
+   227.286,
+   230.244,
+   "and that query is validated against the ontology"
+  ],
+  [
+   230.244,
+   231.723,
+   "before it's ever run."
+  ],
+  [
+   231.723,
+   234.682,
+   "A hallucinated table name simply fails the check."
+  ],
+  [
+   235.313,
+   237.162,
+   "The result comes straight back:"
+  ],
+  [
+   237.162,
+   238.642,
+   "three reports would break."
+  ],
+  [
+   239.273,
+   242.232,
+   "Notice what just happened \u2014 non-engineers can now"
+  ],
+  [
+   242.232,
+   243.711,
+   "ask the graph anything,"
+  ],
+  [
+   243.711,
+   244.081,
+   "safely."
+  ],
+  [
+   244.712,
+   247.671,
+   "And this is the bridge to part five."
+  ],
+  [
+   247.671,
+   250.629,
+   "The agent's single most important tool is exactly"
+  ],
+  [
+   250.629,
+   250.999,
+   "this:"
+  ],
+  [
+   250.999,
+   253.957,
+   "turn a question into a validated graph query."
+  ],
+  [
+   253.957,
+   256.916,
+   "Which is why the graph engineer's work is"
+  ],
+  [
+   256.916,
+   258.765,
+   "what makes the agent possible."
+  ],
+  [
+   258.765,
+   259.135,
+   "First,"
+  ],
+  [
+   259.135,
+   260.244,
+   "one more guardrail."
+  ],
+  [
+   260.744,
+   263.828,
+   "Remember that SHACL shape from part one \u2014"
+  ],
+  [
+   263.828,
+   266.912,
+   "every report must use at least one query?"
+  ],
+  [
+   267.544,
+   269.471,
+   "Here's where it pays off."
+  ],
+  [
+   270.103,
+   273.187,
+   "A graph engineer runs SHACL validation as a"
+  ],
+  [
+   273.187,
+   275.114,
+   "gate in the build pipeline."
+  ],
+  [
+   275.114,
+   277.427,
+   "Every time you rebuild the graph,"
+  ],
+  [
+   277.427,
+   278.969,
+   "before anything is published,"
+  ],
+  [
+   278.969,
+   282.053,
+   "the candidate graph is checked against the shapes."
+  ],
+  [
+   282.685,
+   283.071,
+   "Look:"
+  ],
+  [
+   283.071,
+   286.155,
+   "the Exec Dashboard report has zero queries\nattached"
+  ],
+  [
+   286.155,
+   288.082,
+   "\u2014 it violates the rule."
+  ],
+  [
+   288.714,
+   290.256,
+   "So the build fails,"
+  ],
+  [
+   290.256,
+   290.641,
+   "loudly,"
+  ],
+  [
+   290.641,
+   293.34,
+   "and the broken graph is never published."
+  ],
+  [
+   293.971,
+   296.67,
+   "This is exactly how we treat code:"
+  ],
+  [
+   296.67,
+   298.597,
+   "bad code fails the tests."
+  ],
+  [
+   298.597,
+   300.91,
+   "Now bad meaning fails the build."
+  ],
+  [
+   301.542,
+   304.626,
+   "And here's a preview of something important \u2014"
+  ],
+  [
+   304.626,
+   306.939,
+   "this is neuro-symbolic thinking in miniature."
+  ],
+  [
+   306.939,
+   310.023,
+   "The symbolic rules stand guard over whatever tries"
+  ],
+  [
+   310.023,
+   311.565,
+   "to enter the graph."
+  ],
+  [
+   312.197,
+   313.353,
+   "Hold that thought,"
+  ],
+  [
+   313.353,
+   314.895,
+   "because in part five,"
+  ],
+  [
+   314.895,
+   317.979,
+   "those same rules will stand guard over an"
+  ],
+  [
+   317.979,
+   318.75,
+   "AI agent."
+  ],
+  [
+   319.382,
+   322.466,
+   "But first \u2014 the most powerful thing you"
+  ],
+  [
+   322.466,
+   324.393,
+   "can do with graph structure:"
+  ],
+  [
+   324.393,
+   325.55,
+   "learn from it."
+  ],
+  [
+   326.05,
+   329.005,
+   "One area engineers underestimate until an auditor\nshows"
+  ],
+  [
+   329.005,
+   329.375,
+   "up:"
+  ],
+  [
+   329.375,
+   329.744,
+   "governance."
+  ],
+  [
+   330.376,
+   333.331,
+   "Remember the security dimension of the ontology\nfrom"
+  ],
+  [
+   333.331,
+   334.07,
+   "part one?"
+  ],
+  [
+   334.07,
+   336.286,
+   "This is where it becomes real."
+  ],
+  [
+   336.918,
+   339.873,
+   "You enforce access at the relationship level \u2014"
+  ],
+  [
+   339.873,
+   342.829,
+   "hiding sensitive nodes and edges depending on who"
+  ],
+  [
+   342.829,
+   343.567,
+   "is asking,"
+  ],
+  [
+   343.567,
+   344.676,
+   "human or agent."
+  ],
+  [
+   345.307,
+   348.263,
+   "You tag the nodes that hold personal or"
+  ],
+  [
+   348.263,
+   349.001,
+   "regulated data,"
+  ],
+  [
+   349.001,
+   351.957,
+   "and because lineage is already in the graph,"
+  ],
+  [
+   351.957,
+   354.912,
+   "you can prove exactly where that data flows"
+  ],
+  [
+   354.912,
+   357.867,
+   "\u2014 which is gold during a compliance audit."
+  ],
+  [
+   358.499,
+   360.716,
+   "And you version the ontology itself,"
+  ],
+  [
+   360.716,
+   363.671,
+   "reviewing changes to meaning the same way you"
+  ],
+  [
+   363.671,
+   365.149,
+   "review changes to code."
+  ],
+  [
+   365.78,
+   368.735,
+   "Here's why this matters more than it used"
+  ],
+  [
+   368.735,
+   369.105,
+   "to."
+  ],
+  [
+   369.105,
+   372.06,
+   "The moment an AI agent can act on"
+  ],
+  [
+   372.06,
+   372.799,
+   "the graph,"
+  ],
+  [
+   372.799,
+   374.277,
+   "governance stops being paperwork."
+  ],
+  [
+   374.277,
+   377.232,
+   "It becomes the line between a system that"
+  ],
+  [
+   377.232,
+   377.601,
+   "helps,"
+  ],
+  [
+   377.601,
+   379.818,
+   "and one that quietly does harm."
+  ],
+  [
+   380.318,
+   382.648,
+   "One last piece of the craft,"
+  ],
+  [
+   382.648,
+   385.756,
+   "and it's the one teams forget until it"
+  ],
+  [
+   385.756,
+   386.533,
+   "bites them:"
+  ],
+  [
+   386.533,
+   388.475,
+   "observability of the graph itself."
+  ],
+  [
+   389.106,
+   392.214,
+   "Once the graph is load-bearing \u2014 once reports,"
+  ],
+  [
+   392.214,
+   392.602,
+   "twins,"
+  ],
+  [
+   392.602,
+   395.709,
+   "and agents all depend on it \u2014 it"
+  ],
+  [
+   395.709,
+   398.817,
+   "needs the same operational care as any service."
+  ],
+  [
+   399.448,
+   400.613,
+   "Track quality metrics:"
+  ],
+  [
+   400.613,
+   402.167,
+   "how many orphan nodes,"
+  ],
+  [
+   402.167,
+   403.721,
+   "what's the duplicate rate,"
+  ],
+  [
+   403.721,
+   405.274,
+   "how many constraint violations,"
+  ],
+  [
+   405.274,
+   407.216,
+   "and are those trending up?"
+  ],
+  [
+   407.848,
+   409.013,
+   "Set drift alerts."
+  ],
+  [
+   409.013,
+   411.732,
+   "If your LLM extraction quality quietly degrades,"
+  ],
+  [
+   411.732,
+   414.839,
+   "someone should get paged \u2014 because the graph"
+  ],
+  [
+   414.839,
+   416.393,
+   "has an SLA now."
+  ],
+  [
+   417.025,
+   419.743,
+   "And keep a suite of golden queries:"
+  ],
+  [
+   419.743,
+   422.851,
+   "known questions with known answers that run on"
+  ],
+  [
+   422.851,
+   423.628,
+   "every rebuild."
+  ],
+  [
+   423.628,
+   424.793,
+   "They're integration tests,"
+  ],
+  [
+   424.793,
+   425.958,
+   "but for meaning."
+  ],
+  [
+   426.59,
+   428.143,
+   "The mindset is simple:"
+  ],
+  [
+   428.143,
+   430.085,
+   "you already monitor your microservices."
+  ],
+  [
+   430.085,
+   432.804,
+   "Monitor the graph exactly the same way,"
+  ],
+  [
+   432.804,
+   435.911,
+   "because everything above it now leans on it."
+  ],
+  [
+   436.543,
+   439.65,
+   "Alright \u2014 the most powerful thing graph\nengineering"
+  ],
+  [
+   439.65,
+   440.039,
+   "unlocks:"
+  ],
+  [
+   440.039,
+   441.204,
+   "learning from structure."
+  ],
+  [
+   441.704,
+   444.454,
+   "Everything so far has queried the graph."
+  ],
+  [
+   444.454,
+   447.596,
+   "But you can also learn from its shape,"
+  ],
+  [
+   447.596,
+   449.953,
+   "using graph neural networks \u2014 GNNs."
+  ],
+  [
+   450.584,
+   452.941,
+   "The core idea is beautifully simple."
+  ],
+  [
+   452.941,
+   455.691,
+   "Each node gathers information from its neighbors."
+  ],
+  [
+   456.322,
+   459.072,
+   "Then it gathers from its neighbors' neighbors."
+  ],
+  [
+   459.704,
+   461.668,
+   "Watch the signal spread outward,"
+  ],
+  [
+   461.668,
+   463.239,
+   "one ring per layer."
+  ],
+  [
+   463.239,
+   464.81,
+   "After a few hops,"
+  ],
+  [
+   464.81,
+   467.952,
+   "every node holds a rich summary of its"
+  ],
+  [
+   467.952,
+   469.916,
+   "whole neighborhood \u2014 an embedding."
+  ],
+  [
+   470.548,
+   472.119,
+   "Why does that matter?"
+  ],
+  [
+   472.119,
+   474.476,
+   "Because the structure itself is predictive."
+  ],
+  [
+   475.108,
+   478.25,
+   "A GNN can predict missing edges \u2014 \u2018this"
+  ],
+  [
+   478.25,
+   480.607,
+   "report probably depends on that table,"
+  ],
+  [
+   480.607,
+   482.964,
+   "even though nobody wrote it down\u2019."
+  ],
+  [
+   482.964,
+   486.106,
+   "It can spot anomalies \u2014 a node behaving"
+  ],
+  [
+   486.106,
+   487.284,
+   "unlike its neighbors."
+  ],
+  [
+   487.916,
+   489.094,
+   "This isn't academic."
+  ],
+  [
+   489.094,
+   492.237,
+   "Uber uses GNNs for Eats recommendations and map"
+  ],
+  [
+   492.237,
+   492.63,
+   "ETAs."
+  ],
+  [
+   492.63,
+   494.986,
+   "Pinterest uses them at billions-of-queries scale."
+  ],
+  [
+   494.986,
+   497.736,
+   "Banks use them to catch fraud rings."
+  ],
+  [
+   498.368,
+   498.76,
+   "So,"
+  ],
+  [
+   498.76,
+   500.332,
+   "to recap part four:"
+  ],
+  [
+   500.332,
+   503.081,
+   "graph engineering is the craft of building,"
+  ],
+  [
+   503.081,
+   503.474,
+   "validating,"
+  ],
+  [
+   503.474,
+   503.867,
+   "querying,"
+  ],
+  [
+   503.867,
+   505.831,
+   "and learning from the graph,"
+  ],
+  [
+   505.831,
+   508.973,
+   "so every layer above it can trust it."
+  ],
+  [
+   509.605,
+   510.783,
+   "Which brings us,"
+  ],
+  [
+   510.783,
+   511.176,
+   "finally,"
+  ],
+  [
+   511.176,
+   513.14,
+   "to the mind that acts."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "kg/kg-ch05-graph-engineering.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "ticker": "AXISBANK",
+ "scraped_at": "2026-08-14T15:27:38",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 378794.0,
+ "current_price": 1217.0,
+ "pe": 13.6,
+ "book_value": 712.0,
+ "dividend_yield_pct": 0.08,
+ "roce_pct": 6.24,
+ "roe_pct": 13.1,
+ "face_value": 2.0,
+ "high": 1418.0,
+ "sales_growth": {
+  "10 Years": 12.0,
+  "5 Years": 30.0,
+  "3 Years": 35.0,
+  "TTM": 0.0
+ },
+ "profit_growth": {
+  "10 Years": 8.0,
+  "5 Years": 10.0,
+  "3 Years": 9.0,
+  "1 Year": 14.0
+ },
+ "roe_hist": {
+  "Equity Capital": 474.0,
+  "CWIP": 105.0
+ },
+ "price_cagr": {
+  "10 Years": 11.0,
+  "5 Years": 14.0,
+  "3 Years": 16.0,
+  "Last Year": 13.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [],
+  "eps": [
+   "19.78",
+   "20.13",
+   "21.05",
+   "24.62",
+   "20.83",
+   "23.93",
+   "21.78",
+   "24.13",
+   "20.13",
+   "17.82",
+   "22.58",
+   "24.46",
+   "24.54"
+  ]
+ },
+ "pros": [
+  "Company has delivered good profit growth of 29.6% CAGR over last 5 years",
+  "Company&#x27;s working capital requirements have reduced from 73.7 days to 43.2 days"
+ ],
+ "cons": [
+  "Company has low interest coverage ratio.",
+  "Promoter holding is low: 7.87%",
+  "Contingent liabilities of Rs.31,22,124 Cr.",
+  "Company might be capitalizing the interest cost",
+  "Earnings include an other income of Rs.29,292 Cr."
+ ]
+}

@@ -1,0 +1,2092 @@
+{
+ "cuts": [
+  {
+   "id": "dp16-bridge_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 31.593,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 16",
+    "line1": "Two things vary.",
+    "line2": "Don't multiply them.",
+    "sub": "when a class grows along two axes at once, subclassing explodes",
+    "dur": 32.093
+   }
+  },
+  {
+   "id": "dp16-bridge_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 32.093,
+   "out_seconds": 68.032,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "Notifications, over any channel",
+    "situation": "You have notification types \u2014 alert, reminder, digest \u2014 and delivery channels \u2014 email, SMS, Slack. Any type can go over any channel, and both lists keep growing.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udd14",
+      "label": "Types: alert, reminder\u2026"
+     },
+     {
+      "emoji": "\ud83d\udce1",
+      "label": "Channels: email, SMS\u2026"
+     },
+     {
+      "emoji": "\u2716\ufe0f",
+      "label": "\u2026every combination"
+     }
+    ],
+    "ask": "How do you support every type-by-channel pairing without a class for each?",
+    "dur": 36.439
+   }
+  },
+  {
+   "id": "dp16-bridge_naive",
+   "type": "dp_code",
+   "in_seconds": 68.532,
+   "out_seconds": 107.521,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "A subclass for every combination.",
+    "file": "explosion.java",
+    "lines": [
+     {
+      "t": "class AlertEmail    extends Notification { ... }",
+      "s": "hi"
+     },
+     {
+      "t": "class AlertSms      extends Notification { ... }",
+      "s": "hi"
+     },
+     {
+      "t": "class AlertSlack    extends Notification { ... }",
+      "s": "hi"
+     },
+     {
+      "t": "class ReminderEmail extends Notification { ... }",
+      "s": "hi"
+     },
+     {
+      "t": "class ReminderSms   extends Notification { ... }"
+     },
+     {
+      "t": "// ...digest \u00d7 3 more. 3 types \u00d7 3 channels = 9."
+     }
+    ],
+    "note": "Each class fuses one type with one channel. 3 \u00d7 3 already = nine.",
+    "dur": 39.489
+   }
+  },
+  {
+   "id": "dp16-bridge_pain",
+   "type": "dp_pain",
+   "in_seconds": 108.021,
+   "out_seconds": 142.657,
+   "props": {
+    "title": "\"Add WhatsApp. Oh, and a new 'promo' type.\"",
+    "file": "multiply.java",
+    "lines": [
+     {
+      "t": "// add a 4th channel (WhatsApp):",
+      "s": "hi"
+     },
+     {
+      "t": "//   AlertWhatsApp, ReminderWhatsApp, DigestWhatsApp",
+      "s": "hi"
+     },
+     {
+      "t": "// add a 4th type (Promo):",
+      "s": "hi"
+     },
+     {
+      "t": "//   PromoEmail, PromoSms, PromoSlack, PromoWhatsApp",
+      "s": "hi"
+     },
+     {
+      "t": "// 4 \u00d7 4 = 16 classes, and climbing"
+     }
+    ],
+    "smell": "M types \u00d7 N channels = M\u00d7N classes",
+    "touched": [
+     "add 1 channel \u2192 add M classes",
+     "add 1 type \u2192 add N classes",
+     "channel logic duplicated per type",
+     "the class count multiplies, never adds"
+    ],
+    "dur": 35.136
+   }
+  },
+  {
+   "id": "dp16-bridge_insight",
+   "type": "dp_insight",
+   "in_seconds": 143.157,
+   "out_seconds": 183.134,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "A notification has content, and gets sent",
+     "'What it says' is one concern",
+     "'How it's delivered' is a separate concern"
+    ],
+    "varies": [
+     "The notification type \u2014 independently",
+     "The channel \u2014 independently"
+    ],
+    "principle": "Two things vary independently \u2014 so split them into two hierarchies and let one hold the other.",
+    "dur": 40.477
+   }
+  },
+  {
+   "id": "dp16-bridge_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 183.634,
+   "out_seconds": 234.594,
+   "props": {
+    "title": "A remote and a TV",
+    "emoji": "\ud83d\udcfa",
+    "analogy": "Any universal remote drives any TV through the same interface \u2014 nobody builds a 'Sony-remote-for-one-Samsung-TV'.",
+    "map": [
+     {
+      "from": "The remote (what you want)",
+      "to": "the abstraction (Notification)"
+     },
+     {
+      "from": "The TV (how it happens)",
+      "to": "the implementor (the channel)"
+     },
+     {
+      "from": "The standard signal",
+      "to": "the send() interface"
+     },
+     {
+      "from": "Pair any remote with any TV",
+      "to": "compose any type with any channel"
+     }
+    ],
+    "breaks": "a remote is physically separate; here you still write both sides \u2014 the win is only that they no longer multiply.",
+    "dur": 51.46
+   }
+  },
+  {
+   "id": "dp16-bridge_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 235.094,
+   "out_seconds": 270.268,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "The implementor side: how to send",
+    "file": "MessageSender.java",
+    "lines": [
+     {
+      "t": "interface MessageSender {        // the 'how'",
+      "s": "add"
+     },
+     {
+      "t": "  void send(String text);",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "class EmailSender implements MessageSender { ... }"
+     },
+     {
+      "t": "class SmsSender   implements MessageSender { ... }"
+     },
+     {
+      "t": "class SlackSender implements MessageSender { ... }"
+     }
+    ],
+    "note": "One clean hierarchy for the CHANNELS \u2014 three classes, not nine.",
+    "dur": 35.674
+   }
+  },
+  {
+   "id": "dp16-bridge_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 270.768,
+   "out_seconds": 309.76,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "The abstraction holds a sender \u2014 the bridge",
+    "file": "Notification.java",
+    "lines": [
+     {
+      "t": "abstract class Notification {       // the 'what'",
+      "s": "hi"
+     },
+     {
+      "t": "  protected final MessageSender sender;   // \u2190 the bridge",
+      "s": "hi"
+     },
+     {
+      "t": "  Notification(MessageSender s) { this.sender = s; }",
+      "s": "hi"
+     },
+     {
+      "t": "  abstract void notify(User u);"
+     },
+     {
+      "t": "}"
+     },
+     {
+      "t": "class Alert extends Notification { /* formats urgently */ }"
+     }
+    ],
+    "note": "Notification HAS-A sender. That reference is the bridge between the sides.",
+    "dur": 39.492
+   }
+  },
+  {
+   "id": "dp16-bridge_try",
+   "type": "dp_try",
+   "in_seconds": 310.26,
+   "out_seconds": 341.249,
+   "props": {
+    "title": "Write Alert.notify()",
+    "file": "Alert.java",
+    "lines": [
+     {
+      "t": "class Alert extends Notification {"
+     },
+     {
+      "t": "  void notify(User u) {"
+     },
+     {
+      "t": "    String text = \"\ud83d\udea8 ALERT: \" + details;   // format"
+     },
+     {
+      "t": "    // \u25af now actually send it \u2014 over which channel?",
+      "s": "ghost"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Alert formats its text. How does it send \u2014 without knowing if it's email or SMS?",
+    "hint": "sender.send(text);  // whichever channel was injected",
+    "dur": 31.489
+   }
+  },
+  {
+   "id": "dp16-bridge_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 341.749,
+   "out_seconds": 375.026,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "Compose any pairing at runtime",
+    "file": "app.java",
+    "lines": [
+     {
+      "t": "Notification n = new Alert(new SmsSender());   // alert \u00d7 SMS",
+      "s": "add"
+     },
+     {
+      "t": "n.notify(user);"
+     },
+     {
+      "t": "// mix and match freely, at runtime:"
+     },
+     {
+      "t": "new Digest(new EmailSender());   // digest \u00d7 email",
+      "s": "add"
+     },
+     {
+      "t": "new Reminder(new SlackSender()); // reminder \u00d7 Slack",
+      "s": "add"
+     }
+    ],
+    "note": "Pick a type, pick a channel, snap them together. No fused subclass.",
+    "dur": 33.777
+   }
+  },
+  {
+   "id": "dp16-bridge_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 375.526,
+   "out_seconds": 412.056,
+   "props": {
+    "requirement": "\"Add a WhatsApp channel\"",
+    "naiveLabel": "Fused",
+    "naiveCost": "One new class per notification type.",
+    "naiveSteps": [
+     "AlertWhatsApp, ReminderWhatsApp\u2026",
+     "one per existing type, forever",
+     "re-implement WhatsApp each time"
+    ],
+    "patLabel": "Bridged",
+    "patCost": "One class. It pairs with every type.",
+    "patFile": "WhatsAppSender.java",
+    "patLines": [
+     {
+      "t": "class WhatsAppSender implements MessageSender {",
+      "s": "add"
+     },
+     {
+      "t": "  public void send(String text) { /* WhatsApp API */ }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "// works with Alert, Reminder, Digest \u2014 instantly",
+      "s": "add"
+     }
+    ],
+    "dur": 37.03
+   }
+  },
+  {
+   "id": "dp16-bridge_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 412.556,
+   "out_seconds": 456.542,
+   "props": {
+    "name": "The Bridge Pattern",
+    "plain": "Split a class that varies two ways into two hierarchies \u2014 an abstraction and an implementor \u2014 and let one hold a reference to the other.",
+    "nodes": [
+     {
+      "id": "abs",
+      "title": "Notification",
+      "stereo": "abstraction",
+      "members": [
+       "# sender: MessageSender",
+       "+ notify()"
+      ],
+      "x": 160,
+      "y": 210,
+      "w": 400,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "alert",
+      "title": "Alert",
+      "members": [
+       "formats urgently"
+      ],
+      "x": 60,
+      "y": 470,
+      "w": 300,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "rem",
+      "title": "Reminder",
+      "members": [
+       "formats gently"
+      ],
+      "x": 400,
+      "y": 470,
+      "w": 300,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "impl",
+      "title": "MessageSender",
+      "stereo": "implementor",
+      "members": [
+       "+ send(text)"
+      ],
+      "x": 1360,
+      "y": 210,
+      "w": 400,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "email",
+      "title": "EmailSender",
+      "members": [
+       "send \u2192 email"
+      ],
+      "x": 1260,
+      "y": 470,
+      "w": 300,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "sms",
+      "title": "SmsSender",
+      "members": [
+       "send \u2192 SMS"
+      ],
+      "x": 1600,
+      "y": 470,
+      "w": 300,
+      "color": "#8B93B0"
+     }
+    ],
+    "edges": [
+     {
+      "from": "alert",
+      "to": "abs",
+      "kind": "impl"
+     },
+     {
+      "from": "rem",
+      "to": "abs",
+      "kind": "impl"
+     },
+     {
+      "from": "email",
+      "to": "impl",
+      "kind": "impl"
+     },
+     {
+      "from": "sms",
+      "to": "impl",
+      "kind": "impl"
+     },
+     {
+      "from": "abs",
+      "to": "impl",
+      "kind": "has"
+     }
+    ],
+    "dur": 44.486
+   }
+  },
+  {
+   "id": "dp16-bridge_map",
+   "type": "dp_map",
+   "in_seconds": 457.042,
+   "out_seconds": 502.971,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Abstraction",
+      "your": "abstract Notification (holds a sender)"
+     },
+     {
+      "role": "RefinedAbstraction",
+      "your": "Alert, Reminder, Digest"
+     },
+     {
+      "role": "Implementor",
+      "your": "interface MessageSender"
+     },
+     {
+      "role": "ConcreteImplementor",
+      "your": "EmailSender, SmsSender, SlackSender"
+     }
+    ],
+    "plain": "The abstraction delegates the real work to an implementor it holds; both sides subclass freely and independently.",
+    "gof": "Decouple an abstraction from its implementation so that the two can vary independently.",
+    "dur": 46.429
+   }
+  },
+  {
+   "id": "dp16-bridge_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 503.471,
+   "out_seconds": 549.437,
+   "props": {
+    "title": "Only worth it when BOTH vary",
+    "costs": [
+     "Two hierarchies plus a bridge \u2014 more upfront",
+     "More indirection to follow when reading",
+     "Over-engineered if only one side changes"
+    ],
+    "dont": [
+     "Only one dimension actually varies",
+     "There'll only ever be a few combinations",
+     "The implementation will never change"
+    ],
+    "signal": "a class is subclassed along two independent dimensions, and you can feel the M\u00d7N explosion coming.",
+    "dur": 46.466
+   }
+  },
+  {
+   "id": "dp16-bridge_recap",
+   "type": "dp_recap",
+   "in_seconds": 549.937,
+   "out_seconds": 609.608,
+   "props": {
+    "title": "Bridge, in one breath",
+    "items": [
+     "Subclassing along two axes \u2014 type and channel \u2014 multiplied into M\u00d7N fused classes, with logic duplicated across them.",
+     "The two axes vary independently \u2014 so split them into two hierarchies and let the abstraction HOLD an implementor.",
+     "Bridge: compose a type with a channel at runtime; add to either side and the other never multiplies. M+N, not M\u00d7N."
+    ],
+    "challenge": "You have shapes \u2014 circle, square \u2014 that must draw on multiple backends \u2014 SVG, Canvas, PDF. Both lists will keep growing.",
+    "question": "Does Bridge fit? Which is the abstraction, which is the implementor, and where's the bridge?",
+    "dur": 60.171
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   3.255,
+   "Sometimes a class has to vary in two"
+  ],
+  [
+   3.255,
+   4.475,
+   "directions at once."
+  ],
+  [
+   5.107,
+   8.361,
+   "A notification is one kind of thing \u2014"
+  ],
+  [
+   8.361,
+   9.175,
+   "an alert,"
+  ],
+  [
+   9.175,
+   9.989,
+   "a reminder,"
+  ],
+  [
+   9.989,
+   11.209,
+   "a daily digest."
+  ],
+  [
+   11.209,
+   14.464,
+   "But it also has to travel some way"
+  ],
+  [
+   14.464,
+   15.277,
+   "\u2014 email,"
+  ],
+  [
+   15.277,
+   15.684,
+   "SMS,"
+  ],
+  [
+   15.684,
+   16.091,
+   "Slack."
+  ],
+  [
+   16.723,
+   17.943,
+   "Reach for inheritance,"
+  ],
+  [
+   17.943,
+   21.198,
+   "and you end up making one class for"
+  ],
+  [
+   21.198,
+   22.011,
+   "every combination:"
+  ],
+  [
+   22.011,
+   22.418,
+   "alert-by-email,"
+  ],
+  [
+   22.418,
+   22.825,
+   "alert-by-SMS,"
+  ],
+  [
+   22.825,
+   23.232,
+   "reminder-by-email,"
+  ],
+  [
+   23.232,
+   24.452,
+   "on and on."
+  ],
+  [
+   24.452,
+   25.266,
+   "Two lists,"
+  ],
+  [
+   25.266,
+   25.673,
+   "multiplied."
+  ],
+  [
+   26.304,
+   29.559,
+   "There is a way to add instead of"
+  ],
+  [
+   29.559,
+   29.966,
+   "multiply."
+  ],
+  [
+   29.966,
+   31.593,
+   "Let's send some notifications."
+  ],
+  [
+   32.093,
+   33.665,
+   "Here is the system:"
+  ],
+  [
+   33.665,
+   34.058,
+   "notifications."
+  ],
+  [
+   34.69,
+   35.869,
+   "On one side,"
+  ],
+  [
+   35.869,
+   39.014,
+   "the kinds of notification \u2014 an urgent alert,"
+  ],
+  [
+   39.014,
+   40.193,
+   "a gentle reminder,"
+  ],
+  [
+   40.193,
+   41.373,
+   "a daily digest."
+  ],
+  [
+   41.373,
+   43.338,
+   "Each formats its content differently."
+  ],
+  [
+   43.97,
+   45.542,
+   "On the other side,"
+  ],
+  [
+   45.542,
+   48.687,
+   "the channels they go out over \u2014 email,"
+  ],
+  [
+   48.687,
+   49.08,
+   "SMS,"
+  ],
+  [
+   49.08,
+   49.473,
+   "Slack."
+  ],
+  [
+   49.473,
+   50.652,
+   "Each sends differently."
+  ],
+  [
+   51.284,
+   54.428,
+   "Any notification type can go over any channel."
+  ],
+  [
+   54.428,
+   57.573,
+   "And both lists keep growing \u2014 new types,"
+  ],
+  [
+   57.573,
+   58.359,
+   "new channels,"
+  ],
+  [
+   58.359,
+   59.539,
+   "all the time."
+  ],
+  [
+   60.17,
+   63.315,
+   "So how do you support every pairing of"
+  ],
+  [
+   63.315,
+   64.494,
+   "type and channel,"
+  ],
+  [
+   64.494,
+   67.639,
+   "without writing a separate class for every single"
+  ],
+  [
+   67.639,
+   68.032,
+   "combination?"
+  ],
+  [
+   68.532,
+   69.804,
+   "The obvious approach:"
+  ],
+  [
+   69.804,
+   72.348,
+   "make a class for each combination."
+  ],
+  [
+   72.979,
+   74.251,
+   "Alert over email."
+  ],
+  [
+   74.251,
+   75.523,
+   "Alert over SMS."
+  ],
+  [
+   75.523,
+   76.795,
+   "Alert over Slack."
+  ],
+  [
+   76.795,
+   78.491,
+   "Then reminder over email,"
+  ],
+  [
+   78.491,
+   79.763,
+   "reminder over SMS,"
+  ],
+  [
+   79.763,
+   81.035,
+   "and so on."
+  ],
+  [
+   81.667,
+   82.939,
+   "Three notification types,"
+  ],
+  [
+   82.939,
+   86.331,
+   "three channels \u2014 and you already have nine"
+  ],
+  [
+   86.331,
+   86.755,
+   "classes."
+  ],
+  [
+   87.386,
+   89.082,
+   "And notice the waste."
+  ],
+  [
+   89.082,
+   92.05,
+   "The SMS-sending logic is written inside alert-SMS,"
+  ],
+  [
+   92.05,
+   93.746,
+   "and again inside reminder-SMS,"
+  ],
+  [
+   93.746,
+   97.138,
+   "and again inside digest-SMS \u2014 the same code,"
+  ],
+  [
+   97.138,
+   97.986,
+   "three times."
+  ],
+  [
+   98.617,
+   102.009,
+   "Each class welds one type to one channel,"
+  ],
+  [
+   102.009,
+   102.433,
+   "permanently."
+  ],
+  [
+   102.433,
+   105.825,
+   "The two things that should be free to"
+  ],
+  [
+   105.825,
+   107.521,
+   "vary are fused together."
+  ],
+  [
+   108.021,
+   109.55,
+   "Then both lists grow,"
+  ],
+  [
+   109.55,
+   111.079,
+   "and the multiplication bites."
+  ],
+  [
+   111.711,
+   114.769,
+   "Add one channel \u2014 WhatsApp \u2014 and you"
+  ],
+  [
+   114.769,
+   117.445,
+   "must add it for every existing type:"
+  ],
+  [
+   117.445,
+   117.827,
+   "alert-WhatsApp,"
+  ],
+  [
+   117.827,
+   118.209,
+   "reminder-WhatsApp,"
+  ],
+  [
+   118.209,
+   118.591,
+   "digest-WhatsApp."
+  ],
+  [
+   119.223,
+   122.281,
+   "Add one type \u2014 a promo \u2014 and"
+  ],
+  [
+   122.281,
+   124.957,
+   "you must add it for every channel."
+  ],
+  [
+   125.588,
+   127.5,
+   "Three by three was nine;"
+  ],
+  [
+   127.5,
+   129.411,
+   "four by four is sixteen;"
+  ],
+  [
+   129.411,
+   130.94,
+   "and it only accelerates."
+  ],
+  [
+   131.572,
+   134.63,
+   "Every new item on either list multiplies against"
+  ],
+  [
+   134.63,
+   136.159,
+   "the whole other list."
+  ],
+  [
+   136.159,
+   139.217,
+   "The class count does not grow by addition"
+  ],
+  [
+   139.217,
+   141.128,
+   "\u2014 it grows by multiplication."
+  ],
+  [
+   141.128,
+   142.657,
+   "That is the explosion."
+  ],
+  [
+   143.157,
+   145.404,
+   "So what is actually going on?"
+  ],
+  [
+   146.036,
+   148.283,
+   "A notification always has two parts:"
+  ],
+  [
+   148.283,
+   149.406,
+   "what it says,"
+  ],
+  [
+   149.406,
+   151.279,
+   "and how it is delivered."
+  ],
+  [
+   151.91,
+   154.906,
+   "And here is the crucial realization \u2014 those"
+  ],
+  [
+   154.906,
+   156.404,
+   "two vary completely independently."
+  ],
+  [
+   156.404,
+   159.4,
+   "A new channel has nothing to do with"
+  ],
+  [
+   159.4,
+   160.524,
+   "the notification types."
+  ],
+  [
+   160.524,
+   163.52,
+   "A new type has nothing to do with"
+  ],
+  [
+   163.52,
+   164.269,
+   "the channels."
+  ],
+  [
+   164.901,
+   167.148,
+   "Inheritance forced them into one hierarchy,"
+  ],
+  [
+   167.148,
+   168.271,
+   "so they multiplied."
+  ],
+  [
+   168.903,
+   171.524,
+   "The move is to stop fusing them."
+  ],
+  [
+   171.524,
+   174.52,
+   "Split them into two separate hierarchies \u2014 one"
+  ],
+  [
+   174.52,
+   175.644,
+   "for the types,"
+  ],
+  [
+   175.644,
+   178.64,
+   "one for the channels \u2014 and let a"
+  ],
+  [
+   178.64,
+   180.138,
+   "notification hold a channel,"
+  ],
+  [
+   180.138,
+   182.01,
+   "rather than inherit from one."
+  ],
+  [
+   182.01,
+   182.385,
+   "Composition,"
+  ],
+  [
+   182.385,
+   183.134,
+   "not combination."
+  ],
+  [
+   183.634,
+   186.526,
+   "Think of a remote control and a television."
+  ],
+  [
+   187.157,
+   189.687,
+   "A universal remote can operate any TV."
+  ],
+  [
+   189.687,
+   192.579,
+   "Nobody manufactures a special Sony remote that\nonly"
+  ],
+  [
+   192.579,
+   194.386,
+   "works with one Samsung model."
+  ],
+  [
+   195.018,
+   197.909,
+   "The remote is what you want done \u2014"
+  ],
+  [
+   197.909,
+   198.994,
+   "raise the volume."
+  ],
+  [
+   198.994,
+   201.524,
+   "The TV is how it actually happens."
+  ],
+  [
+   201.524,
+   203.692,
+   "Between them sits a standard signal,"
+  ],
+  [
+   203.692,
+   204.777,
+   "an agreed interface."
+  ],
+  [
+   204.777,
+   206.222,
+   "Because of that interface,"
+  ],
+  [
+   206.222,
+   208.391,
+   "any remote pairs with any TV."
+  ],
+  [
+   209.023,
+   211.914,
+   "The remote is the abstraction \u2014 the notification."
+  ],
+  [
+   211.914,
+   214.806,
+   "The TV is the implementor \u2014 the channel."
+  ],
+  [
+   214.806,
+   217.336,
+   "The standard signal is the send interface."
+  ],
+  [
+   217.336,
+   220.227,
+   "And pairing any remote with any TV is"
+  ],
+  [
+   220.227,
+   222.396,
+   "composing any type with any channel."
+  ],
+  [
+   223.028,
+   224.112,
+   "Where it strains:"
+  ],
+  [
+   224.112,
+   227.004,
+   "a remote and a TV are physically separate"
+  ],
+  [
+   227.004,
+   227.365,
+   "objects."
+  ],
+  [
+   227.365,
+   230.257,
+   "Here you still write both sides in code"
+  ],
+  [
+   230.257,
+   233.148,
+   "\u2014 the win is only that they stop"
+  ],
+  [
+   233.148,
+   234.594,
+   "multiplying against each other."
+  ],
+  [
+   235.094,
+   235.89,
+   "The refactor,"
+  ],
+  [
+   235.89,
+   236.687,
+   "step one."
+  ],
+  [
+   237.318,
+   240.503,
+   "Pull the how \u2014 the delivery \u2014 into"
+  ],
+  [
+   240.503,
+   241.698,
+   "its own hierarchy."
+  ],
+  [
+   242.329,
+   245.116,
+   "A MessageSender interface with a single method:"
+  ],
+  [
+   245.116,
+   246.311,
+   "send some text."
+  ],
+  [
+   246.942,
+   250.127,
+   "Then one concrete sender per channel \u2014 email,"
+  ],
+  [
+   250.127,
+   250.526,
+   "SMS,"
+  ],
+  [
+   250.526,
+   250.924,
+   "Slack."
+  ],
+  [
+   250.924,
+   251.72,
+   "Three classes,"
+  ],
+  [
+   251.72,
+   254.905,
+   "and each holds its channel's sending logic exactly"
+  ],
+  [
+   254.905,
+   255.303,
+   "once."
+  ],
+  [
+   255.935,
+   258.324,
+   "No notification types in sight here."
+  ],
+  [
+   258.324,
+   261.509,
+   "This side knows only how to put text"
+  ],
+  [
+   261.509,
+   262.703,
+   "on a wire."
+  ],
+  [
+   262.703,
+   265.888,
+   "That SMS logic that used to be copied"
+  ],
+  [
+   265.888,
+   266.685,
+   "three times?"
+  ],
+  [
+   266.685,
+   269.074,
+   "It now lives in one SmsSender,"
+  ],
+  [
+   269.074,
+   270.268,
+   "and nowhere else."
+  ],
+  [
+   270.768,
+   271.528,
+   "Step two:"
+  ],
+  [
+   271.528,
+   274.567,
+   "the what \u2014 the notification hierarchy \u2014 and"
+  ],
+  [
+   274.567,
+   277.225,
+   "the bridge that joins the two sides."
+  ],
+  [
+   277.857,
+   280.896,
+   "The abstract Notification holds a reference to a"
+  ],
+  [
+   280.896,
+   281.276,
+   "MessageSender."
+  ],
+  [
+   281.276,
+   283.555,
+   "That one field is the bridge."
+  ],
+  [
+   284.186,
+   286.845,
+   "A notification no longer is a channel;"
+  ],
+  [
+   286.845,
+   288.365,
+   "it has a channel,"
+  ],
+  [
+   288.365,
+   290.644,
+   "handed in when it is built."
+  ],
+  [
+   291.275,
+   293.555,
+   "Then the refined types \u2014 Alert,"
+  ],
+  [
+   293.555,
+   293.934,
+   "Reminder,"
+  ],
+  [
+   293.934,
+   295.454,
+   "Digest \u2014 extend Notification."
+  ],
+  [
+   295.454,
+   298.493,
+   "Each knows only how to format its own"
+  ],
+  [
+   298.493,
+   298.872,
+   "content."
+  ],
+  [
+   298.872,
+   301.152,
+   "When it needs to actually send,"
+  ],
+  [
+   301.152,
+   303.811,
+   "it delegates to the sender it holds."
+  ],
+  [
+   304.442,
+   305.582,
+   "Two small hierarchies,"
+  ],
+  [
+   305.582,
+   307.481,
+   "joined by a single reference."
+  ],
+  [
+   307.481,
+   309.76,
+   "That reference is the entire pattern."
+  ],
+  [
+   310.26,
+   312.039,
+   "Your turn \u2014 pause here."
+  ],
+  [
+   312.67,
+   315.517,
+   "The Alert has formatted its message \u2014 the"
+  ],
+  [
+   315.517,
+   316.94,
+   "urgent text is ready."
+  ],
+  [
+   317.571,
+   319.35,
+   "Now it has to send."
+  ],
+  [
+   319.35,
+   322.197,
+   "But here is the point of the whole"
+  ],
+  [
+   322.197,
+   322.552,
+   "pattern:"
+  ],
+  [
+   322.552,
+   325.399,
+   "Alert must not know or care whether it"
+  ],
+  [
+   325.399,
+   327.178,
+   "is going out by email,"
+  ],
+  [
+   327.178,
+   327.533,
+   "SMS,"
+  ],
+  [
+   327.533,
+   328.245,
+   "or Slack."
+  ],
+  [
+   328.877,
+   330.3,
+   "It holds a MessageSender."
+  ],
+  [
+   330.3,
+   331.011,
+   "Use it."
+  ],
+  [
+   331.643,
+   334.489,
+   "Write the one line that sends the text"
+  ],
+  [
+   334.489,
+   337.335,
+   "\u2014 and notice that the same line works"
+  ],
+  [
+   337.335,
+   338.403,
+   "for every channel,"
+  ],
+  [
+   338.403,
+   341.249,
+   "because Alert only ever talks to the interface."
+  ],
+  [
+   341.749,
+   342.487,
+   "Step three,"
+  ],
+  [
+   342.487,
+   343.964,
+   "and the payoff appears."
+  ],
+  [
+   344.596,
+   346.811,
+   "To send an alert over SMS,"
+  ],
+  [
+   346.811,
+   348.288,
+   "you build an Alert,"
+  ],
+  [
+   348.288,
+   350.134,
+   "and hand it an SmsSender."
+  ],
+  [
+   350.134,
+   352.349,
+   "To send a digest over email,"
+  ],
+  [
+   352.349,
+   353.087,
+   "an EmailSender."
+  ],
+  [
+   353.087,
+   354.564,
+   "A reminder over Slack,"
+  ],
+  [
+   354.564,
+   355.303,
+   "a SlackSender."
+  ],
+  [
+   355.934,
+   358.888,
+   "You are not choosing from nine fused classes"
+  ],
+  [
+   358.888,
+   359.257,
+   "anymore."
+  ],
+  [
+   359.257,
+   361.103,
+   "You are picking one type,"
+  ],
+  [
+   361.103,
+   362.211,
+   "picking one channel,"
+  ],
+  [
+   362.211,
+   364.795,
+   "and snapping them together \u2014 at runtime,"
+  ],
+  [
+   364.795,
+   365.903,
+   "however you like."
+  ],
+  [
+   366.534,
+   368.38,
+   "Any of the three types,"
+  ],
+  [
+   368.38,
+   370.596,
+   "with any of the three channels,"
+  ],
+  [
+   370.596,
+   372.811,
+   "from just three plus three classes."
+  ],
+  [
+   372.811,
+   374.288,
+   "The combinations are composed,"
+  ],
+  [
+   374.288,
+   375.026,
+   "not coded."
+  ],
+  [
+   375.526,
+   378.345,
+   "Now the change that used to multiply."
+  ],
+  [
+   378.345,
+   379.956,
+   "Add a WhatsApp channel."
+  ],
+  [
+   380.588,
+   382.199,
+   "In the fused design,"
+  ],
+  [
+   382.199,
+   385.42,
+   "that meant a new class for every existing"
+  ],
+  [
+   385.42,
+   386.629,
+   "type \u2014 alert-WhatsApp,"
+  ],
+  [
+   386.629,
+   387.031,
+   "reminder-WhatsApp,"
+  ],
+  [
+   387.031,
+   389.851,
+   "digest-WhatsApp \u2014 each re-implementing the\nWhatsApp call."
+  ],
+  [
+   390.482,
+   391.69,
+   "With the bridge?"
+  ],
+  [
+   391.69,
+   392.496,
+   "One class."
+  ],
+  [
+   392.496,
+   395.718,
+   "A single WhatsAppSender that implements the send\ninterface."
+  ],
+  [
+   396.349,
+   398.363,
+   "And the instant it exists,"
+  ],
+  [
+   398.363,
+   401.585,
+   "it pairs with every notification type there is"
+  ],
+  [
+   401.585,
+   402.39,
+   "\u2014 alert,"
+  ],
+  [
+   402.39,
+   402.793,
+   "reminder,"
+  ],
+  [
+   402.793,
+   406.015,
+   "digest \u2014 and every type you add later."
+  ],
+  [
+   406.015,
+   409.237,
+   "One new class on one side now serves"
+  ],
+  [
+   409.237,
+   410.848,
+   "the entire other side."
+  ],
+  [
+   410.848,
+   411.251,
+   "Addition,"
+  ],
+  [
+   411.251,
+   412.056,
+   "not multiplication."
+  ],
+  [
+   412.556,
+   414.482,
+   "This is the Bridge pattern."
+  ],
+  [
+   415.113,
+   416.269,
+   "Two separate hierarchies."
+  ],
+  [
+   416.901,
+   418.056,
+   "On the left,"
+  ],
+  [
+   418.056,
+   421.137,
+   "the abstraction \u2014 Notification \u2014 with its refined"
+  ],
+  [
+   421.137,
+   421.523,
+   "types,"
+  ],
+  [
+   421.523,
+   422.678,
+   "Alert and Reminder,"
+  ],
+  [
+   422.678,
+   423.448,
+   "beneath it."
+  ],
+  [
+   423.448,
+   425.374,
+   "This side is the what."
+  ],
+  [
+   426.006,
+   427.161,
+   "On the right,"
+  ],
+  [
+   427.161,
+   430.243,
+   "the implementor \u2014 MessageSender \u2014 with its\nconcrete"
+  ],
+  [
+   430.243,
+   430.628,
+   "channels,"
+  ],
+  [
+   430.628,
+   431.783,
+   "email and SMS,"
+  ],
+  [
+   431.783,
+   432.554,
+   "beneath it."
+  ],
+  [
+   432.554,
+   434.48,
+   "This side is the how."
+  ],
+  [
+   435.111,
+   437.807,
+   "And the single arrow across the middle,"
+  ],
+  [
+   437.807,
+   440.889,
+   "from Notification to MessageSender \u2014 that is the"
+  ],
+  [
+   440.889,
+   441.274,
+   "bridge."
+  ],
+  [
+   441.274,
+   443.2,
+   "A notification holds a sender."
+  ],
+  [
+   443.831,
+   446.913,
+   "Because the two hierarchies are joined by that"
+  ],
+  [
+   446.913,
+   449.224,
+   "one reference instead of by inheritance,"
+  ],
+  [
+   449.224,
+   450.764,
+   "they grow by addition."
+  ],
+  [
+   450.764,
+   452.305,
+   "Add on the left,"
+  ],
+  [
+   452.305,
+   455.386,
+   "or add on the right \u2014 the other"
+  ],
+  [
+   455.386,
+   456.542,
+   "side never multiplies."
+  ],
+  [
+   457.042,
+   457.911,
+   "The names,"
+  ],
+  [
+   457.911,
+   459.649,
+   "mapped to your code."
+  ],
+  [
+   460.28,
+   462.887,
+   "The Abstraction is the Notification class,"
+  ],
+  [
+   462.887,
+   464.624,
+   "which holds a sender."
+  ],
+  [
+   465.256,
+   468.731,
+   "The RefinedAbstractions are the concrete types \u2014\nalert,"
+  ],
+  [
+   468.731,
+   469.166,
+   "reminder,"
+  ],
+  [
+   469.166,
+   469.6,
+   "digest."
+  ],
+  [
+   470.232,
+   472.838,
+   "The Implementor is the MessageSender interface."
+  ],
+  [
+   473.47,
+   476.945,
+   "And the ConcreteImplementors are the individual\nchannels \u2014"
+  ],
+  [
+   476.945,
+   477.38,
+   "email,"
+  ],
+  [
+   477.38,
+   477.814,
+   "SMS,"
+  ],
+  [
+   477.814,
+   478.249,
+   "Slack."
+  ],
+  [
+   478.88,
+   482.356,
+   "The abstraction delegates the real sending to the"
+  ],
+  [
+   482.356,
+   483.659,
+   "implementor it holds,"
+  ],
+  [
+   483.659,
+   486.7,
+   "and each side can be subclassed freely,"
+  ],
+  [
+   486.7,
+   488.438,
+   "without touching the other."
+  ],
+  [
+   489.069,
+   490.807,
+   "The Gang of Four,"
+  ],
+  [
+   490.807,
+   492.979,
+   "and it is worth memorizing:"
+  ],
+  [
+   492.979,
+   495.586,
+   "decouple an abstraction from its implementation,"
+  ],
+  [
+   495.586,
+   498.627,
+   "so that the two can vary independently."
+  ],
+  [
+   498.627,
+   502.102,
+   "That last word \u2014 independently \u2014 is the"
+  ],
+  [
+   502.102,
+   502.971,
+   "whole pattern."
+  ],
+  [
+   503.471,
+   506.416,
+   "Bridge earns its keep in exactly one situation,"
+  ],
+  [
+   506.416,
+   509.361,
+   "and it is important to be honest about"
+  ],
+  [
+   509.361,
+   509.729,
+   "it."
+  ],
+  [
+   510.361,
+   513.306,
+   "You are setting up two hierarchies and a"
+  ],
+  [
+   513.306,
+   516.251,
+   "reference between them \u2014 that is real upfront"
+  ],
+  [
+   516.251,
+   516.619,
+   "structure,"
+  ],
+  [
+   516.619,
+   519.564,
+   "and more indirection for the next reader to"
+  ],
+  [
+   519.564,
+   519.932,
+   "follow."
+  ],
+  [
+   520.564,
+   522.773,
+   "If only one dimension ever varies,"
+  ],
+  [
+   522.773,
+   523.877,
+   "this is over-engineering;"
+  ],
+  [
+   523.877,
+   525.718,
+   "a simple hierarchy is clearer."
+  ],
+  [
+   525.718,
+   528.663,
+   "If there will only ever be a couple"
+  ],
+  [
+   528.663,
+   529.399,
+   "of combinations,"
+  ],
+  [
+   529.399,
+   530.503,
+   "just write them."
+  ],
+  [
+   531.135,
+   534.08,
+   "So skip it when only one side changes,"
+  ],
+  [
+   534.08,
+   536.657,
+   "or when the implementation is fixed forever."
+  ],
+  [
+   537.289,
+   540.234,
+   "Reach for it the moment you notice a"
+  ],
+  [
+   540.234,
+   543.179,
+   "class being subclassed along two independent axes\nat"
+  ],
+  [
+   543.179,
+   546.124,
+   "once \u2014 when you can feel the M-by-N"
+  ],
+  [
+   546.124,
+   546.86,
+   "explosion coming."
+  ],
+  [
+   546.86,
+   549.437,
+   "Bridge turns that multiplication back into\naddition."
+  ],
+  [
+   549.937,
+   550.318,
+   "Bridge,"
+  ],
+  [
+   550.318,
+   551.461,
+   "in one breath."
+  ],
+  [
+   552.093,
+   555.141,
+   "Subclassing along two axes at once \u2014 notification"
+  ],
+  [
+   555.141,
+   558.189,
+   "type and delivery channel \u2014 multiplied into M-by-N"
+  ],
+  [
+   558.189,
+   558.951,
+   "fused classes,"
+  ],
+  [
+   558.951,
+   562.0,
+   "with the same channel logic duplicated across all"
+  ],
+  [
+   562.0,
+   562.762,
+   "of them."
+  ],
+  [
+   563.393,
+   565.679,
+   "But the two axes vary independently,"
+  ],
+  [
+   565.679,
+   568.347,
+   "so you split them into two hierarchies,"
+  ],
+  [
+   568.347,
+   571.395,
+   "and let the abstraction hold an implementor rather"
+  ],
+  [
+   571.395,
+   572.919,
+   "than inherit from one."
+  ],
+  [
+   573.551,
+   573.932,
+   "Bridge:"
+  ],
+  [
+   573.932,
+   576.98,
+   "compose a type with a channel at runtime,"
+  ],
+  [
+   576.98,
+   580.028,
+   "and adding to either side leaves the other"
+  ],
+  [
+   580.028,
+   580.409,
+   "untouched."
+  ],
+  [
+   580.409,
+   581.552,
+   "M plus N,"
+  ],
+  [
+   581.552,
+   583.077,
+   "not M times N."
+  ],
+  [
+   583.708,
+   585.994,
+   "Here is one to carry out."
+  ],
+  [
+   586.626,
+   588.912,
+   "You have shapes \u2014 a circle,"
+  ],
+  [
+   588.912,
+   591.96,
+   "a square \u2014 that must draw themselves on"
+  ],
+  [
+   591.96,
+   593.485,
+   "several backends \u2014 SVG,"
+  ],
+  [
+   593.485,
+   593.866,
+   "Canvas,"
+  ],
+  [
+   593.866,
+   596.914,
+   "PDF \u2014 and both of those lists will"
+  ],
+  [
+   596.914,
+   597.676,
+   "keep growing."
+  ],
+  [
+   598.307,
+   599.451,
+   "Does Bridge fit?"
+  ],
+  [
+   599.451,
+   601.356,
+   "Which hierarchy is the abstraction,"
+  ],
+  [
+   601.356,
+   602.88,
+   "which is the implementor,"
+  ],
+  [
+   602.88,
+   605.928,
+   "and where exactly is the bridge between them?"
+  ],
+  [
+   606.56,
+   606.941,
+   "Pause,"
+  ],
+  [
+   606.941,
+   609.608,
+   "and sketch it before the next episode."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp16-bridge.wav",
+   "volume": 1.0
+  }
+ }
+}

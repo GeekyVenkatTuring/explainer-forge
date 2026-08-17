@@ -1,0 +1,354 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch20-deepest_div",
+   "type": "it_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 15.488,
+   "props": {
+    "n": 6,
+    "title": "The Big Picture",
+    "sub": "one idea, wired through everything",
+    "color": "#22D3EE",
+    "dur": 15.988
+   }
+  },
+  {
+   "id": "it-ch20-deepest_kolmogorov",
+   "type": "it_kolmogorov",
+   "in_seconds": 15.988,
+   "out_seconds": 129.11,
+   "props": {
+    "dur": 113.622
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.691,
+   "Part six."
+  ],
+  [
+   0.691,
+   1.727,
+   "The big picture."
+  ],
+  [
+   2.359,
+   5.123,
+   "We have built the whole theory from a"
+  ],
+  [
+   5.123,
+   6.16,
+   "single surprising event."
+  ],
+  [
+   6.16,
+   8.233,
+   "Before we gather it all together,"
+  ],
+  [
+   8.233,
+   10.997,
+   "let's push the very idea of information to"
+  ],
+  [
+   10.997,
+   13.761,
+   "its philosophical limit \u2014 and then watch it"
+  ],
+  [
+   13.761,
+   15.488,
+   "echo across all of science."
+  ],
+  [
+   15.988,
+   17.478,
+   "Shannon's entropy is powerful,"
+  ],
+  [
+   17.478,
+   19.713,
+   "but it has one quiet requirement."
+  ],
+  [
+   19.713,
+   22.694,
+   "It needs a probability distribution \u2014 a source"
+  ],
+  [
+   22.694,
+   24.929,
+   "that emits symbols with known odds."
+  ],
+  [
+   25.561,
+   27.796,
+   "But here is a haunting question."
+  ],
+  [
+   27.796,
+   30.776,
+   "What is the information content of one single,"
+  ],
+  [
+   30.776,
+   31.521,
+   "fixed object?"
+  ],
+  [
+   31.521,
+   32.639,
+   "Not a source."
+  ],
+  [
+   32.639,
+   33.011,
+   "Just..."
+  ],
+  [
+   33.011,
+   35.247,
+   "this one specific string of characters,"
+  ],
+  [
+   35.247,
+   36.737,
+   "sitting on the page."
+  ],
+  [
+   36.737,
+   38.972,
+   "There are no probabilities in sight."
+  ],
+  [
+   39.604,
+   42.584,
+   "The answer is one of the deepest ideas"
+  ],
+  [
+   42.584,
+   44.819,
+   "in computer science \u2014 Kolmogorov complexity."
+  ],
+  [
+   45.451,
+   48.431,
+   "It defines the information in an object as"
+  ],
+  [
+   48.431,
+   51.412,
+   "the length of the shortest computer program that"
+  ],
+  [
+   51.412,
+   52.529,
+   "can reproduce it."
+  ],
+  [
+   53.161,
+   55.023,
+   "Look at the first string."
+  ],
+  [
+   55.023,
+   56.886,
+   "A-B repeated ten times over."
+  ],
+  [
+   56.886,
+   58.004,
+   "It looks long,"
+  ],
+  [
+   58.004,
+   60.984,
+   "but you can describe it in a tiny"
+  ],
+  [
+   60.984,
+   61.357,
+   "breath:"
+  ],
+  [
+   61.357,
+   62.102,
+   "print A-B,"
+  ],
+  [
+   62.102,
+   62.847,
+   "ten times."
+  ],
+  [
+   62.847,
+   63.965,
+   "A short program."
+  ],
+  [
+   63.965,
+   65.827,
+   "So its complexity is low."
+  ],
+  [
+   65.827,
+   67.317,
+   "It is deeply compressible."
+  ],
+  [
+   67.949,
+   70.929,
+   "Now look at the second string \u2014 a"
+  ],
+  [
+   70.929,
+   73.91,
+   "jumble of random letters and digits with no"
+  ],
+  [
+   73.91,
+   75.027,
+   "pattern at all."
+  ],
+  [
+   75.659,
+   78.639,
+   "What is the shortest program that prints it?"
+  ],
+  [
+   78.639,
+   80.502,
+   "There is no clever shortcut,"
+  ],
+  [
+   80.502,
+   81.992,
+   "no rule to exploit."
+  ],
+  [
+   81.992,
+   83.855,
+   "The shortest program is essentially:"
+  ],
+  [
+   83.855,
+   84.227,
+   "print,"
+  ],
+  [
+   84.227,
+   86.09,
+   "and then the entire string,"
+  ],
+  [
+   86.09,
+   87.208,
+   "character by character."
+  ],
+  [
+   87.839,
+   90.447,
+   "So a truly random object is incompressible."
+  ],
+  [
+   90.447,
+   92.682,
+   "Its shortest description is just itself."
+  ],
+  [
+   92.682,
+   94.918,
+   "And that gives us a stunning,"
+  ],
+  [
+   94.918,
+   96.408,
+   "precise definition of randomness."
+  ],
+  [
+   97.039,
+   98.157,
+   "Random means incompressible."
+  ],
+  [
+   98.157,
+   101.137,
+   "Random means maximally informative \u2014 there is\nsimply"
+  ],
+  [
+   101.137,
+   103.0,
+   "no shorter story to tell."
+  ],
+  [
+   103.632,
+   105.867,
+   "It connects straight back to entropy:"
+  ],
+  [
+   105.867,
+   108.847,
+   "both say that information is the length of"
+  ],
+  [
+   108.847,
+   110.337,
+   "the shortest faithful description."
+  ],
+  [
+   110.969,
+   112.832,
+   "There is one last twist,"
+  ],
+  [
+   112.832,
+   115.067,
+   "and it is a beautiful one."
+  ],
+  [
+   115.067,
+   115.812,
+   "In general,"
+  ],
+  [
+   115.812,
+   118.42,
+   "the shortest program can never be computed."
+  ],
+  [
+   118.42,
+   120.655,
+   "No algorithm can reliably find it,"
+  ],
+  [
+   120.655,
+   121.773,
+   "for every input."
+  ],
+  [
+   122.404,
+   125.385,
+   "The ultimate measure of information turns out to"
+  ],
+  [
+   125.385,
+   128.365,
+   "be perfectly well-defined \u2014 and forever beyond our"
+  ],
+  [
+   128.365,
+   129.11,
+   "full reach."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch20-deepest.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,1051 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch13-code-pytorch_div",
+   "type": "cv_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 30.069,
+   "props": {
+    "n": 4,
+    "title": "Let's Write It",
+    "sub": "a working CNN in PyTorch, end to end",
+    "color": "#A78BFA",
+    "dur": 30.569
+   }
+  },
+  {
+   "id": "cv-ch13-code-pytorch_setup",
+   "type": "cv_code_setup",
+   "in_seconds": 30.569,
+   "out_seconds": 121.082,
+   "props": {
+    "dur": 91.013
+   }
+  },
+  {
+   "id": "cv-ch13-code-pytorch_model",
+   "type": "cv_code_model",
+   "in_seconds": 121.582,
+   "out_seconds": 208.703,
+   "props": {
+    "dur": 87.621
+   }
+  },
+  {
+   "id": "cv-ch13-code-pytorch_train",
+   "type": "cv_code_train",
+   "in_seconds": 209.203,
+   "out_seconds": 297.192,
+   "props": {
+    "dur": 88.489
+   }
+  },
+  {
+   "id": "cv-ch13-code-pytorch_infer",
+   "type": "cv_code_infer",
+   "in_seconds": 297.692,
+   "out_seconds": 379.178,
+   "props": {
+    "dur": 81.986
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.725,
+   "Part four."
+  ],
+  [
+   0.725,
+   1.812,
+   "Let's write it."
+  ],
+  [
+   2.444,
+   4.618,
+   "Everything we have learned so far,"
+  ],
+  [
+   4.618,
+   5.705,
+   "now in real,"
+  ],
+  [
+   5.705,
+   6.43,
+   "running code."
+  ],
+  [
+   7.062,
+   9.961,
+   "We are going to build a small\nconvolutional"
+  ],
+  [
+   9.961,
+   12.86,
+   "network in PyTorch \u2014 the most popular\nframework"
+  ],
+  [
+   12.86,
+   15.759,
+   "for this \u2014 and take it all the"
+  ],
+  [
+   15.759,
+   16.122,
+   "way."
+  ],
+  [
+   16.753,
+   17.841,
+   "Load the data."
+  ],
+  [
+   17.841,
+   18.928,
+   "Define the model."
+  ],
+  [
+   18.928,
+   19.653,
+   "Train it."
+  ],
+  [
+   19.653,
+   21.465,
+   "And make a real prediction."
+  ],
+  [
+   22.096,
+   23.183,
+   "Four short files."
+  ],
+  [
+   23.183,
+   25.358,
+   "Don't worry about memorizing the syntax."
+  ],
+  [
+   25.358,
+   27.532,
+   "Just follow the shape of it,"
+  ],
+  [
+   27.532,
+   30.069,
+   "and watch our theory turn into code."
+  ],
+  [
+   30.569,
+   31.317,
+   "Step one."
+  ],
+  [
+   31.317,
+   33.563,
+   "Get the images into the model."
+  ],
+  [
+   34.194,
+   35.317,
+   "At the top,"
+  ],
+  [
+   35.317,
+   36.44,
+   "we import PyTorch,"
+  ],
+  [
+   36.44,
+   39.059,
+   "and its dedicated vision toolkit called\ntorchvision."
+  ],
+  [
+   39.691,
+   40.065,
+   "Next,"
+  ],
+  [
+   40.065,
+   42.31,
+   "we build something called a transform."
+  ],
+  [
+   42.31,
+   45.304,
+   "Think of it as a small assembly line"
+  ],
+  [
+   45.304,
+   47.175,
+   "that every image passes through."
+  ],
+  [
+   47.806,
+   48.929,
+   "The first stage,"
+  ],
+  [
+   48.929,
+   49.303,
+   "ToTensor,"
+  ],
+  [
+   49.303,
+   52.297,
+   "converts the picture into a tensor \u2014 a"
+  ],
+  [
+   52.297,
+   55.291,
+   "grid of numbers PyTorch can work with \u2014"
+  ],
+  [
+   55.291,
+   58.284,
+   "and scales the pixels from the zero to"
+  ],
+  [
+   58.284,
+   61.278,
+   "two fifty five range down into a clean"
+  ],
+  [
+   61.278,
+   62.775,
+   "zero to one range."
+  ],
+  [
+   63.406,
+   64.529,
+   "The second stage,"
+  ],
+  [
+   64.529,
+   64.903,
+   "Normalize,"
+  ],
+  [
+   64.903,
+   66.774,
+   "re-centers those values around zero,"
+  ],
+  [
+   66.774,
+   69.394,
+   "which helps training run smoothly and\nquickly."
+  ],
+  [
+   70.025,
+   72.271,
+   "Now we load an actual dataset."
+  ],
+  [
+   72.271,
+   75.264,
+   "We use C I F A R ten"
+  ],
+  [
+   75.264,
+   78.258,
+   "\u2014 a classic collection of sixty thousand\nsmall"
+  ],
+  [
+   78.258,
+   79.006,
+   "color photos,"
+  ],
+  [
+   79.006,
+   81.252,
+   "sorted into ten classes like cat,"
+  ],
+  [
+   81.252,
+   81.626,
+   "dog,"
+  ],
+  [
+   81.626,
+   82.0,
+   "ship,"
+  ],
+  [
+   82.0,
+   82.748,
+   "and truck."
+  ],
+  [
+   83.38,
+   85.999,
+   "Look at the shape on the right."
+  ],
+  [
+   85.999,
+   88.993,
+   "One image becomes a tensor of three by"
+  ],
+  [
+   88.993,
+   90.116,
+   "thirty-two by thirty-two."
+  ],
+  [
+   90.747,
+   92.618,
+   "That is three color channels,"
+  ],
+  [
+   92.618,
+   95.238,
+   "each thirty-two pixels wide and thirty-two\ntall."
+  ],
+  [
+   95.869,
+   96.244,
+   "Finally,"
+  ],
+  [
+   96.244,
+   96.992,
+   "the DataLoader."
+  ],
+  [
+   96.992,
+   99.986,
+   "Its job is to hand us the images"
+  ],
+  [
+   99.986,
+   102.979,
+   "in shuffled batches of sixty-four at a\ntime."
+  ],
+  [
+   103.611,
+   104.359,
+   "Why batches?"
+  ],
+  [
+   104.359,
+   107.353,
+   "Because updating the model on sixty-four\nimages at"
+  ],
+  [
+   107.353,
+   110.347,
+   "once is far faster and steadier than one"
+  ],
+  [
+   110.347,
+   111.469,
+   "at a time."
+  ],
+  [
+   112.101,
+   113.972,
+   "So each step of training,"
+  ],
+  [
+   113.972,
+   116.591,
+   "the model receives a stack shaped\nsixty-four,"
+  ],
+  [
+   116.591,
+   117.34,
+   "by three,"
+  ],
+  [
+   117.34,
+   118.088,
+   "by thirty-two,"
+  ],
+  [
+   118.088,
+   118.837,
+   "by thirty-two."
+  ],
+  [
+   118.837,
+   121.082,
+   "The data is ready to flow."
+  ],
+  [
+   121.582,
+   122.328,
+   "Step two."
+  ],
+  [
+   122.328,
+   123.819,
+   "Define the network itself."
+  ],
+  [
+   124.451,
+   125.197,
+   "In PyTorch,"
+  ],
+  [
+   125.197,
+   127.061,
+   "a model is a class,"
+  ],
+  [
+   127.061,
+   129.299,
+   "and we will call ours SmallCNN."
+  ],
+  [
+   129.93,
+   131.422,
+   "It has two parts."
+  ],
+  [
+   131.422,
+   131.795,
+   "First,"
+  ],
+  [
+   131.795,
+   133.286,
+   "in the setup method,"
+  ],
+  [
+   133.286,
+   136.27,
+   "we simply list the layers we are going"
+  ],
+  [
+   136.27,
+   137.015,
+   "to use."
+  ],
+  [
+   137.647,
+   139.511,
+   "We create two convolution layers."
+  ],
+  [
+   139.511,
+   142.495,
+   "Conv one takes the three color channels\ncoming"
+  ],
+  [
+   142.495,
+   142.868,
+   "in,"
+  ],
+  [
+   142.868,
+   144.732,
+   "and produces thirty-two feature maps."
+  ],
+  [
+   145.364,
+   148.347,
+   "Conv two takes those thirty-two maps and\nproduces"
+  ],
+  [
+   148.347,
+   149.466,
+   "sixty-four richer ones."
+  ],
+  [
+   150.097,
+   153.08,
+   "We add a max-pool layer to shrink things"
+  ],
+  [
+   153.08,
+   153.453,
+   "down,"
+  ],
+  [
+   153.453,
+   156.436,
+   "and one final linear layer that will\noutput"
+  ],
+  [
+   156.436,
+   159.42,
+   "ten numbers \u2014 one score for each of"
+  ],
+  [
+   159.42,
+   160.538,
+   "our ten classes."
+  ],
+  [
+   161.17,
+   163.78,
+   "The second part is the forward method,"
+  ],
+  [
+   163.78,
+   166.763,
+   "and this is where the data actually flows."
+  ],
+  [
+   166.763,
+   168.628,
+   "It reads top to bottom."
+  ],
+  [
+   169.26,
+   170.378,
+   "Apply conv one,"
+  ],
+  [
+   170.378,
+   171.87,
+   "then the ReLU activation,"
+  ],
+  [
+   171.87,
+   172.616,
+   "then pooling."
+  ],
+  [
+   173.247,
+   175.485,
+   "Follow the shapes on the right."
+  ],
+  [
+   175.485,
+   178.468,
+   "The image goes from three by thirty-two by"
+  ],
+  [
+   178.468,
+   178.841,
+   "thirty-two,"
+  ],
+  [
+   178.841,
+   181.824,
+   "down to thirty-two channels at sixteen by\nsixteen."
+  ],
+  [
+   182.456,
+   185.439,
+   "We run the same trio again with conv"
+  ],
+  [
+   185.439,
+   185.812,
+   "two,"
+  ],
+  [
+   185.812,
+   188.795,
+   "and land at sixty-four channels at eight\nby"
+  ],
+  [
+   188.795,
+   189.168,
+   "eight."
+  ],
+  [
+   189.799,
+   192.782,
+   "Then we flatten that block into one long"
+  ],
+  [
+   192.782,
+   193.155,
+   "vector,"
+  ],
+  [
+   193.155,
+   195.393,
+   "feed it through the linear layer,"
+  ],
+  [
+   195.393,
+   198.003,
+   "and out come our ten class scores."
+  ],
+  [
+   198.635,
+   200.872,
+   "And that is the whole architecture."
+  ],
+  [
+   200.872,
+   203.482,
+   "Every idea from part three \u2014 convolution,"
+  ],
+  [
+   203.482,
+   203.855,
+   "activation,"
+  ],
+  [
+   203.855,
+   204.228,
+   "pooling,"
+  ],
+  [
+   204.228,
+   207.211,
+   "a final classifier \u2014 sitting in about a"
+  ],
+  [
+   207.211,
+   208.703,
+   "dozen lines of code."
+  ],
+  [
+   209.203,
+   209.954,
+   "Step three."
+  ],
+  [
+   209.954,
+   210.706,
+   "Train it."
+  ],
+  [
+   210.706,
+   213.712,
+   "This is where the loop from the last"
+  ],
+  [
+   213.712,
+   214.839,
+   "chapter becomes real."
+  ],
+  [
+   215.471,
+   217.725,
+   "First we set up three things."
+  ],
+  [
+   217.725,
+   219.228,
+   "We create the model,"
+  ],
+  [
+   219.228,
+   219.98,
+   "an optimizer,"
+  ],
+  [
+   219.98,
+   221.483,
+   "and a loss function."
+  ],
+  [
+   222.114,
+   224.369,
+   "The optimizer here is called Adam."
+  ],
+  [
+   224.369,
+   227.375,
+   "It is the machinery that actually adjusts\nthe"
+  ],
+  [
+   227.375,
+   227.751,
+   "weights."
+  ],
+  [
+   227.751,
+   230.757,
+   "The learning rate \u2014 one times ten to"
+  ],
+  [
+   230.757,
+   233.763,
+   "the minus three \u2014 controls how big each"
+  ],
+  [
+   233.763,
+   234.514,
+   "adjustment is."
+  ],
+  [
+   235.146,
+   237.4,
+   "The loss function is cross-entropy loss,"
+  ],
+  [
+   237.4,
+   239.279,
+   "the standard choice for classification."
+  ],
+  [
+   239.279,
+   241.909,
+   "It measures how wrong each prediction was."
+  ],
+  [
+   242.541,
+   244.044,
+   "Now the loop itself."
+  ],
+  [
+   244.044,
+   247.05,
+   "For each batch of images and their true"
+  ],
+  [
+   247.05,
+   247.425,
+   "labels,"
+  ],
+  [
+   247.425,
+   248.928,
+   "we run four lines."
+  ],
+  [
+   248.928,
+   251.934,
+   "These four lines are the beating heart of"
+  ],
+  [
+   251.934,
+   253.062,
+   "all deep learning."
+  ],
+  [
+   253.693,
+   254.069,
+   "One."
+  ],
+  [
+   254.069,
+   257.075,
+   "Zero out the old gradients from the last"
+  ],
+  [
+   257.075,
+   257.451,
+   "step."
+  ],
+  [
+   258.082,
+   258.458,
+   "Two."
+  ],
+  [
+   258.458,
+   261.464,
+   "Run the images forward through the model\nto"
+  ],
+  [
+   261.464,
+   262.215,
+   "get predictions."
+  ],
+  [
+   262.847,
+   263.223,
+   "Three."
+  ],
+  [
+   263.223,
+   266.229,
+   "Compute the loss \u2014 how wrong those\npredictions"
+  ],
+  [
+   266.229,
+   266.605,
+   "are."
+  ],
+  [
+   267.236,
+   267.612,
+   "Four."
+  ],
+  [
+   267.612,
+   269.115,
+   "Call loss dot backward."
+  ],
+  [
+   269.115,
+   270.242,
+   "This is backpropagation,"
+  ],
+  [
+   270.242,
+   273.248,
+   "and it fills in how every single weight"
+  ],
+  [
+   273.248,
+   274.375,
+   "affected the error."
+  ],
+  [
+   275.007,
+   278.013,
+   "Then optimizer step nudges all those\nweights in"
+  ],
+  [
+   278.013,
+   279.14,
+   "the better direction."
+  ],
+  [
+   279.772,
+   282.778,
+   "Now watch the loss curve on the right"
+  ],
+  [
+   282.778,
+   284.281,
+   "as the loop runs."
+  ],
+  [
+   284.281,
+   285.408,
+   "See it falling."
+  ],
+  [
+   286.039,
+   288.67,
+   "That falling line is not a decoration."
+  ],
+  [
+   288.67,
+   290.924,
+   "It is the network actually learning,"
+  ],
+  [
+   290.924,
+   292.051,
+   "in real time."
+  ],
+  [
+   292.683,
+   295.313,
+   "Repeat over the whole dataset several\ntimes,"
+  ],
+  [
+   295.313,
+   297.192,
+   "and our model is trained."
+  ],
+  [
+   297.692,
+   298.434,
+   "Step four."
+  ],
+  [
+   298.434,
+   301.4,
+   "The payoff \u2014 actually using the model on"
+  ],
+  [
+   301.4,
+   302.513,
+   "a new image."
+  ],
+  [
+   303.144,
+   306.111,
+   "First we switch the model into eval mode,"
+  ],
+  [
+   306.111,
+   307.965,
+   "and wrap everything in no-grad."
+  ],
+  [
+   308.597,
+   308.968,
+   "Together,"
+  ],
+  [
+   308.968,
+   311.935,
+   "these tell PyTorch we are only making\npredictions"
+  ],
+  [
+   311.935,
+   312.305,
+   "now,"
+  ],
+  [
+   312.305,
+   313.047,
+   "not learning."
+  ],
+  [
+   313.047,
+   315.643,
+   "It can skip all the training bookkeeping,"
+  ],
+  [
+   315.643,
+   317.868,
+   "which makes it faster and lighter."
+  ],
+  [
+   318.5,
+   320.725,
+   "We pass in a fresh image."
+  ],
+  [
+   320.725,
+   323.691,
+   "The little unsqueeze adds the batch\ndimension the"
+  ],
+  [
+   323.691,
+   324.433,
+   "model expects,"
+  ],
+  [
+   324.433,
+   327.4,
+   "turning one image into a batch of one."
+  ],
+  [
+   328.031,
+   329.885,
+   "Out come ten raw numbers,"
+  ],
+  [
+   329.885,
+   330.627,
+   "called logits."
+  ],
+  [
+   331.259,
+   333.484,
+   "They are hard to read directly,"
+  ],
+  [
+   333.484,
+   334.967,
+   "so we run softmax,"
+  ],
+  [
+   334.967,
+   337.934,
+   "which turns those ten numbers into clean\nprobabilities"
+  ],
+  [
+   337.934,
+   340.53,
+   "that add up to one hundred percent."
+  ],
+  [
+   341.161,
+   344.128,
+   "Then argmax simply picks the index of the"
+  ],
+  [
+   344.128,
+   344.87,
+   "biggest probability."
+  ],
+  [
+   345.501,
+   348.097,
+   "Look at the bars on the right."
+  ],
+  [
+   348.097,
+   348.468,
+   "Cat,"
+  ],
+  [
+   348.468,
+   349.21,
+   "ninety-two percent."
+  ],
+  [
+   349.21,
+   349.951,
+   "Everything else,"
+  ],
+  [
+   349.951,
+   350.322,
+   "tiny."
+  ],
+  [
+   350.954,
+   353.92,
+   "We look up that index in our list"
+  ],
+  [
+   353.92,
+   355.033,
+   "of class names,"
+  ],
+  [
+   355.033,
+   355.775,
+   "print it,"
+  ],
+  [
+   355.775,
+   358.0,
+   "and the program says \u2014 cat."
+  ],
+  [
+   358.631,
+   360.856,
+   "Take a second to appreciate this."
+  ],
+  [
+   361.488,
+   362.971,
+   "That is a complete,"
+  ],
+  [
+   362.971,
+   364.455,
+   "working computer vision model."
+  ],
+  [
+   364.455,
+   365.567,
+   "From raw pixels,"
+  ],
+  [
+   365.567,
+   368.163,
+   "all the way to a named answer,"
+  ],
+  [
+   368.163,
+   371.13,
+   "in well under a hundred lines of code."
+  ],
+  [
+   371.761,
+   374.728,
+   "Everything that comes after this in the\ncourse"
+  ],
+  [
+   374.728,
+   377.324,
+   "is just making this same idea bigger,"
+  ],
+  [
+   377.324,
+   378.065,
+   "and smarter,"
+  ],
+  [
+   378.065,
+   379.178,
+   "and more capable."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch13-code-pytorch.wav",
+   "volume": 1.0
+  }
+ }
+}

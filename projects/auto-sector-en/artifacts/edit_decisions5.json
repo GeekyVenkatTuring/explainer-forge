@@ -1,0 +1,844 @@
+{
+  "cuts": [
+    {
+      "id": "v5_title",
+      "type": "au_title",
+      "in_seconds": 0.0,
+      "out_seconds": 29.598,
+      "props": {
+        "kicker": "AUTO & AUTO-COMPONENTS \u00b7 PART 5 OF 6",
+        "title": "Indian Auto Stocks\nEngine, Bearings & Drivetrain",
+        "sub": "23 companies \u00b7 pistons \u00b7 bearings \u00b7 gears \u00b7 steering \u00b7 P/E \u00b7 moat",
+        "dur": 30.098
+      }
+    },
+    {
+      "id": "e_d1",
+      "type": "au_divider",
+      "in_seconds": 30.098,
+      "out_seconds": 43.694,
+      "props": {
+        "part": "PART ONE",
+        "title": "Engine & Fuel Internals",
+        "sub": "Pistons, rings, camshafts and castings",
+        "color": "#38BDF8",
+        "pips": 3,
+        "at": 1,
+        "dur": 14.096
+      }
+    },
+    {
+      "id": "e01_bosch",
+      "type": "au_company",
+      "in_seconds": 44.194,
+      "out_seconds": 76.316,
+      "props": {
+        "idx": "01 / 23",
+        "kicker": "ENGINE INTERNALS",
+        "name": "Bosch",
+        "ticker": "BOSCHLTD",
+        "price": "\u20b942,950",
+        "pe": "60.7\u00d7",
+        "seg": "Fuel & electronics",
+        "biz": [
+          "India's largest auto-components company",
+          "Fuel-injection systems, electronics, starters",
+          "Plus industrial and building technology"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q4 FY26 (Mar-26)",
+          "rev": {
+            "to": 5566
+          },
+          "pat": {
+            "to": 570
+          },
+          "note": "The German giant's India arm \u2014 deep tech and a huge aftermarket."
+        },
+        "moat": "India's biggest components maker with world-class technology and an unrivalled aftermarket \u2014 a wide, durable moat.",
+        "moatStrength": "WIDE",
+        "dur": 32.622
+      }
+    },
+    {
+      "id": "e02_fmgoetze",
+      "type": "au_company",
+      "in_seconds": 76.816,
+      "out_seconds": 104.593,
+      "props": {
+        "idx": "02 / 23",
+        "kicker": "ENGINE INTERNALS",
+        "name": "Federal-Mogul Goetze",
+        "ticker": "FMGOETZE",
+        "price": "\u20b9492",
+        "pe": "15.0\u00d7",
+        "seg": "Pistons & rings",
+        "biz": [
+          "Pistons, piston rings and cylinder liners",
+          "Part of the global Tenneco / Federal-Mogul group",
+          "For engines and the aftermarket"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q1 FY26 (Jun-25)",
+          "rev": {
+            "to": 484
+          },
+          "pat": {
+            "to": 45
+          },
+          "note": "Cheap for the sector \u2014 but its products are tied to combustion engines."
+        },
+        "moat": "A leading piston-and-ring maker with global backing \u2014 but ICE-tied, which caps the multiple.",
+        "moatStrength": "NARROW",
+        "dur": 28.277
+      }
+    },
+    {
+      "id": "e03_spr",
+      "type": "au_company",
+      "in_seconds": 105.093,
+      "out_seconds": 134.527,
+      "props": {
+        "idx": "03 / 23",
+        "kicker": "ENGINE INTERNALS",
+        "name": "SPR Auto (Shriram Pistons)",
+        "ticker": "SHRIPISTON",
+        "price": "\u20b94,393",
+        "pe": "33.2\u00d7",
+        "seg": "Engine parts",
+        "biz": [
+          "Pistons, rings and engine valves",
+          "Brands like SPR, Kolben and USHA",
+          "Diversifying into EV motors and controllers"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1474
+          },
+          "pat": {
+            "to": 148
+          },
+          "note": "Using engine-parts cash to build an EV-components arm."
+        },
+        "moat": "A leading engine-parts maker funding an EV pivot \u2014 a smart hedge, but the transition is still young.",
+        "moatStrength": "NARROW",
+        "dur": 29.934
+      }
+    },
+    {
+      "id": "e04_menonpis",
+      "type": "au_company",
+      "in_seconds": 135.027,
+      "out_seconds": 161.094,
+      "props": {
+        "idx": "04 / 23",
+        "kicker": "ENGINE INTERNALS",
+        "name": "Menon Pistons",
+        "ticker": "MENNPIS",
+        "price": "\u20b974",
+        "pe": "14.4\u00d7",
+        "seg": "Diesel pistons",
+        "biz": [
+          "Pistons and piston pins for diesel engines",
+          "For trucks, tractors, gensets and industry",
+          "A Kolhapur-based supplier"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 83
+          },
+          "pat": {
+            "to": 8
+          },
+          "note": "Small, steady and among the cheapest in the sector."
+        },
+        "moat": "A small, focused diesel-piston maker \u2014 steady and cheap, but with limited scale and pricing power.",
+        "moatStrength": "NARROW",
+        "dur": 26.567
+      }
+    },
+    {
+      "id": "e05_precam",
+      "type": "au_company",
+      "in_seconds": 161.594,
+      "out_seconds": 191.818,
+      "props": {
+        "idx": "05 / 23",
+        "kicker": "ENGINE INTERNALS",
+        "name": "Precision Camshafts",
+        "ticker": "PRECAM",
+        "price": "\u20b9143",
+        "pe": "55.2\u00d7",
+        "seg": "Camshafts",
+        "biz": [
+          "A leading global maker of cast camshafts",
+          "For passenger cars, tractors and industry",
+          "Diversifying into non-camshaft and EV-neutral parts"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 195
+          },
+          "pat": {
+            "to": 19
+          },
+          "note": "A global camshaft leader hedging against the EV shift."
+        },
+        "moat": "A global leader in cast camshafts \u2014 a real niche, now diversifying so the EV shift doesn't strand it.",
+        "moatStrength": "NARROW",
+        "dur": 30.724
+      }
+    },
+    {
+      "id": "e06_rico",
+      "type": "au_company",
+      "in_seconds": 192.318,
+      "out_seconds": 219.674,
+      "props": {
+        "idx": "06 / 23",
+        "kicker": "ENGINE INTERNALS",
+        "name": "Rico Auto Industries",
+        "ticker": "RICOAUTO",
+        "price": "\u20b9152",
+        "pe": "36.2\u00d7",
+        "seg": "Machined parts",
+        "biz": [
+          "Aluminium and ferrous machined components",
+          "Engine, transmission and braking parts",
+          "Casting, machining and assembly in one"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q1 FY26 (Jun-25)",
+          "rev": {
+            "to": 543
+          },
+          "pat": {
+            "to": 17
+          },
+          "note": "Integrated casting-to-assembly, but thin margins."
+        },
+        "moat": "An integrated caster-machiner-assembler \u2014 convenient for OEMs, but low-margin and competitive.",
+        "moatStrength": "NARROW",
+        "dur": 27.856
+      }
+    },
+    {
+      "id": "e07_ucal",
+      "type": "au_company",
+      "in_seconds": 220.174,
+      "out_seconds": 246.172,
+      "props": {
+        "idx": "07 / 23",
+        "kicker": "ENGINE INTERNALS",
+        "name": "UCAL",
+        "ticker": "UCAL",
+        "price": "\u20b9118",
+        "pe": "N/A",
+        "seg": "Fuel systems",
+        "biz": [
+          "Fuel-management and precision machined parts",
+          "Carburettors, throttle bodies and pumps",
+          "Supplies OEMs in India and abroad"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q1 FY26 (Jun-25)",
+          "rev": {
+            "to": 195
+          },
+          "pat": {
+            "to": 6,
+            "loss": true,
+            "label": "Net loss"
+          },
+          "note": "Slipped into losses as demand and mix turned against it."
+        },
+        "moat": "A fuel-systems supplier under pressure \u2014 carburettor-era products and recent losses make its moat weak.",
+        "moatStrength": "WEAK",
+        "dur": 26.498
+      }
+    },
+    {
+      "id": "e08_sunclay",
+      "type": "au_company",
+      "in_seconds": 246.672,
+      "out_seconds": 274.163,
+      "props": {
+        "idx": "08 / 23",
+        "kicker": "ENGINE INTERNALS",
+        "name": "Sundaram Clayton",
+        "ticker": "SUNCLAY",
+        "price": "\u20b91,242",
+        "pe": "N/A",
+        "seg": "Die-castings",
+        "biz": [
+          "A TVS-group aluminium die-casting maker",
+          "Castings for two-wheelers and commercial vehicles",
+          "Plus non-automotive industrial castings"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 592
+          },
+          "pat": {
+            "to": 59,
+            "loss": true,
+            "label": "Net loss"
+          },
+          "note": "Loss-making, with a weak return on equity over recent years."
+        },
+        "moat": "A TVS-group caster with pedigree \u2014 but currently loss-making, so its moat isn't showing in the numbers.",
+        "moatStrength": "WEAK",
+        "dur": 27.991
+      }
+    },
+    {
+      "id": "g_d2",
+      "type": "au_divider",
+      "in_seconds": 274.663,
+      "out_seconds": 287.58,
+      "props": {
+        "part": "PART TWO",
+        "title": "The Bearings Club",
+        "sub": "Where global brands quietly compound",
+        "color": "#34D399",
+        "pips": 3,
+        "at": 2,
+        "dur": 13.417
+      }
+    },
+    {
+      "id": "g09_schaeffler",
+      "type": "au_company",
+      "in_seconds": 288.08,
+      "out_seconds": 318.308,
+      "props": {
+        "idx": "09 / 23",
+        "kicker": "BEARINGS",
+        "name": "Schaeffler India",
+        "ticker": "SCHAEFFLER",
+        "price": "\u20b94,035",
+        "pe": "50.3\u00d7",
+        "seg": "Bearings",
+        "biz": [
+          "Bearings, engine, transmission and chassis parts",
+          "Brands like INA, LuK and FAG",
+          "Serves auto OEMs and a broad industrial base"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 2761
+          },
+          "pat": {
+            "to": 326
+          },
+          "note": "Auto plus industrial breadth smooths the cycle."
+        },
+        "moat": "A global bearings and precision leader spanning auto and industry \u2014 brand, breadth and pricing power.",
+        "moatStrength": "WIDE",
+        "dur": 30.728
+      }
+    },
+    {
+      "id": "g10_skf",
+      "type": "au_company",
+      "in_seconds": 318.808,
+      "out_seconds": 347.301,
+      "props": {
+        "idx": "10 / 23",
+        "kicker": "BEARINGS",
+        "name": "SKF India",
+        "ticker": "SKFINDIA",
+        "price": "\u20b91,534",
+        "pe": "26.0\u00d7",
+        "seg": "Bearings",
+        "biz": [
+          "The Indian arm of Sweden's SKF",
+          "Bearings, seals and lubrication systems",
+          "Auto, aftermarket and industrial"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q1 FY26 (Jun-25)",
+          "rev": {
+            "to": 1283
+          },
+          "pat": {
+            "to": 118
+          },
+          "note": "A century-old bearings brand with a strong aftermarket."
+        },
+        "moat": "A century-old global bearings brand with a deep aftermarket \u2014 a durable, cash-generative franchise.",
+        "moatStrength": "WIDE",
+        "dur": 28.993
+      }
+    },
+    {
+      "id": "g11_nrb",
+      "type": "au_company",
+      "in_seconds": 347.801,
+      "out_seconds": 375.106,
+      "props": {
+        "idx": "11 / 23",
+        "kicker": "BEARINGS",
+        "name": "NRB Bearings",
+        "ticker": "NRBBEARING",
+        "price": "\u20b9462",
+        "pe": "29.9\u00d7",
+        "seg": "Needle bearings",
+        "biz": [
+          "A leader in needle roller bearings",
+          "For transmissions, engines and steering",
+          "Supplies OEMs and exports"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 370
+          },
+          "pat": {
+            "to": 38
+          },
+          "note": "India's needle-bearing specialist, with a growing export book."
+        },
+        "moat": "India's leader in needle roller bearings \u2014 a focused, technical niche with OEM lock-in and exports.",
+        "moatStrength": "NARROW",
+        "dur": 27.805
+      }
+    },
+    {
+      "id": "g12_bimetal",
+      "type": "au_company",
+      "in_seconds": 375.606,
+      "out_seconds": 401.859,
+      "props": {
+        "idx": "12 / 23",
+        "kicker": "BEARINGS",
+        "name": "Bimetal Bearings",
+        "ticker": "BIMETAL",
+        "price": "\u20b9665",
+        "pe": "22.1\u00d7",
+        "seg": "Engine bearings",
+        "biz": [
+          "Engine bearings, bushings and thrust washers",
+          "For automotive, locomotive and industrial engines",
+          "Part of the Amalgamations group"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q1 FY26 (Jun-25)",
+          "rev": {
+            "to": 72
+          },
+          "pat": {
+            "to": 4
+          },
+          "note": "Small and specialised, within a large industrial group."
+        },
+        "moat": "A small engine-bearing specialist backed by the Amalgamations group \u2014 a stable niche, but sub-scale.",
+        "moatStrength": "NARROW",
+        "dur": 26.753
+      }
+    },
+    {
+      "id": "g13_menonbe",
+      "type": "au_company",
+      "in_seconds": 402.359,
+      "out_seconds": 429.377,
+      "props": {
+        "idx": "13 / 23",
+        "kicker": "BEARINGS",
+        "name": "Menon Bearings",
+        "ticker": "MENONBE",
+        "price": "\u20b9237",
+        "pe": "30.3\u00d7",
+        "seg": "Bearings & castings",
+        "biz": [
+          "Bimetal bearings, bushings and thrust washers",
+          "Plus aluminium die-cast components",
+          "For automotive, tractor and industrial engines"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 92
+          },
+          "pat": {
+            "to": 14
+          },
+          "note": "Small but consistently profitable, with healthy margins."
+        },
+        "moat": "A small, well-run bearings-and-castings maker \u2014 good margins, but limited scale.",
+        "moatStrength": "NARROW",
+        "dur": 27.518
+      }
+    },
+    {
+      "id": "d_d3",
+      "type": "au_divider",
+      "in_seconds": 429.877,
+      "out_seconds": 442.156,
+      "props": {
+        "part": "PART THREE",
+        "title": "Drivetrain & Controls",
+        "sub": "Gears, motors, steering and the EV leader",
+        "color": "#FBBF24",
+        "pips": 3,
+        "at": 3,
+        "dur": 12.779
+      }
+    },
+    {
+      "id": "d14_sona",
+      "type": "au_company",
+      "in_seconds": 442.656,
+      "out_seconds": 477.205,
+      "props": {
+        "idx": "14 / 23",
+        "kicker": "DRIVETRAIN \u00b7 CONTROLS",
+        "name": "Sona BLW (Comstar)",
+        "ticker": "SONACOMS",
+        "price": "\u20b9818",
+        "pe": "70.2\u00d7",
+        "seg": "EV driveline",
+        "biz": [
+          "Differential gears, assemblies and starter motors",
+          "Increasingly, EV traction motors and systems",
+          "A large and rising share from electric vehicles"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1301
+          },
+          "pat": {
+            "to": 179
+          },
+          "note": "A high and growing share of revenue comes from EV programs."
+        },
+        "moat": "The best-positioned Indian driveline maker for EVs \u2014 a fast-growing electric order book and global customers.",
+        "moatStrength": "WIDE",
+        "dur": 35.049
+      }
+    },
+    {
+      "id": "d15_divgi",
+      "type": "au_company",
+      "in_seconds": 477.705,
+      "out_seconds": 504.195,
+      "props": {
+        "idx": "15 / 23",
+        "kicker": "DRIVETRAIN \u00b7 CONTROLS",
+        "name": "Divgi TorqTransfer",
+        "ticker": "DIVGIITTS",
+        "price": "\u20b91,047",
+        "pe": "68.2\u00d7",
+        "seg": "4WD & EV driveline",
+        "biz": [
+          "Transfer cases and torque couplers",
+          "Four-wheel-drive and driveline systems",
+          "Increasingly, EV powertrain components"
+        ],
+        "fin": {
+          "qlabel": "Latest reported \u00b7 Q1 FY26 (Jun-25)",
+          "rev": {
+            "to": 72
+          },
+          "pat": {
+            "to": 9
+          },
+          "note": "Small, but with a genuine EV-driveline growth story."
+        },
+        "moat": "A niche leader in 4WD driveline tech, extending into EV powertrains \u2014 small, but technically differentiated.",
+        "moatStrength": "NARROW",
+        "dur": 26.99
+      }
+    },
+    {
+      "id": "d16_shivam",
+      "type": "au_company",
+      "in_seconds": 504.695,
+      "out_seconds": 527.053,
+      "props": {
+        "idx": "16 / 23",
+        "kicker": "DRIVETRAIN \u00b7 CONTROLS",
+        "name": "Shivam Autotech",
+        "ticker": "SHIVAMAUTO",
+        "price": "\u20b917.7",
+        "pe": "N/A",
+        "seg": "Forged gears",
+        "biz": [
+          "Near-net-shape forged and machined parts",
+          "Gears, shafts and transmission components",
+          "A Dayanand Munjal (Hero) group company"
+        ],
+        "fin": {
+          "pending": true,
+          "qlabel": "Q1 FY27 due 13-Aug (not out)",
+          "note": "A small penny-stock, closely tied to the Hero two-wheeler ecosystem."
+        },
+        "moat": "A small Hero-linked forger of gears and shafts \u2014 customer-concentrated and sub-scale.",
+        "moatStrength": "WEAK",
+        "dur": 22.858
+      }
+    },
+    {
+      "id": "d17_igarashi",
+      "type": "au_company",
+      "in_seconds": 527.553,
+      "out_seconds": 552.524,
+      "props": {
+        "idx": "17 / 23",
+        "kicker": "DRIVETRAIN \u00b7 CONTROLS",
+        "name": "Igarashi Motors",
+        "ticker": "IGARASHI",
+        "price": "\u20b9465",
+        "pe": "N/A",
+        "seg": "Micro-motors",
+        "biz": [
+          "Permanent-magnet DC micro-motors",
+          "Used in power seats, mirrors, HVAC and braking",
+          "A specialist supplier to global OEMs"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "pat": {
+            "to": 7,
+            "label": "Net profit"
+          },
+          "note": "A niche micro-motor exporter; profit improved this quarter."
+        },
+        "moat": "A specialist micro-motor exporter to global OEMs \u2014 a real niche, but small and customer-concentrated.",
+        "moatStrength": "NARROW",
+        "dur": 25.471
+      }
+    },
+    {
+      "id": "d18_sedemac",
+      "type": "au_company",
+      "in_seconds": 553.024,
+      "out_seconds": 580.751,
+      "props": {
+        "idx": "18 / 23",
+        "kicker": "DRIVETRAIN \u00b7 CONTROLS",
+        "name": "SEDEMAC Mechatronics",
+        "ticker": "SEDEMAC",
+        "price": "\u20b92,810",
+        "pe": "High",
+        "seg": "ECUs & controls",
+        "biz": [
+          "Engine-control and motion-control systems",
+          "ECUs, starter-generators and embedded tech",
+          "For two-wheelers, small engines and off-road"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 310
+          },
+          "pat": {
+            "to": 33
+          },
+          "note": "A recently-listed, fast-growing controls-technology company."
+        },
+        "moat": "A technology-led maker of engine and motion controls \u2014 an emerging, high-growth franchise in embedded systems.",
+        "moatStrength": "EMERGING",
+        "dur": 28.227
+      }
+    },
+    {
+      "id": "d19_indnippon",
+      "type": "au_company",
+      "in_seconds": 581.251,
+      "out_seconds": 610.24,
+      "props": {
+        "idx": "19 / 23",
+        "kicker": "DRIVETRAIN \u00b7 CONTROLS",
+        "name": "India Nippon Electricals",
+        "ticker": "INDNIPPON",
+        "price": "\u20b91,166",
+        "pe": "28.9\u00d7",
+        "seg": "Ignition & ECUs",
+        "biz": [
+          "Electronic ignition systems and ECUs",
+          "Engine-management for two- and three-wheelers",
+          "Part of the TVS group"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 299
+          },
+          "pat": {
+            "to": 40
+          },
+          "note": "Solid margins from engine-management electronics."
+        },
+        "moat": "A focused engine-management electronics maker in the TVS group \u2014 good margins, evolving toward EV controls.",
+        "moatStrength": "NARROW",
+        "dur": 29.489
+      }
+    },
+    {
+      "id": "d20_pricol",
+      "type": "au_company",
+      "in_seconds": 610.74,
+      "out_seconds": 641.229,
+      "props": {
+        "idx": "20 / 23",
+        "kicker": "DRIVETRAIN \u00b7 CONTROLS",
+        "name": "Pricol",
+        "ticker": "PRICOLLTD",
+        "price": "\u20b9738",
+        "pe": "33.6\u00d7",
+        "seg": "Instrument clusters",
+        "biz": [
+          "Driver-information systems and instrument clusters",
+          "Sensors, telematics and pumps",
+          "A leading supplier of clusters and controls"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1105
+          },
+          "pat": {
+            "to": 67
+          },
+          "note": "Digital clusters and connectivity are a real growth engine."
+        },
+        "moat": "A leader in instrument clusters and driver-information \u2014 content-per-vehicle rising as dashboards go digital.",
+        "moatStrength": "WIDE",
+        "dur": 30.989
+      }
+    },
+    {
+      "id": "d21_jtekt",
+      "type": "au_company",
+      "in_seconds": 641.729,
+      "out_seconds": 671.593,
+      "props": {
+        "idx": "21 / 23",
+        "kicker": "DRIVETRAIN \u00b7 CONTROLS",
+        "name": "JTEKT India",
+        "ticker": "JTEKTINDIA",
+        "price": "\u20b9140",
+        "pe": "49.4\u00d7",
+        "seg": "Steering",
+        "biz": [
+          "Steering systems and columns",
+          "Manual, hydraulic and electric power steering",
+          "Formerly Sona Koyo; part of Japan's JTEKT"
+        ],
+        "fin": {
+          "qlabel": "Latest reported",
+          "rev": {
+            "to": 584
+          },
+          "pat": {
+            "to": 30
+          },
+          "note": "A Japanese-parent steering specialist; electric steering is the growth."
+        },
+        "moat": "A steering specialist with Japanese-parent technology \u2014 electric power steering is a structural tailwind.",
+        "moatStrength": "NARROW",
+        "dur": 30.364
+      }
+    },
+    {
+      "id": "d22_zfcv",
+      "type": "au_company",
+      "in_seconds": 672.093,
+      "out_seconds": 700.871,
+      "props": {
+        "idx": "22 / 23",
+        "kicker": "DRIVETRAIN \u00b7 CONTROLS",
+        "name": "ZF Commercial (WABCO)",
+        "ticker": "ZFCVINDIA",
+        "price": "\u20b92,637",
+        "pe": "59.4\u00d7",
+        "seg": "CV braking & ADAS",
+        "biz": [
+          "Air brakes, ABS and vehicle-control electronics",
+          "Advanced driver-assistance for commercial vehicles",
+          "Formerly WABCO India; part of Germany's ZF"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 1066
+          },
+          "pat": {
+            "to": 104
+          },
+          "note": "Safety mandates keep raising the electronics per truck."
+        },
+        "moat": "The leader in commercial-vehicle braking and safety electronics \u2014 regulation keeps expanding its content per truck.",
+        "moatStrength": "WIDE",
+        "dur": 29.278
+      }
+    },
+    {
+      "id": "d23_zfsteer",
+      "type": "au_company",
+      "in_seconds": 701.371,
+      "out_seconds": 728.76,
+      "props": {
+        "idx": "23 / 23",
+        "kicker": "DRIVETRAIN \u00b7 CONTROLS",
+        "name": "ZF Steering Gear",
+        "ticker": "ZFSTEERING",
+        "price": "\u20b9658",
+        "pe": "29.6\u00d7",
+        "seg": "CV steering",
+        "biz": [
+          "Steering gears and hydraulic pumps",
+          "For commercial vehicles, tractors and utility vehicles",
+          "In association with ZF group technology"
+        ],
+        "fin": {
+          "qlabel": "Q1 FY27 \u00b7 Jun 2026",
+          "rev": {
+            "to": 143
+          },
+          "pat": {
+            "to": 11
+          },
+          "note": "A smaller, separate ZF-linked steering maker."
+        },
+        "moat": "A smaller CV-and-tractor steering maker with ZF-linked technology \u2014 a solid niche, but modest in scale.",
+        "moatStrength": "NARROW",
+        "dur": 27.889
+      }
+    },
+    {
+      "id": "v5_recap",
+      "type": "au_recap",
+      "in_seconds": 729.26,
+      "out_seconds": 780.463,
+      "props": {
+        "title": "Engine, Bearings & Drivetrain \u2014 in one breath",
+        "color": "#38BDF8",
+        "items": [
+          "Bosch, Schaeffler, SKF: global brands quietly compounding",
+          "Engine-internal makers are cheap \u2014 but face the EV question",
+          "Sona Comstar is the clear EV-driveline winner (at a premium)",
+          "ZF Commercial gains as truck-safety rules tighten",
+          "Pricol & SEDEMAC ride smarter, digital vehicles",
+          "UCAL and Sundaram Clayton are loss-making, under strain",
+          "Bearings are the sector's quiet, durable compounders"
+        ],
+        "closer": "The engine era is fading \u2014 the winners already sell into whatever comes next.",
+        "dur": 51.703
+      }
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "au/narration5.wav",
+      "volume": 1.0
+    }
+  }
+}

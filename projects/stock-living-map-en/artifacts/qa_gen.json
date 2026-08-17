@@ -1,0 +1,191 @@
+{
+ "cuts": [
+  {
+   "id": "kit",
+   "type": "sml_cards",
+   "in_seconds": 0.0,
+   "out_seconds": 30.0,
+   "props": {
+    "kicker": "THE ANTI-HALLUCINATION KIT",
+    "title": "The six rules that make the agent factual",
+    "color": "#F472B6",
+    "cards": [
+     {
+      "head": "Answer from the graph only",
+      "emoji": "\ud83c\udfaf",
+      "body": "GraphRAG retrieves the company's subgraph; the agent may not emit a number that isn't a node.",
+      "tag": "grounding"
+     },
+     {
+      "head": "Cite source + time",
+      "emoji": "\ud83c\udff7\ufe0f",
+      "body": "Every figure shows where and when it came from. Missing or stale \u2192 \u2018not available as of\u2026\u2019.",
+      "tag": "provenance"
+     },
+     {
+      "head": "Math in code",
+      "emoji": "\ud83e\uddee",
+      "body": "P/E, YoY, margins computed by a tool, never by the model.",
+      "tag": "no-arithmetic"
+     },
+     {
+      "head": "Verify before answer",
+      "emoji": "\u2696\ufe0f",
+      "body": "A freshness/SHACL gate checks the facts; typed tools only; no free web access; no advice.",
+      "tag": "guardrails"
+     }
+    ],
+    "foot": "None of these trusts the model. Each one makes it structurally unable to make things up.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "validation",
+   "type": "sml_code",
+   "in_seconds": 30.0,
+   "out_seconds": 60.0,
+   "props": {
+    "kicker": "THE FRESHNESS GATE",
+    "title": "Stale or source-less data fails the load \u2014 automatically",
+    "color": "#34D399",
+    "lang": "shacl / ci",
+    "lines": [
+     "# on every ingest, before publish:",
+     "validate(candidate_graph, shapes)",
+     "",
+     "\u2717 PriceQuote(TCS) rejected",
+     "  \u2192 :asOf is 41 min old (limit 15)",
+     "\u2717 Metric(P/E) rejected",
+     "  \u2192 :source missing",
+     "LOAD BLOCKED \u00b7 bad facts never enter"
+    ],
+    "result": [
+     "1,842 facts",
+     "checked",
+     "2 rejected",
+     "graph stays clean"
+    ],
+    "caption": "the SHACL rules from part one, now guarding every single load",
+    "foot": "This gate is the anti-hallucination kit in code: the agent can only see facts that passed.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "text2cypher",
+   "type": "sml_code",
+   "in_seconds": 60.0,
+   "out_seconds": 90.0,
+   "props": {
+    "kicker": "TEXT-TO-CYPHER",
+    "title": "The user asks in English; the ontology keeps the query honest",
+    "color": "#34D399",
+    "lang": "python + cypher",
+    "lines": [
+     "# user: \u201cwhat's Infosys P/E and last quarter?\u201d",
+     "cypher = llm.to_cypher(question, schema=ONTOLOGY)",
+     "",
+     "MATCH (c:Company {name:'Infosys'})",
+     "  -[:HAS_METRIC]->(pe:Metric {kind:'P/E'})",
+     "MATCH (c)-[:REPORTED]->(q:Quarter)",
+     "RETURN pe.value, pe.asOf, q  // validated"
+    ],
+    "result": [
+     "P/E 24.1",
+     "asOf 15:29",
+     "Q3 shown"
+    ],
+    "caption": "the ontology is the schema that stops the model inventing fields",
+    "foot": "Anyone can ask in plain English \u2014 and only valid, grounded queries ever run.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "recap",
+   "type": "sml_recap",
+   "in_seconds": 90.0,
+   "out_seconds": 120.0,
+   "props": {
+    "kicker": "RECAP \u00b7 THE WHOLE MAP",
+    "title": "The factual stock agent in one breath",
+    "closer": "Give the machine only facts that can prove themselves \u2014 and it stops guessing.",
+    "items": [
+     "Ontology = meaning: the vocabulary, and the rule that every fact needs a source + time.",
+     "Knowledge graph = memory: companies and factors, each fact sourced and timestamped.",
+     "Digital twin = live senses: prices kept current (real-time or 15-min), honest about staleness.",
+     "Graph engineering = the plumbing: pipelines, the freshness gate, entity resolution, graph ML.",
+     "Agentic engineering = the mind: retrieve, reason over five factors, answer with citations.",
+     "Anti-hallucination kit: graph-only answers, cited, math in code \u2014 and never investment advice."
+    ],
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "factors",
+   "type": "sml_cards",
+   "in_seconds": 120.0,
+   "out_seconds": 150.0,
+   "props": {
+    "kicker": "MODELING THE FIVE FACTORS",
+    "title": "Everything you asked to reason over \u2014 as graph nodes",
+    "color": "#22D3EE",
+    "cards": [
+     {
+      "head": "Earnings & P/E",
+      "emoji": "\ud83d\udcb0",
+      "body": "EPS, PAT, and P/E as metric nodes, each linked to the price and result they derive from.",
+      "tag": "valuation"
+     },
+     {
+      "head": "Quarterly results",
+      "emoji": "\ud83d\udcd1",
+      "body": "Revenue, PAT, margins per quarter, with YoY and QoQ computed and stored.",
+      "tag": "growth"
+     },
+     {
+      "head": "News & roadmap",
+      "emoji": "\ud83d\udcf0",
+      "body": "NewsEvent nodes with sentiment; ManagementGuidance extracted from concalls.",
+      "tag": "context"
+     }
+    ],
+    "foot": "Five factors, one graph \u2014 so the agent can weigh them together, each fact cited.",
+    "dur": 30.0
+   }
+  },
+  {
+   "id": "buildbuy",
+   "type": "sml_compare",
+   "in_seconds": 150.0,
+   "out_seconds": 180.0,
+   "props": {
+    "kicker": "FREE-FIRST, CHEAP-PAID",
+    "title": "Where free is enough, and where a little money helps",
+    "color": "#2DD4BF",
+    "left": {
+     "head": "Free tier (start here)",
+     "sub": "\u20b90",
+     "c": "#34D399",
+     "rows": [
+      "yfinance / jugaad-data \u2014 delayed prices.",
+      "screener / Tickertape \u2014 fundamentals.",
+      "Google News + Moneycontrol RSS \u2014 news.",
+      "Neo4j Community + Ollama \u2014 graph + model."
+     ]
+    },
+    "right": {
+     "head": "Small paid upgrades",
+     "sub": "~\u20b9500\u20131000/mo",
+     "c": "#F472B6",
+     "rows": [
+      "Angel SmartAPI (free) / Kite \u20b9500 \u2014 real-time.",
+      "indianapi.in \u2014 clean fundamentals API.",
+      "Marketaux / EODHD \u2014 news + sentiment.",
+      "A hosted LLM API \u2014 better answers."
+     ]
+    },
+    "foot": "Prototype for free; pay only for real-time ticks and cleaner data when you need them.",
+    "dur": 30.0
+   }
+  }
+ ]
+}

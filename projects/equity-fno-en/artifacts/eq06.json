@@ -1,0 +1,659 @@
+{
+  "cuts": [
+    {
+      "id": "f6_div",
+      "type": "sm_divider",
+      "in_seconds": 0.0,
+      "out_seconds": 20.684,
+      "props": {
+        "n": 6,
+        "title": "Futures",
+        "sub": "Contracts · leverage · strategies",
+        "color": "#A78BFA",
+        "dur": 21.184
+      }
+    },
+    {
+      "id": "f6_what",
+      "type": "sm_steps",
+      "in_seconds": 21.184,
+      "out_seconds": 85.412,
+      "props": {
+        "kicker": "THE ORIGIN",
+        "title": "A future = a price locked in advance",
+        "color": "#FBBF24",
+        "note": "A derivative: its value derives from an underlying — a stock, an index, or a commodity.",
+        "items": [
+          {
+            "emoji": "👨‍🌾",
+            "label": "Farmer's fear",
+            "sub": "price may fall by harvest"
+          },
+          {
+            "emoji": "🏭",
+            "label": "Miller's fear",
+            "sub": "price may rise by then"
+          },
+          {
+            "emoji": "🤝",
+            "label": "Lock a deal",
+            "sub": "fixed price, future date"
+          },
+          {
+            "emoji": "🔒",
+            "label": "Both protected",
+            "sub": "this is a futures contract"
+          }
+        ],
+        "dur": 64.728
+      }
+    },
+    {
+      "id": "f6_mechanics",
+      "type": "sm_iconcards",
+      "in_seconds": 85.912,
+      "out_seconds": 174.644,
+      "props": {
+        "kicker": "FUTURES 101",
+        "title": "Four things that define a future",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "📦",
+            "k": "Lot size",
+            "v": "Trade in fixed lots, not single shares. Nifty lot = 65 (from Jan 2026)",
+            "chip": "Lots"
+          },
+          {
+            "emoji": "💰",
+            "k": "Margin",
+            "v": "Pay only ~10–15% of contract value upfront — that's the leverage",
+            "chip": "~10–15%"
+          },
+          {
+            "emoji": "📅",
+            "k": "Expiry",
+            "v": "Every contract expires. Nifty weekly = Tuesday; monthly = last Tuesday",
+            "chip": "Expiry"
+          },
+          {
+            "emoji": "🔄",
+            "k": "Mark-to-market",
+            "v": "Profit/loss settled to your account DAILY; a loss can trigger a margin call",
+            "chip": "Daily"
+          }
+        ],
+        "dur": 89.232
+      }
+    },
+    {
+      "id": "f6_leverage",
+      "type": "eq_leverage",
+      "in_seconds": 175.144,
+      "out_seconds": 244.652,
+      "props": {
+        "kicker": "FUTURES P&L",
+        "title": "Leverage — the real maths",
+        "margin": 150000,
+        "exposure": 1500000,
+        "movePct": 5,
+        "cur": "₹",
+        "dur": 70.008
+      }
+    },
+    {
+      "id": "f6_strategies",
+      "type": "sm_iconcards",
+      "in_seconds": 245.152,
+      "out_seconds": 331.532,
+      "props": {
+        "kicker": "FUTURES STRATEGIES",
+        "title": "How futures are actually used",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🛡️",
+            "k": "Hedging",
+            "v": "Own a portfolio? Short index futures to protect it in a fall — insurance",
+            "chip": "Protect"
+          },
+          {
+            "emoji": "🎯",
+            "k": "Directional",
+            "v": "Long if bullish, short if bearish — leveraged bet; highest risk",
+            "chip": "Risky"
+          },
+          {
+            "emoji": "📆",
+            "k": "Calendar spread",
+            "v": "Long one expiry, short another — trade the price gap between months",
+            "chip": "Spread"
+          },
+          {
+            "emoji": "⚖️",
+            "k": "Cash-futures arbitrage",
+            "v": "Exploit spot vs futures price gap — low-risk, mostly institutional",
+            "chip": "Arb"
+          }
+        ],
+        "dur": 86.88
+      }
+    },
+    {
+      "id": "f6_recap",
+      "type": "sm_recap",
+      "in_seconds": 332.032,
+      "out_seconds": 376.868,
+      "props": {
+        "title": "Chapter 6 — futures",
+        "items": [
+          "A future = buy/sell later at a price fixed today (a derivative)",
+          "Traded in lots; ~10–15% margin → ~10x leverage",
+          "Daily mark-to-market + expiry — no room to just wait",
+          "Leverage cuts both ways — always use a stop-loss",
+          "Real purpose: hedging. Speculation is where most lose"
+        ],
+        "closer": "Futures are power tools — for hedging first, not gambling.",
+        "dur": 45.336
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      2.005,
+      "Chapter six — futures."
+    ],
+    [
+      2.005,
+      5.832,
+      "We now leave investing and enter trading —"
+    ],
+    [
+      5.832,
+      8.11,
+      "the world of derivatives."
+    ],
+    [
+      8.11,
+      11.663,
+      "These are powerful, professional tools."
+    ],
+    [
+      11.663,
+      16.31,
+      "They can protect a portfolio or destroy an account."
+    ],
+    [
+      16.31,
+      20.684,
+      "Let's understand them clearly, and respect them."
+    ],
+    [
+      21.184,
+      26.336,
+      "To understand a future, picture a farmer and a flour mill."
+    ],
+    [
+      26.336,
+      29.801,
+      "The farmer's crop is three months away."
+    ],
+    [
+      29.801,
+      33.354,
+      "His fear: prices might crash by harvest."
+    ],
+    [
+      33.354,
+      37.619,
+      "The mill owner needs that grain in three months."
+    ],
+    [
+      37.619,
+      40.195,
+      "His fear: prices might spike."
+    ],
+    [
+      40.195,
+      44.104,
+      "So today, they agree a deal — a fixed price,"
+    ],
+    [
+      44.104,
+      46.68,
+      "for delivery in three months."
+    ],
+    [
+      46.68,
+      51.122,
+      "Now both are protected, whichever way prices move."
+    ],
+    [
+      51.122,
+      52.454,
+      "That agreement,"
+    ],
+    [
+      52.454,
+      57.251,
+      "to buy or sell something later at a price fixed today,"
+    ],
+    [
+      57.251,
+      59.206,
+      "is a futures contract."
+    ],
+    [
+      59.206,
+      63.381,
+      "On the stock market, the underlying is a stock,"
+    ],
+    [
+      63.381,
+      67.023,
+      "an index like the Nifty, or a commodity —"
+    ],
+    [
+      67.023,
+      72.087,
+      "and the value of the future derives from that underlying."
+    ],
+    [
+      72.087,
+      75.285,
+      "That is why we call it a derivative."
+    ],
+    [
+      75.285,
+      79.638,
+      "The farmer's motive here is protection — hedging."
+    ],
+    [
+      79.638,
+      85.412,
+      "Hold onto that word; it is the honest purpose of all derivatives."
+    ],
+    [
+      85.912,
+      89.945,
+      "Four features define a stock or index future."
+    ],
+    [
+      89.945,
+      91.379,
+      "First, lot size."
+    ],
+    [
+      91.379,
+      97.384,
+      "You don't trade single shares; you trade fixed bundles called lots."
+    ],
+    [
+      97.384,
+      100.521,
+      "The Nifty futures lot, for example,"
+    ],
+    [
+      100.521,
+      105.272,
+      "is sixty-five units as of January twenty twenty-six —"
+    ],
+    [
+      105.272,
+      108.857,
+      "so one lot is worth several lakh rupees."
+    ],
+    [
+      108.857,
+      110.201,
+      "Second, margin."
+    ],
+    [
+      110.201,
+      113.607,
+      "You don't pay the full contract value."
+    ],
+    [
+      113.607,
+      118.089,
+      "You pay a deposit, roughly ten to fifteen percent,"
+    ],
+    [
+      118.089,
+      120.867,
+      "and control the whole position."
+    ],
+    [
+      120.867,
+      125.886,
+      "That is leverage — and we'll see its danger in a moment."
+    ],
+    [
+      125.886,
+      127.141,
+      "Third, expiry."
+    ],
+    [
+      127.141,
+      130.368,
+      "Unlike a share you can hold forever,"
+    ],
+    [
+      130.368,
+      132.877,
+      "every future has a last day."
+    ],
+    [
+      132.877,
+      139.689,
+      "Nifty's weekly contracts expire on Tuesday; the monthly on the last Tuesday."
+    ],
+    [
+      139.689,
+      142.199,
+      "The Sensex expires Thursday."
+    ],
+    [
+      142.199,
+      145.515,
+      "Fourth, and crucial — mark-to-market."
+    ],
+    [
+      145.515,
+      155.284,
+      "Your profit or loss is not settled at the end; it is calculated and settled to your account every single day."
+    ],
+    [
+      155.284,
+      160.393,
+      "If the market moves against you and your margin runs low,"
+    ],
+    [
+      160.393,
+      164.068,
+      "the broker issues a margin call — pay up,"
+    ],
+    [
+      164.068,
+      166.488,
+      "or your position is closed."
+    ],
+    [
+      166.488,
+      174.644,
+      "That daily settlement means futures give you no room to simply sit and wait out a bad move."
+    ],
+    [
+      175.144,
+      178.404,
+      "Let's see leverage with real numbers,"
+    ],
+    [
+      178.404,
+      182.72,
+      "because this is where fortunes are made and lost."
+    ],
+    [
+      182.72,
+      187.918,
+      "Suppose one index futures lot is worth fifteen lakh rupees."
+    ],
+    [
+      187.918,
+      192.587,
+      "Your margin to hold it is about one and a half lakh —"
+    ],
+    [
+      192.587,
+      195.759,
+      "so you control ten times your money."
+    ],
+    [
+      195.759,
+      197.08,
+      "Ten-x leverage."
+    ],
+    [
+      197.08,
+      200.428,
+      "Now, if the market rises five percent,"
+    ],
+    [
+      200.428,
+      204.744,
+      "your position gains seventy-five thousand rupees."
+    ],
+    [
+      204.744,
+      207.828,
+      "On your one-and-a-half-lakh margin,"
+    ],
+    [
+      207.828,
+      210.471,
+      "that's a fifty percent return."
+    ],
+    [
+      210.471,
+      211.616,
+      "Intoxicating."
+    ],
+    [
+      211.616,
+      212.673,
+      "But flip it."
+    ],
+    [
+      212.673,
+      215.58,
+      "If the market falls five percent,"
+    ],
+    [
+      215.58,
+      220.514,
+      "you lose seventy-five thousand — half your margin, gone,"
+    ],
+    [
+      220.514,
+      222.98,
+      "on a mere five percent move."
+    ],
+    [
+      222.98,
+      229.235,
+      "Leverage multiplies your gains and your losses by the very same factor."
+    ],
+    [
+      229.235,
+      231.261,
+      "It does not care which."
+    ],
+    [
+      231.261,
+      234.433,
+      "And because of daily mark-to-market,"
+    ],
+    [
+      234.433,
+      237.78,
+      "those losses are very real, very fast."
+    ],
+    [
+      237.78,
+      244.652,
+      "This is why trading futures without a stop-loss is like racing without brakes."
+    ],
+    [
+      245.152,
+      247.977,
+      "So how are futures actually used?"
+    ],
+    [
+      247.977,
+      251.487,
+      "Four strategies, from safest to riskiest."
+    ],
+    [
+      251.487,
+      255.083,
+      "The first, and the honest one, is hedging."
+    ],
+    [
+      255.083,
+      259.962,
+      "If you hold a large portfolio and fear a short-term fall,"
+    ],
+    [
+      259.962,
+      262.36,
+      "you can short index futures."
+    ],
+    [
+      262.36,
+      264.072,
+      "If the market drops,"
+    ],
+    [
+      264.072,
+      268.181,
+      "your futures profit offsets your portfolio loss."
+    ],
+    [
+      268.181,
+      272.718,
+      "It is portfolio insurance — the reason futures exist."
+    ],
+    [
+      272.718,
+      275.715,
+      "The second is directional trading —"
+    ],
+    [
+      275.715,
+      281.022,
+      "going long if you're bullish, short if bearish, with leverage."
+    ],
+    [
+      281.022,
+      283.505,
+      "This is the highest-risk use,"
+    ],
+    [
+      283.505,
+      286.501,
+      "and where most retail traders lose."
+    ],
+    [
+      286.501,
+      289.241,
+      "The third is a calendar spread —"
+    ],
+    [
+      289.241,
+      292.494,
+      "buying one expiry and selling another,"
+    ],
+    [
+      292.494,
+      299.343,
+      "to trade the price difference between months rather than the market's direction."
+    ],
+    [
+      299.343,
+      301.569,
+      "Lower risk, more advanced."
+    ],
+    [
+      301.569,
+      304.822,
+      "The fourth is cash-futures arbitrage —"
+    ],
+    [
+      304.822,
+      312.441,
+      "capturing the small gap between a stock's price in the cash market and its futures price."
+    ],
+    [
+      312.441,
+      315.266,
+      "It's low-risk but tiny per trade,"
+    ],
+    [
+      315.266,
+      319.204,
+      "so it's dominated by institutional algorithms."
+    ],
+    [
+      319.204,
+      323.313,
+      "Remember the three players: hedgers reduce risk,"
+    ],
+    [
+      323.313,
+      327.936,
+      "speculators take it on, and arbitrageurs exploit gaps."
+    ],
+    [
+      327.936,
+      331.532,
+      "Retail should aspire to hedge, not gamble."
+    ],
+    [
+      332.032,
+      333.864,
+      "Chapter six, secured."
+    ],
+    [
+      333.864,
+      339.795,
+      "A future is a contract to buy or sell later at a price fixed today —"
+    ],
+    [
+      339.795,
+      342.412,
+      "a derivative of an underlying."
+    ],
+    [
+      342.412,
+      344.244,
+      "You trade it in lots,"
+    ],
+    [
+      344.244,
+      347.908,
+      "paying only ten to fifteen percent margin,"
+    ],
+    [
+      347.908,
+      351.659,
+      "which gives you roughly ten-times leverage."
+    ],
+    [
+      351.659,
+      358.986,
+      "Daily mark-to-market and a fixed expiry mean you cannot simply wait out a bad move —"
+    ],
+    [
+      358.986,
+      364.394,
+      "and leverage cuts both ways, so a stop-loss is non-negotiable."
+    ],
+    [
+      364.394,
+      372.07,
+      "The honest purpose of futures is hedging; speculation is where most retail traders lose."
+    ],
+    [
+      372.07,
+      376.868,
+      "Next, the most fascinating instrument of all — options."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "eq/eq06.wav",
+      "volume": 1.0
+    }
+  }
+}

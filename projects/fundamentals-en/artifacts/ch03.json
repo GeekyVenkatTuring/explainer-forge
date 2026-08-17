@@ -1,0 +1,1096 @@
+{
+ "cuts": [
+  {
+   "id": "ch03_s01_divider",
+   "type": "fa_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 18.334,
+   "props": {
+    "n": 3,
+    "title": "Returns",
+    "sub": "how hard each rupee of capital works",
+    "color": "#2DD4BF",
+    "total": 7,
+    "dur": 18.834
+   }
+  },
+  {
+   "id": "ch03_s02_analogy",
+   "type": "fa_analogy",
+   "in_seconds": 18.834,
+   "out_seconds": 54.324,
+   "props": {
+    "kicker": "ANALOGY \u00b7 THE BUSINESS'S INTEREST RATE",
+    "title": "A return is the business's interest rate",
+    "left": {
+     "emoji": "\ud83c\udfe6",
+     "label": "A fixed deposit",
+     "cap": "Put in \u20b9100. The bank pays you, say, \u20b97 a year.",
+     "c": "#38BDF8"
+    },
+    "right": {
+     "emoji": "\ud83c\udfed",
+     "label": "A business",
+     "cap": "Put in \u20b9100 of capital. It earns \u20b928 of profit.",
+     "c": "#2DD4BF"
+    },
+    "note": "Return on equity is the interest rate a company earns on the owners' money.",
+    "color": "#2DD4BF",
+    "dur": 35.99
+   }
+  },
+  {
+   "id": "ch03_s03_what",
+   "type": "fa_keyidea",
+   "in_seconds": 54.824,
+   "out_seconds": 85.852,
+   "props": {
+    "kicker": "WHAT A RETURN IS",
+    "color": "#2DD4BF",
+    "big": "A return = profit \u00f7 the capital used to make it.",
+    "sub": "Margins judge the sale. Returns judge the capital. A great business earns a high return.",
+    "dur": 31.528
+   }
+  },
+  {
+   "id": "ch03_s04_roe",
+   "type": "fa_formula",
+   "in_seconds": 86.352,
+   "out_seconds": 125.228,
+   "props": {
+    "kicker": "RETURN 1 \u00b7 RETURN ON EQUITY",
+    "title": "The owners' return",
+    "name": "ROE  =  Net profit  \u00f7  Shareholders' equity",
+    "num": [
+     {
+      "label": "Net profit (PAT)",
+      "val": 85,
+      "c": "#34D399"
+     }
+    ],
+    "den": [
+     {
+      "label": "Equity",
+      "val": 300,
+      "c": "#2DD4BF"
+     }
+    ],
+    "op": "\u00f7",
+    "result": {
+     "label": "Return on Equity \u2014 profit per \u20b9 of owners' money",
+     "val": 28,
+     "unit": "%",
+     "decimals": 0,
+     "c": "#2DD4BF"
+    },
+    "note": "Ardee approx. Equity is the owners' own money in the business.",
+    "color": "#2DD4BF",
+    "dur": 39.376
+   }
+  },
+  {
+   "id": "ch03_s05_roce",
+   "type": "fa_formula",
+   "in_seconds": 125.728,
+   "out_seconds": 166.162,
+   "props": {
+    "kicker": "RETURN 2 \u00b7 RETURN ON CAPITAL",
+    "title": "The return on all the money at work",
+    "name": "ROCE  =  Operating profit (EBIT)  \u00f7  Capital employed",
+    "num": [
+     {
+      "label": "EBIT",
+      "val": 127,
+      "c": "#2DD4BF"
+     }
+    ],
+    "den": [
+     {
+      "label": "Equity + Debt",
+      "val": 480,
+      "c": "#FBBF24"
+     }
+    ],
+    "op": "\u00f7",
+    "result": {
+     "label": "Return on Capital Employed \u2014 before financing choices",
+     "val": 26,
+     "unit": "%",
+     "decimals": 0,
+     "c": "#2DD4BF"
+    },
+    "note": "Capital employed = equity + debt. ROCE ignores how the capital was raised.",
+    "color": "#2DD4BF",
+    "dur": 40.934
+   }
+  },
+  {
+   "id": "ch03_s06_roe_vs",
+   "type": "fa_keyidea",
+   "in_seconds": 166.662,
+   "out_seconds": 206.69,
+   "props": {
+    "kicker": "ROE vs ROCE \u00b7 THE DEBT TRICK",
+    "color": "#FBBF24",
+    "big": "Debt can flatter ROE. ROCE can't be fooled.",
+    "sub": "Borrow heavily and ROE can look great \u2014 even if the business is weak. Always check both.",
+    "dur": 40.528
+   }
+  },
+  {
+   "id": "ch03_s07_ladder",
+   "type": "fa_bars",
+   "in_seconds": 207.19,
+   "out_seconds": 249.496,
+   "props": {
+    "kicker": "ARDEE'S RETURNS \u00b7 vs THE HURDLE",
+    "title": "Every return clears the cost of capital",
+    "unit": "%",
+    "decimals": 0,
+    "bars": [
+     {
+      "label": "ROE",
+      "val": 28,
+      "c": "#34D399",
+      "note": "owners' money"
+     },
+     {
+      "label": "ROCE",
+      "val": 26,
+      "c": "#2DD4BF",
+      "note": "all capital"
+     },
+     {
+      "label": "ROA",
+      "val": 14,
+      "c": "#38BDF8",
+      "note": "all assets"
+     }
+    ],
+    "baseline": {
+     "val": 12,
+     "label": "\u2248 cost of capital"
+    },
+    "note": "All three sit well above the ~12% cost of capital. That gap is value being created.",
+    "color": "#2DD4BF",
+    "dur": 42.806
+   }
+  },
+  {
+   "id": "ch03_s08_dupont",
+   "type": "fa_dupont",
+   "in_seconds": 249.996,
+   "out_seconds": 301.134,
+   "props": {
+    "kicker": "DUPONT \u00b7 WHERE RETURN COMES FROM",
+    "title": "ROE = margin \u00d7 turnover \u00d7 leverage",
+    "factors": [
+     {
+      "name": "Net margin\n(profit per sale)",
+      "val": 7.3,
+      "unit": "%",
+      "c": "#34D399",
+      "decimals": 1
+     },
+     {
+      "name": "Asset turnover\n(sales per asset)",
+      "val": 1.95,
+      "unit": "\u00d7",
+      "c": "#38BDF8",
+      "decimals": 2
+     },
+     {
+      "name": "Leverage\n(assets per equity)",
+      "val": 2.0,
+      "unit": "\u00d7",
+      "c": "#FBBF24",
+      "decimals": 1
+     }
+    ],
+    "result": {
+     "name": "Return on Equity",
+     "val": 28,
+     "unit": "%",
+     "c": "#2DD4BF",
+     "decimals": 0
+    },
+    "note": "The DuPont formula splits ROE into three levers you can actually diagnose.",
+    "color": "#2DD4BF",
+    "dur": 51.638
+   }
+  },
+  {
+   "id": "ch03_s09_value",
+   "type": "fa_keyidea",
+   "in_seconds": 301.634,
+   "out_seconds": 340.412,
+   "props": {
+    "kicker": "THE PUNCHLINE",
+    "color": "#34D399",
+    "big": "A business creates value only when its return on capital beats the cost of that capital.",
+    "sub": "Earn 26% on money that costs 12%, and every rupee reinvested makes the owners richer.",
+    "dur": 39.278
+   }
+  },
+  {
+   "id": "ch03_s10_recap",
+   "type": "fa_recap",
+   "in_seconds": 340.912,
+   "out_seconds": 390.73,
+   "props": {
+    "kicker": "RECAP \u00b7 CHAPTER 3",
+    "title": "Returns in one breath",
+    "items": [
+     "A return = profit \u00f7 the capital used to earn it",
+     "ROE = net profit \u00f7 equity (the owners' interest rate)",
+     "ROCE = EBIT \u00f7 capital employed (ignores financing)",
+     "Debt can flatter ROE; ROCE can't be tricked \u2014 check both",
+     "DuPont: ROE = margin \u00d7 asset turnover \u00d7 leverage",
+     "Ardee: ROE \u2248 28%, ROCE \u2248 26% \u2014 well above ~12% cost of capital",
+     "Value is created only when return beats the cost of capital"
+    ],
+    "closer": "Returns tell you the quality. Next: what you pay for it \u2014 valuation.",
+    "color": "#2DD4BF",
+    "dur": 50.318
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.078,
+   "Chapter three."
+  ],
+  [
+   1.078,
+   1.617,
+   "Returns."
+  ],
+  [
+   2.167,
+   6.478,
+   "Margins told us how much a company keeps"
+  ],
+  [
+   6.478,
+   8.095,
+   "from each sale."
+  ],
+  [
+   8.095,
+   10.789,
+   "Returns ask a deeper question."
+  ],
+  [
+   10.789,
+   15.101,
+   "For every rupee of capital put into this"
+  ],
+  [
+   15.101,
+   15.639,
+   "business,"
+  ],
+  [
+   15.639,
+   18.334,
+   "how much profit comes back?"
+  ],
+  [
+   18.834,
+   20.949,
+   "Think about a fixed deposit."
+  ],
+  [
+   21.499,
+   24.037,
+   "You put in one hundred rupees,"
+  ],
+  [
+   24.037,
+   27.421,
+   "and the bank pays you maybe seven rupees"
+  ],
+  [
+   27.421,
+   28.267,
+   "a year."
+  ],
+  [
+   28.267,
+   30.382,
+   "That's a seven percent return."
+  ],
+  [
+   30.932,
+   33.47,
+   "A business works the same way,"
+  ],
+  [
+   33.47,
+   36.431,
+   "but the interest rate is its own."
+  ],
+  [
+   36.431,
+   39.815,
+   "Put one hundred rupees of capital into Ardee,"
+  ],
+  [
+   39.815,
+   43.199,
+   "and it generates around twenty eight rupees of"
+  ],
+  [
+   43.199,
+   44.891,
+   "profit in a year."
+  ],
+  [
+   45.441,
+   47.979,
+   "That's a twenty eight percent return."
+  ],
+  [
+   47.979,
+   51.363,
+   "Return ratios are simply the interest rate a"
+  ],
+  [
+   51.363,
+   54.324,
+   "business earns on the money inside it."
+  ],
+  [
+   54.824,
+   58.196,
+   "So the shape of every return ratio is"
+  ],
+  [
+   58.196,
+   59.039,
+   "the same."
+  ],
+  [
+   59.589,
+   60.854,
+   "Profit on top,"
+  ],
+  [
+   60.854,
+   64.226,
+   "divided by the capital used to earn it,"
+  ],
+  [
+   64.226,
+   65.491,
+   "on the bottom."
+  ],
+  [
+   65.491,
+   68.863,
+   "The only thing that changes is which profit,"
+  ],
+  [
+   68.863,
+   70.127,
+   "and whose capital."
+  ],
+  [
+   70.677,
+   74.049,
+   "This is arguably the most important idea in"
+  ],
+  [
+   74.049,
+   75.314,
+   "the whole course."
+  ],
+  [
+   75.314,
+   77.843,
+   "A business can have thin margins,"
+  ],
+  [
+   77.843,
+   79.529,
+   "and still be wonderful,"
+  ],
+  [
+   79.529,
+   82.901,
+   "if it earns a high return on its"
+  ],
+  [
+   82.901,
+   83.323,
+   "capital."
+  ],
+  [
+   83.323,
+   85.852,
+   "That's the real mark of quality."
+  ],
+  [
+   86.352,
+   90.226,
+   "The first return is the one owners care"
+  ],
+  [
+   90.226,
+   91.195,
+   "about most."
+  ],
+  [
+   91.195,
+   92.648,
+   "Return on equity,"
+  ],
+  [
+   92.648,
+   93.617,
+   "or ROE."
+  ],
+  [
+   94.167,
+   95.62,
+   "It's net profit,"
+  ],
+  [
+   95.62,
+   97.072,
+   "divided by equity."
+  ],
+  [
+   97.072,
+   97.557,
+   "Remember,"
+  ],
+  [
+   97.557,
+   101.431,
+   "equity is the owners' own money inside the"
+  ],
+  [
+   101.431,
+   101.916,
+   "company."
+  ],
+  [
+   102.466,
+   106.34,
+   "Ardee earns eighty five crore on roughly three"
+  ],
+  [
+   106.34,
+   108.277,
+   "hundred crore of equity."
+  ],
+  [
+   108.277,
+   110.699,
+   "That's about twenty eight percent."
+  ],
+  [
+   110.699,
+   112.152,
+   "In plain words,"
+  ],
+  [
+   112.152,
+   116.026,
+   "every hundred rupees the owners have tied up"
+  ],
+  [
+   116.026,
+   119.901,
+   "is throwing off twenty eight rupees of profit"
+  ],
+  [
+   119.901,
+   120.869,
+   "a year."
+  ],
+  [
+   120.869,
+   122.322,
+   "For any business,"
+  ],
+  [
+   122.322,
+   125.228,
+   "that is a genuinely strong number."
+  ],
+  [
+   125.728,
+   129.08,
+   "The second return is a fairer one."
+  ],
+  [
+   129.08,
+   130.995,
+   "Return on capital employed,"
+  ],
+  [
+   130.995,
+   131.953,
+   "or ROCE."
+  ],
+  [
+   132.503,
+   135.375,
+   "This time we use operating profit,"
+  ],
+  [
+   135.375,
+   135.854,
+   "EBIT,"
+  ],
+  [
+   135.854,
+   136.812,
+   "on top."
+  ],
+  [
+   136.812,
+   138.727,
+   "And on the bottom,"
+  ],
+  [
+   138.727,
+   141.121,
+   "all the capital at work,"
+  ],
+  [
+   141.121,
+   143.037,
+   "both equity and debt."
+  ],
+  [
+   143.587,
+   146.459,
+   "Ardee's one twenty seven of EBIT,"
+  ],
+  [
+   146.459,
+   149.811,
+   "on four hundred eighty of total capital,"
+  ],
+  [
+   149.811,
+   152.205,
+   "is about twenty six percent."
+  ],
+  [
+   152.205,
+   155.557,
+   "ROCE asks a cleaner question than ROE."
+  ],
+  [
+   155.557,
+   158.43,
+   "Ignoring how the money was raised,"
+  ],
+  [
+   158.43,
+   162.26,
+   "how good is the business at using capital?"
+  ],
+  [
+   162.81,
+   166.162,
+   "That's why serious investors watch ROCE closely."
+  ],
+  [
+   166.662,
+   167.115,
+   "Now,"
+  ],
+  [
+   167.115,
+   170.283,
+   "why do we need two return ratios?"
+  ],
+  [
+   170.833,
+   173.549,
+   "Because ROE has a blind spot."
+  ],
+  [
+   173.549,
+   177.17,
+   "A company can boost its ROE simply by"
+  ],
+  [
+   177.17,
+   178.528,
+   "borrowing more money."
+  ],
+  [
+   178.528,
+   179.434,
+   "More debt,"
+  ],
+  [
+   179.434,
+   181.697,
+   "less equity on the bottom,"
+  ],
+  [
+   181.697,
+   183.507,
+   "and the ratio jumps."
+  ],
+  [
+   184.057,
+   187.226,
+   "But that higher ROE came from risk,"
+  ],
+  [
+   187.226,
+   188.131,
+   "not skill."
+  ],
+  [
+   188.131,
+   190.847,
+   "ROCE can't be tricked this way,"
+  ],
+  [
+   190.847,
+   194.016,
+   "because it counts debt as capital too."
+  ],
+  [
+   194.016,
+   195.826,
+   "So here's the rule."
+  ],
+  [
+   195.826,
+   199.448,
+   "A high ROE with a high ROCE is"
+  ],
+  [
+   199.448,
+   200.353,
+   "real quality."
+  ],
+  [
+   200.353,
+   203.974,
+   "A high ROE with a weak ROCE is"
+  ],
+  [
+   203.974,
+   205.332,
+   "just borrowed money."
+  ],
+  [
+   205.332,
+   206.69,
+   "Always check both."
+  ],
+  [
+   207.19,
+   209.731,
+   "Let's see Ardee's returns together."
+  ],
+  [
+   210.281,
+   212.822,
+   "ROE is twenty eight percent."
+  ],
+  [
+   212.822,
+   213.33,
+   "ROCE,"
+  ],
+  [
+   213.33,
+   214.347,
+   "twenty six."
+  ],
+  [
+   214.347,
+   216.379,
+   "And return on assets,"
+  ],
+  [
+   216.379,
+   216.888,
+   "ROA,"
+  ],
+  [
+   216.888,
+   219.937,
+   "which uses everything the company owns,"
+  ],
+  [
+   219.937,
+   221.461,
+   "is about fourteen."
+  ],
+  [
+   222.011,
+   225.061,
+   "Now look at the dashed line."
+  ],
+  [
+   225.061,
+   227.602,
+   "That's the cost of capital,"
+  ],
+  [
+   227.602,
+   229.634,
+   "very roughly twelve percent."
+  ],
+  [
+   229.634,
+   233.7,
+   "It's the return investors expect just for taking"
+  ],
+  [
+   233.7,
+   234.716,
+   "the risk."
+  ],
+  [
+   235.266,
+   239.332,
+   "Every one of Ardee's returns sits above that"
+  ],
+  [
+   239.332,
+   239.84,
+   "line."
+  ],
+  [
+   239.84,
+   241.365,
+   "And that gap,"
+  ],
+  [
+   241.365,
+   245.43,
+   "between what the business earns and what capital"
+  ],
+  [
+   245.43,
+   245.939,
+   "costs,"
+  ],
+  [
+   245.939,
+   249.496,
+   "is the definition of value being created."
+  ],
+  [
+   249.996,
+   254.12,
+   "Here's the most powerful tool in this chapter."
+  ],
+  [
+   254.12,
+   255.667,
+   "The DuPont breakdown."
+  ],
+  [
+   256.216,
+   259.825,
+   "It splits ROE into three simple levers."
+  ],
+  [
+   259.825,
+   260.34,
+   "First,"
+  ],
+  [
+   260.341,
+   261.372,
+   "net margin."
+  ],
+  [
+   261.372,
+   263.949,
+   "How much profit per sale."
+  ],
+  [
+   263.949,
+   264.464,
+   "Second,"
+  ],
+  [
+   264.464,
+   265.495,
+   "asset turnover."
+  ],
+  [
+   265.495,
+   269.62,
+   "How many rupees of sales you get from"
+  ],
+  [
+   269.62,
+   271.682,
+   "each rupee of assets."
+  ],
+  [
+   271.682,
+   272.713,
+   "And third,"
+  ],
+  [
+   272.713,
+   273.228,
+   "leverage."
+  ],
+  [
+   273.228,
+   275.805,
+   "How much the company borrows."
+  ],
+  [
+   276.356,
+   278.418,
+   "Multiply the three together,"
+  ],
+  [
+   278.418,
+   280.48,
+   "and you get ROE."
+  ],
+  [
+   280.48,
+   281.511,
+   "For Ardee,"
+  ],
+  [
+   281.511,
+   283.573,
+   "a seven percent margin,"
+  ],
+  [
+   283.572,
+   285.635,
+   "times nearly two turns,"
+  ],
+  [
+   285.635,
+   287.697,
+   "times two on leverage,"
+  ],
+  [
+   287.697,
+   289.759,
+   "gives twenty eight percent."
+  ],
+  [
+   290.308,
+   294.433,
+   "Now you can see exactly where a company's"
+  ],
+  [
+   294.433,
+   296.495,
+   "return is coming from,"
+  ],
+  [
+   296.495,
+   299.072,
+   "and whether it's from skill,"
+  ],
+  [
+   299.072,
+   299.587,
+   "speed,"
+  ],
+  [
+   299.587,
+   301.134,
+   "or just debt."
+  ],
+  [
+   301.634,
+   305.088,
+   "Let's end this chapter with the single most"
+  ],
+  [
+   305.088,
+   306.815,
+   "important sentence in investing."
+  ],
+  [
+   307.365,
+   310.818,
+   "A business creates value only when its return"
+  ],
+  [
+   310.818,
+   314.272,
+   "on capital is higher than the cost of"
+  ],
+  [
+   314.272,
+   315.136,
+   "that capital."
+  ],
+  [
+   315.686,
+   319.139,
+   "If Ardee earns twenty six percent on money"
+  ],
+  [
+   319.139,
+   320.435,
+   "that costs twelve,"
+  ],
+  [
+   320.435,
+   323.888,
+   "then every rupee it reinvests makes its owners"
+  ],
+  [
+   323.888,
+   324.32,
+   "wealthier."
+  ],
+  [
+   324.32,
+   327.774,
+   "But if a company earns less than its"
+  ],
+  [
+   327.774,
+   329.069,
+   "cost of capital,"
+  ],
+  [
+   329.069,
+   330.796,
+   "growth actually destroys value."
+  ],
+  [
+   331.346,
+   334.8,
+   "This is why returns matter more than almost"
+  ],
+  [
+   334.8,
+   336.095,
+   "any other number."
+  ],
+  [
+   336.095,
+   339.549,
+   "They tell you whether growth is worth having"
+  ],
+  [
+   339.549,
+   340.412,
+   "at all."
+  ],
+  [
+   340.912,
+   343.25,
+   "Let's lock in chapter three."
+  ],
+  [
+   343.8,
+   347.541,
+   "A return is profit divided by the capital"
+  ],
+  [
+   347.541,
+   349.412,
+   "used to earn it."
+  ],
+  [
+   349.412,
+   352.218,
+   "ROE is the owners' interest rate."
+  ],
+  [
+   352.218,
+   355.492,
+   "ROCE measures all the capital at work,"
+  ],
+  [
+   355.492,
+   356.894,
+   "and unlike ROE,"
+  ],
+  [
+   356.894,
+   359.7,
+   "it can't be flattered by debt."
+  ],
+  [
+   360.25,
+   363.524,
+   "The DuPont breakdown shows return as margin,"
+  ],
+  [
+   363.524,
+   364.459,
+   "times turnover,"
+  ],
+  [
+   364.459,
+   365.395,
+   "times leverage."
+  ],
+  [
+   365.395,
+   368.2,
+   "Ardee earns around twenty eight percent,"
+  ],
+  [
+   368.2,
+   371.006,
+   "well above its cost of capital."
+  ],
+  [
+   371.006,
+   373.812,
+   "And that is the whole point."
+  ],
+  [
+   374.362,
+   378.103,
+   "A business only creates value when its return"
+  ],
+  [
+   378.103,
+   380.442,
+   "beats what its capital costs."
+  ],
+  [
+   380.442,
+   384.183,
+   "We now know the quality of the business."
+  ],
+  [
+   384.183,
+   385.586,
+   "In chapter four,"
+  ],
+  [
+   385.586,
+   389.327,
+   "we ask what you should pay for it."
+  ],
+  [
+   389.327,
+   390.73,
+   "Thanks for watching."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "fa/ch03.wav",
+   "volume": 1.0
+  }
+ }
+}

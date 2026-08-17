@@ -1,0 +1,737 @@
+{
+  "cuts": [
+    {
+      "id": "leap_title",
+      "type": "sm_ptitle",
+      "in_seconds": 0.0,
+      "out_seconds": 27.764,
+      "props": {
+        "title": "LEAP India IPO",
+        "sub": "Supply-chain asset pooling (KKR-backed) · ₹2,480 Cr · 81% OFS · 7–11 Aug 2026",
+        "kicker": "IPO ANALYSIS · MAINBOARD",
+        "dur": 28.264
+      }
+    },
+    {
+      "id": "leap_biz",
+      "type": "sm_iconcards",
+      "in_seconds": 28.264,
+      "out_seconds": 72.034,
+      "props": {
+        "kicker": "WHAT THE COMPANY DOES",
+        "title": "Inside LEAP India",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "📦",
+            "k": "Supply-chain asset pooling",
+            "v": "Owns a huge pool of pallets, crates and containers and RENTS them out — customers pay only for what they use",
+            "chip": "POOLING"
+          },
+          {
+            "emoji": "🔁",
+            "k": "A shared, reusable fleet",
+            "v": "Asset-light for customers: a circulating fleet of logistics equipment instead of each firm buying its own",
+            "chip": "ASSET-LIGHT"
+          },
+          {
+            "emoji": "🏢",
+            "k": "Market leader, KKR-backed",
+            "v": "Calls itself India's largest on-demand pooling company; global investor KKR took a majority stake in 2023",
+            "chip": "KKR 2023"
+          }
+        ],
+        "dur": 44.27
+      }
+    },
+    {
+      "id": "leap_fin",
+      "type": "sm_stats",
+      "in_seconds": 72.534,
+      "out_seconds": 122.28,
+      "props": {
+        "kicker": "FY26 FINANCIALS",
+        "title": "The Numbers",
+        "stats": [
+          {
+            "label": "Revenue FY26",
+            "to": 747,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "nearly doubled: ₹371.94 → ₹747.36 Cr"
+          },
+          {
+            "label": "Net Profit FY26",
+            "to": 62,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "+66% YoY (₹37.56 → ₹62.34 Cr)"
+          },
+          {
+            "label": "Total borrowings",
+            "to": 1018,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "DOUBLED: ₹513.07 → ₹1,017.73 Cr"
+          }
+        ],
+        "note": "Fast growth — but debt has doubled in two years, and the stock looks richly valued: price-to-book 6.48, and well over 100× earnings.",
+        "dur": 50.246
+      }
+    },
+    {
+      "id": "leap_issue",
+      "type": "sm_stats",
+      "in_seconds": 122.78,
+      "out_seconds": 167.414,
+      "props": {
+        "kicker": "WHERE THE MONEY GOES",
+        "title": "Fresh Issue vs Offer-for-Sale",
+        "stats": [
+          {
+            "label": "Total issue",
+            "to": 2480,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#A78BFA",
+            "sub": "₹2,480 Cr · band ₹151–159"
+          },
+          {
+            "label": "Fresh (into company)",
+            "to": 480,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#34D399",
+            "sub": "only 19% — into the business"
+          },
+          {
+            "label": "OFS (to sellers)",
+            "to": 2000,
+            "prefix": "₹",
+            "suffix": " Cr",
+            "color": "#F87171",
+            "sub": "81% — to owners incl. KKR"
+          }
+        ],
+        "note": "The key point: over four-fifths of this ₹2,480 crore issue goes to existing shareholders cashing out — NOT into the business.",
+        "dur": 45.134
+      }
+    },
+    {
+      "id": "leap_proceeds",
+      "type": "sm_iconcards",
+      "in_seconds": 167.914,
+      "out_seconds": 205.612,
+      "props": {
+        "kicker": "USE OF THE FRESH MONEY",
+        "title": "What the ₹480 Cr Funds",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🏦",
+            "k": "₹360 Cr — repay debt",
+            "v": "Most of the fresh money repays borrowings — genuinely needed, given debt has doubled to over ₹1,000 Cr",
+            "chip": "DEBT"
+          },
+          {
+            "emoji": "🧰",
+            "k": "Balance — general corporate",
+            "v": "The remainder goes to general corporate purposes",
+            "chip": "GCP"
+          },
+          {
+            "emoji": "⚠️",
+            "k": "But most cash exits",
+            "v": "Remember: ₹2,000 Cr of the ₹2,480 Cr is OFS — it goes to sellers, and builds nothing new",
+            "chip": "OFS 81%"
+          }
+        ],
+        "dur": 38.198
+      }
+    },
+    {
+      "id": "leap_verdict",
+      "type": "sm_myths",
+      "in_seconds": 206.112,
+      "out_seconds": 254.61,
+      "props": {
+        "kicker": "SHOULD YOU SUBSCRIBE?",
+        "title": "Strengths vs Watch-outs",
+        "mythLabel": "⚠️ WATCH-OUTS",
+        "factLabel": "✅ STRENGTHS",
+        "pairs": [
+          {
+            "m": "81% is OFS — mostly a cash-out for owners",
+            "f": "Market leader in supply-chain asset pooling"
+          },
+          {
+            "m": "Debt has doubled to over ₹1,000 Cr",
+            "f": "Revenue nearly doubled in two years"
+          },
+          {
+            "m": "Richly valued — P/B 6.48, ~112× earnings",
+            "f": "KKR-backed; asset-light model for customers"
+          }
+        ],
+        "dur": 48.998
+      }
+    },
+    {
+      "id": "leap_retail",
+      "type": "sm_iconcards",
+      "in_seconds": 255.11,
+      "out_seconds": 296.238,
+      "props": {
+        "kicker": "HOW TO APPLY · RETAIL vs HNI",
+        "title": "Categories & Money Needed",
+        "color": "#A78BFA",
+        "items": [
+          {
+            "emoji": "🧑",
+            "k": "Retail (RII) — up to ₹2 lakh",
+            "v": "35% quota. If oversubscribed, shares are allotted by LOTTERY — a bigger cheque does NOT get you more",
+            "chip": "LOTTERY"
+          },
+          {
+            "emoji": "💼",
+            "k": "HNI (NII) — above ₹2 lakh",
+            "v": "15% quota. Split into S-HNI (₹2–10 L) and B-HNI (over ₹10 L); allotment is proportionate",
+            "chip": "> ₹2 LAKH"
+          },
+          {
+            "emoji": "💰",
+            "k": "Money you need",
+            "v": "Minimum 1 lot = ₹14,946 as a retail bid. To apply as an HNI you need more than ₹2 lakh",
+            "chip": "MIN BID"
+          },
+          {
+            "emoji": "🔎",
+            "k": "Check subscription LIVE",
+            "v": "NSE & BSE IPO pages, Chittorgarh, Moneycontrol, or your broker app (Zerodha / Groww / Angel One)",
+            "chip": "SOURCES"
+          }
+        ],
+        "dur": 41.628
+      }
+    },
+    {
+      "id": "leap_recap",
+      "type": "sm_recap",
+      "in_seconds": 296.738,
+      "out_seconds": 367.072,
+      "props": {
+        "title": "LEAP India IPO — at a Glance",
+        "items": [
+          "Business: supply-chain asset pooling — pallets & crates (KKR-backed)",
+          "FY26: revenue ₹747.36 Cr, profit ₹62.34 Cr",
+          "₹2,480 Cr issue — but 81% is OFS (₹2,000 Cr to sellers)",
+          "Fresh ₹480 Cr mainly repays debt",
+          "Retail min ~₹14,946 · richly valued (P/B 6.48)"
+        ],
+        "closer": "A high-growth market leader — but this issue is mostly a promoter and KKR cash-out, at a rich price. Read the RHP; decide for yourself.",
+        "dur": 70.834
+      }
+    }
+  ],
+  "captions": [
+    [
+      0.0,
+      3.042,
+      "Let's break down the LEAP India I-P-O —"
+    ],
+    [
+      3.042,
+      5.069,
+      "the biggest of this batch,"
+    ],
+    [
+      5.069,
+      12.01,
+      "a two thousand four hundred and eighty crore issue from a K-K-R-backed logistics company."
+    ],
+    [
+      12.01,
+      15.91,
+      "We'll cover what the company does, its financials,"
+    ],
+    [
+      15.91,
+      18.327,
+      "where the money actually goes —"
+    ],
+    [
+      18.327,
+      21.993,
+      "and this one has a very important twist there —"
+    ],
+    [
+      21.993,
+      24.566,
+      "and how much you'd need to apply."
+    ],
+    [
+      24.566,
+      27.764,
+      "This is education, not investment advice."
+    ],
+    [
+      28.264,
+      30.461,
+      "So what does LEAP India do?"
+    ],
+    [
+      30.461,
+      34.773,
+      "It runs a business called supply-chain asset pooling."
+    ],
+    [
+      34.773,
+      38.352,
+      "Instead of a company buying its own pallets,"
+    ],
+    [
+      38.352,
+      40.142,
+      "crates and containers,"
+    ],
+    [
+      40.142,
+      44.21,
+      "LEAP owns a huge pool of them and rents them out —"
+    ],
+    [
+      44.21,
+      47.708,
+      "pay only for what you use, when you use it."
+    ],
+    [
+      47.708,
+      49.661,
+      "Think of it as a shared,"
+    ],
+    [
+      49.661,
+      53.729,
+      "circulating fleet of reusable logistics equipment."
+    ],
+    [
+      53.729,
+      56.739,
+      "Its customers are F-M-C-G, logistics,"
+    ],
+    [
+      56.739,
+      59.668,
+      "e-commerce and industrial companies."
+    ],
+    [
+      59.668,
+      64.875,
+      "It calls itself India's largest on-demand asset-pooling company,"
+    ],
+    [
+      64.875,
+      72.034,
+      "and the global investment giant K-K-R took a majority stake back in twenty twenty-three."
+    ],
+    [
+      72.534,
+      74.02,
+      "Now the financials."
+    ],
+    [
+      74.02,
+      75.741,
+      "The growth is strong —"
+    ],
+    [
+      75.741,
+      78.87,
+      "revenue has nearly doubled in two years,"
+    ],
+    [
+      78.87,
+      85.518,
+      "reaching seven hundred and forty-seven point three six crore in FY twenty twenty-six,"
+    ],
+    [
+      85.518,
+      89.507,
+      "up about fifty-four percent in the last year alone."
+    ],
+    [
+      89.507,
+      93.574,
+      "Net profit rose to sixty-two point three four crore."
+    ],
+    [
+      93.574,
+      97.016,
+      "But here's the number to watch — borrowings."
+    ],
+    [
+      97.016,
+      98.346,
+      "Debt has doubled,"
+    ],
+    [
+      98.346,
+      105.933,
+      "from about five hundred and thirteen crore to over one thousand and seventeen crore in two years."
+    ],
+    [
+      105.933,
+      108.045,
+      "And the valuation is rich —"
+    ],
+    [
+      108.045,
+      111.564,
+      "a price-to-book of six point four eight, and,"
+    ],
+    [
+      111.564,
+      116.257,
+      "on our estimate from its roughly seven thousand crore value,"
+    ],
+    [
+      116.257,
+      118.995,
+      "well over a hundred times earnings."
+    ],
+    [
+      118.995,
+      122.28,
+      "This is priced for a lot of future growth."
+    ],
+    [
+      122.78,
+      125.188,
+      "Now, where does your money go?"
+    ],
+    [
+      125.188,
+      130.005,
+      "And for this I-P-O, this is the single most important slide."
+    ],
+    [
+      130.005,
+      134.5,
+      "Of the two thousand four hundred and eighty crore issue,"
+    ],
+    [
+      134.5,
+      139.397,
+      "only four hundred and eighty crore — about nineteen percent —"
+    ],
+    [
+      139.397,
+      142.608,
+      "is a fresh issue going into the company."
+    ],
+    [
+      142.608,
+      147.264,
+      "The other two thousand crore — a full eighty-one percent —"
+    ],
+    [
+      147.264,
+      148.95,
+      "is an offer for sale."
+    ],
+    [
+      148.95,
+      153.847,
+      "That money goes to existing shareholders selling their stake,"
+    ],
+    [
+      153.847,
+      156.817,
+      "including K-K-R, not to the business."
+    ],
+    [
+      156.817,
+      159.065,
+      "So be very clear-eyed here —"
+    ],
+    [
+      159.065,
+      163.24,
+      "this issue is mostly a cash-out for early investors."
+    ],
+    [
+      163.24,
+      167.414,
+      "Only about a fifth actually strengthens the company."
+    ],
+    [
+      167.914,
+      171.069,
+      "What does that small fresh portion fund?"
+    ],
+    [
+      171.069,
+      175.17,
+      "Of the four hundred and eighty crore of fresh money,"
+    ],
+    [
+      175.17,
+      179.113,
+      "three hundred and sixty crore repays debt — which,"
+    ],
+    [
+      179.113,
+      183.135,
+      "given borrowings have doubled, is genuinely needed."
+    ],
+    [
+      183.135,
+      186.526,
+      "The rest is for general corporate purposes."
+    ],
+    [
+      186.526,
+      191.337,
+      "But keep the big picture in view — repaying debt is sensible,"
+    ],
+    [
+      191.337,
+      194.807,
+      "yet the overwhelming majority of this issue,"
+    ],
+    [
+      194.807,
+      196.7,
+      "that two thousand crore,"
+    ],
+    [
+      196.7,
+      200.959,
+      "simply moves ownership from existing investors to you."
+    ],
+    [
+      200.959,
+      205.612,
+      "It does not build a single new warehouse or add one pallet."
+    ],
+    [
+      206.112,
+      207.686,
+      "Should you subscribe?"
+    ],
+    [
+      207.686,
+      209.71,
+      "The strengths are genuine —"
+    ],
+    [
+      209.71,
+      213.458,
+      "LEAP is the market leader in a fast-growing niche,"
+    ],
+    [
+      213.458,
+      216.756,
+      "its revenue has nearly doubled in two years,"
+    ],
+    [
+      216.756,
+      221.703,
+      "the pooling model is attractive and asset-light for its customers,"
+    ],
+    [
+      221.703,
+      225.226,
+      "and it has the backing and governance of K-K-R."
+    ],
+    [
+      225.226,
+      227.7,
+      "The watch-outs are equally real —"
+    ],
+    [
+      227.7,
+      231.673,
+      "eighty-one percent of the issue is an offer for sale,"
+    ],
+    [
+      231.673,
+      234.521,
+      "so most of your money goes to sellers,"
+    ],
+    [
+      234.521,
+      240.968,
+      "not the company; debt has doubled to over a thousand crore; and the valuation is rich,"
+    ],
+    [
+      240.968,
+      243.816,
+      "at more than a hundred times earnings."
+    ],
+    [
+      243.816,
+      247.564,
+      "The takeaway — a high-quality, high-growth leader,"
+    ],
+    [
+      247.564,
+      250.562,
+      "but an expensive, mostly-cash-out issue."
+    ],
+    [
+      250.562,
+      254.61,
+      "Weigh the quality against the price and the structure."
+    ],
+    [
+      255.11,
+      259.559,
+      "Finally — how do you apply, and how much do you need?"
+    ],
+    [
+      259.559,
+      266.189,
+      "Retail investors can bid up to two lakh rupees for a thirty-five percent quota,"
+    ],
+    [
+      266.189,
+      269.883,
+      "allotted by lottery if it's oversubscribed —"
+    ],
+    [
+      269.883,
+      272.568,
+      "so a bigger cheque doesn't help."
+    ],
+    [
+      272.568,
+      277.101,
+      "H-N-Is bid above two lakh for a fifteen percent quota."
+    ],
+    [
+      277.101,
+      281.046,
+      "For LEAP India, one lot is ninety-four shares —"
+    ],
+    [
+      281.046,
+      285.998,
+      "about fourteen thousand nine hundred and forty-six rupees —"
+    ],
+    [
+      285.998,
+      287.089,
+      "your minimum."
+    ],
+    [
+      287.089,
+      292.377,
+      "Track the live subscription on the N-S-E and B-S-E I-P-O pages,"
+    ],
+    [
+      292.377,
+      296.238,
+      "Chittorgarh, Moneycontrol, or your broker app."
+    ],
+    [
+      296.738,
+      298.554,
+      "Let's recap LEAP India."
+    ],
+    [
+      298.554,
+      303.29,
+      "A K-K-R-backed market leader in supply-chain asset pooling —"
+    ],
+    [
+      303.29,
+      307.71,
+      "renting out pallets and crates rather than selling them."
+    ],
+    [
+      307.71,
+      315.052,
+      "Growth is strong: revenue nearly doubled in two years to seven hundred and forty-seven crore,"
+    ],
+    [
+      315.052,
+      317.499,
+      "with profit of sixty-two crore."
+    ],
+    [
+      317.499,
+      320.341,
+      "But the structure is the key story —"
+    ],
+    [
+      320.341,
+      324.761,
+      "of the two thousand four hundred and eighty crore issue,"
+    ],
+    [
+      324.761,
+      332.655,
+      "eighty-one percent is an offer for sale going to existing owners; only about a fifth is fresh money,"
+    ],
+    [
+      332.655,
+      334.944,
+      "and most of that repays debt."
+    ],
+    [
+      334.944,
+      341.575,
+      "The minimum retail bid is about fourteen thousand nine hundred and forty-six rupees,"
+    ],
+    [
+      341.575,
+      344.259,
+      "and the stock looks richly valued."
+    ],
+    [
+      344.259,
+      348.048,
+      "This video explains the IPO for education only —"
+    ],
+    [
+      348.048,
+      350.258,
+      "it is not investment advice,"
+    ],
+    [
+      350.258,
+      352.863,
+      "not a buy or sell recommendation,"
+    ],
+    [
+      352.863,
+      355.863,
+      "and not a prediction of listing gains."
+    ],
+    [
+      355.863,
+      360.046,
+      "Grey-market premium is unofficial and changes hourly."
+    ],
+    [
+      360.046,
+      365.493,
+      "Always read the RHP and check the live subscription before you apply."
+    ],
+    [
+      365.493,
+      367.072,
+      "Thanks for watching."
+    ]
+  ],
+  "audio": {
+    "narration": {
+      "src": "sm/leap.wav",
+      "volume": 1.0
+    }
+  }
+}

@@ -1,0 +1,1820 @@
+{
+ "cuts": [
+  {
+   "id": "dp04-factory-method_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 19.698,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 04",
+    "line1": "The word 'new' that",
+    "line2": "leaks everywhere",
+    "sub": "your delivery app only knows trucks \u2014 until the day it needs ships",
+    "dur": 20.198
+   }
+  },
+  {
+   "id": "dp04-factory-method_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 20.198,
+   "out_seconds": 51.13,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "A logistics app plans deliveries",
+    "situation": "Your app plans deliveries. Today, everything moves by road, so every delivery creates a truck and tells it to go.",
+    "actors": [
+     {
+      "emoji": "\ud83d\ude9a",
+      "label": "Truck (today)"
+     },
+     {
+      "emoji": "\ud83d\udea2",
+      "label": "Ship (soon)"
+     },
+     {
+      "emoji": "\ud83d\udee9\ufe0f",
+      "label": "Drone (later)"
+     }
+    ],
+    "ask": "The planning logic is the same. Only the vehicle changes. Where's the seam?",
+    "dur": 31.432
+   }
+  },
+  {
+   "id": "dp04-factory-method_naive",
+   "type": "dp_code",
+   "in_seconds": 51.63,
+   "out_seconds": 81.618,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "Just new it up.",
+    "file": "Logistics.java",
+    "lines": [
+     {
+      "t": "class Logistics {"
+     },
+     {
+      "t": "  void planDelivery(Order order) {"
+     },
+     {
+      "t": "    route(order);"
+     },
+     {
+      "t": "    Truck t = new Truck();     // hardcoded",
+      "s": "hi"
+     },
+     {
+      "t": "    t.deliver(order);"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "  // ...and new Truck() again in scheduleFleet(),"
+     },
+     {
+      "t": "  //    and again in estimateCost(). Everywhere."
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Road-only, so 'new Truck()' feels harmless. It isn't.",
+    "dur": 30.488
+   }
+  },
+  {
+   "id": "dp04-factory-method_pain",
+   "type": "dp_pain",
+   "in_seconds": 82.118,
+   "out_seconds": 121.475,
+   "props": {
+    "title": "\"We now ship by sea too.\"",
+    "file": "Logistics.java",
+    "lines": [
+     {
+      "t": "  void planDelivery(Order order) {"
+     },
+     {
+      "t": "    route(order);"
+     },
+     {
+      "t": "    Transport t;",
+      "s": "hi"
+     },
+     {
+      "t": "    if (order.bySea())  t = new Ship();",
+      "s": "hi"
+     },
+     {
+      "t": "    else                t = new Truck();",
+      "s": "hi"
+     },
+     {
+      "t": "    t.deliver(order);"
+     },
+     {
+      "t": "    // same if/else pasted into 3 other methods..."
+     },
+     {
+      "t": "  }"
+     }
+    ],
+    "smell": "Creation logic tangled into business logic",
+    "touched": [
+     "planDelivery() \u2014 add if/else",
+     "scheduleFleet() \u2014 same if/else",
+     "estimateCost() \u2014 same if/else",
+     "add air? touch them all again"
+    ],
+    "dur": 39.857
+   }
+  },
+  {
+   "id": "dp04-factory-method_insight",
+   "type": "dp_insight",
+   "in_seconds": 121.975,
+   "out_seconds": 156.096,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "The steps of planning a delivery",
+     "That a transport can deliver()",
+     "The workflow around it"
+    ],
+    "varies": [
+     "Which concrete vehicle is built",
+     "How many vehicle types exist",
+     "The rule for choosing one"
+    ],
+    "principle": "Pull the 'which class to build' decision out of the workflow and give it one overridable home.",
+    "dur": 34.621
+   }
+  },
+  {
+   "id": "dp04-factory-method_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 156.596,
+   "out_seconds": 199.817,
+   "props": {
+    "title": "Think of a franchise",
+    "emoji": "\ud83c\udf54",
+    "analogy": "Head office writes the recipe. Each branch sources locally.",
+    "map": [
+     {
+      "from": "The head-office recipe",
+      "to": "the fixed workflow"
+     },
+     {
+      "from": "\"Get today's protein\"",
+      "to": "an overridable create step"
+     },
+     {
+      "from": "A branch's local supplier",
+      "to": "a subclass's choice"
+     },
+     {
+      "from": "Opening a new branch",
+      "to": "a new subclass"
+     }
+    ],
+    "breaks": "a franchise recipe fixes many steps \u2014 here we hand exactly one step, 'make the product', to the subclass, and keep the rest shared.",
+    "dur": 43.721
+   }
+  },
+  {
+   "id": "dp04-factory-method_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 200.317,
+   "out_seconds": 221.722,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "A common product type",
+    "file": "Transport.java",
+    "lines": [
+     {
+      "t": "interface Transport {",
+      "s": "add"
+     },
+     {
+      "t": "  void deliver(Order order);",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": ""
+     },
+     {
+      "t": "class Truck implements Transport { /* ... */ }",
+      "s": "add"
+     },
+     {
+      "t": "class Ship  implements Transport { /* ... */ }",
+      "s": "add"
+     }
+    ],
+    "note": "The workflow will only ever touch Transport, never Truck or Ship.",
+    "dur": 21.905
+   }
+  },
+  {
+   "id": "dp04-factory-method_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 222.222,
+   "out_seconds": 249.867,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "One overridable creation step",
+    "file": "Logistics.java",
+    "lines": [
+     {
+      "t": "abstract class Logistics {",
+      "s": "add"
+     },
+     {
+      "t": "  abstract Transport createTransport();  // the seam",
+      "s": "add"
+     },
+     {
+      "t": ""
+     },
+     {
+      "t": "  void planDelivery(Order order) {"
+     },
+     {
+      "t": "    route(order);"
+     },
+     {
+      "t": "    Transport t = createTransport();   // no 'new'",
+      "s": "add"
+     },
+     {
+      "t": "    t.deliver(order);"
+     },
+     {
+      "t": "  }"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "planDelivery no longer says 'new'. It asks for a transport.",
+    "dur": 28.145
+   }
+  },
+  {
+   "id": "dp04-factory-method_try",
+   "type": "dp_try",
+   "in_seconds": 250.367,
+   "out_seconds": 275.147,
+   "props": {
+    "title": "Write RoadLogistics",
+    "file": "RoadLogistics.java",
+    "lines": [
+     {
+      "t": "class RoadLogistics extends Logistics {"
+     },
+     {
+      "t": "  // \u25af override createTransport() to build a Truck",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Override createTransport() so road logistics builds a Truck.",
+    "hint": "Transport createTransport() { return new Truck(); }",
+    "dur": 25.28
+   }
+  },
+  {
+   "id": "dp04-factory-method_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 275.647,
+   "out_seconds": 300.558,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "Each branch picks its vehicle",
+    "file": "*Logistics.java",
+    "lines": [
+     {
+      "t": "class RoadLogistics extends Logistics {",
+      "s": "add"
+     },
+     {
+      "t": "  Transport createTransport() { return new Truck(); }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "class SeaLogistics extends Logistics {",
+      "s": "add"
+     },
+     {
+      "t": "  Transport createTransport() { return new Ship(); }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     },
+     {
+      "t": "// planDelivery() is inherited, unchanged, by both."
+     }
+    ],
+    "note": "Two subclasses, two choices. The workflow is written once.",
+    "dur": 25.411
+   }
+  },
+  {
+   "id": "dp04-factory-method_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 301.058,
+   "out_seconds": 334.231,
+   "props": {
+    "requirement": "\"Add drone delivery\" \u2014 the newest vehicle",
+    "naiveLabel": "Before",
+    "naiveCost": "A third branch in every creation site.",
+    "naiveSteps": [
+     "edit planDelivery's if/else",
+     "edit scheduleFleet, estimateCost",
+     "hope you found them all"
+    ],
+    "patLabel": "Now",
+    "patCost": "One subclass. The workflow never moves.",
+    "patFile": "AirLogistics.java",
+    "patLines": [
+     {
+      "t": "class AirLogistics",
+      "s": "add"
+     },
+     {
+      "t": "    extends Logistics {",
+      "s": "add"
+     },
+     {
+      "t": "  Transport createTransport() {",
+      "s": "add"
+     },
+     {
+      "t": "    return new Drone();",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "dur": 33.673
+   }
+  },
+  {
+   "id": "dp04-factory-method_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 334.731,
+   "out_seconds": 373.192,
+   "props": {
+    "name": "The Factory Method Pattern",
+    "plain": "A parent defines the workflow and an overridable create step; each subclass decides which concrete product that step builds.",
+    "nodes": [
+     {
+      "id": "prod",
+      "title": "Transport",
+      "stereo": "interface",
+      "members": [
+       "+ deliver(order)"
+      ],
+      "x": 150,
+      "y": 250,
+      "w": 360,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "creator",
+      "title": "Logistics",
+      "stereo": "abstract",
+      "members": [
+       "+ createTransport()",
+       "+ planDelivery()"
+      ],
+      "x": 760,
+      "y": 220,
+      "w": 430,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "road",
+      "title": "RoadLogistics",
+      "members": [
+       "+ createTransport()"
+      ],
+      "x": 430,
+      "y": 640,
+      "w": 360,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "sea",
+      "title": "SeaLogistics",
+      "members": [
+       "+ createTransport()"
+      ],
+      "x": 830,
+      "y": 640,
+      "w": 360,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "air",
+      "title": "AirLogistics",
+      "members": [
+       "+ createTransport()"
+      ],
+      "x": 1230,
+      "y": 640,
+      "w": 360,
+      "color": "#34D399"
+     }
+    ],
+    "edges": [
+     {
+      "from": "creator",
+      "to": "prod",
+      "kind": "has"
+     },
+     {
+      "from": "road",
+      "to": "creator",
+      "kind": "impl"
+     },
+     {
+      "from": "sea",
+      "to": "creator",
+      "kind": "impl"
+     },
+     {
+      "from": "air",
+      "to": "creator",
+      "kind": "impl"
+     }
+    ],
+    "dur": 38.961
+   }
+  },
+  {
+   "id": "dp04-factory-method_map",
+   "type": "dp_map",
+   "in_seconds": 373.692,
+   "out_seconds": 413.995,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Product",
+      "your": "interface Transport"
+     },
+     {
+      "role": "ConcreteProduct",
+      "your": "Truck, Ship, Drone"
+     },
+     {
+      "role": "Creator",
+      "your": "abstract Logistics"
+     },
+     {
+      "role": "ConcreteCreator",
+      "your": "RoadLogistics, SeaLogistics, \u2026"
+     }
+    ],
+    "plain": "The parent calls its own create step inside a fixed workflow; subclasses override just that step to pick the product.",
+    "gof": "Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.",
+    "dur": 40.803
+   }
+  },
+  {
+   "id": "dp04-factory-method_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 414.495,
+   "out_seconds": 455.218,
+   "props": {
+    "title": "Don't factory everything",
+    "costs": [
+     "A subclass for every product variant",
+     "More indirection to trace a 'new'",
+     "Parallel creator + product hierarchies"
+    ],
+    "dont": [
+     "There is only ever one product",
+     "A simple 'new' will never change",
+     "A static helper method is enough"
+    ],
+    "signal": "a workflow is identical except for which object it constructs, and that set of objects will grow.",
+    "dur": 41.223
+   }
+  },
+  {
+   "id": "dp04-factory-method_recap",
+   "type": "dp_recap",
+   "in_seconds": 455.718,
+   "out_seconds": 508.708,
+   "props": {
+    "title": "Factory Method, in one breath",
+    "items": [
+     "Hardcoded 'new Truck()' spread across the code; adding a vehicle meant editing every creation site.",
+     "The workflow is fixed; only which class to build varies \u2014 so give that one decision an overridable home.",
+     "Factory Method: the parent runs the workflow and calls a create step; each subclass picks the product."
+    ],
+    "challenge": "A cross-platform UI toolkit runs the same 'render dialog' steps, but must build Windows buttons on Windows and web buttons on the web.",
+    "question": "Does Factory Method fit? What's the product, and who are the creators?",
+    "dur": 53.49
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   2.849,
+   "There is one keyword that quietly welds your"
+  ],
+  [
+   2.849,
+   4.985,
+   "code to a single concrete class."
+  ],
+  [
+   5.616,
+   6.685,
+   "The word new."
+  ],
+  [
+   7.316,
+   9.097,
+   "Sprinkle it through your logic,"
+  ],
+  [
+   9.097,
+   11.945,
+   "and the day you need a second kind"
+  ],
+  [
+   11.945,
+   12.657,
+   "of thing,"
+  ],
+  [
+   12.657,
+   15.506,
+   "you will be hunting it down in a"
+  ],
+  [
+   15.506,
+   16.218,
+   "dozen places."
+  ],
+  [
+   16.849,
+   19.698,
+   "Let's watch that happen to a delivery app."
+  ],
+  [
+   20.198,
+   23.228,
+   "You are building a logistics app that plans"
+  ],
+  [
+   23.228,
+   23.607,
+   "deliveries."
+  ],
+  [
+   24.238,
+   24.996,
+   "Right now,"
+  ],
+  [
+   24.996,
+   26.511,
+   "everything goes by road."
+  ],
+  [
+   26.511,
+   29.162,
+   "So every time you plan a delivery,"
+  ],
+  [
+   29.162,
+   30.677,
+   "you create a truck,"
+  ],
+  [
+   30.677,
+   32.949,
+   "and you tell it to deliver."
+  ],
+  [
+   33.581,
+   36.232,
+   "Soon the company expands to sea freight."
+  ],
+  [
+   36.232,
+   36.611,
+   "Then,"
+  ],
+  [
+   36.611,
+   36.99,
+   "eventually,"
+  ],
+  [
+   36.99,
+   37.368,
+   "drones."
+  ],
+  [
+   38.0,
+   41.03,
+   "But notice \u2014 the planning steps barely change."
+  ],
+  [
+   41.03,
+   41.787,
+   "Book it,"
+  ],
+  [
+   41.787,
+   42.545,
+   "route it,"
+  ],
+  [
+   42.545,
+   43.302,
+   "dispatch it."
+  ],
+  [
+   43.302,
+   46.332,
+   "The only thing that really differs is which"
+  ],
+  [
+   46.332,
+   47.468,
+   "vehicle you create."
+  ],
+  [
+   48.1,
+   51.13,
+   "So where is the seam between the two?"
+  ],
+  [
+   51.63,
+   54.599,
+   "The obvious code just news up a truck,"
+  ],
+  [
+   54.599,
+   56.454,
+   "right where it is needed."
+  ],
+  [
+   57.086,
+   58.199,
+   "Plan the route,"
+  ],
+  [
+   58.199,
+   59.313,
+   "create a truck,"
+  ],
+  [
+   59.313,
+   60.797,
+   "tell it to deliver."
+  ],
+  [
+   60.797,
+   61.168,
+   "Done."
+  ],
+  [
+   61.8,
+   64.026,
+   "And because everything is road today,"
+  ],
+  [
+   64.026,
+   66.624,
+   "that hardcoded new truck feels completely\nharmless."
+  ],
+  [
+   67.256,
+   70.224,
+   "But that same line \u2014 new truck \u2014"
+  ],
+  [
+   70.224,
+   73.193,
+   "is also sitting inside the method that schedules"
+  ],
+  [
+   73.193,
+   73.935,
+   "the fleet,"
+  ],
+  [
+   73.935,
+   76.162,
+   "and the one that estimates cost."
+  ],
+  [
+   76.794,
+   79.762,
+   "The decision of which class to build is"
+  ],
+  [
+   79.762,
+   81.618,
+   "scattered across your whole codebase."
+  ],
+  [
+   82.118,
+   83.596,
+   "Then the email arrives."
+  ],
+  [
+   83.596,
+   85.812,
+   "We now ship by sea too."
+  ],
+  [
+   86.443,
+   89.398,
+   "So you crack open plan delivery and add"
+  ],
+  [
+   89.398,
+   90.137,
+   "a branch."
+  ],
+  [
+   90.137,
+   91.984,
+   "If it goes by sea,"
+  ],
+  [
+   91.984,
+   92.723,
+   "new ship,"
+  ],
+  [
+   92.723,
+   93.831,
+   "otherwise new truck."
+  ],
+  [
+   94.463,
+   97.418,
+   "Fine \u2014 except that exact same if-else has"
+  ],
+  [
+   97.418,
+   99.634,
+   "to be pasted into schedule fleet,"
+  ],
+  [
+   99.634,
+   100.742,
+   "and estimate cost,"
+  ],
+  [
+   100.742,
+   103.697,
+   "and everywhere else you were creating a vehicle."
+  ],
+  [
+   104.329,
+   106.175,
+   "Your business logic \u2014 planning,"
+  ],
+  [
+   106.175,
+   106.545,
+   "scheduling,"
+  ],
+  [
+   106.545,
+   109.5,
+   "costing \u2014 is now tangled up with the"
+  ],
+  [
+   109.5,
+   111.716,
+   "question of which class to construct."
+  ],
+  [
+   112.348,
+   114.564,
+   "And when drones arrive next year?"
+  ],
+  [
+   114.564,
+   117.519,
+   "You reopen every single one of those methods"
+  ],
+  [
+   117.519,
+   117.888,
+   "again."
+  ],
+  [
+   118.52,
+   121.475,
+   "The decision refuses to live in one place."
+  ],
+  [
+   121.975,
+   122.685,
+   "What changes,"
+  ],
+  [
+   122.685,
+   123.75,
+   "what stays fixed?"
+  ],
+  [
+   124.382,
+   125.802,
+   "The workflow is fixed."
+  ],
+  [
+   125.802,
+   126.157,
+   "Plan,"
+  ],
+  [
+   126.157,
+   126.512,
+   "route,"
+  ],
+  [
+   126.512,
+   129.352,
+   "dispatch \u2014 those steps are identical no matter"
+  ],
+  [
+   129.352,
+   130.771,
+   "what moves the package."
+  ],
+  [
+   130.771,
+   132.546,
+   "And every vehicle can deliver."
+  ],
+  [
+   133.178,
+   136.018,
+   "What varies is only which concrete vehicle gets"
+  ],
+  [
+   136.018,
+   136.373,
+   "built,"
+  ],
+  [
+   136.373,
+   138.148,
+   "how many kinds there are,"
+  ],
+  [
+   138.148,
+   140.278,
+   "and the rule for picking one."
+  ],
+  [
+   140.91,
+   143.75,
+   "So the fix is to take that one"
+  ],
+  [
+   143.75,
+   146.59,
+   "decision \u2014 which class to construct \u2014 and"
+  ],
+  [
+   146.59,
+   149.074,
+   "lift it out of the workflow entirely."
+  ],
+  [
+   149.706,
+   152.546,
+   "Give it a single home that can be"
+  ],
+  [
+   152.546,
+   152.901,
+   "overridden,"
+  ],
+  [
+   152.901,
+   155.741,
+   "instead of a new keyword hiding in every"
+  ],
+  [
+   155.741,
+   156.096,
+   "method."
+  ],
+  [
+   156.596,
+   158.48,
+   "Think of a restaurant franchise."
+  ],
+  [
+   159.112,
+   162.126,
+   "Head office writes the recipe \u2014 the exact"
+  ],
+  [
+   162.126,
+   163.633,
+   "steps every branch follows."
+  ],
+  [
+   163.633,
+   165.517,
+   "But one step just says,"
+  ],
+  [
+   165.517,
+   166.648,
+   "get today's protein."
+  ],
+  [
+   167.279,
+   169.163,
+   "The Tokyo branch sources fish."
+  ],
+  [
+   169.163,
+   171.047,
+   "The Texas branch sources beef."
+  ],
+  [
+   171.047,
+   171.801,
+   "Same recipe,"
+  ],
+  [
+   171.801,
+   172.554,
+   "different supplier,"
+  ],
+  [
+   172.554,
+   173.308,
+   "decided locally."
+  ],
+  [
+   173.94,
+   175.447,
+   "That is our fix."
+  ],
+  [
+   175.447,
+   177.708,
+   "The recipe is the fixed workflow."
+  ],
+  [
+   177.708,
+   180.345,
+   "Get the protein is an overridable step."
+  ],
+  [
+   180.345,
+   183.36,
+   "Each branch is a subclass that chooses its"
+  ],
+  [
+   183.36,
+   184.113,
+   "own vehicle."
+  ],
+  [
+   184.113,
+   187.128,
+   "And opening a new branch is just writing"
+  ],
+  [
+   187.128,
+   188.258,
+   "a new subclass."
+  ],
+  [
+   188.89,
+   190.02,
+   "Where it breaks:"
+  ],
+  [
+   190.02,
+   192.658,
+   "a real recipe fixes lots of steps."
+  ],
+  [
+   192.658,
+   195.672,
+   "Here we hand exactly one step to the"
+  ],
+  [
+   195.672,
+   198.687,
+   "subclass \u2014 make the product \u2014 and keep"
+  ],
+  [
+   198.687,
+   199.817,
+   "everything else shared."
+  ],
+  [
+   200.317,
+   201.147,
+   "Move one."
+  ],
+  [
+   201.147,
+   204.053,
+   "We give every vehicle a common type."
+  ],
+  [
+   204.685,
+   205.515,
+   "An interface,"
+  ],
+  [
+   205.515,
+   205.93,
+   "transport,"
+  ],
+  [
+   205.93,
+   207.59,
+   "with a deliver method."
+  ],
+  [
+   208.222,
+   209.467,
+   "Truck implements it."
+  ],
+  [
+   209.467,
+   210.713,
+   "Ship implements it."
+  ],
+  [
+   211.344,
+   212.59,
+   "From now on,"
+  ],
+  [
+   212.59,
+   215.91,
+   "the planning code will only ever mention transport"
+  ],
+  [
+   215.91,
+   218.816,
+   "\u2014 never the concrete truck or ship."
+  ],
+  [
+   218.816,
+   221.722,
+   "It just needs something that can deliver."
+  ],
+  [
+   222.222,
+   222.937,
+   "Move two,"
+  ],
+  [
+   222.937,
+   225.441,
+   "and here is the heart of it."
+  ],
+  [
+   226.072,
+   227.145,
+   "Logistics becomes abstract,"
+  ],
+  [
+   227.145,
+   230.006,
+   "and it declares one abstract method \u2014 create"
+  ],
+  [
+   230.006,
+   230.364,
+   "transport."
+  ],
+  [
+   230.364,
+   231.795,
+   "That is the seam."
+  ],
+  [
+   232.426,
+   234.214,
+   "Look at plan delivery now."
+  ],
+  [
+   234.214,
+   235.645,
+   "It routes the order,"
+  ],
+  [
+   235.645,
+   238.149,
+   "then asks create transport for a vehicle,"
+  ],
+  [
+   238.149,
+   239.937,
+   "and tells it to deliver."
+  ],
+  [
+   240.568,
+   242.357,
+   "The word new is gone."
+  ],
+  [
+   242.357,
+   245.218,
+   "The workflow no longer knows or cares which"
+  ],
+  [
+   245.218,
+   246.291,
+   "vehicle it gets."
+  ],
+  [
+   246.291,
+   249.152,
+   "It just trusts that some subclass will hand"
+  ],
+  [
+   249.152,
+   249.867,
+   "it one."
+  ],
+  [
+   250.367,
+   251.117,
+   "Your turn."
+  ],
+  [
+   251.749,
+   254.0,
+   "Road logistics extends the abstract logistics."
+  ],
+  [
+   254.0,
+   257.001,
+   "All it has to do is answer one"
+  ],
+  [
+   257.001,
+   259.627,
+   "question \u2014 what vehicle do I build?"
+  ],
+  [
+   260.259,
+   261.009,
+   "For road,"
+  ],
+  [
+   261.009,
+   262.885,
+   "the answer is a truck."
+  ],
+  [
+   262.885,
+   263.26,
+   "Pause,"
+  ],
+  [
+   263.26,
+   266.262,
+   "and override create transport to return a new"
+  ],
+  [
+   266.262,
+   266.637,
+   "truck."
+  ],
+  [
+   267.268,
+   270.27,
+   "That is the only place the word new"
+  ],
+  [
+   270.27,
+   273.271,
+   "for a truck now lives \u2014 inside the"
+  ],
+  [
+   273.271,
+   274.021,
+   "road subclass,"
+  ],
+  [
+   274.021,
+   275.147,
+   "and nowhere else."
+  ],
+  [
+   275.647,
+   276.469,
+   "Move three."
+  ],
+  [
+   276.469,
+   279.757,
+   "Each kind of logistics becomes a subclass with"
+  ],
+  [
+   279.757,
+   280.99,
+   "a single decision."
+  ],
+  [
+   281.622,
+   283.677,
+   "Road logistics builds a truck."
+  ],
+  [
+   283.677,
+   285.732,
+   "Sea logistics builds a ship."
+  ],
+  [
+   286.363,
+   287.596,
+   "And plan delivery?"
+  ],
+  [
+   287.596,
+   289.24,
+   "Neither one rewrites it."
+  ],
+  [
+   289.24,
+   292.117,
+   "They both inherit the exact same workflow,"
+  ],
+  [
+   292.117,
+   292.528,
+   "unchanged."
+  ],
+  [
+   293.16,
+   295.215,
+   "The steps are written once,"
+  ],
+  [
+   295.215,
+   296.448,
+   "in the parent."
+  ],
+  [
+   296.448,
+   299.325,
+   "The choice of vehicle is answered once,"
+  ],
+  [
+   299.325,
+   300.558,
+   "in each child."
+  ],
+  [
+   301.058,
+   302.59,
+   "Now the newest request."
+  ],
+  [
+   302.59,
+   303.74,
+   "Add drone delivery."
+  ],
+  [
+   304.371,
+   304.754,
+   "Before,"
+  ],
+  [
+   304.754,
+   307.819,
+   "that meant hunting down every if-else that chose"
+  ],
+  [
+   307.819,
+   310.884,
+   "a vehicle and adding a third branch \u2014"
+  ],
+  [
+   310.884,
+   313.182,
+   "and praying you found them all."
+  ],
+  [
+   313.814,
+   314.197,
+   "Now?"
+  ],
+  [
+   314.197,
+   314.963,
+   "One subclass."
+  ],
+  [
+   314.963,
+   315.729,
+   "Air logistics,"
+  ],
+  [
+   315.729,
+   318.794,
+   "whose only job is to build a drone."
+  ],
+  [
+   319.425,
+   320.191,
+   "Plan delivery,"
+  ],
+  [
+   320.191,
+   320.958,
+   "schedule fleet,"
+  ],
+  [
+   320.958,
+   323.639,
+   "estimate cost \u2014 none of them move."
+  ],
+  [
+   323.639,
+   326.704,
+   "They inherit the workflow and simply receive a"
+  ],
+  [
+   326.704,
+   328.619,
+   "drone instead of a truck."
+  ],
+  [
+   329.251,
+   331.932,
+   "A new vehicle became a new subclass."
+  ],
+  [
+   331.932,
+   334.231,
+   "The business logic never even noticed."
+  ],
+  [
+   334.731,
+   336.373,
+   "Now we name it."
+  ],
+  [
+   337.005,
+   339.468,
+   "This is the Factory Method pattern."
+  ],
+  [
+   340.099,
+   341.331,
+   "On the left,"
+  ],
+  [
+   341.331,
+   344.615,
+   "the product \u2014 the transport interface every\nvehicle"
+  ],
+  [
+   344.615,
+   345.025,
+   "shares."
+  ],
+  [
+   345.657,
+   346.888,
+   "In the center,"
+  ],
+  [
+   346.888,
+   348.941,
+   "the creator \u2014 abstract logistics."
+  ],
+  [
+   348.941,
+   350.583,
+   "It owns the workflow,"
+  ],
+  [
+   350.583,
+   351.404,
+   "plan delivery,"
+  ],
+  [
+   351.404,
+   354.277,
+   "and it declares the create transport step,"
+  ],
+  [
+   354.277,
+   357.151,
+   "pointing at the product it will build."
+  ],
+  [
+   357.782,
+   358.193,
+   "Underneath,"
+  ],
+  [
+   358.193,
+   360.245,
+   "the concrete creators \u2014 road,"
+  ],
+  [
+   360.245,
+   360.656,
+   "sea,"
+  ],
+  [
+   360.656,
+   363.94,
+   "and the green air logistics you just added."
+  ],
+  [
+   363.94,
+   366.403,
+   "Each overrides that one create step."
+  ],
+  [
+   367.034,
+   370.318,
+   "The factory method is that single overridable line"
+  ],
+  [
+   370.318,
+   373.192,
+   "where a subclass chooses the concrete product."
+  ],
+  [
+   373.692,
+   374.522,
+   "The roles,"
+  ],
+  [
+   374.522,
+   376.182,
+   "mapped to your code."
+  ],
+  [
+   376.813,
+   379.303,
+   "The Product is the transport interface."
+  ],
+  [
+   379.934,
+   382.009,
+   "The concrete products are truck,"
+  ],
+  [
+   382.009,
+   382.424,
+   "ship,"
+  ],
+  [
+   382.424,
+   383.254,
+   "and drone."
+  ],
+  [
+   383.885,
+   387.205,
+   "The Creator is your abstract logistics \u2014 it"
+  ],
+  [
+   387.205,
+   390.109,
+   "owns the workflow and the create step."
+  ],
+  [
+   390.741,
+   394.06,
+   "And the concrete creators are road and sea"
+  ],
+  [
+   394.06,
+   394.475,
+   "logistics,"
+  ],
+  [
+   394.475,
+   396.135,
+   "each choosing a product."
+  ],
+  [
+   396.766,
+   400.086,
+   "In plain terms \u2014 the parent calls its"
+  ],
+  [
+   400.086,
+   402.99,
+   "own create step inside a fixed workflow,"
+  ],
+  [
+   402.99,
+   405.48,
+   "and subclasses override only that step."
+  ],
+  [
+   406.111,
+   407.771,
+   "The Gang of Four:"
+  ],
+  [
+   407.771,
+   410.676,
+   "define an interface for creating an object,"
+  ],
+  [
+   410.676,
+   413.995,
+   "but let subclasses decide which class to\ninstantiate."
+  ],
+  [
+   414.495,
+   415.537,
+   "The honest costs."
+  ],
+  [
+   416.168,
+   418.946,
+   "Factory Method needs a subclass for each product"
+  ],
+  [
+   418.946,
+   419.293,
+   "variant,"
+  ],
+  [
+   419.293,
+   422.071,
+   "so you can end up with two parallel"
+  ],
+  [
+   422.071,
+   424.502,
+   "family trees \u2014 creators on one side,"
+  ],
+  [
+   424.502,
+   425.891,
+   "products on the other."
+  ],
+  [
+   426.523,
+   427.912,
+   "And it adds indirection:"
+  ],
+  [
+   427.912,
+   430.342,
+   "to find out what actually gets built,"
+  ],
+  [
+   430.342,
+   432.426,
+   "you have to follow the override."
+  ],
+  [
+   433.057,
+   434.794,
+   "So do not factory everything."
+  ],
+  [
+   434.794,
+   437.224,
+   "If there is only ever one product,"
+  ],
+  [
+   437.224,
+   439.308,
+   "and that new will never change,"
+  ],
+  [
+   439.308,
+   442.086,
+   "just write new \u2014 it is honest and"
+  ],
+  [
+   442.086,
+   442.433,
+   "clear."
+  ],
+  [
+   442.433,
+   445.211,
+   "Sometimes a simple static helper is all you"
+  ],
+  [
+   445.211,
+   445.558,
+   "need."
+  ],
+  [
+   446.19,
+   447.926,
+   "The signal to use it:"
+  ],
+  [
+   447.926,
+   450.357,
+   "a workflow that is identical every time,"
+  ],
+  [
+   450.357,
+   453.135,
+   "except for which object it constructs \u2014 and"
+  ],
+  [
+   453.135,
+   455.218,
+   "that set of objects keeps growing."
+  ],
+  [
+   455.718,
+   457.63,
+   "The journey in three beats."
+  ],
+  [
+   458.262,
+   459.027,
+   "The problem:"
+  ],
+  [
+   459.027,
+   461.704,
+   "hardcoded new truck spread across the codebase,"
+  ],
+  [
+   461.704,
+   464.763,
+   "so adding a vehicle meant editing every place"
+  ],
+  [
+   464.763,
+   465.91,
+   "that built one."
+  ],
+  [
+   466.542,
+   467.307,
+   "The insight:"
+  ],
+  [
+   467.307,
+   468.837,
+   "the workflow is fixed,"
+  ],
+  [
+   468.837,
+   471.896,
+   "and only the class you construct varies \u2014"
+  ],
+  [
+   471.896,
+   474.573,
+   "so give that one decision a single,"
+  ],
+  [
+   474.573,
+   475.338,
+   "overridable home."
+  ],
+  [
+   475.97,
+   476.734,
+   "The pattern:"
+  ],
+  [
+   476.734,
+   477.499,
+   "Factory Method."
+  ],
+  [
+   477.499,
+   480.559,
+   "The parent runs the workflow and calls a"
+  ],
+  [
+   480.559,
+   481.324,
+   "create step,"
+  ],
+  [
+   481.324,
+   484.383,
+   "and each subclass decides which product that step"
+  ],
+  [
+   484.383,
+   484.765,
+   "builds."
+  ],
+  [
+   485.397,
+   485.779,
+   "Now,"
+  ],
+  [
+   485.779,
+   486.544,
+   "for you,"
+  ],
+  [
+   486.544,
+   488.074,
+   "before the next episode."
+  ],
+  [
+   488.706,
+   491.765,
+   "A cross-platform toolkit runs the very same steps"
+  ],
+  [
+   491.765,
+   494.825,
+   "to render a dialog \u2014 but it must"
+  ],
+  [
+   494.825,
+   496.737,
+   "build Windows buttons on Windows,"
+  ],
+  [
+   496.737,
+   499.031,
+   "and web buttons on the web."
+  ],
+  [
+   499.663,
+   501.193,
+   "Does Factory Method fit?"
+  ],
+  [
+   501.193,
+   503.105,
+   "What is the product here,"
+  ],
+  [
+   503.105,
+   505.017,
+   "and who are the creators?"
+  ],
+  [
+   505.649,
+   506.031,
+   "Pause,"
+  ],
+  [
+   506.031,
+   508.708,
+   "and sketch it before you press play."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp04-factory-method.wav",
+   "volume": 1.0
+  }
+ }
+}

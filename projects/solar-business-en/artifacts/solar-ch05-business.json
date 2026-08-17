@@ -1,0 +1,447 @@
+{
+ "cuts": [
+  {
+   "id": "solar-ch05-business_divider",
+   "type": "sol_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 11.333,
+   "props": {
+    "n": 5,
+    "title": "Serving Businesses",
+    "sub": "bigger bills, bigger deals",
+    "color": "#38BDF8",
+    "dur": 11.833
+   }
+  },
+  {
+   "id": "solar-ch05-business_cni",
+   "type": "sol_cni",
+   "in_seconds": 11.833,
+   "out_seconds": 62.982,
+   "props": {
+    "dur": 51.649
+   }
+  },
+  {
+   "id": "solar-ch05-business_models",
+   "type": "sol_models",
+   "in_seconds": 63.482,
+   "out_seconds": 118.112,
+   "props": {
+    "dur": 55.13
+   }
+  },
+  {
+   "id": "solar-ch05-business_bizcase",
+   "type": "sol_bizcase",
+   "in_seconds": 118.612,
+   "out_seconds": 169.029,
+   "props": {
+    "dur": 50.917
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.823,
+   "Part five."
+  ],
+  [
+   0.823,
+   1.646,
+   "Serving businesses."
+  ],
+  [
+   2.278,
+   4.336,
+   "Homes are a fine start."
+  ],
+  [
+   4.336,
+   7.629,
+   "But the real money in solar sits on"
+  ],
+  [
+   7.629,
+   9.275,
+   "the roofs of shops,"
+  ],
+  [
+   9.275,
+   9.687,
+   "offices,"
+  ],
+  [
+   9.687,
+   10.51,
+   "and factories."
+  ],
+  [
+   10.51,
+   11.333,
+   "Here's why."
+  ],
+  [
+   11.833,
+   14.922,
+   "It comes down to the size of the"
+  ],
+  [
+   14.922,
+   15.309,
+   "bill."
+  ],
+  [
+   15.94,
+   19.03,
+   "A home might pay three to eight thousand"
+  ],
+  [
+   19.03,
+   20.188,
+   "rupees a month,"
+  ],
+  [
+   20.188,
+   22.891,
+   "and need a small two-to-five kilowatt system."
+  ],
+  [
+   23.523,
+   26.613,
+   "A shop or an office pays twenty to"
+  ],
+  [
+   26.613,
+   27.385,
+   "sixty thousand,"
+  ],
+  [
+   27.385,
+   29.702,
+   "and needs ten to fifty kilowatts."
+  ],
+  [
+   30.334,
+   32.651,
+   "But a factory or a warehouse?"
+  ],
+  [
+   32.651,
+   34.968,
+   "It can pay lakhs every month,"
+  ],
+  [
+   34.968,
+   36.899,
+   "and need a hundred kilowatts,"
+  ],
+  [
+   36.899,
+   38.057,
+   "stretching into megawatts."
+  ],
+  [
+   38.689,
+   41.778,
+   "And two things make businesses even better\ncustomers."
+  ],
+  [
+   42.41,
+   42.796,
+   "First,"
+  ],
+  [
+   42.796,
+   45.885,
+   "commercial tariffs are higher than home rates \u2014"
+  ],
+  [
+   45.885,
+   48.975,
+   "so every unit you save is worth more."
+  ],
+  [
+   49.606,
+   49.993,
+   "Second,"
+  ],
+  [
+   49.993,
+   53.082,
+   "factories run during the daytime \u2014 exactly when"
+  ],
+  [
+   53.082,
+   54.627,
+   "the sun is shining."
+  ],
+  [
+   54.627,
+   57.33,
+   "So the solar power gets used instantly."
+  ],
+  [
+   57.962,
+   61.051,
+   "One factory rooftop can equal hundreds of homes,"
+  ],
+  [
+   61.051,
+   62.982,
+   "in size and in revenue."
+  ],
+  [
+   63.482,
+   66.287,
+   "But businesses fund solar in two very different"
+  ],
+  [
+   66.287,
+   66.638,
+   "ways,"
+  ],
+  [
+   66.638,
+   68.391,
+   "and you must know both."
+  ],
+  [
+   69.022,
+   71.827,
+   "The first is CAPEX \u2014 the business simply"
+  ],
+  [
+   71.827,
+   72.879,
+   "buys the system."
+  ],
+  [
+   73.511,
+   74.563,
+   "It pays upfront,"
+  ],
+  [
+   74.563,
+   75.965,
+   "or with a loan."
+  ],
+  [
+   75.965,
+   76.666,
+   "In return,"
+  ],
+  [
+   76.666,
+   79.471,
+   "it keeps a hundred percent of the savings,"
+  ],
+  [
+   79.471,
+   81.225,
+   "gets a tax depreciation benefit,"
+  ],
+  [
+   81.225,
+   84.029,
+   "and after a payback of three to four"
+  ],
+  [
+   84.029,
+   84.38,
+   "years,"
+  ],
+  [
+   84.38,
+   86.133,
+   "the power is basically free."
+  ],
+  [
+   86.765,
+   88.518,
+   "The second is the OPEX,"
+  ],
+  [
+   88.518,
+   91.323,
+   "or RESCO model \u2014 and this one is"
+  ],
+  [
+   91.323,
+   91.674,
+   "clever."
+  ],
+  [
+   92.305,
+   95.11,
+   "A developer builds and owns the system on"
+  ],
+  [
+   95.11,
+   96.162,
+   "the customer's roof,"
+  ],
+  [
+   96.162,
+   98.616,
+   "at zero upfront cost to the business."
+  ],
+  [
+   99.248,
+   101.702,
+   "The business just buys the solar power,"
+  ],
+  [
+   101.702,
+   104.157,
+   "at a rate lower than the grid,"
+  ],
+  [
+   104.157,
+   106.962,
+   "through a long agreement called a P P"
+  ],
+  [
+   106.962,
+   107.312,
+   "A."
+  ],
+  [
+   107.944,
+   110.749,
+   "The developer earns for fifteen to twenty-five\nyears."
+  ],
+  [
+   110.749,
+   113.554,
+   "And sixty to seventy percent of commercial deals"
+  ],
+  [
+   113.554,
+   116.359,
+   "now use this model \u2014 because that's where"
+  ],
+  [
+   116.359,
+   117.06,
+   "the steady,"
+  ],
+  [
+   117.06,
+   118.112,
+   "recurring money lives."
+  ],
+  [
+   118.612,
+   121.076,
+   "Let's put real numbers on it,"
+  ],
+  [
+   121.076,
+   122.308,
+   "with one example."
+  ],
+  [
+   122.308,
+   125.183,
+   "A factory with a hundred kilowatt rooftop."
+  ],
+  [
+   125.814,
+   127.046,
+   "At commercial scale,"
+  ],
+  [
+   127.046,
+   129.921,
+   "that system costs around forty-five lakh rupees."
+  ],
+  [
+   130.553,
+   133.838,
+   "It generates roughly a hundred and thirty thousand"
+  ],
+  [
+   133.838,
+   135.892,
+   "units of electricity a year."
+  ],
+  [
+   136.523,
+   139.809,
+   "At a commercial tariff of about nine rupees"
+  ],
+  [
+   139.809,
+   140.63,
+   "a unit,"
+  ],
+  [
+   140.63,
+   143.094,
+   "that's nearly twelve lakh rupees saved,"
+  ],
+  [
+   143.094,
+   144.326,
+   "every single year."
+  ],
+  [
+   144.958,
+   148.243,
+   "So it pays for itself in under four"
+  ],
+  [
+   148.243,
+   148.654,
+   "years."
+  ],
+  [
+   149.285,
+   151.749,
+   "And across a twenty-five year life,"
+  ],
+  [
+   151.749,
+   154.624,
+   "it saves close to three crore rupees."
+  ],
+  [
+   155.256,
+   157.309,
+   "Add the accelerated depreciation benefit,"
+  ],
+  [
+   157.309,
+   159.773,
+   "and the returns look even stronger."
+  ],
+  [
+   160.405,
+   163.69,
+   "This is why serious businesses see solar not"
+  ],
+  [
+   163.69,
+   164.922,
+   "as a cost,"
+  ],
+  [
+   164.922,
+   168.208,
+   "but as one of the safest investments they"
+  ],
+  [
+   168.208,
+   169.029,
+   "can make."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "sol/solar-ch05-business.wav",
+   "volume": 1.0
+  }
+ }
+}

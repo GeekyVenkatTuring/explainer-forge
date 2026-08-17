@@ -1,0 +1,326 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch11-arithmetic_arithmetic",
+   "type": "it_arithmetic",
+   "in_seconds": 0.0,
+   "out_seconds": 111.671,
+   "props": {
+    "dur": 112.171
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.04,
+   "Huffman is elegant,"
+  ],
+  [
+   1.04,
+   3.119,
+   "but it has one stubborn weakness."
+  ],
+  [
+   3.119,
+   5.892,
+   "It must spend a whole number of bits"
+  ],
+  [
+   5.892,
+   7.971,
+   "on every symbol \u2014 one bit,"
+  ],
+  [
+   7.971,
+   8.664,
+   "or two,"
+  ],
+  [
+   8.664,
+   9.357,
+   "never one-and-a-half."
+  ],
+  [
+   9.989,
+   12.415,
+   "When a symbol's ideal length is fractional,"
+  ],
+  [
+   12.415,
+   14.148,
+   "that rounding quietly wastes space."
+  ],
+  [
+   14.148,
+   16.92,
+   "So how do we reclaim those fractions of"
+  ],
+  [
+   16.92,
+   17.613,
+   "a bit?"
+  ],
+  [
+   18.245,
+   21.017,
+   "The answer is a gorgeous idea called arithmetic"
+  ],
+  [
+   21.017,
+   21.364,
+   "coding,"
+  ],
+  [
+   21.364,
+   24.136,
+   "and its trick is to encode an entire"
+  ],
+  [
+   24.136,
+   26.909,
+   "message as a single number between zero and"
+  ],
+  [
+   26.909,
+   27.255,
+   "one."
+  ],
+  [
+   27.887,
+   28.58,
+   "Watch how."
+  ],
+  [
+   28.58,
+   30.659,
+   "We start with the full interval,"
+  ],
+  [
+   30.659,
+   32.046,
+   "from zero to one,"
+  ],
+  [
+   32.046,
+   34.472,
+   "and we carve it up by probability."
+  ],
+  [
+   34.472,
+   35.511,
+   "In our source,"
+  ],
+  [
+   35.511,
+   37.591,
+   "A has probability zero point six,"
+  ],
+  [
+   37.591,
+   40.363,
+   "so A claims the first sixty percent of"
+  ],
+  [
+   40.363,
+   41.056,
+   "the line."
+  ],
+  [
+   41.056,
+   42.443,
+   "B takes the rest."
+  ],
+  [
+   43.074,
+   44.807,
+   "To encode the first symbol,"
+  ],
+  [
+   44.807,
+   45.154,
+   "A,"
+  ],
+  [
+   45.154,
+   47.926,
+   "we simply throw away everything else and zoom"
+  ],
+  [
+   47.926,
+   50.699,
+   "in on A's slice \u2014 from zero to"
+  ],
+  [
+   50.699,
+   51.738,
+   "zero point six."
+  ],
+  [
+   52.37,
+   53.41,
+   "Now the magic:"
+  ],
+  [
+   53.41,
+   56.182,
+   "we subdivide that smaller interval in exactly the"
+  ],
+  [
+   56.182,
+   56.875,
+   "same proportions."
+  ],
+  [
+   56.875,
+   58.608,
+   "To encode the next symbol,"
+  ],
+  [
+   58.608,
+   58.955,
+   "B,"
+  ],
+  [
+   58.955,
+   61.727,
+   "we zoom into B's portion of what remains."
+  ],
+  [
+   62.359,
+   65.131,
+   "The live interval on the right keeps narrowing"
+  ],
+  [
+   65.131,
+   67.211,
+   "\u2014 zero to zero point six,"
+  ],
+  [
+   67.211,
+   69.983,
+   "then zero point three-six to zero point six,"
+  ],
+  [
+   69.983,
+   71.369,
+   "and on it goes."
+  ],
+  [
+   72.001,
+   73.387,
+   "Encode a third symbol,"
+  ],
+  [
+   73.387,
+   73.734,
+   "A,"
+  ],
+  [
+   73.734,
+   76.16,
+   "and we zoom in one more time,"
+  ],
+  [
+   76.16,
+   77.892,
+   "to an even tinier sliver."
+  ],
+  [
+   78.524,
+   79.91,
+   "When the message ends,"
+  ],
+  [
+   79.91,
+   81.99,
+   "we are left with one final,"
+  ],
+  [
+   81.99,
+   82.683,
+   "narrow interval."
+  ],
+  [
+   82.683,
+   85.455,
+   "And any number that falls inside it \u2014"
+  ],
+  [
+   85.455,
+   85.802,
+   "say,"
+  ],
+  [
+   85.802,
+   88.574,
+   "zero point four \u2014 encodes the whole message,"
+  ],
+  [
+   88.574,
+   88.921,
+   "unambiguously."
+  ],
+  [
+   89.553,
+   91.285,
+   "Here is the beautiful part."
+  ],
+  [
+   91.285,
+   94.058,
+   "Each symbol shrinks the interval by its own"
+  ],
+  [
+   94.058,
+   94.404,
+   "probability,"
+  ],
+  [
+   94.404,
+   97.177,
+   "so a likely message ends up in a"
+  ],
+  [
+   97.177,
+   99.949,
+   "relatively wide interval that needs very few\ndigits"
+  ],
+  [
+   99.949,
+   100.989,
+   "to pin down."
+  ],
+  [
+   101.621,
+   104.393,
+   "Rare messages get tiny intervals and cost more."
+  ],
+  [
+   104.393,
+   105.433,
+   "Which is exactly,"
+  ],
+  [
+   105.433,
+   107.512,
+   "to the fraction of a bit,"
+  ],
+  [
+   107.512,
+   109.592,
+   "what the entropy demanded all along."
+  ],
+  [
+   109.592,
+   111.671,
+   "Arithmetic coding kisses the Shannon limit."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch11-arithmetic.wav",
+   "volume": 1.0
+  }
+ }
+}

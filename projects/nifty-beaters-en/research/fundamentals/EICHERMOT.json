@@ -1,0 +1,97 @@
+{
+ "ticker": "EICHERMOT",
+ "scraped_at": "2026-08-14T15:28:34",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 222142.0,
+ "current_price": 8092.0,
+ "pe": 38.2,
+ "book_value": 915.0,
+ "dividend_yield_pct": 1.02,
+ "roce_pct": 30.5,
+ "roe_pct": 24.0,
+ "face_value": 1.0,
+ "high": 8233.0,
+ "sales_growth": {
+  "10 Years": 15.0,
+  "5 Years": 33.0,
+  "3 Years": 24.0,
+  "TTM": 20.0
+ },
+ "profit_growth": {
+  "10 Years": 14.0,
+  "5 Years": 26.0,
+  "3 Years": 34.0,
+  "1 Year": 41.0
+ },
+ "roe_hist": {
+  "Equity Capital": 27.0,
+  "Borrowings&nbsp; +": 58.0,
+  "CWIP": 419.0
+ },
+ "price_cagr": {
+  "10 Years": 23.0,
+  "5 Years": 22.0,
+  "3 Years": 24.0,
+  "Last Year": 24.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "26%",
+   "26%",
+   "26%",
+   "27%",
+   "27%",
+   "26%",
+   "24%",
+   "24%",
+   "24%",
+   "24%",
+   "25%",
+   "25%",
+   "24%"
+  ],
+  "eps": [
+   "33.58",
+   "37.12",
+   "36.38",
+   "39.10",
+   "40.20",
+   "40.15",
+   "42.70",
+   "49.68",
+   "43.95",
+   "49.93",
+   "51.79",
+   "55.41",
+   "53.28"
+  ]
+ },
+ "pros": [
+  "Company is almost debt free.",
+  "Company has delivered good profit growth of 32.8% CAGR over last 5 years",
+  "Company has been maintaining a healthy dividend payout of 38.7%"
+ ],
+ "cons": [
+  "Stock is trading at 8.88 times its book value",
+  "Earnings include an other income of Rs.2,260 Cr."
+ ]
+}

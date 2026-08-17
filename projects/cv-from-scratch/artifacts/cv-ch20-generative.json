@@ -1,0 +1,376 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch20-generative_gen",
+   "type": "cv_gen",
+   "in_seconds": 0.0,
+   "out_seconds": 146.937,
+   "props": {
+    "dur": 147.437
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.738,
+   "So far,"
+  ],
+  [
+   0.738,
+   3.69,
+   "every single model we have built has read"
+  ],
+  [
+   3.69,
+   5.535,
+   "images \u2014 taken pixels in,"
+  ],
+  [
+   5.535,
+   7.01,
+   "and given meaning out."
+  ],
+  [
+   7.642,
+   9.856,
+   "Now let's flip the arrow completely,"
+  ],
+  [
+   9.856,
+   12.439,
+   "and build a model that writes images."
+  ],
+  [
+   13.07,
+   14.546,
+   "This is generative vision."
+  ],
+  [
+   15.178,
+   18.129,
+   "The first approach to really work was\ncalled"
+  ],
+  [
+   18.129,
+   21.081,
+   "a G A N \u2014 a generative adversarial"
+  ],
+  [
+   21.081,
+   21.45,
+   "network."
+  ],
+  [
+   22.082,
+   25.034,
+   "The idea is a duel between two networks."
+  ],
+  [
+   25.665,
+   26.034,
+   "One,"
+  ],
+  [
+   26.034,
+   26.772,
+   "the generator,"
+  ],
+  [
+   26.772,
+   28.617,
+   "tries to paint fake images."
+  ],
+  [
+   28.617,
+   29.355,
+   "The other,"
+  ],
+  [
+   29.355,
+   30.093,
+   "the discriminator,"
+  ],
+  [
+   30.093,
+   32.307,
+   "tries to tell real from fake."
+  ],
+  [
+   32.938,
+   34.783,
+   "They train against each other,"
+  ],
+  [
+   34.783,
+   36.997,
+   "and as the critic gets sharper,"
+  ],
+  [
+   36.997,
+   39.58,
+   "the forger is forced to get better,"
+  ],
+  [
+   39.58,
+   41.793,
+   "until the fakes look startlingly real."
+  ],
+  [
+   42.425,
+   45.377,
+   "G A Ns gave us the first convincing"
+  ],
+  [
+   45.377,
+   46.115,
+   "fake faces."
+  ],
+  [
+   46.115,
+   49.067,
+   "But they were fiddly and unstable to\ntrain."
+  ],
+  [
+   49.698,
+   52.281,
+   "So today's leading approach is something\nsteadier,"
+  ],
+  [
+   52.281,
+   53.019,
+   "called diffusion."
+  ],
+  [
+   53.65,
+   55.864,
+   "The idea sounds backwards at first,"
+  ],
+  [
+   55.864,
+   58.816,
+   "and that is exactly what makes it so"
+  ],
+  [
+   58.816,
+   59.185,
+   "clever."
+  ],
+  [
+   59.817,
+   61.292,
+   "Start with a real,"
+  ],
+  [
+   61.292,
+   62.03,
+   "clean image."
+  ],
+  [
+   62.03,
+   64.613,
+   "Now slowly add random noise to it,"
+  ],
+  [
+   64.613,
+   66.458,
+   "a little at each step,"
+  ],
+  [
+   66.458,
+   67.565,
+   "over and over,"
+  ],
+  [
+   67.565,
+   70.517,
+   "until the picture is nothing but pure\nstatic."
+  ],
+  [
+   70.517,
+   71.255,
+   "Total snow."
+  ],
+  [
+   71.886,
+   74.838,
+   "Now \u2014 train a network to undo just"
+  ],
+  [
+   74.838,
+   76.314,
+   "one of those steps."
+  ],
+  [
+   76.314,
+   79.266,
+   "To take a slightly noisy image and remove"
+  ],
+  [
+   79.266,
+   81.479,
+   "a little bit of the noise."
+  ],
+  [
+   82.111,
+   85.063,
+   "That is a much easier task to learn"
+  ],
+  [
+   85.063,
+   88.015,
+   "than creating a whole image from thin air."
+  ],
+  [
+   88.646,
+   90.491,
+   "But here is the payoff."
+  ],
+  [
+   90.491,
+   93.443,
+   "Once the network can reliably remove a\nlittle"
+  ],
+  [
+   93.443,
+   93.812,
+   "noise,"
+  ],
+  [
+   93.812,
+   96.764,
+   "you can run the whole process in reverse."
+  ],
+  [
+   97.395,
+   100.347,
+   "Begin with a canvas of pure random noise."
+  ],
+  [
+   100.347,
+   101.085,
+   "Then denoise,"
+  ],
+  [
+   101.085,
+   102.93,
+   "step by step by step,"
+  ],
+  [
+   102.93,
+   105.881,
+   "and watch an image slowly emerge out of"
+  ],
+  [
+   105.881,
+   106.619,
+   "the static."
+  ],
+  [
+   107.251,
+   109.834,
+   "See it happen on screen \u2014 chaos,"
+  ],
+  [
+   109.834,
+   111.31,
+   "sharpening into a cat."
+  ],
+  [
+   111.941,
+   114.524,
+   "And we can steer the whole thing."
+  ],
+  [
+   115.156,
+   118.107,
+   "Feed in a text prompt \u2014 a photo"
+  ],
+  [
+   118.107,
+   121.059,
+   "of a cat \u2014 and that prompt guides"
+  ],
+  [
+   121.059,
+   122.535,
+   "every single denoising step,"
+  ],
+  [
+   122.535,
+   125.487,
+   "pulling the result toward the picture you\nactually"
+  ],
+  [
+   125.487,
+   126.225,
+   "asked for."
+  ],
+  [
+   126.856,
+   129.439,
+   "The very same trick also powers\ninpainting,"
+  ],
+  [
+   129.439,
+   130.177,
+   "style transfer,"
+  ],
+  [
+   130.177,
+   130.915,
+   "and upscaling."
+  ],
+  [
+   131.547,
+   134.498,
+   "It is the engine humming inside Stable\nDiffusion,"
+  ],
+  [
+   134.498,
+   134.867,
+   "Midjourney,"
+  ],
+  [
+   134.867,
+   135.605,
+   "and DALL-E."
+  ],
+  [
+   136.237,
+   138.082,
+   "And notice the lovely symmetry."
+  ],
+  [
+   138.082,
+   139.927,
+   "Recognition climbs up the ladder,"
+  ],
+  [
+   139.927,
+   141.402,
+   "from pixels to meaning."
+  ],
+  [
+   141.402,
+   144.354,
+   "Generation walks that same ladder back\ndown \u2014"
+  ],
+  [
+   144.354,
+   145.092,
+   "from meaning,"
+  ],
+  [
+   145.092,
+   146.937,
+   "all the way to pixels."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch20-generative.wav",
+   "volume": 1.0
+  }
+ }
+}

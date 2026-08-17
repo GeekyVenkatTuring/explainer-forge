@@ -1,0 +1,103 @@
+{
+ "ticker": "HDFCLIFE",
+ "scraped_at": "2026-08-14T15:27:56",
+ "source": "screener.in",
+ "ok": true,
+ "variant": "consolidated",
+ "market_cap_cr": 116771.0,
+ "current_price": 538.0,
+ "pe": 59.1,
+ "book_value": 90.0,
+ "dividend_yield_pct": 0.39,
+ "roce_pct": 10.3,
+ "roe_pct": 11.3,
+ "face_value": 10.0,
+ "high": 815.0,
+ "sales_growth": {
+  "10 Years": 9.0,
+  "5 Years": 7.0,
+  "3 Years": 12.0,
+  "TTM": 5.0
+ },
+ "profit_growth": {
+  "5 Years": -4.0,
+  "3 Years": -5.0,
+  "1 Year": -32.0
+ },
+ "roe_hist": {
+  "Operating Profit": 326.0,
+  "OPM %": 1.4,
+  "Other Income&nbsp; +": 114.0,
+  "Interest": 0.0,
+  "Depreciation": 0.0,
+  "Profit before tax": 440.0,
+  "Tax %": 5.0,
+  "Net Profit&nbsp; +": 417.0,
+  "EPS in Rs": 1.94
+ },
+ "price_cagr": {
+  "10 Years": 14.0,
+  "5 Years": 11.0,
+  "3 Years": 11.0,
+  "Last Year": 11.0
+ },
+ "quarters": {
+  "periods": [
+   "Jun 2023",
+   "Sep 2023",
+   "Dec 2023",
+   "Mar 2024",
+   "Jun 2024",
+   "Sep 2024",
+   "Dec 2024",
+   "Mar 2025",
+   "Jun 2025",
+   "Sep 2025",
+   "Dec 2025",
+   "Mar 2026",
+   "Jun 2026"
+  ],
+  "sales": [],
+  "net_profit": [],
+  "opm": [
+   "1.4%",
+   "-1.8%",
+   "1.0%",
+   "1.0%",
+   "1.2%",
+   "-1.1%",
+   "2.6%",
+   "1.6%",
+   "1.5%",
+   "1.5%",
+   "0.9%",
+   "0.6%",
+   "1.5%"
+  ],
+  "eps": [
+   "1.94",
+   "1.76",
+   "1.71",
+   "1.91",
+   "2.23",
+   "2.02",
+   "1.96",
+   "2.21",
+   "2.54",
+   "2.08",
+   "1.94",
+   "2.31",
+   "2.81"
+  ]
+ },
+ "pros": [
+  "Company has been maintaining a healthy dividend payout of 25.3%"
+ ],
+ "cons": [
+  "Stock is trading at 6.02 times its book value",
+  "The company has delivered a poor sales growth of 6.81% over past five years.",
+  "Tax rate seems low",
+  "Company has a low return on equity of 11.1% over last 3 years.",
+  "Earnings include an other income of Rs.931 Cr."
+ ]
+}

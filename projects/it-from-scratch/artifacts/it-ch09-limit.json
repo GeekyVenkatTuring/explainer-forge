@@ -1,0 +1,334 @@
+{
+ "cuts": [
+  {
+   "id": "it-ch09-limit_div",
+   "type": "it_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 17.013,
+   "props": {
+    "n": 3,
+    "title": "Compression",
+    "sub": "how small can a message get?",
+    "color": "#34D399",
+    "dur": 17.513
+   }
+  },
+  {
+   "id": "it-ch09-limit_sourcecoding",
+   "type": "it_sourcecoding",
+   "in_seconds": 17.513,
+   "out_seconds": 115.325,
+   "props": {
+    "dur": 98.312
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   0.712,
+   "Part three."
+  ],
+  [
+   0.712,
+   1.068,
+   "Compression."
+  ],
+  [
+   1.7,
+   2.768,
+   "We have felt,"
+  ],
+  [
+   2.768,
+   3.837,
+   "again and again,"
+  ],
+  [
+   3.837,
+   6.686,
+   "the gap between predictable data and its true"
+  ],
+  [
+   6.686,
+   7.398,
+   "information content."
+  ],
+  [
+   7.398,
+   9.535,
+   "Now we cash that intuition in."
+  ],
+  [
+   9.535,
+   12.383,
+   "Shannon will tell us exactly how far a"
+  ],
+  [
+   12.383,
+   15.232,
+   "message can be squeezed \u2014 and draw a"
+  ],
+  [
+   15.232,
+   17.013,
+   "wall we can never cross."
+  ],
+  [
+   17.513,
+   17.856,
+   "So,"
+  ],
+  [
+   17.856,
+   20.597,
+   "concretely \u2014 how small can we squeeze a"
+  ],
+  [
+   20.597,
+   22.996,
+   "message and still get it back perfectly?"
+  ],
+  [
+   23.627,
+   26.369,
+   "Picture taking your data and beginning to\ncompress."
+  ],
+  [
+   26.369,
+   28.082,
+   "You find the repeated patterns."
+  ],
+  [
+   28.082,
+   30.824,
+   "You spend short codes on the common symbols"
+  ],
+  [
+   30.824,
+   32.88,
+   "and long ones on the rare."
+  ],
+  [
+   32.88,
+   33.908,
+   "The file shrinks."
+  ],
+  [
+   34.54,
+   35.568,
+   "And it shrinks,"
+  ],
+  [
+   35.568,
+   37.281,
+   "and shrinks \u2014 and then,"
+  ],
+  [
+   37.281,
+   39.337,
+   "no matter how clever you get,"
+  ],
+  [
+   39.337,
+   40.022,
+   "it stops."
+  ],
+  [
+   40.022,
+   41.393,
+   "It hits a wall."
+  ],
+  [
+   42.025,
+   43.738,
+   "Here is the profound part."
+  ],
+  [
+   43.738,
+   46.48,
+   "The position of that wall is not an"
+  ],
+  [
+   46.48,
+   48.193,
+   "accident of your particular algorithm."
+  ],
+  [
+   48.193,
+   50.592,
+   "It is fixed by the source itself."
+  ],
+  [
+   50.592,
+   52.648,
+   "It sits exactly at the entropy."
+  ],
+  [
+   53.28,
+   55.336,
+   "This is Shannon's source coding theorem,"
+  ],
+  [
+   55.336,
+   58.077,
+   "one of the great results of the twentieth"
+  ],
+  [
+   58.077,
+   58.42,
+   "century."
+  ],
+  [
+   59.051,
+   61.793,
+   "It says the best possible average code length"
+  ],
+  [
+   61.793,
+   64.534,
+   "is at least the entropy \u2014 H bits"
+  ],
+  [
+   64.534,
+   65.22,
+   "per symbol."
+  ],
+  [
+   65.851,
+   67.565,
+   "Not with a smarter trick."
+  ],
+  [
+   67.565,
+   69.278,
+   "Not with a faster computer."
+  ],
+  [
+   69.278,
+   71.677,
+   "Not with a thousand years of engineering."
+  ],
+  [
+   71.677,
+   73.39,
+   "The floor is the floor,"
+  ],
+  [
+   73.39,
+   73.733,
+   "forever."
+  ],
+  [
+   74.364,
+   77.106,
+   "If you try to push below H and"
+  ],
+  [
+   77.106,
+   78.819,
+   "still recover every message perfectly,"
+  ],
+  [
+   78.819,
+   81.561,
+   "you are guaranteed to lose information \u2014 the"
+  ],
+  [
+   81.561,
+   84.302,
+   "way a perpetual motion machine is guaranteed to"
+  ],
+  [
+   84.302,
+   84.645,
+   "fail."
+  ],
+  [
+   84.645,
+   86.016,
+   "It is not hard."
+  ],
+  [
+   86.016,
+   87.044,
+   "It is impossible."
+  ],
+  [
+   87.675,
+   90.074,
+   "So entropy quietly reveals its second face."
+  ],
+  [
+   90.074,
+   92.816,
+   "It is not only a measure of uncertainty."
+  ],
+  [
+   92.816,
+   94.186,
+   "It is a hard,"
+  ],
+  [
+   94.186,
+   95.557,
+   "provable limit on compression."
+  ],
+  [
+   96.189,
+   97.902,
+   "The two meanings are one."
+  ],
+  [
+   97.902,
+   100.643,
+   "The average surprise of a source is exactly"
+  ],
+  [
+   100.643,
+   103.385,
+   "the smallest number of bits you need to"
+  ],
+  [
+   103.385,
+   104.07,
+   "describe it."
+  ],
+  [
+   104.702,
+   107.443,
+   "That is why entropy beats at the heart"
+  ],
+  [
+   107.443,
+   108.814,
+   "of every zip file,"
+  ],
+  [
+   108.814,
+   109.499,
+   "every photo,"
+  ],
+  [
+   109.499,
+   112.241,
+   "every stream \u2014 telling each one precisely how"
+  ],
+  [
+   112.241,
+   113.612,
+   "far it may go,"
+  ],
+  [
+   113.612,
+   115.325,
+   "and not one bit further."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "it/it-ch09-limit.wav",
+   "volume": 1.0
+  }
+ }
+}

@@ -1,0 +1,669 @@
+{
+ "cuts": [
+  {
+   "id": "cv-ch22-stack-recap_stack",
+   "type": "cv_stack",
+   "in_seconds": 0.0,
+   "out_seconds": 91.228,
+   "props": {
+    "dur": 91.728
+   }
+  },
+  {
+   "id": "cv-ch22-stack-recap_hard",
+   "type": "cv_hard",
+   "in_seconds": 91.728,
+   "out_seconds": 180.638,
+   "props": {
+    "dur": 89.41
+   }
+  },
+  {
+   "id": "cv-ch22-stack-recap_recap",
+   "type": "cv_recap",
+   "in_seconds": 181.138,
+   "out_seconds": 260.841,
+   "props": {
+    "items": [
+     "An image is just a grid of numbers \u2014 the semantic gap is the whole problem",
+     "Convolution slides small filters to build feature maps",
+     "CNNs learn their own filters; depth builds a hierarchy from edges to objects",
+     "Train by guessing, measuring loss, and backpropagating \u2014 fine-tune, don't start over",
+     "Classify, detect, segment, recognize \u2014 one backbone, many tasks",
+     "Transformers, CLIP and VLMs fused vision with language",
+     "Diffusion runs vision in reverse \u2014 meaning back to pixels"
+    ],
+    "closer": "Computer vision \u2014 from pixels to perception.",
+    "dur": 80.203
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.609,
+   "Before we wrap up,"
+  ],
+  [
+   1.609,
+   4.022,
+   "let's get practical for a moment."
+  ],
+  [
+   4.022,
+   7.239,
+   "How do you actually build vision systems\nin"
+  ],
+  [
+   7.239,
+   8.445,
+   "the real world,"
+  ],
+  [
+   8.445,
+   8.847,
+   "today?"
+  ],
+  [
+   9.479,
+   11.49,
+   "Here is the good news."
+  ],
+  [
+   11.49,
+   13.903,
+   "You almost never start from scratch."
+  ],
+  [
+   14.534,
+   17.752,
+   "You reach for a well-worn stack of tools."
+  ],
+  [
+   18.383,
+   19.59,
+   "There is OpenCV,"
+  ],
+  [
+   19.59,
+   22.405,
+   "for classic image operations and reading\nvideo."
+  ],
+  [
+   23.036,
+   25.047,
+   "There is PyTorch and torchvision,"
+  ],
+  [
+   25.047,
+   28.264,
+   "for building and training models \u2014 the\ntools"
+  ],
+  [
+   28.264,
+   30.275,
+   "we used in part four."
+  ],
+  [
+   30.907,
+   34.124,
+   "A library called Ultralytics gives you\nfull YOLO"
+  ],
+  [
+   34.124,
+   36.939,
+   "detection in about five lines of code."
+  ],
+  [
+   37.571,
+   40.788,
+   "Hugging Face hosts thousands of pretrained\ncheckpoints \u2014"
+  ],
+  [
+   40.788,
+   41.19,
+   "ViT,"
+  ],
+  [
+   41.19,
+   41.592,
+   "CLIP,"
+  ],
+  [
+   41.592,
+   44.81,
+   "SAM \u2014 all ready to download and use."
+  ],
+  [
+   45.441,
+   48.659,
+   "Tools like Roboflow and CVAT help you\nlabel"
+  ],
+  [
+   48.659,
+   49.463,
+   "your data."
+  ],
+  [
+   50.094,
+   53.312,
+   "And ONNX and TensorRT optimize your\nfinished model"
+  ],
+  [
+   53.312,
+   56.529,
+   "to run fast on real hardware \u2014 a"
+  ],
+  [
+   56.529,
+   56.931,
+   "phone,"
+  ],
+  [
+   56.931,
+   57.735,
+   "a car,"
+  ],
+  [
+   57.735,
+   58.54,
+   "a camera."
+  ],
+  [
+   59.171,
+   61.584,
+   "The workflow itself is a pipeline."
+  ],
+  [
+   61.584,
+   62.791,
+   "Collect your data."
+  ],
+  [
+   62.791,
+   63.595,
+   "Label it."
+  ],
+  [
+   63.595,
+   65.606,
+   "Start from a pretrained model,"
+  ],
+  [
+   65.606,
+   66.812,
+   "never from random."
+  ],
+  [
+   67.444,
+   68.248,
+   "Fine-tune it,"
+  ],
+  [
+   68.248,
+   69.053,
+   "using augmentation."
+  ],
+  [
+   69.053,
+   71.063,
+   "Evaluate it with proper metrics,"
+  ],
+  [
+   71.063,
+   72.672,
+   "like mean average precision."
+  ],
+  [
+   72.672,
+   74.683,
+   "Then optimize it and deploy."
+  ],
+  [
+   75.314,
+   78.532,
+   "So here is the honest truth about modern"
+  ],
+  [
+   78.532,
+   79.336,
+   "computer vision."
+  ],
+  [
+   79.336,
+   80.542,
+   "It is assembly,"
+  ],
+  [
+   80.542,
+   82.955,
+   "far more than it is alchemy."
+  ],
+  [
+   83.587,
+   84.793,
+   "A pretrained backbone,"
+  ],
+  [
+   84.793,
+   86.804,
+   "plus your own labeled data,"
+  ],
+  [
+   86.804,
+   89.217,
+   "plus an afternoon of careful fine-tuning."
+  ],
+  [
+   89.217,
+   91.228,
+   "That is the real job."
+  ],
+  [
+   91.728,
+   93.987,
+   "But let's be honest with ourselves."
+  ],
+  [
+   93.987,
+   96.246,
+   "Vision is not a solved problem."
+  ],
+  [
+   96.878,
+   98.008,
+   "It is powerful,"
+  ],
+  [
+   98.008,
+   98.384,
+   "yes,"
+  ],
+  [
+   98.384,
+   101.396,
+   "but it is fragile in ways that are"
+  ],
+  [
+   101.396,
+   104.409,
+   "genuinely important to understand before\nyou deploy it."
+  ],
+  [
+   105.04,
+   105.793,
+   "Bad lighting,"
+  ],
+  [
+   105.793,
+   106.17,
+   "rain,"
+  ],
+  [
+   106.17,
+   109.182,
+   "and glare can wreck accuracy in an\ninstant."
+  ],
+  [
+   109.814,
+   112.826,
+   "Occlusion \u2014 when one object is partly\nhidden"
+  ],
+  [
+   112.826,
+   115.085,
+   "behind another \u2014 confuses models badly,"
+  ],
+  [
+   115.085,
+   117.721,
+   "because they never saw the whole thing."
+  ],
+  [
+   118.352,
+   120.612,
+   "Then there is the long tail."
+  ],
+  [
+   120.612,
+   123.624,
+   "Models are excellent on common objects\nthey saw"
+  ],
+  [
+   123.624,
+   124.753,
+   "a million times,"
+  ],
+  [
+   124.753,
+   127.766,
+   "and starved of data on the rare ones"
+  ],
+  [
+   127.766,
+   128.895,
+   "that still matter."
+  ],
+  [
+   129.527,
+   132.539,
+   "There is domain shift \u2014 a model trained"
+  ],
+  [
+   132.539,
+   134.422,
+   "on data from one place,"
+  ],
+  [
+   134.422,
+   135.551,
+   "or one camera,"
+  ],
+  [
+   135.551,
+   138.564,
+   "quietly failing when you deploy it\nsomewhere new."
+  ],
+  [
+   139.195,
+   141.831,
+   "There are adversarial patterns \u2014 a small,"
+  ],
+  [
+   141.831,
+   142.961,
+   "carefully crafted sticker,"
+  ],
+  [
+   142.961,
+   144.467,
+   "nearly invisible to you,"
+  ],
+  [
+   144.467,
+   147.479,
+   "that can make a model confidently call a"
+  ],
+  [
+   147.479,
+   148.609,
+   "banana a toaster."
+  ],
+  [
+   149.24,
+   151.123,
+   "And most important of all,"
+  ],
+  [
+   151.123,
+   152.252,
+   "there is bias."
+  ],
+  [
+   152.884,
+   155.143,
+   "If the training data is skewed,"
+  ],
+  [
+   155.143,
+   158.155,
+   "the model's accuracy can be badly uneven\nacross"
+  ],
+  [
+   158.155,
+   159.662,
+   "different groups of people."
+  ],
+  [
+   160.293,
+   162.552,
+   "That is not a minor bug."
+  ],
+  [
+   162.552,
+   164.058,
+   "It must be measured,"
+  ],
+  [
+   164.058,
+   164.812,
+   "and audited,"
+  ],
+  [
+   164.812,
+   165.941,
+   "and taken seriously."
+  ],
+  [
+   166.573,
+   166.949,
+   "Now,"
+  ],
+  [
+   166.949,
+   169.585,
+   "none of these are reasons to despair."
+  ],
+  [
+   170.217,
+   173.229,
+   "They are the real engineering frontier \u2014\nthe"
+  ],
+  [
+   173.229,
+   176.241,
+   "actual work of putting vision safely into\nthe"
+  ],
+  [
+   176.241,
+   176.618,
+   "world."
+  ],
+  [
+   177.249,
+   178.002,
+   "Not solved."
+  ],
+  [
+   178.002,
+   178.379,
+   "But,"
+  ],
+  [
+   178.379,
+   180.261,
+   "more and more every year,"
+  ],
+  [
+   180.261,
+   180.638,
+   "engineerable."
+  ],
+  [
+   181.138,
+   183.967,
+   "So let's pull the whole journey together,"
+  ],
+  [
+   183.967,
+   185.18,
+   "in one breath."
+  ],
+  [
+   185.812,
+   189.045,
+   "An image is just a grid of numbers,"
+  ],
+  [
+   189.045,
+   192.279,
+   "and crossing the gap from those numbers to"
+  ],
+  [
+   192.279,
+   194.3,
+   "meaning is the whole game."
+  ],
+  [
+   194.931,
+   198.165,
+   "Convolution slides small filters across\nthe image to"
+  ],
+  [
+   198.165,
+   199.377,
+   "build feature maps."
+  ],
+  [
+   199.377,
+   202.207,
+   "That is the core operation underneath\neverything."
+  ],
+  [
+   202.838,
+   205.668,
+   "Convolutional networks learn those filters\nfor themselves,"
+  ],
+  [
+   205.668,
+   208.901,
+   "and stacking them deep builds a hierarchy\n\u2014"
+  ],
+  [
+   208.901,
+   209.71,
+   "from edges,"
+  ],
+  [
+   209.71,
+   210.518,
+   "to parts,"
+  ],
+  [
+   210.518,
+   211.731,
+   "to whole objects."
+  ],
+  [
+   212.362,
+   214.383,
+   "We train them by guessing,"
+  ],
+  [
+   214.383,
+   215.596,
+   "measuring the loss,"
+  ],
+  [
+   215.596,
+   218.83,
+   "and backpropagating the error \u2014 and we\nfine-tune"
+  ],
+  [
+   218.83,
+   222.063,
+   "a pretrained model instead of ever\nstarting over."
+  ],
+  [
+   222.695,
+   225.928,
+   "One backbone then powers many tasks \u2014\nclassify,"
+  ],
+  [
+   225.928,
+   226.332,
+   "detect,"
+  ],
+  [
+   226.332,
+   226.737,
+   "segment,"
+  ],
+  [
+   226.737,
+   227.545,
+   "and recognize."
+  ],
+  [
+   228.177,
+   228.581,
+   "Transformers,"
+  ],
+  [
+   228.581,
+   228.985,
+   "CLIP,"
+  ],
+  [
+   228.985,
+   232.219,
+   "and vision-language models fused vision\ntogether with language,"
+  ],
+  [
+   232.219,
+   235.452,
+   "giving us machines that can both look and"
+  ],
+  [
+   235.452,
+   235.856,
+   "talk."
+  ],
+  [
+   236.488,
+   239.722,
+   "And diffusion runs the whole thing in\nreverse,"
+  ],
+  [
+   239.722,
+   242.147,
+   "turning meaning back into fresh pixels."
+  ],
+  [
+   242.778,
+   246.012,
+   "You now hold the real map of this"
+  ],
+  [
+   246.012,
+   249.246,
+   "entire field \u2014 from a meaningless wall of"
+  ],
+  [
+   249.246,
+   249.65,
+   "numbers,"
+  ],
+  [
+   249.65,
+   252.075,
+   "all the way up to perception."
+  ],
+  [
+   252.706,
+   254.323,
+   "The ideas are simple."
+  ],
+  [
+   254.323,
+   255.94,
+   "The combinations are endless."
+  ],
+  [
+   256.572,
+   258.997,
+   "So go build something that sees."
+  ],
+  [
+   259.628,
+   260.841,
+   "Thanks for watching."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "cv/cv-ch22-stack-recap.wav",
+   "volume": 1.0
+  }
+ }
+}

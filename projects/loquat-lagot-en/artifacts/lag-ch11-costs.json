@@ -1,0 +1,869 @@
+{
+ "cuts": [
+  {
+   "id": "lag-ch11-costs_div",
+   "type": "lag_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 15.908,
+   "props": {
+    "n": 11,
+    "title": "Costs and cash",
+    "sub": "bands, not a promise",
+    "color": "#4ECDC4",
+    "dur": 16.408
+   }
+  },
+  {
+   "id": "lag-ch11-costs_est",
+   "type": "lag_tower",
+   "in_seconds": 16.408,
+   "out_seconds": 54.75,
+   "props": {
+    "kicker": "YEAR ZERO",
+    "title": "What you spend before a single fruit",
+    "cap": "Illustrative stack: plants and pits are not the expensive part. Water and fence are. Get three local quotes. Reject any YouTube 'lakhs a month from year one' clip.",
+    "foot": "Year zero has no loquat revenue. Intercrop is the only cash.",
+    "segs": [
+     {
+      "label": "Land + pits",
+      "h": 90,
+      "c": "leaf"
+     },
+     {
+      "label": "Grafts ~96",
+      "h": 110,
+      "c": "fruit"
+     },
+     {
+      "label": "FYM + stakes",
+      "h": 70,
+      "c": "cool"
+     },
+     {
+      "label": "Irrigation share",
+      "h": 160,
+      "c": "cool"
+     },
+     {
+      "label": "Fence / risk",
+      "h": 80,
+      "c": "risk"
+     }
+    ],
+    "dur": 38.842
+   }
+  },
+  {
+   "id": "lag-ch11-costs_ann",
+   "type": "lag_cards",
+   "in_seconds": 55.25,
+   "out_seconds": 109.432,
+   "props": {
+    "kicker": "ANNUAL COSTS",
+    "title": "Quiet years still spend money",
+    "cols": 2,
+    "foot": "Family labour is a cost even when nobody invoices it.",
+    "items": [
+     {
+      "label": "Feed + water",
+      "sub": "FYM, fertiliser, pump hours. Every year.",
+      "c": "cool"
+     },
+     {
+      "label": "April labour",
+      "sub": "Clip and pack. You cannot postpone ripening.",
+      "c": "fruit"
+     },
+     {
+      "label": "Y1\u2013Y2 hole",
+      "sub": "Costs without fruit. Design the bridge.",
+      "c": "risk"
+     },
+     {
+      "label": "Crates / net",
+      "sub": "Pack and bird net are easy to forget on paper.",
+      "c": "leaf"
+     }
+    ],
+    "dur": 54.682
+   }
+  },
+  {
+   "id": "lag-ch11-costs_cash",
+   "type": "lag_cash",
+   "in_seconds": 109.932,
+   "out_seconds": 150.938,
+   "props": {
+    "dur": 41.506
+   }
+  },
+  {
+   "id": "lag-ch11-costs_price",
+   "type": "lag_cards",
+   "in_seconds": 151.438,
+   "out_seconds": 192.852,
+   "props": {
+    "kicker": "PRICE BANDS",
+    "title": "No national MSP. Ask March mandi.",
+    "cols": 2,
+    "foot": "Premium packed fruit is not the same as bulk farm-gate.",
+    "items": [
+     {
+      "label": "Farm-gate",
+      "sub": "Lowest. Distance and glut hit you first.",
+      "c": "risk"
+     },
+     {
+      "label": "Local mandi",
+      "sub": "The default path. Commission and wastage apply.",
+      "c": "cool"
+     },
+     {
+      "label": "City retail",
+      "sub": "Higher sticker. You are not that sticker.",
+      "c": "fruit"
+     },
+     {
+      "label": "Process",
+      "sub": "Lower rupees, higher volume, less panic.",
+      "c": "leaf"
+     }
+    ],
+    "dur": 41.914
+   }
+  },
+  {
+   "id": "lag-ch11-costs_scenarios",
+   "type": "lag_cards",
+   "in_seconds": 193.352,
+   "out_seconds": 234.838,
+   "props": {
+    "kicker": "SCALE STORIES",
+    "title": "Twenty trees. Three acres. Not ten as only crop.",
+    "cols": 3,
+    "foot": "Borrow against a crop you have already sold once, if ever.",
+    "items": [
+     {
+      "label": "Homestead",
+      "sub": "Joy plus a crate. Not a D P R.",
+      "c": "leaf"
+     },
+     {
+      "label": "1\u20133 acres",
+      "sub": "Diversified. The serious path.",
+      "c": "fruit"
+     },
+     {
+      "label": "Ten acres solo",
+      "sub": "Rarely wise on a first loquat attempt.",
+      "c": "risk"
+     }
+    ],
+    "dur": 41.986
+   }
+  },
+  {
+   "id": "lag-ch11-costs_rev",
+   "type": "lag_cards",
+   "in_seconds": 235.338,
+   "out_seconds": 272.96,
+   "props": {
+    "kicker": "PENCIL MATH",
+    "title": "Sold kilos times farm-gate rupees",
+    "cols": 2,
+    "foot": "Commission and rot are not rounding errors.",
+    "items": [
+     {
+      "label": "Low story",
+      "sub": "~7 qtl \u00d7 \u20b980 \u2248 \u20b956,000 at peak acre.",
+      "c": "risk"
+     },
+     {
+      "label": "High story",
+      "sub": "~20 qtl \u00d7 \u20b9120 \u2248 \u20b92.4 lakh if you are excellent.",
+      "c": "leaf"
+     },
+     {
+      "label": "Minus",
+      "sub": "Mandi cut, crates, bird tax, a bad frost year.",
+      "c": "cool"
+     },
+     {
+      "label": "Beside other crops",
+      "sub": "If loquat must carry the farm, stop.",
+      "c": "fruit"
+     }
+    ],
+    "dur": 38.122
+   }
+  },
+  {
+   "id": "lag-ch11-costs_subsidy",
+   "type": "lag_cards",
+   "in_seconds": 273.46,
+   "out_seconds": 309.69,
+   "props": {
+    "kicker": "SUBSIDY",
+    "title": "No loquat mission. Maybe drip help.",
+    "cols": 3,
+    "foot": "Paperwork after agronomy, never before.",
+    "items": [
+     {
+      "label": "Ask the dept",
+      "sub": "Species lists change. Get it in writing.",
+      "c": "cool"
+     },
+     {
+      "label": "Drip / pond",
+      "sub": "Often the real lever, crop-agnostic.",
+      "c": "leaf"
+     },
+     {
+      "label": "Not a reason",
+      "sub": "Subsidy without a mandi is a trap.",
+      "c": "risk"
+     }
+    ],
+    "dur": 36.73
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.139,
+   "Part eleven."
+  ],
+  [
+   1.139,
+   2.278,
+   "Money out,"
+  ],
+  [
+   2.278,
+   3.417,
+   "money in."
+  ],
+  [
+   3.967,
+   6.245,
+   "These are planning bands."
+  ],
+  [
+   6.245,
+   8.524,
+   "Your district will disagree."
+  ],
+  [
+   9.074,
+   13.63,
+   "That disagreement is why you call K V"
+  ],
+  [
+   13.63,
+   15.908,
+   "K before you borrow."
+  ],
+  [
+   16.408,
+   19.278,
+   "Establishment is the year-zero cheque."
+  ],
+  [
+   19.828,
+   22.125,
+   "Land preparation and pits."
+  ],
+  [
+   22.675,
+   27.267,
+   "Ninety-six grafted plants \u2014 price varies wildly by"
+  ],
+  [
+   27.267,
+   28.415,
+   "nursery honesty."
+  ],
+  [
+   28.965,
+   29.539,
+   "FYM,"
+  ],
+  [
+   29.539,
+   30.113,
+   "stakes,"
+  ],
+  [
+   30.113,
+   31.261,
+   "basin shaping."
+  ],
+  [
+   31.811,
+   36.404,
+   "Irrigation if you do not already have it."
+  ],
+  [
+   36.404,
+   38.126,
+   "That line dominates."
+  ],
+  [
+   38.676,
+   42.695,
+   "Fencing if nilgai or people will browse."
+  ],
+  [
+   42.695,
+   47.287,
+   "A planning band around one lakh an acre"
+  ],
+  [
+   47.287,
+   49.583,
+   "is a starting conversation,"
+  ],
+  [
+   49.583,
+   51.306,
+   "not a quote."
+  ],
+  [
+   51.306,
+   54.75,
+   "Drip and fence can double it."
+  ],
+  [
+   55.25,
+   56.841,
+   "Every year after:"
+  ],
+  [
+   56.841,
+   57.371,
+   "manure,"
+  ],
+  [
+   57.371,
+   57.901,
+   "fertiliser,"
+  ],
+  [
+   57.901,
+   58.962,
+   "irrigation energy,"
+  ],
+  [
+   58.962,
+   60.022,
+   "pruning labour,"
+  ],
+  [
+   60.022,
+   61.082,
+   "harvest labour,"
+  ],
+  [
+   61.082,
+   61.613,
+   "crates,"
+  ],
+  [
+   61.613,
+   63.203,
+   "spray if needed."
+  ],
+  [
+   63.753,
+   67.995,
+   "Harvest labour is bunched into three to five"
+  ],
+  [
+   67.995,
+   68.525,
+   "weeks."
+  ],
+  [
+   68.525,
+   70.646,
+   "That spike surprises people."
+  ],
+  [
+   71.196,
+   75.438,
+   "A planning band of twenty-five to forty thousand"
+  ],
+  [
+   75.438,
+   78.089,
+   "rupees an acre a year,"
+  ],
+  [
+   78.089,
+   79.68,
+   "excluding family labour,"
+  ],
+  [
+   79.68,
+   82.331,
+   "is a conservative talk number."
+  ],
+  [
+   82.881,
+   86.593,
+   "It will be wrong on your farm."
+  ],
+  [
+   86.593,
+   90.835,
+   "Use it to see that this is not"
+  ],
+  [
+   90.835,
+   92.955,
+   "a zero-cost jungle tree."
+  ],
+  [
+   93.505,
+   97.747,
+   "The expensive years are the silent ones \u2014"
+  ],
+  [
+   97.747,
+   101.989,
+   "one and two \u2014 when costs run and"
+  ],
+  [
+   101.989,
+   103.58,
+   "fruit does not."
+  ],
+  [
+   104.13,
+   106.251,
+   "Budget a cash bridge."
+  ],
+  [
+   106.251,
+   106.781,
+   "Intercrop."
+  ],
+  [
+   106.781,
+   107.841,
+   "Another crop."
+  ],
+  [
+   107.841,
+   108.372,
+   "Off-farm."
+  ],
+  [
+   108.372,
+   109.432,
+   "Not hope."
+  ],
+  [
+   109.932,
+   113.6,
+   "Here is a computed cumulative cash story."
+  ],
+  [
+   113.6,
+   115.697,
+   "It is a model."
+  ],
+  [
+   116.247,
+   118.343,
+   "Ninety thousand to establish."
+  ],
+  [
+   118.343,
+   120.439,
+   "Twenty-eight thousand a year."
+  ],
+  [
+   120.989,
+   122.037,
+   "Conservative line:"
+  ],
+  [
+   122.037,
+   125.706,
+   "leaflet yield times eighty rupees a kilo."
+  ],
+  [
+   126.256,
+   127.304,
+   "Managed line:"
+  ],
+  [
+   127.304,
+   131.496,
+   "trial-like yield times one hundred twenty rupees a"
+  ],
+  [
+   131.496,
+   132.02,
+   "kilo."
+  ],
+  [
+   132.57,
+   135.714,
+   "Watch when each line crosses zero."
+  ],
+  [
+   135.714,
+   139.383,
+   "That is the patience the crop demands."
+  ],
+  [
+   139.933,
+   143.077,
+   "If your mandi is fifty rupees,"
+  ],
+  [
+   143.077,
+   146.746,
+   "or your yield is the red line,"
+  ],
+  [
+   146.746,
+   148.842,
+   "the crossing moves right."
+  ],
+  [
+   148.842,
+   150.938,
+   "Maybe off the chart."
+  ],
+  [
+   151.438,
+   152.381,
+   "Price honesty."
+  ],
+  [
+   152.931,
+   154.817,
+   "Loquat is not onion."
+  ],
+  [
+   154.817,
+   158.589,
+   "There is no clean all-India mandi series I"
+  ],
+  [
+   158.589,
+   161.418,
+   "will pretend to quote as gospel."
+  ],
+  [
+   161.968,
+   165.74,
+   "Retail in metros in season is often talked"
+  ],
+  [
+   165.74,
+   169.512,
+   "about from about fifty rupees a kilo up"
+  ],
+  [
+   169.512,
+   173.285,
+   "through a couple of hundred for fancy packed"
+  ],
+  [
+   173.285,
+   173.756,
+   "fruit."
+  ],
+  [
+   174.306,
+   175.721,
+   "Farm-gate is lower."
+  ],
+  [
+   175.721,
+   176.192,
+   "Always."
+  ],
+  [
+   176.742,
+   180.514,
+   "A seven kilo gift box at a high"
+  ],
+  [
+   180.514,
+   183.815,
+   "city price is not your acre average."
+  ],
+  [
+   184.365,
+   188.137,
+   "Call your nearest fruit mandi next March and"
+  ],
+  [
+   188.137,
+   190.494,
+   "write the number you hear."
+  ],
+  [
+   190.494,
+   192.852,
+   "That number beats this video."
+  ],
+  [
+   193.352,
+   194.989,
+   "Three money stories,"
+  ],
+  [
+   194.989,
+   195.534,
+   "spoken."
+  ],
+  [
+   196.084,
+   196.63,
+   "Homestead:"
+  ],
+  [
+   196.63,
+   197.721,
+   "twenty trees."
+  ],
+  [
+   197.721,
+   199.903,
+   "You eat and gift."
+  ],
+  [
+   199.903,
+   202.631,
+   "Costs are pride and water."
+  ],
+  [
+   202.631,
+   203.177,
+   "Fine."
+  ],
+  [
+   203.727,
+   205.909,
+   "One to three acres,"
+  ],
+  [
+   205.909,
+   206.455,
+   "diversified:"
+  ],
+  [
+   206.455,
+   209.183,
+   "the model this course respects."
+  ],
+  [
+   209.733,
+   213.006,
+   "Ten acres as the only crop:"
+  ],
+  [
+   213.006,
+   215.734,
+   "you need a buyer letter,"
+  ],
+  [
+   215.734,
+   216.825,
+   "a crew,"
+  ],
+  [
+   216.825,
+   219.553,
+   "and a stomach for April."
+  ],
+  [
+   219.553,
+   221.735,
+   "Most people should not."
+  ],
+  [
+   222.285,
+   222.831,
+   "Credit:"
+  ],
+  [
+   222.831,
+   227.195,
+   "do not hypothecate the house for a niche"
+  ],
+  [
+   227.195,
+   229.923,
+   "fruit you have never harvested."
+  ],
+  [
+   230.473,
+   233.747,
+   "Scale is not a virtue here."
+  ],
+  [
+   233.747,
+   234.838,
+   "Fit is."
+  ],
+  [
+   235.338,
+   239.381,
+   "Revenue arithmetic you can redo with a pencil."
+  ],
+  [
+   239.931,
+   242.963,
+   "Kilos sold times rupees per kilo."
+  ],
+  [
+   242.963,
+   244.48,
+   "That is it."
+  ],
+  [
+   245.03,
+   246.04,
+   "Conservative peak:"
+  ],
+  [
+   246.04,
+   250.084,
+   "seven quintals times eighty rupees is about\nfifty-six"
+  ],
+  [
+   250.084,
+   251.6,
+   "thousand an acre."
+  ],
+  [
+   252.15,
+   253.161,
+   "Managed peak:"
+  ],
+  [
+   253.161,
+   257.204,
+   "twenty quintals times one hundred twenty is about"
+  ],
+  [
+   257.204,
+   259.225,
+   "two lakh forty thousand."
+  ],
+  [
+   259.775,
+   260.786,
+   "Subtract wastage,"
+  ],
+  [
+   260.786,
+   261.291,
+   "commission,"
+  ],
+  [
+   261.291,
+   261.797,
+   "crates,"
+  ],
+  [
+   261.797,
+   264.829,
+   "and the year you miss bloom."
+  ],
+  [
+   265.379,
+   269.422,
+   "If the lower number cannot live beside your"
+  ],
+  [
+   269.422,
+   270.433,
+   "other crops,"
+  ],
+  [
+   270.433,
+   272.96,
+   "do not plant for money."
+  ],
+  [
+   273.46,
+   273.975,
+   "Schemes."
+  ],
+  [
+   274.525,
+   278.646,
+   "There is no famous national loquat mission with"
+  ],
+  [
+   278.646,
+   279.676,
+   "a poster."
+  ],
+  [
+   280.226,
+   283.316,
+   "You may still stack drip subsidy,"
+  ],
+  [
+   283.316,
+   284.346,
+   "farm pond,"
+  ],
+  [
+   284.346,
+   288.467,
+   "or general horticulture planting support if your\nstate"
+  ],
+  [
+   288.467,
+   290.012,
+   "allows the species."
+  ],
+  [
+   290.562,
+   292.108,
+   "Ask horticulture department,"
+  ],
+  [
+   292.108,
+   294.168,
+   "not a WhatsApp forward."
+  ],
+  [
+   294.718,
+   297.808,
+   "Never plant because a subsidy exists."
+  ],
+  [
+   297.808,
+   301.414,
+   "Plant because April fruit has a buyer."
+  ],
+  [
+   301.964,
+   306.084,
+   "Subsidy is a discount on a good idea,"
+  ],
+  [
+   306.084,
+   309.69,
+   "or a lure into a bad one."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "lag/lag-ch11-costs.wav",
+   "volume": 1.0
+  }
+ }
+}

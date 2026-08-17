@@ -1,0 +1,1032 @@
+{
+ "cuts": [
+  {
+   "id": "ch05_s01_divider",
+   "type": "fa_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 16.654,
+   "props": {
+    "n": 5,
+    "title": "Leverage",
+    "sub": "debt: cheap fuel, and hidden risk",
+    "color": "#FBBF24",
+    "total": 7,
+    "dur": 17.154
+   }
+  },
+  {
+   "id": "ch05_s02_analogy",
+   "type": "fa_analogy",
+   "in_seconds": 17.154,
+   "out_seconds": 55.164,
+   "props": {
+    "kicker": "ANALOGY \u00b7 THE DOUBLE-EDGED SWORD",
+    "title": "Debt is like driving faster",
+    "left": {
+     "emoji": "\ud83c\udfce\ufe0f",
+     "label": "More speed",
+     "cap": "You reach the destination sooner.",
+     "c": "#34D399"
+    },
+    "right": {
+     "emoji": "\ud83d\udca5",
+     "label": "More danger",
+     "cap": "But any mistake becomes a bigger crash.",
+     "c": "#F87171"
+    },
+    "note": "Debt magnifies returns when times are good \u2014 and magnifies losses when they aren't.",
+    "color": "#FBBF24",
+    "dur": 38.51
+   }
+  },
+  {
+   "id": "ch05_s03_de",
+   "type": "fa_formula",
+   "in_seconds": 55.664,
+   "out_seconds": 94.66,
+   "props": {
+    "kicker": "RATIO 1 \u00b7 DEBT-TO-EQUITY",
+    "title": "How much is borrowed vs owned",
+    "name": "Debt-to-Equity  =  Total debt  \u00f7  Shareholders' equity",
+    "num": [
+     {
+      "label": "Total debt",
+      "val": 180,
+      "c": "#FBBF24"
+     }
+    ],
+    "den": [
+     {
+      "label": "Equity",
+      "val": 300,
+      "c": "#2DD4BF"
+     }
+    ],
+    "op": "\u00f7",
+    "result": {
+     "label": "D/E \u2014 \u20b9 borrowed per \u20b91 of owners' money",
+     "val": 0.6,
+     "unit": "\u00d7",
+     "decimals": 1,
+     "c": "#FBBF24"
+    },
+    "note": "Ardee \u2248 0.6\u00d7 \u2014 down from about 1.25\u00d7 before its IPO raised fresh equity.",
+    "color": "#FBBF24",
+    "dur": 39.496
+   }
+  },
+  {
+   "id": "ch05_s04_de_read",
+   "type": "fa_keyidea",
+   "in_seconds": 95.16,
+   "out_seconds": 134.058,
+   "props": {
+    "kicker": "READING D/E",
+    "color": "#FBBF24",
+    "big": "Below 1 is comfortable. Above 2 starts to worry.",
+    "sub": "But it's industry-specific \u2014 banks and infrastructure run high by design; asset-light firms run low.",
+    "dur": 39.398
+   }
+  },
+  {
+   "id": "ch05_s05_netdebt",
+   "type": "fa_formula",
+   "in_seconds": 134.558,
+   "out_seconds": 167.746,
+   "props": {
+    "kicker": "RATIO 2 \u00b7 NET DEBT",
+    "title": "Debt, minus the cash you already hold",
+    "name": "Net debt  =  Total debt  \u2212  Cash",
+    "num": [
+     {
+      "label": "Total debt",
+      "val": 180,
+      "c": "#FBBF24"
+     }
+    ],
+    "den": [
+     {
+      "label": "Cash",
+      "val": 30,
+      "c": "#34D399"
+     }
+    ],
+    "op": "\u2212",
+    "result": {
+     "label": "Net debt \u2014 the debt that truly remains",
+     "val": 150,
+     "unit": "\u20b9 Cr",
+     "decimals": 0,
+     "c": "#FBBF24"
+    },
+    "note": "A company with more cash than debt is 'net cash' \u2014 the strongest position of all.",
+    "color": "#FBBF24",
+    "dur": 33.688
+   }
+  },
+  {
+   "id": "ch05_s06_coverage",
+   "type": "fa_formula",
+   "in_seconds": 168.246,
+   "out_seconds": 207.408,
+   "props": {
+    "kicker": "RATIO 3 \u00b7 INTEREST COVERAGE",
+    "title": "Can it comfortably pay the interest?",
+    "name": "Interest coverage  =  Operating profit (EBIT)  \u00f7  Interest",
+    "num": [
+     {
+      "label": "EBIT",
+      "val": 127,
+      "c": "#2DD4BF"
+     }
+    ],
+    "den": [
+     {
+      "label": "Interest",
+      "val": 18,
+      "c": "#FBBF24"
+     }
+    ],
+    "op": "\u00f7",
+    "result": {
+     "label": "Interest coverage \u2014 times over it earns its interest bill",
+     "val": 7,
+     "unit": "\u00d7",
+     "decimals": 0,
+     "c": "#34D399"
+    },
+    "note": "Ardee earns its interest ~7\u00d7 over. Below ~2\u20133\u00d7 is a danger zone.",
+    "color": "#FBBF24",
+    "dur": 39.662
+   }
+  },
+  {
+   "id": "ch05_s07_debtebitda",
+   "type": "fa_gauge",
+   "in_seconds": 207.908,
+   "out_seconds": 245.918,
+   "props": {
+    "kicker": "RATIO 4 \u00b7 DEBT / EBITDA",
+    "title": "How many years to repay the debt?",
+    "value": 1.2,
+    "min": 0,
+    "max": 5,
+    "unit": "\u00d7",
+    "zones": [
+     {
+      "to": 2,
+      "c": "#34D399",
+      "label": "safe"
+     },
+     {
+      "to": 3.5,
+      "c": "#FBBF24",
+      "label": "watch"
+     },
+     {
+      "to": 5,
+      "c": "#F87171",
+      "label": "stretched"
+     }
+    ],
+    "caption": "Ardee \u2248 1.2\u00d7 \u2014 barely over a year of core profit would clear all its debt.",
+    "note": "Debt \u00f7 EBITDA. Lenders watch this one closely. Under ~3\u00d7 is generally comfortable.",
+    "color": "#FBBF24",
+    "dur": 38.51
+   }
+  },
+  {
+   "id": "ch05_s08_compare",
+   "type": "fa_bars",
+   "in_seconds": 246.418,
+   "out_seconds": 286.636,
+   "props": {
+    "kicker": "LEVERAGE \u00b7 THE THREE RIVALS",
+    "title": "Here is why Ardee is 'cheap'",
+    "unit": "\u00d7",
+    "decimals": 2,
+    "bars": [
+     {
+      "label": "Ardee",
+      "val": 0.6,
+      "c": "#2DD4BF",
+      "note": "most levered"
+     },
+     {
+      "label": "Gravita",
+      "val": 0.14,
+      "c": "#818CF8",
+      "note": "net cash"
+     },
+     {
+      "label": "Pondy",
+      "val": 0.17,
+      "c": "#FB923C",
+      "note": "near debt-free"
+     }
+    ],
+    "note": "Debt-to-equity. Ardee carries far more debt than its peers \u2014 the single biggest reason for its discount.",
+    "color": "#FBBF24",
+    "dur": 40.718
+   }
+  },
+  {
+   "id": "ch05_s09_liquidity",
+   "type": "fa_keyidea",
+   "in_seconds": 287.136,
+   "out_seconds": 326.348,
+   "props": {
+    "kicker": "SHORT-TERM SAFETY \u00b7 LIQUIDITY",
+    "color": "#38BDF8",
+    "big": "The current ratio asks: can it pay this year's bills?",
+    "sub": "Current assets \u00f7 current liabilities. Above 1 means short-term assets cover short-term dues.",
+    "dur": 39.712
+   }
+  },
+  {
+   "id": "ch05_s10_recap",
+   "type": "fa_recap",
+   "in_seconds": 326.848,
+   "out_seconds": 372.97,
+   "props": {
+    "kicker": "RECAP \u00b7 CHAPTER 5",
+    "title": "Leverage in one breath",
+    "items": [
+     "Debt magnifies both returns and risk \u2014 a double-edged sword",
+     "D/E = debt \u00f7 equity; below 1 comfortable, above 2 worrying",
+     "Net debt = debt \u2212 cash; 'net cash' is strongest",
+     "Interest coverage = EBIT \u00f7 interest (Ardee \u2248 7\u00d7, safe)",
+     "Debt/EBITDA \u2248 years to repay (Ardee \u2248 1.2\u00d7, low)",
+     "Ardee is far more levered than Gravita/Pondy \u2014 the discount's cause",
+     "Liquidity (current ratio) keeps the lights on short-term"
+    ],
+    "closer": "Debt explains the discount. Next: is the growth \u2014 and the cash \u2014 real?",
+    "color": "#FBBF24",
+    "dur": 46.622
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.15,
+   "Chapter five."
+  ],
+  [
+   1.15,
+   1.725,
+   "Leverage."
+  ],
+  [
+   2.275,
+   4.001,
+   "In chapter four,"
+  ],
+  [
+   4.001,
+   5.726,
+   "Ardee looked cheap."
+  ],
+  [
+   5.726,
+   9.752,
+   "Now we hunt for the reason why."
+  ],
+  [
+   9.752,
+   11.478,
+   "And very often,"
+  ],
+  [
+   11.478,
+   15.504,
+   "the answer is hiding in one place."
+  ],
+  [
+   15.504,
+   16.654,
+   "The debt."
+  ],
+  [
+   17.154,
+   20.745,
+   "Think of debt like pressing harder on the"
+  ],
+  [
+   20.745,
+   21.194,
+   "accelerator."
+  ],
+  [
+   21.744,
+   23.988,
+   "When the road is clear,"
+  ],
+  [
+   23.988,
+   26.682,
+   "you get where you're going faster."
+  ],
+  [
+   26.682,
+   29.824,
+   "Borrowed money lets a company grow quicker,"
+  ],
+  [
+   29.824,
+   31.171,
+   "and boosts returns."
+  ],
+  [
+   31.721,
+   34.414,
+   "But the moment something goes wrong,"
+  ],
+  [
+   34.414,
+   38.005,
+   "that same speed becomes a much bigger crash."
+  ],
+  [
+   38.005,
+   40.698,
+   "Interest still has to be paid,"
+  ],
+  [
+   40.698,
+   42.943,
+   "even in a bad year."
+  ],
+  [
+   43.493,
+   46.186,
+   "So debt is a double-edged sword."
+  ],
+  [
+   46.186,
+   48.431,
+   "It magnifies the good times,"
+  ],
+  [
+   48.431,
+   50.675,
+   "and it magnifies the bad."
+  ],
+  [
+   50.675,
+   54.266,
+   "Our job is to measure how sharp that"
+  ],
+  [
+   54.266,
+   55.164,
+   "edge is."
+  ],
+  [
+   55.664,
+   59.317,
+   "The first and most common measure is debt"
+  ],
+  [
+   59.317,
+   60.23,
+   "to equity."
+  ],
+  [
+   60.78,
+   61.236,
+   "Simply,"
+  ],
+  [
+   61.236,
+   63.519,
+   "total debt divided by equity."
+  ],
+  [
+   63.519,
+   64.432,
+   "It asks,"
+  ],
+  [
+   64.432,
+   68.085,
+   "for every rupee the owners have put in,"
+  ],
+  [
+   68.085,
+   70.368,
+   "how many rupees are borrowed?"
+  ],
+  [
+   70.918,
+   74.571,
+   "Ardee has about one eighty of debt against"
+  ],
+  [
+   74.571,
+   76.397,
+   "three hundred of equity."
+  ],
+  [
+   76.397,
+   80.049,
+   "So its debt to equity is around zero"
+  ],
+  [
+   80.049,
+   80.963,
+   "point six."
+  ],
+  [
+   80.963,
+   82.789,
+   "Here's an encouraging detail."
+  ],
+  [
+   82.789,
+   84.159,
+   "Before its IPO,"
+  ],
+  [
+   84.159,
+   87.811,
+   "that number was closer to one point two"
+  ],
+  [
+   87.811,
+   88.268,
+   "five."
+  ],
+  [
+   88.268,
+   91.921,
+   "The fresh money from listing paid down debt,"
+  ],
+  [
+   91.921,
+   94.66,
+   "and cut the ratio in half."
+  ],
+  [
+   95.16,
+   98.932,
+   "How do you read a debt to equity"
+  ],
+  [
+   98.932,
+   99.403,
+   "number?"
+  ],
+  [
+   99.953,
+   101.839,
+   "As a rough guide,"
+  ],
+  [
+   101.839,
+   103.725,
+   "below one is comfortable."
+  ],
+  [
+   103.725,
+   107.497,
+   "The owners have more skin in the game"
+  ],
+  [
+   107.497,
+   108.912,
+   "than the lenders."
+  ],
+  [
+   109.462,
+   110.405,
+   "Above two,"
+  ],
+  [
+   110.405,
+   113.705,
+   "and you should start paying close attention."
+  ],
+  [
+   113.705,
+   117.006,
+   "The company leans heavily on borrowed money."
+  ],
+  [
+   117.556,
+   118.97,
+   "But context matters,"
+  ],
+  [
+   118.97,
+   119.913,
+   "as always."
+  ],
+  [
+   119.913,
+   123.685,
+   "Banks and infrastructure firms run high debt by"
+  ],
+  [
+   123.685,
+   125.1,
+   "their very nature."
+  ],
+  [
+   125.1,
+   127.929,
+   "A software company runs almost none."
+  ],
+  [
+   127.929,
+   131.701,
+   "So compare a company only to its own"
+  ],
+  [
+   131.701,
+   132.172,
+   "industry,"
+  ],
+  [
+   132.172,
+   134.058,
+   "and its own history."
+  ],
+  [
+   134.558,
+   137.125,
+   "Not all debt is equally worrying."
+  ],
+  [
+   137.675,
+   141.098,
+   "If a company holds a big pile of"
+  ],
+  [
+   141.098,
+   141.526,
+   "cash,"
+  ],
+  [
+   141.526,
+   144.948,
+   "it could pay off some of its loans"
+  ],
+  [
+   144.948,
+   145.376,
+   "tomorrow."
+  ],
+  [
+   145.376,
+   147.943,
+   "So we subtract cash from debt,"
+  ],
+  [
+   147.943,
+   149.655,
+   "to get net debt."
+  ],
+  [
+   150.205,
+   152.344,
+   "Ardee's one eighty of debt,"
+  ],
+  [
+   152.344,
+   154.055,
+   "minus thirty of cash,"
+  ],
+  [
+   154.055,
+   157.05,
+   "is one hundred fifty of net debt."
+  ],
+  [
+   157.05,
+   160.473,
+   "And when a company's cash is actually larger"
+  ],
+  [
+   160.473,
+   161.756,
+   "than its debt,"
+  ],
+  [
+   161.756,
+   163.895,
+   "we call it net cash."
+  ],
+  [
+   163.895,
+   167.318,
+   "That's the strongest balance sheet a business can"
+  ],
+  [
+   167.318,
+   167.746,
+   "have."
+  ],
+  [
+   168.246,
+   170.274,
+   "Debt itself isn't dangerous."
+  ],
+  [
+   170.274,
+   173.822,
+   "Not being able to pay it is."
+  ],
+  [
+   174.372,
+   178.427,
+   "So the sharpest safety check is interest coverage."
+  ],
+  [
+   178.427,
+   179.441,
+   "Operating profit,"
+  ],
+  [
+   179.441,
+   181.976,
+   "divided by the interest bill."
+  ],
+  [
+   181.976,
+   182.99,
+   "It asks,"
+  ],
+  [
+   182.99,
+   187.045,
+   "how many times over can the company pay"
+  ],
+  [
+   187.045,
+   188.059,
+   "its interest?"
+  ],
+  [
+   188.609,
+   192.664,
+   "Ardee earns one twenty seven of operating profit,"
+  ],
+  [
+   192.664,
+   196.213,
+   "against an interest bill of just eighteen."
+  ],
+  [
+   196.213,
+   198.747,
+   "That's about seven times cover."
+  ],
+  [
+   198.747,
+   199.761,
+   "Very comfortable."
+  ],
+  [
+   200.311,
+   204.366,
+   "If this number ever falls near two or"
+  ],
+  [
+   204.366,
+   204.873,
+   "three,"
+  ],
+  [
+   204.873,
+   207.408,
+   "that's a real warning sign."
+  ],
+  [
+   207.908,
+   208.84,
+   "One more,"
+  ],
+  [
+   208.84,
+   211.171,
+   "and lenders love this one."
+  ],
+  [
+   211.171,
+   212.57,
+   "Debt to EBITDA."
+  ],
+  [
+   213.12,
+   215.45,
+   "It answers a simple question."
+  ],
+  [
+   215.45,
+   217.315,
+   "Using its core profit,"
+  ],
+  [
+   217.315,
+   221.044,
+   "how many years would it take to repay"
+  ],
+  [
+   221.044,
+   222.443,
+   "all the debt?"
+  ],
+  [
+   222.993,
+   225.323,
+   "Ardee's one eighty of debt,"
+  ],
+  [
+   225.323,
+   228.12,
+   "against one forty seven of EBITDA,"
+  ],
+  [
+   228.12,
+   230.451,
+   "is about one point two."
+  ],
+  [
+   230.451,
+   233.714,
+   "So in a little over a year,"
+  ],
+  [
+   233.714,
+   237.443,
+   "its core profit alone could wipe out every"
+  ],
+  [
+   237.443,
+   237.91,
+   "loan."
+  ],
+  [
+   238.46,
+   240.79,
+   "Under three is generally comfortable."
+  ],
+  [
+   240.79,
+   242.655,
+   "Above four or five,"
+  ],
+  [
+   242.655,
+   245.918,
+   "the company is carrying a heavy load."
+  ],
+  [
+   246.418,
+   250.227,
+   "Now the chart that explains the whole puzzle."
+  ],
+  [
+   250.777,
+   252.206,
+   "Debt to equity,"
+  ],
+  [
+   252.206,
+   254.11,
+   "across our three recyclers."
+  ],
+  [
+   254.11,
+   256.967,
+   "Gravita and Pondy are almost debt-free,"
+  ],
+  [
+   256.967,
+   259.824,
+   "at around zero point one five."
+  ],
+  [
+   259.824,
+   260.3,
+   "Ardee,"
+  ],
+  [
+   260.3,
+   262.205,
+   "at zero point six,"
+  ],
+  [
+   262.205,
+   264.109,
+   "carries far more debt."
+  ],
+  [
+   264.659,
+   266.564,
+   "And there it is."
+  ],
+  [
+   266.564,
+   270.373,
+   "This is the single biggest reason Ardee trades"
+  ],
+  [
+   270.373,
+   272.278,
+   "cheaper than its peers."
+  ],
+  [
+   272.278,
+   276.087,
+   "The market is charging it a discount for"
+  ],
+  [
+   276.087,
+   277.515,
+   "the extra risk."
+  ],
+  [
+   278.065,
+   279.97,
+   "The key question becomes,"
+  ],
+  [
+   279.97,
+   283.779,
+   "is Ardee paying that debt down fast enough"
+  ],
+  [
+   283.779,
+   286.636,
+   "to deserve a higher price later?"
+  ],
+  [
+   287.136,
+   289.579,
+   "Leverage is about long-term debt."
+  ],
+  [
+   289.579,
+   293.488,
+   "But a company also has to survive the"
+  ],
+  [
+   293.488,
+   294.954,
+   "next twelve months."
+  ],
+  [
+   295.504,
+   296.481,
+   "That's liquidity."
+  ],
+  [
+   296.481,
+   300.39,
+   "The current ratio divides short-term assets by\nshort-term"
+  ],
+  [
+   300.39,
+   300.879,
+   "bills."
+  ],
+  [
+   300.879,
+   304.788,
+   "Above one means it can cover what's due"
+  ],
+  [
+   304.788,
+   305.765,
+   "this year."
+  ],
+  [
+   306.315,
+   308.758,
+   "The quick ratio is stricter."
+  ],
+  [
+   308.758,
+   310.224,
+   "It ignores inventory,"
+  ],
+  [
+   310.224,
+   314.133,
+   "because unsold stock can't pay a bill today."
+  ],
+  [
+   314.133,
+   317.553,
+   "A company can be profitable on paper,"
+  ],
+  [
+   317.553,
+   321.462,
+   "and still fail if it can't pay its"
+  ],
+  [
+   321.462,
+   322.928,
+   "bills on time."
+  ],
+  [
+   322.928,
+   326.348,
+   "Liquidity is what keeps the lights on."
+  ],
+  [
+   326.848,
+   329.265,
+   "Let's lock in chapter five."
+  ],
+  [
+   329.815,
+   332.232,
+   "Debt is a double-edged sword."
+  ],
+  [
+   332.232,
+   334.165,
+   "It speeds you up,"
+  ],
+  [
+   334.165,
+   336.582,
+   "and it can crash you."
+  ],
+  [
+   336.582,
+   340.45,
+   "Debt to equity shows how much is borrowed."
+  ],
+  [
+   340.45,
+   343.35,
+   "Net debt takes out the cash."
+  ],
+  [
+   343.9,
+   347.767,
+   "Interest coverage and debt to EBITDA both say"
+  ],
+  [
+   347.767,
+   350.184,
+   "Ardee's debt is very manageable,"
+  ],
+  [
+   350.184,
+   354.051,
+   "even though it carries more than its peers."
+  ],
+  [
+   354.051,
+   357.918,
+   "And that extra leverage is exactly why the"
+  ],
+  [
+   357.918,
+   359.852,
+   "market prices it cheaply."
+  ],
+  [
+   360.402,
+   362.819,
+   "The discount is now explained."
+  ],
+  [
+   362.819,
+   364.752,
+   "But two questions remain."
+  ],
+  [
+   364.752,
+   366.686,
+   "Is the growth real,"
+  ],
+  [
+   366.686,
+   370.07,
+   "and does the profit turn into cash?"
+  ],
+  [
+   370.07,
+   371.52,
+   "That's chapter six."
+  ],
+  [
+   371.52,
+   372.97,
+   "Thanks for watching."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "fa/ch05.wav",
+   "volume": 1.0
+  }
+ }
+}

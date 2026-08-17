@@ -1,0 +1,937 @@
+{
+ "cuts": [
+  {
+   "id": "ch04_div",
+   "type": "nb_divider",
+   "in_seconds": 0.0,
+   "out_seconds": 23.3,
+   "props": {
+    "dur": 23.8,
+    "n": 4,
+    "title": "High Risk, High Reward",
+    "sub": "Tier 3 \u00b7 cyclicals, turnarounds, small-caps",
+    "tier": "3",
+    "total": 5
+   }
+  },
+  {
+   "id": "ch04_board",
+   "type": "nb_tierboard",
+   "in_seconds": 23.8,
+   "out_seconds": 41.99,
+   "props": {
+    "tier": "3",
+    "title": "Tier 3 \u00b7 High Risk \u00b7 High Reward",
+    "sub": "Sixteen higher-torque bets \u2014 size them smaller",
+    "names": [
+     "Zen Technologies",
+     "Astra Microwave",
+     "Kaynes Technology",
+     "Cochin Shipyard",
+     "Titagarh Rail Systems",
+     "Vedanta",
+     "Hindustan Zinc",
+     "Nuvama Wealth",
+     "PB Fintech (Policybazaar)",
+     "Coromandel International",
+     "Fortis Healthcare",
+     "Global Health (Medanta)",
+     "NTPC",
+     "Tata Power",
+     "Radico Khaitan",
+     "Motilal Oswal"
+    ],
+    "dur": 18.69
+   }
+  },
+  {
+   "id": "ch04_s35_zentec",
+   "type": "nb_stock",
+   "in_seconds": 42.49,
+   "out_seconds": 89.734,
+   "props": {
+    "idx": 35,
+    "total": 50,
+    "tier": "3",
+    "name": "Zen Technologies",
+    "ticker": "ZENTEC",
+    "sector": "Defence (Small-cap)",
+    "cap": "Mid-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "92.3",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "10.7%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "16.2%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "128.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "85.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b916,773 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Defence-training simulators + anti-drone systems in a hot niche.",
+     "Order book visibility high, but lumpy government contracts add risk.",
+     "Small-cap volatility \u2014 position sizing matters."
+    ],
+    "growth": 45,
+    "take": "High-torque defence small-cap",
+    "dur": 47.744
+   }
+  },
+  {
+   "id": "ch04_s36_astramicro",
+   "type": "nb_stock",
+   "in_seconds": 90.234,
+   "out_seconds": 138.414,
+   "props": {
+    "idx": 36,
+    "total": 50,
+    "tier": "3",
+    "name": "Astra Microwave",
+    "ticker": "ASTRAMICRO",
+    "sector": "Defence Electronics",
+    "cap": "Mid-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "87.4",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "16.0%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "20.2%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "46.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "59.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b916,501 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "RF/microwave sub-systems for radars and missiles.",
+     "Rides indigenisation, but is exposed to defence order timing.",
+     "50%+ growth with the risk profile of a lumpy order book."
+    ],
+    "growth": 45,
+    "take": "A leveraged defence-electronics bet",
+    "dur": 48.68
+   }
+  },
+  {
+   "id": "ch04_s37_kaynes",
+   "type": "nb_stock",
+   "in_seconds": 138.914,
+   "out_seconds": 186.614,
+   "props": {
+    "idx": 37,
+    "total": 50,
+    "tier": "3",
+    "name": "Kaynes Technology",
+    "ticker": "KAYNES",
+    "sector": "Semiconductors / EMS",
+    "cap": "Mid-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "70.8",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "9.6%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "13.2%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "108.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "29.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b924,604 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "EMS + a bet on India's OSAT semiconductor assembly build-out.",
+     "Hyper-growth, but the valuation prices in flawless execution.",
+     "Semiconductor capex is long-gestation and capital-hungry."
+    ],
+    "growth": 45,
+    "take": "The semiconductor moonshot",
+    "dur": 48.2
+   }
+  },
+  {
+   "id": "ch04_s38_cochinship",
+   "type": "nb_stock",
+   "in_seconds": 187.114,
+   "out_seconds": 234.382,
+   "props": {
+    "idx": 38,
+    "total": 50,
+    "tier": "3",
+    "name": "Cochin Shipyard",
+    "ticker": "COCHINSHIP",
+    "sector": "Defence Shipbuilding",
+    "cap": "Mid-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "54.7",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "12.5%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "16.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "4.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "53.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b939,199 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Warship + submarine build and repair for the navy's expansion.",
+     "Multi-decade naval capex, but revenue is milestone-lumpy.",
+     "PSU shipbuilder \u2014 execution and margin swings are the risk."
+    ],
+    "growth": 28.5,
+    "take": "Naval capex, in bursts",
+    "dur": 47.768
+   }
+  },
+  {
+   "id": "ch04_s39_titagarh",
+   "type": "nb_stock",
+   "in_seconds": 234.882,
+   "out_seconds": 280.422,
+   "props": {
+    "idx": 39,
+    "total": 50,
+    "tier": "3",
+    "name": "Titagarh Rail Systems",
+    "ticker": "TITAGARH",
+    "sector": "Railways",
+    "cap": "Small-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "49.1",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "8.1%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "11.7%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "34.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "55.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b911,210 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Wagons + metro/Vande Bharat trainsets in a railway capex boom.",
+     "Order pipeline strong; execution ramp is the swing factor.",
+     "Cyclical exposure to government ordering."
+    ],
+    "growth": 44.5,
+    "take": "Riding the railway capex wave",
+    "dur": 46.04
+   }
+  },
+  {
+   "id": "ch04_s40_vedl",
+   "type": "nb_stock",
+   "in_seconds": 280.922,
+   "out_seconds": 327.926,
+   "props": {
+    "idx": 40,
+    "total": 50,
+    "tier": "3",
+    "name": "Vedanta",
+    "ticker": "VEDL",
+    "sector": "Metals / Resources",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "9.7",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "38.2%",
+      "hero": true
+     },
+     {
+      "k": "ROCE",
+      "v": "16.1%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "8.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "18.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b91.05L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Diversified metals + energy cash-cow at a low P/E, high yield.",
+     "Demerger could unlock value across the commodity verticals.",
+     "Commodity cyclicality + parent leverage are real risks."
+    ],
+    "growth": 13.0,
+    "take": "Deep-cyclical value with a catalyst",
+    "dur": 47.504
+   }
+  },
+  {
+   "id": "ch04_s41_hindzinc",
+   "type": "nb_stock",
+   "in_seconds": 328.426,
+   "out_seconds": 374.59,
+   "props": {
+    "idx": 41,
+    "total": 50,
+    "tier": "3",
+    "name": "Hindustan Zinc",
+    "ticker": "HINDZINC",
+    "sector": "Zinc + Silver",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "13.8",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "76.6%",
+      "hero": true
+     },
+     {
+      "k": "ROCE",
+      "v": "69.5%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "12.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "13.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b92.37L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Near-monopoly zinc producer with elite margins and dividends.",
+     "The world's largest silver play as the metal's demand tightens.",
+     "Commodity-price and promoter-overhang risk cap the multiple."
+    ],
+    "growth": 12.5,
+    "take": "A silver/zinc cash machine",
+    "dur": 46.664
+   }
+  },
+  {
+   "id": "ch04_s42_nuvama",
+   "type": "nb_stock",
+   "in_seconds": 375.09,
+   "out_seconds": 421.254,
+   "props": {
+    "idx": 42,
+    "total": 50,
+    "tier": "3",
+    "name": "Nuvama Wealth",
+    "ticker": "NUVAMA",
+    "sector": "Wealth Management",
+    "cap": "Mid-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "28.5",
+      "hero": true
+     },
+     {
+      "k": "ROE",
+      "v": "27.4%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "59.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "\u2014",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b930,910 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Wealth + capital-markets play on India's rising affluence.",
+     "Fast AUM growth at a low valuation \u2014 but market-cycle sensitive.",
+     "Earnings swing with capital-market activity."
+    ],
+    "growth": 45,
+    "take": "Financialisation, geared to the cycle",
+    "dur": 46.664
+   }
+  },
+  {
+   "id": "ch04_s43_policybzr",
+   "type": "nb_stock",
+   "in_seconds": 421.754,
+   "out_seconds": 469.022,
+   "props": {
+    "idx": 43,
+    "total": 50,
+    "tier": "3",
+    "name": "PB Fintech (Policybazaar)",
+    "ticker": "POLICYBZR",
+    "sector": "Fintech",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "108.0",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "9.8%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "42.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "34.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b980,634 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "India's largest online insurance + credit marketplace.",
+     "Newly profitable, with insurance penetration still very low.",
+     "Valuation rich; profitability path must keep delivering."
+    ],
+    "growth": 38.0,
+    "take": "Newly-profitable fintech optionality",
+    "dur": 47.768
+   }
+  },
+  {
+   "id": "ch04_s44_coromandel",
+   "type": "nb_stock",
+   "in_seconds": 469.522,
+   "out_seconds": 517.078,
+   "props": {
+    "idx": 44,
+    "total": 50,
+    "tier": "3",
+    "name": "Coromandel International",
+    "ticker": "COROMANDEL",
+    "sector": "Agri-Inputs",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "31.7",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "17.3%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "24.6%",
+      "hero": true
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "9.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "20.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b961,804 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Fertiliser + crop-protection leader with a strong distribution moat.",
+     "Backward integration and a Nano-DAP/specialty pivot add growth.",
+     "Subsidy policy + monsoon swings are the cyclical risks."
+    ],
+    "growth": 14.5,
+    "take": "Agri-inputs with a quality tilt",
+    "dur": 48.056
+   }
+  },
+  {
+   "id": "ch04_s45_fortis",
+   "type": "nb_stock",
+   "in_seconds": 517.578,
+   "out_seconds": 564.318,
+   "props": {
+    "idx": 45,
+    "total": 50,
+    "tier": "3",
+    "name": "Fortis Healthcare",
+    "ticker": "FORTIS",
+    "sector": "Hospitals (Turnaround)",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "65.2",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "11.2%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "13.4%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "64.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "31.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b969,569 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Turnaround hospital chain plus a growing diagnostics arm.",
+     "Occupancy + margin recovery still has a long way to run.",
+     "Execution and governance-legacy risks temper the upside."
+    ],
+    "growth": 45,
+    "take": "A hospital recovery story",
+    "dur": 47.24
+   }
+  },
+  {
+   "id": "ch04_s46_medanta",
+   "type": "nb_stock",
+   "in_seconds": 564.818,
+   "out_seconds": 611.486,
+   "props": {
+    "idx": 46,
+    "total": 50,
+    "tier": "3",
+    "name": "Global Health (Medanta)",
+    "ticker": "MEDANTA",
+    "sector": "Hospitals",
+    "cap": "Mid-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "66.9",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "15.2%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "17.1%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "81.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "28.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b938,285 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "High-acuity quaternary-care network in North/East India.",
+     "New hospitals ramp occupancy \u2014 strong incremental economics.",
+     "Capacity build-out means near-term margin lumpiness."
+    ],
+    "growth": 45,
+    "take": "Premium care, scaling up",
+    "dur": 47.168
+   }
+  },
+  {
+   "id": "ch04_s47_ntpc",
+   "type": "nb_stock",
+   "in_seconds": 611.986,
+   "out_seconds": 659.902,
+   "props": {
+    "idx": 47,
+    "total": 50,
+    "tier": "3",
+    "name": "NTPC",
+    "ticker": "NTPC",
+    "sector": "Power / Energy",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "13.9",
+      "hero": true
+     },
+     {
+      "k": "ROE",
+      "v": "13.8%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "8.4%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "8.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "24.0%",
+      "hero": false
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b93.30L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Cheap power giant adding thermal, renewables and nuclear capacity.",
+     "NTPC Green listing highlights a large clean-energy option.",
+     "Regulated returns = stability; energy-transition = the upside."
+    ],
+    "growth": 16.0,
+    "take": "Old-economy value, new-energy call",
+    "dur": 48.416
+   }
+  },
+  {
+   "id": "ch04_s48_tatapower",
+   "type": "nb_stock",
+   "in_seconds": 660.402,
+   "out_seconds": 707.526,
+   "props": {
+    "idx": 48,
+    "total": 50,
+    "tier": "3",
+    "name": "Tata Power",
+    "ticker": "TATAPOWER",
+    "sector": "Energy Transition",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "31.2",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "10.2%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "10.5%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "27.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "24.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b91.22L Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Integrated play: generation, distribution, solar + EV charging.",
+     "Rooftop solar and manufacturing ride the clean-energy shift.",
+     "Capex-heavy transition carries execution and funding risk."
+    ],
+    "growth": 25.5,
+    "take": "A one-stop energy-transition bet",
+    "dur": 47.624
+   }
+  },
+  {
+   "id": "ch04_s49_radico",
+   "type": "nb_stock",
+   "in_seconds": 708.026,
+   "out_seconds": 755.318,
+   "props": {
+    "idx": 49,
+    "total": 50,
+    "tier": "3",
+    "name": "Radico Khaitan",
+    "ticker": "RADICO",
+    "sector": "Premium Spirits",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "87.6",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "20.3%",
+      "hero": false
+     },
+     {
+      "k": "ROCE",
+      "v": "24.2%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "17.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "38.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b962,262 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Premiumisation of Indian spirits lifts mix and margins.",
+     "Own brands (Magic Moments, Rampur) scale the P&L up-market.",
+     "Input-cost and state-excise swings add volatility."
+    ],
+    "growth": 27.5,
+    "take": "Premiumisation in a glass",
+    "dur": 47.792
+   }
+  },
+  {
+   "id": "ch04_s50_motilalofs",
+   "type": "nb_stock",
+   "in_seconds": 755.818,
+   "out_seconds": 802.462,
+   "props": {
+    "idx": 50,
+    "total": 50,
+    "tier": "3",
+    "name": "Motilal Oswal",
+    "ticker": "MOTILALOFS",
+    "sector": "Broking + AMC",
+    "cap": "Large-cap",
+    "metrics": [
+     {
+      "k": "P / E",
+      "v": "27.4",
+      "hero": false
+     },
+     {
+      "k": "ROE",
+      "v": "15.5%",
+      "hero": false
+     },
+     {
+      "k": "5Y sales CAGR",
+      "v": "7.0%",
+      "hero": false
+     },
+     {
+      "k": "5Y profit CAGR",
+      "v": "34.0%",
+      "hero": true
+     },
+     {
+      "k": "Market cap",
+      "v": "\u20b954,209 Cr",
+      "hero": false
+     }
+    ],
+    "thesis": [
+     "Broking + asset + wealth + PE \u2014 geared to buoyant markets.",
+     "Rising treasury and AMC book compound in an up-cycle.",
+     "Earnings are highly sensitive to market direction."
+    ],
+    "growth": 20.5,
+    "take": "A high-beta financialisation play",
+    "dur": 47.144
+   }
+  },
+  {
+   "id": "ch04_wrap",
+   "type": "nb_statement",
+   "in_seconds": 802.962,
+   "out_seconds": 831.42,
+   "props": {
+    "dur": 28.958,
+    "kicker": "TIER 3 \u00b7 IN ONE LINE",
+    "color": "#FB7185",
+    "lines": [
+     "Bigger upside,",
+     "bigger risk,",
+     "smaller position."
+    ],
+    "sub": "High-torque bets earn their place \u2014 in moderation."
+   }
+  }
+ ],
+ "captions": [],
+ "audio": {
+  "narration": {
+   "src": "nb/ch04.wav",
+   "volume": 1.0
+  }
+ }
+}

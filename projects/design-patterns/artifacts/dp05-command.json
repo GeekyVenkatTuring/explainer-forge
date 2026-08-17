@@ -1,0 +1,2022 @@
+{
+ "cuts": [
+  {
+   "id": "dp05-command_title",
+   "type": "dp_title",
+   "in_seconds": 0.0,
+   "out_seconds": 20.804,
+   "props": {
+    "kicker": "DESIGN PATTERNS \u00b7 IN JAVA",
+    "ep": "EPISODE 05",
+    "line1": "You clicked the button.",
+    "line2": "Now try to undo it.",
+    "sub": "an editor where every action happens \u2014 but nothing can be taken back",
+    "dur": 21.304
+   }
+  },
+  {
+   "id": "dp05-command_scenario",
+   "type": "dp_scenario",
+   "in_seconds": 21.304,
+   "out_seconds": 49.636,
+   "props": {
+    "kicker": "THE SCENARIO",
+    "title": "A text editor's toolbar",
+    "situation": "Your editor has toolbar buttons \u2014 bold, cut, paste. Each one changes the document. Then the boss asks for Ctrl-Z: undo, and redo.",
+    "actors": [
+     {
+      "emoji": "\ud83d\udd24",
+      "label": "Bold"
+     },
+     {
+      "emoji": "\u2702\ufe0f",
+      "label": "Cut"
+     },
+     {
+      "emoji": "\ud83d\udccb",
+      "label": "Paste"
+     }
+    ],
+    "ask": "Every button works. Now make all of them undoable. From where?",
+    "dur": 28.832
+   }
+  },
+  {
+   "id": "dp05-command_naive",
+   "type": "dp_code",
+   "in_seconds": 50.136,
+   "out_seconds": 75.711,
+   "props": {
+    "kicker": "THE OBVIOUS FIRST ATTEMPT",
+    "title": "Handlers just do the work.",
+    "file": "Editor.java",
+    "lines": [
+     {
+      "t": "class Editor {"
+     },
+     {
+      "t": "  Document doc;"
+     },
+     {
+      "t": "  void onBold()  { doc.applyBold(selection); }",
+      "s": "hi"
+     },
+     {
+      "t": "  void onCut()   { doc.cut(selection); }",
+      "s": "hi"
+     },
+     {
+      "t": "  void onPaste() { doc.paste(clipboard); }",
+      "s": "hi"
+     },
+     {
+      "t": "  // click \u2192 change the document. Simple."
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "Each handler reaches straight into the document. Clean and direct.",
+    "dur": 26.075
+   }
+  },
+  {
+   "id": "dp05-command_pain",
+   "type": "dp_pain",
+   "in_seconds": 76.211,
+   "out_seconds": 120.067,
+   "props": {
+    "title": "\"Add undo and redo.\"",
+    "file": "Editor.java",
+    "lines": [
+     {
+      "t": "  enum Action { BOLD, CUT, PASTE }"
+     },
+     {
+      "t": "  Deque<Action> history;",
+      "s": "hi"
+     },
+     {
+      "t": "  void undo() {"
+     },
+     {
+      "t": "    switch (history.pop()) {",
+      "s": "hi"
+     },
+     {
+      "t": "      case BOLD:  doc.removeBold(lastSel); break;",
+      "s": "hi"
+     },
+     {
+      "t": "      case CUT:   doc.restore(lastCut);    break;",
+      "s": "hi"
+     },
+     {
+      "t": "      // ...and how do I know lastSel? lastCut?"
+     },
+     {
+      "t": "    }"
+     },
+     {
+      "t": "  }"
+     }
+    ],
+    "smell": "No object holds 'what was done' + its data",
+    "touched": [
+     "a do-switch on every action",
+     "an undo-switch, mirrored",
+     "store each action's data by hand",
+     "redo? a third switch"
+    ],
+    "dur": 44.356
+   }
+  },
+  {
+   "id": "dp05-command_insight",
+   "type": "dp_insight",
+   "in_seconds": 120.567,
+   "out_seconds": 156.525,
+   "props": {
+    "title": "What is actually changing here?",
+    "fixed": [
+     "A request is made; do it",
+     "It may need to be reversed",
+     "The invoker just triggers it"
+    ],
+    "varies": [
+     "Which action it is",
+     "The data it needs to run and reverse",
+     "How you store or replay it"
+    ],
+    "principle": "Turn the request itself into an object that carries how to do it \u2014 and how to undo it.",
+    "dur": 36.458
+   }
+  },
+  {
+   "id": "dp05-command_analogy",
+   "type": "dp_analogy",
+   "in_seconds": 157.025,
+   "out_seconds": 196.331,
+   "props": {
+    "title": "Think of an order ticket",
+    "emoji": "\ud83e\uddfe",
+    "analogy": "The waiter writes a ticket. The ticket can be re-fired or voided.",
+    "map": [
+     {
+      "from": "Writing the ticket",
+      "to": "creating a Command"
+     },
+     {
+      "from": "The waiter",
+      "to": "the invoker (a button)"
+     },
+     {
+      "from": "The kitchen",
+      "to": "the receiver (the Document)"
+     },
+     {
+      "from": "The spike of tickets",
+      "to": "the undo history"
+     }
+    ],
+    "breaks": "a paper ticket can't un-cook a meal \u2014 our command also carries the recipe for reversing itself.",
+    "dur": 39.806
+   }
+  },
+  {
+   "id": "dp05-command_refactor1",
+   "type": "dp_refactor",
+   "in_seconds": 196.831,
+   "out_seconds": 219.453,
+   "props": {
+    "step": 1,
+    "of": 3,
+    "move": "A request becomes an object",
+    "file": "Command.java",
+    "lines": [
+     {
+      "t": "// the request itself, with both directions:"
+     },
+     {
+      "t": "interface Command {",
+      "s": "add"
+     },
+     {
+      "t": "  void execute();",
+      "s": "add"
+     },
+     {
+      "t": "  void undo();",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "note": "Do and undo, bound together \u2014 that pairing is the whole idea.",
+    "dur": 23.122
+   }
+  },
+  {
+   "id": "dp05-command_refactor2",
+   "type": "dp_refactor",
+   "in_seconds": 219.953,
+   "out_seconds": 249.135,
+   "props": {
+    "step": 2,
+    "of": 3,
+    "move": "Each command captures its own data",
+    "file": "BoldCommand.java",
+    "lines": [
+     {
+      "t": "class BoldCommand implements Command {",
+      "s": "add"
+     },
+     {
+      "t": "  private final Document doc;",
+      "s": "add"
+     },
+     {
+      "t": "  private final Range selection;   // captured!",
+      "s": "add"
+     },
+     {
+      "t": "  public void execute() { doc.applyBold(selection); }",
+      "s": "add"
+     },
+     {
+      "t": "  public void undo()    { doc.removeBold(selection); }",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "The selection it needs to undo is stored inside the command itself.",
+    "dur": 29.682
+   }
+  },
+  {
+   "id": "dp05-command_try",
+   "type": "dp_try",
+   "in_seconds": 249.635,
+   "out_seconds": 280.217,
+   "props": {
+    "title": "Write PasteCommand.undo()",
+    "file": "PasteCommand.java",
+    "lines": [
+     {
+      "t": "class PasteCommand implements Command {"
+     },
+     {
+      "t": "  Document doc; String pasted; int at;"
+     },
+     {
+      "t": "  public void execute() { doc.insert(pasted, at); }"
+     },
+     {
+      "t": "  // \u25af undo(): remove what you inserted",
+      "s": "ghost"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "prompt": "Write undo() \u2014 delete the text this command pasted, at its position.",
+    "hint": "public void undo() { doc.delete(at, pasted.length()); }",
+    "dur": 31.082
+   }
+  },
+  {
+   "id": "dp05-command_refactor3",
+   "type": "dp_refactor",
+   "in_seconds": 280.717,
+   "out_seconds": 311.968,
+   "props": {
+    "step": 3,
+    "of": 3,
+    "move": "The invoker just runs and stacks them",
+    "file": "Editor.java",
+    "lines": [
+     {
+      "t": "class Editor {"
+     },
+     {
+      "t": "  private final Deque<Command> history = new ArrayDeque<>();",
+      "s": "add"
+     },
+     {
+      "t": "  void run(Command c) {",
+      "s": "add"
+     },
+     {
+      "t": "    c.execute();",
+      "s": "add"
+     },
+     {
+      "t": "    history.push(c);          // remember it",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "  void undo() { history.pop().undo(); }   // that's it",
+      "s": "add"
+     },
+     {
+      "t": "}"
+     }
+    ],
+    "note": "One run(), one undo() \u2014 and they work for every command, forever.",
+    "dur": 31.751
+   }
+  },
+  {
+   "id": "dp05-command_payoff",
+   "type": "dp_payoff",
+   "in_seconds": 312.468,
+   "out_seconds": 349.819,
+   "props": {
+    "requirement": "\"Add a Cut button\" \u2014 and it must undo, redo, and record",
+    "naiveLabel": "Before",
+    "naiveCost": "A new case in the do-, undo-, and redo-switch.",
+    "naiveSteps": [
+     "add to the do-switch",
+     "mirror it in undo + redo",
+     "stash its data by hand"
+    ],
+    "patLabel": "Now",
+    "patCost": "One CutCommand. Undo, redo, macros \u2014 all free.",
+    "patFile": "CutCommand.java",
+    "patLines": [
+     {
+      "t": "class CutCommand",
+      "s": "add"
+     },
+     {
+      "t": "    implements Command {",
+      "s": "add"
+     },
+     {
+      "t": "  Document doc; Range sel; String cut;",
+      "s": "add"
+     },
+     {
+      "t": "  public void execute() {",
+      "s": "add"
+     },
+     {
+      "t": "    cut = doc.cut(sel);",
+      "s": "add"
+     },
+     {
+      "t": "  }",
+      "s": "add"
+     },
+     {
+      "t": "  public void undo() { doc.insert(cut, sel.start); }",
+      "s": "add"
+     },
+     {
+      "t": "}",
+      "s": "add"
+     }
+    ],
+    "dur": 37.851
+   }
+  },
+  {
+   "id": "dp05-command_reveal",
+   "type": "dp_reveal",
+   "in_seconds": 350.319,
+   "out_seconds": 384.915,
+   "props": {
+    "name": "The Command Pattern",
+    "plain": "Wrap a request in an object with execute() and undo(); an invoker runs and stores it, a receiver does the real work.",
+    "nodes": [
+     {
+      "id": "cmd",
+      "title": "Command",
+      "stereo": "interface",
+      "members": [
+       "+ execute()",
+       "+ undo()"
+      ],
+      "x": 760,
+      "y": 215,
+      "w": 400,
+      "color": "#22D3EE"
+     },
+     {
+      "id": "inv",
+      "title": "Editor",
+      "stereo": "invoker",
+      "members": [
+       "- history: Deque",
+       "+ run(c) / undo()"
+      ],
+      "x": 150,
+      "y": 230,
+      "w": 430,
+      "color": "#A78BFA"
+     },
+     {
+      "id": "bold",
+      "title": "BoldCommand",
+      "members": [
+       "+ execute() / undo()"
+      ],
+      "x": 430,
+      "y": 650,
+      "w": 360,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "paste",
+      "title": "PasteCommand",
+      "members": [
+       "+ execute() / undo()"
+      ],
+      "x": 830,
+      "y": 650,
+      "w": 360,
+      "color": "#8B93B0"
+     },
+     {
+      "id": "cut",
+      "title": "CutCommand",
+      "members": [
+       "+ execute() / undo()"
+      ],
+      "x": 1230,
+      "y": 650,
+      "w": 360,
+      "color": "#34D399"
+     }
+    ],
+    "edges": [
+     {
+      "from": "inv",
+      "to": "cmd",
+      "kind": "has"
+     },
+     {
+      "from": "bold",
+      "to": "cmd",
+      "kind": "impl"
+     },
+     {
+      "from": "paste",
+      "to": "cmd",
+      "kind": "impl"
+     },
+     {
+      "from": "cut",
+      "to": "cmd",
+      "kind": "impl"
+     }
+    ],
+    "dur": 35.096
+   }
+  },
+  {
+   "id": "dp05-command_map",
+   "type": "dp_map",
+   "in_seconds": 385.415,
+   "out_seconds": 424.14,
+   "props": {
+    "title": "The names, mapped to your code",
+    "participants": [
+     {
+      "role": "Command",
+      "your": "interface Command"
+     },
+     {
+      "role": "ConcreteCommand",
+      "your": "BoldCommand, CutCommand, \u2026"
+     },
+     {
+      "role": "Invoker",
+      "your": "Editor (runs + stores)"
+     },
+     {
+      "role": "Receiver",
+      "your": "Document (does the work)"
+     }
+    ],
+    "plain": "The invoker triggers a command object; the command tells the receiver what to do, and remembers how to undo it.",
+    "gof": "Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.",
+    "dur": 39.225
+   }
+  },
+  {
+   "id": "dp05-command_tradeoffs",
+   "type": "dp_tradeoffs",
+   "in_seconds": 424.64,
+   "out_seconds": 466.683,
+   "props": {
+    "title": "The price of the ticket",
+    "costs": [
+     "A class for every kind of request",
+     "Undo state can grow large in memory",
+     "Indirection between click and effect"
+    ],
+    "dont": [
+     "The action never needs undo or replay",
+     "A direct method call is plenty",
+     "There's exactly one, simple handler"
+    ],
+    "signal": "you need undo/redo, queuing, logging, or macros \u2014 anything that treats 'an action' as a value you store.",
+    "dur": 42.543
+   }
+  },
+  {
+   "id": "dp05-command_recap",
+   "type": "dp_recap",
+   "in_seconds": 467.183,
+   "out_seconds": 517.726,
+   "props": {
+    "title": "Command, in one breath",
+    "items": [
+     "Button handlers did the work and vanished, so undo needed mirrored switches and hand-stashed data.",
+     "A request should be an object that carries how to do AND undo it, with the data it needs inside.",
+     "Command: invoker runs and stores command objects; each reverses itself. New action, new command."
+    ],
+    "challenge": "A design tool needs multi-level undo, plus the ability to record a sequence of edits and replay it as a one-click macro.",
+    "question": "Does Command fit? What's the command, and who is the invoker?",
+    "dur": 51.043
+   }
+  }
+ ],
+ "captions": [
+  [
+   0.0,
+   1.348,
+   "Doing something is easy."
+  ],
+  [
+   1.348,
+   3.369,
+   "Your button handler calls the code,"
+  ],
+  [
+   3.369,
+   4.38,
+   "and it happens."
+  ],
+  [
+   5.011,
+   7.707,
+   "But the moment someone asks for undo \u2014"
+  ],
+  [
+   7.707,
+   8.381,
+   "or redo,"
+  ],
+  [
+   8.381,
+   9.391,
+   "or a macro,"
+  ],
+  [
+   9.391,
+   12.087,
+   "or a queue \u2014 that simple handler falls"
+  ],
+  [
+   12.087,
+   12.423,
+   "apart."
+  ],
+  [
+   13.055,
+   15.75,
+   "Because you threw away the one thing you"
+  ],
+  [
+   15.75,
+   16.087,
+   "needed:"
+  ],
+  [
+   16.087,
+   17.098,
+   "the action itself,"
+  ],
+  [
+   17.098,
+   19.119,
+   "as a thing you can hold."
+  ],
+  [
+   19.119,
+   20.804,
+   "Let's build a text editor."
+  ],
+  [
+   21.304,
+   23.702,
+   "You are writing a text editor."
+  ],
+  [
+   24.333,
+   26.731,
+   "The toolbar has buttons \u2014 bold,"
+  ],
+  [
+   26.731,
+   27.13,
+   "cut,"
+  ],
+  [
+   27.13,
+   30.327,
+   "paste \u2014 and each one changes the document."
+  ],
+  [
+   30.959,
+   32.157,
+   "They all work."
+  ],
+  [
+   32.157,
+   32.956,
+   "Ship it."
+  ],
+  [
+   33.588,
+   35.186,
+   "Then the request comes:"
+  ],
+  [
+   35.186,
+   35.586,
+   "control-Z."
+  ],
+  [
+   35.586,
+   35.986,
+   "Undo."
+  ],
+  [
+   35.986,
+   37.184,
+   "And of course,"
+  ],
+  [
+   37.184,
+   37.584,
+   "redo."
+  ],
+  [
+   37.584,
+   37.984,
+   "And,"
+  ],
+  [
+   37.984,
+   39.981,
+   "while you are at it,"
+  ],
+  [
+   39.981,
+   42.379,
+   "let power users record a macro."
+  ],
+  [
+   43.011,
+   44.609,
+   "Every button works today."
+  ],
+  [
+   44.609,
+   47.006,
+   "Now make all of them undoable."
+  ],
+  [
+   47.638,
+   49.636,
+   "Where does that even live?"
+  ],
+  [
+   50.136,
+   52.922,
+   "The obvious code wires each button straight to"
+  ],
+  [
+   52.922,
+   53.618,
+   "the work."
+  ],
+  [
+   54.25,
+   54.946,
+   "On bold,"
+  ],
+  [
+   54.946,
+   55.643,
+   "apply bold."
+  ],
+  [
+   55.643,
+   56.339,
+   "On cut,"
+  ],
+  [
+   56.339,
+   57.384,
+   "cut the selection."
+  ],
+  [
+   57.384,
+   58.081,
+   "On paste,"
+  ],
+  [
+   58.081,
+   59.125,
+   "paste the clipboard."
+  ],
+  [
+   59.757,
+   60.105,
+   "Click,"
+  ],
+  [
+   60.105,
+   61.498,
+   "and the document changes."
+  ],
+  [
+   61.498,
+   63.588,
+   "It could not be more direct,"
+  ],
+  [
+   63.588,
+   65.329,
+   "and for just doing things,"
+  ],
+  [
+   65.329,
+   66.373,
+   "it is perfect."
+  ],
+  [
+   67.005,
+   69.094,
+   "But look at what is missing."
+  ],
+  [
+   69.094,
+   70.487,
+   "After on bold runs,"
+  ],
+  [
+   70.487,
+   73.273,
+   "there is no record that it ever happened."
+  ],
+  [
+   73.273,
+   75.711,
+   "The action did its work and vanished."
+  ],
+  [
+   76.211,
+   78.693,
+   "So you try to bolt on undo."
+  ],
+  [
+   79.325,
+   81.452,
+   "You add an enum of actions,"
+  ],
+  [
+   81.452,
+   83.934,
+   "and a history stack to remember them."
+  ],
+  [
+   83.934,
+   86.771,
+   "Then undo pops the last action and switches"
+  ],
+  [
+   86.771,
+   89.253,
+   "on it \u2014 if it was bold,"
+  ],
+  [
+   89.253,
+   89.962,
+   "remove bold;"
+  ],
+  [
+   89.962,
+   91.38,
+   "if it was cut,"
+  ],
+  [
+   91.38,
+   92.798,
+   "restore the cut text."
+  ],
+  [
+   93.43,
+   94.848,
+   "But immediately it unravels."
+  ],
+  [
+   95.48,
+   96.543,
+   "To undo bold,"
+  ],
+  [
+   96.543,
+   99.38,
+   "you need which selection it was applied to."
+  ],
+  [
+   99.38,
+   100.444,
+   "To undo cut,"
+  ],
+  [
+   100.444,
+   102.926,
+   "you need the exact text you removed."
+  ],
+  [
+   103.557,
+   106.394,
+   "None of that was saved \u2014 the action"
+  ],
+  [
+   106.394,
+   107.458,
+   "is long gone."
+  ],
+  [
+   108.089,
+   110.217,
+   "So you start hoarding loose variables,"
+  ],
+  [
+   110.217,
+   110.926,
+   "last selection,"
+  ],
+  [
+   110.926,
+   111.989,
+   "last cut text,"
+  ],
+  [
+   111.989,
+   114.826,
+   "and a giant switch that must mirror every"
+  ],
+  [
+   114.826,
+   115.535,
+   "button perfectly."
+  ],
+  [
+   116.167,
+   116.876,
+   "Add redo,"
+  ],
+  [
+   116.876,
+   119.003,
+   "and it is a third switch."
+  ],
+  [
+   119.003,
+   120.067,
+   "This will rot."
+  ],
+  [
+   120.567,
+   121.229,
+   "What changes,"
+  ],
+  [
+   121.229,
+   122.553,
+   "and what stays fixed?"
+  ],
+  [
+   123.185,
+   123.516,
+   "Fixed:"
+  ],
+  [
+   123.516,
+   124.84,
+   "a request gets made,"
+  ],
+  [
+   124.84,
+   126.164,
+   "and you do it."
+  ],
+  [
+   126.164,
+   127.488,
+   "Sometimes you reverse it."
+  ],
+  [
+   127.488,
+   129.805,
+   "And whatever triggers it \u2014 a button,"
+  ],
+  [
+   129.805,
+   130.467,
+   "a shortcut,"
+  ],
+  [
+   130.467,
+   132.453,
+   "a menu \u2014 just fires it,"
+  ],
+  [
+   132.453,
+   133.777,
+   "without knowing the details."
+  ],
+  [
+   134.408,
+   136.725,
+   "What varies is which action it is,"
+  ],
+  [
+   136.725,
+   139.374,
+   "the data it needs to run and to"
+  ],
+  [
+   139.374,
+   139.705,
+   "reverse,"
+  ],
+  [
+   139.705,
+   142.353,
+   "and how you might store or replay it."
+  ],
+  [
+   142.984,
+   144.639,
+   "So here is the move."
+  ],
+  [
+   145.271,
+   147.919,
+   "Stop treating the action as a method call"
+  ],
+  [
+   147.919,
+   148.581,
+   "that evaporates."
+  ],
+  [
+   148.581,
+   151.229,
+   "Make the request itself an object \u2014 one"
+  ],
+  [
+   151.229,
+   153.546,
+   "that carries both how to do it,"
+  ],
+  [
+   153.546,
+   155.201,
+   "and how to undo it,"
+  ],
+  [
+   155.201,
+   156.525,
+   "together in one place."
+  ],
+  [
+   157.025,
+   157.984,
+   "Picture a diner."
+  ],
+  [
+   158.616,
+   160.215,
+   "The waiter does not cook."
+  ],
+  [
+   160.215,
+   162.454,
+   "They write your order on a ticket,"
+  ],
+  [
+   162.454,
+   164.693,
+   "and the ticket goes to the kitchen."
+  ],
+  [
+   165.324,
+   167.883,
+   "And because the order is now a physical"
+  ],
+  [
+   167.883,
+   168.203,
+   "thing,"
+  ],
+  [
+   168.203,
+   170.761,
+   "you can do things with it \u2014 stack"
+  ],
+  [
+   170.761,
+   171.081,
+   "it,"
+  ],
+  [
+   171.081,
+   171.721,
+   "re-fire it,"
+  ],
+  [
+   171.721,
+   172.36,
+   "void it,"
+  ],
+  [
+   172.36,
+   174.919,
+   "keep it on a spike as a record."
+  ],
+  [
+   175.551,
+   176.83,
+   "That is our fix."
+  ],
+  [
+   176.83,
+   179.388,
+   "Writing the ticket is creating a command object."
+  ],
+  [
+   179.388,
+   181.947,
+   "The waiter is the button that fires it."
+  ],
+  [
+   181.947,
+   184.506,
+   "The kitchen is the document that actually does"
+  ],
+  [
+   184.506,
+   185.145,
+   "the work."
+  ],
+  [
+   185.145,
+   187.704,
+   "And the spike of old tickets is your"
+  ],
+  [
+   187.704,
+   188.343,
+   "undo history."
+  ],
+  [
+   188.975,
+   189.935,
+   "Where it breaks:"
+  ],
+  [
+   189.935,
+   192.173,
+   "a paper ticket cannot un-cook a steak."
+  ],
+  [
+   192.173,
+   194.732,
+   "Our command is smarter \u2014 it also carries"
+  ],
+  [
+   194.732,
+   196.331,
+   "the recipe for reversing itself."
+  ],
+  [
+   196.831,
+   197.613,
+   "Move one."
+  ],
+  [
+   197.613,
+   200.351,
+   "We turn the request into an object."
+  ],
+  [
+   200.982,
+   201.764,
+   "An interface,"
+  ],
+  [
+   201.764,
+   202.156,
+   "command,"
+  ],
+  [
+   202.156,
+   204.111,
+   "with two methods \u2014 execute,"
+  ],
+  [
+   204.111,
+   204.893,
+   "and undo."
+  ],
+  [
+   205.525,
+   207.089,
+   "That pairing is everything."
+  ],
+  [
+   207.089,
+   208.262,
+   "Do and undo,"
+  ],
+  [
+   208.262,
+   210.218,
+   "bound together in one type."
+  ],
+  [
+   210.849,
+   212.022,
+   "From now on,"
+  ],
+  [
+   212.022,
+   215.151,
+   "an action is not something that happens and"
+  ],
+  [
+   215.151,
+   215.542,
+   "disappears."
+  ],
+  [
+   215.542,
+   218.28,
+   "It is a thing you can hold,"
+  ],
+  [
+   218.28,
+   218.671,
+   "store,"
+  ],
+  [
+   218.671,
+   219.453,
+   "and reverse."
+  ],
+  [
+   219.953,
+   220.744,
+   "Move two,"
+  ],
+  [
+   220.744,
+   223.908,
+   "and this is what fixes the undo mess."
+  ],
+  [
+   224.539,
+   226.912,
+   "A bold command holds the document,"
+  ],
+  [
+   226.912,
+   230.076,
+   "and the exact selection it was told to"
+  ],
+  [
+   230.076,
+   230.471,
+   "bold."
+  ],
+  [
+   231.103,
+   233.871,
+   "Its execute applies bold to that selection."
+  ],
+  [
+   233.871,
+   237.035,
+   "Its undo removes bold from that same selection."
+  ],
+  [
+   237.666,
+   240.83,
+   "The data you were scrambling to remember by"
+  ],
+  [
+   240.83,
+   241.226,
+   "hand?"
+  ],
+  [
+   241.226,
+   243.203,
+   "It lives inside the command,"
+  ],
+  [
+   243.203,
+   245.576,
+   "captured the moment it was created."
+  ],
+  [
+   245.576,
+   248.74,
+   "Every command carries everything it needs to\nreverse"
+  ],
+  [
+   248.74,
+   249.135,
+   "itself."
+  ],
+  [
+   249.635,
+   250.364,
+   "Your turn."
+  ],
+  [
+   250.995,
+   252.817,
+   "Here is a paste command."
+  ],
+  [
+   252.817,
+   255.732,
+   "Its execute inserts the pasted text at a"
+  ],
+  [
+   255.732,
+   258.647,
+   "position \u2014 and it remembers both the text"
+  ],
+  [
+   258.647,
+   259.74,
+   "and the spot."
+  ],
+  [
+   260.372,
+   261.465,
+   "Write its undo."
+  ],
+  [
+   262.096,
+   263.554,
+   "To reverse a paste,"
+  ],
+  [
+   263.554,
+   265.74,
+   "you delete exactly what you inserted,"
+  ],
+  [
+   265.74,
+   267.562,
+   "right where you put it."
+  ],
+  [
+   267.562,
+   267.926,
+   "Pause,"
+  ],
+  [
+   267.926,
+   269.019,
+   "and write it."
+  ],
+  [
+   269.651,
+   272.565,
+   "Because the command captured the text and the"
+  ],
+  [
+   272.565,
+   272.93,
+   "position,"
+  ],
+  [
+   272.93,
+   275.48,
+   "undo is trivial \u2014 delete that length,"
+  ],
+  [
+   275.48,
+   276.573,
+   "at that spot."
+  ],
+  [
+   276.573,
+   279.488,
+   "That is the power of making the request"
+  ],
+  [
+   279.488,
+   280.217,
+   "an object."
+  ],
+  [
+   280.717,
+   281.444,
+   "Move three."
+  ],
+  [
+   281.444,
+   283.626,
+   "Now the editor gets beautifully dumb."
+  ],
+  [
+   284.257,
+   286.803,
+   "It keeps a history stack of commands."
+  ],
+  [
+   286.803,
+   287.893,
+   "To run one,"
+  ],
+  [
+   287.893,
+   288.984,
+   "it calls execute,"
+  ],
+  [
+   288.984,
+   291.166,
+   "then pushes it onto the stack."
+  ],
+  [
+   291.797,
+   292.525,
+   "And undo?"
+  ],
+  [
+   292.525,
+   293.979,
+   "Pop the last command,"
+  ],
+  [
+   293.979,
+   295.433,
+   "and call its undo."
+  ],
+  [
+   295.433,
+   296.161,
+   "One line."
+  ],
+  [
+   296.792,
+   299.701,
+   "Look at what is gone \u2014 no enum,"
+  ],
+  [
+   299.701,
+   300.428,
+   "no switch,"
+  ],
+  [
+   300.428,
+   301.883,
+   "no mirrored reverse logic."
+  ],
+  [
+   302.514,
+   304.332,
+   "And here is the magic:"
+  ],
+  [
+   304.332,
+   307.241,
+   "this run and undo work for every command"
+  ],
+  [
+   307.241,
+   307.968,
+   "that exists,"
+  ],
+  [
+   307.968,
+   310.514,
+   "and every command you will ever add,"
+  ],
+  [
+   310.514,
+   311.968,
+   "without changing a character."
+  ],
+  [
+   312.468,
+   313.889,
+   "Now the newest request."
+  ],
+  [
+   313.889,
+   316.377,
+   "Add a cut button \u2014 and naturally,"
+  ],
+  [
+   316.377,
+   317.443,
+   "it must undo,"
+  ],
+  [
+   317.443,
+   317.798,
+   "redo,"
+  ],
+  [
+   317.798,
+   319.22,
+   "and work in macros."
+  ],
+  [
+   319.851,
+   320.207,
+   "Before,"
+  ],
+  [
+   320.207,
+   323.049,
+   "that was a new case in three different"
+  ],
+  [
+   323.049,
+   323.405,
+   "switches,"
+  ],
+  [
+   323.405,
+   326.248,
+   "plus more loose variables to stash the cut"
+  ],
+  [
+   326.248,
+   326.603,
+   "text."
+  ],
+  [
+   327.235,
+   327.59,
+   "Now?"
+  ],
+  [
+   327.59,
+   328.656,
+   "One cut command."
+  ],
+  [
+   328.656,
+   331.144,
+   "Its execute cuts and remembers the text."
+  ],
+  [
+   331.144,
+   332.92,
+   "Its undo puts it back."
+  ],
+  [
+   333.552,
+   335.684,
+   "And that is the whole job."
+  ],
+  [
+   336.316,
+   337.382,
+   "Undo already works,"
+  ],
+  [
+   337.382,
+   339.514,
+   "because the editor just calls undo."
+  ],
+  [
+   339.514,
+   339.869,
+   "Redo,"
+  ],
+  [
+   339.869,
+   340.224,
+   "macros,"
+  ],
+  [
+   340.224,
+   343.067,
+   "a command queue \u2014 all of them work"
+  ],
+  [
+   343.067,
+   344.844,
+   "the instant the command exists,"
+  ],
+  [
+   344.844,
+   346.976,
+   "with zero changes to the editor."
+  ],
+  [
+   346.976,
+   348.398,
+   "You added one class,"
+  ],
+  [
+   348.398,
+   349.819,
+   "and got four features."
+  ],
+  [
+   350.319,
+   351.798,
+   "Now we name it."
+  ],
+  [
+   352.43,
+   354.279,
+   "This is the Command pattern."
+  ],
+  [
+   354.911,
+   356.02,
+   "In the middle,"
+  ],
+  [
+   356.02,
+   357.87,
+   "the command interface \u2014 execute,"
+  ],
+  [
+   357.87,
+   358.609,
+   "and undo."
+  ],
+  [
+   359.241,
+   360.351,
+   "On the left,"
+  ],
+  [
+   360.351,
+   361.09,
+   "the editor,"
+  ],
+  [
+   361.09,
+   361.83,
+   "the invoker."
+  ],
+  [
+   361.83,
+   364.789,
+   "It holds a history and just runs commands;"
+  ],
+  [
+   364.789,
+   367.008,
+   "it points only at the interface."
+  ],
+  [
+   367.64,
+   368.01,
+   "Underneath,"
+  ],
+  [
+   368.01,
+   369.859,
+   "the concrete commands \u2014 bold,"
+  ],
+  [
+   369.859,
+   370.229,
+   "paste,"
+  ],
+  [
+   370.229,
+   373.188,
+   "and the green cut you just added \u2014"
+  ],
+  [
+   373.188,
+   376.146,
+   "each one bundling an action with the data"
+  ],
+  [
+   376.146,
+   377.256,
+   "to reverse it."
+  ],
+  [
+   377.888,
+   378.997,
+   "Not shown here,"
+  ],
+  [
+   378.997,
+   380.847,
+   "but named in each command,"
+  ],
+  [
+   380.847,
+   383.805,
+   "is the receiver \u2014 the document that does"
+  ],
+  [
+   383.805,
+   384.915,
+   "the actual work."
+  ],
+  [
+   385.415,
+   386.15,
+   "The roles,"
+  ],
+  [
+   386.15,
+   387.621,
+   "mapped to your code."
+  ],
+  [
+   388.253,
+   390.092,
+   "The Command is your interface."
+  ],
+  [
+   390.723,
+   392.562,
+   "The concrete commands are bold,"
+  ],
+  [
+   392.562,
+   392.93,
+   "cut,"
+  ],
+  [
+   392.93,
+   393.665,
+   "and paste."
+  ],
+  [
+   394.297,
+   397.239,
+   "The Invoker is the editor \u2014 it triggers"
+  ],
+  [
+   397.239,
+   399.077,
+   "commands and keeps the history,"
+  ],
+  [
+   399.077,
+   401.284,
+   "but never knows what they do."
+  ],
+  [
+   401.916,
+   404.122,
+   "And the Receiver is the document,"
+  ],
+  [
+   404.122,
+   407.064,
+   "which does the actual work when a command"
+  ],
+  [
+   407.064,
+   408.167,
+   "tells it to."
+  ],
+  [
+   408.799,
+   411.741,
+   "In plain terms \u2014 the invoker fires a"
+  ],
+  [
+   411.741,
+   412.108,
+   "command,"
+  ],
+  [
+   412.108,
+   413.947,
+   "the command directs the receiver,"
+  ],
+  [
+   413.947,
+   415.786,
+   "and remembers how to undo."
+  ],
+  [
+   416.417,
+   417.888,
+   "The Gang of Four:"
+  ],
+  [
+   417.888,
+   420.83,
+   "encapsulate a request as an object \u2014 which"
+  ],
+  [
+   420.83,
+   422.301,
+   "lets you queue it,"
+  ],
+  [
+   422.301,
+   423.037,
+   "log it,"
+  ],
+  [
+   423.037,
+   424.14,
+   "and undo it."
+  ],
+  [
+   424.64,
+   425.654,
+   "The honest costs."
+  ],
+  [
+   426.286,
+   428.991,
+   "Command means a class for every kind of"
+  ],
+  [
+   428.991,
+   429.329,
+   "request,"
+  ],
+  [
+   429.329,
+   432.034,
+   "so a big app grows a lot of"
+  ],
+  [
+   432.034,
+   433.049,
+   "little command classes."
+  ],
+  [
+   433.68,
+   436.385,
+   "And keeping undo history means keeping state \u2014"
+  ],
+  [
+   436.385,
+   439.09,
+   "a long editing session can hold a lot"
+  ],
+  [
+   439.09,
+   440.443,
+   "of it in memory."
+  ],
+  [
+   441.074,
+   443.779,
+   "Plus there is a hop between the click"
+  ],
+  [
+   443.779,
+   444.794,
+   "and the effect,"
+  ],
+  [
+   444.794,
+   447.161,
+   "which is one more thing to trace."
+  ],
+  [
+   447.792,
+   450.497,
+   "So skip it when an action never needs"
+  ],
+  [
+   450.497,
+   451.512,
+   "to be undone,"
+  ],
+  [
+   451.512,
+   451.85,
+   "queued,"
+  ],
+  [
+   451.85,
+   454.555,
+   "or replayed \u2014 a direct call is simpler"
+  ],
+  [
+   454.555,
+   455.231,
+   "and honest."
+  ],
+  [
+   455.863,
+   457.892,
+   "But the signal is crystal clear."
+  ],
+  [
+   457.892,
+   459.582,
+   "The moment you need undo,"
+  ],
+  [
+   459.582,
+   459.92,
+   "redo,"
+  ],
+  [
+   459.92,
+   460.259,
+   "queuing,"
+  ],
+  [
+   460.259,
+   460.597,
+   "logging,"
+  ],
+  [
+   460.597,
+   463.302,
+   "or macros \u2014 anything that treats an action"
+  ],
+  [
+   463.302,
+   466.007,
+   "as a value you can store \u2014 reach"
+  ],
+  [
+   466.007,
+   466.683,
+   "for Command."
+  ],
+  [
+   467.183,
+   468.985,
+   "The journey in three beats."
+  ],
+  [
+   469.616,
+   470.337,
+   "The problem:"
+  ],
+  [
+   470.337,
+   472.859,
+   "button handlers did the work and vanished,"
+  ],
+  [
+   472.859,
+   475.742,
+   "so adding undo meant mirrored switches and a"
+  ],
+  [
+   475.742,
+   477.183,
+   "pile of hand-stashed data."
+  ],
+  [
+   477.815,
+   478.535,
+   "The insight:"
+  ],
+  [
+   478.535,
+   481.418,
+   "a request should be an object that carries"
+  ],
+  [
+   481.418,
+   484.301,
+   "how to do it and how to undo"
+  ],
+  [
+   484.301,
+   484.661,
+   "it,"
+  ],
+  [
+   484.661,
+   486.463,
+   "with all its data inside."
+  ],
+  [
+   487.094,
+   487.815,
+   "The pattern:"
+  ],
+  [
+   487.815,
+   488.175,
+   "Command."
+  ],
+  [
+   488.175,
+   490.697,
+   "An invoker runs and stores command objects,"
+  ],
+  [
+   490.697,
+   493.58,
+   "and each one knows how to reverse itself"
+  ],
+  [
+   493.58,
+   496.463,
+   "\u2014 so a new action is just a"
+  ],
+  [
+   496.463,
+   497.183,
+   "new command."
+  ],
+  [
+   497.815,
+   498.175,
+   "Now,"
+  ],
+  [
+   498.175,
+   498.896,
+   "for you,"
+  ],
+  [
+   498.896,
+   500.337,
+   "before the next episode."
+  ],
+  [
+   500.969,
+   503.131,
+   "A design tool needs multi-level undo,"
+  ],
+  [
+   503.131,
+   506.013,
+   "and it wants to record a sequence of"
+  ],
+  [
+   506.013,
+   508.896,
+   "edits and replay them as a one-click macro."
+  ],
+  [
+   509.528,
+   510.609,
+   "Does Command fit?"
+  ],
+  [
+   510.609,
+   512.41,
+   "What is the command here,"
+  ],
+  [
+   512.41,
+   514.212,
+   "and who is the invoker?"
+  ],
+  [
+   514.843,
+   515.204,
+   "Pause,"
+  ],
+  [
+   515.204,
+   517.726,
+   "and sketch it before you press play."
+  ]
+ ],
+ "audio": {
+  "narration": {
+   "src": "dp/dp05-command.wav",
+   "volume": 1.0
+  }
+ }
+}
