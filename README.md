@@ -9,7 +9,9 @@ the brief says otherwise. Vertical (9:16 Shorts/Reels) is a first-class path wit
 its own skill.
 
 This GitHub repository is source only. Renders, TTS audio, `node_modules`, and
-QA stills are gitignored. The GitHub slug remains `explainer-forge`.
+QA stills are gitignored.
+
+**https://github.com/GeekyVenkatTuring/explainer-video-studio**
 
 ## What it is
 
