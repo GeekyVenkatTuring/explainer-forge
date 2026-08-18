@@ -1,7 +1,7 @@
 {
   "name": "explainer-forge-composer",
   "version": "1.0.0",
-  "description": "Remotion composer for Explainer Forge — duration-aware animated explainer videos",
+  "description": "Remotion composer for Explainer Video Studio — duration-aware animated explainer videos",
   "scripts": {
     "studio": "npx remotion studio",
     "typecheck": "npx tsc --noEmit"

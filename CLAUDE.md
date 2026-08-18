@@ -1,4 +1,4 @@
-# Explainer Forge — Agent Contract
+# Explainer Video Studio — Agent Contract
 
 You are building an animated explainer video. This repo exists because earlier
 attempts produced narrated slides; the standard here is the "fine-tuning" and

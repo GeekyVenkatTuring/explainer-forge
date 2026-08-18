@@ -1,5 +1,5 @@
 /**
- * primitives.tsx — the Explainer Forge scene engine.
+ * primitives.tsx — the Explainer Video Studio scene engine.
  *
  * Battle-tested primitives distilled from the fine-tuning (FTScenes) and
  * computer-vision (CVScenes) gold-reference videos. Every scene set builds on

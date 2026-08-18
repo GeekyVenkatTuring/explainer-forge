@@ -37,7 +37,7 @@ for d in (PUBLIC, RAW, os.path.join(ROOT, "artifacts"), os.path.join(ROOT, "rend
 # ideas — see skills/02-screenplay.md cognitive-load rules. 3–6 per content beat.
 SEGMENTS = [
  ("s01_title", "demo_title", {},
-  "Welcome to the Explainer Forge demo. Four scenes, every core pattern: "
+  "Welcome to the Explainer Video Studio demo. Four scenes, every core pattern: "
   "duration aware phasing, continuous motion, and computed visuals."),
 
  ("s02_diagram", "demo_diagram", {},
